@@ -22,10 +22,13 @@ fr:
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       prep_work: Préparation
       prep_work_details: |
-        Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
+        Chaque élève doit valider des tutoriels du "Wagon On-Demand" avant de rejoindre le programme.
+        Nous prenons des élèves extrêment motivés, ayant les bonnes attentes et
+        ayant envie de commencer sur les chapeaux de roue dès le premier jour.
       bootcamp: Bootcamp
       bootcamp_details: |
-        Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
+        Le programme de 9 semaines est très intensif, chaque journée compte et apporte une brique fondamentale du développement web. Le Wagon
+        itère son programme pédagogique depuis deux ans et c'est débarrassé de toutes les frictions qui ralentissent l'apprentissage du code.
       algorithm: "Algorithmie & architecture logicielle"
       web_development: Apprentissage du développement web
       mindset: "Mindset & culture technique"
