@@ -10,36 +10,37 @@ fr:
     read_article: Lire l'article
     written_html: "Publié par <a href='%{href}'>%{author}</a> le %{date}"
     moreposts: Continuez la visite !
-  home:
-    title: Le Wagon - Apprendre à coder - Bootcamp en Ruby on Rails, HTML, CSS et JavaScript
-    description: |
-      Le Wagon est la meilleure formation au développement web en France.
-      Allez voir par vous-même les projets codés par nos anciens élèves !
-    catchline: Changez de vie : apprenez à coder
-    vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
-    view_teaser: voir la vidéo
-    apply_for_nine_weeks: Postulez pour 9 semaines de formation
-    prep_work: Préparation
-    prep_work_details: |
-      Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
-    bootcamp: Bootcamp
-    bootcamp_details: |
-      Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
-    algorithm: "Algorithmie & architecture logicielle"
-    web_development: Apprentissage du développement web
-    mindset: "Mindset & culture technique"
-    product: "Développement d'un produit en 10 jours"
-    tools: "Outils & workflow de Startup"
-    new_me: Nouveau moi
-    new_me_details: |
-      Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
-    check_program: En savoir plus sur le programme
-    our_cities: Nos villes
-    open_yours: Montez un Wagon dans votre ville
-    already_a_lot: Déja 354 entrepreneurs convertis.
-    and_you: |
-      Et <strong>vous</strong> ?
-    check_projects: Découvrir nos élèves et leurs projets
-    news_and_resources: "News, ressources gratuites & bons plans"
-    enter_your_mail: Entrez votre email
-    stay_tuned: Restez informé
+  pages:
+    home:
+      title: Le Wagon - Apprendre à coder - Bootcamp en Ruby on Rails, HTML, CSS et JavaScript
+      description: |
+        Le Wagon est la meilleure formation au développement web en France.
+        Allez voir par vous-même les projets codés par nos anciens élèves !
+      catchline: "Changez de vie : apprenez à coder"
+      vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
+      view_teaser: voir la vidéo
+      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      prep_work: Préparation
+      prep_work_details: |
+        Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
+      bootcamp: Bootcamp
+      bootcamp_details: |
+        Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
+      algorithm: "Algorithmie & architecture logicielle"
+      web_development: Apprentissage du développement web
+      mindset: "Mindset & culture technique"
+      product: "Développement d'un produit en 10 jours"
+      tools: "Outils & workflow de Startup"
+      new_me: Nouveau moi
+      new_me_details: |
+        Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
+      check_program: En savoir plus sur le programme
+      our_cities: Nos villes
+      open_yours: Montez un Wagon dans votre ville
+      already_a_lot: Déja 354 entrepreneurs convertis.
+      and_you: |
+        Et <strong>vous</strong> ?
+      check_projects: Découvrir nos élèves et leurs projets
+      news_and_resources: "News, ressources gratuites & bons plans"
+      enter_your_mail: Entrez votre email
+      stay_tuned: Restez informé
