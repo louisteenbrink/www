@@ -38,8 +38,7 @@ fr:
       our_cities: Nos villes
       open_yours: Montez un Wagon dans votre ville
       already_a_lot: Déja 354 entrepreneurs convertis.
-      and_you: |
-        Et <strong>vous</strong> ?
+      and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
       news_and_resources: "News, ressources gratuites & bons plans"
       enter_your_mail: Entrez votre email
