@@ -43,3 +43,41 @@ fr:
       news_and_resources: "News, ressources gratuites & bons plans"
       enter_your_mail: Entrez votre email
       stay_tuned: Restez informé
+    program:
+      title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
+      description: |
+        9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web
+      our_program: "Notre programme"
+      program_details: |
+        Notre programme est conçu pour les débutants ou "faux débutants" qui souhaitent
+        acquérir une véritable autonomie technique mais surtout un nouveau mindset.
+        Penser comme un développeur, voir les problématiques sous un nouvel angle et
+        libérer sa créativité grâce au code.
+      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      objective: L'objectif
+      objective_details: |
+        Notre unique objectif est de vous transmettre ce savoir-faire
+        pour que vous deveniez des entrepreneurs d'exception maitrisant
+        les enjeux techniques ou que vous trouviez un poste en développement,
+        product management, growth hacking.
+      why_us: Pourquoi nous ?
+      why_us_details: |
+        Le programme vous fera gagner deux ans en vous plongeant dans un ecosystème
+        ultra-stimulant ou vous apprendrez beaucoup plus vite.
+        Vous apprendrez surtout ce qui ne s'apprend pas en ligne :
+        le set-up d'un codeur, les bonnes pratiques de développement web,
+        les techniques de modélisation d'une architecture logicielle, d'une base
+        de données, les techniques de collaboration sur Github, etc..
+      community: Une communauté hyperactive
+      community_details: |
+        Les professeurs du Wagon sont tous des entrepreneurs tech
+        (Taster's club, Sylights, Txto), ayant une "expérience terrain" du code.
+        Vous ferez partie d'une communauté hyperactive : 160 anciens élèves
+        suractifs sur le slack du Wagon, 8 professeurs, 15 mentors, 9 startups
+        déjà créées, des talks tous les jeudi-soirs avec des intervenants de haut-niveau.
+      cv: Votre cv de développeur
+      cv_details: |
+        A la fin de la formation, vous saurez transformer vos idées
+        en produits, vous aurez codé plusieurs applis web, dont
+        votre propre projet et un clone d'airbnb, et vous aurez un portfolio
+        de votre travail sur Github.
