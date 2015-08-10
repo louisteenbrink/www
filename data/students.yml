@@ -1,0 +1,25 @@
+thomas:
+  name: Thomas Ceccaldi
+  project: roadstr
+  github: https://github.com/thomasceccaldi
+  twitter: https://twitter.com/thomasceccaldi
+jerome:
+  name: Jérôme Borenstejn
+  project: roadstr
+  github: https://github.com/borenstejn
+  twitter: https://twitter.com/borenstejn
+caroline:
+  name: Caroline Carrière
+  image: caroline.jpg
+  github: https://github.com/CarolineCC
+valentin:
+  name: Valentin Chaput
+  image_name: valentin.jpg
+  github: https://github.com/valentinchaput
+  twitter: https://twitter.com/valentinchaput
+arthur:
+  name: Arthur Hagiage
+  image_name: arthur.jpg
+  github: https://github.com/Arthurhge
+  twitter: https://twitter.com/arthur_h
+

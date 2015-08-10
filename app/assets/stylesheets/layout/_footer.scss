@@ -10,4 +10,11 @@
       color: black;
     }
   }
+  svg, path, rect, circle {
+    fill: $brand-color;
+  }
+  svg {
+    margin-bottom: 50px;
+  }
+
 }

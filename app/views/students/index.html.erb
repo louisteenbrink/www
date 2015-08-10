@@ -1,0 +1,55 @@
+<%= content_for(:title) do %>
+  <%= t(".title") %>
+<% end %>
+
+<%= content_for(:description) do %>
+  <%= t(".description") %>
+<% end %>
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(function(){
+      $('.press-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+<% end %>
+
+<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path('banners/bg-home.jpg')%>');">
+  <div class="banner-gradient-shadow"></div>
+  <div class="banner-content">
+    <h1><%= t(".our_alumni") %></h1>
+    <p>
+      <%= t(".our_alumni_details_html") %>
+    </p>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
+  </div>
+</div>
+
+
+<div id="alumni">
+  <h2 class="section-header-big">Témoignages</h2>
+  <div class="container">
+    <div class="row">
+      <div class="co-xs-12 col-sm-6 col-md-4">
+        <div class="card-student">
+          <div class="card-student-content">
+            <h3>Cedric Menteau</h3>
+            <p>Bogosse tavu</p>
+          </div>
+          <img src="http://unsplash.it/100/100" alt="" class="card-student-img img-circle">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="products">
+  <h2 class="section-header-big">Les produits de nos élèves</h2>
+</div>
