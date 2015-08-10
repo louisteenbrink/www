@@ -1,22 +1,36 @@
 <%= content_for(:title) do %>
-  Home
+  <%= t(".title") %>
 <% end %>
 
 <%= content_for(:description) do %>
-  <%# TODO %>
+  <%= t(".description") %>
 <% end %>
 
-<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path('banners/bg-home.jpg')%>')">
+<%= content_for(:after_js) do %>
+  <script>
+    $(function(){
+      $('.press-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+<% end %>
+
+<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path('banners/bg-home.jpg')%>');">
   <div class="banner-gradient-shadow"></div>
   <div class="banner-content">
-    <h1><%= t(".home.catchline", default: "Changez de vie : apprenez à coder") %></h1>
+    <h1><%= t(".catchline") %></h1>
     <p>
-      <%= t(".home.vision", default: "Le Wagon apporte un savoir-faire technique aux esprits créatifs") %>
-      <span>
-        <i class="fa fa-play-circle-o"></i> <%= t(".home.view_teaser", default: "Voir la vidéo") %>
-      </span>
+      <%= t(".vision") %>
+      <!-- <span>
+        <i class="fa fa-play-circle-o"></i> <%= t(".view_teaser") %>
+      </span> -->
     </p>
-    <%= link_to t(".home.apply_for_nine_weeks", default: "Postulez pour 9 semaines de formation"), apply_path, class: "btn btn-danger btn-lg" %>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
   </div>
 </div>
 
@@ -32,10 +46,10 @@
         </span>
         <div class="step-description">
           <h2>
-            <%= t(".home.prep_work", default: "Préparation") %>
+            <%= t(".prep_work") %>
           </h2>
           <p>
-            <%= t(".home.prep_work_details", default: "Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.") %>
+            <%= t(".prep_work_details") %>
           </p>
         </div>
       </div>
@@ -45,17 +59,17 @@
         </span>
         <div class="step-description">
           <h2>
-            <%= t(".home.bootcamp", default: "Bootcamp") %>
+            <%= t(".bootcamp") %>
           </h2>
           <p>
-            <%= t(".home.bootcamp_details", default: "Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.") %>
+            <%= t(".bootcamp_details") %>
           </p>
           <div class="sub-step">
             <span class="sub-step-figure">
               <i class="fa fa-check"></i>
             </span>
             <h3 class="sub-step-description">
-              <%= t(".home.algorithm", default: "Algorithmie & architecture logicielle") %>
+              <%= t(".algorithm") %>
             </h3>
           </div>
           <div class="sub-step">
@@ -63,7 +77,7 @@
               <i class="fa fa-check"></i>
             </span>
             <h3 class="sub-step-description">
-              <%= t(".home.web_development", default: "Apprentissage du développement web") %>
+              <%= t(".web_development") %>
             </h3>
           </div>
           <div class="sub-step">
@@ -71,7 +85,7 @@
               <i class="fa fa-check"></i>
             </span>
             <h3 class="sub-step-description">
-              <%= t(".home.mindset", default: "Mindset & culture technique") %>
+              <%= t(".mindset") %>
             </h3>
           </div>
           <div class="sub-step">
@@ -79,7 +93,7 @@
               <i class="fa fa-check"></i>
             </span>
             <h3 class="sub-step-description">
-              <%= t(".home.product", default: "Développement d'un produit en 10 jours") %>
+              <%= t(".product") %>
             </h3>
           </div>
           <div class="sub-step">
@@ -87,7 +101,7 @@
               <i class="fa fa-check"></i>
             </span>
             <h3 class="sub-step-description">
-              <%= t(".home.tools", default: "Outils et workflow de Startup") %>
+              <%= t(".tools") %>
             </h3>
           </div>
         </div>
@@ -130,15 +144,15 @@
           </span>
           <div class="step-description">
             <h2>
-              <%= t(".home.new_me", default: "Nouveau moi") %>
+              <%= t(".new_me") %>
             </h2>
             <p>
-              <%= t(".home.new_me_details", default: "Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.") %>
+              <%= t(".new_me_details") %>
             </p>
           </div>
         </div>
         <div class="cta text-left padded-small">
-          <%= link_to t(".home.check_program", default: "En savoir plus sur le programme"), program_path, class: "btn btn-danger btn-lg" %>
+          <%= link_to t(".check_program"), program_path, class: "btn btn-danger btn-lg" %>
         </div>
       </div>
     </div>
@@ -207,10 +221,10 @@
   <div class="row">
     <div class="col-xs-12 text-center padded-small">
       <h2 class="section-header">
-        <%= t(".home.our_cities", default: "Nos villes") %>
+        <%= t(".our_cities") %>
       </h2>
       <p class="text-muted">
-        <%= t(".home.open_yours", default: "Montez un Wagon dans votre ville") %>
+        <%= t(".open_yours") %>
       </p>
     </div>
   </div>
@@ -218,8 +232,11 @@
 
 <div class="banner banner-flat" style="background-image: url('<%= image_path('banners/bg-home-secondary.jpg')%>')">
   <div class="banner-flat-filter banner-flat-filter-green"></div>
-  <div class="banner-content text-center">
-    <%= image_tag "techcrunch.png", width: "60%" %>
+  <div class="banner-content text-center press-container">
+    <div><%= image_tag "techcrunch.png" %></div>
+    <div><%= image_tag "JDN.png" %></div>
+    <div><%= image_tag "maddyness.png" %></div>
+    <div><%= image_tag "rudebaguette.png" %></div>
   </div>
 </div>
 
@@ -231,13 +248,13 @@
       </div>
       <div class="col-xs-12 col-sm-6">
         <p>
-          <%= t(".home.already_a_lot", default: "Déja 354 entrepreneurs convertis.") %>
+          <%= t(".already_a_lot") %>
         </p>
         <p>
-          <%= t(".home.and_you", default: "Et <strong>vous</strong> ?") %>
+          <%= t(".and_you_html") %>
         </p>
         <div class="padded-small">
-          <%= link_to t(".home.check_projects", default: "Découvrir nos élèves et leurs projets"), alumni_path, class: "btn btn-danger btn-lg" %>
+          <%= link_to t(".check_projects"), alumni_path, class: "btn btn-danger btn-lg" %>
         </div>
       </div>
     </div>
@@ -246,11 +263,11 @@
 
 <div class="container padded text-center">
   <h2 class="section-header padded-small">
-    <%= t(".home.news_and_resources", default: "News, ressources gratuites & bons plans") %>
+    <%= t(".news_and_resources") %>
   </h2>
   <form action="" class="form-inline">
-    <input type="email" class="form-control input-lg" placeholder="<%= t(".home.enter_your_mail", default: "Entrez votre email") %>">
-    <input type="submit" class="btn btn-danger btn-lg" value="<%= t(".home.stay_tuned", default: "Restez informé") %>">
+    <input type="email" class="form-control input-lg" placeholder="<%= t(".enter_your_mail") %>">
+    <input type="submit" class="btn btn-danger btn-lg" value="<%= t(".stay_tuned") %>">
   </form>
 
 </div>

@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /fr|en/ do
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
+    get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
     get ":city" => "cities#show", city: /#{CITIES.join("|")}|/, as: :city
     resources :projects, only: [:show]

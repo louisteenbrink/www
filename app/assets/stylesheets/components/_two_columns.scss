@@ -1,0 +1,23 @@
+.two-columns {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.two-columns-img {
+  flex: 0 1 auto;
+  height: 400px;
+  margin-top: 70px;
+  &-left {
+    border-radius: 0 8px 0 0;
+  }
+  &-right {
+    border-radius: 8px 0 0 0;
+  }
+  &-padded-left {
+    border-radius: 0px 8px 8px 0px;
+  }
+}
+.two-columns-description {
+  flex: 1;
+  padding: 70px;
+}

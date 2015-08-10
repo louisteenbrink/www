@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 7em;
+  padding-bottom: 7em;
   &-small {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
@@ -31,3 +31,23 @@
   background: #343434;
   color: white;
 }
+.bg-white {
+  background: white;
+}
+.bg-purple {
+  background: rgba(77, 57, 74, 1);
+  color: white;
+}
+.bg-purple-gradient {
+  background-image: linear-gradient(-225deg, #4d394a 45%, rgba(77, 57, 74, 0.9) 90%);
+  color: white;
+}
+.bg-green {
+  background: rgba(59, 165, 83, 1);
+  color: white;
+}
+.bg-green-gradient {
+  background-image: linear-gradient(-225deg, rgba(59, 165, 83, 1) 30%, rgba(59, 165, 83, 0.9) 80%);
+  color: white;
+}
+
