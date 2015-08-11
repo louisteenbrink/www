@@ -1,25 +1,100 @@
-thomas:
+thomasceccaldi:
   name: Thomas Ceccaldi
   project: roadstr
   github: https://github.com/thomasceccaldi
   twitter: https://twitter.com/thomasceccaldi
-jerome:
+borenstejn:
   name: Jérôme Borenstejn
   project: roadstr
   github: https://github.com/borenstejn
   twitter: https://twitter.com/borenstejn
-caroline:
+carolinecc:
   name: Caroline Carrière
+  project: mashare
   image: caroline.jpg
   github: https://github.com/CarolineCC
-valentin:
+valentinchaput:
   name: Valentin Chaput
+  project: parol
   image_name: valentin.jpg
   github: https://github.com/valentinchaput
   twitter: https://twitter.com/valentinchaput
-arthur:
+arthur_h:
   name: Arthur Hagiage
+  project: krawd
   image_name: arthur.jpg
   github: https://github.com/Arthurhge
   twitter: https://twitter.com/arthur_h
+juliendebray:
+  name: "Julien Debray"
+  project: explorizers
+  image_name: julien-debray.jpeg
+  github: https://github.com/juliendebray
+florian-j:
+  name: "Florian Joulié"
+  project: explorizers
+  image_name: florian-joulié.jpeg
+  github: https://github.com/florian-j
+norydev:
+  name: "Fabien Loup"
+  project: sharkrank
+  image_name: fabien-loup.jpeg
+  github: https://github.com/NoryDev
+jacnut:
+  name: "Jacques de Liedekerke"
+  project: sharkrank
+  image_name: jacques-de-liedekerke.jpeg
+  github: https://github.com/jacnut
+neocanada:
+  name: "Sebastien Le Moan"
+  project: yummycook
+  image_name: sebastien-lemoan.jpg
+  github: https://github.com/neocanada
+tchret:
+  name: "Thomas Chrétien"
+  project: trackguru
+  image_name: tchret.jpeg
+  github: https://github.com/tchret
+baptistehamain:
+  name: Baptiste Hamain
+  project: fizzer
+  image_name: baptiste-hamain.jpeg
+  github: https://github.com/BaptisteHamain
+vincentporquet:
+  name: Vincent Porquet
+  project: fizzer
+  image_name: vincent-porquet.jpeg
+  github: https://github.com/vincentporquet
+edouardpo:
+  name: Edouard Polese
+  project: vogmark
+  image_name: edouard.png
+  github: https://github.com/edouardpo
+olivierrg:
+  name: Olivier Godement
+  project: capy
+  image_name: olivier_god.png
+  github: https://github.com/olivierrg
+estelleabn:
+  name: Estelle Aubouin
+  project: lecolis
+  image_name: estelle.png
+  github: https://github.com/Estelleabn
+benoitchibrac:
+  name: Benoit Chibrac
+  project: tint
+  image_name: benoit.png
+  github: https://github.com/Beub
+melnav:
+  name: Melanie Navarro
+  project: mavillejetaide
+  image_name: melanie.png
+  github: https://github.com/melnav
+laurenc:
+  name: Laurent Cuzin
+  project: bouquet
+  image_name: laurent.png
+  github: https://github.com/laurenc
+
+
 

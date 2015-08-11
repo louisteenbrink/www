@@ -45,260 +45,291 @@ krawd:
     en: Development of Ruby on Rails web-app Krawd.
   links:
     facebook: https://www.facebook.com/pages/Krawd/1543950642508926?fref=ts
-
-- name: "Julien Debray & Florian Joulié"
+explorizers:
+  name: Explorizers
   image_name: explorizers.png
   url: http://www.explorizers.com/en
-  project:
-    name: Explorizers
-    url: http://www.explorizers.com/
-    image_name: explorizers-landing.png
-    teaser:
-      fr: Explorizers est une application conçue pour le voyage inspiré par ses amis Facebook.
-      en: Explorizers is designed for travel inspired by his Facebook friends.
-    description:
-      fr: Développement du site Explorizers avec la carte de voyage et les interactions sociales.
-      en: Development of Explorizers web-app with the travel map and social interactions based on facebook.
+  image_name: explorizers-landing.png
+  teaser:
+    fr: Explorizers est une application conçue pour le voyage inspiré par ses amis Facebook.
+    en: Explorizers is designed for travel inspired by his Facebook friends.
+  description:
+    fr: Développement du site Explorizers avec la carte de voyage et les interactions sociales.
+    en: Development of Explorizers web-app with the travel map and social interactions based on facebook.
   links:
-    - url: https://github.com/florian-j
-      icon: github-alt
-    - url: https://github.com/juliendebray
-      icon: github-alt
-    - url: http://www.explorizers.com/
-      icon: link
-    - url: https://twitter.com/Explorizers_
-      icon: twitter
-
-- name: "Fabien Loup & Jacques de Liedekerke"
-  image_name: sharkrank-team.jpg
+    twitter: https://twitter.com/Explorizers_
+sharkrank:
+  name: Sharkrank
   url: http://sharkrank.co/
-  project:
-    name: Sharkrank
-    url: http://sharkrank.co/
-    image_name: sharkrank-landing.jpg
-    teaser:
-      fr: "Sharkrank vous propose de noter, évaluer et consulter la réputation des investisseurs partout autour du monde."
-      en: Sharkrank is a crowdsourced rating and review system of the reputation and interactions of investors worldwide.
-    description:
-      fr: Développement de l'application Rails et intégration graphique.
-      en: Development of Ruby on Rails web-app Sharkrank.
+  image_name: sharkrank-landing.jpg
+  teaser:
+    fr: "Sharkrank vous propose de noter, évaluer et consulter la réputation des investisseurs partout autour du monde."
+    en: Sharkrank is a crowdsourced rating and review system of the reputation and interactions of investors worldwide.
+  description:
+    fr: Développement de l'application Rails et intégration graphique.
+    en: Development of Ruby on Rails web-app Sharkrank.
+yummycook:
+  name: Yummy Cook
+  url: http://www.yummycook.fr/
+  image_name: yummycook-landing.jpg
+  teaser:
+    fr: YummyCook vous aide à trouver et découvrir de nombreuses recettes proposées par les gourmets du monde entier !
+    en: YummyCook provides a large choice of recipes and invite you to discover what's hot among the gourmets on the web!
+  description:
+    fr: Développement de l'application Rails et intégration graphique.
+    en: Development of Ruby on Rails web-app Yummy Cook.
   links:
-    - url: https://github.com/neocanada
-      icon: github-alt
-    - url: https://github.com/neocanada
-      icon: github-alt
-    - url: http://sharkrank.co/
-      icon: link
-
-- name: Sebastien Le Moan
-  image_name: sebastien-lemoan.jpg
-  url: https://github.com/neocanada
-  project:
-    name: Yummy Cook
-    url: http://www.yummycook.fr/
-    image_name: yummycook-landing.jpg
-    teaser:
-      fr: YummyCook vous aide à trouver et découvrir de nombreuses recettes proposées par les gourmets du monde entier !
-      en: YummyCook provides a large choice of recipes and invite you to discover what's hot among the gourmets on the web!
-    description:
-      fr: Développement de l'application Rails et intégration graphique.
-      en: Development of Ruby on Rails web-app Yummy Cook.
+    facebook: https://www.facebook.com/YummyCook.co
+    twitter: https://twitter.com/yummycook_co
+trackguru:
+  name: TrackGuru
+  url: http://www.trackguru.co/
+  image_name: trackguru-landing.png
+  teaser:
+    fr: "[TrackGuru est une plateforme web permettant aux passionnés de techno et de house de partager et découvrir les meilleurs sons du moment](http://www.lewagon.org/blog/interview-thomas-chretien-trackguru)"
+    en: Share and discover the best techno and house tracks on TrackGuru, the social platform for music enthusiasts.
+  description:
+    fr: "Design et développement de l'appli web TrackGuru, avec un search basé sur Soundcloud et Youtube, un système d'upvotes et de notifications."
+    en: Development of trackguru web-app with Soundcloud and Youtube track search, upvote and notification features.
   links:
-    - url: https://github.com/neocanada
-      icon: github-alt
-    - url: http://www.yummycook.fr/
-      icon: link
-    - url: https://www.facebook.com/YummyCook.co
-      icon: facebook
-    - url: https://twitter.com/yummycook_co
-      icon: twitter
-
-- name: Thomas Chrétien et Olivier Brunet
-  image_name: trackguru-team.jpg
-  url: https://github.com/tchret
-  project:
-    name: TrackGuru
-    url: http://www.trackguru.co/
-    image_name: trackguru-landing.png
-    teaser:
-      fr: "[TrackGuru est une plateforme web permettant aux passionnés de techno et de house de partager et découvrir les meilleurs sons du moment](http://www.lewagon.org/blog/interview-thomas-chretien-trackguru)"
-      en: Share and discover the best techno and house tracks on TrackGuru, the social platform for music enthusiasts.
-    description:
-      fr: "Design et développement de l'appli web TrackGuru, avec un search basé sur Soundcloud et Youtube, un système d'upvotes et de notifications."
-      en: Development of trackguru web-app with Soundcloud and Youtube track search, upvote and notification features.
+    facebook: https://www.facebook.com/trackguruapp
+    twitter: https://twitter.com/trackguruapp
+kudoz:
+  name: Kudoz
+  url: http://www.getkudoz.com
+  image_name: kudoz-landing.jpg
+  teaser:
+    fr: "[L'application iOS pour laisser les offres d'emploi venir à vous. Un tinder de l'emploi.](http://www.lewagon.org/blog/kudoz-application-recherche-emploi)"
+    en: "The iOS app to let job offers come to you. Tinder for job search."
+  description:
+    fr: "Développement de l'API back-end, de l'algorithme de filtrage lié à linkedin, et de l'interface-web côté RH."
+    en: "Development of the back-end API, the recommendation engine based on Linkedin, and the web-application for HR."
   links:
-    - url: https://github.com/tchret
-      icon: github-alt
-    - url: https://github.com/OlivierBrunet
-      icon: github-alt
-    - url: http://www.trackguru.co/
-      icon: link
-    - url: https://www.facebook.com/trackguruapp
-      icon: facebook
-    - url: https://twitter.com/trackguruapp
-      icon: twitter
-
-- name: Olivier Xu
-  image_name: olivier.png
-  url: https://github.com/olixier
-  project:
-    name: Kudoz
-    url: http://www.getkudoz.com
-    image_name: kudoz-landing.jpg
-    teaser:
-      fr: "[L'application iOS pour laisser les offres d'emploi venir à vous. Un tinder de l'emploi.](http://www.lewagon.org/blog/kudoz-application-recherche-emploi)"
-      en: "The iOS app to let job offers come to you. Tinder for job search."
-    description:
-      fr: "Développement de l'API back-end, de l'algorithme de filtrage lié à linkedin, et de l'interface-web côté RH."
-      en: "Development of the back-end API, the recommendation engine based on Linkedin, and the web-application for HR."
+    facebook: https://www.facebook.com/getkudoz
+fizzer:
+  name: Fizzer
+  url: http://www.fizzer.fr/
+  image_name: fizzer-landing.jpg
+  teaser:
+    fr: "[Un site web responsive pour envoyer vos cartes postales personnalisées en prenant des photos depuis votre mobile.](http://www.lewagon.org/blog/fizzer-cartes-postales-alumni)"
+    en: "Responsive web-app to send printed postcards right from your smartphone."
+  description:
+    fr: "Développement de l'appli web responsive fizzer."
+    en: "Development of the fully functional application (with payment, custom signatures, virtual or physical sending,..)"
   links:
-    - url: http://github.com/olixier
-      icon: github-alt
-    - url: http://www.getkudoz.com
-      icon: link
-    - url: https://www.facebook.com/getkudoz
-      icon: facebook
-
-- name: Baptiste et Vincent
-  image_name: fizzer-guys.png
-  url: https://github.com/BaptisteHamain
-  project:
-    name: Fizzer
-    url: http://www.fizzer.fr/
-    image_name: fizzer-landing.jpg
-    teaser:
-      fr: "[Un site web responsive pour envoyer vos cartes postales personnalisées en prenant des photos depuis votre mobile.](http://www.lewagon.org/blog/fizzer-cartes-postales-alumni)"
-      en: "Responsive web-app to send printed postcards right from your smartphone."
-    description:
-      fr: "Développement de l'appli web responsive fizzer."
-      en: "Development of the fully functional application (with payment, custom signatures, virtual or physical sending,..)"
+    facebook: https://www.facebook.com/fizzer.official
+vogmark:
+  name: Vogmark
+  url: http://www.vogmark.com/
+  image_name: vogmark-landing.jpg
+  teaser:
+    fr: "Une appli-web pour être alerté quand le prix d'un produit qui vous intéresse chute!"
+    en: "Ping yourself when the prices of your favorite products drop."
+  description:
+    fr: "Développement de l'appli web Vogmark, du bookmarklet pour tracker vos produit depuis un site e-commerce externe, et du robot de scraping pour vous alerter quand le prix de votre produit chute!"
+    en: |
+      Development of the web application,
+      of the bookmarklet to track products from external web pages,
+      and of the engine to automate the scraping on a daily basis."
+capy:
+  name: Capy
+  url: http://capy.herokuapp.com
+  image_name: capy-landing.jpg
+  teaser:
+    fr: "Une appli SaaS pour générez simplement un tableau de capitalisation, des bons de souscription & pactes d'associés et les exporter sous formats excel et word. Le rêve de tout avocat !"
+    en: |
+      A SaaS app for building legal & financial documents: capitalization tables, share purchase warrants, etc.
+      And export them to Excel and Word right in one click. Every lawyer’s dream!
+  description:
+    fr: "Développement de l'appli web Ruby on Rails Capy, hébergée sur Heroku"
+    en: "Development of the complete app"
+lecolis:
+  name: Le Colis
+  url: http://www.lecolis.com
+  image_name: lecolis-landing.jpg
+  teaser:
+    fr: "Une appli web pour recevoir des colis de cuisine française à l'étranger"
+    en: "Receive French food boxes, when you live abroad and miss French cuisine."
+  description:
+    fr: "Développement d'un site de vente en ligne pour intégrer de nouvelles fonctionnalités."
+    en: "Development of the website"
+tint:
+  name: Tint
+  url: #
+  image_name: tint-landing.jpg
+  teaser:
+    fr: "Une appli SaaS pour le marché de l'art, permettant à ses acteurs d'optimiser leur activité (commandes, présentation des galleries,..)."
+    en: "A SaaS app for the art market. For an easy management of your galleries, artists and orders"
+  description:
+    fr: Développement de la beta de Tint. Version mobile finalisée coming soon !
+    en: Tint is in beta development and the team wants to keep it secret until it is perfect! Keep you posted soon.
+mavillejetaide:
+  name: Ma ville je t'aide
+  url: http://www.mavillejetaide.org
+  image_name: mavillejetaide-landing.jpg
+  teaser:
+    fr: Une appli web pour découvir des associations et participer à des actions bénévoles à Paris.
+    en: Discover local associations and volunteer in Paris.
+  description:
+    fr: Développement de l'appli web Ruby on Rails mavillejetaide.
+    en: Development of Ruby on Rails web-app "ma ville je t’aide".
   links:
-    - url: https://github.com/BaptisteHamain
-      icon: github-alt
-    - url: https://github.com/vincentporquet
-      icon: github-alt
-    - url: http://www.fizzer.fr
-      icon: link
-    - url: https://www.facebook.com/fizzer.official
-      icon: facebook
-
-- name: Edouard Polese
-  image_name: edouard.png
-  url: https://github.com/edouardpo
-  project:
-    name: Vogmark
-    url: http://www.vogmark.com/
-    image_name: vogmark-landing.jpg
-    teaser:
-      fr: "Une appli-web pour être alerté quand le prix d'un produit qui vous intéresse chute!"
-      en: "Ping yourself when the prices of your favorite products drop."
-    description:
-      fr: "Développement de l'appli web Vogmark, du bookmarklet pour tracker vos produit depuis un site e-commerce externe, et du robot de scraping pour vous alerter quand le prix de votre produit chute!"
-      en: |
-        Development of the web application,
-        of the bookmarklet to track products from external web pages,
-        and of the engine to automate the scraping on a daily basis."
-  links:
-    - url: https://github.com/edouardpo
-      icon: github-alt
-    - url: http://www.vogmark.com
-      icon: link
-
-- name: Olivier Godement
-  image_name: olivier_god.png
-  url: https://github.com/olivierrg
-  project:
-    name: Capy
-    url: http://capy.herokuapp.com
-    image_name: capy-landing.jpg
-    teaser:
-      fr: "Une appli SaaS pour générez simplement un tableau de capitalisation, des bons de souscription & pactes d'associés et les exporter sous formats excel et word. Le rêve de tout avocat !"
-      en: |
-        A SaaS app for building legal & financial documents: capitalization tables, share purchase warrants, etc.
-        And export them to Excel and Word right in one click. Every lawyer’s dream!
-    description:
-      fr: "Développement de l'appli web Ruby on Rails Capy, hébergée sur Heroku"
-      en: "Development of the complete app"
-  links:
-    - url: https://github.com/olivierrg
-      icon: github-alt
-    - url: https://github.com/olivierrg
-      icon: link
-
-- name: Estelle Aubouin
-  image_name: estelle.png
-  url: https://github.com/Estelleabn
-  project:
-    name: Le Colis
-    url: http://www.lecolis.com
-    image_name: lecolis-landing.jpg
-    teaser:
-      fr: "Une appli web pour recevoir des colis de cuisine française à l'étranger"
-      en: "Receive French food boxes, when you live abroad and miss French cuisine."
-    description:
-      fr: "Développement d'un site de vente en ligne pour intégrer de nouvelles fonctionnalités."
-      en: "Development of the website"
-  links:
-    - url: https://github.com/Estelleabn
-      icon: github-alt
-    - url: http://www.lecolis.com
-      icon: link
-
-- name: Benoit Chibrac
-  image_name: benoit.png
-  url: https://twitter.com/BenoitChibrac
-  project:
-    name: Tint
-    url: #
-    image_name: tint-landing.jpg
-    teaser:
-      fr: "Une appli SaaS pour le marché de l'art, permettant à ses acteurs d'optimiser leur activité (commandes, présentation des galleries,..)."
-      en: "A SaaS app for the art market. For an easy management of your galleries, artists and orders"
-    description:
-      fr: Développement de la beta de Tint. Version mobile finalisée coming soon !
-      en: Tint is in beta development and the team wants to keep it secret until it is perfect! Keep you posted soon.
-  links:
-    - url: https://twitter.com/BenoitChibrac
-      icon: twitter
-
-- name: Melanie Navarro
-  image_name: melanie.png
-  url: https://github.com/melnav
-  project:
-    name: Ma ville je t'aide
-    url: http://www.mavillejetaide.org
-    image_name: mavillejetaide-landing.jpg
-    teaser:
-      fr: Une appli web pour découvir des associations et participer à des actions bénévoles à Paris.
-      en: Discover local associations and volunteer in Paris.
-    description:
-      fr: Développement de l'appli web Ruby on Rails mavillejetaide.
-      en: Development of Ruby on Rails web-app "ma ville je t’aide".
-  links:
-    - url: https://github.com/melnav
-      icon: github-alt
-    - url: https://www.facebook.com/pages/Paris-je-taide/632398100147248?ref=ts&fref=ts
-      icon: facebook
-    - url: http://www.mavillejetaide.org
-      icon: link
-
-- name: Laurent Cuzin
-  image_name: laurent.png
-  url: https://github.com/laurenc
-  project:
-    name: Bouquet
-    url: http://www.bouquetapp.com
-    image_name: bouquet-landing.jpg
-    teaser:
-      fr: "[Une appli iOS pour livrer de beaux bouquets en moins de 4h à Paris.](http://www.lewagon.org/blog/bouquet-application-livraison-fleur)"
-      en: An iOS app for sending a bouquet in less than 4 hours in Paris.
-    description:
-      fr: Développement de l'API back-end et de l'appli "admin" pour gérer les commandes et les livraisons, ainsi que de la page de lancement.
-      en: Developement of the back-end API and admin web-application for managing payment, orders, deliveries, etc.
-  links:
-    - url: https://github.com/laurenc
-      icon: github-alt
-    - url: http://www.bouquetapp.com
-      icon: link
-
-
+    facebook: https://www.facebook.com/pages/Paris-je-taide/632398100147248?ref=ts&fref=ts
+bouquet:
+  name: Bouquet
+  url: http://www.bouquetapp.com
+  image_name: bouquet-landing.jpg
+  teaser:
+    fr: "[Une appli iOS pour livrer de beaux bouquets en moins de 4h à Paris.](http://www.lewagon.org/blog/bouquet-application-livraison-fleur)"
+    en: An iOS app for sending a bouquet in less than 4 hours in Paris.
+  description:
+    fr: Développement de l'API back-end et de l'appli "admin" pour gérer les commandes et les livraisons, ainsi que de la page de lancement.
+    en: Developement of the back-end API and admin web-application for managing payment, orders, deliveries, etc.
+fabily:
+  name: Fabily
+  url: http://wagonmakers.herokuapp.com/
+  image_name: fabily.jpg
+  teaser:
+    fr: "Besoin de prototyper ? Trouver la bonne machine au bon prix."
+    en: Need a prototype? Find the right machine at the right cost
+  description:
+    fr: Développement d'une application Rails avec geolocalisation et système de chat pour mettre en relation les "makers" et les fab labs disposant de machines pour prototyper.
+    en: Development of the web app integrating geolocation and chat system for the "makers" to find the right fab labs and communicate their needs.
+thepixeler:
+  name: The Pixeler
+  url: http://studio.thepixeler.com/
+  image_name: thepixeler.jpg
+  teaser:
+    fr: "Exposez et vendez vos creations"
+    en: Expose and sell your creations. Earn money from your art
+  description:
+    fr: |
+      Développement d'une application back-office Rails connecté à l’API
+      de Shopify pour permettre aux artistes de mettre facilement leur
+      oeuvres en ligne, les customiser et accéder au dashboard de leur vente.
+      Cerise sur le gateau, le back-office est aussi connecté à l'API de l'imprimeur !
+    en: |
+      Development of a back-office connected to Shopify API for the artist to easily upload their artworks and control their sales on a dashboard.
+      Cherry on the cake, the back-office is also connected to the printing service API !
+navbar:
+  name: Navbar
+  url: http://www.navbar.fr/
+  image_name: navbar.jpg
+  teaser:
+    fr: "Trouvez le meilleur bar autour de vous en un clic"
+    en: "Find the cheapest coolest closest bar in one click"
+  description:
+    fr: |
+      Développement de l'appli-web navbar avec un algorithme basé sur la géolocalisation et les ratings google / yelp / tripadvisor.
+      Création de l'API navbar pour connecter le backend à une appli iOS (en cours de développement).
+    en: |
+      Development of navbar web-app with a search engine based on geolocation and google/yelp/tripadvisor/etc.. ratings.
+      Creation of navbar API to connect the backend to an iOS app (currently submitted on the App store).
+delice_avenue:
+  name: Delice Avenue
+  url: https://deliceavenue.herokuapp.com/
+  image_name: deliceavenue.jpg
+  teaser:
+    fr: "Trouve les meilleures pâtisseries maison près de chez toi"
+    en: "Find the best home-made pastries nearby"
+  description:
+    fr: |
+      Une market-place pour les patissiers amateur et les fans de bons gateaux !
+    en: |
+      Rails market-place for amateur pastry cooks and pastry fans.
+qstomr:
+  name: QstomR
+  url: http://www.qstomr.com/
+  image_name: qstomr.jpg
+  teaser:
+    fr: "La market-place de service entre particulier"
+    en: "The market-place of every service"
+  description:
+    fr: |
+      Market-place pour les petits services entre particulier.
+    en: |
+      A market place for small services.
+cforgood:
+  name: C for good
+  url: http://cforgood.herokuapp.com/
+  image_name: cforgood.jpg
+  teaser:
+    fr: "Application de consommation positive"
+    en: "Positive consumption app"
+  description:
+    fr: |
+      Application mobile-first pour trouvez des bons plans et consommer autrement autour de soi.
+    en: |
+      Mobile-first application to find good & social plans around us and change our consumption habits.
+needl:
+  name: Needl
+  url: http://www.needl.fr/
+  image_name: needl.jpg
+  teaser:
+    fr: "Les restos préférés de vos amis"
+    en: "Your close friends favorite restaurants"
+  description:
+    fr: |
+      Application "mobile-first" pour partager ses meilleurs restaurants avec ses amis proches facebook.
+    en: |
+      A responsive web-app to share your best restaurants address with your closest facebook friends.
+needl:
+  name: BenchR
+  url: http://benchrapp.herokuapp.com/
+  image_name: needl.jpg
+  teaser:
+    fr: "Crée des benchmarks sur ce que tu veux"
+    en: "Benchmarking made easyR"
+  description:
+    fr: |
+      Application Rails + extension Chrome pour créer des benchmarks sur n'importe quoi (restaurants, produits, etc...)
+    en: |
+      Rails app + Chrome extension to create and share benchmarks on everything (restaurants, products, etc...)
+media_pronos:
+  name: Media Pronos
+  url: http://kickoff.mediapronos.com/
+  image_name: needl.jpg
+  teaser:
+    fr: "Suivez, pariez, gagnez !"
+    en: "Follow, bet, win"
+  description:
+    fr: |
+      Application Rails pour créer & partager des pronostics sportifs, s'abonner aux meilleurs pronostiqueurs de la place, suivre leur stats et gagner de l'argent.
+    en: |
+      Rails app to create and share forecasts, follow people with best stats and earn money!
+the_baby_boom:
+  name: Media Pronos
+  url: http://www.thebabyboom.fr/
+  image_name: thebabyboom.jpg
+  teaser:
+    fr: "L'école en ligne pour les futurs et jeunes parents"
+    en: "Online school for future young parents"
+  description:
+    fr: |
+      MOOC pour préparer la naissance de votre premier enfant, avec des videos et des quizzes.
+    en: |
+      MOOC to prepare your first child's birth, with videos and quizzes.
+la_reserve:
+  name: La réserve
+  url: http://la-reserve.herokuapp.com/
+  image_name: lareserve.jpg
+  teaser:
+    fr: "Restez complet"
+    en: "Remain full"
+  description:
+    fr: |
+      Logiciel web pour permettre aux restaurants de mieux gérer leurs réservations.
+    en: |
+      Web software for restaurants to optimize their bookings.
+maki_wars:
+  name: Maki Wars
+  url: http://www.makiwars.com/
+  image_name: makiwars.jpg
+  teaser:
+    fr: "Choisissez votre camp, avocat ou saumon ?"
+    en: "Choose your side, avocado or salmon?"
+  description:
+    fr: |
+      Jeu mobile en javascript. Créez votre maki, choisissez votre camp, saumon ou avocat et battez vous !
+    en: |
+      Javascript mobile game. Create your maki, fight and choose your side. Are you in the "avocado" or the "salmon" team?
