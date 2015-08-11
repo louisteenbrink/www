@@ -1,7 +1,7 @@
 maki_wars:
   name: Maki Wars
   url: http://www.makiwars.com/
-  image_name: makiwars.jpg
+  image: makiwars.jpg
   teaser:
     fr: "Choisissez votre camp, avocat ou saumon ?"
     en: "Choose your side, avocado or salmon?"
@@ -13,9 +13,9 @@ maki_wars:
 roadstr:
   name: Roadstr
   url: http://www.roadstr.fr
-  image_name: roadstr-landing.jpg
+  image: roadstr-landing.jpg
   teaser:
-    fr: "[Roadstr est la plateforme de location de voitures vintages entre particuliers. Partez en week-end au volant d'une ancienne !](http://www.lewagon.org/blog/roadstr-thomas-ceccaldi)"
+    fr: "Partez en week-end au volant d'une ancienne !"
     en: Roadstr is the AirBnB of vintage cars.
   description:
     fr: Beta de l'application Rails de Roadstr, avec gestion de paiement type marketplace basé sur MangoPay
@@ -25,10 +25,10 @@ roadstr:
 mashare:
   name: Ma Share École
   url: https://www.mashareecole.com/
-  image_name: mashareecole-landing.jpg
+  image: mashareecole-landing.jpg
   teaser:
-    fr: "[Marketplace et plateforme de mise en relation des parents dont les enfants vont dans la même école.](http://www.lewagon.org/blog/ma-share-ecole-vu-a-la-tele-les-maternelles)"
-    en: Marketplace and social network for parents whose children are going to the same school.
+    fr: "Le réseau social pour parents d'élèves de la même école"
+    en: Social network for parents with children in the same school.
   description:
     fr: Beta de l'application Rails et intégration graphique, interface de connexion avec code parent sécurisé.
     en: Development of Ruby on Rails web-app Ma Share École and setup of a secure connexion code for the parents.
@@ -38,19 +38,19 @@ mashare:
 parol:
   name: Parol
   url: http://parol-production.herokuapp.com/
-  image_name: parol-landing.jpg
+  image: parol-landing.jpg
   teaser:
-    fr: "[Le Github de l'Assemblée nationale](http://www.lewagon.org/blog/parol-outil-collaboratif-texte-loi)"
-    en: Github for the french law
+    fr: "Le Github de l'Assemblée nationale"
+    en: Github for discussing French law
   description:
     fr: Développement d'un scraper de Légifrance, connexion à l'API GitHub pour le stockage des lois / amendements et prototypage de l'interface de visualisation.
     en: GitHub for the French law. Légifrance scraping, GitHub API integration and UI prototyping of the rails applicaiton.
 krawd:
   name: Krawd
   url: http://www.krawd.com/
-  image_name: krawd-landing.jpg
+  image: krawd-landing.jpg
   teaser:
-    fr: Marketplace sur laquelle les créatifs proposent des visuels aux marques pour lesquelles ils se sentent inspirés.
+    fr: Plateforme pour connecter les marques et les créatifs
     en: Daily social brand content made by the crowd
   description:
     fr: Beta de l'application Rails et intégration graphique.
@@ -59,36 +59,36 @@ krawd:
     facebook: https://www.facebook.com/pages/Krawd/1543950642508926?fref=ts
 explorizers:
   name: Explorizers
-  image_name: explorizers.png
+  image: explorizers.png
   url: http://www.explorizers.com/en
-  image_name: explorizers-landing.png
+  image: explorizers-landing.png
   teaser:
-    fr: Explorizers est une application conçue pour le voyage inspiré par ses amis Facebook.
-    en: Explorizers is designed for travel inspired by his Facebook friends.
+    fr: Trouvez de l'inspiration pour vos itinéraires de voyage.
+    en: Get inspired by your friends and create cool travel plans.
   description:
-    fr: Développement du site Explorizers avec la carte de voyage et les interactions sociales.
-    en: Development of Explorizers web-app with the travel map and social interactions based on facebook.
+    fr: Application Rails avec une carte de voyage dynamique permettant les interactions sociales.
+    en: Explorizers web-app with an interactive travel map enabling social interactions.
   links:
     twitter: https://twitter.com/Explorizers_
 sharkrank:
   name: Sharkrank
   url: http://sharkrank.co/
-  image_name: sharkrank-landing.jpg
+  image: sharkrank-landing.jpg
   teaser:
-    fr: "Sharkrank vous propose de noter, évaluer et consulter la réputation des investisseurs partout autour du monde."
-    en: Sharkrank is a crowdsourced rating and review system of the reputation and interactions of investors worldwide.
+    fr: "Startups, notez vos investisseurs !"
+    en: Crowdsourced rating system for VCs.
   description:
-    fr: Développement de l'application Rails et intégration graphique.
+    fr: Développement de l'application Rails et peuplement de la base de données.
     en: Development of Ruby on Rails web-app Sharkrank.
 yummycook:
   name: Yummy Cook
   url: http://www.yummycook.fr/
-  image_name: yummycook-landing.jpg
+  image: yummycook-landing.jpg
   teaser:
-    fr: YummyCook vous aide à trouver et découvrir de nombreuses recettes proposées par les gourmets du monde entier !
-    en: YummyCook provides a large choice of recipes and invite you to discover what's hot among the gourmets on the web!
+    fr: Découvrez les recettes des gourmets du monde entier !
+    en: Discover recipes from the best gourmets
   description:
-    fr: Développement de l'application Rails et intégration graphique.
+    fr: Développement de l'application Rails
     en: Development of Ruby on Rails web-app Yummy Cook.
   links:
     facebook: https://www.facebook.com/YummyCook.co
@@ -96,10 +96,10 @@ yummycook:
 trackguru:
   name: TrackGuru
   url: http://www.trackguru.co/
-  image_name: trackguru-landing.png
+  image: trackguru-landing.png
   teaser:
-    fr: "[TrackGuru est une plateforme web permettant aux passionnés de techno et de house de partager et découvrir les meilleurs sons du moment](http://www.lewagon.org/blog/interview-thomas-chretien-trackguru)"
-    en: Share and discover the best techno and house tracks on TrackGuru, the social platform for music enthusiasts.
+    fr: Découvrez et notez les meilleurs sons electro tous les jours
+    en: Share & rate best electronic tracks every day
   description:
     fr: "Design et développement de l'appli web TrackGuru, avec un search basé sur Soundcloud et Youtube, un système d'upvotes et de notifications."
     en: Development of trackguru web-app with Soundcloud and Youtube track search, upvote and notification features.
@@ -109,10 +109,10 @@ trackguru:
 kudoz:
   name: Kudoz
   url: http://www.getkudoz.com
-  image_name: kudoz-landing.jpg
+  image: kudoz-landing.jpg
   teaser:
-    fr: "[L'application iOS pour laisser les offres d'emploi venir à vous. Un tinder de l'emploi.](http://www.lewagon.org/blog/kudoz-application-recherche-emploi)"
-    en: "The iOS app to let job offers come to you. Tinder for job search."
+    fr: "Laisser les offres d'emploi venir à vous. Le tinder de l'emploi."
+    en: "Tinder iOS app for job search."
   description:
     fr: "Développement de l'API back-end, de l'algorithme de filtrage lié à linkedin, et de l'interface-web côté RH."
     en: "Development of the back-end API, the recommendation engine based on Linkedin, and the web-application for HR."
@@ -121,10 +121,10 @@ kudoz:
 fizzer:
   name: Fizzer
   url: http://www.fizzer.fr/
-  image_name: fizzer-landing.jpg
+  image: fizzer-landing.jpg
   teaser:
-    fr: "[Un site web responsive pour envoyer vos cartes postales personnalisées en prenant des photos depuis votre mobile.](http://www.lewagon.org/blog/fizzer-cartes-postales-alumni)"
-    en: "Responsive web-app to send printed postcards right from your smartphone."
+    fr: "Envoyez vos cartes postales depuis votre smartphone"
+    en: "Send postcards directly from your smartphone"
   description:
     fr: "Développement de l'appli web responsive fizzer."
     en: "Development of the fully functional application (with payment, custom signatures, virtual or physical sending,..)"
@@ -133,10 +133,10 @@ fizzer:
 vogmark:
   name: Vogmark
   url: http://www.vogmark.com/
-  image_name: vogmark-landing.jpg
+  image: vogmark-landing.jpg
   teaser:
-    fr: "Une appli-web pour être alerté quand le prix d'un produit qui vous intéresse chute!"
-    en: "Ping yourself when the prices of your favorite products drop."
+    fr: "Soyez informé quand le prix d'un produit chute !"
+    en: "Stay tuned if the price of your favorite products decreases"
   description:
     fr: "Développement de l'appli web Vogmark, du bookmarklet pour tracker vos produit depuis un site e-commerce externe, et du robot de scraping pour vous alerter quand le prix de votre produit chute!"
     en: |
@@ -146,9 +146,9 @@ vogmark:
 capy:
   name: Capy
   url: http://capy.herokuapp.com
-  image_name: capy-landing.jpg
+  image: capy-landing.jpg
   teaser:
-    fr: "Une appli SaaS pour générez simplement un tableau de capitalisation, des bons de souscription & pactes d'associés et les exporter sous formats excel et word. Le rêve de tout avocat !"
+    fr: "Générez un tableau de capitalisation excel en trois clics. Le rêve de tout avocat !"
     en: |
       A SaaS app for building legal & financial documents: capitalization tables, share purchase warrants, etc.
       And export them to Excel and Word right in one click. Every lawyer’s dream!
@@ -158,7 +158,7 @@ capy:
 lecolis:
   name: Le Colis
   url: http://www.lecolis.com
-  image_name: lecolis-landing.jpg
+  image: lecolis-landing.jpg
   teaser:
     fr: "Une appli web pour recevoir des colis de cuisine française à l'étranger"
     en: "Receive French food boxes, when you live abroad and miss French cuisine."
@@ -168,7 +168,7 @@ lecolis:
 tint:
   name: Tint
   url: #
-  image_name: tint-landing.jpg
+  image: tint-landing.jpg
   teaser:
     fr: "Une appli SaaS pour le marché de l'art, permettant à ses acteurs d'optimiser leur activité (commandes, présentation des galleries,..)."
     en: "A SaaS app for the art market. For an easy management of your galleries, artists and orders"
@@ -178,7 +178,7 @@ tint:
 mavillejetaide:
   name: Ma ville je t'aide
   url: http://www.mavillejetaide.org
-  image_name: mavillejetaide-landing.jpg
+  image: mavillejetaide-landing.jpg
   teaser:
     fr: Une appli web pour découvir des associations et participer à des actions bénévoles à Paris.
     en: Discover local associations and volunteer in Paris.
@@ -190,9 +190,9 @@ mavillejetaide:
 bouquet:
   name: Bouquet
   url: http://www.bouquetapp.com
-  image_name: bouquet-landing.jpg
+  image: bouquet-landing.jpg
   teaser:
-    fr: "[Une appli iOS pour livrer de beaux bouquets en moins de 4h à Paris.](http://www.lewagon.org/blog/bouquet-application-livraison-fleur)"
+    fr: "Appli iOS pour livrer de beaux bouquets en moins de 4h à Paris."
     en: An iOS app for sending a bouquet in less than 4 hours in Paris.
   description:
     fr: Développement de l'API back-end et de l'appli "admin" pour gérer les commandes et les livraisons, ainsi que de la page de lancement.
@@ -200,7 +200,7 @@ bouquet:
 fabily:
   name: Fabily
   url: http://wagonmakers.herokuapp.com/
-  image_name: fabily.jpg
+  image: fabily.jpg
   teaser:
     fr: "Besoin de prototyper ? Trouver la bonne machine au bon prix."
     en: Need a prototype? Find the right machine at the right cost
@@ -210,7 +210,7 @@ fabily:
 thepixeler:
   name: The Pixeler
   url: http://studio.thepixeler.com/
-  image_name: thepixeler.jpg
+  image: thepixeler.jpg
   teaser:
     fr: "Exposez et vendez vos créations"
     en: Expose and sell your creations. Earn money from your art.
@@ -226,7 +226,7 @@ thepixeler:
 navbar:
   name: Navbar
   url: http://www.navbar.fr/
-  image_name: navbar.jpg
+  image: navbar.jpg
   teaser:
     fr: "Trouvez le meilleur bar autour de vous en un clic"
     en: "Find the cheapest coolest closest bar in one click"
@@ -240,7 +240,7 @@ navbar:
 delice_avenue:
   name: Delice Avenue
   url: https://deliceavenue.herokuapp.com/
-  image_name: deliceavenue.jpg
+  image: deliceavenue.jpg
   teaser:
     fr: "Trouve les meilleures pâtisseries maison près de chez toi"
     en: "Find the best home-made pastries nearby"
@@ -252,7 +252,7 @@ delice_avenue:
 qstomr:
   name: QstomR
   url: http://www.qstomr.com/
-  image_name: qstomr.jpg
+  image: qstomr.jpg
   teaser:
     fr: "La market-place de service entre particulier"
     en: "The market-place of every service"
@@ -264,7 +264,7 @@ qstomr:
 cforgood:
   name: C for good
   url: http://cforgood.herokuapp.com/
-  image_name: cforgood.jpg
+  image: cforgood.jpg
   teaser:
     fr: "Application de consommation positive"
     en: "Positive consumption app"
@@ -276,7 +276,7 @@ cforgood:
 needl:
   name: Needl
   url: http://www.needl.fr/
-  image_name: needl.jpg
+  image: needl.jpg
   teaser:
     fr: "Les restos préférés de vos amis"
     en: "Your close friends favorite restaurants"
@@ -288,7 +288,7 @@ needl:
 benchr:
   name: BenchR
   url: http://benchrapp.herokuapp.com/
-  image_name: needl.jpg
+  image: benchr.jpg
   teaser:
     fr: "Crée des benchmarks sur ce que tu veux"
     en: "Benchmarking made easyR"
@@ -300,7 +300,7 @@ benchr:
 moonshot:
   name: Moonshot
   url: http://www.gomoonshot.com/
-  image_name: moonshot.jpg
+  image: moonshot.jpg
   teaser:
     fr: Re-invent the way you work. Set yourself "shots"
     en: Ré-invente ta façon de travailler
@@ -312,7 +312,7 @@ moonshot:
 media_pronos:
   name: Media Pronos
   url: http://kickoff.mediapronos.com/
-  image_name: needl.jpg
+  image: mediapronos.jpg
   teaser:
     fr: "Suivez, pariez, gagnez !"
     en: "Follow, bet, win"
@@ -324,7 +324,7 @@ media_pronos:
 the_baby_boom:
   name: The Baby Boom
   url: http://www.thebabyboom.fr/
-  image_name: thebabyboom.jpg
+  image: thebabyboom.jpg
   teaser:
     fr: "L'école en ligne pour les futurs et jeunes parents"
     en: "Online school for future young parents"
@@ -336,7 +336,7 @@ the_baby_boom:
 la_reserve:
   name: La réserve
   url: http://la-reserve.herokuapp.com/
-  image_name: lareserve.jpg
+  image: lareserve.jpg
   teaser:
     fr: "Restez complet"
     en: "Stay full"
@@ -348,7 +348,7 @@ la_reserve:
 lovely_hood:
   name: Lovely Hood
   url: https://www.lovely-hood.com/
-  image_name: lovelyhood.jpg
+  image: lovelyhood.jpg
   teaser:
     fr: "Les bons plans du quartier, entre particuliers."
     en: "Spread #love in your #hood."
@@ -360,7 +360,7 @@ lovely_hood:
 fivemarks:
   name: Fivemarks
   url: http://www.fivemarks.in/
-  image_name: fivemarks.png
+  image: fivemarks.png
   teaser:
     fr: "Ne manquez pas un endroit que vous allez aimé"
     en: "Never miss a place you'll love"
@@ -372,7 +372,7 @@ fivemarks:
 firebnb:
   name: Firebnb
   url: http://www.firebnb.com/
-  image_name: firebnb.png
+  image: firebnb.png
   teaser:
     fr: "Trouvez des plans de dernière minute sur Airbnb"
     en: "Last minute airbnb deals"

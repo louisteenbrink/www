@@ -46,3 +46,38 @@
     height: 50px;
   }
 }
+
+.card-project {
+  padding: 10px 50px;
+}
+
+.card-project-header {
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #F1F1F1;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  h3 {
+    font-size: 21px;
+  }
+  p {
+    color: #B7B7B7;
+  }
+}
+.card-project-title {
+  flex: 1 1 auto;
+}
+.card-project-founders {
+  flex: 0 0 50px;
+}
+.card-project-body {
+  height: 200px;
+  background-size: cover;
+}
+
+
+
+
+
