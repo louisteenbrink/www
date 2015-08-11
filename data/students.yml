@@ -95,6 +95,153 @@ laurenc:
   project: bouquet
   image_name: laurent.png
   github: https://github.com/laurenc
-
-
-
+iliashm:
+  name: Ilias Hicham
+  project: fabily
+  image_name: ilias.jpeg
+  github: https://github.com/iliasHM
+hubertbrosseau:
+  name: Hubert Brosseau
+  project: thepixeler
+  image_name: hubert.jpeg
+  github: https://github.com/hubertbrosseau
+jeanedern:
+  name: Jean-Edern Lorillon
+  project: navbar
+  image_name: jeanedern.jpeg
+  github: https://github.com/jeanedern
+fanny_roseau:
+  name: Fanny Roseau
+  project: delice_avenue
+  image_name: fanny_roseau.jpg
+  github: https://github.com/fanny-roseau
+fanny_roseau:
+  name: Fanny Roseau
+  project: delice_avenue
+  image_name: fanny_roseau.jpg
+  github: https://github.com/fanny-roseau
+klisinac:
+  name: Kevin Lisinac
+  project: delice_avenue
+  image_name: kevin_lisinac.jpg
+  github: https://github.com/klisinac
+akerrouach:
+  name: Anouar Akerrouach
+  project: delice_avenue
+  image_name: anouar_akerrouach.jpg
+  github: https://github.com/akerrouach
+akerrouach:
+  name: Anouar Akerrouach
+  project: delice_avenue
+  image_name: anouar_akerrouach.jpg
+  github: https://github.com/akerrouach
+allanfloury:
+  name: Allan Floury
+  project: cforgood
+  image_name: allan_floury.jpg
+  github: https://github.com/allanfloury
+nasreddineboukehil:
+  name: Nasreddine Boukehil
+  project: cforgood
+  image_name: nasreddine_boukehil.jpg
+  github: https://github.com/nasreddineboukehil
+nicobiencourt:
+  name: Nico Biencourt
+  project: qstomr
+  image_name: nicolas_biencour.jpg
+  github: https://github.com/NicoBiencourt
+impromat:
+  name: Mathieu Lhoste
+  project: qstomr
+  image_name: nicolas_biencour.jpg
+  github: https://github.com/impromat
+marinados:
+  name: Marina Starkova
+  project: moonshot
+  image_name: marina_starkova.jpg
+  github: https://github.com/marinados
+willooz:
+  name: Willem Browne
+  project: moonshot
+  image_name: willem_browne.jpg
+  github: https://github.com/Willooz
+atmosfeer:
+  name: Nicolas Feer
+  project: moonshot
+  image_name: nicolas_feer.jpg
+  github: https://github.com/atmosfeer
+valentinmenard:
+  name: Valentin Ménard
+  project: needl
+  image_name: valentin_menard.jpg
+  github: https://github.com/valentinmenard
+charlottecady:
+  name: Charlotte Cady
+  project: needl
+  image_name: charlotte_cady.jpg
+  github: https://github.com/CharlotteCady
+gatienh:
+  name: Gatien Hanicotte
+  project: benchr
+  image_name: gatien_hanicotte.jpg
+  github: https://github.com/GatienH
+jaimepimenta:
+  name: Jaime Pimenta
+  project: benchr
+  image_name: jaime_pimenta.jpg
+  github: https://github.com/JaimePimenta
+douvel:
+  name: David Bellaiche
+  project: mediapronos
+  image_name: david_bellaiche.jpg
+  github: https://github.com/douvel
+douvel:
+  name: David Bellaiche
+  project: mediapronos
+  image_name: david_bellaiche.jpg
+  github: https://github.com/douvel
+bertrandbussac:
+  name: Bertrand Bussac
+  project: mediapronos
+  image_name: bertrand_bussac.jpg
+  github: https://github.com/bertrandbussac
+jowarni:
+  name: Jordan Warmoes
+  project: mediapronos
+  image_name: jordan_warmoes.jpg
+  github: https://github.com/jowarni
+tatianaprl:
+  name: Tatiana Perillo
+  project: the_baby_boom
+  image_name: tatiana-perillo.jpg
+  github: https://github.com/Tatianaprl
+chrlm:
+  name: Christopher Lemoine
+  project: the_baby_boom
+  image_name: christopher-lemoine.jpg
+  github: https://github.com/chrlm
+karine03:
+  name: Karine Bialobroda
+  project: la_reserve
+  image_name: karine-bialobroda.jpg
+  github: https://github.com/Karine03
+oliv89:
+  name: Olivia Brami
+  project: la_reserve
+  image_name: olivia-brami.jpg
+  github: https://github.com/oliv89
+nathanoba:
+  name: Nathan Obadia
+  project: la_reserve
+  image_name: nathan-obadia.jpg
+  github: https://github.com/nathanoba
+maxbrodi:
+  name: Maxime Braud
+  project: maki_wars
+  image_name: maxime-braud.jpg
+  github: https://github.com/maxbrodi
+gregcha:
+  name: Grégoire Charles
+  project: maki_wars
+  image_name: gregoire-charles.jpg
+  github: https://github.com/gregcha

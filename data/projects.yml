@@ -193,24 +193,24 @@ fabily:
     fr: "Besoin de prototyper ? Trouver la bonne machine au bon prix."
     en: Need a prototype? Find the right machine at the right cost
   description:
-    fr: Développement d'une application Rails avec geolocalisation et système de chat pour mettre en relation les "makers" et les fab labs disposant de machines pour prototyper.
-    en: Development of the web app integrating geolocation and chat system for the "makers" to find the right fab labs and communicate their needs.
+    fr: Application Rails avec geolocalisation et système de chat pour mettre en relation les "makers" et les fab labs disposant de machines spécialisées.
+    en: Rails app integrating geolocation and chat system so that "makers" can find the right fablabs and the right machines.
 thepixeler:
   name: The Pixeler
   url: http://studio.thepixeler.com/
   image_name: thepixeler.jpg
   teaser:
-    fr: "Exposez et vendez vos creations"
-    en: Expose and sell your creations. Earn money from your art
+    fr: "Exposez et vendez vos créations"
+    en: Expose and sell your creations. Earn money from your art.
   description:
     fr: |
-      Développement d'une application back-office Rails connecté à l’API
-      de Shopify pour permettre aux artistes de mettre facilement leur
-      oeuvres en ligne, les customiser et accéder au dashboard de leur vente.
+      Application back-office Rails connectée à l’API
+      de Shopify permettant aux artistes de mettre leur
+      oeuvres en ligne, les personnaliser et accéder au dashboard de leurs ventes.
       Cerise sur le gateau, le back-office est aussi connecté à l'API de l'imprimeur !
     en: |
-      Development of a back-office connected to Shopify API for the artist to easily upload their artworks and control their sales on a dashboard.
-      Cherry on the cake, the back-office is also connected to the printing service API !
+      Rails back-office connected to Shopify API enabling artists to easily upload their artworks and control their sales on their dashboard.
+      Cherry on the cake, the back-office is also connected to the printing service's API!
 navbar:
   name: Navbar
   url: http://www.navbar.fr/
@@ -273,7 +273,7 @@ needl:
       Application "mobile-first" pour partager ses meilleurs restaurants avec ses amis proches facebook.
     en: |
       A responsive web-app to share your best restaurants address with your closest facebook friends.
-needl:
+benchr:
   name: BenchR
   url: http://benchrapp.herokuapp.com/
   image_name: needl.jpg
@@ -285,6 +285,18 @@ needl:
       Application Rails + extension Chrome pour créer des benchmarks sur n'importe quoi (restaurants, produits, etc...)
     en: |
       Rails app + Chrome extension to create and share benchmarks on everything (restaurants, products, etc...)
+moonshot:
+  name: Moonshot
+  url: http://www.gomoonshot.com/
+  image_name: moonshot.jpg
+  teaser:
+    fr: Re-invent the way you work. Set yourself "shots"
+    en: Ré-invente ta façon de travailler
+  description:
+    fr: |
+      Application SaaS de gestion du travail. Définis toi-même tes objectifs, donne des badges à tes buddies, redonne du sens à tes projets de travail.
+    en: |
+      SaaS app for work management. Define your own goals, join projects and give badges to your work buddies. Organize your work in a fun and meaningful way.
 media_pronos:
   name: Media Pronos
   url: http://kickoff.mediapronos.com/
@@ -298,7 +310,7 @@ media_pronos:
     en: |
       Rails app to create and share forecasts, follow people with best stats and earn money!
 the_baby_boom:
-  name: Media Pronos
+  name: The Baby Boom
   url: http://www.thebabyboom.fr/
   image_name: thebabyboom.jpg
   teaser:
