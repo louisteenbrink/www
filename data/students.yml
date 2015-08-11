@@ -1,10 +1,12 @@
 thomasceccaldi:
   name: Thomas Ceccaldi
+  image: thomas-ceccaldi.jpeg
   project: roadstr
   github: https://github.com/thomasceccaldi
   twitter: https://twitter.com/thomasceccaldi
 borenstejn:
   name: Jérôme Borenstejn
+  image: jerome-borenstejn.jpeg
   project: roadstr
   github: https://github.com/borenstejn
   twitter: https://twitter.com/borenstejn
@@ -16,232 +18,247 @@ carolinecc:
 valentinchaput:
   name: Valentin Chaput
   project: parol
-  image_name: valentin.jpg
+  image: valentin.jpg
   github: https://github.com/valentinchaput
   twitter: https://twitter.com/valentinchaput
 arthur_h:
   name: Arthur Hagiage
   project: krawd
-  image_name: arthur.jpg
+  image: arthur.jpg
   github: https://github.com/Arthurhge
   twitter: https://twitter.com/arthur_h
 juliendebray:
   name: "Julien Debray"
   project: explorizers
-  image_name: julien-debray.jpeg
+  image: julien-debray.jpeg
   github: https://github.com/juliendebray
 florian-j:
   name: "Florian Joulié"
   project: explorizers
-  image_name: florian-joulié.jpeg
+  image: florian-joulie.jpeg
   github: https://github.com/florian-j
 norydev:
   name: "Fabien Loup"
   project: sharkrank
-  image_name: fabien-loup.jpeg
+  image: fabien-loup.jpeg
   github: https://github.com/NoryDev
 jacnut:
   name: "Jacques de Liedekerke"
   project: sharkrank
-  image_name: jacques-de-liedekerke.jpeg
+  image: jacques-de-liedekerke.jpeg
   github: https://github.com/jacnut
 neocanada:
   name: "Sebastien Le Moan"
   project: yummycook
-  image_name: sebastien-lemoan.jpg
+  image: sebastien-lemoan.jpg
   github: https://github.com/neocanada
 tchret:
   name: "Thomas Chrétien"
   project: trackguru
-  image_name: tchret.jpeg
+  image: tchret.jpeg
   github: https://github.com/tchret
 baptistehamain:
   name: Baptiste Hamain
   project: fizzer
-  image_name: baptiste-hamain.jpeg
+  image: baptiste-hamain.png
   github: https://github.com/BaptisteHamain
 vincentporquet:
   name: Vincent Porquet
   project: fizzer
-  image_name: vincent-porquet.jpeg
+  image: vincent-porquet.png
   github: https://github.com/vincentporquet
 edouardpo:
   name: Edouard Polese
   project: vogmark
-  image_name: edouard.png
+  image: edouard.png
   github: https://github.com/edouardpo
 olivierrg:
   name: Olivier Godement
   project: capy
-  image_name: olivier_god.png
+  image: olivier_god.png
   github: https://github.com/olivierrg
 estelleabn:
   name: Estelle Aubouin
   project: lecolis
-  image_name: estelle.png
+  image: estelle.png
   github: https://github.com/Estelleabn
 benoitchibrac:
   name: Benoit Chibrac
   project: tint
-  image_name: benoit.png
+  image: benoit.png
   github: https://github.com/Beub
 melnav:
   name: Melanie Navarro
   project: mavillejetaide
-  image_name: melanie.png
+  image: melanie.png
   github: https://github.com/melnav
 laurenc:
   name: Laurent Cuzin
   project: bouquet
-  image_name: laurent.png
+  image: laurent.png
   github: https://github.com/laurenc
 iliashm:
   name: Ilias Hicham
   project: fabily
-  image_name: ilias.jpeg
+  image: ilias.jpeg
   github: https://github.com/iliasHM
 hubertbrosseau:
   name: Hubert Brosseau
   project: thepixeler
-  image_name: hubert.jpeg
+  image: hubert.jpeg
   github: https://github.com/hubertbrosseau
 jeanedern:
   name: Jean-Edern Lorillon
   project: navbar
-  image_name: jeanedern.jpeg
+  image: jeanedern.jpeg
   github: https://github.com/jeanedern
 fanny_roseau:
   name: Fanny Roseau
   project: delice_avenue
-  image_name: fanny_roseau.jpg
+  image: fanny_roseau.jpg
   github: https://github.com/fanny-roseau
 fanny_roseau:
   name: Fanny Roseau
   project: delice_avenue
-  image_name: fanny_roseau.jpg
+  image: fanny_roseau.jpg
   github: https://github.com/fanny-roseau
 klisinac:
   name: Kevin Lisinac
   project: delice_avenue
-  image_name: kevin_lisinac.jpg
+  image: kevin_lisinac.jpg
   github: https://github.com/klisinac
 akerrouach:
   name: Anouar Akerrouach
   project: delice_avenue
-  image_name: anouar_akerrouach.jpg
+  image: anouar_akerrouach.jpg
   github: https://github.com/akerrouach
 akerrouach:
   name: Anouar Akerrouach
   project: delice_avenue
-  image_name: anouar_akerrouach.jpg
+  image: anouar_akerrouach.jpg
   github: https://github.com/akerrouach
 allanfloury:
   name: Allan Floury
   project: cforgood
-  image_name: allan_floury.jpg
+  image: allan_floury.jpg
   github: https://github.com/allanfloury
 nasreddineboukehil:
   name: Nasreddine Boukehil
   project: cforgood
-  image_name: nasreddine_boukehil.jpg
+  image: nasreddine_boukehil.jpg
   github: https://github.com/nasreddineboukehil
 nicobiencourt:
   name: Nico Biencourt
   project: qstomr
-  image_name: nicolas_biencour.jpg
+  image: nicolas_biencour.jpg
   github: https://github.com/NicoBiencourt
 impromat:
   name: Mathieu Lhoste
   project: qstomr
-  image_name: nicolas_biencour.jpg
+  image: nicolas_biencour.jpg
   github: https://github.com/impromat
 marinados:
   name: Marina Starkova
   project: moonshot
-  image_name: marina_starkova.jpg
+  image: marina_starkova.jpg
   github: https://github.com/marinados
 willooz:
   name: Willem Browne
   project: moonshot
-  image_name: willem_browne.jpg
+  image: willem_browne.jpg
   github: https://github.com/Willooz
 atmosfeer:
   name: Nicolas Feer
   project: moonshot
-  image_name: nicolas_feer.jpg
+  image: nicolas_feer.jpg
   github: https://github.com/atmosfeer
 valentinmenard:
   name: Valentin Ménard
   project: needl
-  image_name: valentin_menard.jpg
+  image: valentin_menard.jpg
   github: https://github.com/valentinmenard
 charlottecady:
   name: Charlotte Cady
   project: needl
-  image_name: charlotte_cady.jpg
+  image: charlotte_cady.jpg
   github: https://github.com/CharlotteCady
 gatienh:
-  name: Gatien Hanicotte
+  name: Gatien Hannicote
   project: benchr
-  image_name: gatien_hanicotte.jpg
+  image: gatien_hannicote.jpg
   github: https://github.com/GatienH
 jaimepimenta:
   name: Jaime Pimenta
   project: benchr
-  image_name: jaime_pimenta.jpg
+  image: jaime_pimenta.jpg
   github: https://github.com/JaimePimenta
 douvel:
   name: David Bellaiche
   project: mediapronos
-  image_name: david_bellaiche.jpg
+  image: david_bellaiche.jpg
   github: https://github.com/douvel
 douvel:
   name: David Bellaiche
   project: mediapronos
-  image_name: david_bellaiche.jpg
+  image: david_bellaiche.jpg
   github: https://github.com/douvel
 bertrandbussac:
   name: Bertrand Bussac
   project: mediapronos
-  image_name: bertrand_bussac.jpg
+  image: bertrand_bussac.jpg
   github: https://github.com/bertrandbussac
 jowarni:
   name: Jordan Warmoes
   project: mediapronos
-  image_name: jordan_warmoes.jpg
+  image: jordan_warmoes.jpg
   github: https://github.com/jowarni
 tatianaprl:
   name: Tatiana Perillo
   project: the_baby_boom
-  image_name: tatiana-perillo.jpg
+  image: tatiana-perillo.jpg
   github: https://github.com/Tatianaprl
 chrlm:
   name: Christopher Lemoine
   project: the_baby_boom
-  image_name: christopher-lemoine.jpg
+  image: christopher-lemoine.jpg
   github: https://github.com/chrlm
 karine03:
   name: Karine Bialobroda
   project: la_reserve
-  image_name: karine-bialobroda.jpg
+  image: karine-bialobroda.jpg
   github: https://github.com/Karine03
 oliv89:
   name: Olivia Brami
   project: la_reserve
-  image_name: olivia-brami.jpg
+  image: olivia-brami.jpg
   github: https://github.com/oliv89
 nathanoba:
   name: Nathan Obadia
   project: la_reserve
-  image_name: nathan-obadia.jpg
+  image: nathan-obadia.jpg
   github: https://github.com/nathanoba
 maxbrodi:
   name: Maxime Braud
   project: maki_wars
-  image_name: maxime-braud.jpg
+  image: maxime-braud.jpg
   github: https://github.com/maxbrodi
 gregcha:
   name: Grégoire Charles
   project: maki_wars
-  image_name: gregoire-charles.jpg
+  image: gregoire-charles.jpg
   github: https://github.com/gregcha
+tdeschamps:
+  name: Thomas Deschamps
+  project: fivemarks
+  image: thomas-deschamps.jpeg
+  github: https://github.com/tdeschamps
+eschults:
+  name: Edouard Schults
+  project: lovely_hood
+  image: edouard-schults.jpeg
+  github: https://github.com/Eschults
+thrry:
+  name: Thierry Jouannic
+  project: firebnb
+  image: thierry.png
+  github: https://github.com/Thrry

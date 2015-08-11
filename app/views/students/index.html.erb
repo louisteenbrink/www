@@ -31,25 +31,25 @@
   </div>
 </div>
 
-
-<div id="alumni">
-  <h2 class="section-header-big">Témoignages</h2>
+<div id="alumni" class="padded">
+  <h2 class="section-header-big text-center">Témoignages</h2>
   <div class="container">
     <div class="row">
-      <div class="co-xs-12 col-sm-6 col-md-4">
-        <div class="card-student">
-          <div class="card-student-content">
-            <h3>Cedric Menteau</h3>
-            <p>Bogosse tavu</p>
+      <% Static::STUDENTS.each do |username, infos|%>
+        <div class="co-xs-12 col-sm-6 col-md-4">
+          <div class="card-student">
+            <div class="card-student-content">
+              <h3><%= infos[:name]%></h3>
+              <p><%= infos[:project] %></p>
+            </div>
+            <%= image_tag "alumni/#{infos[:image]}", class: "card-student-img img-circle"%>
           </div>
-          <img src="http://unsplash.it/100/100" alt="" class="card-student-img img-circle">
         </div>
-      </div>
+      <% end %>
     </div>
   </div>
 </div>
 
-
-<div id="products">
-  <h2 class="section-header-big">Les produits de nos élèves</h2>
+<div id="products" class="padded">
+  <h2 class="section-header-big text-center">Les produits de nos élèves</h2>
 </div>
