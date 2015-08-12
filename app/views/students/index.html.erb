@@ -40,7 +40,7 @@
           <div class="card-student">
             <div class="card-student-content">
               <h3><%= infos[:name]%></h3>
-              <p><%= infos[:project] %></p>
+              <p><%= Static::PROJECTS[infos[:project].to_sym][:name] %></p>
             </div>
             <%= image_tag "alumni/#{infos[:image]}", class: "card-student-img img-circle"%>
           </div>

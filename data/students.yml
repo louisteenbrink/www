@@ -199,17 +199,17 @@ douvel:
   github: https://github.com/douvel
 douvel:
   name: David Bellaiche
-  project: mediapronos
+  project: media_pronos
   image: david_bellaiche.jpg
   github: https://github.com/douvel
 bertrandbussac:
   name: Bertrand Bussac
-  project: mediapronos
+  project: media_pronos
   image: bertrand_bussac.jpg
   github: https://github.com/bertrandbussac
 jowarni:
   name: Jordan Warmoes
-  project: mediapronos
+  project: media_pronos
   image: jordan_warmoes.jpg
   github: https://github.com/jowarni
 tatianaprl:
@@ -265,7 +265,7 @@ thrry:
 samirelm:
   name: Samir El Maoujoudi
   project: monmecanicien
-  image: samir_el_maoujoudi.jpg
+  image: samir_elmaoujoudi.jpg
   github: https://github.com/samirElm
 pierretucoulat:
   name: Pierre Tucoulat
