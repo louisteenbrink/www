@@ -262,3 +262,18 @@ thrry:
   project: firebnb
   image: thierry.png
   github: https://github.com/Thrry
+samirelm:
+  name: Samir El Maoujoudi
+  project: monmecanicien
+  image: samir_el_maoujoudi.jpg
+  github: https://github.com/samirElm
+pierretucoulat:
+  name: Pierre Tucoulat
+  project: monmecanicien
+  image: pierre_tucoulat.jpg
+  github: https://github.com/pierretucoulat
+hbarb:
+  name: Hugo Barberot
+  project: monmecanicien
+  image: hugo_barberot.jpg
+  github: https://github.com/ hbarb

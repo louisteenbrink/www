@@ -381,3 +381,15 @@ firebnb:
       Application Rails et algorithme de détection de la chute des prix pour trouver des bons plans sur Airbnb.
     en: |
       Rails app and scraping engine to automatically detect Airbnb last minute offers.
+monmecanicien:
+  name: Mon mécanicien
+    url: https://www.monmecanicien.fr/
+    image: monmecanicien.png
+    teaser:
+      fr: "Votre mécanicien à domicile"
+      en: "Your mechanic at home"
+    description:
+      fr: |
+        Platforme Rails de réservation de mécanicien à domicile. Analyse automatique du numéro d'immatriculation, génération de devis pour tout type d'intervention, dashboard de controle pour le mécanicien, géolocalisation, paiement... Un des projets les plus complets codés en 10 jours au Wagon !
+      en: |
+        Booking platform for mechanics coming to your place. Licence plate recognition, automated generation of repair estimates, mechanic's dashboard, geolocation... This is a really stuffed project!
