@@ -26,7 +26,7 @@
   align-items: center;
   background: white;
   padding: 20px;
-  margin: 10px;
+  margin: 14px 0px;
   border-radius: 3px;
   box-shadow: 1px 1px 3px #F5F4F4;
   &-content {
@@ -35,35 +35,32 @@
       font-size: 18px;
       font-weight: normal;
       margin-bottom: 6px;
+      margin-top: 0px;
     }
     p {
       font-size: 16px;
       color: #CCCCCC;
+      margin-bottom: 0px;
     }
   }
   &-img {
-    flex: 0 0 50px;
-    height: 50px;
+    flex: 0 0 60px;
+    height: 60px;
   }
 }
-
-.card-project {
-  padding: 10px 50px;
-}
-
 .card-project-header {
-  background-color: white;
   border-radius: 3px;
-  box-shadow: 1px 1px 3px #F1F1F1;
-  padding: 10px 25px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  margin-top: 50px;
   h3 {
-    font-size: 21px;
+    font-size: 26px;
+    font-weight: bold;
   }
   p {
     color: #B7B7B7;
+    font-size: 19px;
   }
 }
 .card-project-title {
@@ -71,13 +68,78 @@
 }
 .card-project-founders {
   flex: 0 0 50px;
+  height: 50px;
+  margin-left: 10px;
 }
 .card-project-body {
-  height: 200px;
+  padding-top: 50px;
+  h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #A9A9A9;
+  }
+}
+.card-project-picture {
+  width: 100%;
+  margin: 20px auto 0 auto;
+  height: 400px;
   background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 5px 5px 0 0;
+  .filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background-image: linear-gradient(-225deg, RGBA(0, 0, 0, 0) 0%, RGBA(0, 0, 0, 0) 0%);
+  }
 }
 
-
-
-
-
+.card-testimonial {
+  position: relative;
+  height: 200px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  color: white;
+  margin: 20px auto;
+  &-bg{
+    background-size: cover;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  &-shadow {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 80%);
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  &-description {
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    h3 {
+      font-size: 15px;
+    }
+    p {
+      font-size: 12px !important;
+    }
+  }
+  &-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index:2;
+    background: black;
+    opacity: 0;
+    &:hover{
+      opacity: 0.1;
+    }
+  }
+}

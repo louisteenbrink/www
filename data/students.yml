@@ -47,6 +47,11 @@ jacnut:
   project: sharkrank
   image: jacques-de-liedekerke.jpeg
   github: https://github.com/jacnut
+olixier:
+  name: "Olivier Xu"
+  project: kudoz
+  image: olivier.png
+  github: https://github.com/olixier
 neocanada:
   name: "Sebastien Le Moan"
   project: yummycook
@@ -132,11 +137,6 @@ akerrouach:
   project: delice_avenue
   image: anouar_akerrouach.jpg
   github: https://github.com/akerrouach
-akerrouach:
-  name: Anouar Akerrouach
-  project: delice_avenue
-  image: anouar_akerrouach.jpg
-  github: https://github.com/akerrouach
 allanfloury:
   name: Allan Floury
   project: cforgood
@@ -155,7 +155,7 @@ nicobiencourt:
 impromat:
   name: Mathieu Lhoste
   project: qstomr
-  image: nicolas_biencour.jpg
+  image: mathieu_lhoste.jpg
   github: https://github.com/impromat
 marinados:
   name: Marina Starkova

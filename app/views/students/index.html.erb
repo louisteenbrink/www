@@ -34,45 +34,97 @@
 <div id="alumni" class="padded">
   <h2 class="section-header-big text-center">Nos élèves</h2>
   <div class="container">
-    <div class="row">
-      <% Static::STUDENTS.each do |username, infos|%>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <div class="row">
+        <% @students.each do |username, infos|%>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card-student">
+              <div class="card-student-content">
+                <h3><%= infos[:name]%></h3>
+                <p><%= Static::PROJECTS[infos[:project].to_sym][:name] %></p>
+              </div>
+              <%= image_tag "alumni/#{infos[:image]}", class: "card-student-img img-circle"%>
+            </div>
+          </div>
+        <% end %>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="card-student">
             <div class="card-student-content">
-              <h3><%= infos[:name]%></h3>
-              <p><%= Static::PROJECTS[infos[:project].to_sym][:name] %></p>
+              <h3>Vous ?</h3>
+              <p>Votre projet</p>
             </div>
-            <%= image_tag "alumni/#{infos[:image]}", class: "card-student-img img-circle"%>
+            <%= image_tag "http://placehold.it/60x60", class: "card-student-img img-circle"%>
           </div>
         </div>
-      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="stories">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="card-testimonial">
+              <span class="card-testimonial-bg" style="background-image: url('http://unsplash.it/300/200?image=12')"></span>
+              <span class="card-testimonial-shadow"></span>
+              <span class="card-testimonial-description">
+                <h3>Olivier Xu</h3>
+                <p>Paris, France</p>
+              </span>
+              <a href="#" class="card-link"></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="card-testimonial">
+              <span class="card-testimonial-bg" style="background-image: url('http://unsplash.it/300/200?image=4')"></span>
+              <span class="card-testimonial-shadow"></span>
+              <span class="card-testimonial-description">
+                <h3>Julie de Pimodan</h3>
+                <p>Paris, France</p>
+              </span>
+              <a href="#" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <div id="products" class="padded">
   <h2 class="section-header-big text-center">Leurs projets</h2>
-
-  <div class="container">
-    <div class="row">
-      <% Static::PROJECTS.each do |key, infos|%>
-        <div class="col-xs-12">
-          <div class="card-project">
-            <div class="card-project-header">
-              <div class="card-project-title">
-                <h3><%= infos[:name] %></h3>
-                <p><%= (locale == I18n.default_locale) ? infos[:teaser][:fr] : infos[:teaser][:en]%></p>
-              </div>
-              <div class="card-project-founders">
-                <img src="http://placehold.it/50x50" alt="" class="img-circle">
-              </div>
+  <% @projects.each do |key, infos|%>
+    <div class="container project">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <div class="card-project-header">
+            <div class="card-project-title">
+              <h3><%= infos[:name] %></h3>
+              <p><%= (locale == I18n.default_locale) ? infos[:teaser][:fr] : infos[:teaser][:en]%></p>
             </div>
-            <div class="card-project-body" style="background-image: url('<%=image_path 'projects/' + infos[:image]%>');">
+            <% founders = @students.select {|_, student| student[:project].to_sym == key } %>
+            <% founders.each do |_, founder| %>
+              <%= image_tag "alumni/#{founder[:image]}", class: "img-circle card-project-founders" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-project-body bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+            <h4>Final project</h4>
+            <p class="text-readable"><%= (locale == I18n.default_locale) ? infos[:description][:fr] : infos[:description][:en]%></p>
+            <div class="card-project-picture" style="background-image: url('<%=image_path 'projects/' + infos[:image]%>');">
+              <div class="filter"></div>
             </div>
           </div>
         </div>
-      <% end %>
+      </div>
     </div>
-  </div>
-
-</div>]
+  <% end %>
+</div>
