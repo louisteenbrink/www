@@ -52,8 +52,9 @@
   border-radius: 3px;
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
-  margin-top: 50px;
+  margin-top: 20px;
+  padding: 10px;
+  position: relative;
   h3 {
     font-size: 26px;
     font-weight: bold;
@@ -62,6 +63,14 @@
     color: #B7B7B7;
     font-size: 19px;
   }
+}
+.project-toggle {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  cursor: pointer;
 }
 .card-project-title {
   flex: 1 1 auto;

@@ -10,6 +10,115 @@ maki_wars:
       Jeu mobile en javascript. Créez votre maki, choisissez votre camp, saumon ou avocat et battez vous !
     en: |
       Javascript mobile game. Create your maki, fight and choose your side. Are you in the "avocado" or the "salmon" team?
+monmecanicien:
+  name: Mon mécanicien
+  url: https://www.monmecanicien.fr/
+  image: monmecanicien.png
+  teaser:
+    fr: "Votre mécanicien à domicile"
+    en: "Your mechanic at home"
+  description:
+    fr: |
+      Platforme Rails de réservation de mécanicien à domicile. Analyse automatique du numéro d'immatriculation, génération de devis pour tout type d'intervention, dashboard de controle pour le mécanicien, géolocalisation, paiement... Un des projets les plus complets codés en 10 jours au Wagon !
+    en: |
+      Booking platform for mechanics coming to your place. Licence plate recognition, automated generation of repair estimates, mechanic's dashboard, geolocation... This is a really stuffed project!
+needl:
+  name: Needl
+  url: http://www.needl.fr/
+  image: needl.jpg
+  teaser:
+    fr: "Les restos préférés de vos amis"
+    en: "Your close friends favorite restaurants"
+  description:
+    fr: |
+      Application "mobile-first" pour partager ses meilleurs restaurants avec ses amis proches facebook.
+    en: |
+      A responsive web-app to share your best restaurants address with your closest facebook friends.
+media_pronos:
+  name: Media Pronos
+  url: http://kickoff.mediapronos.com/
+  image: mediapronos.jpg
+  teaser:
+    fr: "Suivez, pariez, gagnez !"
+    en: "Follow, bet, win"
+  description:
+    fr: |
+      Application Rails pour créer & partager des pronostics sportifs, s'abonner aux meilleurs pronostiqueurs de la place, suivre leur stats et gagner de l'argent.
+    en: |
+      Rails app to create and share forecasts, follow people with best stats and earn money!
+
+the_baby_boom:
+  name: The Baby Boom
+  url: http://www.thebabyboom.fr/
+  image: thebabyboom.jpg
+  teaser:
+    fr: "L'école en ligne pour les futurs et jeunes parents"
+    en: "Online school for future young parents"
+  description:
+    fr: |
+      MOOC pour préparer la naissance de votre premier enfant, avec des videos et des quizzes.
+    en: |
+      MOOC to prepare your first child's birth, with videos and quizzes.
+la_reserve:
+  name: La réserve
+  url: http://la-reserve.herokuapp.com/
+  image: lareserve.jpg
+  teaser:
+    fr: "Restez complet"
+    en: "Stay full"
+  description:
+    fr: |
+      Logiciel web pour permettre aux restaurants de mieux gérer leurs réservations.
+    en: |
+      Web software for restaurants to optimize their bookings.
+lovely_hood:
+  name: Lovely Hood
+  url: https://www.lovely-hood.com/
+  image: lovelyhood.jpg
+  teaser:
+    fr: "Les bons plans du quartier, entre particuliers."
+    en: "Spread #love in your #hood."
+  description:
+    fr: |
+      Plateforme Rails de gestion de services au sein d'un quartier.
+    en: |
+      Rails platform to share plans with you hood-mates.
+fivemarks:
+  name: Fivemarks
+  url: http://www.fivemarks.in/
+  image: fivemarks.png
+  teaser:
+    fr: "Ne manquez pas un endroit que vous allez aimé"
+    en: "Never miss a place you'll love"
+  description:
+    fr: |
+      Plateforme Rails pour partager ses histoires et ses guides de voyage.
+    en: |
+      Rails platform to share your travel stories and guides with your friends.
+kudoz:
+  name: Kudoz
+  url: http://www.getkudoz.com
+  image: kudoz-landing.jpg
+  teaser:
+    fr: "Laisser les offres d'emploi venir à vous. Le tinder de l'emploi."
+    en: "Tinder iOS app for job search."
+  description:
+    fr: "Développement de l'API back-end, de l'algorithme de filtrage lié à linkedin, et de l'interface-web côté RH."
+    en: "Development of the back-end API, the recommendation engine based on Linkedin, and the web-application for HR."
+  links:
+    facebook: https://www.facebook.com/getkudoz
+fizzer:
+  name: Fizzer
+  url: http://www.fizzer.fr/
+  image: fizzer-landing.jpg
+  teaser:
+    fr: "Envoyez vos cartes postales depuis votre smartphone"
+    en: "Send postcards directly from your smartphone"
+  description:
+    fr: "Développement de l'appli web responsive fizzer."
+    en: "Development of the fully functional application (with payment, custom signatures, virtual or physical sending,..)"
+  links:
+    facebook: https://www.facebook.com/fizzer.official
 roadstr:
   name: Roadstr
   url: http://www.roadstr.fr
@@ -22,29 +131,6 @@ roadstr:
     en: Roadstr beta rails app, with a marketplace payment based on MangoPay
   links:
     twitter: https://twitter.com/roadstr_cars
-mashare:
-  name: Ma Share École
-  url: https://www.mashareecole.com/
-  image: mashareecole-landing.jpg
-  teaser:
-    fr: "Le réseau social pour parents d'élèves de la même école"
-    en: Social network for parents with children in the same school.
-  description:
-    fr: Beta de l'application Rails et intégration graphique, interface de connexion avec code parent sécurisé.
-    en: Development of Ruby on Rails web-app Ma Share École and setup of a secure connexion code for the parents.
-  links:
-    linkedin: https://fr.linkedin.com/pub/caroline-carriere/40/36/b1b
-    facebook: https://www.facebook.com/pages/MA-SHARE-ÉCOLE/1422248518078090
-parol:
-  name: Parol
-  url: http://parol-production.herokuapp.com/
-  image: parol-landing.jpg
-  teaser:
-    fr: "Le Github de l'Assemblée nationale"
-    en: Github for discussing French law
-  description:
-    fr: Développement d'un scraper de Légifrance, connexion à l'API GitHub pour le stockage des lois / amendements et prototypage de l'interface de visualisation.
-    en: GitHub for the French law. Légifrance scraping, GitHub API integration and UI prototyping of the rails applicaiton.
 krawd:
   name: Krawd
   url: http://www.krawd.com/
@@ -93,6 +179,29 @@ yummycook:
   links:
     facebook: https://www.facebook.com/YummyCook.co
     twitter: https://twitter.com/yummycook_co
+mashare:
+  name: Ma Share École
+  url: https://www.mashareecole.com/
+  image: mashareecole-landing.jpg
+  teaser:
+    fr: "Le réseau social pour parents d'élèves de la même école"
+    en: Social network for parents with children in the same school.
+  description:
+    fr: Beta de l'application Rails et intégration graphique, interface de connexion avec code parent sécurisé.
+    en: Development of Ruby on Rails web-app Ma Share École and setup of a secure connexion code for the parents.
+  links:
+    linkedin: https://fr.linkedin.com/pub/caroline-carriere/40/36/b1b
+    facebook: https://www.facebook.com/pages/MA-SHARE-ÉCOLE/1422248518078090
+parol:
+  name: Parol
+  url: http://parol-production.herokuapp.com/
+  image: parol-landing.jpg
+  teaser:
+    fr: "Le Github de l'Assemblée nationale"
+    en: Github for discussing French law
+  description:
+    fr: Développement d'un scraper de Légifrance, connexion à l'API GitHub pour le stockage des lois / amendements et prototypage de l'interface de visualisation.
+    en: GitHub for the French law. Légifrance scraping, GitHub API integration and UI prototyping of the rails applicaiton.
 trackguru:
   name: TrackGuru
   url: http://www.trackguru.co/
@@ -106,30 +215,6 @@ trackguru:
   links:
     facebook: https://www.facebook.com/trackguruapp
     twitter: https://twitter.com/trackguruapp
-kudoz:
-  name: Kudoz
-  url: http://www.getkudoz.com
-  image: kudoz-landing.jpg
-  teaser:
-    fr: "Laisser les offres d'emploi venir à vous. Le tinder de l'emploi."
-    en: "Tinder iOS app for job search."
-  description:
-    fr: "Développement de l'API back-end, de l'algorithme de filtrage lié à linkedin, et de l'interface-web côté RH."
-    en: "Development of the back-end API, the recommendation engine based on Linkedin, and the web-application for HR."
-  links:
-    facebook: https://www.facebook.com/getkudoz
-fizzer:
-  name: Fizzer
-  url: http://www.fizzer.fr/
-  image: fizzer-landing.jpg
-  teaser:
-    fr: "Envoyez vos cartes postales depuis votre smartphone"
-    en: "Send postcards directly from your smartphone"
-  description:
-    fr: "Développement de l'appli web responsive fizzer."
-    en: "Development of the fully functional application (with payment, custom signatures, virtual or physical sending,..)"
-  links:
-    facebook: https://www.facebook.com/fizzer.official
 vogmark:
   name: Vogmark
   url: http://www.vogmark.com/
@@ -273,18 +358,6 @@ cforgood:
       Application mobile-first pour trouvez des bons plans et consommer autrement autour de soi.
     en: |
       Mobile-first application to find good & social plans around us and change our consumption habits.
-needl:
-  name: Needl
-  url: http://www.needl.fr/
-  image: needl.jpg
-  teaser:
-    fr: "Les restos préférés de vos amis"
-    en: "Your close friends favorite restaurants"
-  description:
-    fr: |
-      Application "mobile-first" pour partager ses meilleurs restaurants avec ses amis proches facebook.
-    en: |
-      A responsive web-app to share your best restaurants address with your closest facebook friends.
 benchr:
   name: BenchR
   url: http://benchrapp.herokuapp.com/
@@ -309,66 +382,6 @@ moonshot:
       Application SaaS de gestion du travail. Définis toi-même tes objectifs, donne des badges à tes buddies, redonne du sens à tes projets de travail.
     en: |
       SaaS app for work management. Define your own goals, join projects and give badges to your work buddies. Organize your work in a fun and meaningful way.
-media_pronos:
-  name: Media Pronos
-  url: http://kickoff.mediapronos.com/
-  image: mediapronos.jpg
-  teaser:
-    fr: "Suivez, pariez, gagnez !"
-    en: "Follow, bet, win"
-  description:
-    fr: |
-      Application Rails pour créer & partager des pronostics sportifs, s'abonner aux meilleurs pronostiqueurs de la place, suivre leur stats et gagner de l'argent.
-    en: |
-      Rails app to create and share forecasts, follow people with best stats and earn money!
-the_baby_boom:
-  name: The Baby Boom
-  url: http://www.thebabyboom.fr/
-  image: thebabyboom.jpg
-  teaser:
-    fr: "L'école en ligne pour les futurs et jeunes parents"
-    en: "Online school for future young parents"
-  description:
-    fr: |
-      MOOC pour préparer la naissance de votre premier enfant, avec des videos et des quizzes.
-    en: |
-      MOOC to prepare your first child's birth, with videos and quizzes.
-la_reserve:
-  name: La réserve
-  url: http://la-reserve.herokuapp.com/
-  image: lareserve.jpg
-  teaser:
-    fr: "Restez complet"
-    en: "Stay full"
-  description:
-    fr: |
-      Logiciel web pour permettre aux restaurants de mieux gérer leurs réservations.
-    en: |
-      Web software for restaurants to optimize their bookings.
-lovely_hood:
-  name: Lovely Hood
-  url: https://www.lovely-hood.com/
-  image: lovelyhood.jpg
-  teaser:
-    fr: "Les bons plans du quartier, entre particuliers."
-    en: "Spread #love in your #hood."
-  description:
-    fr: |
-      Plateforme Rails de gestion de services au sein d'un quartier.
-    en: |
-      Rails platform to share plans with you hood-mates.
-fivemarks:
-  name: Fivemarks
-  url: http://www.fivemarks.in/
-  image: fivemarks.png
-  teaser:
-    fr: "Ne manquez pas un endroit que vous allez aimé"
-    en: "Never miss a place you'll love"
-  description:
-    fr: |
-      Plateforme Rails pour partager ses histoires et ses guides de voyage.
-    en: |
-      Rails platform to share your travel stories and guides with your friends.
 firebnb:
   name: Firebnb
   url: http://www.firebnb.com/
@@ -381,15 +394,4 @@ firebnb:
       Application Rails et algorithme de détection de la chute des prix pour trouver des bons plans sur Airbnb.
     en: |
       Rails app and scraping engine to automatically detect Airbnb last minute offers.
-monmecanicien:
-  name: Mon mécanicien
-  url: https://www.monmecanicien.fr/
-  image: monmecanicien.png
-  teaser:
-    fr: "Votre mécanicien à domicile"
-    en: "Your mechanic at home"
-  description:
-    fr: |
-      Platforme Rails de réservation de mécanicien à domicile. Analyse automatique du numéro d'immatriculation, génération de devis pour tout type d'intervention, dashboard de controle pour le mécanicien, géolocalisation, paiement... Un des projets les plus complets codés en 10 jours au Wagon !
-    en: |
-      Booking platform for mechanics coming to your place. Licence plate recognition, automated generation of repair estimates, mechanic's dashboard, geolocation... This is a really stuffed project!
+

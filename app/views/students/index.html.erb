@@ -109,16 +109,18 @@
             <% founders.each do |_, founder| %>
               <%= image_tag "alumni/#{founder[:image]}", class: "img-circle card-project-founders" %>
             <% end %>
+            <a class="project-toggle" data-target="#project-<%= key %>"></a>
           </div>
         </div>
       </div>
     </div>
-    <div class="card-project-body bg-white">
+    <div class="card-project-body bg-white hidden" id="project-<%= key %>">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-10 col-sm-offset-1">
             <h4>Final project</h4>
             <p class="text-readable"><%= (locale == I18n.default_locale) ? infos[:description][:fr] : infos[:description][:en]%></p>
+            <%= link_to infos[:name], infos[:url] %>
             <div class="card-project-picture" style="background-image: url('<%=image_path 'projects/' + infos[:image]%>');">
               <div class="filter"></div>
             </div>
