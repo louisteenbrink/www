@@ -1,0 +1,132 @@
+<%= content_for(:title) do %>
+  <%= t(".title") %>
+<% end %>
+
+<%= content_for(:description) do %>
+  <%= t(".description") %>
+<% end %>
+
+<%= content_for(:after_js) do %>
+  <script>
+    $(function(){
+      $('.press-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+      });
+    });
+  </script>
+<% end %>
+
+<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path('banners/bg-home.jpg')%>');">
+  <div class="banner-gradient-shadow"></div>
+  <div class="banner-content">
+    <h1><%= t(".our_alumni") %></h1>
+    <p>
+      <%= t(".our_alumni_details_html") %>
+    </p>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
+  </div>
+</div>
+
+<div id="alumni" class="padded">
+  <h2 class="section-header-big text-center">Nos élèves</h2>
+  <div class="container">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <div class="row">
+        <% @students.each do |username, infos|%>
+          <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="card-student">
+              <div class="card-student-content">
+                <h3><%= infos[:name]%></h3>
+                <p><%= Static::PROJECTS[infos[:project].to_sym][:name] %></p>
+              </div>
+              <%= image_tag "alumni/#{infos[:image]}", class: "card-student-img img-circle"%>
+            </div>
+          </div>
+        <% end %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card-student">
+            <div class="card-student-content">
+              <h3>Vous ?</h3>
+              <p>Votre projet</p>
+            </div>
+            <%= image_tag "http://placehold.it/60x60", class: "card-student-img img-circle"%>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="stories">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <div class="card-testimonial">
+              <span class="card-testimonial-bg" style="background-image: url('http://unsplash.it/300/200?image=12')"></span>
+              <span class="card-testimonial-shadow"></span>
+              <span class="card-testimonial-description">
+                <h3>Olivier Xu</h3>
+                <p>Paris, France</p>
+              </span>
+              <a href="#" class="card-link"></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <div class="card-testimonial">
+              <span class="card-testimonial-bg" style="background-image: url('http://unsplash.it/300/200?image=4')"></span>
+              <span class="card-testimonial-shadow"></span>
+              <span class="card-testimonial-description">
+                <h3>Julie de Pimodan</h3>
+                <p>Paris, France</p>
+              </span>
+              <a href="#" class="card-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="products" class="padded">
+  <h2 class="section-header-big text-center">Leurs projets</h2>
+  <% @projects.each do |key, infos|%>
+    <div class="container project">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <div class="card-project-header">
+            <div class="card-project-title">
+              <h3><%= infos[:name] %></h3>
+              <p><%= (locale == I18n.default_locale) ? infos[:teaser][:fr] : infos[:teaser][:en]%></p>
+            </div>
+            <% founders = @students.select {|_, student| student[:project].to_sym == key } %>
+            <% founders.each do |_, founder| %>
+              <%= image_tag "alumni/#{founder[:image]}", class: "img-circle card-project-founders" %>
+            <% end %>
+            <a class="project-toggle" data-target="#project-<%= key %>"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-project-body bg-white hidden" id="project-<%= key %>">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+            <h4>Final project</h4>
+            <p class="text-readable"><%= (locale == I18n.default_locale) ? infos[:description][:fr] : infos[:description][:en]%></p>
+            <%= link_to infos[:name], infos[:url] %>
+            <div class="card-project-picture" style="background-image: url('<%=image_path 'projects/' + infos[:image]%>');">
+              <div class="filter"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

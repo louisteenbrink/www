@@ -1,0 +1,397 @@
+maki_wars:
+  name: Maki Wars
+  url: http://www.makiwars.com/
+  image: makiwars.jpg
+  teaser:
+    fr: "Choisissez votre camp, avocat ou saumon ?"
+    en: "Choose your side, avocado or salmon?"
+  description:
+    fr: |
+      Jeu mobile en javascript. Créez votre maki, choisissez votre camp, saumon ou avocat et battez vous !
+    en: |
+      Javascript mobile game. Create your maki, fight and choose your side. Are you in the "avocado" or the "salmon" team?
+monmecanicien:
+  name: Mon mécanicien
+  url: https://www.monmecanicien.fr/
+  image: monmecanicien.png
+  teaser:
+    fr: "Votre mécanicien à domicile"
+    en: "Your mechanic at home"
+  description:
+    fr: |
+      Platforme Rails de réservation de mécanicien à domicile. Analyse automatique du numéro d'immatriculation, génération de devis pour tout type d'intervention, dashboard de controle pour le mécanicien, géolocalisation, paiement... Un des projets les plus complets codés en 10 jours au Wagon !
+    en: |
+      Booking platform for mechanics coming to your place. Licence plate recognition, automated generation of repair estimates, mechanic's dashboard, geolocation... This is a really stuffed project!
+needl:
+  name: Needl
+  url: http://www.needl.fr/
+  image: needl.jpg
+  teaser:
+    fr: "Les restos préférés de vos amis"
+    en: "Your close friends favorite restaurants"
+  description:
+    fr: |
+      Application "mobile-first" pour partager ses meilleurs restaurants avec ses amis proches facebook.
+    en: |
+      A responsive web-app to share your best restaurants address with your closest facebook friends.
+media_pronos:
+  name: Media Pronos
+  url: http://kickoff.mediapronos.com/
+  image: mediapronos.jpg
+  teaser:
+    fr: "Suivez, pariez, gagnez !"
+    en: "Follow, bet, win"
+  description:
+    fr: |
+      Application Rails pour créer & partager des pronostics sportifs, s'abonner aux meilleurs pronostiqueurs de la place, suivre leur stats et gagner de l'argent.
+    en: |
+      Rails app to create and share forecasts, follow people with best stats and earn money!
+
+the_baby_boom:
+  name: The Baby Boom
+  url: http://www.thebabyboom.fr/
+  image: thebabyboom.jpg
+  teaser:
+    fr: "L'école en ligne pour les futurs et jeunes parents"
+    en: "Online school for future young parents"
+  description:
+    fr: |
+      MOOC pour préparer la naissance de votre premier enfant, avec des videos et des quizzes.
+    en: |
+      MOOC to prepare your first child's birth, with videos and quizzes.
+la_reserve:
+  name: La réserve
+  url: http://la-reserve.herokuapp.com/
+  image: lareserve.jpg
+  teaser:
+    fr: "Restez complet"
+    en: "Stay full"
+  description:
+    fr: |
+      Logiciel web pour permettre aux restaurants de mieux gérer leurs réservations.
+    en: |
+      Web software for restaurants to optimize their bookings.
+lovely_hood:
+  name: Lovely Hood
+  url: https://www.lovely-hood.com/
+  image: lovelyhood.jpg
+  teaser:
+    fr: "Les bons plans du quartier, entre particuliers."
+    en: "Spread #love in your #hood."
+  description:
+    fr: |
+      Plateforme Rails de gestion de services au sein d'un quartier.
+    en: |
+      Rails platform to share plans with you hood-mates.
+fivemarks:
+  name: Fivemarks
+  url: http://www.fivemarks.in/
+  image: fivemarks.png
+  teaser:
+    fr: "Ne manquez pas un endroit que vous allez aimé"
+    en: "Never miss a place you'll love"
+  description:
+    fr: |
+      Plateforme Rails pour partager ses histoires et ses guides de voyage.
+    en: |
+      Rails platform to share your travel stories and guides with your friends.
+kudoz:
+  name: Kudoz
+  url: http://www.getkudoz.com
+  image: kudoz-landing.jpg
+  teaser:
+    fr: "Laisser les offres d'emploi venir à vous. Le tinder de l'emploi."
+    en: "Tinder iOS app for job search."
+  description:
+    fr: "Développement de l'API back-end, de l'algorithme de filtrage lié à linkedin, et de l'interface-web côté RH."
+    en: "Development of the back-end API, the recommendation engine based on Linkedin, and the web-application for HR."
+  links:
+    facebook: https://www.facebook.com/getkudoz
+fizzer:
+  name: Fizzer
+  url: http://www.fizzer.fr/
+  image: fizzer-landing.jpg
+  teaser:
+    fr: "Envoyez vos cartes postales depuis votre smartphone"
+    en: "Send postcards directly from your smartphone"
+  description:
+    fr: "Développement de l'appli web responsive fizzer."
+    en: "Development of the fully functional application (with payment, custom signatures, virtual or physical sending,..)"
+  links:
+    facebook: https://www.facebook.com/fizzer.official
+roadstr:
+  name: Roadstr
+  url: http://www.roadstr.fr
+  image: roadstr-landing.jpg
+  teaser:
+    fr: "Partez en week-end au volant d'une ancienne !"
+    en: Roadstr is the AirBnB of vintage cars.
+  description:
+    fr: Beta de l'application Rails de Roadstr, avec gestion de paiement type marketplace basé sur MangoPay
+    en: Roadstr beta rails app, with a marketplace payment based on MangoPay
+  links:
+    twitter: https://twitter.com/roadstr_cars
+krawd:
+  name: Krawd
+  url: http://www.krawd.com/
+  image: krawd-landing.jpg
+  teaser:
+    fr: Plateforme pour connecter les marques et les créatifs
+    en: Daily social brand content made by the crowd
+  description:
+    fr: Beta de l'application Rails et intégration graphique.
+    en: Development of Ruby on Rails web-app Krawd.
+  links:
+    facebook: https://www.facebook.com/pages/Krawd/1543950642508926?fref=ts
+explorizers:
+  name: Explorizers
+  image: explorizers.png
+  url: http://www.explorizers.com/en
+  image: explorizers-landing.png
+  teaser:
+    fr: Trouvez de l'inspiration pour vos itinéraires de voyage.
+    en: Get inspired by your friends and create cool travel plans.
+  description:
+    fr: Application Rails avec une carte de voyage dynamique permettant les interactions sociales.
+    en: Explorizers web-app with an interactive travel map enabling social interactions.
+  links:
+    twitter: https://twitter.com/Explorizers_
+sharkrank:
+  name: Sharkrank
+  url: http://sharkrank.co/
+  image: sharkrank-landing.jpg
+  teaser:
+    fr: "Startups, notez vos investisseurs !"
+    en: Crowdsourced rating system for VCs.
+  description:
+    fr: Développement de l'application Rails et peuplement de la base de données.
+    en: Development of Ruby on Rails web-app Sharkrank.
+yummycook:
+  name: Yummy Cook
+  url: http://www.yummycook.fr/
+  image: yummycook-landing.jpg
+  teaser:
+    fr: Découvrez les recettes des gourmets du monde entier !
+    en: Discover recipes from the best gourmets
+  description:
+    fr: Développement de l'application Rails
+    en: Development of Ruby on Rails web-app Yummy Cook.
+  links:
+    facebook: https://www.facebook.com/YummyCook.co
+    twitter: https://twitter.com/yummycook_co
+mashare:
+  name: Ma Share École
+  url: https://www.mashareecole.com/
+  image: mashareecole-landing.jpg
+  teaser:
+    fr: "Le réseau social pour parents d'élèves de la même école"
+    en: Social network for parents with children in the same school.
+  description:
+    fr: Beta de l'application Rails et intégration graphique, interface de connexion avec code parent sécurisé.
+    en: Development of Ruby on Rails web-app Ma Share École and setup of a secure connexion code for the parents.
+  links:
+    linkedin: https://fr.linkedin.com/pub/caroline-carriere/40/36/b1b
+    facebook: https://www.facebook.com/pages/MA-SHARE-ÉCOLE/1422248518078090
+parol:
+  name: Parol
+  url: http://parol-production.herokuapp.com/
+  image: parol-landing.jpg
+  teaser:
+    fr: "Le Github de l'Assemblée nationale"
+    en: Github for discussing French law
+  description:
+    fr: Développement d'un scraper de Légifrance, connexion à l'API GitHub pour le stockage des lois / amendements et prototypage de l'interface de visualisation.
+    en: GitHub for the French law. Légifrance scraping, GitHub API integration and UI prototyping of the rails applicaiton.
+trackguru:
+  name: TrackGuru
+  url: http://www.trackguru.co/
+  image: trackguru-landing.png
+  teaser:
+    fr: Découvrez et notez les meilleurs sons electro tous les jours
+    en: Share & rate best electronic tracks every day
+  description:
+    fr: "Design et développement de l'appli web TrackGuru, avec un search basé sur Soundcloud et Youtube, un système d'upvotes et de notifications."
+    en: Development of trackguru web-app with Soundcloud and Youtube track search, upvote and notification features.
+  links:
+    facebook: https://www.facebook.com/trackguruapp
+    twitter: https://twitter.com/trackguruapp
+vogmark:
+  name: Vogmark
+  url: http://www.vogmark.com/
+  image: vogmark-landing.jpg
+  teaser:
+    fr: "Soyez informé quand le prix d'un produit chute !"
+    en: "Stay tuned if the price of your favorite products decreases"
+  description:
+    fr: "Développement de l'appli web Vogmark, du bookmarklet pour tracker vos produit depuis un site e-commerce externe, et du robot de scraping pour vous alerter quand le prix de votre produit chute!"
+    en: |
+      Development of the web application,
+      of the bookmarklet to track products from external web pages,
+      and of the engine to automate the scraping on a daily basis."
+capy:
+  name: Capy
+  url: http://capy.herokuapp.com
+  image: capy-landing.jpg
+  teaser:
+    fr: "Générez un tableau de capitalisation excel en trois clics. Le rêve de tout avocat !"
+    en: |
+      A SaaS app for building legal & financial documents: capitalization tables, share purchase warrants, etc.
+      And export them to Excel and Word right in one click. Every lawyer’s dream!
+  description:
+    fr: "Développement de l'appli web Ruby on Rails Capy, hébergée sur Heroku"
+    en: "Development of the complete app"
+lecolis:
+  name: Le Colis
+  url: http://www.lecolis.com
+  image: lecolis-landing.jpg
+  teaser:
+    fr: "Une appli web pour recevoir des colis de cuisine française à l'étranger"
+    en: "Receive French food boxes, when you live abroad and miss French cuisine."
+  description:
+    fr: "Développement d'un site de vente en ligne pour intégrer de nouvelles fonctionnalités."
+    en: "Development of the website"
+tint:
+  name: Tint
+  url: #
+  image: tint-landing.jpg
+  teaser:
+    fr: "Une appli SaaS pour le marché de l'art, permettant à ses acteurs d'optimiser leur activité (commandes, présentation des galleries,..)."
+    en: "A SaaS app for the art market. For an easy management of your galleries, artists and orders"
+  description:
+    fr: Développement de la beta de Tint. Version mobile finalisée coming soon !
+    en: Tint is in beta development and the team wants to keep it secret until it is perfect! Keep you posted soon.
+mavillejetaide:
+  name: Ma ville je t'aide
+  url: http://www.mavillejetaide.org
+  image: mavillejetaide-landing.jpg
+  teaser:
+    fr: Une appli web pour découvir des associations et participer à des actions bénévoles à Paris.
+    en: Discover local associations and volunteer in Paris.
+  description:
+    fr: Développement de l'appli web Ruby on Rails mavillejetaide.
+    en: Development of Ruby on Rails web-app "ma ville je t’aide".
+  links:
+    facebook: https://www.facebook.com/pages/Paris-je-taide/632398100147248?ref=ts&fref=ts
+bouquet:
+  name: Bouquet
+  url: http://www.bouquetapp.com
+  image: bouquet-landing.jpg
+  teaser:
+    fr: "Appli iOS pour livrer de beaux bouquets en moins de 4h à Paris."
+    en: An iOS app for sending a bouquet in less than 4 hours in Paris.
+  description:
+    fr: Développement de l'API back-end et de l'appli "admin" pour gérer les commandes et les livraisons, ainsi que de la page de lancement.
+    en: Developement of the back-end API and admin web-application for managing payment, orders, deliveries, etc.
+fabily:
+  name: Fabily
+  url: http://wagonmakers.herokuapp.com/
+  image: fabily.jpg
+  teaser:
+    fr: "Besoin de prototyper ? Trouver la bonne machine au bon prix."
+    en: Need a prototype? Find the right machine at the right cost
+  description:
+    fr: Application Rails avec geolocalisation et système de chat pour mettre en relation les "makers" et les fab labs disposant de machines spécialisées.
+    en: Rails app integrating geolocation and chat system so that "makers" can find the right fablabs and the right machines.
+thepixeler:
+  name: The Pixeler
+  url: http://studio.thepixeler.com/
+  image: thepixeler.jpg
+  teaser:
+    fr: "Exposez et vendez vos créations"
+    en: Expose and sell your creations. Earn money from your art.
+  description:
+    fr: |
+      Application back-office Rails connectée à l’API
+      de Shopify permettant aux artistes de mettre leur
+      oeuvres en ligne, les personnaliser et accéder au dashboard de leurs ventes.
+      Cerise sur le gateau, le back-office est aussi connecté à l'API de l'imprimeur !
+    en: |
+      Rails back-office connected to Shopify API enabling artists to easily upload their artworks and control their sales on their dashboard.
+      Cherry on the cake, the back-office is also connected to the printing service's API!
+navbar:
+  name: Navbar
+  url: http://www.navbar.fr/
+  image: navbar.jpg
+  teaser:
+    fr: "Trouvez le meilleur bar autour de vous en un clic"
+    en: "Find the cheapest coolest closest bar in one click"
+  description:
+    fr: |
+      Développement de l'appli-web navbar avec un algorithme basé sur la géolocalisation et les ratings google / yelp / tripadvisor.
+      Création de l'API navbar pour connecter le backend à une appli iOS (en cours de développement).
+    en: |
+      Development of navbar web-app with a search engine based on geolocation and google/yelp/tripadvisor/etc.. ratings.
+      Creation of navbar API to connect the backend to an iOS app (currently submitted on the App store).
+delice_avenue:
+  name: Delice Avenue
+  url: https://deliceavenue.herokuapp.com/
+  image: deliceavenue.jpg
+  teaser:
+    fr: "Trouve les meilleures pâtisseries maison près de chez toi"
+    en: "Find the best home-made pastries nearby"
+  description:
+    fr: |
+      Une market-place pour les patissiers amateur et les fans de bons gateaux !
+    en: |
+      Rails market-place for amateur pastry cooks and pastry fans.
+qstomr:
+  name: QstomR
+  url: http://www.qstomr.com/
+  image: qstomr.jpg
+  teaser:
+    fr: "La market-place de service entre particulier"
+    en: "The market-place of every service"
+  description:
+    fr: |
+      Market-place pour les petits services entre particulier.
+    en: |
+      A market place for small services.
+cforgood:
+  name: C for good
+  url: http://cforgood.herokuapp.com/
+  image: cforgood.jpg
+  teaser:
+    fr: "Application de consommation positive"
+    en: "Positive consumption app"
+  description:
+    fr: |
+      Application mobile-first pour trouvez des bons plans et consommer autrement autour de soi.
+    en: |
+      Mobile-first application to find good & social plans around us and change our consumption habits.
+benchr:
+  name: BenchR
+  url: http://benchrapp.herokuapp.com/
+  image: benchr.jpg
+  teaser:
+    fr: "Crée des benchmarks sur ce que tu veux"
+    en: "Benchmarking made easyR"
+  description:
+    fr: |
+      Application Rails + extension Chrome pour créer des benchmarks sur n'importe quoi (restaurants, produits, etc...)
+    en: |
+      Rails app + Chrome extension to create and share benchmarks on everything (restaurants, products, etc...)
+moonshot:
+  name: Moonshot
+  url: http://www.gomoonshot.com/
+  image: moonshot.jpg
+  teaser:
+    fr: Re-invent the way you work. Set yourself "shots"
+    en: Ré-invente ta façon de travailler
+  description:
+    fr: |
+      Application SaaS de gestion du travail. Définis toi-même tes objectifs, donne des badges à tes buddies, redonne du sens à tes projets de travail.
+    en: |
+      SaaS app for work management. Define your own goals, join projects and give badges to your work buddies. Organize your work in a fun and meaningful way.
+firebnb:
+  name: Firebnb
+  url: http://www.firebnb.com/
+  image: firebnb.png
+  teaser:
+    fr: "Trouvez des plans de dernière minute sur Airbnb"
+    en: "Last minute airbnb deals"
+  description:
+    fr: |
+      Application Rails et algorithme de détection de la chute des prix pour trouver des bons plans sur Airbnb.
+    en: |
+      Rails app and scraping engine to automatically detect Airbnb last minute offers.
+
