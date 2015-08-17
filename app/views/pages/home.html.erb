@@ -6,21 +6,7 @@
   <%= t(".description") %>
 <% end %>
 
-<%= content_for(:after_js) do %>
-  <script>
-    $(function(){
-      $('.press-container').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        fade: true,
-        cssEase: 'linear'
-      });
-    });
-  </script>
-<% end %>
-
-<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path('banners/bg-home.jpg')%>');">
+<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path('banners/home.jpg')%>');">
   <div class="banner-gradient-shadow"></div>
   <div class="banner-content">
     <h1><%= t(".catchline") %></h1>
@@ -230,7 +216,7 @@
   </div>
 </div>
 
-<div class="banner banner-flat" style="background-image: url('<%= image_path('banners/bg-home-secondary.jpg')%>')">
+<div class="banner banner-flat" style="background-image: url('<%= image_path('banners/home-secondary.jpg')%>')">
   <div class="banner-flat-filter banner-flat-filter-green"></div>
   <div class="banner-content text-center press-container">
     <div><%= image_tag "press/techcrunch.png" %></div>

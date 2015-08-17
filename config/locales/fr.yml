@@ -116,3 +116,8 @@ fr:
         <br>
         Tous ont une belle histoire. Découvrez-les !
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
+  cities:
+    show:
+      title: "Le Wagon - Bootcamp de Ruby on Rails à %{city}"
+      description: |
+        Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
