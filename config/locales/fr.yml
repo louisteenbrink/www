@@ -113,9 +113,7 @@ fr:
       our_alumni: "Nos alumni"
       our_alumni_details_html: |
         Plus de 350 élèves talentueux partageant la même passion et la même culture tech.
-        Beaucoup sont développeurs junior, beaucoup ont monté leur startup autour du projet codé au Wagon.
-        <br>
-        Tous ont une belle histoire. Découvrez-les !
+        Beaucoup sont développeurs junior, beaucoup ont monté leur startup autour du projet codé au Wagon. Tous ont une belle histoire. Découvrez-les !
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
   cities:
     show:
