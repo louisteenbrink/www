@@ -154,7 +154,7 @@
 .card-staff {
   display: flex;
   align-items: center;
-  justify-content: space around;
+  justify-content: space-around;
   margin: 30px auto;
 }
 .card-staff-description {
@@ -177,7 +177,7 @@
   flex: 0 0 300px;
   display: flex;
   align-items: center;
-  justify-content: space around;
+  justify-content: space-around;
   background: white;
 }
 .card-staff-img {
@@ -201,3 +201,16 @@
   }
 }
 
+@media (max-width: $screen-sm) {
+  .card-staff {
+    flex-direction: column;
+  }
+  .card-staff-description {
+    padding: 0px;
+    margin: 20px;
+  }
+  .card-staff-infos {
+    flex: 0 0 150px !important;
+    margin-left: 0px;
+  }
+}

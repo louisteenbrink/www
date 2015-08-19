@@ -3,16 +3,26 @@
 .banner {
   background-size: cover;
   color: white;
-  padding: 200px;
   position: relative;
   z-index: 0;
+  padding: 150px;
+}
+.banner-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0px;
+  .banner-content {
+    flex: 0 1 750px;
+  }
 }
 .banner-content {
   position: relative;
   z-index: 2;
 }
 
-// Specific background classes (gradient / flat colo bg / etc..)
+// Specific background classes (gradient / flat color bg / etc..)
 
 .banner-gradient {
   h1 {
@@ -49,7 +59,6 @@
 
 .banner-flat {
   padding: 100px 0;
-  padding-bottom: 0;
   .banner-flat-filter {
     position: absolute;
     top: 0;
@@ -60,6 +69,9 @@
     opacity: 0.9;
     &-green {
       background: green;
+    }
+    &-black {
+      background: rgba(0, 0, 0, 0.7);
     }
   }
 }

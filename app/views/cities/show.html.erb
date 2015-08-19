@@ -24,7 +24,7 @@
 
             <div class="card-staff">
               <div class="card-staff-description">
-                <h3><%= teacher.capitalize %></h3>
+                <h3><%= teacher.split("_").first.capitalize %></h3>
                 <%= markdown(locale == I18n.default_locale ? Static::STAFF[teacher.to_sym][:description][:fr] : Static::STAFF[teacher.to_sym][:description][:en])%>
               </div>
               <div class="card-staff-infos">
@@ -40,5 +40,15 @@
         <% end %>
       </div>
     </div>
+  </div>
+</div>
+
+<div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city[:images][:bottom])%>');">
+  <div class="banner-flat-filter banner-flat-filter-black"></div>
+  <div class="banner-content text-center">
+    <% if @city[:location]%>
+      <h2><%= @city[:location] %></h2>
+    <% end %>
+    <p><%= @city[:address] %></p>
   </div>
 </div>

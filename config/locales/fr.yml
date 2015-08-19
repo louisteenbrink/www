@@ -99,10 +99,11 @@ fr:
       theoretical_intro: "Introduction théorique & live-code des professeurs projeté sur grand écran."
       pair_programming: "Challenges en binôme ou par groupe sur la plateforme autocorrigée du Wagon, encadrés par les professeurs et teacher assistants."
       pair_programming_next: "Poursuite des challenges avec ré-explication des notions-clefs.."
+      yoga: "Jeudi après-midi, séance de Yoga avec Claire pour se détendre et remettre ses idées en place."
       live_code: Live-code d'élèves devant la classe from scratch !
       talk: |
         Selon la journée, séance de soutien, mentoring sur les projets, masterclasses
-        (derniers invités: Pierre Valade CEO Sunrise, Romain Niccoli CTO Criteo, Ludovic Le Moan CEO Sigfox..), meetup,
+        (derniers invités: Pierre Valade CEO Sunrise, Scott Chacon CIO Github, Romain Niccoli CTO Criteo..), meetup,
         dîners, évènements divers & variés
   students:
     index:

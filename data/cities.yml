@@ -2,7 +2,8 @@ paris:
   active: true
   name: Paris
   locale: fr
-  address: "25, rue du Petit Musc 75004 Paris"
+  location: Le Wagon
+  address: "16 Villa Gaudelet, 75011 Paris"
   description:
     fr: "En plein coeur de Paris, à 100m de l'île Saint-Louis et de la place de la Bastille, notre coding space occupe 140m2 au second étage de <a href='http://www.thefamily.co/'>The Family</a>, l'occasion pour les élèves du Wagon de plonger dans l'écosystème tech et entrepreneurial."
     en: |
@@ -48,6 +49,7 @@ brussels:
   active: true
   name: Brussels
   locale: en
+  location: Costation
   address: "Place Sainte-Gudule 5, 1000 Brussels"
   description:
     en: |
@@ -97,6 +99,7 @@ losangeles:
   active: true
   name: Los Angeles
   locale: en
+  location: dots.work
   address: "113 N San Vicente Blvd. Beverly Hills, CA 90211"
   description:
     en: |
@@ -119,7 +122,7 @@ losangeles:
   next_session_fragment: losangeles-june-2015
   staff:  # cf data/staff.yml
     - anna
-    - thomas-hartman
+    - thomas_hartman
     - yoann
   programs:
     bootcamp: true
@@ -132,6 +135,7 @@ losangeles:
 beirut:
   active: true
   name: Beirut
+  location: BDD
   locale: en
   address: "BDD 1243, Beirut Digital District, Bachoura, Beirut, Lebanon"
   description:
@@ -181,6 +185,7 @@ lille:
   active: true
   name: Lille
   locale: fr
+  location: Euratechnologies
   address: "165 avenue de Bretagne, 59000 Lille"
   description:
     en: |
@@ -223,7 +228,7 @@ bordeaux:
     en: |
       In the heart of Bordeaux and near all public transportation, le Wagon welcomes you in a unique setting. Bordeaux Métropole Numérique won the FrenchTech label, le Wagon will allow you to discover the digital ecosystem from Bordeaux, rich in opportunities.
   images:
-    banner: banners/bordeaux-bg.jpg
+    banner: banners/bordeaux.jpg
     bottom: banners/local-bordeaux.jpg
   filter_color: "rgba(245, 0, 0, 0.28);"
   geo:

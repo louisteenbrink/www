@@ -730,7 +730,7 @@ anna:
     # - url: https://twitter.com/yoannbohbot
     #   icon: twitter
 
-thomas-hartman:
+thomas_hartman:
   name: Thomas Hartman
   role: "Lead frontend teacher"
   image_name: thomas-hartman.jpg

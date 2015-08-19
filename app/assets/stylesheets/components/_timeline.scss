@@ -4,33 +4,34 @@
   margin-bottom: 10px;
   color: #666666;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 17px;
   p {
     margin: 0;
   }
 }
 .day-hour {
-  flex: 0 0 50px;
-  line-height: 50px;
+  flex: 0 0 60px;
+  line-height: 60px;
   background: white;
   border-radius: 10px;
   text-align: center;
   border: 1px solid #F4F1F1;
-  font-size: 14px;
-  color: #B3B3B3;
+  font-size: 15px;
+  color: #383838;
+  font-weight: normal;
 }
 .day-description {
   flex: 1 1 auto;
   background: white;
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   border: 1px solid #F4F1F1;
 }
 .day-circle {
-  flex: 0 0 17px;
+  flex: 0 0 18px;
   margin: 10px;
-  height: 17px;
-  border-radius: 50%;
+  height: 18px;
+  border-radius: 9px;
   background-color: #F6F6F6;
   z-index: 2;
 }
@@ -57,13 +58,13 @@
   align-self: stretch;
   background: #E9E8E8;
   position: relative;
-  left: 69px;
+  left: 79px;
 }
 .day-picture {
   background-position: center;
-  height: 200px;
+  height: 250px;
   background-size: cover;
-  margin-left: 88px;
+  margin-left: 98px;
   margin-bottom: 50px;
   border-radius: 5px;
   border: 1px solid #F4F1F1;
