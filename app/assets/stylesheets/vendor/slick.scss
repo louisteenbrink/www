@@ -6,7 +6,7 @@
   border-radius: 4px;
 }
 .slick-dots {
-  top: -15% !important;
+  top: -50px !important;
 }
 .slick-dots li button:before {
   font-size: 25px;
@@ -17,4 +17,10 @@
 }
 .slick-slider {
   margin-bottom: 0px;
+}
+
+@media (max-width: $screen-sm) {
+ .slick-slide img {
+   width: 100% !important;
+ }
 }

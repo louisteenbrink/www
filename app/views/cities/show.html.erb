@@ -1,0 +1,59 @@
+<%= content_for(:title) do %>
+  <%= t(".title", city: @city[:name]) %>
+<% end %>
+
+<%= content_for(:description) do %>
+  <%= t(".description", city: @city[:name]) %>
+<% end %>
+
+<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path(@city[:images][:banner])%>');">
+  <div class="banner-gradient-shadow"></div>
+  <div class="banner-content">
+    <h1><%= t ".become_dev" %></h1>
+    <p><%= t ".city_arrival", city: @city[:name] %></p>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
+  </div>
+</div>
+
+
+<div id="staff" class="padded">
+  <h2 class="section-header text-center"><%= t ".staff", city: @city[:name]%></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <% @city[:staff].each do |teacher| %>
+        <div class="row">
+          <div class="col-xs-12">
+
+            <div class="card-staff">
+              <div class="card-staff-description">
+                <h3><%= teacher.split("_").first.capitalize %></h3>
+                <%= markdown(locale == I18n.default_locale ? Static::STAFF[teacher.to_sym][:description][:fr] : Static::STAFF[teacher.to_sym][:description][:en])%>
+              </div>
+              <div class="card-staff-infos">
+                <div class="card-staff-role">
+                  <h4><%= Static::STAFF[teacher.to_sym][:name]%></h4>
+                  <p><%= Static::STAFF[teacher.to_sym][:role] %></p>
+                </div>
+                <%= image_tag "teachers/#{Static::STAFF[teacher.to_sym][:image_name]}", class: "img-circle card-staff-img" %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city[:images][:bottom])%>');">
+  <div class="banner-flat-filter banner-flat-filter-black"></div>
+  <div class="banner-content text-center">
+    <% if @city[:location]%>
+      <h2><%= @city[:location] %></h2>
+    <% end %>
+    <p><%= @city[:address] %></p>
+    <br>
+    <button class="btn-transparent">Next meetup: Apero talk avec Boris Paillard</button>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+<div class="nav">
+  <div class="nav-container">
+    <div class="nav-dropdown nav-link">
+      <a href="#" class="nav-link" data-toggle="dropdown">
+        <span id="city-select">City</span> <i class="fa fa-caret-down"></i>
+      </a>
+      <ul class="dropdown-menu nav-menu">
+        <% Static::CITIES.each do |city, infos| %>
+          <li>
+            <%= link_to infos[:name], city_path(city: city) %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <hr class="hidden-xs hidden-sm">
+    <%= link_to t(".menu.fullstack", default: "Programme"), program_path, class: "nav-link with-city-hash" %>
+    <hr class="hidden-xs hidden-sm">
+    <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "nav-link with-city-hash" %>
+    <%= link_to t(".apply", default: "Apply"), apply_path, class: "nav-link apply with-city-hash" %>
+  </div>
+</div>
+<%= content_for :after_js do %>
+  <%= javascript_tag do %>
+    $(function(){
+
+      var addCityHash = function(city) {
+        $(".with-city-hash").each(function(index, link) {
+          var oldHref = $(this).attr("href").split("#")[0];
+          $(this).attr("href", oldHref + "#" + city);
+        });
+      }
+
+      var city = window.location.hash.substring(1);
+      $("#city-select").text(city);
+      addCityHash(city);
+
+      $(".nav-menu a").on("click", function(){
+        var newCity = $(this).text();
+        location.hash = newCity;
+        $("#city-select").text(newCity);
+        addCityHash(newCity);
+      });
+
+      <% if params[:city] %>
+        <% name = Static::CITIES[params[:city].to_sym][:name]%>
+        $("#city-select").text("<%= name %>");
+        addCityHash("<%= name %>");
+      <% end %>
+    });
+  <% end %>
+<% end %>
