@@ -6,10 +6,26 @@
     <% end %>
 
     <div class="navbar-wagon-spacer"></div>
+
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= link_to t(".menu.cities"), "#", class: "dropdown-toggle navbar-wagon-link", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <% Static::CITIES.each do |city, infos| %>
+            <li>
+              <%= link_to infos[:name], city_path(city: city) %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <%= link_to t(".menu.fullstack", default: "Programme"), program_path, class: "navbar-wagon-link" %>
+    <hr>
+    <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "navbar-wagon-link" %>
+    <hr>
     <%= link_to t(".menu.ondemand", default: "On-Demand"), "https://ondemand.lewagon.org/", target: "_blank", class: "navbar-wagon-link navbar-wagon-item" %>
-    <hr>
-    <%= link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link navbar-wagon-item" %>
-    <hr>
-    <%= link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link navbar-wagon-item" %>
+    <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link" %>
+    <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link" %>
   </div>
 </nav>

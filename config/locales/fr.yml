@@ -1,4 +1,12 @@
 fr:
+  shared:
+    footer:
+      news_and_resources: "News, ressources gratuites & bons plans"
+      enter_your_mail: Entrez votre email
+      stay_tuned: Restez informé
+    navbar:
+      menu:
+        cities: Villes
   newsletter:
     teaser: "<p>Soyez informé des prochaines <strong>masterclasses</strong>, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.</p>"
     city_teaser_html: 'Soyez informé de nos prochains <strong>événements</strong> à %{city}, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.'
@@ -20,15 +28,16 @@ fr:
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      discover_us: Découvrez notre programme
       prep_work: Préparation
-      prep_work_details: |
-        Chaque élève doit valider des tutoriels du "Wagon On-Demand" avant de rejoindre le programme.
-        Nous prenons des élèves extrêment motivés, ayant les bonnes attentes et
-        ayant envie de commencer sur les chapeaux de roue dès le premier jour.
+      prep_work_details_html: |
+        Avant de rejoindre le programme, préparez-vous grâce aux tutoriels du <i>Wagon On-Demand</i>.
+        Nous prenons uniquement des élèves extrêment motivés, ayant les bonnes attentes et
+        l'envie de se dépasser tous les jours pendant les 9 semaines.
       bootcamp: Bootcamp
       bootcamp_details: |
-        Le programme de 9 semaines est très intensif, chaque journée compte et apporte une brique fondamentale du développement web. Le Wagon
-        itère son programme pédagogique depuis deux ans et c'est débarrassé de toutes les frictions qui ralentissent l'apprentissage du code.
+        Le programme de 9 semaines est très intensif, chaque journée compte et apporte une nouvelle brique fondamentale. Le Wagon
+        itère son programme pédagogique depuis deux ans et s'est débarrassé de toutes les frictions qui ralentissent l'apprentissage du code.
       algorithm: "Algorithmie & architecture logicielle"
       web_development: Apprentissage du développement web
       mindset: "Mindset & culture technique"
@@ -36,16 +45,15 @@ fr:
       tools: "Outils & workflow de Startup"
       new_me: Nouveau moi
       new_me_details: |
-        Le Wagon demande à chaque élève de valider des tutoriels On-Demand avant de rejoindre le programme.
+        Ré-inventez votre métier grâce à de nouveaux outils et à un mindset technique, trouvez un poste de développeur, lancez vos propres produits.
+        Changez de vie pour de bon.
       check_program: En savoir plus sur le programme
       our_cities: Nos villes
       open_yours: Montez un Wagon dans votre ville
       already_a_lot: Déja 354 entrepreneurs convertis.
       and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
-      news_and_resources: "News, ressources gratuites & bons plans"
-      enter_your_mail: Entrez votre email
-      stay_tuned: Restez informé
+
     program:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |
@@ -120,3 +128,7 @@ fr:
       title: "Le Wagon - Bootcamp de Ruby on Rails à %{city}"
       description: |
         Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
+      become_dev: "Devenez développeur en 2 mois"
+      city_arrival: "Le programme fullstack du Wagon s'installe à %{city}"
+      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      staff: "Le staff à %{city}"

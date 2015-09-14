@@ -1,20 +1,64 @@
 // Your footer style
 
 #footer {
-  padding: 100px 0;
+  padding: 50px 0 100px 0;
   font-weight: 300;
   color: #CCCCCC;
+  background-color: #343434;
+  h3 {
+    font-size: 21px;
+    margin-top: 0px;
+    color: #E3E1E1;
+    font-weight: normal;
+  }
+  .container {
+    margin-top: 60px;
+  }
+
+  .btn-default {
+    color: #AEAEAE;
+    border: none;
+    background: transparent;
+    font-weight: lighter;
+  }
   a {
     color: #AEAEAE;
     &:hover {
-      color: black;
+      color: white;
     }
   }
   svg, path, rect, circle {
-    fill: $brand-color;
+    fill: white;
   }
   svg {
-    margin-bottom: 50px;
+    margin-top: 70px;
+  }
+  .fa {
+    font-size: 25px;
+  }
+  hr {
+    border-top: 1px solid #3C3B3B;
   }
 
 }
+.cities:first-child  {
+  margin-bottom: 5px;
+}
+.cities a {
+  color: $yellow !important;
+}
+.cities li {
+  font-weight: light;
+  font-size: 17px;
+  border-right: 1px solid #5B5959;
+  color: grey;
+  padding-right: 10px;
+  &:last-child {
+    border-right: none;
+  }
+  &:first-child {
+    border-right: none;
+  }
+}
+
+

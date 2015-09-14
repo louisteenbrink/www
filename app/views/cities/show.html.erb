@@ -9,16 +9,15 @@
 <div class="banner banner-gradient text-center" style="background-image: url('<%= image_path(@city[:images][:banner])%>');">
   <div class="banner-gradient-shadow"></div>
   <div class="banner-content">
-    <h1><%= @city[:name] %></h1>
-
-    <button class="btn-transparent">Next meetup: Apero talk avec Boris Paillard</button>
+    <h1><%= t ".become_dev" %></h1>
+    <p><%= t ".city_arrival", city: @city[:name] %></p>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
   </div>
 </div>
 
-<%= render "shared/nav" %>
 
 <div id="staff" class="padded">
-  <h2 class="section-header text-center">Staff</h2>
+  <h2 class="section-header text-center"><%= t ".staff", city: @city[:name]%></h2>
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-sm-offset-1">
@@ -54,5 +53,7 @@
       <h2><%= @city[:location] %></h2>
     <% end %>
     <p><%= @city[:address] %></p>
+    <br>
+    <button class="btn-transparent">Next meetup: Apero talk avec Boris Paillard</button>
   </div>
 </div>

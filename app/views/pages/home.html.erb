@@ -20,7 +20,22 @@
   </div>
 </div>
 
-<%= render "shared/nav" %>
+<div class="quote">
+  <h2>
+    <strong>Impressive</strong> european coding bootcamp
+    <span class="dot">-</span> <span class="source">TechCrunch</span>
+  </h2>
+  <p>350+ élèves formés en Europe et dans le monde. 120+ produits codés.</p>
+
+  <%= link_to program_path do %>
+    <%= t(".discover_us", default: "Découvrez notre programme") %>
+    <%= render "shared/logos/logo_red_square" %>
+  <% end %>
+
+</div>
+
+<div style="background-image: url('<%= image_path('banners/projects.png')%>');" class="projects"></div>
+
 
 <div class="container padded">
   <div class="row">
@@ -37,7 +52,7 @@
             <%= t(".prep_work") %>
           </h2>
           <p>
-            <%= t(".prep_work_details") %>
+            <%= t(".prep_work_details_html") %>
           </p>
         </div>
       </div>
@@ -102,28 +117,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6">
-        <ul class="list-inline">
-          <li>
-            <a href="">
-              <img src="http://placehold.it/100/100" alt="" class="img-circle">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="http://placehold.it/100/100" alt="" class="img-circle">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="http://placehold.it/100/100" alt="" class="img-circle">
-            </a>
-          </li>
-          <li>
-            <a href="">
-              <img src="http://placehold.it/100/100" alt="" class="img-circle">
-            </a>
-          </li>
-        </ul>
+        TODO: students cascade.
       </div>
       <div class="col-xs-12 col-sm-6">
         <div class="step step-negative">
@@ -137,15 +131,19 @@
             <p>
               <%= t(".new_me_details") %>
             </p>
+            <p>
+              <%= t(".already_a_lot") %> <%= t(".and_you_html") %>
+            </p>
+            <div class="padded-small">
+              <%= link_to t(".check_projects"), alumni_path, class: "btn btn-danger btn-lg" %>
+            </div>
           </div>
-        </div>
-        <div class="cta text-left padded-small">
-          <%= link_to t(".check_program"), program_path, class: "btn btn-danger btn-lg" %>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
 <div class="container padded">
   <div class="row">
@@ -212,7 +210,8 @@
         <%= t(".our_cities") %>
       </h2>
       <p class="text-muted">
-        <%= t(".open_yours") %>
+        <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
+        <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
       </p>
     </div>
   </div>
@@ -226,36 +225,4 @@
     <div><%= image_tag "press/maddyness.png" %></div>
     <div><%= image_tag "press/rudebaguette.png" %></div>
   </div>
-</div>
-
-<div class="bg-black padded" id="stories">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        TODO: tchret students cascade
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <p>
-          <%= t(".already_a_lot") %>
-        </p>
-        <p>
-          <%= t(".and_you_html") %>
-        </p>
-        <div class="padded-small">
-          <%= link_to t(".check_projects"), alumni_path, class: "btn btn-danger btn-lg" %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container padded text-center">
-  <h2 class="section-header padded-small">
-    <%= t(".news_and_resources") %>
-  </h2>
-  <form action="" class="form-inline">
-    <input type="email" class="form-control input-lg" placeholder="<%= t(".enter_your_mail") %>">
-    <input type="submit" class="btn btn-danger btn-lg" value="<%= t(".stay_tuned") %>">
-  </form>
-
 </div>

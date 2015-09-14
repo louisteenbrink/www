@@ -1,42 +1,76 @@
 <div id="footer">
-  <div class="text-center">
-    <%= render "shared/logos/logo_red_square", width: "100px" %>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-5 col-xs-offset-1">
+        <h3>
+          Inscrivez-vous à notre newsletter
+        </h3>
+        <form action="" class="form-inline">
+          <input type="email" class="form-control input-lg" placeholder="<%= t(".enter_your_mail") %>">
+          <input type="submit" class="btn btn-danger btn-lg" value="<%= t(".stay_tuned") %>">
+        </form>
+      </div>
+      <div class="col-xs-5 text-right">
+        <h3>
+          Nos tutoriels vidéos
+        </h3>
+        <a href="" class="btn btn-default btn-lg">TV</a>
+        <a href="" class="btn btn-default btn-lg">On-Demand</a>
+      </div>
+    </div>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-        <p>
-          A propos de nous
-        </p>
+      <div class="col-xs-10 col-xs-offset-1">
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-5 col-sm-offset-1">
+        <h3>
+         Trouvez une ville
+        </h3>
         <ul class="list-unstyled">
+          <li>
+            <ul class="list-inline cities">
+              <li>France</li>
+              <li><a href="">Paris</a></li>
+              <li><a href="">Lille</a></li>
+              <li><a href="">Bordeaux</a></li>
+              <li><a href="">Marseille</a></li>
+            </ul>
+          </li>
+          <li>
+            <ul class="list-inline cities">
+              <li>World</li>
+              <li><a href="">Brussels</a></li>
+              <li><a href="">Los Angeles</a></li>
+              <li><a href="">Beirut</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <h3>
+          A propos de nous
+        </h3>
+        <ul class="list-inline">
+          <li><a>Blog</a></li>
           <li><a>Jobs</a></li>
           <li><a>Press</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
         </ul>
       </div>
-      <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-        <p>
-          Nos villes
-        </p>
-        <ul class="list-unstyled">
-          <li><a>Paris</a></li>
-          <li><a>Brussels</a></li>
-          <li><a>Los Angeles</a></li>
-          <li><a>Beirut</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-        <p>
-          Réseaux sociaux
-        </p>
-        <ul class="list-unstyled">
-          <li><a>Facebook</a></li>
-          <li><a>Twitter</a></li>
-          <li><a>Youtube</a></li>
-          <li><a>Github</a></li>
+      <div class="col-xs-12 col-sm-3">
+        <ul class="list-inline">
+          <li><a><i class="fa fa-facebook"></i></a></li>
+          <li><a><i class="fa fa-twitter"></i></a></li>
+          <li><a><i class="fa fa-youtube"></i></a></li>
+          <li><a><i class="fa fa-github"></i></a></li>
         </ul>
       </div>
     </div>
+  </div>
+  <div class="text-center">
+    <%= render "shared/logos/logo_red_square", width: "100px" %>
   </div>
 </div>
