@@ -24,6 +24,7 @@ fr:
       description: |
         Le Wagon est la meilleure formation au développement web en France.
         Allez voir par vous-même les projets codés par nos anciens élèves !
+      catchline_html: "Changez de vie : <span>apprenez à coder</span>"
       catchline: "Changez de vie : apprenez à coder"
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo

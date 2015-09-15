@@ -6,112 +6,55 @@
   <%= t(".description") %>
 <% end %>
 
-<div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/home.jpg')%>');">
-  <div class="banner-gradient-shadow"></div>
-  <div class="banner-content">
-    <h1><%= t(".catchline") %></h1>
-    <p>
-      <%= t(".vision") %>
-      <!-- <span>
-        <i class="fa fa-play-circle-o"></i> <%= t(".view_teaser") %>
-      </span> -->
-    </p>
-    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
+<div class="banner-container">
+  <div class="container">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/home.jpg')%>');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+          <%= t(".catchline_html") %>
+        </h1>
+        <p>
+          <%= t(".vision") %>
+          <!-- <span>
+            <i class="fa fa-play-circle-o"></i> <%= t(".view_teaser") %>
+          </span> -->
+        </p>
+      </div>
+    </div>
+    <div class='banner-cta'>
+    <%= link_to program_path, class: 'banner-cta-item' do %>
+      <%= t(".discover_us", default: "Découvrez notre programme") %>
+    <% end %>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn banner-cta-item btn-danger btn-lg" %>
+    </div>
+  </div>
+</div>
+
+<div class="features-wrapper">
+  <div class="container features-container">
+    <h2>
+      <span>
+        The funny thing is, it actually works.
+      </span>
+    </h2>
+    <div class='features'>
+
+    </div>
   </div>
 </div>
 
 <div class="quote">
   <h2>
     <strong>Impressive</strong> european coding bootcamp
-    <span class="dot">-</span> <span class="source">TechCrunch</span>
+    <span class="dot">-</span> <span class="source"><img src='http://portfolio.toolness.org/img/logos/techcrunch.png' /></span>
   </h2>
   <p>350+ élèves formés en Europe et dans le monde. 120+ produits codés.</p>
-
-  <%= link_to program_path do %>
-    <%= t(".discover_us", default: "Découvrez notre programme") %>
-    <%= render "shared/logos/logo_red_square" %>
-  <% end %>
-
+  <%= image_tag "press/techcrunch.png" %>
 </div>
 
 <div style="background-image: url('<%= image_path('banners/projects.png')%>');" class="projects"></div>
 
-
-<div class="container padded">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      TODO: tchret icons cascade
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <div class="step">
-        <span class="step-figure">
-          <i class="fa fa-check"></i>
-        </span>
-        <div class="step-description">
-          <h2>
-            <%= t(".prep_work") %>
-          </h2>
-          <p>
-            <%= t(".prep_work_details_html") %>
-          </p>
-        </div>
-      </div>
-      <div class="step">
-        <span class="step-figure">
-          <i class="fa fa-check"></i>
-        </span>
-        <div class="step-description">
-          <h2>
-            <%= t(".bootcamp") %>
-          </h2>
-          <p>
-            <%= t(".bootcamp_details") %>
-          </p>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".algorithm") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".web_development") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".mindset") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".product") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".tools") %>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="bg-black padded">
   <div class="container">

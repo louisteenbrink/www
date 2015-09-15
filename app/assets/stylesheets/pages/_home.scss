@@ -17,13 +17,22 @@
  }
 
  .quote {
-  text-align: center;
-  h2 {
-    font-size: 28px;
-    font-weight: lighter;
-    letter-spacing: 0px;
-    margin-top: 100px;
-  }
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+    padding-top: 178px;
+    padding-bottom: 60px;
+    background-color: #F4F4F4;
+    h2 {
+      font-size: 28px;
+      font-weight: lighter;
+      letter-spacing: 0px;
+    }
+
+    img {
+      width: 900px;
+    }
   .dot{
     font-size: 16px;
     font-weight: 100;
@@ -39,7 +48,6 @@
     color: #8A8484;
     font-weight: 100;
     margin-top: 16px;
-    margin-bottom: 70px;
   }
   a {
     font-size: 20px;
