@@ -4,13 +4,8 @@
   padding: 50px 0 100px 0;
   font-weight: 300;
   color: #CCCCCC;
-  background-color: #343434;
-  h3 {
-    font-size: 21px;
-    margin-top: 0px;
-    color: #E3E1E1;
-    font-weight: normal;
-  }
+  background-color: #D23333;
+
   .container {
     margin-top: 60px;
   }
@@ -21,12 +16,7 @@
     background: transparent;
     font-weight: lighter;
   }
-  a {
-    color: #AEAEAE;
-    &:hover {
-      color: white;
-    }
-  }
+
   svg, path, rect, circle {
     fill: white;
   }
@@ -61,4 +51,25 @@
   }
 }
 
+
+.footer-section {
+  h3 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    color: black;
+  }
+
+  a {
+    letter-spacing: -3px;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
 
