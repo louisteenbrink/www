@@ -84,7 +84,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   config.action_mailer.default_url_options = { host: ENV.fetch("HOST") }
-  MyApp::Application.configure do
-    config.react.variant = :production
-  end
+  config.react.variant = :production
 end

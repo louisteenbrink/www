@@ -64,6 +64,21 @@
   margin-top: 50px;
   display: flex;
 
+  &.negative {
+    color: white;
+    background:none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    border-bottom: none;
+    text-align: center;
+
+    .section-title-home-content {
+      background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+
   &-content {
     background-color: #F4F4F4;
     position: relative;

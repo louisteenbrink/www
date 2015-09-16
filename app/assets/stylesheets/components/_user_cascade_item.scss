@@ -1,0 +1,23 @@
+.user-cascade-overlay {
+  background-color: #363636;
+  height: 500px;
+  overflow: hidden;
+}
+
+.user-cascade {
+  background-color: #363636;
+  display: flex;
+  flex-wrap: wrap;
+  width: 200%;
+  transform: translateX(-20%) translateY(20%);
+}
+
+.user-cascade-item {
+  flex: 0 0 150px;
+  height: 150px;
+  margin: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: .5s ease-out transform;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12);
+}

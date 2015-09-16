@@ -145,6 +145,9 @@
   </div>
   <hr class='techcrunch-hr'>
 </div>
+<%= react_component 'UserCascade', {
+  users: Array.new(100)
+  } %>
 <div class="wordlwide-overlay">
   <div class="container padded">
     <h2 class='section-title-home'>
@@ -223,15 +226,5 @@
         </p>
       </div>
     </div>
-  </div>
-</div>
-
-<div class="banner banner-flat" style="background-image: url('<%= image_path('banners/home-secondary.jpg')%>');padding-bottom: 0;">
-  <div class="banner-flat-filter banner-flat-filter-green"></div>
-  <div class="banner-content text-center press-container">
-    <div><%= image_tag "press/techcrunch.png" %></div>
-    <div><%= image_tag "press/JDN.png" %></div>
-    <div><%= image_tag "press/maddyness.png" %></div>
-    <div><%= image_tag "press/rudebaguette.png" %></div>
   </div>
 </div>
