@@ -3,6 +3,9 @@
 //= require bootstrap-sprockets
 //= require slick.js/slick.min.js
 
+//= require react
+//= require react_ujs
+//= require components
 //= require_tree ./app
 
 
