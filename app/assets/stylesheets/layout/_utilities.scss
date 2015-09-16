@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   &-small {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
@@ -51,3 +51,23 @@
   color: white;
 }
 
+.section-title-home {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #E0E0E0;
+  height: 7px;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  display: flex;
+
+  &-content {
+    background-color: #F4F4F4;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

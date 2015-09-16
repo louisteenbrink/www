@@ -16,19 +16,13 @@
   margin-top: -15px;
  }
 
- .quote {
+ .quote-overlay {
     text-align: center;
     position: relative;
     overflow: hidden;
     height: 650px;
-    padding-top: 178px;
     padding-bottom: 60px;
     background-color: #F4F4F4;
-    h2 {
-      font-size: 28px;
-      font-weight: lighter;
-      letter-spacing: 0px;
-    }
 
     img {
       width: 900px;
@@ -70,7 +64,48 @@
     position: relative;
     top: 14px;
   }
-  // path {
-  //   fill: $blue;
-  // }
  }
+
+.techcrunch-hr {
+  margin: 0;
+  width: 140px;
+  height: 4px;
+  background-color: #199C17;
+  position: relative;
+  top: 8px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transform: skew(74deg);
+}
+.quote {
+  .techcrunch {
+    text-align: right;
+    position: absolute;
+    right: 28px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    hr {
+      margin: 0;
+      width: 140px;
+      height: 4px;
+      background-color: #199C17;
+      position: relative;
+      top: 8px;
+      border-radius: 50%;
+      margin-right: 20px;
+      transform: skew(74deg);
+    }
+
+    img {
+      width: 200px;
+
+    }
+  }
+}
+
+.techcrunch-view {
+  padding-top: 60px;
+}
+

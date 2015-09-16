@@ -33,129 +33,195 @@
 
 <div class="features-wrapper">
   <div class="container features-container">
-    <h2>
-      <span>
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content'>
         The funny thing is, it actually works.
-      </span>
+      </div>
     </h2>
     <div class='features'>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon yellow'>
+            <i class='mdi mdi-laptop'>
+
+            </i>
+          </div>
+          <div class='feature-title'>
+            Learn web-development
+          </div>
+        </div>
+        <div class='feature-body'>
+          Learn all about ruby, SQL, and the Rails application framework. Develop your frontend skills by using advanced CSS technics (flexbox, grid, animations, etc..) and go deeper into Javascript by learning jQuery and React.js, the library developed by Facebook.
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon purple'>
+            <i class='mdi mdi-keyboard-variant'></i>
+          </div>
+          <div class='feature-title'>
+            Become a Software engineer
+          </div>
+        </div>
+        <div class='feature-body'>
+          Become more than a developer, a Software engineer. This guy who has the big picture on technical issues, who knows what MVP means, what a DB scheme is, and who can learn a new programming language in a week.
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon green'>
+          <i class='mdi mdi-source-pull'></i>
+          </div>
+          <div class='feature-title'>
+            Adopt a technical workflow
+          </div>
+        </div>
+        <div class='feature-body'>
+          There's definitely a good way of building tech products. We will teach you this way. Write your MVP's user stories, draw you database scheme, build a mockup with Sketch, collaborate using pull-requests and code-reviews on Github. That's how the best startups work.
+        </div>
+      </div>
+       <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon orange'>
+            <i class='mdi mdi-auto-fix'></i>
+          </div>
+          <div class='feature-title'>
+            Get the startup toolkit
+          </div>
+        </div>
+        <div class='feature-body'>
+          Heroku, Stripe, Mandrill, Amazon S3, Algolia... We will teach you how to implement all these services to be more efficient when you want to launch a new product. Save time, use the right tool for the right need, that's our developer mindset.
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon blue'>
+            <i class='mdi mdi-cube-outline'></i>
+          </div>
+          <div class='feature-title'>
+            Build your products
+          </div>
+        </div>
+        <div class='feature-body'>
+          That is probably what we are the best at. No one will teach how to build advanced and beautiful products as we do. Kudoz just raised 1.2M, Medpics is seeding 400k, and there are so many awesome products from our students in the starting block, check it out
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon red'>
+            <i class='mdi mdi-wallet-travel'></i>
+          </div>
+          <div class='feature-title'>
+            Land a new job
+          </div>
+        </div>
+        <div class='feature-body'>
+          Working as a junior developer for Stripe, Finexkap, Compass (San Francisco), 55, Save, etc..  French engineers are the best, that's what they say ;) We will help you find your dream job, either as a junior dev or product manager. Discuss with any of our 350+ alumni to be sure about that!
+        </div>
+      </div>
 
     </div>
   </div>
 </div>
 
-<div class="quote">
-  <h2>
-    <strong>Impressive</strong> european coding bootcamp
-    <span class="dot">-</span> <span class="source"><img src='http://portfolio.toolness.org/img/logos/techcrunch.png' /></span>
-  </h2>
-  <p>350+ élèves formés en Europe et dans le monde. 120+ produits codés.</p>
-  <%= image_tag "press/techcrunch.png" %>
-</div>
-
-<div style="background-image: url('<%= image_path('banners/projects.png')%>');" class="projects"></div>
-
-
-<div class="bg-black padded">
+<div class="quote-overlay">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        TODO: students cascade.
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="step step-negative">
-          <span class="step-figure">
-            <i class="fa fa-check"></i>
-          </span>
-          <div class="step-description">
-            <h2>
-              <%= t(".new_me") %>
-            </h2>
-            <p>
-              <%= t(".new_me_details") %>
-            </p>
-            <p>
-              <%= t(".already_a_lot") %> <%= t(".and_you_html") %>
-            </p>
-            <div class="padded-small">
-              <%= link_to t(".check_projects"), alumni_path, class: "btn btn-danger btn-lg" %>
+    <div class='quote'>
+      <h2 class='section-title-home'>
+        <div class='section-title-home-content'>
+          "an <strong>Impressive</strong> european coding bootcamp"
+          <div class='techcrunch'>
+            <hr class='techcrunch-hr'>
+            <div>
+              <img src='http://portfolio.toolness.org/img/logos/techcrunch.png' />
             </div>
+          </div>
+        </div>
+      </h2>
+      <div class='techcrunch-view'>
+        <%= image_tag "press/techcrunch.png" %>
+      </div>
+    </div>
+  </div>
+  <hr class='techcrunch-hr'>
+</div>
+<div class="wordlwide-overlay">
+  <div class="container padded">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content'>
+        We are worldwide.
+      </div>
+    </h2>
+    <%= render 'shared/map' %>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Paris</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 2 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Brussels</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 2 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Los Angeles</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 3 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Lille</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 2 évènements à venir
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-
-<div class="container padded">
-  <div class="row">
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Paris</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 2 évènements à venir
-          </p>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 text-center padded-small">
+        <h2 class="section-header">
+          <%= t(".our_cities") %>
+        </h2>
+        <p class="text-muted">
+          <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
+          <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
+        </p>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Brussels</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 2 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Los Angeles</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 3 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Lille</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 2 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xs-12 text-center padded-small">
-      <h2 class="section-header">
-        <%= t(".our_cities") %>
-      </h2>
-      <p class="text-muted">
-        <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
-        <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
-      </p>
     </div>
   </div>
 </div>

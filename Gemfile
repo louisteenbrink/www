@@ -19,6 +19,7 @@ gem "font-awesome-sass"
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
+  gem 'rails-assets-mdi'
 end
 
 gem "rails-i18n"

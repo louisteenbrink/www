@@ -1,17 +1,36 @@
-.features-container {
-  h2 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    letter-spacing: -2px;
-    border-bottom: 1px solid #EFEFEF;
-    height: 31px;
-    margin-bottom: 50px;
+.features-wrapper {
+  background-color: #F4F4F4;
+  position: relative;
+  margin-top: -180px;
+  padding-top: 180px;
+}
 
-    span {
-      background-color: white;
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature {
+  padding: 20px;
+  flex: 0 0 33%;
+}
+
+.feature-header {
+  display: flex;
+  padding-bottom: 20px;
+  i {
+    font-size: 20px;
+    margin-right: 10px;
   }
 }
+
+.feature-icon {
+  &.red { color: $red }
+  &.blue { color: $blue }
+  &.green { color: $green }
+  &.purple { color: $purple }
+  &.yellow { color: $yellow }
+}
+
+.feature-body { font-weight: 100 }
