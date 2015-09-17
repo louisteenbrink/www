@@ -23,6 +23,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
   gem 'rails-assets-mdi'
   gem 'rails-assets-classnames'
+  gem 'rails-assets-pubsub-js'
 end
 
 gem "rails-i18n"

@@ -9,15 +9,17 @@
   display: flex;
   flex-wrap: wrap;
   width: 200%;
+  justify-content: center;
   transform: translateX(-20%) translateY(20%);
 }
 
 .user-cascade-item {
   flex: 0 0 150px;
+  background-size: cover !important;
   height: 150px;
   margin: 18px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: .5s ease-out transform;
+  transition: .8s ease-out transform;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12);
 }

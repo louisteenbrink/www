@@ -19,10 +19,16 @@
 .feature-header {
   display: flex;
   padding-bottom: 20px;
+  align-items: center;
+
   i {
     font-size: 20px;
     margin-right: 10px;
   }
+}
+
+.feature-title {
+  font-size: 18px;
 }
 
 .feature-icon {

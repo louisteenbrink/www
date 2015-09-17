@@ -1,0 +1,96 @@
+.featured-alumni-overlay {
+  background: #F4F4F4;
+  overflow: hidden;
+}
+
+.featured-alumni {
+  display: flex;
+  padding: 50px 0;
+}
+
+.featured-alumni-list {
+  flex: 1;
+}
+
+.featured-alumni-detail {
+  flex: 1;
+  margin-left: 30px;
+  position: relative;
+  display: none;
+
+  &.is-active {
+    display: block;
+    .featured-alumni-detail-extended {
+      animation: scaleSlow 0.3s ease forwards;
+    }
+  }
+}
+
+.featured-alumni-item {
+  padding: 40px;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &.is-active {
+    background-color: rgba(255, 179, 72, 0.1);
+
+    .featured-alumni-item-description {
+      color: black;
+    }
+  }
+
+  &:hover {
+    .featured-alumni-item-description {
+      color: black;
+    }
+  }
+}
+
+@keyframes scaleSlow {
+  0% {
+    transform: translateX(-50%) translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-50%) translateY(20%);
+    opacity: 1;
+  }
+
+}
+
+.featured-alumni-item-name {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.featured-alumni-item-description {
+  font-size: 20px;
+  font-weight: 100;
+  color: #595959;
+  padding-top: 10px;
+}
+
+.featured-alumni-detail-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  width: 750px;
+  background-size: 130%;
+  border-radius: 4px;
+  background-position: center center !important;
+  box-shadow: inset 0px -71px 37px -17px #f4f4f4;
+}
+
+.featured-alumni-detail-extended {
+  height: 200px;
+  width: 200px;
+  background-size: 218%;
+  background-position: 54% 36%;
+  border-radius: 50%;
+  position: absolute;
+  border: 6px solid white;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+  transform: translateX(-50%) translateY(20%);
+}
+
