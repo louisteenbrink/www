@@ -21,7 +21,7 @@
   &.is-active {
     display: block;
     .featured-alumni-detail-extended {
-      animation: scaleSlow 0.3s ease forwards;
+      animation: scaleSlow .8s ease forwards;
     }
   }
 }

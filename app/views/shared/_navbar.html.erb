@@ -7,7 +7,7 @@
     <div class='navbar-wagon-items'>
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= link_to t(".menu.cities"),"#", class: "dropdown-toggle navbar-wagon-link glitch", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
+          <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link glitch", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <% Static::CITIES.each do |city, infos| %>
               <li>
@@ -17,20 +17,20 @@
           </ul>
         </div>
       </div>
-      <hr>
-      <%= link_to t(".menu.fullstack", default: "Programme"), program_path, class: "navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
-      <hr class='fake-hr'>
-      <%= link_to root_path do %>
+      <hr class='hidden-xs'>
+      <%= link_to t(".menu.fullstack", default: "Programme"), program_path, class: " hidden-xs navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
+      <hr class='fake-hr hidden-sm hidden-xs'>
+      <%= link_to root_path, class: 'wagon-link' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
-      <hr class='fake-hr'>
-      <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
-      <hr>
-      <%= link_to t(".menu.ondemand", default: "On-Demand"), "https://ondemand.lewagon.org/", target: "_blank", class: "navbar-wagon-link navbar-wagon-item" %>
-      <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link" %>
-      <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link" %>
+      <hr class='fake-hr hidden-xs'>
+      <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch  hidden-xs  navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
+      <hr class='hidden-xs'>
+      <%= link_to t(".menu.ondemand", default: "On-Demand"), "https://ondemand.lewagon.org/", target: "_blank", class: "hidden-xs navbar-wagon-link navbar-wagon-item" %>
+      <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
+      <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
-      <div class="navbar-wagon-side text-right">
+      <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
         <a class='navbar-wagon-link-cta'>
           Postuler
         </a>

@@ -39,6 +39,6 @@ class UserCascadeItem extends React.Component {
         centerW: centerW,
         centerH: centerH
       })
-    }, this.props.index*5)
+    }, this.props.index*3)
   }
 }
