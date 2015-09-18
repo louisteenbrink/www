@@ -119,7 +119,10 @@
 
     &:hover {
       color: white;
+      background: #C22F2F;
     }
+
+    &:focus { outline: 0 }
   }
 }
 
