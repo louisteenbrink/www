@@ -13,8 +13,8 @@ class UserCascadeItem extends React.Component {
   render() {
     var xTranslate = Math.round(this.state.centerW/20);
     var yTranslate = Math.round(this.state.centerH/20);
-    var xShadow = -xTranslate*10;
-    var yShadow = -yTranslate*10;
+    var xShadow = -xTranslate*6;
+    var yShadow = -yTranslate*6;
     var componentStyle = {
       transform: "translate3d(" + xShadow + "px, " + yShadow + "px, 0px) scale(" + this.state.scale + ")",
       backgroundImage: "url('" + this.props.image + "')"
@@ -33,22 +33,12 @@ class UserCascadeItem extends React.Component {
     var halfHeight = this.props.winHeight/2;
     var centerW = p.x - halfWidth;
     var centerH = p.y - halfHeight;
+    setTimeout(() => {
       this.setState({
         p: p,
         centerW: centerW,
         centerH: centerH
       })
-  }
-
-  handleMouseEnter() {
-    this.setState({
-      scale: 1.1
-    })
-  }
-
-  handleMouseLeave() {
-    this.setState({
-      scale: 1
-    })
+    }, this.props.index*5)
   }
 }
