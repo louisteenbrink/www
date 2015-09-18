@@ -41,7 +41,7 @@ class FeaturedAlumni extends React.Component {
 
 
               var detailClasses = classNames({
-                'featured-alumni-detail': true,
+                'featured-alumni-detail hidden-sm hidden-xs': true,
                 'is-active': index + 1 == this.state.activeItem
               })
 

@@ -19,6 +19,10 @@
     box-shadow: inset 0px -88px 189px 58px rgba(244, 244, 244, 0.9);
     bottom: 0;
     position: absolute;
+
+    @media (max-width: $screen-sm) {
+      box-shadow: none;
+    }
   }
 }
 
@@ -26,4 +30,10 @@
 .wagon-map {
   position: relative;
   padding-top: 50px;
+  @media (max-width: $screen-sm) {
+    position: relative;
+    margin-top: -150px;
+    padding-top: 0;
+  }
 }
+

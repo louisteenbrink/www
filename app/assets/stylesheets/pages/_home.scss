@@ -19,7 +19,7 @@
  .quote-overlay {
     text-align: center;
     position: relative;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     padding-bottom: 60px;
     background-color: #F4F4F4;
@@ -84,6 +84,11 @@
     align-items: center;
     width: 100%;
     justify-content: center;
+
+    @media (max-width: $screen-sm) {
+      right: 0;
+    }
+
     hr {
       margin: 0;
       width: 140px;

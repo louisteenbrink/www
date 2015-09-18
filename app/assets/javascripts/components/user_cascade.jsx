@@ -7,7 +7,7 @@ class UserCascade extends React.Component {
   }
   render() {
     return (
-      <div onMouseMove={this.handleMouseMove.bind(this)} className='user-cascade-overlay'>
+      <div onMouseMove={this.handleMouseMove.bind(this)} className='hidden-xs hidden-sm user-cascade-overlay'>
         <div className='container'>
         <h2 className='section-title-home negative'>
           <div className='section-title-home-content'>

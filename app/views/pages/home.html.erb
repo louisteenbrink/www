@@ -146,19 +146,19 @@
         <div class='section-title-home-content'>
           "an <strong>Impressive</strong> european coding bootcamp"
           <div class='techcrunch'>
-            <hr class='techcrunch-hr'>
+            <hr class='techcrunch-hr hidden-xs'>
             <div>
               <img src='http://portfolio.toolness.org/img/logos/techcrunch.png' />
             </div>
           </div>
         </div>
       </h2>
-      <div class='techcrunch-view'>
+      <div class='techcrunch-view hidden-sm hidden-xs'>
         <%= image_tag "press/techcrunch.png" %>
       </div>
     </div>
   </div>
-  <hr class='techcrunch-hr'>
+  <hr class='techcrunch-hr hidden-sm hidden-xs'>
 </div>
 <%= react_component 'UserCascade', {
   users: (Static::STUDENTS.to_a).map do |student|

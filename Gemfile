@@ -18,6 +18,7 @@ gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "react-rails"
 gem 'js-routes'
+gem 'autoprefixer-rails'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'

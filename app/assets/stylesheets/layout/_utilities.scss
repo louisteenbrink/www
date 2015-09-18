@@ -62,7 +62,18 @@
   align-items: center;
   justify-content: center;
   margin-top: 50px;
+  position: relative;
   display: flex;
+  z-index: 9;
+
+  @media (max-width: $screen-md) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $screen-sm) {
+    height: auto;
+    border: none;
+  }
 
   &.quote {
     font-size: 30px;
@@ -88,6 +99,9 @@
     background-color: #F4F4F4;
     position: relative;
     padding-right: 30px;
+    @media (max-width: $screen-md) {
+      background-color: transparent;
+    }
     padding-left: 30px;
   }
 }
