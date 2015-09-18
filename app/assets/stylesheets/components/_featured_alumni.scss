@@ -60,12 +60,12 @@
 
 .featured-alumni-item-name {
   font-size: 25px;
-  font-weight: 900;
+  font-weight: $font-weight-bold;
 }
 
 .featured-alumni-item-description {
   font-size: 20px;
-  font-weight: 100;
+  font-weight: $font-weight-light;
   color: #595959;
   padding-top: 10px;
 }

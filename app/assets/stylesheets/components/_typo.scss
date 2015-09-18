@@ -1,16 +1,16 @@
 .section-header {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 .section-header-big {
   font-size: 35px;
   margin-bottom: 30px;
-  font-weight: bold;
+  font-weight: $font-weight-bold;
 }
 .text-muted {
   color: #B3B3B3;
   font-size: 15px;
-  font-weight: normal;
+  font-weight: $font-weight-normal;
 }
 .text-readable {
   font-size: 17px;

@@ -29,7 +29,7 @@
     flex: 1 1 auto;
   }
   &-link {
-    font-weight: 500;
+    font-weight: $font-weight-semi-bold;
     letter-spacing: -0.1px;
     opacity: 0.8 !important;
 
@@ -64,7 +64,7 @@
     border-color: #E6E6E6;
     li > a {
       transition: color 0.3s ease;
-      font-weight: lighter !important;
+      font-weight: $font-weight-light !important;
       color: #999999 !important;
       font-size: 15px !important;
       line-height: 22px !important;

@@ -2,7 +2,7 @@
 
 #footer {
   padding: 50px 0 100px 0;
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   color: #CCCCCC;
   background-color: #D23333;
 
@@ -18,7 +18,7 @@
     color: #AEAEAE;
     border: none;
     background: transparent;
-    font-weight: lighter;
+    font-weight: $font-weight-light;
   }
 
   svg, path, rect, circle {
@@ -41,7 +41,7 @@
   color: $yellow !important;
 }
 .cities li {
-  font-weight: light;
+  font-weight: $font-weight-light;
   font-size: 17px;
   border-right: 1px solid #5B5959;
   color: grey;
@@ -59,14 +59,14 @@
   h3 {
     font-size: 20px;
     color: rgb(0, 0, 0);
-    font-weight: 100;
+    font-weight: $font-weight-light;
     color: black;
   }
 
   a {
     letter-spacing: -3px;
     font-size: 50px;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     color: black;
 
     &:hover {

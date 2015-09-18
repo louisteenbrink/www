@@ -29,23 +29,23 @@
     }
   .dot{
     font-size: 16px;
-    font-weight: 100;
+    font-weight: $font-weight-light;
     color: #C73333;
   }
   .source {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: $font-weight-normal;
     color: grey;
   }
   p{
     font-size: 20px;
     color: #8A8484;
-    font-weight: 100;
+    font-weight: $font-weight-light;
     margin-top: 16px;
   }
   a {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     letter-spacing: 1px;
     background-color: $blue;
     border-bottom: 2px solid #3C8ACC;
@@ -55,9 +55,7 @@
     &:hover {
       text-decoration: none;
     }
-    span {
-      font-weight: lighter;
-    }
+    span { font-weight: $font-weight-light }
   }
   svg {
     height: 40px;
