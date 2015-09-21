@@ -11,8 +11,8 @@ class UserCascadeItem extends React.Component {
     }
   }
   render() {
-    var xTranslate = Math.round(this.state.centerW/20);
-    var yTranslate = Math.round(this.state.centerH/20);
+    var xTranslate = Math.round(this.state.centerW/30);
+    var yTranslate = Math.round(this.state.centerH/30);
     var xShadow = -xTranslate*6;
     var yShadow = -yTranslate*6;
     var componentStyle = {
