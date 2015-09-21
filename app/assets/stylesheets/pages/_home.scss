@@ -19,10 +19,14 @@
  .quote-overlay {
     text-align: center;
     position: relative;
-    height: auto;
     overflow: hidden;
     padding-bottom: 60px;
     background-color: #F4F4F4;
+    height: 400px;
+
+    @media (max-width: $screen-sm) {
+      height: auto;
+    }
 
     img {
       width: 900px;
