@@ -24,9 +24,9 @@
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
       <hr class='fake-hr hidden-xs'>
-      <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch  hidden-xs  navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
+      <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch hidden-xs  navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
       <hr class='hidden-xs'>
-      <%= link_to t(".menu.ondemand", default: "On-Demand"), "https://ondemand.lewagon.org/", target: "_blank", class: "hidden-xs navbar-wagon-link navbar-wagon-item" %>
+      <%= link_to t(".menu.ondemand", default: "On-Demand"), "https://ondemand.lewagon.org/", target: "_blank", data: {text: t(".menu.ondemand", default: "On-Demand").gsub('d', '')}, class: "glitch hidden-xs navbar-wagon-link navbar-wagon-item" %>
       <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
       <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
