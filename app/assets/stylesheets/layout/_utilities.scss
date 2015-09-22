@@ -6,8 +6,8 @@
 
 // Paddings
 .padded {
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 3em;
+  padding-bottom: 3em;
   &-small {
     padding-top: 1.5em;
     padding-bottom: 1.5em;
@@ -51,3 +51,57 @@
   color: white;
 }
 
+.section-title-home {
+  text-align: center;
+  font-size: 50px;
+  font-weight: $font-weight-bold;
+  letter-spacing: -2px;
+  border-bottom: 1px solid #E0E0E0;
+  height: 7px;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  position: relative;
+  display: flex;
+  z-index: 9;
+
+  @media (max-width: $screen-md) {
+    font-size: 30px;
+  }
+
+  @media (max-width: $screen-sm) {
+    height: auto;
+    border: none;
+  }
+
+  &.quote {
+    font-size: 30px;
+    font-weight: $font-weight-light;
+  }
+
+  &.negative {
+    color: white;
+    background:none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    border-bottom: none;
+    text-align: center;
+
+    .section-title-home-content {
+      background-color: rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+
+  &-content {
+    background-color: #F4F4F4;
+    position: relative;
+    padding-right: 30px;
+    @media (max-width: $screen-md) {
+      background-color: transparent;
+    }
+    padding-left: 30px;
+  }
+}

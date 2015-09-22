@@ -16,34 +16,40 @@
   margin-top: -15px;
  }
 
- .quote {
-  text-align: center;
-  h2 {
-    font-size: 28px;
-    font-weight: lighter;
-    letter-spacing: 0px;
-    margin-top: 100px;
-  }
+ .quote-overlay {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 60px;
+    background-color: #F4F4F4;
+    height: 400px;
+
+    @media (max-width: $screen-sm) {
+      height: auto;
+    }
+
+    img {
+      width: 900px;
+    }
   .dot{
     font-size: 16px;
-    font-weight: 100;
+    font-weight: $font-weight-light;
     color: #C73333;
   }
   .source {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: $font-weight-normal;
     color: grey;
   }
   p{
     font-size: 20px;
     color: #8A8484;
-    font-weight: 100;
+    font-weight: $font-weight-light;
     margin-top: 16px;
-    margin-bottom: 70px;
   }
   a {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: $font-weight-bold;
     letter-spacing: 1px;
     background-color: $blue;
     border-bottom: 2px solid #3C8ACC;
@@ -53,16 +59,55 @@
     &:hover {
       text-decoration: none;
     }
-    span {
-      font-weight: lighter;
-    }
+    span { font-weight: $font-weight-light }
   }
   svg {
     height: 40px;
     position: relative;
     top: 14px;
   }
-  // path {
-  //   fill: $blue;
-  // }
  }
+
+.techcrunch-hr {
+  margin: 0;
+  width: 140px;
+  height: 4px;
+  background-color: #199C17;
+  position: relative;
+  top: 8px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transform: skew(74deg);
+}
+.quote {
+  .techcrunch {
+    text-align: right;
+    position: absolute;
+    right: 28px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+    @media (max-width: $screen-sm) {
+      right: 0;
+    }
+
+    hr {
+      margin: 0;
+      width: 140px;
+      height: 4px;
+      background-color: #199C17;
+      position: relative;
+      top: 8px;
+      border-radius: 50%;
+      margin-right: 20px;
+      transform: skew(74deg);
+    }
+
+    img {
+      width: 200px;
+
+    }
+  }
+}

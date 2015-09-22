@@ -16,9 +16,15 @@ gem "sass-rails", "~> 5.0"
 gem "uglifier"
 gem "bootstrap-sass"
 gem "font-awesome-sass"
+gem "react-rails"
+gem 'js-routes'
+gem 'autoprefixer-rails'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
+  gem 'rails-assets-mdi'
+  gem 'rails-assets-classnames'
+  gem 'rails-assets-pubsub-js'
 end
 
 gem "rails-i18n"

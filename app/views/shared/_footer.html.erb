@@ -1,76 +1,93 @@
 <div id="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-5 col-xs-offset-1">
-        <h3>
-          Inscrivez-vous à notre newsletter
-        </h3>
-        <form action="" class="form-inline">
-          <input type="email" class="form-control input-lg" placeholder="<%= t(".enter_your_mail") %>">
-          <input type="submit" class="btn btn-danger btn-lg" value="<%= t(".stay_tuned") %>">
-        </form>
-      </div>
-      <div class="col-xs-5 text-right">
-        <h3>
-          Nos tutoriels vidéos
-        </h3>
-        <a href="" class="btn btn-default btn-lg">TV</a>
-        <a href="" class="btn btn-default btn-lg">On-Demand</a>
+    <div class='footer-section'>
+      <h3>
+        Nos tutoriels vidéos
+      </h3>
+
+      <div class='footer-section-links'>
+        <div>
+          <a href="">TV</a>
+        </div>
+        <div>
+          <a href="">On-Demand</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-1">
-        <hr>
+    <div class='footer-section'>
+      <h3>
+        Trouver une ville
+      </h3>
+
+      <div class='footer-section-links'>
+        <div>
+          <a href="">Paris</a>
+        </div>
+        <div>
+          <a href="">Lille</a>
+        </div>
+        <div>
+          <a href="">Bordeaux</a>
+        </div>
+        <div>
+          <a href="">Marseille</a>
+        </div>
+
+        <h3>World</h3>
+        <div>
+          <a href="">Brussels</a>
+        </div>
+        <div>
+          <a href="">Los Angeles</a>
+        </div>
+        <div>
+          <a href="">Beirut</a>
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-xs-12 col-sm-5 col-sm-offset-1">
-        <h3>
-         Trouvez une ville
-        </h3>
-        <ul class="list-unstyled">
-          <li>
-            <ul class="list-inline cities">
-              <li>France</li>
-              <li><a href="">Paris</a></li>
-              <li><a href="">Lille</a></li>
-              <li><a href="">Bordeaux</a></li>
-              <li><a href="">Marseille</a></li>
-            </ul>
-          </li>
-          <li>
-            <ul class="list-inline cities">
-              <li>World</li>
-              <li><a href="">Brussels</a></li>
-              <li><a href="">Los Angeles</a></li>
-              <li><a href="">Beirut</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <h3>
-          A propos de nous
-        </h3>
-        <ul class="list-inline">
-          <li><a>Blog</a></li>
-          <li><a>Jobs</a></li>
-          <li><a>Press</a></li>
-        </ul>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <ul class="list-inline">
-          <li><a><i class="fa fa-facebook"></i></a></li>
-          <li><a><i class="fa fa-twitter"></i></a></li>
-          <li><a><i class="fa fa-youtube"></i></a></li>
-          <li><a><i class="fa fa-github"></i></a></li>
-        </ul>
+
+    <div class='footer-section'>
+      <h3>
+        A propos de nous
+      </h3>
+
+      <div class='footer-section-links'>
+        <div>
+          <a href="">Blog</a>
+        </div>
+        <div>
+          <a href="">Jobs</a>
+        </div>
+        <div>
+          <a href="">Press</a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="text-center">
-    <%= render "shared/logos/logo_red_square", width: "100px" %>
+
+    <div class='footer-section'>
+      <h3>
+        Suivez-nous
+      </h3>
+
+      <div class='footer-section-links'>
+        <div>
+          <a href="">Facebook</a>
+        </div>
+        <div>
+          <a href="">Twitter</a>
+        </div>
+        <div>
+          <a href="">Youtube</a>
+        </div>
+        <div>
+          <a href="">Github</a>
+        </div>
+      </div>
+    </div>
+    <div class="pull-right">
+      <hr class='hr-wagon'>
+      <%= render "shared/logos/logo_red_square", width: "100px" %>
+    </div>
   </div>
 </div>
+

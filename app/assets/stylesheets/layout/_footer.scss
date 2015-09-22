@@ -2,14 +2,13 @@
 
 #footer {
   padding: 50px 0 100px 0;
-  font-weight: 300;
+  font-weight: $font-weight-normal;
   color: #CCCCCC;
-  background-color: #343434;
-  h3 {
-    font-size: 21px;
-    margin-top: 0px;
-    color: #E3E1E1;
-    font-weight: normal;
+  background-color: #D23333;
+
+  .pull-right {
+    display: flex;
+    align-items: center;
   }
   .container {
     margin-top: 60px;
@@ -19,19 +18,13 @@
     color: #AEAEAE;
     border: none;
     background: transparent;
-    font-weight: lighter;
+    font-weight: $font-weight-light;
   }
-  a {
-    color: #AEAEAE;
-    &:hover {
-      color: white;
-    }
-  }
+
   svg, path, rect, circle {
     fill: white;
   }
   svg {
-    margin-top: 70px;
   }
   .fa {
     font-size: 25px;
@@ -48,7 +41,7 @@
   color: $yellow !important;
 }
 .cities li {
-  font-weight: light;
+  font-weight: $font-weight-light;
   font-size: 17px;
   border-right: 1px solid #5B5959;
   color: grey;
@@ -61,4 +54,38 @@
   }
 }
 
+
+.footer-section {
+  h3 {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: $font-weight-light;
+    color: black;
+  }
+
+  a {
+    letter-spacing: -3px;
+    font-size: 50px;
+    font-weight: $font-weight-bold;
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.hr-wagon {
+  margin: 0;
+  width: 140px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.14);
+  position: relative;
+  top: 2px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: none !important;
+  transform: skew(74deg);
+}
 

@@ -6,223 +6,302 @@
   <%= t(".description") %>
 <% end %>
 
-<div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/home.jpg')%>');">
-  <div class="banner-gradient-shadow"></div>
-  <div class="banner-content">
-    <h1><%= t(".catchline") %></h1>
-    <p>
-      <%= t(".vision") %>
-      <!-- <span>
-        <i class="fa fa-play-circle-o"></i> <%= t(".view_teaser") %>
-      </span> -->
-    </p>
-    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
-  </div>
-</div>
-
-<div class="quote">
-  <h2>
-    <strong>Impressive</strong> european coding bootcamp
-    <span class="dot">-</span> <span class="source">TechCrunch</span>
-  </h2>
-  <p>350+ élèves formés en Europe et dans le monde. 120+ produits codés.</p>
-
-  <%= link_to program_path do %>
-    <%= t(".discover_us", default: "Découvrez notre programme") %>
-    <%= render "shared/logos/logo_red_square" %>
-  <% end %>
-
-</div>
-
-<div style="background-image: url('<%= image_path('banners/projects.png')%>');" class="projects"></div>
-
-
-<div class="container padded">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      TODO: tchret icons cascade
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <div class="step">
-        <span class="step-figure">
-          <i class="fa fa-check"></i>
-        </span>
-        <div class="step-description">
-          <h2>
-            <%= t(".prep_work") %>
-          </h2>
-          <p>
-            <%= t(".prep_work_details_html") %>
-          </p>
-        </div>
-      </div>
-      <div class="step">
-        <span class="step-figure">
-          <i class="fa fa-check"></i>
-        </span>
-        <div class="step-description">
-          <h2>
-            <%= t(".bootcamp") %>
-          </h2>
-          <p>
-            <%= t(".bootcamp_details") %>
-          </p>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".algorithm") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".web_development") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".mindset") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".product") %>
-            </h3>
-          </div>
-          <div class="sub-step">
-            <span class="sub-step-figure">
-              <i class="fa fa-check"></i>
-            </span>
-            <h3 class="sub-step-description">
-              <%= t(".tools") %>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="bg-black padded">
+<div class="banner-container">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        TODO: students cascade.
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/home.jpg')%>');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+          <%= t(".catchline_html") %>
+        </h1>
+        <p>
+          <%= t(".vision") %>
+          <!-- <span>
+            <i class="fa fa-play-circle-o"></i> <%= t(".view_teaser") %>
+          </span> -->
+        </p>
       </div>
-      <div class="col-xs-12 col-sm-6">
-        <div class="step step-negative">
-          <span class="step-figure">
-            <i class="fa fa-check"></i>
-          </span>
-          <div class="step-description">
-            <h2>
-              <%= t(".new_me") %>
-            </h2>
-            <p>
-              <%= t(".new_me_details") %>
-            </p>
-            <p>
-              <%= t(".already_a_lot") %> <%= t(".and_you_html") %>
-            </p>
-            <div class="padded-small">
-              <%= link_to t(".check_projects"), alumni_path, class: "btn btn-danger btn-lg" %>
+    </div>
+    <div class='banner-cta'>
+    <%= link_to program_path, class: 'banner-cta-item hidden-xs' do %>
+      <%= t(".discover_us", default: "Découvrez notre programme") %>
+    <% end %>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn banner-cta-item btn-danger btn-lg" %>
+    </div>
+  </div>
+</div>
+
+<div class="features-wrapper">
+  <div class="container features-container">
+    <div class='features'>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon yellow'>
+            <i class='mdi mdi-laptop'>
+
+            </i>
+          </div>
+          <div class='feature-title'>
+            Learn web-development
+          </div>
+        </div>
+        <div class='feature-body'>
+          Learn all about ruby, SQL, and the Rails application framework. Develop your frontend skills by using advanced CSS technics (flexbox, grid, animations, etc..) and go deeper into Javascript by learning jQuery and React.js, the library developed by Facebook.
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon purple'>
+            <i class='mdi mdi-keyboard-variant'></i>
+          </div>
+          <div class='feature-title'>
+            Become a Software engineer
+          </div>
+        </div>
+        <div class='feature-body'>
+          Become more than a developer, a Software engineer. This guy who has the big picture on technical issues, who knows what MVP means, what a DB scheme is, and who can learn a new programming language in a week.
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon green'>
+          <i class='mdi mdi-source-pull'></i>
+          </div>
+          <div class='feature-title'>
+            Adopt a technical workflow
+          </div>
+        </div>
+        <div class='feature-body'>
+          There's definitely a good way of building tech products. We will teach you this way. Write your MVP's user stories, draw you database scheme, build a mockup with Sketch, collaborate using pull-requests and code-reviews on Github. That's how the best startups work.
+        </div>
+      </div>
+       <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon orange'>
+            <i class='mdi mdi-auto-fix'></i>
+          </div>
+          <div class='feature-title'>
+            Get the startup toolkit
+          </div>
+        </div>
+        <div class='feature-body'>
+          Heroku, Stripe, Mandrill, Amazon S3, Algolia... We will teach you how to implement all these services to be more efficient when you want to launch a new product. Save time, use the right tool for the right need, that's our developer mindset.
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon blue'>
+            <i class='mdi mdi-cube-outline'></i>
+          </div>
+          <div class='feature-title'>
+            Build your products
+          </div>
+        </div>
+        <div class='feature-body'>
+          That is probably what we are the best at. No one will teach how to build advanced and beautiful products as we do. Kudoz just raised 1.2M, Medpics is seeding 400k, and there are so many awesome products from our students in the starting block, check it out
+        </div>
+      </div>
+      <div class='feature'>
+        <div class='feature-header'>
+          <div class='feature-icon red'>
+            <i class='mdi mdi-wallet-travel'></i>
+          </div>
+          <div class='feature-title'>
+            Land a new job
+          </div>
+        </div>
+        <div class='feature-body'>
+          Working as a junior developer for Stripe, Finexkap, Compass (San Francisco), 55, Save, etc..  French engineers are the best, that's what they say ;) We will help you find your dream job, either as a junior dev or product manager. Discuss with any of our 350+ alumni to be sure about that!
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<%= react_component 'FeaturedAlumni', {
+  alumni: [
+    {
+      name: 'Olivier Xu',
+      description: "Lancée en 2014, la startup Kudoz vient d’annoncer avoir bouclé une levée de fonds de 1,2 million d’euros auprès de Schibsted Media Group, société qui détient également Leboncoin et MonsieurDrive.",
+      background: image_path('kudoz_closing_deal.jpg'),
+      extended: 'https://github.com/lewagon/design/blob/master/pick-it/pictures/class/class_11.jpg?raw=true)',
+      active: true
+    },
+    {
+      name: 'Julie De Pimodan',
+      description: 'Lancée en 2014, la startup Kudoz vient d’annoncer avoir bouclé une levée de fonds de 1,2 million d’euros auprès de Schibsted Media Group, société qui détient également Leboncoin et MonsieurDrive.',
+      background: 'https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11782483_10153539706397491_5193201756643215335_o.jpg',
+      extended: 'https://github.com/lewagon/design/blob/master/pick-it/pictures/class/class_11.jpg?raw=true)',
+      active: false
+    }
+  ]
+  } %>
+
+
+<div class="quote-overlay">
+  <div class="container">
+    <div class='quote'>
+      <h2 class='section-title-home quote'>
+        <div class='section-title-home-content'>
+          "an <strong>Impressive</strong> european coding bootcamp"
+          <div class='techcrunch'>
+            <hr class='techcrunch-hr hidden-xs'>
+            <div>
+              <img src='http://portfolio.toolness.org/img/logos/techcrunch.png' />
             </div>
           </div>
         </div>
+      </h2>
+      <div class='techcrunch-view hidden-sm hidden-xs'>
+        <%= image_tag "press/techcrunch.png" %>
       </div>
     </div>
   </div>
 </div>
-
-
-<div class="container padded">
-  <div class="row">
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Paris</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 2 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Brussels</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 2 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Los Angeles</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 3 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-3">
-      <div class="card-city">
-        <div class="card-city-header"></div>
-        <div class="card-city-body">
-          <h3>Lille</h3>
-          <p>
-            <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-          </p>
-          <p>
-            <i class="fa fa-calendar"></i> 2 évènements à venir
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
+<%= react_component 'UserCascade', {
+  users: (Static::STUDENTS.to_a).map do |student|
+    image = student[1][:image]
+    student[1][:image] = image_path("alumni/#{image}")
+    student[1]
+  end.shuffle*2
+  } %>
+<div class="latest-projects-overlay">
+  <div class="container">
     <div class="col-xs-12 text-center padded-small">
       <h2 class="section-header">
-        <%= t(".our_cities") %>
+        Fraichement codé
       </h2>
       <p class="text-muted">
-        <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
-        <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
+        60 produits au compteur. <i class="fa fa-angle-right"></i>
+        <a href="#" target="_top">Voir tous les produits</a>
       </p>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <span class="card-bg"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img src='user.jpg' class="avatar avatar-bordered"/>
+        </span>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <span class="card-bg"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img src='user.jpg' class="avatar avatar-bordered"/>
+        </span>
+        <a href="#" class="card-link"></a>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="card">
+        <span class="card-bg"></span>
+        <span class="card-shadow"></span>
+        <span class="card-description">Popular</span>
+        <span class="card-text">
+          <h2>Some stuff</h2>
+          <p>Very cool stuff, useful and smart</p>
+        </span>
+        <span class="card-user">
+          <img src='user.jpg' class="avatar avatar-bordered"/>
+        </span>
+        <a href="#" class="card-link"></a>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="banner banner-flat" style="background-image: url('<%= image_path('banners/home-secondary.jpg')%>');padding-bottom: 0;">
-  <div class="banner-flat-filter banner-flat-filter-green"></div>
-  <div class="banner-content text-center press-container">
-    <div><%= image_tag "press/techcrunch.png" %></div>
-    <div><%= image_tag "press/JDN.png" %></div>
-    <div><%= image_tag "press/maddyness.png" %></div>
-    <div><%= image_tag "press/rudebaguette.png" %></div>
+<div class="wordlwide-overlay">
+  <div class="container padded">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content'>
+        We are worldwide.
+      </div>
+    </h2>
+    <%= render 'shared/map' %>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Paris</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 2 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Brussels</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 2 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Los Angeles</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 3 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="card-city">
+          <div class="card-city-header"></div>
+          <div class="card-city-body">
+            <h3>Lille</h3>
+            <p>
+              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
+            </p>
+            <p>
+              <i class="fa fa-calendar"></i> 2 évènements à venir
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 text-center padded-small">
+        <h2 class="section-header">
+          <%= t(".our_cities") %>
+        </h2>
+        <p class="text-muted">
+          <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
+          <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
+        </p>
+      </div>
+    </div>
   </div>
 </div>

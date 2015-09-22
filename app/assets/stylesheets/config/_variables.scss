@@ -1,3 +1,12 @@
+// Font-size and line-height
+$base-size:          16px;
+$base-height:        1.4;
+$font-weight-light:  100;
+$font-weight-normal: 300;
+$font-weight-semi-bold: 500;
+$font-weight-bold:   900;
+
+
 // Local fonts (uncomment following lines)
 @font-face {
   font-family: "Avenir";
@@ -6,7 +15,7 @@
        font-url('Avenir/AvenirLight.woff') format('woff'),
        font-url('Avenir/AvenirLight.woff2') format('woff2'),
        font-url('Avenir/AvenirLight.ttf') format('truetype');
-  font-weight: 100;
+  font-weight: $font-weight-light;
 }
 @font-face {
   font-family: "Avenir";
@@ -15,7 +24,7 @@
        font-url('Avenir/AvenirMedium.woff') format('woff'),
        font-url('Avenir/AvenirMedium.woff2') format('woff2'),
        font-url('Avenir/AvenirMedium.ttf') format('truetype');
-  font-weight: 300;
+  font-weight: $font-weight-normal;
 }
 @font-face {
   font-family: "Avenir";
@@ -24,7 +33,7 @@
        font-url('Avenir/AvenirSemiBold.woff') format('woff'),
        font-url('Avenir/AvenirSemiBold.woff2') format('woff2'),
        font-url('Avenir/AvenirSemiBold.ttf') format('truetype');
-  font-weight: 500;
+  font-weight: $font-weight-semi-bold;
 }
 @font-face {
   font-family: "Avenir";
@@ -33,7 +42,7 @@
        font-url('Avenir/AvenirBold.woff') format('woff'),
        font-url('Avenir/AvenirBold.woff2') format('woff2'),
        font-url('Avenir/AvenirBold.ttf') format('truetype');
-  font-weight: 700;
+  font-weight:  $font-weight-bold;
 }
 @font-face {
   font-family: "Avenir";
@@ -50,11 +59,6 @@ $base-font: "Avenir", "Helvetica", "sans-serif";
 $header-font: $base-font;
 $navbar-font: $base-font;
 
-
-// Font-size and line-height
-$base-size: 16px;
-$base-height: 1.4;
-
 /* -------------------------------------
  * Colors
  * ------------------------------------- */
@@ -66,6 +70,7 @@ $blue: #469AE0;
 $yellow: #FDB631;
 $orange: #E67E22;
 $green: #379007;
+$purple: #9b59b6;
 
 // Gray scale
 $gray-darker:  lighten(#000, 13.5%); // #222

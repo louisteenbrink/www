@@ -1,0 +1,51 @@
+.features-wrapper {
+  background-color: #F4F4F4;
+  position: relative;
+  margin-top: -180px;
+  padding-top: 180px;
+}
+
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feature {
+  padding: 40px;
+  flex: 0 0 33%;
+
+  @media (max-width: $screen-md) {
+    flex: 0 0 50%;
+    padding: 30px 20px;
+  }
+
+  @media (max-width: $screen-sm) {
+    flex: 0 0 100%;
+  }
+}
+
+.feature-header {
+  display: flex;
+  padding-bottom: 20px;
+  align-items: center;
+
+  i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+.feature-title {
+  font-size: 18px;
+}
+
+.feature-icon {
+  &.red { color: $red }
+  &.blue { color: $blue }
+  &.green { color: $green }
+  &.purple { color: $purple }
+  &.yellow { color: $yellow }
+}
+
+.feature-body { font-weight: $font-weight-light }
