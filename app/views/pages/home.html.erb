@@ -119,24 +119,7 @@
   </div>
 </div>
 
-<%= react_component 'FeaturedAlumni', {
-  alumni: [
-    {
-      name: 'Olivier Xu',
-      description: "Lancée en 2014, la startup Kudoz vient d’annoncer avoir bouclé une levée de fonds de 1,2 million d’euros auprès de Schibsted Media Group, société qui détient également Leboncoin et MonsieurDrive.",
-      background: image_path('kudoz_closing_deal.jpg'),
-      extended: 'https://github.com/lewagon/design/blob/master/pick-it/pictures/class/class_11.jpg?raw=true)',
-      active: true
-    },
-    {
-      name: 'Julie De Pimodan',
-      description: 'Lancée en 2014, la startup Kudoz vient d’annoncer avoir bouclé une levée de fonds de 1,2 million d’euros auprès de Schibsted Media Group, société qui détient également Leboncoin et MonsieurDrive.',
-      background: 'https://scontent-cdg2-1.xx.fbcdn.net/hphotos-xaf1/t31.0-8/11782483_10153539706397491_5193201756643215335_o.jpg',
-      extended: 'https://github.com/lewagon/design/blob/master/pick-it/pictures/class/class_11.jpg?raw=true)',
-      active: false
-    }
-  ]
-  } %>
+<%= react_component 'Stories', { stories: @stories }, prerender: true %>
 
 
 <div class="quote-overlay">

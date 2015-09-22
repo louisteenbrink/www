@@ -3,11 +3,11 @@ Rails.application.routes.draw do
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|
-      get page => "pages#show", template: template, locale: locale, as: "#{template}_#{locale}".to_sym
+      get page => "pages##{template}", template: template, locale: locale, as: "#{template}_#{locale}".to_sym
     end
   end
 
-  root to: "pages#show", template: "home"
+  root to: "pages#home"
 
   scope "(:locale)", locale: /fr|en/ do
     get "faq", to: "pages#show", template: "faq", as: :faq

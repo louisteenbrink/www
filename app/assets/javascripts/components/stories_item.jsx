@@ -1,4 +1,4 @@
-class FeaturedAlumniItem extends React.Component {
+class StoriesItem extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -8,16 +8,16 @@ class FeaturedAlumniItem extends React.Component {
 
   render() {
     var componentClasses = classNames({
-      'featured-alumni-item': true,
+      'story-item': true,
       'is-active': (this.props.index + 1) == this.props.activeItem
     })
 
     return(
         <div className={componentClasses} onMouseEnter={this.handleClick.bind(this)} onClick={this.handleClick.bind(this)}>
-          <div className='featured-alumni-item-name'>
-            {this.props.name}
+          <div className='story-item-name'>
+            {this.props.alumni.first_name} {this.props.alumni.last_name}
           </div>
-          <div className='featured-alumni-item-description'>
+          <div className='story-item-description'>
             {this.props.description}
           </div>
         </div>

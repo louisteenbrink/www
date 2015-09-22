@@ -1,9 +1,9 @@
-.featured-alumni-overlay {
+.story-overlay {
   background: #F4F4F4;
   overflow: hidden;
 }
 
-.featured-alumni {
+.story {
   display: flex;
   padding: 50px 0;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.featured-alumni-list {
+.story-list {
   flex: 1;
 
   @media (max-width: $screen-sm) {
@@ -20,7 +20,7 @@
   }
 }
 
-.featured-alumni-detail {
+.story-detail {
   flex: 1;
   margin-left: 30px;
   position: relative;
@@ -34,7 +34,7 @@
   }
 }
 
-.featured-alumni-item {
+.story-item {
   padding: 40px;
   cursor: pointer;
   border-radius: 5px;
@@ -53,31 +53,31 @@
       border: none;
     }
 
-    .featured-alumni-item-description {
+    .story-item-description {
       color: black;
     }
   }
 
   &:hover {
-    .featured-alumni-item-description {
+    .story-item-description {
       color: black;
     }
   }
 }
 
-.featured-alumni-item-name {
+.story-item-name {
   font-size: 25px;
   font-weight: $font-weight-bold;
 }
 
-.featured-alumni-item-description {
+.story-item-description {
   font-size: 20px;
   font-weight: $font-weight-light;
   color: #595959;
   padding-top: 10px;
 }
 
-.featured-alumni-detail-background {
+.story-detail-background {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -96,7 +96,7 @@
   }
 }
 
-.featured-alumni-detail-extended {
+.story-detail-extended {
   height: 200px;
   width: 200px;
   background-size: 218%;
