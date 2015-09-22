@@ -33,6 +33,14 @@
 
 <div class="features-wrapper">
   <div class="container features-container">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content' style="font-size:30px;">
+        Pedagogy matters.
+      </div>
+    </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      We love teaching advanced topics with simplicity.
+    </p>
     <div class='features'>
       <div class='feature'>
         <div class='feature-header'>
@@ -59,7 +67,7 @@
           </div>
         </div>
         <div class='feature-body'>
-          Become more than a developer, a Software engineer. This guy who has the big picture on technical issues, who knows what MVP means, what a DB scheme is, and who can learn a new programming language in a week.
+          Become more than a developer, a Software engineer. This guy who has the big picture on technical issues, who knows what MVC means, what's a DB scheme, and who can learn a new programming language within a week.
         </div>
       </div>
       <div class='feature'>
@@ -121,6 +129,73 @@
 
 <%= react_component 'Stories', { stories: @stories }, prerender: true %>
 
+<div class="latest-projects-overlay">
+  <div class="container">
+    <div class="col-xs-12 text-center padded-small">
+      <h2 class="section-header">
+        Freshly coded
+      </h2>
+      <p class="text-muted" style="font-size: 20px;">
+        100+ products built by our alumni. <i class="fa fa-angle-right"></i>
+        <a href="#" target="_top">See all products</a>
+      </p>
+    </div>
+    <% @projects.each do |project| %>
+      <div class="col-sm-4">
+        <div class="card">
+          <span class="card-bg" style="background-image: url('<%= project['thumbnail']%>')"></span>
+          <span class="card-shadow"></span>
+          <span class="card-description">Rails / React.js</span>
+          <span class="card-text">
+            <h2><%= project["name"] %></h2>
+            <p><%= project["tagline"] %></p>
+          </span>
+          <span class="card-user">
+            <% unless project["makers"].empty? %>
+              <%= image_tag project["makers"].first["thumbnail"], class: "avatar avatar-bordered" %>
+            <% end %>
+          </span>
+          <a href="<%= project["url"] %>" class="card-link"></a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="wordlwide-overlay">
+  <div class="container padded">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content'>
+        We are worldwide.
+      </div>
+    </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
+      <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
+    </p>
+    <%= render 'shared/map' %>
+
+    <div class="row">
+      <% @cities.each do |city| %>
+        <div class="col-xs-12 col-sm-3">
+          <div class="card-city">
+            <div class="card-city-header" style="background-image: url('<%= city['city_picture']%>')"></div>
+            <div class="card-city-body">
+              <h3><%= city["name"] %></h3>
+              <p>
+                <i class="fa fa-map-marker"></i> prochain départ : <%= city["next_batch"] ? Date.parse(city["next_batch"]["starts_at"]).strftime("%b %Y") : "coming soon" %>
+              </p>
+              <p>
+                <i class="fa fa-calendar"></i> 2 évènements à venir
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
 
 <div class="quote-overlay">
   <div class="container">
@@ -142,149 +217,7 @@
     </div>
   </div>
 </div>
+
 <%= react_component 'UserCascade', {
-  users: (Static::STUDENTS.to_a).map do |student|
-    image = student[1][:image]
-    student[1][:image] = image_path("alumni/#{image}")
-    student[1]
-  end.shuffle*2
+  alumni: @alumni
   } %>
-<div class="latest-projects-overlay">
-  <div class="container">
-    <div class="col-xs-12 text-center padded-small">
-      <h2 class="section-header">
-        Fraichement codé
-      </h2>
-      <p class="text-muted">
-        60 produits au compteur. <i class="fa fa-angle-right"></i>
-        <a href="#" target="_top">Voir tous les produits</a>
-      </p>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <span class="card-bg"></span>
-        <span class="card-shadow"></span>
-        <span class="card-description">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='user.jpg' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <span class="card-bg"></span>
-        <span class="card-shadow"></span>
-        <span class="card-description">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='user.jpg' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card">
-        <span class="card-bg"></span>
-        <span class="card-shadow"></span>
-        <span class="card-description">Popular</span>
-        <span class="card-text">
-          <h2>Some stuff</h2>
-          <p>Very cool stuff, useful and smart</p>
-        </span>
-        <span class="card-user">
-          <img src='user.jpg' class="avatar avatar-bordered"/>
-        </span>
-        <a href="#" class="card-link"></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="wordlwide-overlay">
-  <div class="container padded">
-    <h2 class='section-title-home'>
-      <div class='section-title-home-content'>
-        We are worldwide.
-      </div>
-    </h2>
-    <%= render 'shared/map' %>
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-3">
-        <div class="card-city">
-          <div class="card-city-header"></div>
-          <div class="card-city-body">
-            <h3>Paris</h3>
-            <p>
-              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-            </p>
-            <p>
-              <i class="fa fa-calendar"></i> 2 évènements à venir
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="card-city">
-          <div class="card-city-header"></div>
-          <div class="card-city-body">
-            <h3>Brussels</h3>
-            <p>
-              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-            </p>
-            <p>
-              <i class="fa fa-calendar"></i> 2 évènements à venir
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="card-city">
-          <div class="card-city-header"></div>
-          <div class="card-city-body">
-            <h3>Los Angeles</h3>
-            <p>
-              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-            </p>
-            <p>
-              <i class="fa fa-calendar"></i> 3 évènements à venir
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-3">
-        <div class="card-city">
-          <div class="card-city-header"></div>
-          <div class="card-city-body">
-            <h3>Lille</h3>
-            <p>
-              <i class="fa fa-map-marker"></i> prochain départ : janvier 2015
-            </p>
-            <p>
-              <i class="fa fa-calendar"></i> 2 évènements à venir
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 text-center padded-small">
-        <h2 class="section-header">
-          <%= t(".our_cities") %>
-        </h2>
-        <p class="text-muted">
-          <%= t(".open_yours") %> <i class="fa fa-angle-right"></i>
-          <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
-        </p>
-      </div>
-    </div>
-  </div>
-</div>

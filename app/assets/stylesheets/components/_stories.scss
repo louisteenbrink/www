@@ -69,9 +69,15 @@
   font-size: 25px;
   font-weight: $font-weight-bold;
 }
+.story-item-batch {
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: initial;
+  color: #989898;
+}
 
 .story-item-description {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: $font-weight-light;
   color: #595959;
   padding-top: 10px;
@@ -99,7 +105,7 @@
 .story-detail-extended {
   height: 200px;
   width: 200px;
-  background-size: 218%;
+  background-size: cover;
   background-position: 54% 36%;
   border-radius: 50%;
   position: absolute;

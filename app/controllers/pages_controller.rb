@@ -5,6 +5,9 @@ class PagesController < ApplicationController
 
   def home
     @stories = @client.stories
+    @alumni = @client.alumni
+    @projects = @client.projects
+    @cities = @client.cities
   end
 
   private

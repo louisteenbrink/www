@@ -11,12 +11,12 @@ class UserCascade extends React.Component {
         <div className='container'>
         <h2 className='section-title-home negative'>
           <div className='section-title-home-content'>
-            350+ Happy alumni
+            {this.props.alumni.length}+ Happy alumni
           </div>
         </h2>
         </div>
         <div className='user-cascade'>
-          {this.props.users.map((user, index) => {
+          {this.props.alumni.map((user, index) => {
             var i = index + 1;
             return (
               <UserCascadeItem

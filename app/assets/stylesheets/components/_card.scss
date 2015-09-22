@@ -230,7 +230,7 @@
     width: 100%;
   }
   &-shadow {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 80%);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 80%);
     border-radius: 3px;
     position: absolute;
     top: 0;
@@ -238,7 +238,7 @@
     width: 100%;
   }
   &-description {
-    font-size: 10px;
+    font-size: 14px;
     text-transform: uppercase;
     position: absolute;
     top: 10px;
@@ -249,10 +249,10 @@
     bottom: 10px;
     left: 10px;
     h2 {
-      font-size: 24px;
+      font-size: 25px;
     }
     p {
-      font-size: 13px;
+      font-size: 16px;
     }
   }
   &-user {
