@@ -1,0 +1,19 @@
+.module.feature {
+  flex: inherit;
+}
+
+.module-weeks {
+  margin-left: auto;
+  opacity: .6;
+  font-weight: 100;
+}
+
+.module {
+  height: 60px;
+  overflow: hidden;
+
+  &.is-active,
+  &.is-opened {
+    height: auto;
+  }
+}

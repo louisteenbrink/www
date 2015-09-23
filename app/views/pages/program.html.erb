@@ -26,9 +26,65 @@
 </div>
 <div class='learning-curve-overlay'>
   <%= react_component 'LearningCurve', {
-    curve: render('shared/learning_curve')
+    curve: render('shared/learning_curve'),
+    modules: [
+      {
+        title: 'Programming',
+        curve_size: 25,
+        weeks: "3 semaines",
+        startWeek: '1',
+        endWeek: '3',
+        description: 'learn fundamental concepts shared by all programming languages: variables, methods, loops, conditional statements, iterators, regular expressions, file parsing,... Work on cool challenges with your buddies, practice on real-life examples (playing with APIs, scraping HTML, storing data in CSV files etc..).',
+        skills: [
+          { 'icon': 'devicons-terminal_badge' },
+          { 'icon': 'devicons-git' },
+          { 'icon': 'devicons-ruby_rough' },
+          { 'icon': 'devicons-postgresql' }
+        ]
+      },
+      {
+        title: 'Front-end',
+        weeks: "2 semaines",
+        startWeek: '4',
+        endWeek: '5',
+        curve_size: 50,
+        description: "you really know a lot of stuff at this point and you can code well-structured, persistent & smart softwares. But the problem is... the interface. It's still our good old shell. Wouldn't it be great to play with a nicer interface such as a HTML file with cool CSS design and JS animations? Let's learn about HTML, CSS & get the best practices in web-design (e.g. learning positioning & layout techniques in CSS + very cool recent stuff like flexbox & CSS animations). Then, we'll teach you how to use Bootstrap, a nice CSS/JS library to save time when prototyping web-apps. Le Wagon's frontend module is very dense, and you'll quickly jump to more advanced stuff such as ERB templates & SASS code and you'll play with Middleman, a very cool frontend framework. Very professional learnings here!",
+        skills: [
+          { 'icon': 'devicons-html5' },
+          { 'icon': 'devicons-css3' },
+          { 'icon': 'devicons-sass' },
+          { 'icon': 'devicons-javascript_badge' },
+          { 'icon': 'devicons devicons-jquery' }
+        ]
+      },
+      {
+        title: 'Rails',
+        startWeek: '6',
+        weeks: "2 semaines",
+        endWeek: '7',
+        curve_size: 75,
+        description: "Time to put all our skills together and move to Rails. No big deal here, we already know most of it. We know DB and ActiveRecord, we are ruby killers and we've played with dozens of gems. We already have good practices in frontend development and we've seen templating and SASS. The 1st Rails week will teach you all the best practices of the frameworks (routing, controllers, models, views). During the 2nd week, you'll code Airbnb from scratch in 5 days. You'll work in teams and you'll learn to collaborate on Github using pull requests! You'll learn a lot from this experience.",
+        skills: [
+          { 'icon': 'devicons-ruby_on_rails' },
+          { 'icon': 'devicons-git_pull_request' },
+          { 'icon': 'devicons-heroku' }
+        ]
+      },
+      {
+        title: 'Project',
+        startWeek: '8',
+        weeks: "2 semaines",
+        endWeek: '9',
+        curve_size: 100,
+        description: "This is the moment of truth! Let's code your own project during the 2 last week and build an awesome product!",
+        skills: [
+          { 'icon': 'devicons devicons-responsive' }
+        ]
+      }
+    ]
     } %>
 </div>
+
 <div class="bg-white" id="objective">
   <div class="container padded">
     <div class="row">

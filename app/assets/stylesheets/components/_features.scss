@@ -5,6 +5,14 @@
   padding-top: 180px;
 }
 
+.feature-container {
+  display: flex;
+
+  &.has-equal-columns {
+    .feature { flex: 1 }
+  }
+}
+
 
 .features {
   display: flex;

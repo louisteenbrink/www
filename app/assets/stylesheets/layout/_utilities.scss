@@ -14,6 +14,15 @@
   }
 }
 
+.flow-column {
+  flex-flow: column;
+}
+
+.flex {
+  display: flex;
+}
+
+
 // Backgrounds
 .bg-text {
   background: #4a4a4a;
