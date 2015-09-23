@@ -122,6 +122,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    meetup_client (0.0.6)
     method_source (0.8.2)
     mime-types (2.6.1)
     mimemagic (0.3.0)
@@ -202,6 +203,7 @@ GEM
       rails (>= 3.2)
       tilt
     redcarpet (3.2.3)
+    redis (3.2.1)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
     rest-client (1.8.0)
@@ -262,6 +264,7 @@ DEPENDENCIES
   jquery-rails
   js-routes
   letter_opener
+  meetup_client
   paperclip
   pg
   pry-byebug
@@ -279,6 +282,7 @@ DEPENDENCIES
   rails_12factor
   react-rails
   redcarpet
+  redis
   rest-client
   sass-rails (~> 5.0)
   simple_form

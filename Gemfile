@@ -11,6 +11,8 @@ gem "devise"
 gem "paperclip"
 gem "aws-sdk", "< 2.0"
 gem "rest-client"
+gem 'meetup_client'
+gem "redis"
 
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"

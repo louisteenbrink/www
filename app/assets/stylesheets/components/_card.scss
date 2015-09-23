@@ -9,9 +9,20 @@
   height: 100px;
   background-size: cover;
   border-radius: 3px 3px 0px 0px;
+  position: relative;
+}
+.card-city-filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 80%);
 }
 .card-city-body {
   padding: 20px;
+  padding-top: 10px;
+  height: 210px;
+  position: relative;
   h3 {
     font-size: 19px;
   }
@@ -19,6 +30,11 @@
     color: #959494;
     font-size: 13px;
   }
+}
+
+.card-city-meetup-link {
+  position: absolute;
+  bottom: 10px;
 }
 .card-student {
   display: flex;
@@ -230,7 +246,7 @@
     width: 100%;
   }
   &-shadow {
-    background-image: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 80%);
+    background-image: linear-gradient(-225deg, rgba(30, 30, 30, 0.6) 30%, rgba(46, 46, 46, 0.8) 80%);
     border-radius: 3px;
     position: absolute;
     top: 0;
@@ -247,12 +263,16 @@
   &-text {
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    padding-left: 10px;
+    background-color: #D23333;
+    padding-right: 35px;
+    border-radius: 0 2px 2px 0;
     h2 {
-      font-size: 25px;
+      font-size: 20px;
+      margin-top: 13px;
     }
     p {
-      font-size: 16px;
+      font-size: 13px;
     }
   }
   &-user {

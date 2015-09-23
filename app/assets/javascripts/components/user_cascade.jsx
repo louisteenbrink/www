@@ -38,7 +38,7 @@ class UserCascade extends React.Component {
   }
 
   handleMouseMove(e) {
-    this.setState({mousePosition: this._mousePosition(e)})
+    // this.setState({mousePosition: this._mousePosition(e)})
   }
 
   _mousePosition(e) {

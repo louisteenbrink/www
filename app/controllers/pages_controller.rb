@@ -8,10 +8,16 @@ class PagesController < ApplicationController
     @alumni = @client.alumni
     @projects = @client.projects
     @cities = @client.cities
+    @meetups = Hash.new
+    @cities.each do |city|
+      if city["meetup_id"].present?
+        meetup_cli = MeetupApiClient.new(city["meetup_id"])
+        @meetups[city['slug']] = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
+      end
+    end
   end
 
   private
-
   def set_locale
     I18n.locale = params[:locale]
   end

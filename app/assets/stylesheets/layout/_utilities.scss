@@ -70,7 +70,7 @@
     font-size: 30px;
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-md) {
     height: auto;
     border: none;
   }
@@ -110,4 +110,6 @@
   font-size: 20px !important;
   font-weight: 300;
   margin-top: -25px;
+  position: relative;
+  z-index: 1;
 }
