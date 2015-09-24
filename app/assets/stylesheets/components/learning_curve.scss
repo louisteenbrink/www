@@ -13,11 +13,18 @@ $curve-size-lg: 1500px;
 
   .features {
     flex: 0 0 50%;
+    @media (max-width: $screen-sm) {
+      flex: inherit;
+    }
   }
 }
 
 .learning-curve-helper {
   flex: 0 0 50%;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
 }
 
 .learning-curve-helper-inner {

@@ -141,7 +141,6 @@
 
 <div class="bg-blue two-columns">
   <div class="container">
-    <%= image_tag "product/fullstack-challenges.png", class: "two-columns-img two-columns-img-left"%>
     <div class="two-columns-description">
       <h2 class="section-header-big">
         <%= t(".why_us") %>
@@ -149,6 +148,9 @@
       <p class="text-readable text-opac">
         <%= t(".why_us_details") %>
       </p>
+    </div>
+    <div class='image-container terminal'>
+      <%= image_tag "product/fullstack-challenges.png", class: "two-columns-img two-columns-img-left"%>
     </div>
   </div>
 </div>
@@ -163,13 +165,14 @@
         <%= t(".community_details") %>
       </p>
     </div>
-    <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
+    <div class='two-columns-image-container slack'>
+      <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
+    </div>
   </div>
 </div>
 
 <div class="bg-green-gradient two-columns">
   <div class="container">
-    <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:250px;margin-bottom:70px" %>
     <div class="two-columns-description">
       <h2 class="section-header-big">
         <%= t(".cv") %>
@@ -178,42 +181,8 @@
         <%= t(".cv_details") %>
       </p>
     </div>
-  </div>
-</div>
-
-<div class="bg-white padded">
-  <div class="container">
-    <div class="col-xs-12 col-sm-6">
-      <p class="text-muted text-readable padded-small text-center">
-        TODO: tchret animation "our only goal"
-      </p>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <div class="padded-small">
-        <h2 class="section-header">
-          <%= t(".awesome_entrepreneur") %>
-        </h2>
-        <p class="text-readable">
-          <%= t(".awesome_entrepreneur_details") %>
-        </p>
-      </div>
-      <div class="padded-small">
-        <h2 class="section-header">
-          <%= t(".amazing_employee") %>
-        </h2>
-        <p class="text-readable">
-          <%= t(".amazing_employee_details") %>
-        </p>
-      </div>
-      <div class="padded-small">
-        <h2 class="section-header">
-          <%= t(".junior_dev") %>
-        </h2>
-        <p class="text-readable">
-          <%= t(".junior_dev_details") %>
-        </p>
-      </div>
+    <div class='two-columns-image-container'>
+      <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:350px;margin-bottom:70px" %>
     </div>
   </div>
-</div>
 </div>

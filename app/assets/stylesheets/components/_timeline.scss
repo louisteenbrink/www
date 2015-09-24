@@ -48,7 +48,7 @@
       transform: translateX(10%);
       opacity: 0;
       position: relative;
-      animation: dayPictureEntrance .5s ease forwards;
+      @media (min-width: $screen-sm){ animation: dayPictureEntrance .5s ease forwards }
     }
   }
 }
@@ -63,6 +63,10 @@
   border-radius: 50%;
   font-weight: $font-weight-normal;
   transition: all .2s ease;
+  @media (max-width: $screen-sm) {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  }
 }
 
 .day-description {
@@ -71,6 +75,11 @@
   box-shadow: 0px 0px 0px transparent;
   flex: 1 1 auto;
   padding: 25px;
+  @media (max-width: $screen-sm) {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  }
+
 }
 
 .day-circle {
@@ -118,4 +127,11 @@
   margin-left: 98px;
   margin-bottom: 50px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+
+  @media (max-width: $screen-sm) {
+    position: relative;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+
+  }
 }
