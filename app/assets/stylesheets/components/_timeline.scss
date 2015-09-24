@@ -10,6 +10,13 @@
   }
 }
 
+@keyframes dayHourPulse {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.1) }
+  100%  { transform: scale(1) }
+}
+
+
 .day-type-overlay {
   background: #F4F4F4;
 }
@@ -30,6 +37,8 @@
   cursor: pointer;
 
   &.is-active {
+
+    .day-hour { animation: dayHourPulse .5s ease forwards }
     .day-description,
     .day-hour {
       background: white;
@@ -57,7 +66,6 @@
 }
 
 .day-description {
-  transition: background 0.6s ease;
   cursor: pointer;
   background: transparent;
   box-shadow: 0px 0px 0px transparent;

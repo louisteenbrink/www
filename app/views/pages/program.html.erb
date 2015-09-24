@@ -139,57 +139,45 @@
     } %>
 </div>
 
-<div class="bg-white" id="objective">
-  <div class="container padded">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
-        <h2 class="section-header-big">
-          <%= t(".objective") %>
-        </h2>
-        <p class="text-readable text-opac">
-          <%= t(".objective_details") %>
-        </p>
-      </div>
-      <div class="col-xs-12 col-sm-6">
-        <%= image_tag "banners/live-code.jpg", class: "img-responsive" %>
-      </div>
+<div class="bg-blue two-columns">
+  <div class="container">
+    <%= image_tag "product/fullstack-challenges.png", class: "two-columns-img two-columns-img-left"%>
+    <div class="two-columns-description">
+      <h2 class="section-header-big">
+        <%= t(".why_us") %>
+      </h2>
+      <p class="text-readable text-opac">
+        <%= t(".why_us_details") %>
+      </p>
     </div>
   </div>
 </div>
 
-<div class="bg-blue two-columns">
-  <%= image_tag "product/fullstack-challenges.png", class: "two-columns-img two-columns-img-left"%>
-  <div class="two-columns-description">
-    <h2 class="section-header-big">
-      <%= t(".why_us") %>
-    </h2>
-    <p class="text-readable text-opac">
-      <%= t(".why_us_details") %>
-    </p>
-  </div>
-</div>
-
 <div class="bg-white two-columns">
-  <div class="two-columns-description" >
-    <h2 class="section-header-big">
-      <%= t(".community") %>
-    </h2>
-    <p class="text-readable text-opac">
-      <%= t(".community_details") %>
-    </p>
+  <div class="container">
+    <div class="two-columns-description" >
+      <h2 class="section-header-big">
+        <%= t(".community") %>
+      </h2>
+      <p class="text-readable text-opac">
+        <%= t(".community_details") %>
+      </p>
+    </div>
+    <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
   </div>
-  <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
 </div>
 
 <div class="bg-green-gradient two-columns">
-  <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:250px;margin-bottom:70px" %>
-  <div class="two-columns-description">
-    <h2 class="section-header-big">
-      <%= t(".cv") %>
-    </h2>
-    <p class="text-readable text-opac">
-      <%= t(".cv_details") %>
-    </p>
+  <div class="container">
+    <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:250px;margin-bottom:70px" %>
+    <div class="two-columns-description">
+      <h2 class="section-header-big">
+        <%= t(".cv") %>
+      </h2>
+      <p class="text-readable text-opac">
+        <%= t(".cv_details") %>
+      </p>
+    </div>
   </div>
 </div>
 
