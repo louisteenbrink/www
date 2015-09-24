@@ -30,6 +30,7 @@
     modules: [
       {
         title: 'Programming',
+        icon: 'mdi mdi-laptop yellow',
         curve_size: 25,
         weeks: "3 semaines",
         startWeek: '1',
@@ -45,6 +46,7 @@
       {
         title: 'Front-end',
         weeks: "2 semaines",
+        icon: 'mdi mdi-auto-fix blue',
         startWeek: '4',
         endWeek: '5',
         curve_size: 50,
@@ -60,6 +62,7 @@
       {
         title: 'Rails',
         startWeek: '6',
+        icon: 'devicons devicons-ruby_on_rails red',
         weeks: "2 semaines",
         endWeek: '7',
         curve_size: 75,
@@ -73,6 +76,7 @@
       {
         title: 'Project',
         startWeek: '8',
+        icon: 'mdi mdi-cube-outline orange',
         weeks: "2 semaines",
         endWeek: '9',
         curve_size: 100,
@@ -82,6 +86,56 @@
         ]
       }
     ]
+    } %>
+</div>
+<div class="day-type-overlay">
+  <%= react_component 'DayType',
+    {
+      title: t(".typical_day"),
+      steps: [
+        {
+          image: image_path('banners/live-code.jpg'),
+          description: t(".theoretical_intro"),
+          hour: '9h',
+          circle_color: 'day-circle-red',
+          active: false
+        },
+        {
+          image: image_path('product/kitt.png'),
+          description: t(".pair_programming"),
+          hour: '10h30',
+          circle_color: 'day-circle-blue'
+        },
+        {
+          image: image_path('banners/pair-programming.jpg'),
+          description: t(".pair_programming_next"),
+          hour: '14h00',
+          circle_color: 'day-circle-green'
+        },
+        {
+          image: image_path('banners/yoga.jpg'),
+          description: t(".yoga"),
+          hour: '16h30',
+          circle_color: 'day-circle-orange'
+        },
+        {
+          image: image_path('banners/home-secondary.jpg'),
+          description: t(".live_code"),
+          hour: '17h30',
+          circle_color: 'day-circle-orange'
+        },
+        {
+          image: image_path('banners/talk.jpeg'),
+          description: t(".talk"),
+          hour: '19h00',
+          circle_color: 'day-circle-yellow'
+        },
+        {
+          description: 'Sleep, repeat.',
+          image: false,
+          circle_color: 'day-circle-red'
+        }
+      ]
     } %>
 </div>
 
@@ -174,90 +228,4 @@
     </div>
   </div>
 </div>
-<div class="container padded">
-  <div class="row">
-    <h2 class="section-header-big text-center"><%= t ".typical_day" %></h2>
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-      <div class="days">
-        <div class="days-border"></div>
-        <div class="days-container">
-          <div class="day">
-            <div class="day-hour">9h</div>
-            <div class="day-circle day-circle-red"></div>
-            <div class="day-description">
-              <p>
-                <%= t ".theoretical_intro" %>
-              </p>
-            </div>
-          </div>
-          <div class="day-picture" style="background-image: url('<%= image_path('banners/live-code.jpg')%>');">
-          </div>
-          <div class="day">
-            <div class="day-hour">10h30</div>
-            <div class="day-circle day-circle day-circle-blue"></div>
-            <div class="day-description">
-              <p>
-                <%= t ".pair_programming" %>
-              </p>
-            </div>
-          </div>
-          <div class="day-picture" style="background-image: url('<%= image_path('product/kitt.png')%>');background-position: top;">
-          </div>
-          <div class="day">
-            <div class="day-hour">14h00</div>
-            <div class="day-circle day-circle-green"></div>
-            <div class="day-description">
-              <p>
-                <%= t ".pair_programming_next" %>
-              </p>
-            </div>
-          </div>
-          <div class="day-picture" style="background-image: url('<%= image_path('banners/pair-programming.jpg')%>;');background-position: center;">
-          </div>
-          <div class="day">
-            <div class="day-hour">16h30</div>
-            <div class="day-circle day-circle-orange"></div>
-            <div class="day-description">
-              <p>
-                <%= t ".yoga" %>
-              </p>
-            </div>
-          </div>
-          <div class="day-picture" style="background-image: url('<%= image_path('banners/yoga.jpg')%>;');background-position: center;">
-          </div>
-          <div class="day">
-            <div class="day-hour">17h30</div>
-            <div class="day-circle day-circle-orange"></div>
-            <div class="day-description">
-              <p>
-                <%= t ".live_code" %>
-              </p>
-            </div>
-          </div>
-          <div class="day-picture" style="background-image: url('<%= image_path('banners/home-secondary.jpg')%>;');background-position: top;">
-          </div>
-          <div class="day">
-            <div class="day-hour">19h00</div>
-            <div class="day-circle day-circle-yellow"></div>
-            <div class="day-description">
-              <p>
-                <%= t ".talk" %>
-              </p>
-            </div>
-          </div>
-          <div class="day-picture" style="background-image: url('<%= image_path('banners/talk.jpeg')%>;');background-position: top;">
-          </div>
-          <div class="day">
-            <div class="day-hour"></div>
-            <div class="day-circle day-circle-red"></div>
-            <div class="day-description">
-              <p>
-                <i>Sleep, repeat.</i>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>

@@ -3,7 +3,7 @@ class ModuleItem extends React.Component {
     super(props)
     this.state = {
       active: this.props.active,
-      opened: this.props.active
+      opened: this.props.isActive
     }
   }
 
@@ -17,11 +17,12 @@ class ModuleItem extends React.Component {
       <div
         className={componentClasses}
         onMouseLeave={this.handleMouseLeave.bind(this)}
+        onClick={this.handleClick.bind(this)}
         onMouseEnter={this.handleMouseEnter.bind(this)}
       >
         <div className='feature-header'>
-          <div className='feature-icon yellow'>
-            <i className='mdi mdi-laptop'/>
+          <div className='feature-icon'>
+            <i className={this.props.icon}/>
           </div>
           <div className='feature-title'>
             {this.props.title}
@@ -41,7 +42,11 @@ class ModuleItem extends React.Component {
     PubSub.publish('setActiveItem', this.props.index)
     PubSub.publish('curveSize', this.props.curve_size)
     PubSub.publish('getContainerHeight')
-    this.setState({ opened: true })
+  }
+
+  handleClick() {
+    this.setState({ opened: !this.state.opened })
+    PubSub.publish('getContainerHeight')
   }
 
   handleMouseLeave() {

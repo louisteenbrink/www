@@ -28,7 +28,7 @@ class Curve extends React.Component {
 
     return (
       <div className='learning-curve-helper' ref='helper'>
-        <div className='learning-curve-helper-inner' style={containerStyle}>
+        <div className='learning-curve-helper-inner' ref='helperInner' style={containerStyle}>
           <div className='learning-curve-container' ref='curveContainer'>
             <div className='learning-curve-wrapper' style={wrapperStyle}>
               <div
@@ -74,7 +74,7 @@ class Curve extends React.Component {
   }
 
   componentWillReceiveProps() {
-    var curveContainer = React.findDOMNode(this.refs.curveContainer);
+    var curveContainer = React.findDOMNode(this.refs.helperInner);
     var helper = React.findDOMNode(this.refs.helper);
     var breakPoint = {
       top: helper.offsetTop,

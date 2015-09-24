@@ -9,11 +9,18 @@
 }
 
 .module {
-  height: 60px;
+  height: 100px;
   overflow: hidden;
 
-  &.is-active,
+  .feature-body {
+    opacity: 0;
+  }
+
   &.is-opened {
     height: auto;
+
+    .feature-body {
+      opacity: 1;
+    }
   }
 }
