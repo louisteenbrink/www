@@ -1,0 +1,163 @@
+$curve-size-lg: 1500px;
+
+.learning-curve-overlay {
+  margin-top: -180px;
+  padding-top: 180px;
+  background: #F4F4F4;
+  min-height: 500px;
+  overflow: hidden;
+
+  .separator {
+    flex: 0 0 20px;
+  }
+
+  .features {
+    flex: 0 0 50%;
+    @media (max-width: $screen-sm) {
+      flex: inherit;
+    }
+  }
+}
+
+.learning-curve-helper {
+  flex: 0 0 50%;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+}
+
+.learning-curve-helper-inner {
+  position: relative;
+  transition: top .5s linear;
+}
+
+.learning-curve-container {
+  position: relative;
+  transition: top .7s linear;
+  overflow: hidden;
+  padding-left: 50px;
+  padding-top: 50px;
+  width: $curve-size-lg;
+  flex: 1;
+
+  &:before {
+      box-shadow: inset 0 40px 25px 25px #F4F4F4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      content: "";
+  }
+
+}
+
+.learning-curve-wrapper {
+  width: $curve-size-lg;
+  transition: transform .5s ease;
+}
+
+.learning-curve {
+  position: relative;
+  width: $curve-size-lg;
+}
+
+  .learning-curve-svg {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: width 1s cubic-bezier(0.23, 1, 0.32, 1);
+
+    svg {
+      width: $curve-size-lg;
+    }
+  }
+
+
+  .learning-curve-disable {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    svg {
+      width: $curve-size-lg;
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
+      -moz-filter: drop-shadow(0 1px 2px rgba(0,0,0,0.07));
+      -webkit-filter: drop-shadow(0 1px 2px rgba(0,0,0,0.07));
+
+
+      path, rect {
+        fill: white;
+      }
+    }
+  }
+//  learning curve
+
+.learning-curve-items {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  width: $curve-size-lg;
+
+  i {
+    font-size: 50px;
+    margin: 1px;
+  }
+}
+
+.learning-curve-item {
+  flex: 1;
+  color: #E4E4E4;
+
+  &.is-active {
+    .devicons-terminal_badge   { color: #000000 }
+    .devicons-git              { color: #F64E19 }
+    .devicons-ruby_rough       { color: #B40A00 }
+    .devicons-postgresql       { color: #2F6592 }
+
+    .devicons-html5            { color: #E54D25 }
+    .devicons-css3             { color: #379AD3 }
+    .devicons-sass             { color: #D1629A }
+    .devicons-javascript_badge { color: #F1DC3F }
+    .devicons-jquery           { color: #0667AB }
+
+    .devicons-ruby_on_rails    { color: #C22821 }
+    .devicons-git_pull_request { color: $green  }
+    .devicons-heroku           { color: #6662A0 }
+  }
+}
+
+.module {
+  cursor: pointer;
+  transition: 0.3s ease box-shadow;
+
+  &.is-active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    background: white;
+  }
+}
+
+
+.learning-curve-miniature {
+  width: 150px;
+  margin: 30px auto;
+  position: relative;
+  svg { width: 150px !important}
+  path {
+  }
+
+  .magnifying-glass {
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    border: 1px solid white;
+
+  }
+}

@@ -28,6 +28,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-mdi'
   gem 'rails-assets-classnames'
   gem 'rails-assets-pubsub-js'
+  gem 'rails-assets-devicons'
 end
 
 gem "rails-i18n"

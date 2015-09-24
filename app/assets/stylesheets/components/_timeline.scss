@@ -1,3 +1,26 @@
+@keyframes dayPictureEntrance {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes dayHourPulse {
+  0% { transform: scale(1) }
+  50% { transform: scale(1.1) }
+  100%  { transform: scale(1) }
+}
+
+
+.day-type-overlay {
+  background: #F4F4F4;
+}
+
 .day {
   display: flex;
   align-items: center;
@@ -9,31 +32,66 @@
     margin: 0;
   }
 }
+
+.day-type-step {
+  cursor: pointer;
+
+  &.is-active {
+
+    .day-hour { animation: dayHourPulse .5s ease forwards }
+    .day-description,
+    .day-hour {
+      background: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    }
+    .day-picture {
+      transform: translateX(10%);
+      opacity: 0;
+      position: relative;
+      @media (min-width: $screen-sm){ animation: dayPictureEntrance .5s ease forwards }
+    }
+  }
+}
+
 .day-hour {
   flex: 0 0 60px;
   line-height: 60px;
-  background: white;
-  border-radius: 10px;
   text-align: center;
-  border: 1px solid #F4F1F1;
   font-size: 15px;
   color: #383838;
+  font-weight: 300;
+  border-radius: 50%;
   font-weight: $font-weight-normal;
+  transition: all .2s ease;
+  @media (max-width: $screen-sm) {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  }
 }
+
 .day-description {
+  cursor: pointer;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
   flex: 1 1 auto;
-  background: white;
-  border-radius: 10px;
   padding: 25px;
-  border: 1px solid #F4F1F1;
+  @media (max-width: $screen-sm) {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  }
+
 }
+
 .day-circle {
   flex: 0 0 18px;
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
   margin: 10px;
   height: 18px;
   border-radius: 9px;
-  background-color: #F6F6F6;
   z-index: 2;
+  background-color: #F4F4F4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 .day-circle-red {
   border: 3px solid $red;
@@ -54,18 +112,26 @@
   display: flex;
 }
 .days-border {
-  flex: 0 0 2px;
+  flex: 0 0 8px;
   align-self: stretch;
-  background: #E9E8E8;
+  background: white;
   position: relative;
-  left: 79px;
+  left: 83px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
 .day-picture {
   background-position: center;
   height: 250px;
+  position: absolute;
   background-size: cover;
   margin-left: 98px;
   margin-bottom: 50px;
-  border-radius: 5px;
-  border: 1px solid #F4F1F1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+
+  @media (max-width: $screen-sm) {
+    position: relative;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+
+  }
 }
