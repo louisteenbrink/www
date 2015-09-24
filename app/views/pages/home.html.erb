@@ -35,7 +35,7 @@
   <div class="container features-container">
     <h2 class='section-title-home'>
       <div class='section-title-home-content' style="font-size:30px;">
-        <%= t(".pedagogy_matters") %>
+        <%= t(".pedagogy_matters_html") %>
       </div>
     </h2>
     <p class="text-muted text-center section-title-home-subtitle">
@@ -63,7 +63,7 @@
             <i class='mdi mdi-keyboard-variant'></i>
           </div>
           <div class='feature-title'>
-            <%= t(".software_engineer") %>
+            <%= t(".software_engineer_html") %>
           </div>
         </div>
         <div class='feature-body'>
@@ -80,7 +80,7 @@
           </div>
         </div>
         <div class='feature-body'>
-          <%= t(".technical_workflow_details") %>
+          <%= t(".technical_workflow_details_html") %>
         </div>
       </div>
        <div class='feature'>
@@ -126,7 +126,11 @@
   </div>
 </div>
 
-<%= react_component 'Stories', { stories: @stories }, prerender: true %>
+<%= react_component 'Stories', {
+  stories: @stories,
+  title: t(".it_works"),
+  locale: locale.to_s
+  }, prerender: true %>
 
 <div class="latest-projects-overlay">
   <div class="text-center padded-small">
@@ -167,7 +171,7 @@
   <div class="container padded">
     <h2 class='section-title-home'>
       <div class='section-title-home-content'>
-        We are worldwide.
+        <%= t ".worldwide" %>
       </div>
     </h2>
     <p class="text-muted text-center section-title-home-subtitle">
@@ -218,7 +222,7 @@
     <div class='quote'>
       <h2 class='section-title-home quote'>
         <div class='section-title-home-content'>
-          "an <strong>Impressive</strong> european coding bootcamp"
+          "an <strong>Impressive</strong> coding bootcamp"
           <div class='techcrunch'>
             <hr class='techcrunch-hr hidden-xs'>
             <div>

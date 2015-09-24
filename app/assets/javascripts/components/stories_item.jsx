@@ -12,6 +12,8 @@ class StoriesItem extends React.Component {
       'is-active': (this.props.index + 1) == this.props.activeItem
     })
 
+    var description = this.props.description[this.props.locale]
+
     return(
         <div className={componentClasses} onMouseEnter={this.handleClick.bind(this)} onClick={this.handleClick.bind(this)}>
           <div className='story-item-name'>
@@ -19,7 +21,7 @@ class StoriesItem extends React.Component {
             <span className='pull-right story-item-batch'>Batch #{this.props.alumni.slug}, {this.props.alumni.city}</span>
           </div>
           <div className='story-item-description'>
-            {this.props.description.fr}
+            {description}
           </div>
         </div>
     )

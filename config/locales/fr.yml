@@ -28,8 +28,8 @@ fr:
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
-      pedagogy_matters: Ce qui se conçoit bien s'énonce clairement.
-      pedagogy_tagline: Nous expliquons le code avec simplicité.
+      pedagogy_matters_html: "La pédagogie compte <i>vraiment</i> pour nous"
+      pedagogy_tagline: "Nous apprenons le code avec simplicité & rigueur."
       discover_us: Découvrez notre programme
       web_development: Devenez développeur web
       web_development_details: |
@@ -37,38 +37,40 @@ fr:
         Apprenez des techniques de design avancées en CSS.
         Plongez dans Javascript et explorez jQuery ou encore React.js,
         la dernière librairie Javascript développée par Facebook.
-      software_engineer: Soyez un Software Engineer
+      software_engineer_html: Comprenez la technique
       software_engineer_details: |
         Devenez plus qu'un développeur, un "Software engineer".
         Cette personne qui comprend les enjeux techniques,
-        qui sait ce que MVC veut dire, comment marche une base de données ou une requête HTTP,
-        et qui peut se former à un nouveau langage en moins d'une semaine.
-      technical_workflow: Adoptez un workflow technique
-      technical_workflow_details: |
-        Il existe une bonne façon de travailler sur un produit tech.
+        qui sait ce que MVC veut dire, comment marche une base de données, ce que contient une requête HTTP.
+        Quelqu'un qui voit le monde sous un angle technique.
+      technical_workflow: Adoptez le bon workflow
+      technical_workflow_details_html: |
+        Il existe <strong>une bonne façon</strong> de travailler sur un produit tech.
         Ecrire les user stories,
-        dessiner le schéma de la base de données, faire un mockup avec Sketch,
-        collaborer sur le code avec des pull-requests sur Github.
-        Apprenez à travailler de cette façon, comme dans les meilleures startups.
-      startup_toolkit: Utilisez le startup toolkit
+        dessiner le schéma de la base de données, faire un mockup sur Sketch,
+        collaborer en utilisant des pull-requests sur Github.
+        Apprenez à travailler avec la méthodologie des meilleures startups.
+      startup_toolkit: Utilisez les outils des startups
       startup_toolkit_details: |
         Heroku, Stripe, Mandrill, Amazon S3, Algolia...
         Nous vous apprendrons à implémenter toutes ces solutions
         pour être plus efficace quand vous lancez un nouveau produit.
         Gagnez du temps, utilisez le bon outil pour la bonne raison.
-        C'est le mindset qui nous guide au Wagon.
+        C'est le mindset qui nous guide depuis le départ au Wagon.
       build_product: Codez votre produit
       build_product_details: |
-        Personne ne vous apprendra à coder des produits beaux et avancés comme nous le faisons.
-        Kudoz vient de lever 1.2 million, Medpics 400k, MaShareEcole révolutionne l'école et Fluicity la politique.
-        Et tellement de projets incroyables sont dans les starting blocks. Allez voir par vous-même.
+        Personne ne vous apprendra à coder des produits comme nous le faisons.
+        Kudoz vient de lever 1.2 million, MaShareEcole révolutionne l'école, Parol la politique, MedPics la santé, Krawd le marketing...
+        Et tellement d'autres projets incroyables sont dans les starting blocks. Allez voir par vous-même.
       land_a_job: Changez de vie
       land_a_job_details: |
-        Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe, Instantly..
+        Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe..
         Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec
         avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
+      it_works: "le plus étrange.. Ça marche !"
       freshly_coded: Fraîchement codés
       all_products: 100+ produits codés par notre alumni.
+      worldwide: Nous sommes partout :)
       see_all_products: Voir tous les produits
       check_program: En savoir plus sur le programme
       our_cities: Nos villes
@@ -76,7 +78,6 @@ fr:
       already_a_lot: Déja 354 entrepreneurs convertis.
       and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
-
     program:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |

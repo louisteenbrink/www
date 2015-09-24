@@ -20,7 +20,7 @@ class Stories extends React.Component {
         <div className='container'>
           <h2 className='section-title-home'>
             <div className='section-title-home-content'>
-              The funny thing is, it works
+              {this.props.title}
             </div>
           </h2>
           <div className='story'>
@@ -28,7 +28,8 @@ class Stories extends React.Component {
               {this.props.stories.map((story, index) => {
                 return <StoriesItem {... story}
                   index={index}
-                  activeItem={this.state.activeItem} />
+                  activeItem={this.state.activeItem}
+                  locale={this.props.locale}/>
               })}
             </div>
             {this.props.stories.map((story, index) => {

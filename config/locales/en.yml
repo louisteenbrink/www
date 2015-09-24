@@ -27,7 +27,7 @@ en:
       vision: Le Wagon brings technical skills to creative people
       view_teaser: see our video
       apply_for_nine_weeks: Apply for 9 weeks
-      pedagogy_matters: Pedagogy matters.
+      pedagogy_matters_html: Pedagogy <i>does</i> matters.
       pedagogy_tagline: We love teaching advanced topics with simple examples.
       discover_us: Discover our program
       web_development: Learn web-development
@@ -36,15 +36,15 @@ en:
         Develop your frontend skills by using advanced CSS technics (flexbox, grid, animations, etc..)
         and go deeper into Javascript by learning jQuery and React.js,
         the library developed by Facebook.
-      software_engineer: Become a Software engineer
+      software_engineer_html: Become a Software engineer
       software_engineer_details: |
         Become more than a developer, a Software engineer.
         This guy who has the big picture on technical issues,
         who knows what MVC means, what's a DB scheme,
         and who can learn a new programming language within a week.
       technical_workflow: Adopt a technical workflow
-      technical_workflow_details: |
-        There's definitely a good way of building tech products.
+      technical_workflow_details_html: |
+        There's definitely <strong>a good way</strong> of building tech products.
         We will teach you this way. Write your MVP's user stories,
         draw you database scheme, build a mockup with Sketch,
         collaborate using pull-requests and code-reviews on Github.
@@ -56,7 +56,7 @@ en:
         to be more efficient when you want to launch a new product.
         Save time, use the right tool for the right need,
         that's our developer mindset.
-      build_product: Buil your product
+      build_product: Build your product
       build_product_details: |
         That is probably what we are the best at.
         No one will teach how to build advanced and beautiful products as we do.
@@ -69,9 +69,11 @@ en:
         We will help you find your dream job, either as a junior dev
         or product manager. Discuss with any of our 350+ alumni to be
         sure about that!
+      it_works: "Funny thing, it works"
       freshly_coded: Freshly coded
       all_products: 100+ products built by our alumni.
       see_all_products: See all products
+      worldwide: We are worldwide :)
       check_program: More details about the program
       our_cities: Our cities
       open_yours: Launch a Wagon in your city
