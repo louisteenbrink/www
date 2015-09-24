@@ -7,9 +7,9 @@ Rails.application.routes.draw do
     end
   end
 
-  root to: "pages#home"
 
   scope "(:locale)", locale: /fr|en/ do
+    root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "tv", to: "pages#tv", template: "tv", as: :tv

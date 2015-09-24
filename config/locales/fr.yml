@@ -25,7 +25,6 @@ fr:
         Le Wagon est la meilleure formation au développement web en France.
         Allez voir par vous-même les projets codés par nos anciens élèves !
       catchline_html: "Changez de vie : <span>apprenez à coder</span>"
-      catchline: "Changez de vie : apprenez à coder"
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
@@ -68,6 +67,9 @@ fr:
         Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe, Instantly..
         Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec
         avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
+      freshly_coded: Fraîchement codés
+      all_products: 100+ produits codés par notre alumni.
+      see_all_products: Voir tous les produits
       check_program: En savoir plus sur le programme
       our_cities: Nos villes
       open_yours: Montez un Wagon dans votre ville
