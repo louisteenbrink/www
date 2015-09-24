@@ -17,7 +17,7 @@ class UserCascadeItem extends React.Component {
     var yShadow = -yTranslate*6;
     var componentStyle = {
       transform: "translate3d(" + xShadow + "px, " + yShadow + "px, 0px) scale(" + this.state.scale + ")",
-      backgroundImage: "url('" + this.props.image + "')"
+      backgroundImage: "url('" + this.props.thumbnail + "')"
     }
     return(
       <div

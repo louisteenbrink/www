@@ -1,4 +1,4 @@
-class FeaturedAlumni extends React.Component {
+class Stories extends React.Component {
   constructor(props) {
     super(props)
 
@@ -11,44 +11,45 @@ class FeaturedAlumni extends React.Component {
 
   render() {
     var detailClasses = classNames({
-      'featured-alumni-detail': true,
+      'story-detail': true,
       'is-active': this.state.transition
     })
 
     return (
-      <div className='featured-alumni-overlay'>
+      <div className='story-overlay'>
         <div className='container'>
           <h2 className='section-title-home'>
             <div className='section-title-home-content'>
-              The funny thing is, it works
+              {this.props.title}
             </div>
           </h2>
-          <div className='featured-alumni'>
-            <div className='featured-alumni-list'>
-              {this.props.alumni.map((alumni, index) => {
-                return <FeaturedAlumniItem {... alumni}
+          <div className='story'>
+            <div className='story-list'>
+              {this.props.stories.map((story, index) => {
+                return <StoriesItem {... story}
                   index={index}
-                  activeItem={this.state.activeItem} />
+                  activeItem={this.state.activeItem}
+                  locale={this.props.locale}/>
               })}
             </div>
-            {this.props.alumni.map((alumni, index) => {
+            {this.props.stories.map((story, index) => {
               var backgroundStyle = {
-                backgroundImage: "url('" + alumni.background + "')"
+                backgroundImage: "url('" + story.picture + "')"
               }
               var roundStyle = {
-                backgroundImage: "url('" + alumni.extended + "')"
+                backgroundImage: "url('" + story.alumni.thumbnail + "')"
               }
 
 
               var detailClasses = classNames({
-                'featured-alumni-detail hidden-sm hidden-xs': true,
+                'story-detail hidden-sm hidden-xs': true,
                 'is-active': index + 1 == this.state.activeItem
               })
 
               return(
                 <div className={detailClasses}>
-                  <div className='featured-alumni-detail-background' style={backgroundStyle}>
-                    <div className='featured-alumni-detail-extended' style={roundStyle}/>
+                  <div className='story-detail-background' style={backgroundStyle}>
+                    <div className='story-detail-extended' style={roundStyle}/>
                   </div>
                 </div>
               )
