@@ -29,25 +29,45 @@ fr:
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      pedagogy_matters: Ce qui se conçoit bien s'énonce clairement.
+      pedagogy_tagline: Nous expliquons le code avec simplicité.
       discover_us: Découvrez notre programme
-      prep_work: Préparation
-      prep_work_details_html: |
-        Avant de rejoindre le programme, préparez-vous grâce aux tutoriels du <i>Wagon On-Demand</i>.
-        Nous prenons uniquement des élèves extrêment motivés, ayant les bonnes attentes et
-        l'envie de se dépasser tous les jours pendant les 9 semaines.
-      bootcamp: Bootcamp
-      bootcamp_details: |
-        Le programme de 9 semaines est très intensif, chaque journée compte et apporte une nouvelle brique fondamentale. Le Wagon
-        itère son programme pédagogique depuis deux ans et s'est débarrassé de toutes les frictions qui ralentissent l'apprentissage du code.
-      algorithm: "Algorithmie & architecture logicielle"
-      web_development: Apprentissage du développement web
-      mindset: "Mindset & culture technique"
-      product: "Développement d'un produit en 10 jours"
-      tools: "Outils & workflow de Startup"
-      new_me: Nouveau moi
-      new_me_details: |
-        Ré-inventez votre métier grâce à de nouveaux outils et à un mindset technique, trouvez un poste de développeur, lancez vos propres produits.
-        Changez de vie pour de bon.
+      web_development: Devenez développeur web
+      web_development_details: |
+        Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
+        Apprenez des techniques de design avancées en CSS.
+        Plongez dans Javascript et explorez jQuery ou encore React.js,
+        la dernière librairie Javascript développée par Facebook.
+      software_engineer: Soyez un Software Engineer
+      software_engineer_details: |
+        Devenez plus qu'un développeur, un "Software engineer".
+        Cette personne qui comprend les enjeux techniques,
+        qui sait ce que MVC veut dire, comment marche une base de données ou une requête HTTP,
+        et qui peut se former à un nouveau langage en moins d'une semaine.
+      technical_workflow: Adoptez un workflow technique
+      technical_workflow_details: |
+        Il existe une bonne façon de travailler sur un produit tech.
+        Ecrire les user stories,
+        dessiner le schéma de la base de données, faire un mockup avec Sketch,
+        collaborer sur le code avec des pull-requests sur Github.
+        Apprenez à travailler de cette façon, comme dans les meilleures startups.
+      startup_toolkit: Utilisez le startup toolkit
+      startup_toolkit_details: |
+        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Nous vous apprendrons à implémenter toutes ces solutions
+        pour être plus efficace quand vous lancez un nouveau produit.
+        Gagnez du temps, utilisez le bon outil pour la bonne raison.
+        C'est le mindset qui nous guide au Wagon.
+      build_product: Codez votre produit
+      build_product_details: |
+        Personne ne vous apprendra à coder des produits beaux et avancés comme nous le faisons.
+        Kudoz vient de lever 1.2 million, Medpics 400k, MaShareEcole révolutionne l'école et Fluicity la politique.
+        Et tellement de projets incroyables sont dans les starting blocks. Allez voir par vous-même.
+      land_a_job: Changez de vie
+      land_a_job_details: |
+        Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe, Instantly..
+        Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec
+        avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
       check_program: En savoir plus sur le programme
       our_cities: Nos villes
       open_yours: Montez un Wagon dans votre ville
