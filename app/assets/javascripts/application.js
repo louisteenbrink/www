@@ -5,6 +5,8 @@
 
 //= require react
 //= require react_ujs
+//= require visibility_sensor
+
 //= require components
 //= require_tree ./app
 

@@ -3,7 +3,7 @@ class DayTypeStep extends React.Component {
     super(props)
 
     this.state = {
-      active: this.props.active
+      active: this.props.isActive
     }
   }
 
@@ -16,7 +16,7 @@ class DayTypeStep extends React.Component {
 
     var componentClasses = classNames({
       'day-type-step': true,
-      'is-active': this.state.active
+      'is-active': this.props.isActive
     })
 
     if (this.props.image) {
@@ -37,14 +37,11 @@ class DayTypeStep extends React.Component {
             </p>
           </div>
         </div>
-        {picture}
       </div>
     )
   }
 
   handleMouseEnter() {
-    this.setState({
-      active: true
-    })
+    PubSub.publish('setActiveDay', this.props.index)
   }
 }

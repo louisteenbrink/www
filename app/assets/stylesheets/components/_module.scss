@@ -1,5 +1,114 @@
+.module-overlay {
+  display: flex;
+}
+
+.module-nav {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.module-nav-item {
+  display: flex;
+  padding: 20px;
+  font-weight: 300;
+  color: black;
+  font-size: 12px;
+  letter-spacing: 1.4px;
+  cursor: pointer;
+  align-items: center;
+  text-transform: uppercase;
+
+
+  i {
+    font-size: 20px;
+    font-weight: bold;
+    opacity: .04;
+    margin-left: auto;
+  }
+
+  span:first-child {
+    padding-right: 5px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+  }
+
+  &.is-active {
+    border-color: black;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+
+    &.yellow { background: $yellow }
+    &.red { background: $red }
+    &.blue { background: $blue }
+    &.orange { background: $orange }
+
+    i {
+      opacity: 1;
+    }
+  }
+}
+
+.module-arrows {
+  display: flex;
+  padding-top: 20px;
+}
+
+.module-arrow-right {
+  margin-left: auto;
+}
+
+.modules {
+  flex: 4;
+  flex-flow: inherit;
+}
+
 .module.feature {
   flex: inherit;
+}
+
+.module-container {
+
+  .module-nav {
+    display: none;
+  }
+  &.is-active {
+    .module {
+      display: block;
+    }
+  }
+
+  &.is-next,
+  &.is-previous {
+    .module-nav {
+      display: flex;
+      align-self: stretch;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      i {
+        color: rgb(255, 255, 255);
+        font-size: 31px;
+        background: rgba(black, .8);
+        border-radius: 50%;
+        padding: 11px;
+      }
+    }
+
+    &.module-container {
+      display: flex;
+      justify-content: center;
+      flex: 0 0 130px;
+    }
+  }
 }
 
 .module-weeks {
@@ -9,29 +118,14 @@
 }
 
 .module {
-  height: 100px;
-  overflow: hidden;
+  display: none;
+  height: auto;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 
-  @media (max-width: $screen-sm) {
-    background: white;
-    box-shadow: 0 1px 2px rgba(255, 163, 163, 0.07);
-    margin-top: 20px;
-    height: auto !important;
-
-    .feature-body {
-      opacity: 1 !important;
-    }
+  &.is-active {
+    display: block;
   }
 
-  .feature-body {
-    opacity: 0;
-  }
-
-  &.is-opened {
-    height: auto;
-
-    .feature-body {
-      opacity: 1;
-    }
-  }
 }
+

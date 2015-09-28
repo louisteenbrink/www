@@ -19,6 +19,7 @@
 
 .day-type-overlay {
   background: #F4F4F4;
+  overflow: hidden;
 }
 
 .day {
@@ -135,3 +136,32 @@
 
   }
 }
+
+.timeline-overlay { display: flex }
+.timeline-container { flex: 1 }
+.day-type-detail-container {
+  flex: 1;
+  position: relative;
+}
+.day-type-detail {
+  display: flex;
+  left: 60px;
+  height: 500px;
+  width: 900px;
+  position: absolute;
+  border-radius: 2px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+
+  &.is-active {
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+    z-index: 9;
+  }
+
+  &.was-active {
+    z-index: 8;
+  }
+}
+
