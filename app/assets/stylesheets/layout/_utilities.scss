@@ -84,7 +84,7 @@
   margin-bottom: 60px;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 90px;
   position: relative;
   display: flex;
   z-index: 9;
@@ -93,7 +93,7 @@
     font-size: 30px;
   }
 
-  @media (max-width: $screen-sm) {
+  @media (max-width: $screen-md) {
     height: auto;
     border: none;
   }
@@ -127,6 +127,15 @@
     }
     padding-left: 30px;
   }
+}
+
+.section-title-home-subtitle {
+  color: #B3B3B3;
+  font-size: 20px !important;
+  font-weight: 300;
+  margin-top: -25px;
+  position: relative;
+  z-index: 1;
 }
 
 .red { color: $red }

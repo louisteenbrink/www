@@ -25,36 +25,59 @@ fr:
         Le Wagon est la meilleure formation au développement web en France.
         Allez voir par vous-même les projets codés par nos anciens élèves !
       catchline_html: "Changez de vie : <span>apprenez à coder</span>"
-      catchline: "Changez de vie : apprenez à coder"
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      pedagogy_matters_html: "La pédagogie compte <i>vraiment</i> pour nous"
+      pedagogy_tagline: "Nous apprenons le code avec simplicité & rigueur."
       discover_us: Découvrez notre programme
-      prep_work: Préparation
-      prep_work_details_html: |
-        Avant de rejoindre le programme, préparez-vous grâce aux tutoriels du <i>Wagon On-Demand</i>.
-        Nous prenons uniquement des élèves extrêment motivés, ayant les bonnes attentes et
-        l'envie de se dépasser tous les jours pendant les 9 semaines.
-      bootcamp: Bootcamp
-      bootcamp_details: |
-        Le programme de 9 semaines est très intensif, chaque journée compte et apporte une nouvelle brique fondamentale. Le Wagon
-        itère son programme pédagogique depuis deux ans et s'est débarrassé de toutes les frictions qui ralentissent l'apprentissage du code.
-      algorithm: "Algorithmie & architecture logicielle"
-      web_development: Apprentissage du développement web
-      mindset: "Mindset & culture technique"
-      product: "Développement d'un produit en 10 jours"
-      tools: "Outils & workflow de Startup"
-      new_me: Nouveau moi
-      new_me_details: |
-        Ré-inventez votre métier grâce à de nouveaux outils et à un mindset technique, trouvez un poste de développeur, lancez vos propres produits.
-        Changez de vie pour de bon.
+      web_development: Devenez développeur web
+      web_development_details: |
+        Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
+        Apprenez des techniques de design avancées en CSS.
+        Plongez dans Javascript et explorez jQuery ou encore React.js,
+        la dernière librairie Javascript développée par Facebook.
+      software_engineer_html: Comprenez la technique
+      software_engineer_details: |
+        Devenez plus qu'un développeur, un "Software engineer".
+        Cette personne qui comprend les enjeux techniques,
+        qui sait ce que MVC veut dire, comment marche une base de données, ce que contient une requête HTTP.
+        Quelqu'un qui voit le monde sous un angle technique.
+      technical_workflow: Adoptez le bon workflow
+      technical_workflow_details_html: |
+        Il existe <strong>une bonne façon</strong> de travailler sur un produit tech.
+        Ecrire les user stories,
+        dessiner le schéma de la base de données, faire un mockup sur Sketch,
+        collaborer en utilisant des pull-requests sur Github.
+        Apprenez à travailler avec la méthodologie des meilleures startups.
+      startup_toolkit: Utilisez les outils des startups
+      startup_toolkit_details: |
+        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Nous vous apprendrons à implémenter toutes ces solutions
+        pour être plus efficace quand vous lancez un nouveau produit.
+        Gagnez du temps, utilisez le bon outil pour la bonne raison.
+        C'est le mindset qui nous guide depuis le départ au Wagon.
+      build_product: Codez votre produit
+      build_product_details: |
+        Personne ne vous apprendra à coder des produits comme nous le faisons.
+        Kudoz vient de lever 1.2 million, MaShareEcole révolutionne l'école, Parol la politique, MedPics la santé, Krawd le marketing...
+        Et tellement d'autres projets incroyables sont dans les starting blocks. Allez voir par vous-même.
+      land_a_job: Changez de vie
+      land_a_job_details: |
+        Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe..
+        Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec
+        avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
+      it_works: "le plus étrange.. Ça marche !"
+      freshly_coded: Fraîchement codés
+      all_products: 100+ produits codés par notre alumni.
+      worldwide: Nous sommes partout :)
+      see_all_products: Voir tous les produits
       check_program: En savoir plus sur le programme
       our_cities: Nos villes
       open_yours: Montez un Wagon dans votre ville
       already_a_lot: Déja 354 entrepreneurs convertis.
       and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
-
     program:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |
