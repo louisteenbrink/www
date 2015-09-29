@@ -1,6 +1,45 @@
 .two-columns {
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
+  }
+
+  &>.container {
+    display: flex;
+  }
+
+  .two-columns-image-container {
+    flex: 1;
+
+    img {
+      position: absolute;
+
+    }
+  }
+
+  .image-container {
+    flex: 1;
+    position: relative;
+
+    img {
+      position: absolute;
+      height: auto;
+    }
+
+    &.terminal {
+      img {
+        width: 1000px;
+      }
+    }
+  }
+
 }
 
 .two-columns-img {
@@ -20,4 +59,8 @@
 .two-columns-description {
   flex: 1;
   padding: 70px;
+  padding-left: 0;
+  @media (max-width: $screen-sm) {
+    flex: inherit;
+  }
 }
