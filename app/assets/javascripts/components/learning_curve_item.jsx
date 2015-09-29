@@ -13,7 +13,7 @@ class LearningCurveItem extends React.Component {
       'is-active': this.state.active
     })
     return (
-      <div className={componentClasses}>
+      <div className={componentClasses} onClick={this.handleClick.bind(this)}>
         {this.props.skills.map((skill) => {
           return (
             <i className={'devicons ' + skill.icon}  />
@@ -21,6 +21,11 @@ class LearningCurveItem extends React.Component {
         })}
       </div>
     )
+  }
+
+  handleClick() {
+    PubSub.publish('setActiveItem', this.props.index)
+    PubSub.publish('curveSize', this.props.curve_size);
   }
 
   componentWillReceiveProps() {

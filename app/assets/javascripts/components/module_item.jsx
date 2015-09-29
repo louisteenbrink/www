@@ -71,7 +71,6 @@ class ModuleItem extends React.Component {
   }
 
   onNextClick() {
-    console.log(this.props.next.index)
     PubSub.publish('setActiveItem', this.props.index + 1)
     PubSub.publish('curveSize', this.props.next.curve_size);
   }

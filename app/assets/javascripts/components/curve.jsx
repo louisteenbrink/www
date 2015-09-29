@@ -42,6 +42,7 @@ class Curve extends React.Component {
                   return (
                     <LearningCurveItem
                       {... module}
+                      index={index + 1}
                       isActive={index + 1 == this.props.activeItem}
                     />
                   )
@@ -49,17 +50,19 @@ class Curve extends React.Component {
               </div>
             </div>
           </div>
-          <div className='learning-curve-miniature'>
-            <div
-              style={svgContainerStyle}
-              className='learning-curve-svg'
-              dangerouslySetInnerHTML={{__html: this.props.curve + "<div class='magnifying-glass'></div>"}}
-            />
-            <div
-              className='learning-curve-disable'
-              dangerouslySetInnerHTML={{__html: this.props.curve}}
-            />
-          </div>
+          {/*
+            <div className='learning-curve-miniature'>
+              <div
+                style={svgContainerStyle}
+                className='learning-curve-svg'
+                dangerouslySetInnerHTML={{__html: this.props.curve + "<div class='magnifying-glass'></div>"}}
+              />
+              <div
+                className='learning-curve-disable'
+                dangerouslySetInnerHTML={{__html: this.props.curve}}
+              />
+            </div>
+          */}
         </div>
       </div>
     )

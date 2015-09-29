@@ -1,11 +1,50 @@
 $curve-size-lg: 1500px;
 
 .learning-curve-overlay {
-  margin-top: -180px;
-  padding-top: 180px;
   background: #F4F4F4;
   min-height: 500px;
   overflow: hidden;
+
+  h1 {
+    position: absolute;
+    font-weight: 900;
+    font-size: 31px;
+    z-index: 0;
+    opacity: 1;
+    width: 100px;
+    text-align: left;
+    color: #000000;
+    letter-spacing: 10px;
+    text-shadow: none;
+
+
+    .the {
+      &:before {
+        height: 3px;
+        content: "";
+        position: absolute;
+        top: 14px;
+        transform: skew(80deg);
+        right: -126px;
+        background: #E4E4E4;
+        width: 123px;
+      }
+    }
+
+    span.curve {
+      margin-left: 86px;
+      &:before {
+        height: 3px;
+        content: "";
+        position: absolute;
+        bottom: 17px;
+        transform: skew(80deg);
+        left: 0;
+        width: 68px;
+        background: #E4E4E4;
+      }
+    }
+  }
 
   .separator {
     flex: 0 0 20px;
@@ -19,7 +58,6 @@ $curve-size-lg: 1500px;
 }
 
 .learning-curve-helper {
-
   @media (max-width: $screen-sm) {
     display: none;
   }
@@ -33,7 +71,6 @@ $curve-size-lg: 1500px;
 .learning-curve-container {
   position: relative;
   transition: top .7s linear;
-  padding-left: 50px;
   width: $curve-size-lg;
   flex: 1;
 }
@@ -94,6 +131,12 @@ $curve-size-lg: 1500px;
 .learning-curve-item {
   flex: 1;
   color: #E4E4E4;
+  transition: color 1s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: darken(#E4E4E4, 10%);
+  }
 
   &.is-active {
     .devicons-terminal_badge   { color: #000000 }

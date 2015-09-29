@@ -1,10 +1,13 @@
 .module-overlay {
   display: flex;
+  margin-top: 50px;
 }
 
 .module-nav {
-  flex: 1;
-  margin-right: 50px;
+  flex: 2;
+  border-right: 1px solid #EAEAEA;
+  padding-right: 25px;
+  margin-right: 25px;
 }
 
 .module-nav-item {
@@ -17,6 +20,10 @@
   cursor: pointer;
   align-items: center;
   text-transform: uppercase;
+
+  &:hover {
+    i { opacity: .15 }
+  }
 
 
   i {
@@ -55,6 +62,15 @@
 .module-arrows {
   display: flex;
   padding-top: 20px;
+}
+
+.module-arrow-left,
+.module-arrow-right {
+  opacity: .7;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .module-arrow-right {

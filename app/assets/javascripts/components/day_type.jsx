@@ -11,7 +11,7 @@ class DayType extends React.Component {
     return (
       <div className="container padded">
         <div className="row">
-          <h2 className="section-header-big text-center">{this.props.title}</h2>
+          <h2 className="section-header-big text-center section-title-home"><div className='section-title-home-content'>{this.props.title}</div></h2>
           <div className='timeline-overlay'>
             <div className="timeline-container">
               <div className="days">
