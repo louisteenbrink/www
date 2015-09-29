@@ -20,7 +20,7 @@ class DayTypeStep extends React.Component {
     })
 
     if (this.props.image) {
-      var picture = <div className="day-picture" style={pictureStyle} />
+      var picture = <div className="day-picture hidden-lg hidden-md hidden-sm" style={pictureStyle} />
     }
 
     return(
@@ -37,6 +37,7 @@ class DayTypeStep extends React.Component {
             </p>
           </div>
         </div>
+        {picture}
       </div>
     )
   }

@@ -29,7 +29,7 @@ class DayType extends React.Component {
                 </div>
               </div>
             </div>
-            <div className='day-type-detail-container'>
+            <div className='day-type-detail-container hidden-xs'>
               {this.props.steps.map((step, index) => {
                 return(
                   <DayTypeDetail

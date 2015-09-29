@@ -80,6 +80,7 @@
 .modules {
   flex: 4;
   flex-flow: inherit;
+  @media (max-width: $screen-sm) { flex-flow: column !important }
 }
 
 .module.feature {
@@ -141,6 +142,7 @@
 
   @media (max-width: $screen-sm) {
     display: block;
+    margin-top: 20px;
   }
 
   &.is-active {

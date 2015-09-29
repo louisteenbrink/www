@@ -16,6 +16,11 @@
   100%  { transform: scale(1) }
 }
 
+.days {
+  @media (max-width: $screen-sm) {
+    padding: 10px;
+  }
+}
 
 .day-type-overlay {
   background: #F4F4F4;

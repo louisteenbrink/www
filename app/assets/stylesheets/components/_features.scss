@@ -17,8 +17,6 @@
 .features {
   display: flex;
   flex-wrap: wrap;
-
-  @media (max-width: $screen-sm) { flex-flow: column !important }
 }
 
 .feature {
