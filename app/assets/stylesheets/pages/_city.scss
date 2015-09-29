@@ -1,4 +1,7 @@
 #location {
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+
   h2 {
     font-size: 40px;
     font-weight: $font-weight-bold;
@@ -7,4 +10,15 @@
   p {
     font-size: 23px;
   }
+}
+
+#staff {
+  background-color: HSLA(0, 0%, 96%, 1);
+  margin-top: -180px;
+  padding-top: 180px;
+}
+
+.location-overlay {
+  background: whitesmoke;
+  padding-bottom: 100px;
 }
