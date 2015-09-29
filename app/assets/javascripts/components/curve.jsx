@@ -13,10 +13,7 @@ class Curve extends React.Component {
       overflow : 'hidden'
     };
 
-    var wrapperStyle = {
-      transform       : 'translateX(' + (-(this.state.size - 25)) + '%)',
-      webkitTransform : 'translateX(' + (-(this.state.size - 25)) + '%)'
-    }
+    var wrapperStyle = {}
 
     return (
       <div className='learning-curve-helper' ref='helper'>

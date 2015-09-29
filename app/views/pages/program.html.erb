@@ -6,6 +6,25 @@
   <%= t(".description") %>
 <% end %>
 
+<div class="banner-container">
+  <div class="container">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/live-code.jpg')%>');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+        <h1><%= t(".our_program") %></h1>
+        </h1>
+        <p>
+          <%= t(".program_details") %>
+        </p>
+      </div>
+    </div>
+    <div class='banner-cta'>
+      <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn banner-cta-item btn-danger btn-lg" %>
+    </div>
+  </div>
+</div>
+
 
 <div class='learning-curve-overlay'>
   <%= react_component 'LearningCurve', {
