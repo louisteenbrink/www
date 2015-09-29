@@ -17,7 +17,7 @@ class LearningCurve extends React.Component {
           activeItem      = {this.state.activeItem}
         />
         <div className='module-overlay'>
-          <div className='module-nav'>
+          <div className='module-nav hidden-xs'>
             {this.props.modules.map((module, index) => {
               return (
                 <ModuleNavItem
