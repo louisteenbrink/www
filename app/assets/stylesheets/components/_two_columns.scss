@@ -4,7 +4,11 @@
   align-items: center;
   overflow: hidden;
   position: relative;
-
+  ul {
+    font-weight: 100;
+    font-size: 17px;
+    opacity: 0.8;
+  }
   img {
     @media (max-width: $screen-sm) {
       display: none;

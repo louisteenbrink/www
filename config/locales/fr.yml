@@ -82,12 +82,12 @@ fr:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |
         9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web
-      our_program: "Notre programme"
+      our_program: "Programme FullStack"
       program_details: |
-        Notre programme est conçu pour les débutants ou "faux débutants" qui souhaitent
-        acquérir une véritable autonomie technique mais surtout un nouveau mindset.
-        Penser comme un développeur, voir les problématiques sous un nouvel angle et
-        libérer sa créativité grâce au code.
+        2 mois pour devenir développeur full-stack et maîtriser toutes
+        les technologies d'un produit web, de la base de données
+        à l'interface client. Réservé aux esprits curieux,
+        enthousiastes et combattifs.
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       objective: L'objectif
       objective_details: |
@@ -96,26 +96,31 @@ fr:
         les enjeux techniques ou que vous trouviez un poste en développement,
         product management, growth hacking.
       why_us: Pourquoi nous ?
-      why_us_details: |
-        Le programme vous fera gagner deux ans en vous plongeant dans un ecosystème
-        ultra-stimulant ou vous apprendrez beaucoup plus vite.
-        Vous apprendrez surtout ce qui ne s'apprend pas en ligne :
-        le set-up d'un codeur, les bonnes pratiques de développement web,
-        les techniques de modélisation d'une architecture logicielle, d'une base
-        de données, les techniques de collaboration sur Github, etc..
+      why_us_details_html: |
+        Plus de 15 classes de 25 élèves et un programme qui a évolué à chaque fois.
+        C'est cette expérience qui rend Le Wagon aussi efficace. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans :</strong>
+        <ul>
+          <li>Le set-up parfait d'un développeur</li>
+          <li>Les techniques de modélisation d'une architecture logicielle & d'une base de donnée</li>
+          <li>Le travail collaboratif sur Github</li>
+          <li>Le workflow technique utilisé dans les meilleures startups</li>
+          <li>Les outils comme Heroku, Stripe, Mandrill, Algolia pour déployer vos produits et y intégrer des fonctionnalités puissantes (paiement, géolocalisation, mailing, search etc...)</li>
+        </ul>
       community: Une communauté hyperactive
-      community_details: |
-        Les professeurs du Wagon sont tous des entrepreneurs tech
-        (Taster's club, Sylights, Txto), ayant une "expérience terrain" du code.
-        Vous ferez partie d'une communauté hyperactive : 160 anciens élèves
-        suractifs sur le slack du Wagon, 8 professeurs, 15 mentors, 9 startups
-        déjà créées, des talks tous les jeudi-soirs avec des intervenants de haut-niveau.
+      community_details_html: |
+        350+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
+        qui communiquent tous les jours sur Slack, posent des questions
+        aux professeurs, s'échangent des ressources, des morceaux de
+        code, des offres d'emplois, des nouvelles de leurs produits.
+        <strong>Une des plus belles communautés tech au monde.</strong>
+        Tous nos élèves partagent la même expertise technique après Le Wagon.
+        C'est ce mélange entre <strong>diversité & savoir-faire technique</strong> qui rend cette communauté si unique.
       cv: Votre cv de développeur
       cv_details: |
-        A la fin de la formation, vous saurez transformer vos idées
-        en produits, vous aurez codé plusieurs applis web, dont
-        votre propre projet et un clone d'airbnb, et vous aurez un portfolio
-        de votre travail sur Github.
+        En 2 mois seulement, codez plusieurs applications web,
+        <strong>dont votre propre projet + un clone d'Airbnb</strong>.
+        Mettez ces applications en production pour pouvoir les partager.
+        vous aurez aussi un portfolio de votre travail sur Github.
       awesome_entrepreneur: Entrepreneur d'exception
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.

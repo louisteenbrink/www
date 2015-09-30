@@ -8,7 +8,7 @@ class LearningCurve extends React.Component {
 
   render() {
     return(
-      <div className="container padded text-center" ref='container'>
+      <div className="container text-center" ref='container'>
         <div className='separator' />
         <Curve
           {... this.props}
