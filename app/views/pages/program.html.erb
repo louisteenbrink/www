@@ -29,11 +29,11 @@
 <div class='learning-curve-overlay'>
   <h2 class='section-title-home'>
     <div class='section-title-home-content' style="font-size:30px;">
-      9 semaines intensives
+      <%= t ".nine_weeks" %>
     </div>
   </h2>
   <p class="text-muted text-center section-title-home-subtitle">
-    Pour réaliser 99% de vos idées
+    <%= t ".to_build_your_ideas" %>
   </p>
   <%= react_component 'LearningCurve', {
     curve: render('shared/learning_curve'),
@@ -46,7 +46,7 @@
         weeks: "1 semaine",
         startWeek: '1',
         endWeek: '2',
-        description: 'Get familiar with the command line and Git. Learn the basics of programming with ruby and code little programs manipulating variables, methods, loops, conditional statements... Discover how you can read and write in files and how you can collect interesting data by scraping a website or by calling an API (for instance Twitter API).',
+        description: t('.ruby'),
         skills: [
           { 'icon': 'devicons-terminal_badge' },
           { 'icon': 'devicons-git' },
@@ -61,7 +61,7 @@
         weeks: "1 semaine",
         startWeek: '2',
         endWeek: '3',
-        description: 'Discover OOP (Object-Oriented programming) and learn to build advanced softwares by structuring your programs into different objects. If you want to build a social network, a market-place, a car-rental system, a restaurant booking platform... then you need to organize your code with a smart architecture. Same as an architect who wants to build a house, he must respect some patterns. During this week, you will code your first applications following the MVC design pattern.',
+        description: t('.software'),
         skills: [
           { 'icon': 'devicons-netbeans' },
         ]
@@ -74,7 +74,7 @@
         weeks: "1 semaine",
         startWeek: '3',
         endWeek: '4',
-        description: 'Programs need to store information in a database. Without database, Facebook would loose your information every time you log in! Learn to design a database by defining its tables and their connections. Then discover SQL, the language used to make queries to the database and read/write data.',
+        description: t('.database'),
         skills: [
           { 'icon': 'devicons-streamline' },
           { 'icon': 'devicons-postgresql' }
@@ -88,7 +88,7 @@
         startWeek: '4',
         endWeek: '5',
         curve_size: 60  ,
-        description: "Improve you UI culture and learn all about HTML, CSS & best practices in web-design (positioning techniques, animations). Get familiar with Bootstrap, a usefull library to prototype web-applications. Then move on to javascript and jQuery. Learn to manipulate the DOM, define events, and make AJAX requests with Javascript. You will play with lots of cool APIs during this module (Trello API, Slack API, Facebook API, etc...).",
+        description: t('.frontend'),
         skills: [
           { 'icon': 'devicons-html5' },
           { 'icon': 'devicons-css3' },
@@ -103,7 +103,7 @@
         weeks: "2 semaines",
         endWeek: '7',
         curve_size: 75,
-        description: "Time to put all your skills together and dive into Rails. No big deal here, you already know most of its elementary blocks and you will feel like at home! During your Rails training, you will have to code Airbnb from scratch in 5 days. You will work in teams and you will learn to collaborate on Github using pull requests, using the same workflow as in the best startups.",
+        description: t('.rails'),
         skills: [
           { 'icon': 'devicons-ruby_on_rails' },
           { 'icon': 'devicons devicons-react' },
@@ -118,7 +118,7 @@
         weeks: "2 semaines",
         endWeek: '9',
         curve_size: 100,
-        description: "This is the moment of truth! Let's code your own project during the 2 last week and build an awesome product!",
+        description: t('.projects'),
         skills: [
           { 'icon': 'devicons devicons-responsive' }
         ]
@@ -143,12 +143,6 @@
           description: t(".pair_programming"),
           hour: '10h30',
           circle_color: 'day-circle-blue'
-        },
-        {
-          image: image_path('banners/pair-programming.jpg'),
-          description: t(".pair_programming_next"),
-          hour: '14h00',
-          circle_color: 'day-circle-green'
         },
         {
           image: image_path('banners/yoga.jpg'),
@@ -216,7 +210,7 @@
         <%= t(".cv") %>
       </h2>
       <p class="text-readable text-opac">
-        <%= t(".cv_details") %>
+        <%= t(".cv_details_html") %>
       </p>
     </div>
     <div class='two-columns-image-container'>

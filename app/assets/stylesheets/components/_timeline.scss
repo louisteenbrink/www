@@ -25,7 +25,6 @@
 .day-type-overlay {
   background: #F4F4F4;
   overflow: hidden;
-
   .section-title-home {
     margin: 0;
   }
@@ -158,14 +157,12 @@
 .day-type-detail {
   display: flex;
   left: 60px;
-  height: 100%;
-  width: 900px;
+  width: 100%;
   position: absolute;
   border-radius: 2px;
-  top: 0;
-  bottom: 0;
   margin: auto;
-
+  height: 90%;
+  top: 20px;
 
   &.is-active {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
