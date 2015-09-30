@@ -150,10 +150,12 @@
           <div class="card">
             <span class="card-bg" style="background-image: url('<%= project['thumbnail']%>')"></span>
             <span class="card-shadow"></span>
-            <span class="card-text">
-              <h2><%= project["name"] %></h2>
-              <p><%= project["tagline"] %></p>
-            </span>
+            <div class='card-text-container'>
+              <span class="card-text">
+                <h2><%= project["name"] %></h2>
+                <p><%= project["tagline"] %></p>
+              </span>
+            </div>
             <span class="card-user">
               <% unless project["makers"].empty? %>
                 <%= image_tag project["makers"].first["thumbnail"], class: "avatar avatar-bordered" %>
