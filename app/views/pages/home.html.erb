@@ -197,17 +197,15 @@
               <p>
                 <i class="fa fa-calendar"></i>
                 <%= @meetups[city["slug"]][:events].empty? ? 0 : @meetups[city["slug"]][:events].count %>
-                <!-- y'a des bugs par ici — tchret -->
                 évènements à venir
               </p>
               <p class="card-city-meetup-link">
-                <% if @meetups[city["slug"]][:events].empty? && @meetups[city["slug"]][:infos] %>
+                <% if @meetups[city["slug"]][:events].empty? %>
                   <a href="<%= @meetups[city["slug"]][:infos][:link] %>" target="_blank">
                     <i class="fa fa-hand-o-right"></i>
                     <%= @meetups[city["slug"]][:infos][:name] %>
                   </a>
-                <% elsif false %>
-                <!-- y'a des bugs par ici — tchret -->
+                <% else %>
                   <a href="<%= @meetups[city["slug"]][:events].first[:event_url] %>" target="_blank">
                     <i class="fa fa-hand-o-right"></i>
                     <%= @meetups[city["slug"]][:events].first[:name].truncate(30) %>
