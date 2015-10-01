@@ -7,29 +7,9 @@ en:
     navbar:
       menu:
         cities: Cities
-  newsletter:
-    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
-    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
-    email_placeholder: your e-mail
-    follow_us_button: Follow us
-    thank_you: "Thanks, see you very soon!"
-    error: "Oups, seems to be an issue : ERROR_MESSAGE"
-  blog:
-    read_article: Read the post
-    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
-    moreposts: Take a tour on other cool posts
-  pages:
-    home:
-      title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
-      description: |
-        Le Wagon is the best French coding school for entrepreneurs. Checkout by yourself the projects of our students. You will be impressed.
-      catchline_html: "Change your life: <span>learn to code</span>"
-      vision: Le Wagon brings technical skills to creative people
-      view_teaser: see our video
-      apply_for_nine_weeks: Apply for 9 weeks
+    features:
       pedagogy_matters_html: Pedagogy <i>does</i> matters.
       pedagogy_tagline: We love teaching advanced topics with simple examples.
-      discover_us: Discover our program
       web_development: Learn web-development
       web_development_details: |
         Learn all about ruby, SQL, and the Rails application framework.
@@ -69,6 +49,27 @@ en:
         We will help you find your dream job, either as a junior dev
         or product manager. Discuss with any of our 350+ alumni to be
         sure about that!
+  newsletter:
+    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
+    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
+    email_placeholder: your e-mail
+    follow_us_button: Follow us
+    thank_you: "Thanks, see you very soon!"
+    error: "Oups, seems to be an issue : ERROR_MESSAGE"
+  blog:
+    read_article: Read the post
+    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
+    moreposts: Take a tour on other cool posts
+  pages:
+    home:
+      title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
+      description: |
+        Le Wagon is the best French coding school for entrepreneurs. Checkout by yourself the projects of our students. You will be impressed.
+      catchline_html: "Change your life: <span>learn to code</span>"
+      vision: Le Wagon brings technical skills to creative people
+      view_teaser: see our video
+      apply_for_nine_weeks: Apply for 9 weeks
+      discover_us: Discover our program
       it_works: "Funny thing, it works"
       freshly_coded: Freshly coded
       all_products: 100+ products built by our alumni.
@@ -189,10 +190,11 @@ en:
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
   cities:
     show:
-      title: "Le Wagon - Bootcamp de Ruby on Rails à %{city}"
+      title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
       description: |
-        Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
-      become_dev: "Devenez développeur en 2 mois"
-      city_arrival: "Le programme fullstack du Wagon s'installe à %{city}"
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
-      staff: "Le staff à %{city}"
+        Le Wagon is in %{city}. You want to learn programming? So take 9 weeks of your life to change it forever!
+      become_dev: "Become developer in 2 months"
+      city_arrival: "Join Le Wagon FullStack program in %{city}"
+      apply_for_nine_weeks: Apply for 9 weeks
+      staff: "Staff in %{city}"
+      discover_us: "Discover our program"
