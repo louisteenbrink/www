@@ -150,9 +150,12 @@
           <div class="card">
             <span class="card-bg" style="background-image: url('<%= project['thumbnail']%>')"></span>
             <span class="card-shadow"></span>
-            <span class="card-text">
-              <h2><%= project["name"] %></h2>
-              <p><%= project["tagline"] %></p>
+            <span class="card-text-container">
+              <span class="card-text">
+                <h2><%= project["name"] %></h2>
+                <hr class='hidden-sm'>
+                <p class='hidden-sm'><%= project["tagline"] %></p>
+              </span>
             </span>
             <span class="card-user">
               <% unless project["makers"].empty? %>
@@ -194,17 +197,15 @@
               <p>
                 <i class="fa fa-calendar"></i>
                 <%= @meetups[city["slug"]][:events].empty? ? 0 : @meetups[city["slug"]][:events].count %>
-                <!-- y'a des bugs par ici — tchret -->
                 évènements à venir
               </p>
               <p class="card-city-meetup-link">
-                <% if @meetups[city["slug"]][:events].empty? && @meetups[city["slug"]][:infos] %>
+                <% if @meetups[city["slug"]][:events].empty? %>
                   <a href="<%= @meetups[city["slug"]][:infos][:link] %>" target="_blank">
                     <i class="fa fa-hand-o-right"></i>
                     <%= @meetups[city["slug"]][:infos][:name] %>
                   </a>
-                <% elsif false %>
-                <!-- y'a des bugs par ici — tchret -->
+                <% else %>
                   <a href="<%= @meetups[city["slug"]][:events].first[:event_url] %>" target="_blank">
                     <i class="fa fa-hand-o-right"></i>
                     <%= @meetups[city["slug"]][:events].first[:name].truncate(30) %>
