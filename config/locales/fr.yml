@@ -7,30 +7,9 @@ fr:
     navbar:
       menu:
         cities: Villes
-  newsletter:
-    teaser: "<p>Soyez informé des prochaines <strong>masterclasses</strong>, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.</p>"
-    city_teaser_html: 'Soyez informé de nos prochains <strong>événements</strong> à %{city}, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.'
-    email_placeholder: votre e-mail
-    follow_us_button: Suivez-nous
-    thank_you: Merci, à très vite !
-    error: 'Oups, il y a un problème : ERROR_MESSAGE'
-  blog:
-    read_article: Lire l'article
-    written_html: "Publié par <a href='%{href}'>%{author}</a> le %{date}"
-    moreposts: Continuez la visite !
-  pages:
-    home:
-      title: Le Wagon - Apprendre à coder - Bootcamp en Ruby on Rails, HTML, CSS et JavaScript
-      description: |
-        Le Wagon est la meilleure formation au développement web en France.
-        Allez voir par vous-même les projets codés par nos anciens élèves !
-      catchline_html: "Changez de vie : <span>apprenez à coder</span>"
-      vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
-      view_teaser: voir la vidéo
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+    features:
       pedagogy_matters_html: "La pédagogie compte <i>vraiment</i> pour nous"
       pedagogy_tagline: "Nous apprenons le code avec simplicité & rigueur."
-      discover_us: Découvrez notre programme
       web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
@@ -67,6 +46,28 @@ fr:
         Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe..
         Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec
         avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
+  newsletter:
+    teaser: "<p>Soyez informé des prochaines <strong>masterclasses</strong>, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.</p>"
+    city_teaser_html: 'Soyez informé de nos prochains <strong>événements</strong> à %{city}, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.'
+    email_placeholder: votre e-mail
+    follow_us_button: Suivez-nous
+    thank_you: Merci, à très vite !
+    error: 'Oups, il y a un problème : ERROR_MESSAGE'
+  blog:
+    read_article: Lire l'article
+    written_html: "Publié par <a href='%{href}'>%{author}</a> le %{date}"
+    moreposts: Continuez la visite !
+  pages:
+    home:
+      title: Le Wagon - Apprendre à coder - Bootcamp en Ruby on Rails, HTML, CSS et JavaScript
+      description: |
+        Le Wagon est la meilleure formation au développement web en France.
+        Allez voir par vous-même les projets codés par nos anciens élèves !
+      catchline_html: "Changez de vie : <span>apprenez à coder</span>"
+      vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
+      view_teaser: voir la vidéo
+      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      discover_us: Découvrez notre programme
       it_works: "le plus étrange.. Ça marche !"
       freshly_coded: Fraîchement codés
       all_products: 100+ produits codés par notre alumni.
@@ -196,48 +197,7 @@ fr:
       description: |
         Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
       become_dev: "Devenez développeur en 2 mois"
-      city_arrival: "Le programme fullstack du Wagon s'installe à %{city}"
+      city_arrival: "Rejoignez le programme FullStack du Wagon à %{city}"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       staff: "Le staff à %{city}"
-      pedagogy_matters_html: Pedagogy <i>does</i> matters.
-      pedagogy_tagline: We love teaching advanced topics with simple examples.
-      discover_us: Discover our program
-      web_development: Learn web-development
-      web_development_details: |
-        Learn all about ruby, SQL, and the Rails application framework.
-        Develop your frontend skills by using advanced CSS technics (flexbox, grid, animations, etc..)
-        and go deeper into Javascript by learning jQuery and React.js,
-        the library developed by Facebook.
-      software_engineer_html: Become a Software engineer
-      software_engineer_details: |
-        Become more than a developer, a Software engineer.
-        This guy who has the big picture on technical issues,
-        who knows what MVC means, what's a DB scheme,
-        and who can learn a new programming language within a week.
-      technical_workflow: Adopt a technical workflow
-      technical_workflow_details_html: |
-        There's definitely <strong>a good way</strong> of building tech products.
-        We will teach you this way. Write your MVP's user stories,
-        draw you database scheme, build a mockup with Sketch,
-        collaborate using pull-requests and code-reviews on Github.
-        That's how the best startups work.
-      startup_toolkit: Get the startup toolkit
-      startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
-        We will teach you how to implement all these services
-        to be more efficient when you want to launch a new product.
-        Save time, use the right tool for the right need,
-        that's our developer mindset.
-      build_product: Build your product
-      build_product_details: |
-        That is probably what we are the best at.
-        No one will teach how to build advanced and beautiful products as we do.
-        Kudoz just raised 1.2M, Medpics is seeding 400k, and there are so many awesome products
-        rom our students in the starting block, check it out by yourself.
-      land_a_job: Land a new job
-      land_a_job_details: |
-        Working as a junior developer for Stripe, Finexkap, Compass, 55, Save, etc..
-        French engineers are the best, that's what they say ;)
-        We will help you find your dream job, either as a junior dev
-        or product manager. Discuss with any of our 350+ alumni to be
-        sure about that!
+      discover_us: "Découvez notre programme"
