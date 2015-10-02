@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   scope "(:locale)", locale: /fr|en/ do
     root to: "pages#home"
+    get "apply" => "cities#apply"
+    get "apply/:city" => "cities#apply", city: /#{CITIES.join("|")}|/, as: :apply
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "tv", to: "pages#tv", template: "tv", as: :tv

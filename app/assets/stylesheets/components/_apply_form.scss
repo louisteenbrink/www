@@ -1,0 +1,150 @@
+.pages-apply {
+  .navbar-wagon-white {background: HSLA(0, 0%, 96%, 1)}
+  .banner-container {
+      background-color: HSLA(0, 0%, 96%, 1);
+  }
+}
+
+.apply-form-body {
+  flex: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+.apply-form-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 40px 20px;
+  transition: transform .3s ease;
+
+  abbr {
+    display: none;
+  }
+
+  .errors {
+    display: flex;
+    flex-flow: column;
+    color: $red;
+    padding-left: 20px;
+    text-align: right;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  label {
+    flex: 0 0 200px;
+    color: darkgrey;
+    align-self: flex-start;
+    margin: 0;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  input {
+    flex: 1;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    box-shadow: none;
+
+  }
+
+  textarea {
+    flex: 4 1 auto;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+    border: 1px solid #ccc;
+    resize: none;
+    height: 150px;
+    padding: 10px;
+    outline: 0;
+    border-radius: 4px;
+
+    &:focus {
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.17);
+      border: 1px solid #9C9C9C;
+    }
+  }
+}
+
+.apply-form-rows-container {
+  background: white;
+}
+
+.banner-city-container {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.banner-city {
+  flex: 1;
+  height: 200px;
+  display: none;
+  border-radius: 0;
+
+
+  h1 {
+    margin: 0;
+  }
+
+  &.is-active {
+    display: flex,
+  }
+}
+
+.banner-city-nav {
+  flex: 0 0 300px;
+  margin-right: 50px;
+}
+
+.banner-city-nav-item {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &.as-example {
+    opacity: .3;
+    cursor: default;
+    .banner-city-miniature-example{ background: white !important; }
+  }
+
+  &.is-active {
+    background: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+    .city-nav-item-title {
+      font-weight: bold;
+    }
+  }
+}
+
+.banner-city-miniature {
+  height: 35px;
+  width: 35px;
+  background-size: cover;
+  margin-left: auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.12);
+}
+
+.city-nav-item-title {
+  text-transform: capitalize;
+}
+
+.apply-form-row-submit {
+  padding: 10px;
+  input {
+    flex: inherit;
+  }
+}
+
+.city-nav-item-date {
+  font-size: 12px;
+  color: #C8C8C8;
+  text-transform: uppercase;
+}
