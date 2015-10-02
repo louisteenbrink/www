@@ -13,6 +13,7 @@ class ApplyFormRow extends React.Component {
           </label>
           <input
             ref='title'
+            required={true}
             placeholder={row.placeholder}
             name='resource[title]' />
         </div>
@@ -26,9 +27,10 @@ class ApplyFormRow extends React.Component {
             <i className={row.icon}></i>{row.label}
           </label>
           <textarea
+            required={true}
             ref='title'
             placeholder={row.placeholder}
-            name='resource[title]' />
+            name={'apply{' + row.param + ']'} />
         </div>
       )
     }

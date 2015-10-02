@@ -7,11 +7,11 @@ Rails.application.routes.draw do
     end
   end
 
-
+  get "apply/(:city)" => "applies#new", locale: :en, city: /#{CITIES.join("|")}|/, as: :apply_en
+  get "postuler/(:city)" => "applies#new", locale: :fr, city: /#{CITIES.join("|")}|/, as: :apply_fr
+  resource :apply, only: %s(create)
   scope "(:locale)", locale: /fr|en/ do
     root to: "pages#home"
-    get "apply" => "cities#apply"
-    get "apply/:city" => "cities#apply", city: /#{CITIES.join("|")}|/, as: :apply
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "tv", to: "pages#tv", template: "tv", as: :tv

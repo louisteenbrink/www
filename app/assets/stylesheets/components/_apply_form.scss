@@ -1,4 +1,4 @@
-.pages-apply {
+.applies-new {
   .navbar-wagon-white {background: HSLA(0, 0%, 96%, 1)}
   .banner-container {
       background-color: HSLA(0, 0%, 96%, 1);
@@ -15,9 +15,14 @@
   align-items: center;
   width: 100%;
   justify-content: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding: 40px 20px;
   transition: transform .3s ease;
+
+  @media (max-width: $screen-md) {
+    align-items: center;
+  }
 
   abbr {
     display: none;
@@ -41,6 +46,11 @@
     align-self: flex-start;
     margin: 0;
 
+    @media (max-width: $screen-md) {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
     i {
       margin-right: 10px;
     }
@@ -52,6 +62,11 @@
     outline: 0;
     background-color: transparent;
     box-shadow: none;
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      text-align: center;
+    }
 
   }
 
@@ -79,6 +94,12 @@
 .banner-city-container {
   display: flex;
   padding-bottom: 50px;
+
+
+
+  @media (max-width: $screen-md) {
+    flex-flow: column;
+  }
 }
 
 .banner-city {
@@ -87,19 +108,30 @@
   display: none;
   border-radius: 0;
 
+  h1 span { animation: inherit }
+
 
   h1 {
     margin: 0;
   }
 
   &.is-active {
-    display: flex,
+    display: flex;
+
+    .city {
+      animation: boxShadow .3s 1s ease forwards;
+    }
   }
 }
 
 .banner-city-nav {
   flex: 0 0 300px;
   margin-right: 50px;
+
+  @media (max-width: $screen-md) {
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .banner-city-nav-item {
@@ -137,9 +169,45 @@
 }
 
 .apply-form-row-submit {
-  padding: 10px;
+  display: flex;
+  padding: 20px;
+
+  @media (max-width: $screen-md) {
+    flex-flow: column;
+    text-align: center;
+  }
+
   input {
     flex: inherit;
+    color: white;
+    background-color: #D23333;
+    padding: 12px 25px;
+    margin-left: auto;
+    outline: 0 !important;
+
+    &:hover {
+      color: white;
+      background: darken(#D23333, 5%)
+    }
+
+    &:focus {
+      color: white;
+      transform: scale(0.99);
+    }
+
+    @media (max-width: $screen-md) {
+      margin: auto;
+    }
+  }
+}
+
+.apply-form-price {
+  margin-right: 40px;
+  opacity: .4;
+
+  @media (max-width: $screen-md) {
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 
@@ -147,4 +215,14 @@
   font-size: 12px;
   color: #C8C8C8;
   text-transform: uppercase;
+}
+
+
+@keyframes boxShadow {
+  0% {
+    box-shadow: inset 0px 0 #D23333;
+  }
+  100% {
+    box-shadow: inset 0px -18px #D23333;
+  }
 }

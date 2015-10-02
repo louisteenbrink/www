@@ -3,7 +3,7 @@ class ApplyForm extends React.Component {
     super(props)
 
     this.state = {
-      activeCity: this.props.cities[0]
+      activeCity: this.props.city
     }
   }
 
@@ -11,9 +11,6 @@ class ApplyForm extends React.Component {
     var componentClasses = classNames({
       'apply-form': true
     })
-
-    console.log(this.state.activeCity)
-
     return(
       <div className={componentClasses}>
         <div className="banner-container">
@@ -49,7 +46,7 @@ class ApplyForm extends React.Component {
                       <div className="banner-gradient-shadow"></div>
                       <div className="banner-content">
                         <h1 className='glitch'>
-                          Postuler à {city.name}
+                          Postuler à <span className='city'>{city.name}</span>
                         </h1>
                       </div>
                     </div>
@@ -57,22 +54,28 @@ class ApplyForm extends React.Component {
                 })}
               </div>
               <div className='apply-form-rows-container'>
-                <div className="apply-form-row" >
-                  <label>
-                    <i className='mdi mdi-calendar-multiple-check'></i>Dates
-                  </label>
-                  <input
-                    ref='title'
-                    value={this.state.activeCity.next_batch.starts_at + " — " + this.state.activeCity.next_batch.ends_at  }
-                    disabled={true}
-                    name='resource[title]' />
-                </div>
-                {this.props.rows.map( (row, index) => {
-                  return <ApplyFormRow {... row} />
-                })}
-                <div className='apply-form-row-submit'>
-                  <input type='submit' value='Apply' className='apply-form-submit btn btn-sucsess' />
-                </div>
+                <form action={Routes.apply_path()} method='post'>
+                  <div dangerouslySetInnerHTML={{__html: Csrf.getInput()}} />
+                  <div className="apply-form-row" >
+                    <label>
+                      <i className='mdi mdi-calendar-multiple-check'></i>Dates
+                    </label>
+                    <input
+                      ref='title'
+                      value={"from " + this.state.activeCity.next_batch.starts_at + " to " + this.state.activeCity.next_batch.ends_at  }
+                      disabled={true}
+                      name='apply[date]' />
+                  </div>
+                  {this.props.rows.map( (row, index) => {
+                    return <ApplyFormRow {... row} />
+                  })}
+                  <div className='apply-form-row-submit'>
+                    <div className='apply-form-price'>
+                      Price : 4500 € Incl. Tax. Payment in three installments, free of charge.
+                    </div>
+                    <input type='submit' value={'Apply for a 9 weeks bootcamp in ' + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
+                  </div>
+                </form>
               </div>
             </div>
           </div>
