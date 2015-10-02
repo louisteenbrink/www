@@ -7,29 +7,9 @@ en:
     navbar:
       menu:
         cities: Cities
-  newsletter:
-    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
-    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
-    email_placeholder: your e-mail
-    follow_us_button: Follow us
-    thank_you: "Thanks, see you very soon!"
-    error: "Oups, seems to be an issue : ERROR_MESSAGE"
-  blog:
-    read_article: Read the post
-    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
-    moreposts: Take a tour on other cool posts
-  pages:
-    home:
-      title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
-      description: |
-        Le Wagon is the best French coding school for entrepreneurs. Checkout by yourself the projects of our students. You will be impressed.
-      catchline_html: "Change your life: <span>learn to code</span>"
-      vision: Le Wagon brings technical skills to creative people
-      view_teaser: see our video
-      apply_for_nine_weeks: Apply for 9 weeks
+    features:
       pedagogy_matters_html: Pedagogy <i>does</i> matters.
       pedagogy_tagline: We love teaching advanced topics with simple examples.
-      discover_us: Discover our program
       web_development: Learn web-development
       web_development_details: |
         Learn all about ruby, SQL, and the Rails application framework.
@@ -69,6 +49,27 @@ en:
         We will help you find your dream job, either as a junior dev
         or product manager. Discuss with any of our 350+ alumni to be
         sure about that!
+  newsletter:
+    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
+    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
+    email_placeholder: your e-mail
+    follow_us_button: Follow us
+    thank_you: "Thanks, see you very soon!"
+    error: "Oups, seems to be an issue : ERROR_MESSAGE"
+  blog:
+    read_article: Read the post
+    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
+    moreposts: Take a tour on other cool posts
+  pages:
+    home:
+      title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
+      description: |
+        Le Wagon is the best French coding school for entrepreneurs. Checkout by yourself the projects of our students. You will be impressed.
+      catchline_html: "Change your life: <span>learn to code</span>"
+      vision: Le Wagon brings technical skills to creative people
+      view_teaser: see our video
+      apply_for_nine_weeks: Apply for 9 weeks
+      discover_us: Discover our program
       it_works: "Funny thing, it works"
       freshly_coded: Freshly coded
       all_products: 100+ products built by our alumni.
@@ -80,43 +81,85 @@ en:
       and_you_html: And <strong>you</strong> ?
       check_projects: Discover our students and their projects
     program:
-      title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
+      title: Program - 9 weeks to learn Ruby on Rails
       description: |
-        9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web
-      our_program: "Notre programme"
+        9 weeks to learn ruby on Rails, HTML/CSS, Javascript, and web-development best practices
+      our_program: "FullStack program"
       program_details: |
-        Notre programme est conçu pour les débutants ou "faux débutants" qui souhaitent
-        acquérir une véritable autonomie technique mais surtout un nouveau mindset.
-        Penser comme un développeur, voir les problématiques sous un nouvel angle et
-        libérer sa créativité grâce au code.
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
-      objective: L'objectif
-      objective_details: |
-        Notre unique objectif est de vous transmettre ce savoir-faire
-        pour que vous deveniez des entrepreneurs d'exception maitrisant
-        les enjeux techniques ou que vous trouviez un poste en développement,
-        product management, growth hacking.
-      why_us: Pourquoi nous ?
-      why_us_details: |
-        Le programme vous fera gagner deux ans en vous plongeant dans un ecosystème
-        ultra-stimulant ou vous apprendrez beaucoup plus vite.
-        Vous apprendrez surtout ce qui ne s'apprend pas en ligne :
-        le set-up d'un codeur, les bonnes pratiques de développement web,
-        les techniques de modélisation d'une architecture logicielle, d'une base
-        de données, les techniques de collaboration sur Github, etc..
-      community: Une communauté hyperactive
-      community_details: |
-        Les professeurs du Wagon sont tous des entrepreneurs tech
-        (Taster's club, Sylights, Txto), ayant une "expérience terrain" du code.
-        Vous ferez partie d'une communauté hyperactive : 160 anciens élèves
-        suractifs sur le slack du Wagon, 8 professeurs, 15 mentors, 9 startups
-        déjà créées, des talks tous les jeudi-soirs avec des intervenants de haut-niveau.
-      cv: Votre cv de développeur
-      cv_details: |
-        A la fin de la formation, vous saurez transformer vos idées
-        en produits, vous aurez codé plusieurs applis web, dont
-        votre propre projet et un clone d'airbnb, et vous aurez un portfolio
-        de votre travail sur Github.
+        2 months to become fullstack developer and learn to build web-products, from the database to
+        the user interface. For curious and highly motivated people.
+      apply_for_nine_weeks: Apply for 9 weeks
+      nine_weeks: 9 intensive weeks
+      to_build_your_ideas: To build 99% of your ideas
+      why_us: Why us?
+      why_us_details_html: |
+        We have been teaching more than 15 batchess of 25 students and our program has evolved every times to become perfect.
+        That is this long experience in teaching which makes our program so efficient. <strong>You will learn in 2 months what you can't learn in 2 years:</strong>
+        <ul>
+          <li>Perfect developer set-up</li>
+          <li>Software engineering and datatabase architecture</li>
+          <li>Collaboration on Github</li>
+          <li>Technical workflow used in the best startups</li>
+          <li>Tools like Heroku, Stripe, Mandrill, Algolia to deploy your app and integrate advanced features (payment, geolocation, mailing, search etc...)</li>
+        </ul>
+      community: A hyperactive community
+      community_details_html: |
+        350+ students with various backgrounds (engineers, journalists, architects, designers..)
+        are chatting every day on Slack, asking their questions to teachers, sharing tips, resources, code gists, job offers, news from their products.
+        <strong>One of the best tech communities in the world.</strong>
+        All these students share the same technical skills after Le Wagon.
+        This mix between <strong>diversity & technical skills</strong> makes this community very unique.
+      cv: Your developer portfolio
+      cv_details_html: |
+        In 2 months only, build several web applications, including
+        a Airbnb clone and your own personal project. Deploy these apps
+        and build yourself a solid Github portfolio.
+      ruby: |
+        Get familiar with the command line and Git.
+        Learn the basics of programming with ruby and code
+        little programs playing with variables, methods,
+        loops and conditional statements. Discover how you can
+        read and write in files and how you can collect
+        interesting data by scraping a website or by calling
+        an API (for instance Twitter API).
+      software: |
+        Discover OOP (Object-Oriented programming) and learn to
+        build advanced softwares by structuring your programs
+        into different objects. If you want to build a social
+        network, a market-place, a car-rental system, a restaurant
+        booking platform... then you need to organize your code
+        with a smart architecture. Same as an architect who
+        wants to build a house, he must respect some patterns.
+        During this week, you will code your first applications
+        following the MVC design pattern.
+      database: |
+        Programs need to store information in a database.
+        Without database, Facebook would loose your information
+        every time you log in! Learn to design a database by defining
+        its tables and their connections. Then discover SQL,
+        the language used to make queries to the database
+        and read/write data.
+      frontend: |
+        Improve you UI culture and learn all about HTML,
+        CSS & best practices in web-design (positioning techniques, animations).
+        Get familiar with Bootstrap, a usefull library to
+        prototype web-applications. Then move on to javascript
+        and jQuery. Learn to manipulate the DOM,
+        define events, and make AJAX requests with Javascript.
+        You will play with lots of cool APIs during this
+        module (Trello API, Slack API, Facebook API, etc...).
+      rails: |
+        Time to put all your skills together and dive into Rails.
+        No big deal here, you already know most of its
+        elementary blocks and you will feel like at home!
+        During your Rails training, you will have to code Airbnb
+        from scratch in 5 days. You will work in teams and you will
+        learn to collaborate on Github using pull requests and deploy
+        your apps on Heroku, using the same workflow as in the best
+        startups.
+      projects: |
+        Project Time! Let's code your own project during the
+        2 last week and build an awesome product!
       awesome_entrepreneur: Entrepreneur d'exception
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
@@ -128,16 +171,13 @@ en:
       junior_dev_details: |
         Trouver un poste dans une entreprise du numérique avec ces nouvelles compétences-clef (en développement, product management, marketing, growth hacking..).
       week_by_week: Semaine par semaine
-      typical_day: Journée type
-      theoretical_intro: "Introduction théorique & live-code des professeurs projeté sur grand écran."
-      pair_programming: "Challenges en binôme ou par groupe sur la plateforme autocorrigée du Wagon, encadrés par les professeurs et teacher assistants."
-      pair_programming_next: "Poursuite des challenges avec ré-explication des notions-clefs.."
-      yoga: "Jeudi après-midi, séance de Yoga avec Claire pour se détendre et remettre ses idées en place."
-      live_code: Live-code d'élèves devant la classe from scratch !
+      typical_day: Typical day
+      theoretical_intro: "Grab a coffee and attend the morning course given by the lead teacher with lots of live-code demos."
+      pair_programming: "Work on challenges with your buddy of the day on our auto-correcting platform with help of teachers & teacher assistants."
+      yoga: "Yoga time, with Claire, to relax and get some head space."
+      live_code: "Live-code baby, let's take some challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
-        Selon la journée, séance de soutien, mentoring sur les projets, masterclasses
-        (derniers invités: Pierre Valade CEO Sunrise, Scott Chacon CIO Github, Romain Niccoli CTO Criteo..), meetup,
-        dîners, évènements divers & variés
+        Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
   students:
     index:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon
@@ -150,11 +190,11 @@ en:
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
   cities:
     show:
-      title: "Le Wagon - Bootcamp de Ruby on Rails à %{city}"
+      title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
       description: |
-        Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
-      become_dev: "Devenez développeur en 2 mois"
-      city_arrival: "Le programme fullstack du Wagon s'installe à %{city}"
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
-      staff: "Le staff à %{city}"
-
+        Le Wagon is in %{city}. You want to learn programming? So take 9 weeks of your life to change it forever!
+      become_dev: "Become developer in 2 months"
+      city_arrival: "Join Le Wagon FullStack program in %{city}"
+      apply_for_nine_weeks: Apply for 9 weeks
+      staff: "Staff in %{city}"
+      discover_us: "Discover our program"

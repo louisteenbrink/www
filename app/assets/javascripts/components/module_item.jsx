@@ -19,7 +19,7 @@ class ModuleItem extends React.Component {
           className={'module-arrow-right ' + this.props.next.color}
           onClick={this.onNextClick.bind(this)}
         >
-          Weeks {this.props.next.startWeek} - {this.props.next.endWeek}, {this.props.next.title} <i className='fa fa-long-arrow-right'/>
+          {this.props.next.title} <i className='fa fa-long-arrow-right'/>
         </div>
       )
     }
@@ -30,7 +30,7 @@ class ModuleItem extends React.Component {
           className = {'module-arrow-left ' + this.props.previous.color}
           onClick   = {this.onPreviousClick.bind(this)}
         >
-          <i className='fa fa-long-arrow-left'/> Weeks {this.props.previous.startWeek} - {this.props.previous.endWeek}, {this.props.previous.title}
+          <i className='fa fa-long-arrow-left'/> {this.props.previous.title}
         </div>
       )
     }

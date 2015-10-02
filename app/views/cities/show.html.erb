@@ -1,59 +1,90 @@
 <%= content_for(:title) do %>
-  <%= t(".title", city: @city[:name]) %>
+  <%= t(".title", city: @city["name"]) %>
 <% end %>
 
 <%= content_for(:description) do %>
-  <%= t(".description", city: @city[:name]) %>
+  <%= t(".description", city: @city["name"]) %>
 <% end %>
 
-<div class="banner banner-gradient text-center" style="background-image: url('<%= image_path(@city[:images][:banner])%>');">
-  <div class="banner-gradient-shadow"></div>
-  <div class="banner-content">
-    <h1><%= t ".become_dev" %></h1>
-    <p><%= t ".city_arrival", city: @city[:name] %></p>
-    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn btn-danger btn-lg" %>
-  </div>
-</div>
-
-
-<div id="staff" class="padded">
-  <h2 class="section-header text-center"><%= t ".staff", city: @city[:name]%></h2>
+<div class="banner-container">
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <% @city[:staff].each do |teacher| %>
-        <div class="row">
-          <div class="col-xs-12">
-
-            <div class="card-staff">
-              <div class="card-staff-description">
-                <h3><%= teacher.split("_").first.capitalize %></h3>
-                <%= markdown(locale == I18n.default_locale ? Static::STAFF[teacher.to_sym][:description][:fr] : Static::STAFF[teacher.to_sym][:description][:en])%>
-              </div>
-              <div class="card-staff-infos">
-                <div class="card-staff-role">
-                  <h4><%= Static::STAFF[teacher.to_sym][:name]%></h4>
-                  <p><%= Static::STAFF[teacher.to_sym][:role] %></p>
-                </div>
-                <%= image_tag "teachers/#{Static::STAFF[teacher.to_sym][:image_name]}", class: "img-circle card-staff-img" %>
-              </div>
-            </div>
-          </div>
-        </div>
-        <% end %>
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["city_picture"])%>');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1><%= t ".become_dev" %></h1>
+        <p><%= t ".city_arrival", city: @city["name"] %></p>
       </div>
+    </div>
+    <div class='banner-cta'>
+    <%= link_to program_path, class: 'banner-cta-item hidden-xs' do %>
+      <%= t(".discover_us", default: "Découvrez notre programme") %>
+    <% end %>
+    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>
 
-<div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city[:images][:bottom])%>');">
-  <div class="banner-flat-filter banner-flat-filter-black"></div>
-  <div class="banner-content text-center">
-    <% if @city[:location]%>
-      <h2><%= @city[:location] %></h2>
-    <% end %>
-    <p><%= @city[:address] %></p>
-    <br>
-    <button class="btn-transparent">Next meetup: Apero talk avec Boris Paillard</button>
+<%= render "shared/features" %>
+
+<div id="staff" class="padded">
+  <div class="container">
+    <h2 class="section-title-home text-center">
+      <div class="section-title-home-content" style="font-size:30px;">
+        <%= t ".staff", city: @city["name"]%>
+      </div>
+    </h2>
+  </div>
+  <div class="container">
+    <div>
+      <% @teachers.each do |teacher| %>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="card-staff">
+            <div class="card-staff-description">
+              <h3><%= teacher["first_name"] %> <%= teacher["last_name"] %></h3>
+              <p><%= teacher["bio"][locale.to_s] %></p>
+            </div>
+            <div class="card-staff-infos">
+              <div class="card-staff-role">
+                <h4><%= teacher["github_nickname"].capitalize %></h4>
+                <p><%= teacher["role"]%></p>
+              </div>
+              <%= image_tag teacher["thumbnail"], class: "img-circle card-staff-img" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+<div class="location-overlay">
+  <div class="container">
+    <div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city["location_picture"])%>');">
+      <div class="banner-flat-filter banner-flat-filter-black"></div>
+      <div class="banner-content">
+        <div class='location-tab-overlay'>
+          <div class='location-tab'>
+            <h2>
+              <%= @city["location"] %>,
+              <span><%= @city["address"] %></span>
+            </h2>
+          </div>
+        </div>
+        <% if @city["location"]%>
+          <p><%= @city["description"][locale.to_s] %></p>
+        <% end %>
+        <br>
+        <% if @meetup[:events].empty? %>
+          <a href="<%= @meetup[:infos][:link] %>" target="_blank" class="btn-transparent">
+            Next Meetup: <%= @meetup[:infos][:name] %>
+          </a>
+        <% else %>
+          <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
+            Next Meetup: <%= @meetup[:events].first[:name].truncate(30) %>
+          </a>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

@@ -16,5 +16,12 @@ class AlumniClient
   def cities
     JSON.parse(RestClient.get("#{@base_url}/cities?active=true"))["cities"]
   end
+  def city(slug)
+    JSON.parse(RestClient.get("#{@base_url}/cities/#{slug}"))["city"]
+  end
+
+  def staff(city_slug)
+    JSON.parse(RestClient.get("#{@base_url}/staff?city=#{city_slug}"))["staff"]
+  end
 
 end

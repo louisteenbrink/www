@@ -1,10 +1,57 @@
 #location {
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+  padding: 15px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .banner-content {
+    flex: 0 1 800px;
+    text-align: left;
+  }
   h2 {
     font-size: 40px;
     font-weight: $font-weight-bold;
     margin-bottom: 40px;
+    text-align: left;
+    margin-top: 0;
   }
   p {
     font-size: 23px;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 50px;
+    font-size: 19px;
+    opacity: 0.9;
   }
+  span {
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 46px;
+    margin-left: 5px;
+    margin-top: -9px;
+    position: relative;
+    top: -2px;
+    opacity: 0.8;
+  }
+  button {
+    margin-top: 20px;
+  }
+}
+
+.location-tab-overlay {
+  position: relative;
+  z-index: 9;
+}
+
+#staff {
+  background-color: HSLA(0, 0%, 96%, 1);
+  margin-top: -180px;
+  padding-top: 180px;
+}
+
+.location-overlay {
+  background: whitesmoke;
+  padding-bottom: 100px;
 }

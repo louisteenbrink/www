@@ -31,100 +31,7 @@
   </div>
 </div>
 
-<div class="features-wrapper">
-  <div class="container features-container">
-    <h2 class='section-title-home'>
-      <div class='section-title-home-content' style="font-size:30px;">
-        <%= t(".pedagogy_matters_html") %>
-      </div>
-    </h2>
-    <p class="text-muted text-center section-title-home-subtitle">
-      <%= t(".pedagogy_tagline") %>
-    </p>
-    <div class='features'>
-      <div class='feature'>
-        <div class='feature-header'>
-          <div class='feature-icon yellow'>
-            <i class='mdi mdi-laptop'>
-
-            </i>
-          </div>
-          <div class='feature-title'>
-            <%= t(".web_development") %>
-          </div>
-        </div>
-        <div class='feature-body'>
-          <%= t(".web_development_details") %>
-        </div>
-      </div>
-      <div class='feature'>
-        <div class='feature-header'>
-          <div class='feature-icon purple'>
-            <i class='mdi mdi-keyboard-variant'></i>
-          </div>
-          <div class='feature-title'>
-            <%= t(".software_engineer_html") %>
-          </div>
-        </div>
-        <div class='feature-body'>
-          <%= t(".software_engineer_details") %>
-        </div>
-      </div>
-      <div class='feature'>
-        <div class='feature-header'>
-          <div class='feature-icon green'>
-          <i class='mdi mdi-source-pull'></i>
-          </div>
-          <div class='feature-title'>
-            <%= t(".technical_workflow") %>
-          </div>
-        </div>
-        <div class='feature-body'>
-          <%= t(".technical_workflow_details_html") %>
-        </div>
-      </div>
-       <div class='feature'>
-        <div class='feature-header'>
-          <div class='feature-icon orange'>
-            <i class='mdi mdi-auto-fix'></i>
-          </div>
-          <div class='feature-title'>
-            <%= t(".startup_toolkit") %>
-          </div>
-        </div>
-        <div class='feature-body'>
-          <%= t(".startup_toolkit_details") %>
-        </div>
-      </div>
-      <div class='feature'>
-        <div class='feature-header'>
-          <div class='feature-icon blue'>
-            <i class='mdi mdi-cube-outline'></i>
-          </div>
-          <div class='feature-title'>
-            <%= t(".build_product") %>
-          </div>
-        </div>
-        <div class='feature-body'>
-          <%= t(".build_product_details") %>
-        </div>
-      </div>
-      <div class='feature'>
-        <div class='feature-header'>
-          <div class='feature-icon red'>
-            <i class='mdi mdi-wallet-travel'></i>
-          </div>
-          <div class='feature-title'>
-            <%= t(".land_a_job") %>
-          </div>
-        </div>
-        <div class='feature-body'>
-          <%= t(".land_a_job_details") %>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render "shared/features" %>
 
 <%= react_component 'Stories', {
   stories: @stories,
@@ -150,9 +57,12 @@
           <div class="card">
             <span class="card-bg" style="background-image: url('<%= project['thumbnail']%>')"></span>
             <span class="card-shadow"></span>
-            <span class="card-text">
-              <h2><%= project["name"] %></h2>
-              <p><%= project["tagline"] %></p>
+            <span class="card-text-container">
+              <span class="card-text">
+                <h2><%= project["name"] %></h2>
+                <hr class='hidden-sm'>
+                <p class='hidden-sm'><%= project["tagline"] %></p>
+              </span>
             </span>
             <span class="card-user">
               <% unless project["makers"].empty? %>
@@ -183,7 +93,7 @@
       <% @cities.each do |city| %>
         <div class="col-xs-12 col-sm-3">
           <div class="card-city">
-            <div class="card-city-header" style="background-image: url('<%= city['city_picture']%>')">
+            <div class="card-city-header" style="background-image: url('<%= city['pictures']['city']['thumbnail']%>')">
             <span class="card-city-filter"></span>
             </div>
             <div class="card-city-body">
@@ -194,17 +104,15 @@
               <p>
                 <i class="fa fa-calendar"></i>
                 <%= @meetups[city["slug"]][:events].empty? ? 0 : @meetups[city["slug"]][:events].count %>
-                <!-- y'a des bugs par ici — tchret -->
                 évènements à venir
               </p>
               <p class="card-city-meetup-link">
-                <% if @meetups[city["slug"]][:events].empty? && @meetups[city["slug"]][:infos] %>
+                <% if @meetups[city["slug"]][:events].empty? %>
                   <a href="<%= @meetups[city["slug"]][:infos][:link] %>" target="_blank">
                     <i class="fa fa-hand-o-right"></i>
                     <%= @meetups[city["slug"]][:infos][:name] %>
                   </a>
-                <% elsif false %>
-                <!-- y'a des bugs par ici — tchret -->
+                <% else %>
                   <a href="<%= @meetups[city["slug"]][:events].first[:event_url] %>" target="_blank">
                     <i class="fa fa-hand-o-right"></i>
                     <%= @meetups[city["slug"]][:events].first[:name].truncate(30) %>

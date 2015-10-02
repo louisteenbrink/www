@@ -143,11 +143,25 @@ $curve-size-lg: 100%;
     color: darken(#E4E4E4, 10%);
   }
 
+  // Small size and position adjustments
+  .devicons-responsive {
+    font-size: 80px;
+  }
+  .devicons-javascript_badge {
+    font-size: 40px;
+    position: relative;
+    top: -5px;
+    left: 5px;
+  }
+
   &.is-active {
     .devicons-terminal_badge   { color: #000000 }
     .devicons-git              { color: #F64E19 }
     .devicons-ruby_rough       { color: #B40A00 }
     .devicons-postgresql       { color: #2F6592 }
+    .devicons-streamline       { color: #2F6592 }
+    .devicons-netbeans         { color: #8000FF }
+    .devicons-responsive       { color: $orange; }
 
     .devicons-html5            { color: #E54D25 }
     .devicons-css3             { color: #379AD3 }
