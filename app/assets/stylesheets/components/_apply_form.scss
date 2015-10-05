@@ -4,12 +4,10 @@
       background-color: HSLA(0, 0%, 96%, 1);
   }
 }
-
 .apply-form-body {
   flex: 1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
 }
-
 .apply-form-row {
   display: flex;
   align-items: center;
@@ -23,11 +21,9 @@
   @media (max-width: $screen-md) {
     align-items: center;
   }
-
   abbr {
     display: none;
   }
-
   .errors {
     display: flex;
     flex-flow: column;
@@ -35,17 +31,14 @@
     padding-left: 20px;
     text-align: right;
   }
-
   &:last-child {
     border-bottom: none;
   }
-
   label {
     flex: 0 0 200px;
     color: darkgrey;
     align-self: flex-start;
     margin: 0;
-
     @media (max-width: $screen-md) {
       text-align: center;
       padding-bottom: 20px;
