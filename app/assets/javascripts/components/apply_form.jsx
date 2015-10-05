@@ -56,15 +56,13 @@ class ApplyForm extends React.Component {
               <div className='apply-form-rows-container'>
                 <form action={Routes.apply_path()} method='post'>
                   <div dangerouslySetInnerHTML={{__html: Csrf.getInput()}} />
-                  <div className="apply-form-row" >
+                  <div className="apply-form-row apply-form-row-first" >
                     <label>
                       <i className='mdi mdi-calendar-multiple-check'></i>Dates
                     </label>
-                    <input
-                      ref='title'
-                      value={"from " + this.state.activeCity.next_batch.starts_at + " to " + this.state.activeCity.next_batch.ends_at  }
-                      disabled={true}
-                      name='apply[date]' />
+                    <div className="apply-form-row-item">
+                      from <strong>{ this.state.activeCity.next_batch.starts_at }</strong> to <strong>{ this.state.activeCity.next_batch.ends_at  }</strong>
+                    </div>
                   </div>
                   {this.props.rows.map( (row, index) => {
                     return <ApplyFormRow {... row} />

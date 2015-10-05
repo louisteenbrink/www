@@ -4,11 +4,10 @@ class AppliesController < ApplicationController
 
   def new
     @cities = @client.cities.select{|city| city['next_batch']}.each do |city|
-      city['next_batch']['starts_at'] =  city['next_batch']['starts_at'].to_date.strftime('%A, %b %d')
-      city['next_batch']['ends_at'] =  city['next_batch']['ends_at'].to_date.strftime('%A, %b %d')
+      city['next_batch']['starts_at'] =  city['next_batch']['starts_at'].to_date.strftime('%B %d')
+      city['next_batch']['ends_at'] =  city['next_batch']['ends_at'].to_date.strftime('%B %d')
     end.shuffle!
-    @city = params[:city] ? @cities.select{|city| city['slug'] == params[:city]}[0] : @cities.first
-
+    @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
   end
 
   def create

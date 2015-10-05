@@ -79,11 +79,22 @@
     padding: 10px;
     outline: 0;
     border-radius: 4px;
-
     &:focus {
       box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.17);
       border: 1px solid #9C9C9C;
     }
+  }
+}
+
+.apply-form-row-first {
+  background-color: rgba(46, 46, 46, 0.9);
+  color: white;
+}
+
+.apply-form-row-item {
+  flex: 1;
+  span {
+    opacity: .5;
   }
 }
 
@@ -94,9 +105,6 @@
 .banner-city-container {
   display: flex;
   padding-bottom: 50px;
-
-
-
   @media (max-width: $screen-md) {
     flex-flow: column;
   }
