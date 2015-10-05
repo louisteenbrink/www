@@ -35,7 +35,7 @@
       </div>
     </h2>
     <p class="text-muted text-center section-title-home-subtitle">
-      in only 10 days.
+      ...in only 10 days.
     </p>
     <div class="projects-list">
       <% @projects.each do |project| %>
@@ -50,7 +50,7 @@
                     <% maker = OpenStruct.new maker %>
                     <div class="project-item-maker">
                       <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                        <img src=<%= maker.thumbnail %> class='avatar-small avatar' />
+                        <img src=<%= maker.thumbnail %> class='avatar' />
                       </a>
                     </div>
                   <% end %>
