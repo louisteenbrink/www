@@ -8,8 +8,8 @@ fr:
       menu:
         cities: Villes
     features:
-      pedagogy_matters_html: "La pédagogie compte <i>vraiment</i> pour nous"
-      pedagogy_tagline: "Nous apprenons le code avec simplicité & rigueur."
+      pedagogy_matters_html: "Code the startup way."
+      pedagogy_tagline: "Utilisez les bonnes technologies et les bonnes pratiques."
       web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.

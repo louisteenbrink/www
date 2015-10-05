@@ -8,8 +8,8 @@ en:
       menu:
         cities: Cities
     features:
-      pedagogy_matters_html: Pedagogy <i>does</i> matters.
-      pedagogy_tagline: We love teaching advanced topics with simple examples.
+      pedagogy_matters_html: Code the startup way.
+      pedagogy_tagline: Use best technologies and best practices.
       web_development: Learn web-development
       web_development_details: |
         Learn all about ruby, SQL, and the Rails application framework.
@@ -20,7 +20,7 @@ en:
       software_engineer_details: |
         Become more than a developer, a Software engineer.
         This guy who has the big picture on technical issues,
-        who knows what MVC means, what's a DB scheme,
+        who knows what MVC means, what's a DB scheme, a HTTP request,
         and who can learn a new programming language within a week.
       technical_workflow: Adopt a technical workflow
       technical_workflow_details_html: |
@@ -38,10 +38,9 @@ en:
         that's our developer mindset.
       build_product: Build your product
       build_product_details: |
-        That is probably what we are the best at.
-        No one will teach how to build advanced and beautiful products as we do.
-        Kudoz just raised 1.2M, Medpics is seeding 400k, and there are so many awesome products
-        rom our students in the starting block, check it out by yourself.
+        No one will teach you to build web products as we do.
+        Kudoz has just raised 1.2M, Impact is disrupting politics, MaShareEcole school, MedPics healthcare, Krawd marketing...
+        and there are so many other projects in the starting block. Check out by yourself.
       land_a_job: Land a new job
       land_a_job_details: |
         Working as a junior developer for Stripe, Finexkap, Compass, 55, Save, etc..
