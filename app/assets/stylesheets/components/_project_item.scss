@@ -4,6 +4,8 @@
   padding-top: 0;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 50px;
+
   a { color: black }
 }
 
@@ -25,6 +27,17 @@
     display: flex;
     flex-flow: column;
     flex: 0 0 33%;
+    max-width: 450px;
+
+    a { outline: 0 }
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: $screen-sm) {
+      flex: 0 0 100%;
+    }
     opacity: 1;
     padding: 10px;
     position: relative;
