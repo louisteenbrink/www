@@ -7,15 +7,19 @@ class AlumniClient
   def stories
     JSON.parse(RestClient.get("#{@base_url}/stories"))["stories"]
   end
+
   def alumni
     JSON.parse(RestClient.get("#{@base_url}/alumni"))["alumni"]
   end
+
   def projects
-    JSON.parse(RestClient.get("#{@base_url}/projects?featured=true"))["projects"]
+    JSON.parse(RestClient.get("#{@base_url}/projects"))["projects"]
   end
+
   def cities
     JSON.parse(RestClient.get("#{@base_url}/cities?active=true"))["cities"]
   end
+
   def city(slug)
     JSON.parse(RestClient.get("#{@base_url}/cities/#{slug}"))["city"]
   end
