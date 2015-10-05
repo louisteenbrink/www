@@ -1,0 +1,44 @@
+<div class='apply-form-overlay'>
+  <%= react_component 'ApplyForm', {
+    cities: @cities,
+    city: @city,
+    rows: [
+      {
+        placeholder: 'Alain',
+        type: 'input',
+        label: 'First Name',
+        param: 'first_name',
+        'icon': 'mdi mdi-account'
+      },
+      {
+        placeholder: 'Turing',
+        label: "Last Name",
+        type: 'input',
+        param: 'last_name',
+        icon: 'mdi mdi-format-text'
+      },
+      {
+        label: 'Email',
+        type: 'input',
+        param: 'email',
+        icon: 'mdi mdi-email-open',
+        placeholder: 'alain@turing.com'
+      },
+      {
+        label: 'Age',
+        param: 'age',
+        type: 'input',
+        icon: 'mdi mdi-crown',
+        placeholder: '42'
+      },
+      {
+        label: 'Motivations',
+        param: 'motivations',
+        type: 'text',
+        icon: 'mdi mdi-content-paste',
+        placeholder: 'Why Le Wagon? What is your project?'
+      }
+    ]
+    } %>
+
+</div>
