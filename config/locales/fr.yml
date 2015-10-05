@@ -118,51 +118,37 @@ fr:
         <strong>dont votre propre projet + un clone d'Airbnb</strong>.
         Mettez ces applications en production et construisez-vous un solide portfolio sur Github.
       ruby: |
-        Get familiar with the command line and Git.
-        Learn the basics of programming with ruby and code
-        little programs playing with variables, methods,
-        loops and conditional statements. Discover how you can
-        read and write in files and how you can collect
-        interesting data by scraping a website or by calling
-        an API (for instance Twitter API).
+        Manipulez la ligne de commande et versionnez votre travail avec Git.
+        Codez des petits programmes qui jouent avec les variables, les méthodes, les boucles, les conditions..
+        Apprenez à lire et écrire dans des fichiers et à collecter des données intéressantes
+        en scrapant des sites web ou en utilisant des APIs (comme l'API Twitter).
       software: |
-        Discover OOP (Object-Oriented programming) and learn to
-        build advanced softwares by structuring your programs
-        into different objects. If you want to build a social
-        network, a market-place, a car-rental system, a restaurant
-        booking platform... then you need to organize your code
-        with a smart architecture. Same as an architect who
-        wants to build a house, he must respect some patterns.
-        During this week, you will code your first applications
-        following the MVC design pattern.
+        Plongez dans la programmation orientée-objet et construisez de vrais logiciels
+        en découpant votre programme en différents objets. Pour coder
+        un réseau social, un système de réservation de voitures, une plateforme
+        de gestion pour un restaurant, etc.. vous avez besoin d'architecturer votre code.
+        Tout comme un architecte doit respecter certains patterns pour construire une maison.
+        Codez vos premières applications MVC.
       database: |
-        Programs need to store information in a database.
-        Without database, Facebook would loose your information
-        every time you log in! Learn to design a database by defining
-        its tables and their connections. Then discover SQL,
-        the language used to make queries to the database
-        and read/write data.
+        Les programmes ont besoin de stocker des informations dans une base de données.
+        Sans base, Facebook perdrait vos infos à chaque login!
+        Apprenez à dessiner votre bases de données en définissant les tables et leurs relations.
+        Maîtrisez SQL, le langage utilisé pour parler à la base et lire/écrire des données.
       frontend: |
-        Improve you UI culture and learn all about HTML,
-        CSS & best practices in web-design (positioning techniques, animations).
-        Get familiar with Bootstrap, a usefull library to
-        prototype web-applications. Then move on to javascript
-        and jQuery. Learn to manipulate the DOM,
-        define events, and make AJAX requests with Javascript.
-        You will play with lots of cool APIs during this
-        module (Trello API, Slack API, Facebook API, etc...).
+        Musclez votre culture en UI et apprenez tout sur HTML, CSS et les
+        bonnes pratiques en web-design (techniques de positionnement et d'animation).
+        Maîtrisez Bootstrap pour prototyper très rapidement vos produits.
+        Puis passez à Javascript et jQuery. Manipulez vos pages web en Javascript,
+        définissez des évènements, et faites vos premières requêtes AJAX.
+        Nous jouerons avec pleins d'APIs très cools (Trello API, Slack API, Facebook API, etc..)
       rails: |
-        Time to put all your skills together and dive into Rails.
-        No big deal here, you already know most of its
-        elementary blocks and you will feel like at home!
-        During your Rails training, you will have to code Airbnb
-        from scratch in 5 days. You will work in teams and you will
-        learn to collaborate on Github using pull requests and deploy
-        your apps on Heroku, using the same workflow as in the best
-        startups.
+        Il est temps de passer à Rails. Vous serez vite à l'aise avec le framework étant données
+        vos connaissances à ce stade du programme. Et vous allez vous sentir très puissant !
+        Durant les semaines Rails, vous coderez un clone d'Airbnb en 5 jours.
+        Vous travaillerez par équipe en collaborant sur Github et en mettant votre
+        application en production sur Heroku, avec le même workflow que dans les bonnes startups.
       projects: |
-        Project Time! Let's code your own project during the
-        2 last week and build an awesome product!
+        Project Time ! A vous de coder votre propre projet et de construire le meilleur produit possible !
       awesome_entrepreneur: Entrepreneur d'exception
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
