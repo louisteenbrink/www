@@ -112,15 +112,34 @@
   background-color: black;
   box-shadow: 12px 0px 0 black, 24px 0px 0 black;
 
-  @media (max-width: $screen-md) {
-    float: right;
-    position: relative;
-    right: 27px;
+  &-wrapper {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: $screen-md) {
+      float: right;
+      position: relative;
+      right: 27px;
+    }
   }
 }
 
 .navbar-wagon-side {
   flex: 0 0 200px;
+
+  .dropdown-menu {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.25),0 0 1px rgba(0, 0, 0, 0) !important;
+
+    & > li > a {
+      font-weight: 100;
+      padding: 5px 20px;
+    }
+    & > li.main { a { font-weight: bold } }
+  }
 
   @media(max-width: $screen-md) {
     flex: 1;
