@@ -8,7 +8,7 @@
 
 <div class="banner-container">
   <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/live-code.jpg')%>');">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/programme.jpg')%>');">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1 class='glitch'>
@@ -27,14 +27,16 @@
 
 
 <div class='learning-curve-overlay'>
-  <h2 class='section-title-home'>
-    <div class='section-title-home-content' style="font-size:30px;">
-      <%= t ".nine_weeks" %>
-    </div>
-  </h2>
-  <p class="text-muted text-center section-title-home-subtitle">
-    <%= t ".to_build_your_ideas" %>
-  </p>
+  <div class="container">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content' style="font-size:30px;">
+        <%= t ".nine_weeks" %>
+      </div>
+    </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      <%= t ".to_build_your_ideas" %>
+    </p>
+  </div>
   <%= react_component 'LearningCurve', {
     curve: render('shared/learning_curve'),
     modules: [
@@ -139,7 +141,7 @@
           active: false
         },
         {
-          image: image_path('product/kitt.png'),
+          image: image_path('banners/buddy.jpg'),
           description: t(".pair_programming"),
           hour: '10h30',
           circle_color: 'day-circle-blue'
