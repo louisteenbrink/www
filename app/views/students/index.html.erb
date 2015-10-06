@@ -44,7 +44,7 @@
           <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
           <div class="project-item">
             <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)), url(<%= project.thumbnail %>);background-size:cover;background-position:center center;">
+              <div class="project-thumbnail" style="background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)), url(<%= project.card %>);background-size:cover;background-position:center center;">
                 <div class="project-item-makers">
                   <% project.makers.each do |maker| %>
                     <% maker = OpenStruct.new maker %>
