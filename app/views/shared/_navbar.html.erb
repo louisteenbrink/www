@@ -37,7 +37,17 @@
       <hr class='fake-hr hidden-xs'>
       <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch hidden-xs  navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
       <hr class='hidden-xs'>
-      <%= link_to t(".menu.ondemand", default: "On-Demand"), "https://ondemand.lewagon.org/", target: "_blank", data: {text: t(".menu.ondemand", default: "On-Demand").gsub('d', '')}, class: "glitch hidden-xs navbar-wagon-link navbar-wagon-item" %>
+      <span class='flag-container'>
+        <div>
+          <a style='<%= "opacity: .5" if locale == :en %>'>
+            <%= render 'shared/french_flag' %>
+          </a>
+          <span class='separator'>/</span>
+          <a style='<%= "opacity: .5" if locale == :fr %>'>
+            <%= render 'shared/english_flag' %>
+          </a>
+        </div>
+      </span>
       <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
       <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
