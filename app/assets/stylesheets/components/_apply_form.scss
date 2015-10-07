@@ -1,3 +1,14 @@
+@keyframes borderFocus {
+  0% {
+    border-left-color: #D23333;
+  }
+
+  100% {
+    border-left-color: #333333;
+  }
+}
+
+
 .applies-new {
   .navbar-wagon-white {background: HSLA(0, 0%, 96%, 1)}
   .banner-container {
@@ -17,6 +28,13 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   padding: 40px 20px;
   transition: transform .3s ease;
+  border-left: 0px solid black;
+  transition: .3s ease border-left;
+
+  &.is-focused {
+    border-left: 8px solid #333333;
+    animation: borderFocus 4s ease alternate-reverse infinite;
+  }
 
   @media (max-width: $screen-md) {
     align-items: center;
@@ -80,8 +98,12 @@
 }
 
 .apply-form-row-first {
-  background-color: rgba(46, 46, 46, 0.9);
   color: white;
+  background: $blue;
+
+  label {
+    color: #FFFFFF;
+  }
 }
 
 .apply-form-row-item {
@@ -215,6 +237,7 @@
 .city-nav-item-date {
   font-size: 12px;
   color: #C8C8C8;
+  background: $blue;
   text-transform: uppercase;
 }
 
