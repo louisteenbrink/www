@@ -6,6 +6,16 @@
           <div class='navbar-wagon-link-menu'></div>
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li class='main hidden-md hidden-lg hidden-sm'><%= link_to t(".menu.fullstack", default: "Programme"), program_path %></li>
+          <li class='main hidden-md hidden-lg hidden-sm'>
+            <%= link_to t(".alumni", default: "Alumni"), alumni_path %>
+          </li>
+          <li class='main hidden-md hidden-lg hidden-sm'><%= link_to t(".menu.cities"),"#" %></li>
+          <% Static::CITIES.each do |city, infos| %>
+            <li class='hidden-md hidden-lg hidden-sm'>
+              <%= link_to infos[:name], city_path(city: city) %>
+            </li>
+          <% end %>
           <li class='main'><a href="https://ondemand.lewagon.org/", target='_blank'>On Demand</a></li>
           <li><a href="https://ondemand.lewagon.org/tracks/codez-votre-premier-site-web/go", target='_blank'>Codez votre premier site web</a></li>
           <li><a href="https://ondemand.lewagon.org/tracks/devenez-developpeur-front-end/go", target='_blank'>Devenez Front-end Developer</a></li>
