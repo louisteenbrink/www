@@ -198,6 +198,8 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    react-bootstrap-rails (0.23.7)
+      rails (>= 3.1)
     react-rails (1.1.0)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
@@ -285,6 +287,7 @@ DEPENDENCIES
   rails-assets-slick.js!
   rails-i18n
   rails_12factor
+  react-bootstrap-rails
   react-rails
   redcarpet
   redis

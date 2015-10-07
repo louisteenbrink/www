@@ -13,7 +13,7 @@ class ApplyFormRow extends React.Component {
     if (_.includes(['text', 'phone', 'tel', 'email'], this.props.type)) {
       return(
         <div className={componentClasses}>
-          <label htmlFor={this.name()}>
+          <label for={this.name()}>
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <input
@@ -29,7 +29,7 @@ class ApplyFormRow extends React.Component {
     } else if (this.props.type === 'textarea') {
       return(
         <div className={componentClasses}>
-          <label>
+          <label for={this.name()}>
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <textarea
@@ -37,6 +37,7 @@ class ApplyFormRow extends React.Component {
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
             placeholder={this.props.placeholder}
+            id={this.name()}
             name={this.name()} />
         </div>
       )

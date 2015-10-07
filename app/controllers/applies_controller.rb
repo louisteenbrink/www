@@ -3,9 +3,11 @@ class AppliesController < ApplicationController
   before_action :set_client
 
   def new
-    @cities = @client.cities.select{|city| city['next_batch']}.each do |city|
-      city['next_batch']['starts_at'] =  city['next_batch']['starts_at'].to_date.strftime('%B %d')
-      city['next_batch']['ends_at'] =  city['next_batch']['ends_at'].to_date.strftime('%B %d')
+    @cities = @client.cities.select{|city| !city['batches'].empty? }.each do |city|
+      city['batches'].each do |batch|
+        batch['starts_at'] = batch['starts_at'].to_date.strftime('%B %d')
+        batch['ends_at'] = batch['ends_at'].to_date.strftime('%B %d')
+      end
     end.shuffle!
     @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
   end
