@@ -19,6 +19,7 @@ gem "uglifier"
 gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "react-rails"
+gem "lodash-rails"
 gem 'js-routes'
 gem 'autoprefixer-rails'
 

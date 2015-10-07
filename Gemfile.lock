@@ -118,6 +118,8 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.4.1)
       launchy (~> 2.2)
+    lodash-rails (3.10.0)
+      railties (>= 3.1)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -265,6 +267,7 @@ DEPENDENCIES
   jquery-rails
   js-routes
   letter_opener
+  lodash-rails
   meetup_client
   paperclip
   pg
