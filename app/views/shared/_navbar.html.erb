@@ -31,9 +31,7 @@
       <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
-        <a class='navbar-wagon-link-cta'>
-          Postuler
-        </a>
+        <%= link_to 'Postuler', apply_path, class: 'navbar-wagon-link-cta' %>
       </div>
   </div>
 </nav>
