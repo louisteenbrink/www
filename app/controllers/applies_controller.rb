@@ -4,7 +4,7 @@ class AppliesController < ApplicationController
 
   def new
     @cities = @client.cities.select{|city| !city['batches'].empty? }.each do |city|
-      city['batches'].each do |batch|
+      city['batches'].sort!{|batch| batch['starts_at'].to_date}.reverse!.each do |batch|
         batch['starts_at'] = batch['starts_at'].to_date.strftime('%B %d')
         batch['ends_at'] = batch['ends_at'].to_date.strftime('%B %d')
       end
