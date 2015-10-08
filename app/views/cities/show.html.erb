@@ -26,6 +26,11 @@
 
 <%= render "shared/features" %>
 
+<div class="banner-container">
+  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["location_picture"])%>');" id="banner-city">
+  </div>
+</div>
+
 <div id="staff" class="padded">
   <div class="container">
     <h2 class="section-title-home text-center">
@@ -53,6 +58,29 @@
             </div>
           </div>
         </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="section-title-home text-center">
+      <div class="section-title-home-content" style="font-size:30px;">
+        Beloved teacher assistants
+      </div>
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <% @assistants.each_slice(6).each do |slice| %>
+      <div class="col-xs-12 col-sm-offset-<%= (12 % slice.count) / 2 %>">
+        <% slice.each do |ta| %>
+          <div class="col-xs-6 col-sm-<%= 12 / slice.count %> ta-card">
+            <%= image_tag ta["thumbnail"], class: "img-circle", width: "60px"%>
+            <h4><%= ta["first_name"]%> <%= ta["last_name"]%></h4>
+          </div>
+        <% end %>
       </div>
       <% end %>
     </div>
