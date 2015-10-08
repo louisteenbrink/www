@@ -126,51 +126,6 @@
     ]
     } %>
 </div>
-<div class="day-type-overlay">
-  <%= react_component 'DayType',
-    {
-      title: t(".typical_day"),
-      steps: [
-        {
-          image: image_path('banners/live-code.jpg'),
-          description: t(".theoretical_intro"),
-          hour: '9h',
-          circle_color: 'day-circle-red',
-          active: false
-        },
-        {
-          image: image_path('product/kitt.png'),
-          description: t(".pair_programming"),
-          hour: '10h30',
-          circle_color: 'day-circle-blue'
-        },
-        {
-          image: image_path('banners/yoga.jpg'),
-          description: t(".yoga"),
-          hour: '16h30',
-          circle_color: 'day-circle-orange'
-        },
-        {
-          image: image_path('banners/home-secondary.jpg'),
-          description: t(".live_code"),
-          hour: '17h30',
-          circle_color: 'day-circle-orange'
-        },
-        {
-          image: image_path('banners/talk.jpeg'),
-          description: t(".talk"),
-          hour: '19h00',
-          circle_color: 'day-circle-yellow'
-        },
-        {
-          description: 'Sleep, repeat.',
-          image: false,
-          circle_color: 'day-circle-red'
-        }
-      ]
-    } %>
-</div>
-
 <div class="bg-blue two-columns">
   <div class="container">
     <div class="two-columns-description">
@@ -217,4 +172,49 @@
       <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:350px;margin-bottom:70px" %>
     </div>
   </div>
+</div>
+
+<div class="day-type-overlay">
+  <%= react_component 'DayType',
+    {
+      title: t(".typical_day"),
+      steps: [
+        {
+          image: image_path('banners/live-code.jpg'),
+          description: t(".theoretical_intro"),
+          hour: '9h',
+          circle_color: 'day-circle-red',
+          active: false
+        },
+        {
+          image: image_path('product/kitt.png'),
+          description: t(".pair_programming"),
+          hour: '10h30',
+          circle_color: 'day-circle-blue'
+        },
+        {
+          image: image_path('banners/yoga.jpg'),
+          description: t(".yoga"),
+          hour: '16h30',
+          circle_color: 'day-circle-orange'
+        },
+        {
+          image: image_path('banners/home-secondary.jpg'),
+          description: t(".live_code"),
+          hour: '17h30',
+          circle_color: 'day-circle-orange'
+        },
+        {
+          image: image_path('banners/talk.jpeg'),
+          description: t(".talk"),
+          hour: '19h00',
+          circle_color: 'day-circle-yellow'
+        },
+        {
+          description: 'Sleep, repeat.',
+          image: false,
+          circle_color: 'day-circle-red'
+        }
+      ]
+    } %>
 </div>
