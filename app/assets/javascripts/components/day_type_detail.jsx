@@ -19,8 +19,12 @@ class DayTypeDetail extends React.Component {
       'is-active': this.props.isActive
     })
 
-    return(
+    if (this.props.isActive) {
+      return(
       <div className={componentClasses} style={pictureStyle} />
     )
+    } else {
+      return <div/>
+    }
   }
 }
