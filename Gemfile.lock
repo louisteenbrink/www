@@ -94,6 +94,8 @@ GEM
     devise-i18n-views (0.3.4)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.5.2)
     figaro (1.1.1)
@@ -264,6 +266,7 @@ DEPENDENCIES
   devise
   devise-i18n
   devise-i18n-views
+  email_validator
   figaro
   font-awesome-sass
   jquery-rails

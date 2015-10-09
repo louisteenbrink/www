@@ -8,12 +8,19 @@ class ApplyFormRow extends React.Component {
   render() {
     var componentClasses = classNames({
       'apply-form-row': true,
-      'is-focused': this.state.isFocused
+      'is-focused': this.state.isFocused,
+      'has-error': this.props.error !== null
     });
+
+    var errorSpan = null;
+    if (this.props.error !== null) {
+      errorSpan = <span>{this.props.error}</span>;
+    }
+
     if (_.includes(['text', 'phone', 'tel', 'email'], this.props.type)) {
       return(
         <div className={componentClasses}>
-          <label for={this.name()}>
+          <label htmlFor={this.name()}>
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <input
@@ -22,8 +29,10 @@ class ApplyFormRow extends React.Component {
             type={this.props.type}
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
-            id={this.name()}
+            defaultValue={this.props.value}
+            id={this.props.param}
             name={this.name()} />
+          {errorSpan}
         </div>
       )
     } else if (this.props.type === 'textarea') {
@@ -38,7 +47,9 @@ class ApplyFormRow extends React.Component {
             onBlur={this.handleBlur.bind(this)}
             placeholder={this.props.placeholder}
             id={this.name()}
-            name={this.name()} />
+            defaultValue={this.props.value}>
+          </textarea>
+          {errorSpan}
         </div>
       )
     } else {
@@ -50,13 +61,11 @@ class ApplyFormRow extends React.Component {
     this.setState({ isFocused: true })
   }
 
-
-
   handleBlur() {
     this.setState({ isFocused: false })
   }
 
   name() {
-    return `apply[${this.props.param}]`;
+    return `application[${this.props.param}]`;
   }
 }

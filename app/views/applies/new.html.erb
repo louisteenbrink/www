@@ -3,49 +3,13 @@
     cities: @cities,
     city: @city,
     rows: [
-      {
-        placeholder: 'Alan',
-        type: 'text',
-        label: 'First Name',
-        param: 'first_name',
-        'icon': 'mdi mdi-account'
-      },
-      {
-        placeholder: 'Turing',
-        label: "Last Name",
-        type: 'text',
-        param: 'last_name',
-        icon: 'mdi mdi-format-text'
-      },
-      {
-        label: 'Age',
-        param: 'age',
-        type: 'text',
-        icon: 'mdi mdi-crown',
-        placeholder: '42'
-      },
-      {
-        label: 'Email',
-        type: 'email',
-        param: 'email',
-        icon: 'mdi mdi-email-open',
-        placeholder: 'alan@turing.com'
-      },
-      {
-        label: 'Phone',
-        param: 'phone',
-        type: 'tel',
-        icon: 'mdi mdi-cellphone-iphone',
-        placeholder: '+33612345678'
-      },
-      {
-        label: 'Motivations',
-        param: 'motivations',
-        type: 'textarea',
-        icon: 'mdi mdi-content-paste',
-        placeholder: 'Why Le Wagon? What is your project?'
-      }
+      apply_row(:first_name, :text, "First name", "Alan", "account"),
+      apply_row(:last_name, :text, "Last name", "Turing", "format-text"),
+      apply_row(:age, :text, "Age", "42", "crown"),
+      apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
+      apply_row(:phone, :tel, "Phone", "+33612345678", "cellphone-iphone"),
+      apply_row(:motivation, :textarea, "Motivation", "Why Le Wagon? What is your professional project?", "content-paste")
     ]
-    } %>
+  } %>
 
 </div>

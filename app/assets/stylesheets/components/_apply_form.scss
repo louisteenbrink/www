@@ -31,9 +31,18 @@
   border-left: 0px solid black;
   transition: .3s ease border-left;
 
-  &.is-focused {
-    border-left: 8px solid #333333;
+  &.is-focused, &.has-error {
+    border-left-width: 8px;
+    border-left-style: solid;
     animation: borderFocus 4s ease alternate-reverse infinite;
+  }
+
+  &.is-focused {
+    border-left-color: #333333;
+  }
+
+  &.has-error {
+    border-left-color: red;
   }
 
   @media (max-width: $screen-md) {
