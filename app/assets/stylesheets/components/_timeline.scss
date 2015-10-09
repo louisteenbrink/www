@@ -17,6 +17,9 @@
 }
 
 .days {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
   @media (max-width: $screen-sm) {
     padding: 10px;
   }
@@ -75,6 +78,7 @@
   transition: all .2s ease;
   @media (max-width: $screen-sm) {
     background: white;
+    color: black;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   }
 }
@@ -88,6 +92,7 @@
   padding: 25px;
   @media (max-width: $screen-sm) {
     background: white;
+    color: black;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   }
 
@@ -119,10 +124,7 @@
 .day-circle-yellow {
   border: 3px solid $yellow;
 }
-.days {
-  display: flex;
-  width: 600px;
-}
+
 .days-border {
   flex: 0 0 8px;
   align-self: stretch;
@@ -183,6 +185,10 @@
     bottom: 0;
     z-index: 9;
     content: '';
+    @media (max-width: $screen-sm) {
+      content: inherit;
+      position: relative;
+    }
   }
 }
 .day-type-detail {

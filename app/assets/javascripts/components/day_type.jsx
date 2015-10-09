@@ -12,7 +12,7 @@ class DayType extends React.Component {
       <div>
         <div className="row">
           <div className='timeline-overlay'>
-            <div className='day-type-detail-container hidden-xs'>
+            <div className='day-type-detail-container'>
               <div>
                 {this.props.steps.map((step, index) => {
                   return(
