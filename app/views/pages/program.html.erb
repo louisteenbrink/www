@@ -8,7 +8,7 @@
 
 <div class="banner-container">
   <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/live-code.jpg')%>');">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/6.jpg')%>');" id="banner-program">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1 class='glitch'>
@@ -27,14 +27,16 @@
 
 
 <div class='learning-curve-overlay'>
-  <h2 class='section-title-home'>
-    <div class='section-title-home-content' style="font-size:30px;">
-      <%= t ".nine_weeks" %>
-    </div>
-  </h2>
-  <p class="text-muted text-center section-title-home-subtitle">
-    <%= t ".to_build_your_ideas" %>
-  </p>
+  <div class="container">
+    <h2 class='section-title-home'>
+      <div class='section-title-home-content' style="font-size:30px;">
+        <%= t ".nine_weeks" %>
+      </div>
+    </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      <%= t ".to_build_your_ideas" %>
+    </p>
+  </div>
   <%= react_component 'LearningCurve', {
     curve: render('shared/learning_curve'),
     modules: [
@@ -126,7 +128,7 @@
     ]
     } %>
 </div>
-<div class="bg-blue two-columns">
+<div class="two-columns">
   <div class="container">
     <div class="two-columns-description">
       <h2 class="section-header-big">
@@ -142,7 +144,7 @@
   </div>
 </div>
 
-<div class="bg-white two-columns">
+<div class="bg-blue two-columns">
   <div class="container">
     <div class="two-columns-description" >
       <h2 class="section-header-big">
@@ -158,7 +160,7 @@
   </div>
 </div>
 
-<div class="bg-green-gradient two-columns">
+<div class="two-columns">
   <div class="container">
     <div class="two-columns-description">
       <h2 class="section-header-big">
@@ -180,14 +182,14 @@
       title: t(".typical_day"),
       steps: [
         {
-          image: image_path('banners/live-code.jpg'),
+          image: image_path('banners/5.jpg'),
           description: t(".theoretical_intro"),
           hour: '9h',
           circle_color: 'day-circle-red',
           active: false
         },
         {
-          image: image_path('product/kitt.png'),
+          image: image_path('banners/4.jpg'),
           description: t(".pair_programming"),
           hour: '10h30',
           circle_color: 'day-circle-blue'
@@ -199,13 +201,13 @@
           circle_color: 'day-circle-orange'
         },
         {
-          image: image_path('banners/home-secondary.jpg'),
+          image: image_path('banners/live-code.jpg'),
           description: t(".live_code"),
           hour: '17h30',
           circle_color: 'day-circle-orange'
         },
         {
-          image: image_path('banners/talk.jpeg'),
+          image: image_path('banners/8.jpg'),
           description: t(".talk"),
           hour: '19h00',
           circle_color: 'day-circle-yellow'

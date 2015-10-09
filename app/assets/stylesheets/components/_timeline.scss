@@ -17,6 +17,9 @@
 }
 
 .days {
+  display: flex;
+  max-width: 600px;
+  width: 100%;
   @media (max-width: $screen-sm) {
     padding: 10px;
   }
@@ -50,6 +53,7 @@
     .day-hour { animation: dayHourPulse .5s ease forwards }
     .day-description,
     .day-hour {
+      color: black;
       background: white;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
     }
@@ -66,14 +70,15 @@
   flex: 0 0 60px;
   line-height: 60px;
   text-align: center;
+  color: white;
   font-size: 15px;
-  color: #383838;
   font-weight: 300;
   border-radius: 50%;
   font-weight: $font-weight-normal;
   transition: all .2s ease;
   @media (max-width: $screen-sm) {
     background: white;
+    color: black;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   }
 }
@@ -81,11 +86,13 @@
 .day-description {
   cursor: pointer;
   background: transparent;
+  color: white;
   box-shadow: 0px 0px 0px transparent;
   flex: 1 1 auto;
   padding: 25px;
   @media (max-width: $screen-sm) {
     background: white;
+    color: black;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   }
 
@@ -117,9 +124,7 @@
 .day-circle-yellow {
   border: 3px solid $yellow;
 }
-.days {
-  display: flex;
-}
+
 .days-border {
   flex: 0 0 8px;
   align-self: stretch;
@@ -147,22 +152,54 @@
 
 .timeline-overlay {
   display: flex;
-  margin-top: 60px;
 }
-.timeline-container { flex: 1 }
-.day-type-detail-container {
+
+.timeline-container {
   flex: 1;
   position: relative;
+  z-index: 13;
+  h2 {
+    color: white;
+    z-index: 9;
+    padding: 10px;
+    position: relative;
+    padding-top: 0;
+    font-size: 45px;
+    width: 600px;
+    text-align: center;
+    padding-bottom: 53px;
+    text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+ }
+.day-type-detail-container {
+  flex: 1;
+  padding: 60px 0;
+  position: relative;
+
+  &:after {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.63), transparent 73%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+    content: '';
+    @media (max-width: $screen-sm) {
+      content: inherit;
+      position: relative;
+    }
+  }
 }
 .day-type-detail {
   display: flex;
-  left: 60px;
   width: 100%;
   position: absolute;
-  border-radius: 2px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   margin: auto;
-  height: 90%;
-  top: 20px;
 
   &.is-active {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
