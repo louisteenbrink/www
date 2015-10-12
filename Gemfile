@@ -13,13 +13,15 @@ gem "aws-sdk", "< 2.0"
 gem "rest-client"
 gem 'meetup_client'
 gem "redis"
-
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
 gem "uglifier"
+gem "email_validator"
 gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "react-rails"
+gem 'react-bootstrap-rails'
+gem "lodash-rails"
 gem 'js-routes'
 gem 'autoprefixer-rails'
 

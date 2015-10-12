@@ -1,15 +1,46 @@
-
-        <h1>Thanks Thomas!</h1>
-        <p>
-          We well received your candidature
-        </p>
-
-<div class='thanks-container'>
-  <div class="container">
-    <div class="thanks-body">
-      <div class="thanks-body-title">
-        Checklist
+  <div class='apply-form'>
+  <div class="banner-container">
+    <div class="container banner-city-container">
+      <div class='banner-city-nav thanks-message'>
+        We'll contact you shortly by email to plan an interview. In the meantime, you can already start the check-list.
+      </div>
+      <div class='apply-form-body'>
+        <div class='banner-city-wrapper'>
+          <div class='banner-city is-active banner banner-top banner-gradient text-center'>
+            <div class="banner-gradient-shadow"></div>
+            <div class="banner-content">
+              <h1 class='glitch'>
+                Check-list
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class='apply-form-rows-container'>
+          <div class='check-list-item is-checked'>
+            <div class='check-list-item-label'>
+              Candidature
+            </div>
+            <div class='check-list-status is-checked'>
+              <i class='fa fa-check'></i>
+            </div>
+          </div>
+          <%= react_component 'CheckListItems', {
+            items: [
+              {
+                label: 'Inscription au Meetup de Bordeaux',
+                url: '#meetup',
+                type: 'meetup'
+              },
+              {
+                label: 'Abonnement à notre twitter',
+                url: '#twitter',
+                type: 'twitter'
+              }
+            ]
+          } %>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
