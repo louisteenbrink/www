@@ -17,7 +17,11 @@ class PagesController < ApplicationController
     end
   end
 
+  def thanks
+  end
+
   private
+
   def set_locale
     I18n.locale = params[:locale]
   end
