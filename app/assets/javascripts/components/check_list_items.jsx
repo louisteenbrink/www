@@ -1,24 +1,28 @@
 class CheckListItems extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isChecked: false
+    }
+  }
   render() {
     return(
       <div>
         {this.props.items.map((item) => {
+          var itemClasses = classNames({
+            'check-list-item': true,
+            'is-checked': this.state.isChecked
+          })
           return(
-            <a href={item.href}>
-              <div className='check-list-item'>
-                <div className='check-list-item-label'>
-                  {item.label}
-                </div>
-                <div className='checklist-status-container'>
-                  <div className='check-list-status'>
-                  </div>
-                </div>
-              </div>
-            </a>
+            <CheckListItem {... item} />
           )
         })}
       </div>
     )
+  }
+
+  handleClick() {
+    this.setState({ isChecked: true })
   }
 }
 

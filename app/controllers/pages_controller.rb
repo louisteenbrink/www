@@ -18,6 +18,10 @@ class PagesController < ApplicationController
   end
 
   def thanks
+    @user = {
+      name: 'Sébastien'
+    }
+    @city = @client.cities.first
   end
 
   def apply
