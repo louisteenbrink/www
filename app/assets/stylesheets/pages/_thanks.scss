@@ -10,11 +10,17 @@
 .check-list-item {
   display: flex;
   padding: 50px;
+  border-bottom: 1px solid #F2F2F2;
 
   &.is-checked {
     background-color: $green;
     color: white;
+    border-bottom-color: rgb(44, 193, 107);
   }
+}
+
+.checklist-status-container {
+  margin-left: auto;
 }
 
 .check-list-status {
@@ -45,4 +51,8 @@
 .check-list-item-label {
   font-weight: 300;
   font-size: 19px;
+
+  &:hover {
+
+  }
 }

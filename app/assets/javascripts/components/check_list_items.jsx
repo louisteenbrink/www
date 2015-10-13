@@ -4,17 +4,21 @@ class CheckListItems extends React.Component {
       <div>
         {this.props.items.map((item) => {
           return(
-            <div className='check-list-item'>
-              <div class='check-list-item-label'>
-                {item.label}
+            <a href={item.href}>
+              <div className='check-list-item'>
+                <div className='check-list-item-label'>
+                  {item.label}
+                </div>
+                <div className='checklist-status-container'>
+                  <div className='check-list-status'>
+                  </div>
+                </div>
               </div>
-              <div class='check-list-status is-checked'>
-                <a href={item.url}>Go</a>
-              </div>
-            </div>
+            </a>
           )
         })}
       </div>
     )
   }
 }
+
