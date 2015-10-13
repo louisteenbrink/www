@@ -17,10 +17,19 @@ class PagesController < ApplicationController
     end
   end
 
+  def apply
+    @cities = @client.cities.select {|city| city['next_batch']}.each do |city|
+      city['next_batch']['starts_at'] = city['next_batch']['starts_at'].to_date.strftime('%b %d, %Y')
+      city['next_batch']['ends_at'] = city['next_batch']['ends_at'].to_date.strftime('%b %d, %Y')
+    end
+  end
+
   private
+
   def set_locale
     I18n.locale = params[:locale]
   end
+
   def set_client
     @client = AlumniClient.new
   end
