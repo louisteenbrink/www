@@ -1,15 +1,14 @@
 @keyframes borderFocus {
-  0% {
-    border-left-color: $green;
-  }
-
-  100% {
-    border-left-color: #333333;
-  }
+  0% { border-left-color: $green }
+  100% { border-left-color: #333333 }
 }
 
+@keyframes borderFocus {
+  0% { border-left-color: $red }
+  100% { border-left-color: #333333 }
+}
 
-.applies-new {
+.applies-new, .applies-create {
   .navbar-wagon-white {background: HSLA(0, 0%, 96%, 1)}
   .banner-container {
       background-color: HSLA(0, 0%, 96%, 1);
@@ -31,19 +30,30 @@
   border-left: 0px solid black;
   transition: .3s ease border-left;
 
-  &.is-focused, &.has-error {
+  textarea {
+    margin-bottom: 10px;
+  }
+
+  &.is-focused {
     border-left-width: 8px;
     border-left-style: solid;
-    animation: borderFocus 4s ease alternate-reverse infinite;
+    animation: borderFocusError 4s ease alternate-reverse infinite;
+  }
+
+  &.has-error {
+    span, i {
+      color: #D23333;
+    }
+    span {
+      margin-left: auto;
+      color: #D23333;
+    }
   }
 
   &.is-focused {
     border-left-color: #333333;
   }
 
-  &.has-error {
-    border-left-color: red;
-  }
 
   @media (max-width: $screen-md) {
     align-items: center;
