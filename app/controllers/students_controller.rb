@@ -2,7 +2,7 @@ class StudentsController < ApplicationController
   before_action :set_client
 
   def index
-    @projects = @client.projects
+    @projects = @client.projects(Static::SITE[:featured][:alumni])
     @students = Static::STUDENTS
   end
 

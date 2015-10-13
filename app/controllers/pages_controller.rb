@@ -6,7 +6,7 @@ class PagesController < ApplicationController
   def home
     @stories = @client.stories
     @alumni = @client.alumni
-    @projects = @client.projects
+    @projects = @client.projects(Static::SITE[:featured][:home])
     @cities = @client.cities
     @meetups = Hash.new
     @cities.each do |city|
