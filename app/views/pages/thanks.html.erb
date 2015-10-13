@@ -20,6 +20,7 @@
             </div>
           </div>
         </div>
+        <% raise %>
         <div class='apply-form-rows-container'>
           <div class='check-list-item is-checked'>
             <div class='check-list-item-label'>
@@ -35,17 +36,16 @@
           <%= react_component 'CheckListItems', {
             items: [
               {
-                label: "Inscription aux meetups de #{@city['name']}",
-                href: '#meetup'
+                label: "Inscription au groupe Meetup de #{@city['name']}",
+                href: @city['meetup_url']
               },
               {
                 label: 'Abonnement à notre twitter',
                 href: @city['twitter_url']
               },
               {
-                label: 'Commencer le cours préparatoire',
+                label: 'Commencer le cours préparatoire en Anglais',
                 href: 'https://www.codecademy.com/tracks/ruby?locale_code=en'
-
               },
             ]
           } %>
