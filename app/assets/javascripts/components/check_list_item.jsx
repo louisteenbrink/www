@@ -16,7 +16,7 @@ class CheckListItem extends React.Component {
         <a href={this.props.href} target='_blank'>
           <div className={componentClasses} onClick={this.handleClick.bind(this)}>
             <div className='check-list-item-label'>
-              {this.props.label}
+              <span className='check-list-item-index'>{this.props.index}.</span> {this.props.label}
             </div>
             <div className='checklist-status-container hidden-xs hidden-sm'>
               <span className='check-list-todo'>{stateText}</span>
