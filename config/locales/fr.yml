@@ -40,12 +40,14 @@ fr:
       build_product_details: |
         Personne ne vous apprendra à coder des produits comme nous le faisons.
         Kudoz vient de lever 1.2 million, MaShareEcole révolutionne l'école, Parol la politique, MedPics la santé, Krawd le marketing...
-        Et tellement d'autres projets incroyables sont dans les starting blocks. Allez voir par vous-même.
+        Et tellement d'autres projets incroyables sont dans les starting blocks.
       land_a_job: Changez de vie
       land_a_job_details: |
-        Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe..
+        Développeur Junior chez Compass, Save, Finexkap.. Product manager chez Stripe, Molotov..
         Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec
         avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
+      checkout: Allez voir par vous-même.
+      see_all: Plus d'infos.
   newsletter:
     teaser: "<p>Soyez informé des prochaines <strong>masterclasses</strong>, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.</p>"
     city_teaser_html: 'Soyez informé de nos prochains <strong>événements</strong> à %{city}, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.'
@@ -71,14 +73,15 @@ fr:
       it_works: "le plus étrange.. Ça marche !"
       freshly_coded: Fraîchement codés
       all_products: 100+ produits codés par notre alumni.
-      worldwide: Nous sommes partout :)
+      worldwide: Où trouver Le Wagon ?
       see_all_products: Voir tous les produits
       check_program: En savoir plus sur le programme
       our_cities: Nos villes
-      open_yours: Montez un Wagon dans votre ville
+      open_yours: Pour lancer le programme dans votre ville
       already_a_lot: Déja 354 entrepreneurs convertis.
       and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
+      see_more_projects: Voir plus de projets...
     program:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |
@@ -174,9 +177,10 @@ fr:
         Découvrez les projets des précédentes promotions du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
       our_alumni: "Nos alumni"
       our_alumni_details_html: |
-        Plus de 350 élèves talentueux partageant la même passion et la même culture tech.
-        Beaucoup sont développeurs junior, beaucoup ont monté leur startup autour du projet codé au Wagon. Tous ont une belle histoire. Découvrez-les !
+        350+ élèves talentueux et techniques. Et des projets impressionnants.
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      our_students_projects: Les projets codés par nos élèves
+      only_ten_days: "...en 10 jours seulement"
   cities:
     show:
       title: "Le Wagon - Bootcamp de Ruby on Rails à %{city}"

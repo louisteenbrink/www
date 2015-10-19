@@ -40,14 +40,15 @@ en:
       build_product_details: |
         No one will teach you to build web products as we do.
         Kudoz has just raised 1.2M, Impact is disrupting politics, MaShareEcole school, MedPics healthcare, Krawd marketing...
-        and there are so many other projects in the starting block. Check out by yourself.
+        and there are so many other projects in the starting block.
       land_a_job: Land a new job
       land_a_job_details: |
-        Working as a junior developer for Stripe, Finexkap, Compass, 55, Save, etc..
+        Working as a junior developer for Stripe, Molotov, Compass, 55, Save, etc..
         French engineers are the best, that's what they say ;)
-        We will help you find your dream job, either as a junior dev
-        or product manager. Discuss with any of our 350+ alumni to be
-        sure about that!
+        We will help you find your dream job, either as a junior dev, product manager
+        or growth hacker. Discuss with any of our 350+ alumni to be sure about that!
+      checkout: Checkout by yourself.
+      see_all: More details.
   newsletter:
     teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
     city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
@@ -73,12 +74,13 @@ en:
       freshly_coded: Freshly coded
       all_products: 100+ products built by our alumni.
       see_all_products: See all products
-      worldwide: We are worldwide :)
+      worldwide: Where can you find Le Wagon?
       check_program: More details about the program
       our_cities: Our cities
-      open_yours: Launch a Wagon in your city
+      open_yours: To launch the program in your city
       and_you_html: And <strong>you</strong> ?
       check_projects: Discover our students and their projects
+      see_more_projects: See more projects...
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -187,6 +189,8 @@ en:
         Plus de 350 élèves talentueux partageant la même passion et la même culture tech.
         Beaucoup sont développeurs junior, beaucoup ont monté leur startup autour du projet codé au Wagon. Tous ont une belle histoire. Découvrez-les !
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      our_students_projects: What our students have built
+      only_ten_days: "...in only 10 days"
   cities:
     show:
       title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
