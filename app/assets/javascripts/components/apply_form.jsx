@@ -50,7 +50,7 @@ class ApplyForm extends React.Component {
                       <div className="banner-gradient-shadow"></div>
                       <div className="banner-content">
                         <h1 className='glitch'>
-                          Postuler à <span className='city'>{city.name}</span>
+                          {this.props.title} <span className='city'>{city.name}</span>
                         </h1>
                       </div>
                     </div>

@@ -7,6 +7,7 @@ fr:
     navbar:
       menu:
         cities: Villes
+        fullstack: Programme
     features:
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline: "Utilisez les bonnes technologies et les bonnes pratiques."
@@ -200,3 +201,6 @@ fr:
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       staff: "Le staff à %{city}"
       discover_us: "Découvez notre programme"
+  applies:
+    new:
+      apply: Postulez à

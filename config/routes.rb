@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|
-      get page => "pages##{template}", template: template, locale: locale, as: "#{template}_#{locale}".to_sym
+      get page => "pages##{template}", template: template, locale: locale.to_sym, as: "#{template}_#{locale}".to_sym
     end
   end
 

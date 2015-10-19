@@ -7,6 +7,7 @@ en:
     navbar:
       menu:
         cities: Cities
+        fullstack: Program
     features:
       pedagogy_matters_html: Code the startup way.
       pedagogy_tagline: Use best technologies and best practices.
@@ -193,13 +194,14 @@ en:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon
       description: |
         Découvrez les projets des précédentes promotions du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
-      our_alumni: "Nos alumni"
+      our_alumni: "Our alumni"
       our_alumni_details_html: |
-        Plus de 350 élèves talentueux partageant la même passion et la même culture tech.
-        Beaucoup sont développeurs junior, beaucoup ont monté leur startup autour du projet codé au Wagon. Tous ont une belle histoire. Découvrez-les !
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+        350+ talented students sharing the same tech skills.
+        The best community you can imagine.
+      apply_for_nine_weeks: Apply for 9 weeks
       our_students_projects: What our students have built
       only_ten_days: "...in only 10 days"
+      discover_us: Discover our program
   cities:
     show:
       title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
@@ -210,3 +212,6 @@ en:
       apply_for_nine_weeks: Apply for 9 weeks
       staff: "Staff in %{city}"
       discover_us: "Discover our program"
+  applies:
+    new:
+      apply: Apply to
