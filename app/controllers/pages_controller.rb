@@ -18,16 +18,11 @@ class PagesController < ApplicationController
   end
 
   def thanks
-    @user = {
-      name: 'Sébastien'
-    }
-    @city = @client.cities.first
-  end
-
-  def apply
-    @cities = @client.cities.select {|city| city['next_batch']}.each do |city|
-      city['next_batch']['starts_at'] = city['next_batch']['starts_at'].to_date.strftime('%b %d, %Y')
-      city['next_batch']['ends_at'] = city['next_batch']['ends_at'].to_date.strftime('%b %d, %Y')
+    if session[:apply_id].blank?
+      redirect_to root_path
+    else
+      @apply = Apply.find(session[:apply_id])
+      @city = @client.cities.select { |city| city["id"] == @apply.city_id }.first
     end
   end
 

@@ -24,6 +24,8 @@ gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
 gem 'autoprefixer-rails'
+gem 'money-rails'
+gem 'ruby-trello'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
