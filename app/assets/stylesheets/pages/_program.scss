@@ -1,3 +1,8 @@
 #banner-program {
   background-position-y: -148px;
+
+  @media (max-width: $screen-md) {
+    background-position: center center;
+    background-size: cover;
+  }
 }
