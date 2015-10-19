@@ -12,8 +12,13 @@ class AlumniClient
     JSON.parse(RestClient.get("#{@base_url}/alumni"))["alumni"]
   end
 
-  def projects
-    JSON.parse(RestClient.get("#{@base_url}/projects"))["projects"]
+  def projects(slugs=false)
+    if slugs
+      slugs = slugs.join(',')
+      JSON.parse(RestClient.get("#{@base_url}/projects?slug=#{slugs}"))["projects"]
+    else
+      JSON.parse(RestClient.get("#{@base_url}/projects"))["projects"]
+    end
   end
 
   def cities

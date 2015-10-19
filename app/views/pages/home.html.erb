@@ -8,7 +8,7 @@
 
 <div class="banner-container">
   <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/home.jpg')%>');">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/1.jpg')%>');">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1 class='glitch'>
@@ -52,7 +52,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <% @projects.take(3).each do |project| %>
+      <% @projects.each do |project| %>
         <div class="col-sm-4">
           <div class="card">
             <span class="card-bg" style="background-image: url('<%= project['thumbnail']%>')"></span>
@@ -127,6 +127,11 @@
   </div>
 </div>
 
+<%= react_component 'UserCascade', {
+  alumni: @alumni
+  } %>
+
+
 <div class="quote-overlay">
   <div class="container">
     <div class='quote'>
@@ -147,7 +152,3 @@
     </div>
   </div>
 </div>
-
-<%= react_component 'UserCascade', {
-  alumni: @alumni
-  } %>

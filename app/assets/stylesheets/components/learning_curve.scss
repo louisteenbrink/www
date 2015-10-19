@@ -6,6 +6,7 @@ $curve-size-lg: 100%;
   overflow: hidden;
   margin-top: -180px;
   padding-top: 180px;
+  padding-bottom: 50px;
 
   h1 {
     position: absolute;
@@ -75,6 +76,17 @@ $curve-size-lg: 100%;
   transition: top .7s linear;
   width: $curve-size-lg;
   flex: 1;
+  margin-top: -150px;
+
+  @media (max-width: $screen-lg) {
+    margin-top: -120px;
+  }
+
+  @media (max-width: $screen-md) {
+    margin-top: -80px;
+  }
+
+  z-index: 0;
 }
 
 .learning-curve-wrapper {
@@ -94,9 +106,12 @@ $curve-size-lg: 100%;
     transition: width 1s cubic-bezier(0.23, 1, 0.32, 1);
 
     svg {
-      width: 940px;
-      @media (min-width: $screen-md) {
-        width: 1140px;
+      width: 1140px;
+      @media (max-width: $screen-lg) {
+        width: 940px;
+      }
+      @media (max-width: $screen-md) {
+        width: 720px;
       }
     }
   }
@@ -124,11 +139,10 @@ $curve-size-lg: 100%;
 .learning-curve-items {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   width: $curve-size-lg;
 
   i {
-    font-size: 50px;
+    font-size: 35px;
     margin: 1px;
   }
 }
@@ -145,12 +159,12 @@ $curve-size-lg: 100%;
 
   // Small size and position adjustments
   .devicons-responsive {
-    font-size: 80px;
+    font-size: 50px;
   }
   .devicons-javascript_badge {
-    font-size: 40px;
+    font-size: 24px;
     position: relative;
-    top: -5px;
+    top: -3px;
     left: 5px;
   }
 

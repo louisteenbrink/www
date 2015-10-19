@@ -8,6 +8,7 @@ class DayTypeStep extends React.Component {
   }
 
   render() {
+    console.log(this.props.isLast)
     var pictureStyle = {
       background: 'url(' + this.props.image + ')',
       backgroundSize: 'cover',
@@ -43,6 +44,10 @@ class DayTypeStep extends React.Component {
   }
 
   handleMouseEnter() {
-    PubSub.publish('setActiveDay', this.props.index)
+    if (this.props.isLast) {
+      PubSub.publish('setActiveDay', 1)
+    } else {
+      PubSub.publish('setActiveDay', this.props.index)
+    }
   }
 }

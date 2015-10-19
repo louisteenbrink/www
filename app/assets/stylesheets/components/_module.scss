@@ -1,6 +1,8 @@
 .module-overlay {
   display: flex;
   margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .module-nav {
@@ -8,6 +10,10 @@
   border-right: 1px solid #EAEAEA;
   padding-right: 25px;
   margin-right: 25px;
+}
+
+.module-container {
+  display: flex;
 }
 
 .module-nav-item {
@@ -20,6 +26,10 @@
   cursor: pointer;
   align-items: center;
   text-transform: uppercase;
+
+  span {
+    text-align: left;
+  }
 
   &:hover {
     i { opacity: .15 }
@@ -47,13 +57,8 @@
     color: white;
     font-weight: bold;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
-
-    &.yellow { background: $yellow }
-    &.red { background: $red }
-    &.green { background: $green }
-    &.purple { background: #8000FF }
-    &.blue { background: $blue }
-    &.orange { background: $orange }
+    background: white;
+    color: black;
 
     i {
       opacity: 1;
@@ -87,6 +92,7 @@
 
 .module.feature {
   flex: inherit;
+  padding: 20px 0;
 }
 
 .module-container {
@@ -97,6 +103,8 @@
   &.is-active {
     .module {
       display: block;
+      background: none;
+      box-shadow: none;
     }
   }
 

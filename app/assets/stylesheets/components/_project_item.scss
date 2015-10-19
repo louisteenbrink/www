@@ -78,6 +78,7 @@
 }
 
 .project-item-infos {
+  padding: 7px;
   padding-top: 11px;
   padding-bottom: 6px;
 }
@@ -97,19 +98,10 @@
 
 .project-item-makers {
   display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 9;
-  margin: auto;
-  height: 40px;
-  justify-content: center;
 }
 
 .project-item-maker {
-  margin-left: 10px;
+  margin-right: 10px;
 
   img {
     &:hover {

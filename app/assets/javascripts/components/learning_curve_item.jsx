@@ -1,7 +1,6 @@
 class LearningCurveItem extends React.Component {
   constructor(props) {
     super(props)
-
     this.state = {
       active: this.props.isActive
     }

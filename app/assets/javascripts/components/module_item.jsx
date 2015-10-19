@@ -56,10 +56,6 @@ class ModuleItem extends React.Component {
           <div className='feature-body text-left'>
             {this.props.description}
           </div>
-          <div className='module-arrows hidden-xs'>
-            {previous}
-            {next}
-          </div>
         </div>
       </div>
     )

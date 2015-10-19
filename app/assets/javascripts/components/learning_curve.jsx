@@ -9,13 +9,6 @@ class LearningCurve extends React.Component {
   render() {
     return(
       <div className="container text-center" ref='container'>
-        <div className='separator' />
-        <Curve
-          {... this.props}
-          scrollTop       = {this.state.scrollTop}
-          containerHeight = {this.state.containerHeight}
-          activeItem      = {this.state.activeItem}
-        />
         <div className='module-overlay'>
           <div className='module-nav hidden-xs'>
             {this.props.modules.map((module, index) => {
@@ -28,6 +21,7 @@ class LearningCurve extends React.Component {
               )
             })}
           </div>
+
           <div className='features feature-container modules'>
             {this.props.modules.map((module, index) => {
               var next = this.props.modules[index + 1];
@@ -46,6 +40,12 @@ class LearningCurve extends React.Component {
             })}
           </div>
         </div>
+        <Curve
+          {... this.props}
+          scrollTop       = {this.state.scrollTop}
+          containerHeight = {this.state.containerHeight}
+          activeItem      = {this.state.activeItem}
+        />
       </div>
     )
   }
