@@ -1,60 +1,60 @@
-  <div class='apply-form'>
-  <div class="banner-container">
-    <div class="container banner-city-container">
-      <div class='banner-city-nav thanks-message'>
-        <div class='thanks-message-title'>
-          Thanks <%= @user[:name] %>
-        </div>
-        <div class="thanks-message-body">
-          We'll contact you shortly by email to plan an interview. You can start the check-list before starting Codecademy.
-        </div>
-      </div>
-      <div class='apply-form-body thanks-checklist'>
-        <div class='banner-city-wrapper'>
-          <div class='banner-city is-active banner banner-top banner-gradient text-center' style="background-image: url('<%= @city['pictures']['location']['cover'] %>');">
-            <div class="banner-gradient-shadow"></div>
-            <div class="banner-content">
-              <h1 class='glitch'>
-                Merci !
-              </h1>
-            </div>
+    <div class='apply-form'>
+    <div class="banner-container">
+      <div class="container banner-city-container">
+        <div class='banner-city-nav thanks-message'>
+          <div class='thanks-message-title'>
+            Thanks <%= @user[:name] %>
+          </div>
+          <div class="thanks-message-body">
+            We'll contact you shortly by email to plan an interview. You can start the check-list before starting Codecademy.
           </div>
         </div>
-        <div class='apply-form-rows-container'>
-          <div class='check-list-item is-checked'>
-            <div class='check-list-item-label'>
-              1. Candidature pour Le Wagon <%= @city['name'] %>
-            </div>
-            <div class="checklist-status-container hidden-xs hidden-sm">
-              <span class='check-list-todo'>done</span>
-              <div class='check-list-status is-checked'>
-                <i class='fa fa-check'></i>
+        <div class='apply-form-body thanks-checklist'>
+          <div class='banner-city-wrapper'>
+            <div class='banner-city is-active banner banner-top banner-gradient text-center' style="background-image: url('<%= @city['pictures']['location']['cover'] %>');">
+              <div class="banner-gradient-shadow"></div>
+              <div class="banner-content">
+                <h1 class='glitch'>
+                  Merci !
+                </h1>
               </div>
             </div>
           </div>
-          <%= react_component 'CheckListItems', {
-            items: [
-              {
-                label: "Inscription au groupe Meetup de #{@city['name']}",
-                href: @city['meetup_url'],
-                index: 2
-              },
-              {
-                label: 'Abonnement à notre twitter',
-                href: @city['twitter_url'],
-                index: 3
+          <div class='apply-form-rows-container'>
+            <div class='check-list-item is-checked'>
+              <div class='check-list-item-label'>
+                1. Candidature pour Le Wagon <%= @city['name'] %>
+              </div>
+              <div class="checklist-status-container hidden-xs hidden-sm">
+                <span class='check-list-todo'>done</span>
+                <div class='check-list-status is-checked'>
+                  <i class='fa fa-check'></i>
+                </div>
+              </div>
+            </div>
+            <%= react_component 'CheckListItems', {
+              items: [
+                {
+                  label: "Inscription au groupe Meetup de #{@city['name']}",
+                  href: @city['meetup_url'],
+                  index: 2
+                },
+                {
+                  label: 'Abonnement à notre twitter',
+                  href: @city['twitter_url'],
+                  index: 3
 
-              },
-              {
-                label: 'Commencer le cours préparatoire en Anglais',
-                href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
-                index: 4
-              },
-            ]
-          } %>
+                },
+                {
+                  label: 'Commencer le cours préparatoire en Anglais',
+                  href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
+                  index: 4
+                },
+              ]
+            } %>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
