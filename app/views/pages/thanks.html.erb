@@ -3,10 +3,10 @@
     <div class="container banner-city-container">
       <div class='banner-city-nav thanks-message'>
         <div class='thanks-message-title'>
-          Thanks <%= @apply.first_name %>
+          <%= t(".thanks") %> <%= @apply.first_name %>
         </div>
         <div class="thanks-message-body">
-          We'll contact you shortly by email to plan an interview. You can start the check-list before starting Codecademy.
+          <%= t(".we_will_contact_html") %>
         </div>
       </div>
       <div class='apply-form-body thanks-checklist'>
@@ -15,7 +15,7 @@
             <div class="banner-gradient-shadow"></div>
             <div class="banner-content">
               <h1 class='glitch'>
-                Merci !
+                <%= t(".take_advance") %>
               </h1>
             </div>
           </div>
@@ -23,7 +23,7 @@
         <div class='apply-form-rows-container'>
           <div class='check-list-item is-checked'>
             <div class='check-list-item-label'>
-              1. Candidature pour Le Wagon <%= @city['name'] %>
+              <%= t(".first_step", name: @city['name']) %>
             </div>
             <div class="checklist-status-container hidden-xs hidden-sm">
               <span class='check-list-todo'>done</span>
@@ -35,21 +35,21 @@
           <%= react_component 'CheckListItems', {
             items: [
               {
-                label: "Inscription au groupe Meetup de #{@city['name']}",
+                label: t('.second_step', name: @city['name']),
                 href: @city['meetup_url'],
                 index: 2
               },
               {
-                label: "Suivre Le Wagon sur Twitter",
+                label: t('.third_step'),
                 href: @city['twitter_url'],
                 index: 3
 
               },
               {
-                label: 'Commencer le cours préparatoire de Ruby en Anglais',
+                label: t('.fourth_step'),
                 href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
                 index: 4
-              },
+              }
             ]
           } %>
         </div>
