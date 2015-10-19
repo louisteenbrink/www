@@ -10,6 +10,7 @@
 #  phone      :string
 #  motivation :text
 #  batch_id   :integer
+#  city_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
