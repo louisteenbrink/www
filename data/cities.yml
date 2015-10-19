@@ -1,286 +1,299 @@
 paris:
-  active: true
   name: Paris
-  locale: fr
-  location: Le Wagon
-  address: "16 Villa Gaudelet, 75011 Paris"
-  description:
-    fr: "En plein coeur de Paris, à 100m de l'île Saint-Louis et de la place de la Bastille, notre coding space occupe 140m2 au second étage de <a href='http://www.thefamily.co/'>The Family</a>, l'occasion pour les élèves du Wagon de plonger dans l'écosystème tech et entrepreneurial."
-    en: |
-      In the heart of Paris, 100 meters away from "Ile Saint-Louis" and "Place de la Bastille".
-      You will benefit from a 140m2 hacker space within the <a href='http://www.thefamily.co/'>The Family</a>, one of the coolest French accelerator.
-      Be prepared to dive in a world of tech and startups!
-  images:
-    banner: banners/paris.jpg
-    bottom: banners/local-paris.jpg
-  filter_color: "rgba(0, 131, 245, 0.6)"
-  geo:
-    zoom: 15
-    latitude: 48.8529369
-    longitude: 2.3641780
-  next_session_fragment: octobre-2014
-  partners:  # From data/partners.yml
-    - thefamily
-    - lecamping
-    - urbanlinker
-    - uber
-    - fifty_five
-    - drivy
-    - capitainetrain
-    - wisembly
-    - girlsintechparis
-  subventions: # From data/subventions.yml
-  staff:  # cf data/staff.yml
-    - boris
-    - seb
-    - cecile
-    - gab
-  programs:
-    bootcamp: true
-    # kits:
-    #   - front-end-developer
-    #   - data-scientist-junior
-    #   - ios-developer
-  meetup_id: 16766372
-  facebook: https://www.facebook.com/lewagonformation
-  twitter: https://twitter.com/Lewagonparis
-
 brussels:
-  active: true
   name: Brussels
-  locale: en
-  location: Costation
-  address: "Place Sainte-Gudule 5, 1000 Brussels"
-  description:
-    en: |
-      Our courses are taught in <strong>English</strong>,
-      at <a href='http://www.co-station.com/'>Co.Station</a>, a startups accelerator
-      located in the heart of Brussels, a ​2 minutes' ​walk ​from the city's
-      Central Station.
-    fr: |
-      Nos cours, à Bruxelles, sont donnés en <strong>anglais</strong>,
-      dans les locaux de <a href='http://www.co-station.com/'>Co.Station</a>,
-      un accélérateur de startups, situé au coeur de la ville,
-      à deux minutes à pied de la Gare Centrale.
-  images:
-    banner: banners/brussels.jpg
-    bottom: banners/local-brussels.jpg
-  filter_color: "rgba(70, 20, 140, 0.3)"
-  geo:
-    zoom: 15
-    latitude: 50.8474460
-    longitude: 4.3603740
-  next_session_fragment: brussels-october-2014
-  staff:
-    - anne
-    - xavier
-    - simon_schoeters
-    - lien
-    - teddy
-    - martin
-    - loucas
-    - olivier_colot
-    # - thibaut
-    # - christophe
-  programs:
-    bootcamp: true
-  partners: # From data/partners.yml
-    - co_station
-    - startupbasecamp
-    - pullreview
-    - central_design
-  subventions: # From data/subventions.yml
-    - impulse
-  meetup_id: 16630202
-  facebook: https://www.facebook.com/lewagonformation
-  twitter: https://twitter.com/LewagonBrussels
-
-losangeles:
-  active: true
-  name: Los Angeles
-  locale: en
-  location: dots.work
-  address: "113 N San Vicente Blvd. Beverly Hills, CA 90211"
-  description:
-    en: |
-      Our courses are taught in <strong>English</strong>,
-      at <a href='http://www.dotscowork.com/'>dots COWORK</a>, a coworking
-      located in the heart of Beverly Hills, just off of Wilshire and La Cienega.
-    fr: |
-      Nos cours, à Los Angeles, sont donnés en <strong>anglais</strong>,
-      dans les locaux de <a href='http://www.dotscowork.com/'>dots COWORK</a>,
-      un coworking, situé au coeur de la ville de Beverly Hills,
-      à deux minutes à pied de Wilshire et La Cienega.
-  images:
-    banner: banners/los-angeles.jpg
-    bottom: banners/local-los-angeles.jpg
-  filter_color: "rgba(70, 20, 140, 0.3)"
-  geo:
-    zoom: 15
-    latitude: 34.065447
-    longitude: -118.373670
-  next_session_fragment: losangeles-june-2015
-  staff:  # cf data/staff.yml
-    - anna
-    - thomas_hartman
-    - yoann
-  programs:
-    bootcamp: true
-  partners: # From data/partners.yml
-    - dots_cowork
-  #meetup_id: TBD
-  #facebook: https://www.facebook.com/TBD
-  twitter: https://twitter.com/dotscode
-
 beirut:
-  active: true
   name: Beirut
-  location: BDD
-  locale: en
-  address: "BDD 1243, Beirut Digital District, Bachoura, Beirut, Lebanon"
-  description:
-    en: |
-      The BDD is an all-inclusive zone dedicated to improving the digital
-      industry in Lebanon through providing state-of-the-art infrastructure
-      and superior support services for businesses.
-    fr: |
-      Le BDD est une zone tout compris dédiée à l'amélioration de l'industrie
-      numérique au Liban à travers la fourniture d'infrastructure haut de gamme
-      et de soutien de qualité supérieure pour les entreprises.
-  images:
-    banner: banners/beirut.jpg
-    bottom: banners/local-beirut2.jpg
-  filter_color: "rgba(253, 113, 32, 0.4)"
-  geo:
-    zoom: 15
-    latitude: 33.891413
-    longitude: 35.505825
-  next_session_fragment: beirut-january-2015
-  staff:
-    - malik
-    - marcian
-    - jad
-    - ayman
-  partners:
-    - beirut-digital-district
-    - ministry_economy
-    - berytech
-    - naharnet
-    - ihjoz
-    - eventing-lb
-    - arabnet
-    - wamda
-    - uktechhub
-    - altcity
-    - MIT
-
-  programs:
-    bootcamp: true
-  subventions: # From data/subventions.yml
-  meetup_id: 17182842
-  facebook: https://www.facebook.com/lewagonbeirut
-  twitter: https://twitter.com/LeWagonBeirut
-
-lille:
-  active: true
-  name: Lille
-  locale: fr
-  location: Euratechnologies
-  address: "165 avenue de Bretagne, 59000 Lille"
-  description:
-    en: |
-      Students will evolve in <strong>Euratechnologies</strong> ecosystem, the biggest accelerator of France.
-      On top of that, this is a unique chance for the best projects to be selected for acceleration.
-    fr: |
-      C'est au sein d'<strong>Euratechnologies</strong>, le plus gros incubateur de France, que les élèves du Wagon évolueront.
-      A la clef, une chance pour les meilleurs projets d'élève d'être sélectionnés pour une incubation.
-  images:
-    banner: banners/lille.jpg
-    bottom: banners/local-lille.jpg
-  filter_color: "rgba(139, 29, 28, 0.3)"
-  geo:
-    zoom: 15
-    latitude: 50.6333542
-    longitude: 3.0203766
-  next_session_fragment: lille-septembre-2015
-  staff:
-    - cecile
-    - thomas_gautier
-    - david
-  partners:
-    - doumit
-    - euratechnologies
-  programs:
-    bootcamp: true
-  subventions: # From data/subventions.yml
-  meetup_id: 18616738
-  facebook: #https://www.facebook.com/lewagonlille
-  twitter: https://twitter.com/lewagonlille
-
 bordeaux:
-  active: true
   name: Bordeaux
-  locale: fr
-  address: "Rue Abbé de l'Épée, 33000 Bordeaux"
-  description:
-    fr: |
-      En plein coeur de Bordeaux et à proximité de tous les transports en commun (bus, tramway), le Wagon vous accueille dans un cadre unique.  Bordeaux Métropole Numérique a gagné le label FrenchTech, le Wagon vous permettra ainsi de découvrir tout cet écosystème numérique bordelais riche en opportunités.
-    en: |
-      In the heart of Bordeaux and near all public transportation, le Wagon welcomes you in a unique setting. Bordeaux Métropole Numérique won the FrenchTech label, le Wagon will allow you to discover the digital ecosystem from Bordeaux, rich in opportunities.
-  images:
-    banner: banners/bordeaux.jpg
-    bottom: banners/local-bordeaux.jpg
-  filter_color: "rgba(245, 0, 0, 0.28);"
-  geo:
-    zoom: 15
-    latitude: 44.842285
-    longitude: -0.582633
-  partners:  # From data/partners.yml
-    - ajstage
-    - aquant
-    - aquinum
-  subventions: # From data/subventions.yml
-  staff:  # cf data/staff.yml
-    - bertrand
-    - sylvain
-  programs:
-    bootcamp: true
-  meetup_id: 18567072
-  facebook: https://www.facebook.com/lewagonbordeaux
-  twitter: https://twitter.com/LeWagonBordeaux
-  credits:
-    - link: https://www.flickr.com/photos/sera69/16762062541/
-      label: Serge Vincent
-
+lille:
+  name: Lille
 marseille:
-  active: true
-  name: Marseille
-  locale: fr
-  address: "Nous communiquerons bientôt sur le lieu de la formation"
-  description:
-    fr: |
-      Le Wagon ouvre ses portes à Marseille.
-      Venez apprendre à monter un projet web de A à Z en plein coeur de la French Tech Aix-Marseille.
-    en: |
-      Le Wagon opens its doors at Marseille.
-      Come and learn how to develop a website from scratch in the hearth of Aix-Marseille French Tech.
-  images:
-    banner: banners/marseille.jpg
-    bottom: banners/local-bordeaux.jpg
-  filter_color: "rgba(58, 113, 160, 0.6)"
-  geo:
-    zoom: 11
-    latitude: 43.2964820
-    longitude: 5.3697800
-  partners:  # From data/partners.yml
-  subventions: # From data/subventions.yml
-  staff:  # cf data/staff.yml
-    - louis
-  programs:
-    bootcamp: true
-  meetup_id: # TODO
-  facebook: https://www.facebook.com/lewagonformation
-  twitter: 3394003701
-  credits:
-    - link: https://www.flickr.com/photos/mathieu_distefano/8344859795/
-      label: Mathieu Distefano
+  name: Beirut
+
+# paris:
+#   active: true
+#   name: Paris
+#   locale: fr
+#   location: Le Wagon
+#   address: "16 Villa Gaudelet, 75011 Paris"
+#   description:
+#     fr: "En plein coeur de Paris, à 100m de l'île Saint-Louis et de la place de la Bastille, notre coding space occupe 140m2 au second étage de <a href='http://www.thefamily.co/'>The Family</a>, l'occasion pour les élèves du Wagon de plonger dans l'écosystème tech et entrepreneurial."
+#     en: |
+#       In the heart of Paris, 100 meters away from "Ile Saint-Louis" and "Place de la Bastille".
+#       You will benefit from a 140m2 hacker space within the <a href='http://www.thefamily.co/'>The Family</a>, one of the coolest French accelerator.
+#       Be prepared to dive in a world of tech and startups!
+#   images:
+#     banner: banners/paris.jpg
+#     bottom: banners/local-paris.jpg
+#   filter_color: "rgba(0, 131, 245, 0.6)"
+#   geo:
+#     zoom: 15
+#     latitude: 48.8529369
+#     longitude: 2.3641780
+#   next_session_fragment: octobre-2014
+#   partners:  # From data/partners.yml
+#     - thefamily
+#     - lecamping
+#     - urbanlinker
+#     - uber
+#     - fifty_five
+#     - drivy
+#     - capitainetrain
+#     - wisembly
+#     - girlsintechparis
+#   subventions: # From data/subventions.yml
+#   staff:  # cf data/staff.yml
+#     - boris
+#     - seb
+#     - cecile
+#     - gab
+#   programs:
+#     bootcamp: true
+#     # kits:
+#     #   - front-end-developer
+#     #   - data-scientist-junior
+#     #   - ios-developer
+#   meetup_id: 16766372
+#   facebook: https://www.facebook.com/lewagonformation
+#   twitter: https://twitter.com/Lewagonparis
+
+# brussels:
+#   active: true
+#   name: Brussels
+#   locale: en
+#   location: Costation
+#   address: "Place Sainte-Gudule 5, 1000 Brussels"
+#   description:
+#     en: |
+#       Our courses are taught in <strong>English</strong>,
+#       at <a href='http://www.co-station.com/'>Co.Station</a>, a startups accelerator
+#       located in the heart of Brussels, a ​2 minutes' ​walk ​from the city's
+#       Central Station.
+#     fr: |
+#       Nos cours, à Bruxelles, sont donnés en <strong>anglais</strong>,
+#       dans les locaux de <a href='http://www.co-station.com/'>Co.Station</a>,
+#       un accélérateur de startups, situé au coeur de la ville,
+#       à deux minutes à pied de la Gare Centrale.
+#   images:
+#     banner: banners/brussels.jpg
+#     bottom: banners/local-brussels.jpg
+#   filter_color: "rgba(70, 20, 140, 0.3)"
+#   geo:
+#     zoom: 15
+#     latitude: 50.8474460
+#     longitude: 4.3603740
+#   next_session_fragment: brussels-october-2014
+#   staff:
+#     - anne
+#     - xavier
+#     - simon_schoeters
+#     - lien
+#     - teddy
+#     - martin
+#     - loucas
+#     - olivier_colot
+#     # - thibaut
+#     # - christophe
+#   programs:
+#     bootcamp: true
+#   partners: # From data/partners.yml
+#     - co_station
+#     - startupbasecamp
+#     - pullreview
+#     - central_design
+#   subventions: # From data/subventions.yml
+#     - impulse
+#   meetup_id: 16630202
+#   facebook: https://www.facebook.com/lewagonformation
+#   twitter: https://twitter.com/LewagonBrussels
+
+# losangeles:
+#   active: true
+#   name: Los Angeles
+#   locale: en
+#   location: dots.work
+#   address: "113 N San Vicente Blvd. Beverly Hills, CA 90211"
+#   description:
+#     en: |
+#       Our courses are taught in <strong>English</strong>,
+#       at <a href='http://www.dotscowork.com/'>dots COWORK</a>, a coworking
+#       located in the heart of Beverly Hills, just off of Wilshire and La Cienega.
+#     fr: |
+#       Nos cours, à Los Angeles, sont donnés en <strong>anglais</strong>,
+#       dans les locaux de <a href='http://www.dotscowork.com/'>dots COWORK</a>,
+#       un coworking, situé au coeur de la ville de Beverly Hills,
+#       à deux minutes à pied de Wilshire et La Cienega.
+#   images:
+#     banner: banners/los-angeles.jpg
+#     bottom: banners/local-los-angeles.jpg
+#   filter_color: "rgba(70, 20, 140, 0.3)"
+#   geo:
+#     zoom: 15
+#     latitude: 34.065447
+#     longitude: -118.373670
+#   next_session_fragment: losangeles-june-2015
+#   staff:  # cf data/staff.yml
+#     - anna
+#     - thomas_hartman
+#     - yoann
+#   programs:
+#     bootcamp: true
+#   partners: # From data/partners.yml
+#     - dots_cowork
+#   #meetup_id: TBD
+#   #facebook: https://www.facebook.com/TBD
+#   twitter: https://twitter.com/dotscode
+
+# beirut:
+#   active: true
+#   name: Beirut
+#   location: BDD
+#   locale: en
+#   address: "BDD 1243, Beirut Digital District, Bachoura, Beirut, Lebanon"
+#   description:
+#     en: |
+#       The BDD is an all-inclusive zone dedicated to improving the digital
+#       industry in Lebanon through providing state-of-the-art infrastructure
+#       and superior support services for businesses.
+#     fr: |
+#       Le BDD est une zone tout compris dédiée à l'amélioration de l'industrie
+#       numérique au Liban à travers la fourniture d'infrastructure haut de gamme
+#       et de soutien de qualité supérieure pour les entreprises.
+#   images:
+#     banner: banners/beirut.jpg
+#     bottom: banners/local-beirut2.jpg
+#   filter_color: "rgba(253, 113, 32, 0.4)"
+#   geo:
+#     zoom: 15
+#     latitude: 33.891413
+#     longitude: 35.505825
+#   next_session_fragment: beirut-january-2015
+#   staff:
+#     - malik
+#     - marcian
+#     - jad
+#     - ayman
+#   partners:
+#     - beirut-digital-district
+#     - ministry_economy
+#     - berytech
+#     - naharnet
+#     - ihjoz
+#     - eventing-lb
+#     - arabnet
+#     - wamda
+#     - uktechhub
+#     - altcity
+#     - MIT
+
+#   programs:
+#     bootcamp: true
+#   subventions: # From data/subventions.yml
+#   meetup_id: 17182842
+#   facebook: https://www.facebook.com/lewagonbeirut
+#   twitter: https://twitter.com/LeWagonBeirut
+
+# lille:
+#   active: true
+#   name: Lille
+#   locale: fr
+#   location: Euratechnologies
+#   address: "165 avenue de Bretagne, 59000 Lille"
+#   description:
+#     en: |
+#       Students will evolve in <strong>Euratechnologies</strong> ecosystem, the biggest accelerator of France.
+#       On top of that, this is a unique chance for the best projects to be selected for acceleration.
+#     fr: |
+#       C'est au sein d'<strong>Euratechnologies</strong>, le plus gros incubateur de France, que les élèves du Wagon évolueront.
+#       A la clef, une chance pour les meilleurs projets d'élève d'être sélectionnés pour une incubation.
+#   images:
+#     banner: banners/lille.jpg
+#     bottom: banners/local-lille.jpg
+#   filter_color: "rgba(139, 29, 28, 0.3)"
+#   geo:
+#     zoom: 15
+#     latitude: 50.6333542
+#     longitude: 3.0203766
+#   next_session_fragment: lille-septembre-2015
+#   staff:
+#     - cecile
+#     - thomas_gautier
+#     - david
+#   partners:
+#     - doumit
+#     - euratechnologies
+#   programs:
+#     bootcamp: true
+#   subventions: # From data/subventions.yml
+#   meetup_id: 18616738
+#   facebook: #https://www.facebook.com/lewagonlille
+#   twitter: https://twitter.com/lewagonlille
+
+# bordeaux:
+#   active: true
+#   name: Bordeaux
+#   locale: fr
+#   address: "Rue Abbé de l'Épée, 33000 Bordeaux"
+#   description:
+#     fr: |
+#       En plein coeur de Bordeaux et à proximité de tous les transports en commun (bus, tramway), le Wagon vous accueille dans un cadre unique.  Bordeaux Métropole Numérique a gagné le label FrenchTech, le Wagon vous permettra ainsi de découvrir tout cet écosystème numérique bordelais riche en opportunités.
+#     en: |
+#       In the heart of Bordeaux and near all public transportation, le Wagon welcomes you in a unique setting. Bordeaux Métropole Numérique won the FrenchTech label, le Wagon will allow you to discover the digital ecosystem from Bordeaux, rich in opportunities.
+#   images:
+#     banner: banners/bordeaux.jpg
+#     bottom: banners/local-bordeaux.jpg
+#   filter_color: "rgba(245, 0, 0, 0.28);"
+#   geo:
+#     zoom: 15
+#     latitude: 44.842285
+#     longitude: -0.582633
+#   partners:  # From data/partners.yml
+#     - ajstage
+#     - aquant
+#     - aquinum
+#   subventions: # From data/subventions.yml
+#   staff:  # cf data/staff.yml
+#     - bertrand
+#     - sylvain
+#   programs:
+#     bootcamp: true
+#   meetup_id: 18567072
+#   facebook: https://www.facebook.com/lewagonbordeaux
+#   twitter: https://twitter.com/LeWagonBordeaux
+#   credits:
+#     - link: https://www.flickr.com/photos/sera69/16762062541/
+#       label: Serge Vincent
+
+# marseille:
+#   active: true
+#   name: Marseille
+#   locale: fr
+#   address: "Nous communiquerons bientôt sur le lieu de la formation"
+#   description:
+#     fr: |
+#       Le Wagon ouvre ses portes à Marseille.
+#       Venez apprendre à monter un projet web de A à Z en plein coeur de la French Tech Aix-Marseille.
+#     en: |
+#       Le Wagon opens its doors at Marseille.
+#       Come and learn how to develop a website from scratch in the hearth of Aix-Marseille French Tech.
+#   images:
+#     banner: banners/marseille.jpg
+#     bottom: banners/local-bordeaux.jpg
+#   filter_color: "rgba(58, 113, 160, 0.6)"
+#   geo:
+#     zoom: 11
+#     latitude: 43.2964820
+#     longitude: 5.3697800
+#   partners:  # From data/partners.yml
+#   subventions: # From data/subventions.yml
+#   staff:  # cf data/staff.yml
+#     - louis
+#   programs:
+#     bootcamp: true
+#   meetup_id: # TODO
+#   facebook: https://www.facebook.com/lewagonformation
+#   twitter: 3394003701
+#   credits:
+#     - link: https://www.flickr.com/photos/mathieu_distefano/8344859795/
+#       label: Mathieu Distefano
