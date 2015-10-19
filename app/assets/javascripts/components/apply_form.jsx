@@ -4,7 +4,8 @@ class ApplyForm extends React.Component {
 
     this.state = {
       activeCity: this.props.city,
-      activeBatch: this.firstBatch(this.props.city)
+      activeBatch: this.firstBatch(this.props.city),
+      submitting: false
     }
   }
 
@@ -15,6 +16,18 @@ class ApplyForm extends React.Component {
     var componentClasses = classNames({
       'apply-form': true
     })
+
+    var submitButton = null;
+    if (this.state.submitting) {
+      submitButton = (
+        <input type='submit' value='Patientez...' disabled className='apply-form-submit btn btn-sucsess' />
+        );
+    } else {
+      submitButton = (
+        <input type='submit' value={'Apply for a 9 week bootcamp in ' + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
+        );
+    }
+
     return(
       <div className={componentClasses}>
         <div className="banner-container">
@@ -58,7 +71,7 @@ class ApplyForm extends React.Component {
                 })}
               </div>
               <div className='apply-form-rows-container'>
-                <form action={Routes.apply_path()} method='post'>
+                <form action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
                   <div dangerouslySetInnerHTML={{__html: Csrf.getInput()}} />
                   <div className="apply-form-row apply-form-row-first" >
                     <label>
@@ -77,7 +90,8 @@ class ApplyForm extends React.Component {
                           })
                           }
                         </ReactBootstrap.DropdownButton>
-                        <input type='hidden' name='apply[batch]' value={this.state.activeBatch.id} />
+                        <input type='hidden' name='application[batch_id]' value={this.state.activeBatch.id} />
+                        <input type='hidden' name='application[city_id]' value={this.state.activeCity.id} />
                       </div>
                     </div>
                   </div>
@@ -86,9 +100,9 @@ class ApplyForm extends React.Component {
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
-                      Price : 4500 € Incl. Tax. Payment in three installments, free of charge.
+                      Price: {this.state.activeBatch.price} Incl. Tax. Payment in three installments, free of charge.
                     </div>
-                    <input type='submit' value={'Apply for a 9 weeks bootcamp in ' + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
+                    {submitButton}
                   </div>
                 </form>
               </div>
@@ -115,5 +129,9 @@ class ApplyForm extends React.Component {
 
   firstBatch(city) {
     return _.filter(city.batches, (n) => { return !n.full })[0] // to take the first not full batch.
+  }
+
+  onSubmit() {
+    this.setState({ submitting: true });
   }
 }

@@ -3,7 +3,7 @@
     <div class="container banner-city-container">
       <div class='banner-city-nav thanks-message'>
         <div class='thanks-message-title'>
-          Thanks <%= @user[:name] %>
+          Thanks <%= @apply.first_name %>
         </div>
         <div class="thanks-message-body">
           We'll contact you shortly by email to plan an interview. You can start the check-list before starting Codecademy.
@@ -40,13 +40,13 @@
                 index: 2
               },
               {
-                label: 'Abonnement à notre twitter',
+                label: "Suivre Le Wagon sur Twitter",
                 href: @city['twitter_url'],
                 index: 3
 
               },
               {
-                label: 'Commencer le cours préparatoire en Anglais',
+                label: 'Commencer le cours préparatoire de Ruby en Anglais',
                 href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
                 index: 4
               },

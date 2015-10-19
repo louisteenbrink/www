@@ -33,4 +33,7 @@ class AlumniClient
     JSON.parse(RestClient.get("#{@base_url}/staff?city=#{city_slug}"))["staff"]
   end
 
+  def batch(id)
+    Api::Batch.new JSON.parse(RestClient.get("#{@base_url}/batches/#{id}"))["batch"]
+  end
 end
