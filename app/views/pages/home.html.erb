@@ -52,7 +52,7 @@
   </div>
   <div class="container">
     <div class="row">
-      <% @projects.take(3).each do |project| %>
+      <% @projects.each do |project| %>
         <div class="col-sm-4">
           <div class="card">
             <span class="card-bg" style="background-image: url('<%= project['thumbnail']%>')"></span>

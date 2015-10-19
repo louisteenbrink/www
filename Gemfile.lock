@@ -94,6 +94,8 @@ GEM
     devise-i18n-views (0.3.4)
     domain_name (0.5.24)
       unf (>= 0.0.5, < 1.0.0)
+    email_validator (1.6.0)
+      activemodel
     erubis (2.7.0)
     execjs (2.5.2)
     figaro (1.1.1)
@@ -118,6 +120,8 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.4.1)
       launchy (~> 2.2)
+    lodash-rails (3.10.0)
+      railties (>= 3.1)
     loofah (2.0.2)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -196,6 +200,8 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
+    react-bootstrap-rails (0.23.7)
+      rails (>= 3.1)
     react-rails (1.1.0)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
@@ -260,11 +266,13 @@ DEPENDENCIES
   devise
   devise-i18n
   devise-i18n-views
+  email_validator
   figaro
   font-awesome-sass
   jquery-rails
   js-routes
   letter_opener
+  lodash-rails
   meetup_client
   paperclip
   pg
@@ -282,6 +290,7 @@ DEPENDENCIES
   rails-assets-slick.js!
   rails-i18n
   rails_12factor
+  react-bootstrap-rails
   react-rails
   redcarpet
   redis

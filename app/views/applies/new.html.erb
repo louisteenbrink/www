@@ -1,0 +1,15 @@
+<div class='apply-form-overlay'>
+  <%= react_component 'ApplyForm', {
+    cities: @cities,
+    city: @city,
+    rows: [
+      apply_row(:first_name, :text, "First name", "Alan", "account"),
+      apply_row(:last_name, :text, "Last name", "Turing", "format-text"),
+      apply_row(:age, :text, "Age", "42", "crown"),
+      apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
+      apply_row(:phone, :tel, "Phone", "+33612345678", "cellphone-iphone"),
+      apply_row(:motivation, :textarea, "Motivation", "Why Le Wagon? What is your professional project?", "content-paste")
+    ]
+  } %>
+
+</div>
