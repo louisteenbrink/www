@@ -8,6 +8,7 @@ en:
       menu:
         cities: Cities
         fullstack: Program
+      apply: Apply
     features:
       pedagogy_matters_html: Code the startup way.
       pedagogy_tagline: Use best technologies and best practices.
@@ -95,7 +96,7 @@ en:
       to_build_your_ideas: To build 99% of your ideas
       why_us: Why us?
       why_us_details_html: |
-        We have been teaching more than 15 batchess of 25 students and our program has evolved every times to become perfect.
+        We have been teaching more than 15 batches of 25 students and our program has evolved every times to become perfect.
         That is this long experience in teaching which makes our program so efficient. <strong>You will learn in 2 months what you can't learn in 2 years:</strong>
         <ul>
           <li>Perfect developer set-up</li>
@@ -104,7 +105,7 @@ en:
           <li>Technical workflow used in the best startups</li>
           <li>Tools like Heroku, Stripe, Mandrill, Algolia to deploy your app and integrate advanced features (payment, geolocation, mailing, search etc...)</li>
         </ul>
-      community: A hyperactive community
+      community: An hyperactive community
       community_details_html: |
         350+ students with various backgrounds (engineers, journalists, architects, designers..)
         are chatting every day on Slack, asking their questions to teachers, sharing tips, resources, code gists, job offers, news from their products.
