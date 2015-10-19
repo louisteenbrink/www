@@ -8,7 +8,9 @@
   100% { border-left-color: #333333 }
 }
 
-.applies-new, .applies-create {
+.applies-new,
+.pages-thanks,
+.applies-create {
   .navbar-wagon-white {background: HSLA(0, 0%, 96%, 1)}
   .banner-container {
       background-color: HSLA(0, 0%, 96%, 1);
@@ -176,6 +178,7 @@
   @media (max-width: $screen-md) {
     margin-right: 0;
     margin-bottom: 50px;
+    flex: 0 !important;
   }
 }
 

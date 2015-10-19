@@ -17,6 +17,13 @@ class PagesController < ApplicationController
     end
   end
 
+  def thanks
+    @user = {
+      name: 'Sébastien'
+    }
+    @city = @client.cities.first
+  end
+
   def apply
     @cities = @client.cities.select {|city| city['next_batch']}.each do |city|
       city['next_batch']['starts_at'] = city['next_batch']['starts_at'].to_date.strftime('%b %d, %Y')

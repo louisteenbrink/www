@@ -15,7 +15,7 @@
             <div class="banner-gradient-shadow"></div>
             <div class="banner-content">
               <h1 class='glitch'>
-                Check-list
+                Merci !
               </h1>
             </div>
           </div>
@@ -23,7 +23,7 @@
         <div class='apply-form-rows-container'>
           <div class='check-list-item is-checked'>
             <div class='check-list-item-label'>
-              Candidature pour Le Wagon <%= @city['name'] %>
+              1. Candidature pour Le Wagon <%= @city['name'] %>
             </div>
             <div class="checklist-status-container hidden-xs hidden-sm">
               <span class='check-list-todo'>done</span>
@@ -36,16 +36,20 @@
             items: [
               {
                 label: "Inscription au groupe Meetup de #{@city['name']}",
-                href: @city['meetup_url']
+                href: @city['meetup_url'],
+                index: 2
               },
               {
                 label: 'Abonnement à notre twitter',
-                href: @city['twitter_url']
+                href: @city['twitter_url'],
+                index: 3
+
               },
               {
                 label: 'Commencer le cours préparatoire en Anglais',
-                href: 'https://www.codecademy.com/tracks/ruby?locale_code=en'
-              },
+                href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
+                index: 4
+              }
             ]
           } %>
         </div>
