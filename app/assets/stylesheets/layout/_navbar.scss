@@ -220,10 +220,13 @@
 .flag-container {
   display: flex;
   align-items: center;
+  padding: 10px 20px;
 
   a {
     cursor: pointer;
+    opacity: 1;
     &:hover {
+      text-decoration: none;
       opacity: 1 !important;
     }
   }

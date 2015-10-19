@@ -6,22 +6,62 @@
           <div class='navbar-wagon-link-menu'></div>
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li class='main hidden-md hidden-lg hidden-sm'><%= link_to t(".menu.fullstack", default: "Programme"), program_path %></li>
+          <li class='main hidden-md hidden-lg hidden-sm'>
+            <%= link_to t(".menu.fullstack", default: "Programme"), program_path %>
+          </li>
           <li class='main hidden-md hidden-lg hidden-sm'>
             <%= link_to t(".alumni", default: "Alumni"), alumni_path %>
           </li>
-          <li class='main hidden-md hidden-lg hidden-sm'><%= link_to t(".menu.cities"),"#" %></li>
+          <li class='main hidden-md hidden-lg hidden-sm'>
+            <%= link_to t(".menu.cities"),"#" %>
+          </li>
           <% Static::CITIES.each do |city, infos| %>
             <li class='hidden-md hidden-lg hidden-sm'>
               <%= link_to infos[:name], city_path(city: city) %>
             </li>
           <% end %>
-          <li class='main'><a href="https://ondemand.lewagon.org/", target='_blank'>On Demand</a></li>
-          <li><a href="https://ondemand.lewagon.org/tracks/codez-votre-premier-site-web/go", target='_blank'>Codez votre premier site web</a></li>
-          <li><a href="https://ondemand.lewagon.org/tracks/devenez-developpeur-front-end/go", target='_blank'>Devenez Front-end Developer</a></li>
-          <li><a href="https://ondemand.lewagon.org/tracks/devenez-data-scientist/go", target='_blank'>Devenez un gros Data-Scientist</a></li>
-          <li><a href="https://ondemand.lewagon.org/tracks/comprenez-enfin-javascript/go", target='_blank'>Comprennez enfin Javascript</a></li>
-          <li class='main'><a href="https://medium.com/le-wagon">Blog</a></li>
+          <li class='main'>
+            <a href="https://ondemand.lewagon.org/" target='_blank'>
+              On Demand
+            </a>
+          </li>
+          <li>
+            <a href="https://ondemand.lewagon.org/tracks/codez-votre-premier-site-web/go", target='_blank'>  Codez votre premier site web
+            </a>
+          </li>
+          <li>
+            <a href="https://ondemand.lewagon.org/tracks/devenez-developpeur-front-end/go", target='_blank'>
+              Devenez Front-end Developer
+            </a>
+          </li>
+          <li>
+            <a href="https://ondemand.lewagon.org/tracks/devenez-data-scientist/go", target='_blank'>
+              Devenez un gros Data-Scientist
+            </a>
+          </li>
+          <li>
+            <a href="https://ondemand.lewagon.org/tracks/comprenez-enfin-javascript/go", target='_blank'>
+              Comprennez enfin Javascript
+            </a>
+          </li>
+          <li class='main'>
+            <a href="https://medium.com/le-wagon">
+              Blog
+            </a>
+          </li>
+          <li>
+            <span class='flag-container'>
+              <div>
+                <a style='<%= "opacity: .5" if locale == :en %>'>
+                  <%= render 'shared/french_flag' %>
+                </a>
+                <span class='separator'>/</span>
+                <a style='<%= "opacity: .5" if locale == :fr %>'>
+                  <%= render 'shared/english_flag' %>
+                </a>
+              </div>
+            </span>
+          </li>
         </ul>
       </div>
     </div>
@@ -45,19 +85,11 @@
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
       <hr class='fake-hr hidden-xs'>
-      <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch hidden-xs  navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
+      <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "glitch hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
       <hr class='hidden-xs'>
-      <span class='flag-container'>
-        <div>
-          <a style='<%= "opacity: .5" if locale == :en %>'>
-            <%= render 'shared/french_flag' %>
-          </a>
-          <span class='separator'>/</span>
-          <a style='<%= "opacity: .5" if locale == :fr %>'>
-            <%= render 'shared/english_flag' %>
-          </a>
-        </div>
-      </span>
+      <a href="https://ondemand.lewagon.org/" class='navbar-wagon-link hidden-xs glitch' data-text='ondemand' target='_blank'>
+        On Demand
+      </a>
       <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
       <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
