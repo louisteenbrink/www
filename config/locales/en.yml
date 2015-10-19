@@ -179,6 +179,15 @@ en:
       live_code: "Live-code baby, let's take some challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
+    thanks:
+      thanks: Thank you
+      we_will_contact_html: |
+        We'll contact you shortly by email to plan an interview. <br /><br />In the meantime, follow the instructions of our check-list and start the <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a> on CodeCademy.
+      take_advance: Check-list
+      first_step: "1. Apply to Le Wagon %{name}"
+      second_step: "Subscribe to %{name} Meetup group "
+      third_step: "Follow us on Twitter"
+      fourth_step: "Start your ruby track in English"
   students:
     index:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon
