@@ -44,26 +44,29 @@
           <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
           <div class="project-item">
             <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 80%), url(<%= project.card %>);background-size:cover;background-position:center center;">
-                <div class="project-item-makers">
-                  <% project.makers.each do |maker| %>
-                    <% maker = OpenStruct.new maker %>
-                    <div class="project-item-maker">
-                      <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                        <img src=<%= maker.thumbnail %> class='avatar' />
-                      </a>
-                    </div>
-                  <% end %>
-                </div>
+              <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
               </div>
             </div>
-          </div>
-          <div class="project-item-infos">
-            <div class="project-item-name">
-              <%= project.name %>
-            </div>
-            <div class="project-item-tagline">
-              <%= project.tagline %>
+            <div class="project-item-infos">
+              <div class="project-item-infos-left">
+                <div class="project-item-name">
+                  <%= project.name %>
+                </div>
+                <div class="project-item-tagline">
+                  <%= project.tagline %>
+                </div>
+              </div>
+
+              <div class="project-item-makers">
+                <% project.makers.each do |maker| %>
+                  <% maker = OpenStruct.new maker %>
+                  <div class="project-item-maker">
+                    <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
+                      <img src=<%= maker.thumbnail %> class='avatar' />
+                    </a>
+                  </div>
+                <% end %>
+              </div>
             </div>
           </div>
 
