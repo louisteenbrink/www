@@ -1,0 +1,130 @@
+
+.thanks-message {
+  color: #A4A4A4;
+  font-weight: 100;
+  @media (max-width: $screen-md) {
+    text-align: center;
+  }
+}
+
+.thanks-container {
+  padding: 50px;
+}
+
+.thanks-checklist {
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:last-of-type {
+      .check-list-item {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+
+.check-list-item {
+  display: flex;
+  padding: 40px;
+  border-bottom: 1px solid #F2F2F2;
+  transition: border 0.3s ease, border-left-color 0.3s ease;
+  border-left-width: 0px;
+  border-left-style: solid;
+  border-left-color: white;
+
+
+  &:not(.is-checked):hover {
+    border-left-width: 8px;
+    border-left-style: solid;
+    border-left-color: black;
+  }
+
+  &.is-checked {
+    background-color: $green;
+    color: white;
+    border-bottom-color: rgb(44, 193, 107);
+
+    .check-list-todo {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    .check-list-status {
+      background: white;
+      color: $green;
+      border-color: white;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+
+
+      i { display: block; }
+    }
+  }
+}
+
+.checklist-status-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.check-list-status {
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: white;
+  border: 1px solid #ECECEC;
+
+  i { display: none }
+
+  &.is-checked {
+    background: white;
+    color: $green;
+    border-color: white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+
+    i { display: block }
+  }
+}
+
+.check-list-item-index {
+  opacity: .56;
+  padding-right: 10px;
+  font-weight: 100;
+}
+
+.check-list-item-label {
+  font-weight: 300;
+  font-size: 19px;
+
+  &:hover {
+
+  }
+}
+
+.thanks-message-title {
+  color: black;
+  font-weight: 300;
+  padding-bottom: 10px;
+  font-size: 27px;
+  font-weight: 900;
+
+  @media (max-width: $screen-md) {
+    font-size: 35px;
+    font-weight: 900;
+  }
+}
+
+.check-list-todo {
+  margin-right: 20px;
+  margin-top: 4px;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #C5C5C5;
+  font-weight: 100;
+}
