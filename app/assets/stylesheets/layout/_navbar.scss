@@ -251,6 +251,25 @@
   & > li > a {
     font-weight: 100;
     padding: 5px 20px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
   & > li.main { a { font-weight: bold } }
+}
+
+
+.navbar-wagon-dropdown-menu:before {
+  content: none !important
+}
+.navbar-wagon {
+  .dropdown-menu {
+    @media (max-width: 460px) {
+      transform: translateX(-20%)
+    }
+
+    li > a { opacity: .6 }
+    li.main { a { opacity: 1 } }
+  }
 }

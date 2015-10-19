@@ -78,16 +78,6 @@
   }
 }
 
-.navbar-wagon {
-  .dropdown-menu {
-    @media (max-width: 460px) {
-      transform: translateX(-20%)
-    }
-
-    li > a { opacity: .6 }
-    li.main { a { opacity: 1 } }
-  }
-}
 
 
 @media (max-width: $screen-sm) {
