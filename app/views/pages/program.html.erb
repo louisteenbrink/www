@@ -128,6 +128,56 @@
     ]
     } %>
 </div>
+<div class="two-columns">
+  <div class="container">
+    <div class="two-columns-description">
+      <h2 class="section-header-big">
+        <%= t(".why_us") %>
+      </h2>
+      <p class="text-readable text-opac">
+        <%= t(".why_us_details_html") %>
+      </p>
+    </div>
+    <div class='image-container terminal'>
+      <%= image_tag "product/fullstack-challenges.png",
+          class: "two-columns-img two-columns-img-left"
+      %>
+    </div>
+  </div>
+</div>
+
+<div class="bg-blue two-columns">
+  <div class="container">
+    <div class="two-columns-description" >
+      <h2 class="section-header-big">
+        <%= t(".community") %>
+      </h2>
+      <p class="text-readable text-opac">
+        <%= t(".community_details_html") %>
+      </p>
+    </div>
+    <div class='two-columns-image-container slack'>
+      <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
+    </div>
+  </div>
+</div>
+
+<div class="two-columns">
+  <div class="container">
+    <div class="two-columns-description">
+      <h2 class="section-header-big">
+        <%= t(".cv") %>
+      </h2>
+      <p class="text-readable text-opac">
+        <%= t(".cv_details_html") %>
+      </p>
+    </div>
+    <div class='two-columns-image-container'>
+      <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:350px;margin-bottom:70px" %>
+    </div>
+  </div>
+</div>
+
 <div class="day-type-overlay">
   <%= react_component 'DayType',
     {
@@ -171,52 +221,4 @@
         }
       ]
     } %>
-</div>
-
-<div class="bg-blue two-columns">
-  <div class="container">
-    <div class="two-columns-description">
-      <h2 class="section-header-big">
-        <%= t(".why_us") %>
-      </h2>
-      <p class="text-readable text-opac">
-        <%= t(".why_us_details_html") %>
-      </p>
-    </div>
-    <div class='image-container terminal'>
-      <%= image_tag "product/fullstack-challenges.png", class: "two-columns-img two-columns-img-left"%>
-    </div>
-  </div>
-</div>
-
-<div class="bg-white two-columns">
-  <div class="container">
-    <div class="two-columns-description" >
-      <h2 class="section-header-big">
-        <%= t(".community") %>
-      </h2>
-      <p class="text-readable text-opac">
-        <%= t(".community_details_html") %>
-      </p>
-    </div>
-    <div class='two-columns-image-container slack'>
-      <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
-    </div>
-  </div>
-</div>
-
-<div class="bg-green-gradient two-columns">
-  <div class="container">
-    <div class="two-columns-description">
-      <h2 class="section-header-big">
-        <%= t(".cv") %>
-      </h2>
-      <p class="text-readable text-opac">
-        <%= t(".cv_details_html") %>
-      </p>
-    </div>
-    <div class='two-columns-image-container'>
-      <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:350px;margin-bottom:70px" %>
-    </div>
-  </div>
 </div>
