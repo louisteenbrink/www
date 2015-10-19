@@ -4,7 +4,7 @@ class ApplyForm extends React.Component {
 
     this.state = {
       activeCity: this.props.city,
-      activeBatch: _.filter(this.props.city.batches, (n) => { return !n.full })[0] // to take the first not full batch.
+      activeBatch: this.firstBatch(this.props.city)
     }
   }
 
@@ -109,7 +109,11 @@ class ApplyForm extends React.Component {
 
   setActiveCity(city) {
     if (this.state.activeCity !== city) {
-      this.setState({ activeCity: city })
+      this.setState({ activeCity: city, activeBatch: this.firstBatch(city) })
     }
+  }
+
+  firstBatch(city) {
+    return _.filter(city.batches, (n) => { return !n.full })[0] // to take the first not full batch.
   }
 }

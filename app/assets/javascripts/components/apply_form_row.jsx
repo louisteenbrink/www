@@ -47,7 +47,8 @@ class ApplyFormRow extends React.Component {
             onBlur={this.handleBlur.bind(this)}
             placeholder={this.props.placeholder}
             id={this.name()}
-            defaultValue={this.props.value}>
+            defaultValue={this.props.value}
+            name={this.name()}>
           </textarea>
           {errorSpan}
         </div>

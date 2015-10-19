@@ -9,7 +9,6 @@ class AppliesController < ApplicationController
   def create
     @application = Application.new(application_params)
     if @application.valid?
-      # TODO
       redirect_to thanks_path(name: params[:first_name])
     else
       prepare_apply_form
@@ -22,8 +21,8 @@ class AppliesController < ApplicationController
   def prepare_apply_form
     @cities = client.cities.select{|city| !city['batches'].empty? }.each do |city|
       city['batches'].sort!{|batch| batch['starts_at'].to_date}.reverse!.each do |batch|
-        batch['starts_at'] = batch['starts_at'].to_date.strftime('%B %d')
-        batch['ends_at'] = batch['ends_at'].to_date.strftime('%B %d')
+        batch['starts_at'] = batch['starts_at'].to_date.strftime('%B %e, %Y')
+        batch['ends_at'] = batch['ends_at'].to_date.strftime('%B %e, %Y')
       end
     end.shuffle!
     @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
