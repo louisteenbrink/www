@@ -2,9 +2,12 @@
   <%= react_component 'ApplyForm', {
     cities: @cities,
     city: @city,
-    conditions: t(".conditions"),
-    title: t(".apply"),
-    apply_btn: t(".apply_btn"),
+    i18n: {
+      conditions: t(".conditions"),
+      title: t(".apply"),
+      apply_btn: t(".apply_btn"),
+      please_wait: t(".please_wait")
+    },
     rows: [
       apply_row(:first_name, :text, t(".first_name"), "Alan", "account"),
       apply_row(:last_name, :text, t(".last_name"), "Turing", "format-text"),

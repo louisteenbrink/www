@@ -20,11 +20,11 @@ class ApplyForm extends React.Component {
     var submitButton = null;
     if (this.state.submitting) {
       submitButton = (
-        <input type='submit' value='Patientez...' disabled className='apply-form-submit btn btn-sucsess' />
+        <input type='submit' value={this.props.i18n.please_wait} disabled className='apply-form-submit btn btn-sucsess' />
         );
     } else {
       submitButton = (
-        <input type='submit' value={this.props.apply_btn + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
+        <input type='submit' value={this.props.i18n.apply_btn + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
         );
     }
 
@@ -63,7 +63,7 @@ class ApplyForm extends React.Component {
                       <div className="banner-gradient-shadow"></div>
                       <div className="banner-content">
                         <h1 className='glitch'>
-                          {this.props.title} <span className='city'>{city.name}</span>
+                          {this.props.i18n.title} <span className='city'>{city.name}</span>
                         </h1>
                       </div>
                     </div>
@@ -100,7 +100,7 @@ class ApplyForm extends React.Component {
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
-                      Price: {this.state.activeBatch.price} {this.props.conditions}
+                      Price: {this.state.activeBatch.price} {this.props.i18n.conditions}
                     </div>
                     {submitButton}
                   </div>
