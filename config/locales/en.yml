@@ -4,6 +4,10 @@ en:
       news_and_resources: "News, events & free resources"
       enter_your_mail: Enter your email
       stay_tuned: Stay tuned
+      our_videos: Our video tutorials
+      find_a_city: Find a city
+      about_us: About us
+      follow_us: Follow us
     navbar:
       menu:
         cities: Cities
@@ -83,6 +87,10 @@ en:
       and_you_html: And <strong>you</strong> ?
       check_projects: Discover our students and their projects
       see_more_projects: See more projects...
+      our_students_projects: What our students have built
+      only_ten_days: "...in only 10 days"
+      next_batch: "Next batch:"
+      events_to_come: events to come
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -96,7 +104,7 @@ en:
       to_build_your_ideas: To build 99% of your ideas
       why_us: Why us?
       why_us_details_html: |
-        We have been teaching more than 15 batches of 25 students and our program has evolved every times to become perfect.
+        We have been teaching more than 15 batches of 25 students and our program has evolved every time to become perfect.
         That is this long experience in teaching which makes our program so efficient. <strong>You will learn in 2 months what you can't learn in 2 years:</strong>
         <ul>
           <li>Perfect developer set-up</li>
@@ -110,12 +118,12 @@ en:
         350+ students with various backgrounds (engineers, journalists, architects, designers..)
         are chatting every day on Slack, asking their questions to teachers, sharing tips, resources, code gists, job offers, news from their products.
         <strong>One of the best tech communities in the world.</strong>
-        All these students share the same technical skills after Le Wagon.
-        This mix between <strong>diversity & technical skills</strong> makes this community very unique.
+        All these students share the same technical background after Le Wagon.
+        This mix between <strong>diversity & technical expertise</strong> makes this community very unique.
       cv: Your developer portfolio
       cv_details_html: |
         In 2 months only, build several web applications, including
-        a Airbnb clone and your own personal project. Deploy these apps
+        a <strong>clone of Airbnb</strong> and <strong>your own personal project</strong>. Deploy these apps
         and build yourself a solid Github portfolio.
       ruby: |
         Get familiar with the command line and Git.
@@ -164,6 +172,14 @@ en:
         Project Time! Let's code your own project during the
         2 last week and build an awesome product!
       awesome_entrepreneur: Entrepreneur d'exception
+      one_week: 1 week
+      two_weeks: 2 weeks
+      first_module: "1 - Ruby and coding basics"
+      second_module: "2 - Software Engineering"
+      third_module: "3 - Database & SQL"
+      fourth_module: "4 - Front-end"
+      fifth_module: "5 - Rails"
+      sixth_module: "6 - Project"
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
       amazing_employee: Salarié polyvalent
@@ -211,8 +227,14 @@ en:
       become_dev: "Become developer in 2 months"
       city_arrival: "Join Le Wagon FullStack program in %{city}"
       apply_for_nine_weeks: Apply for 9 weeks
-      staff: "Staff in %{city}"
+      staff: "Teachers in %{city}"
       discover_us: "Discover our program"
   applies:
     new:
       apply: Apply to
+      first_name: "First name"
+      last_name: "Last name"
+      phone: "Phone"
+      motivation: "Why Le Wagon? What is your professional project?"
+      conditions: "Incl. Tax. Payment in three installments, free of charge."
+      apply_btn: "Apply for 9 weeks in "

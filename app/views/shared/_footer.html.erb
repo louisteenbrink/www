@@ -8,83 +8,67 @@
     <div class="flex">
       <div class='footer-section'>
         <h3>
-          Nos tutoriels vidéos
+          <%= t(".our_videos")%>
         </h3>
 
         <div class='footer-section-links'>
           <div>
-            <a href="">TV</a>
+            <a href="https://www.youtube.com/channel/UChCDYcBCrb8tuPAO6e0P-Hw" target="_blank">TV</a>
           </div>
           <div>
-            <a href="">On-Demand</a>
+            <a href="https://ondemand.lewagon.org/" target='_blank'>On-Demand</a>
           </div>
         </div>
       </div>
       <div class='footer-section'>
         <h3>
-          Trouver une ville
+          <%= t(".find_a_city")%>
         </h3>
 
         <div class='footer-section-links'>
-          <div>
-            <a href="">Paris</a>
-          </div>
-          <div>
-            <a href="">Lille</a>
-          </div>
-          <div>
-            <a href="">Bordeaux</a>
-          </div>
-          <div>
-            <a href="">Marseille</a>
-          </div>
-          <div>
-            <a href="">Brussels</a>
-          </div>
-          <div>
-            <a href="">Los Angeles</a>
-          </div>
-          <div>
-            <a href="">Beirut</a>
-          </div>
+          <% Static::CITIES.each do |slug, infos| %>
+            <div>
+              <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
+            </div>
+          <% end %>
         </div>
       </div>
 
       <div class='footer-section'>
         <h3>
-          A propos de nous
+          <%= t(".about_us")%>
         </h3>
 
         <div class='footer-section-links'>
           <div>
-            <a href="">Blog</a>
+            <a href="#">Blog</a>
           </div>
           <div>
-            <a href="">Jobs</a>
+            <a href="#">Jobs</a>
           </div>
           <div>
-            <a href="">Press</a>
+            <a href="#">Press</a>
           </div>
         </div>
       </div>
 
       <div class='footer-section'>
         <h3>
-          Suivez-nous
+          <%= t(".follow_us")%>
         </h3>
 
         <div class='footer-section-links'>
           <div>
-            <a href="">Facebook</a>
+            <a href="https://www.facebook.com/lewagonformation" target="_blank">Facebook</a>
           </div>
           <div>
-            <a href="">Twitter</a>
+            <a href="https://twitter.com/lewagonparis" target="_blank">Twitter</a>
           </div>
           <div>
-            <a href="">Youtube</a>
+            <a href="https://www.youtube.com/channel/UChCDYcBCrb8tuPAO6e0P-Hw" target="_blank">Youtube</a>
           </div>
           <div>
-            <a href="">Github</a>
+            <a href="https://github.com/lewagon" target="_blank">Github</a>
           </div>
         </div>
       </div>

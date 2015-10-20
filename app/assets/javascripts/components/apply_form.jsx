@@ -24,7 +24,7 @@ class ApplyForm extends React.Component {
         );
     } else {
       submitButton = (
-        <input type='submit' value={'Apply for a 9 week bootcamp in ' + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
+        <input type='submit' value={this.props.apply_btn + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
         );
     }
 
@@ -100,7 +100,7 @@ class ApplyForm extends React.Component {
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
-                      Price: {this.state.activeBatch.price} Incl. Tax. Payment in three installments, free of charge.
+                      Price: {this.state.activeBatch.price} {this.props.conditions}
                     </div>
                     {submitButton}
                   </div>

@@ -113,12 +113,12 @@
             <div class="card-city-body">
               <h3><%= link_to city["name"], city_path(city: city["slug"], locale: locale) %></h3>
               <p>
-                <i class="fa fa-map-marker"></i> prochain départ : <%= city["next_batch"] ? Date.parse(city["next_batch"]["starts_at"]).strftime("%b %Y") : "coming soon" %>
+                <i class="fa fa-map-marker"></i> <%= t(".next_batch") %> <%= city["next_batch"] ? Date.parse(city["next_batch"]["starts_at"]).strftime("%b %Y") : "coming soon" %>
               </p>
               <p>
                 <i class="fa fa-calendar"></i>
                 <%= @meetups[city["slug"]][:events].empty? ? 0 : @meetups[city["slug"]][:events].count %>
-                évènements à venir
+                <%= t(".events_to_come") %>
               </p>
               <p class="card-city-meetup-link">
                 <% if @meetups[city["slug"]][:events].empty? %>
