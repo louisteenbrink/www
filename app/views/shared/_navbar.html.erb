@@ -7,7 +7,7 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
           <li class='main hidden-md hidden-lg hidden-sm'>
-            <%= link_to t(".menu.fullstack"), (locale == :fr ? program_path : program_en_path) %>
+            <%= link_to t(".menu.fullstack"), send(:"program_#{locale}_path") %>
           </li>
           <li class='main hidden-md hidden-lg hidden-sm'>
             <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), locale: locale %>
@@ -81,7 +81,7 @@
         </div>
       </div>
       <hr class='hidden-xs'>
-      <%= link_to t(".menu.fullstack", default: "Programme"), (locale == :fr ? program_path : program_en_path), class: " hidden-xs navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
+      <%= link_to t(".menu.fullstack", default: "Programme"), send(:"program_#{locale}_path"), class: " hidden-xs navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
       <hr class='fake-hr hidden-sm hidden-xs'>
       <%= link_to root_path(locale: locale), class: 'wagon-link' do %>
         <%= render "shared/logos/logo_red_square" %>
@@ -96,7 +96,7 @@
       <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
-        <%= link_to t(".apply"), (locale == :fr ? apply_fr_path : apply_en_path), class: 'navbar-wagon-link-cta' %>
+        <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
       </div>
   </div>
 </nav>

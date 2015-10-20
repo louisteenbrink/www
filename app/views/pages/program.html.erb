@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class='banner-cta'>
-      <%= link_to t(".apply_for_nine_weeks"), (locale == :fr ? apply_fr_path : apply_en_path), class: "btn banner-cta-item btn-danger btn-lg" %>
+      <%= link_to t(".apply_for_nine_weeks"), send(:"apply_#{locale}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>

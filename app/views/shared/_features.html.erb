@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class='feature-body'>
-          <%= t(".web_development_details") %><%= link_to t(".see_all"), (locale == :fr ? program_path : program_en_path)%>
+          <%= t(".web_development_details") %><%= link_to t(".see_all"), send(:"program_#{locale}_path") %>
         </div>
       </div>
       <div class='feature'>
