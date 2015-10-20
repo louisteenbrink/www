@@ -13,10 +13,10 @@
       </ul>
     </div>
     <hr class="hidden-xs hidden-sm">
-    <%= link_to t(".menu.fullstack", default: "Programme"), program_path, class: "nav-link with-city-hash" %>
+    <%= link_to t(".menu.fullstack", default: "Programme"), send(:"program_#{locale}_path"), class: "nav-link with-city-hash" %>
     <hr class="hidden-xs hidden-sm">
-    <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: "nav-link with-city-hash" %>
-    <%= link_to t(".apply", default: "Apply"), apply_path, class: "nav-link apply with-city-hash" %>
+    <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), class: "nav-link with-city-hash" %>
+    <%= link_to t(".apply", default: "Apply"), send(:"apply_#{locale}_path"), class: "nav-link apply with-city-hash" %>
   </div>
 </div>
 <%= content_for :after_js do %>

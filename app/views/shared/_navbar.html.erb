@@ -7,17 +7,17 @@
         </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
           <li class='main hidden-md hidden-lg hidden-sm'>
-            <%= link_to t(".menu.fullstack"), (locale == :fr ? program_path : program_en_path) %>
+            <%= link_to t(".menu.fullstack"), send(:"program_#{locale}_path") %>
           </li>
           <li class='main hidden-md hidden-lg hidden-sm'>
-            <%= link_to t(".alumni", default: "Alumni"), alumni_path, locale: locale %>
+            <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), locale: locale %>
           </li>
           <li class='main hidden-md hidden-lg hidden-sm'>
             <%= link_to t(".menu.cities"),"#" %>
           </li>
-          <% Static::CITIES.each do |city, infos| %>
+          <% Static::CITIES.each do |slug, infos| %>
             <li class='hidden-md hidden-lg hidden-sm'>
-              <%= link_to infos[:name], city_path(city: city) %>
+              <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
             </li>
           <% end %>
           <li>
@@ -72,18 +72,18 @@
         <div class="dropdown">
           <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link glitch", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
           <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
-            <% Static::CITIES.each do |city, infos| %>
+            <% Static::CITIES.each do |slug, infos| %>
               <li>
-                <%= link_to infos[:name], city_path(city: city, locale: locale) %>
+                <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
               </li>
             <% end %>
           </ul>
         </div>
       </div>
       <hr class='hidden-xs'>
-      <%= link_to t(".menu.fullstack", default: "Programme"), (locale == :fr ? program_path : program_en_path), class: " hidden-xs navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
+      <%= link_to t(".menu.fullstack", default: "Programme"), send(:"program_#{locale}_path"), class: " hidden-xs navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
       <hr class='fake-hr hidden-sm hidden-xs'>
-      <%= link_to root_path, locale: locale, class: 'wagon-link' do %>
+      <%= link_to root_path(locale: locale), class: 'wagon-link' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
       <hr class='fake-hr hidden-xs'>
@@ -96,7 +96,7 @@
       <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
       </div>
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
-        <%= link_to t(".apply"), apply_path, class: 'navbar-wagon-link-cta' %>
+        <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
       </div>
   </div>
 </nav>
