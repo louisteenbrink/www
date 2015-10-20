@@ -3,7 +3,6 @@ class StudentsController < ApplicationController
 
   def index
     @projects = @client.projects(Static::SITE[:featured][:alumni])
-    @students = Static::STUDENTS
   end
 
   private

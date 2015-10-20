@@ -23,10 +23,10 @@
       </div>
     </div>
     <div class='banner-cta'>
-    <%= link_to program_path, class: 'banner-cta-item hidden-xs' do %>
+    <%= link_to (locale == :fr ? program_path : program_en_path), class: 'banner-cta-item hidden-xs' do %>
       <%= t(".discover_us", default: "Découvrez notre programme") %>
     <% end %>
-    <%= link_to t(".apply_for_nine_weeks"), apply_path, class: "btn banner-cta-item btn-danger btn-lg" %>
+    <%= link_to t(".apply_for_nine_weeks"), (locale == :fr ? apply_fr_path : apply_en_path), class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>
@@ -85,7 +85,7 @@
       <% end %>
     </div>
     <div class="text-center" id="more-projects">
-      <%= link_to t(".see_more_projects"), alumni_path%>
+      <%= link_to t(".see_more_projects"), alumni_path(locale: locale)%>
     </div>
   </div>
 </div>
@@ -111,7 +111,7 @@
             <span class="card-city-filter"></span>
             </div>
             <div class="card-city-body">
-              <h3><%= city["name"] %></h3>
+              <h3><%= link_to city["name"], city_path(city: city["slug"], locale: locale) %></h3>
               <p>
                 <i class="fa fa-map-marker"></i> prochain départ : <%= city["next_batch"] ? Date.parse(city["next_batch"]["starts_at"]).strftime("%b %Y") : "coming soon" %>
               </p>

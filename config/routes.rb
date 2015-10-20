@@ -7,8 +7,8 @@ Rails.application.routes.draw do
     end
   end
 
-  get "apply/(:city)" => "applies#new", locale: :en, city: /#{CITIES.join("|")}|/, as: :apply_en
-  get "postuler/(:city)" => "applies#new", locale: :fr, city: /#{CITIES.join("|")}|/, as: :apply_fr
+  get "apply/(:city)" => "applies#new", locale: :en, city: /#{Static::CITIES.keys.join("|")}|/, as: :apply_en
+  get "postuler/(:city)" => "applies#new", locale: :fr, city: /#{Static::CITIES.keys.join("|")}|/, as: :apply_fr
   resource :apply, only: %s(create)
   scope "(:locale)", locale: /fr|en/ do
     root to: "pages#home"
@@ -16,7 +16,7 @@ Rails.application.routes.draw do
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
-    get ":city" => "cities#show", city: /#{CITIES.join("|")}|/, as: :city
+    get ":city" => "cities#show", city: /#{Static::CITIES.keys.join("|")}|/, as: :city
     resources :projects, only: [:show]
     resources :students, only: [:show]
     get "blog", to: 'posts#index'
