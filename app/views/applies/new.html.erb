@@ -2,14 +2,19 @@
   <%= react_component 'ApplyForm', {
     cities: @cities,
     city: @city,
-    title: t(".apply"),
+    i18n: {
+      conditions: t(".conditions"),
+      title: t(".apply"),
+      apply_btn: t(".apply_btn"),
+      please_wait: t(".please_wait")
+    },
     rows: [
-      apply_row(:first_name, :text, "First name", "Alan", "account"),
-      apply_row(:last_name, :text, "Last name", "Turing", "format-text"),
+      apply_row(:first_name, :text, t(".first_name"), "Alan", "account"),
+      apply_row(:last_name, :text, t(".last_name"), "Turing", "format-text"),
       apply_row(:age, :text, "Age", "42", "crown"),
       apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
-      apply_row(:phone, :tel, "Phone", "+33612345678", "cellphone-iphone"),
-      apply_row(:motivation, :textarea, "Motivation (> 140 char.)", "Why Le Wagon? What is your professional project?", "content-paste")
+      apply_row(:phone, :tel, t(".phone"), "+33612345678", "cellphone-iphone"),
+      apply_row(:motivation, :textarea, "Motivation (> 140 char.)", t(".motivation"), "content-paste")
     ]
   } %>
 

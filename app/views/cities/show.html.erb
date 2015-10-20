@@ -51,7 +51,7 @@
               <h3><%= teacher["first_name"] %> <%= teacher["last_name"] %></h3>
               <p><%= teacher["bio"][locale.to_s] %></p>
             </div>
-            <div class="card-staff-infos">
+            <div class="card-staff-infos" data-sr>
               <div class="card-staff-role">
                 <h4><%= teacher["github_nickname"].capitalize %></h4>
                 <p><%= teacher["role"]%></p>
@@ -65,28 +65,31 @@
     </div>
   </div>
 
-  <div class="container">
-    <h2 class="section-title-home text-center">
-      <div class="section-title-home-content" style="font-size:30px;">
-        Beloved teacher assistants
-      </div>
-    </h2>
-  </div>
 
-  <div class="container">
-    <div class="row text-center">
-      <% @assistants.each_slice(6).each do |slice| %>
-      <div class="col-xs-12 col-sm-offset-<%= (12 % slice.count) / 2 %>">
-        <% slice.each do |ta| %>
-          <div class="col-xs-6 col-sm-<%= 12 / slice.count %> ta-card">
-            <%= image_tag ta["thumbnail"], class: "img-circle", width: "60px"%>
-            <h4><%= ta["first_name"]%> <%= ta["last_name"]%></h4>
-          </div>
+  <% unless @assistants.empty? %>
+    <div class="container">
+      <h2 class="section-title-home text-center">
+        <div class="section-title-home-content" style="font-size:30px;">
+          Beloved teacher assistants
+        </div>
+      </h2>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <% @assistants.each_slice(6).each do |slice| %>
+        <div class="col-xs-12 col-sm-offset-<%= (12 % slice.count) / 2 %>">
+          <% slice.each do |ta| %>
+            <div class="col-xs-6 col-sm-<%= 12 / slice.count %> ta-card">
+              <%= image_tag ta["thumbnail"], class: "img-circle", width: "60px"%>
+              <h4><%= ta["first_name"]%> <%= ta["last_name"]%></h4>
+            </div>
+          <% end %>
+        </div>
         <% end %>
       </div>
-      <% end %>
     </div>
-  </div>
+  <% end %>
 </div>
 <div class="location-overlay">
   <div class="container">

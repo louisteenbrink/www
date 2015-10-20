@@ -33,6 +33,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-classnames'
   gem 'rails-assets-pubsub-js'
   gem 'rails-assets-devicons'
+  gem 'rails-assets-scrollReveal.js'
 end
 
 gem "rails-i18n"
