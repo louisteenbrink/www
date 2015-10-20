@@ -144,3 +144,10 @@
 .purple { color: #8000FF }
 .yellow { color: $yellow }
 .orange { color: $orange }
+
+a,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+  color: inherit;
+}
