@@ -139,11 +139,6 @@
   </div>
 </div>
 
-<%= react_component 'UserCascade', {
-  alumni: @alumni
-  } %>
-
-
 <div class="quote-overlay">
   <div class="container">
     <div class='quote'>
@@ -159,8 +154,15 @@
         </div>
       </h2>
       <div class='techcrunch-view hidden-sm hidden-xs'>
+        <a href='http://techcrunch.com/2014/11/27/le-wagon-is-an-impressive-french-coding-bootcamp-for-entrepreneurs/' target='_blank'>
         <%= image_tag "press/techcrunch.png" %>
+        </a>
       </div>
     </div>
   </div>
 </div>
+
+<%= react_component 'UserCascade', {
+  alumni: @alumni
+  } %>
+

@@ -1,4 +1,6 @@
-# Le Wagon - Home
+[![Stories in Ready](https://badge.waffle.io/lewagon/www.png?label=ready&title=Ready)](https://waffle.io/lewagon/www)
+
+# Le Wagon
 
 ## Import
 

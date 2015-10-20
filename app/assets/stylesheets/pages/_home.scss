@@ -109,11 +109,30 @@
       width: 200px;
     }
   }
+
 }
+
+.techcrunch-view {
+  img {
+    transform: translateY(0);
+    transition: transform .3s ease;
+    &:hover {
+      transform: translateY(-4%)
+    }
+
+  }
+}
+
 
 #more-projects {
   margin-top: 50px;
   a {
     font-size: 25px;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+      color: black;
+      text-decoration: none;
+    }
   }
 }

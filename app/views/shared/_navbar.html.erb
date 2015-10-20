@@ -71,7 +71,7 @@
       <div class="navbar-wagon-item">
         <div class="dropdown">
           <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link glitch", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
-          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
             <% Static::CITIES.each do |slug, infos| %>
               <li>
                 <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
