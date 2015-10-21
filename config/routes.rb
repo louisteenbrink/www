@@ -23,6 +23,10 @@ Rails.application.routes.draw do
     get "blog/:slug", to: 'posts#show'
   end
 
+  resources :subscribes, only: :create
+
+
+
   # Blog (TODO)
 
 end

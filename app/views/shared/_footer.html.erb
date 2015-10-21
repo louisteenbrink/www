@@ -1,9 +1,18 @@
 <div id="footer">
 
   <div class="container">
+    <%= react_component 'NewsletterForm', {
+      i18n: {
+        title: t(".title"),
+        retry: t(".retry"),
+        error: t(".error")
+      }
+    } %>
+
     <div class='brand-footer'>
       <%= render "shared/logos/logo_red_square", width: "100px" %>
     </div>
+
 
     <div class="flex">
       <div class='footer-section'>

@@ -25,6 +25,7 @@ gem "lodash-rails"
 gem 'js-routes'
 gem 'autoprefixer-rails'
 gem 'money-rails'
+gem 'gibbon'
 gem 'ruby-trello'
 
 source "https://rails-assets.org" do

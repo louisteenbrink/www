@@ -8,6 +8,9 @@ en:
       find_a_city: Find a city
       about_us: About us
       follow_us: Follow us
+      title: "Get our videos and turorials in your inbox"
+      retry: "Retry"
+      error: "Looks like your mail is not valid..."
     navbar:
       menu:
         cities: Cities
