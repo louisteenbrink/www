@@ -33,6 +33,29 @@
 
 <%= render "shared/features" %>
 
+<div class="quote-overlay">
+  <div class="container">
+    <div class='quote'>
+      <h2 class='section-title-home quote'>
+        <div class='section-title-home-content'>
+          "an <strong>Impressive</strong> coding bootcamp"
+          <div class='techcrunch'>
+            <hr class='techcrunch-hr hidden-xs'>
+            <div>
+              <img src='http://portfolio.toolness.org/img/logos/techcrunch.png' />
+            </div>
+          </div>
+        </div>
+      </h2>
+      <div class='techcrunch-view hidden-sm hidden-xs'>
+        <a href='http://techcrunch.com/2014/11/27/le-wagon-is-an-impressive-french-coding-bootcamp-for-entrepreneurs/' target='_blank'>
+        <%= image_tag "press/techcrunch.png" %>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <%= react_component 'Stories', {
   stories: @stories,
   title: t(".it_works"),
@@ -136,66 +159,31 @@
       <a href="mailto:contact@lewagon.org?Subject=Launching%20Le%20Wagon" target="_top">contact@lewagon.org</a>
     </p>
     <%= render 'shared/map' %>
-    <div class="row">
+    <div class="card-cities">
       <% @cities.each do |city| %>
-        <div class="col-xs-12 col-sm-3">
-          <div class="card-city">
-            <div class="card-city-header" style="background-image: url('<%= city['pictures']['city']['thumbnail']%>')">
-            <span class="card-city-filter"></span>
+        <div class="card-city-container">
+          <%= link_to city_path(city: city["slug"], locale: locale) do %>
+            <div class="card-city">
+              <div class="card-city-header" style="background-image: url('<%= city['pictures']['city']['cover']%>')">
+              <span class="card-city-filter"></span>
+              </div>
+              <div class="card-city-body">
+                <h3><%= city["name"] %></h3>
+                <div class="project-item-makers card-city-teachers">
+                  <% @client.staff(city['slug'])["teachers"].each do |teacher| %>
+                    <% maker = OpenStruct.new maker %>
+                    <div class="project-item-maker">
+                      <a href=<%= "http://alumni.lewagon.org/#{teacher['github_nickname']}" %> target='_blank'>
+                        <img src=<%= teacher['thumbnail'] %> class='avatar' />
+                      </a>
+                    </div>
+                  <% end %>
+                </div>
+              </div>
             </div>
-            <div class="card-city-body">
-              <h3><%= link_to city["name"], city_path(city: city["slug"], locale: locale) %></h3>
-              <p>
-                <i class="fa fa-map-marker"></i> <%= t(".next_batch") %> <%= city["next_batch"] ? Date.parse(city["next_batch"]["starts_at"]).strftime("%b %Y") : "coming soon" %>
-              </p>
-              <p>
-                <i class="fa fa-calendar"></i>
-                <%= @meetups[city["slug"]][:events].empty? ? 0 : @meetups[city["slug"]][:events].count %>
-                <%= t(".events_to_come") %>
-              </p>
-              <p class="card-city-meetup-link">
-                <% if @meetups[city["slug"]][:events].empty? %>
-                  <a href="<%= @meetups[city["slug"]][:infos][:link] %>" target="_blank">
-                    <%= @meetups[city["slug"]][:infos]["name"] %>
-                  </a>
-                <% else %>
-                  <a href="<%= @meetups[city["slug"]][:events].first[:event_url] %>" target="_blank">
-                    <%= @meetups[city["slug"]][:events].first["name"].truncate(30) %>
-                  </a>
-                <% end %>
-              </p>
-            </div>
-          </div>
+          <% end %>
         </div>
       <% end %>
     </div>
   </div>
 </div>
-
-<div class="quote-overlay">
-  <div class="container">
-    <div class='quote'>
-      <h2 class='section-title-home quote'>
-        <div class='section-title-home-content'>
-          "an <strong>Impressive</strong> coding bootcamp"
-          <div class='techcrunch'>
-            <hr class='techcrunch-hr hidden-xs'>
-            <div>
-              <img src='http://portfolio.toolness.org/img/logos/techcrunch.png' />
-            </div>
-          </div>
-        </div>
-      </h2>
-      <div class='techcrunch-view hidden-sm hidden-xs'>
-        <a href='http://techcrunch.com/2014/11/27/le-wagon-is-an-impressive-french-coding-bootcamp-for-entrepreneurs/' target='_blank'>
-        <%= image_tag "press/techcrunch.png" %>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<%= react_component 'UserCascade', {
-  alumni: @alumni
-  } %>
-
