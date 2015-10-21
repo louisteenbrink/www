@@ -28,7 +28,8 @@ class StoriesItem extends React.Component {
   }
 
   handleClick() {
-    this.setState({ active: true })
-    PubSub.publish('updateActiveItem', this.props.index + 1)
+    if(this.props.activeItem !== this.props.index + 1) {
+      PubSub.publish('updateActiveItem', {new: this.props.index + 1, old: this.props.activeItem})
+    }
   }
 }
