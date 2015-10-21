@@ -62,7 +62,7 @@ class Blog
       @article_content ||= (
         content = file_content.gsub(JEKYLL_HEADER_PATTERN, '')
         content = content.gsub(BLOG_IMAGE_PATH_PATTERN) do
-          "#{image_path "blog/#{$1}"}"
+          "#{ActionController::Base.helpers.image_path "blog/#{$1}"}"
         end
       )
     end
