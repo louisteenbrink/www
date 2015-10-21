@@ -18,6 +18,13 @@ class Stories extends React.Component {
 
     return (
       <div className='story-overlay'>
+        <div className='container story-label-container'>
+          <div className='story-label'>
+            <i className="fa fa-bookmark"></i>
+          </div>
+          <span>STORIES</span>
+
+        </div>
         {this.props.stories.map((story, index) => {
           var backgroundStyle = {
             backgroundSize: "cover !important",
@@ -38,10 +45,7 @@ class Stories extends React.Component {
           )
         })}
         <div className='container'>
-          <h2>
-              {this.props.title}
-          </h2>
-          <div className='story'>
+           <div className='story'>
             <div className='story-list'>
               {this.props.stories.map((story, index) => {
                 return <StoriesItem {... story}
