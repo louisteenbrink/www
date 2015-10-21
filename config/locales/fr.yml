@@ -217,6 +217,7 @@ fr:
       description: |
         Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
       become_dev: "Devenez développeur en 2 mois"
+      catchline_html: "Changez de vie : <span>apprenez à coder</span>"
       city_arrival: "Rejoignez le programme FullStack du Wagon à %{city}"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       staff: "L'équipe à %{city}"

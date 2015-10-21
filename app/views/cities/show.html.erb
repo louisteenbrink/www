@@ -11,7 +11,7 @@
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["city_picture"])%>');">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
-        <h1><%= t ".become_dev" %></h1>
+        <h1><%= t(".catchline_html") %></h1>
         <p><%= t ".city_arrival", city: @city["name"] %></p>
       </div>
     </div>
@@ -114,7 +114,7 @@
           </a>
         <% else %>
           <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
-            Next Meetup: <%= @meetup[:events].first[:name].truncate(50) %>
+            Next Meetup: <%= @meetup[:events].first["name"].truncate(50) %>
           </a>
         <% end %>
       </div>
