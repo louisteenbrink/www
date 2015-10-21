@@ -21,7 +21,7 @@
           </div>
         </div>
         <div class='feature-body'>
-          <%= t(".web_development_details") %><%= link_to t(".see_all"), program_path%>
+          <%= t(".web_development_details") %><%= link_to t(".see_all"), send(:"program_#{locale}_path") %>
         </div>
       </div>
       <div class='feature'>
@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class='feature-body'>
-          <%= t(".build_product_details") %><%= link_to t(".checkout"), alumni_path%>
+          <%= t(".build_product_details") %><%= link_to t(".checkout"), alumni_path(locale: locale)%>
         </div>
       </div>
       <div class='feature'>

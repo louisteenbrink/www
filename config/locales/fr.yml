@@ -4,6 +4,10 @@ fr:
       news_and_resources: "News, ressources gratuites & bons plans"
       enter_your_mail: Entrez votre email
       stay_tuned: Restez informé
+      our_videos: Nos tutoriels vidéos
+      find_a_city: Trouver une ville
+      about_us: A propos de nous
+      follow_us: Suivez-nous
     navbar:
       menu:
         cities: Villes
@@ -84,6 +88,10 @@ fr:
       and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
       see_more_projects: Voir plus de projets...
+      our_students_projects: Les projets codés par nos élèves
+      only_ten_days: "...en 10 jours seulement"
+      next_batch: "Prochain départ :"
+      events_to_come: évènements à venir
     program:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |
@@ -112,7 +120,7 @@ fr:
       community_details_html: |
         350+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
         qui communiquent tous les jours sur Slack, posent des questions
-        aux professeurs, s'échangent des ressources, des morceaux de
+        aux professeurs, s'échangent des ressources, des gists de
         code, des offres d'emplois, des nouvelles de leurs produits.
         <strong>Une des plus belles communautés tech au monde.</strong>
         Tous nos élèves partagent la même expertise technique après Le Wagon.
@@ -124,9 +132,9 @@ fr:
         Mettez ces applications en production et construisez-vous un solide portfolio sur Github.
       ruby: |
         Manipulez la ligne de commande et versionnez votre travail avec Git.
-        Codez des petits programmes qui jouent avec les variables, les méthodes, les boucles, les conditions..
+        Codez des petits programmes ruby qui jouent avec les variables, les méthodes, les boucles, les conditions..
         Apprenez à lire et écrire dans des fichiers et à collecter des données intéressantes
-        en scrapant des sites web ou en utilisant des APIs (comme l'API Twitter).
+        en scrapant des sites web ou en utilisant des APIs.
       software: |
         Plongez dans la programmation orientée-objet et construisez de vrais logiciels
         en découpant votre programme en différents objets. Pour coder
@@ -154,6 +162,14 @@ fr:
         application en production sur Heroku, avec le même workflow que dans les bonnes startups.
       projects: |
         Project Time ! A vous de coder votre propre projet et de construire le meilleur produit possible !
+      one_week: 1 semaine
+      two_weeks: 2 semaines
+      first_module: "1 - Programmation ruby"
+      second_module: "2 - Architecture logicielle"
+      third_module: "3 - Base de données & SQL"
+      fourth_module: "4 - Front-end"
+      fifth_module: "5 - Rails"
+      sixth_module: "6 - Projets"
       awesome_entrepreneur: Entrepreneur d'exception
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
@@ -200,8 +216,15 @@ fr:
       become_dev: "Devenez développeur en 2 mois"
       city_arrival: "Rejoignez le programme FullStack du Wagon à %{city}"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
-      staff: "Le staff à %{city}"
+      staff: "L'équipe à %{city}"
       discover_us: "Découvez notre programme"
   applies:
     new:
       apply: Postulez à
+      first_name: "Prénom"
+      last_name: "Nom de famille"
+      phone: "Téléphone"
+      motivation: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
+      conditions: "TTC. Paiement en 3 fois sans frais."
+      apply_btn: "Postulez pour 9 semaines à "
+      please_wait: "Patientez..."
