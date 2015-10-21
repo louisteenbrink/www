@@ -23,6 +23,9 @@ Rails.application.routes.draw do
     get "blog/:slug", to: 'posts#show'
   end
 
+  post 'emailapi/subscribe' => 'emailapi#subscribe'
+
+
   # Blog (TODO)
 
 end
