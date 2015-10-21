@@ -27,6 +27,7 @@ gem 'autoprefixer-rails'
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
+gem 'font_assets'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
