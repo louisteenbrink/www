@@ -1,12 +1,50 @@
+.card-cities {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card-city {
   background-color: white;
-  margin: 5px;
   border-radius: 3px;
   box-shadow: 1px 1px 3px #E7E5E5;
+  max-width: 380px;
+  margin: auto;
+
+  &:hover {
+    .project-item-maker {
+      transform: translate(0);
+    }
+  }
+
+  &-container {
+    flex: 0 0 33%;
+    @media (max-width: $screen-md) {
+      flex: 0 0 50%
+    }
+
+    @media (max-width: $screen-sm) {
+      flex: 0 0 100%
+    }
+
+    padding: 15px;
+    a {
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
 }
+
+.card-city-teachers {
+  img {
+    width: 30px;
+  }
+}
+
 .card-city-header {
   background-color: $blue;
-  height: 100px;
+  height: 200px;
   background-size: cover;
   border-radius: 3px 3px 0px 0px;
   position: relative;
@@ -20,11 +58,16 @@
 }
 .card-city-body {
   padding: 20px;
-  padding-top: 10px;
-  height: 200px;
   position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: white;
+
   h3 {
-    font-size: 19px;
+    font-size: 15px;
+    margin: 0;
+    text-decoration: none;
+    color: black;
   }
   p {
     color: #959494;
