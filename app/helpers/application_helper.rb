@@ -14,4 +14,8 @@ module ApplicationHelper
     )
     @markdown.render(content).html_safe
   end
+
+  def structure(hash)
+    object = JSON.parse(hash.to_json, object_class: OpenStruct)
+  end
 end

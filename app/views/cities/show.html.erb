@@ -114,7 +114,7 @@
           </a>
         <% else %>
           <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
-            Next Meetup: <%= @meetup[:events].first[:name].truncate(30) %>
+            Next Meetup: <%= @meetup[:events].first[:name].truncate(50) %>
           </a>
         <% end %>
       </div>
