@@ -70,7 +70,7 @@
     <div class='navbar-wagon-items'>
       <div class="navbar-wagon-item">
         <div class="dropdown">
-          <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link glitch", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
+          <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
           <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
             <% Static::CITIES.each do |slug, infos| %>
               <li>
@@ -81,15 +81,15 @@
         </div>
       </div>
       <hr class='hidden-xs'>
-      <%= link_to t(".menu.fullstack", default: "Programme"), send(:"program_#{locale}_path"), class: " hidden-xs navbar-wagon-link glitch", data: {text: t(".menu.fullstack", default: "Programme")} %>
+      <%= link_to t(".menu.fullstack", default: "Programme"), send(:"program_#{locale}_path"), class: " hidden-xs navbar-wagon-link ", data: {text: t(".menu.fullstack", default: "Programme")} %>
       <hr class='fake-hr hidden-sm hidden-xs'>
       <%= link_to root_path(locale: locale), class: 'wagon-link' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
       <hr class='fake-hr hidden-xs'>
-      <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), class: "glitch hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
+      <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
       <hr class='hidden-xs'>
-      <a href="https://ondemand.lewagon.org/" class='navbar-wagon-link hidden-xs glitch' data-text='ondemand' target='_blank'>
+      <a href="https://ondemand.lewagon.org/" class='navbar-wagon-link hidden-xs ' data-text='ondemand' target='_blank'>
         On Demand
       </a>
       <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
