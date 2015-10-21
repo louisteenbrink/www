@@ -69,6 +69,7 @@
   transform: scale(1);
   display: none;
 
+
   @media (max-width: $screen-sm) {
     margin-left: 0;
   }
@@ -182,12 +183,17 @@
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25);
   background: $green;
   color: white;
-  z-index: 10;
   align-items: center;
   justify-content: center;
   display: flex;
   transform: translateY(-53%) rotate(45deg);
   border-radius: 10px;
+  text-transform: uppercase;
+  z-index: 99;
+
+  &.yellow {
+    background: #f1c40f;
+  }
 
   i {
     color: white;
@@ -207,10 +213,12 @@
 
     span {
       color: white;
+      z-index: 99;
       margin: 15px;
+      text-transform: uppercase;
       margin-left: 50px;
       font-size: 17px;
-      letter-spacing: 5Px;
+      letter-spacing: 5px;
       font-weight: bold;
 
       @media (max-width: $screen-md) {
