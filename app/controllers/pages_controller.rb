@@ -2,6 +2,7 @@
 class PagesController < ApplicationController
   before_action :set_locale
   before_action :set_client
+  after_action :mark_as_tracked, only: :thanks
 
   def home
     @stories = @client.stories
@@ -22,7 +23,9 @@ class PagesController < ApplicationController
       redirect_to root_path
     else
       @apply = Apply.find(session[:apply_id])
-      @city = @client.cities.select { |city| city["id"] == @apply.city_id }.first
+      cities = @client.cities
+      @city = cities.select { |city| city["id"] == @apply.city_id }.first
+      @batch = @city["batches"].select { |batch| batch["id"] == @apply.batch_id }.first
     end
   end
 
@@ -34,5 +37,9 @@ class PagesController < ApplicationController
 
   def set_client
     @client = AlumniClient.new
+  end
+
+  def mark_as_tracked
+    @apply.update tracked: true if @apply
   end
 end

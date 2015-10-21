@@ -13,6 +13,7 @@
 #  city_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  tracked    :boolean          default(FALSE), not null
 #
 
 class Apply < ActiveRecord::Base
@@ -28,5 +29,9 @@ class Apply < ActiveRecord::Base
   def push_to_trello
     batch = AlumniClient.new.batch(batch_id)
     PushToTrelloRunner.new(self, batch).run
+  end
+
+  def tracked?
+    tracked
   end
 end
