@@ -1,17 +1,14 @@
 <div id="footer">
 
   <div class="container">
-    <div class='newsletter'>
-      <h2>
-        News, freebies & more
-      </h2>
-      <form>
-        <div class='newsletter-input'>
-          <input placeholder='you@lewagon.com' class='newsletter-input-email' type='email' />
-          <input type='sumbit' value="GO" class='newsletter-input-button' />
-        </div>
-      </form>
-    </div>
+    <%= react_component 'NewsletterForm', {
+      i18n: {
+        title: t(".title"),
+        retry: t(".retry"),
+        error: t(".error")
+      }
+    } %>
+
     <div class='brand-footer'>
       <%= render "shared/logos/logo_red_square", width: "100px" %>
     </div>

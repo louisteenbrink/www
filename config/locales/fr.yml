@@ -8,6 +8,9 @@ fr:
       find_a_city: Trouver une ville
       about_us: A propos de nous
       follow_us: Suivez-nous
+      title: "Nos vidéos & tutoriels dans votre inbox"
+      retry: "Ré-essayer"
+      error: "Votre email n'a pas l'air bon :("
     navbar:
       menu:
         cities: Villes
