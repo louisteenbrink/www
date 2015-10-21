@@ -8,6 +8,7 @@ class PagesController < ApplicationController
     @alumni = @client.alumni
     @projects = @client.projects(Static::SITE[:featured][:home])
     @cities = @client.cities
+    @testimonials = @client.testimonials(locale.to_s)
     @meetups = Hash.new
     @cities.each do |city|
       if city["meetup_id"].present?

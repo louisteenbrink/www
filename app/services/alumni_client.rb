@@ -12,6 +12,10 @@ class AlumniClient
     JSON.parse(RestClient.get("#{@base_url}/alumni"))["alumni"]
   end
 
+  def testimonials(locale)
+    JSON.parse(RestClient.get("#{@base_url}/testimonials?locale=#{locale}"))
+  end
+
   def projects(slugs=false)
     if slugs
       slugs = slugs.join(',')
