@@ -152,6 +152,14 @@
 
 .timeline-overlay {
   display: flex;
+  overflow: hidden;
+  position: relative;
+  @media (max-width: $screen-md) {
+    box-shadow: inset 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+    min-height: auto;
+    border-top: 5px solid white;
+
+  }
 }
 
 .timeline-container {
@@ -173,8 +181,12 @@
  }
 .day-type-detail-container {
   flex: 1;
-  padding: 60px 0;
+  padding: 150px 0;
   position: relative;
+  @media (max-width: $screen-md) {
+    padding: 50px 0;
+
+  }
 
   &:after {
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.63), transparent 73%);
@@ -195,14 +207,27 @@
   display: flex;
   width: 100%;
   position: absolute;
+  display: none;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   margin: auto;
+  opacity: 1;
+  transition: 1s ease opacity, .5s transform ease;
+
+  &.is-exiting {
+    display: block;
+    z-index: 10;
+    transform: scale(1.05);
+    opacity: 0;
+    display: block;
+  }
 
   &.is-active {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    display: block;
+
     z-index: 9;
   }
 

@@ -44,10 +44,8 @@ class DayTypeStep extends React.Component {
   }
 
   handleMouseEnter() {
-    if (this.props.isLast) {
-      PubSub.publish('setActiveDay', 1)
-    } else {
-      PubSub.publish('setActiveDay', this.props.index)
+    if (this.props.activeItem !== this.props.index){
+      PubSub.publish('setActiveDay', {new: this.props.index, old: this.props.activeItem})
     }
   }
 }

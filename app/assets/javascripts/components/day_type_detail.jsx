@@ -16,13 +16,16 @@ class DayTypeDetail extends React.Component {
 
     var componentClasses = classNames({
       'day-type-detail hidden-xs': true,
-      'is-active': this.props.isActive
+      'is-active': this.props.isActive,
+      'is-exiting': this.props.isExiting
     })
 
-    if (this.props.isActive) {
+    console.log(this.props.isExiting)
+
+    if (this.props.isActive || this.props.isExiting) {
       return(
-      <div className={componentClasses} style={pictureStyle} />
-    )
+        <div className={componentClasses} style={pictureStyle} />
+      )
     } else {
       return <div/>
     }
