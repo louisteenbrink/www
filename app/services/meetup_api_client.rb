@@ -14,7 +14,7 @@ class MeetupApiClient
 
   def meetup
     $redis.cache("meetup:#{@id}", EXPIRE) do
-      api.groups(group_id: @id)["results"].first
+      @api.groups(group_id: @id)["results"].first
     end
   end
 end
