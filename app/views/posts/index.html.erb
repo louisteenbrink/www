@@ -1,24 +1,40 @@
-<% @posts.each_with_index do |post, index| %>
-  <div class="col-lg-4 col-sm-4 js-post <%= post.metadata[:labels] ? post.metadata[:labels].map { |l| "filter-#{l}" }.join(' ') : nil %>">
-    <article class="postcard element">
-      <% if post.metadata[:thumbnail] %>
-        <a href="/blog/<%= post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
-        </a>
-      <% end %>
-      <div class="content">
-        <h2>
-          <a href="/blog/<%= post.slug %>">
-            <%= post.metadata[:title] %>
-          </a>
-        </h2>
-        <% if post.metadata[:description] %>
-          <p class="description"><%= post.metadata[:description] %></p>
+<% content_for(:title) do %>
+  Le Wagon - Blog de culture technique et entrepreneuriale
+<% end %>
+
+<div class="posts">
+  <div class="container">
+    <% @posts.each_slice(3) do |posts| %>
+      <div class="row">
+        <% posts.each do |post| %>
+          <div class="col-lg-4 col-sm-4">
+            <article class="postcard element">
+              <% if post.metadata[:thumbnail] %>
+                <a href="/blog/<%= post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
+                  <div class="postcard-filter"></div>
+                </a>
+              <% end %>
+              <div class="content">
+                <div class="centered">
+                  <h2>
+                    <a href="/blog/<%= post.slug %>">
+                      <%= post.metadata[:title].html_safe %>
+                    </a>
+                  </h2>
+                  <span class="author">posted by <strong><%= post.metadata[:author]%></strong></span>
+                  <% if post.metadata[:description] %>
+                    <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                  <% end %>
+                </div>
+              </div>
+              <div class="link-post-container text-right">
+                <a href="/blog/<%= post.slug %>" class="link-post"><i class="fa fa-eye"></i>
+                </a>
+              </div>
+            </article>
+          </div>
         <% end %>
       </div>
-      <a href="/blog/<%= post.slug %>" class="link-post"><i class="fa fa-search"></i>  <%= t "blog.read_article" %></a>
-      <div class="infos">
-        <%= render 'written_by', post: post, date_format: :short %>
-      </div>
-    </article>
+    <% end %>
   </div>
-<% end %>
+</div>
