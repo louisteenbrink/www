@@ -11,20 +11,24 @@
             <article class="postcard element">
               <% if post.metadata[:thumbnail] %>
                 <a href="/blog/<%= post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
+                  <div class="postcard-filter"></div>
                 </a>
               <% end %>
               <div class="content">
-                <h2>
-                  <a href="/blog/<%= post.slug %>">
-                    <%= post.metadata[:title].html_safe %>
-                  </a>
-                </h2>
-                <% if post.metadata[:description] %>
-                  <p class="description"><%= post.metadata[:description].truncate(160) %></p>
-                <% end %>
+                <div class="centered">
+                  <h2>
+                    <a href="/blog/<%= post.slug %>">
+                      <%= post.metadata[:title].html_safe %>
+                    </a>
+                  </h2>
+                  <span class="author">posted by <strong><%= post.metadata[:author]%></strong></span>
+                  <% if post.metadata[:description] %>
+                    <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                  <% end %>
+                </div>
               </div>
-              <div class="link-post-container">
-                <a href="/blog/<%= post.slug %>" class="link-post"><i class="fa fa-search"></i>  <%= t "blog.read_article" %>
+              <div class="link-post-container text-right">
+                <a href="/blog/<%= post.slug %>" class="link-post"><i class="fa fa-eye"></i>
                 </a>
               </div>
             </article>
