@@ -51,3 +51,11 @@
 
 
 .feature-body { font-weight: $font-weight-light }
+
+
+@media (max-width: 768px) {
+  .module.feature {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
