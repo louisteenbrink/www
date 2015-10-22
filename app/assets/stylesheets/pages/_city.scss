@@ -2,10 +2,12 @@
   border-radius: 4px 4px 0 0;
   overflow: hidden;
   padding: 15px;
-  height: 600px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  min-height: 100vh;
+  height: auto;
+
   .banner-content {
     flex: 0 1 800px;
     text-align: left;
