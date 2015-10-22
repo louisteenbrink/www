@@ -91,32 +91,30 @@
   <% end %>
 </div>
 <div class="location-overlay">
-  <div class="container">
-    <div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city["location_picture"])%>');">
-      <div class="banner-flat-filter banner-flat-filter-black"></div>
-      <div class="banner-content">
-        <div class='location-tab-overlay'>
-          <div class='location-tab'>
-            <h2>
-              <%= @city["location"] %>,
-              <span><%= @city["address"] %></span>
-            </h2>
-          </div>
+  <div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city["location_picture"])%>');">
+    <div class="banner-flat-filter banner-flat-filter-black"></div>
+    <div class="banner-content">
+      <div class='location-tab-overlay'>
+        <div class='location-tab'>
+          <h2>
+            <%= @city["location"] %>,
+            <span><%= @city["address"] %></span>
+          </h2>
         </div>
-        <% if @city["location"]%>
-          <p><%= @city["description"][locale.to_s] %></p>
-        <% end %>
-        <br>
-        <% if @meetup[:events].empty? %>
-          <a href="<%= @meetup[:infos][:link] %>" target="_blank" class="btn-transparent">
-            Next Meetup: <%= @meetup[:infos][:name] %>
-          </a>
-        <% else %>
-          <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
-            Next Meetup: <%= @meetup[:events].first["name"].truncate(50) %>
-          </a>
-        <% end %>
       </div>
+      <% if @city["location"]%>
+        <p><%= @city["description"][locale.to_s] %></p>
+      <% end %>
+      <br>
+      <% if @meetup[:events].empty? %>
+        <a href="<%= @meetup[:infos][:link] %>" target="_blank" class="btn-transparent">
+          Join <%= @meetup[:infos]['members'] %> apprentices
+        </a>
+      <% else %>
+        <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
+          Next Meetup<i class='hidden-xs'>: <%= @meetup[:events].first["name"].truncate(50) %></i>
+        </a>
+      <% end %>
     </div>
   </div>
 </div>

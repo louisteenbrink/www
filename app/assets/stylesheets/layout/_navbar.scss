@@ -155,13 +155,28 @@
   cursor: pointer;
   border-radius: 2px;
 
+  background-color: #f8f8f8;
+  background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  color: #222;
+  text-decoration: none;
+  opacity: .8;
+  transition: box-shadow .3s ease;
+  &:active {
+    box-shadow: 0;
+  }
   &:hover {
-    background-color: #f8f8f8;
-    background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
     color: #222;
     text-decoration: none;
+    opacity: 1;
+
+    // background-color: #f8f8f8;
+    // background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+    // border: 1px solid #c6c6c6;
+    // box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    // color: #222;
+    // text-decoration: none;
   }
 }
 
