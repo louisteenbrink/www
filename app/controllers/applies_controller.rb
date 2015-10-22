@@ -28,7 +28,7 @@ class AppliesController < ApplicationController
         batch['ends_at'] = batch['ends_at'].to_date.strftime('%B %e, %Y')
         batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
       end
-    end.shuffle!
+    end
     @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
   end
 

@@ -16,7 +16,7 @@ class CityNavItem extends React.Component {
       <div className={cityItemClasses} onClick={this.handleClick.bind(this)}>
         <div className='city-nav-item-infos'>
           <div className='city-nav-item-title'>
-            {this.props.city.slug}
+            {this.props.city.name}
           </div>
         </div>
         <div className='banner-city-miniature' style={miniatureStyle} />
