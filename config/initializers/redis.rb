@@ -2,7 +2,7 @@ $redis = Redis.new
 
 url = ENV["REDISCLOUD_URL"]
 
-if url
+if url && defined?(Sidekiq)
   Sidekiq.configure_server do |config|
     config.redis = { url: url }
   end
