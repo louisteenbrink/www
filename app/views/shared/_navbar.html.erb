@@ -15,6 +15,9 @@
           <li class='main hidden-md hidden-lg hidden-sm'>
             <%= link_to t(".menu.cities"),"#" %>
           </li>
+          <li class='main hidden-md hidden-lg hidden-sm'>
+            <%= link_to 'FAQ', faq_path %>
+          </li>
           <% Static::CITIES.each do |slug, infos| %>
             <li class='hidden-md hidden-lg hidden-sm'>
               <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
