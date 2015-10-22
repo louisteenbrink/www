@@ -29,6 +29,7 @@ class AppliesController < ApplicationController
         batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
       end
     end
+    @cities.reverse!
     @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
   end
 
