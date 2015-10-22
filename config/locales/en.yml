@@ -74,7 +74,7 @@ en:
       title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
       description: |
         Le Wagon is the best French coding school for entrepreneurs. Checkout by yourself the projects of our students. You will be impressed.
-      catchline_html: "Change your life: <span>learn to code</span>"
+      catchline_html: "Change your life: <strong>learn to code</strong>"
       vision: Le Wagon brings technical skills to creative people
       view_teaser: see our video
       apply_for_nine_weeks: Apply for 9 weeks
@@ -227,13 +227,15 @@ en:
       title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
       description: |
         Le Wagon is in %{city}. You want to learn programming? So take 9 weeks of your life to change it forever!
-      become_dev: "Become developer in 2 months"
-      city_arrival: "Join Le Wagon FullStack program in %{city}"
+      become_dev: "Change your life: <strong>learn to code</strong>"
+      city_arrival_html: "Join Le Wagon FullStack program in <strong>%{city}</strong>"
       apply_for_nine_weeks: Apply for 9 weeks
       staff: "Teachers in %{city}"
       discover_us: "Discover our program"
   applies:
     new:
+      title: Apply to Le Wagon - 9-week Coding Bootcamp in Ruby on Rails
+      description: 9 weeks to learn ruby on Rails, HTML/CSS, Javascript, and web-development best practices
       apply: Apply to
       first_name: "First name"
       last_name: "Last name"

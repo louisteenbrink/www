@@ -14,11 +14,11 @@
 
   <meta property="og:title" content="<%= yield :title %>" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://www.lewagon.org<%= request.path_info %>" />
+  <meta property="og:url" content="<%= "http://#{ENV.fetch('HOST', 'www.lewagon.org')}#{request.path_info}" %>" />
   <meta property="og:image" content="<%= image_url_with_fallback(yield :image_url) %>" />
   <meta property="og:description" content="<%= yield :description %>" />
   <meta property="og:site_name" content="Le Wagon" />
-  <!-- <meta property="fb:admins" content="Facebook numeric ID" /> -->
+  <meta property="fb:admins" content="548348576" />
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@Lewagonparis">

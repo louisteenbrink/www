@@ -1,3 +1,6 @@
+<%= content_for(:title)       { t ".title" }       %>
+<%= content_for(:description) { t ".description" } %>
+
 <div class='apply-form-overlay'>
   <%= react_component 'ApplyForm', {
     cities: @cities,

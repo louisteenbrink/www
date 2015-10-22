@@ -70,11 +70,11 @@ fr:
     moreposts: Continuez la visite !
   pages:
     home:
-      title: Le Wagon - Apprendre à coder - Bootcamp en Ruby on Rails, HTML, CSS et JavaScript
+      title: "Le Wagon - Coding Bootcamp de Ruby on Rails, HTML, CSS et JavaScript"
       description: |
-        Le Wagon est la meilleure formation au développement web en France.
-        Allez voir par vous-même les projets codés par nos anciens élèves !
-      catchline_html: "Changez de vie : <span>apprenez à coder</span>"
+        Changez de vie, appenez à coder. En 9 semaines, devenez autonome, donnez enfin vie à vos idées et
+        rejoignez une startup !
+      catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
@@ -96,9 +96,10 @@ fr:
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
     program:
-      title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
+      title: Le Wagon - 2 mois intensifs pour devenir autonome en Ruby on Rails
       description: |
         9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web
+        utilisées dans les startups.
       our_program: "Programme FullStack"
       program_details: |
         2 mois pour devenir développeur full-stack et maîtriser toutes
@@ -202,9 +203,9 @@ fr:
       fourth_step: "Commencez la track ruby en anglais"
   students:
     index:
-      title: Les projets de nos élèves - Startups et applis web made in Le Wagon
+      title: Projets de nos élèves - Produits Made in Le Wagon
       description: |
-        Découvrez les projets des précédentes promotions du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
+        Découvrez les projets des précédents batches du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
       our_alumni: "Les Alumni du Wagon"
       our_alumni_details_html: |
         350+ élèves talentueux et techniques. Et des projets impressionnants.
@@ -213,17 +214,19 @@ fr:
       only_ten_days: "...en 10 jours seulement"
   cities:
     show:
-      title: "Le Wagon - Bootcamp de Ruby on Rails à %{city}"
+      title: "Le Wagon %{city} - Bootcamp de Ruby on Rails, HTML, CSS et JavaScript"
       description: |
-        Le Wagon débarque à %{city}. Vous voulez apprendre à coder ? Alors prenez 9 semaines de votre vie et changez-la pour toujours !
+        Le Wagon débarque à %{city}. Vous voulez apprendre à coder pour donner vie à vos idées ? Prenez 9 semaines de votre vie et changez-la pour toujours !
       become_dev: "Devenez développeur en 2 mois"
-      catchline_html: "Changez de vie : <span>apprenez à coder</span>"
-      city_arrival: "Rejoignez le programme FullStack du Wagon à %{city}"
+      catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
+      city_arrival_html: "Rejoignez le programme FullStack du Wagon à <strong>%{city}</strong>"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       staff: "L'équipe à %{city}"
       discover_us: "Découvez notre programme"
   applies:
     new:
+      title: Postuler au Wagon - 9 semaines de Coding Bootcamp Ruby on Rails
+      description: 9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web utilisées dans les startups.
       apply: Postulez à
       first_name: "Prénom"
       last_name: "Nom de famille"

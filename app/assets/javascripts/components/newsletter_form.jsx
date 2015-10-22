@@ -50,7 +50,7 @@ class NewsletterForm extends React.Component {
           <div dangerouslySetInnerHTML={{__html: Csrf.getInput()}} />
           <div className='newsletter-input'>
             <input
-              placeholder='you@lewagon.com'
+              placeholder='you@domain.com'
               ref="email"
               className='newsletter-input-email'
               type='email'
