@@ -4,4 +4,4 @@ services:
 addons:
   postgresql: "9.4"
 before_script:
-  - psql -c 'create database www-rails_test;' -U postgres
+  - psql -c 'create database www_rails_test;' -U postgres

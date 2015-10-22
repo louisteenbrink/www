@@ -10,5 +10,5 @@ development:
 
 test:
   <<: *default
-  database: www-rails_test
+  database: www_rails_test
   username: <%= ENV['TRAVIS'] == 'true' ? 'postgres' : '' %>
