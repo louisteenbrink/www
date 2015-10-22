@@ -265,8 +265,10 @@
 }
 .navbar-wagon {
   .dropdown-menu {
-    @media (max-width: 460px) {
-      transform: translateX(-20%)
+    @media (max-width: $screen-md) {
+      right: 0;
+      width: 200px;
+      left: inherit;
     }
 
     li > a { opacity: .6 }
