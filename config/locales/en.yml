@@ -94,6 +94,7 @@ en:
       only_ten_days: "...in only 10 days"
       next_batch: "Next batch:"
       events_to_come: events to come
+      featured: FEATURED STORIES
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -228,6 +229,7 @@ en:
       description: |
         Le Wagon is in %{city}. You want to learn programming? So take 9 weeks of your life to change it forever!
       become_dev: "Become developer in 2 months"
+      catchline_html: "Change your life: <span>learn to code</span>"
       city_arrival: "Join Le Wagon FullStack program in %{city}"
       apply_for_nine_weeks: Apply for 9 weeks
       staff: "Teachers in %{city}"

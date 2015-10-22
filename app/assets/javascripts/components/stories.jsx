@@ -22,7 +22,7 @@ class Stories extends React.Component {
           <div className='story-label'>
             <i className="fa fa-bookmark"></i>
           </div>
-          <span>FEATURED STORIES</span>
+          <span>{this.props.i18n.title}</span>
 
         </div>
         {this.props.stories.map((story, index) => {

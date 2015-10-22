@@ -154,8 +154,8 @@ a:focus {
 
 a.link,
 .feature-body a {
-  border-bottom: 3px solid #b4e7f8;
-  box-shadow: inset 0 -5px 0 #b4e7f8;
+  border-bottom: 3px solid rgba(106, 216, 106, 0.60);
+  box-shadow: inset 0 -5px 0 rgba(106, 216, 106, 0.38);
   transition: background .2s ease;
   height: 20px;
   display: inline-block;
@@ -163,7 +163,23 @@ a.link,
   &:hover {
     text-decoration: none;
     color: black;
-    background: #b4e7f8;
+    background: rgba(106, 216, 106, 0.55);
+  }
+
+}
+
+a.link-big {
+  border-bottom: 3px solid rgba(106, 216, 106, 0.60);
+  box-shadow: inset 0 -8px 0 rgba(106, 216, 106, 0.55);
+  transition: background .2s ease;
+  height: 38px;
+  font-size: 29px;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: black;
+    background: rgba(106, 216, 106, 0.55);
   }
 
 }
@@ -171,7 +187,7 @@ a.link,
   height: 20px;
 
   &:hover {
-    border-bottom: 3px solid #b4e7f8;
-    box-shadow: inset 0 -5px 0 #b4e7f8;
+    border-bottom: 3px solid rgba(106, 216, 106, 0.55);
+    box-shadow: inset 0 -5px 0 rgba(106, 216, 106, 0.55);
   }
 }

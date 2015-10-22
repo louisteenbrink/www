@@ -95,6 +95,7 @@ fr:
       only_ten_days: "...en 10 jours seulement"
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
+      featured: COUPS DE COEUR
     program:
       title: Le programme - 2 mois intensifs pour apprendre Ruby on Rails
       description: |

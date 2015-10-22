@@ -35,7 +35,9 @@
 
 <%= react_component 'Stories', {
   stories: @stories,
-  title: t(".it_works"),
+  i18n: {
+    title: t(".featured")
+  },
   locale: locale.to_s
   }, prerender: true %>
 
@@ -79,9 +81,6 @@
         <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
       </div>
     </h2>
-    <p class="text-muted text-center section-title-home-subtitle">
-      <%= t(".only_ten_days", default: "...codés en 10 jours seulement") %>
-    </p>
     <div class="projects-list">
       <% @projects.each do |project| %>
        <% project = OpenStruct.new project %>
@@ -118,7 +117,7 @@
       <% end %>
     </div>
     <div class="text-center" id="more-projects">
-      <%= link_to t(".see_more_projects"), alumni_path(locale: locale), class: 'link' %>
+      <%= link_to t(".see_more_projects"), alumni_path(locale: locale), class: 'link-big' %>
     </div>
   </div>
 </div>
