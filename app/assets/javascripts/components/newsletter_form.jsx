@@ -34,7 +34,7 @@ class NewsletterForm extends React.Component {
     if (this.state.error) {
       var hint = (
         <div className="hint text-center">
-          this.props.i18n.errors
+          {this.props.i18n.error}
         </div>
       );
     };
