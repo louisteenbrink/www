@@ -141,8 +141,15 @@
   display: flex;
   align-items: center;
 
+
   @media (max-width: $screen-md) {
     margin: inherit;
+  }
+}
+
+.navbar-wagon-item {
+  &.has-no-padding {
+    padding: 0 !important;
   }
 }
 
