@@ -54,7 +54,7 @@ class ApplyForm extends React.Component {
                   })
 
                   var bannerCityStyle = {
-                    backgroundImage: "url('" + city.pictures.location.cover  + "');"
+                    backgroundImage: "url('" + city.pictures.city.cover  + "');"
                   };
 
 
