@@ -1,10 +1,9 @@
-<%= content_for(:title) do %>
-  <%= t(".title", city: @city["name"]) %>
-<% end %>
-
-<%= content_for(:description) do %>
-  <%= t(".description", city: @city["name"]) %>
-<% end %>
+<%= content_for(:title) { t(".title", city: @city["name"]) } %>
+<%= content_for(:description) { t(".description", city: @city["name"]) } %>
+<%
+  asset = "social/#{@city["slug"]}_facebook_card.png"
+  content_for(:image_url) { image_url asset } unless Rails.application.assets.find_asset(asset).nil?
+%>
 
 <div class="banner-container">
   <div class="container">
@@ -12,7 +11,7 @@
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1><%= t(".catchline_html") %></h1>
-        <p><%= t ".city_arrival", city: @city["name"] %></p>
+        <p><%= t ".city_arrival_html", city: @city["name"] %></p>
       </div>
     </div>
     <div class='banner-cta'>

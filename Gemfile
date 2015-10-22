@@ -28,6 +28,7 @@ gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
 gem 'font_assets'
+gem 'appsignal'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
