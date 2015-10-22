@@ -210,6 +210,8 @@ en:
       second_step: "Subscribe to %{name} Meetup group "
       third_step: "Follow us on Twitter"
       fourth_step: "Start your ruby track in English"
+    press:
+      title: They speak about Le Wagon
   students:
     index:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon

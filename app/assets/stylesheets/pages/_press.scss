@@ -1,0 +1,32 @@
+.card-press {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 1px;
+  box-shadow: 1px 1px 3px #EFEEEE;
+  min-height: 130px;
+  margin-bottom: 10px;
+  img {
+    width: 90px;
+    border-radius: 50%;
+  }
+}
+.card-press-logo {
+  padding: 10px;
+}
+.card-press-content {
+  padding: 20px 10px;
+  p {
+    font-size: 14px;
+    color: #3C3C3C;
+    font-weight: 100;
+  }
+  .published {
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: -1px;
+    color: #A09999;
+    margin: 0;
+  }
+}
