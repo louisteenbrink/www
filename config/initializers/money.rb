@@ -53,7 +53,7 @@ MoneyRails.configure do |config|
     :symbol              => "€",
     :symbol_first        => false,
     :subunit             => "Subcent",
-    :subunit_to_unit     => 10000,
+    :subunit_to_unit     => 100,
     :thousands_separator => "",
     :decimal_mark        => "."
   }
