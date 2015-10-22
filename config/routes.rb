@@ -25,9 +25,8 @@ Rails.application.routes.draw do
 
   resources :subscribes, only: :create
 
-
-
-  # Blog (TODO)
+  # Redirects
+  get 'marseille', to: redirect('aix-marseille')
 
 end
 

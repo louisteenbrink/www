@@ -1,0 +1,6 @@
+production:
+  api_key: <%= ENV['APPSIGNAL_PUSH_API_KEY'] %>
+  active: true
+  ignore_exceptions: []
+    # - ActiveRecord::RecordNotFound
+    # - ActionController::RoutingError
