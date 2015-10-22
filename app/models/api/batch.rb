@@ -8,7 +8,7 @@ module Api
       @json["id"]
     end
 
-    def trello_list_inbox_id
+    def trello_inbox_list_id
       @json["trello_inbox_list_id"]
     end
 
