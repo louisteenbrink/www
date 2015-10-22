@@ -47,20 +47,7 @@
     font-weight: $font-weight-light;
     margin-top: 16px;
   }
-  a {
-    font-size: 20px;
-    font-weight: $font-weight-bold;
-    letter-spacing: 1px;
-    background-color: $blue;
-    border-bottom: 2px solid #3C8ACC;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 3px;
-    &:hover {
-      text-decoration: none;
-    }
-    span { font-weight: $font-weight-light }
-  }
+
   svg {
     height: 40px;
     position: relative;
