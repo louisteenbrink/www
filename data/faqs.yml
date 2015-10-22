@@ -1,0 +1,50 @@
+fr:
+  - question: "Comment se passe l'inscription au Wagon ?"
+    answer: "Après votre candidature via le site, nous vous contacterons afin de vous poser quelques questions sur vos attentes, de vous faire passer un test rapide et de prendre rendez-vous pour un entretien. Vous saurez rapidement après l'entretien si vous embarquez !"
+  - question: "Je suis un vrai débutant, est ce que le programme est fait pour moi ?"
+    answer: "Nous demandons à nos élèves d'avoir 3 qualités essentielles: de la motivation (beaucoup de motivation), de la curiosité et un bon sens relationnel. Si vous êtes débutant nous vous demanderons de valider un certain nombre de tutoriels avant le début de la formation. Vous ne pourrez pas embarquer si vous ne l'avez pas fait."
+  - question: "Le travail de préparation me prendra combien de temps ?"
+    answer: "Vous devez absolument avoir validé la <a class='link' href='http://www.codecademy.com/tracks/ruby?locale_code=en' target='_blank'>track Ruby sur CodeCademy</a>"
+  - question: "Qu'est ce que je serai capable de faire au bout des 9 semaines ?"
+    answer: "Vous aurez acquis la compétence de développeur web Ruby on Rails. Cela veut dire que vous serez capable de prototyper rapidement vos idées en créant de manière autonome un site web. Vous saurez comment permettre à vos utilisateurs de s'inscrire sur votre site (Sign up, ou Sign up avec Facebook/Twitter), ajouter un <em>back-office</em> d'administration, accepter du paiement, envoyer des emails automatiquement, etc. Vous saurez comment <em>mettre en production</em> rapidement et vous aurez appris les bonnes pratiques de développement utilisées par les meilleures startups actuelles. Vous aurez alors le choix : continuer votre projet entreprenarial, ou bien candidater comme <em>junior developer</em> dans une startup web !"
+  - question: "Est ce que vous nous apprenez à faire des applis mobiles ?"
+    answer: "Oui et non. Soyons clair, vous n'apprendrez pas le développement iOS, Android ou Windows Phone. Nous pensons que cette compétence est difficile à acquérir en 9 semaines. Nous préférons vous apprendre les bases de la programmation et la programmation web car le web est <strong>la</strong> plateforme ouverte qu'il faut maîtriser. En effet, grâce au <em>Responsive Web Design</em> que nous aborderons, vous pouvez réaliser une application web qui s'affiche correctement sur mobile ou tablette. Vous apprendrez aussi à créer une <strong>API</strong> qui servira à votre future application mobile. En effet, une fois un site et une API développés par vos soins en place, un développeur freelance mobile pourra beaucoup plus facilement et rapidement créer l'app iOS ou Android !"
+  - question: "Pourquoi apprendre le Ruby on Rails (plutôt que PHP, par exemple) ?"
+    answer: "Très bonne question, le CTO du Wagon a <a class='link' href='/blog/pourquoi-apprendre-coder-ruby-on-rails'>une réponse</a> pour vous"
+  - question: "Quand se déroule précisément la formation ?"
+    answer: "Du lundi au vendredi, de 9h à 19h, soit 360 heures de cours sur les 9 semaines."
+  - question: "Comment se déroule la sélection pour le bootcamp ?"
+    answer: "Après avoir postulé sur le site nous vous proposerons un rendez-vous pour discuter de vos attentes et répondre à vos questions. A la suite de cet entretien vous devrez valider la <a class='link' href='http://www.codecademy.com/tracks/ruby?locale_code=en' target='_blank'>track Ruby sur CodeCademy</a>. Ensuite, nous vous enverrons votre contrat, ainsi qu'une facture. Ce n'est qu'au paiement d'un acompte d'un tiers du montant de la formation que votre embarquement est définitif."
+  - question: "Est-ce que je dois venir avec mon ordi ?"
+    answer: "Oui, tous les élèves doivent avoir un ordinateur portable. Nous utiliserons Mac OS X ou Linux, si vous n'avez que Windows, ne vous inquiétez pas, le premier jour est consacré à installer Linux sur vos machines (en complément de windows)."
+  - question: "Combien coûte la formation ?"
+    answer: >
+      <strong>4500 euros TTC</strong>, payé en trois fois (un tiers en acompte, un tiers en troisième semaine de formation, un tiers en sixième semaine de formation).<br />
+
+en:
+  - question: "What's the application process to Le Wagon?"
+    answer: "Once you’ve submitted the application form on our website, you will receive a mail with few additional questions about your expectations and technical skills. From this point, we will schedule an interview after which we will tell you very quickly if you get on board."
+  - question: "I’m really a beginner, is it the right program for me?"
+    answer: "We expect 3 things from our students: be motivated (very motivated), be curious, be social. If you’re a complete beginner, we’ll ask you to validate a few tutorials before you get in."
+  - question: "How long does preparatory work take?"
+    answer: "You must complete <a class='link' href='http://www.codecademy.com/tracks/ruby?locale_code=en' target='_blank'>the Ruby track on CodeCademy</a>. When completed, we'll send you a contract, and an invoice. As soon as you pay one third as a deposit, you'll be officially registered to the bootcamp!"
+  - question: "What will I be able to build at the end of 9 weeks?"
+    answer: "You’ll have a Ruby on Rails junior developer level. This means you’ll be able to quickly prototype your ideas by creating a web application on your own. For instance, you will know how to include authentification to your site (simple signin/signup, or Facebook/Twitter connect), add an admin back-office, include payment features, automate emails sending, and much more. You’ll also know how to quickly deploy in production and you will have learnt the programming best practices used by top-level startups. You’ll then be facing a choice: continue your entrepreneurial project or become a junior developer in a startup or a bigger tech company."
+  - question: "Will I learn to create mobile apps?"
+    answer: |
+      Yes and no. Let’s be clear, you’ll not learn iOS, Android or Windows Phone development.
+      We really think these skills cannot be taught (honestly) in 9 weeks.
+      We prefer teaching you the basics of programming and web development for many reasons.
+      First, these are the core skills of a software engineer, even if you want to dive into mobile development later on.
+      Second, the web is THE open platform you need to understand.
+      Thanks to Responsive Web Design (which is part of the program), you’ll be able to create apps that will display nicely on mobile devices.
+      You’ll also learn to create APIs that will be used by your mobile apps.
+      It will then be very easy for any mobile developper to code your iOS or Android interface starting from the API you’ve built.
+  - question: "When do classes take place?"
+    answer: "Monday to Friday, 9am to 7pm, which makes 360 hours during 9 weeks."
+  - question: "What is the application process ?"
+    answer: "After applying we'll invite you to an interview to discuss your needs and answer to your questions. After this interview and before any onboarding you'll have to complete the <a class='link' href='http://www.codecademy.com/tracks/ruby?locale_code=en' target='_blank'>Ruby track on CodeCademy</a>"
+  - question: "Should I bring my laptop?"
+    answer: "Yes, each student must have a laptop. You’ll need Mac OS X or Linux, but if you only have Windows, no worries you’ll learn how to install Linux the first day."
+  - question: "How much does the program cost?"
+    answer: "€4500, including taxes. You'll pay in three installments, one before the bootcamp begins as a deposit, one after 4 weeks, and one after 8 weeks."
