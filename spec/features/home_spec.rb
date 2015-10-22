@@ -5,6 +5,7 @@ RSpec.describe "Home", type: :feature do
     visit '/'
     expect(page).to have_selector("h1", text: "apprenez à coder")
   end
+
   it "works in English" do
     visit '/en'
     expect(page).to have_selector("h1", text: "learn to code")
