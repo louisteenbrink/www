@@ -2,4 +2,4 @@ language: ruby
 services:
   - redis-server
 addons:
-  postgresql: "9.3"  # Should switch to 9.4 as on Heroku
+  postgresql: "9.4"
