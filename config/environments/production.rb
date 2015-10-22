@@ -65,7 +65,7 @@ Rails.application.configure do
   if ENV['CDN_ENABLED'] == 'true'
     config.action_controller.asset_host = ENV['CDN_URL']
     config.static_cache_control = "public, max-age=31536000"
-    config.font_assets.origin = 'http://www.lewagon.com'
+    config.font_assets.origin = ENV['HOST']
   end
 
   # Ignore bad email addresses and do not raise email delivery errors.
