@@ -3,6 +3,7 @@ require "rails_helper"
 RSpec.describe "Home", type: :feature do
   it "works in French" do
     visit '/'
+    print page.html  # DEBUG, will be removed
     expect(page).to have_selector("h1", text: "apprenez à coder")
   end
 
