@@ -31,9 +31,13 @@
   flex-flow: column;
 
   h2 {
-    margin-top: 80px;
+    margin-top: 60px;
     padding: 25px 0;
     font-size: 30px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: -1px;
+    opacity: .8;
   }
   form {
     display: flex;

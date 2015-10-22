@@ -1,7 +1,17 @@
-<div class="container text-center">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-      TODO
+<div class="container">
+  <% Static::FAQS[locale].each do |question_item| %>
+  <% question_item = structure question_item %>
+  <div class="card-faqs">
+    <div class="card-faq-container">
+      <div class="card-faq">
+        <div class="card-faq-question">
+          <%= question_item.question %>
+        </div>
+        <div class="card-faq-answer">
+          <%= question_item.answer.html_safe %>
+        </div>
+      </div>
     </div>
   </div>
+  <% end %>
 </div>

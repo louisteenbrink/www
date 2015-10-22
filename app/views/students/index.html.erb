@@ -30,9 +30,6 @@
         <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
       </div>
     </h2>
-    <p class="text-muted text-center section-title-home-subtitle">
-      <%= t(".only_ten_days", default: "...codés en 10 jours seulement") %>
-    </p>
     <div class="projects-list">
       <% @projects.each do |project| %>
        <% project = OpenStruct.new project %>
@@ -70,4 +67,7 @@
     </div>
   </div>
 </div>
+
+
+<%= render partial: "shared/testimonials", locals: {number: 20} %>
 

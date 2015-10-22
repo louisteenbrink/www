@@ -4,9 +4,12 @@ class PagesController < ApplicationController
   before_action :set_client
   after_action :mark_as_tracked, only: :thanks
 
+  def show
+    render params[:template]
+  end
+
   def home
     @stories = @client.stories
-    @alumni = @client.alumni
     @projects = @client.projects(Static::SITE[:featured][:home])
     @cities = @client.cities
     @testimonials = @client.testimonials(locale.to_s)

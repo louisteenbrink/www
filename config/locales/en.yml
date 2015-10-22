@@ -16,6 +16,8 @@ en:
         cities: Cities
         fullstack: Program
       apply: Apply
+    testimonials:
+      what_our_students_say: What our students say
     features:
       pedagogy_matters_html: Code the startup way.
       pedagogy_tagline: Use best technologies and best practices.
@@ -94,6 +96,7 @@ en:
       only_ten_days: "...in only 10 days"
       next_batch: "Next batch:"
       events_to_come: events to come
+      featured: FEATURED STORIES
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -209,6 +212,8 @@ en:
       second_step: "Subscribe to %{name} Meetup group "
       third_step: "Follow us on Twitter"
       fourth_step: "Start your ruby track in English"
+    press:
+      title: They speak about Le Wagon
   students:
     index:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon
@@ -227,7 +232,7 @@ en:
       title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
       description: |
         Le Wagon is in %{city}. You want to learn programming? So take 9 weeks of your life to change it forever!
-      become_dev: "Change your life: <strong>learn to code</strong>"
+      catchline_html: "Change your life: <strong>learn to code</strong>"
       city_arrival_html: "Join Le Wagon FullStack program in <strong>%{city}</strong>"
       apply_for_nine_weeks: Apply for 9 weeks
       staff: "Teachers in %{city}"

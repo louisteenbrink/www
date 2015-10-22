@@ -16,6 +16,8 @@ fr:
         cities: Villes
         fullstack: Programme
       apply: Postuler
+    testimonials:
+      what_our_students_say: Ce que disent nos élèves
     features:
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline: "Utilisez les bonnes technologies et les bonnes pratiques."
@@ -95,6 +97,7 @@ fr:
       only_ten_days: "...en 10 jours seulement"
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
+      featured: COUPS DE COEUR
     program:
       title: Le Wagon - 2 mois intensifs pour devenir autonome en Ruby on Rails
       description: |
@@ -201,6 +204,8 @@ fr:
       second_step: "Inscrivez-vous au groupe Meetup de %{name}"
       third_step: "Suivez-nous sur Twitter"
       fourth_step: "Commencez la track ruby en anglais"
+    press:
+      title: Ils parlent du Wagon
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon
@@ -217,7 +222,6 @@ fr:
       title: "Le Wagon %{city} - Bootcamp de Ruby on Rails, HTML, CSS et JavaScript"
       description: |
         Le Wagon débarque à %{city}. Vous voulez apprendre à coder pour donner vie à vos idées ? Prenez 9 semaines de votre vie et changez-la pour toujours !
-      become_dev: "Devenez développeur en 2 mois"
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       city_arrival_html: "Rejoignez le programme FullStack du Wagon à <strong>%{city}</strong>"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation

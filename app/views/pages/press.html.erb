@@ -1,7 +1,30 @@
-<div class="container text-center">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-      TODO
+
+<div id="alumni" class="padded">
+  <div class="container">
+    <h1 class='section-title-home' style="font-size:30px;">
+      <div class='section-title-home-content'>
+        <%= t ".title" %>
+      </div>
+    </h1>
+    <div class="row">
+      <% Static::PRESS.each_with_index do |article, index| %>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="card-press">
+            <div class="card-press-logo">
+              <div class="logo">
+                <img src="<%= image_path "press/#{article[:logo]}" %>" alt="<%= article[:name] %>">
+              </div>
+            </div>
+            <div class="card-press-content">
+              <p class="title"><%= article[:name]%></p>
+              <p class="published"><%= article[:date].strftime("%d %b %Y") %> - <strong><%= article[:media] %></strong></p>
+            </div>
+            <a href="<%= article[:url]%>"></a>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
+
+
