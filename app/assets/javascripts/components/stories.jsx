@@ -20,7 +20,7 @@ class Stories extends React.Component {
       <div className='story-overlay'>
         <div className='container story-label-container'>
           <div className='story-label'>
-            <i className="fa fa-bookmark"></i>
+            <i class="fa fa-heart"></i>
           </div>
           <span>{this.props.i18n.title}</span>
 
