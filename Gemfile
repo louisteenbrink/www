@@ -61,5 +61,4 @@ end
 group :production do
   gem "rails_12factor"
   gem "puma"
-  gem "rack-timeout"
 end
