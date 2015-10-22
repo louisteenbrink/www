@@ -50,7 +50,9 @@ class ApplyFormRow extends React.Component {
             defaultValue={this.props.value}
             name={this.name()}>
           </textarea>
-          {errorSpan}
+          <div className='text-area-has-error'>
+            {errorSpan}
+          </div>
         </div>
       )
     } else {
