@@ -8,7 +8,6 @@ class DayTypeStep extends React.Component {
   }
 
   render() {
-    console.log(this.props.isLast)
     var pictureStyle = {
       background: 'url(' + this.props.image + ')',
       backgroundSize: 'cover',

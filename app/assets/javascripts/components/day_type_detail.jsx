@@ -20,8 +20,6 @@ class DayTypeDetail extends React.Component {
       'is-exiting': this.props.isExiting
     })
 
-    console.log(this.props.isExiting)
-
     if (this.props.isActive || this.props.isExiting) {
       return(
         <div className={componentClasses} style={pictureStyle} />
