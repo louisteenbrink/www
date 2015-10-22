@@ -31,38 +31,41 @@
       </div>
     </h2>
     <div class="projects-list">
-      <% @projects.each do |project| %>
-       <% project = OpenStruct.new project %>
-        <div class="project-item-container">
-          <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
-          <div class="project-item">
-            <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
-              </div>
-            </div>
-            <div class="project-item-infos">
-              <div class="project-item-infos-left">
-                <div class="project-item-name">
-                  <%= project.name %>
-                </div>
-                <div class="project-item-tagline">
-                  <%= project.tagline %>
+      <% Static::SITE[:featured][:alumni].each do |slug| %>
+        <% project_hash = @projects.find {|p| p["slug"] == slug} %>
+        <% if project_hash %>
+          <% project = OpenStruct.new  project_hash %>
+          <div class="project-item-container">
+            <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
+            <div class="project-item">
+              <div class='project-item-head'>
+                <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
                 </div>
               </div>
-
-              <div class="project-item-makers">
-                <% project.makers.each do |maker| %>
-                  <% maker = OpenStruct.new maker %>
-                  <div class="project-item-maker">
-                    <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                      <img src=<%= maker.thumbnail %> class='avatar' />
-                    </a>
+              <div class="project-item-infos">
+                <div class="project-item-infos-left">
+                  <div class="project-item-name">
+                    <%= project.name %>
                   </div>
-                <% end %>
+                  <div class="project-item-tagline">
+                    <%= project.tagline %>
+                  </div>
+                </div>
+
+                <div class="project-item-makers">
+                  <% project.makers.each do |maker| %>
+                    <% maker = OpenStruct.new maker %>
+                    <div class="project-item-maker">
+                      <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
+                        <img src=<%= maker.thumbnail %> class='avatar' />
+                      </a>
+                    </div>
+                  <% end %>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        <% end %>
       <% end %>
     </div>
   </div>
