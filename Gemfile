@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.2.2"
+ruby "2.2.3"
 
 gem "rails", "4.2.3"
 gem "pg"
@@ -27,6 +27,7 @@ gem 'autoprefixer-rails'
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
+gem 'font_assets'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
