@@ -16,6 +16,8 @@ en:
         cities: Cities
         fullstack: Program
       apply: Apply
+    testimonials:
+      what_our_students_say: What our students say
     features:
       pedagogy_matters_html: Code the startup way.
       pedagogy_tagline: Use best technologies and best practices.

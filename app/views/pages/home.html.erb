@@ -64,38 +64,7 @@
   locale: locale.to_s
   }, prerender: true %>
 
-<div class="testimonials-wrapper">
-  <div class="container">
-    <div class="testimonials">
-      <% @testimonials.each do |testimonial| %>
-        <% testimonial = structure testimonial %>
-        <div class="testimonial-container">
-          <div class="testimonial">
-            <div class='green-quote'>
-              <i class='mdi mdi-format-quote'></i>
-            </div>
-            <div class="testimonial-body">
-              <div class='testimonial-content'>
-                <%= testimonial.content %>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-user">
-            <%= image_tag testimonial.user.gravatar_url %>
-            <div class='testimonial-user-info'>
-              <div class="testimonial-user-name">
-                <%= testimonial.user.first_name %>  <%= testimonial.user.last_name %>
-              </div>
-              <div class='testimonial-user-batch'>
-                Batch #<%= testimonial.user.batch.slug %>, <%= testimonial.user.batch.city.name%>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div>
+<%= render partial: "shared/testimonials", locals: {number: 4} %>
 
 <div id="alumni" class="padded">
   <div class="container">
