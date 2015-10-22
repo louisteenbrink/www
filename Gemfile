@@ -56,6 +56,8 @@ group :development, :test do
   gem "pry-byebug"
   gem "pry-rails"
   gem "letter_opener"
+  gem "rspec-rails"
+  gem "capybara"
 end
 
 group :production do
