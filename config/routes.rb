@@ -28,6 +28,8 @@ Rails.application.routes.draw do
   # Redirects
   get 'marseille', to: redirect('aix-marseille')
 
+  # API
+  resource :cache, only: :destroy
 end
 
 # Create helper for static_routes
