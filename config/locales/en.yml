@@ -151,7 +151,7 @@ en:
         following the MVC design pattern.
       database: |
         Programs need to store information in a database.
-        Without database, Facebook would loose your information
+        Without database, Facebook would lose your information
         every time you log in! Learn to design a database by defining
         its tables and their connections. Then discover SQL,
         the language used to make queries to the database
