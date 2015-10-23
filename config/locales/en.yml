@@ -79,7 +79,7 @@ en:
       catchline_html: "Change your life: <strong>learn to code</strong>"
       vision: Le Wagon brings technical skills to creative people
       view_teaser: see our video
-      apply_for_nine_weeks: Apply for 9 weeks
+      apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
       discover_us: Discover our program
       it_works: "Funny thing, it works"
       freshly_coded: Freshly coded

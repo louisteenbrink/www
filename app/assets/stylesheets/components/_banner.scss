@@ -150,6 +150,14 @@
   justify-content: center;
   background: white;
 
+  span {
+    padding-left: 6px;
+
+    @media (max-width: $screen-xs) {
+      display: none;
+    }
+  }
+
   &:hover {
     color: black;
     text-decoration: none;

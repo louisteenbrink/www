@@ -79,7 +79,7 @@ fr:
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
       view_teaser: voir la vidéo
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      apply_for_nine_weeks_html: Postulez <span>pour 9 semaines de formation</span>
       discover_us: Découvrez notre programme
       it_works: "le plus étrange.. Ça marche !"
       freshly_coded: Fraîchement codés
