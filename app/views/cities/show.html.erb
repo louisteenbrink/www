@@ -98,7 +98,9 @@
         <div class='location-tab'>
           <h2>
             <%= @city["location"] %>,
+            <a target='_blank' class='location-google-maps-link' href='<%= "https://www.google.fr/maps/place/#{@city["address"]}" %>'>
             <span><%= @city["address"] %></span>
+            </a>
           </h2>
         </div>
       </div>

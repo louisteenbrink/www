@@ -66,3 +66,12 @@
 #banner-city {
   height: 100vh;
 }
+
+.location-google-maps-link {
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+  }
+}
