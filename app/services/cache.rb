@@ -17,7 +17,8 @@ module Cache
   end
 
   def del_all
-    redis.del "#{self.class.to_s.underscore}:*"
+    keys = redis.keys("#{self.class.to_s.underscore}:*")
+    redis.del(keys) unless keys.empty?
   end
 
   private
