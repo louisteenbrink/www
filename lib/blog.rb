@@ -48,10 +48,6 @@ class Blog
       metadata[:thumbnail]
     end
 
-    def pushed?
-      metadata[:pushed] || false
-    end
-
     private
 
     def file_content

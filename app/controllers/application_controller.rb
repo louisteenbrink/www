@@ -14,6 +14,8 @@ class ApplicationController < ActionController::Base
 
   # rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+  rescue_from ActionController::RoutingError, with: :render_404
+
   private
 
   def devise_or_pages_controller?
@@ -35,5 +37,9 @@ class ApplicationController < ActionController::Base
 
   def load_static
     Static.load
+  end
+
+  def render_404
+    render 'pages/404', status: :not_found
   end
 end
