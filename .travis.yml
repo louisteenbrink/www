@@ -2,10 +2,13 @@ language: ruby
 services:
   - redis-server
 addons:
-  postgresql: "9.4"
+  postgresql: '9.4'
 before_script:
   - psql -c 'create database www_rails_test;' -U postgres
 script:
   - bundle exec rake db:schema:load
   - bundle exec rake db:test:prepare
   - bundle exec rake spec
+notifications:
+  slack:
+    secure: Qi3NqgqqtUb2Sap9LGHphz5achbAOavYke/AgtYgGrrk7qL0EYUmS74quTb4ciWzse/ig4vT5mbBaqLN1hYchK4RUdjBqu9X4VTUsFpHajZ556rXaiws96wbyasvB6/KZrsi/hhJlil7Q1G4SUEJE9Xx3HMBWOtXu0YDMmGhioL50TuPICY+vGLkiYVvvq47YBqHEyW4ZL0PP9rWxA96tPLMwXvK3PjywfZ0yhN0pO9V9d94sCEZ5puTlK6x5Hv6qNJRwLoOwqOGlEExcc0tJ1N/+kRGNAYdJhRILtqNQqybcnfQarezB02CurEmnnSqaSxrcpwA6fgmA18+CaFXF9708c6icb7qe508RruJ7wttfz8HBR/IbnHEvGltd7eKVfH210jlZSBSOcWrrZX5hgAMqKH8sBzLMW8KNUXLgE7iH+C0vlz4RrzNWPL73Kfx4JK3GZwpoW1XB2ssuek65OVwqMXSpsLhLMdc0rwoQgjIAqKKGYrqvNK+438Os4lbsSOyP6OEOM0u2xC4AdoOWWXKTX7kO3hfk249HX5Uih20sBgQ6dqDGeW0tCfdpBe/ocyE+7eQZcVJ5wqbIJtf47qbxyGx/7/D8kR4rN8FJ+9TFz4ysS6C8DRlBIvJvMFd3825ikYIWSVmhrJ4zdTX4zbQe22Mf8LMvBcA8lYLNqE=
