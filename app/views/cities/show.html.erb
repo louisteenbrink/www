@@ -111,9 +111,14 @@
           Join <%= @meetup[:infos]['members'] %> apprentices
         </a>
       <% else %>
-        <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
-          Next Meetup<i class='hidden-xs'>: <%= @meetup[:events].first["name"].truncate(50) %></i>
-        </a>
+        <div class='apprentices'>
+          Join <%= @meetup[:infos]['members'] %> apprentices
+        </div>
+        <div>
+          <a href="<%= @meetup[:events].first[:event_url] %>" target="_blank" class="btn-transparent">
+            Next Meetup<i class='hidden-xs'>: <%= @meetup[:events].first["name"].truncate(50) %></i>
+          </a>
+        </div>
       <% end %>
     </div>
   </div>
