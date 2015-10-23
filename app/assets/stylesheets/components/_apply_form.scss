@@ -78,7 +78,7 @@
     color: darkgrey;
     align-self: flex-start;
     margin: 0;
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-sm) {
       text-align: center;
       padding-bottom: 20px;
     }
@@ -95,7 +95,7 @@
     background-color: transparent;
     box-shadow: none;
 
-    @media (max-width: $screen-md) {
+    @media (max-width: $screen-sm) {
       flex: 0 0 100%;
       text-align: center;
     }
@@ -122,11 +122,25 @@
   color: white;
   background: $blue;
 
+  .apply-form-row-item {
+    @media (max-width: $screen-sm) {
+      flex: 0 0 100%;
+      text-align: center;
+    }
+
+  }
+
   label {
     height: 52px;
     display: flex;
     align-items: center;
     color: #FFFFFF;
+
+    @media (max-width: $screen-sm) {
+      flex: 0 0 100%;
+      justify-content: center;
+
+    }
   }
 }
 
@@ -277,6 +291,11 @@
 }
 
 .post-submissions-select {
+
+  @media (max-width: $screen-md) {
+    flex: 0 0 100%;
+    text-align: center;
+  }
 
   .dropdown-menu {
     width: 480px;
