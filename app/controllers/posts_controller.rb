@@ -7,6 +7,6 @@ class PostsController < ApplicationController
 
   def show
     @post = Blog.new.post(params[:slug])
-    @pushed_posts = Blog.new.pushed_posts
+    render_404 if @post.nil?
   end
 end
