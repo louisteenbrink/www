@@ -28,7 +28,10 @@ class AppliesController < ApplicationController
       end
     end
     @cities.reverse!
-    @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
+
+    @city   = @cities.find { |city| city['slug'] == params[:city] } if params[:city]
+    @city ||= @cities.find { |city| city['slug'] == session[:city] } if session[:city]
+    @city ||= @cities.first
   end
 
   def client
