@@ -2,9 +2,13 @@ featured:
   alumni:
     - 'roadstr'
     - 'ma-share-ecole'
+    - 'uslide'
     - 'lovelyhood'
     - 'medpics'
+    - 'fivemarks'
     - 'mediapronos'
+    - 'firebnb'
+    - 'frshst'
     - 'explorizers'
     - 'monmecanicienfr'
     - 'needl'
@@ -27,6 +31,7 @@ featured:
     - 'bricool'
     - 'track-guru'
     - 'le-salon'
+    - 'tamayo'
   home:
     - 'kudoz'
     - 'roadstr'
