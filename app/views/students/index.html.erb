@@ -7,7 +7,9 @@
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/alumni.jpg') %>');">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
-        <h1><%= t(".our_alumni") %></h1>
+        <h1>
+          <%= t(".our_alumni") %>
+        </h1>
         <p>
           <%= t(".our_alumni_details_html") %>
         </p>
@@ -17,7 +19,7 @@
     <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
       <%= t(".discover_us", default: "Découvrez notre programme") %>
     <% end %>
-    <%= link_to t(".apply_for_nine_weeks"), send(:"apply_#{locale}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
+    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>

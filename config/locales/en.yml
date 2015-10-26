@@ -108,7 +108,7 @@ en:
       program_details: |
         2 months to become a fullstack developer and learn to build web-products from the database to
         the user interface. For curious and highly motivated people.
-      apply_for_nine_weeks: Apply for 9 weeks
+      apply_for_nine_weeks_html: Apply <i class='hidden-xs'>for 9 weeks</i>
       nine_weeks: 9 intensive weeks
       to_build_your_ideas: To build 99% of your ideas
       why_us: Why us?
@@ -226,7 +226,7 @@ en:
       our_alumni_details_html: |
         350+ talented students sharing the same tech skills.
         The best community you can find.
-      apply_for_nine_weeks: Apply for 9 weeks
+      apply_for_nine_weeks_html: Apply <i class='hidden-xs'>for 9 weeks</i>
       our_students_projects: What our students have built
       only_ten_days: "...in only 10 days"
       discover_us: Discover our program
