@@ -1,6 +1,5 @@
 # app/controllers/pages_controller.rb
 class PagesController < ApplicationController
-  before_action :set_locale
   before_action :set_client
   after_action :mark_as_tracked, only: :thanks
 
@@ -27,10 +26,6 @@ class PagesController < ApplicationController
   end
 
   private
-
-  def set_locale
-    I18n.locale = params[:locale]
-  end
 
   def set_client
     @client = AlumniClient.new
