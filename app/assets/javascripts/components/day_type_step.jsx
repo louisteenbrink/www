@@ -29,8 +29,8 @@ class DayTypeStep extends React.Component {
         onMouseOver={this.handleMouseEnter.bind(this)}
       >
         <div className="day">
-          <div className="day-hour">{this.props.hour}</div>
-          <div className={'day-circle ' + this.props.circle_color}></div>
+          <div className="day-hour hidden-xs">{this.props.hour}</div>
+          <div className={'day-circle hidden-xs ' + this.props.circle_color}></div>
           <div className="day-description">
             <p>
               {this.props.description}

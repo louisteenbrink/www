@@ -8,6 +8,11 @@
   height: auto;
   min-height: 100vh;
 
+  @media (max-width: $screen-sm) {
+    min-height: auto;
+    padding: 10px;
+  }
+
   ul {
     font-weight: 100;
     font-size: 17px;
@@ -70,5 +75,7 @@
   padding-left: 0;
   @media (max-width: $screen-sm) {
     flex: inherit;
+    padding: 0;
   }
+
 }

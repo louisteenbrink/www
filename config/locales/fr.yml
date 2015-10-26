@@ -111,7 +111,7 @@ fr:
         les technologies d'un produit web, de la base de données
         à l'interface client. Réservé aux esprits curieux,
         enthousiastes et combatifs.
-      apply_for_nine_weeks: Postulez pour 9 semaines de formation
+      apply_for_nine_weeks_html: "Postulez <i class='hidden-xs'>pour 9 semaines de formation</i>"
       to_build_your_ideas: Pour réaliser 99% de vos idées
       nine_weeks: 9 semaines intensives
       why_us: Pourquoi nous ?
