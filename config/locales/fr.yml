@@ -111,7 +111,7 @@ fr:
         les technologies d'un produit web, de la base de données
         à l'interface client. Réservé aux esprits curieux,
         enthousiastes et combatifs.
-      apply_for_nine_weeks_html: "Postulez <i class='hidden-xs'>pour 9 semaines de formation</i>"
+      apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
       to_build_your_ideas: Pour réaliser 99% de vos idées
       nine_weeks: 9 semaines intensives
       why_us: Pourquoi nous ?
@@ -216,7 +216,7 @@ fr:
       our_alumni: "Les Alumni du Wagon"
       our_alumni_details_html: |
         350+ élèves talentueux et techniques. Et des projets impressionnants.
-      apply_for_nine_weeks_html: Postulez <i class='hidden-xs'>pour 9 semaines de formation</i>
+      apply_for_nine_weeks_html: Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>
       our_students_projects: Les projets codés par nos élèves
       only_ten_days: "...en 10 jours seulement"
   cities:
