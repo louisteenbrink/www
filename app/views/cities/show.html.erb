@@ -114,11 +114,11 @@
         </a>
       <% else %>
         <div class='apprentices'>
-          Join <%= @meetup[:infos]['members'] %> apprentices
+          <%= t ".apprentices", count: @meetup[:infos]['members'] %>
         </div>
         <div>
           <a href="<%= @meetup[:events].first["event_url"] %>" target="_blank" class="btn-transparent">
-            Next Meetup<i class='hidden-xs'>: <%= @meetup[:events].first["name"].truncate(50) %></i>
+            <%= t '.next_meetup_html', name: @meetup[:events].first["name"].truncate(50) %>
           </a>
         </div>
       <% end %>
