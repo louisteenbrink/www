@@ -71,7 +71,7 @@ class ApplyForm extends React.Component {
                 })}
               </div>
               <div className='apply-form-rows-container'>
-                <form action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
+                <form id="apply" action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
                   <div dangerouslySetInnerHTML={{__html: Csrf.getInput(this.props.token)}}></div>
                   <div className="apply-form-row apply-form-row-first" >
                     <label>
