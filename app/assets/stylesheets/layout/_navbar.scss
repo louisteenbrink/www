@@ -293,7 +293,12 @@
       left: inherit;
     }
 
-    li > a { opacity: .6 }
+    li > a {
+      opacity: .6;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
     li.main { a { opacity: 1 } }
   }
 }
