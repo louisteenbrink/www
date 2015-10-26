@@ -36,7 +36,7 @@ class DayType extends React.Component {
               </div>
               <div className="timeline-container container">
                 <div className="days">
-                  <div className="days-border"></div>
+                  <div className="days-border hidden-xs"></div>
                   <div className="days-container">
                     {this.props.steps.map((step, index) => {
                       return(

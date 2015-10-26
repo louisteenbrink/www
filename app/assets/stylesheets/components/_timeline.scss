@@ -19,10 +19,11 @@
 .days {
   display: flex;
   max-width: 600px;
-  width: 100%;
   @media (max-width: $screen-sm) {
-    padding: 10px;
+    width: 100%;
+    max-width: 100%;
   }
+
 }
 
 .day-type-overlay {
@@ -40,6 +41,7 @@
   color: #666666;
   font-weight: $font-weight-light;
   font-size: 17px;
+
   p {
     margin: 0;
   }
@@ -91,9 +93,13 @@
   flex: 1 1 auto;
   padding: 25px;
   @media (max-width: $screen-sm) {
-    background: white;
-    color: black;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    background: none !important;
+    box-shadow: none !important;
+    color: black;
+
+
+
   }
 
 }
@@ -138,9 +144,11 @@
   height: 250px;
   position: absolute;
   background-size: cover;
-  margin-left: 98px;
   margin-bottom: 50px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  width: 100%;
+  height: 100vh;
+
 
   @media (max-width: $screen-sm) {
     position: relative;
@@ -184,7 +192,7 @@
   padding: 150px 0;
   position: relative;
   @media (max-width: $screen-md) {
-    padding: 50px 0;
+    padding: 100px 0;
 
   }
 

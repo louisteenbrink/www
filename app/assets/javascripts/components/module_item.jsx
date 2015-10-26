@@ -43,10 +43,10 @@ class ModuleItem extends React.Component {
           ref='module'
         >
           <div className='feature-header'>
-            <div className='feature-icon'>
+            <div className='feature-icon hidden-xs'>
               <i className={this.props.icon}/>
             </div>
-            <div className='feature-title'>
+            <div className='feature-title text-left'>
               {this.props.title}
             </div>
             <div className='module-weeks'>

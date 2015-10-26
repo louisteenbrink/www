@@ -1,4 +1,10 @@
 // Shared classes
+.banner-container {
+  @media (max-width: $screen-xs) {
+    .container { padding: 0 }
+    .banner    { border-radius: 0 }
+  }
+}
 
 .banner {
   background-size: cover;
