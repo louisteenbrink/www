@@ -2,11 +2,11 @@ paris:
   name: Paris
 brussels:
   name: Brussels
-beirut:
-  name: Beirut
-bordeaux:
-  name: Bordeaux
 lille:
   name: Lille
+bordeaux:
+  name: Bordeaux
 aix-marseille:
   name: Marseille
+beirut:
+  name: Beirut

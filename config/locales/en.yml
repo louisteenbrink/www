@@ -254,3 +254,7 @@ en:
       conditions: "Incl. Tax. Payment in three installments, free of charge."
       apply_btn: "Apply for 9 weeks in "
       please_wait: "Please wait..."
+      course_language: 'Course in '
+      language_fr: 'French'
+      language_en: 'English'
+      price: 'Price'
