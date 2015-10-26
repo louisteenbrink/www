@@ -26,7 +26,7 @@ class BatchSelector extends React.Component {
         value={batch.id}
         onClick={this.handleClick.bind(this)}
       >
-        from <strong>{ batch.starts_at }</strong> to <strong>{ batch.ends_at  }</strong>
+        <strong>{ batch.starts_at }</strong> - <strong>{ batch.ends_at }</strong>
         {right_item}
       </div>
     )

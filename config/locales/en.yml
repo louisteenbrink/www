@@ -1,4 +1,7 @@
 en:
+  date:
+    formats:
+      apply: "%B %e, %Y"
   shared:
     footer:
       news_and_resources: "News, events & free resources"
