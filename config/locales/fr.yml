@@ -229,6 +229,9 @@ fr:
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       staff: "L'équipe à %{city}"
       discover_us: "Découvez notre programme"
+      apprentices: "Rejoignez %{count} apprentis"
+      next_meetup_html: "Prochain meetup: <i class='hidden-xs'>%{name}</i>"
+
   applies:
     new:
       title: Postuler au Wagon - 9 semaines de Coding Bootcamp Ruby on Rails
