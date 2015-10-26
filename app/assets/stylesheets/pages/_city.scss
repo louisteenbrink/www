@@ -71,3 +71,12 @@
   position: relative;
   top: -30px;
 }
+
+.location-google-maps-link {
+  opacity: .8;
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: white;
+  }
+}

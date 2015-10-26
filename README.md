@@ -3,14 +3,12 @@
 
 # Le Wagon
 
-## Import
+## Cache
 
-To import all the old stuff before the final `CNAME` migration, run:
+You can run this in development to bypass the API cache.
 
-```bash
-# Suppose you have old stuff at ~/code/lewagon/www-sinatra
-$ cd ~/code/lewagon/www
-$ cp -r ../www-sinatra/posts .
+```
+$ DISABLE_CACHE=true rails s
 ```
 
 ## Configuration
