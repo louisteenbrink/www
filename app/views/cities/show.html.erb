@@ -48,12 +48,23 @@
           <div class="card-staff">
             <div class="card-staff-description">
               <h3><%= teacher["first_name"] %> <%= teacher["last_name"] %></h3>
-              <p><%= teacher["bio"][locale.to_s] %></p>
+              <p><%= markdown teacher["bio"][locale.to_s] %></p>
             </div>
             <div class="card-staff-infos" data-sr>
               <div class="card-staff-role">
-                <h4><%= teacher["github_nickname"].capitalize %></h4>
-                <p><%= teacher["role"]%></p>
+                <h4><%= teacher["role"]%></h4>
+                <p>
+                  <a href="http://github.com/<%= teacher["github_nickname"] %>" target="_blank">
+                    <i class="fa fa-github"></i> <%= teacher["github_nickname"] %></p>
+                  </a>
+                <p>
+                <% if teacher["twitter_nickname"] %>
+                  <p>
+                    <a href="http://twitter.com/<%= teacher["twitter_nickname"] %>" target="_blank">
+                      <i class="fa fa-twitter"></i> <%= teacher["twitter_nickname"] %></p>
+                    </a>
+                  <p>
+                <% end %>
               </div>
               <%= image_tag teacher["thumbnail"], class: "img-circle card-staff-img" %>
             </div>
@@ -63,8 +74,6 @@
       <% end %>
     </div>
   </div>
-
-
   <% unless @assistants.empty? %>
     <div class="container">
       <h2 class="section-title-home text-center">
@@ -86,6 +95,21 @@
           <% end %>
         </div>
         <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if @city["specifics"] %>
+    <div class="container" id="specifics">
+      <h2 class="section-title-home text-center">
+        <div class="section-title-home-content" style="font-size:30px;">
+          <%= t(".only_in", city: @city["name"]) %>
+        </div>
+      </h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <%= markdown(@city["specifics"]) %>
+        </div>
       </div>
     </div>
   <% end %>
@@ -125,3 +149,4 @@
     </div>
   </div>
 </div>
+

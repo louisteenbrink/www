@@ -2,7 +2,7 @@ class AlumniClient
   include Cache
 
   def initialize
-    @base_url = "http://alumni.lewagon.org/api/v1"
+    @base_url = ENV.fetch('ALUMNI_BASE_URL', 'http://alumni.lewagon.org/api/v1')
   end
 
   def stories

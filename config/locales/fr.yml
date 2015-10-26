@@ -231,7 +231,7 @@ fr:
       discover_us: "Découvez notre programme"
       apprentices: "Rejoignez %{count} apprentis"
       next_meetup_html: "Prochain meetup: <i class='hidden-xs'>%{name}</i>"
-
+      only_in: "Uniquement à %{city}"
   applies:
     new:
       title: Postuler au Wagon - 9 semaines de Coding Bootcamp Ruby on Rails
