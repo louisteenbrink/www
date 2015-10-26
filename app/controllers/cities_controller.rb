@@ -1,5 +1,4 @@
 class CitiesController < ApplicationController
-  before_action :set_locale
   before_action :set_client
 
   def show
@@ -11,9 +10,7 @@ class CitiesController < ApplicationController
   end
 
   private
-  def set_locale
-    I18n.locale = params[:locale]
-  end
+
   def set_client
     @client = AlumniClient.new
   end
