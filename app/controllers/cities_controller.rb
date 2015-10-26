@@ -7,6 +7,7 @@ class CitiesController < ApplicationController
     @assistants = @client.staff(params[:city])["teacher_assistants"]
     meetup_cli = MeetupApiClient.new(@city["meetup_id"])
     @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
+    session[:city] = @city['slug']
   end
 
   private
