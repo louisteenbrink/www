@@ -20,11 +20,11 @@ class ApplyForm extends React.Component {
     var submitButton = null;
     if (this.state.submitting) {
       submitButton = (
-        <input type='submit' value={this.props.i18n.please_wait} disabled className='apply-form-submit btn btn-sucsess' />
+        <input id='apply_btn' type='submit' value={this.props.i18n.please_wait} disabled className='apply-form-submit btn' />
         );
     } else {
       submitButton = (
-        <input type='submit' value={this.props.i18n.apply_btn + this.state.activeCity.name} className='apply-form-submit btn btn-sucsess' />
+        <input id='apply_btn' type='submit' value={this.props.i18n.apply_btn + this.state.activeCity.name} className='apply-form-submit btn' />
         );
     }
 
@@ -74,8 +74,8 @@ class ApplyForm extends React.Component {
                 })}
               </div>
               <div className='apply-form-rows-container'>
-                <form action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
-                  <div dangerouslySetInnerHTML={{__html: Csrf.getInput()}}></div>
+                <form id="apply" action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
+                  <div dangerouslySetInnerHTML={{__html: Csrf.getInput(this.props.token)}}></div>
                   <div className="apply-form-row apply-form-row-first" >
                     <label>
                       <i className='mdi mdi-calendar-multiple-check'></i>Dates

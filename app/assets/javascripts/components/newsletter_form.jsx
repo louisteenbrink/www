@@ -47,7 +47,7 @@ class NewsletterForm extends React.Component {
         </h2>
 
         <form onSubmit={this.onSubmit.bind(this)}>
-          <div dangerouslySetInnerHTML={{__html: Csrf.getInput()}} />
+          <div dangerouslySetInnerHTML={{__html: Csrf.getInput(this.props.token)}} />
           <div className='newsletter-input'>
             <input
               placeholder='you@domain.com'
