@@ -23,11 +23,10 @@ class AlumniClient
     end
   end
 
-  def projects(slugs = nil)
-    from_cache(:projects, slugs) do
-      if slugs
-        slugs = slugs.join(',')
-        JSON.parse(RestClient.get("#{@base_url}/projects?slug=#{slugs}"))["projects"]
+  def projects(list_name = nil)
+    from_cache(:projects, list_name) do
+      if list_name
+        JSON.parse(RestClient.get("#{@base_url}/projects?list_name=#{list_name}"))["projects"]
       else
         JSON.parse(RestClient.get("#{@base_url}/projects"))["projects"]
       end
@@ -36,7 +35,7 @@ class AlumniClient
 
   def cities
     from_cache(:cities) do
-      JSON.parse(RestClient.get("#{@base_url}/cities?active=true"))["cities"]
+      JSON.parse(RestClient.get("#{@base_url}/cities"))["cities"]
     end
   end
 

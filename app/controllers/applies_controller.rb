@@ -27,7 +27,8 @@ class AppliesController < ApplicationController
         batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
       end
     end
-    @cities.reverse!
+
+    @cities.sort_by! { |c| Static::CITIES.keys.index(c["slug"].to_sym) }
 
     @city   = @cities.find { |city| city['slug'] == params[:city] } if params[:city]
     @city ||= @cities.find { |city| city['slug'] == session[:city] } if session[:city]

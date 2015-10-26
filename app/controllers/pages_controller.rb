@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 
   def home
     @stories = @client.stories
-    @projects = @client.projects(Static::SITE[:featured][:home])
+    @projects = @client.projects("home_projects")
     @cities = @client.cities
     @testimonials = @client.testimonials(locale.to_s)
   end

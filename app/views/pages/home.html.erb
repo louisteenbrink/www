@@ -124,7 +124,7 @@
     </p>
     <%= render 'shared/map' %>
     <div class="card-cities">
-      <% @cities.each do |city| %>
+      <% @cities.sort_by{ |c| Static::CITIES.keys.index(c["slug"].to_sym) }.each do |city| %>
         <div class="card-city-container">
           <%= link_to city_path(city: city["slug"], locale: locale) do %>
             <div class="card-city">
