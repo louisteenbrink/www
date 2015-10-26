@@ -80,3 +80,10 @@
     color: white;
   }
 }
+.cities-show a {
+  color: $blue !important;
+  &:hover {
+    color: $blue !important;
+    text-decoration: inherit;
+  }
+}
