@@ -19,7 +19,7 @@ en:
     testimonials:
       what_our_students_say: What our students say
     features:
-      pedagogy_matters_html: Code the startup way.
+      pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline: Use the best technologies and practices.
       web_development: Learn web-development
       web_development_details: |
@@ -31,8 +31,8 @@ en:
       software_engineer_details: |
         Become more than a developer, a Software engineer.
         A person who has the big picture on technical issues,
-       who knows what is a MVC, a DB scheme, an HTTP request,
-       and who can learn a new programming language within a week.
+        who knows what is a MVC, a DB scheme, an HTTP request,
+        and who can learn a new programming language within a week.
       technical_workflow: Adopt a technical workflow
       technical_workflow_details_html: |
         There's definitely <strong>a good way</strong> of building tech products
