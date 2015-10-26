@@ -15,6 +15,7 @@ class LearningCurve extends React.Component {
               return (
                 <ModuleNavItem
                   {...module}
+                  key      = {index + 1}
                   index    = {index + 1}
                   isActive = {index + 1 == this.state.activeItem}
                 />
@@ -30,6 +31,7 @@ class LearningCurve extends React.Component {
               return (
                 <ModuleItem
                   {... module}
+                  key         = {index + 1}
                   index       = {index + 1}
                   moduleCount = {this.props.modules.length}
                   isActive    = {index + 1 == this.state.activeItem}

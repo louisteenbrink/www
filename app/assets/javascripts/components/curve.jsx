@@ -39,6 +39,7 @@ class Curve extends React.Component {
                   return (
                     <LearningCurveItem
                       {... module}
+                      key={index + 1}
                       index={index + 1}
                       isActive={index + 1 == this.props.activeItem}
                     />

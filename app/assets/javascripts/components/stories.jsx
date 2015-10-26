@@ -38,7 +38,7 @@ class Stories extends React.Component {
           })
 
           return(
-            <div className={detailClasses}>
+            <div className={detailClasses} key={index}>
               <div className='story-detail-background' style={backgroundStyle}>
               </div>
             </div>
@@ -50,6 +50,7 @@ class Stories extends React.Component {
               {this.props.stories.map((story, index) => {
                 return <StoriesItem {... story}
                   index={index}
+                  key={index}
                   activeItem={this.state.activeItem}
                   locale={this.props.locale}/>
               })}

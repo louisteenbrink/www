@@ -25,6 +25,7 @@ class DayType extends React.Component {
                   return(
                     <DayTypeDetail
                       {... step}
+                      key={index + 1}
                       index={index + 1}
                       isActive={index + 1 == this.state.activeDay}
                       activeItem={this.state.activeDay}
@@ -41,6 +42,7 @@ class DayType extends React.Component {
                       return(
                         <DayTypeStep
                           {... step}
+                          key={index + 1}
                           index={index + 1}
                           activeItem={this.state.activeDay}
                           isActive={index + 1 == this.state.activeDay}

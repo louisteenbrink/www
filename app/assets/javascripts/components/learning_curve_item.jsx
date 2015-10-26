@@ -13,9 +13,9 @@ class LearningCurveItem extends React.Component {
     })
     return (
       <div className={componentClasses} onClick={this.handleClick.bind(this)}>
-        {this.props.skills.map((skill) => {
+        {this.props.skills.map((skill, index) => {
           return (
-            <i className={'devicons ' + skill.icon}  />
+            <i key={index} className={'devicons ' + skill.icon}  />
           )
         })}
       </div>
