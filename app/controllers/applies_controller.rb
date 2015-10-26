@@ -1,8 +1,6 @@
 class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
 
-  before_action :set_locale
-
   def new
     @application = Apply.new
     prepare_apply_form
@@ -31,10 +29,6 @@ class AppliesController < ApplicationController
     end
     @cities.reverse!
     @city = params[:city] ? @cities.find{|city| city['slug'] == params[:city]} : @cities.first
-  end
-
-  def set_locale
-    I18n.locale = params[:locale]
   end
 
   def client
