@@ -1,5 +1,7 @@
 module Cache
   def from_cache(*args, &block)
+    return yield(self) if ENV['DISABLE_CACHE'] == 'true'
+
     expire = default_expire
     if args.last.is_a?(Hash)
       options = args.pop
