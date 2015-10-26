@@ -80,10 +80,18 @@
     color: white;
   }
 }
-.cities-show a {
+#staff a {
   color: $blue !important;
   &:hover {
     color: $blue !important;
     text-decoration: inherit;
   }
+}
+
+#specifics {
+  margin: 50px auto;
+  background: whitesmoke;
+  font-size: 19px;
+  line-height: 25px;
+  font-weight: 100;
 }

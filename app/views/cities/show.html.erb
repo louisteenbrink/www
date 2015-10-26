@@ -63,8 +63,6 @@
       <% end %>
     </div>
   </div>
-
-
   <% unless @assistants.empty? %>
     <div class="container">
       <h2 class="section-title-home text-center">
@@ -86,6 +84,21 @@
           <% end %>
         </div>
         <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if @city["specifics"] %>
+    <div class="container" id="specifics">
+      <h2 class="section-title-home text-center">
+        <div class="section-title-home-content" style="font-size:30px;">
+          <%= t(".only_in", city: @city["name"]) %>
+        </div>
+      </h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <%= markdown(@city["specifics"]) %>
+        </div>
       </div>
     </div>
   <% end %>
@@ -125,3 +138,4 @@
     </div>
   </div>
 </div>
+
