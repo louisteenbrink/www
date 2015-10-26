@@ -57,6 +57,9 @@ class ApplyForm extends React.Component {
                     backgroundImage: "url('" + city.pictures.city.cover  + "');"
                   };
 
+                  var courseLanguage =
+                    this.props.i18n.course_language +
+                    this.props.i18n['language_' + this.props.city.course_locale];
 
                   return(
                     <div className={bannerClasses} style={bannerCityStyle}>
@@ -100,6 +103,9 @@ class ApplyForm extends React.Component {
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
+                      <div>
+                        {this.props.i18n.course_language} {this.props.i18n.language}
+                      </div>
                       Price: {this.state.activeBatch.price} {this.props.i18n.conditions}
                     </div>
                     {submitButton}
