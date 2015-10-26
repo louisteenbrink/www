@@ -79,7 +79,7 @@ class ApplyForm extends React.Component {
                     </label>
                     <div className="apply-form-row-item">
                       <div className='post-submissions-select'>
-                        <ReactBootstrap.DropdownButton ref='selectType' title={'from ' + this.state.activeBatch.starts_at + ' to ' + this.state.activeBatch.ends_at}>
+                        <ReactBootstrap.DropdownButton ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
                           {batches.map((batch) => {
                             return(
                               <BatchSelector
