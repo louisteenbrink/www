@@ -24,7 +24,7 @@ class Apply < ActiveRecord::Base
   validates :email, presence: true, email: true
   validates :motivation, presence: true, length: { minimum: 140 }
 
-  after_create :push_to_trello, if: :batch_id
+  after_create :push_to_trello, if: :push_to_trello?
 
   def push_to_trello
     batch = AlumniClient.new.batch(batch_id)
@@ -33,5 +33,9 @@ class Apply < ActiveRecord::Base
 
   def tracked?
     tracked
+  end
+
+  def push_to_trello?
+    batch_id && !Rails.env.test?
   end
 end

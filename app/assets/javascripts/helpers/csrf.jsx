@@ -1,15 +1,19 @@
 class Csrf {
-  static getInput() {
-    var csrfToken = this.getCsrfToken();
-    var csrfParam = this.getCsrfParam();
+  static getInput(token) {
+    var csrfToken = this.getCsrfToken() || token;
+    var csrfParam = this.getCsrfParam() || 'authenticity_token';
     return `<input name=${csrfParam} value=${csrfToken} type='hidden'>`;
   }
 
   static getCsrfToken() {
-    return document.querySelector('meta[name=csrf-token]').attributes.content.value;
+    if (typeof document !== 'undefined') {
+      return document.querySelector('meta[name=csrf-token]').attributes.content.value;
+    }
   }
 
   static getCsrfParam() {
-    return document.querySelector('meta[name=csrf-param]').attributes.content.value;
+    if (typeof document !== 'undefined') {
+      return document.querySelector('meta[name=csrf-param]').attributes.content.value;
+    }
   }
 }
