@@ -52,8 +52,19 @@
             </div>
             <div class="card-staff-infos" data-sr>
               <div class="card-staff-role">
-                <h4><%= teacher["github_nickname"].capitalize %></h4>
-                <p><%= teacher["role"]%></p>
+                <h4><%= teacher["role"]%></h4>
+                <p>
+                  <a href="http://github.com/<%= teacher["github_nickname"] %>" target="_blank">
+                    <i class="fa fa-github"></i> <%= teacher["github_nickname"] %></p>
+                  </a>
+                <p>
+                <% if teacher["twitter_nickname"] %>
+                  <p>
+                    <a href="http://twitter.com/<%= teacher["twitter_nickname"] %>" target="_blank">
+                      <i class="fa fa-twitter"></i> <%= teacher["twitter_nickname"] %></p>
+                    </a>
+                  <p>
+                <% end %>
               </div>
               <%= image_tag teacher["thumbnail"], class: "img-circle card-staff-img" %>
             </div>

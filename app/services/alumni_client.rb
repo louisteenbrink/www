@@ -2,11 +2,7 @@ class AlumniClient
   include Cache
 
   def initialize
-    if Rails.env.development?
-      @base_url = "localhost:5000/api/v1"
-    else
-      @base_url = "http://alumni.lewagon.org/api/v1"
-    end
+    @base_url = ENV.fetch('ALUMNI_BASE_URL', 'http://alumni.lewagon.org/api/v1')
   end
 
   def stories
