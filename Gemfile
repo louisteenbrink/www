@@ -15,6 +15,7 @@ gem 'meetup_client'
 gem "redis"
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
+gem 'rack-canonical-host'
 gem "uglifier"
 gem "email_validator"
 gem "bootstrap-sass"
