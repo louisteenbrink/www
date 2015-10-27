@@ -197,6 +197,9 @@ fr:
       live_code: Live-code d'élèves devant la classe from scratch !
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), ou workshops techniques (UX, design, code)
+    stack:
+      built_by: 'Site créé par'
+      with_tools: 'Avec ces technos...'
     thanks:
       thanks: Merci
       we_will_contact_html: |

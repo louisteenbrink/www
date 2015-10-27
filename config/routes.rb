@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
+    get "stack", to: "pages#stack", template: "stack", as: :stack
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
     get ":city" => "cities#show", city: /#{Static::CITIES.keys.join("|")}|/, as: :city

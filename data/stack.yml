@@ -1,0 +1,25 @@
+- icon: rails
+  description: Web development that doesn’t hurt
+  name: Rails
+  url:  https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6
+- icon: react
+  description: Javascript library for building user interfaces
+  name: React.js
+  url:  https://facebook.github.io/react/
+- icon: github
+  description: Where people build software
+  name: GitHub
+  url:  http://github.com/lewagon/www
+- icon: heroku
+  description: Build and run applications entirely in the cloud.
+  name: Heroku
+  url:  http://heroku.com
+- icon: travis
+  description: Take care of running your tests and deploying your apps
+  name: Travis
+  url:  https://travis-ci.org/lewagon/www
+- icon: waffle
+  url: https://waffle.io/lewagon/www
+  description: GitHub-powered work tracking for teams and open source.
+  name: Waffle
+

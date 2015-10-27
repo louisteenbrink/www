@@ -25,6 +25,9 @@ class PagesController < ApplicationController
     end
   end
 
+  def stack
+  end
+
   private
 
   def set_client

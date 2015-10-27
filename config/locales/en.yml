@@ -206,6 +206,9 @@ en:
       live_code: "Live-code baby, let's look at some the challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
+    stack:
+      built_by: 'Website built by...'
+      with_tools: 'With these awesome tools...'
     thanks:
       thanks: Thank you
       we_will_contact_html: |
