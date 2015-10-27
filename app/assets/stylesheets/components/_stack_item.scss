@@ -4,6 +4,10 @@
   a {
     &:hover {
       color: black;
+      text-decoration: none;
+      .stack-item-title {
+        opacity: 1
+      }
     }
   }
 
@@ -37,11 +41,11 @@
 }
 
 .stack-item-title {
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: -1px;
   text-align: center;
   padding-top: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  opacity: .7;
 }
 
 .stack-item-photo {
