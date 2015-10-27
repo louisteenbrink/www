@@ -22,7 +22,7 @@
   <div class='flex wrap'>
     <% Static::STACK.each do |stack| %>
       <div class='stack-item-container'>
-        <a href="<%= stack[:url] %>" target='_blank'>
+        <a href="<%= stack[:url] %>" target='_blank' data-toggle="tooltip" data-placement="bottom" title="<%= stack[:description] %>">
           <div class='stack-item'>
             <div class='stack-item-icon'>
               <%= image_tag "stack/#{stack[:icon]}.svg" %>
