@@ -1,0 +1,39 @@
+<div class='stack-items-wrapper'>
+  <div class='container'>
+    <h2 class='text-center'>Website build by...</h2>
+  <div class='flex wrap'>
+    <% Static::HEROES.each do |hero| %>
+      <div class='stack-item-container stack-hero-container'>
+        <%= link_to hero[:url], target: '_blank' do %>
+          <div class='stack-item'>
+            <div class='stack-item-icon stack-item-photo'>
+              <%= image_tag "hero/#{hero[:icon]}.jpg" %>
+            </div>
+            <div class='stack-item-title'>
+              @<%= hero[:name] %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <h2 class='text-center'>With awesome tools like...</h2>
+  <div class='flex wrap'>
+    <% Static::STACK.each do |stack| %>
+      <div class='stack-item-container'>
+        <a href="<%= stack[:url] %>" target='_blank'>
+          <div class='stack-item'>
+            <div class='stack-item-icon'>
+              <%= image_tag "stack/#{stack[:icon]}.svg" %>
+            </div>
+            <div class='stack-item-title'>
+              <%= stack[:name] %>
+            </div>
+          </div>
+        </a>
+      </div>
+    <% end %>
+  </div>
+  </div>
+</div>

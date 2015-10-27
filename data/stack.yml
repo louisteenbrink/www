@@ -1,0 +1,19 @@
+- icon: rails
+  name: Rails
+  url:  https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6
+- icon: react
+  name: React.js
+  url:  https://facebook.github.io/react/
+- icon: github
+  name: GitHub
+  url:  http://github.com/lewagon/www
+- icon: heroku
+  name: Heroku
+  url:  http://heroku.com
+- icon: travis
+  name: Travis
+  url:  https://travis-ci.org/lewagon/www
+- icon: waffle
+  url: https://waffle.io/lewagon/www
+  name: Waffle
+
