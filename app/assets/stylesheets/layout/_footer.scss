@@ -126,3 +126,8 @@
   transform: skew(74deg);
 }
 
+.footer-section-links {
+  &>div {
+    padding: 2px 0;
+  }
+}

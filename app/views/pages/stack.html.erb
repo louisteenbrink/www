@@ -1,6 +1,6 @@
 <div class='stack-items-wrapper'>
   <div class='container'>
-    <h2 class='text-center'>Website build by...</h2>
+    <h2 class='text-center'><%= t '.built_by' %></h2>
   <div class='flex wrap'>
     <% Static::HEROES.each do |hero| %>
       <div class='stack-item-container stack-hero-container'>
@@ -18,7 +18,7 @@
     <% end %>
   </div>
 
-  <h2 class='text-center'>With awesome tools like...</h2>
+  <h2 class='text-center'><%= t '.with_tools' %></h2>
   <div class='flex wrap'>
     <% Static::STACK.each do |stack| %>
       <div class='stack-item-container'>
