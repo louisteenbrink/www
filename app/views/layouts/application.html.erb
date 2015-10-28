@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>">
 <head>
+<% cache [ 'head', request: request.path_info, locale: I18n.locale ] do %>
   <title><%= yield(:title) || "Wagon Rails" %></title>
   <meta name="description" content="<%= (yield(:description) || "").squish %>">
 
@@ -28,6 +29,7 @@
   <meta name="twitter:image:src" content="<%= image_url_with_fallback(yield :image_url) %>">
 
   <meta name="google-site-verification" content="LnPNLeO2JXVUcf-vJ-TpkNB3ngOGzFHjzj0WfDu82bc" />
+<% end %>
 </head>
 <body>
   <%= render "shared/flashes" %>

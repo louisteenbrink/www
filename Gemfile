@@ -8,6 +8,7 @@ gem "simple_form"
 gem "rest-client"
 gem 'meetup_client'
 gem "redis"
+gem 'redis-rails'
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
 gem 'rack-canonical-host'
@@ -49,6 +50,8 @@ group :development, :test do
   gem "letter_opener"
   gem "rspec-rails"
   gem "capybara"
+  gem 'rack-mini-profiler'
+  gem 'flamegraph'
 end
 
 group :production do

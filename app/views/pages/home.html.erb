@@ -52,16 +52,19 @@
   </div>
 </div>
 
-<%= react_component 'Stories', {
-  stories: @stories,
-  i18n: {
-    title: t(".featured")
-  },
-  locale: locale.to_s
+<% cache [ 'stories', ids: @stories.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
+  <%= react_component 'Stories', {
+    stories: @stories,
+    i18n: {
+      title: t(".featured")
+    },
+    locale: locale.to_s
   }, prerender: true %>
+<% end %>
 
 <%= render partial: "shared/testimonials", locals: {number: 8} %>
 
+<% cache [ 'projects', ids: @projects.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
 <div id="alumni-home">
   <div class="container">
     <h2 class='section-title-home' style="font-size:30px;">
@@ -109,6 +112,7 @@
     </div>
   </div>
 </div>
+<% end %>
 
 
 <div class="wordlwide-overlay">
