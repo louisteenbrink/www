@@ -21,6 +21,7 @@
 </div>
 
 
+<% cache [ 'learning-curve', locale: I18n.locale ] do %>
 <div class='learning-curve-overlay'>
   <div class="container">
     <h2 class='section-title-home'>
@@ -123,6 +124,9 @@
     ]
     }, prerender: true %>
 </div>
+<% end %>
+
+
 <div class="two-columns">
   <div class="container">
     <div class="two-columns-description">
@@ -173,6 +177,7 @@
   </div>
 </div>
 
+<% cache [ 'day-type', locale: I18n.locale ] do %>
 <div class="day-type-overlay">
   <%= react_component 'DayType',
     {
@@ -212,3 +217,4 @@
       ]
     }, prerender: true %>
 </div>
+<% end %>
