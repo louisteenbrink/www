@@ -2,7 +2,7 @@
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>">
 <head>
 <% cache [ 'head', request: request.path_info, locale: I18n.locale ] do %>
-  <title><%= yield(:title) || "Wagon Rails" %></title>
+  <title><%= yield(:title) || "Le Wagon" %></title>
   <meta name="description" content="<%= (yield(:description) || "").squish %>">
 
   <meta charset="utf-8" />
