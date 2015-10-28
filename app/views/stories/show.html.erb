@@ -1,0 +1,15 @@
+<div class="stories-navigation">
+  <% @stories.each do |story| %>
+
+    <div class="story-nav-item">
+      <img src="<%= story["alumni"]["thumbnail"] %>" class="story-user-img">
+      <h2><%= story["alumni"]["first_name"]  %> <%= story["alumni"]["last_name"]  %></h2>
+      <% if story["company"] %>
+        <img src="<%= story["company"]["logo"] %>" class="story-company-logo">
+      <% end %>
+    </div>
+
+  <% end %>
+</div>
+
+
