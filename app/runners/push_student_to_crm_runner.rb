@@ -4,7 +4,7 @@ class PushStudentToCrmRunner
     @apply = apply
   end
 
-  def run(params)
+  def run
     url = "#{ENV['CRM_BASE_URL']}/api/v1/cards"
 
     payload = {
