@@ -29,6 +29,7 @@ class Apply < ActiveRecord::Base
   def push_to_trello
     card = PushToTrelloRunner.new(self).run
     PushStudentToCrmRunner.new(card, self).run if Rails.env.production?
+    SubscribeToNewsletter.new(email).run  if Rails.env.production?
   end
 
   def tracked?
