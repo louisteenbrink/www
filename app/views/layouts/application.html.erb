@@ -12,6 +12,8 @@
   <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 
+  <link type="text/css" media="screen" rel="stylesheet" href="awwwards.css" />
+
   <meta property="og:title" content="<%= yield :title %>" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="<%= "http://#{ENV.fetch('HOST', 'www.lewagon.org')}#{request.path_info}" %>" />
@@ -30,6 +32,9 @@
   <meta name="google-site-verification" content="0pwqGc27XGQuNLvayBXx4avnioxPZIqkHJit-Q2Tkd0" />
 </head>
 <body>
+  <div id="awwwards" class="nominee black left">
+     <a href="http://www.awwwards.com/best-websites/le-wagon/" target="_blank">Awwwards</a>
+   </div>
   <%= render "shared/flashes" %>
   <%= render "shared/navbar" %>
 
