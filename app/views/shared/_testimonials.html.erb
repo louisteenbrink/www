@@ -1,3 +1,4 @@
+<% cache [ 'testimonials', ids: @testimonials.map{ |s| s['id'] }.join("-"), number: number, locale: I18n.locale ] do %>
 <div class="testimonials-wrapper">
   <div class="container">
     <h2 class="section-title-home">
@@ -35,3 +36,4 @@
     </div>
   </div>
 </div>
+<% end %>

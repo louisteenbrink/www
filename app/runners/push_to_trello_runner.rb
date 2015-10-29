@@ -3,9 +3,8 @@ require "trello"
 class PushToTrelloRunner
   include MoneyRails::ActionViewExtension
 
-  def initialize(apply, batch)
+  def initialize(apply)
     @apply = apply
-    @batch = batch
     Trello.configure do |config|
       config.developer_public_key = ENV['TRELLO_API_KEY']
       config.member_token = ENV['TRELLO_API_MEMBER_TOKEN']
@@ -25,7 +24,7 @@ class PushToTrelloRunner
 
 ## Facture
 
-Prix: #{humanized_money_with_symbol @batch.price} TTC
+Prix: #{humanized_money_with_symbol @apply.batch.price} TTC
 
 ## Motivation
 
@@ -52,10 +51,10 @@ EOF
   private
 
   def name
-    Rails.env.production? ? @apply.email : "[#{@batch.id}] #{@apply.email}"
+    Rails.env.production? ? @apply.email : "[#{@apply.batch.id}] #{@apply.email}"
   end
 
   def list_id
-    Rails.env.production? ? @batch.trello_inbox_list_id : '54024112c975d17cd1180489' # Will go to "TEST PROMOS in dev"
+    Rails.env.production? ? @apply.batch.trello_inbox_list_id : '54024112c975d17cd1180489' # Will go to "TEST PROMOS in dev"
   end
 end
