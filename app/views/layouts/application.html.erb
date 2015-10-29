@@ -11,8 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <%= stylesheet_link_tag :application, media: "all" %>
-  <%= csrf_meta_tags %>
-
   <meta property="og:title" content="<%= yield :title %>" />
   <meta property="og:type" content="article" />
   <meta property="og:url" content="<%= "http://#{ENV['HOST']}#{request.path_info}" %>" />
@@ -30,6 +28,7 @@
 
   <meta name="google-site-verification" content="LnPNLeO2JXVUcf-vJ-TpkNB3ngOGzFHjzj0WfDu82bc" />
 <% end %>
+<%= csrf_meta_tags %>
 </head>
 <body>
   <%= render "shared/flashes" %>
