@@ -18,6 +18,7 @@ en:
       menu:
         cities: Cities
         fullstack: Program
+      stories: Testimonials
       apply: Apply Now
     testimonials:
       what_our_students_say: What our students say
@@ -262,3 +263,6 @@ en:
       language_fr: 'French'
       language_en: 'English'
       price: 'Price'
+  stories:
+    show:
+      other_testimonials: Other Testimonials

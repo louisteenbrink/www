@@ -18,6 +18,7 @@ fr:
       menu:
         cities: Villes
         fullstack: Programme
+      stories: Témoignages
       apply: Postuler
     testimonials:
       what_our_students_say: Ce que disent nos élèves
@@ -251,3 +252,6 @@ fr:
       language_fr: 'Français'
       language_en: 'Anglais'
       price: 'Prix'
+  stories:
+    show:
+      other_testimonials: Autres Témoignages
