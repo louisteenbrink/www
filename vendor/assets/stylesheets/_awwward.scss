@@ -2,12 +2,16 @@
 
 #awwwards{
   position: absolute;
-  top: 40px;
+  top: 200px;
   width: 90px;
   height: 135px;
   text-indent: -666em;
   overflow: hidden;
   z-index: 999;
+
+  @media (max-width: $screen-xs) {
+    display: none;
+  }
 
   -webkit-transition: all 1s ease;
     transition: all 1s ease;
@@ -88,5 +92,4 @@
   #awwwards.nominee.green.right a{
     background-image: asset-url('ribbons/awwwards_nominee_green_right@2x.png');
   }
-
 }
