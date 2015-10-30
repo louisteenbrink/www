@@ -13,7 +13,7 @@
       <% end %>
     </div>
     <div class="story-summary">
-      <%= @story['summary'][locale.to_s] %>
+      <%= markdown @story['summary'][locale.to_s] %>
     </div>
     <div class="story-description">
       <%= markdown @story['description'][locale.to_s] %>
@@ -35,14 +35,14 @@
             <%= story["title"][locale.to_s]  %>
           </div>
           <div class="story-card-summary">
-            <%= story['summary'][locale.to_s] %>
+            <%= markdown story['summary'][locale.to_s] %>
           </div>
           <div class='story-card-footer'>
             <%= render 'user_infos', story: story %>
           </div>
         </main>
         <aside>
-          <div class="background perpetua" style="background-image: url('<%= story["picture"]%>')">
+          <div class="background perpetua" id="<%= story["alumni"]["github_nickname"] %>" style="background-image: url('<%= story["picture"]%>')">
           </div>
         </aside>
         <%= link_to "", story_path(user_name: story["alumni"]["github_nickname"]), class: "story-card-link" %>
