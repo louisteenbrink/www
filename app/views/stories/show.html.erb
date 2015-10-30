@@ -27,7 +27,7 @@
   <div class="story-container popular-stories">
     <%= t(".other_testimonials") %>
   </div>
-  <% @stories.each do |story| %>
+  <% @stories.reject{|story| story == @story}.each do |story| %>
     <div class="story-container">
       <div class="story-card">
         <main>
