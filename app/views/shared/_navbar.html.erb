@@ -103,3 +103,17 @@
       </div>
   </div>
 </nav>
+<div class="header-fixed">
+  <div class="container">
+    <div class="header-inner">
+      <div class='header-fixed-logo'>
+        <a class='wagon-link' href="/">
+          <%= render "shared/logos/logo_red_square" %>
+        </a>
+      </div>
+      <div class="header-inner-cta">
+        <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
+      </div>
+    </div>
+  </div>
+</div>
