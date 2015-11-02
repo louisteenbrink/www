@@ -12,7 +12,7 @@ class StoriesItem extends React.Component {
       'is-active': (this.props.index + 1) == this.props.activeItem
     })
 
-    var description = this.props.description[this.props.locale]
+    var description = this.props.title[this.props.locale]
 
     if (this.props.company) {
       var logo = <img className='pull-right story-item-batch' src={this.props.company.logo} />;
