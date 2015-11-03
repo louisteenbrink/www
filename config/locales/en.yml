@@ -14,6 +14,11 @@ en:
       title: "Get our videos and tutorials in your inbox"
       retry: "Retry"
       error: "Looks like your email is not valid..."
+    navbar_dropdown:
+      menu:
+        cities: Cities
+        fullstack: Program
+      apply: Apply Now
     navbar:
       menu:
         cities: Cities
