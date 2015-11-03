@@ -7,10 +7,14 @@
 // })
 
 $(document).ready(() => {
-  handleNavbar()
-  $(window).scroll(() => {
+  if ($('.header-fixed:visible').length) {
     handleNavbar()
-  })
+    $(window).scroll(() => {
+      handleNavbar()
+    })
+  } else {
+    console.log('yo')
+  }
 })
 
 function handleNavbar() {
