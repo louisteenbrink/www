@@ -208,7 +208,7 @@ en:
       theoretical_intro: "Grab a coffee and attend the morning course given by the lead teacher with lots of live-code demos."
       pair_programming: "Work on challenges with your buddy of the day on our auto-correcting platform with the help of our teaching staff."
       yoga: "Yoga time with Claire, to relax and get some head space."
-      live_code: "Live-code baby, let's look at some the challenges of the day and correct them from scratch altogether on the giant screen"
+      live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
     stack:
