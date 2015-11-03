@@ -192,3 +192,14 @@ a.link-big {
 
   &:hover { border-bottom: 1px solid black; }
 }
+
+.left {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.right {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}

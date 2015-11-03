@@ -12,15 +12,15 @@ $(document).ready(() => {
     $(window).scroll(() => {
       handleNavbar()
     })
-  } else {
-    console.log('yo')
   }
 })
 
 function handleNavbar() {
   if($(window).scrollTop() > $('.navbar-wagon').outerHeight()) {
-    $('.header-fixed').addClass('is-active')
+    $('.header-fixed').addClass('is-active');
+    $('.navbar-wagon-side .dropdown').removeClass('open')
   } else {
-    $('.header-fixed').removeClass('is-active')
+    $('.header-fixed').removeClass('is-active');
+    $('.full-item').removeClass('open');
   }
 }

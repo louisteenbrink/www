@@ -1,19 +1,19 @@
-<div class="dropdown">
+<div class="<%= full_item ? ' dropdown full-item' : 'dropdown' %>">
   <a class='navbar-wagon-link-menu-wrapper' type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <div class='navbar-wagon-link-menu'></div>
   </a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li class='main hidden-md hidden-lg hidden-sm'>
+    <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>">
       <%= link_to t(".menu.fullstack"), send(:"program_#{locale}_path") %>
     </li>
     <li class='main hidden-md hidden-lg hidden-sm'>
       <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), locale: locale %>
     </li>
-    <li class='main hidden-md hidden-lg hidden-sm'>
+    <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>">
       <%= link_to t(".menu.cities"),"#" %>
     </li>
     <% Static::CITIES.each do |slug, infos| %>
-      <li class='hidden-md hidden-lg hidden-sm'>
+      <li class="<%= full_item ? '' : 'hidden-md hidden-lg hidden-sm' %>">
         <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
       </li>
     <% end %>
