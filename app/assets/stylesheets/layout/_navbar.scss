@@ -321,6 +321,15 @@
   transition: transform .2s ease, opacity .5s ease;
   opacity: 0;
 
+  &-logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 3px;
+    margin: auto;
+    width: 40px;
+  }
+
   &.is-active {
     opacity: 1;
     transform: translateY(0%);

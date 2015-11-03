@@ -19,6 +19,11 @@ fr:
         cities: Villes
         fullstack: Programme
       apply: Postuler
+    navbar_dropdown:
+      menu:
+        cities: Villes
+        fullstack: Programme
+      apply: Postuler
     testimonials:
       what_our_students_say: Ce que disent nos élèves
     features:
