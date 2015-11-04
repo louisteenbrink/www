@@ -14,6 +14,7 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  config.cache_store = :redis_store, "#{ENV['REDISCLOUD_URL']}/0/cache", { expires_in: 1.week }
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
@@ -65,7 +66,7 @@ Rails.application.configure do
   if ENV['CDN_ENABLED'] == 'true'
     config.action_controller.asset_host = ENV['CDN_URL']
     config.static_cache_control = "public, max-age=31536000"
-    config.font_assets.origin = ENV['HOST']
+    config.font_assets.origin = "http://#{ENV['HOST']}"
   else
     config.action_controller.asset_host = ENV["HOST"]
   end

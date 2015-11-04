@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>">
 <head>
-  <title><%= yield(:title) || "Wagon Rails" %></title>
+<% cache [ 'head', request: request.path_info, locale: I18n.locale ] do %>
+  <title><%= yield(:title) || "Le Wagon" %></title>
   <meta name="description" content="<%= (yield(:description) || "").squish %>">
 
   <meta charset="utf-8" />
@@ -9,12 +10,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <%= stylesheet_link_tag :application, media: "all" %>
-  <%= csrf_meta_tags %>
-
   <meta property="og:title" content="<%= yield :title %>" />
   <meta property="og:type" content="article" />
-  <meta property="og:url" content="<%= "http://#{ENV.fetch('HOST', 'www.lewagon.org')}#{request.path_info}" %>" />
+  <meta property="og:url" content="<%= "http://#{ENV['HOST']}#{request.path_info}" %>" />
   <meta property="og:image" content="<%= image_url_with_fallback(yield :image_url) %>" />
   <meta property="og:description" content="<%= yield :description %>" />
   <meta property="og:site_name" content="Le Wagon" />
@@ -27,9 +25,15 @@
   <meta name="twitter:creator" content="@Lewagonparis">
   <meta name="twitter:image:src" content="<%= image_url_with_fallback(yield :image_url) %>">
 
-  <meta name="google-site-verification" content="0pwqGc27XGQuNLvayBXx4avnioxPZIqkHJit-Q2Tkd0" />
+  <meta name="google-site-verification" content="LnPNLeO2JXVUcf-vJ-TpkNB3ngOGzFHjzj0WfDu82bc" />
+<% end %>
+<%= stylesheet_link_tag :application, media: "all" %>
+<%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="awwwards" class="nominee black left">
+     <a href="http://www.awwwards.com/best-websites/le-wagon/" target="_blank">Awwwards</a>
+   </div>
   <%= render "shared/flashes" %>
   <%= render "shared/navbar" %>
 

@@ -2,7 +2,7 @@ class Csrf {
   static getInput(token) {
     var csrfToken = this.getCsrfToken() || token;
     var csrfParam = this.getCsrfParam() || 'authenticity_token';
-    return `<input name=${csrfParam} value=${csrfToken} type='hidden'>`;
+    return `<input name="${csrfParam}" value="${csrfToken}" type='hidden'>`;
   }
 
   static getCsrfToken() {

@@ -14,6 +14,11 @@ en:
       title: "Get our videos and tutorials in your inbox"
       retry: "Retry"
       error: "Looks like your email is not valid..."
+    navbar_dropdown:
+      menu:
+        cities: Cities
+        fullstack: Program
+      apply: Apply Now
     navbar:
       menu:
         cities: Cities
@@ -62,7 +67,7 @@ en:
         They say French engineers are the best ;)
         We will help you find your dream job, either as a junior dev, product manager
         or growth hacker. Discuss with any of our 350+ alumni to find out more!
-      checkout: Checkout by yourself.
+      checkout: Check it out for yourself.
       see_all: More details.
   newsletter:
     teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
@@ -207,7 +212,7 @@ en:
       theoretical_intro: "Grab a coffee and attend the morning course given by the lead teacher with lots of live-code demos."
       pair_programming: "Work on challenges with your buddy of the day on our auto-correcting platform with the help of our teaching staff."
       yoga: "Yoga time with Claire, to relax and get some head space."
-      live_code: "Live-code baby, let's look at some the challenges of the day and correct them from scratch altogether on the giant screen"
+      live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
     stack:

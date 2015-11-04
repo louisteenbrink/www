@@ -20,6 +20,11 @@ fr:
         fullstack: Programme
       stories: Témoignages
       apply: Postuler
+    navbar_dropdown:
+      menu:
+        cities: Villes
+        fullstack: Programme
+      apply: Postuler
     testimonials:
       what_our_students_say: Ce que disent nos élèves
     features:
@@ -77,7 +82,7 @@ fr:
     home:
       title: "Le Wagon - Coding Bootcamp de Ruby on Rails, HTML, CSS et JavaScript"
       description: |
-        Changez de vie, appenez à coder. En 9 semaines, devenez autonome, donnez enfin vie à vos idées et
+        Changez de vie, apprenez à coder. En 9 semaines, devenez autonome, donnez enfin vie à vos idées et
         rejoignez une startup !
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs

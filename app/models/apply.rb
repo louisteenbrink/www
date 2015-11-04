@@ -27,8 +27,9 @@ class Apply < ActiveRecord::Base
   after_create :push_to_trello, if: :push_to_trello?
 
   def push_to_trello
-    batch = AlumniClient.new.batch(batch_id)
-    PushToTrelloRunner.new(self, batch).run
+    card = PushToTrelloRunner.new(self).run
+    PushStudentToCrmRunner.new(card, self).run if Rails.env.production?
+    SubscribeToNewsletter.new(email).run  if Rails.env.production?
   end
 
   def tracked?
@@ -37,5 +38,9 @@ class Apply < ActiveRecord::Base
 
   def push_to_trello?
     batch_id && !Rails.env.test?
+  end
+
+  def batch
+    @batch ||= AlumniClient.new.batch(batch_id)
   end
 end
