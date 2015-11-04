@@ -53,7 +53,7 @@
 </div>
 
 <%= react_component 'Stories', {
-  stories: @stories,
+  stories: @stories.take(2),
   i18n: {
     title: t(".featured")
   },

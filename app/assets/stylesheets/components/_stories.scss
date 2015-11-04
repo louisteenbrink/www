@@ -7,6 +7,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  height: 100vh;
 
 
   @media (max-width: $screen-md) {
@@ -40,7 +41,7 @@
 .story {
   display: flex;
   padding: 50px 0;
-  max-width: 650px;
+  max-width: 500px;
   padding-top: 100px;
 
   @media (max-width: $screen-sm) {
@@ -49,11 +50,48 @@
 }
 
 .story-list {
+  padding-top: 40px;
   flex: 1;
-
+  height: 100vh;
+  overflow: scroll;
   @media (max-width: $screen-sm) {
     flex: 0 0 100%;
   }
+  .story-card-title {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  .story-card-summary {
+    font-size: 15px;
+  }
+  .story-user-avatar img{
+    width: 45px;
+  }
+  .story-user-batch {
+    font-size: 14px;
+  }
+  .story-user-name {
+    font-weight: 300;
+  }
+  .story-link {
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    color: $blue;
+    i {
+      margin-left: 5px;
+    }
+  }
+}
+.stories-link {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  line-height: 50px;
+  width: 300px;
+  font-size: 16px;
 }
 
 .story-detail {
@@ -64,9 +102,9 @@
   bottom: 0;
   margin-left: 0;
   opacity: 1;
-  transition: .5s ease opacity, .5s transform ease;
+  // transition: .5s ease opacity, .5s transform ease;
   top: 0;
-  transform: scale(1);
+  transform: scale(-1, 1);
   display: none;
 
 
