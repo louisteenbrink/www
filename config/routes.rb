@@ -19,7 +19,7 @@ Rails.application.routes.draw do
     get "alumni" => "students#index", as: :alumni
     get ":city" => "cities#show", city: /#{Static::CITIES.keys.join("|")}|/, as: :city
     resources :projects, only: [:show]
-    get "stories/:user_name" => "stories#show", as: :story
+    get "stories/:github_nickname" => "stories#show", as: :story
     resources :students, only: [:show]
     get "blog", to: 'posts#index'
     get "blog/:slug", to: 'posts#show'
