@@ -28,8 +28,6 @@
         <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
         <hr class='hidden-xs'>
         <%= link_to t(".stories"), story_path(user_name: "olixier", locale: locale), class: " hidden-xs navbar-wagon-link", data: {text: t(".stories")} %>
-        <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
-        <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
         <div class="left">
           <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
         </div>
