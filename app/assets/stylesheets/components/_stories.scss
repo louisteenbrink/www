@@ -7,6 +7,7 @@
   display: flex;
   position: relative;
   align-items: center;
+  height: 100vh;
 
 
   @media (max-width: $screen-md) {
@@ -40,20 +41,61 @@
 .story {
   display: flex;
   padding: 50px 0;
-  max-width: 650px;
-  padding-top: 100px;
-
+  max-width: 500px;
+  padding-top: 200px;
   @media (max-width: $screen-sm) {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: $screen-md) {
+  .story {
+    max-width: 768px;
   }
 }
 
 .story-list {
   flex: 1;
-
+  height: 100vh;
+  overflow: scroll;
   @media (max-width: $screen-sm) {
     flex: 0 0 100%;
   }
+  .story-card-title {
+    font-weight: 600;
+    line-height: 1.1;
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  .story-card-summary {
+    font-size: 15px;
+  }
+  .story-user-avatar img{
+    width: 45px;
+  }
+  .story-user-batch {
+    font-size: 14px;
+  }
+  .story-user-name {
+    font-weight: 300;
+  }
+  .story-link {
+    position: absolute;
+    right: 30px;
+    bottom: 25px;
+    color: $blue;
+    i {
+      margin-left: 5px;
+    }
+  }
+}
+.stories-link {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  line-height: 50px;
+  width: 400px;
+  font-size: 17px;
+  z-index: 10;
 }
 
 .story-detail {
@@ -64,12 +106,9 @@
   bottom: 0;
   margin-left: 0;
   opacity: 1;
-  transition: .5s ease opacity, .5s transform ease;
+  // transition: .5s ease opacity, .5s transform ease;
   top: 0;
-  transform: scale(1);
   display: none;
-
-
   @media (max-width: $screen-sm) {
     margin-left: 0;
   }
@@ -87,6 +126,7 @@
   padding: 40px;
   cursor: pointer;
   border: 1px solid transparent;
+  position: relative;
   @media (max-width: $screen-md) {
     box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.12);
     border: none;
@@ -229,6 +269,224 @@
     }
   }
 }
+.story-item-batch {
+  height: 25px;
+  opacity: 0.9;
+}
+.story-company-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.story-banner {
+  min-height: 500px;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 100px;
+  margin-top: -130px;
+  z-index: 0;
+  .filter {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: flex-end;
+    background-size: cover !important;
+    background-position: center 100px !important;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 20px;
+  }
+
+}
+.story-banner-content {
+  position: relative;
+  z-index: 9999;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+
+  h2 {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.15);
+  }
+}
+.story-container {
+  max-width: 768px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.story-banner-user {
+  display: flex;
+  align-items: center;
+}
+.story-user-avatar img {
+  border-radius: 50%;
+  width: 35px;
+}
+.story-banner-infos {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.story-user-batch {
+  opacity: .7;
+}
+
+.story-body {
+  font-size: 24px;
+  font-weight: 300;
+  margin: 50px auto;
+  line-height: 1.4;
+  @media (max-width: $screen-sm) { padding: 10px }
+}
+
+.story-company {
+  margin-bottom: 50px;
+  img {
+    height: 50px;
+    display: block;
+    margin: auto;
+  }
+}
+
+.stories-container {
+  background: #F4F4F4;
+  padding-top: 50px;
+}
+
+.story-card {
+  display: flex;
+  background: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  position: relative;
+  margin-top: 20px;
+
+  &:hover {
+    cursor: pointer;
+    .background  {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: $screen-sm) { flex-flow: column }
+
+  .story-banner-user {
+    padding-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    border-top: 1px solid #EAEAEA;
+  }
+  main {
+    flex: 1;
+    @media (max-width: $screen-sm) { order: 2 }
+    padding: 30px;
+  }
+  aside {
+    @media (max-width: $screen-sm) { order: 1 }
+    position: relative;
+    flex: 0 0 240px;
+    overflow: hidden;
+    .background {
+      transition: all ease 0.3s;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background-size: cover;
+      background-position: 75% 100%;
+      background-color: rgba(144, 64, 64, 0.34);
+    }
+  }
+}
+
+.story-card-title {
+  font-size: 27px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -2px;
+}
+
+.story-card-summary {
+  font-size: 16px;
+  padding-top: 20px;
+  font-weight: 100;
+  opacity: .7;
+}
+
+.popular-stories {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #E1E1E1;
+  padding: 0;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.story-card-link {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 
 
+.story-summary {
+  font-size: 22px;
+}
 
+.story-description {
+  margin-top: 50px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 100;
+  color: #333333;
+
+  img {
+    width: 100%;
+  }
+  a {
+    color: $blue !important;
+    &:hover {
+      color: $blue !important;
+    }
+  }
+  h1, h2, h3 {
+    font-size: 23px;
+    font-weight: normal;
+    margin: 50px 0 30px 0;
+    color: black;
+  }
+
+  h3.last {
+    font-weight: 700 !important;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+  p:last-child {
+    margin-top: -22px;
+    font-size: 17px;
+    font-weight: 100;
+    color: #9E9E9E;
+  }
+
+  blockquote {
+    font-size: 17px;
+    p {
+      margin: 10px !important;
+    }
+  }
+}

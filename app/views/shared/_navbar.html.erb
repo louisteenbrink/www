@@ -27,11 +27,7 @@
         <hr class='fake-hr hidden-xs'>
         <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
         <hr class='hidden-xs'>
-        <a href="https://ondemand.lewagon.org/" class='navbar-wagon-link hidden-xs ' data-text='ondemand' target='_blank'>
-          On Demand
-        </a>
-        <% link_to t(".menu.tv", default: "TV"), tv_path, class: "navbar-wagon-link  hidden-xs " %>
-        <% link_to t(".menu.blog", default: "Blog"), blog_path, class: "navbar-wagon-link  hidden-xs " %>
+        <%= link_to t(".stories"), story_path(github_nickname: "olixier", locale: locale), class: " hidden-xs navbar-wagon-link", data: {text: t(".stories")} %>
         <div class="left">
           <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
         </div>

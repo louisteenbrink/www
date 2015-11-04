@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   end
 
   def home
-    @stories = @client.stories
+    @stories = @client.stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")
     @cities = @client.cities
     @testimonials = @client.testimonials(locale.to_s)

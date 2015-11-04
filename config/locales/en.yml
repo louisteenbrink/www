@@ -23,6 +23,7 @@ en:
       menu:
         cities: Cities
         fullstack: Program
+      stories: Testimonials
       apply: Apply Now
     testimonials:
       what_our_students_say: What our students say
@@ -104,7 +105,10 @@ en:
       only_ten_days: "...in only 10 days"
       next_batch: "Next batch:"
       events_to_come: Events to come
-      featured: FEATURED STORIES
+      featured: TESTIMONIALS
+      read_next_vowel: "Read ::name::'s story"
+      read_next_consumn: "Read ::name::'s story"
+      read_all: Read all our testimonials
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -267,3 +271,10 @@ en:
       language_fr: 'French'
       language_en: 'English'
       price: 'Price'
+  stories:
+    show:
+      other_testimonials: Other Testimonials
+      continue: Would you like to continue?
+      read_more: Read more testimonials from our bootcamp's students
+      title: "%{story}"
+      description: "%{story}"

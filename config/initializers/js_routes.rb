@@ -5,6 +5,7 @@ JsRoutes.setup do |config|
   #       before restarting your `rails s`.
   config.include = [
     /apply/,
-    /^subscribes$/
+    /^subscribes$/,
+    /^story$/
   ]
 end

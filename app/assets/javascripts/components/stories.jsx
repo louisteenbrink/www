@@ -23,7 +23,6 @@ class Stories extends React.Component {
             <i className="mdi mdi-heart"></i>
           </div>
           <span>{this.props.i18n.title}</span>
-
         </div>
         {this.props.stories.map((story, index) => {
           var backgroundStyle = {
@@ -44,19 +43,21 @@ class Stories extends React.Component {
             </div>
           )
         })}
-        <div className='container'>
+          <div className='container'>
            <div className='story'>
             <div className='story-list'>
               {this.props.stories.map((story, index) => {
                 return <StoriesItem {... story}
                   index={index}
                   key={index}
+                  i18n={this.props.i18n}
                   activeItem={this.state.activeItem}
                   locale={this.props.locale}/>
               })}
             </div>
           </div>
         </div>
+        <a href={Routes.story_path({github_nickname: this.props.stories[0].alumni.github_nickname})} className="btn btn-danger stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
       </div>
     )
   }

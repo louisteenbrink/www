@@ -18,6 +18,7 @@ fr:
       menu:
         cities: Villes
         fullstack: Programme
+      stories: Témoignages
       apply: Postuler
     navbar_dropdown:
       menu:
@@ -104,7 +105,10 @@ fr:
       only_ten_days: "...en 10 jours seulement"
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
-      featured: COUPS DE COEUR
+      featured: TEMOIGNAGE D'ELEVES
+      read_next_vowel: "L'histoire d'::name::"
+      read_next_consumn: "L'histoire de ::name::"
+      read_all: Lire tous les témoignages
     program:
       title: Le Wagon - 2 mois intensifs pour devenir autonome en Ruby on Rails
       description: |
@@ -256,3 +260,10 @@ fr:
       language_fr: 'Français'
       language_en: 'Anglais'
       price: 'Prix'
+  stories:
+    show:
+      other_testimonials: Autres Témoignages
+      continue: Continuer la lecture
+      read_more: Découvrez d'autres témoignages d'élèves du Wagon
+      title: "%{story}"
+      description: "%{story}"

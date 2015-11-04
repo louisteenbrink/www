@@ -5,9 +5,15 @@ class AlumniClient
     @base_url = ENV.fetch('ALUMNI_BASE_URL', 'http://alumni.lewagon.org/api/v1')
   end
 
-  def stories
-    from_cache(:stories) do
-      JSON.parse(RestClient.get("#{@base_url}/stories"))["stories"]
+  def stories(options = {})
+    limit = options.fetch(:limit, 1)
+    excluded_ids = options.fetch(:excluded_ids, [])
+    JSON.parse(RestClient.get("#{@base_url}/stories", { params: { limit: limit, excluded_ids: excluded_ids.join(',') }}))["stories"]
+  end
+
+  def story(github_nickname)
+    from_cache(:stories, github_nickname) do
+      JSON.parse(RestClient.get("#{@base_url}/stories/#{github_nickname}"))
     end
   end
 
