@@ -1,4 +1,10 @@
-<div class="perpetua story-banner banner banner-top banner-gradient text-center" style="background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('<%= @story["picture"]%>');">
+<%= content_for(:title) { t(".title", story: @story["title"][locale.to_s]) } %>
+<%= content_for(:description) { t(".description", story: @story["summary"][locale.to_s]) } %>
+<%= content_for(:image_url) { image_url @story["picture"] } %>
+
+
+<div class="story-banner banner banner-top">
+  <div class="filter" class="perpetua filter" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= @story["picture"]%>');"></div>
   <div class="story-banner-content story-container">
     <h2><%= @story["title"][locale.to_s]  %></h2>
     <%= render 'user_infos', story: @story %>
@@ -13,7 +19,7 @@
       <% end %>
     </div>
     <div class="story-summary">
-      <%= markdown @story['summary'][locale.to_s] %>
+      <%= @story['summary'][locale.to_s] %>
     </div>
     <div class="story-description">
       <%= markdown @story['description'][locale.to_s] %>
@@ -27,7 +33,7 @@
   <div class="story-container popular-stories">
     <%= t(".other_testimonials") %>
   </div>
-  <% @stories.reject{|story| story == @story}.each do |story| %>
+  <% @stories.reject{ |story| story["id"] == @story["id"] }.each do |story| %>
     <div class="story-container">
       <div class="story-card">
         <main>

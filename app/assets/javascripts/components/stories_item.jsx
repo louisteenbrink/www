@@ -48,7 +48,7 @@ class StoriesItem extends React.Component {
                     Batch #{this.props.alumni.slug}, {this.props.alumni.city}
                   </div>
                   <div className="story-link">
-                    <a href="#">
+                    <a href={Routes.story_path({user_name: this.props.alumni.github_nickname})}>
                       Read {this.props.alumni.first_name}'s story
                     </a>
                     <i className="fa fa-arrow-right"></i>

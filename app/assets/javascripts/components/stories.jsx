@@ -56,7 +56,7 @@ class Stories extends React.Component {
             </div>
           </div>
         </div>
-        <a className="btn btn-danger stories-link hidden-xs hidden-sm">Read 10 testimonials</a>
+        <a href={Routes.story_path({user_name: "VincentSim"})} className="btn btn-danger stories-link hidden-xs hidden-sm">Read all our testimonials</a>
       </div>
     )
   }

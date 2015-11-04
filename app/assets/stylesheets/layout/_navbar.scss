@@ -3,6 +3,8 @@
   background: transparent;
   transition: all 0.3s ease;
   padding: 30px 0;
+  z-index: 1;
+  position: relative;
   &-fixed {
     position: absolute;
     z-index: 1;
