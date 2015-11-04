@@ -52,10 +52,14 @@
   </div>
 </div>
 
+
 <%= react_component 'Stories', {
   stories: @stories.take(2),
   i18n: {
-    title: t(".featured")
+    title: t(".featured"),
+    read_next_vowel: t(".read_next_vowel"),
+    read_next_consumn: t(".read_next_consumn"),
+    read_all: t(".read_all")
   },
   locale: locale.to_s
   }, prerender: true %>

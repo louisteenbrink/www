@@ -101,6 +101,9 @@ fr:
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
       featured: TEMOIGNAGE D'ELEVES
+      read_next_vowel: "L'histoire d'::name::"
+      read_next_consumn: "L'histoire de ::name::"
+      read_all: Lire tous les témoignages
     program:
       title: Le Wagon - 2 mois intensifs pour devenir autonome en Ruby on Rails
       description: |

@@ -100,7 +100,10 @@ en:
       only_ten_days: "...in only 10 days"
       next_batch: "Next batch:"
       events_to_come: Events to come
-      featured: STUDENTS TESTIMONIALS
+      featured: TESTIMONIALS
+      read_next_vowel: "Read ::name::'s story"
+      read_next_consumn: "Read ::name::'s story"
+      read_all: Read all our testimonials
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -268,3 +271,5 @@ en:
       other_testimonials: Other Testimonials
       continue: Would you like to continue?
       read_more: Read more testimonials from our bootcamp's students
+      title: "%{story}"
+      description: "%{story}"

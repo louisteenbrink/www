@@ -50,13 +50,14 @@ class Stories extends React.Component {
                 return <StoriesItem {... story}
                   index={index}
                   key={index}
+                  i18n={this.props.i18n}
                   activeItem={this.state.activeItem}
                   locale={this.props.locale}/>
               })}
             </div>
           </div>
         </div>
-        <a href={Routes.story_path({user_name: "VincentSim"})} className="btn btn-danger stories-link hidden-xs hidden-sm">Read all our testimonials</a>
+        <a href={Routes.story_path({user_name: "VincentSim"})} className="btn btn-danger stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
       </div>
     )
   }

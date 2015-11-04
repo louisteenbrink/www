@@ -15,12 +15,14 @@ class StoriesItem extends React.Component {
     var title = this.props.title[this.props.locale];
     var summary = this.props.summary[this.props.locale];
 
-    console.log(title);
-    console.log(summary);
-
     if (this.props.company) {
-      var logo = <img className='pull-right story-item-batch' src={this.props.company.logo} />
-      var link = <a href={this.props.company.url} target="_blank" className="story-company-link"></a>
+      var logo = <img className='pull-right story-item-batch' src={this.props.company.logo} />;
+      var link = <a href={this.props.company.url} target="_blank" className="story-company-link"></a>;
+    }
+    if (this.props.alumni.first_name[0].match(/[aeiouy]/i)){
+      var link = this.props.i18n.read_next_vowel.replace('::name::', this.props.alumni.first_name);
+    } else {
+      var link = this.props.i18n.read_next_consumn.replace('::name::', this.props.alumni.first_name);
     }
 
 
@@ -48,8 +50,8 @@ class StoriesItem extends React.Component {
                     Batch #{this.props.alumni.slug}, {this.props.alumni.city}
                   </div>
                   <div className="story-link">
-                    <a href={Routes.story_path({user_name: this.props.alumni.github_nickname})}>
-                      Read {this.props.alumni.first_name}'s story
+                    <a href={Routes.story_path({user_name: this.props.alumni.github_nickname, locale: this.props.locale})}>
+                      {link}
                     </a>
                     <i className="fa fa-arrow-right"></i>
                   </div>
