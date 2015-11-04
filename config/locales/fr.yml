@@ -263,7 +263,7 @@ fr:
   stories:
     show:
       other_testimonials: Autres Témoignages
-      continue: Continuer la lecture ?
+      continue: Continuer la lecture
       read_more: Découvrez d'autres témoignages d'élèves du Wagon
       title: "%{story}"
       description: "%{story}"
