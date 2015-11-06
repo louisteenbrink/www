@@ -111,7 +111,7 @@
       <% end %>
     </div>
     <div class="text-center" id="more-projects">
-      <%= link_to t(".see_more_projects"), alumni_path(locale: locale), class: 'link-big' %>
+      <%= link_to t(".see_more_projects"), alumni_path, class: 'link-big' %>
     </div>
   </div>
 </div>
@@ -133,7 +133,7 @@
     <div class="card-cities">
       <% @cities.sort_by{ |c| Static::CITIES.keys.index(c["slug"].to_sym) }.each do |city| %>
         <div class="card-city-container">
-          <%= link_to city_path(city: city["slug"], locale: locale) do %>
+          <%= link_to city_path(city: city["slug"]) do %>
             <div class="card-city">
               <div class="card-city-header" style="background-image: url('<%= city['pictures']['city']['cover']%>')">
               <span class="card-city-filter"></span>

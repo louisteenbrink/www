@@ -7,24 +7,24 @@
       <%= link_to t(".menu.fullstack"), send(:"program_#{locale}_path") %>
     </li>
     <li class='main hidden-md hidden-lg hidden-sm'>
-      <%= link_to t(".alumni", default: "Alumni"), alumni_path(locale: locale), locale: locale %>
+      <%= link_to t(".alumni", default: "Alumni"), alumni_path, locale: locale %>
     </li>
     <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>">
       <%= link_to t(".menu.cities"),"#" %>
     </li>
     <% Static::CITIES.each do |slug, infos| %>
       <li class="<%= full_item ? '' : 'hidden-md hidden-lg hidden-sm' %>">
-        <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
+        <%= link_to infos[:name], city_path(city: slug) %>
       </li>
     <% end %>
     <li>
       <span class='flag-container'>
         <div>
-          <%= link_to url_for(controller: params[:controller], action: params[:action], locale: :fr), style: ("opacity: .3" if locale == :en) do %>
+          <%= link_to locale_current_url_for(:fr), style: ("opacity: .3" if locale == :en) do %>
             <%= render 'shared/french_flag' %>
           <% end %>
           <span class='separator'>/</span>
-          <%= link_to url_for(controller: params[:controller], action: params[:action], locale: :en), style: ("opacity: .3" if locale == :fr) do %>
+          <%= link_to locale_current_url_for(:en), style: ("opacity: .3" if locale == :fr) do %>
             <%= render 'shared/english_flag' %>
           <% end %>
         </div>
@@ -62,7 +62,7 @@
       </a>
     </li>
     <li class='main'>
-      <%= link_to 'FAQ', faq_path(locale: locale) %>
+      <%= link_to 'FAQ', faq_path %>
     </li>
   </ul>
 </div>

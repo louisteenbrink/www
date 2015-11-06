@@ -1,5 +1,6 @@
 # app/controllers/pages_controller.rb
 class PagesController < ApplicationController
+  before_action :switch_to_french_if_needed, only: :home
   before_action :set_client
   after_action :mark_as_tracked, only: :thanks
 
@@ -36,5 +37,12 @@ class PagesController < ApplicationController
 
   def mark_as_tracked
     @apply.update tracked: true if @apply
+  end
+
+  def switch_to_french_if_needed
+    if (env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^fr/ && I18n.locale != :fr && !session[:fr_already_forced]
+      session[:fr_already_forced] = true
+      redirect_to '/fr'
+    end
   end
 end

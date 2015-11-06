@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "apply/(:city)" => "applies#new", locale: :en, city: /#{Static::CITIES.keys.join("|")}|/, as: :apply_en
   get "postuler/(:city)" => "applies#new", locale: :fr, city: /#{Static::CITIES.keys.join("|")}|/, as: :apply_fr
   resource :apply, only: %s(create)
-  scope "(:locale)", locale: /fr|en/ do
+  scope "(:locale)", locale: /fr/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 
   # Redirects
   get 'marseille', to: redirect('aix-marseille')
+  get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
   # API
   resource :cache, only: :destroy

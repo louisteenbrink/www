@@ -49,7 +49,7 @@
         <div class='footer-section-links'>
           <% Static::CITIES.each do |slug, infos| %>
             <div>
-              <%= link_to infos[:name], city_path(city: slug, locale: locale) %>
+              <%= link_to infos[:name], city_path(city: slug) %>
             </div>
           <% end %>
         </div>
@@ -62,7 +62,7 @@
 
         <div class='footer-section-links'>
           <div>
-            <%= link_to 'Stack', stack_path(locale) %>
+            <%= link_to 'Stack', stack_path %>
           </div>
           <div>
             <a href="mailto:contact@lewagon.org">Contact</a>
