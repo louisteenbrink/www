@@ -23,7 +23,7 @@ module ApplicationHelper
   def locale_current_url_for(locale)
     if locale == I18n.default_locale
       begin
-        return url_for(controller: params[:controller], action: params[:action])
+        return url_for(controller: params[:controller], action: params[:action], locale: nil)
       rescue ActionController::UrlGenerationError
       end
     end
