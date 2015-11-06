@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>">
+<html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>" lang="<%= I18n.locale %>">
 <head>
 <% cache [ 'head', request: request.path_info, locale: I18n.locale ] do %>
   <title><%= yield(:title) || "Le Wagon" %></title>
@@ -26,6 +26,12 @@
   <meta name="twitter:image:src" content="<%= image_url_with_fallback(yield :image_url) %>">
 
   <meta name="google-site-verification" content="LnPNLeO2JXVUcf-vJ-TpkNB3ngOGzFHjzj0WfDu82bc" />
+
+  <link rel="alternate" hreflang="fr" href="<%= locale_current_url_for(:fr) %>" />
+  <link rel="alternate" hreflang="en" href="<%= locale_current_url_for(:en) %>" />
+  <% if request.path_info == '/' %>
+    <link rel="alternate" href="<%= url_for('/') %>" hreflang="x-default" />
+  <% end %>
 <% end %>
 <%= stylesheet_link_tag :application, media: "all" %>
 <%= csrf_meta_tags %>

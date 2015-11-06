@@ -10,7 +10,7 @@ RSpec.describe "City page", type: :feature do
     end
 
     it "works in English" do
-      visit '/en/paris'
+      visit '/paris'
 
       expect(page).to have_selector("h1", text: "learn to code")
       expect(page).to have_selector("strong", text: "Paris")

@@ -19,4 +19,14 @@ module ApplicationHelper
   def structure(hash)
     object = JSON.parse(hash.to_json, object_class: OpenStruct)
   end
+
+  def locale_current_url_for(locale)
+    if locale == I18n.default_locale
+      begin
+        return url_for(controller: params[:controller], action: params[:action])
+      rescue ActionController::UrlGenerationError
+      end
+    end
+    url_for(controller: params[:controller], action: params[:action], locale: locale)
+  end
 end

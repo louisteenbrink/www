@@ -15,6 +15,10 @@ class ApplicationController < ActionController::Base
 
   rescue_from ActionController::RoutingError, with: :render_404
 
+  def default_url_options
+    { locale: ((I18n.locale == I18n.default_locale) ? nil : I18n.locale) }
+  end
+
   private
 
   def devise_or_pages_controller?

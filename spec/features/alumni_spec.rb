@@ -7,7 +7,7 @@ RSpec.describe "Alumni", type: :feature do
   end
 
   it "works in English" do
-    visit '/en/alumni'
+    visit '/alumni'
     expect(page).to have_selector("h1", text: "Le Wagon's Alumni")
   end
 end
