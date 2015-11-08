@@ -13,7 +13,11 @@ class BatchSelector extends React.Component {
       var right_item = <div className='last-seats'>FULL</div>;
     }
     else if (batch.last_seats) {
-      var right_item = <div className='last-seats'>last seats!</div>;
+      if (this.props.isActive) {
+        var right_item = <div className='last-seats'>last seats! <i className='fa fa-check'/></div>;
+      } else {
+        var right_item = <div className='last-seats'>last seats!</div>;
+      }
     }
     else if (this.props.isActive) {
       var right_item = <div className='last-seats'><i className='fa fa-check'/></div>;

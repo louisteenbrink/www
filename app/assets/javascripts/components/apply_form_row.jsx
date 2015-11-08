@@ -38,7 +38,7 @@ class ApplyFormRow extends React.Component {
     } else if (this.props.type === 'textarea') {
       return(
         <div className={componentClasses}>
-          <label for={this.name()}>
+          <label htmlFor={this.name()}>
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <textarea

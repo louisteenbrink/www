@@ -20,8 +20,10 @@ class AppliesController < ApplicationController
   private
 
   def prepare_apply_form
-    @cities = client.cities.select{|city| !city['batches'].empty? }.each do |city|
-      city['batches'].sort!{|batch| batch['starts_at'].to_date}.reverse!.each do |batch|
+    @cities = client.cities.select{ |city| !city['batches'].empty? }.each do |city|
+      city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
+
+      city['batches'].each do |batch|
         batch['starts_at'] = I18n.l batch['starts_at'].to_date, format: :apply
         batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
         batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])

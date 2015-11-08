@@ -9,7 +9,7 @@ class CityNavItem extends React.Component {
     })
 
     var miniatureStyle = {
-      backgroundImage: "url('" + this.props.city.pictures.city.thumbnail + "');"
+      backgroundImage: "url(" + this.props.city.pictures.city.thumbnail + ")"
     }
 
     return(

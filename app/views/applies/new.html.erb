@@ -6,6 +6,7 @@
     cities: @cities,
     city: @city,
     token: form_authenticity_token,
+    apply_path: send(:"apply_#{I18n.locale}_path", ':city'),
     i18n: {
       conditions: t(".conditions"),
       title: t(".apply"),
@@ -24,6 +25,6 @@
       apply_row(:phone, :tel, t(".phone"), "+33612345678", "cellphone-iphone"),
       apply_row(:motivation, :textarea, "Motivation (> 140 char.)", t(".motivation"), "content-paste")
     ]
-  }, prerender: true %>
+  }, prerender: prerender? %>
 
 </div>

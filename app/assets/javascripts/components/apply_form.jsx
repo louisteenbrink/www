@@ -37,9 +37,10 @@ class ApplyForm extends React.Component {
         <div className="banner-container">
           <div className="container banner-city-container">
             <div className='banner-city-nav'>
-              {this.props.cities.map((city) => {
+              {this.props.cities.map((city, index) => {
                 return (
                   <CityNavItem
+                    key={index}
                     city={city}
                     setActiveCity={(city) => this.setActiveCity(city)}
                     isActive={this.state.activeCity.slug == city.slug}
@@ -50,7 +51,7 @@ class ApplyForm extends React.Component {
             <div className='apply-form-body'>
               <div className='banner-city-wrapper'>
 
-                {this.props.cities.map((city) => {
+                {this.props.cities.map((city, index) => {
 
                   var bannerClasses = classNames({
                     'banner-city banner banner-top banner-gradient text-center': true,
@@ -58,11 +59,11 @@ class ApplyForm extends React.Component {
                   })
 
                   var bannerCityStyle = {
-                    backgroundImage: "url('" + city.pictures.city.cover  + "');"
+                    backgroundImage: "url(" + city.pictures.city.cover  + ")"
                   };
 
                   return(
-                    <div className={bannerClasses} style={bannerCityStyle}>
+                    <div key={index} className={bannerClasses} style={bannerCityStyle}>
                       <div className="banner-gradient-shadow"></div>
                       <div className="banner-content">
                         <h1 className='glitch'>
@@ -83,9 +84,10 @@ class ApplyForm extends React.Component {
                     <div className="apply-form-row-item">
                       <div className='post-submissions-select'>
                         <ReactBootstrap.DropdownButton ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
-                          {batches.map((batch) => {
+                          {batches.map((batch, index) => {
                             return(
                               <BatchSelector
+                                key={index}
                                 batch={batch}
                                 isActive={batch.id == this.state.activeBatch.id}
                               />
@@ -99,7 +101,7 @@ class ApplyForm extends React.Component {
                     </div>
                   </div>
                   {this.props.rows.map( (row, index) => {
-                    return <ApplyFormRow {... row} />
+                    return <ApplyFormRow key={index} {... row} />
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
@@ -130,6 +132,7 @@ class ApplyForm extends React.Component {
   setActiveCity(city) {
     if (this.state.activeCity !== city) {
       this.setState({ activeCity: city, activeBatch: this.firstBatch(city) })
+      history.replaceState({}, '', this.props.apply_path.replace(':city', city.slug));
     }
   }
 

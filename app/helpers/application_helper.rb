@@ -29,4 +29,8 @@ module ApplicationHelper
     end
     url_for(controller: params[:controller], action: params[:action], locale: locale)
   end
+
+  def prerender?
+    ENV['PRERENDER'] == 'false' ? false : true
+  end
 end
