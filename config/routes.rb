@@ -31,6 +31,8 @@ Rails.application.routes.draw do
   get 'marseille', to: redirect('aix-marseille')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
+  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
+
   # API
   resource :cache, only: :destroy
 end
