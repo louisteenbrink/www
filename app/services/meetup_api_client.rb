@@ -7,12 +7,14 @@ class MeetupApiClient
   end
 
   def meetup_events
+    return [] if @id.nil?
     $redis.cache("meetups:#{@id}", EXPIRE) do
       @api.events(group_id: @id)["results"].select { |m| m["status"] == "upcoming" }
     end
   end
 
   def meetup
+    return {} if @id.nil?
     $redis.cache("meetup:#{@id}", EXPIRE) do
       @api.groups(group_id: @id)["results"].first
     end
