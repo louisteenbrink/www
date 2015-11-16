@@ -135,7 +135,7 @@
       <% end %>
       <br>
       <% if @meetup[:events].empty? %>
-        <a href="<%= @meetup[:infos][:link] %>" target="_blank" class="btn-transparent">
+        <a href="<%= @meetup[:infos]["link"] %>" target="_blank" class="btn-transparent">
           <%= t ".apprentices", count: @meetup[:infos]['members'] %>
         </a>
       <% else %>
