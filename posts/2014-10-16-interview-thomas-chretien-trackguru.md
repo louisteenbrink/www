@@ -44,7 +44,7 @@ Complètement. Je prêche cette formation partout ! Nous gardons une relation tr
 
 L'aspect qui me semble le plus important à souligner, c’est qu’en plus de t’apprendre à coder, on t’enseigne un véritable *mindset* en plus d'être introduit dans un écosystème de personnalités ultras compétentes en terme de produit, de dev et d’exécution. La formation fullstack te donne des outils pour être hyper productif, les bonnes méthodes de travail et toutes les clefs en main pour devenir dev junior.
 
-À la fin de la formation, j'avais envie de partager tout ce que j'ai appris et de continuer à progresser. Du coup, je suis désormais *teacher assistant* quelques jours par semaine au Wagon. Au plaisir de vous y croiser !
+À la fin de la formation, j'avais envie de partager tout ce que j'ai appris et de continuer à progresser. Du coup, je suis désormais *teaching assistant* quelques jours par semaine au Wagon. Au plaisir de vous y croiser !
 
 ###Infos pratiques
 
