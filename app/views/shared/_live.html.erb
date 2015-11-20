@@ -2,7 +2,9 @@
   <div class="live-demo">
     <div class="container">
       <div class="live-demo-container">
-        <div class="live-demo-text hidden-xs"><%= t ".watch_live_html", count: @live_batch["projects_count"], batch: "Batch ##{@live_batch["slug"]} #{@live_batch["city"]}"%></div>
+        <div class="live-demo-text hidden-xs">
+          <%= t ".watch_live_html", count: @live_batch["projects_count"], batch: @live_batch["slug"], city: @live_batch["city"] %>
+        </div>
         <%= link_to @live_batch["live_url"], class: "btn btn-primary" do %>
           <%= t ".watch_now_html"%>
         <% end %>

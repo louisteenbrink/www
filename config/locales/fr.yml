@@ -4,8 +4,8 @@ fr:
       apply: "%e %B %Y"
   shared:
     live:
-      watch_live_html: "Découvrez les <strong>%{count} projets du %{batch}</strong>"
-      watch_now_html: "Regardez le demo-day <strong>maintenant</strong>"
+      watch_live_html: "Découvrez les <strong>%{count} projets</strong> du <strong>Batch #%{batch}</strong> ! Made in <strong>%{city}</strong> :)"
+      watch_now_html: "<strong>LIVE</strong> - Regarder le Demo Day"
     footer:
       news_and_resources: "News, ressources gratuites & bons plans"
       enter_your_mail: Entrez votre email
