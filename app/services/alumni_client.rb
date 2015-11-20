@@ -23,6 +23,10 @@ class AlumniClient
     end
   end
 
+  def live_batch
+    JSON.parse(RestClient.get("#{@base_url}/batches/live"))["batch"]
+  end
+
   def testimonials(locale)
     from_cache(:testimonials, locale) do
       JSON.parse(RestClient.get("#{@base_url}/testimonials?locale=#{locale}"))
