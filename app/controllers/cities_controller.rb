@@ -1,6 +1,4 @@
 class CitiesController < ApplicationController
-  before_action :set_client
-
   def show
     @city = @client.city(params[:city])
     if I18n.locale == I18n.default_locale &&
@@ -17,11 +15,5 @@ class CitiesController < ApplicationController
       @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
       session[:city] = @city['slug']
     end
-  end
-
-  private
-
-  def set_client
-    @client = AlumniClient.new
   end
 end

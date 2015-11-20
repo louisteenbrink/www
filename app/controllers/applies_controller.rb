@@ -20,7 +20,7 @@ class AppliesController < ApplicationController
   private
 
   def prepare_apply_form
-    @cities = client.cities.select{ |city| !city['batches'].empty? }.each do |city|
+    @cities = @client.cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
 
       city['batches'].each do |batch|
@@ -35,10 +35,6 @@ class AppliesController < ApplicationController
     @city   = @cities.find { |city| city['slug'] == params[:city] } if params[:city]
     @city ||= @cities.find { |city| city['slug'] == session[:city] } if session[:city]
     @city ||= @cities.first
-  end
-
-  def client
-    @client ||= AlumniClient.new
   end
 
   def application_params

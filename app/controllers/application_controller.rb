@@ -3,6 +3,8 @@ require "static"
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   before_action :set_locale
+  before_action :set_client
+  before_action :fetch_live
 
   before_action :load_static, if: -> { Rails.env.development? }
 
@@ -44,5 +46,13 @@ class ApplicationController < ActionController::Base
 
   def render_404
     render 'pages/404', status: :not_found
+  end
+
+  def set_client
+    @client ||= AlumniClient.new
+  end
+
+  def fetch_live
+    @live_batch = @client.live_batch
   end
 end

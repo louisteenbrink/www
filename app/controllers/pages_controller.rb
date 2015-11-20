@@ -1,7 +1,6 @@
 # app/controllers/pages_controller.rb
 class PagesController < ApplicationController
   before_action :switch_to_french_if_needed, only: :home
-  before_action :set_client
   after_action :mark_as_tracked, only: :thanks
 
   def show
@@ -11,7 +10,6 @@ class PagesController < ApplicationController
   def home
     @stories = @client.stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")
-    @live_batch = @client.live_batch
     @cities = @client.cities
     @testimonials = @client.testimonials(locale.to_s)
   end
@@ -31,10 +29,6 @@ class PagesController < ApplicationController
   end
 
   private
-
-  def set_client
-    @client = AlumniClient.new
-  end
 
   def mark_as_tracked
     @apply.update tracked: true if @apply
