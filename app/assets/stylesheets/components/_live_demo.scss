@@ -1,0 +1,22 @@
+.live-demo {
+  padding: 10px;
+  background: #FCF5E1;
+}
+.live-demo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .btn {
+    border-radius: 50px;
+    padding: 10px 40px;
+  }
+}
+
+@media (max-width: $screen-sm) {
+  .live-demo-container {
+    flex: 1;
+    .btn {
+      width: 100%;
+    }
+  }
+}

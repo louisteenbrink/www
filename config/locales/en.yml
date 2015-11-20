@@ -3,6 +3,9 @@ en:
     formats:
       apply: "%B %e, %Y"
   shared:
+    live:
+      watch_live_html: "Discover the <strong>%{count} projects of %{batch}</strong>"
+      watch_now_html: "Watch demo-day <strong>now</strong>"
     footer:
       news_and_resources: "News, events & free resources"
       enter_your_mail: Enter your email
