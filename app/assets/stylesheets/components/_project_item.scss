@@ -143,6 +143,9 @@
   &:nth-last-child(5) { transform: translateX(400%) }
   &:nth-last-child(6) { transform: translateX(500%) }
   &:nth-last-child(7) { transform: translateX(600%) }
+  &:nth-last-child(8) { transform: translateX(700%) }
+  &:nth-last-child(9) { transform: translateX(800%) }
+  &:nth-last-child(10) { transform: translateX(900%) }
 
   img {
     &:hover {
