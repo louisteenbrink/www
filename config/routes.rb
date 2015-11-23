@@ -36,6 +36,9 @@ Rails.application.routes.draw do
 
   # API
   resource :cache, only: :destroy
+
+  # SEO
+  get 'robots', to: 'pages#robots'
 end
 
 # Create helper for static_routes

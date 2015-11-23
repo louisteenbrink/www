@@ -28,6 +28,11 @@ class PagesController < ApplicationController
   def stack
   end
 
+  def robots
+    respond_to :text
+    expires_in 6.hours, public: true
+  end
+
   private
 
   def mark_as_tracked

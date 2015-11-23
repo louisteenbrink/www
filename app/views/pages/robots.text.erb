@@ -1,0 +1,8 @@
+<% if Rails.env.production? %>
+User-Agent: *
+Allow: /
+Sitemap: <%= sitemap_url(format: 'xml.gz') %>
+<% else %>
+User-Agent: *
+Disallow: /
+<% end %>
