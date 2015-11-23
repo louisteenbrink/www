@@ -1,7 +1,7 @@
 <% if Rails.env.production? %>
 User-Agent: *
 Allow: /
-Sitemap: <%= sitemap_url(format: 'xml.gz') %>
+Sitemap: http://www.lewagon.com/sitemap.xml.gz
 <% else %>
 User-Agent: *
 Disallow: /
