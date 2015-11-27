@@ -4,13 +4,13 @@
   </a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>">
-      <%= link_to t(".menu.fullstack"), send(:"program_#{locale}_path") %>
+      <%= link_to t("shared.navbar.menu.program"), send(:"program_#{locale}_path") %>
     </li>
     <li class='main hidden-md hidden-lg hidden-sm'>
-      <%= link_to t(".alumni", default: "Alumni"), alumni_path, locale: locale %>
+      <%= link_to "Alumni", alumni_path, locale: locale %>
     </li>
-    <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>">
-      <%= link_to t(".menu.cities"),"#" %>
+    <li class="main hidden-md hidden-lg hidden-sm">
+      <%= link_to t("shared.navbar.stories"), story_path(github_nickname: "olixier") %>
     </li>
     <% Static::CITIES.each do |slug, infos| %>
       <li class="<%= full_item ? '' : 'hidden-md hidden-lg hidden-sm' %>">
@@ -30,32 +30,6 @@
         </div>
       </span>
     </li>
-    <% if locale == :fr %>
-      <li class='main'>
-        <a href="https://ondemand.lewagon.org/?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>
-         Cours en ligne (On Demand)
-        </a>
-      </li>
-      <li>
-        <a href="https://ondemand.lewagon.org/tracks/codez-votre-premier-site-web/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>  Codez votre premier site web
-       </a>
-      </li>
-      <li>
-        <a href="https://ondemand.lewagon.org/tracks/devenez-developpeur-front-end/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>
-         Devenez Front-end Developer
-       </a>
-      </li>
-      <li>
-       <a href="https://ondemand.lewagon.org/tracks/devenez-data-scientist/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>
-         Devenez Data-Scientist
-       </a>
-      </li>
-      <li>
-        <a href="https://ondemand.lewagon.org/tracks/comprenez-enfin-javascript/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>
-         Comprenez enfin Javascript
-        </a>
-      </li>
-    <% end %>
     <li class='main'>
       <a href="/blog">
         Blog

@@ -300,7 +300,8 @@
       opacity: 1;
     }
   }
-  & > li.main { a { font-weight: bold } }
+  .main a { font-weight: bold !important; }
+  .marged-bottom { margin-bottom: 0.8em; }
 }
 
 
@@ -410,3 +411,7 @@
   }
 }
 
+.online-program-header svg {
+  height: 13px;
+  vertical-align: -1px;
+}

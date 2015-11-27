@@ -20,7 +20,10 @@ fr:
     navbar:
       menu:
         cities: Villes
-        fullstack: Programme
+        program: Programme
+        online: En ligne (Vidéos)
+        on_site: En présentiel
+        fullstack_program: FullStack - 9 semaines intensives
       stories: Témoignages
       apply: Postuler
     navbar_dropdown:
