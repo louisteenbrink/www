@@ -28,4 +28,9 @@ SitemapGenerator::Sitemap.create do
     add "stories/#{github_nickname}"
     add "fr/stories/#{github_nickname}"
   end
+
+  require "blog"
+  Blog.new.all.each do |post|
+    add "blog/#{post.slug}"
+  end
 end

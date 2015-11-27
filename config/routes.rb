@@ -21,9 +21,10 @@ Rails.application.routes.draw do
     resources :projects, only: [:show]
     get "stories/:github_nickname" => "stories#show", as: :story
     resources :students, only: [:show]
-    get "blog", to: 'posts#index'
-    get "blog/:slug", to: 'posts#show'
   end
+
+  get "blog", to: 'posts#index'
+  get "blog/:slug", to: 'posts#show'
 
   resources :subscribes, only: :create
 
@@ -31,6 +32,8 @@ Rails.application.routes.draw do
   get 'marseille', to: redirect('aix-marseille')
   get 'en', to: redirect('/')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
+  get 'en/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
+  get 'fr/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
 
   get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
 
