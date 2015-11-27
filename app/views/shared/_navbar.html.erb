@@ -5,7 +5,7 @@
       <div class="left hidden-sm hidden-xs">
         <div class="navbar-wagon-item has-no-padding">
           <div class="dropdown">
-            <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: {text: t(".menu.cities"), toggle: 'dropdown'} %>
+            <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
             <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
               <% Static::CITIES.each do |slug, infos| %>
                 <li>
@@ -16,7 +16,29 @@
           </div>
         </div>
         <hr class='hidden-xs'>
-        <%= link_to t(".menu.fullstack", default: "Programme"), send(:"program_#{locale}_path"), class: " hidden-xs navbar-wagon-link ", data: {text: t(".menu.fullstack", default: "Programme")} %>
+        <div class="dropdown">
+          <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
+          <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
+            <li class="dropdown-header"><%= t ".menu.on_site" %></li>
+            <li class="main marged-bottom">
+              <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale}_path") %>
+            </li>
+
+            <li class="dropdown-header online-program-header">
+              <%= t ".menu.online" %>
+              <% if I18n.locale != :fr %>
+                <%= render 'shared/french_flag' %>
+              <% end %>
+            </li>
+            <% Static::ONDEMAND_TRACKS.each do |track| %>
+              <li>
+                <a href="https://ondemand.lewagon.org/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>
+                  <%= track[:title] %>
+               </a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
         <hr class='fake-hr hidden-sm hidden-xs'>
       </div>
       </div>
