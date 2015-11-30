@@ -11,6 +11,8 @@ class MeetupApiClient
     $redis.cache("meetups:#{@id}", EXPIRE) do
       @api.events(group_id: @id)["results"].select { |m| m["status"] == "upcoming" }
     end
+  rescue
+    []
   end
 
   def meetup
@@ -18,5 +20,7 @@ class MeetupApiClient
     $redis.cache("meetup:#{@id}", EXPIRE) do
       @api.groups(group_id: @id)["results"].first
     end
+  rescue
+    {}
   end
 end
