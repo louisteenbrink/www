@@ -38,7 +38,7 @@ class StoriesItem extends React.Component {
             <div className="story-card-summary">
               <div dangerouslySetInnerHTML={{__html: summary}} />
             </div>
-            <div className='story-card-footer'>
+            <div className='story-card-footer story-card-footer-home'>
               <div className="story-banner-user">
                 <div className="story-user-avatar">
                   <img src={this.props.alumni.thumbnail} />
@@ -57,6 +57,7 @@ class StoriesItem extends React.Component {
                     <i className="fa fa-arrow-right"></i>
                   </div>
                 </div>
+                <img className="story-company-logo" src={this.props.company.logo} />
               </div>
             </div>
           </main>
@@ -64,6 +65,7 @@ class StoriesItem extends React.Component {
           </a>
         </div>
       </div>
+
 
     )
   }
