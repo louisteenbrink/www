@@ -291,6 +291,9 @@
     background-size: cover !important;
     background-position: center 100px !important;
   }
+  .story-company-logo {
+    display: none;
+  }
 }
 .story-banner-content {
   @media (max-width: $screen-sm) {
