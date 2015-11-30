@@ -15,6 +15,7 @@ class StoriesItem extends React.Component {
     var title = this.props.title[this.props.locale];
     var summary = this.props.summary[this.props.locale];
 
+    var logo = null;
     if (this.props.company) {
       var logo = <img className='pull-right story-item-batch' src={this.props.company.logo} />;
       var link = <a href={this.props.company.url} target="_blank" className="story-company-link"></a>;

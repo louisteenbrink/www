@@ -324,7 +324,14 @@
 .story-banner-user {
   display: flex;
   align-items: center;
+
+  .story-company-logo {
+    width: 100px;
+    flex-shrink: 1;
+    margin-left: auto;
+  }
 }
+
 .story-user-avatar img {
   border-radius: 50%;
   width: 35px;
@@ -347,11 +354,9 @@
 }
 
 .story-company {
-  margin-bottom: 50px;
+  text-align: center;
   img {
-    height: 50px;
-    display: block;
-    margin: auto;
+    height: 200px;
   }
 }
 
@@ -377,8 +382,7 @@
   @media (max-width: $screen-sm) { flex-flow: column }
 
   .story-banner-user {
-    padding-top: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     border-top: 1px solid #EAEAEA;
   }
@@ -386,6 +390,7 @@
     flex: 1;
     @media (max-width: $screen-sm) { order: 2 }
     padding: 30px;
+    padding-bottom: 10px;
   }
   aside {
     @media (max-width: $screen-sm) { order: 1 }
