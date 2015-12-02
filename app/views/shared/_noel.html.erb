@@ -1,0 +1,17 @@
+<% if I18n.locale == :fr %>
+  <div class="live-demo">
+    <div class="container">
+      <div class="live-demo-container">
+        <div class="live-demo-text hidden-xs">
+          <%= link_to "http://noeldelafrenchtech.fr", class: 'no-decoration', target: :blank do %>
+            <%= image_tag "logo_noel_frenchtech.png", height: 32, width: 32 %>
+          <% end %>
+          À la recherche d'une idée cadeau ?
+        </div>
+        <%= link_to "https://ondemand.lewagon.org/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=top_banner_noel_frenchtech", target: :blank, class: "btn btn-primary" do %>
+          Offrir un cours du Wagon
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

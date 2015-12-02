@@ -1,6 +1,10 @@
 .live-demo {
   padding: 10px;
   background: #FCF5E1;
+
+  .no-decoration {
+    text-decoration: none;
+  }
 }
 .live-demo-container {
   display: flex;
