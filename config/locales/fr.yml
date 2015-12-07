@@ -117,20 +117,20 @@ fr:
       read_next_consumn: "L'histoire de ::name::"
       read_all: Lire tous les témoignages
     program:
-      title: Le Wagon - 2 mois intensifs pour devenir autonome en Ruby on Rails
+      title: Formation Développeur Web - Le programme du Wagon
       description: |
         9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web
         utilisées dans les startups.
-      our_program: "Programme FullStack"
+      our_program: "Programme FullStack - Développeur Web"
       program_details_html: |
         2 mois pour <strong>devenir développeur web</strong>.
       apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
       nine_weeks: 9 semaines intensives
       to_build_your_ideas_html: Travaillez dur avec des binômes passionés.<br> Apprenez à coder <strong>99% de vos idées</strong>.
-      why_us: Pourquoi nous ?
+      why_us: Pourquoi Le Wagon ?
       why_us_details_html: |
-        Plus de 15 classes de 25 élèves et un programme qui a évolué à chaque fois.
-        C'est cette expérience qui rend Le Wagon aussi efficace. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans :</strong>
+        Une expérience de 18 sessions depuis 2 ans et un programme qui a évolué à chaque fois.
+        C'est cette attention au détail qui rend Le Wagon aussi efficace. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans :</strong>
         <ul>
           <li>Le set-up parfait d'un développeur</li>
           <li>Les techniques de modélisation d'une architecture logicielle & d'une base de donnée</li>
