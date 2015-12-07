@@ -119,9 +119,8 @@ fr:
     program:
       title: Formation Développeur Web - Le programme du Wagon
       description: |
-        9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web
-        utilisées dans les startups.
-      our_program: "Programme FullStack - Développeur Web"
+        2 mois de Formation Développeur Web avec Le Wagon, la meilleure école de code d'Europe. Changez de vie, apprenez à coder.
+      our_program: "Programme FullStack"
       program_details_html: |
         2 mois pour <strong>devenir développeur web</strong>.
       apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
