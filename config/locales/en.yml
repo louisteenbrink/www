@@ -30,7 +30,8 @@ en:
       what_our_students_say: What our students say
     features:
       pedagogy_matters_html: "Code the startup way."
-      pedagogy_tagline: Use the best technologies and practices.
+      pedagogy_tagline_html: |
+        Learn to write clean code and build web products. <br />Join the most <strong>exciting community of learners in Europe</strong>.
       web_development: Learn web-development
       web_development_details: |
         Learn all about Ruby, SQL, and the Rails application framework.
@@ -67,7 +68,7 @@ en:
         Working as a junior developer for Stripe, Molotov, Compass, 55, Save, etc..
         They say French engineers are the best ;)
         We will help you find your dream job, either as a junior dev, product manager
-        or growth hacker. Discuss with any of our 350+ alumni to find out more!
+        or growth hacker. Discuss with any of our 400+ alumni to find out more!
       checkout: Check it out for yourself.
       see_all: More details.
   newsletter:
@@ -85,9 +86,9 @@ en:
     home:
       title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
       description: |
-        Le Wagon is the best French coding school for entrepreneurs. Checkout for yourself the projects developed by our students. You will be impressed.
+        Le Wagon is Europe's best coding school for entrepreneurs. Checkout for yourself the projects developed by our students.
       catchline_html: "Change your life: <strong>learn to code</strong>"
-      vision: Le Wagon brings technical skills to creative people
+      vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
       view_teaser: See our video
       apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
       discover_us: Discover our program
@@ -115,12 +116,11 @@ en:
       description: |
         9 weeks to learn Ruby on Rails, HTML/CSS, Javascript, and web-development best practices
       our_program: "FullStack program"
-      program_details: |
-        2 months to become a fullstack developer and learn to build web-products from the database to
-        the user interface. For curious and highly motivated people.
+      program_details_html: |
+        2 months to <strong>become web developer</strong>.
       apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
       nine_weeks: 9 intensive weeks
-      to_build_your_ideas: To build 99% of your ideas
+      to_build_your_ideas_html: Work hard with very motivated buddies.<br> You'll be able to <strong>code 99% of your ideas</strong>
       why_us: Why us?
       why_us_details_html: |
         We have taught more than 15 batches of 25 students and our program has evolved each time to reach perfection.
@@ -134,7 +134,7 @@ en:
         </ul>
       community: An exciting community
       community_details_html: |
-        350+ students with various backgrounds (engineers, journalists, architects, designers..)
+        400+ students with various backgrounds (engineers, journalists, architects, designers..)
         are chatting every day on Slack, questioning our teaching staff, sharing tips, resources, code gists, job offers and news from their products.
         <strong>One of the best tech communities in the world.</strong>
         All the students of le Wagon share the same technical background and apply industry best practices.
@@ -234,11 +234,10 @@ en:
     index:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon
       description: |
-        Découvrez les projets des précédentes promotions du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
+        Découvrez les projets des précédentes promotions du Wagon. Plus de 400 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
       our_alumni: "Le Wagon's Alumni"
       our_alumni_details_html: |
-        350+ talented students sharing the same tech skills.
-        The best community you can find.
+        <strong>400+ talented students</strong> sharing the same <strong>skills & passion</strong>.
       apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
       our_students_projects: What our students have built
       only_ten_days: "...in only 10 days"
