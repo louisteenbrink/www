@@ -88,7 +88,7 @@ fr:
     moreposts: Continuez la visite !
   pages:
     home:
-      title: "Le Wagon - Formation Développeur Web de 9 semaines."
+      title: "Le Wagon - Formation Développeur Web - Coding Bootcamp"
       description: |
         Changez de vie, apprenez à coder. Le Wagon est la meilleure formation Développeur Web d'Europe en Ruby on Rails et Javascript.
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
