@@ -14,7 +14,7 @@
   });
 
   function handleNavbar() {
-    if($(window).scrollTop() > $('.navbar-wagon').outerHeight()) {
+    if($(window).scrollTop() > $('.navbar-wagon').outerHeight() + 150) {
       headerFixed.addClass('is-active');
       dropDown.removeClass('open');
     } else {

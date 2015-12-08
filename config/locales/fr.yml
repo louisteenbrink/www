@@ -34,8 +34,10 @@ fr:
     testimonials:
       what_our_students_say: Ce que disent nos élèves
     features:
-      pedagogy_matters_html: "Code the startup way."
-      pedagogy_tagline: "Utilisez les bonnes technologies et les bonnes pratiques."
+      pedagogy_matters_html: |
+        Codez <i>the startup way</i>
+      pedagogy_tagline_html: |
+        Apprenez à coder des produits  avec les bonnes pratiques. <br />Rejoignez une <strong>communauté tech passionnée en Europe</strong>.
       web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
@@ -86,12 +88,11 @@ fr:
     moreposts: Continuez la visite !
   pages:
     home:
-      title: "Le Wagon - Coding Bootcamp de Ruby on Rails, HTML, CSS et JavaScript"
+      title: "Le Wagon - Formation Développeur Web - Coding Bootcamp"
       description: |
-        Changez de vie, apprenez à coder. En 9 semaines, devenez autonome, donnez enfin vie à vos idées et
-        rejoignez une startup !
+        Changez de vie, apprenez à coder. Le Wagon est la meilleure formation Développeur Web d'Europe en Ruby on Rails et Javascript.
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
-      vision: Le Wagon apporte un savoir-faire technique aux esprits créatifs
+      vision_html: Le Wagon apporte un <strong>savoir-faire technique</strong> aux <strong>esprits créatifs</strong>.
       view_teaser: voir la vidéo
       apply_for_nine_weeks_html: Postulez <span>pour 9 semaines de formation</span>
       discover_us: Découvrez notre programme
@@ -118,16 +119,13 @@ fr:
     program:
       title: Formation Développeur Web - Le programme du Wagon
       description: |
-        Le Wagon propose la meilleure formation au développement web en 9 semaines. Changez de vie, apprenez à voder.
-      our_program: "Programme FullStack - Développeur Web"
-      program_details: |
-        2 mois pour devenir développeur web full-stack et maîtriser toutes
-        les technologies d'un produit web, de la base de données
-        à l'interface client. Réservé aux esprits curieux,
-        enthousiastes et combatifs.
+        2 mois de Formation Développeur Web avec Le Wagon, la meilleure école de code d'Europe. Changez de vie, apprenez à coder.
+      our_program: "Programme FullStack"
+      program_details_html: |
+        2 mois pour <strong>devenir développeur web</strong>.
       apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
-      to_build_your_ideas: Pour réaliser 99% de vos idées
       nine_weeks: 9 semaines intensives
+      to_build_your_ideas_html: Travaillez dur avec des binômes passionés.<br> Apprenez à coder <strong>99% de vos idées</strong>.
       why_us: Pourquoi Le Wagon ?
       why_us_details_html: |
         Une expérience de 18 sessions depuis 2 ans et un programme qui a évolué à chaque fois.
@@ -141,7 +139,7 @@ fr:
         </ul>
       community: Une communauté ultra active
       community_details_html: |
-        350+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
+        400+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
         qui communiquent tous les jours sur Slack, posent des questions
         aux professeurs, s'échangent des ressources, des gists de
         code, des offres d'emplois, des nouvelles de leurs produits.
@@ -232,7 +230,7 @@ fr:
         Découvrez les projets des précédents batches du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
       our_alumni: "Les Alumni du Wagon"
       our_alumni_details_html: |
-        350+ élèves talentueux et techniques. Et des projets impressionnants.
+        <strong>400+ élèves</strong> partageant les mêmes <i>skills</i> & la même <strong>passion</strong>.
       apply_for_nine_weeks_html: Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>
       our_students_projects: Les projets codés par nos élèves
       only_ten_days: "...en 10 jours seulement"
