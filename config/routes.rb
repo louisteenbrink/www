@@ -1,3 +1,7 @@
+city_constraint = Proc.new do |req|
+  { city: /#{AlumniClient.new.city_slugs.join("|")}/ }
+end
+
 Rails.application.routes.draw do
 
   # config/static_routes.yml
@@ -7,8 +11,11 @@ Rails.application.routes.draw do
     end
   end
 
-  get "apply/(:city)" => "applies#new", locale: :en, city: /#{Static::CITIES.keys.join("|")}|/, as: :apply_en
-  get "postuler/(:city)" => "applies#new", locale: :fr, city: /#{Static::CITIES.keys.join("|")}|/, as: :apply_fr
+  constraints(city_constraint) do
+    get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
+    get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
+  end
+
   resource :apply, only: %s(create)
   scope "(:locale)", locale: /fr/ do
     root to: "pages#home"
@@ -17,7 +24,9 @@ Rails.application.routes.draw do
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
-    get ":city" => "cities#show", city: /#{Static::CITIES.keys.join("|")}|/, as: :city
+    constraints(city_constraint) do
+      get ":city" => "cities#show", as: :city
+    end
     resources :projects, only: [:show]
     get "stories/:github_nickname" => "stories#show", as: :story
     resources :students, only: [:show]

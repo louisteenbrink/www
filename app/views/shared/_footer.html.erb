@@ -47,9 +47,9 @@
         </h3>
 
         <div class='footer-section-links'>
-          <% Static::CITIES.each do |slug, infos| %>
+          <% @cities.each do |city| %>
             <div>
-              <%= link_to infos[:name], city_path(city: slug) %>
+              <%= link_to city["name"], city_path(city: city["name"]) %>
             </div>
           <% end %>
         </div>
@@ -71,10 +71,10 @@
             <a href="/blog">Blog</a>
           </div>
           <div>
-            <%= link_to "Press", send(:"press_#{locale}_path") %>
+            <%= link_to t(".press"), send(:"press_#{locale}_path") %>
           </div>
           <div>
-            <a href="http://alumni.lewagon.org" target="_blank">Alumni Platform</a>
+            <a href="http://alumni.lewagon.org" target="_blank"><%= t(".alumni_platform") %></a>
           </div>
         </div>
       </div>

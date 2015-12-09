@@ -43,17 +43,22 @@ end
 
 group :development, :test do
   gem "spring"
+  gem "letter_opener"
+  gem "rspec-rails"
+end
+
+group :development do
+  gem "pry-byebug"
+  gem "pry-rails"
+  gem "quiet_assets"
   gem "annotate"
   gem "binding_of_caller"
   gem "better_errors"
-  gem "quiet_assets"
-  gem "pry-byebug"
-  gem "pry-rails"
-  gem "letter_opener"
-  gem "rspec-rails"
-  gem "capybara"
   gem 'rack-mini-profiler'
-  gem 'flamegraph'
+end
+
+group :test do
+  gem "capybara"
 end
 
 group :production do

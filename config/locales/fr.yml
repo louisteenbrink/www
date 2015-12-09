@@ -17,6 +17,8 @@ fr:
       title: "Nos vidéos & tutoriels dans votre inbox"
       retry: "Ré-essayer"
       error: "Votre email n'a pas l'air bon :("
+      press: "Presse"
+      alumni_platform: "Communauté Alumni"
     navbar:
       menu:
         cities: Villes

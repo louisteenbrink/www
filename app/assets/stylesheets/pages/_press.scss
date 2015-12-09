@@ -1,19 +1,27 @@
+#press {
+  background-color: HSLA(0, 0%, 96%, 1);
+}
+
+.press-title {
+  font-size: 30px;
+}
+
 .card-press {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background: white;
   border-radius: 1px;
   box-shadow: 1px 1px 3px #EFEEEE;
   height: 130px;
   margin-bottom: 10px;
-  img {
-    width: 90px;
-    border-radius: 50%;
-  }
 }
 .card-press-logo {
   padding: 10px;
+  flex: 0 0 90px;
+  img {
+    border-radius: 50%;
+    max-width: 100%;
+  }
 }
 .card-press-content {
   padding: 20px 10px;
