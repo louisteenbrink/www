@@ -8,9 +8,10 @@ SitemapGenerator::Sitemap.create do
       add page, priority: 0.8
     end
   end
-  Static::CITIES.keys.each do |slug|
-    add slug, priority: 0.7
-    add "fr/#{slug}", priority: 0.7
+
+  @cities.map { |city| city["slug"] }.each do |slug|
+    add slug
+    add "fr/#{slug}"
   end
 
   add "alumni", priority: 0.8

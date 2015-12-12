@@ -12,9 +12,9 @@
     <li class="main hidden-md hidden-lg hidden-sm">
       <%= link_to t("shared.navbar.stories"), story_path(github_nickname: "olixier") %>
     </li>
-    <% Static::CITIES.each do |slug, infos| %>
+    <% @cities.each do |city| %>
       <li class="<%= full_item ? '' : 'hidden-md hidden-lg hidden-sm' %>">
-        <%= link_to infos[:name], city_path(city: slug) %>
+        <%= link_to city["name"], city_path(city: city["slug"]) %>
       </li>
     <% end %>
     <li>

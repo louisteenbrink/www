@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   before_action :fetch_live
 
   before_action :load_static, if: -> { Rails.env.development? }
+  before_action :load_cities
 
   # before_action :authenticate_user!, unless: :pages_controller?
 
@@ -42,6 +43,10 @@ class ApplicationController < ActionController::Base
 
   def load_static
     Static.load
+  end
+
+  def load_cities
+    @cities = @client.cities
   end
 
   def render_404

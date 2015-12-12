@@ -7,9 +7,9 @@
           <div class="dropdown">
             <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
             <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
-              <% Static::CITIES.each do |slug, infos| %>
+              <% @cities.each do |city| %>
                 <li>
-                  <%= link_to infos[:name], city_path(city: slug) %>
+                  <%= link_to city["name"], city_path(city: city["slug"]) %>
                 </li>
               <% end %>
             </ul>

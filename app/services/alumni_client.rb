@@ -49,6 +49,12 @@ class AlumniClient
     end
   end
 
+  def city_slugs
+    from_cache(:city_slugs) do
+      cities.map { |city| city["slug"] }
+    end
+  end
+
   def city(slug)
     from_cache(:city, slug) do
       JSON.parse(RestClient.get("#{@base_url}/cities/#{slug}"))["city"]

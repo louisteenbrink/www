@@ -17,6 +17,8 @@ en:
       title: "Get our videos and tutorials in your inbox"
       retry: "Retry"
       error: "Looks like your email is not valid..."
+      press: "Press"
+      alumni_platform: "Alumni Community"
     navbar:
       menu:
         cities: Cities

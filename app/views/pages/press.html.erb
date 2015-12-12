@@ -1,25 +1,29 @@
-
-<div id="alumni" class="padded">
+<div class="padded" id="press">
   <div class="container">
-    <h1 class='section-title-home' style="font-size:30px;">
-      <div class='section-title-home-content'>
-        <%= t ".title" %>
-      </div>
-    </h1>
     <div class="row">
+      <div class="col-xs-12">
+        <h1 class='section-title-home press-title'>
+          <div class='section-title-home-content'>
+            <%= t ".title" %>
+          </div>
+        </h1>
+      </div>
       <% Static::PRESS.each_with_index do |article, index| %>
         <div class="col-xs-12 col-sm-6 col-md-4">
           <div class="card-press">
             <div class="card-press-logo">
               <div class="logo">
-                <img src="<%= image_path "press/#{article[:logo]}" %>" alt="<%= article[:name] %>">
+                <%= link_to article[:url], target: :blank do %>
+                  <%= image_tag "press/#{article[:logo]}", alt: article[:name] %>
+                <% end %>
               </div>
             </div>
             <div class="card-press-content">
               <p class="title"><%= article[:name]%></p>
-              <p class="published"><%= article[:date].strftime("%d %b %Y") %> - <strong><%= article[:media] %></strong></p>
+              <p class="published"><%= article[:date].strftime("%d %b %Y") %> -
+                <%= link_to article[:url], target: :blank do %><strong><%= article[:media] %></strong><% end %>
+              </p>
             </div>
-            <a href="<%= article[:url]%>"></a>
           </div>
         </div>
       <% end %>
