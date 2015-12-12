@@ -28,7 +28,6 @@ gem 'autoprefixer-rails'
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
-gem 'font_assets'
 gem 'appsignal'
 gem 'sitemap_generator'
 
