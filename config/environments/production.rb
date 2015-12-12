@@ -64,7 +64,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   if ENV['CDN_ENABLED'] == 'true'
-    config.action_controller.asset_host = "https://dfmkwbngklayj.cloudfront.net"
+    config.action_controller.asset_host = "https://dtniy3l9ykbxz.cloudfront.net"
     config.static_cache_control = "public, max-age=31536000"
     config.font_assets.origin = "https://#{ENV['HOST']}"
   else
