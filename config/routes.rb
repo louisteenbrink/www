@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   resources :subscribes, only: :create
 
   # Redirects
+  get 'premiere', to: redirect('programme')
   get 'marseille', to: redirect('aix-marseille')
   get 'en', to: redirect('/')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
