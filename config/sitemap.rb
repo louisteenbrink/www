@@ -1,4 +1,4 @@
-SitemapGenerator::Sitemap.default_host = 'http://www.lewagon.com'
+SitemapGenerator::Sitemap.default_host = 'https://www.lewagon.com'
 
 SitemapGenerator::Sitemap.create do
   add 'fr', changefreq: 'daily', priority: 0.9
@@ -9,7 +9,7 @@ SitemapGenerator::Sitemap.create do
     end
   end
 
-  @cities.map { |city| city["slug"] }.each do |slug|
+  AlumniClient.new.cities.map { |city| city["slug"] }.each do |slug|
     add slug
     add "fr/#{slug}"
   end
