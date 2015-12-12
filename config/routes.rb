@@ -1,5 +1,5 @@
 city_constraint = Proc.new do |req|
-  { city: /#{AlumniClient.new.city_slugs.join("|")}/ }
+  { city: /#{AlumniClient.new.city_slugs.join("|")}/i }
 end
 
 Rails.application.routes.draw do
