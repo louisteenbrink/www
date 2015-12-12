@@ -49,7 +49,7 @@
         <div class='footer-section-links'>
           <% @cities.each do |city| %>
             <div>
-              <%= link_to city["name"], city_path(city: city["name"]) %>
+              <%= link_to city["name"], city_path(city: city["slug"]) %>
             </div>
           <% end %>
         </div>
