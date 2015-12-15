@@ -178,7 +178,7 @@
 </div>
 
 <% cache [ 'day-type', locale: I18n.locale ] do %>
-<div class="day-type-overlay">
+<div class="day-type-overlay" id="typical-day">
   <%= react_component 'DayType',
     {
       title: t(".typical_day"),
