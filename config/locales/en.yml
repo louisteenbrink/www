@@ -17,6 +17,8 @@ en:
       title: "Get our videos and tutorials in your inbox"
       retry: "Retry"
       error: "Looks like your email is not valid..."
+      press: "Press"
+      alumni_platform: "Alumni Community"
     navbar:
       menu:
         cities: Cities
@@ -117,10 +119,10 @@ en:
         9 weeks to learn Ruby on Rails, HTML/CSS, Javascript, and web-development best practices
       our_program: "FullStack program"
       program_details_html: |
-        2 months to <strong>become web developer</strong>.
+        2 months to <strong>become a web developer</strong>.
       apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
       nine_weeks: 9 intensive weeks
-      to_build_your_ideas_html: Work hard with very motivated buddies.<br> You'll be able to <strong>code 99% of your ideas</strong>
+      to_build_your_ideas_html: Learn <strong>all the web stack</strong>.<br> From the database to the browser.
       why_us: Why us?
       why_us_details_html: |
         We have taught more than 15 batches of 25 students and our program has evolved each time to reach perfection.

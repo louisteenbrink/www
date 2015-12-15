@@ -17,6 +17,8 @@ fr:
       title: "Nos vidéos & tutoriels dans votre inbox"
       retry: "Ré-essayer"
       error: "Votre email n'a pas l'air bon :("
+      press: "Presse"
+      alumni_platform: "Communauté Alumni"
     navbar:
       menu:
         cities: Villes
@@ -125,7 +127,7 @@ fr:
         2 mois pour <strong>devenir développeur web</strong>.
       apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
       nine_weeks: 9 semaines intensives
-      to_build_your_ideas_html: Travaillez dur avec des binômes passionés.<br> Apprenez à coder <strong>99% de vos idées</strong>.
+      to_build_your_ideas_html: Apprenez <strong>toute la <i>stack</i> web</strong>.<br> Depuis la base de données jusqu'au navigateur.
       why_us: Pourquoi Le Wagon ?
       why_us_details_html: |
         Une expérience de 18 sessions depuis 2 ans et un programme qui a évolué à chaque fois.
@@ -227,7 +229,7 @@ fr:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon
       description: |
-        Découvrez les projets des précédents batches du Wagon. Plus de 350 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
+        Découvrez les projets des précédents batches du Wagon. Plus de 400 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
       our_alumni: "Les Alumni du Wagon"
       our_alumni_details_html: |
         <strong>400+ élèves</strong> partageant les mêmes <i>skills</i> & la même <strong>passion</strong>.
@@ -236,9 +238,9 @@ fr:
       only_ten_days: "...en 10 jours seulement"
   cities:
     show:
-      title: "Le Wagon %{city} - Bootcamp de Ruby on Rails, HTML, CSS et JavaScript"
+      title: "Le Wagon %{city} - Formation Développeur Web - Coding Bootcamp"
       description: |
-        Le Wagon débarque à %{city}. Vous voulez apprendre à coder pour donner vie à vos idées ? Prenez 9 semaines de votre vie et changez-la pour toujours !
+        Le Wagon débarque à %{city}. Changez de vie, apprenez à voder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       city_arrival_html: "Rejoignez le programme FullStack du Wagon à <strong>%{city}</strong>"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation

@@ -12,7 +12,7 @@ gem "redis"
 gem 'redis-rails'
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
-gem 'rack-canonical-host'
+gem 'rack-canonical-host', github: "ssaunier/rack-canonical-host", branch: 'protocol-option'
 gem "uglifier"
 gem "email_validator"
 gem "rails-i18n"
@@ -28,7 +28,6 @@ gem 'autoprefixer-rails'
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
-gem 'font_assets'
 gem 'appsignal'
 gem 'sitemap_generator'
 
@@ -43,17 +42,22 @@ end
 
 group :development, :test do
   gem "spring"
+  gem "letter_opener"
+  gem "rspec-rails"
+end
+
+group :development do
+  gem "pry-byebug"
+  gem "pry-rails"
+  gem "quiet_assets"
   gem "annotate"
   gem "binding_of_caller"
   gem "better_errors"
-  gem "quiet_assets"
-  gem "pry-byebug"
-  gem "pry-rails"
-  gem "letter_opener"
-  gem "rspec-rails"
-  gem "capybara"
   gem 'rack-mini-profiler'
-  gem 'flamegraph'
+end
+
+group :test do
+  gem "capybara"
 end
 
 group :production do

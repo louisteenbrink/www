@@ -353,3 +353,19 @@
   flex: 0 0 100%;
   text-align: right;
 }
+
+@media (max-width: $screen-lg) {
+  .post-submissions-select .dropdown-menu {
+    width: 350px;
+  }
+}
+@media (max-width: $screen-sm) {
+  .post-submissions-select .dropdown-menu {
+    width: auto;
+  }
+  .last-seats {
+    display: flex;
+    align-items: center;
+  }
+}
+

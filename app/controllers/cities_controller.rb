@@ -1,5 +1,10 @@
 class CitiesController < ApplicationController
   def show
+    if params[:city].downcase != params[:city]
+      redirect_to city_path(city: params[:city].downcase)
+      return
+    end
+
     @city = @client.city(params[:city])
     if I18n.locale == I18n.default_locale &&
         @city['course_locale'].to_sym != I18n.locale &&
