@@ -18,7 +18,13 @@
     <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
       <%= t(".discover_us", default: "Découvrez notre programme") %>
     <% end %>
-    <%= link_to t(".apply_for_nine_weeks"), send(:"apply_#{locale}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
+    <%# BSSA corner case %>
+
+    <% if @city['slug'] == 'amsterdam' %>
+      <%= link_to "Apply now", "http://bssa.nu/#apply", class: "btn banner-cta-item btn-danger btn-lg" %>
+    <% else %>
+      <%= link_to t(".apply_for_nine_weeks"), send(:"apply_#{locale}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
+    <% end %>
     </div>
   </div>
 </div>
@@ -158,7 +164,9 @@
         <p><%= @city["description"][locale.to_s] %></p>
       <% end %>
       <br>
-      <% if @meetup[:events].empty? %>
+      <% if @meetup[:infos].blank? %>
+        <%# No CTA to show %>
+      <% elsif @meetup[:events].empty? %>
         <a href="<%= @meetup[:infos]["link"] %>" target="_blank" class="btn-transparent">
           <%= t ".apprentices", count: @meetup[:infos]['members'] %>
         </a>
