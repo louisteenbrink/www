@@ -17,9 +17,6 @@ fr:
     answer: "Après avoir postulé sur le site nous vous proposerons un rendez-vous pour discuter de vos attentes et répondre à vos questions. A la suite de cet entretien vous devrez valider la <a class='link' href='http://www.codecademy.com/tracks/ruby?locale_code=en' target='_blank'>track Ruby sur CodeCademy</a>. Ensuite, nous vous enverrons votre contrat, ainsi qu'une facture. Ce n'est qu'au paiement d'un acompte d'un tiers du montant de la formation que votre embarquement est définitif."
   - question: "Est-ce que je dois venir avec mon ordi ?"
     answer: "Oui, tous les élèves doivent avoir un ordinateur portable. Nous utiliserons Mac OS X ou Linux, si vous n'avez que Windows, ne vous inquiétez pas, le premier jour est consacré à installer Linux sur vos machines (en complément de windows)."
-  - question: "Combien coûte la formation ?"
-    answer: >
-      <strong>4500 euros TTC</strong>, payé en trois fois (un tiers en acompte, un tiers en troisième semaine de formation, un tiers en sixième semaine de formation).<br />
 
 en:
   - question: "What's the application process to Le Wagon?"
@@ -46,5 +43,3 @@ en:
     answer: "After applying we'll invite you to an interview to discuss your needs and answer to your questions. After this interview and before any onboarding you'll have to complete the <a class='link' href='http://www.codecademy.com/tracks/ruby?locale_code=en' target='_blank'>Ruby track on CodeCademy</a>"
   - question: "Should I bring my laptop?"
     answer: "Yes, each student must have a laptop. You’ll need Mac OS X or Linux, but if you only have Windows, no worries you’ll learn how to install Linux the first day."
-  - question: "How much does the program cost?"
-    answer: "€4500, including taxes. You'll pay in three installments, one before the bootcamp begins as a deposit, one after 4 weeks, and one after 8 weeks."
