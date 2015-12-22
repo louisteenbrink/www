@@ -303,6 +303,7 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
+  builder
   capybara
   email_validator
   figaro
@@ -347,4 +348,4 @@ DEPENDENCIES
   uglifier
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

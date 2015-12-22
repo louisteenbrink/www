@@ -8,6 +8,10 @@ class PostsController < ApplicationController
     @posts = Blog.new.all
   end
 
+  def rss
+    @posts = Blog.new.all
+  end
+
   def show
     @post = Blog.new.post(params[:slug])
     render_404 if @post.nil?

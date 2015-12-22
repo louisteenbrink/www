@@ -30,6 +30,7 @@ gem 'gibbon'
 gem 'ruby-trello'
 gem 'appsignal'
 gem 'sitemap_generator'
+gem 'builder'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-slick.js'
