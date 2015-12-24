@@ -34,7 +34,7 @@ Rails.application.routes.draw do
   end
 
   get "blog", to: 'posts#index'
-  get "blog/rss", to: 'posts#rss'
+  get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
   get "blog/:slug", to: 'posts#show'
 
   resources :subscribes, only: :create
