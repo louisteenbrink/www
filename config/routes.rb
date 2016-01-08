@@ -54,6 +54,9 @@ Rails.application.routes.draw do
 
   # SEO
   get 'robots', to: 'pages#robots'
+
+  # Old
+  get 'wagon_bar', to: redirect('/fr')
 end
 
 # Create helper for static_routes
