@@ -50,7 +50,10 @@ class ApplicationController < ActionController::Base
   end
 
   def render_404
-    render 'pages/404', status: :not_found
+    respond_to do |format|
+      format.html { render 'pages/404', status: :not_found }
+      format.text { render text: 'Not Found', status: :not_found }
+    end
   end
 
   def set_client
