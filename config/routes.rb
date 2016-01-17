@@ -1,6 +1,6 @@
 city_constraint = Proc.new do |req|
   city = req.params[:city]
-  city.blank? || city.match(/#{AlumniClient.new.city_slugs.join("|")}/i)
+  city.blank? || city.match(/^(#{AlumniClient.new.city_slugs.join("|")})$/i)
 end
 
 Rails.application.routes.draw do
@@ -48,6 +48,7 @@ Rails.application.routes.draw do
   get 'fr/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
 
   get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
+  get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
   # API
   resource :cache, only: :destroy
