@@ -63,7 +63,7 @@
         read_all: t(".read_all")
       },
       locale: locale.to_s
-    }, prerender: true %>
+    }, prerender: prerender? %>
 <% end %>
 
 <%= render partial: "shared/testimonials", locals: {number: 8} %>

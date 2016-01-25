@@ -13,7 +13,9 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
 
-  unless ENV['DISABLE_CACHE'] == 'true'
+  if ENV['DISABLE_CACHE'] == 'true'
+    config.cache_store = :null_store
+  else
     config.cache_store = :redis_store, 'redis://localhost:6379/0/cache', { expires_in: 5.minutes }
   end
 

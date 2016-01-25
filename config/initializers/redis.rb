@@ -1,6 +1,6 @@
 $redis = Redis.new
 
-url = ENV["REDISCLOUD_URL"]
+url = ENV["REDISCLOUD_URL"] || ENV["REDIS_URL"]
 
 if url
   if defined?(Sidekiq)

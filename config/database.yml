@@ -3,6 +3,9 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
+  # host: postgres
+  # username: postgres
+
 
 development:
   <<: *default
@@ -12,3 +15,7 @@ test:
   <<: *default
   database: www_rails_test
   username: <%= ENV['TRAVIS'] == 'true' ? 'postgres' : '' %>
+
+production:
+  <<: *default
+  database: www_rails_production
