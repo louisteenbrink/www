@@ -97,6 +97,7 @@ class ApplyForm extends React.Component {
                         </ReactBootstrap.DropdownButton>
                         <input type='hidden' name='application[batch_id]' value={this.state.activeBatch.id} />
                         <input type='hidden' name='application[city_id]' value={this.state.activeCity.id} />
+                        <input type='hidden' name='locale' value={this.props.locale} />
                       </div>
                     </div>
                   </div>

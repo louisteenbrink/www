@@ -10,7 +10,7 @@ class AppliesController < ApplicationController
     @application = Apply.new(application_params)
     if @application.save
       session[:apply_id] = @application.id
-      redirect_to thanks_path
+      redirect_to send(:"thanks_#{I18n.locale}_path")
     else
       prepare_apply_form
       render :new
