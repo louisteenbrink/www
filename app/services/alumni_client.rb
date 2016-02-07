@@ -29,14 +29,14 @@ class AlumniClient
 
   def testimonials(locale)
     from_cache(:testimonials, locale) do
-      get "#{@base_url}/testimonials?locale=#{locale}"
+      get "#{@base_url}/testimonials" , params: { locale: locale }
     end
   end
 
   def projects(list_name = nil)
     from_cache(:projects, list_name) do
       if list_name
-        get("#{@base_url}/projects?list_name=#{list_name}")["projects"]
+        get("#{@base_url}/projects", params: { list_name: list_name })["projects"]
       else
         get("#{@base_url}/projects")["projects"]
       end
@@ -63,7 +63,7 @@ class AlumniClient
 
   def staff(city_slug)
     from_cache(:staff, city_slug) do
-      get("#{@base_url}/staff?city=#{city_slug}")["staff"]
+      get("#{@base_url}/staff", params: { city: city_slug })["staff"]
     end
   end
 
@@ -81,13 +81,13 @@ class AlumniClient
 
   private
 
-  def get(url, params = {})
+  def get(url, headers = {})
     JSON.parse RestClient::Request.execute({
       method: :get,
       url: url,
       user: 'lewagon',
       password: ENV['ALUMNI_WWW_SHARED_SECRET'],
-      payload: {}
+      headers: headers
     })
   end
 end
