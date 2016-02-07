@@ -11,7 +11,7 @@
           <%= t(".our_alumni") %>
         </h1>
         <p>
-          <%= t(".our_alumni_details_html") %>
+          <%= t(".our_alumni_details_html", count: (@statistics['alumni']['total'] / 10) * 10) %>
         </p>
       </div>
     </div>

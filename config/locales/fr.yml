@@ -130,7 +130,7 @@ fr:
       to_build_your_ideas_html: Apprenez <strong>toute la <i>stack</i> web</strong>.<br> Depuis la base de données jusqu'au navigateur.
       why_us: Pourquoi Le Wagon ?
       why_us_details_html: |
-        Une expérience de 18 sessions depuis 2 ans et un programme qui a évolué à chaque fois.
+        Une expérience de %{batches} sessions depuis 2014 (ça représente plus de %{alumni} élèves !) et un programme qui a évolué à chaque fois.
         C'est cette attention au détail qui rend Le Wagon aussi efficace. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans :</strong>
         <ul>
           <li>Le set-up parfait d'un développeur</li>
@@ -141,7 +141,7 @@ fr:
         </ul>
       community: Une communauté ultra active
       community_details_html: |
-        400+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
+        %{alumni}+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
         qui communiquent tous les jours sur Slack, posent des questions
         aux professeurs, s'échangent des ressources, des gists de
         code, des offres d'emplois, des nouvelles de leurs produits.
@@ -232,7 +232,7 @@ fr:
         Découvrez les projets des précédents batches du Wagon. Plus de 400 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
       our_alumni: "Les Alumni du Wagon"
       our_alumni_details_html: |
-        <strong>400+ élèves</strong> partageant les mêmes <i>skills</i> & la même <strong>passion</strong>.
+        <strong>%{count}+ élèves</strong> partageant les mêmes <i>skills</i> & la même <strong>passion</strong>.
       apply_for_nine_weeks_html: Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>
       our_students_projects: Les projets codés par nos élèves
       only_ten_days: "...en 10 jours seulement"

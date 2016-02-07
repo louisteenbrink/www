@@ -134,7 +134,9 @@
         <%= t(".why_us") %>
       </h2>
       <p class="text-readable text-opac">
-        <%= t(".why_us_details_html") %>
+        <%= t(".why_us_details_html",
+          batches: @statistics['batches']['total'],
+          alumni: (@statistics['alumni']['total'] / 10) * 10) %>
       </p>
     </div>
     <div class='image-container terminal'>
@@ -152,7 +154,7 @@
         <%= t(".community") %>
       </h2>
       <p class="text-readable text-opac">
-        <%= t(".community_details_html") %>
+        <%= t(".community_details_html", alumni: (@statistics['alumni']['total'] / 10) * 10) %>
       </p>
     </div>
     <div class='two-columns-image-container slack'>
