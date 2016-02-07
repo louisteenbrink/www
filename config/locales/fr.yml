@@ -240,7 +240,7 @@ fr:
     show:
       title: "Le Wagon %{city} - Formation Développeur Web - Coding Bootcamp"
       description: |
-        Le Wagon débarque à %{city}. Changez de vie, apprenez à voder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
+        Le Wagon débarque à %{city}. Changez de vie, apprenez à coder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       city_arrival_html: "Rejoignez le programme FullStack du Wagon à <strong>%{city}</strong>"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
