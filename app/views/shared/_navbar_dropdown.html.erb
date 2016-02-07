@@ -31,11 +31,9 @@
       </span>
     </li>
     <li class='main'>
-      <a href="/blog">
-        Blog
-      </a>
+      <%= link_to "Blog", blog_path %>
     </li>
-    <li class='main'>
+    <li class='<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>'>
       <%= link_to 'FAQ', faq_path %>
     </li>
   </ul>

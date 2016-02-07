@@ -1,12 +1,14 @@
+<%= content_for(:title) { "Le Wagon - FAQ" } %>
+
 <div class="container">
   <% Static::FAQS[locale].each do |question_item| %>
   <% question_item = structure question_item %>
   <div class="card-faqs">
     <div class="card-faq-container">
       <div class="card-faq">
-        <div class="card-faq-question">
+        <h3 class="card-faq-question">
           <%= question_item.question %>
-        </div>
+        </h3>
         <div class="card-faq-answer">
           <%= question_item.answer.html_safe %>
         </div>
