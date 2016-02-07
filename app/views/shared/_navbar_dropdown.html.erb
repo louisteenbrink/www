@@ -3,17 +3,17 @@
     <div class='navbar-wagon-link-menu'></div>
   </a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>">
+    <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg' %>">
       <%= link_to t("shared.navbar.menu.program"), send(:"program_#{locale}_path") %>
     </li>
-    <li class='main hidden-md hidden-lg hidden-sm'>
+    <li class='main hidden-md hidden-lg'>
       <%= link_to "Alumni", alumni_path, locale: locale %>
     </li>
-    <li class="main hidden-md hidden-lg hidden-sm">
+    <li class="main hidden-md hidden-lg">
       <%= link_to t("shared.navbar.stories"), story_path(github_nickname: "olixier") %>
     </li>
     <% @cities.each do |city| %>
-      <li class="<%= full_item ? '' : 'hidden-md hidden-lg hidden-sm' %>">
+      <li class="<%= full_item ? '' : 'hidden-md hidden-lg' %>">
         <%= link_to city["name"], city_path(city: city["slug"]) %>
       </li>
     <% end %>
@@ -33,7 +33,7 @@
     <li class='main'>
       <%= link_to "Blog", blog_path %>
     </li>
-    <li class='<%= full_item ? 'main' : 'main hidden-md hidden-lg hidden-sm' %>'>
+    <li class='<%= full_item ? 'main' : 'main hidden-md hidden-lg' %>'>
       <%= link_to 'FAQ', faq_path %>
     </li>
   </ul>
