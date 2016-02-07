@@ -28,8 +28,8 @@
   font-size: 18px;
   font-weight: 200;
 
-  .link {
+  a {
+    @extend .link;
     height: 25px;
-
   }
 }

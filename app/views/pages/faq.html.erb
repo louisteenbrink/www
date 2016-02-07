@@ -10,7 +10,13 @@
           <%= question_item.question %>
         </h3>
         <div class="card-faq-answer">
-          <%= question_item.answer.html_safe %>
+          <% if question_item.answer.is_a? Array %>
+            <% question_item.answer.each do |paragraph| %>
+              <%= markdown paragraph %>
+            <% end %>
+          <% else %>
+            <%= markdown question_item.answer %>
+          <% end %>
         </div>
       </div>
     </div>
