@@ -1,7 +1,7 @@
 .card-faqs {
   display: flex;
   flex-wrap: wrap;
-  max-width: 650px;
+  max-width: 700px;
   margin: auto;
   padding-bottom: 50px;
 }
@@ -11,24 +11,25 @@
 }
 
 .card-faq-question {
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.1;
   font-weight: 900;
-  padding-bottom: 20px;
-  margin-top: 50px;
-  letter-spacing: -2.5px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  letter-spacing: -2px;
 
   @media (max-width: $screen-sm) {
-    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: -1px;
   }
 }
 
 .card-faq-answer {
-  font-size: 22px;
-  font-weight: 100;
+  font-size: 18px;
+  font-weight: 200;
 
-  .link {
+  a {
+    @extend .link;
     height: 25px;
-
   }
 }
