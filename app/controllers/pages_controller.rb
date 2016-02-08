@@ -32,6 +32,10 @@ class PagesController < ApplicationController
     expires_in 6.hours, public: true
   end
 
+  def program
+    @statistics = @client.statistics
+  end
+
   private
 
   def mark_as_tracked
