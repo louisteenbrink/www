@@ -246,7 +246,7 @@ en:
       discover_us: Discover our program
   cities:
     show:
-      title: "Le Wagon - Bootcamp of Ruby on Rails in %{city}"
+      title: "Le Wagon - Ruby on Rails Bootcamp in %{city}"
       description: |
         Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
       catchline_html: "Change your life: <strong>learn to code</strong>"
