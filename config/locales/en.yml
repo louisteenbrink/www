@@ -265,6 +265,8 @@ en:
       first_name: "First name"
       last_name: "Last name"
       phone: "Phone"
+      source: "Referrer"
+      source_placeholder: "Who recommended Le Wagon to you?"
       motivation: "Why Le Wagon? What is your professional project?"
       conditions: "Incl. Tax. Payment in three installments, free of charge."
       apply_btn: "Apply for 9 weeks in "

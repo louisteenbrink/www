@@ -26,6 +26,10 @@ class PushToTrelloRunner
 
 Prix: #{humanized_money_with_symbol @apply.batch.price} TTC
 
+## Referrer
+
+#{@apply.source}
+
 ## Motivation
 
 #{@apply.motivation}

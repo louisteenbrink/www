@@ -257,6 +257,8 @@ fr:
       first_name: "Prénom"
       last_name: "Nom de famille"
       phone: "Téléphone"
+      source: "Recommandé par"
+      source_placeholder: "Qui vous a recommandé Le Wagon ?"
       motivation: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
       conditions: "TTC. Paiement en 3 fois sans frais."
       apply_btn: "Postulez pour 9 semaines à "

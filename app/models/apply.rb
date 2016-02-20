@@ -14,6 +14,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  tracked    :boolean          default(FALSE), not null
+#  source     :string
 #
 
 class Apply < ActiveRecord::Base

@@ -2,7 +2,7 @@ class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
 
   def new
-    @application = Apply.new
+    @application = Apply.new(source: params[:source])
     prepare_apply_form
   end
 
@@ -36,6 +36,6 @@ class AppliesController < ApplicationController
   end
 
   def application_params
-    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :batch_id, :city_id)
+    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id)
   end
 end

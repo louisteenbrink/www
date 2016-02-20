@@ -16,6 +16,7 @@ class PushStudentToCrmRunner
         last_name: @apply.last_name,
         age: @apply.age,
         phone_number: @apply.phone,
+        source: @apply.source,
         motivation: @apply.motivation,
         price_cents: @apply.batch.price.cents,
         price_currency: @apply.batch.price.currency.to_s
