@@ -8,12 +8,12 @@ labels:
   - video
 pushed: true
 thumbnail: thumbnail-workshop-javascript.jpg
-description: Gilles Manzato vous expose les bases de JavaScript avant de vous présenter la librairie jQuery et le principe des requêtes AJAX dans un tutoriel vidéo d'une heure. Des variables au callback, vous apprendrez quelques notions rapidement utilisables pour vos projets personnels du moment.
+description: Sébastien Saunier vous expose les bases de JavaScript avant de vous présenter la librairie jQuery et le principe des requêtes AJAX dans un tutoriel vidéo d'une heure. Des variables au callback, vous apprendrez quelques notions rapidement utilisables pour vos projets personnels du moment.
 ---
 
-<div class="video-wrapper"><iframe width="750" height="422" src="//www.youtube.com/embed/G8OsHFT99os?showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+<div class="video-wrapper"><iframe width="750" height="422" src="//www.youtube.com/embed/cQZOfeKrWDs" frameborder="0" allowfullscreen></iframe></div>
 
-[Gilles Manzato](https://twitter.com/gillesm) vous expose les bases de JavaScript avant de vous présenter la librairie jQuery et le principe des requêtes AJAX dans un tutoriel vidéo d'une heure. Des variables au callback, vous apprendrez quelques notions rapidement utilisables pour vos projets personnels du moment.
+[Sébastien Saunier](https://twitter.com/ssaunier) vous expose les bases de JavaScript avant de vous présenter la librairie jQuery et le principe des requêtes AJAX dans un tutoriel vidéo d'une heure. Des variables au callback, vous apprendrez quelques notions rapidement utilisables pour vos projets personnels du moment.
 
 ### Un peu d'histoire
 
