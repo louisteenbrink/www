@@ -1,9 +1,9 @@
 require "gibbon"
 
 class SubscribeToNewsletter
-  def initialize(email)
-    @gibbon = Gibbon::Request.new(api_key: ENV['MAILCHIMP_API_KEY'])
-    @list_id = ENV['MAILCHIMP_LIST_ID']
+  def initialize(email, options = {})
+    @gibbon = Gibbon::Request.new(api_key: options.fetch(:api_key, ENV['MAILCHIMP_API_KEY']))
+    @list_id = options.fetch(:list_id, ENV['MAILCHIMP_LIST_ID'])
     @email = email
   end
 

@@ -47,7 +47,7 @@ class NewsletterForm extends React.Component {
         </h2>
 
         <form onSubmit={this.onSubmit.bind(this)}>
-          <div dangerouslySetInnerHTML={{__html: Csrf.getInput(this.props.token)}} />
+          <input type='hidden' name='authenticity_token' value={this.props.token} />
           <div className='newsletter-input'>
             <input
               placeholder='you@domain.com'
@@ -65,10 +65,11 @@ class NewsletterForm extends React.Component {
     )
   }
 
-  onSubmit() {
+  onSubmit(e) {
+    e.preventDefault();
     this.setState({ submitting: true });
-    var email = React.findDOMNode(this.refs.email).value;
-    $.post(Routes.subscribes_path(), { email: email }, (data) => {
+    var email = this.refs.email.value;
+    $.post(Routes.subscribes_path(), { email: email, city_id: this.props.city_id }, (data) => {
       if (data.ok) {
         this.setState({ valid: true });
         this.setState({ error: false });
@@ -76,6 +77,5 @@ class NewsletterForm extends React.Component {
         this.setState({ error: true });
       }
     });
-    return false;
   }
 }

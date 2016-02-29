@@ -29,8 +29,16 @@ class Apply < ActiveRecord::Base
 
   def push_to_trello
     card = PushToTrelloRunner.new(self).run
-    PushStudentToCrmRunner.new(card, self).run if Rails.env.production?
-    SubscribeToNewsletter.new(email).run  if Rails.env.production?
+
+    if Rails.env.production?
+      PushStudentToCrmRunner.new(card, self).run
+      SubscribeToNewsletter.new(email).run
+
+      city = AlumniClient.new.city(self.city_id)
+      if city.mailchimp?
+        SubscribeToNewsletter.new(email, list_id: city.mailchimp_list_id, api_key: city.mailchimp_api_key).run
+      end
+    end
   end
 
   def tracked?

@@ -50,7 +50,6 @@ class ApplyForm extends React.Component {
             </div>
             <div className='apply-form-body'>
               <div className='banner-city-wrapper'>
-
                 {this.props.cities.map((city, index) => {
 
                   var bannerClasses = classNames({
@@ -75,13 +74,13 @@ class ApplyForm extends React.Component {
                 })}
               </div>
               <div className='apply-form-rows-container'>
-                <form id="apply" action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
-                  <div dangerouslySetInnerHTML={{__html: Csrf.getInput(this.props.token)}}></div>
-                  <div className="apply-form-row apply-form-row-first" >
+                <form id='apply' action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
+                  <input type='hidden' name='authenticity_token' value={this.props.token} />
+                  <div className='apply-form-row apply-form-row-first'>
                     <label>
                       <i className='mdi mdi-calendar-multiple-check'></i>Dates
                     </label>
-                    <div className="apply-form-row-item">
+                    <div className='apply-form-row-item'>
                       <div className='post-submissions-select'>
                         <ReactBootstrap.DropdownButton ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
                           {batches.map((batch, index) => {

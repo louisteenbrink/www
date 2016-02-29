@@ -55,9 +55,9 @@ class AlumniClient
     end
   end
 
-  def city(slug)
-    from_cache(:city, slug) do
-      get("#{@base_url}/cities/#{slug}")["city"]
+  def city(slug_or_id)
+    from_cache(:city, slug_or_id) do
+      Api::City.new(get("#{@base_url}/cities/#{slug_or_id}")["city"])
     end
   end
 
