@@ -7,4 +7,9 @@ class StoriesController < ApplicationController
 
     @stories = @client.stories(limit: 3, excluded_ids: session[:story_ids])
   end
+  def index
+    @stories = @client.stories(limit: 3)
+    @story = @stories.first
+    render :show
+  end
 end

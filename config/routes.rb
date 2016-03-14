@@ -30,6 +30,7 @@ Rails.application.routes.draw do
     end
     resources :projects, only: [:show]
     get "stories/:github_nickname" => "stories#show", as: :story
+    get "stories" => "stories#index", as: :stories
     resources :students, only: [:show]
   end
 
