@@ -51,7 +51,7 @@ class StoriesItem extends React.Component {
                     Batch #{this.props.alumni.slug}, {this.props.alumni.city}
                   </div>
                   <div className="story-link hidden-xs">
-                    <a href={Routes.story_path({github_nickname: this.props.alumni.github_nickname, locale: this.props.locale})}>
+                    <a href={Routes.story_path({id: this.props.slug, locale: this.props.locale})}>
                       {link}
                     </a>
                     <i className="fa fa-arrow-right"></i>
@@ -61,7 +61,7 @@ class StoriesItem extends React.Component {
               </div>
             </div>
           </main>
-          <a href={Routes.story_path({github_nickname: this.props.alumni.github_nickname, locale: this.props.locale})} className="story-card-cover-link">
+          <a href={Routes.story_path({id: this.props.slug, locale: this.props.locale})} className="story-card-cover-link">
           </a>
         </div>
       </div>

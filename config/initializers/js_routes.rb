@@ -6,6 +6,7 @@ JsRoutes.setup do |config|
   config.include = [
     /apply/,
     /^subscribes$/,
-    /^story$/
+    /^story$/,
+    /^stories$/
   ]
 end

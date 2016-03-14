@@ -12,6 +12,18 @@ Rails.application.routes.draw do
     end
   end
 
+  # Redirects
+  get 'premiere', to: redirect('programme')
+  get 'marseille', to: redirect('aix-marseille')
+  get 'en', to: redirect('/')
+  get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
+  get 'en/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
+  get 'fr/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
+
+  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
+  get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
+
+
   constraints(city_constraint) do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
@@ -29,8 +41,7 @@ Rails.application.routes.draw do
       get ":city" => "cities#show", as: :city
     end
     resources :projects, only: [:show]
-    get "stories/:github_nickname" => "stories#show", as: :story
-    get "stories" => "stories#index", as: :stories
+    resources :stories, only: [:index, :show]
     resources :students, only: [:show]
   end
 
@@ -39,17 +50,6 @@ Rails.application.routes.draw do
   get "blog/:slug", to: 'posts#show'
 
   resources :subscribes, only: :create
-
-  # Redirects
-  get 'premiere', to: redirect('programme')
-  get 'marseille', to: redirect('aix-marseille')
-  get 'en', to: redirect('/')
-  get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
-  get 'en/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
-  get 'fr/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
-
-  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
-  get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
   # API
   resource :cache, only: :destroy

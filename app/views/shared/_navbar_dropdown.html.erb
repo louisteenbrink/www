@@ -10,7 +10,7 @@
       <%= link_to "Alumni", alumni_path, locale: locale %>
     </li>
     <li class="main hidden-md hidden-lg">
-      <%= link_to t("shared.navbar.stories"), story_path(github_nickname: "olixier") %>
+      <%= link_to t("shared.navbar.stories"), stories_path %>
     </li>
     <% @cities.each do |city| %>
       <li class="<%= full_item ? '' : 'hidden-md hidden-lg' %>">

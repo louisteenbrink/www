@@ -51,7 +51,7 @@
           <div class="background perpetua" id="<%= story["alumni"]["github_nickname"] %>" style="background-image: url('<%= story["picture"]%>')">
           </div>
         </aside>
-        <%= link_to "", story_path(github_nickname: story["alumni"]["github_nickname"]), class: "story-card-link" %>
+        <%= link_to "", story_path(id: story["slug"]), class: "story-card-link" %>
       </div>
     </div>
   <% end %>
