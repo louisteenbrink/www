@@ -40,7 +40,7 @@ fr:
         Codez <i>the startup way</i>
       pedagogy_tagline_html: |
         Apprenez à coder des produits  avec les bonnes pratiques. <br />Rejoignez une <strong>communauté tech passionnée en Europe</strong>.
-      web_development: Devenez développeur web
+      web_development: Formation développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
         Apprenez des techniques de design avancées en CSS.
@@ -241,8 +241,8 @@ fr:
       title: "Le Wagon %{city} - Formation Développeur Web - Coding Bootcamp"
       description: |
         Le Wagon débarque à %{city}. Changez de vie, apprenez à coder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
-      catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
-      city_arrival_html: "Rejoignez le programme FullStack du Wagon à <strong>%{city}</strong>"
+      catchline_html: "Formation développeur web <strong>FullStack</strong>"
+      city_arrival_html: "Changez de vie : <strong>apprenez à coder</strong> à <strong>%{city}</strong>"
       apply_for_nine_weeks: Postulez pour 9 semaines de formation
       staff: "L'équipe à %{city}"
       discover_us: "Découvez notre programme"
