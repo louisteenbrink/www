@@ -5,15 +5,21 @@ class AlumniClient
     @base_url = ENV.fetch('ALUMNI_BASE_URL', 'http://alumni.lewagon.org/api/v1')
   end
 
-  def stories(options = {})
-    limit = options.fetch(:limit, 1)
-    excluded_ids = options.fetch(:excluded_ids, [])
-    get("#{@base_url}/stories", { params: { limit: limit, excluded_ids: excluded_ids.join(',') }})["stories"]
+  def stories()
+    from_cache(:stories) do
+      get("#{@base_url}/stories")["stories"]
+    end
   end
 
-  def story(github_nickname)
-    from_cache(:stories, github_nickname) do
-      get "#{@base_url}/stories/#{github_nickname}"
+  def random_stories(options = {})
+    limit = options.fetch(:limit, 1)
+    excluded_ids = options.fetch(:excluded_ids, [])
+    get("#{@base_url}/stories/sample", { params: { limit: limit, excluded_ids: excluded_ids.join(',') }})["stories"]
+  end
+
+  def story(slug)
+    from_cache(:stories, slug) do
+      get "#{@base_url}/stories/#{slug}"
     end
   end
 

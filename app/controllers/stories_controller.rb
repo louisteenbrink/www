@@ -1,15 +1,14 @@
 class StoriesController < ApplicationController
   def show
-    @story = @client.story(params[:github_nickname])
+    @story = @client.story(params[:id])
     session[:story_ids] = [] if session[:story_ids].nil?
     session[:story_ids] << @story['id']
     session[:story_ids].uniq!
 
-    @stories = @client.stories(limit: 3, excluded_ids: session[:story_ids])
+    @stories = @client.random_stories(limit: 3, excluded_ids: session[:story_ids])
   end
+
   def index
-    @stories = @client.stories(limit: 3)
-    @story = @stories.first
-    render :show
+    @stories = @client.stories()
   end
 end

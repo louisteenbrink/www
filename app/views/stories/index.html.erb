@@ -1,0 +1,27 @@
+<div class="stories-container">
+  <div class="story-container popular-stories">
+  Discover our alumni stories
+  </div>
+  <% @stories.each do |story| %>
+    <div class="story-container">
+      <div class="story-card">
+        <main>
+          <div class="story-card-title">
+            <%= story["title"][locale.to_s]  %>
+          </div>
+          <div class="story-card-summary">
+            <%= markdown story['summary'][locale.to_s] %>
+          </div>
+          <div class='story-card-footer'>
+            <%= render 'user_infos', story: story %>
+          </div>
+        </main>
+        <aside>
+          <div class="background perpetua" id="<%= story["alumni"]["github_nickname"] %>" style="background-image: url('<%= story["picture"]%>')">
+          </div>
+        </aside>
+        <%= link_to "", story_path(id: story["slug"]), class: "story-card-link" %>
+      </div>
+    </div>
+  <% end %>
+</div>
