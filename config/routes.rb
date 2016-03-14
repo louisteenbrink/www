@@ -23,6 +23,17 @@ Rails.application.routes.draw do
   get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
   get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
+  {
+    'davidverbustel' => 'david-joins-efounders',
+    'oliviergodement' => 'olivier-joined-stripe-as-user-ops-lead',
+    'amontcoudiol' => 'adrien-and-max-reinvent-tv',
+    'olixier' => 'seeding-one-million-with-kudoz',
+    'aliceclv' => 'alice-joins-save-as-backend-dev'
+  }.each do |github_nickname, new_slug|
+    ['', 'fr/'].each do |locale|
+      get "#{locale}stories/#{github_nickname}", to: redirect("#{locale}stories/#{new_slug}")
+    end
+  end
 
   constraints(city_constraint) do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
