@@ -161,7 +161,7 @@
         </div>
       </div>
       <% if @city["location"]%>
-        <p><%= @city["description"][locale.to_s] %></p>
+        <%= markdown @city["description"][locale.to_s] %>
       <% end %>
       <br>
       <% if @meetup[:infos].blank? %>
