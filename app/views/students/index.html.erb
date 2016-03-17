@@ -25,9 +25,24 @@
 </div>
 
 
-<div id="alumni" class="padded">
+<div id="alumni">
   <div class="container">
-    <h2 class='section-title-home' style="font-size:30px;">
+    <% if I18n.locale == :fr %>
+      <h2 class='section-title-home section-title-home-small'>
+        <div class='section-title-home-content'>
+          Regardez le dernier Démo Day
+          (Paris - 4 mars 2016 - <a href="http://alumni.lewagon.org/batches/18" target="_blank"><u>Batch #18</u></a>)
+        </div>
+      </h2>
+
+      <div class="video-container">
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube.com/embed/79SQFIIR0O8?list=PLkbmdtbypn7R_BN6nFX-XZc7uDyMSxhye" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    <% end %>
+
+    <h2 class='section-title-home section-title-home-small'>
       <div class='section-title-home-content'>
         <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
       </div>
