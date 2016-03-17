@@ -89,11 +89,18 @@
   justify-content: center;
   position: relative;
   display: flex;
-  margin: 40px 0;
-  margin-top: 60px;
+  margin: 3.5em auto 1em auto;
 
   @media (max-width: $screen-md) {
     font-size: 30px;
+  }
+
+  &-small {
+    font-size: 30px;
+
+    @media (max-width: $screen-md) {
+      font-size: 24px;
+    }
   }
 
   @media (max-width: $screen-md) {

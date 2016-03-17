@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   # Redirects
   get 'premiere', to: redirect('programme')
   get 'marseille', to: redirect('aix-marseille')
+  get 'sp', to: redirect('saopaulo')
+  get 'sao-paulo', to: redirect('saopaulo')
   get 'en', to: redirect('/')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
   get 'en/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }

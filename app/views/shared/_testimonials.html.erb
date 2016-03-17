@@ -1,8 +1,8 @@
 <% cache [ 'testimonials', ids: @testimonials.map{ |s| s['id'] }.join("-"), number: number, locale: I18n.locale ] do %>
 <div class="testimonials-wrapper">
   <div class="container">
-    <h2 class="section-title-home">
-      <div class="section-title-home-content" style="font-size:30px;">
+    <h2 class="section-title-home section-title-home-small">
+      <div class="section-title-home-content">
         <%= t(".what_our_students_say") %>
       </div>
     </h2>
