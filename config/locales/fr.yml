@@ -260,8 +260,7 @@ fr:
       source: "Recommandé par"
       source_placeholder: "Qui vous a recommandé Le Wagon ?"
       motivation: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
-      conditions: "TTC. Paiement en 3 fois sans frais."
-      apply_btn: "Postulez pour 9 semaines à "
+      apply_btn: "Postulez à "
       please_wait: "Patientez..."
       course_language: 'Cours en '
       language_fr: 'Français'
