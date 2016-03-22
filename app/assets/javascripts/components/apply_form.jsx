@@ -106,9 +106,9 @@ class ApplyForm extends React.Component {
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
                       <div>
-                        {courseLanguage}.
+                        {courseLanguage}
                       </div>
-                      {this.props.i18n.price}: {this.state.activeBatch.price} {this.props.i18n.conditions}
+                      <strong>{this.props.i18n.price}: {this.state.activeBatch.price}</strong>
                     </div>
                     {submitButton}
                   </div>

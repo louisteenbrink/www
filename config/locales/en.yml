@@ -268,8 +268,7 @@ en:
       source: "Referrer"
       source_placeholder: "Who recommended Le Wagon to you?"
       motivation: "Why Le Wagon? What is your professional project?"
-      conditions: "Incl. Tax. Payment in three installments, free of charge."
-      apply_btn: "Apply for 9 weeks in "
+      apply_btn: "Apply in "
       please_wait: "Please wait..."
       course_language: 'Course in '
       language_fr: 'French'
