@@ -274,6 +274,7 @@ en:
       course_language: 'Course in '
       language_fr: 'French'
       language_en: 'English'
+      language_pt-BR: 'Brazilian Portuguese'
       price: 'Price'
   stories:
     show:

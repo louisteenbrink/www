@@ -266,6 +266,7 @@ fr:
       course_language: 'Cours en '
       language_fr: 'Français'
       language_en: 'Anglais'
+      language_pt-BR: 'Portugais brésilien'
       price: 'Prix'
   stories:
     show:
