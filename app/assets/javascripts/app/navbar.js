@@ -2,6 +2,7 @@
   var headerFixed = null;
   var dropDown = null;
   var fullItem = null;
+  var lastScrollTop = 0;
 
   $(document).ready(function() {
     headerFixed = $('.header-fixed');
@@ -14,12 +15,14 @@
   });
 
   function handleNavbar() {
-    if($(window).scrollTop() > $('.navbar-wagon').outerHeight() + 150) {
+    var st = $(window).scrollTop();
+    if(st > lastScrollTop) {
       headerFixed.addClass('is-active');
       dropDown.removeClass('open');
     } else {
       headerFixed.removeClass('is-active');
       fullItem.removeClass('open');
     }
+    lastScrollTop = st;
   }
 })(window.jQuery);
