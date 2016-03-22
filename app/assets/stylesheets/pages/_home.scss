@@ -101,10 +101,10 @@
 
 .techcrunch-view {
   img {
-    transform: translateY(0);
+    transform: translateY(30px);
     transition: transform .3s ease;
     &:hover {
-      transform: translateY(-4%)
+      transform: translateY(10px);
     }
 
   }

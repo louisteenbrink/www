@@ -90,6 +90,7 @@
   position: relative;
   display: flex;
   margin: 1.5em auto 1em auto;
+  z-index: 1;
 
   @media (max-width: $screen-md) {
     font-size: 30px;
