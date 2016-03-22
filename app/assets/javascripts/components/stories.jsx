@@ -62,8 +62,8 @@ class Stories extends React.Component {
               })}
             </div>
           </div>
+          <a href={storiesPath} className="btn btn-danger stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
         </div>
-        <a href={storiesPath} className="btn btn-danger stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
       </div>
     )
   }
