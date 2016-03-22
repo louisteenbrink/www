@@ -343,7 +343,7 @@
   transform: translateY(-105%);
   transition: transform .3s ease, opacity .9s ease;
   transition-delay: 1s, 0s;
-  opacity: 0;
+  opacity: 1;
 
   &-logo {
     position: absolute;
