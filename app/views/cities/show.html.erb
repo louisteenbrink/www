@@ -21,7 +21,7 @@
     <%# BSSA corner case %>
 
     <% if @city['slug'] == 'amsterdam' %>
-      <%= link_to "Apply now", "http://bssa.nu/#apply", class: "btn banner-cta-item btn-danger btn-lg" %>
+      <%= link_to t(".apply_for_twelve_weeks"), send(:"apply_#{locale}_path", city: 'amsterdam'), class: "btn banner-cta-item btn-danger btn-lg" %>
     <% else %>
       <%= link_to t(".apply_for_nine_weeks"), send(:"apply_#{locale}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
     <% end %>

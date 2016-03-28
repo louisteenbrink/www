@@ -252,6 +252,7 @@ en:
       catchline_html: "Change your life: <strong>learn to code</strong>"
       city_arrival_html: "Join Le Wagon FullStack program in <strong>%{city}</strong>"
       apply_for_nine_weeks: Apply for 9 weeks
+      apply_for_twelve_weeks: Apply for 12 weeks
       staff: "Teachers in %{city}"
       discover_us: "Discover our program"
       apprentices: "Join %{count} apprentices"
