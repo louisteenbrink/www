@@ -16,7 +16,7 @@
 
   function handleNavbar() {
     var st = $(window).scrollTop();
-    if(st > lastScrollTop) {
+    if((st > lastScrollTop) && (st > 150)) {
       headerFixed.addClass('is-active');
       dropDown.removeClass('open');
     } else {
