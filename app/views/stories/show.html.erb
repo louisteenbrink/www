@@ -19,7 +19,7 @@
       <% end %>
     </div>
     <div class="story-summary">
-      <%= @story['summary'][locale.to_s] %>
+      <%= markdown @story['summary'][locale.to_s] %>
     </div>
     <div class="story-description">
       <%= markdown @story['description'][locale.to_s] %>
