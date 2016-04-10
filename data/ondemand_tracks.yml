@@ -6,6 +6,7 @@
   title: Comprenez enfin JavaScript
 - slug: debutez-avec-ruby-on-rails
   title: Débutez avec Ruby on Rails
+  new: true
 - slug: devenez-data-scientist
   title: Devenez Data-Scientist
 
