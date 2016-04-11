@@ -57,6 +57,9 @@ Rails.application.routes.draw do
     resources :students, only: [:show]
   end
 
+  # Exception for Portuguese FAQ
+  get "pt/faq", to: "pages#show", template: "faq"
+
   get "blog", to: 'posts#index'
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
   get "blog/:slug", to: 'posts#show'

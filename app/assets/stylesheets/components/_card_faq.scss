@@ -1,3 +1,29 @@
+.faq-nav {
+  margin: auto;
+
+  a, a:hover {
+    text-decoration: none;
+  }
+
+  a {
+    opacity: 0.4;
+  }
+
+  svg {
+    width: 30px;
+    margin: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  a.active {
+    opacity: 0.9;
+  }
+}
+
 .card-faqs {
   display: flex;
   flex-wrap: wrap;
