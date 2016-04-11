@@ -151,6 +151,142 @@ fr:
         page [**Postuler**](/postuler).
 
 
+pt:
+  - question: |
+        Como fazer a inscrição para o le wagon ?
+    answer: |
+        Depois de ter [enviado a sua candidatura](/postuler) pelo formulário do site nós vamos entrar em contato para marcarmos uma entrevista (Skype ou presencial)
+        sobre as suas habilidades técnicas, motivações e expectativas.
+        Logo após a entrevista te diremos se você poderá ser aceito no bootcamp Le Wagon.
+        Recomendamos que comece e complete o ***track Ruby*** no [CodeCademy](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        Comece agora mesmo, é gratuito!
+  - question: |
+        Tenho que falar inglês ? português ? Os dois ?
+    answer: |
+        Em São Paulo o programa é em **português**. Ou seja,
+        o curso da manhã (1h30) e a correção em _live-code_ da noite (1h30) são em português. No entanto, todo o material pedagógico (curso, exercícios, etc) assim como
+        toda a documentação técnica ([Ruby doc](http://ruby-doc.org/), [Stack Overflow](http://stackoverflow.com/), etc.)
+        são em **inglês**. Sendo o ritmo da formação bem acelerado, você não poderá embarcar se não dominar o inglês.
+  - question: |
+        Sou um iniciante, essa formação é feita para mim ?
+    answer:
+      - |
+          Nós pedimos aos nossos alunos que tenham 3 qualidades essenciais : **motivação** (muita motivação,
+          você está embarcando para um périplo de nove semanas !),
+          **curiosidade** e ter **boas habilidades interpessoais**. Você deve completar também o curso
+          Ruby no CodeCademy. Você não poderá entrar no curso se não tiver atingido 100%!
+      - |
+          Nenhum conhecimento de código é necessário para entrar no Wagon. Nós partimos da base e construímos
+          juntos os tijolos de conhecimento para se tornar autônomo no desenvolvimento web no final de 9 semanas.
+  - question: |
+        Existe um perfil específico de alunos do Wagon ?
+    answer: |
+        Não ! Nossos alunos tem entre 18 e 55 anos, compartilham todos a mesma curiosidade sobre código pois
+        entenderam que é **a** _habilidade_ a se ter para compreender a transição digital da economia.
+        Os _backgrounds_ variam de antigos alunos de administração de empresa, marketing, publicidade ou engenharia,
+        passando por advogados, jornalistas, arquitetos, etc. 9 semanas no Wagon, não é somente aprender a programar,
+        é também uma aventura humana e a construção de uma rede sólida para o futuro.
+  - question: |
+        Devo vir com um projeto ?
+    answer:
+      - |
+          Lembrando rapidamente o programa: uma semana de **Ruby** (as bases), uma semana de **arquitetura de software**
+          (como fazer um "grande" programa em "varios arquivos/pastas"), uma semana com as **bases de dados** (SQL, etc.), duas semanas
+          de _front_ (HTML, CSS e JavaScript), uma semana de **Rails** (_back-end_, _front-end_, colocamos tudo junto !),
+          uma semana de "Airbnb" (nós reprogramamos o Airbnb em grupo, o que nos permite colaborar com _git_ e _Github_) e enfim **duas semanas de projeto**.
+      - |
+          Durante as nove semanas, nós organizamos um dia de *Pitch* onde cada um poderá apresentar o seu projeto. Em seguida os alunos
+          se organizam em grupos para as últimas duas semanas. Se você não tem um projeto é ainda mais simples, pois você tem
+          a sorte de poder escolher :) A resposta para a pergunta então é **não** !
+  - question: |
+        Quanto tempo vou precisar pra me preparar ?
+    answer: |
+        Você vai precisar de aproximadamente **10 horas** para terminar a [track Ruby](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        Essa track é obrigatória. Para garantir o seu lugar na sessão de sua escolha, **bloqueie um fim de semana** para
+        terminar ela o mais rápido possível. Os lugares são limitados e terminam rápido.
+  - question: |
+        O que serei capaz de fazer depois de 9 semanas ?
+    answer:
+      - |
+          Você terá adquirido a competência de desenvolvedor web [Ruby on Rails](http://rubyonrails.org/).
+          Isso quer dizer que você será **capaz de prototipar rapidamente as suas idéias**
+          criando de maneira autônoma um aplicativo web rico e completo. Você saberá
+          como permitir aos seus usuários se inscreverem no seu site
+          (_Sign up_ / _Sign_ com Facebook/Twitter/Linkedin etc), adicionar um _back-office_ de administração,
+          aceitar pagamentos com cartão, enviar e-mails automáticamente, etc.
+          Você saberá como _colocar em produção_ rapidamente e terá aprendido
+          as **boas práticas** de desenvolvimento utilizadas pelas melhores startups atuais.
+      - |
+          Você terá então a escolha de : [continuar o seu projeto empreendedor](/fr/stories/olixier), ou mesmo se candidatar como
+          [_junior developer_](/fr/stories/aliceclv) ou [_product manager_](/fr/stories/oliviergodement) em uma startup web !
+  - question: |
+        Somente 9 semanas ?
+    answer:
+      - |
+          Existe razão para ceticismo, por que uma escola de ciência da computação dura 4 anos se 9 semanas são o suficiente ?
+          Na verdade, devemos diferenciar bem um jovem com uma formação clássica em uma faculdade de ciência da computação e
+          um aluno do Wagon. Em uma faculdade, parte-se da **base** de uma _escadaria_ técnica (elétrônica, transistors,
+          componentes internos de uma máquina) para subir de degrau em degrau ao que nós temos mais hábito de ver no dia a dia
+          (como funciona um sistema operacional, a linguagem **C**, a rede, etc.) para só então abordar o assunto web.
+      - |
+          Essa formação em profundidade permite a um engenheiro "descer nos degraus"
+          a qualquer momento desde que ele encontre um problema em um degrau superior. Na prática, podemos
+          fazer muitas coisas ficando somente no nível da web (o "o degrau mais alto"), e é precisamente isso que
+          aprendemos no Wagon. Esse conhecimento não será o suficiente para trabalhar imediatamente na Tesla
+          com sistemas de navegação, mas será para trabalhar no seu projeto web, encontrar um trabalho como _junor developer_,
+          se tornar um **verdadeiro** _web designer_ (capaz de integrar seus próprios designs)
+          ou mesmo um _product manager_ cobiçado já que será capaz de **entender** uma equipe técnica.
+      - |
+          Você pode ter uma idéia da qualidade dos projetos e assim das competências adquiridas pelos
+          alunos do Wagon assistindo a um de nossos [_Demo Day_](https://www.youtube.com/playlist?list=PLkbmdtbypn7R_BN6nFX-XZc7uDyMSxhye).
+  - question: |
+        Vocês nos ensinam a fazer apps móveis ?
+    answer: |
+        Sim e não. Sejamos claros, você não aprenderá desenvolvimento iOs ou Android.
+        Nós pensamos que esse tipo de conhecimento é difícil de aprender em 9 semanas.
+        Nós preferimos ensinar as bases da programação e da programação web porque
+        web é **a** plataforma aberta que precisa-se dominar.
+        Na verdade, graças ao _Design Web Responsivo_ que abordaremos, você
+        poderá criar uma web app que aparece corretamente em mobile ou tablet.
+        Você aprenderá também a criar uma **API** que servirá ao seu futuro app móvel.
+        Com um site e uma API desenvolvidas por você funcionando, um desenvovedor móvel
+        freelance poderá criar um app iOS ou Android bem mais rápido e mais fácil.
+  - question: |
+      Por que aprender Ruby on Rails (ao invés de PHP, por exemplo) ?
+    answer: |
+        Excelente pergunta, o CTO do Wagon tem [uma resposta](/blog/pourquoi-apprendre-coder-ruby-on-rails) para você.
+  - question: |
+        Qual a duração exata da formação ?
+    answer: |
+        De segunda à sexta, de 9 as 19h, um total de 360 horas de curso em 9 semanas.
+  - question: |
+        Como acontece a seleção para o bootcamp ?
+    answer: |
+        Depois de ter se candidatado pelo site nós vamos te propor uma entrevista para discutir sobre
+        suas expectativas e responder às suas questões. Antes ou depois disso você deverá terminar
+        a [track Ruby](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        Se tudo se passou bem te enviaremos um contrato para assinar assim como uma fatura.
+        Somente no pagamento de uma prestação de **30%** do montante da formação
+        que o seu embarque é definitivo. O saldo restante da fatura deverá ser pago em outras duas
+        vezes durante a duração da formação.
+  - question: |
+        Devo levar o meu computador ?
+    answer: |
+        Sim, todos os alunos devem ter um laptop.
+        Nós utilisaremos Mac OS X ou Linux, se você só tiver Windows
+        não se preocupe, o primeiro dia é dedicado para instalar
+        Linux na sua máquina ( em _dual boot_ ao lado do Windows).
+  - question: |
+        Tenho menos de 18 anos, posso me candidatar ?
+    answer: |
+        Sentimos muito, mas essa formação é exclusiva para maiores.
+  - question: |
+        Quanto custa ? Quando começa a próxima sessão ?
+    answer: |
+        Depende da cidade ! Você encontrará os valores e todas as próximas partidas do Wagon na
+        página [**Apply**](/apply).
+
+
 en:
   - question: |
         What's the application process to Le Wagon?
