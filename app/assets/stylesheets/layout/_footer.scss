@@ -8,7 +8,7 @@
 
   .flex {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .brand-footer {
@@ -73,15 +73,6 @@
 
 
 .footer-section {
-  flex: 1;
-
-  &:last-child {
-    flex: 0.5;
-  }
-
-  @media (max-width: $screen-md) {
-    flex: 0 0 33% !important;
-  }
 
   @media (max-width: $screen-sm) {
     flex: 0 0 50% !important;
@@ -100,8 +91,6 @@
   }
 
   a {
-    letter-spacing: 0;
-    font-size: 16px;
     color: #000000;
     font-weight: $font-weight-light;
     opacity: .5;
