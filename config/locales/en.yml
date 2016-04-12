@@ -283,3 +283,6 @@ en:
       read_more: Read more testimonials from our bootcamp's students
       title: "%{story}"
       description: "%{story}"
+  posts:
+    index:
+      title: Le Wagon - Technical Entrepreneurship Blog

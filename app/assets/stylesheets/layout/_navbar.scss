@@ -264,7 +264,6 @@
 .flag-container {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
 
   a {
     cursor: pointer;
@@ -284,6 +283,12 @@
   svg {
     width: 20px;
     filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.07));
+  }
+}
+
+.dropdown {
+  .flag-container {
+    padding: 10px 20px;
   }
 }
 

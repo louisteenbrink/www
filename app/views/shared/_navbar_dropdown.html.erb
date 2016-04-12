@@ -1,40 +1,25 @@
-<div class="<%= full_item ? ' dropdown full-item' : 'dropdown' %>">
+<div class="<%= full_item ? ' dropdown full-item' : 'dropdown' %> hidden-md hidden-lg">
   <a class='navbar-wagon-link-menu-wrapper' type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     <div class='navbar-wagon-link-menu'></div>
   </a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li class="<%= full_item ? 'main' : 'main hidden-md hidden-lg' %>">
+    <li class="main">
       <%= link_to t("shared.navbar.menu.program"), send(:"program_#{locale}_path") %>
     </li>
-    <li class='main hidden-md hidden-lg'>
+    <li class='main'>
       <%= link_to "Alumni", alumni_path, locale: locale %>
     </li>
-    <li class="main hidden-md hidden-lg">
+    <li class="main">
       <%= link_to t("shared.navbar.stories"), stories_path %>
     </li>
-    <% @cities.each do |city| %>
-      <li class="<%= full_item ? '' : 'hidden-md hidden-lg' %>">
-        <%= link_to city["name"], city_path(city: city["slug"]) %>
-      </li>
-    <% end %>
-    <li>
-      <span class='flag-container'>
-        <div>
-          <%= link_to locale_current_url_for(:fr), style: ("opacity: .3" if locale == :en) do %>
-            <%= render 'shared/french_flag' %>
-          <% end %>
-          <span class='separator'>/</span>
-          <%= link_to locale_current_url_for(:en), style: ("opacity: .3" if locale == :fr) do %>
-            <%= render 'shared/english_flag' %>
-          <% end %>
-        </div>
-      </span>
-    </li>
-    <li class='main'>
-      <%= link_to "Blog", blog_path %>
-    </li>
-    <li class='<%= full_item ? 'main' : 'main hidden-md hidden-lg' %>'>
+    <li class="main">
       <%= link_to 'FAQ', faq_path %>
+    </li>
+    <li class="main hidden-md hidden-lg">
+      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale}_path") %>
+    </li>
+    <li class="main hidden-md hidden-lg">
+      <%= render 'shared/language_selector' %>
     </li>
   </ul>
 </div>

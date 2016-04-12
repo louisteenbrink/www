@@ -19,6 +19,7 @@
     if((st > lastScrollTop) && (st > 150)) {
       headerFixed.addClass('is-active');
       dropDown.removeClass('open');
+      fullItem.removeClass('hidden-md').removeClass('hidden-lg');
     } else {
       headerFixed.removeClass('is-active');
       fullItem.removeClass('open');

@@ -275,3 +275,6 @@ fr:
       read_more: Découvrez d'autres témoignages d'élèves du Wagon
       title: "%{story}"
       description: "%{story}"
+  posts:
+    index:
+      title: Le Wagon Blog - Culture technique entrepreneuriale
