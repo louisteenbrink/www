@@ -11,19 +11,17 @@
       </div>
     </div>
 
-    <% Static::MEDIUM_POSTS.each_slice(2) do |posts| %>
-      <div class="row">
-        <% posts.each do |post| %>
-          <div class="col-sm-8 col-sm-offset-2">
-            <div class="medium-postcard">
-              <a data-width="100%" href="https://medium.com/le-wagon/<%= post %>" class="m-story">
-                <%= post.split('-')[0...-1].map(&:capitalize).join(" ") %>
-              </a>
-            </div>
+    <div class="row">
+      <% Static::MEDIUM_POSTS.each do |post| %>
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="medium-postcard">
+            <a data-width="100%" href="https://medium.com/le-wagon/<%= post %>" class="m-story">
+              <%= post.split('-')[0...-1].map(&:capitalize).join(" ") %>
+            </a>
           </div>
-        <% end %>
-      </div>
-    <% end %>
+        </div>
+      <% end %>
+    </div>
   </div>
 </div>
 
