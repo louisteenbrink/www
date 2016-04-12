@@ -39,6 +39,8 @@ Rails.application.routes.draw do
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
   end
 
+  get "blog/rss", to: 'posts#rss'
+
   resource :apply, only: %s(create)
   scope "(:locale)", locale: /fr/ do
     root to: "pages#home"
@@ -60,8 +62,6 @@ Rails.application.routes.draw do
 
   # Exception for Portuguese FAQ
   get "pt/faq", to: "pages#show", template: "faq"
-
-  get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
 
   resources :subscribes, only: :create
 
