@@ -2,6 +2,10 @@
   <div class="container navbar-wagon-container">
     <div class='navbar-wagon-side'>
       <%= render 'shared/navbar_dropdown', full_item: false %>
+      <div class="hidden-xs hidden-sm">
+        <%= render 'shared/language_selector' %>
+      </div>
+
       <div class="left hidden-sm hidden-xs">
         <div class="navbar-wagon-item has-no-padding">
           <div class="dropdown">
@@ -59,7 +63,9 @@
         <hr class='fake-hr hidden-xs'>
         <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
         <hr class='hidden-xs'>
-        <%= link_to t(".stories"), stories_path, class: " hidden-xs navbar-wagon-link", data: {text: t(".stories")} %>
+        <%= link_to t(".stories"), stories_path, class: "hidden-xs navbar-wagon-link", data: {text: t(".stories")} %>
+        <hr class="hidden-xs">
+        <%= link_to "Blog", blog_path, class: "navbar-wagon-link" %>
         <div class="left">
           <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
         </div>

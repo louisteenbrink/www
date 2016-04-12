@@ -1,0 +1,13 @@
+<span class='flag-container'>
+  <div>
+    <%= link_to locale_current_url_for(:fr), style: ("opacity: .3" if locale == :en) do %>
+      <%= render 'shared/french_flag' %>
+    <% end %>
+
+    <span class='separator'>/</span>
+
+    <%= link_to locale_current_url_for(:en), style: ("opacity: .3" if locale == :fr) do %>
+      <%= render 'shared/english_flag' %>
+    <% end %>
+  </div>
+</span>

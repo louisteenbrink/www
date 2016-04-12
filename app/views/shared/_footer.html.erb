@@ -1,4 +1,4 @@
-<% cache [ 'footer', locale: I18n.locale ] do %>
+<% cache [ 'footer', locale: I18n.locale, city: @city ] do %>
 <div id="footer">
   <div class="container">
     <%= react_component 'NewsletterForm', {
@@ -45,7 +45,13 @@
         <div class='footer-section-links'>
           <% @cities.each do |city| %>
             <div>
-              <%= link_to city["name"], city_path(city: city["slug"]) %>
+              <%= link_to city_path(city: city["slug"]) do %>
+                <% if @city && @city['slug'] == city['slug'] %>
+                  <strong><%= city["name"] %></strong>
+                <% else %>
+                  <%= city["name"] %>
+                <% end %>
+              <% end %>
             </div>
           <% end %>
         </div>

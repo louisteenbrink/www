@@ -1,23 +1,51 @@
 <% content_for(:title) do %>
-  Le Wagon - Blog de culture technique et entrepreneuriale
+  <%= t ".title" %>
 <% end %>
 
 <div class="posts">
   <div class="container">
-    <% @posts.each_slice(3) do |posts| %>
+
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <h1><%= t ".title" %></h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <% Static::MEDIUM_POSTS.each do |post| %>
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="medium-postcard">
+            <a data-width="100%" href="https://medium.com/le-wagon/<%= post %>" class="m-story">
+              <%= post.split('-')[0...-1].map(&:capitalize).join(" ") %>
+            </a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<% content_for(:after_js) do %>
+  <script async src="https://static.medium.com/embed.js"></script>
+<% end %>
+
+<div class="posts">
+  <div class="container">
+    <% @posts.each_slice(2) do |posts| %>
       <div class="row">
+        <div class="col-sm-2"></div>
         <% posts.each do |post| %>
-          <div class="col-lg-4 col-sm-4">
+          <div class="col-sm-4">
             <article class="postcard element">
               <% if post.metadata[:thumbnail] %>
-                <a href="/blog/<%= post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
+                <a href="<%= post_path post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
                   <div class="postcard-filter"></div>
                 </a>
               <% end %>
               <div class="content">
                 <div class="centered">
                   <h2>
-                    <a href="/blog/<%= post.slug %>">
+                    <a href="<%= post_path post.slug %>>">
                       <%= post.metadata[:title].html_safe %>
                     </a>
                   </h2>
@@ -28,7 +56,7 @@
                 </div>
               </div>
               <div class="link-post-container text-right">
-                <a href="/blog/<%= post.slug %>" class="link-post"><i class="fa fa-eye"></i>
+                <a href="<%= post_path post.slug %>" class="link-post"><i class="fa fa-eye"></i>
                 </a>
               </div>
             </article>

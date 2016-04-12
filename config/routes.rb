@@ -18,8 +18,6 @@ Rails.application.routes.draw do
   get 'sp', to: redirect('sao-paulo')
   get 'en', to: redirect('/')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
-  get 'en/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
-  get 'fr/blog/*path', to: redirect { |path_params, req| "blog/#{path_params[:path]}" }
 
   get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
   get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
@@ -49,6 +47,9 @@ Rails.application.routes.draw do
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
+    get "blog", to: 'posts#index', as: :blog
+    get "blog/:slug", to: 'posts#show', as: :post
+
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city
     end
@@ -60,9 +61,7 @@ Rails.application.routes.draw do
   # Exception for Portuguese FAQ
   get "pt/faq", to: "pages#show", template: "faq"
 
-  get "blog", to: 'posts#index'
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
-  get "blog/:slug", to: 'posts#show'
 
   resources :subscribes, only: :create
 
