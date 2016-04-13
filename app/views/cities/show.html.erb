@@ -184,3 +184,20 @@
   </div>
 </div>
 
+<% if @city["location"] && @city["latitude"] %>
+  <% content_for(:after_js) do %>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCukr6vo0mkusgzjemMGVI83TDUo-oqpzw"></script>
+    <script type="text/javascript">
+      prepareMap(
+        '<%= @city['name'] %>',
+        <%= @city['latitude'] %>,
+        <%= @city['longitude'] %>,
+        '<%= asset_path 'pin_icon.png' %>');
+    </script>
+  <% end %>
+
+  <div class="map-container">
+    <div id="map"></div>
+  </div>
+<% end %>
+
