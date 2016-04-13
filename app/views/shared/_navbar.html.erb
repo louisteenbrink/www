@@ -20,6 +20,8 @@
           </div>
         </div>
         <hr class='hidden-xs'>
+
+      <% if I18n.locale == :fr %>
         <div class="dropdown">
           <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
           <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
@@ -30,9 +32,6 @@
 
             <li class="dropdown-header online-program-header">
               <%= t ".menu.online" %>
-              <% if I18n.locale != :fr %>
-                <%= render 'shared/french_flag' %>
-              <% end %>
             </li>
             <% Static::ONDEMAND_TRACKS.each do |track| %>
               <li>
@@ -51,6 +50,10 @@
             </li>
           </ul>
         </div>
+      <% else %>
+        <%= link_to t(".menu.program"), send(:"program_#{locale}_path"), class: 'navbar-wagon-link' %>
+      <% end %>
+
         <hr class="hidden-xs">
         <%= link_to "FAQ", faq_path, class: 'navbar-wagon-link' %>
         <hr class='fake-hr hidden-sm hidden-xs'>
