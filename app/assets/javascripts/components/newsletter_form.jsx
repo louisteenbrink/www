@@ -17,16 +17,10 @@ class NewsletterForm extends React.Component {
       'valid': this.state.valid
     })
 
-    if (this.state.valid) {
-      var btnValue = <i className="fa fa-check" />;
-    } else if (this.state.error) {
-      var btnValue = this.props.i18n.retry;
-    } else {
-      var btnValue = "GO";
-    }
+    var btnValue = this._getBtnValue();
 
     var submitButton = (
-      <button type='submit' className='newsletter-input-button' ref="button">
+      <button type='submit' className='newsletter-input-button' ref="button" disabled={this.state.submitting || this.state.valid}>
         {btnValue}
       </button>
     );
@@ -45,16 +39,18 @@ class NewsletterForm extends React.Component {
         <h2>
           {this.props.i18n.title}
         </h2>
+        <p  dangerouslySetInnerHTML={{__html: this.props.i18n.subtitle}} />
 
         <form onSubmit={this.onSubmit.bind(this)}>
           <input type='hidden' name='authenticity_token' value={this.props.token} />
           <div className='newsletter-input'>
             <input
-              placeholder='you@domain.com'
+              placeholder='you@gmail.com'
               ref="email"
               className='newsletter-input-email'
               type='email'
               name="email"
+              required
               disabled={this.state.valid}
             />
             {submitButton}
@@ -71,11 +67,23 @@ class NewsletterForm extends React.Component {
     var email = this.refs.email.value;
     $.post(Routes.subscribes_path(), { email: email, city_id: this.props.city_id }, (data) => {
       if (data.ok) {
-        this.setState({ valid: true });
-        this.setState({ error: false });
+        this.setState({ valid: true, submitting: false });
+        this.setState({ error: false, submitting: false });
       } else {
-        this.setState({ error: true });
+        this.setState({ error: true, submitting: false });
       }
     });
+  }
+
+  _getBtnValue() {
+    if (this.state.valid) {
+      return <i className="fa fa-check" />;
+    } else if (this.state.error) {
+      return this.props.i18n.retry;
+    } else if (this.state.submitting) {
+      return this.props.i18n.subscribing;
+    } else {
+      return this.props.i18n.subscribe;
+    }
   }
 }

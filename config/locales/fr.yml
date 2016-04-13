@@ -14,7 +14,10 @@ fr:
       find_a_city: Trouver une ville
       about_us: A propos de nous
       follow_us: Suivez-nous
-      title: "Nos vidéos & tutoriels dans votre inbox"
+      title: "Un wagon dans votre Inbox"
+      subtitle_html: "Recevez les prochaines dates des <em>workshops gratuits</em> et des nouvelles du Wagon !"
+      subscribe: "Je m'abonne"
+      subscribing: "En cours..."
       retry: "Ré-essayer"
       error: "Votre email n'a pas l'air bon :("
       press: "Presse"

@@ -32,6 +32,7 @@
     flex: 0 0 100px;
     font-weight: bold;
     outline: none;
+    white-space: nowrap;
 
     @media (max-width: $screen-sm) {
       flex: 0 0 100%;
@@ -47,7 +48,7 @@
 
   h2 {
     margin-top: 60px;
-    padding: 25px 0;
+    padding-top: 25px;
     font-size: 30px;
     color: black;
     font-weight: 900;
@@ -57,6 +58,10 @@
     @media (max-width: $screen-sm) {
       text-align: center;
     }
+  }
+  p {
+    padding: 20px 0;
+    color: #999;
   }
   form {
     display: flex;
@@ -68,11 +73,12 @@
   }
 }
 
-// .newsletter.submitting {
-//   .newsletter-input-button {
-//     background: $gray-lighter;
-//   }
-// }
+.newsletter.submitting {
+  .newsletter-input-button {
+    opacity: 0.8;
+  }
+}
+
 .newsletter.valid {
   .newsletter-input-email {
     background: #2ECC71;

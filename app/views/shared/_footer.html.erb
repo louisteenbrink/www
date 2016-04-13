@@ -4,8 +4,11 @@
     <%= react_component 'NewsletterForm', {
       i18n: {
         title: t(".title"),
+        subtitle: t(".subtitle_html"),
         retry: t(".retry"),
-        error: t(".error")
+        error: t(".error"),
+        subscribe: t(".subscribe"),
+        subscribing: t(".subscribing")
       },
       city_id: @city ? @city['id'] : nil,
       token: form_authenticity_token
