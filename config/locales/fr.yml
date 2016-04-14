@@ -16,6 +16,7 @@ fr:
       follow_us: Suivez-nous
       title: "Un wagon dans votre Inbox"
       subtitle_html: "Recevez les prochaines dates des <em>workshops gratuits</em> et des nouvelles du Wagon !"
+      subtitle_end: ""
       subscribe: "Je m'abonne"
       subscribing: "En cours..."
       retry: "Ré-essayer"

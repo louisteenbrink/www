@@ -15,7 +15,8 @@ en:
       about_us: About us
       follow_us: Follow us
       title: "Subscribe for more!"
-      subtitle_html: "Stay up to date on Le Wagon events and <em>free</em> workshops surrounding tech, startups and innovation."
+      subtitle_html: "Stay up to date on Le Wagon events and <em>free</em> workshops surrounding tech, startups and innovation"
+      substitle_end: " in %{city}"
       subscribe: "Subscribe"
       subscribing: "Subscribing"
       retry: "Retry"
