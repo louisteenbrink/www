@@ -37,11 +37,11 @@ Rails.application.routes.draw do
   constraints(city_constraint) do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
+    post "apply/(:city)" => "applies#create", as: :apply
   end
 
   get "blog/rss", to: 'posts#rss'
 
-  resource :apply, only: %s(create)
   scope "(:locale)", locale: /fr/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq

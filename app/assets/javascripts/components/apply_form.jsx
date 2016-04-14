@@ -74,7 +74,7 @@ class ApplyForm extends React.Component {
                 })}
               </div>
               <div className='apply-form-rows-container'>
-                <form id='apply' action={Routes.apply_path()} method='post' onSubmit={this.onSubmit.bind(this)}>
+                <form id='apply' action={Routes.apply_path({ city: this.state.activeCity.slug })} method='post' onSubmit={this.onSubmit.bind(this)}>
                   <input type='hidden' name='authenticity_token' value={this.props.token} />
                   <div className='apply-form-row apply-form-row-first'>
                     <label>

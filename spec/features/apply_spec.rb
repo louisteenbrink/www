@@ -2,29 +2,29 @@ require "rails_helper"
 
 RSpec.describe "Apply process", type: :feature do
   it "fails if motivation is too short (in English)" do
-    visit '/apply'
+    visit '/apply/paris'
 
     default_identity
     fill_in 'motivation', with: 'Not motiviated enough...'
     click_button 'apply_btn'
 
-    expect(page.current_path).to eq "/apply"
+    expect(page.current_path).to eq "/apply/paris"
     expect(page).to have_selector(".text-area-has-error", text: "is too short")
   end
 
   it "fails if motivation is too short (in French)" do
-    visit '/postuler'
+    visit '/postuler/paris'
 
     default_identity
     fill_in 'motivation', with: 'Pas assez motivé...'
     click_button 'apply_btn'
 
-    expect(page.current_path).to eq "/apply"
+    expect(page.current_path).to eq "/apply/paris"
     expect(page).to have_selector(".text-area-has-error", text: "est trop court")
   end
 
   it "works if motivation is > 140 characters (in French)" do
-    visit '/postuler'
+    visit '/postuler/paris'
 
     default_identity
     fill_in 'motivation', with: "a" * 140
@@ -37,7 +37,7 @@ RSpec.describe "Apply process", type: :feature do
   end
 
   it "works if motivation is > 140 characters (in English)" do
-    visit '/apply'
+    visit '/apply/paris'
 
     default_identity
     fill_in 'motivation', with: "a" * 140
