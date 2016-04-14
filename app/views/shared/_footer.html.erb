@@ -4,7 +4,7 @@
     <%= react_component 'NewsletterForm', {
       i18n: {
         title: t(".title"),
-        subtitle: t(".subtitle_html") + (@city ? t(".substitle_end", city: @city['name']) : nil),
+        subtitle: t(".subtitle_html") + (@city ? t(".subtitle_end", city: @city['name']) : nil),
         retry: t(".retry"),
         error: t(".error"),
         subscribe: t(".subscribe"),

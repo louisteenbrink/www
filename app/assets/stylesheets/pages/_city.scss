@@ -88,10 +88,19 @@
   }
 }
 
-#specifics {
+.specifics {
   margin: 50px auto;
   background: whitesmoke;
   font-size: 19px;
   line-height: 25px;
   font-weight: 100;
+}
+
+.next-batch {
+  margin: 120px auto;
+  font-size: 19px;
+
+  a {
+    color: $red;
+  }
 }

@@ -20,5 +20,11 @@ class CitiesController < ApplicationController
       @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
       session[:city] = @city['slug']
     end
+
+    # Next batch
+    batch_city = @client.cities.select { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }.first
+    if batch_city
+      @next_batch = batch_city['batches'].select { |batch| !batch['full'] }.first
+    end
   end
 end

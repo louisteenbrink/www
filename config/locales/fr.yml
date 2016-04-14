@@ -254,6 +254,8 @@ fr:
       apprentices: "Rejoignez %{count} apprentis"
       next_meetup_html: "Prochain meetup: <i class='hidden-xs'>%{name}</i>"
       only_in: "Uniquement à %{city}"
+      course_locale_html: "À %{city}, les cours sont donnés en <strong>%{language}</strong>."
+      next_batch_html: "Le prochain batch débutera le <strong>%{starts_at}</strong>."
   applies:
     new:
       title: Postuler au Wagon %{city} - 9 semaines de Coding Bootcamp Ruby on Rails

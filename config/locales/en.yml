@@ -16,7 +16,7 @@ en:
       follow_us: Follow us
       title: "Subscribe for more!"
       subtitle_html: "Stay up to date on Le Wagon events and <em>free</em> workshops surrounding tech, startups and innovation"
-      substitle_end: " in %{city}"
+      subtitle_end: " in %{city}"
       subscribe: "Subscribe"
       subscribing: "Subscribing"
       retry: "Retry"
@@ -262,6 +262,8 @@ en:
       apprentices: "Join %{count} apprentices"
       next_meetup_html: "Next meetup: <i class='hidden-xs'>%{name}</i>"
       only_in: "Tips from %{city}"
+      course_locale_html: "In %{city}, lectures are given in <strong>%{language}</strong>."
+      next_batch_html: "Next batch will start on <strong>%{starts_at}</strong>."
   applies:
     new:
       title: Apply to Le Wagon %{city} - 9-week Coding Bootcamp in Ruby on Rails

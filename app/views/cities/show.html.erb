@@ -108,7 +108,7 @@
   <% end %>
 
   <% if @city["specifics"].present? %>
-    <div class="container" id="specifics">
+    <div class="container specifics">
       <h2 class="section-title-home text-center">
         <div class="section-title-home-content" style="font-size:30px;">
           <%= t(".only_in", city: @city["name"]) %>
@@ -200,4 +200,16 @@
     <div id="map"></div>
   </div>
 <% end %>
+
+<div class="container text-center next-batch">
+  <div class="row">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+      <%= t '.course_locale_html', city: @city['name'], language: t("applies.new.language_#{@city['course_locale']}") %>
+      <% if @next_batch %>
+        <%= t '.next_batch_html', starts_at: l(@next_batch['starts_at'].to_date, format: :apply) %>
+      <% end %>
+      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale}_path", city: @city['slug']) %>
+    </div>
+  </div>
+</div>
 
