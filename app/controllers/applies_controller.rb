@@ -2,8 +2,14 @@ class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
 
   def new
-    @application = Apply.new(source: params[:source])
     prepare_apply_form
+    if @city.nil?
+      redirect_to send(:"apply_#{locale}_path", city: 'paris')
+    elsif params[:city].blank?
+      redirect_to send(:"apply_#{locale}_path", city: @city['slug'])
+    else
+      @application = Apply.new(source: params[:source])
+    end
   end
 
   def create
@@ -30,9 +36,11 @@ class AppliesController < ApplicationController
       end
     end
 
-    @city   = @applicable_cities.find { |city| city['slug'] == params[:city] } if params[:city]
-    @city ||= @applicable_cities.find { |city| city['slug'] == session[:city] } if session[:city]
-    @city ||= @applicable_cities.first
+    if params[:city]
+      @city = @applicable_cities.find { |city| city['slug'] == params[:city] }
+    elsif session[:city]
+      @city = @applicable_cities.find { |city| city['slug'] == session[:city] }
+    end
   end
 
   def application_params

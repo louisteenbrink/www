@@ -133,11 +133,12 @@ class ApplyForm extends React.Component {
     if (this.state.activeCity !== city) {
       this.setState({ activeCity: city, activeBatch: this.firstBatch(city) })
       history.replaceState({}, '', this.props.apply_path.replace(':city', city.slug));
+      document.title = this.props.i18n.page_title.replace('%{city}', city.name);
     }
   }
 
   firstBatch(city) {
-    return _.filter(city.batches, (n) => { return !n.full })[0] // to take the first not full batch.
+    return _.filter(city.batches, (n) => { return !n.full })[0] || citi.batches[0]
   }
 
   onSubmit() {

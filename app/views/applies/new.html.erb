@@ -1,4 +1,4 @@
-<%= content_for(:title)       { t ".title" }       %>
+<%= content_for(:title)       { t ".title", city: @city['name'] }       %>
 <%= content_for(:description) { t ".description" } %>
 
 <div class='apply-form-overlay'>
@@ -16,7 +16,8 @@
       language_fr: t(".language_fr"),
       language_en: t(".language_en"),
       :"language_pt-BR" => t(".language_pt-BR"),
-      price: t('.price')
+      price: t('.price'),
+      page_title: t('.title')
     },
     rows: [
       apply_row(:first_name, :text, t(".first_name"), "Alan", "account"),

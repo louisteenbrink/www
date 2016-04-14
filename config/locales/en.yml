@@ -263,7 +263,7 @@ en:
       only_in: "Tips from %{city}"
   applies:
     new:
-      title: Apply to Le Wagon - 9-week Coding Bootcamp in Ruby on Rails
+      title: Apply to Le Wagon %{city} - 9-week Coding Bootcamp in Ruby on Rails
       description: 9 weeks to learn ruby on Rails, HTML/CSS, Javascript, and web-development best practices
       apply: Apply to
       first_name: "First name"

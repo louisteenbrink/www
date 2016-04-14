@@ -255,7 +255,7 @@ fr:
       only_in: "Uniquement à %{city}"
   applies:
     new:
-      title: Postuler au Wagon - 9 semaines de Coding Bootcamp Ruby on Rails
+      title: Postuler au Wagon %{city} - 9 semaines de Coding Bootcamp Ruby on Rails
       description: 9 semaines pour apprendre ruby on Rails, HTML/CSS, Javascript, et les meilleures pratiques de développement web utilisées dans les startups.
       apply: Postulez à
       first_name: "Prénom"
