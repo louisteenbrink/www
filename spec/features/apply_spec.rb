@@ -5,6 +5,7 @@ RSpec.describe "Apply process", type: :feature do
     visit '/apply/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: 'Not motiviated enough...'
     click_button 'apply_btn'
 
@@ -16,6 +17,7 @@ RSpec.describe "Apply process", type: :feature do
     visit '/postuler/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: 'Pas assez motivé...'
     click_button 'apply_btn'
 
@@ -27,6 +29,7 @@ RSpec.describe "Apply process", type: :feature do
     visit '/postuler/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: "a" * 140
 
     expect {
@@ -40,6 +43,7 @@ RSpec.describe "Apply process", type: :feature do
     visit '/apply/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: "a" * 140
 
     expect {
