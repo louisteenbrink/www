@@ -43,14 +43,12 @@
     animation: borderFocusError 4s ease alternate-reverse infinite;
   }
 
-  &.has-error {
-    span, i {
-      color: #D23333;
-    }
-    span {
-      margin-left: auto;
-      color: #D23333;
-    }
+  .error {
+    color: #D23333;
+    display: block;
+    margin-left: 200px;
+    margin-top: 1em;
+    width: 100%;
   }
 
   &.is-focused {
@@ -349,10 +347,6 @@
   }
 }
 
-.text-area-has-error {
-  flex: 0 0 100%;
-  text-align: right;
-}
 
 @media (max-width: $screen-lg) {
   .post-submissions-select .dropdown-menu {

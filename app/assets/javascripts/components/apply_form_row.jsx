@@ -12,9 +12,9 @@ class ApplyFormRow extends React.Component {
       'has-error': this.props.error !== null
     });
 
-    var errorSpan = null;
+    var errorDiv = null;
     if (this.props.error !== null) {
-      errorSpan = <span>{this.props.error}</span>;
+      errorDiv = <div className="error">{this.props.error}</div>;
     }
 
     if (_.includes(['text', 'phone', 'tel', 'email'], this.props.type)) {
@@ -32,7 +32,7 @@ class ApplyFormRow extends React.Component {
             defaultValue={this.props.value}
             id={this.props.param}
             name={this.name()} />
-          {errorSpan}
+          {errorDiv}
         </div>
       )
     } else if (this.props.type === 'textarea') {
@@ -50,9 +50,7 @@ class ApplyFormRow extends React.Component {
             defaultValue={this.props.value}
             name={this.name()}>
           </textarea>
-          <div className='text-area-has-error'>
-            {errorSpan}
-          </div>
+          {errorDiv}
         </div>
       )
     } else {
