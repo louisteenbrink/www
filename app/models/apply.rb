@@ -24,6 +24,7 @@ class Apply < ActiveRecord::Base
   validates :age, presence: true, numericality: { only_integer: true }
   validates :email, presence: true, email: true
   validates :motivation, presence: true, length: { minimum: 140 }
+  validates :source, presence: { message: I18n.translate('applies.new.source_presence_message') }
 
   after_create :push_to_trello, if: :push_to_trello?
 

@@ -265,7 +265,7 @@ fr:
       last_name: "Nom de famille"
       phone: "Téléphone"
       source: "Recommandé par"
-      source_placeholder: "Qui vous a recommandé Le Wagon ?"
+      source_placeholder: "Qui vous a recommandé Le Wagon ? Un ami (qui ?), Google, etc."
       motivation: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
       apply_btn: "Postulez à "
       please_wait: "Patientez..."
@@ -274,6 +274,7 @@ fr:
       language_en: 'Anglais'
       language_pt-BR: 'Portugais brésilien'
       price: 'Prix'
+      source_presence_message: 'Comment avez-vous entendu parlé du Wagon ? Par un ami ? Google ? Facebook ? Merci !'
   stories:
     show:
       other_testimonials: Autres Témoignages

@@ -273,7 +273,7 @@ en:
       last_name: "Last name"
       phone: "Phone"
       source: "Referrer"
-      source_placeholder: "Who recommended Le Wagon to you?"
+      source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
       motivation: "Why Le Wagon? What is your professional project?"
       apply_btn: "Apply in "
       please_wait: "Please wait..."
@@ -282,6 +282,7 @@ en:
       language_en: 'English'
       language_pt-BR: 'Brazilian Portuguese'
       price: 'Price'
+      source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:
     show:
       other_testimonials: Other Testimonials

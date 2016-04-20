@@ -5,28 +5,31 @@ RSpec.describe "Apply process", type: :feature do
     visit '/apply/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: 'Not motiviated enough...'
     click_button 'apply_btn'
 
     expect(page.current_path).to eq "/apply/paris"
-    expect(page).to have_selector(".text-area-has-error", text: "is too short")
+    expect(page).to have_selector(".error", text: "is too short")
   end
 
   it "fails if motivation is too short (in French)" do
     visit '/postuler/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: 'Pas assez motivé...'
     click_button 'apply_btn'
 
     expect(page.current_path).to eq "/apply/paris"
-    expect(page).to have_selector(".text-area-has-error", text: "est trop court")
+    expect(page).to have_selector(".error", text: "est trop court")
   end
 
   it "works if motivation is > 140 characters (in French)" do
     visit '/postuler/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: "a" * 140
 
     expect {
@@ -40,6 +43,7 @@ RSpec.describe "Apply process", type: :feature do
     visit '/apply/paris'
 
     default_identity
+    fill_in "source", with: "Google"
     fill_in 'motivation', with: "a" * 140
 
     expect {
