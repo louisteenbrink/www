@@ -34,7 +34,6 @@ gem 'builder'
 gem 'rack-utf8_sanitizer'
 
 source "https://rails-assets.org" do
-  gem 'rails-assets-slick.js'
   gem 'rails-assets-mdi'
   gem 'rails-assets-classnames'
   gem 'rails-assets-pubsub-js'
