@@ -10,7 +10,7 @@ RSpec.describe "Apply process", type: :feature do
     click_button 'apply_btn'
 
     expect(page.current_path).to eq "/apply/paris"
-    expect(page).to have_selector(".text-area-has-error", text: "is too short")
+    expect(page).to have_selector(".error", text: "is too short")
   end
 
   it "fails if motivation is too short (in French)" do
@@ -22,7 +22,7 @@ RSpec.describe "Apply process", type: :feature do
     click_button 'apply_btn'
 
     expect(page.current_path).to eq "/apply/paris"
-    expect(page).to have_selector(".text-area-has-error", text: "est trop court")
+    expect(page).to have_selector(".error", text: "est trop court")
   end
 
   it "works if motivation is > 140 characters (in French)" do
