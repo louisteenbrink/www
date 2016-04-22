@@ -23,6 +23,7 @@ fr:
       error: "Votre email n'a pas l'air bon :("
       press: "Presse"
       alumni_platform: "Communauté Alumni"
+      about: "Le Wagon, c'est quoi ?"
     navbar:
       menu:
         cities: Villes

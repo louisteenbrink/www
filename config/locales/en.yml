@@ -23,6 +23,7 @@ en:
       error: "Looks like your email is not valid..."
       press: "Press"
       alumni_platform: "Alumni Community"
+      about: "What's le Wagon?"
     navbar:
       menu:
         cities: Cities
