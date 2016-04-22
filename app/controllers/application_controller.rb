@@ -1,4 +1,5 @@
 require "static"
+require "timeout"
 
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
@@ -61,6 +62,12 @@ class ApplicationController < ActionController::Base
   end
 
   def fetch_live
-    @live_batch = @client.live_batch
+    Timeout::timeout(1) do
+      @live_batch = @client.live_batch
+    end
+  rescue Exception => e
+    puts e
+  ensure
+    @live_batch ||= { "live" => false }
   end
 end
