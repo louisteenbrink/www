@@ -19,7 +19,7 @@
               </div>
             </div>
             <div class="card-press-content">
-              <p class="title"><%= article[:name]%></p>
+              <p class="title"><%= link_to article[:name], article[:url] %></p>
               <p class="published"><%= article[:date].strftime("%d %b %Y") %> -
                 <%= link_to article[:url], target: :blank do %><strong><%= article[:media] %></strong><% end %>
               </p>
