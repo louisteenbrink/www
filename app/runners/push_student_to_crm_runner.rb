@@ -18,8 +18,8 @@ class PushStudentToCrmRunner
         phone_number: @apply.phone,
         source: @apply.source,
         motivation: @apply.motivation,
-        price_cents: @apply.batch.price.cents,
-        price_currency: @apply.batch.price.currency.to_s
+        price_cents: price_cents,
+        price_currency: price_currency
       }
     }
 
@@ -31,5 +31,15 @@ class PushStudentToCrmRunner
     rescue Exception => e
       puts e.message
     end
+  end
+
+  private
+
+  def price_cents
+    Rails.env.production? ? @apply.batch.price.cents : 100000
+  end
+
+  def price_currency
+    Rails.env.production? ? @apply.batch.price.currency.to_s : 'EUR'
   end
 end

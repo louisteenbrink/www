@@ -24,7 +24,7 @@ class PushToTrelloRunner
 
 ## Facture
 
-Prix: #{humanized_money_with_symbol @apply.batch.price} TTC
+Prix: #{humanized_money_with_symbol price} TTC
 
 ## Referrer
 
@@ -55,10 +55,14 @@ EOF
   private
 
   def name
-    Rails.env.production? ? @apply.email : "[#{@apply.batch.id}] #{@apply.email}"
+    Rails.env.production? ? @apply.email : "[Test] #{@apply.email}"
   end
 
   def list_id
     Rails.env.production? ? @apply.batch.trello_inbox_list_id : '54024112c975d17cd1180489' # Will go to "TEST PROMOS in dev"
+  end
+
+  def price
+    Rails.env.production? ? @apply.batch.price : Money.new(1000, 'EUR')
   end
 end
