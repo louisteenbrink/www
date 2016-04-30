@@ -1,7 +1,7 @@
 source "https://rubygems.org"
-ruby "2.3.0"
+ruby "2.3.1"
 
-gem "rails", "4.2.5.1"
+gem "rails", "5.0.0.beta4"
 gem 'responders', '~> 2.0'
 gem "pg"
 gem "figaro"
@@ -9,10 +9,14 @@ gem "simple_form"
 gem "rest-client"
 gem 'meetup_client'
 gem "redis"
-gem 'redis-rails'
+
+# After Rails official release, just keep 'redis-rails'
+gem 'redis-rack', github: 'redis-store/redis-rack', branch: 'master'
+gem 'redis-actionpack', github: 'redis-store/redis-actionpack', branch: 'master'
+gem 'redis-rails', github: 'redis-store/redis-rails', branch: 'master'
+
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
-gem 'rack-canonical-host', github: "ssaunier/rack-canonical-host", branch: 'protocol-option'
 gem "uglifier"
 gem "email_validator"
 gem "rails-i18n"
@@ -28,7 +32,7 @@ gem 'autoprefixer-rails'
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
-gem 'raygun4ruby'
+gem 'raygun4ruby', github: 'ssaunier/raygun4ruby', branch: 'rails-5-deprecation-warnings'
 gem 'sitemap_generator'
 gem 'builder'
 gem 'rack-utf8_sanitizer'
@@ -44,7 +48,13 @@ end
 group :development, :test do
   gem "spring"
   gem "letter_opener"
-  gem "rspec-rails"
+
+  # After Raisl 5 official release, just keep "rspec-rails"
+  gem "rspec-rails", git: "https://github.com/rspec/rspec-rails.git", branch: "master"
+  gem "rspec-core", git: "https://github.com/rspec/rspec-core.git", branch: "master"
+  gem "rspec-support", git: "https://github.com/rspec/rspec-support.git", branch: "master"
+  gem "rspec-expectations", git: "https://github.com/rspec/rspec-expectations.git", branch: "master"
+  gem "rspec-mocks", git: "https://github.com/rspec/rspec-mocks.git", branch: "master"
 end
 
 group :development do

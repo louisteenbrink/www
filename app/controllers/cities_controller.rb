@@ -9,7 +9,7 @@ class CitiesController < ApplicationController
     if I18n.locale == I18n.default_locale &&
         @city['course_locale'].to_sym != I18n.locale &&
         !session[:city_locale_already_forced] &&
-        (env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^#{Regexp.quote(@city['course_locale'])}/
+        (request.env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^#{Regexp.quote(@city['course_locale'])}/
       redirect_to city_path(params[:city], locale: @city['course_locale'])
       session[:city_locale_already_forced] = true
     else

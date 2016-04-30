@@ -43,7 +43,7 @@ class PagesController < ApplicationController
   end
 
   def switch_to_french_if_needed
-    if (env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^fr/ && I18n.locale != :fr && !session[:fr_already_forced]
+    if (request.env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^fr/ && I18n.locale != :fr && !session[:fr_already_forced]
       session[:fr_already_forced] = true
       redirect_to '/fr'
     end
