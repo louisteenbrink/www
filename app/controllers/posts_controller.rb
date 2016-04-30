@@ -1,8 +1,6 @@
 require "blog"
 
 class PostsController < ApplicationController
-  skip_before_action :switch_to_french_if_needed
-
   def index
     @posts = Blog.new.all
   end
