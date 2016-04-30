@@ -2,5 +2,4 @@
 
 require ::File.expand_path('../config/environment', __FILE__)
 use Rack::UTF8Sanitizer
-use Rack::CanonicalHost, ENV['HOST'], protocol: 'https' if ENV['HOST']
 run Rails.application
