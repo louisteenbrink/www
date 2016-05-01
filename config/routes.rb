@@ -40,7 +40,7 @@ Rails.application.routes.draw do
     post "apply/(:city)" => "applies#create", as: :apply
   end
 
-  get "blog/rss", to: 'posts#rss'
+  get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
 
   scope "(:locale)", locale: /fr/ do
     root to: "pages#home"
