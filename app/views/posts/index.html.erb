@@ -15,7 +15,7 @@
       <% Static::MEDIUM_POSTS.each do |post| %>
         <div class="col-sm-8 col-sm-offset-2">
           <div class="medium-postcard">
-            <a data-width="100%" href="https://medium.com/le-wagon/<%= post %>" class="m-story">
+            <a class="embedly-card" data-card-key="25a989e9e56f4a8c82a07b9e00a3ee9c" data-card-controls="0" data-card-type="article-full" href="https://medium.com/le-wagon/<%= post %>">
               <%= post.split('-')[0...-1].map(&:capitalize).join(" ") %>
             </a>
           </div>
@@ -25,8 +25,8 @@
   </div>
 </div>
 
-<% content_for(:after_js) do %>
-  <script async src="https://static.medium.com/embed.js"></script>
+<%= content_for(:after_js) do %>
+  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 <% end %>
 
 <div class="posts">
