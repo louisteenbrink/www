@@ -15,11 +15,21 @@
       </div>
     </div>
     <div class='banner-cta'>
-    <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
-      <%= t(".discover_us", default: "Découvrez notre programme") %>
-    <% end %>
-    <%# BSSA corner case %>
 
+    <%# I look at you all see the love there that's sleeping... %>
+    <% if @city['slug'] == 'london' %>
+      <a href="tel:+447796016734" class="banner-cta-item">
+        Call Edward: +44 (0)7796016734
+        &nbsp;<i class="fa fa-mobile fa-2x"></i>
+      </a>
+    <% else %>
+      <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
+        <%= t(".discover_us") %>
+      <% end %>
+    <% end %>
+
+    <%# ...While my guitar gently weeps
+ %>
     <% if @city['slug'] == 'amsterdam' %>
       <%= link_to t(".apply_for_twelve_weeks"), send(:"apply_#{locale}_path", city: 'amsterdam'), class: "btn banner-cta-item btn-danger btn-lg" %>
     <% else %>
