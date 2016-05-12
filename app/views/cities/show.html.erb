@@ -156,6 +156,7 @@
   </div>
 </div>
 
+<% if @city["location"].present? && @city["location_picture"].present? %>
 <div class="location-overlay">
   <div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city["location_picture"])%>');">
     <div class="banner-flat-filter banner-flat-filter-black"></div>
@@ -193,6 +194,7 @@
     </div>
   </div>
 </div>
+<% end %>
 
 <% if @city["location"] && @city["latitude"] %>
   <% content_for(:after_js) do %>
