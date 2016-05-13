@@ -73,6 +73,8 @@ Rails.application.routes.draw do
 
   # Old
   get 'wagon_bar', to: redirect('/fr')
+
+  match "*path", to: "application#render_404", via: :all
 end
 
 # Create helper for static_routes

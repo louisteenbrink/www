@@ -24,6 +24,13 @@ class ApplicationController < ActionController::Base
     { locale: ((I18n.locale == I18n.default_locale) ? nil : I18n.locale) }
   end
 
+  def render_404
+    respond_to do |format|
+      format.html { render 'pages/404', status: :not_found }
+      format.all { render text: 'Not Found', status: :not_found }
+    end
+  end
+
   private
 
   def devise_or_pages_controller?
@@ -49,13 +56,6 @@ class ApplicationController < ActionController::Base
 
   def load_cities
     @cities = @client.cities
-  end
-
-  def render_404
-    respond_to do |format|
-      format.html { render 'pages/404', status: :not_found }
-      format.text { render text: 'Not Found', status: :not_found }
-    end
   end
 
   def set_client
