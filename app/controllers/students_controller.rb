@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
         slug: 18
       },
       en: {
-        video_id: 'bhZRwXjUBK8',
+        video_id: '6ebCdcUAYVE',
         date: 'April 1st, 2016',
         city: 'Amsterdam',
         slug: 20
