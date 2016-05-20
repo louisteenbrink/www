@@ -28,14 +28,14 @@ class AppliesController < ApplicationController
   def prepare_apply_form
     @applicable_cities = @client.cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
+      first_available_batch = city['batches'].select { |b| !b['full'] }.first
+      city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
 
       city['batches'].each do |batch|
         batch['starts_at'] = I18n.l batch['starts_at'].to_date, format: :apply
         batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
         batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
       end
-
-      city['first_batch_date'] = city['batches'].select { |b| !b['full'] }.first['starts_at'].to_date
     end
 
     # Sort by first available batch
