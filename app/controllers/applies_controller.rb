@@ -34,6 +34,17 @@ class AppliesController < ApplicationController
         batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
         batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
       end
+
+      city['first_batch_date'] = city['batches'].select { |b| !b['full'] }.first['starts_at'].to_date
+    end
+
+    # Sort by first available batch
+    @applicable_cities.sort! do |city_a, city_b|
+      if city_a['first_batch_date'] == city_b['first_batch_date']
+        city_a['name'] <=> city_b['name']
+      else
+        city_a['first_batch_date'] <=> city_b['first_batch_date']
+      end
     end
 
     if params[:city]

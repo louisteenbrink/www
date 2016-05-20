@@ -32,7 +32,7 @@ class ApplyForm extends React.Component {
       this.props.i18n.course_language +
       this.props.i18n['language_' + this.state.activeCity.course_locale];
 
-    return(
+    return (
       <div className={componentClasses}>
         <div className="banner-container">
           <div className="container banner-city-container">
@@ -82,7 +82,7 @@ class ApplyForm extends React.Component {
                     </label>
                     <div className='apply-form-row-item'>
                       <div className='post-submissions-select'>
-                        <ReactBootstrap.DropdownButton ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
+                        <ReactBootstrap.DropdownButton id='batchSelector' ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
                           {batches.map((batch, index) => {
                             return(
                               <BatchSelector
@@ -117,8 +117,7 @@ class ApplyForm extends React.Component {
             </div>
           </div>
         </div>
-      </div>
-    )
+      </div>)
   }
 
   componentDidMount() {
