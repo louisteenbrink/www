@@ -20,11 +20,11 @@ class PushToTrelloRunner
 
 ## [Codecademy]()
 
-## [Contrat]()
+## [Contract]()
 
-## Facture
+## Invoice
 
-Prix: #{humanized_money_with_symbol price} TTC
+Price: #{humanized_money_with_symbol price} TTC
 
 ## Referrer
 
