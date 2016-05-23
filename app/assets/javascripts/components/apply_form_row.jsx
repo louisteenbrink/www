@@ -13,7 +13,7 @@ class ApplyFormRow extends React.Component {
     });
 
     var errorDiv = null;
-    if (this.props.error !== null) {
+    if (this.props.error) {
       errorDiv = <div className="error">{this.props.error}</div>;
     }
 
