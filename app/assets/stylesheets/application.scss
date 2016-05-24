@@ -9,6 +9,8 @@
 @import "font-awesome";
 @import 'slick';
 @import 'slick-theme';
+.slick-dots { position: relative !important; } // Bug fix
+
 @import "glitch";
 @import "mdi";
 @import "devicons";
