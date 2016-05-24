@@ -43,6 +43,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-pubsub-js'
   gem 'rails-assets-devicons'
   gem 'rails-assets-scrollReveal.js'
+  gem 'rails-assets-slick.js'
 end
 
 group :development, :test do
