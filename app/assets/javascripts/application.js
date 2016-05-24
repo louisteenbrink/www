@@ -1,7 +1,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require scrollReveal.js/dist/scrollreveal.min.js
+//= require jquery.slick
+//= require "headroom.js.js"
 
 //= require react
 //= require react_ujs

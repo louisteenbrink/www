@@ -1,0 +1,15 @@
+.slick-prev:before, .slick-next:before {
+  font-family: fontAwesome;
+  font-size: 40px;
+  color: #D23333;
+  opacity: 0.3;
+}
+.slick-prev:before {
+  content: '\f104  ';
+}
+.slick-next:before {
+  content: '\f105  ';
+}
+.slick-prev:before:hover, .slick-next:before:hover {
+  opacity: 1;
+}

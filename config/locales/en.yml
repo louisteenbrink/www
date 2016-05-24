@@ -34,7 +34,7 @@ en:
       apply: Apply Now
       stories: Stories
     testimonials:
-      what_our_students_say: What our students say
+      what_our_students_say: Students reviews
     features:
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline_html: |
@@ -126,8 +126,8 @@ en:
       program_details_html: |
         2 months to <strong>become a web developer</strong>.
       apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
-      nine_weeks: 9 intensive weeks
-      to_build_your_ideas_html: Learn <strong>all the web stack</strong>.<br> From the database to the browser.
+      nine_weeks: 9 intensive weeks - 360 hours of code
+      to_build_your_ideas_html: Learn <strong>all the web stack</strong>. From the database to the browser.
       why_us: Why us?
       why_us_details_html: |
         We have taught %{batches} batches (that's more than %{alumni} students!) and our program has evolved each time to reach perfection.

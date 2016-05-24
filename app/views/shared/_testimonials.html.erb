@@ -1,11 +1,11 @@
 <% cache [ 'testimonials', ids: @testimonials.map{ |s| s['id'] }.join("-"), number: number, locale: I18n.locale ] do %>
 <div class="testimonials-wrapper">
   <div class="container">
-    <h2 class="section-title-home section-title-home-small">
+    <!-- <h2 class="section-title-home section-title-home-small">
       <div class="section-title-home-content">
         <%= t(".what_our_students_say") %>
       </div>
-    </h2>
+    </h2> -->
     <div class="testimonials">
       <% @testimonials.take(number).each do |testimonial| %>
         <% testimonial = structure testimonial %>
