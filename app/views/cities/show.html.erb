@@ -41,12 +41,16 @@
 
 <%= render "shared/features" %>
 
+
 <% if @city["classroom_picture"] %>
 <div class="banner-container">
-  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["classroom_picture"])%>');" id="banner-city">
+  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["classroom_picture"])%>'); height: 70vh; background-position: center;" id="banner-city">
   </div>
 </div>
 <% end %>
+
+<%= render partial: "shared/testimonials", locals: {number: 8} %>
+
 
 <div id="staff" class="padded">
   <div class="container">

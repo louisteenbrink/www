@@ -1,6 +1,6 @@
 .testimonials-wrapper {
   background: #EBEBEB;
-  padding-top: 15px;
+  padding-top: 50px;
   background-image: linear-gradient(top, #D3CECE -10%, #F4F4F4 90%)
 }
 
@@ -93,6 +93,12 @@
     width: 50px;
     border-radius: 50%;
     height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    margin: 0 30px;
   }
 }
 
