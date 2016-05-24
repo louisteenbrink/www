@@ -1,8 +1,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require "slick.js.js"
-//= require scrollReveal.js/dist/scrollreveal.min.js
+//= require jquery.slick
 
 //= require react
 //= require react_ujs
