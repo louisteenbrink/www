@@ -16,7 +16,7 @@ class Curve extends React.Component {
     var wrapperStyle = {}
 
     return (
-      <div className='learning-curve-helper' ref='helper'>
+      <div className='learning-curve-helper hidden-xs' ref='helper'>
         <div className='learning-curve-helper-inner' ref='helperInner'>
           <div className='learning-curve-container' ref='curveContainer'>
             <div className='learning-curve-wrapper' style={wrapperStyle}>

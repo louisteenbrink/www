@@ -18,7 +18,7 @@
 
 .days {
   display: flex;
-  max-width: 600px;
+  max-width: 800px;
   @media (max-width: $screen-sm) {
     width: 100%;
     max-width: 100%;
@@ -189,7 +189,7 @@
  }
 .day-type-detail-container {
   flex: 1;
-  padding: 150px 0;
+  padding: 100px 0;
   position: relative;
   @media (max-width: $screen-md) {
     padding: 100px 0;

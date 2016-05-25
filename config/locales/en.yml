@@ -34,7 +34,7 @@ en:
       apply: Apply Now
       stories: Stories
     testimonials:
-      what_our_students_say: Students reviews
+      what_our_students_say: Students Reviews
     features:
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline_html: |
@@ -110,11 +110,11 @@ en:
       and_you_html: And <strong>you</strong> ?
       check_projects: Discover our students and their projects
       see_more_projects: See more projects...
-      our_students_projects: What our students have built
+      our_students_projects: Students Projects
       only_ten_days: "...in only 10 days"
       next_batch: "Next batch:"
       events_to_come: Events to come
-      featured: TESTIMONIALS
+      featured: Students Stories
       read_next_vowel: "Read ::name::'s story"
       read_next_consumn: "Read ::name::'s story"
       read_all: Read all our testimonials

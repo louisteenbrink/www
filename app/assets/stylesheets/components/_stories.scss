@@ -16,7 +16,7 @@
   }
 
   &:after {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.63), transparent 73%);
+    background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.3) 73%);
     position: absolute;
     top: 0;
     right: 0;
@@ -39,6 +39,7 @@
 .story {
   display: flex;
   max-width: 500px;
+  margin-top: 30px;
   @media (max-width: $screen-sm) {
     flex-wrap: wrap;
   }
@@ -212,7 +213,7 @@
 .story-label {
   position: relative;
   top: 0;
-  left: 28px;
+  left: 10px;
   height: 80px;
   width: 80px;
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25);
@@ -250,11 +251,10 @@
     span {
       color: white;
       z-index: 99;
-      margin: 15px;
-      text-transform: uppercase;
-      margin-left: 50px;
-      font-size: 17px;
-      letter-spacing: 5px;
+      margin: 10px;
+      margin-left: 30px;
+      font-size: 28px;
+      letter-spacing: 1px;
       font-weight: bold;
 
       @media (max-width: $screen-md) {
@@ -329,7 +329,7 @@
   align-items: center;
 
   .story-company-logo {
-    width: 100px;
+    width: 80px;
     flex-shrink: 1;
     margin-left: auto;
   }
@@ -386,9 +386,6 @@
     .fa-arrow-right {
       transform: translateX(3px);
     }
-  }
-  .story-card-footer-home {
-    padding-bottom: 40px;
   }
 
   @media (max-width: $screen-sm) { flex-flow: column }
