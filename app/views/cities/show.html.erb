@@ -37,27 +37,17 @@
     <% end %>
     </div>
   </div>
-</div>
 
-<% if @city["specifics"].present? %>
-  <div class="container-fluid specifics">
-    <h2 class="section-title-home text-center">
-      <div class="section-title-home-content" style="font-size:30px;">
-        <%= t(".only_in", city: @city["name"]) %>
-      </div>
-    </h2>
-    <div class="row">
-      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <%= markdown(@city["specifics"]) %>
+  <% if @city["marketing_specifics"].present? %>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <%= markdown(@city["marketing_specifics"]) %>
+        </div>
       </div>
     </div>
-  </div>
-<% end %>
-
-<div class="padded testimonials-wrapper">
-  <%= render partial: "shared/testimonials", locals: {number: 4} %>
+  <% end %>
 </div>
-
 
 <%= render "shared/features" %>
 
@@ -137,6 +127,21 @@
           <% end %>
         </div>
         <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if @city["logistics_specifics"].present? %>
+    <div class="container specifics">
+      <h2 class="section-title-home text-center">
+        <div class="section-title-home-content" style="font-size:30px;">
+          <%= t(".only_in", city: @city["name"]) %>
+        </div>
+      </h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+          <%= markdown(@city["logistic_specifics"]) %>
+        </div>
       </div>
     </div>
   <% end %>
