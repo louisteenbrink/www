@@ -102,3 +102,17 @@
   }
 }
 
+.testimonials-blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #736D6D;
+  }
+}
+.testimonials-blog img{
+  height: 70px;
+}
