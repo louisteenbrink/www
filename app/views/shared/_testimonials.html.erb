@@ -6,6 +6,9 @@
         <%= t(".what_our_students_say") %>
       </div>
     </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      What our students think of us
+    </p>
     <div class="testimonials">
       <% @testimonials.take(number).each do |testimonial| %>
         <% testimonial = structure testimonial %>
@@ -35,15 +38,18 @@
       <% end %>
     </div>
     <div class="testimonials-blogs">
-      <h3>Other reviews of Le Wagon on:</h3>
+      <h3>More reviews of Le Wagon</h3>
+      <a href="http://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank" class="testimonials-blog">
+        <%= image_tag "techcrunch.png" %>
+      </a>
       <a href="https://www.coursereport.com/schools/le-wagon#/reviews" target="_blank" class="testimonials-blog">
         <%= image_tag "course_report.png" %>
       </a>
+      <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank" class="testimonials-blog">
+        <%= image_tag "quora.png", style: "height: 50px" %>
+      </a>
       <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank" class="testimonials-blog">
         <%= image_tag "switchup.png" %>
-      </a>
-      <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank" class="testimonials-blog">
-        <%= image_tag "quora.png" %>
       </a>
     </div>
   </div>

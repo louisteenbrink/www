@@ -54,6 +54,9 @@
         <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
       </div>
     </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      What our students have built during the bootcamp
+    </p>
     <div class="projects-list">
       <% @projects.each do |project| %>
        <% project = OpenStruct.new project %>

@@ -106,13 +106,21 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 50px;
   h3 {
     font-size: 21px;
     font-weight: 700;
-    color: #736D6D;
+    color: #4C4C4C;
+  }
+  img {
+    margin: 5px;
   }
 }
 .testimonials-blog img{
-  height: 70px;
+  height: 60px;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
+  }
 }
