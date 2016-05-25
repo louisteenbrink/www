@@ -5,7 +5,7 @@ $curve-size-lg: 100%;
   min-height: 500px;
   overflow: hidden;
   margin-top: -180px;
-  padding-top: 180px;
+  padding-top: 150px;
   padding-bottom: 50px;
 
   h1 {
@@ -61,8 +61,12 @@ $curve-size-lg: 100%;
 }
 
 .learning-curve-helper {
-  @media (max-width: $screen-sm) {
-    display: none;
+  padding: 15px 50px;
+  padding-top: 50px;
+}
+@media (max-width: 960px) {
+  .learning-curve-helper {
+    padding: 50px 0 15px 0;
   }
 }
 
@@ -92,6 +96,7 @@ $curve-size-lg: 100%;
 .learning-curve-wrapper {
   width: $curve-size-lg;
   transition: transform .5s ease;
+  overflow-x: hidden;
 }
 
 .learning-curve {
@@ -106,7 +111,7 @@ $curve-size-lg: 100%;
     transition: width 1s cubic-bezier(0.23, 1, 0.32, 1);
 
     svg {
-      width: 1140px;
+      width: 1038px;
       @media (max-width: $screen-lg) {
         width: 940px;
       }
@@ -131,6 +136,13 @@ $curve-size-lg: 100%;
 
       path, rect {
         fill: white;
+      }
+      width: 1038px;
+      @media (max-width: $screen-lg) {
+        width: 940px;
+      }
+      @media (max-width: $screen-md) {
+        width: 720px;
       }
     }
   }

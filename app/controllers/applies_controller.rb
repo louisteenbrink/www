@@ -23,7 +23,7 @@ class AppliesController < ApplicationController
   def new
     prepare_apply_form
     if @city.nil?
-      redirect_to send(:"apply_#{locale}_path", city: 'paris')
+      redirect_to send(:"apply_#{locale}_path", city: @applicable_cities.first['slug'])
     elsif params[:city].blank?
       redirect_to send(:"apply_#{locale}_path", city: @city['slug'])
     else

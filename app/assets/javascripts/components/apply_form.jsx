@@ -28,10 +28,6 @@ class ApplyForm extends React.Component {
         );
     }
 
-    var courseLanguage =
-      this.props.i18n.course_language +
-      this.props.i18n['language_' + this.state.activeCity.course_locale];
-
     return (
       <div className={componentClasses}>
         <div className="banner-container">
@@ -106,9 +102,10 @@ class ApplyForm extends React.Component {
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
                       <div>
-                        {courseLanguage}
+                        {this.props.i18n.course_language}
+                        <strong>{this.props.i18n['language_' + this.state.activeCity.course_locale]}</strong>
                       </div>
-                      <strong>{this.props.i18n.price}: {this.state.activeBatch.price}</strong>
+                      {this.props.i18n.price}: <strong>{this.state.activeBatch.price}</strong>
                     </div>
                     {submitButton}
                   </div>

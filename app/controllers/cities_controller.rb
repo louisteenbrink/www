@@ -27,5 +27,9 @@ class CitiesController < ApplicationController
     if batch_city
       @next_batch = batch_city['batches'].select { |batch| !batch['full'] }.first
     end
+
+    # TODO - replace with local city reviews when seeded
+    @testimonials = @client.testimonials(locale.to_s)
+
   end
 end

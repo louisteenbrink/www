@@ -131,8 +131,8 @@ fr:
       program_details_html: |
         2 mois pour <strong>devenir développeur web</strong>.
       apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
-      nine_weeks: 9 semaines intensives
-      to_build_your_ideas_html: Apprenez <strong>toute la <i>stack</i> web</strong>.<br> Depuis la base de données jusqu'au navigateur.
+      nine_weeks: 9 semaines intensives - 360 heures de code
+      to_build_your_ideas_html: Apprenez <strong>toute la <i>stack</i> web</strong>. De la base de données au navigateur.
       why_us: Pourquoi Le Wagon ?
       why_us_details_html: |
         Une expérience de %{batches} sessions depuis 2014 (ça représente plus de %{alumni} élèves !) et un programme qui a évolué à chaque fois.

@@ -15,14 +15,14 @@
       </div>
     </div>
     <div class='banner-cta'>
-      <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
+      <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale}_path"), class: "btn banner-cta-item btn-danger btn-lg", style: "margin-left: 0px;" %>
     </div>
   </div>
 </div>
 
 
 <% cache [ 'learning-curve', locale: I18n.locale ] do %>
-<div class='learning-curve-overlay'>
+<div class='learning-curve-overlay' style:"padding: 0 80px;">
   <div class="container">
     <h2 class='section-title-home'>
       <div class='section-title-home-content' style="font-size:30px;">

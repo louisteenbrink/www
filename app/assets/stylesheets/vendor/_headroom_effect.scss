@@ -1,0 +1,18 @@
+.headroom {
+    will-change: transform;
+}
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
+.navbar-wagon {
+  transition: transform 300ms linear;
+}
+.header-fixed {
+  transition: transform 300ms linear;
+}
+.header-fixed.headroom--top {
+  transform: translateY(-100%);
+}

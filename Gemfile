@@ -29,6 +29,7 @@ gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
 gem 'autoprefixer-rails'
+gem "jquery-slick-rails"
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
@@ -42,7 +43,7 @@ source "https://rails-assets.org" do
   gem 'rails-assets-classnames'
   gem 'rails-assets-pubsub-js'
   gem 'rails-assets-devicons'
-  gem 'rails-assets-scrollReveal.js'
+  gem 'rails-assets-headroom.js'
 end
 
 group :development, :test do

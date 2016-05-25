@@ -30,6 +30,9 @@
 
 <%= render "shared/features" %>
 
+<%= render partial: "shared/testimonials", locals: {number: 8} %>
+
+
 <div class="quote-overlay">
   <div class="container">
     <div class='quote'>
@@ -65,8 +68,6 @@
       locale: locale.to_s
     }, prerender: prerender? %>
 <% end %>
-
-<%= render partial: "shared/testimonials", locals: {number: 8} %>
 
 <% cache [ 'projects', ids: @projects.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
 <div id="alumni-home">

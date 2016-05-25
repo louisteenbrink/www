@@ -61,12 +61,16 @@
 
 <%= render "shared/features" %>
 
+
 <% if @city["classroom_picture"] %>
 <div class="banner-container">
-  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["classroom_picture"])%>');" id="banner-city">
+  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["classroom_picture"])%>'); height: 70vh; background-position: center;" id="banner-city">
   </div>
 </div>
 <% end %>
+
+<%= render partial: "shared/testimonials", locals: {number: 8} %>
+
 
 <div id="staff" class="padded">
   <div class="container">
@@ -86,7 +90,7 @@
               <h3><%= teacher["first_name"] %> <%= teacher["last_name"] %></h3>
               <p><%= markdown teacher["bio"][locale.to_s] %></p>
             </div>
-            <div class="card-staff-infos" data-sr>
+            <div class="card-staff-infos">
               <div class="card-staff-role">
                 <h4><%= teacher["role"]%></h4>
                 <p>
@@ -230,3 +234,20 @@
   </div>
 </div>
 
+<% unless @city["apply_facebook_pixel"].blank? %>
+  <%= content_for(:after_js) do %>
+    <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '<%= @city["apply_facebook_pixel"] %>');
+    fbq('track', "PageView");
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=<%= @city["apply_facebook_pixel"] %>&ev=PageView&noscript=1"
+    /></noscript>
+  <% end %>
+<% end %>
