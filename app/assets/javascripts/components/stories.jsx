@@ -28,7 +28,10 @@ class Stories extends React.Component {
           <div className='story-label'>
             <i className="mdi mdi-heart"></i>
           </div>
-          <span>{this.props.i18n.title}</span>
+          <div className='stories-title'>
+            <span>{this.props.i18n.title}</span>
+            <span className="story-label-subtitle">{this.props.i18n.subtitle}</span>
+          </div>
         </div>
         {this.props.stories.map((story, index) => {
           var backgroundStyle = {
@@ -62,7 +65,6 @@ class Stories extends React.Component {
               })}
             </div>
           </div>
-          <a href={storiesPath} className="btn btn-danger stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
         </div>
       </div>
     )

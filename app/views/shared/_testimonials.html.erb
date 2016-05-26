@@ -7,7 +7,7 @@
       </div>
     </h2>
     <p class="text-muted text-center section-title-home-subtitle">
-      What our students think of us
+      <%= t ".students_think_of_us" %>
     </p>
     <div class="testimonials">
       <% @testimonials.take(number).each do |testimonial| %>
@@ -38,7 +38,7 @@
       <% end %>
     </div>
     <div class="testimonials-blogs">
-      <h3>More reviews of Le Wagon</h3>
+      <h3><%= t ".more_reviews" %></h3>
       <a href="http://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank" class="testimonials-blog">
         <%= image_tag "techcrunch.png" %>
       </a>

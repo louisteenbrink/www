@@ -35,6 +35,8 @@ en:
       stories: Stories
     testimonials:
       what_our_students_say: Students Reviews
+      students_think_of_us: What our students think of us
+      more_reviews: More reviews of Le Wagon
     features:
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline_html: |
@@ -115,9 +117,10 @@ en:
       next_batch: "Next batch:"
       events_to_come: Events to come
       featured: Students Stories
+      featured_subtitle: "- What our students become"
       read_next_vowel: "Read ::name::'s story"
       read_next_consumn: "Read ::name::'s story"
-      read_all: Read all our testimonials
+      read_all: Read more stories
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
