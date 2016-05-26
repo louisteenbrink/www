@@ -50,12 +50,6 @@ class StoriesItem extends React.Component {
                   <div className="story-user-batch">
                     Batch #{this.props.alumni.slug}, {this.props.alumni.city}
                   </div>
-                  <div className="story-link hidden-xs">
-                    <a href={Routes.story_path({id: this.props.slug, locale: this.props.locale})}>
-                      {link}
-                    </a>
-                    <i className="fa fa-arrow-right"></i>
-                  </div>
                 </div>
                 <img className="story-company-logo" src={this.props.company.logo} />
               </div>

@@ -16,7 +16,7 @@
   }
 
   &:after {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.63), transparent 73%);
+    background: linear-gradient(left, rgba(0, 0, 0, 0.6), rgba(0,0,0,0.3) 73%);
     position: absolute;
     top: 0;
     right: 0;
@@ -39,6 +39,7 @@
 .story {
   display: flex;
   max-width: 500px;
+  margin-top: 20px;
   @media (max-width: $screen-sm) {
     flex-wrap: wrap;
   }
@@ -83,13 +84,19 @@
   }
 }
 .stories-link {
-  position: absolute;
-  bottom: 00px;
-  right: 15px;
   line-height: 50px;
-  width: 400px;
-  font-size: 17px;
-  z-index: 10;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
 }
 
 .story-detail {
@@ -212,7 +219,7 @@
 .story-label {
   position: relative;
   top: 0;
-  left: 28px;
+  left: 10px;
   height: 80px;
   width: 80px;
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.25);
@@ -250,18 +257,37 @@
     span {
       color: white;
       z-index: 99;
-      margin: 15px;
-      text-transform: uppercase;
-      margin-left: 50px;
-      font-size: 17px;
-      letter-spacing: 5px;
+      margin: 10px;
+      margin-left: 30px;
+      font-size: 28px;
+      letter-spacing: 1px;
       font-weight: bold;
 
       @media (max-width: $screen-md) {
         color: #C1C1C1;
       }
     }
+    .story-label-subtitle {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 100;
+      letter-spacing: 0px;
+    }
   }
+}
+@media (max-width: $screen-md) {
+  .stories-title {
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+  }
+  .story-label-container span {
+    margin-left: 0px;
+    color: #666666 !important;
+    font-size: 22px;
+  }
+}
+.stories-title {
+  margin-top: 20px;
 }
 .story-item-batch {
   height: 25px;
@@ -329,7 +355,7 @@
   align-items: center;
 
   .story-company-logo {
-    width: 100px;
+    width: 80px;
     flex-shrink: 1;
     margin-left: auto;
   }
@@ -387,9 +413,6 @@
       transform: translateX(3px);
     }
   }
-  .story-card-footer-home {
-    padding-bottom: 40px;
-  }
 
   @media (max-width: $screen-sm) { flex-flow: column }
 
@@ -397,7 +420,7 @@
     margin-top: 10px;
     display: flex;
     border-top: 1px solid #EAEAEA;
-    padding: 10px 0;
+    padding: 0;
   }
   main {
     flex: 1;

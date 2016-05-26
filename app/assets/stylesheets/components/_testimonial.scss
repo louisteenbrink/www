@@ -1,7 +1,7 @@
 .testimonials-wrapper {
-  background: #EBEBEB;
-  padding-top: 50px;
-  background-image: linear-gradient(top, #D3CECE -10%, #F4F4F4 90%)
+  background: white;
+  padding: 30px 0;
+  padding-bottom: 80px;
 }
 
 .testimonials {
@@ -28,7 +28,7 @@
   overflow: hidden;
   min-height: 200px;
   display: flex;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
   position: relative;
 
   .green-quote {
@@ -99,5 +99,28 @@
 @media (max-width: 768px) {
   .testimonials {
     margin: 0 30px;
+  }
+}
+
+.testimonials-blogs {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #4C4C4C;
+  }
+  img {
+    margin: 5px;
+  }
+}
+.testimonials-blog img{
+  height: 60px;
+  opacity: 0.6;
+  &:hover {
+    opacity: 1;
   }
 }

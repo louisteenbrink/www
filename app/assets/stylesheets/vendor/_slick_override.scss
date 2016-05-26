@@ -2,7 +2,7 @@
   font-family: fontAwesome;
   font-size: 40px;
   color: #D23333;
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .slick-prev:before {
   content: '\f104  ';
@@ -12,4 +12,7 @@
 }
 .slick-prev:before:hover, .slick-next:before:hover {
   opacity: 1;
+}
+.slick-dots {
+  display: none !important;
 }

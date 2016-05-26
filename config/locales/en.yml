@@ -34,8 +34,11 @@ en:
       apply: Apply Now
       stories: Stories
     testimonials:
-      what_our_students_say: Students reviews
+      what_our_students_say: Students Reviews
+      students_think_of_us: What our students think of us
+      more_reviews: More reviews of Le Wagon
     features:
+      read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline_html: |
         Learn to write clean code and build web products. <br />Join the most <strong>exciting community of learners in Europe</strong>.
@@ -99,6 +102,7 @@ en:
       view_teaser: See our video
       apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
       discover_us: Discover our program
+      what_they_code: What our students have built during the bootcamp
       it_works: "Funny thing, it works"
       freshly_coded: Freshly coded
       all_products: 100+ products built by our alumni.
@@ -110,14 +114,15 @@ en:
       and_you_html: And <strong>you</strong> ?
       check_projects: Discover our students and their projects
       see_more_projects: See more projects...
-      our_students_projects: What our students have built
+      our_students_projects: Students Projects
       only_ten_days: "...in only 10 days"
       next_batch: "Next batch:"
       events_to_come: Events to come
-      featured: TESTIMONIALS
+      featured: Students Stories
+      featured_subtitle: "- What our students become"
       read_next_vowel: "Read ::name::'s story"
       read_next_consumn: "Read ::name::'s story"
-      read_all: Read all our testimonials
+      read_all: Read more stories
     program:
       title: Program - 9 weeks to learn Ruby on Rails
       description: |
@@ -127,7 +132,7 @@ en:
         2 months to <strong>become a web developer</strong>.
       apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
       nine_weeks: 9 intensive weeks - 360 hours of code
-      to_build_your_ideas_html: Learn <strong>all the web stack</strong>. From the database to the browser.
+      to_build_your_ideas_html: Learn all the web stack. From the database to the browser.
       why_us: Why us?
       why_us_details_html: |
         We have taught %{batches} batches (that's more than %{alumni} students!) and our program has evolved each time to reach perfection.

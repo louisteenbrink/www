@@ -25,10 +25,13 @@ class Stories extends React.Component {
     return (
       <div className='story-overlay'>
         <div className='container story-label-container'>
-          <div className='story-label'>
+          <div className='story-label hidden-xs hidden-sm'>
             <i className="mdi mdi-heart"></i>
           </div>
-          <span>{this.props.i18n.title}</span>
+          <div className='stories-title'>
+            <span>{this.props.i18n.title}</span>
+            <span className="story-label-subtitle">{this.props.i18n.subtitle}</span>
+          </div>
         </div>
         {this.props.stories.map((story, index) => {
           var backgroundStyle = {
@@ -60,9 +63,9 @@ class Stories extends React.Component {
                   activeItem={this.state.activeItem}
                   locale={this.props.locale}/>
               })}
+              <a href={storiesPath} className="btn stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
             </div>
           </div>
-          <a href={storiesPath} className="btn btn-danger stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
         </div>
       </div>
     )

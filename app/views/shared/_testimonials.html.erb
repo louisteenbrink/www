@@ -1,11 +1,14 @@
 <% cache [ 'testimonials', ids: @testimonials.map{ |s| s['id'] }.join("-"), number: number, locale: I18n.locale ] do %>
 <div class="testimonials-wrapper">
   <div class="container">
-    <!-- <h2 class="section-title-home section-title-home-small">
-      <div class="section-title-home-content">
+    <h2 class="section-title-home section-title-home-small">
+      <div class="section-title-home-content" style="background: white;">
         <%= t(".what_our_students_say") %>
       </div>
-    </h2> -->
+    </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      <%= t ".students_think_of_us" %>
+    </p>
     <div class="testimonials">
       <% @testimonials.take(number).each do |testimonial| %>
         <% testimonial = structure testimonial %>
@@ -33,6 +36,21 @@
           </div>
         </div>
       <% end %>
+    </div>
+    <div class="testimonials-blogs">
+      <h3><%= t ".more_reviews" %></h3>
+      <a href="http://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank" class="testimonials-blog">
+        <%= image_tag "techcrunch.png" %>
+      </a>
+      <a href="https://www.coursereport.com/schools/le-wagon#/reviews" target="_blank" class="testimonials-blog">
+        <%= image_tag "course_report.png" %>
+      </a>
+      <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank" class="testimonials-blog">
+        <%= image_tag "quora.png" %>
+      </a>
+      <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank" class="testimonials-blog">
+        <%= image_tag "switchup.png" %>
+      </a>
     </div>
   </div>
 </div>

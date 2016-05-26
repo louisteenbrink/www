@@ -33,34 +33,12 @@
 <%= render partial: "shared/testimonials", locals: {number: 8} %>
 
 
-<div class="quote-overlay">
-  <div class="container">
-    <div class='quote'>
-      <h2 class='section-title-home quote'>
-        <div class='section-title-home-content'>
-          "an <strong>Impressive</strong> coding bootcamp"
-          <div class='techcrunch'>
-            <hr class='techcrunch-hr hidden-xs'>
-            <div>
-              <%= image_tag "techcrunch.png" %>
-            </div>
-          </div>
-        </div>
-      </h2>
-      <div class='techcrunch-view hidden-sm hidden-xs'>
-        <a href='http://techcrunch.com/2014/11/27/le-wagon-is-an-impressive-french-coding-bootcamp-for-entrepreneurs/' target='_blank'>
-        <%= image_tag "press/techcrunch.png" %>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
 <% cache [ 'stories', ids: @stories.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
   <%= react_component 'Stories', {
       stories: @stories,
       i18n: {
         title: t(".featured"),
+        subtitle: t(".featured_subtitle"),
         read_next_vowel: t(".read_next_vowel"),
         read_next_consumn: t(".read_next_consumn"),
         read_all: t(".read_all")
@@ -77,6 +55,9 @@
         <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
       </div>
     </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      <%= t(".what_they_code") %>
+    </p>
     <div class="projects-list">
       <% @projects.each do |project| %>
        <% project = OpenStruct.new project %>
@@ -160,3 +141,5 @@
     </div>
   </div>
 </div>
+
+

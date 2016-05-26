@@ -80,7 +80,7 @@
 
 .section-title-home {
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: $font-weight-bold;
   letter-spacing: -2px;
   border-bottom: 1px solid #E0E0E0;
@@ -89,7 +89,7 @@
   justify-content: center;
   position: relative;
   display: flex;
-  margin: 2em 40px 1em 40px;
+  margin: 3em 40px 1em 40px;
   z-index: 1;
 
   @media (max-width: $screen-md) {
@@ -141,16 +141,14 @@
 }
 
 .section-title-home-subtitle {
-  font-size: 20px !important;
+  font-size: 19px !important;
   font-weight: 300;
-  margin-top: -25px;
   position: relative;
   z-index: 1;
   text-align: center;
-  color: #535252 !important;
+  color: #6C6767 !important;
   font-size: 15px;
   font-weight: 400;
-  margin: auto;
 }
 
 .red { color: $red }
@@ -187,9 +185,12 @@ a.link-big {
   border-bottom: 3px solid rgba(106, 216, 106, 0.60);
   box-shadow: inset 0 -8px 0 rgba(106, 216, 106, 0.55);
   transition: background .2s ease;
-  height: 38px;
+  height: 31px;
   font-size: 29px;
   display: inline-block;
+  font-size: 22px;
+  color: #5E5757;
+  font-weight: 700;
 
   &:hover {
     text-decoration: none;
