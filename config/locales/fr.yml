@@ -39,15 +39,16 @@ fr:
         fullstack: Programme
       apply: Postuler
     testimonials:
-      what_our_students_say: Students Reviews
-      students_think_of_us: Ce que disent nos élèves
+      what_our_students_say: Reviews d'élèves
+      students_think_of_us: Ce que nos élèves pensent de nous
       more_reviews: Plus de reviews sur Le Wagon
     features:
+      read_full_program: Lire le programme
       pedagogy_matters_html: |
         Codez <i>the startup way</i>
       pedagogy_tagline_html: |
         Apprenez à coder des produits  avec les bonnes pratiques. <br />Rejoignez une <strong>communauté tech passionnée en Europe</strong>.
-      web_development: Formation développeur web
+      web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
         Apprenez des techniques de design avancées en CSS.
@@ -103,6 +104,8 @@ fr:
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
       vision_html: Le Wagon apporte un <strong>savoir-faire technique</strong> aux <strong>esprits créatifs</strong>.
       view_teaser: voir la vidéo
+      our_students_projects: Projets d'élèves
+      what_they_code: Ce que nos élèves ont codé au Wagon
       apply_for_nine_weeks_html: Postulez <span>pour 9 semaines de formation</span>
       discover_us: Découvrez notre programme
       it_works: "le plus étrange.. Ça marche !"
@@ -117,11 +120,10 @@ fr:
       and_you_html: Et <strong>vous</strong> ?
       check_projects: Découvrir nos élèves et leurs projets
       see_more_projects: Voir plus de projets...
-      our_students_projects: Ce que codent nos élèves
       only_ten_days: "...en 10 jours seulement"
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
-      featured: Students Stories
+      featured: Histoires d'élèves
       featured_subtitle: "- Ce que nos élèves deviennent"
       read_next_vowel: "L'histoire d'::name::"
       read_next_consumn: "L'histoire de ::name::"

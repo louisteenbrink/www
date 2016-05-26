@@ -39,7 +39,7 @@
 .story {
   display: flex;
   max-width: 500px;
-  margin-top: 30px;
+  margin-top: 20px;
   @media (max-width: $screen-sm) {
     flex-wrap: wrap;
   }
@@ -84,13 +84,19 @@
   }
 }
 .stories-link {
-  position: absolute;
-  bottom: 00px;
-  right: 15px;
   line-height: 50px;
-  width: 400px;
-  font-size: 17px;
-  z-index: 10;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+    color: white;
+  }
 }
 
 .story-detail {
@@ -269,8 +275,19 @@
     }
   }
 }
+@media (max-width: $screen-md) {
+  .stories-title {
+    margin: 0 auto !important;
+    margin-top: 30px !important;
+  }
+  .story-label-container span {
+    margin-left: 0px;
+    color: #666666 !important;
+    font-size: 22px;
+  }
+}
 .stories-title {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .story-item-batch {
   height: 25px;

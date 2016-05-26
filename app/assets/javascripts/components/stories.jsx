@@ -25,7 +25,7 @@ class Stories extends React.Component {
     return (
       <div className='story-overlay'>
         <div className='container story-label-container'>
-          <div className='story-label'>
+          <div className='story-label hidden-xs hidden-sm'>
             <i className="mdi mdi-heart"></i>
           </div>
           <div className='stories-title'>
@@ -63,6 +63,7 @@ class Stories extends React.Component {
                   activeItem={this.state.activeItem}
                   locale={this.props.locale}/>
               })}
+              <a href={storiesPath} className="btn stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
             </div>
           </div>
         </div>

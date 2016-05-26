@@ -38,6 +38,7 @@ en:
       students_think_of_us: What our students think of us
       more_reviews: More reviews of Le Wagon
     features:
+      read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."
       pedagogy_tagline_html: |
         Learn to write clean code and build web products. <br />Join the most <strong>exciting community of learners in Europe</strong>.
@@ -101,6 +102,7 @@ en:
       view_teaser: See our video
       apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
       discover_us: Discover our program
+      what_they_code: What our students have built during the bootcamp
       it_works: "Funny thing, it works"
       freshly_coded: Freshly coded
       all_products: 100+ products built by our alumni.
