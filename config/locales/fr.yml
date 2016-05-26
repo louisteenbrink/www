@@ -123,11 +123,11 @@ fr:
       only_ten_days: "...en 10 jours seulement"
       next_batch: "Prochain départ :"
       events_to_come: évènements à venir
-      featured: Histoires d'élèves
+      featured: Histoires d’élèves
       featured_subtitle: "- Ce que nos élèves deviennent"
-      read_next_vowel: "L'histoire d'::name::"
-      read_next_consumn: "L'histoire de ::name::"
-      read_all: Lire plus d'histoires
+      read_next_vowel: "L’histoire d'::name::"
+      read_next_consumn: "L’histoire de ::name::"
+      read_all: Lire plus d’histoires
     program:
       title: Formation Développeur Web - Le programme du Wagon
       description: |
