@@ -30,8 +30,6 @@
 
 <%= render "shared/features" %>
 
-<%= render "shared/positions" %>
-
 <%= render partial: "shared/testimonials", locals: {number: 8} %>
 
 
@@ -48,6 +46,8 @@
       locale: locale.to_s
     }, prerender: prerender? %>
 <% end %>
+
+<%= render "shared/positions" %>
 
 <% cache [ 'projects', ids: @projects.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
 <div id="alumni-home">

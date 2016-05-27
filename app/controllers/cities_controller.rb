@@ -1,6 +1,7 @@
 class CitiesController < ApplicationController
   def show
     @testimonials = @client.testimonials(locale.to_s)
+    @positions = @client.positions
 
     if params[:city].downcase != params[:city]
       redirect_to city_path(city: params[:city].downcase)
