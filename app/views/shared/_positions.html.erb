@@ -1,0 +1,36 @@
+<div class="positions-overlay">
+  <div class="container">
+    <h2 class="section-title-home section-title-home-small">
+      <div class="section-title-home-content" style="background: white;">
+        <%= t(".they_hired_our_students") %>
+      </div>
+    </h2>
+    <p class="text-muted text-center section-title-home-subtitle">
+      <%= t ".where_our_students_are_working" %>
+    </p>
+    <div class="positions-container">
+      <div class="row">
+      <% @positions.each do |position| %>
+        <div class="col-xs-6 col-sm-4 col-md-3">
+          <div class="card-position">
+            <div class="position-company-container">
+              <%= image_tag position["company"]["logo"] %>
+            </div>
+            <div class="position-alumni-container">
+              <%= image_tag position["alumni"]["thumbnail"] %>
+              <div class="position-alumni-details">
+                <p class="alumni-name">
+                  <%= position["alumni"]["first_name"]%> <%= position["alumni"]["last_name"]%>
+                </p>
+                <p class="alumni-title"><%= position["title"]%></p>
+              </div>
+            </div>
+            <% position["company"]["url"]%>
+          </div>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
