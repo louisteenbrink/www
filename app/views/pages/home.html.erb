@@ -47,6 +47,8 @@
     }, prerender: prerender? %>
 <% end %>
 
+<%= render "shared/positions" %>
+
 <% cache [ 'projects', ids: @projects.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
 <div id="alumni-home">
   <div class="container">
