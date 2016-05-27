@@ -403,6 +403,13 @@
 }
 .card-position {
   min-height: 150px;
+  .company-link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
   &:hover {
     cursor: pointer;
     .position-company-container img {

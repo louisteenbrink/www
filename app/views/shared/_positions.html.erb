@@ -25,7 +25,7 @@
                 <p class="alumni-title"><%= position["title"]%></p>
               </div>
             </div>
-            <% position["company"]["url"]%>
+            <a href="<%= position["company"]["url"]%>" target="_blank" class="company-link"></a>
           </div>
         </div>
       <% end %>
