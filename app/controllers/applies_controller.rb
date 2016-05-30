@@ -38,6 +38,8 @@ class AppliesController < ApplicationController
       end
     end
 
+    @applicable_cities = @applicable_cities.reject { |c| c['first_batch_date'].nil? }
+
     # Sort by first available batch
     @applicable_cities.sort! do |city_a, city_b|
       if city_a['first_batch_date'] == city_b['first_batch_date']
