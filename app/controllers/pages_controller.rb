@@ -11,6 +11,7 @@ class PagesController < ApplicationController
     @stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")
     @testimonials = @client.testimonials(locale.to_s)
+    @positions = @client.positions
   end
 
   def thanks

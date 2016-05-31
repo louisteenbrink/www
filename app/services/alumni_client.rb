@@ -49,6 +49,12 @@ class AlumniClient
     end
   end
 
+  def positions
+    from_cache(:positions) do
+      get("#{@base_url}/positions")["positions"]
+    end
+  end
+
   def cities
     from_cache(:cities) do
       get("#{@base_url}/cities")["cities"]
