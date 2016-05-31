@@ -27,11 +27,21 @@
 
         <div class='footer-section-links'>
           <div>
-            <a href="https://ondemand.lewagon.org/" target='_blank'>Le Wagon On Demand</a>
+            <a href="https://ondemand.lewagon.org/" target='_blank'>
+              Le Wagon On Demand 🇫🇷
+            </a>
           </div>
-          <div>
-            <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7RqYSvBqewZNtf9uFEYs0KN" target="_blank">Workshops pour débutants</a>
-          </div>
+          <% if I18n.locale == :en %>
+            <div>
+              <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7TwufH3veAJ6dweRvTw57tO" target="_blank">
+                Beginner Workshops
+              </a>
+            </div>
+          <% else %>
+            <div>
+              <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7RqYSvBqewZNtf9uFEYs0KN" target="_blank">Workshops pour débutants</a>
+            </div>
+          <% end %>
           <div>
             <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7QRxsCuR1tKhUD4g_JEh_4a" target="_blank">Apero-Talks</a>
           </div>
