@@ -257,6 +257,7 @@ en:
       our_students_projects: What our students have built
       only_ten_days: "...in only 10 days"
       discover_us: Discover our program
+      discover_our_stories: Discover our alumni stories
       watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
   cities:
     show:

@@ -25,6 +25,10 @@ class PagesController < ApplicationController
     end
   end
 
+  def employers
+    @positions = @client.positions.take(8)
+  end
+
   def stack
   end
 
