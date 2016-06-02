@@ -240,10 +240,10 @@ fr:
     press:
       title: Ils parlent du Wagon
     employers:
-      hiring_tagline_html: Rejoignez Le Wagon. <strong>Travaillez avec nos élèves</strong>.
-      join_our_network: Join our network
+      hiring_tagline_html: Employeur ? Vous souhaitez <strong>travailler avec nos élèves</strong>.
+      join_our_network: Join our Network
       why: Pourquoi rejoindre notre réseau ?
-      reasons: Le Hiring Network du Wagon permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
+      reasons: Notre Hiring Network permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
       exceptional: Des alumni exceptionnels
       exceptional_details: |
         Nos alumni ont pris deux mois de leur vie pour apprendre la programmation web, souvent après une premier cycle de 5 ans d'études.
@@ -259,7 +259,7 @@ fr:
         Nos élèves ont codé plusieurs apps web et connaissent les bonnes pratiques
         et le workflow des startups. Comme développeur junior, ils peuvent implémenter des features dès la première semaine.
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
-      wanna_join: Vous souhaitez rejoindre Le Wagon ?
+      wanna_join: Vous voulez nous rejoindre ?
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
   students:
     index:
