@@ -36,6 +36,7 @@ fr:
         fullstack_program: FullStack - 9 semaines intensives
       stories: Témoignages
       apply: Postuler
+      employers: Hiring
     navbar_dropdown:
       menu:
         cities: Villes
@@ -238,6 +239,28 @@ fr:
       fourth_step: "Commencez la track ruby en anglais"
     press:
       title: Ils parlent du Wagon
+    employers:
+      hiring_tagline_html: Rejoignez Le Wagon. <strong>Travaillez avec nos élèves</strong>.
+      join_our_network: Join our network
+      why: Pourquoi rejoindre notre réseau ?
+      reasons: Le Hiring Network du Wagon permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
+      exceptional: Des alumni exceptionnels
+      exceptional_details: |
+        Nos alumni ont pris deux mois de leur vie pour apprendre la programmation web, souvent après une premier cycle de 5 ans d'études.
+        Ils ont codé plus de 360 heures pendant le bootcamp, et on une vraie soif de progresser.
+        Difficile de trouver des profils aussi motivés !
+      unique: Aux profils variés
+      unique_details: |
+        La plupart de nos élèves viennent de très bonnes école de commerce ou d'ingénieur
+        et ont déjà une excellente méthodologie de travail. Certains alumni sont aussi designers,
+        architecte, journalistes, photographes, avec des profils et des compétences très variés.
+      operational: Operationnels dès le premier jour
+      operational_details: |
+        Nos étudiants ont codé plusieurs apps web et connaissent les bonnes pratiques
+        et le workflow des startups. Comme développeur junior, ils peuvent développé des features dès la première semaine.
+        Comme PM ou growth marketer, ils savent relier des problématiques business à des développements techniques.
+      wanna_join: Vous souhaitez rejoindre Le Wagon ?
+      signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon
