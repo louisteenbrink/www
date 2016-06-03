@@ -36,7 +36,7 @@ fr:
         fullstack_program: FullStack - 9 semaines intensives
       stories: Témoignages
       apply: Postuler
-      employers: Hiring
+      employers: Employeurs
     navbar_dropdown:
       menu:
         cities: Villes
@@ -240,8 +240,8 @@ fr:
     press:
       title: Ils parlent du Wagon
     employers:
-      hiring_tagline_html: Employeur ? Vous souhaitez <strong>travailler avec nos élèves</strong>.
-      join_our_network: Join our Network
+      hiring_tagline_html: Employeur ? Vous voulez <strong>travailler avec nos élèves</strong> ?
+      join_our_network: Rejoignez Le Wagon
       why: Pourquoi rejoindre notre réseau ?
       reasons: Notre Hiring Network permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
       exceptional: Des alumni exceptionnels

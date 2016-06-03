@@ -27,3 +27,12 @@
   font-weight: 100;
   padding-right: 20px;
 }
+#employers-apply {
+  height: 100vh;
+  padding: 0 100px;
+}
+@media (max-width: $screen-sm) {
+  #employers-apply {
+    padding: 0 20px;
+  }
+}

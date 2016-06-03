@@ -36,7 +36,7 @@ en:
         fullstack_program: FullStack - 9-week intensive program
       apply: Apply Now
       stories: Stories
-      employers: Hiring
+      employers: Employers
     testimonials:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
@@ -248,20 +248,20 @@ en:
       title: They speak about Le Wagon
     employers:
       hiring_tagline_html: Join us as hiring partners. <strong>Work with our alumni</strong>.
-      join_our_network: Join our network
+      join_our_network: Join our Network
       why: Why join our network?
       reasons: Le Wagon's Network allows fast-growing companies to hire directly from our alumni community and meet with them on a quarterly basis. face-to-face.
       exceptional: Exceptional people
       exceptional_details: |
         Our students have dedicated two months of their life to learn programming,
         usually after a first 5-year education cycle. They have spent more than 360
-        ours coding during the program. Very rare to find individuals with such
+        hours coding during the program. Very rare to find individuals with such
         commitment.
       unique: With unique backgrounds
       unique_details: |
         Most our students come from the very best business and engineering
         schools worlwide. They already have excellent working methodology.
-        But our alumni are also designers, journalists, photographers,
+        Our alumni are also designers, journalists, photographers,
         with very different skills.
       operational: Operational from day one
       operational_details: |
