@@ -5,16 +5,18 @@ class StudentsController < ApplicationController
     @statistics = @client.statistics
     @demo_day = ({
       fr: {
-        video_id: '79SQFIIR0O8',
-        date: '4 mars 2016',
+        video_id: 'pRUVEoYr6bA',
+        date: '3 juin 2016',
         city: 'Paris',
-        slug: 18
+        slug: 24,
+        start: 56
       },
       en: {
         video_id: '6ebCdcUAYVE',
         date: 'April 1st, 2016',
         city: 'Amsterdam',
-        slug: 20
+        slug: 20,
+        start: 0
       }
     })[I18n.locale]
   end
