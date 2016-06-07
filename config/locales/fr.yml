@@ -269,9 +269,9 @@ fr:
       our_alumni_details_html: |
         <strong>%{count}+ élèves</strong> partageant les mêmes <i>skills</i> & la même <strong>passion</strong>.
       apply_for_nine_weeks_html: Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>
-      our_students_projects: Success stories
+      our_students_projects: Les projets codés par nos élèves
       only_ten_days: "...en 10 jours seulement"
-      discover_our_stories: Les histoires de nos élèves
+      discover_our_stories: Success stories
       watch_demo_day_title_html: "Regardez le dernier Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
   cities:
     show:
