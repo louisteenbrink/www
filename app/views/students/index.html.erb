@@ -39,11 +39,42 @@
       </div>
     </div>
 
+
+    <div class="stories-container">
+      <div class="story-container popular-stories">
+      <%= t ".discover_our_stories" %>
+      </div>
+      <% @stories.each do |story| %>
+        <div class="story-container">
+          <div class="story-card">
+            <main>
+              <div class="story-card-title">
+                <%= story["title"][locale.to_s]  %>
+              </div>
+              <div class="story-card-summary">
+                <%= markdown story['summary'][locale.to_s] %>
+              </div>
+              <div class='story-card-footer'>
+                <%= render 'stories/user_infos', story: story %>
+              </div>
+            </main>
+            <aside>
+              <div class="background perpetua" id="<%= story["alumni"]["github_nickname"] %>" style="background-image: url('<%= story["picture"]%>')">
+              </div>
+            </aside>
+            <%= link_to "", story_path(id: story["slug"]), class: "story-card-link" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
     <h2 class='section-title-home section-title-home-small'>
       <div class='section-title-home-content'>
         <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
       </div>
     </h2>
+
+
     <div class="projects-list">
       <% @projects.each do |project| %>
         <% project = OpenStruct.new project %>
@@ -79,8 +110,10 @@
         </div>
       <% end %>
     </div>
+
   </div>
 </div>
+
 
 
 <%= render partial: "shared/testimonials", locals: {number: 20} %>

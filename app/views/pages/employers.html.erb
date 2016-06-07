@@ -1,0 +1,98 @@
+<div class="banner-container">
+  <div class="container">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path "banners/header-employers.jpg" %>">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+          Le Wagon <strong>Hiring Network</strong>
+        </h1>
+        <p>
+          <%= t ".hiring_tagline_html" %>
+        </p>
+      </div>
+    </div>
+    <div class='banner-cta'>
+      <a href="https://lewagon.typeform.com/to/bKCXIw" class='banner-cta-item btn-danger' style="padding: 30px 35px;font-size: 20px;margin-left:0;" target="_blank">
+        <%= t ".join_our_network" %>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div id="employers-why-overlay">
+  <div class="container">
+    <h2 class="section-title-home section-title-home-small">
+      <div class="section-title-home-content">
+        <%= t ".why" %>
+      </div>
+    </h2>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <p class="employers-why-text">
+          <%= t ".reasons" %>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <div class='alumni-strength'>
+          <div class='alumni-strength-header'>
+            <h2 class='alumni-strength-title'>
+              <%= render "shared/unique" %>
+              <%= t ".exceptional" %>
+            </h2>
+          </div>
+          <div class='alumni-strength-body'>
+            <p>
+              <%= t ".exceptional_details" %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+      <div class='alumni-strength'>
+        <div class='alumni-strength-header'>
+          <h2 class='alumni-strength-title'>
+            <%= render "shared/various_background" %>
+            <%= t ".unique" %>
+          </h2>
+        </div>
+        <div class='alumni-strength-body'>
+          <p>
+            <%= t ".unique_details" %>
+          </p>
+        </div>
+      </div>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <div class='alumni-strength'>
+            <h2 class='alumni-strength-title'>
+              <%= render "shared/operational" %>
+              <%= t ".operational" %>
+            </h2>
+          </div>
+          <div class='alumni-strength-body'>
+            <p>
+              <%= t ".operational_details" %>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<%= render "shared/positions" %>
+
+
+<div class="banner-container">
+  <div class="banner banner-top banner-gradient text-center" style="background-image: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url('<%= image_path "banners/footer-employers.jpg" %>'); height: 80vh;" id="banner-city">
+    <div>
+      <h3 style="font-size: 40px;"><%= t ".wanna_join" %></h3>
+      <p style="margin-bottom: 10px;font-size: 23px"><%= t ".signup" %></p>
+      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 30px 35px;font-size: 20px" target="_blank">Sign up</a>
+    </div>
+  </div>
+</div>
+

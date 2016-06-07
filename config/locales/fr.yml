@@ -34,8 +34,8 @@ fr:
         online: En ligne (Vidéos)
         on_site: En présentiel
         fullstack_program: FullStack - 9 semaines intensives
-      stories: Témoignages
       apply: Postuler
+      employers: Employeurs
     navbar_dropdown:
       menu:
         cities: Villes
@@ -238,6 +238,28 @@ fr:
       fourth_step: "Commencez la track ruby en anglais"
     press:
       title: Ils parlent du Wagon
+    employers:
+      hiring_tagline_html: Employeur ? Vous voulez <strong>travailler avec nos élèves</strong> ?
+      join_our_network: Rejoignez Le Wagon
+      why: Pourquoi rejoindre notre réseau ?
+      reasons: Notre Hiring Network permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
+      exceptional: Des alumni exceptionnels
+      exceptional_details: |
+        Nos alumni ont pris deux mois de leur vie pour apprendre la programmation web, souvent après une premier cycle de 5 ans d'études.
+        Ils ont codé plus de 360 heures pendant le bootcamp, et ont une vraie soif de progresser.
+        Difficile de trouver des profils aussi motivés !
+      unique: Aux profils variés
+      unique_details: |
+        La plupart de nos élèves viennent de très bonnes école de commerce ou d'ingénieur
+        et ont déjà une excellente méthodologie de travail. Certains alumni sont aussi designers,
+        architectes, journalistes, photographes, avec des profils et des compétences très variés.
+      operational: Operationnels dès le premier jour
+      operational_details: |
+        Nos élèves ont codé plusieurs apps web et connaissent les bonnes pratiques
+        et le workflow des startups. Comme développeur junior, ils peuvent implémenter des features dès la première semaine.
+        Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
+      wanna_join: Vous voulez nous rejoindre ?
+      signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon
@@ -249,6 +271,7 @@ fr:
       apply_for_nine_weeks_html: Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>
       our_students_projects: Les projets codés par nos élèves
       only_ten_days: "...en 10 jours seulement"
+      discover_our_stories: Success stories
       watch_demo_day_title_html: "Regardez le dernier Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
   cities:
     show:
