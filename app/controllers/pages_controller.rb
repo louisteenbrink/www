@@ -11,7 +11,7 @@ class PagesController < ApplicationController
     @stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")
     @testimonials = @client.testimonials(locale.to_s)
-    @positions = @client.positions
+    @positions = @client.positions.take(8)
   end
 
   def thanks
@@ -26,7 +26,7 @@ class PagesController < ApplicationController
   end
 
   def employers
-    @positions = @client.positions.take(8)
+    @positions = @client.positions
   end
 
   def stack
