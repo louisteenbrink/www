@@ -246,6 +246,8 @@ en:
     press:
       title: They speak about Le Wagon
     employers:
+      title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
+      description: Join us as hiring partner and get alerted about our new candidates and job events.
       hiring_tagline_html: Join us as hiring partners. <strong>Work with our alumni</strong>.
       join_our_network: Join our Network
       why: Why join our network?

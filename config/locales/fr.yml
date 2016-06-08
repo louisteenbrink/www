@@ -239,6 +239,8 @@ fr:
     press:
       title: Ils parlent du Wagon
     employers:
+      title: Le Wagon Hiring Network - recrutez les élèves de la meilleure école de code en Europe.
+      description: Rejoignez notre réseau et soyez alertés des nouveaux candidats du Wagon et des prochains évènements de recrutement.
       hiring_tagline_html: Employeur ? Vous voulez <strong>travailler avec nos élèves</strong> ?
       join_our_network: Rejoignez Le Wagon
       why: Pourquoi rejoindre notre réseau ?

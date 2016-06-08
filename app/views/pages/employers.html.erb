@@ -1,3 +1,7 @@
+<%= content_for(:title)       { t ".title" }       %>
+<%= content_for(:description) { t ".description" } %>
+<%= content_for(:image_url) { image_url 'social/employers_facebook_card.png' } %>
+
 <div class="banner-container">
   <div class="container">
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path "banners/header-employers.jpg" %>">
