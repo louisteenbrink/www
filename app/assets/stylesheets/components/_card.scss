@@ -412,10 +412,6 @@
   }
   &:hover {
     cursor: pointer;
-    .position-company-container img {
-      filter: grayscale(0%);
-      opacity: 1;
-    }
   }
   .position-company-container {
     width: 100%;
@@ -424,17 +420,16 @@
     align-items: center;
     // border-bottom: 1px solid rgba(0,0,0, 0.1);
     img {
-      width: 150px;
-      filter: grayscale(100%);
-      opacity: 0.8;
+      width: 135px;
       transition: all 0.3s ease;
       z-index: -1;
+      margin: 0 auto;
     }
   }
   .position-alumni-container {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     padding-top: 10px;
     img {
       width: 40px;
@@ -442,7 +437,6 @@
       height: 40px;
     }
     .position-alumni-details {
-      flex: 1 auto;
       padding-left: 10px;
     }
     .alumni-name {
@@ -457,6 +451,9 @@
       font-weight: 100;
       color: grey;
     }
+  }
+  &:hover {
+    opacity: 0.8;
   }
 }
 @media (max-width: $screen-md) {
