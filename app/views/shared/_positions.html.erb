@@ -31,9 +31,11 @@
       <% end %>
       </div>
     </div>
-    <div class="text-center" style="margin: 60px 0;">
-      <%= link_to t(".join_our_network"), employers_path, class: "link-big" %>
-    </div>
+    <% unless params[:action] == "employers" %>
+      <div class="text-center" style="margin: 60px 0;">
+        <%= link_to t(".join_our_network"), employers_path, class: "link-big" %>
+      </div>
+    <% end %>
   </div>
 </div>
 
