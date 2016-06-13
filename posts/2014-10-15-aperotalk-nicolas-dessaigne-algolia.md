@@ -35,5 +35,5 @@ Pour en savoir plus, **nous vous invitons à regarder la vidéo en début d'arti
 
 - Si vous voulez vous tenir informé des nouveautés du **Wagon** [inscrivez-vous à notre newsletter](http://www.lewagon.org/)
 - Si vous voulez participer aux événements gratuits que Le Wagon organise, [inscrivez-vous à notre groupe meetup](http://www.meetup.com/Le-Wagon-Paris-Coding-Station/)
-- À l'occasion, un petit like sur [Facebook](https://www.facebook.com/lewagonformation) ou un follow/RT sur [Twitter](https://www.twitter.com/lewagonparis) font toujours plaisir ! Share the love comme ils disent :)
+- À l'occasion, un petit like sur [Facebook](https://www.facebook.com/lewagon) ou un follow/RT sur [Twitter](https://www.twitter.com/lewagonparis) font toujours plaisir ! Share the love comme ils disent :)
 
