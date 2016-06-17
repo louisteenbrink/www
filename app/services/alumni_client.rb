@@ -33,10 +33,10 @@ class AlumniClient
     get("#{@base_url}/batches/live")["batch"]
   end
 
-  def testimonials(locale, city = nil)
+  def testimonials(locale, slug = nil)
     from_cache(:testimonials, locale) do
-      if city
-        get "#{@base_url}/testimonials" , params: { locale: locale, city: city }
+      if slug
+        get "#{@base_url}/testimonials" , params: { locale: locale, slug: slug }
       else
         get "#{@base_url}/testimonials" , params: { locale: locale }
       end

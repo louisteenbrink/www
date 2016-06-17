@@ -16,6 +16,8 @@ class CitiesController < ApplicationController
     end
 
     @testimonials = @client.testimonials(locale.to_s, params[:city])
+    @testimonials = @client.testimonials(locale.to_s) if @testimonials.empty?
+
     @positions = @client.positions
 
     @teachers = @client.staff(params[:city])["teachers"]
