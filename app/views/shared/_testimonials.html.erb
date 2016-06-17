@@ -9,7 +9,7 @@
       <%= t ".students_think_of_us" %>
     </p>
     <div class="testimonials">
-      <% @testimonials.each do |testimonial| %>
+      <% @testimonials.take(12).each do |testimonial| %>
         <% testimonial = structure testimonial %>
         <div class="testimonial-container">
           <div class="testimonial">
