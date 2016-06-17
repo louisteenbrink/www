@@ -34,7 +34,7 @@ class AlumniClient
   end
 
   def testimonials(locale, slug = nil)
-    from_cache(:testimonials, locale) do
+    from_cache(:testimonials, locale, slug) do
       if slug
         get "#{@base_url}/testimonials" , params: { locale: locale, slug: slug }
       else
