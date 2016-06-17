@@ -15,8 +15,8 @@ class CitiesController < ApplicationController
       return
     end
 
-    @testimonials = @client.testimonials(locale.to_s, params[:city])
-    @testimonials = @client.testimonials(locale.to_s) if @testimonials.empty?
+    @testimonials = @client.testimonials(locale.to_s, params[:city]).shuffle
+    @testimonials = @client.testimonials(locale.to_s).shuffle if @testimonials.empty?
 
     @positions = @client.positions
 
