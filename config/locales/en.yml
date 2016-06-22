@@ -315,7 +315,7 @@ en:
       source: "Referrer"
       source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
       motivation: "Why Le Wagon? What is your professional project?"
-      apply_btn: "Apply in "
+      apply_btn: "Apply to "
       please_wait: "Please wait..."
       course_language: 'Course in '
       language_fr: 'French'
