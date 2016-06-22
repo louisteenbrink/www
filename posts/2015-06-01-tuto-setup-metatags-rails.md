@@ -91,9 +91,9 @@ end
 Assurez-vous de bien avoir précisé votre nom de domaine (ou l'instance heroku) dans vos variables d'environnement.
 
 ```
-config/application.yml
+# config/application.yml
 production:
-  HOST: 'votresite.herokuapp.com'
+  HOST: 'votresite.com' # ou 'votresite.herokuapp.com'
 ```
 
 **Important :** Par la suite, veillez à bien utiliser les helpers de routes et d'assets avec le suffixe `_url`. Exemple :
@@ -121,10 +121,10 @@ Rendez-vous ensuite dans `app/views/layouts/application.html.erb` et copiez/coll
 
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="<%= DEFAULT_META[:twitter_account] %>">
+<meta name="twitter:site" content="<%= DEFAULT_META['twitter_account'] %>">
 <meta name="twitter:title" content="<%= meta_title %>">
 <meta name="twitter:description" content="<%= meta_description %>">
-<meta name="twitter:creator" content="<%= DEFAULT_META[:twitter_account] %>">
+<meta name="twitter:creator" content="<%= DEFAULT_META['twitter_account'] %>">
 <meta name="twitter:image:src" content="<%= image_url(meta_image) %>">
 
 <!-- Google+ Schema.org markup -->
@@ -139,7 +139,7 @@ Puis définissez le contenu de vos Meta Tags pour chacune des vues pour lesquell
 <!-- app/views/products/show.html.erb -->
 <% content_for :meta_title, "#{@product.name} à seulement #{@product.price} €" %>
 <% content_for :meta_description, @product.description %>
-<% content_for :meta_image, @product.url %>
+<% content_for :meta_image, @product.photo.url %>
 ```
 
 Vous remarquez l'aspect dynamique des Meta Tags puisque nous prenons directement des propriétés du modèle (stockées dans la base de données) qui varient d'une page produit à l'autre !
@@ -149,14 +149,14 @@ Vous remarquez l'aspect dynamique des Meta Tags puisque nous prenons directement
 Afin de tester ce setup sans déployer votre application, [installez `ngrok` pour débugger en local (mac & linux)](https://ngrok.com/) avec :
 
 ```
-$ brew install ngrok                # mac
-$ sudo apt-get install ngrok-client # linux
+$ brew install homebrew/binary/ngrok2`# mac
+$ sudo apt-get install ngrok-client   # linux
 ```
 
 Ngrok créé une URL publique sécurisée sur un serveur basé sur votre ordinateur :
 
 ```bash
-$ ngrok 3000
+$ ngrok http 3000
 ```
 
 Ouvrez un nouvel onglet sur votre terminal puis lancez ensuite un serveur en exécutant la commande suivante (en remplaçant le numéro sous-domaine par celui que ngrok vous a donné) :
