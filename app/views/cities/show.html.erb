@@ -22,6 +22,11 @@
         Call Edward: +44 (0)7796016734
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
+    <% elsif @city['slug'] == 'barcelona' %>
+      <a href="tel:+34600215570" class="banner-cta-item">
+        Call Gustavo: +34 600215570
+        &nbsp;<i class="fa fa-mobile fa-2x"></i>
+      </a>
     <% else %>
       <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
         <%= t(".discover_us") %>
