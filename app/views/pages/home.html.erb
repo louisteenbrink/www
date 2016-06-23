@@ -30,7 +30,7 @@
 
 <%= render "shared/features" %>
 
-<%= render partial: "shared/testimonials", locals: {number: 8} %>
+<%= render partial: "shared/testimonials" %>
 
 
 <% cache [ 'stories', ids: @stories.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>

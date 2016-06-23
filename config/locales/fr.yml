@@ -6,6 +6,7 @@ fr:
     positions:
       they_hired_our_students: Ils recrutent nos élèves
       where_our_students_are_working: Où travaillent nos alumni
+      join_our_network: Vous voulez recruter nos élèves ?
     live:
       watch_live_html: "Découvrez les <strong>%{count} projets</strong> du <strong>Batch #%{batch}</strong> ! Made in <strong>%{city}</strong> :)"
       watch_now_html: "<strong>LIVE</strong> - Regarder le Demo Day"

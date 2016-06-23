@@ -1,4 +1,3 @@
-<% cache [ 'testimonials', ids: @testimonials.map{ |s| s['id'] }.join("-"), number: number, locale: I18n.locale ] do %>
 <div class="testimonials-wrapper">
   <div class="container">
     <h2 class="section-title-home section-title-home-small">
@@ -10,7 +9,7 @@
       <%= t ".students_think_of_us" %>
     </p>
     <div class="testimonials">
-      <% @testimonials.take(number).each do |testimonial| %>
+      <% @testimonials.take(12).each do |testimonial| %>
         <% testimonial = structure testimonial %>
         <div class="testimonial-container">
           <div class="testimonial">
@@ -54,4 +53,3 @@
     </div>
   </div>
 </div>
-<% end %>
