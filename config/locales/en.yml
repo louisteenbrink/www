@@ -294,7 +294,7 @@ en:
       description: |
         Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
       catchline_html: "Change your life: <div style='display: inline-block'><strong>learn to code</strong></div>"
-      call: 'Call %{name}'
+      call: 'Call %{name}:'
       city_arrival_html: "Join Le Wagon FullStack program in <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
       apply_for_twelve_weeks: Apply for 12 weeks

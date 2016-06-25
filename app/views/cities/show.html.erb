@@ -17,14 +17,10 @@
     <div class='banner-cta'>
 
     <%# I look at you all see the love there that's sleeping... %>
-    <% if @city['slug'] == 'london' %>
-      <a href="tel:+447796016734" class="banner-cta-item">
-        <%= t(".call", name: 'Edward') %>: +44 7796 016734
-        &nbsp;<i class="fa fa-mobile fa-2x"></i>
-      </a>
-    <% elsif @city['slug'] == 'barcelona' %>
-      <a href="tel:+34600215570" class="banner-cta-item">
-        <%= t(".call", name: 'Gustavo') %>:  +34 600 215 570
+    <% if @city['contact_phone_number_displayed'] %>
+      <a href="tel:<%= @city['contact_phone_number'].gsub(' ', '') %>" class="banner-cta-item">
+        <%= t(".call", name: @city['contact_phone_number_name']) %>
+        <%= @city['contact_phone_number'] %>
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
     <% else %>
