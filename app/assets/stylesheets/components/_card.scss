@@ -215,7 +215,9 @@
   align-items: center;
   justify-content: space-around;
   margin: 30px auto;
-  padding: 0 40px;
+  @media (min-width: $screen-sm-min) {
+    padding: 0 40px;
+  }
 }
 .card-staff-description {
   background-color: white;

@@ -19,12 +19,12 @@
     <%# I look at you all see the love there that's sleeping... %>
     <% if @city['slug'] == 'london' %>
       <a href="tel:+447796016734" class="banner-cta-item">
-        Call Edward: +44 (0)7796016734
+        <%= t(".call", name: 'Edward') %>: +44 7796 016734
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
     <% elsif @city['slug'] == 'barcelona' %>
       <a href="tel:+34600215570" class="banner-cta-item">
-        Call Gustavo: +34 600215570
+        <%= t(".call", name: 'Gustavo') %>:  +34 600 215 570
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
     <% else %>
@@ -38,7 +38,7 @@
     <% if @city['slug'] == 'amsterdam' %>
       <%= link_to t(".apply_for_twelve_weeks"), send(:"apply_#{locale}_path", city: 'amsterdam'), class: "btn banner-cta-item btn-danger btn-lg" %>
     <% else %>
-      <%= link_to t(".apply_for_nine_weeks"), send(:"apply_#{locale}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
+      <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
     <% end %>
     </div>
   </div>
@@ -93,7 +93,7 @@
                     <i class="fa fa-github"></i> <%= teacher["github_nickname"] %></p>
                   </a>
                 <p>
-                <% if teacher["twitter_nickname"] %>
+                <% if teacher["twitter_nickname"].present? %>
                   <p>
                     <a href="http://twitter.com/<%= teacher["twitter_nickname"] %>" target="_blank">
                       <i class="fa fa-twitter"></i> <%= teacher["twitter_nickname"] %></p>
