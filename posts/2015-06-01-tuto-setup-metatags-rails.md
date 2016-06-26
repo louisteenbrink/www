@@ -19,7 +19,7 @@ Les Meta Tags sont présentes dans le `<head>` de vos pages et peuvent être con
 
 ![Screnshot des Meta Tags du Wagon On-Demand](blog_image_path tuto-metatags-rails.jpg)
 
-Les Meta Tags fournissent les informations affichées dans l'aperçu de vos contenus sur les réseaux sociaux. Les titres, descriptions et images associées sont autant d'éléments à choyer et à considérer avec attention afin de susciter l'intérêt de vos futurs visiteurs / clients via vos posts Facebook, Tweet et Pinterest Rich Pins.
+Les Meta Tags fournissent les informations affichées dans l'aperçu de vos contenus sur les réseaux sociaux. Les titres, descriptions et images associés sont autant d'éléments à choyer et à considérer avec attention afin de susciter l'intérêt de vos futurs visiteurs / clients via vos posts Facebook, Tweet et Pinterest Rich Pins.
 
 **Exemple :**
 
@@ -96,7 +96,7 @@ production:
   HOST: 'votresite.com' # ou 'votresite.herokuapp.com'
 ```
 
-**Important :** Par la suite, veillez à bien utiliser les helpers de routes et d'assets avec le suffixe `_url`. Exemple :
+**Important :** Par la suite, nous utiliserons toujours les helpers de routes et d'assets avec le suffixe `_url`. Exemple :
 
 ```erb
 <%= request.original_url %>
@@ -105,7 +105,7 @@ production:
 
 ### Le markup HTML
 
-Rendez-vous ensuite dans `app/views/layouts/application.html.erb` et copiez/collez ensuite les Meta Tags suivants dans le `head` de votre application :
+Rendez-vous ensuite dans `app/views/layouts/application.html.erb` et copiez/collez les Meta Tags suivants dans le `head` de votre application :
 
 ```erb
 <title><%= meta_title %></title>
@@ -146,20 +146,23 @@ Vous remarquez l'aspect dynamique des Meta Tags puisque nous prenons directement
 
 ## Enfin... Débuggez ! Débuggez ! Débuggez !
 
-Afin de tester ce setup sans déployer votre application, [installez `ngrok` pour débugger en local (mac & linux)](https://ngrok.com/) avec :
+Afin de tester ce setup sans déployer votre application, [installez `ngrok` pour débugger en local (mac & linux)](https://ngrok.com/).
+
+Pour Mac :
 
 ```
-$ brew install homebrew/binary/ngrok2`# mac
-$ sudo apt-get install ngrok-client   # linux
+$ brew install homebrew/binary/ngrok2
 ```
 
-Ngrok créé une URL publique sécurisée sur un serveur basé sur votre ordinateur :
+Pour Linux, téléchargez le zip et décompressez le. Pour utiliser ngrok, rendez-vous dans le dossier où vous avez décompressé le fichier `ngrok`.
+
+Ngrok crée une URL publique sécurisée sur un serveur basé sur votre ordinateur :
 
 ```bash
 $ ngrok http 3000
 ```
 
-Ouvrez un nouvel onglet sur votre terminal puis lancez ensuite un serveur en exécutant la commande suivante (en remplaçant le numéro sous-domaine par celui que ngrok vous a donné) :
+Ouvrez un nouvel onglet sur votre terminal puis lancez ensuite votre serveur Ruby on Rails en exécutant la commande suivante (en remplaçant le numéro sous-domaine par celui que ngrok vous a donné) :
 
 ```bash
 $ HOST=23872376.ngrok.com rails s -b 0.0.0.0
