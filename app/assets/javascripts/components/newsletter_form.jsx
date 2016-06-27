@@ -50,7 +50,7 @@ class NewsletterForm extends React.Component {
               className='newsletter-input-email'
               type='email'
               name="email"
-              required
+              required={true}
               disabled={this.state.valid}
             />
             {submitButton}

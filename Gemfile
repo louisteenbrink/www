@@ -61,7 +61,6 @@ end
 group :development do
   gem "pry-byebug"
   gem "pry-rails"
-  gem "quiet_assets"
   gem "annotate"
   gem "binding_of_caller"
   gem "better_errors"
