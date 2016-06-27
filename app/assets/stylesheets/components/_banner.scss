@@ -118,6 +118,7 @@
 
 .banner-cta {
   display: flex;
+  flex-wrap: wrap;
   transform: translateY(-50%);
   position: relative;
   z-index: 1;
@@ -147,6 +148,9 @@
 .banner-cta-item {
   color: #7C7C7C;
   display: flex;
+  @media(max-width: $screen-sm-max) {
+    flex-grow: 1;
+  }
   font-weight: $font-weight-bold;
   align-items: center;
   padding: 20px 30px;
