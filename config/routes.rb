@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get 'premiere', to: redirect('programme')
   get 'marseille', to: redirect('aix-marseille')
   get 'sp', to: redirect('sao-paulo')
+  get 'bh', to: redirect('belo-horizonte')
   get 'en', to: redirect('/')
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
