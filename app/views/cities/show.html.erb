@@ -7,7 +7,11 @@
 
 <div class="banner-container">
   <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["city_picture"])%>');">
+    <div class="banner banner-top banner-gradient text-center"
+      <% if @city["city_picture"].present? %>
+        style="background-image: url('<%= image_path(@city["city_picture"])%>');"
+      <% end %>
+    >
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1><%= t(".catchline_html", city: @city["name"]) %></h1>
