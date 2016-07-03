@@ -20,7 +20,7 @@
   font-size: 45px;
   margin-bottom: 30px;
   @media (max-width: $screen-md) { font-size: 38px }
-  @media (max-width: $screen-sm) { font-size: 30px }
+  @media (max-width: $screen-sm) { font-size: 35px }
 }
 .banner p {
   font-size: 26px;
@@ -171,6 +171,11 @@
   &:hover {
     color: black;
     text-decoration: none;
+  }
+}
+@media(max-width: $screen-md) {
+  .banner-cta .btn-danger {
+    margin-left: 0px;
   }
 }
 
