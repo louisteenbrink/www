@@ -15,7 +15,7 @@
               <% europe = %w(london amsterdam brussels lisbon copenhagen barcelona beirut) %>
               <% brazil = %w(sao-paulo belo-horizonte) %>
               <div class="dropdown-cities-container">
-                <ul class="france list-unstyled">
+                <ul class="list-unstyled">
                   <li class="title">FRANCE <%= render 'shared/french_flag' %></li>
                   <% @cities.select {|c| france.include? c["slug"]}.each do |city| %>
                     <li>
@@ -23,7 +23,7 @@
                     </li>
                   <% end %>
                 </ul>
-                <ul class="europe list-unstyled">
+                <ul class="list-unstyled">
                   <li class="title">EUROPE <%= render 'shared/english_flag' %></li>
                   <% @cities.select {|c| europe.include? c["slug"]}.each do |city| %>
                     <li>
@@ -31,7 +31,7 @@
                     </li>
                   <% end %>
                 </ul>
-                <ul class="brazil list-unstyled">
+                <ul class="list-unstyled">
                    <li class="title">BRAZIL <%= render 'shared/brazilian_flag' %> <%= render 'shared/english_flag' %></li>
                   <% @cities.select {|c| brazil.include? c["slug"]}.each do |city| %>
                     <li>
