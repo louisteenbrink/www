@@ -1,0 +1,31 @@
+.dropdown-cities {
+  left: 0 !important;
+  position: fixed !important;
+  background: #f9f9f9 !important;
+  top: 128px !important;
+}
+.dropdown-cities-container {
+  display: flex;
+  justify-content: center;
+  ul {
+    padding: 10px 70px;
+    font-size: 13px;
+    line-height: 25px;
+    a {
+      font-size: 14px !important;
+      color: #464343 !important;
+      font-weight: lighter !important;
+    }
+    .title {
+      font-weight: bolder;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: black;
+      svg {
+        width: 24px;
+        margin-left: 5px;
+        margin-bottom: -2px;
+      }
+    }
+  }
+}
