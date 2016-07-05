@@ -10,8 +10,8 @@ class PagesController < ApplicationController
   def home
     @stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")
-    @testimonials = @client.testimonials(locale.to_s)
-    @positions = @client.positions
+    @testimonials = @client.testimonials(locale.to_s).shuffle
+    @positions = @client.positions.take(8)
   end
 
   def thanks
@@ -23,6 +23,10 @@ class PagesController < ApplicationController
       @city = cities.select { |city| city["id"] == @apply.city_id }.first
       @batch = @city["batches"].select { |batch| batch["id"] == @apply.batch_id }.first
     end
+  end
+
+  def employers
+    @positions = @client.positions
   end
 
   def stack

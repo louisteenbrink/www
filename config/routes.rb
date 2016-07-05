@@ -16,7 +16,10 @@ Rails.application.routes.draw do
   get 'premiere', to: redirect('programme')
   get 'marseille', to: redirect('aix-marseille')
   get 'sp', to: redirect('sao-paulo')
+  get 'bh', to: redirect('belo-horizonte')
   get 'en', to: redirect('/')
+  get 'stories', to: redirect('alumni')
+  get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
   get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
@@ -47,6 +50,7 @@ Rails.application.routes.draw do
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "stack", to: "pages#stack", template: "stack", as: :stack
+    get "employers", to: "pages#employers", template: "employers", as: :employers
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
     get "blog", to: 'posts#index', as: :blog

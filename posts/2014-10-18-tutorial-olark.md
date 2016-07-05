@@ -40,4 +40,4 @@ Histoire de pousser le vice, regardez [leurs excellents tutos](https://www.olark
 
 Si vous utilisez [Github pour déployer votre site](https://www.youtube.com/watch?v=V6Zo68uQPqE), n'oubliez pas de prendre vos dispositions. En effet, vos *credentials* Olark se trouvent dans le script inséré dans votre page *html* ! Pour la petite anecdote, un membre du Wagon s'est retrouvé un beau jour avec un trafic conséquent en provenance de Corée après qu'un dev originaire de là-bas ait tout simplement forké son *repository*.
 
-Si vous découvrez ce service ou si vous avez quelques retours d'expériences et *best practice* à partager, n'hésitez pas à le faire sur [notre page Facebook](https://www.facebook.com/lewagonformation) ou en nous [mentionnant sur Twitter](https://www.twitter.com/lewagonparis).
+Si vous découvrez ce service ou si vous avez quelques retours d'expériences et *best practice* à partager, n'hésitez pas à le faire sur [notre page Facebook](https://www.facebook.com/lewagon) ou en nous [mentionnant sur Twitter](https://www.twitter.com/lewagonparis).

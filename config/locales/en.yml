@@ -6,6 +6,7 @@ en:
     positions:
       they_hired_our_students: They hired our students
       where_our_students_are_working: Where our students are working
+      join_our_network: Want to hire our alumni?
     live:
       watch_live_html: "Discover <strong>%{count} projects</strong> made by Alumni of Batch #%{batch}</strong> in <strong>%{city}</strong>"
       watch_now_html: "Watch demo-day <strong>now</strong>"
@@ -35,7 +36,7 @@ en:
         on_site: On site
         fullstack_program: FullStack - 9-week intensive program
       apply: Apply Now
-      stories: Stories
+      employers: Employers
     testimonials:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
@@ -245,6 +246,34 @@ en:
       fourth_step: "Start your Ruby track in English"
     press:
       title: They speak about Le Wagon
+    employers:
+      title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
+      description: Join us as hiring partner and get alerted about our new candidates and job events.
+      hiring_tagline_html: Join us as hiring partners. <strong>Work with our alumni</strong>.
+      join_our_network: Join our Network
+      why: Why join our network?
+      reasons: Le Wagon's Network allows fast-growing companies to hire directly from our alumni community and meet with them on a quarterly basis. face-to-face.
+      exceptional: Exceptional people
+      exceptional_details: |
+        Our students have dedicated two months of their life to learn programming,
+        usually after a first 5-year education cycle. They have spent more than 360
+        hours coding during the program. Very rare to find individuals with such
+        commitment.
+      unique: With unique backgrounds
+      unique_details: |
+        Most our students come from the very best business and engineering
+        schools worlwide. They already have excellent working methodology.
+        Our alumni are also designers, journalists, photographers,
+        with very different skills.
+      operational: Operational from day one
+      operational_details: |
+        Our students have shipped ruby on Rails applications. They know
+        the best practices to work in a tech startup. They can implement
+        features from day one as a junior dev. As a PM or a growth marketer,
+        they will be great at connecting business issues with tech
+        developments.
+      wanna_join: Want to be part of our network?
+      signup: Sign up to get alerts about our candidates and coming job events.
   students:
     index:
       title: Les projets de nos élèves - Startups et applis web made in Le Wagon
@@ -257,15 +286,17 @@ en:
       our_students_projects: What our students have built
       only_ten_days: "...in only 10 days"
       discover_us: Discover our program
+      discover_our_stories: Discover our alumni stories
       watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
   cities:
     show:
       title: "Le Wagon - Ruby on Rails Bootcamp in %{city}"
       description: |
         Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
-      catchline_html: "Change your life: <strong>learn to code</strong>"
+      catchline_html: "Change your life: <div style='display: inline-block'><strong>learn to code</strong></div>"
+      call: 'Call %{name}:'
       city_arrival_html: "Join Le Wagon FullStack program in <strong>%{city}</strong>"
-      apply_for_nine_weeks: Apply for 9 weeks
+      apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
       apply_for_twelve_weeks: Apply for 12 weeks
       staff: "Teachers in %{city}"
       discover_us: "Discover our program"
@@ -285,7 +316,7 @@ en:
       source: "Referrer"
       source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
       motivation: "Why Le Wagon? What is your professional project?"
-      apply_btn: "Apply in "
+      apply_btn: "Apply to "
       please_wait: "Please wait..."
       course_language: 'Course in '
       language_fr: 'French'

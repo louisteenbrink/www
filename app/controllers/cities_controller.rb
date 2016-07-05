@@ -1,8 +1,5 @@
 class CitiesController < ApplicationController
   def show
-    @testimonials = @client.testimonials(locale.to_s)
-    @positions = @client.positions
-
     if params[:city].downcase != params[:city]
       redirect_to city_path(city: params[:city].downcase)
       return
@@ -15,14 +12,20 @@ class CitiesController < ApplicationController
         (request.env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^#{Regexp.quote(@city['course_locale'])}/
       redirect_to city_path(params[:city], locale: @city['course_locale'])
       session[:city_locale_already_forced] = true
-    else
-      @teachers = @client.staff(params[:city])["teachers"]
-      @assistants = @client.staff(params[:city])["teacher_assistants"]
-
-      meetup_cli = MeetupApiClient.new(@city["meetup_id"])
-      @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
-      session[:city] = @city['slug']
+      return
     end
+
+    @testimonials = @client.testimonials(locale.to_s, params[:city]).shuffle
+    @testimonials = @client.testimonials(locale.to_s).shuffle if @testimonials.empty?
+
+    @positions = @client.positions
+
+    @teachers = @client.staff(params[:city])["teachers"]
+    @assistants = @client.staff(params[:city])["teacher_assistants"]
+
+    meetup_cli = MeetupApiClient.new(@city["meetup_id"])
+    @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
+    session[:city] = @city['slug']
 
     # Next batch
     batch_city = @client.cities.select { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }.first

@@ -2,7 +2,7 @@ require "static"
 require "timeout"
 
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  protect_from_forgery with: :exception, except: :render_404
   before_action :set_locale
   before_action :set_client
   before_action :fetch_live

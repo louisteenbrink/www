@@ -24,7 +24,6 @@ class ApplyFormRow extends React.Component {
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <input
-            required={this.props.required}
             placeholder={this.props.placeholder}
             type={this.props.type}
             onFocus={this.handleFocus.bind(this)}
@@ -42,7 +41,6 @@ class ApplyFormRow extends React.Component {
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <textarea
-            required={this.props.required}
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
             placeholder={this.props.placeholder}
