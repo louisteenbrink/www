@@ -1,126 +1,40 @@
-GIT
-  remote: git://github.com/redis-store/redis-actionpack.git
-  revision: ff80a6f4d681eba097905176e1e75fab38d67e65
-  branch: master
-  specs:
-    redis-actionpack (4.0.1)
-      actionpack (>= 4.0.0, < 6)
-      redis-rack (~> 1.5.0)
-      redis-store (~> 1.1.0)
-
-GIT
-  remote: git://github.com/redis-store/redis-rack.git
-  revision: 83a7b7b895bb528c1ae88329e4bca09a97d9fbbf
-  branch: master
-  specs:
-    redis-rack (1.5.0)
-      rack (> 1.5, < 3)
-      redis-store (~> 1.1.0)
-
-GIT
-  remote: git://github.com/redis-store/redis-rails.git
-  revision: bb9e202da4c9d9d4d927e4531f98e2db4e2dc657
-  branch: master
-  specs:
-    redis-rails (5.0.0)
-      redis-actionpack (>= 4, < 5.1)
-      redis-activesupport (>= 4, < 5.1)
-      redis-store (~> 1.1.0)
-
-GIT
-  remote: git://github.com/ssaunier/raygun4ruby.git
-  revision: af0020d0710810fefaaa5796ea40da556afcf837
-  branch: rails-5-deprecation-warnings
-  specs:
-    raygun4ruby (1.1.10)
-      httparty (~> 0.13.7)
-      json
-      rack
-
-GIT
-  remote: https://github.com/rspec/rspec-core.git
-  revision: 9a722615eb45cbc8d1a0fc9035fd6600e14b0d10
-  branch: master
-  specs:
-    rspec-core (3.5.0.pre)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: https://github.com/rspec/rspec-expectations.git
-  revision: d5b6b35d518ab6692f894d2f124608878c1da946
-  branch: master
-  specs:
-    rspec-expectations (3.5.0.pre)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: https://github.com/rspec/rspec-mocks.git
-  revision: 4b8dbc9e6251d2c263deeaeb12448e20f67402d6
-  branch: master
-  specs:
-    rspec-mocks (3.5.0.pre)
-      diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: https://github.com/rspec/rspec-rails.git
-  revision: ca9e01573edb2e4e7774d42b4aa92ba0959d793d
-  branch: master
-  specs:
-    rspec-rails (3.5.0.pre)
-      actionpack (>= 3.0)
-      activesupport (>= 3.0)
-      railties (>= 3.0)
-      rspec-core (= 3.5.0.pre)
-      rspec-expectations (= 3.5.0.pre)
-      rspec-mocks (= 3.5.0.pre)
-      rspec-support (= 3.5.0.pre)
-
-GIT
-  remote: https://github.com/rspec/rspec-support.git
-  revision: 7b4fabc42a194a22bc47ec241fd9f5587c68d5f4
-  branch: master
-  specs:
-    rspec-support (3.5.0.pre)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
   specs:
-    actioncable (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
+    actioncable (5.0.0)
+      actionpack (= 5.0.0)
       nio4r (~> 1.2)
       websocket-driver (~> 0.6.1)
-    actionmailer (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activejob (= 5.0.0.rc2)
+    actionmailer (5.0.0)
+      actionpack (= 5.0.0)
+      actionview (= 5.0.0)
+      activejob (= 5.0.0)
       mail (~> 2.5, >= 2.5.4)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
-    actionpack (5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-      rack (~> 2.x)
+      rails-dom-testing (~> 2.0)
+    actionpack (5.0.0)
+      actionview (= 5.0.0)
+      activesupport (= 5.0.0)
+      rack (~> 2.0)
       rack-test (~> 0.6.3)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    actionview (5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    actionview (5.0.0)
+      activesupport (= 5.0.0)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.0, >= 1.0.2)
-    activejob (5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    activejob (5.0.0)
+      activesupport (= 5.0.0)
       globalid (>= 0.3.6)
-    activemodel (5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
-    activerecord (5.0.0.rc2)
-      activemodel (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    activemodel (5.0.0)
+      activesupport (= 5.0.0)
+    activerecord (5.0.0)
+      activemodel (= 5.0.0)
+      activesupport (= 5.0.0)
       arel (~> 7.0)
-    activesupport (5.0.0.rc2)
+    activesupport (5.0.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (~> 0.7)
       minitest (~> 5.1)
@@ -129,7 +43,7 @@ GEM
     annotate (2.7.0)
       activerecord (>= 3.2, < 6.0)
       rake (~> 10.4)
-    arel (7.0.0)
+    arel (7.1.0)
     autoprefixer-rails (6.3.6)
       execjs
     babel-source (5.8.35)
@@ -146,7 +60,7 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    byebug (8.2.5)
+    byebug (9.0.5)
     capybara (2.7.0)
       addressable
       mime-types (>= 1.16)
@@ -189,7 +103,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-slick-rails (1.6.0.2)
       railties (>= 3.1)
-    js-routes (1.2.5)
+    js-routes (1.2.7)
       railties (>= 3.2)
       sprockets-rails
     json (1.8.3)
@@ -197,7 +111,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.4.1)
       launchy (~> 2.2)
-    lodash-rails (4.6.1)
+    lodash-rails (4.13.1)
       railties (>= 3.1)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
@@ -210,10 +124,10 @@ GEM
     minitest (5.9.0)
     monetize (1.4.0)
       money (~> 6.7)
-    money (6.7.0)
+    money (6.7.1)
       i18n (>= 0.6.4, <= 0.7.0)
       sixarm_ruby_unaccent (>= 1.1.1, < 2)
-    money-rails (1.6.0)
+    money-rails (1.6.2)
       activesupport (>= 3.0)
       monetize (~> 1.4.0)
       money (~> 6.7)
@@ -229,48 +143,44 @@ GEM
     oauth (0.4.7)
     pg (0.18.4)
     pkg-config (1.1.7)
-    pry (0.10.3)
+    pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    pry-byebug (3.3.0)
-      byebug (~> 8.0)
+    pry-byebug (3.4.0)
+      byebug (~> 9.0)
       pry (~> 0.10)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     puma (3.4.0)
     pygmentize (0.0.3)
-    rack (2.0.0.rc1)
-      json
+    rack (2.0.1)
     rack-mini-profiler (0.9.9.2)
       rack (>= 1.2.0)
     rack-test (0.6.3)
       rack (>= 1.0)
     rack-utf8_sanitizer (1.3.2)
       rack (>= 1.0, < 3.0)
-    rails (5.0.0.rc2)
-      actioncable (= 5.0.0.rc2)
-      actionmailer (= 5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      actionview (= 5.0.0.rc2)
-      activejob (= 5.0.0.rc2)
-      activemodel (= 5.0.0.rc2)
-      activerecord (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    rails (5.0.0)
+      actioncable (= 5.0.0)
+      actionmailer (= 5.0.0)
+      actionpack (= 5.0.0)
+      actionview (= 5.0.0)
+      activejob (= 5.0.0)
+      activemodel (= 5.0.0)
+      activerecord (= 5.0.0)
+      activesupport (= 5.0.0)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 5.0.0.rc2)
+      railties (= 5.0.0)
       sprockets-rails (>= 2.0.0)
     rails-assets-classnames (2.2.4)
     rails-assets-devicons (1.8.0)
     rails-assets-headroom.js (0.7.0)
     rails-assets-mdi (1.5.54)
     rails-assets-pubsub-js (1.5.3)
-    rails-deprecated_sanitizer (1.0.3)
-      activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.7)
-      activesupport (>= 4.2.0.beta, < 5.0)
+    rails-dom-testing (2.0.1)
+      activesupport (>= 4.2.0, < 6.0)
       nokogiri (~> 1.6.0)
-      rails-deprecated_sanitizer (>= 1.0.1)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails-i18n (4.0.2)
@@ -281,13 +191,17 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.5)
     rails_stdout_logging (0.0.5)
-    railties (5.0.0.rc2)
-      actionpack (= 5.0.0.rc2)
-      activesupport (= 5.0.0.rc2)
+    railties (5.0.0)
+      actionpack (= 5.0.0)
+      activesupport (= 5.0.0)
       method_source
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.5.0)
+    raygun4ruby (1.1.11)
+      httparty (~> 0.13.7)
+      json
+      rack
     react-bootstrap-rails (0.28.3)
       rails (>= 3.1)
     react-rails (1.6.0)
@@ -298,11 +212,22 @@ GEM
       rails (>= 3.2)
       tilt
     redcarpet (3.3.4)
-    redis (3.3.0)
-    redis-activesupport (4.1.5)
-      activesupport (>= 3, < 5)
-      redis-store (~> 1.1.0)
-    redis-store (1.1.7)
+    redis (3.3.1)
+    redis-actionpack (5.0.0)
+      actionpack (>= 4.0.0, < 6)
+      redis-rack (~> 2.0.0.pre)
+      redis-store (~> 1.2.0.pre)
+    redis-activesupport (5.0.1)
+      activesupport (>= 3, < 6)
+      redis-store (~> 1.2.0)
+    redis-rack (2.0.0.pre)
+      rack (> 1.5, < 3)
+      redis-store (~> 1.2.0.pre)
+    redis-rails (5.0.1)
+      redis-actionpack (~> 5.0.0)
+      redis-activesupport (~> 5.0.0)
+      redis-store (~> 1.2.0)
+    redis-store (1.2.0)
       redis (>= 2.2)
     responders (2.2.0)
       railties (>= 4.2.0, < 5.1)
@@ -310,6 +235,23 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
+    rspec-core (3.5.1)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-rails (3.5.1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
     ruby-trello (1.4.1)
       activemodel (>= 3.2.0)
       addressable (~> 2.3)
@@ -317,8 +259,8 @@ GEM
       oauth (~> 0.4.5)
       rest-client (~> 1.8.0)
     sass (3.4.22)
-    sass-rails (5.0.4)
-      railties (>= 4.0.0, < 5.0)
+    sass-rails (5.0.5)
+      railties (>= 4.0.0, < 6)
       sass (~> 3.1)
       sprockets (>= 2.8, < 4.0)
       sprockets-rails (>= 2.0, < 4.0)
@@ -331,16 +273,16 @@ GEM
     sixarm_ruby_unaccent (1.1.1)
     slop (3.6.0)
     spring (1.7.1)
-    sprockets (3.6.2)
+    sprockets (3.6.3)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.0.4)
+    sprockets-rails (3.1.1)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     thor (0.19.1)
     thread_safe (0.3.5)
-    tilt (2.0.2)
+    tilt (2.0.5)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.0)
@@ -383,7 +325,7 @@ DEPENDENCIES
   pygmentize
   rack-mini-profiler
   rack-utf8_sanitizer
-  rails (= 5.0.0.rc2)
+  rails (= 5.0.0)
   rails-assets-classnames!
   rails-assets-devicons!
   rails-assets-headroom.js!
@@ -391,21 +333,15 @@ DEPENDENCIES
   rails-assets-pubsub-js!
   rails-i18n
   rails_12factor
-  raygun4ruby!
+  raygun4ruby
   react-bootstrap-rails
   react-rails (= 1.6.0)
   redcarpet
   redis
-  redis-actionpack!
-  redis-rack!
-  redis-rails!
+  redis-rails
   responders (~> 2.0)
   rest-client
-  rspec-core!
-  rspec-expectations!
-  rspec-mocks!
-  rspec-rails!
-  rspec-support!
+  rspec-rails
   ruby-trello
   sass-rails (~> 5.0)
   simple_form
