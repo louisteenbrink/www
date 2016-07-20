@@ -56,7 +56,7 @@
   </div>
 <% end %>
 
-<%= render "shared/features" %>
+<%= render "shared/features", wrapper_up: !@city["marketing_specifics"].present? %>
 
 
 <% if @city["classroom_picture"] %>
