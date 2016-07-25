@@ -28,6 +28,7 @@ en:
       press: "Press"
       alumni_platform: "Alumni Community"
       about: "What's le Wagon?"
+      bootcamp_in_city_html: "%{city} coding bootcamp"
     navbar:
       menu:
         cities: Cities
@@ -290,12 +291,12 @@ en:
       watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
   cities:
     show:
-      title: "Le Wagon - Ruby on Rails Bootcamp in %{city}"
+      title: "Coding Bootcamp in %{city} - Le Wagon - Learn to code in 9 weeks"
       description: |
         Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
-      catchline_html: "Change your life: <div style='display: inline-block'><strong>learn to code</strong></div>"
+      catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
       call: 'Call %{name}:'
-      city_arrival_html: "Join Le Wagon FullStack program in <strong>%{city}</strong>"
+      city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
       apply_for_twelve_weeks: Apply for 12 weeks
       staff: "Teachers in %{city}"

@@ -56,17 +56,17 @@
         </h3>
 
         <div class='footer-section-links'
-             <%= I18n.locale == :fr ? 'style="font-size: 14px"'.html_safe : nil %>>
+          <%= I18n.locale == :fr ? 'style="font-size: 14px"'.html_safe : nil %>>
           <% @cities.each do |city| %>
             <div>
               <%= link_to city_path(city: city["slug"]) do %>
                 <% if @city && @city['slug'] == city['slug'] %>
-                  <%= I18n.locale == :fr ? 'Formation développeur web à ' : nil %>
-                  <strong><%= city["name"] %></strong>
+                  <% city_name = "<strong>#{city["name"]}</strong>".html_safe %>
                 <% else %>
-                  <%= I18n.locale == :fr ? 'Formation développeur web à ' : nil %>
-                  <%= city["name"] %>
+                  <% city_name = city["name"] %>
                 <% end %>
+
+                <%= t ".bootcamp_in_city_html", city: city_name %>
               <% end %>
             </div>
           <% end %>
