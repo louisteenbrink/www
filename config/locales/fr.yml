@@ -286,7 +286,6 @@ fr:
       call: "Appeler %{name} :"
       city_arrival_html: "Formation développeur web à <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Postulez<span class='hidden-xs'> pour 9 semaines</span>"
-      apply_for_twelve_weeks: Postulez pour 12 semaines
       staff: "L'équipe à %{city}"
       discover_us: "Découvez notre programme"
       apprentices: "Rejoignez %{count} apprentis"

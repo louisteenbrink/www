@@ -298,7 +298,6 @@ en:
       call: 'Call %{name}:'
       city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
-      apply_for_twelve_weeks: Apply for 12 weeks
       staff: "Teachers in %{city}"
       discover_us: "Discover our program"
       apprentices: "Join %{count} apprentices"
