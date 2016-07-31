@@ -287,7 +287,7 @@ fr:
       city_arrival_html: "Formation développeur web à <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Postulez<span class='hidden-xs'> pour 9 semaines</span>"
       staff: "L'équipe à %{city}"
-      discover_us: "Découvez notre programme"
+      discover_us: "Découvrez notre programme"
       apprentices: "Rejoignez %{count} apprentis"
       next_meetup_html: "Prochain meetup: <i class='hidden-xs'>%{name}</i>"
       only_in: "Uniquement à %{city}"
