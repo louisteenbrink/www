@@ -1,3 +1,9 @@
+- name: "Faire du « code » pour travailler tout de suite"
+  url: http://www.lemonde.fr/emploi/article/2016/08/18/passer-le-code-pour-travailler-tout-de-suite_4984575_1698637.html
+  media: Le Monde
+  logo: logo-lemonde.jpg
+  date: 2016-08-18
+
 - name: "How Le Wagon is quietly becoming a major coding bootcamp in Europe"
   logo: logo-techcrunch.jpg
   url: http://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/
