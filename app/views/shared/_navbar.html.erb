@@ -48,7 +48,7 @@
       <% if I18n.locale == :fr %>
         <div class="dropdown">
           <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
-          <ul class="dropdown-menu dropdown-menu-right dropdown-cities">
+          <ul class="dropdown-menu dropdown-menu-right dropdown-program">
             <li class="dropdown-header"><%= t ".menu.on_site" %></li>
             <li class="main marged-bottom">
               <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale}_path") %>
