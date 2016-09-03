@@ -19,13 +19,6 @@
     text-align: left;
     margin-top: 0;
   }
-  p {
-    font-size: 22px;
-    text-align: left;
-    padding: 0;
-    margin-bottom: 50px;
-    opacity: 0.9;
-  }
   span {
     font-size: 25px;
     font-weight: 100;
@@ -44,6 +37,25 @@
 .location-tab-overlay {
   position: relative;
   z-index: 9;
+}
+
+.location-content {
+  p {
+    font-size: 22px;
+    text-align: left;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.8);
+
+    a {
+      color: white;
+      text-decoration: underline;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    a:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  margin-bottom: 3em;
 }
 
 #staff {

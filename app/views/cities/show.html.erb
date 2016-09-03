@@ -188,10 +188,11 @@
           </h2>
         </div>
       </div>
-      <% if @city["location"]%>
-        <%= markdown @city["description"][locale.to_s] %>
-      <% end %>
-      <br>
+      <div class="location-content">
+        <% if @city["location"]%>
+          <%= markdown @city["description"][locale.to_s] %>
+        <% end %>
+      </div>
       <% if @meetup[:infos].blank? %>
         <%# No CTA to show %>
       <% elsif @meetup[:events].empty? %>
