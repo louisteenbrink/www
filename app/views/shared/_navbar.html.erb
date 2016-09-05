@@ -14,7 +14,7 @@
               <div class="dropdown-cities-container">
                 <% @city_groups.each do |city_group| %>
                   <ul class="list-unstyled">
-                    <li class="title"><%= city_group["name"].upcase %> <%= city_group["icon"] %></li>
+                    <li class="title"><%= city_group["group"].upcase %> <%= city_group["icon"].html_safe %></li>
                     <% city_group["cities"].each do |city| %>
                       <li>
                         <%= link_to city["name"], city_path(city: city["slug"]) %>

@@ -61,7 +61,7 @@ class AlumniClient
 
   def cities
     from_cache(:cities) do
-      get("#{@base_url}/cities")["cities"]
+      get("#{@base_url}/cities")["groups"]
     end
   end
 
