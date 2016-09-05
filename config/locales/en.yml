@@ -279,7 +279,7 @@ en:
     index:
       title: Students' projects - Startups & web apps made in Le Wagon
       description: |
-        Discover projects from previous batches of Le Wagon. More than 400 entrepreneurs have already got their super-powers, what about you?
+        Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
       our_alumni: "Le Wagon's Alumni"
       our_alumni_details_html: |
         <strong>%{count}+ talented students</strong> sharing the same <strong>skills & passion</strong>.
