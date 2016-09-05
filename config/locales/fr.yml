@@ -313,6 +313,8 @@ fr:
       price: 'Prix'
       source_presence_message: 'Comment avez-vous entendu parlé du Wagon ? Par un ami ? Google ? Facebook ? Merci !'
   stories:
+    index:
+      title: Découvrez les success stories de nos alumni
     show:
       other_testimonials: Autres Témoignages
       continue: Continuer la lecture
