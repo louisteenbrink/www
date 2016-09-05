@@ -19,9 +19,8 @@ class PagesController < ApplicationController
       redirect_to root_path
     else
       @apply = Apply.find(session[:apply_id])
-      cities = @client.cities
-      @city = cities.select { |city| city["id"] == @apply.city_id }.first
-      @batch = @city["batches"].select { |batch| batch["id"] == @apply.batch_id }.first
+      @city = @cities.find { |city| city["id"] == @apply.city_id }
+      @batch = @city["batches"].find { |batch| batch["id"] == @apply.batch_id }
     end
   end
 
