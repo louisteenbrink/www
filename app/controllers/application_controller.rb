@@ -56,7 +56,8 @@ class ApplicationController < ActionController::Base
   end
 
   def load_cities
-    @cities = @client.cities
+    @city_groups = @client.cities
+    @cities = @city_groups.map { |city_group| city_group["cities"] }.flatten
   end
 
   def set_client

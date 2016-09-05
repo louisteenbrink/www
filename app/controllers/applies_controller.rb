@@ -1,3 +1,22 @@
+# == Schema Information
+#
+# Table name: applies
+#
+#  id         :integer          not null, primary key
+#  first_name :string
+#  last_name  :string
+#  age        :integer
+#  email      :string
+#  phone      :string
+#  motivation :text
+#  batch_id   :integer
+#  city_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  tracked    :boolean          default(FALSE), not null
+#  source     :string
+#
+
 class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
 
@@ -26,7 +45,7 @@ class AppliesController < ApplicationController
   private
 
   def prepare_apply_form
-    @applicable_cities = @client.cities.select{ |city| !city['batches'].empty? }.each do |city|
+    @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
       first_available_batch = city['batches'].select { |b| !b['full'] }.first
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
