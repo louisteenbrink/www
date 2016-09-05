@@ -277,9 +277,9 @@ en:
       signup: Sign up to get alerts about our candidates and coming job events.
   students:
     index:
-      title: Les projets de nos élèves - Startups et applis web made in Le Wagon
+      title: Students' projects - Startups & web apps made in Le Wagon
       description: |
-        Découvrez les projets des précédentes promotions du Wagon. Plus de 400 entrepreneurs ont déjà acquis leurs super-pouvoirs, et vous ?
+        Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
       our_alumni: "Le Wagon's Alumni"
       our_alumni_details_html: |
         <strong>%{count}+ talented students</strong> sharing the same <strong>skills & passion</strong>.
@@ -325,6 +325,8 @@ en:
       price: 'Price'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:
+    index:
+      title: Discover our alumni stories
     show:
       other_testimonials: Other Testimonials
       continue: Would you like to continue?
