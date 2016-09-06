@@ -29,6 +29,7 @@ class AppliesController < ApplicationController
     else
       @application = Apply.new(source: params[:source])
     end
+    @city_group = @city_groups.find { |city_group| city_group['cities'].map { |city| city['slug'] }.include?(@city['slug']) }
   end
 
   def create
@@ -47,7 +48,7 @@ class AppliesController < ApplicationController
   def prepare_apply_form
     @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
-      first_available_batch = city['batches'].select { |b| !b['full'] }.first
+      first_available_batch = city['batches'].find { |b| !b['full'] }
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
 
       city['batches'].each do |batch|

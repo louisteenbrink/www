@@ -4,6 +4,7 @@
 <div class='apply-form-overlay'>
   <%= react_component 'ApplyForm', {
     city_groups: @city_groups,
+    city_group: @city_group,
     cities: @applicable_cities,
     city: @city,
     token: form_authenticity_token,
@@ -29,5 +30,5 @@
       apply_row(:source, :text, t(".source"), t(".source_placeholder"), "tag"),
       apply_row(:motivation, :textarea, "Motivation", t(".motivation"), "content-paste")
     ]
-  }, prerender: prerender? %>
+  }, prerender: false %>
 </div>

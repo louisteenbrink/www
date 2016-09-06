@@ -3,29 +3,30 @@ class ApplyForm extends React.Component {
     super(props)
 
     this.state = {
+      activeCityGroup: this.props.city_group,
       activeCity: this.props.city,
       activeBatch: this.firstBatch(this.props.city),
-      submitting: false
+      submitting: false,
+      cityGroupsDropdownOpen: false
     }
   }
 
   render() {
 
+    var cities = this.state.activeCityGroup.cities;
+    var otherCityGroups = this.props.city_groups.filter((cityGroup) => { return cityGroup.group !== this.state.activeCityGroup.group });
     var batches = this.state.activeCity.batches;
-
-    var componentClasses = classNames({
-      'apply-form': true
-    })
-
+    var componentClasses = classNames({ 'apply-form': true });
     var submitButton = null;
+
     if (this.state.submitting) {
       submitButton = (
         <input id='apply_btn' type='submit' value={this.props.i18n.please_wait} disabled className='apply-form-submit btn' />
-        );
+      );
     } else {
       submitButton = (
         <input id='apply_btn' type='submit' value={this.props.i18n.apply_btn + this.state.activeCity.name} className='apply-form-submit btn' />
-        );
+      );
     }
 
     return (
@@ -33,7 +34,23 @@ class ApplyForm extends React.Component {
         <div className="banner-container">
           <div className="container banner-city-container">
             <div className='banner-city-nav'>
-              {this.props.cities.map((city, index) => {
+              <ReactBootstrap.Dropdown id='cityGroupSelector' ref='selectCityGroup'>
+                <ReactBootstrap.Dropdown.Toggle>
+                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group + " " + this.state.activeCityGroup.icon}}></span>
+                </ReactBootstrap.Dropdown.Toggle>
+                <ReactBootstrap.Dropdown.Menu>
+                  {otherCityGroups.map((cityGroup, index) => {
+                    return(
+                      <CityGroupNavItem
+                        key={index}
+                        cityGroup={cityGroup}
+                        setActiveCityGroup={(cityGroup) => this.setActiveCityGroup(cityGroup)}
+                      />
+                    )
+                  })}
+                </ReactBootstrap.Dropdown.Menu>
+              </ReactBootstrap.Dropdown>
+              {cities.map((city, index) => {
                 return (
                   <CityNavItem
                     key={index}
@@ -130,6 +147,12 @@ class ApplyForm extends React.Component {
       this.setState({ activeCity: city, activeBatch: this.firstBatch(city) })
       history.replaceState({}, '', this.props.apply_path.replace(':city', city.slug));
       document.title = this.props.i18n.page_title.replace('%{city}', city.name);
+    }
+  }
+
+  setActiveCityGroup(cityGroup) {
+    if (this.state.activeCityGroup !== cityGroup) {
+      this.setState({ activeCityGroup: cityGroup });
     }
   }
 
