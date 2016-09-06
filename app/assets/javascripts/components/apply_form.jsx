@@ -153,6 +153,7 @@ class ApplyForm extends React.Component {
   setActiveCityGroup(cityGroup) {
     if (this.state.activeCityGroup !== cityGroup) {
       this.setState({ activeCityGroup: cityGroup });
+      // quick fix for unexpected behavior, to be enhanced
       $('#cityGroupSelector').click();
     }
   }
