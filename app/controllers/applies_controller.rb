@@ -28,8 +28,8 @@ class AppliesController < ApplicationController
       redirect_to send(:"apply_#{locale}_path", city: @city['slug'])
     else
       @application = Apply.new(source: params[:source])
+      @city_group = @city_groups.find { |city_group| city_group['cities'].map { |city| city['slug'] }.include?(@city['slug']) }
     end
-    @city_group = @city_groups.find { |city_group| city_group['cities'].map { |city| city['slug'] }.include?(@city['slug']) }
   end
 
   def create

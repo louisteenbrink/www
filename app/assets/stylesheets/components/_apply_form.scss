@@ -242,8 +242,10 @@
       }
     }
     .btn-group.open .dropdown-toggle,
-    .btn-group.open .dropdown-toggle:hover {
+    .btn-group.open .dropdown-toggle:hover,
+    .btn-group.open > .btn-default.dropdown-toggle:hover {
       background-color: rgba(253, 253, 253, 0.35);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.07);
     }
   }
 }

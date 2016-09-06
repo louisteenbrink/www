@@ -34,7 +34,7 @@ class ApplyForm extends React.Component {
         <div className="banner-container">
           <div className="container banner-city-container">
             <div className='banner-city-nav'>
-              <ReactBootstrap.Dropdown id='cityGroupSelector' ref='selectCityGroup'>
+              <ReactBootstrap.Dropdown id='cityGroupSelector' onSelect={() => { this.click(); }}>
                 <ReactBootstrap.Dropdown.Toggle>
                   <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group + " " + this.state.activeCityGroup.icon}}></span>
                 </ReactBootstrap.Dropdown.Toggle>
@@ -153,6 +153,7 @@ class ApplyForm extends React.Component {
   setActiveCityGroup(cityGroup) {
     if (this.state.activeCityGroup !== cityGroup) {
       this.setState({ activeCityGroup: cityGroup });
+      $('#cityGroupSelector').click();
     }
   }
 
