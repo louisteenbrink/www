@@ -6,8 +6,7 @@ class ApplyForm extends React.Component {
       activeCityGroup: this.props.city_group,
       activeCity: this.props.city,
       activeBatch: this.firstBatch(this.props.city),
-      submitting: false,
-      cityGroupsDropdownOpen: false
+      submitting: false
     }
   }
 
