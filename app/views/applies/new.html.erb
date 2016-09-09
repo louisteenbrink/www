@@ -30,5 +30,5 @@
       apply_row(:source, :text, t(".source"), t(".source_placeholder"), "tag"),
       apply_row(:motivation, :textarea, "Motivation", t(".motivation"), "content-paste")
     ]
-  }, prerender: false %>
+  }, prerender: prerender? %>
 </div>
