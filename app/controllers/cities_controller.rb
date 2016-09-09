@@ -28,9 +28,9 @@ class CitiesController < ApplicationController
     session[:city] = @city['slug']
 
     # Next batch
-    batch_city = @client.cities.select { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }.first
+    batch_city = @cities.find { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }
     if batch_city
-      @next_batch = batch_city['batches'].select { |batch| !batch['full'] }.first
+      @next_batch = batch_city['batches'].find { |batch| !batch['full'] }
     end
 
   end

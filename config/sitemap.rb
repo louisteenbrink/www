@@ -9,7 +9,7 @@ SitemapGenerator::Sitemap.create do
     end
   end
 
-  AlumniClient.new.cities.map { |city| city["slug"] }.each do |slug|
+  AlumniClient.new.cities.map { |city_group| city_group["cities"] }.flatten.map { |city| city["slug"] }.each do |slug|
     add slug
     add "fr/#{slug}"
   end

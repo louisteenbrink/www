@@ -11,34 +11,17 @@
           <div class="dropdown">
             <%= link_to t(".menu.cities"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
             <div class="dropdown-menu dropdown-menu-right dropdown-cities">
-              <% france = %w(paris aix-marseille lyon bordeaux lille nantes) %>
-              <% europe = %w(london amsterdam brussels lisbon copenhagen barcelona beirut) %>
-              <% brazil = %w(sao-paulo rio belo-horizonte) %>
               <div class="dropdown-cities-container">
-                <ul class="list-unstyled">
-                  <li class="title">FRANCE <%= render 'shared/french_flag' %></li>
-                  <% @cities.select {|c| france.include? c["slug"]}.each do |city| %>
-                    <li>
-                      <%= link_to city["name"], city_path(city: city["slug"]) %>
-                    </li>
-                  <% end %>
-                </ul>
-                <ul class="list-unstyled">
-                  <li class="title">EUROPE <%= render 'shared/english_flag' %></li>
-                  <% @cities.select {|c| europe.include? c["slug"]}.each do |city| %>
-                    <li>
-                      <%= link_to city["name"], city_path(city: city["slug"]) %>
-                    </li>
-                  <% end %>
-                </ul>
-                <ul class="list-unstyled">
-                   <li class="title">BRAZIL <%= render 'shared/brazilian_flag' %> <%= render 'shared/english_flag' %></li>
-                  <% @cities.select {|c| brazil.include? c["slug"]}.each do |city| %>
-                    <li>
-                      <%= link_to city["name"], city_path(city: city["slug"]) %>
-                    </li>
-                  <% end %>
-                </ul>
+                <% @city_groups.each do |city_group| %>
+                  <ul class="list-unstyled">
+                    <li class="title"><%= city_group["group"].upcase %> <%= city_group["icon"].html_safe %></li>
+                    <% city_group["cities"].each do |city| %>
+                      <li>
+                        <%= link_to city["name"], city_path(city: city["slug"]) %>
+                      </li>
+                    <% end %>
+                  </ul>
+                <% end %>
               </div>
             </div>
           </div>

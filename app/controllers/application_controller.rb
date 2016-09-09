@@ -56,7 +56,11 @@ class ApplicationController < ActionController::Base
   end
 
   def load_cities
-    @cities = @client.cities
+    # needed in navbar
+    @city_groups = @client.city_groups
+
+    # needed in footer
+    @cities = @city_groups.map { |city_group| city_group['cities'] }.flatten
   end
 
   def set_client

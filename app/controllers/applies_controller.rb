@@ -1,3 +1,22 @@
+# == Schema Information
+#
+# Table name: applies
+#
+#  id         :integer          not null, primary key
+#  first_name :string
+#  last_name  :string
+#  age        :integer
+#  email      :string
+#  phone      :string
+#  motivation :text
+#  batch_id   :integer
+#  city_id    :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  tracked    :boolean          default(FALSE), not null
+#  source     :string
+#
+
 class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
 
@@ -26,9 +45,9 @@ class AppliesController < ApplicationController
   private
 
   def prepare_apply_form
-    @applicable_cities = @client.cities.select{ |city| !city['batches'].empty? }.each do |city|
+    @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
-      first_available_batch = city['batches'].select { |b| !b['full'] }.first
+      first_available_batch = city['batches'].find { |b| !b['full'] }
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
 
       city['batches'].each do |batch|
@@ -54,6 +73,13 @@ class AppliesController < ApplicationController
     elsif session[:city]
       @city = @applicable_cities.find { |city| city['slug'] == session[:city] }
     end
+
+    @city_groups.each do |city_group|
+      slugs = city_group['cities'].map { |city| city['slug'] }
+      city_group['cities'] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city['slug']) }
+    end
+
+    @city_group = @city_groups.find { |city_group| city_group['cities'].map { |city| city['slug'] }.include?(@city['slug']) } unless @city.nil?
   end
 
   def application_params
