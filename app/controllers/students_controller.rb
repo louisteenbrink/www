@@ -6,17 +6,17 @@ class StudentsController < ApplicationController
     @stories = @client.stories
     @demo_day = ({
       fr: {
-        video_id: 'pRUVEoYr6bA',
-        date: '3 juin 2016',
+        video_id: 'tf_oIjOxS2I',
+        date: '2 sept 2016',
         city: 'Paris',
-        slug: 24,
-        start: 56
+        slug: 30,
+        start: 0
       },
       en: {
-        video_id: '6ebCdcUAYVE',
-        date: 'April 1st, 2016',
-        city: 'Amsterdam',
-        slug: 20,
+        video_id: '83fw4h2vxCc',
+        date: 'Sept 10th, 2016',
+        city: 'London',
+        slug: 36,
         start: 0
       }
     })[I18n.locale]
