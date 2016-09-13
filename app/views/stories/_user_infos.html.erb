@@ -1,6 +1,6 @@
 <div class="story-banner-user">
   <div class="story-user-avatar">
-    <img src="<%= story["alumni"]["thumbnail"]  %>">
+    <%= cl_image_tag story["alumni"]["photo_path"], width: 45, height: 45, crop: :fill %>
   </div>
   <div class="story-banner-infos">
     <div class="story-user-name">

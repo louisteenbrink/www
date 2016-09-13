@@ -41,7 +41,7 @@ class StoriesItem extends React.Component {
             <div className='story-card-footer story-card-footer-home'>
               <div className="story-banner-user">
                 <div className="story-user-avatar">
-                  <img src={this.props.alumni.thumbnail} />
+                  <img src={this.props.alumni.cloudinary_url} />
                 </div>
                 <div className="story-banner-infos">
                   <div className="story-user-name">

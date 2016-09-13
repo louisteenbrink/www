@@ -35,7 +35,7 @@
 
 <% cache [ 'stories', ids: @stories.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
   <%= react_component 'Stories', {
-      stories: @stories,
+      stories: enriched_stories(@stories),
       i18n: {
         title: t(".featured"),
         subtitle: t(".featured_subtitle"),
@@ -85,7 +85,7 @@
                   <% maker = OpenStruct.new maker %>
                   <div class="project-item-maker">
                     <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                      <img src=<%= maker.thumbnail %> class='avatar' />
+                      <%= cl_image_tag maker.photo_path, width: 35, height: 35, crop: :fill, class: 'avatar' %>
                     </a>
                   </div>
                 <% end %>
@@ -130,7 +130,7 @@
                     <% maker = OpenStruct.new maker %>
                     <div class="project-item-maker">
                       <a href=<%= "http://alumni.lewagon.org/#{teacher['github_nickname']}" %> target='_blank'>
-                        <img src=<%= teacher['thumbnail'] %> class='avatar' />
+                        <%= cl_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
                       </a>
                     </div>
                   <% end %>
