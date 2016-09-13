@@ -97,7 +97,7 @@
                   <p>
                 <% end %>
               </div>
-              <%= image_tag teacher["thumbnail"], class: "img-circle card-staff-img" %>
+              <%= cl_image_tag teacher["photo_path"], class: "img-circle card-staff-img" %>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@
           <% slice.each do |ta| %>
             <div class="col-xs-6 col-sm-<%= 12 / slice.count %> ta-card">
               <%= link_to "http://alumni.lewagon.org/#{ta["github_nickname"]}", target: :blank do %>
-                <%= image_tag ta["thumbnail"], class: "img-circle", width: "80px"%>
+                <%= cl_image_tag ta["photo_path"], class: "img-circle", width: "80px"%>
               <% end %>
               <h4><%= ta["first_name"]%> <%= ta["last_name"]%></h4>
             </div>
