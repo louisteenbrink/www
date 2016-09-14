@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="testimonial-user">
-            <%= image_tag testimonial.user.thumbnail %>
+            <%= cl_image_tag testimonial.user.photo_path, width: 50, height: 50, crop: :fill %>
             <div class='testimonial-user-info'>
               <div class="testimonial-user-name">
                 <%= testimonial.user.first_name %>  <%= testimonial.user.last_name %>

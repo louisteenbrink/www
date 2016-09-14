@@ -33,6 +33,7 @@ gem 'raygun4ruby'
 gem 'sitemap_generator'
 gem 'builder'
 gem 'rack-utf8_sanitizer'
+gem 'cloudinary'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'
