@@ -80,7 +80,7 @@
 
         <div class='footer-section-links'>
           <div>
-            <%= link_to t(".about"), send(:"about_#{locale}_path") %>
+            <%= link_to t(".about"), send(:"about_#{locale.to_s.underscore}_path") %>
           </div>
           <div>
             <%= link_to 'Stack', stack_path %>
@@ -92,7 +92,7 @@
             <a href="/blog">Blog</a>
           </div>
           <div>
-            <%= link_to t(".press"), send(:"press_#{locale}_path") %>
+            <%= link_to t(".press"), send(:"press_#{locale.to_s.underscore}_path") %>
           </div>
           <div>
             <a href="http://alumni.lewagon.org" target="_blank"><%= t(".alumni_platform") %></a>

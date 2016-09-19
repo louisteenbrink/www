@@ -4,7 +4,7 @@
   </a>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
     <li class="main">
-      <%= link_to t("shared.navbar.menu.program"), send(:"program_#{locale}_path") %>
+      <%= link_to t("shared.navbar.menu.program"), send(:"program_#{locale.to_s.underscore}_path") %>
     </li>
     <li class='main'>
       <%= link_to "Alumni", alumni_path, locale: locale %>
@@ -16,7 +16,7 @@
       <%= link_to 'FAQ', faq_path %>
     </li>
     <li class="main hidden-md hidden-lg">
-      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale}_path") %>
+      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale.to_s.underscore}_path") %>
     </li>
     <li class="main hidden-md hidden-lg">
       <%= render 'shared/language_selector' %>

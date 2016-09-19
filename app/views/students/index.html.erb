@@ -16,10 +16,10 @@
       </div>
     </div>
     <div class='banner-cta'>
-    <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
+    <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'banner-cta-item hidden-xs' do %>
       <%= t(".discover_us", default: "Découvrez notre programme") %>
     <% end %>
-    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
+    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>
@@ -49,10 +49,10 @@
           <div class="story-card">
             <main>
               <div class="story-card-title">
-                <%= story["title"][locale.to_s]  %>
+                <%= story["title"][locale.to_s] || story["title"]["en"]  %>
               </div>
               <div class="story-card-summary">
-                <%= markdown story['summary'][locale.to_s] %>
+                <%= markdown(story['summary'][locale.to_s] || story['summary']['en']) %>
               </div>
               <div class='story-card-footer'>
                 <%= render 'stories/user_infos', story: story %>

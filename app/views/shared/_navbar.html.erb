@@ -34,7 +34,7 @@
           <ul class="dropdown-menu dropdown-menu-right dropdown-program">
             <li class="dropdown-header"><%= t ".menu.on_site" %></li>
             <li class="main marged-bottom">
-              <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale}_path") %>
+              <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path") %>
             </li>
 
             <li class="dropdown-header online-program-header">
@@ -58,7 +58,7 @@
           </ul>
         </div>
       <% else %>
-        <%= link_to t(".menu.program"), send(:"program_#{locale}_path"), class: 'navbar-wagon-link' %>
+        <%= link_to t(".menu.program"), send(:"program_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link' %>
       <% end %>
 
         <hr class="hidden-xs">
@@ -77,7 +77,7 @@
         <hr class="hidden-xs">
         <%= link_to "Blog", blog_path, class: "navbar-wagon-link" %>
         <div class="left">
-          <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
+          <%= link_to t(".apply"), send(:"apply_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link-cta' %>
         </div>
       </div>
     </div>
@@ -93,7 +93,7 @@
         </a>
       </div>
       <div class="header-inner-cta">
-        <%= link_to t(".apply"), send(:"apply_#{locale}_path"), class: 'navbar-wagon-link-cta' %>
+        <%= link_to t(".apply"), send(:"apply_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link-cta' %>
       </div>
     </div>
   </div>

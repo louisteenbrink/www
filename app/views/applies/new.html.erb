@@ -8,7 +8,7 @@
     cities: @applicable_cities,
     city: @city,
     token: form_authenticity_token,
-    apply_path: send(:"apply_#{I18n.locale}_path", ':city'),
+    apply_path: send(:"apply_#{locale.to_s.underscore}_path", ':city'),
     locale: I18n.locale,
     i18n: {
       title: t(".apply"),
