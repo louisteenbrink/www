@@ -36,6 +36,7 @@
 <% cache [ 'stories', ids: @stories.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
   <%= react_component 'Stories', {
       stories: enriched_stories(@stories),
+      storiesPath: alumni_path,
       i18n: {
         title: t(".featured"),
         subtitle: t(".featured_subtitle"),
@@ -76,7 +77,7 @@
                   <%= project.name %>
                 </div>
                 <div class="project-item-tagline">
-                  <%= project.tagline[I18n.locale.to_s] %>
+                  <%= project.tagline[I18n.locale.to_s] || project.tagline["en"] %>
                 </div>
               </div>
 

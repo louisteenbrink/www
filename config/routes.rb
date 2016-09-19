@@ -15,8 +15,8 @@ Rails.application.routes.draw do
   # Redirects
   get 'premiere', to: redirect('programme')
   get 'marseille', to: redirect('aix-marseille')
-  get 'sp', to: redirect('sao-paulo')
-  get 'bh', to: redirect('belo-horizonte')
+  get 'sp', to: redirect('pt/sao-paulo')
+  get 'bh', to: redirect('pt/belo-horizonte')
   get 'en', to: redirect('/')
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
@@ -40,12 +40,13 @@ Rails.application.routes.draw do
   constraints(city_constraint) do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
+    get "candidatar/(:city)" => "applies#new", locale: :pt, as: :apply_pt
     post "apply/(:city)" => "applies#create", as: :apply
   end
 
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
 
-  scope "(:locale)", locale: /fr/ do
+  scope "(:locale)", locale: /fr|pt/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
@@ -60,12 +61,9 @@ Rails.application.routes.draw do
       get ":city" => "cities#show", as: :city
     end
     resources :projects, only: [:show]
-    resources :stories, only: [:index, :show]
+    resources :stories, only: [:show]
     resources :students, only: [:show]
   end
-
-  # Exception for Portuguese FAQ
-  get "pt/faq", to: "pages#show", template: "faq"
 
   resources :subscribes, only: :create
 

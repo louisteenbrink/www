@@ -12,8 +12,8 @@ class StoriesItem extends React.Component {
       'is-active': (this.props.index + 1) == this.props.activeItem
     })
 
-    var title = this.props.title[this.props.locale];
-    var summary = this.props.summary[this.props.locale];
+    var title = this.props.title[this.props.locale] || this.props.title["en"];
+    var summary = this.props.summary[this.props.locale] || this.props.summary["fr"];
 
     var logo = null;
     if (this.props.company) {
@@ -55,7 +55,7 @@ class StoriesItem extends React.Component {
               </div>
             </div>
           </main>
-          <a href={Routes.story_path({id: this.props.slug, locale: this.props.locale})} className="story-card-cover-link">
+          <a href={Routes.story_path(this.props.slug, { locale: this.props.locale })} className="story-card-cover-link">
           </a>
         </div>
       </div>

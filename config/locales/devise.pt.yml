@@ -3,7 +3,7 @@
 # Utilize-o em 'config/locales/', com o nome de 'devise.pt-BR.yml'.
 # Em 'config/application.rb', utilize => config.i18n.default_locale = :'pt-BR'
 
-pt-BR:
+pt:
   devise:
     confirmations:
       confirmed: "Sua conta foi confirmada com sucesso."

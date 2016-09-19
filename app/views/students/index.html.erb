@@ -49,10 +49,10 @@
           <div class="story-card">
             <main>
               <div class="story-card-title">
-                <%= story["title"][locale.to_s]  %>
+                <%= story["title"][locale.to_s] || story["title"]["en"]  %>
               </div>
               <div class="story-card-summary">
-                <%= markdown story['summary'][locale.to_s] %>
+                <%= markdown(story['summary'][locale.to_s] || story['summary']['en']) %>
               </div>
               <div class='story-card-footer'>
                 <%= render 'stories/user_infos', story: story %>

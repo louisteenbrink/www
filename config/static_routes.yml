@@ -1,15 +1,16 @@
-# apply:
-#   en: apply
-#   fr: postuler
 thanks:
   en: thanks
   fr: merci
+  pt: obrigado
 program:
   en: program
   fr: programme
+  pt: programa
 press:
   en: press
   fr: presse
+  pt: imprensa
 about:
   en: about
   fr: a-propos
+  pt: o-que-e

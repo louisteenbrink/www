@@ -6,7 +6,7 @@
 <div class="story-banner banner banner-top">
   <div class="filter" class="perpetua filter" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= @story["picture"]%>');"></div>
   <div class="story-banner-content story-container">
-    <h2><%= @story["title"][locale.to_s]  %></h2>
+    <h2><%= @story["title"][locale.to_s] || @story["title"]["en"] %></h2>
     <%= render 'user_infos', story: @story %>
   </div>
 </div>
@@ -15,14 +15,14 @@
   <div class="story-body">
     <div class="story-company">
       <% if @story["company"] %>
-        <img src="<%= @story["company"]["logo"]  %>" class="story-company-logo">
+        <img src="<%= @story["company"]["logo"] %>" class="story-company-logo">
       <% end %>
     </div>
     <div class="story-summary">
-      <%= markdown @story['summary'][locale.to_s] %>
+      <%= markdown(@story['summary'][locale.to_s] || @story['summary']["en"]) %>
     </div>
     <div class="story-description">
-      <%= markdown @story['description'][locale.to_s] %>
+      <%= markdown(@story['description'][locale.to_s] || @story['description']["en"]) %>
       <h3 class="last"><%= t(".continue") %></h3>
       <p><%= t(".read_more") %></p>
     </div>
@@ -38,10 +38,10 @@
       <div class="story-card">
         <main>
           <div class="story-card-title">
-            <%= story["title"][locale.to_s]  %>
+            <%= story["title"][locale.to_s] || story["title"]["en"] %>
           </div>
           <div class="story-card-summary">
-            <%= markdown story['summary'][locale.to_s] %>
+            <%= markdown(story['summary'][locale.to_s] || story['summary']["en"]) %>
           </div>
           <div class='story-card-footer'>
             <%= render 'user_infos', story: story %>
