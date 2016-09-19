@@ -19,7 +19,7 @@ class StudentsController < ApplicationController
         slug: 36,
         start: 0
       },
-      pt: {
+      "pt-BR": {
         video_id: 'zd9nbSmVO4I',
         date: '2 de setembro 2016',
         city: 'Saõ Paulo',
