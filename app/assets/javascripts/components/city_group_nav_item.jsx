@@ -9,7 +9,7 @@ class CityGroupNavItem extends React.Component {
 
     return(
       <li className={cityGroupItemClasses} onClick={this.handleClick.bind(this)}>
-        <span dangerouslySetInnerHTML={{__html: this.props.cityGroup.group + " " + this.props.cityGroup.icon}}></span>
+        <span dangerouslySetInnerHTML={{__html: this.props.cityGroup.group}}></span>
       </li>
     )
   }
