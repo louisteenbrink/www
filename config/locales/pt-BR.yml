@@ -163,7 +163,7 @@ pt-BR:
       cv: Seu portfolio de desenvolvedor
       cv_details_html: |
         Em apenas 2 meses, construa vários aplicativos web, inclusive
-        um <strong>clone do Airbnb</> e <strong>o seu projeto pessoal</strong>. Lance esses aplicativos
+        um <strong>clone do Airbnb</strong> e <strong>o seu projeto pessoal</strong>. Lance esses aplicativos
         e construa um super portfolio Github.
       ruby: |
         Fique familiar com a linha de comando e Git.
