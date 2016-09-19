@@ -13,7 +13,7 @@
         <a href="https://twitter.com/ssaunier">Sébastien</a> in Paris, France.
         <strong>Le Wagon's mission is to bring technical skills to creative people.</strong>
         Our
-        <%= link_to "9-week coding bootcamp", send(:"program_#{locale}_path") %>
+        <%= link_to "9-week coding bootcamp", send(:"program_#{locale.to_s.underscore}_path") %>
         gives you the ability to build a prototype of any idea
         you might have. No technical background needed, just your motivation.
       </p>
@@ -31,7 +31,7 @@
         <cite>- Marc Andreessen</cite>
       </blockquote>
       <p>
-        Are you ready to <%= link_to "change your life?", send(:"apply_#{locale}_path") %>
+        Are you ready to <%= link_to "change your life?", send(:"apply_#{locale.to_s.underscore}_path") %>
       </p>
     </div>
     <div class="col-sm-6">

@@ -15,12 +15,6 @@ class Stories extends React.Component {
       'is-active': this.state.transition
     })
 
-    // Quick fix: js-routes is not working...
-    var storiesPath = '/stories';
-    if (this.props.locale == 'fr') {
-      storiesPath = '/fr/stories';
-    }
-
     return (
       <div className='story-overlay'>
         <div className='container story-label-container'>
@@ -62,7 +56,7 @@ class Stories extends React.Component {
                   activeItem={this.state.activeItem}
                   locale={this.props.locale}/>
               })}
-              <a href={storiesPath} className="btn stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
+              <a href={this.props.storiesPath} className="btn stories-link hidden-xs hidden-sm">{this.props.i18n.read_all}</a>
             </div>
           </div>
         </div>
@@ -82,6 +76,7 @@ class Stories extends React.Component {
 
 Stories.propTypes = {
   stories: React.PropTypes.array,
+  storiesPath: React.PropTypes.string,
   locale: React.PropTypes.string,
   i18n: React.PropTypes.object,
 }

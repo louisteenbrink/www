@@ -18,6 +18,13 @@ class StudentsController < ApplicationController
         city: 'London',
         slug: 36,
         start: 0
+      },
+      pt: {
+        video_id: 'zd9nbSmVO4I',
+        date: '2 de setembro 2016',
+        city: 'Saõ Paulo',
+        slug: 34,
+        start: 0
       }
     })[I18n.locale]
   end

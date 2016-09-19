@@ -7,8 +7,4 @@ class StoriesController < ApplicationController
 
     @stories = @client.random_stories(limit: 3, excluded_ids: session[:story_ids])
   end
-
-  def index
-    @stories = @client.stories()
-  end
 end
