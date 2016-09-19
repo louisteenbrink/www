@@ -23,9 +23,9 @@ class AppliesController < ApplicationController
   def new
     prepare_apply_form
     if @city.nil?
-      redirect_to send(:"apply_#{locale}_path", city: @applicable_cities.first['slug'])
+      redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @applicable_cities.first['slug'])
     elsif params[:city].blank?
-      redirect_to send(:"apply_#{locale}_path", city: @city['slug'])
+      redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug'])
     else
       @application = Apply.new(source: params[:source])
     end
@@ -35,7 +35,7 @@ class AppliesController < ApplicationController
     @application = Apply.new(application_params)
     if @application.save
       session[:apply_id] = @application.id
-      redirect_to send(:"thanks_#{I18n.locale}_path")
+      redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
       prepare_apply_form
       render :new

@@ -12,7 +12,7 @@
 
     <span class='separator'>/</span>
 
-    <%= link_to locale_current_url_for(:pt), style: ("opacity: .3" unless locale == :pt) do %>
+    <%= link_to locale_current_url_for(:"pt-BR"), style: ("opacity: .3" unless locale == :"pt-BR") do %>
       <%= render 'shared/brazilian_flag' %>
     <% end %>
   </div>

@@ -28,12 +28,12 @@
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
     <% else %>
-      <%= link_to send(:"program_#{locale}_path"), class: 'banner-cta-item hidden-xs' do %>
+      <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'banner-cta-item hidden-xs' do %>
         <%= t(".discover_us") %>
       <% end %>
     <% end %>
 
-    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
+    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>
@@ -238,7 +238,7 @@
       <% if @next_batch %>
         <%= t '.next_batch_html', starts_at: l(@next_batch['starts_at'].to_date, format: :apply) %>
       <% end %>
-      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale}_path", city: @city['slug']) %>
+      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug']) %>
     </div>
   </div>
 </div>

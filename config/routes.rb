@@ -8,15 +8,15 @@ Rails.application.routes.draw do
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|
-      get page => "pages##{template}", template: template, locale: locale.to_sym, as: "#{template}_#{locale}".to_sym
+      get page => "pages##{template}", template: template, locale: locale.to_sym, as: "#{template}_#{locale.to_s.underscore}".to_sym
     end
   end
 
   # Redirects
   get 'premiere', to: redirect('programme')
   get 'marseille', to: redirect('aix-marseille')
-  get 'sp', to: redirect('pt/sao-paulo')
-  get 'bh', to: redirect('pt/belo-horizonte')
+  get 'sp', to: redirect('pt-BR/sao-paulo')
+  get 'bh', to: redirect('pt-BR/belo-horizonte')
   get 'en', to: redirect('/')
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
@@ -33,20 +33,20 @@ Rails.application.routes.draw do
     'aliceclv' => 'alice-joins-save-as-backend-dev'
   }.each do |github_nickname, new_slug|
     ['', 'fr/'].each do |locale|
-      get "#{locale}stories/#{github_nickname}", to: redirect("#{locale}stories/#{new_slug}")
+      get "#{locale.to_s.underscore}stories/#{github_nickname}", to: redirect("#{locale.to_s.underscore}stories/#{new_slug}")
     end
   end
 
   constraints(city_constraint) do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
-    get "candidatar/(:city)" => "applies#new", locale: :pt, as: :apply_pt
+    get "candidatar/(:city)" => "applies#new", locale: :"pt-BR", as: :apply_pt_br
     post "apply/(:city)" => "applies#create", as: :apply
   end
 
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
 
-  scope "(:locale)", locale: /fr|pt/ do
+  scope "(:locale)", locale: /fr|pt-BR/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
@@ -84,12 +84,12 @@ Rails.application.routes.url_helpers.module_eval do
   STATIC_ROUTES.each do |route, _|
     define_method "#{route}_path".to_sym do |args = {}|
       locale = args[:locale] || :fr
-      self.send(:"#{route}_#{locale}_path")
+      self.send(:"#{route}_#{locale.to_s.underscore}_path")
     end
 
     define_method "#{route}_url".to_sym do |args = {}|
       locale = args[:locale] || :fr
-      self.send(:"#{route}_#{locale}_url")
+      self.send(:"#{route}_#{locale.to_s.underscore}_url")
     end
   end
 end

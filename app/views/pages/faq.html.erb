@@ -15,7 +15,7 @@
     <%= render 'shared/english_flag' %>
   <% end %>
 
-  <%= link_to faq_path(locale: :pt), class: (locale == :pt ? 'active' : nil) do %>
+  <%= link_to faq_path(locale: :"pt-BR"), class: (locale == :"pt-BR" ? 'active' : nil) do %>
     <%= render 'shared/brazilian_flag' %>
   <% end %>
 </nav>
