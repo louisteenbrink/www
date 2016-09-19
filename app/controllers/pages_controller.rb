@@ -12,6 +12,10 @@ class PagesController < ApplicationController
     @projects = @client.projects("home_projects")
     @testimonials = @client.testimonials(locale.to_s).shuffle
     @positions = @client.positions.take(8)
+
+    if locale == :"pt-BR"
+      session[:city] = 'sao-paulo'
+    end
   end
 
   def thanks
