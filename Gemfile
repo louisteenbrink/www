@@ -20,7 +20,7 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem "react-rails", '1.6.0'
+gem "react-rails"
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'

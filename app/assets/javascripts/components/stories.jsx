@@ -9,7 +9,6 @@ class Stories extends React.Component {
     }
   }
 
-
   render() {
     var detailClasses = classNames({
       'story-detail': true,
@@ -80,3 +79,10 @@ class Stories extends React.Component {
     })
   }
 }
+
+Stories.propTypes = {
+  stories: React.PropTypes.array,
+  locale: React.PropTypes.string,
+  i18n: React.PropTypes.object,
+}
+
