@@ -29,6 +29,8 @@
 
   <link rel="alternate" hreflang="fr" href="<%= locale_current_url_for(:fr) %>" />
   <link rel="alternate" hreflang="en" href="<%= locale_current_url_for(:en) %>" />
+  <link rel="alternate" hreflang="pt-BR" href="<%= locale_current_url_for(:"pt-BR") %>" />
+
   <% if request.path_info == '/' %>
     <link rel="alternate" href="<%= url_for('/') %>" hreflang="x-default" />
   <% end %>
