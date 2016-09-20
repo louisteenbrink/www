@@ -22,3 +22,10 @@ drift.SNIPPET_VERSION = '0.2.0'
 drift.load('h94xhv7srkyk')
 </script>
 <!-- End of Async Drift Code -->
+
+
+<% if @apply && !@apply.tracked? %>
+<script>
+  drift.identify('<%= j @apply.email %>', <%= raw @apply.to_drift %>);
+</script>
+<% end >

@@ -53,4 +53,16 @@ class Apply < ActiveRecord::Base
   def batch
     @batch ||= AlumniClient.new.batch(batch_id)
   end
+
+  def to_drift
+    city = AlumniClient.new.city(self.city_id)
+    {
+      email: email,
+      first_name: first_name,
+      last_name: last_name,
+      age: age,
+      phone: phone,
+      city: city.name
+    }.to_json
+  end
 end
