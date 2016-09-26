@@ -300,6 +300,7 @@ fr:
       apply: Postulez à
       first_name: "Prénom"
       last_name: "Nom de famille"
+      codecademy_username: "CodeCademy"
       phone: "Téléphone"
       source: "Recommandé par"
       source_placeholder: "Qui vous a recommandé Le Wagon ? Un ami (qui ?), Google, etc."

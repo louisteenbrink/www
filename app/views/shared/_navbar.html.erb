@@ -2,9 +2,11 @@
   <div class="container navbar-wagon-container">
     <div class='navbar-wagon-side'>
       <%= render 'shared/navbar_dropdown', full_item: false %>
-      <div class="hidden-xs hidden-sm">
-        <%= render 'shared/language_selector' %>
-      </div>
+      <% unless @hide_language_selector %>
+        <div class="hidden-xs hidden-sm">
+          <%= render 'shared/language_selector' %>
+        </div>
+      <% end %>
 
       <div class="left hidden-sm hidden-xs">
         <div class="navbar-wagon-item has-no-padding">
@@ -69,6 +71,11 @@
       <%= link_to root_path, class: 'wagon-link' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
+      <% if params[:action] =~ /hec/ %>
+        <div class="navbar-hec-logo">
+          <%= render "shared/logos/hec" %>
+        </div>
+      <% end %>
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
         <hr class='fake-hr hidden-xs'>
         <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
@@ -76,9 +83,11 @@
         <%= link_to t(".employers"), employers_path, class: "hidden-xs navbar-wagon-link", data: {text: t(".employers")} %>
         <hr class="hidden-xs">
         <%= link_to "Blog", blog_path, class: "navbar-wagon-link" %>
-        <div class="left">
-          <%= link_to t(".apply"), send(:"apply_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link-cta' %>
-        </div>
+        <% unless @hide_banner_apply_button %>
+          <div class="left">
+            <%= link_to t(".apply"), send(:"apply_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link-cta' %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
