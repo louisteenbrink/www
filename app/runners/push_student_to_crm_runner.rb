@@ -14,6 +14,7 @@ class PushStudentToCrmRunner
         email: @apply.email,
         first_name: @apply.first_name,
         last_name: @apply.last_name,
+        codecademy_username: @apply.codecademy_username,
         age: @apply.age,
         phone_number: @apply.phone,
         source: @apply.source,

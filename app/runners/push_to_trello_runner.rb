@@ -12,13 +12,19 @@ class PushToTrelloRunner
   end
 
   def run
+    if @apply.codecademy_username.blank?
+      codecademy = "## [Codecademy]()"
+    else
+      codecademy = "## [Codecademy](https://codecademy-checker.herokuapp.com/api/ruby/#{@apply.codecademy_username})"
+    end
+
     card = ::Trello::Card.new
     card.name = name
     card.list_id = list_id
     card.desc = <<-EOF
 #{@apply.first_name} #{@apply.last_name} | #{@apply.age} | #{@apply.email} | #{@apply.phone}
 
-## [Codecademy]()
+#{codecademy}
 
 ## [Contract]()
 
