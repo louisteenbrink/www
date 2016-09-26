@@ -46,6 +46,9 @@ Rails.application.routes.draw do
 
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
 
+  get "hec", to: 'applies#new_hec', as: :new_hec_apply
+  post "hec", to: 'applies#create_hec', as: :hec_apply, locale: :fr
+
   scope "(:locale)", locale: /fr|pt-BR/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq

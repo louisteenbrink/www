@@ -1,0 +1,58 @@
+<%= content_for(:title) { "Le Wagon HEC - Postuler"} %>
+<%= content_for(:headers) do %>
+  <meta name="robots" content="noindex">
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 hec">
+      <% if @application.errors.any? %>
+        <div class="errors">
+          Désolé, votre candidature n'a pu être prise en compte. Merci de jeter un oeil au formulaire ci-dessous.
+        </div>
+      <% else %>
+        <div class="intro">
+          <p>
+            HEC propose en exclusivité une track <i>Le Wagon</i> limitée à <strong>16 étudiants</strong>.
+            Cette track se déroulera dans les locaux du Wagon, au <a href="https://www.google.fr/maps/place/Le+Wagon/@48.8648515,2.3776643,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66df010ec3bff:0x6b419acfa77236a0!8m2!3d48.864848!4d2.379853?hl=fr" target="_blank">16 Villa Gaudelet</a> dans le XI<sup>ème</sup>
+            du 30 janvier au 31 mars 2017.
+          </p>
+          <p>
+            Pour postuler, vous devez impérativement avoir terminé <strong>100%</strong> de la
+            <a href="https://www.codecademy.com" target="_blank">track Ruby sur CodeCademy</a>. Votre <em>username</em> est d'ailleurs demandé ci-dessous, pour le récupérer,
+            <a href="https://www.codecademy.com/profiles/me">cliquez ici</a> et regardez l'URL vers laquelle vous êtes redirigé(e)s.
+          </p>
+        </div>
+      <% end %>
+
+      <%= react_component 'HecApplyForm', {
+        token: form_authenticity_token,
+        apply_path: hec_apply_path,
+        locale: I18n.locale,
+        banner: image_path("banners/6.jpg"),
+        price: "2000€ TTC à régler à HEC",
+        i18n: {
+          title: t("applies.new.apply"),
+          apply_btn: t("applies.new.apply_btn"),
+          please_wait: t("applies.new.please_wait"),
+          course_language: t("applies.new.course_language"),
+          language_fr: t("applies.new.language_fr"),
+          language_en: t("applies.new.language_en"),
+          price: t('applies.new.price'),
+          page_title: t('applies.new.title')
+        },
+        rows: [
+          apply_row(:first_name, :text, t("applies.new.first_name"), "Alan", "account"),
+          apply_row(:last_name, :text, t("applies.new.last_name"), "Turing", "format-text"),
+          apply_row(:codecademy_username, :text, t("applies.new.codecademy_username"), "alan_turing", "format-text"),
+          apply_row(:age, :text, "Age", "42", "crown"),
+          apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
+          apply_row(:phone, :tel, t("applies.new.phone"), "+33612345678", "cellphone-iphone"),
+          apply_row(:source, :text, t("applies.new.source"), t("applies.new.source_placeholder"), "tag"),
+          apply_row(:motivation, :textarea, "Motivation", t("applies.new.motivation"), "content-paste")
+        ]
+      }, prerender: prerender? %>
+    </div>
+  </div>
+</div>
+

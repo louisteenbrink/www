@@ -28,6 +28,8 @@ module ApplicationHelper
       end
     end
     url_for(controller: params[:controller], action: params[:action], locale: locale)
+  rescue ActionController::UrlGenerationError => e
+    puts e.message
   end
 
   def prerender?

@@ -1,0 +1,25 @@
+.hec {
+  .errors, .intro {
+    margin: 2em 0;
+    padding: 1em;
+    font-size: 14px;
+    background-color: rgba(199, 51, 51, 0.21);
+  }
+  .intro {
+    background-color: lightyellow;
+    a {
+      text-decoration: underline;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.navbar-hec-logo {
+  svg {
+    width: 72px;
+    margin-left: 10px;
+    padding-top: 7px;
+  }
+}

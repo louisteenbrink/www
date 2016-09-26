@@ -2,19 +2,20 @@
 #
 # Table name: applies
 #
-#  id         :integer          not null, primary key
-#  first_name :string
-#  last_name  :string
-#  age        :integer
-#  email      :string
-#  phone      :string
-#  motivation :text
-#  batch_id   :integer
-#  city_id    :integer
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  tracked    :boolean          default(FALSE), not null
-#  source     :string
+#  id                  :integer          not null, primary key
+#  first_name          :string
+#  last_name           :string
+#  age                 :integer
+#  email               :string
+#  phone               :string
+#  motivation          :text
+#  batch_id            :integer
+#  city_id             :integer
+#  created_at          :datetime         not null
+#  updated_at          :datetime         not null
+#  tracked             :boolean          default(FALSE), not null
+#  source              :string
+#  codecademy_username :string
 #
 
 class AppliesController < ApplicationController
@@ -39,6 +40,30 @@ class AppliesController < ApplicationController
     else
       prepare_apply_form
       render :new
+    end
+  end
+
+  def new_hec
+    I18n.locale = :fr
+    @application = Apply.new
+    @hide_language_selector = true
+    @hide_banner_apply_button = true
+  end
+
+  def create_hec
+    I18n.locale = :fr
+    @application = Apply.new(application_params)
+    @application.batch_id = 68 # HEC - Paris - Janvier 2017
+    @application.city_id = 1   # Paris
+    @application.validate_ruby_codecademy_completed = true
+
+    if @application.save
+      session[:apply_id] = @application.id
+      redirect_to thanks_paris_path(locale: :fr)
+    else
+      @hide_language_selector = true
+      @hide_banner_apply_button = true
+      render :new_hec
     end
   end
 
@@ -83,6 +108,6 @@ class AppliesController < ApplicationController
   end
 
   def application_params
-    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id)
+    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id, :codecademy_username)
   end
 end
