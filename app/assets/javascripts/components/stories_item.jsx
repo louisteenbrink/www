@@ -26,6 +26,7 @@ class StoriesItem extends React.Component {
       var link = this.props.i18n.read_next_consumn.replace('::name::', this.props.alumni.first_name);
     }
 
+    var srcset = this.props.alumni.cloudinary_url + " 1x, " + this.props.alumni.cloudinary_url_2x + " 2x"
 
     return(
 
@@ -41,7 +42,7 @@ class StoriesItem extends React.Component {
             <div className='story-card-footer story-card-footer-home'>
               <div className="story-banner-user">
                 <div className="story-user-avatar">
-                  <img src={this.props.alumni.cloudinary_url} />
+                  <img src={this.props.alumni.cloudinary_url} srcSet={srcset} />
                 </div>
                 <div className="story-banner-infos">
                   <div className="story-user-name">

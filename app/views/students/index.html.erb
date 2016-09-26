@@ -100,7 +100,7 @@
                   <% maker = OpenStruct.new maker %>
                   <div class="project-item-maker">
                     <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                      <%= cl_image_tag maker.photo_path, width: 70, height: 70, crop: :fill, class: "avatar" %>
+                      <%= cl_adaptive_image_tag maker.photo_path, width: 35, height: 35, crop: :fill, class: "avatar" %>
                     </a>
                   </div>
                 <% end %>
