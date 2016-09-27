@@ -36,7 +36,15 @@
   <% end %>
   <%= yield(:headers) %>
 <% end %>
-<%= stylesheet_link_tag :application, media: "all" %>
+<% if current_page?(root_url) %>
+  <style>
+    <%# Above the fold CSS %>
+    <%= raw CriticalPathCss.fetch(request.path) %>
+  </style>
+<% else %>
+  <%= stylesheet_link_tag :application, media: "all" %>
+<% end %>
+
 <%= csrf_meta_tags %>
 </head>
 <body>
@@ -52,6 +60,10 @@
   <%= render "shared/navbar" %>
 
   <%= yield %>
+
+  <% if current_page?(root_url) %>
+    <%= stylesheet_link_tag :application, media: "all" %>
+  <% end %>
 
   <%= javascript_include_tag :application %>
   <%= yield(:after_js) %>

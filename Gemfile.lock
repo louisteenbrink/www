@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/mudbugmedia/critical-path-css-rails.git
+  revision: a721db28927ccc3ad987e1819f7abd3044520928
+  specs:
+    critical-path-css-rails (0.2.3)
+      phantomjs (~> 1.9)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -146,6 +153,7 @@ GEM
       pkg-config (~> 1.1.7)
     oauth (0.4.7)
     pg (0.18.4)
+    phantomjs (1.9.8.0)
     pkg-config (1.1.7)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -312,6 +320,7 @@ DEPENDENCIES
   builder
   capybara
   cloudinary
+  critical-path-css-rails!
   email_validator
   figaro
   font-awesome-sass

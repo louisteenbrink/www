@@ -14,7 +14,9 @@ class AlumniClient
   def random_stories(options = {})
     limit = options.fetch(:limit, 1)
     excluded_ids = options.fetch(:excluded_ids, [])
-    get("#{@base_url}/stories/sample", { params: { limit: limit, excluded_ids: excluded_ids.join(',') }})["stories"]
+    from_cache("random_stories:#{options.values.join(":")}", expire: 1.hour) do
+      get("#{@base_url}/stories/sample", { params: { limit: limit, excluded_ids: excluded_ids.join(',') }})["stories"]
+    end
   end
 
   def story(slug)
@@ -30,7 +32,9 @@ class AlumniClient
   end
 
   def live_batch
-    get("#{@base_url}/batches/live")["batch"]
+    from_cache(:live, expire: 5.minutes) do
+      get("#{@base_url}/batches/live")["batch"]
+    end
   end
 
   def testimonials(locale, slug = nil)
