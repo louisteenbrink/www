@@ -35,6 +35,8 @@ gem 'builder'
 gem 'rack-utf8_sanitizer'
 gem 'cloudinary'
 
+gem 'critical-path-css-rails', github: 'mudbugmedia/critical-path-css-rails'
+
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'
   gem 'rails-assets-classnames'

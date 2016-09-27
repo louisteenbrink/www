@@ -47,8 +47,5 @@ module WwwRails
         blacklist: ['spec.functionName', 'validation.react'],
         optional: ["es6.arrowFunctions", "es6.classes"]
       }
-
-    # Vendor images
-    config.assets.precompile += %w( ribbons/*.png )
   end
 end
