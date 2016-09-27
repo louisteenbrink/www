@@ -14,4 +14,4 @@ development:
 
 production:
   <<: *defaults
-  base_url: https://www.lewagon.com
+  base_url: "https://wagon-www-rails.herokuapp.com"  # For SSL Handshake
