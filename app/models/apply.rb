@@ -25,7 +25,9 @@ class Apply < ActiveRecord::Base
   validates :age, presence: true, numericality: { only_integer: true }
   validates :email, presence: true, email: true
   validates :motivation, presence: true, length: { minimum: 140 }
-  validates :source, presence: { message: I18n.translate('applies.new.source_presence_message') }
+
+  attr_accessor :skip_source_validation
+  validates :source, presence: { message: I18n.translate('applies.new.source_presence_message') }, unless: :skip_source_validation
 
   attr_accessor :validate_ruby_codecademy_completed
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed

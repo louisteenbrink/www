@@ -56,6 +56,7 @@ class AppliesController < ApplicationController
     @application.batch_id = 68 # HEC - Paris - Janvier 2017
     @application.city_id = 1   # Paris
     @application.validate_ruby_codecademy_completed = true
+    @application.skip_source_validation = true # No referrer
 
     if @application.save
       session[:apply_id] = @application.id
