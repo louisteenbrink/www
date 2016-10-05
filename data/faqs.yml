@@ -328,6 +328,10 @@ en:
         be facing a choice: continue your entrepreneurial project or become a junior
         developer in a startup or a bigger tech company.
   - question: |
+        Why Ruby on Rails?
+    answer: |
+        Great question! Our CTO [answered this one on Medium](https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6#.azt84ab7d).
+  - question: |
         Will I learn to create mobile apps?
     answer: |
         Yes and no. Let’s be clear, you’ll not learn iOS, Android or Windows Phone development.
