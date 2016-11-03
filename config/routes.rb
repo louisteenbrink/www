@@ -57,6 +57,7 @@ Rails.application.routes.draw do
     get "employers", to: "pages#employers", template: "employers", as: :employers
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
+    get "demodays", to: 'demodays#show', as: :demoday
     get "blog", to: 'posts#index', as: :blog
     get "blog/:slug", to: 'posts#show', as: :post
 
@@ -66,6 +67,7 @@ Rails.application.routes.draw do
     resources :projects, only: [:show]
     resources :stories, only: [:show]
     resources :students, only: [:show]
+    resources :demodays, only: [:show]
   end
 
   resources :subscribes, only: :create
