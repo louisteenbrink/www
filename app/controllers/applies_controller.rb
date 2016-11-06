@@ -60,7 +60,7 @@ class AppliesController < ApplicationController
 
     if @application.save
       session[:apply_id] = @application.id
-      redirect_to thanks_paris_path(locale: :fr)
+      redirect_to thanks_fr_path
     else
       @hide_language_selector = true
       @hide_banner_apply_button = true
