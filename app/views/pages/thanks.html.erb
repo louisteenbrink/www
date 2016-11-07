@@ -6,7 +6,11 @@
           <%= t(".thanks") %> <%= @apply.first_name %>
         </div>
         <div class="thanks-message-body">
-          <%= t(".we_will_contact_html") %>
+          <% if @batch.analytics_slug =~ /-hec$/ %>
+            <%= t(".we_will_contact_hec") %>
+          <% else %>
+            <%= t(".we_will_contact_html") %>
+          <% end %>
         </div>
       </div>
       <div class='apply-form-body thanks-checklist'>
@@ -32,8 +36,8 @@
               </div>
             </div>
           </div>
-          <%= react_component 'CheckListItems', {
-            items: [
+          <%
+            items = [
               {
                 label: t('.second_step', name: @city['name']),
                 href: @city['meetup_url'],
@@ -44,13 +48,18 @@
                 href: @city['twitter_url'],
                 index: 3
 
-              },
-              {
+              }
+            ]
+            unless @batch.analytics_slug =~ /-hec$/
+              items << {
                 label: t('.fourth_step'),
                 href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
                 index: 4
               }
-            ]
+            end
+          %>
+          <%= react_component 'CheckListItems', {
+            items: items
           }, prerender: false %>
         </div>
       </div>

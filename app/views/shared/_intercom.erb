@@ -9,7 +9,7 @@
     // Do not feed email => it will convert him/her to a user (we keep him/her as a lead)
   });
   Intercom('trackEvent', 'Application', {
-    'camp': '<%= @batch['analytics_slug'] %>',
+    'camp': '<%= @batch.analytics_slug %>',
     'city': '<%= @city['name'] %>'
   });
 <% end %>

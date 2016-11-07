@@ -24,7 +24,7 @@ class PagesController < ApplicationController
     else
       @apply = Apply.find(session[:apply_id])
       @city = @cities.find { |city| city["id"] == @apply.city_id }
-      @batch = @city["batches"].find { |batch| batch["id"] == @apply.batch_id }
+      @batch = @client.batch(@apply.batch_id)
     end
   end
 

@@ -11,7 +11,7 @@
     '$phone': '<%= @apply.phone %>'
   });
   mixpanel.track("Application", {
-    'camp': '<%= @batch['analytics_slug'] %>',
+    'camp': '<%= @batch.analytics_slug %>',
     'city': '<%= @city['name'] %>'
   });
 <% end %>
