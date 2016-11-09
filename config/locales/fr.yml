@@ -264,6 +264,14 @@ fr:
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
+  demoday:
+    show:
+      title: "Demoday à la demande"
+      dropdown:
+        language: "Langue"
+        first_item: "Anglais"
+        second_item: "Français"
+        batches: "Batch"
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon

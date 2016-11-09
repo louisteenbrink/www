@@ -1,0 +1,67 @@
+<div class="container ">
+  <h1 class="demoday-title">
+    <%= t(".title") %>
+  </h1>
+
+
+  <div class="dropdown-section">
+    <!-- Dropdown Language -->
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <button class="dropdown-batch dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <%= t(".dropdown.language") %>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li>
+            <%= link_to "#" do %>
+              <%= t(".dropdown.first_item") %>
+              <%= render 'shared/english_flag' %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+              <%= t(".dropdown.second_item") %>
+              <%= render 'shared/french_flag' %>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+              <%= t(".dropdown.second_item") %>
+              <%= render 'shared/brazilian_flag' %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Dropdown City -->
+    <div class="dropdown-container">
+      <div class="dropdown">
+        <button class="dropdown-batch dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <%= t(".dropdown.batches") %>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-city" aria-labelledby="dropdownMenu1">
+          <li>
+            <%= link_to "#" do %>
+              Batch#43
+              <small>Paris - Janv. / Mars 2016</small>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+              Batch#31
+              <small>Bordeaux - Janv. / Mars 2016</small>
+            <% end %>
+          </li>
+          <li>
+            <%= link_to "#" do %>
+              Batch#30
+              <small>Paris - Janv. / Mars 2016</small>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

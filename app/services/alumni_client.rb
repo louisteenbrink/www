@@ -105,6 +105,12 @@ class AlumniClient
     end
   end
 
+  def completed
+    from_cache(:completed) do
+      get "#{@base_url}/batches/completed"
+    end
+  end
+
   private
 
   def get(url, headers = {})

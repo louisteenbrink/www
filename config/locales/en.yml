@@ -274,6 +274,14 @@ en:
         developments.
       wanna_join: Want to be part of our network?
       signup: Sign up to get alerts about our candidates and coming job events.
+  demoday:
+    show:
+      title: "Pick a demoday and watch"
+      dropdown:
+        language: "Langue"
+        first_item: "English"
+        second_item: "French"
+        batches: "Batch"
   students:
     index:
       title: Students' projects - Startups & web apps made in Le Wagon
