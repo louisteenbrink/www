@@ -84,6 +84,7 @@
         </span>
       </div>
     </div>
+    <!-- Player Menu -->
     <div class="player-menu">
       <ul class="player-menu-summary">
         <li class="player-menu-item">Introduction</li>
@@ -100,7 +101,32 @@
         <li class="player-menu-item">Super Festival</li>
       </ul>
     </div>
+    <!-- Player Content -->
     <div class="player-content">
+      <div class="player-video">
+      </div>
+      <div class="player-product">
+        <div class="product-details">
+          <ul class="product-team">
+            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
+            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
+            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
+            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
+          </ul>
+          <h3 class="project-name">Caddy Connect</h3>
+          <span class="project-tagline">Manage your online purchases in one sight</span>
+          <%= link_to t(".player.project_link"), "#", class: "project-link" %>
+          <div class="project-techno">
+            <span><%= t(".player.techno") %></span>
+            <ul>
+              <li><span><%= render "shared/icon_react" %><i>React</i></span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="apply-cta">
+          <span><%= t(".player.cta") %></span>
+        </div>
+      </div>
     </div>
   </div>
 

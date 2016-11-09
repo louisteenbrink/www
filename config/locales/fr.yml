@@ -275,6 +275,9 @@ fr:
         batches: "Batch"
       player:
         product: "Projets"
+        project_link: "voir l'app"
+        techno: "Construit avec"
+        cta: "Embarquer pour 9 semaines"
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon

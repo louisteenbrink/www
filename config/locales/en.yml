@@ -285,6 +285,10 @@ en:
         batches: "Batch"
       player:
         product: "Products"
+        project_link: "try it now"
+        techno: "Built with"
+        cta: "Apply for 9 weeks"
+
   students:
     index:
       title: Students' projects - Startups & web apps made in Le Wagon
