@@ -276,12 +276,15 @@ en:
       signup: Sign up to get alerts about our candidates and coming job events.
   demoday:
     show:
-      title: "Pick a demoday and watch"
+      demoday_title: "Pick a demoday and watch"
+      batch_title: "Please, meet 40 amazing humans"
       dropdown:
         language: "Langue"
         first_item: "English"
         second_item: "French"
         batches: "Batch"
+      player:
+        product: "Products"
   students:
     index:
       title: Students' projects - Startups & web apps made in Le Wagon

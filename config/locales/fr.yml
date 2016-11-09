@@ -266,12 +266,15 @@ fr:
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
   demoday:
     show:
-      title: "Demoday à la demande"
+      demoday_title: "Demoday à la demande"
+      batch_title: "Nos 40 super héros"
       dropdown:
         language: "Langue"
         first_item: "Anglais"
         second_item: "Français"
         batches: "Batch"
+      player:
+        product: "Projets"
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon
