@@ -72,6 +72,13 @@ class Apply < ActiveRecord::Base
     }.to_json
   end
 
+  def codecademy_progress
+    return 0 if codecademy_username.blank?
+    client = CodecademyCheckerClient.new
+    result = client.ruby_progress(codecademy_username)
+    result["percentage"]
+  end
+
   private
 
   def ruby_codecademy_completed
