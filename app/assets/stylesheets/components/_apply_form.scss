@@ -198,9 +198,7 @@
     .btn-group.open .dropdown-toggle,
     .dropdown-toggle:focus,
     .dropdown-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      text-align: left;
       width: 100%;
       border: none;
       border-radius: 0;
