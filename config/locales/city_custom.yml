@@ -1,0 +1,11 @@
+fr:
+  montreal:
+    post_price: "+ taxes"
+
+en:
+  montreal:
+    post_price: "+ taxes"
+
+pt-BR:
+  montreal:
+    post_price: "+ taxes"
