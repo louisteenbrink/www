@@ -309,7 +309,7 @@ fr:
       motivation: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
       apply_btn: "Postulez à "
       please_wait: "Patientez..."
-      course_language: 'Cours en '
+      pre_course_language: 'Cours en '
       language_fr: 'Français'
       language_en: 'Anglais'
       language_pt-BR: 'Portugais brésilien'

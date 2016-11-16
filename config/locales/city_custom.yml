@@ -1,11 +1,14 @@
 fr:
   montreal:
     post_price: "+ taxes"
+    course_language: "français et anglais"
 
 en:
   montreal:
     post_price: "+ taxes"
+    course_language: "English and French"
 
 pt-BR:
   montreal:
     post_price: "+ taxes"
+    course_language: "Inglês e Francês"

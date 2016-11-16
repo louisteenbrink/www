@@ -317,7 +317,7 @@ en:
       motivation: "Why Le Wagon? What is your professional project?"
       apply_btn: "Apply to "
       please_wait: "Please wait..."
-      course_language: 'Course in '
+      pre_course_language: 'Course in '
       language_fr: 'French'
       language_en: 'English'
       language_pt-BR: 'Brazilian Portuguese'
