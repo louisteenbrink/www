@@ -234,7 +234,7 @@
 <div class="container text-center next-batch">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <%= t '.course_locale_html', city: @city['name'], language: t("applies.new.language_#{@city['course_locale']}") %>
+      <%= t '.course_locale_html', city: @city['name'], language: course_language[@city['slug']] || t("applies.new.language_#{@city['course_locale']}") %>
       <% if @next_batch %>
         <%= t '.next_batch_html', starts_at: l(@next_batch['starts_at'].to_date, format: :apply) %>
       <% end %>
