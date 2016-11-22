@@ -1,9 +1,19 @@
-<div class="container ">
-  <h1 class="demoday-title">
-    <%= t(".demoday_title") %>
-  </h1>
 
-  <div class="dropdown-section">
+
+<div class="banner-container">
+  <div class="container">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/9.jpg')%>');" id="banner-program">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+          <%= t(".demoday_title") %>
+        </h1>
+        <p>
+          <%= t(".demoday_tagline") %>
+        </p>
+      </div>
+    </div>
+    <div class="dropdown-section">
     <!-- Dropdown Language -->
     <div class="dropdown-container">
       <div class="dropdown">
@@ -63,8 +73,12 @@
       </div>
     </div>
   </div>
+</div>
+
+<div class="container ">
 
   <div class="player-container">
+
     <!-- Player Header -->
     <div class="player-header">
       <div class="batch-info">
@@ -84,23 +98,7 @@
         </span>
       </div>
     </div>
-    <!-- Player Menu -->
-    <div class="player-menu">
-      <ul class="player-menu-summary">
-        <li class="player-menu-item">Introduction</li>
-        <li class="player-menu-item player-menu-item-active">Caddy Connect</li>
-        <li class="player-menu-item">NetMeet</li>
-        <li class="player-menu-item">Higher</li>
-        <li class="player-menu-item">Dinja</li>
-        <li class="player-menu-item">Zykout</li>
-        <li class="player-menu-item">CoursMaPoule</li>
-        <li class="player-menu-item">Revalue</li>
-        <li class="player-menu-item">Katalog</li>
-        <li class="player-menu-item">Happy Papy</li>
-        <li class="player-menu-item">MediaClasse</li>
-        <li class="player-menu-item">Super Festival</li>
-      </ul>
-    </div>
+
     <!-- Player Content -->
     <div class="player-content">
       <div class="player-video">
@@ -128,9 +126,28 @@
         </div>
       </div>
     </div>
-  </div>
 
-  <h2 class="demoday-title">
-    <%= t(".batch_title") %>
-  </h2>
+    <!-- Player Menu -->
+    <div class="player-menu">
+      <ul class="player-menu-summary">
+        <li class="player-menu-item">Introduction</li>
+        <li class="player-menu-item player-menu-item-active">Caddy Connect</li>
+        <li class="player-menu-item">NetMeet</li>
+        <li class="player-menu-item">Higher</li>
+        <li class="player-menu-item">Dinja</li>
+        <li class="player-menu-item">Zykout</li>
+        <li class="player-menu-item">CoursMaPoule</li>
+        <li class="player-menu-item">Revalue</li>
+        <li class="player-menu-item">Katalog</li>
+        <li class="player-menu-item">Happy Papy</li>
+        <li class="player-menu-item">MediaClasse</li>
+        <li class="player-menu-item">Super Festival</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <%= react_component 'StudentsTitle', counter: @batch.students.count, prerender: prerender? %>
+  <%= react_component "StudentsList", students: @batch.students, prerender: prerender? %>
 </div>

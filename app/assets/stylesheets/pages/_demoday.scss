@@ -37,9 +37,10 @@
 .dropdown-section {
   display: flex;
   justify-content: space-between;
-  margin: 3em auto 1em;
+  position: relative;
+  margin: -33px auto 1em;
   max-width: 630px;
-
+  z-index: 10;
 
   .dropdown-container {
     position: relative;
@@ -129,16 +130,15 @@
     align-items: center;
     padding: 20px;
     width: 100%;
-    height: 120px;
+    height: 60px;
     color: white;
     background-color: #353C42;
 
     .batch-info {
       display: flex;
+      align-items: center;
 
       .batch-flag {
-        position: relative;
-        top: 7px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -152,11 +152,13 @@
 
       .batch-details {
         display: flex;
-        flex-direction: column;
+        align-items: center;
+        position: relative;
         margin-left: 10px;
 
+
         .batch-name {
-          font-size: 30px;
+          font-size: 21px;
           font-weight: 900;
 
           i {
@@ -166,6 +168,10 @@
         }
 
         .batch-date {
+          position: relative;
+          bottom: -3px;
+          margin-left: 10px;
+          font-size: 14px;
           font-weight: 100;
         }
       }
@@ -175,8 +181,18 @@
       display: flex;
       align-items: center;
 
+      .product-icon {
+        display: flex;
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
       .product-details {
         margin-left: 10px;
+        font-size: 14px;
 
         i {
           font-style: normal;
@@ -402,6 +418,34 @@
           cursor: pointer;
         }
       }
+    }
+  }
+}
+
+.students-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3em 40px 1em 40px;
+
+  .student-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 12.5%;
+
+    .student-picture {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+
+    .student-name {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #999;
     }
   }
 }

@@ -267,7 +267,7 @@ fr:
   demoday:
     show:
       demoday_title: "Demoday à la demande"
-      batch_title: "Nos 40 super héros"
+      demoday_tagline: "Jetez un oeil au projets que nos alumni ont construit en 2 semaines"
       dropdown:
         language: "Langue"
         first_item: "Anglais"
@@ -278,6 +278,7 @@ fr:
         project_link: "voir l'app"
         techno: "Construit avec"
         cta: "Embarquer pour 9 semaines"
+      batch_title: " super héros"
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon

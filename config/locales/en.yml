@@ -276,8 +276,8 @@ en:
       signup: Sign up to get alerts about our candidates and coming job events.
   demoday:
     show:
-      demoday_title: "Pick a demoday and watch"
-      batch_title: "Please, meet 40 amazing humans"
+      demoday_title: "Demoday on demand"
+      demoday_tagline: "Check out the projects our students built with Ruby on Rails in only 2 weeks"
       dropdown:
         language: "Langue"
         first_item: "English"
@@ -288,7 +288,7 @@ en:
         project_link: "try it now"
         techno: "Built with"
         cta: "Apply for 9 weeks"
-
+      batch_title: " amazing humans right here"
   students:
     index:
       title: Students' projects - Startups & web apps made in Le Wagon
