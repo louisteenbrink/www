@@ -11,5 +11,9 @@ module Api
     def method_missing(name)
       @json[name.to_s]
     end
+
+    def as_json(options = {})
+      return @json
+    end
   end
 end

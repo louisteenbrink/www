@@ -77,6 +77,15 @@
 
 <div class="container ">
 
+  <%= react_component 'PlayerContainer', {
+    batch: @batch,
+    product_icon: 'test',
+    i18n: {
+      product_label: t(".player.product"),
+      player_cta: t(".player.cta")
+    }
+  }, prerender: prerender? %>
+
   <div class="player-container">
 
     <!-- Player Header -->

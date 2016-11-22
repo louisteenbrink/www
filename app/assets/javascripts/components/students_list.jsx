@@ -8,8 +8,8 @@ class StudentsList extends React.Component {
 
     return (
       <div className="students-container">
-      { students.map(function(student){
-          return <StudentsListItem student={student} />;
+      { students.map(function(student, index){
+          return <StudentsListItem key={index} student={student} />;
         })
       }
       </div>
