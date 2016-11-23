@@ -13,6 +13,7 @@
         </p>
       </div>
     </div>
+
     <div class="dropdown-section">
     <!-- Dropdown Language -->
     <div class="dropdown-container">
@@ -76,84 +77,21 @@
 </div>
 
 <div class="container ">
-
+  <%
+    batch = @batch.as_json
+    batch["formatted_address"] = ??
+  %>
   <%= react_component 'PlayerContainer', {
-    batch: @batch,
-    product_icon: 'test',
+    batch: batch,
+    product_icon: render('shared/product_icon'),
     i18n: {
       product_label: t(".player.product"),
-      player_cta: t(".player.cta")
+      player_cta: t(".player.cta"),
+      project_link: t(".player.project_link"),
+      project_techno: t(".player.techno"),
+      batch_intro: t(".player.batch_intro_html")
     }
-  }, prerender: prerender? %>
-
-  <div class="player-container">
-
-    <!-- Player Header -->
-    <div class="player-header">
-      <div class="batch-info">
-        <span class="batch-flag">
-          <%= render 'shared/french_flag' %>
-        </span>
-        <div class="batch-details">
-          <span class="batch-name">Batch #30 <i>Paris</i></span>
-          <span class="batch-date">June - August 2016</span>
-        </div>
-      </div>
-      <div class="product-info">
-        <i class="product-icon"><%= render 'shared/product_icon' %></i>
-        <span class="product-details">
-          11
-          <i><%= t(".player.product")%></i>
-        </span>
-      </div>
-    </div>
-
-    <!-- Player Content -->
-    <div class="player-content">
-      <div class="player-video">
-      </div>
-      <div class="player-product">
-        <div class="product-details">
-          <ul class="product-team">
-            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
-            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
-            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
-            <li><%= image_tag "hero/ssaunier.jpg", class: "team-member", with: "42px", height: "42px" %></li>
-          </ul>
-          <h3 class="project-name">Caddy Connect</h3>
-          <span class="project-tagline">Manage your online purchases in one sight</span>
-          <%= link_to t(".player.project_link"), "#", class: "project-link" %>
-          <div class="project-techno">
-            <span><%= t(".player.techno") %></span>
-            <ul>
-              <li><span><%= render "shared/icon_react" %><i>React</i></span></li>
-            </ul>
-          </div>
-        </div>
-        <div class="apply-cta">
-          <span><%= t(".player.cta") %></span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Player Menu -->
-    <div class="player-menu">
-      <ul class="player-menu-summary">
-        <li class="player-menu-item">Introduction</li>
-        <li class="player-menu-item player-menu-item-active">Caddy Connect</li>
-        <li class="player-menu-item">NetMeet</li>
-        <li class="player-menu-item">Higher</li>
-        <li class="player-menu-item">Dinja</li>
-        <li class="player-menu-item">Zykout</li>
-        <li class="player-menu-item">CoursMaPoule</li>
-        <li class="player-menu-item">Revalue</li>
-        <li class="player-menu-item">Katalog</li>
-        <li class="player-menu-item">Happy Papy</li>
-        <li class="player-menu-item">MediaClasse</li>
-        <li class="player-menu-item">Super Festival</li>
-      </ul>
-    </div>
-  </div>
+  }, prerender: false %>
 </div>
 
 <div class="container">

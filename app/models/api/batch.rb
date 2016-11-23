@@ -13,7 +13,7 @@ module Api
     end
 
     def as_json(options = {})
-      return @json
+      @json
     end
   end
 end

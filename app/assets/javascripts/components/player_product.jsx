@@ -4,14 +4,13 @@ class PlayerProduct extends React.Component {
   }
 
   render() {
+    var batch = this.props.batch;
+    var apply_to = "http://lewagon.com/apply/" + this.props.batch.city.slug
 
     return (
       <div className="player-product">
-        <div className="product-details">
-        </div>
-        <div className="apply-cta">
-          <span>{this.props.i18n.player_cta}</span>
-        </div>
+        <PlayerProductDetails batch={batch} product={this.props.product} i18n={this.props.i18n} />
+        <a href={apply_to} className="apply-cta">{this.props.i18n.player_cta}</a>
       </div>
     )
   }

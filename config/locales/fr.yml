@@ -274,6 +274,8 @@ fr:
         second_item: "Français"
         batches: "Batch"
       player:
+        batch_intro_html: |
+          {this.props.batch.students.length} students attended Le Wagon in {this.props.batch.city.name} from {this.props.batch.starts_at} to {this.props.batch.ends_at}. Check out the projects they built with Ruby on Rails in only 2 weeks!
         product: "Projets"
         project_link: "voir l'app"
         techno: "Construit avec"

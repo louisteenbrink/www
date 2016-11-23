@@ -71,7 +71,7 @@
   <%= render "shared/footer" %>
 
   <%# render "shared/intercom" %>
-  <%= render "shared/drift" %>
+  <%= render "shared/drift" if Rails.env.production? %>
   <%= render "shared/google_analytics" %>
   <%= render "shared/mixpanel" %>
   <%= render "shared/facebook_audience" %>
