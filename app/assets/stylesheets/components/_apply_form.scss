@@ -188,6 +188,11 @@
   flex: 0 0 300px;
   margin-right: 50px;
 
+  svg {
+    height: 14px;
+    margin: 0 8px 0 4px;
+  }
+
   @media (max-width: $screen-md) {
     margin-right: 0;
     margin-bottom: 50px;
@@ -218,20 +223,12 @@
           opacity: 0.6;
         }
       }
-      svg {
-        width: 23px;
-        margin-left: 5px;
-      }
     }
     .dropdown-menu {
       right: 0;
       .city-group-nav-item {
         width: 100%;
         cursor: pointer;
-        svg {
-          width: 21px;
-          margin-left: 5px;
-        }
         color: #A2A2A2;
         padding: 20px;
         font-weight: $font-weight-semi-bold;
@@ -253,6 +250,11 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+
+  .city-nav-item-first-batch {
+    font-size: 11px;
+    color: #999;
+  }
 
   &.as-example {
     opacity: .3;

@@ -35,7 +35,8 @@ class ApplyForm extends React.Component {
             <div className='banner-city-nav'>
               <ReactBootstrap.Dropdown id='cityGroupSelector' ref="cityGroupSelector">
                 <ReactBootstrap.Dropdown.Toggle>
-                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group}}></span>
+                  {this.state.activeCityGroup.group}
+                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.icon}}></span>
                 </ReactBootstrap.Dropdown.Toggle>
                 <ReactBootstrap.Dropdown.Menu>
                   {otherCityGroups.map((cityGroup, index) => {
@@ -54,6 +55,8 @@ class ApplyForm extends React.Component {
                   <CityNavItem
                     key={index}
                     city={city}
+                    i18n={this.props.i18n}
+                    firstBatch={this.firstBatch(city)}
                     setActiveCity={(city) => this.setActiveCity(city)}
                     isActive={this.state.activeCity.slug == city.slug}
                   />
