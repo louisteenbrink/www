@@ -4,16 +4,13 @@ class PlayerHeader extends React.Component {
   }
 
   render() {
-
     return (
       <div className="player-header">
         <div className="batch-info">
-          <span className="batch-flag">
-            // TODO
-          </span>
+          <span className="batch-flag" dangerouslySetInnerHTML={{__html: this.props.flag_icon}}></span>
           <div className="batch-details">
             <span className="batch-name">Batch#{this.props.batch.id} <i>{this.props.batch.city.name}</i></span>
-            <span className="batch-date">{this.props.batch.schedule_slug}</span>
+            <span className="batch-date">{this.props.batch.starts_at} - {this.props.batch.ends_at}</span>
           </div>
         </div>
         <div className="product-info">

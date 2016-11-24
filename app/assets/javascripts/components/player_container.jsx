@@ -15,7 +15,7 @@ class PlayerContainer extends React.Component {
 
     return (
       <div className="player-container">
-        <PlayerHeader batch={batch} i18n={i18n} product_icon={product_icon} />
+        <PlayerHeader batch={batch} i18n={i18n} product_icon={product_icon} flag_icon={this.props.flag_icon} />
         <div className="player-content">
           <PlayerVideo youtube_video_id={this.props.batch.youtube_id} selectedProduct={this.state.selectedProduct} />
           <PlayerProduct batch={batch} product={this.state.selectedProduct} i18n={i18n} />

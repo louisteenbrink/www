@@ -275,7 +275,7 @@ fr:
         batches: "Batch"
       player:
         batch_intro_html: |
-          {this.props.batch.students.length} students attended Le Wagon in {this.props.batch.city.name} from {this.props.batch.starts_at} to {this.props.batch.ends_at}. Check out the projects they built with Ruby on Rails in only 2 weeks!
+          Jetez un oeil aux produits que les %{count} étudiants du Le Wagon %{city_name} de %{batch_start_date} à %{batch_end_date} ont conçu lors des deux 2 dernières semaines dédiées aux projets !
         product: "Projets"
         project_link: "voir l'app"
         techno: "Construit avec"

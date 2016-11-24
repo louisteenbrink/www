@@ -6,10 +6,15 @@ class PlayerProductDetails extends React.Component {
   render() {
 
     if (this.props.product === null) {
+      var text = this.props.i18n.batch_intro.replace('%{count}', this.props.batch.students.length)
+                                            .replace('%{city_name}', this.props.batch.city.name)
+                                            .replace('%{batch_start_date}', this.props.batch.starts_at)
+                                            .replace('%{batch_end_date}', this.props.batch.ends_at);
+
       return  (
         <div className="product-details">
           <h3 className="project-name">DemoDay <small>Batch#{this.props.batch.id}</small></h3>
-          <span className="project-tagline">{this.props.i18n.batch_intro}</span>
+          <span className="project-tagline">{text}</span>
         </div>
       )
     } else {

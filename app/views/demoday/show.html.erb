@@ -79,11 +79,15 @@
 <div class="container ">
   <%
     batch = @batch.as_json
-    batch["formatted_address"] = ??
+    batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
+    batch["ends_at"] = l(Time.parse(batch["ends_at"]), format: '%B %Y').camelcase
+    city_local = @batch.city['course_locale']
+    city_local_flag = { city_local => "icon_flag_#{city_local}" }
   %>
   <%= react_component 'PlayerContainer', {
     batch: batch,
     product_icon: render('shared/product_icon'),
+    flag_icon: render('shared/' + city_local_flag[city_local]),
     i18n: {
       product_label: t(".player.product"),
       player_cta: t(".player.cta"),
@@ -95,6 +99,11 @@
 </div>
 
 <div class="container">
-  <%= react_component 'StudentsTitle', counter: @batch.students.count, prerender: prerender? %>
+  <%= react_component 'StudentsTitle', {
+    counter: @batch.students.count,
+    i18n: {
+      batch_title: t(".batch_title")
+    }
+  }, prerender: prerender? %>
   <%= react_component "StudentsList", students: @batch.students, prerender: prerender? %>
 </div>
