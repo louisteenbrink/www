@@ -5,6 +5,12 @@ end
 
 Rails.application.routes.draw do
 
+  devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+
+  namespace :admin do
+    get '/', to: 'pages#home'
+  end
+
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|

@@ -10,6 +10,8 @@ gem "rest-client"
 gem 'meetup_client'
 gem "redis"
 gem 'redis-rails'
+gem 'devise'
+gem "omniauth-github"
 
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
