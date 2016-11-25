@@ -1,7 +1,7 @@
 module Admin
   class PagesController < BaseController
-    def home
-      @toto = 'toto'
+    def live
+
     end
   end
 end

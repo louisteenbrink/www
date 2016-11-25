@@ -10,6 +10,7 @@
 #  last_sign_in_ip    :inet
 #  uid                :string
 #  github_nickname    :string
+#  gravatar_url       :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #

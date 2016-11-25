@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
 
   namespace :admin do
-    get '/', to: 'pages#home'
+    get '/', to: 'pages#live', as: :live
+    delete '/log_out', to: 'base#log_out'
   end
 
   # config/static_routes.yml

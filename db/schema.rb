@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161125154737) do
+ActiveRecord::Schema.define(version: 20161125184153) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,16 @@ ActiveRecord::Schema.define(version: 20161125154737) do
     t.string   "codecademy_username"
   end
 
+  create_table "lives", force: :cascade do |t|
+    t.string   "category"
+    t.datetime "started_at"
+    t.datetime "ended_at"
+    t.string   "url"
+    t.string   "batch_slug"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.integer  "sign_in_count",      default: 0, null: false
     t.datetime "current_sign_in_at"
@@ -39,6 +49,7 @@ ActiveRecord::Schema.define(version: 20161125154737) do
     t.inet     "last_sign_in_ip"
     t.string   "uid"
     t.string   "github_nickname"
+    t.string   "gravatar_url"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
   end

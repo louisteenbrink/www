@@ -1,0 +1,7 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "sb_admin";
+
+#page-wrapper {
+  min-height: calc(100vh - 50px);
+}

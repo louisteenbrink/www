@@ -32,6 +32,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
 
       t.string :uid
       t.string :github_nickname
+      t.string :gravatar_url
 
       t.timestamps null: false
     end

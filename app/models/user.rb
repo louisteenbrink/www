@@ -10,6 +10,7 @@
 #  last_sign_in_ip    :inet
 #  uid                :string
 #  github_nickname    :string
+#  gravatar_url       :string
 #  created_at         :datetime         not null
 #  updated_at         :datetime         not null
 #
@@ -25,6 +26,7 @@ class User < ApplicationRecord
     return nil if user.nil?
     user.uid = auth.uid
     user.github_nickname = auth.info.nickname
+    user.gravatar_url = auth.info.image
     user.save
     user
   end
