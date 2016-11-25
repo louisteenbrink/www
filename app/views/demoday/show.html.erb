@@ -81,13 +81,11 @@
     batch = @batch.as_json
     batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
     batch["ends_at"] = l(Time.parse(batch["ends_at"]), format: '%B %Y').camelcase
-    city_local = @batch.city['course_locale']
-    city_local_flag = { city_local => "icon_flag_#{city_local}" }
   %>
   <%= react_component 'PlayerContainer', {
     batch: batch,
     product_icon: render('shared/product_icon'),
-    flag_icon: render('shared/' + city_local_flag[city_local]),
+    flag_icon: render('shared/icon_flag_' + @batch.city['course_locale'].underscore.downcase),
     i18n: {
       product_label: t(".player.product"),
       player_cta: t(".player.cta"),

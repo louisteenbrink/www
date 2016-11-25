@@ -11,7 +11,7 @@ class PlayerVideo extends React.Component {
       if (nextProps.selectedProduct === null) {
         this.state.youtube_player.seekTo(0);
       } else {
-        this.state.youtube_player.seekTo(demoday_timestamp);
+        this.state.youtube_player.seekTo(nextProps.selectedProduct.demoday_timestamp);
       }
     }
   }
