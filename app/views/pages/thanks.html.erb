@@ -50,7 +50,7 @@
 
               }
             ]
-            unless @apply.codecademy_progress >= 100
+            unless @apply.codecademy_progress.to_i >= 100
               items << {
                 label: t('.fourth_step'),
                 href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
