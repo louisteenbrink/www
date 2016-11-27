@@ -72,6 +72,7 @@ Rails.application.routes.draw do
     get "alumni" => "students#index", as: :alumni
     get "blog", to: 'posts#index', as: :blog
     get "blog/:slug", to: 'posts#show', as: :post
+    get "live", to: 'pages#live', as: :live
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city

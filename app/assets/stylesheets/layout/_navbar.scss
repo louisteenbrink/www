@@ -424,11 +424,36 @@
 }
 
 .new {
-  background-color: $red;
+  background-color: $brand-color;
   color: white;
   border-radius: 3px;
   font-size: 11px;
   font-weight: bold;
   padding: 4px;
   vertical-align: 2px;
+}
+
+a.live-on {
+  border: 1px solid $brand-color;
+  color: $brand-color;
+  font-weight: 300;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 4px 4px 2px 5px;
+  margin-left: 12px;
+  opacity: 0.9;
+
+  &:hover {
+    text-decoration: none;
+    color: $brand-color;
+    opacity: 1;
+  }
+}
+
+.dot {
+  animation: blinker 1s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+}
+@keyframes blinker {
+  from { opacity: 1; }
+  to { opacity: 0; }
 }

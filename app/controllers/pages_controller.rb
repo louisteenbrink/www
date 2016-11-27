@@ -7,6 +7,19 @@ class PagesController < ApplicationController
     render params[:template]
   end
 
+  def live
+    if @live
+      if @live.demoday?
+        # TODO: redirec to right demoday
+      else
+        # render
+      end
+    else
+      flash[:notice] = "Sorry, last live ended."
+      redirect_to root_path
+    end
+  end
+
   def home
     @stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")

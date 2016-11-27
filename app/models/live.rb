@@ -32,6 +32,10 @@ class Live < ApplicationRecord
   validates :category, presence: true, inclusion: { in: CATEGORIES }
   validates :batch_slug, presence: true, if: ->() { self.category == 'demoday' }
 
+  def demoday?
+    category == 'demoday'
+  end
+
   def self.running_now
     Live.where(ended_at: nil).where.not(started_at: nil).order(started_at: :desc).first
   end

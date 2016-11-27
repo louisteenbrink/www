@@ -78,6 +78,10 @@
         <div class="navbar-hec-logo">
           <%= render "shared/logos/hec" %>
         </div>
+      <% elsif @live %>
+        <%= link_to live_path, class: 'live-on' do %>
+          <i class="dot fa fa-circle fa-pulse"></i> LIVE
+        <% end %>
       <% end %>
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
         <hr class='fake-hr hidden-xs'>
