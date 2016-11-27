@@ -1,7 +1,23 @@
 <div class="container">
   <div class="row">
     <% if @live %>
-      TODO
+      <div class="col-sm-12">
+        <h1><%= @live.title %></h1>
+        <p><%= @live.description %></p>
+
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your embedded video player code -->
+        <div class="fb-video" data-href="<%= @live.url %>"
+          data-autoplay="true" data-width="900" data-show-text="false">
+        </div>
+      </div>
     <% else %>
       <div class="col-sm-8 col-sm-offset-2">
         <div class="padded">
