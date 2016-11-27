@@ -8,15 +8,8 @@ class PagesController < ApplicationController
   end
 
   def live
-    if @live
-      if @live.demoday?
-        # TODO: redirec to right demoday
-      else
-        # render
-      end
-    else
-      flash[:notice] = "Sorry, last live ended."
-      redirect_to root_path
+    if @live && @live.demoday?
+      # TODO: redirec to right demoday
     end
   end
 

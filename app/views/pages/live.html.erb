@@ -1,1 +1,19 @@
-TODO
+<div class="container">
+  <div class="row">
+    <% if @live %>
+      TODO
+    <% else %>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="padded">
+          <h1>Live not running</h1>
+          <p>Sorry, we don't have any live running at the moment. Try refreshing the page in a few minutes.</p>
+          <p>
+            <%= link_to "Refresh", live_path, class: 'btn btn-primary' %>
+            or
+            <%= link_to "go home", root_path %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
