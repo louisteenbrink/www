@@ -1,0 +1,8 @@
+<%= simple_form_for [:admin, @live] do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :category, collection: Live::CATEGORIES %>
+  <%= f.input :url %>
+  <%= f.input :batch_slug, placeholder: "Leave blank for Aperotalk" %>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>

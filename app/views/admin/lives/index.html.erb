@@ -1,0 +1,10 @@
+<%= link_to "Prepare a new live", new_admin_live_path, class: 'btn btn-primary pull-right' %>
+<div class="clearfix" style="height: 5em"></div>
+
+<table class="table table-striped">
+  <% @lives.each do |live| %>
+    <tr data-live-id="<%= live.id %>">
+      <%= render 'live', live: live %>
+    </tr>
+  <% end %>
+</table>

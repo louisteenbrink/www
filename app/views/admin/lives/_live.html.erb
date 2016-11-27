@@ -1,0 +1,21 @@
+<td>
+  <strong><%= live.title %></strong>
+  <% if live.description.present? %>
+    - <%= live.description.truncate(80) %>
+  <% end %>
+  <%= link_to edit_admin_live_path(live) do %>
+    <i class="fa fa-pencil"></i> edit
+  <% end %>
+</td>
+<td class="text-right">
+  <% if live.started_at.nil? || !live.ended_at.nil? %>
+    <%= link_to on_admin_live_path(live), class: 'btn btn-danger', remote: true, method: :patch do %>
+      <i class="fa fa-video-camera"></i> Go live!
+    <% end %>
+  <% elsif live.ended_at.nil? %>
+    Started at <%= l live.started_at, format: :short %>
+    <%= link_to off_admin_live_path(live), class: 'btn btn-warning', remote: true, method: :patch do %>
+      <i class="fa fa-stop"></i> End live
+    <% end %>
+  <% end %>
+</td>

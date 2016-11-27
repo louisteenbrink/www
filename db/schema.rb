@@ -33,12 +33,16 @@ ActiveRecord::Schema.define(version: 20161125184153) do
 
   create_table "lives", force: :cascade do |t|
     t.string   "category"
+    t.integer  "user_id"
     t.datetime "started_at"
     t.datetime "ended_at"
     t.string   "url"
     t.string   "batch_slug"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "title"
+    t.text     "description"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["user_id"], name: "index_lives_on_user_id", using: :btree
   end
 
   create_table "users", force: :cascade do |t|
@@ -54,4 +58,5 @@ ActiveRecord::Schema.define(version: 20161125184153) do
     t.datetime "updated_at",                     null: false
   end
 
+  add_foreign_key "lives", "users"
 end

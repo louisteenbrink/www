@@ -8,7 +8,13 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
 
   namespace :admin do
-    get '/', to: 'pages#live', as: :live
+    resources :lives, except: [ :index, :destroy ] do
+      member do
+        patch 'on'
+        patch 'off'
+      end
+    end
+    root 'lives#index'
     delete '/log_out', to: 'base#log_out'
   end
 
