@@ -21,7 +21,7 @@ class PlayerNavigationList extends React.Component {
                         key={index}
                         product={product}
                         selected={product === this.props.selectedProduct}
-                        handleProductClick={this.props.handleProductClick} />;
+                        goToProduct={this.props.goToProduct} />;
             })
           }
         </ul>

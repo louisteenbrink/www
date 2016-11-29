@@ -84,6 +84,7 @@
   %>
   <%= react_component 'PlayerContainer', {
     batch: batch,
+    selectedProdutSlug: @selected_product_slug,
     product_icon: render('shared/product_icon'),
     flag_icon: render('shared/icon_flag_' + @batch.city['course_locale'].underscore.downcase),
     i18n: {

@@ -31,6 +31,7 @@ class PlayerVideo extends React.Component {
         videoId: this.props.youtube_video_id,
         events: {
           'onReady': ((event) => event.target.playVideo()),
+          'onTimeUpdate': ((arg) => console.log(arg))
         }
       });
 

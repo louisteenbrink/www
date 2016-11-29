@@ -2,7 +2,8 @@ class PlayerContainer extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      selectedProduct: null
+      selectedProduct: this.props.selectedProdutSlug === null ? null :
+        _.filter(this.props.batch.products, (p) => { return p.slug == this.props.selectedProdutSlug })[0]
     }
   }
 
@@ -13,20 +14,32 @@ class PlayerContainer extends React.Component {
     var i18n = this.props.i18n;
     var product_icon = this.props.product_icon;
 
+    var main = null;
+    if (this.props.batch.youtube_id) {
+      main = <PlayerVideo youtube_video_id={this.props.batch.youtube_id} selectedProduct={this.state.selectedProduct} />
+    } else {
+      main = "";
+    }
+
+    var footerNavigation = null;
+    if (products.length > 0) {
+      footerNavigation = <PlayerNavigationList products={products} selectedProduct={this.state.selectedProduct}
+           goToProduct={this.goToProduct} />;
+    }
+
     return (
       <div className="player-container">
         <PlayerHeader batch={batch} i18n={i18n} product_icon={product_icon} flag_icon={this.props.flag_icon} />
         <div className="player-content">
-          <PlayerVideo youtube_video_id={this.props.batch.youtube_id} selectedProduct={this.state.selectedProduct} />
+          {main}
           <PlayerProduct batch={batch} product={this.state.selectedProduct} i18n={i18n} />
         </div>
-        <PlayerNavigationList products={products} selectedProduct={this.state.selectedProduct}
-           handleProductClick={this.handleProductClick} />
+        {footerNavigation}
       </div>
     )
   }
 
-  handleProductClick = (product) => {
+  goToProduct = (product) => {
     this.setState({ selectedProduct: product })
   }
 }
