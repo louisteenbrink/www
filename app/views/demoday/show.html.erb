@@ -43,44 +43,15 @@
     <%= react_component "PlayerBatchSelector", {
       locales: locales,
       selectedBatch: @batches.select { |b| b.slug == @batch.slug }.first,
-      selectedLocale: locales.select { |l| l['code'] == @batch.city["course_locale"].to_sym }.first || locales.first,
-      batches: @batches
+      batches: @batches,
+      demodayPath: demoday_path(':slug'),
+      i18n: {
+        page_title: t("demoday.show.page_title")
+      }
     }, prerender: false %>
   </div>
 </div>
 
-<div class="container">
-  <%
-    batch = @batch.as_json
-    batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
-    batch["ends_at"] = l(Time.parse(batch["ends_at"]), format: '%B %Y').camelcase
-  %>
-  <%= react_component 'PlayerContainer', {
-    batch: batch,
-    demodayPath: demoday_path,
-    withSlugDemodayPath: with_slug_demoday_path(product_slug: ':slug'),
-    selectedProdutSlug: @selected_product_slug,
-    product_icon: render('shared/product_icon'),
-    flag_icon: render('shared/icon_flag_' + @batch.city['course_locale'].underscore.downcase),
-    i18n: {
-      locale: I18n.locale,
-      page_title: t(".page_title"),
-      page_title_with_selected_product: t(".page_title_with_selected_product"),
-      product_label: t(".player.product"),
-      player_cta: t(".player.cta"),
-      project_link: t(".player.project_link"),
-      project_techno: t(".player.techno"),
-      batch_intro: t(".player.batch_intro_html")
-    }
-  }, prerender: prerender? %>
-</div>
-
-<div class="container">
-  <%= react_component 'StudentsTitle', {
-    counter: @batch.students.count,
-    i18n: {
-      batch_title: t(".batch_title")
-    }
-  }, prerender: prerender? %>
-  <%= react_component "StudentsList", students: @batch.students, prerender: prerender? %>
+<div id="batch-demoday">
+  <%= render 'batch_demoday', autoPlay: false, prerender: true, batch: @batch, selected_product_slug: @selected_product_slug %>
 </div>

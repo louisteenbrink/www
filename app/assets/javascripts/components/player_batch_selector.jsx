@@ -2,7 +2,7 @@ class PlayerBatchSelector extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedLocale: this.props.selectedLocale,
+      selectedLocale: this.props.locales.filter((locale) => { return locale.code === this.props.selectedBatch.city.course_locale })[0],
       selectedBatch: this.props.selectedBatch
     }
   }
@@ -69,5 +69,13 @@ class PlayerBatchSelector extends React.Component {
   changeBatch(batch) {
     this.setState({ selectedBatch: batch });
     this.refs.batchSelector._values.open = false; // toggle dropdown
+
+    var path = this.props.demodayPath.replace(':slug', batch.slug);
+    $.getScript(path);
+
+    var title = this.props.i18n.page_title.replace('%{batch_slug}', batch.slug)
+                                          .replace('%{city_name}', batch.city.name);
+    document.title = title;
+    history.replaceState({}, title, path);
   }
 }

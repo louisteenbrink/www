@@ -280,11 +280,7 @@ en:
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
       demoday_title: "Demoday on demand"
       demoday_tagline: "Check out the projects our students built with Ruby on Rails in only 2 weeks"
-      dropdown:
-        language: "Langue"
-        first_item: "English"
-        second_item: "French"
-        batches: "Batch"
+    batch_demoday:
       player:
         batch_intro_html: |
           %{count} students attended Le Wagon in %{city_name} from %{batch_start_date} to %{batch_end_date}. Check out the projects they built with Ruby on Rails in only 2 weeks!

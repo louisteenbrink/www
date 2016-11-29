@@ -51,6 +51,9 @@ class PlayerVideo extends React.Component {
     if (this.props.selectedProduct) {
       this.state.youtubePlayer.seekTo(this.props.selectedProduct.demoday_timestamp);
     }
+    if (this.props.autoPlay) {
+      this.state.youtubePlayer.playVideo();
+    }
   }
 
   reportCurrentTime = () => {

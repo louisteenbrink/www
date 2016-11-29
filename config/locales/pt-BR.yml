@@ -285,11 +285,7 @@ pt-BR:
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
       demoday_title: "Demoday quando quiser"
       demoday_tagline: "Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!"
-      dropdown:
-        language: "Idioma"
-        first_item: "Inglês"
-        second_item: "Francês"
-        batches: "Batch"
+    batch_demoday:
       player:
         batch_intro_html: |
           %{count} alunos participaram do Le Wagon em %{city_name} entre o %{batch_start_date} e o %{batch_end_date}. Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!

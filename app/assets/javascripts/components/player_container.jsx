@@ -18,6 +18,7 @@ class PlayerContainer extends React.Component {
     var main = null;
     if (this.props.batch.youtube_id) {
       main = <PlayerVideo
+                autoPlay={this.props.autoPlay}
                 jump={this.state.jump}
                 i18n={this.props.i18n}
                 youtubeVideoId={this.props.batch.youtube_id}

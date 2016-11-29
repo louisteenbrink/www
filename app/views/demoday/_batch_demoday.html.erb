@@ -1,0 +1,36 @@
+<div class="container">
+  <%
+    react_batch = batch.as_json
+    react_batch["starts_at"] = l(Time.parse(react_batch["starts_at"]), format: '%B').camelcase
+    react_batch["ends_at"] = l(Time.parse(react_batch["ends_at"]), format: '%B %Y').camelcase
+  %>
+  <%= react_component 'PlayerContainer', {
+    autoPlay: autoPlay,
+    batch: react_batch,
+    demodayPath: demoday_path,
+    withSlugDemodayPath: with_slug_demoday_path(product_slug: ':slug'),
+    selectedProdutSlug: selected_product_slug,
+    product_icon: render('shared/product_icon'),
+    flag_icon: render('shared/icon_flag_' + batch.city['course_locale'].underscore.downcase),
+    i18n: {
+      locale: I18n.locale,
+      page_title: t("demoday.show.page_title"),
+      page_title_with_selected_product: t("demoday.show.page_title_with_selected_product"),
+      product_label: t(".player.product"),
+      player_cta: t(".player.cta"),
+      project_link: t(".player.project_link"),
+      project_techno: t(".player.techno"),
+      batch_intro: t(".player.batch_intro_html")
+    }
+  }, prerender: prerender %>
+</div>
+
+<div class="container">
+  <%= react_component 'StudentsTitle', {
+    counter: batch.students.count,
+    i18n: {
+      batch_title: t(".batch_title")
+    }
+  }, prerender: prerender %>
+  <%= react_component "StudentsList", students: batch.students, prerender: prerender %>
+</div>
