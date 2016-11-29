@@ -11,7 +11,7 @@ fr:
     answer:
         - Dans les villes de Bruxelles, Amsterdam, Copenhague et Lisbonne, le programme est donné à 100% en **anglais**.
         - |
-            À Paris, Lille, Bordeaux et Marseille, le programme est donné en **français**. C'est-à-dire
+            À Paris, Lille, Bordeaux, Nantes, Lyon et Marseille, le programme est donné en **français**. C'est-à-dire
             que le cours du matin (1h30) et la correction en _live-code_ du soir (1h30) sont en français. Cependant, tout le matériel pédagogique (cours, exercices, etc.) ainsi que toute
             la documentation technique ([Ruby doc](http://ruby-doc.org/), [Stack Overflow](http://stackoverflow.com/), etc.)
             est en **anglais**. Le rythme de la formation étant très soutenu, vous ne pourrez pas embarquer si vous
