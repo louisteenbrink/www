@@ -19,6 +19,7 @@ class PlayerContainer extends React.Component {
     if (this.props.batch.youtube_id) {
       main = <PlayerVideo
                 jump={this.state.jump}
+                i18n={this.props.i18n}
                 youtubeVideoId={this.props.batch.youtube_id}
                 selectedProduct={this.state.selectedProduct}
                 reportCurrentTime={this.reportCurrentTime} />

@@ -28,6 +28,12 @@ class PlayerVideo extends React.Component {
       var player = new YT.Player('youtube-player', {
         height: '413',
         width: '640',
+        playerVars: {
+          color: 'white',
+          modestbranding: 1,
+          showinfo: 0,
+          hl: this.props.i18n.locale
+        },
         videoId: this.props.youtubeVideoId,
         events: {
           'onReady': this.onReady,

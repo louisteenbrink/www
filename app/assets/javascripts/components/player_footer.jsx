@@ -4,7 +4,6 @@ class PlayerFooter extends React.Component {
   }
 
   render() {
-
     var products = this.props.products;
 
     return (

@@ -78,11 +78,12 @@
       <% end %>
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
         <hr class='fake-hr hidden-xs'>
+        <%= link_to "Demoday", demoday_index_path, class: "navbar-wagon-link" %>
+        <hr class="hidden-xs">
         <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
         <hr class='hidden-xs'>
         <%= link_to t(".employers"), employers_path, class: "hidden-xs navbar-wagon-link", data: {text: t(".employers")} %>
         <hr class="hidden-xs">
-        <%= link_to "Blog", blog_path, class: "navbar-wagon-link" %>
         <% unless @hide_banner_apply_button %>
           <div class="left">
             <%= link_to t(".apply"), send(:"apply_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link-cta' %>

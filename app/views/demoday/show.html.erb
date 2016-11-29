@@ -21,69 +21,35 @@
       </div>
     </div>
 
-    <div class="dropdown-section">
-    <!-- Dropdown Language -->
-    <div class="dropdown-container">
-      <div class="dropdown">
-        <button class="dropdown-batch dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <%= t(".dropdown.language") %>
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-          <li>
-            <%= link_to "#" do %>
-              <%= t(".dropdown.first_item") %>
-              <%= render 'shared/english_flag' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to "#" do %>
-              <%= t(".dropdown.second_item") %>
-              <%= render 'shared/french_flag' %>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to "#" do %>
-              <%= t(".dropdown.second_item") %>
-              <%= render 'shared/brazilian_flag' %>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Dropdown City -->
-    <div class="dropdown-container">
-      <div class="dropdown">
-        <button class="dropdown-batch dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          <%= t(".dropdown.batches") %>
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-city" aria-labelledby="dropdownMenu1">
-          <li>
-            <%= link_to "#" do %>
-              Batch#43
-              <small>Paris - Janv. / Mars 2016</small>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to "#" do %>
-              Batch#31
-              <small>Bordeaux - Janv. / Mars 2016</small>
-            <% end %>
-          </li>
-          <li>
-            <%= link_to "#" do %>
-              Batch#30
-              <small>Paris - Janv. / Mars 2016</small>
-            <% end %>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <%
+      locales = [
+        {
+          code: :en,
+          icon: render('shared/icon_flag_en'),
+          name: 'English'  # TODO: localize this
+        },
+        {
+          code: :fr,
+          icon: render('shared/icon_flag_fr'),
+          name: 'French'  # TODO: localize this
+        },
+        {
+          code: :"pt-BR",
+          icon: render('shared/icon_flag_pt_br'),
+          name: 'Brazilian Portuguese'  # TODO: localize this
+        }
+      ]
+    %>
+    <%= react_component "PlayerBatchSelector", {
+      locales: locales,
+      selectedBatch: @batches.select { |b| b.slug == @batch.slug }.first,
+      selectedLocale: locales.select { |l| l['code'] == @batch.city["course_locale"].to_sym }.first || locales.first,
+      batches: @batches
+    }, prerender: false %>
   </div>
 </div>
 
-<div class="container ">
+<div class="container">
   <%
     batch = @batch.as_json
     batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
@@ -97,6 +63,7 @@
     product_icon: render('shared/product_icon'),
     flag_icon: render('shared/icon_flag_' + @batch.city['course_locale'].underscore.downcase),
     i18n: {
+      locale: I18n.locale,
       page_title: t(".page_title"),
       page_title_with_selected_product: t(".page_title_with_selected_product"),
       product_label: t(".player.product"),
@@ -105,7 +72,7 @@
       project_techno: t(".player.techno"),
       batch_intro: t(".player.batch_intro_html")
     }
-  }, prerender: false %>
+  }, prerender: prerender? %>
 </div>
 
 <div class="container">

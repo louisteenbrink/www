@@ -107,7 +107,7 @@ class AlumniClient
 
   def completed
     from_cache(:completed) do
-      get "#{@base_url}/batches/completed"
+      get("#{@base_url}/batches/completed")["batches"].map { |json| Api::Batch.new(json) }
     end
   end
 
