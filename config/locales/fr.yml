@@ -266,7 +266,8 @@ fr:
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
   demoday:
     show:
-      page_title: ""
+      page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
       demoday_title: "Demoday à la demande"
       demoday_tagline: "Jetez un oeil au projets que nos alumni ont construit en 2 semaines"
       dropdown:

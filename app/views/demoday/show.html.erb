@@ -1,5 +1,10 @@
 <%= content_for(:title) do  %>
-  Le Wagon - Demoday Batch #<%= @batch.slug %> in <%= @batch.city["name"] %>
+  <% if @selected_product %>
+    <%= t ".page_title_with_selected_product",
+      product_name: @selected_product["name"], batch_slug: @batch.slug, city_name: @batch.city["name"] %>
+  <% else %>
+    <%= t ".page_title", batch_slug: @batch.slug, city_name: @batch.city["name"] %>
+  <% end %>
 <% end %>
 
 <div class="banner-container">
@@ -92,6 +97,8 @@
     product_icon: render('shared/product_icon'),
     flag_icon: render('shared/icon_flag_' + @batch.city['course_locale'].underscore.downcase),
     i18n: {
+      page_title: t(".page_title"),
+      page_title_with_selected_product: t(".page_title_with_selected_product"),
       product_label: t(".player.product"),
       player_cta: t(".player.cta"),
       project_link: t(".player.project_link"),

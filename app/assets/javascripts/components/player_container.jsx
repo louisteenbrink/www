@@ -48,10 +48,18 @@ class PlayerContainer extends React.Component {
     this.setState({ selectedProduct: product, jump: jump });
     if (product === null) {
       var path = this.props.demodayPath;
+      var title = this.props.i18n.page_title.replace('%{batch_slug}', this.props.batch.slug)
+                                            .replace('%{city_name}', this.props.batch.city.name);
     } else {
       var path = this.props.withSlugDemodayPath.replace(':slug', product.slug);
+      var title = this.props.i18n.page_title_with_selected_product
+        .replace('%{product_name}', product.name)
+        .replace('%{batch_slug}', this.props.batch.slug)
+        .replace('%{city_name}', this.props.batch.city.name);
     }
-    history.pushState({}, "", path);
+
+    document.title = title;
+    history.replaceState({}, title, path);
   }
 
   reportCurrentTime = (time) => {
