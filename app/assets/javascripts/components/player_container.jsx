@@ -1,7 +1,8 @@
 class PlayerContainer extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
+      jump: false,
       selectedProduct: this.props.selectedProdutSlug === null ? null :
         _.filter(this.props.batch.products, (p) => { return p.slug == this.props.selectedProdutSlug })[0]
     }
@@ -16,7 +17,11 @@ class PlayerContainer extends React.Component {
 
     var main = null;
     if (this.props.batch.youtube_id) {
-      main = <PlayerVideo youtube_video_id={this.props.batch.youtube_id} selectedProduct={this.state.selectedProduct} />
+      main = <PlayerVideo
+                jump={this.state.jump}
+                youtubeVideoId={this.props.batch.youtube_id}
+                selectedProduct={this.state.selectedProduct}
+                reportCurrentTime={this.reportCurrentTime} />
     } else {
       main = "";
     }
@@ -39,7 +44,29 @@ class PlayerContainer extends React.Component {
     )
   }
 
-  goToProduct = (product) => {
-    this.setState({ selectedProduct: product })
+  goToProduct = (product, jump) => {
+    this.setState({ selectedProduct: product, jump: jump });
+    if (product === null) {
+      var path = this.props.demodayPath;
+    } else {
+      var path = this.props.withSlugDemodayPath.replace(':slug', product.slug);
+    }
+    history.pushState({}, "", path);
+  }
+
+  reportCurrentTime = (time) => {
+    var currentProduct = null;
+    var products = this.props.batch.products;
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+      if (product.demoday_timestamp <= time && (i == products.length - 1 || time < products[i + 1].demoday_timestamp)) {
+        currentProduct = product;
+        break;
+      }
+    }
+
+    if (this.state.selectedProduct !== currentProduct) {
+      this.goToProduct(currentProduct, false);
+    }
   }
 }

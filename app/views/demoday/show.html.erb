@@ -1,4 +1,6 @@
-
+<%= content_for(:title) do  %>
+  Le Wagon - Demoday Batch #<%= @batch.slug %> in <%= @batch.city["name"] %>
+<% end %>
 
 <div class="banner-container">
   <div class="container">
@@ -84,6 +86,8 @@
   %>
   <%= react_component 'PlayerContainer', {
     batch: batch,
+    demodayPath: demoday_path,
+    withSlugDemodayPath: with_slug_demoday_path(product_slug: ':slug'),
     selectedProdutSlug: @selected_product_slug,
     product_icon: render('shared/product_icon'),
     flag_icon: render('shared/icon_flag_' + @batch.city['course_locale'].underscore.downcase),

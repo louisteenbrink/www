@@ -68,7 +68,7 @@ Rails.application.routes.draw do
     resources :students, only: [:show]
     resources :demoday, only: [:index, :show] do
       member do
-        get "*product_slug", to: 'demoday#show'
+        get "*product_slug", to: 'demoday#show', as: :with_slug
       end
     end
   end

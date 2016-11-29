@@ -266,6 +266,7 @@ fr:
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
   demoday:
     show:
+      page_title: ""
       demoday_title: "Demoday à la demande"
       demoday_tagline: "Jetez un oeil au projets que nos alumni ont construit en 2 semaines"
       dropdown:

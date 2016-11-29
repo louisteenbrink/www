@@ -16,7 +16,7 @@ class PlayerHeader extends React.Component {
         <div className="batch-info">
           <span className="batch-flag" dangerouslySetInnerHTML={{__html: this.props.flag_icon}}></span>
           <div className="batch-details">
-            <span className="batch-name">Batch#{this.props.batch.id} <i>{this.props.batch.city.name}</i></span>
+            <span className="batch-name">Batch#{this.props.batch.slug} <i>{this.props.batch.city.name}</i></span>
             <span className="batch-date">{this.props.batch.starts_at} - {this.props.batch.ends_at}</span>
           </div>
         </div>

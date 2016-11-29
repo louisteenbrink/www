@@ -2,17 +2,18 @@ class PlayerVideo extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      youtube_player: null
+      youtubePlayer: null
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    if (this.state.youtube_player) {
+    if (this.state.youtubePlayer && nextProps.jump) {
       if (nextProps.selectedProduct === null) {
-        this.state.youtube_player.seekTo(0);
+        this.state.youtubePlayer.seekTo(0);
       } else {
-        this.state.youtube_player.seekTo(nextProps.selectedProduct.demoday_timestamp);
+        this.state.youtubePlayer.seekTo(nextProps.selectedProduct.demoday_timestamp);
       }
+      this.state.youtubePlayer.playVideo();
     }
   }
 
@@ -24,18 +25,31 @@ class PlayerVideo extends React.Component {
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
     window.onYouTubeIframeAPIReady = () => {
-
-      player = new YT.Player('youtube-player', {
+      var player = new YT.Player('youtube-player', {
         height: '413',
         width: '640',
-        videoId: this.props.youtube_video_id,
+        videoId: this.props.youtubeVideoId,
         events: {
-          'onReady': ((event) => event.target.playVideo()),
-          'onTimeUpdate': ((arg) => console.log(arg))
+          'onReady': this.onReady,
+          // 'onReady': ((event) => event.target.playVideo()),
+          // 'onTimeUpdate': ((arg) => console.log(arg))
         }
       });
+      this.setState({ youtubePlayer: player });
+    }
 
-      this.setState({ youtube_player: player });
+    setInterval(this.reportCurrentTime, 1000);
+  }
+
+  onReady = () => {
+    if (this.props.selectedProduct) {
+      this.state.youtubePlayer.seekTo(this.props.selectedProduct.demoday_timestamp);
+    }
+  }
+
+  reportCurrentTime = () => {
+    if (this.state.youtubePlayer && this.state.youtubePlayer.getCurrentTime && this.state.youtubePlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+      this.props.reportCurrentTime(this.state.youtubePlayer.getCurrentTime());
     }
   }
 

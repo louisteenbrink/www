@@ -18,6 +18,6 @@ class PlayerNavigationListItem extends React.Component {
   }
 
   handleClick() {
-    this.props.goToProduct(this.props.product);
+    this.props.goToProduct(this.props.product, true);
   }
 }
