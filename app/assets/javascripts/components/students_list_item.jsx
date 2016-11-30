@@ -11,7 +11,7 @@ class StudentsListItem extends React.Component {
 
     return (
       <div className="student-info">
-        <img src={student_picture} className="student-picture"/>
+        <img src={student_picture.replace('http://', 'https://')} className="student-picture"/>
         <p className="student-name">{student_first_name} {student_last_name}</p>
       </div>
     )
