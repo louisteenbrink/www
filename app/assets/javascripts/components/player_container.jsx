@@ -16,6 +16,12 @@ class PlayerContainer extends React.Component {
     var product_icon = this.props.product_icon;
 
     var main = null;
+    var coverStyle = {
+      backgroundImage: "url(" + this.props.batch.cover_image.replace('development', 'production') + ")"
+    }
+    var noCoverStyle = {
+      backgroundImage: "url(" + this.props.videoPlaceholder + ")"
+    }
     if (this.props.batch.youtube_id) {
       main = <PlayerVideo
                 autoPlay={this.props.autoPlay}
@@ -25,7 +31,15 @@ class PlayerContainer extends React.Component {
                 selectedProduct={this.state.selectedProduct}
                 reportCurrentTime={this.reportCurrentTime} />
     } else {
-      main = "";
+      if (this.props.batch.cover_image.match(/missing\.png/)) {
+        main = <div className="player-placeholder" style={noCoverStyle}>
+                <span>{this.props.i18n.no_video}</span>
+               </div>
+      } else {
+        main = <div className="player-placeholder" style={coverStyle}>
+                <span>{this.props.i18n.no_video}</span>
+               </div>
+        }
     }
 
     var footerNavigation = null;

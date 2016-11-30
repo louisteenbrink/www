@@ -276,6 +276,7 @@ fr:
       batch_brazilian: "Portugais Brésilien"
     batch_demoday:
       player:
+        no_video: Vidéo indisponible
         batch_intro_html: |
           Jetez un oeil aux produits que les %{count} étudiants du Le Wagon %{city_name} de %{batch_start_date} à %{batch_end_date} ont conçu lors des deux 2 dernières semaines dédiées aux projets !
         product: "Projets"

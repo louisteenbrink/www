@@ -286,6 +286,7 @@ en:
       batch_brazilian: "Brazilian Portugese"
     batch_demoday:
       player:
+        no_video: No video available
         batch_intro_html: |
           %{count} students attended Le Wagon in %{city_name} from %{batch_start_date} to %{batch_end_date}. Check out the projects they built with Ruby on Rails in only 2 weeks!
         product: "Products"

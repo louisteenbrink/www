@@ -4,12 +4,26 @@
     react_batch["starts_at"] = l(Time.parse(react_batch["starts_at"]), format: '%B').camelcase
     react_batch["ends_at"] = l(Time.parse(react_batch["ends_at"]), format: '%B %Y').camelcase
 
+    techno_special_names = {
+      css3: 'CSS3',
+      gmap: 'Google Maps',
+      html5: 'HTML5',
+      js: 'JavaScript',
+      responsive: 'Responsive Web Design'
+    }
+
     technos = Dir.glob(Rails.root.join('app/assets/images/technos').join("*.svg")).reduce({}) do |h, file|
-      h[File.basename(file, ".*")] = File.read(file); h
+      slug = File.basename(file, ".*")
+      h[slug] = {
+        icon: File.read(file),
+        name: techno_special_names[slug.to_sym] || slug.capitalize
+      }
+      h
     end
   %>
   <%= react_component 'PlayerContainer', {
     technos: technos,
+    videoPlaceholder: image_path('banners/6.jpg'),
     autoPlay: auto_play,
     batch: react_batch,
     demodayPath: demoday_path,
@@ -25,7 +39,8 @@
       player_cta: t(".player.cta"),
       project_link: t(".player.project_link"),
       project_techno: t(".player.techno"),
-      batch_intro: t(".player.batch_intro_html")
+      batch_intro: t(".player.batch_intro_html"),
+      no_video: t(".player.no_video")
     }
   }, prerender: prerender %>
 </div>
@@ -37,5 +52,9 @@
       batch_title: t(".batch_title")
     }
   }, prerender: prerender %>
-  <%= react_component "StudentsList", students: batch.students, prerender: prerender %>
+  <%= react_component "StudentsList", students: batch.students, cover: batch.cover_image, prerender: prerender %>
+</div>
+
+<div class="container-fluid container-batch-cover">
+  <%= react_component "BatchCover", cover: batch.cover_image, prerender: prerender %>
 </div>

@@ -329,6 +329,37 @@
     display: flex;
     height: 413px;
 
+    .player-placeholder {
+      position: relative;
+      width: 100%;
+      max-width: 735px;
+      background-size: cover;
+      background-position: center center;
+
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.4);
+        z-index: 1;
+      }
+
+      span {
+        position: absolute;
+        padding: 10px 20px;
+        left: 50%;
+        bottom: 10%;
+        transform: translateX(-50%);
+        color: #fff;
+        background-color: #000;
+        border-radius: 4px;
+        z-index: 2;
+      }
+    }
+
     .player-video {
       width: 100%;
       max-width: 735px;
@@ -414,41 +445,7 @@
             display: inline;
             margin-bottom: 10px;
             font-size: 10px;
-            text-transform: uppercase;
             color: #A2A2A2;
-
-            i {
-              display: flex;
-              align-items: center;
-              position: absolute;
-              padding: 5px 10px;
-              color: #FFFFFF;
-              background: #000000;
-              height: 25px;
-              font-style: normal;
-              text-align: center;
-              visibility: hidden;
-              border-radius: 2px;
-
-              &:after {
-                content: '';
-                position: absolute;
-                top: -4px;
-                left: 50%;
-                margin-left: -8px;
-                width: 0; height: 0;
-                border-bottom: 8px solid #000000;
-                border-right: 8px solid transparent;
-                border-left: 8px solid transparent;
-              }
-            }
-
-            &:hover i {
-              visibility: visible;
-              bottom: -30px;
-              left: -14px;
-              z-index: 999;
-            }
           }
 
           ul {
@@ -462,7 +459,7 @@
             -webkit-padding-start: 0px;
 
             svg {
-              margin-top: 5px;
+              margin: 5px 5px 0 0;
               width: 25px;
               height: 25px;
             }
@@ -514,5 +511,16 @@
       font-size: 14px;
       color: #999;
     }
+  }
+}
+
+.container-batch-cover {
+  padding: 0;
+
+  .cover-students {
+    height: 400px;
+    padding: 0px;
+    background-size: cover;
+    background-position: center center;
   }
 }
