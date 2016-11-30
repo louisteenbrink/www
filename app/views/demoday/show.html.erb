@@ -7,6 +7,10 @@
   <% end %>
 <% end %>
 
+<%= content_for(:navbar_apply_button) do %>
+  <%= render "shared/navbar_apply_button", city: @batch.city['slug'] %>
+<% end %>
+
 <div class="banner-container">
   <div class="container">
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/9.jpg')%>');" id="banner-program">

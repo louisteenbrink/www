@@ -85,8 +85,8 @@
         <%= link_to t(".employers"), employers_path, class: "hidden-xs navbar-wagon-link", data: {text: t(".employers")} %>
         <hr class="hidden-xs">
         <% unless @hide_banner_apply_button %>
-          <div class="left">
-            <%= link_to t(".apply"), send(:"apply_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link-cta' %>
+          <div class="left" id="navbar-apply">
+            <%= content_for?(:navbar_apply_button) ? yield(:navbar_apply_button) : render('shared/navbar_apply_button') %>
           </div>
         <% end %>
       </div>

@@ -1,0 +1,6 @@
+<% if defined?(city) %>
+  <% path = send(:"apply_#{locale.to_s.underscore}_path", city: city) %>
+<% else %>
+  <% path = send(:"apply_#{locale.to_s.underscore}_path") %>
+<% end %>
+<%= link_to t("shared.navbar.apply"), path, class: 'navbar-wagon-link-cta' %>
