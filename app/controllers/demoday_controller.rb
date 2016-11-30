@@ -1,7 +1,7 @@
 class DemodayController < ApplicationController
   def show
     @selected_product_slug = params[:product_slug]
-    @batch = @client.batch(params[:id])
+    @batch = @client.batch(params[:id], slug: true)
     if @selected_product_slug
       @selected_product = @batch.products.select { |p| p["slug"] == @selected_product_slug }.first
       return redirect_to demoday_path(params[:id]) unless @selected_product
