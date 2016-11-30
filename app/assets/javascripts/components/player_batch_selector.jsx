@@ -28,7 +28,7 @@ class PlayerBatchSelector extends React.Component {
       </ReactBootstrap.Dropdown>;
 
     var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
-        <span>Choose Batch (TODO i18n)</span>
+        <span>{this.props.i18n.choose_batch}</span>
       </ReactBootstrap.Dropdown.Toggle>;
 
     if (this.state.selectedBatch) {

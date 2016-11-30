@@ -268,8 +268,12 @@ fr:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
-      demoday_title: "Demoday à la demande"
+      demoday_title: "Regardez nos Demodays"
       demoday_tagline: "Jetez un oeil au projets que nos alumni ont construit en 2 semaines"
+      choose_batch: "Sélectionnez un Batch"
+      batch_french: "Français"
+      batch_english: "Anglais"
+      batch_brazilian: "Portugais Brésilien"
     batch_demoday:
       player:
         batch_intro_html: |

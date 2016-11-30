@@ -13,7 +13,7 @@
 
 <div class="banner-container">
   <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/9.jpg')%>');" id="banner-program">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/10.jpg')%>');">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1 class='glitch'>
@@ -30,17 +30,17 @@
         {
           code: :en,
           icon: render('shared/icon_flag_en'),
-          name: 'English'  # TODO: localize this
+          name: t('demoday.show.batch_english')
         },
         {
           code: :fr,
           icon: render('shared/icon_flag_fr'),
-          name: 'French'  # TODO: localize this
+          name: t('demoday.show.batch_french')
         },
         {
           code: :"pt-BR",
           icon: render('shared/icon_flag_pt_br'),
-          name: 'Brazilian Portugese'  # TODO: localize this
+          name: t('demoday.show.batch_brazilian')
         }
       ]
 
@@ -56,6 +56,7 @@
       batches: json_batches,
       demodayPath: demoday_path(':slug'),
       i18n: {
+        choose_batch: t("demoday.show.choose_batch"),
         page_title: t("demoday.show.page_title")
       }
     }, prerender: false %>
