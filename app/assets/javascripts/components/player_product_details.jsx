@@ -29,7 +29,7 @@ class PlayerProductDetails extends React.Component {
 
       var technos = null;
 
-      if (this.props.product.technos.length > 1) {
+      if (this.props.product.technos.length >= 1) {
         technos = <div className="project-techno">
             <span>{this.props.i18n.project_techno}</span>
             <ul>
