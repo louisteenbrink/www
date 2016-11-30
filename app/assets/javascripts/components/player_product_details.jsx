@@ -23,6 +23,19 @@ class PlayerProductDetails extends React.Component {
       var product_url = this.props.product["url"];
       var makers = this.props.product.makers
 
+      var technos = null;
+
+      if (this.props.product.technos.length > 1) {
+        technos = <div className="project-techno">
+            <span>{this.props.i18n.project_techno}</span>
+            <ul>
+              {this.props.product.technos.map((techno, index) => {
+                return <span dangerouslySetInnerHTML={{__html: this.props.technos[techno]}}></span>
+              })}
+            </ul>
+          </div>;
+      }
+
       return (
         <div className="product-details">
           <ul className="product-team">
@@ -34,14 +47,7 @@ class PlayerProductDetails extends React.Component {
           <h3 className="project-name">{product_name}</h3>
           <span className="project-tagline">{tagline}</span>
           <a href={product_url} target="_blank" className="project-link">{this.props.i18n.project_link}</a>
-          <div className="project-techno">
-            <span>{this.props.i18n.project_techno}</span>
-            <ul>
-              {this.props.product.technos.map((techno, index) => {
-                return <span dangerouslySetInnerHTML={{__html: this.props.technos[techno]}}></span>
-              })}
-            </ul>
-          </div>
+          {technos}
         </div>
       )
     }
