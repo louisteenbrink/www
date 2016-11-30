@@ -37,7 +37,9 @@ class PlayerProductDetails extends React.Component {
           <div className="project-techno">
             <span>{this.props.i18n.project_techno}</span>
             <ul>
-              {/* <li><span>render "shared/icon_react"<i>React</i></span></li> */}
+              {this.props.product.technos.map((techno, index) => {
+                return <span dangerouslySetInnerHTML={{__html: this.props.technos[techno]}}></span>
+              })}
             </ul>
           </div>
         </div>

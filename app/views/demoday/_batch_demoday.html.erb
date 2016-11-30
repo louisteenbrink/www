@@ -3,9 +3,14 @@
     react_batch = batch.as_json
     react_batch["starts_at"] = l(Time.parse(react_batch["starts_at"]), format: '%B').camelcase
     react_batch["ends_at"] = l(Time.parse(react_batch["ends_at"]), format: '%B %Y').camelcase
+
+    technos = Dir.glob(Rails.root.join('app/assets/images/technos').join("*.svg")).reduce({}) do |h, file|
+      h[File.basename(file, ".*")] = File.read(file); h
+    end
   %>
   <%= react_component 'PlayerContainer', {
-    autoPlay: autoPlay,
+    technos: technos,
+    autoPlay: auto_play,
     batch: react_batch,
     demodayPath: demoday_path,
     withSlugDemodayPath: with_slug_demoday_path(product_slug: ':slug'),
