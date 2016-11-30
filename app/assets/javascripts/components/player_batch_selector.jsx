@@ -14,8 +14,7 @@ class PlayerBatchSelector extends React.Component {
     var languageSelector =
       <ReactBootstrap.Dropdown id="languageSelector" ref="languageSelector">
         <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
-          <span dangerouslySetInnerHTML={{__html: this.state.selectedLocale.icon}}></span>
-          {this.state.selectedLocale.name}
+          <span dangerouslySetInnerHTML={{__html: this.state.selectedLocale.icon + '<i>' + this.state.selectedLocale.name + '</i>'}}></span>
         </ReactBootstrap.Dropdown.Toggle>
         <ReactBootstrap.Dropdown.Menu>
           {otherLocales.map((locale, index) => {
