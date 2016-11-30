@@ -39,7 +39,7 @@ class PlayerContainer extends React.Component {
         <PlayerHeader batch={batch} i18n={i18n} product_icon={product_icon} flag_icon={this.props.flag_icon} />
         <div className="player-content">
           {main}
-          <PlayerProduct batch={batch} product={this.state.selectedProduct} i18n={i18n} />
+          <PlayerProduct technos={this.props.technos} batch={batch} product={this.state.selectedProduct} i18n={i18n} />
         </div>
         {footerNavigation}
       </div>

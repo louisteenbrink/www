@@ -4,8 +4,7 @@ class DemodayController < ApplicationController
     @batch = @client.batch(params[:id])
     if @selected_product_slug
       @selected_product = @batch.products.select { |p| p["slug"] == @selected_product_slug }.first
-      redirect_to demoday_path(params[:id]) unless @selected_product
-      return
+      return redirect_to demoday_path(params[:id]) unless @selected_product
     end
     @batches = @client.completed.reverse  # For batch selector
   end

@@ -9,7 +9,7 @@ class PlayerProduct extends React.Component {
 
     return (
       <div className="player-product">
-        <PlayerProductDetails batch={batch} product={this.props.product} i18n={this.props.i18n} />
+        <PlayerProductDetails technos={this.props.technos} batch={batch} product={this.props.product} i18n={this.props.i18n} />
         <a href={apply_to} className="apply-cta">{this.props.i18n.player_cta}</a>
       </div>
     )
