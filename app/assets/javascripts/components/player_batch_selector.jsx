@@ -36,7 +36,7 @@ class PlayerBatchSelector extends React.Component {
             <img src={this.state.selectedBatch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
             <div>
               <div>{this.state.selectedBatch.city.name} <i className="city-batch">Batch#{this.state.selectedBatch.slug}</i></div>
-              <small>{this.props.selectedBatch.starts_at} - {this.props.selectedBatch.ends_at}</small>
+              <small>{this.state.selectedBatch.starts_at} - {this.state.selectedBatch.ends_at}</small>
             </div>
           </ReactBootstrap.Dropdown.Toggle>;
     }
