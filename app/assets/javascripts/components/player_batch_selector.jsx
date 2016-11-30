@@ -13,28 +13,31 @@ class PlayerBatchSelector extends React.Component {
 
     var languageSelector =
       <ReactBootstrap.Dropdown id="languageSelector" ref="languageSelector">
-        <ReactBootstrap.Dropdown.Toggle>
-          {this.state.selectedLocale.name}
+        <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
           <span dangerouslySetInnerHTML={{__html: this.state.selectedLocale.icon}}></span>
+          {this.state.selectedLocale.name}
         </ReactBootstrap.Dropdown.Toggle>
         <ReactBootstrap.Dropdown.Menu>
           {otherLocales.map((locale, index) => {
             return <li key={index} onClick={() => this.changeLanguage(locale)}>
-              {locale.name}
               <span dangerouslySetInnerHTML={{__html: locale.icon}}></span>
+              {locale.name}
             </li>
           })}
         </ReactBootstrap.Dropdown.Menu>
       </ReactBootstrap.Dropdown>;
 
-    var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle>
+    var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
         <span>Choose Batch (TODO i18n)</span>
       </ReactBootstrap.Dropdown.Toggle>;
 
     if (this.state.selectedBatch) {
-        var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle>
-            {this.state.selectedBatch.city.name} {this.state.selectedBatch.slug}
-            <small>TODO DATE</small>
+        var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
+            <img src={this.state.selectedBatch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
+            <div>
+              <div>{this.state.selectedBatch.city.name} - Batch#{this.state.selectedBatch.slug}</div>
+              <small>TODO DATE</small>
+            </div>
           </ReactBootstrap.Dropdown.Toggle>;
     }
 
@@ -44,8 +47,11 @@ class PlayerBatchSelector extends React.Component {
         <ReactBootstrap.Dropdown.Menu>
           {otherBatches.map((batch, index) => {
             return <li key={index} onClick={() => this.changeBatch(batch)}>
-              {batch.city.name} {batch.slug}
-              <small>TODO DATE</small>
+              <img src={batch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
+              <div>
+                <div>{batch.city.name} - Batch#{batch.slug}</div>
+                <small>TODO DATE</small>
+              </div>
             </li>
           })}
         </ReactBootstrap.Dropdown.Menu>
