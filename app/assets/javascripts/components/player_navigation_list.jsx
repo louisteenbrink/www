@@ -9,13 +9,13 @@ class PlayerNavigationList extends React.Component {
 
     var componentClasses = classNames({
       'player-menu-item': true,
-      'player-menu-item-active': this.props.selectedProduct === null,
+      'player-menu-item-active': this.props.selectedProduct === null || this.props.selectedProduct === ':intro:'
     })
 
     return (
       <div className="player-menu">
         <ul className="player-menu-summary">
-          <li className={componentClasses} onClick={() => this.props.goToProduct(null, true)}>Intro</li>
+          <li className={componentClasses} onClick={() => this.props.goToProduct(':intro:', true)}>Intro</li>
           { products.map((product, index) => {
               return <PlayerNavigationListItem
                         key={index}

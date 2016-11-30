@@ -16,12 +16,6 @@ class PlayerContainer extends React.Component {
     var product_icon = this.props.product_icon;
 
     var main = null;
-    var coverStyle = {
-      backgroundImage: "url(" + this.props.batch.cover_image.replace('development', 'production') + ")"
-    }
-    var noCoverStyle = {
-      backgroundImage: "url(" + this.props.videoPlaceholder + ")"
-    }
     if (this.props.batch.youtube_id) {
       main = <PlayerVideo
                 autoPlay={this.props.autoPlay}
@@ -32,10 +26,16 @@ class PlayerContainer extends React.Component {
                 reportCurrentTime={this.reportCurrentTime} />
     } else {
       if (this.props.batch.cover_image.match(/missing\.png/)) {
+        var noCoverStyle = {
+          backgroundImage: "url(" + this.props.videoPlaceholder + ")"
+        }
         main = <div className="player-placeholder" style={noCoverStyle}>
                 <span>{this.props.i18n.no_video}</span>
                </div>
       } else {
+        var coverStyle = {
+          backgroundImage: "url(" + this.props.batch.cover_image.replace('development', 'production') + ")"
+        }
         main = <div className="player-placeholder" style={coverStyle}>
                 <span>{this.props.i18n.no_video}</span>
                </div>
@@ -83,13 +83,13 @@ class PlayerContainer extends React.Component {
     var products = this.props.batch.products;
     for (var i = 0; i < products.length; i++) {
       var product = products[i];
-      if (product.demoday_timestamp <= time && (i == products.length - 1 || time < products[i + 1].demoday_timestamp)) {
+      if (product.demoday_timestamp > 0 && product.demoday_timestamp <= time && (i == products.length - 1 || time < products[i + 1].demoday_timestamp)) {
         currentProduct = product;
         break;
       }
     }
 
-    if (this.state.selectedProduct !== currentProduct) {
+    if (this.state.selectedProduct !== currentProduct && currentProduct !== null) {
       this.goToProduct(currentProduct, false);
     }
   }

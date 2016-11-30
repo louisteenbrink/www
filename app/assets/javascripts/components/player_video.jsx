@@ -8,9 +8,9 @@ class PlayerVideo extends React.Component {
 
   componentWillReceiveProps(nextProps) {
     if (this.state.youtubePlayer && nextProps.jump) {
-      if (nextProps.selectedProduct === null) {
+      if (nextProps.selectedProduct === ':intro:') {
         this.state.youtubePlayer.seekTo(0);
-      } else {
+      } else if (nextProps.selectedProduct.demoday_timestamp > 0) {
         this.state.youtubePlayer.seekTo(nextProps.selectedProduct.demoday_timestamp);
       }
       this.state.youtubePlayer.playVideo();
@@ -48,7 +48,7 @@ class PlayerVideo extends React.Component {
   }
 
   onReady = () => {
-    if (this.props.selectedProduct) {
+    if (this.props.selectedProduct && this.props.selectedProduct !== ':intro:') {
       this.state.youtubePlayer.seekTo(this.props.selectedProduct.demoday_timestamp);
     }
     if (this.props.autoPlay) {
