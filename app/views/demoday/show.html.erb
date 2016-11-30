@@ -1,0 +1,68 @@
+<%= content_for(:title) do  %>
+  <% if @selected_product %>
+    <%= t ".page_title_with_selected_product",
+      product_name: @selected_product["name"], batch_slug: @batch.slug, city_name: @batch.city["name"] %>
+  <% else %>
+    <%= t ".page_title", batch_slug: @batch.slug, city_name: @batch.city["name"] %>
+  <% end %>
+<% end %>
+
+<%= content_for(:navbar_apply_button) do %>
+  <%= render "shared/navbar_apply_button", city: @batch.city['slug'] %>
+<% end %>
+
+<div class="banner-container">
+  <div class="container">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/10.jpg')%>');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class='glitch'>
+          <%= t(".demoday_title") %>
+        </h1>
+        <p>
+          <%= t(".demoday_tagline") %>
+        </p>
+      </div>
+    </div>
+
+    <%
+      locales = [
+        {
+          code: :en,
+          icon: render('shared/icon_flag_en'),
+          name: t('demoday.show.batch_english')
+        },
+        {
+          code: :fr,
+          icon: render('shared/icon_flag_fr'),
+          name: t('demoday.show.batch_french')
+        },
+        {
+          code: :"pt-BR",
+          icon: render('shared/icon_flag_pt_br'),
+          name: t('demoday.show.batch_brazilian')
+        }
+      ]
+
+      json_batches = @batches.map(&:as_json)
+      json_batches.each do |batch|
+        batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
+        batch["ends_at"] = l(Time.parse(batch["ends_at"]), format: '%B %Y').camelcase
+      end
+    %>
+    <%= react_component "PlayerBatchSelector", {
+      locales: locales,
+      selectedBatch: json_batches.select { |b| b["slug"] == @batch.slug }.first,
+      batches: json_batches,
+      demodayPath: demoday_path(':slug'),
+      i18n: {
+        choose_batch: t("demoday.show.choose_batch"),
+        page_title: t("demoday.show.page_title")
+      }
+    }, prerender: false %>
+  </div>
+</div>
+
+<div id="batch-demoday">
+  <%= render 'batch_demoday', auto_play: false, prerender: true, batch: @batch, selected_product_slug: @selected_product_slug %>
+</div>

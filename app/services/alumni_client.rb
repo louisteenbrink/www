@@ -87,15 +87,27 @@ class AlumniClient
     end
   end
 
-  def batch(id)
-    from_cache(:batch, id) do
-      Api::Batch.new get("#{@base_url}/batches/#{id}")["batch"]
+  def batch(id, options = {})
+    if options[:slug]
+      from_cache(:batch, :slug, id) do
+        Api::Batch.new get("#{@base_url}/batches/#{id}?slug")["batch"]
+      end
+    else
+      from_cache(:batch, id) do
+        Api::Batch.new get("#{@base_url}/batches/#{id}")["batch"]
+      end
     end
   end
 
   def statistics
     from_cache(:statistics) do
       get "#{@base_url}/statistics"
+    end
+  end
+
+  def completed
+    from_cache(:completed) do
+      get("#{@base_url}/batches/completed")["batches"].map { |json| Api::Batch.new(json) }
     end
   end
 
