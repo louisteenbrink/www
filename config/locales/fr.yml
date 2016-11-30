@@ -266,6 +266,26 @@ fr:
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
+  demoday:
+    show:
+      page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
+      demoday_title: "Regardez nos Demodays"
+      demoday_tagline: "Jetez un oeil au projets que nos alumni ont construit en 2 semaines"
+      choose_batch: "Sélectionnez un Batch"
+      batch_french: "Français"
+      batch_english: "Anglais"
+      batch_brazilian: "Portugais Brésilien"
+    batch_demoday:
+      player:
+        no_video: Vidéo indisponible
+        batch_intro_html: |
+          Jetez un oeil aux produits que les %{count} étudiants du Le Wagon %{city_name} de %{batch_start_date} à %{batch_end_date} ont conçu lors des deux 2 dernières semaines dédiées aux projets !
+        product: "Projets"
+        project_link: "voir l'app"
+        techno: "Construit avec"
+        cta: "Embarquer pour 9 semaines"
+      batch_title: " super héros"
   students:
     index:
       title: Projets de nos élèves - Produits Made in Le Wagon

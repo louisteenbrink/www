@@ -279,6 +279,26 @@ pt-BR:
         técnico.
       wanna_join: Quer fazer parte do nosso network?
       signup: Assine para receber alertas sobre nossos candidatos e eventos.
+  demoday:
+    show:
+      page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
+      demoday_title: "Demoday quando quiser"
+      demoday_tagline: "Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!"
+      choose_batch: "Escolher a turma"
+      batch_french: "Francês"
+      batch_english: "Inglês"
+      batch_brazilian: "Português"
+    batch_demoday:
+      player:
+        no_video: Nenhum vídeo disponíve
+        batch_intro_html: |
+          %{count} alunos participaram do Le Wagon em %{city_name} entre o %{batch_start_date} e o %{batch_end_date}. Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!
+        product: "Produtos"
+        project_link: "testa ele"
+        techno: "Feito com"
+        cta: "Candidatar-se por 9 semanas"
+      batch_title: " Galera fina aqui :)"
   students:
     index:
       title: Os projetos de nossos alunos - Startups e aplicativos web made in Le Wagon

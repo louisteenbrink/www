@@ -1,0 +1,4 @@
+$('#batch-demoday').html('<%= j render 'batch_demoday', auto_play: true, batch: @batch, selected_product_slug: nil, prerender: false %>');
+ReactRailsUJS.mountComponents();
+window.onYouTubeIframeAPIReady();
+$('#navbar-apply').html('<%= j render "shared/navbar_apply_button", city: @batch.city["slug"] %>');

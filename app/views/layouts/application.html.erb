@@ -47,7 +47,7 @@
 
 <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
   <%#
   <div id="awwwards" class="nominee black left">
      <a href="http://www.awwwards.com/best-websites/le-wagon/" target="_blank">Awwwards</a>
@@ -71,7 +71,7 @@
   <%= render "shared/footer" %>
 
   <%# render "shared/intercom" %>
-  <%= render "shared/drift" %>
+  <%= render "shared/drift" if Rails.env.production? %>
   <%= render "shared/google_analytics" %>
   <%= render "shared/mixpanel" %>
   <%= render "shared/facebook_audience" %>

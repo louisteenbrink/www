@@ -45,7 +45,7 @@ module WwwRails
 
     config.react.jsx_transform_options = {
         blacklist: ['spec.functionName', 'validation.react'],
-        optional: ["es6.arrowFunctions", "es6.classes"]
+        optional: ["es6.arrowFunctions", "es6.classes", "es7.classProperties"]
       }
   end
 end

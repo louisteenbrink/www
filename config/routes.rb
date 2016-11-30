@@ -66,6 +66,11 @@ Rails.application.routes.draw do
     resources :projects, only: [:show]
     resources :stories, only: [:show]
     resources :students, only: [:show]
+    resources :demoday, only: [:index, :show] do
+      member do
+        get "*product_slug", to: 'demoday#show', as: :with_slug
+      end
+    end
   end
 
   resources :subscribes, only: :create
