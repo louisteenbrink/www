@@ -39,11 +39,17 @@
           name: 'Brazilian Portugese'  # TODO: localize this
         }
       ]
+
+      json_batches = @batches.map(&:as_json)
+      json_batches.each do |batch|
+        batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
+        batch["ends_at"] = l(Time.parse(batch["ends_at"]), format: '%B %Y').camelcase
+      end
     %>
     <%= react_component "PlayerBatchSelector", {
       locales: locales,
-      selectedBatch: @batches.select { |b| b.slug == @batch.slug }.first,
-      batches: @batches,
+      selectedBatch: json_batches.select { |b| b["slug"] == @batch.slug }.first,
+      batches: json_batches,
       demodayPath: demoday_path(':slug'),
       i18n: {
         page_title: t("demoday.show.page_title")

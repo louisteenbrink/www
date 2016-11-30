@@ -35,8 +35,8 @@ class PlayerBatchSelector extends React.Component {
         var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
             <img src={this.state.selectedBatch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
             <div>
-              <div>{this.state.selectedBatch.city.name} - Batch#{this.state.selectedBatch.slug}</div>
-              <small>TODO DATE</small>
+              <div>{this.state.selectedBatch.city.name} <i className="city-batch">Batch#{this.state.selectedBatch.slug}</i></div>
+              <small>{this.props.selectedBatch.starts_at} - {this.props.selectedBatch.ends_at}</small>
             </div>
           </ReactBootstrap.Dropdown.Toggle>;
     }
@@ -49,8 +49,8 @@ class PlayerBatchSelector extends React.Component {
             return <li key={index} onClick={() => this.changeBatch(batch)}>
               <img src={batch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
               <div>
-                <div>{batch.city.name} - Batch#{batch.slug}</div>
-                <small>TODO DATE</small>
+                <div>{batch.city.name} <i className="city-batch">Batch#{batch.slug}</i></div>
+                <small>{batch.starts_at} - {batch.ends_at}</small>
               </div>
             </li>
           })}
