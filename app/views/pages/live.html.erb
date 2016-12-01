@@ -18,18 +18,18 @@
       </div>
       <div class="player-content">
         <div class="player-video">
-          <% if @live.url? %>
+          <% if @live.facebook_url.present? %>
             <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
                 js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                js.src = "//connect.facebook.net/<%= I18n.locale == :fr ? 'fr_FR' : 'en_US' %>/sdk.js#xfbml=1&version=v2.6";
                 fjs.parentNode.insertBefore(js, fjs);
               }(document, 'script', 'facebook-jssdk'));</script>
 
               <!-- Your embedded video player code -->
-              <div class="fb-video" data-href="<%= @live.url %>"
-                data-autoplay="true" data-width="900" data-show-text="false">
+              <div class="fb-video" data-href="<%= @live.facebook_url%>"
+                data-width="900" data-show-text="false" data-allowfullscreen="true">
               </div>
           <% else %>
             <div class="player-placeholder" style="background-image: url('<%= image_path("live/comingsoon/#{rand(3)}.jpg")%>');">

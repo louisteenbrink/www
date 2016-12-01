@@ -1,11 +1,11 @@
 <%= simple_form_for [:admin, @live] do |f| %>
-  <%= f.input :city_slug %>
+  <%= f.input :city_slug, collection: @city_slugs %>
   <%= f.input :category, collection: Live::CATEGORIES %>
-  <%= f.input :title %>
-  <%= f.input :subtitle %>
+  <%= f.input :title, placeholder: 'Aperotalk avec Quentin Sannié' %>
+  <%= f.input :subtitle, placeholder: 'CEO & Co-fondateur de DEVIALET' %>
   <%= f.input :description, hint: 'You can use Markdown in here ☝️' %>
-  <%= f.input :link, label: 'Learn more link' %>
-  <%= f.input :url, label: 'Facebook video URL' %>
+  <%= f.input :link, label: 'Learn more link', placeholder: 'http://www.devialet.fr' %>
+  <%= f.input :facebook_url, label: 'Facebook video url', hint: 'Click on post date and look in the URL', placeholder: 'https://www.facebook.com/lewagon/videos/548038245394778/' %>
   <%= f.input :batch_slug, placeholder: "Leave blank for Aperotalk" %>
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>

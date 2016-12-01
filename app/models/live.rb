@@ -2,20 +2,20 @@
 #
 # Table name: lives
 #
-#  id          :integer          not null, primary key
-#  category    :string
-#  user_id     :integer
-#  started_at  :datetime
-#  ended_at    :datetime
-#  url         :string
-#  batch_slug  :string
-#  title       :string
-#  description :text
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
-#  city_slug   :string
-#  subtitle    :string
-#  link        :string
+#  id           :integer          not null, primary key
+#  category     :string
+#  user_id      :integer
+#  started_at   :datetime
+#  ended_at     :datetime
+#  batch_slug   :string
+#  title        :string
+#  description  :text
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  city_slug    :string
+#  subtitle     :string
+#  link         :string
+#  facebook_url :string
 #
 # Indexes
 #
@@ -33,6 +33,7 @@ class Live < ApplicationRecord
 
   validates :city_slug, presence: true
   validates :title, presence: true
+  validates :description, length: { maximum: 300 }
   validates :category, presence: true, inclusion: { in: CATEGORIES }
   validates :batch_slug, presence: true, if: ->() { self.category == 'demoday' }
 
