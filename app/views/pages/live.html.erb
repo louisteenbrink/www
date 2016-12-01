@@ -2,15 +2,15 @@
   <% if @live %>
     <div class="player-container">
       <div class="player-header">
-        <div class="batch-info">
-          <div class="batch-flag">
+        <div class="live-info">
+          <div class="live-local-flag">
             <%= render 'shared/icon_flag_fr' %>
           </div>
-          <div class="batch-details">
-            <div class="batch-name">
+          <div class="live-details">
+            <div class="live-event-name">
               <i><%= @city['name'] %> |</i> <%= @live.title %>
             </div>
-            <div class="batch-date">
+            <div class="live-speaker-jobtitle">
               <%= @live.subtitle %>
             </div>
           </div>
@@ -37,19 +37,19 @@
             </div>
           <% end %>
         </div>
-        <div class="player-product">
-          <div class="product-details">
-            <ul class="product-team">
+        <div class="player-event">
+          <div class="event-details">
+            <ul class="event-speaker">
               <li>
-                <%= image_tag 'live/logo-devialet.jpg', class: "team-member" %>
+                <%= image_tag 'live/logo-devialet.jpg', class: "company-logo" %>
               </li>
               <li>
-                <%= image_tag 'live/quentin-sannie.jpg', class: "team-member" %>
+                <%= image_tag 'live/quentin-sannie.jpg', class: "speaker-picture" %>
               </li>
             </ul>
-            <span class="project-tagline"><%= markdown @live.description %></span>
+            <span class="event-description"><%= markdown @live.description %></span>
             <% if @live.link %>
-              <%= link_to "En savoir +", @live.link, target: '_blank', class: "project-link" %>
+              <%= link_to "En savoir +", @live.link, target: '_blank', class: "company-link" %>
             <% end %>
           </div>
           <%= link_to "Voir tous nos Meetup", @city["meetup_url"], target: '_blank', class: "go-to-meetup" %>
