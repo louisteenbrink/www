@@ -15,10 +15,9 @@
 
 <% if @live && @live.meta_image? %>
   <%= content_for(:image_url) do %>
-    <%= cl_image_path @live.meta_image, width: 1410, height: 738 %>
+    <%= cl_image_path @live.meta_image.path, width: 1410, height: 738 %>
   <% end %>
 <% end %>
-
 
 <div class="container">
   <% if @live %>
