@@ -1,8 +1,11 @@
 <%= simple_form_for [:admin, @live] do |f| %>
-  <%= f.input :title %>
-  <%= f.input :description %>
+  <%= f.input :city_slug %>
   <%= f.input :category, collection: Live::CATEGORIES %>
-  <%= f.input :url %>
+  <%= f.input :title %>
+  <%= f.input :subtitle %>
+  <%= f.input :description, hint: 'You can use Markdown in here ☝️' %>
+  <%= f.input :link, label: 'Learn more link' %>
+  <%= f.input :url, label: 'Facebook video URL' %>
   <%= f.input :batch_slug, placeholder: "Leave blank for Aperotalk" %>
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>

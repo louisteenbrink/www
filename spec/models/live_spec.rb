@@ -13,6 +13,9 @@
 #  description :text
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  city_slug   :string
+#  subtitle    :string
+#  link        :string
 #
 # Indexes
 #

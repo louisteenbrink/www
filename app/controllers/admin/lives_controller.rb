@@ -47,7 +47,7 @@ module Admin
     private
 
     def live_params
-      params.require(:live).permit(:category, :started_at, :ended_at, :url, :batch_slug, :title, :description)
+      params.require(:live).permit(:category, :city_slug, :started_at, :ended_at, :url, :batch_slug, :title, :subtitle, :description, :link)
     end
 
     def set_live

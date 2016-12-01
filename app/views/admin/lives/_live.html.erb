@@ -1,7 +1,7 @@
 <td>
   <strong><%= live.title %></strong>
-  <% if live.description.present? %>
-    - <%= live.description.truncate(80) %>
+  <% if live.subtitle.present? %>
+    - <%= live.subtitle %>
   <% end %>
   <%= link_to edit_admin_live_path(live) do %>
     <i class="fa fa-pencil"></i> edit

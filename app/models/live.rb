@@ -13,6 +13,9 @@
 #  description :text
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
+#  city_slug   :string
+#  subtitle    :string
+#  link        :string
 #
 # Indexes
 #
@@ -28,6 +31,7 @@ class Live < ApplicationRecord
 
   belongs_to :user, required: true
 
+  validates :city_slug, presence: true
   validates :title, presence: true
   validates :category, presence: true, inclusion: { in: CATEGORIES }
   validates :batch_slug, presence: true, if: ->() { self.category == 'demoday' }
