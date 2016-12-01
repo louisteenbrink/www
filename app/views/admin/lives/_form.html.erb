@@ -5,6 +5,7 @@
   <%= f.input :subtitle, placeholder: 'CEO & Co-fondateur de DEVIALET' %>
   <%= f.input :description, hint: 'You can use Markdown in here ☝️' %>
   <%= f.input :link, label: 'Learn more link', placeholder: 'http://www.devialet.fr' %>
+  <%= f.input :meta_image, as: :attachinary %>
   <%= f.input :facebook_url, label: 'Facebook video url', hint: 'Click on post date and look in the URL', placeholder: 'https://www.facebook.com/lewagon/videos/548038245394778/' %>
   <%= f.input :batch_slug, placeholder: "Leave blank for Aperotalk" %>
   <%= f.submit class: 'btn btn-primary' %>

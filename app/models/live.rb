@@ -31,6 +31,8 @@ class Live < ApplicationRecord
 
   belongs_to :user, required: true
 
+  has_attachment :meta_image
+
   validates :city_slug, presence: true
   validates :title, presence: true
   validates :description, length: { maximum: 300 }
