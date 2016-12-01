@@ -12,11 +12,10 @@
     <%= @live.description %>
   <% end %>
 <% end %>
-<%= content_for(:image_url) do %>
-  <% if @live.meta_image? %>
+
+<% if @live && @live.meta_image? %>
+  <%= content_for(:image_url) do %>
     <%= cl_image_path @live.meta_image, width: 1410, height: 738 %>
-  <% else %>
-    <%= image_url @live.meta_image %>
   <% end %>
 <% end %>
 
