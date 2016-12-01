@@ -56,7 +56,9 @@
     </nav>
 
     <div id="page-wrapper">
-      <%= yield %>
+      <div class="container-fluid">
+        <%= yield %>
+      </div>
     </div>
   </div>
   <%= javascript_include_tag 'admin/admin' %>

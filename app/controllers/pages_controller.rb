@@ -8,10 +8,12 @@ class PagesController < ApplicationController
   end
 
   def live
-    if @live && @live.demoday?
-      # TODO: redirect to right demoday
-    else
-      @city = @client.city(@live.city_slug)
+    if @live
+      if @live.demoday?
+        # TODO: redirect to right demoday
+      else
+        @city = @client.city(@live.city_slug)
+      end
     end
   end
 
