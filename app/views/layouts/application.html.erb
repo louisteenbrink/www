@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>" lang="<%= I18n.locale %>">
 <head>
-<% cache [ 'head', request: request.original_url ] do %>
+<% cache [ 'head', request: request.original_url, live: @live ] do %>
   <title><%= yield(:title) || "Le Wagon" %></title>
   <meta name="description" content="<%= (yield(:description) || "").squish %>">
 
