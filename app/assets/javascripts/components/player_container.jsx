@@ -62,7 +62,7 @@ class PlayerContainer extends React.Component {
 
   goToProduct = (product, jump) => {
     this.setState({ selectedProduct: product, jump: jump });
-    if (product === null) {
+    if (product === null || product === ':intro:') {
       var path = this.props.demodayPath;
       var title = this.props.i18n.page_title.replace('%{batch_slug}', this.props.batch.slug)
                                             .replace('%{city_name}', this.props.batch.city.name);

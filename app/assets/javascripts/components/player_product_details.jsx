@@ -8,8 +8,7 @@ class PlayerProductDetails extends React.Component {
   }
 
   render() {
-
-    if (this.props.product === null) {
+    if (this.props.product === null || this.props.product === ':intro:') {
       var text = this.props.i18n.batch_intro.replace('%{count}', this.props.batch.students.length)
                                             .replace('%{city_name}', this.props.batch.city.name)
                                             .replace('%{batch_start_date}', this.props.batch.starts_at)
@@ -29,7 +28,7 @@ class PlayerProductDetails extends React.Component {
 
       var technos = null;
 
-      if (this.props.product.technos.length >= 1) {
+      if (this.props.product.technos && this.props.product.technos.length >= 1) {
         technos = <div className="project-techno">
             <span>{this.props.i18n.project_techno}</span>
             <ul>
