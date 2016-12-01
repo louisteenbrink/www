@@ -1,0 +1,4 @@
+<% if @live.facebook_url.present? %>
+  $('#live-player-video').html("<%= j render 'live_player_video', live: @live %>");
+  clearInterval(liveVideoPlayerTimeout);
+<% end %>

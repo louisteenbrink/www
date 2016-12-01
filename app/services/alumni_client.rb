@@ -31,12 +31,6 @@ class AlumniClient
     end
   end
 
-  def live_batch
-    from_cache(:live, expire: 5.minutes) do
-      get("#{@base_url}/batches/live")["batch"]
-    end
-  end
-
   def testimonials(locale, slug = nil)
     from_cache(:testimonials, locale, slug) do
       if slug

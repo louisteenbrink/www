@@ -7,6 +7,21 @@ class PagesController < ApplicationController
     render params[:template]
   end
 
+  def live
+    respond_to do |format|
+      format.html do
+        if @live
+          if @live.demoday?
+            # TODO: redirect to right demoday
+          else
+            @city = @client.city(@live.city_slug)
+          end
+        end
+      end
+      format.js
+    end
+  end
+
   def home
     @stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || []))
     @projects = @client.projects("home_projects")

@@ -1,0 +1,88 @@
+<%= content_for(:title) do  %>
+  <% if @live == nil %>
+    <%= t ".page_title_no_live" %>
+  <% else %>
+    <%= t ".page_title_with_current_event", event_name: @live.title %>
+  <% end %>
+<% end %>
+<%= content_for(:description) do  %>
+  <% if @live == nil %>
+    <%= t ".page_description_no_live" %>
+  <% else %>
+    <%= @live.description %>
+  <% end %>
+<% end %>
+<%= content_for(:image_url) do %>
+  <% if @live.meta_image? %>
+    <%= cl_image_path @live.meta_image, width: 1410, height: 738 %>
+  <% else %>
+    <%= image_url @live.meta_image %>
+  <% end %>
+<% end %>
+
+
+<div class="container">
+  <% if @live %>
+    <div class="player-container">
+      <div class="player-header">
+        <div class="live-info">
+          <div class="live-local-flag">
+            <%= render 'shared/icon_flag_fr' %>
+          </div>
+          <div class="live-details">
+            <div class="live-event-name">
+              <i><%= @city['name'] %> </i> <%= @live.title %>
+            </div>
+            <div class="live-speaker-jobtitle">
+              <%= @live.subtitle %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="player-content">
+        <div class="player-video" id="live-player-video">
+          <%= render 'live_player_video', live: @live %>
+        </div>
+        <div class="player-event">
+          <div class="event-details">
+            <ul class="event-speaker">
+              <li>
+                <%= image_tag 'live/logo-devialet.jpg', class: "company-logo" %>
+              </li>
+              <li>
+                <%= image_tag 'live/quentin-sannie.jpg', class: "speaker-picture" %>
+              </li>
+            </ul>
+            <span class="event-description"><%= markdown @live.description %></span>
+            <% if @live.link %>
+              <%= link_to t(".live_company_link"), @live.link, target: '_blank', class: "company-link" %>
+            <% end %>
+          </div>
+          <%= link_to t(".live_go_to_meetup"), @city["meetup_url"], target: '_blank', class: "go-to-meetup" %>
+        </div>
+      </div>
+    </div>
+
+    <% else %>
+      <div class="col-sm-8 col-sm-offset-2">
+        <div class="padded">
+          <h1>Live not running</h1>
+          <p>Sorry, we don't have any live running at the moment. Try refreshing the page in a few minutes.</p>
+          <p>
+            <%= link_to "Refresh", live_path, class: 'btn btn-primary' %>
+            or
+            <%= link_to "go home", root_path %>
+          </p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<% if @live && @live.facebook_url.blank? %>
+  <script>
+    var liveVideoPlayerTimeout = setInterval(function() {
+      $.getScript('<%= live_path %>');
+    }, 5000);
+  </script>
+<% end %>

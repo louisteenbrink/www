@@ -1,0 +1,16 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "sb_admin";
+
+.navbar-brand {
+  vertical-align: -3px;
+  svg {
+    height: 32px;
+  }
+}
+
+#page-wrapper {
+  min-height: calc(100vh - 50px);
+}

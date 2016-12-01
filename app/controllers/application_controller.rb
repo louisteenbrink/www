@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: :render_404
   before_action :set_locale
   before_action :set_client
-  before_action :fetch_live
+  before_action :set_live
 
   before_action :load_static, if: -> { Rails.env.development? }
   before_action :load_cities
@@ -67,13 +67,7 @@ class ApplicationController < ActionController::Base
     @client ||= AlumniClient.new
   end
 
-  def fetch_live
-    Timeout::timeout(1) do
-      @live_batch = @client.live_batch
-    end
-  rescue Exception => e
-    puts e
-  ensure
-    @live_batch ||= { "live" => false }
+  def set_live
+    @live = Live.running_now
   end
 end

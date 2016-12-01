@@ -4,6 +4,20 @@ city_constraint = Proc.new do |req|
 end
 
 Rails.application.routes.draw do
+  mount Attachinary::Engine => "/attachinary"
+
+  devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
+
+  namespace :admin do
+    resources :lives, except: [ :index, :destroy ] do
+      member do
+        patch 'on'
+        patch 'off'
+      end
+    end
+    root 'lives#index'
+    delete '/log_out', to: 'base#log_out'
+  end
 
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
@@ -59,6 +73,7 @@ Rails.application.routes.draw do
     get "alumni" => "students#index", as: :alumni
     get "blog", to: 'posts#index', as: :blog
     get "blog/:slug", to: 'posts#show', as: :post
+    get "live", to: 'pages#live', as: :live
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city

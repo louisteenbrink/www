@@ -10,6 +10,8 @@ gem "rest-client"
 gem 'meetup_client'
 gem "redis"
 gem 'redis-rails'
+gem 'devise'
+gem "omniauth-github"
 
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
@@ -33,7 +35,11 @@ gem 'raygun4ruby'
 gem 'sitemap_generator'
 gem 'builder'
 gem 'rack-utf8_sanitizer'
+
 gem 'cloudinary'
+gem "attachinary", github: "assembler/attachinary"
+gem "jquery-fileupload-rails"
+gem "coffee-rails"
 
 gem 'critical-path-css-rails', git: 'https://github.com/mudbugmedia/critical-path-css-rails.git'
 
