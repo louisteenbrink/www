@@ -12,7 +12,13 @@
     <%= @live.description %>
   <% end %>
 <% end %>
-<%= content_for(:image_url) { image_url 'live/thumbnail-devialet.png' } %>
+<%= content_for(:image_url) do %>
+  <% if @live.meta_image? %>
+    <%= cl_image_path @live.meta_image, width: 1410, height: 738 %>
+  <% else %>
+    <%= image_url @live.meta_image %>
+  <% end %>
+<% end %>
 
 
 <div class="container">
@@ -34,25 +40,8 @@
         </div>
       </div>
       <div class="player-content">
-        <div class="player-video">
-          <% if @live.url? %>
-            <script>(function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-                fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>
-
-              <!-- Your embedded video player code -->
-              <div class="fb-video" data-href="<%= @live.url %>"
-                data-autoplay="true" data-width="940" data-show-text="false">
-              </div>
-          <% else %>
-            <div class="player-placeholder" style="background-image: url('<%= image_path("live/comingsoon/#{rand(3)}.jpg")%>');">
-              <span><%= t(".live_coming_soon") %></span>
-            </div>
-          <% end %>
+        <div class="player-video" id="live-player-video">
+          <%= render 'live_player_video', live: @live %>
         </div>
         <div class="player-event">
           <div class="event-details">
@@ -89,3 +78,11 @@
     <% end %>
   </div>
 </div>
+
+<% if @live && @live.facebook_url.blank? %>
+  <script>
+    var liveVideoPlayerTimeout = setInterval(function() {
+      $.getScript('<%= live_path %>');
+    }, 5000);
+  </script>
+<% end %>

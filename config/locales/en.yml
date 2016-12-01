@@ -278,9 +278,10 @@ en:
       page_title_with_current_event: "Live - %{event_name}"
       page_title_no_live: "Live - Coming soon"
       page_description_no_live: "Sorry, we don't have any live running at the moment :)"
-      live_coming_soon: "Coming soon..."
       live_company_link: "Know more"
       live_go_to_meetup: "See all our Meetup events"
+    live_player_video:
+      live_coming_soon: "Coming soon..."
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

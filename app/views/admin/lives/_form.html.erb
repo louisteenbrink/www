@@ -1,11 +1,12 @@
 <%= simple_form_for [:admin, @live] do |f| %>
-  <%= f.input :city_slug %>
-  <%= f.input :category, collection: Live::CATEGORIES %>
-  <%= f.input :title %>
-  <%= f.input :subtitle %>
-  <%= f.input :description, hint: 'You can use Markdown in here ☝️' %>
-  <%= f.input :link, label: 'Learn more link' %>
-  <%= f.input :url, label: 'Facebook video URL' %>
-  <%= f.input :batch_slug, placeholder: "Leave blank for Aperotalk" %>
+  <%= f.input :city_slug, collection: @city_slugs, label: "Where is it happenning?" %>
+  <%# TODO(ssaunier) f.input :category, collection: Live::CATEGORIES %>
+  <%= f.input :title, placeholder: 'Aperotalk avec Quentin Sannié' %>
+  <%= f.input :subtitle, placeholder: 'CEO & Co-fondateur de DEVIALET', hint: "Goes next to the title at the top of the video" %>
+  <%= f.input :description, hint: 'That will go on the right of the video. You can use Markdown in here ☝️' %>
+  <%= f.input :link, label: 'Learn more link', placeholder: 'http://www.devialet.fr', hint: "Goes under the description. You can leave this blank if you do not have any link." %>
+  <%= f.input :meta_image, as: :attachinary, hint: "Super important, will appear as a twitter card when you share the lewagon.com/live URL!" %>
+  <%= f.input :facebook_url, label: 'Facebook video url', hint: 'Click on post date and look in the URL', placeholder: 'https://www.facebook.com/lewagon/videos/548038245394778/' %>
+  <%# TODO(ssaunier) f.input :batch_slug, placeholder: "Leave blank for Aperotalk" %>
   <%= f.submit class: 'btn btn-primary' %>
 <% end %>
