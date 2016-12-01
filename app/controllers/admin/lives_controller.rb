@@ -13,6 +13,7 @@ module Admin
 
     def create
       @live = Live.new(live_params)
+      @live.category = 'aperotalk' # TODO(ssaunier)
       @live.user = current_user
       if @live.save
         redirect_to admin_root_path
