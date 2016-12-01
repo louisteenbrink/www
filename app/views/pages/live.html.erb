@@ -25,7 +25,7 @@
           </div>
           <div class="live-details">
             <div class="live-event-name">
-              <i><%= @city['name'] %> |</i> <%= @live.title %>
+              <i><%= @city['name'] %> </i> <%= @live.title %>
             </div>
             <div class="live-speaker-jobtitle">
               <%= @live.subtitle %>
@@ -46,7 +46,7 @@
 
               <!-- Your embedded video player code -->
               <div class="fb-video" data-href="<%= @live.url %>"
-                data-autoplay="true" data-width="900" data-show-text="false">
+                data-autoplay="true" data-width="940" data-show-text="false">
               </div>
           <% else %>
             <div class="player-placeholder" style="background-image: url('<%= image_path("live/comingsoon/#{rand(3)}.jpg")%>');">
