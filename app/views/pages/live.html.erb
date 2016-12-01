@@ -1,23 +1,60 @@
 <div class="container">
-  <div class="row">
-    <% if @live %>
-      <div class="col-sm-12">
-        <h1><%= @live.title %></h1>
-        <p><%= @live.description %></p>
-
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-        <!-- Your embedded video player code -->
-        <div class="fb-video" data-href="<%= @live.url %>"
-          data-autoplay="true" data-width="900" data-show-text="false">
+  <% if @live %>
+    <div class="player-container">
+      <div class="player-header">
+        <div class="batch-info">
+          <div class="batch-flag">
+            <%= render 'shared/icon_flag_fr' %>
+          </div>
+          <div class="batch-details">
+            <div class="batch-name">
+              <i>Paris |</i> <%= @live.title %>
+            </div>
+            <div class="batch-date">
+              CEO & Co-fondateur de DEVIALET
+            </div>
+          </div>
         </div>
       </div>
+      <div class="player-content">
+        <div class="player-video">
+          <% if @live.url? %>
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+              <!-- Your embedded video player code -->
+              <div class="fb-video" data-href="<%= @live.url %>"
+                data-autoplay="true" data-width="900" data-show-text="false">
+              </div>
+          <% else %>
+            <div class="player-placeholder" style="background-image: url('<%= image_path("live/comingsoon/#{rand(3)}.jpg")%>');">
+              <span>Live en préparation</span>
+            </div>
+          <% end %>
+        </div>
+        <div class="player-product">
+          <div class="product-details">
+            <ul class="product-team">
+              <li>
+                <%= image_tag 'live/logo-devialet.jpg', class: "team-member"%>
+              </li>
+              <li>
+                <%= image_tag 'live/quentin-sannie.jpg', class: "team-member"%>
+              </li>
+            </ul>
+            <span class="project-tagline"><%= @live.description %></span>
+            <%= link_to "En savoir +", 'http://en.devialet.com/#hot-news', target: '_blank', class: "project-link" %>
+          </div>
+          <%= link_to "Voir tous nos Meetup", "https://www.meetup.com/Le-Wagon-Paris-Coding-Station/events/234729823/", target: '_blank', class: "go-to-meetup" %>
+        </div>
+      </div>
+    </div>
+
     <% else %>
       <div class="col-sm-8 col-sm-offset-2">
         <div class="padded">
