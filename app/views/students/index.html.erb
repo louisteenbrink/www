@@ -26,20 +26,6 @@
 
 <div id="alumni">
   <div class="container">
-    <h2 class='section-title-home section-title-home-small'>
-      <div class='section-title-home-content'>
-        <%= t ".watch_demo_day_title_html",
-              city: @demo_day[:city], date: @demo_day[:date], slug: @demo_day[:slug] %>
-      </div>
-    </h2>
-
-    <div class="video-container">
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/<%= @demo_day[:video_id] %>?start=<%= @demo_day[:start] %>" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
-
-
     <div class="stories-container">
       <div class="story-container popular-stories">
       <%= t ".discover_our_stories" %>
