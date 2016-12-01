@@ -1,3 +1,20 @@
+<%= content_for(:title) do  %>
+  <% if @live == nil %>
+    <%= t ".page_title_no_live" %>
+  <% else %>
+    <%= t ".page_title_with_current_event", event_name: @live.title %>
+  <% end %>
+<% end %>
+<%= content_for(:description) do  %>
+  <% if @live == nil %>
+    <%= t ".page_description_no_live" %>
+  <% else %>
+    <%= @live.description %>
+  <% end %>
+<% end %>
+<%= content_for(:image_url) { image_url 'live/thumbnail-devialet.png' } %>
+
+
 <div class="container">
   <% if @live %>
     <div class="player-container">
@@ -33,7 +50,7 @@
               </div>
           <% else %>
             <div class="player-placeholder" style="background-image: url('<%= image_path("live/comingsoon/#{rand(3)}.jpg")%>');">
-              <span>Live en préparation...</span>
+              <span><%= t(".live_coming_soon") %></span>
             </div>
           <% end %>
         </div>
@@ -49,10 +66,10 @@
             </ul>
             <span class="event-description"><%= markdown @live.description %></span>
             <% if @live.link %>
-              <%= link_to "En savoir +", @live.link, target: '_blank', class: "company-link" %>
+              <%= link_to t(".live_company_link"), @live.link, target: '_blank', class: "company-link" %>
             <% end %>
           </div>
-          <%= link_to "Voir tous nos Meetup", @city["meetup_url"], target: '_blank', class: "go-to-meetup" %>
+          <%= link_to t(".live_go_to_meetup"), @city["meetup_url"], target: '_blank', class: "go-to-meetup" %>
         </div>
       </div>
     </div>

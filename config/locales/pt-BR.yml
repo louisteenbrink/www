@@ -279,6 +279,13 @@ pt-BR:
         técnico.
       wanna_join: Quer fazer parte do nosso network?
       signup: Assine para receber alertas sobre nossos candidatos e eventos.
+    live:
+      page_title_with_current_event: "Retransmissão ao vivo - %{event_name}"
+      page_title_no_live: "Retransmissão ao vivo - Em breve"
+      page_description_no_live: "Sorry, we don't have any live running at the moment :)"
+      live_coming_soon: "Em breve..."
+      live_company_link: "Know more"
+      live_go_to_meetup: "See all our Meetup events"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

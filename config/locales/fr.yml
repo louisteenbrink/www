@@ -266,6 +266,13 @@ fr:
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
       signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
+    live:
+      page_title_with_current_event: "Live - %{event_name}"
+      page_title_no_live: "Live en préparation"
+      page_description_no_live: "Nous n'avons aucun événement en cours de retransmission :)"
+      live_coming_soon: "Live en préparation..."
+      live_company_link: "En savoir +"
+      live_go_to_meetup: "Voir tous nos Meetups"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
