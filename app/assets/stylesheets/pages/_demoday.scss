@@ -495,8 +495,8 @@
         min-height: 405px;
       }
 
-      @media (max-width: 375px) {
-        padding-bottom: 48%;
+      @media (max-width: 620px){
+        min-height: auto;
       }
     }
 
