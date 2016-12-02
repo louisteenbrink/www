@@ -52,9 +52,10 @@ class PlayerBatchSelector extends React.Component {
             return <li key={index} onClick={() => this.changeBatch(batch)}>
               <img src={batch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
               <div>
-                <div>{batch.city.name} <i className="city-batch">Batch#{batch.slug}</i> {videoCamera}</div>
+                <div>{batch.city.name} <i className="city-batch">Batch#{batch.slug}</i></div>
                 <small>{batch.starts_at} - {batch.ends_at}</small>
               </div>
+              <div className="camera-icon">{videoCamera}</div>
             </li>
           })}
         </ReactBootstrap.Dropdown.Menu>
