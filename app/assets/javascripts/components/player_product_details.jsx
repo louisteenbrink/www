@@ -16,7 +16,7 @@ class PlayerProductDetails extends React.Component {
 
       return  (
         <div className="product-details">
-          <h3 className="project-name">DemoDay <small>Batch#{this.props.batch.id}</small></h3>
+          <h3 className="project-name">DemoDay <small>Batch#{this.props.batch.slug}</small></h3>
           <span className="project-tagline">{text}</span>
         </div>
       )
