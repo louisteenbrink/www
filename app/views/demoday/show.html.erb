@@ -11,6 +11,26 @@
   <%= render "shared/navbar_apply_button", city: @batch.city['slug'] %>
 <% end %>
 
+<%= content_for(:description) do  %>
+  <% if @selected_product %>
+    <% if @selected_product["tagline_fr"].present? && I18n.locale == :fr %>
+      <%= @selected_product["tagline_fr"] %>
+    <% else %>
+      <%= @selected_product["tagline_en"] %>
+    <% end %>
+  <% else %>
+    <%= t("demoday.batch_demoday.player.batch_intro_html", count: @batch.students.count, city_name: @batch.city['name'], batch_start_date: format_date(@batch.starts_at), batch_end_date: format_date(@batch.ends_at)) %>
+  <% end %>
+<% end %>
+
+<%= content_for(:image_url) do %>
+  <% if @selected_product %>
+    <%= @selected_product['cover_url'] %>
+  <% else %>
+    <%= @batch.cover_image %>
+  <% end %>
+<% end %>
+
 <div class="banner-container">
   <div class="container">
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/10.jpg')%>');">
@@ -46,8 +66,8 @@
 
       json_batches = @batches.map(&:as_json)
       json_batches.each do |batch|
-        batch["starts_at"] = l(Time.parse(batch["starts_at"]), format: '%B').camelcase
-        batch["ends_at"] = l(Time.parse(batch["ends_at"]), format: '%B %Y').camelcase
+        batch["starts_at"] = format_date(batch["starts_at"])
+        batch["ends_at"] = format_date(batch["ends_at"])
       end
     %>
     <%= react_component "PlayerBatchSelector", {
