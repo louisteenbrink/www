@@ -3,13 +3,16 @@ class PlayerProductMaker extends React.Component {
     super(props)
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
+
   render() {
-
-    var maker_picture = this.props.maker["thumbnail"];
-
+    var title = this.props.maker["first_name"] + " " + this.props.maker["last_name"];
     return (
       <li>
-        <img src={maker_picture} className="team-member"/>
+        <img src={this.props.maker["thumbnail"]} className="team-member"
+          data-original-title={title} data-toggle="tooltip" />
       </li>
     )
   }
