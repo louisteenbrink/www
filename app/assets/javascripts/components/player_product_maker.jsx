@@ -9,9 +9,10 @@ class PlayerProductMaker extends React.Component {
 
   render() {
     var title = this.props.maker["first_name"] + " " + this.props.maker["last_name"];
+    var maker_picture = this.props.maker["thumbnail"].replace('http://', 'https://');
     return (
       <li>
-        <img src={this.props.maker["thumbnail"]} className="team-member"
+        <img src={maker_picture} className="team-member"
           data-original-title={title} data-toggle="tooltip" />
       </li>
     )

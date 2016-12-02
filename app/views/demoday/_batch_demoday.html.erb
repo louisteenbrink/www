@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container demo-section">
   <%
     react_batch = batch.as_json
     react_batch["starts_at"] = l(Time.parse(react_batch["starts_at"]), format: '%B').camelcase
@@ -45,7 +45,7 @@
   }, prerender: prerender %>
 </div>
 
-<div class="container">
+<div class="container demo-section">
   <%= react_component 'StudentsTitle', {
     counter: batch.students.count,
     i18n: {
