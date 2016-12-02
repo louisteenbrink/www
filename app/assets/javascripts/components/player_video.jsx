@@ -65,8 +65,10 @@ class PlayerVideo extends React.Component {
   render() {
 
     return (
-      <div className="player-video" id="youtube-player">
+      <div className="video-wrapper">
+        <div className="player-video" id="youtube-player">
 
+        </div>
       </div>
     )
   }

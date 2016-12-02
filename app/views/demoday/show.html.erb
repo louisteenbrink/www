@@ -67,7 +67,7 @@
       json_batches = @batches.map(&:as_json)
       json_batches.each do |batch|
         batch["starts_at"] = format_date(batch["starts_at"])
-        batch["ends_at"] = format_date(batch["ends_at"])
+        batch["ends_at"] = format_date_complete(batch["ends_at"])
       end
     %>
     <%= react_component "PlayerBatchSelector", {

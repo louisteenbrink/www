@@ -45,10 +45,14 @@ class PlayerBatchSelector extends React.Component {
         {batchSelectorToggle}
         <ReactBootstrap.Dropdown.Menu>
           {otherBatches.map((batch, index) => {
+            var videoCamera = null;
+            if (batch.youtube_id) {
+              videoCamera = <i className="fa fa-video-camera" aria-hidden="true"></i>
+            }
             return <li key={index} onClick={() => this.changeBatch(batch)}>
               <img src={batch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
               <div>
-                <div>{batch.city.name} <i className="city-batch">Batch#{batch.slug}</i></div>
+                <div>{batch.city.name} <i className="city-batch">Batch#{batch.slug}</i> {videoCamera}</div>
                 <small>{batch.starts_at} - {batch.ends_at}</small>
               </div>
             </li>
