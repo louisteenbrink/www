@@ -17,7 +17,7 @@ class SubscribeToNewsletter
       )
       return { ok: true, already_subscribed: false }
     rescue Gibbon::MailChimpError => e
-      if e.body["detail"] =~ /is already a list member/
+      if e.body && e.body["detail"] =~ /is already a list member/
         return { ok: true, already_subscribed: true }
       else
         return { ok: false, message: e.body["detail"], errors: e.body['errors'] }
