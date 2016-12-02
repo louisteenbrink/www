@@ -131,6 +131,10 @@
       font-weight: 600;
     }
 
+    a.dropdown-batch:hover {
+      text-decoration: none;
+    }
+
     .dropdown-batch {
       display: flex;
       align-items: center;

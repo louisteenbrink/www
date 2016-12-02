@@ -217,10 +217,10 @@
       span {
         opacity: 1;
         &.caret {
-          border-top: 10px dashed;
-          border-right: 8px solid transparent;
-          border-left: 8px solid transparent;
-          opacity: 0.6;
+          position: absolute;
+          right: 25px;
+          top: 50%;
+          transform: translateY(-50%);
         }
       }
     }

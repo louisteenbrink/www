@@ -5,7 +5,7 @@ class PlayerProductMaker extends React.Component {
 
   render() {
 
-    var maker_picture = this.props.maker["thumbnail"];
+    var maker_picture = this.props.maker["thumbnail"].replace('http://', 'https://');
 
     return (
       <li>

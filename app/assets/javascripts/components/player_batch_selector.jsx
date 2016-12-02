@@ -31,7 +31,7 @@ class PlayerBatchSelector extends React.Component {
       </ReactBootstrap.Dropdown.Toggle>;
 
     if (this.state.selectedBatch) {
-        var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle className="dropdown-batch">
+        var batchSelectorToggle = <ReactBootstrap.Dropdown.Toggle useAnchor={true} className="dropdown-batch">
             <img src={this.state.selectedBatch.city.city_picture.replace('development', 'production')} className="city-thumbnail" />
             <div>
               <div>{this.state.selectedBatch.city.name} <i className="city-batch">Batch#{this.state.selectedBatch.slug}</i></div>

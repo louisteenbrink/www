@@ -287,7 +287,7 @@ en:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
       demoday_title: "Watch our Demodays"
-      demoday_tagline: "We are proud of what our students acheived in only 10 days"
+      demoday_tagline: "We are proud of what our students achieved in only 10 days"
       choose_batch: "Choose Batch"
       batch_french: "French"
       batch_english: "English"
