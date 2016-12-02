@@ -17,6 +17,10 @@
   <%= content_for(:image_url) do %>
     <%= cl_image_path @live.meta_image.path, width: 1410, height: 738 %>
   <% end %>
+<% else %>
+  <%= content_for(:image_url) do %>
+    <%= content_for(:image_url) { image_url 'live/comingsoon/0.jpg' } %>
+  <% end %>
 <% end %>
 
 <div class="container">
