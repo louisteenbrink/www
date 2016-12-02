@@ -33,7 +33,7 @@ class PlayerProductDetails extends React.Component {
             <span>{this.props.i18n.project_techno}</span>
             <ul>
               {this.props.product.technos.map((techno, index) => {
-                return <span key={index} dangerouslySetInnerHTML={{__html: this.props.technos[techno].icon }} data-toggle="tooltip" data-placement="bottom" title={this.props.technos[techno].name}></span>
+                return <span key={index} dangerouslySetInnerHTML={{__html: this.props.technos[techno].icon }} data-toggle="tooltip" data-placement="bottom" data-original-title={this.props.technos[techno].name}></span>
               })}
             </ul>
           </div>;

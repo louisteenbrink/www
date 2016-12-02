@@ -90,7 +90,7 @@
         <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
         <hr class='hidden-xs'>
         <%= link_to t(".employers"), employers_path, class: "hidden-xs navbar-wagon-link", data: {text: t(".employers")} %>
-        <hr class="hidden-xs">
+
         <% unless @hide_banner_apply_button %>
           <div class="left" id="navbar-apply">
             <%= content_for?(:navbar_apply_button) ? yield(:navbar_apply_button) : render('shared/navbar_apply_button') %>
