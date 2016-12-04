@@ -3,7 +3,7 @@
 %>
 
 <% unless (@city && @city["apply_facebook_pixel"] == general_audience_tracker) %>
-<script>(function() {
+<script class="_iub_cs_activate-inline" type="text/plain">(function() {
   var _fbq = window._fbq || (window._fbq = []);
   if (!_fbq.loaded) {
     var fbds = document.createElement('script');
@@ -18,5 +18,4 @@
 window._fbq = window._fbq || [];
 window._fbq.push(['track', 'PixelInitialized', {}]);
 </script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=751967801553090&amp;ev=PixelInitialized" /></noscript>
 <% end %>

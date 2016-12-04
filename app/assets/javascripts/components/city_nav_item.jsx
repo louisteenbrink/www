@@ -14,7 +14,6 @@ class CityNavItem extends React.Component {
       backgroundImage: "url(" + city.pictures.city.thumbnail + ")"
     }
 
-    debugger
     return(
       <div className={cityItemClasses} onClick={this.handleClick.bind(this)}>
         <div className='city-nav-item-infos'>

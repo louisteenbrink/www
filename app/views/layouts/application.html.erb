@@ -49,6 +49,8 @@
 <%= csrf_meta_tags %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
+  <%= render "shared/iubenda" %>
+
   <%# render "shared/ondemand" if I18n.locale == :fr %>
   <%# render "shared/medium" %>
   <%= render "shared/flashes" %>

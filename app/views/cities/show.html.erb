@@ -216,8 +216,8 @@
 
 <% if @city["location"] && @city["latitude"] %>
   <% content_for(:after_js) do %>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCukr6vo0mkusgzjemMGVI83TDUo-oqpzw"></script>
-    <script type="text/javascript">
+    <script class="_iub_cs_activate-inline" type="text/plain" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCukr6vo0mkusgzjemMGVI83TDUo-oqpzw"></script>
+    <script class="_iub_cs_activate-inline" type="text/plain">
       prepareMap(
         '<%= @city['name'] %>',
         <%= @city['latitude'] %>,

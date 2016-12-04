@@ -1,5 +1,5 @@
 function prepareMap(cityName, lat, lng, pinIconPath) {
-  google.maps.event.addDomListener(window, 'load', function() {
+  // google.maps.event.addDomListener(window, 'load', function() {  // Not needed anymore with Iubenda
     var mapOptions = {
       zoom: 13,
       disableDefaultUI: true,
@@ -31,5 +31,5 @@ function prepareMap(cityName, lat, lng, pinIconPath) {
       title: "Le Wagon " + name,
       icon: pinIcon
     });
-  });
+  // });
 }
