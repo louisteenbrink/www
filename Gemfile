@@ -41,8 +41,6 @@ gem "attachinary", github: "assembler/attachinary"
 gem "jquery-fileupload-rails"
 gem "coffee-rails"
 
-gem 'critical-path-css-rails', git: 'https://github.com/mudbugmedia/critical-path-css-rails.git'
-
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'
   gem 'rails-assets-classnames'

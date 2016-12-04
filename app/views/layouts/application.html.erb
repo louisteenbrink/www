@@ -37,16 +37,10 @@
   <% end %>
   <%= yield(:headers) %>
 <% end %>
-<% if current_page?(root_url) %>
-  <style>
-    <%# Above the fold CSS %>
-    <%= raw CriticalPathCss.fetch(request.path) %>
-  </style>
-<% else %>
-  <%= stylesheet_link_tag :application, media: "all" %>
-<% end %>
 
+<%= stylesheet_link_tag :application, media: "all" %>
 <%= csrf_meta_tags %>
+
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
   <%= render "shared/iubenda" %>
@@ -57,10 +51,6 @@
   <%= render "shared/navbar" %>
 
   <%= yield %>
-
-  <% if current_page?(root_url) %>
-    <%= stylesheet_link_tag :application, media: "all" %>
-  <% end %>
 
   <%= javascript_include_tag :application %>
   <%= yield(:after_js) %>

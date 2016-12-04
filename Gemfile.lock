@@ -6,13 +6,6 @@ GIT
       cloudinary (~> 1.1.0)
       rails (>= 3.2)
 
-GIT
-  remote: https://github.com/mudbugmedia/critical-path-css-rails.git
-  revision: 73a18a3ae0771f99b155ba2a9d8d1258ae8efd86
-  specs:
-    critical-path-css-rails (0.2.4)
-      phantomjs (~> 1.9)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -195,7 +188,6 @@ GEM
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
     pg (0.18.4)
-    phantomjs (1.9.8.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -365,7 +357,6 @@ DEPENDENCIES
   capybara
   cloudinary
   coffee-rails
-  critical-path-css-rails!
   devise
   email_validator
   figaro

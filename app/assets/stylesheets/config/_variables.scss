@@ -26,15 +26,15 @@ $font-weight-bold:   900;
        font-url('Avenir/AvenirMedium.ttf') format('truetype');
   font-weight: $font-weight-normal;
 }
-@font-face {
-  font-family: "Avenir";
-  src: font-url('Avenir/AvenirSemiBold.eot');
-  src: font-url('Avenir/AvenirSemiBold.eot?#iefix') format('embedded-opentype'),
-       font-url('Avenir/AvenirSemiBold.woff') format('woff'),
-       font-url('Avenir/AvenirSemiBold.woff2') format('woff2'),
-       font-url('Avenir/AvenirSemiBold.ttf') format('truetype');
-  font-weight: $font-weight-semi-bold;
-}
+// @font-face {
+//   font-family: "Avenir";
+//   src: font-url('Avenir/AvenirSemiBold.eot');
+//   src: font-url('Avenir/AvenirSemiBold.eot?#iefix') format('embedded-opentype'),
+//        font-url('Avenir/AvenirSemiBold.woff') format('woff'),
+//        font-url('Avenir/AvenirSemiBold.woff2') format('woff2'),
+//        font-url('Avenir/AvenirSemiBold.ttf') format('truetype');
+//   font-weight: $font-weight-semi-bold;
+// }
 @font-face {
   font-family: "Avenir";
   src: font-url('Avenir/AvenirBold.eot');
