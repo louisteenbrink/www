@@ -339,10 +339,12 @@ en:
       apply: Apply to
       first_name: "First name"
       last_name: "Last name"
+      age: "Age"
       phone: "Phone"
       source: "Referrer"
       source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
-      motivation: "Why Le Wagon? What is your professional project?"
+      motivation: "Motivation"
+      motivation_placeholder: "Why Le Wagon? What is your professional project?"
       apply_btn: "Apply to "
       please_wait: "Please wait..."
       pre_course_language: 'Course in '

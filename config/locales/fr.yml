@@ -330,11 +330,13 @@ fr:
       apply: Postulez à
       first_name: "Prénom"
       last_name: "Nom de famille"
+      age: "Age"
       codecademy_username: "CodeCademy"
       phone: "Téléphone"
       source: "Recommandé par"
       source_placeholder: "Qui vous a recommandé Le Wagon ? Un ami (qui ?), Google, etc."
-      motivation: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
+      motivation: "Motivation"
+      motivation_placeholder: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
       apply_btn: "Postulez à "
       please_wait: "Patientez..."
       pre_course_language: 'Cours en '
