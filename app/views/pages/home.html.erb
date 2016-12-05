@@ -33,9 +33,10 @@
 <%= render partial: "shared/testimonials" %>
 
 
-<% cache [ 'stories', ids: @stories.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
+<% cache [ 'stories', locale ] do %>
+  <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
   <%= react_component 'Stories', {
-      stories: enriched_stories(@stories),
+      stories: enriched_stories(stories),
       storiesPath: alumni_path,
       i18n: {
         title: t(".featured"),
@@ -50,7 +51,8 @@
 
 <%= render "shared/positions" %>
 
-<% cache [ 'projects', ids: @projects.map{ |s| s['id'] }.join("-"), locale: I18n.locale ] do %>
+<% cache [ 'projects', locale ] do %>
+<% projects = @client.projects("home_projects") %>
 <div id="alumni-home">
   <div class="container">
     <h2 class='section-title-home' style="font-size:30px;">
@@ -62,7 +64,7 @@
       <%= t(".what_they_code") %>
     </p>
     <div class="projects-list">
-      <% @projects.each do |project| %>
+      <% projects.each do |project| %>
        <% project = OpenStruct.new project %>
         <div class="project-item-container">
           <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
@@ -103,7 +105,7 @@
 </div>
 <% end %>
 
-
+<% cache ['home_cities', locale ] do %>
 <div class="wordlwide-overlay">
   <div class="container padded">
     <h2 class='section-title-home'>
@@ -128,7 +130,6 @@
                 <h3><%= city["name"] %></h3>
                 <div class="project-item-makers card-city-teachers">
                   <% @client.staff(city['slug'])["teachers"].take(3).each do |teacher| %>
-                    <% maker = OpenStruct.new maker %>
                     <div class="project-item-maker">
                       <a href=<%= "http://alumni.lewagon.org/#{teacher['github_nickname']}" %> target='_blank'>
                         <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
@@ -144,5 +145,4 @@
     </div>
   </div>
 </div>
-
-
+<% end %>
