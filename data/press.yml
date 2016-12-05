@@ -1,3 +1,9 @@
+- name: "Les HEC Entrepreneurs demain tous codeurs ?"
+  url: http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs
+  media: HEC Paris
+  logo: logo-hec.jpg
+  date: 2016-12-01
+
 - name: "Faire du « code » pour travailler tout de suite"
   url: http://www.lemonde.fr/emploi/article/2016/08/18/passer-le-code-pour-travailler-tout-de-suite_4984575_1698637.html
   media: Le Monde
