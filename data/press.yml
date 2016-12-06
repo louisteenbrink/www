@@ -10,6 +10,12 @@
   logo: logo-lemonde.jpg
   date: 2016-08-18
 
+- name: "Nous avons appris à coder pour lancer notre startup"
+  url: http://start.lesechos.fr/entreprendre/temoignages-entrepreneurs/nous-avons-appris-a-coder-pour-lancer-notre-startup-5360.php
+  media: Les Echos
+  logo: logo-lesechos.jpg
+  date: 2016-07-22
+
 - name: "How Le Wagon is quietly becoming a major coding bootcamp in Europe"
   logo: logo-techcrunch.jpg
   url: http://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/
