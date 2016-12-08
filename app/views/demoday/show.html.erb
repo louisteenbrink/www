@@ -26,6 +26,8 @@
 <%= content_for(:image_url) do %>
   <% if @selected_product %>
     <%= @selected_product['cover_url'] %>
+  <% elsif @batch.meta_image && @batch.meta_image['facebook'].present? %>
+    <%= @batch.meta_image['facebook'] %>
   <% else %>
     <%= @batch.cover_image %>
   <% end %>
