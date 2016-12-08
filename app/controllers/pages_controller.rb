@@ -12,7 +12,7 @@ class PagesController < ApplicationController
       format.html do
         if @live
           if @live.demoday?
-            # TODO: redirect to right demoday
+            redirect_to demoday_path(@live.batch_slug)
           else
             @city = @client.city(@live.city_slug)
           end

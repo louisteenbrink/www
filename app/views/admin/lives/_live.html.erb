@@ -1,17 +1,27 @@
-<td>
-  <% if live.meta_image? %>
-    <%= cl_image_tag live.meta_image.path, height: 60 %>
-  <% end %>
-</td>
-<td style="vertical-align: middle">
-  <strong><%= live.title %></strong>
-  <% if live.subtitle.present? %>
-    - <%= live.subtitle %>
-  <% end %>
-  <%= link_to edit_admin_live_path(live) do %>
-    <i class="fa fa-pencil"></i> edit
-  <% end %>
-</td>
+<% if live.demoday? %>
+  <td></td>
+  <td>
+    <strong>Demoday Batch #<%= live.batch_slug %></strong>
+    <%= link_to edit_admin_live_path(live) do %>
+      <i class="fa fa-pencil"></i> edit
+    <% end %>
+  </td>
+<% else %>
+  <td>
+    <% if live.meta_image? %>
+      <%= cl_image_tag live.meta_image.path, height: 60 %>
+    <% end %>
+  </td>
+  <td style="vertical-align: middle">
+    <strong><%= live.title %></strong>
+    <% if live.subtitle.present? %>
+      - <%= live.subtitle %>
+    <% end %>
+    <%= link_to edit_admin_live_path(live) do %>
+      <i class="fa fa-pencil"></i> edit
+    <% end %>
+  </td>
+<% end %>
 <td class="text-right"  style="vertical-align: middle">
   <% if live.started_at.nil? || !live.ended_at.nil? %>
     <%= link_to on_admin_live_path(live), class: 'btn btn-danger', remote: true, method: :patch do %>
