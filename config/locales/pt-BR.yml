@@ -344,10 +344,12 @@ pt-BR:
       apply: Candidatar-se para
       first_name: "Nome"
       last_name: "Sobrenome"
+      age: "Idade"
       phone: "Telefone"
       source: "Referência"
       source_placeholder: "Quem recomendou o Le Wagon para você? Quora, Facebook, um amigo (quem?), etc."
-      motivation: "Por que Le Wagon ? Qual é o seu projeto profissional?"
+      motivation: "Motivação"
+      motivation_placeholder: "Por que Le Wagon? Qual é o seu projeto profissional?"
       apply_btn: "Candidatar-se para "
       please_wait: "Por favor aguarde..."
       pre_course_language: 'Curso em '

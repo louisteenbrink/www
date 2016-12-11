@@ -28,11 +28,11 @@
     rows: [
       apply_row(:first_name, :text, t(".first_name"), "Alan", "account"),
       apply_row(:last_name, :text, t(".last_name"), "Turing", "format-text"),
-      apply_row(:age, :text, "Age", "42", "crown"),
+      apply_row(:age, :text, t(".age"), "42", "crown"),
       apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
       apply_row(:phone, :tel, t(".phone"), "+33612345678", "cellphone-iphone"),
       apply_row(:source, :text, t(".source"), t(".source_placeholder"), "tag"),
-      apply_row(:motivation, :textarea, "Motivation", t(".motivation"), "content-paste")
+      apply_row(:motivation, :textarea, t(".motivation"), t(".motivation_placeholder"), "content-paste")
     ]
   }, prerender: prerender? %>
 </div>
