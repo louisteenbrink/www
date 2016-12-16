@@ -246,7 +246,7 @@ pt-BR:
         Vamos te contatar em breve por email para agendar a entrevista. <br /><br />Enquanto isso, siga as intruções do nosso check-list e comece o <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby</a> no CodeCademy.
       take_advance: Check-list
       first_step: "1. Candidate-se pro Le Wagon %{name}"
-      second_step: "Assine %{name} Meetup group "
+      second_step: "Junte-se ao %{name} grupo Meetup "
       third_step: "Siga a gente no Twitter"
       fourth_step: "Comece sua track Ruby em Inglês"
     press:
@@ -282,16 +282,16 @@ pt-BR:
     live:
       page_title_with_current_event: "Retransmissão ao vivo - %{event_name}"
       page_title_no_live: "Retransmissão ao vivo - Em breve"
-      page_description_no_live: "Sorry, we don't have any live running at the moment :)"
-      live_company_link: "Know more"
-      live_go_to_meetup: "See all our Meetup events"
+      page_description_no_live: "Desculpa, não tem nenhum live agora :/"
+      live_company_link: "Saber mais"
+      live_go_to_meetup: "Veja nossos eventos Meetup"
     live_player_video:
       live_coming_soon: "Em breve..."
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
-      demoday_title: "Demoday quando quiser"
+      demoday_title: "Veja nossos Demodays"
       demoday_tagline: "Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!"
       choose_batch: "Escolher a turma"
       batch_french: "Francês"
@@ -306,7 +306,7 @@ pt-BR:
         project_link: "testa ele"
         techno: "Feito com"
         cta: "Candidatar-se por 9 semanas"
-      batch_title: " Galera fina aqui :)"
+      batch_title: " membros da turma"
   students:
     index:
       title: Os projetos de nossos alunos - Startups e aplicativos web made in Le Wagon
