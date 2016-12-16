@@ -60,6 +60,7 @@ RSpec.describe "Apply process", type: :feature do
       fill_in 'age', with: 42
       fill_in 'email', with: 'george@abitbol.com'
       fill_in 'phone', with: '+3312345678'
+      fill_in 'codecademy_username', with: 'sbfrr' # Seb Ferré did 100% :)
     end
   end
 end
