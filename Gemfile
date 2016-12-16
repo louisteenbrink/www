@@ -13,6 +13,10 @@ gem 'redis-rails'
 gem 'devise'
 gem "omniauth-github"
 
+gem 'sidekiq'
+gem 'sidekiq_snitch'
+gem 'sidekiq-failures'
+
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
 gem "uglifier"

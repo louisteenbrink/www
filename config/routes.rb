@@ -102,6 +102,12 @@ Rails.application.routes.draw do
   # Linkedin Token
   get 'linkedin', to: 'pages#linkedin'
 
+  # Sidekiq
+  require "sidekiq/web"
+  authenticate :user do
+    mount Sidekiq::Web => '/sidekiq'
+  end
+
   match "*path", to: "application#render_404", via: :all
 end
 

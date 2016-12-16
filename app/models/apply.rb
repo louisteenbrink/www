@@ -42,17 +42,7 @@ class Apply < ActiveRecord::Base
   after_create :push_to_trello, if: :push_to_trello?
 
   def push_to_trello
-    card = PushToTrelloRunner.new(self).run
-
-    if Rails.env.production?
-      PushStudentToCrmRunner.new(card, self).run
-      SubscribeToNewsletter.new(email).run
-
-      city = AlumniClient.new.city(self.city_id)
-      if city.mailchimp?
-        SubscribeToNewsletter.new(email, list_id: city.mailchimp_list_id, api_key: city.mailchimp_api_key).run
-      end
-    end
+    PushStudentJob.perform_later(id)
   end
 
   def tracked?
@@ -60,7 +50,7 @@ class Apply < ActiveRecord::Base
   end
 
   def push_to_trello?
-    batch_id && !Rails.env.test?# && !Rails.env.development?
+    batch_id && !Rails.env.test?
   end
 
   def batch
@@ -86,19 +76,9 @@ class Apply < ActiveRecord::Base
     result["percentage"]
   end
 
-  private
-
-  def ruby_codecademy_completed
-    client = CodecademyCheckerClient.new
-    result = client.ruby_progress(codecademy_username)
-    if result["error"]
-      errors.add :codecademy_username, result["error"]["message"]
-    elsif result["percentage"] < 100
-      errors.add :codecademy_username, "You did #{result["percentage"]}% of the CodeCademy Ruby track. We need 100%."
-    end
-  end
-
   def fetch_linkedin_profile
+    return if @linkedin_profile
+
     require 'addressable/uri'
     uri = Addressable::URI.parse(linkedin)
     uri.query_values = nil
@@ -113,6 +93,18 @@ class Apply < ActiveRecord::Base
       Raygun.track_exception(e)
     else
       raise e
+    end
+  end
+
+  private
+
+  def ruby_codecademy_completed
+    client = CodecademyCheckerClient.new
+    result = client.ruby_progress(codecademy_username)
+    if result["error"]
+      errors.add :codecademy_username, result["error"]["message"]
+    elsif result["percentage"] < 100
+      errors.add :codecademy_username, "You did #{result["percentage"]}% of the CodeCademy Ruby track. We need 100%."
     end
   end
 

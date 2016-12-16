@@ -243,7 +243,7 @@ en:
       first_step: "1. Apply to Le Wagon %{name}"
       second_step: "Subscribe to %{name} Meetup group "
       third_step: "Follow us on Twitter"
-      fourth_step: "Start your Ruby track in English"
+      fourth_step: "Resume working on the CodeCademy Ruby track"
     press:
       title: They speak about Le Wagon
     employers:

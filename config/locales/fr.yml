@@ -239,7 +239,7 @@ fr:
       first_step: "1. Candidatez pour Le Wagon %{name}"
       second_step: "Inscrivez-vous au groupe Meetup de %{name}"
       third_step: "Suivez-nous sur Twitter"
-      fourth_step: "Commencez la track ruby en anglais"
+      fourth_step: "Continuez la track Ruby sur CodeCademy"
     press:
       title: Ils parlent du Wagon
     employers:
