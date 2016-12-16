@@ -5,6 +5,19 @@ class ApplyFormRow extends React.Component {
       isFocused: false
     }
   }
+
+  componentDidMount() {
+    if ($) {
+      $(document).on('apply-row.focus.' + this.props.param, this.handleFocus.bind(this));
+    }
+  }
+
+  componentDidUpdate() {
+    if (this.state.isFocused) {
+      setTimeout(() => { ReactDOM.findDOMNode(this.refs.input).focus() }, 1);
+    }
+  }
+
   render() {
     var componentClasses = classNames({
       'apply-form-row': true,
@@ -21,9 +34,10 @@ class ApplyFormRow extends React.Component {
       return(
         <div className={componentClasses}>
           <label htmlFor={this.name()}>
-            <i className={this.props.icon}></i>{this.props.label}
+            <i className={this.props.icon}></i><span dangerouslySetInnerHTML={{__html: this.props.label}}></span>
           </label>
           <input
+            ref="input"
             placeholder={this.props.placeholder}
             type={this.props.type}
             onFocus={this.handleFocus.bind(this)}
@@ -41,6 +55,7 @@ class ApplyFormRow extends React.Component {
             <i className={this.props.icon}></i>{this.props.label}
           </label>
           <textarea
+            ref="input"
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
             placeholder={this.props.placeholder}
@@ -57,7 +72,7 @@ class ApplyFormRow extends React.Component {
   }
 
   handleFocus() {
-    this.setState({ isFocused: true })
+    this.setState({ isFocused: true });
   }
 
   handleBlur() {

@@ -85,6 +85,9 @@
     i {
       margin-right: 10px;
     }
+    i.fa {
+      vertical-align: 1px;
+    }
   }
 
   input {
@@ -418,3 +421,8 @@
   }
 }
 
+#codecademy .modal-body {
+  a {
+    text-decoration: underline;
+  }
+}

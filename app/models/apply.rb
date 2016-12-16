@@ -16,9 +16,12 @@
 #  tracked             :boolean          default(FALSE), not null
 #  source              :string
 #  codecademy_username :string
+#  linkedin            :string
 #
 
 class Apply < ActiveRecord::Base
+  MANDATORY_CODECADEMY_CITIES = %w(paris)
+
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :phone, presence: true
@@ -31,6 +34,10 @@ class Apply < ActiveRecord::Base
 
   attr_accessor :validate_ruby_codecademy_completed
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
+
+  attr_reader :linkedin_profile
+  before_validation :fetch_linkedin_profile, unless: ->() { self.linkedin.blank? }
+  validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
 
   after_create :push_to_trello, if: :push_to_trello?
 
@@ -53,7 +60,7 @@ class Apply < ActiveRecord::Base
   end
 
   def push_to_trello?
-    batch_id && !Rails.env.test? && !Rails.env.development?
+    batch_id && !Rails.env.test?# && !Rails.env.development?
   end
 
   def batch
@@ -89,5 +96,27 @@ class Apply < ActiveRecord::Base
     elsif result["percentage"] < 100
       errors.add :codecademy_username, "You did #{result["percentage"]}% of the CodeCademy Ruby track. We need 100%."
     end
+  end
+
+  def fetch_linkedin_profile
+    require 'addressable/uri'
+    uri = Addressable::URI.parse(linkedin)
+    uri.query_values = nil
+    self.linkedin = uri.to_s
+
+    @linkedin_profile = LinkedinClient.new.fetch(linkedin)
+  rescue Faraday::ResourceNotFound
+    @linkedin_profile = nil
+    errors.add :linkedin, "Sorry, this does not seem to be a valid Linkedin URL" # TODO: i18n
+  rescue Faraday::ClientError => e
+    if Rails.env.production?
+      Raygun.track_exception(e)
+    else
+      raise e
+    end
+  end
+
+  def linkedin_url_exists
+    !linkedin_profile.nil?
   end
 end

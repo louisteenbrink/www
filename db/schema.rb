@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161201163536) do
+ActiveRecord::Schema.define(version: 20161216114848) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20161201163536) do
     t.boolean  "tracked",             default: false, null: false
     t.string   "source"
     t.string   "codecademy_username"
+    t.string   "linkedin"
   end
 
   create_table "attachinary_files", force: :cascade do |t|

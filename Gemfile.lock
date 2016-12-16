@@ -142,6 +142,10 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.4.1)
       launchy (~> 2.2)
+    linkedin-oauth2 (1.0.0)
+      faraday (~> 0.9)
+      hashie (~> 3.2)
+      oauth2 (~> 1.0)
     lodash-rails (4.13.1)
       railties (>= 3.1)
     loofah (2.0.3)
@@ -367,6 +371,7 @@ DEPENDENCIES
   jquery-slick-rails
   js-routes
   letter_opener
+  linkedin-oauth2 (~> 1.0)
   lodash-rails
   meetup_client
   money-rails

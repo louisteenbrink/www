@@ -7,6 +7,6 @@ class CodecademyCheckerClient
   rescue URI::InvalidURIError
     { "error" => { "message" => "#{username} is not a CodeCademy username" } }
   rescue RestClient::ResourceNotFound
-    { "error" => { "message" => "Go to codecademy.com/profiles/me to get your username" } }
+    { "error" => { "message" => "Go to codecademy.com/account to get your username" } }
   end
 end

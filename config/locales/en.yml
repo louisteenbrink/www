@@ -345,6 +345,26 @@ en:
       source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
       motivation: "Motivation"
       motivation_placeholder: "Why Le Wagon? What is your professional project?"
+      linkedin_html: Your profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
+          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> on CodeCademy.
+          If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
+        </p>
+        <p>
+          To track your progress, we need you to fill in this form your <strong>CodeCademy username</strong>. You
+          will find it on your <a href="https://www.codecademy.com/account" target="_blank">Account</a> page.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
+        </p>
+      codecademy_modal_close_button: "I found my username"
       apply_btn: "Apply to "
       please_wait: "Please wait..."
       pre_course_language: 'Course in '

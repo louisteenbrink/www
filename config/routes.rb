@@ -99,6 +99,9 @@ Rails.application.routes.draw do
   # Old
   get 'wagon_bar', to: redirect('/fr')
 
+  # Linkedin Token
+  get 'linkedin', to: 'pages#linkedin'
+
   match "*path", to: "application#render_404", via: :all
 end
 
