@@ -239,7 +239,7 @@ fr:
       first_step: "1. Candidatez pour Le Wagon %{name}"
       second_step: "Inscrivez-vous au groupe Meetup de %{name}"
       third_step: "Suivez-nous sur Twitter"
-      fourth_step: "Commencez la track ruby en anglais"
+      fourth_step: "Continuez la track Ruby sur CodeCademy"
     press:
       title: Ils parlent du Wagon
     employers:
@@ -337,6 +337,27 @@ fr:
       source_placeholder: "Qui vous a recommandé Le Wagon ? Un ami (qui ?), Google, etc."
       motivation: "Motivation"
       motivation_placeholder: "Pourquoi Le Wagon ? Quelles sont vos motivations ?"
+      linkedin_html: Profil LinkedIn (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=fr' target='_blank'>aide</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">aide</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          Comme mentionné dans la <a href="%{faq_path}" target="_blank">FAQ</a>, un pré-requis pour
+          intrégrer la formation Fullstack du Wagon est de terminer à 100% la
+          <a href="https://www.codecademy.com/learn/ruby">track Ruby</a> de CodeCademy, <strong>en anglais</strong>.
+          Si vous n'avez pas encore de compte CodeCademy <a href="https://www.codecademy.com/register" target="_blank">créez-en un maintenant</a>, c'est gratuit.
+        </p>
+        <p>
+          Pour suivre votre avancée, nous avons besoin de votre <strong>username CodeCademy</strong>. Vous
+          pouvez le trouver sur votre page <a href="https://www.codecademy.com/account" target="_blank">Account</a>.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          Vous <strong>pouvez</strong> candidater même si vous n'avez pas encore terminé la track afin de prendre rendez-vous avec nous.
+        </p>
+      codecademy_modal_close_button: "J'ai trouvé mon username"
       apply_btn: "Postulez à "
       please_wait: "Patientez..."
       pre_course_language: 'Cours en '

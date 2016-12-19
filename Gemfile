@@ -13,6 +13,10 @@ gem 'redis-rails'
 gem 'devise'
 gem "omniauth-github"
 
+gem 'sidekiq'
+gem 'sidekiq_snitch'
+gem 'sidekiq-failures'
+
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
 gem "uglifier"
@@ -40,6 +44,7 @@ gem 'cloudinary'
 gem "attachinary", github: "assembler/attachinary"
 gem "jquery-fileupload-rails"
 gem "coffee-rails"
+gem "linkedin-oauth2", "~> 1.0"
 
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'

@@ -54,6 +54,10 @@ class PagesController < ApplicationController
     @statistics = @client.statistics
   end
 
+  def linkedin
+    render json: params.to_json
+  end
+
   private
 
   def mark_as_tracked

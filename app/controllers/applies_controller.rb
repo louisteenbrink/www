@@ -16,6 +16,7 @@
 #  tracked             :boolean          default(FALSE), not null
 #  source              :string
 #  codecademy_username :string
+#  linkedin            :string
 #
 
 class AppliesController < ApplicationController
@@ -34,6 +35,8 @@ class AppliesController < ApplicationController
 
   def create
     @application = Apply.new(application_params)
+    city = AlumniClient.new.city(@application.city_id)
+    @application.validate_ruby_codecademy_completed = true if Apply::MANDATORY_CODECADEMY_CITIES.include?(city.slug)
     if @application.save
       session[:apply_id] = @application.id
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
@@ -113,6 +116,6 @@ class AppliesController < ApplicationController
   end
 
   def application_params
-    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id, :codecademy_username)
+    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id, :codecademy_username, :linkedin)
   end
 end

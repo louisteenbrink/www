@@ -32,7 +32,40 @@
       apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
       apply_row(:phone, :tel, t(".phone"), "+33612345678", "cellphone-iphone"),
       apply_row(:source, :text, t(".source"), t(".source_placeholder"), "tag"),
+      apply_row(:linkedin, :text, t(".linkedin_html"), t(".linkedin_placeholder"), "fa-linkedin"),
+      apply_row(:codecademy_username, :text, t(".codecademy_username_html"), t(".codecademy_username_placeholder"), "fa-code"),
       apply_row(:motivation, :textarea, t(".motivation"), t(".motivation_placeholder"), "content-paste")
     ]
   }, prerender: prerender? %>
 </div>
+
+<div class="modal fade" id="codecademy" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">
+          <i class="fa fa-code"></i> CodeCademy
+        </h4>
+      </div>
+      <div class="modal-body">
+        <%= t(".codecademy_modal_body_html", faq_path: faq_path) %>
+        <% unless Apply::MANDATORY_CODECADEMY_CITIES.include?(@city['slug']) %>
+          <%= t(".codecademy_modal_can_apply_without_one_hundred_percent_html") %>
+        <% end %>
+      </div>
+      <div class="modal-footer apply-form-row-submit">
+        <input type="button" class="apply-form-submit btn" data-dismiss="modal" value="<%= t(".codecademy_modal_close_button") %>" />
+      </div>
+    </div>
+  </div>
+</div>
+<% content_for(:after_js) do %>
+  <script>
+    $(document).ready(function() {
+      $('#codecademy').on('hidden.bs.modal', function() {
+        $(document).trigger('apply-row.focus.codecademy_username');
+      })
+    })
+  </script>
+<% end %>

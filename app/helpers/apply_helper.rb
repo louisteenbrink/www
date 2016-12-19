@@ -7,7 +7,7 @@ module ApplyHelper
       param: param.to_s,
       error: @application.errors.messages[param].try(:join, ', '),
       value: @application.send(param),
-      icon: "mdi mdi-#{icon}"
+      icon: icon.starts_with?("fa") ? "fa #{icon}" : "mdi mdi-#{icon}"
     }
   end
 end
