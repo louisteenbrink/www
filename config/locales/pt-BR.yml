@@ -350,6 +350,26 @@ pt-BR:
       source_placeholder: "Quem recomendou o Le Wagon para você? Quora, Facebook, um amigo (quem?), etc."
       motivation: "Motivação"
       motivation_placeholder: "Por que Le Wagon? Qual é o seu projeto profissional?"
+      linkedin_html: Seu perfil (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=pt-BR' target='_blank'>help</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        Codecademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          Como explicamos no <a href="%{faq_path}" target="_blank">FAQ</a>, um dos pré-requisitos do Le Wagon é fazer 100% do
+          <a href="https://www.codecademy.com/learn/ruby">curso de Ruby</a> no CodeCademy.
+          Se você não tem uma conta no CodeCademy account, <a href="https://www.codecademy.com/register" target="_blank">crie uma agora</a>, é gratis!
+        </p>
+        <p>
+          Para que a gente possa acompanhar o seu progresso, você precisa informar o seu <strong>nome de usuário no CodeCademy</strong>. Você pode encontrar
+          seu nome de usuário <a href="https://www.codecademy.com/account" target="_blank">aqui</a>.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          Você <strong>pode</strong> se candidatar agora, mesmo se ainda não terminou o curso de Ruby. Assim você já pode ir agendando sua entrevista com a gente. Por enquanto a gente só quer saber seu nome de usuário!
+        </p>
+      codecademy_modal_close_button: "Encontrei meu nome de usuário!"
       apply_btn: "Candidatar-se para "
       please_wait: "Por favor aguarde..."
       pre_course_language: 'Curso em '

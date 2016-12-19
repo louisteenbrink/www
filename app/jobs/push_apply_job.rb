@@ -1,4 +1,4 @@
-class PushStudentJob < ActiveJob::Base
+class PushApplyJob < ActiveJob::Base
   def perform(apply_id)
     apply = Apply.find(apply_id)
     apply.fetch_linkedin_profile

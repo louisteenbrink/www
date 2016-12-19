@@ -42,15 +42,15 @@ class Apply < ActiveRecord::Base
   after_create :push_to_trello, if: :push_to_trello?
 
   def push_to_trello
-    PushStudentJob.perform_later(id)
-  end
-
-  def tracked?
-    tracked
+    PushApplyJob.perform_later(id)
   end
 
   def push_to_trello?
     batch_id && !Rails.env.test?
+  end
+
+  def tracked?
+    tracked
   end
 
   def batch
