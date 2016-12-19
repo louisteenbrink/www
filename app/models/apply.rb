@@ -36,7 +36,7 @@ class Apply < ActiveRecord::Base
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
 
   attr_reader :linkedin_profile
-  before_validation :fetch_linkedin_profile, unless: ->() { self.linkedin.blank? }
+  before_validation :fetch_linkedin_profile
   validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
 
   after_create :push_to_trello, if: :push_to_trello?
@@ -77,7 +77,7 @@ class Apply < ActiveRecord::Base
   end
 
   def fetch_linkedin_profile
-    return if @linkedin_profile
+    return if @linkedin_profile || linkedin.blank?
 
     require 'addressable/uri'
     uri = Addressable::URI.parse(linkedin)
