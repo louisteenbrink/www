@@ -7,11 +7,11 @@ class PushApplyJob < ActiveJob::Base
 
     if Rails.env.production?
       PushStudentToCrmRunner.new(card, apply).run
-      SubscribeToNewsletter.new(email).run
+      SubscribeToNewsletter.new(apply.email).run
 
       city = AlumniClient.new.city(apply.city_id)
       if city.mailchimp?
-        SubscribeToNewsletter.new(email, list_id: city.mailchimp_list_id, api_key: city.mailchimp_api_key).run
+        SubscribeToNewsletter.new(apply.email, list_id: city.mailchimp_list_id, api_key: city.mailchimp_api_key).run
       end
     end
   end
