@@ -89,7 +89,7 @@ EOF
     checklist.add_item("Second Instalment paid")
     checklist.add_item("Balance paid")
 
-    if @apply.linkedin_profile && @apply.linkedin_profile[:picture_urls][:total] > 0
+    if @apply.linkedin_profile && @apply.linkedin_profile[:picture_urls] && @apply.linkedin_profile[:picture_urls][:total] > 0
       url = @apply.linkedin_profile[:picture_urls][:all].first
       card.add_attachment(url) if url
     end
