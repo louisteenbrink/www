@@ -20,15 +20,18 @@ class PushToTrelloRunner
 
     linkedin = "No profile specified"
     if @apply.linkedin_profile
-      positions = nil
-      if @apply.linkedin_profile[:positions][:total] > 0
-        positions = "### Positions\n"
-        @apply.linkedin_profile[:positions][:all].each do |position|
-          positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+      if @apply.linkedin_profile[:first_name] == "private"
+        linkedin = "[View Profile](#{@apply.linkedin})"
+      else
+        positions = nil
+        if @apply.linkedin_profile[:positions][:total] > 0
+          positions = "### Positions\n"
+          @apply.linkedin_profile[:positions][:all].each do |position|
+            positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+          end
         end
-      end
 
-      linkedin = <<-EOF
+        linkedin = <<-EOF
 #{@apply.linkedin_profile[:headline]}
 #{@apply.linkedin_profile[:industry]}
 
@@ -40,6 +43,7 @@ class PushToTrelloRunner
 
 #{positions}
 EOF
+      end
     end
 
     card = ::Trello::Card.new
