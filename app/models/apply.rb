@@ -91,11 +91,7 @@ class Apply < ActiveRecord::Base
     @linkedin_profile = nil
     errors.add :linkedin, "Sorry, this does not seem to be a valid Linkedin URL" # TODO: i18n
   rescue Faraday::ClientError => e
-    if Rails.env.production?
-      Raygun.track_exception(LinkedinError.new("Apply #{id}: could not fetch Linkedin profile: #{linkedin}" + e.message))
-    else
-      raise e
-    end
+    puts "Apply #{id}: could not fetch Linkedin profile: #{linkedin}" + e.message
   end
 
   private
