@@ -32,6 +32,7 @@ class Apply < ActiveRecord::Base
   attr_accessor :skip_source_validation
   validates :source, presence: { message: I18n.translate('applies.new.source_presence_message') }, unless: :skip_source_validation
 
+  before_validation :strip_codecademy_username
   attr_accessor :validate_ruby_codecademy_completed
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
 
@@ -108,5 +109,11 @@ class Apply < ActiveRecord::Base
 
   def linkedin_url_exists
     !linkedin_profile.nil?
+  end
+
+  def strip_codecademy_username
+    unless codecademy_username.blank?
+      self.codecademy_username = codecademy_username.gsub(/^.*\.com\//, "")
+    end
   end
 end
