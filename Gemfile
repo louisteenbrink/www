@@ -26,7 +26,7 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem "react-rails"
+gem "react-rails", '1.8.2'
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
@@ -35,6 +35,7 @@ gem "jquery-slick-rails"
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
+gem 'json', '2.0.2'
 gem 'raygun4ruby'
 gem 'sitemap_generator'
 gem 'builder'
