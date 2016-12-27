@@ -61,5 +61,6 @@
   <%= render "shared/google_analytics" %>
   <%= render "shared/mixpanel" %>
   <%= render "shared/facebook_audience" if Rails.env.production?  %>
+  <%= render "shared/hotjar" if Rails.env.production? %>
 </body>
 </html>
