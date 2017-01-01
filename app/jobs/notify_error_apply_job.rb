@@ -4,6 +4,7 @@ class NotifyErrorApplyJob < ActiveJob::Base
     payload = {
       "channel": Rails.env.production? ? "students" : "test",
       "text": ":scream: Apply to *#{city}* failed. Here's the details :point_down:\n```\n#{yaml}```",
+      "username": "www",
       "attachments": [
         "color": "#C94842",
         "attachment_type": "default",
