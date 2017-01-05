@@ -137,18 +137,33 @@ class ApplyForm extends React.Component {
   }
 
   componentDidMount() {
+    this.setBatchCodeCademyCompletedModalParagraph();
+
     PubSub.subscribe('setActiveBatch', (msg, data) => {
       this.setState({
         activeBatch: data
-      })
-    })
+      });
+
+      this.setBatchCodeCademyCompletedModalParagraph();
+    });
+  }
+
+  setBatchCodeCademyCompletedModalParagraph(batch) {
+    var $paragraph = $('.can-apply-without-codecademy-completed');
+    if ((batch || this.state.activeBatch).force_completed_codecademy_at_apply) {
+      $paragraph.hide();
+    } else {
+      $paragraph.show();
+    }
   }
 
   setActiveCity(city) {
     if (this.state.activeCity !== city) {
-      this.setState({ activeCity: city, activeBatch: this.firstBatch(city) })
+      batch = this.firstBatch(city);
+      this.setState({ activeCity: city, activeBatch: batch });
       history.replaceState({}, '', this.props.apply_path.replace(':city', city.slug));
       document.title = this.props.i18n.page_title.replace('%{city}', city.name);
+      this.setBatchCodeCademyCompletedModalParagraph(batch);
     }
   }
 

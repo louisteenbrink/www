@@ -50,9 +50,9 @@
       </div>
       <div class="modal-body">
         <%= t(".codecademy_modal_body_html", faq_path: faq_path) %>
-        <% unless Apply::MANDATORY_CODECADEMY_CITIES.include?(@city['slug']) %>
+        <div class="can-apply-without-codecademy-completed">
           <%= t(".codecademy_modal_can_apply_without_one_hundred_percent_html") %>
-        <% end %>
+        </div>
       </div>
       <div class="modal-footer apply-form-row-submit">
         <input type="button" class="apply-form-submit btn" data-dismiss="modal" value="<%= t(".codecademy_modal_close_button") %>" />
