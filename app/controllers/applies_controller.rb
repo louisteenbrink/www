@@ -31,21 +31,29 @@ class AppliesController < ApplicationController
       redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug'])
     else
       @application = Apply.new(source: params[:source])
+      set_validate_ruby
     end
   end
 
   def create
     @application = Apply.new(application_params)
-    city = AlumniClient.new.city(@application.city_id)
-    @application.validate_ruby_codecademy_completed = true if Apply::MANDATORY_CODECADEMY_CITIES.include?(city.slug)
+    set_validate_ruby
+
     if @application.save
       session[:apply_id] = @application.id
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
+      city = AlumniClient.new.city(@application.city_id)
       NotifyErrorApplyJob.perform_later(city.name, @application.attributes, @application.errors.full_messages) unless @application.last_name.blank?
       prepare_apply_form
       render :new
     end
+  end
+
+  def validate
+    @application = Apply.new(application_params)
+    set_validate_ruby
+    @application.valid?
   end
 
   def new_hec
@@ -119,5 +127,14 @@ class AppliesController < ApplicationController
 
   def application_params
     params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id, :codecademy_username, :linkedin)
+  end
+
+  def set_validate_ruby
+    return unless @application.batch_id
+
+    batch = AlumniClient.new.batch(@application.batch_id)
+    if batch.force_completed_codecademy_at_apply
+      @application.validate_ruby_codecademy_completed = true
+    end
   end
 end

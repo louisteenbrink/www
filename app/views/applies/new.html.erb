@@ -25,17 +25,7 @@
       course_language: course_language,
       post_price: post_price
     },
-    rows: [
-      apply_row(:first_name, :text, t(".first_name"), "Alan", "account"),
-      apply_row(:last_name, :text, t(".last_name"), "Turing", "format-text"),
-      apply_row(:age, :text, t(".age"), "42", "crown"),
-      apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
-      apply_row(:phone, :tel, t(".phone"), "+33612345678", "cellphone-iphone"),
-      apply_row(:source, :text, t(".source"), t(".source_placeholder"), "tag"),
-      apply_row(:linkedin, :text, t(".linkedin_html"), t(".linkedin_placeholder"), "fa-linkedin"),
-      apply_row(:codecademy_username, :text, t(".codecademy_username_html"), t(".codecademy_username_placeholder"), "fa-code"),
-      apply_row(:motivation, :textarea, t(".motivation"), t(".motivation_placeholder"), "content-paste")
-    ]
+    rows: apply_rows,
   }, prerender: prerender? %>
 </div>
 
@@ -50,9 +40,9 @@
       </div>
       <div class="modal-body">
         <%= t(".codecademy_modal_body_html", faq_path: faq_path) %>
-        <% unless Apply::MANDATORY_CODECADEMY_CITIES.include?(@city['slug']) %>
+        <div class="can-apply-without-codecademy-completed">
           <%= t(".codecademy_modal_can_apply_without_one_hundred_percent_html") %>
-        <% end %>
+        </div>
       </div>
       <div class="modal-footer apply-form-row-submit">
         <input type="button" class="apply-form-submit btn" data-dismiss="modal" value="<%= t(".codecademy_modal_close_button") %>" />
@@ -60,12 +50,3 @@
     </div>
   </div>
 </div>
-<% content_for(:after_js) do %>
-  <script>
-    $(document).ready(function() {
-      $('#codecademy').on('hidden.bs.modal', function() {
-        $(document).trigger('apply-row.focus.codecademy_username');
-      })
-    })
-  </script>
-<% end %>

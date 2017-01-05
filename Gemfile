@@ -2,6 +2,7 @@ source "https://rubygems.org"
 ruby File.read(".ruby-version").strip
 
 gem "rails", "5.0.1"
+gem "jbuilder"
 gem 'responders', '~> 2.0'
 gem "pg"
 gem "figaro"
