@@ -81,6 +81,10 @@ class Apply < ActiveRecord::Base
   def fetch_linkedin_profile
     return if @linkedin_profile || linkedin.blank?
 
+    unless linkedin =~ /www\.linkedin\.com\/in/
+      fail Faraday::ResourceNotFound, nil
+    end
+
     require 'addressable/uri'
     uri = Addressable::URI.parse(linkedin)
     uri.query_values = nil
@@ -97,6 +101,8 @@ class Apply < ActiveRecord::Base
   private
 
   def ruby_codecademy_completed
+    return if codecademy_username.blank?
+
     client = CodecademyCheckerClient.new
     result = client.ruby_progress(codecademy_username)
     if result["error"]

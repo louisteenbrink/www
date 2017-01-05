@@ -4,6 +4,7 @@ class ApplyForm extends React.Component {
 
     this.state = {
       activeCityGroup: this.props.city_group,
+      rows: this.props.rows,
       activeCity: this.props.city,
       activeBatch: this.firstBatch(this.props.city),
       submitting: false
@@ -115,8 +116,8 @@ class ApplyForm extends React.Component {
                       </div>
                     </div>
                   </div>
-                  {this.props.rows.map( (row, index) => {
-                    return <ApplyFormRow key={index} {... row} />
+                  {this.state.rows.map( (row, index) => {
+                    return <ApplyFormRow key={index} {... row} validate={this.validate.bind(this)} />
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
@@ -146,6 +147,29 @@ class ApplyForm extends React.Component {
 
       this.setBatchCodeCademyCompletedModalParagraph();
     });
+  }
+
+  validate(param, value) {
+    payload = {};
+    payload[param] = value;
+    payload['application[batch_id]'] = this.state.activeBatch.id;
+
+    $.ajax({
+      url: Routes.validate_apply_path({ format: 'json' }),
+      type: 'POST',
+      data: payload,
+      success: (data) => {
+        var newStateRows = _.map(this.state.rows, (row) => {
+          if (`application[${row.param}]` == param) {
+            var testedRow = _.find(data.rows, (row) => `application[${row.param}]` === param)
+            return testedRow;
+          } else {
+            return row;
+          }
+        });
+        this.setState({ rows: newStateRows });
+      }
+    })
   }
 
   setBatchCodeCademyCompletedModalParagraph(batch) {

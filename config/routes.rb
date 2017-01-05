@@ -56,6 +56,7 @@ Rails.application.routes.draw do
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
     get "candidatar/(:city)" => "applies#new", locale: :"pt-BR", as: :apply_pt_br
     post "apply/(:city)" => "applies#create", as: :apply
+    post "apply/validate" => "applies#validate", as: :validate_apply
   end
 
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }

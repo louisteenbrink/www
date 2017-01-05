@@ -43,10 +43,17 @@ class AppliesController < ApplicationController
       session[:apply_id] = @application.id
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
+      city = AlumniClient.new.city(@application.city_id)
       NotifyErrorApplyJob.perform_later(city.name, @application.attributes, @application.errors.full_messages) unless @application.last_name.blank?
       prepare_apply_form
       render :new
     end
+  end
+
+  def validate
+    @application = Apply.new(application_params)
+    set_validate_ruby
+    @application.valid?
   end
 
   def new_hec
