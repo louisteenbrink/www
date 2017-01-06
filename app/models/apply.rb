@@ -81,7 +81,7 @@ class Apply < ActiveRecord::Base
   def fetch_linkedin_profile
     return if @linkedin_profile || linkedin.blank?
 
-    unless linkedin =~ /www\.linkedin\.com\/in/
+    unless linkedin =~ /linkedin\.com\/in/
       fail Faraday::ResourceNotFound, nil
     end
 
