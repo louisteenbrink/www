@@ -1,4 +1,5 @@
 require "trello"
+require "open-uri"
 
 class PushToTrelloRunner
   include MoneyRails::ActionViewExtension
@@ -91,7 +92,18 @@ EOF
 
     if @apply.linkedin_profile && @apply.linkedin_profile[:picture_urls] && @apply.linkedin_profile[:picture_urls][:total] > 0
       url = @apply.linkedin_profile[:picture_urls][:all].first
-      card.add_attachment(url) if url
+      if url
+        file = Tempfile.new(["linkedin_picture", ".jpg"])
+        file.binmode
+        begin
+          file.write open(url).read
+          card.add_attachment(File.open(file.path), "linkedin_picture.jpg")
+        rescue Exception => e
+          file.close
+          file.unlink
+          raise e
+        end
+      end
     end
 
     card
