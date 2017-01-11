@@ -36,6 +36,7 @@ class Apply < ActiveRecord::Base
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
 
   attr_reader :linkedin_profile
+  before_validation :strip_linkedin
   before_validation :fetch_linkedin_profile
   validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
 
@@ -114,6 +115,12 @@ class Apply < ActiveRecord::Base
 
   def linkedin_url_exists
     !linkedin_profile.nil?
+  end
+
+  def strip_linkedin
+    unless linkedin.blank?
+      self.linkedin = linkedin.strip
+    end
   end
 
   def strip_codecademy_username
