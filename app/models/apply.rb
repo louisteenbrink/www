@@ -125,7 +125,7 @@ class Apply < ActiveRecord::Base
 
   def strip_codecademy_username
     unless codecademy_username.blank?
-      self.codecademy_username = codecademy_username.gsub(/^.*\.com\//, "")
+      self.codecademy_username = codecademy_username.gsub(/^.*\.com\/([^\/]+\/)?/, "")
     end
   end
 end
