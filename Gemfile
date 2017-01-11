@@ -47,6 +47,8 @@ gem "attachinary", github: "assembler/attachinary"
 gem "jquery-fileupload-rails"
 gem "coffee-rails"
 gem "linkedin-oauth2", "~> 1.0"
+gem 'kaminari'
+gem "nokogiri"
 
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'

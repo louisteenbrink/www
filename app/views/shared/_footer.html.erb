@@ -89,7 +89,10 @@
             <a href="mailto:contact@lewagon.org">Contact</a>
           </div>
           <div>
-            <a href="/blog">Blog</a>
+            <%= link_to 'Blog', blog_path %>
+          </div>
+          <div>
+            <%= link_to 'Shop', shop_path %>
           </div>
           <div>
             <%= link_to t(".press"), send(:"press_#{locale.to_s.underscore}_path") %>

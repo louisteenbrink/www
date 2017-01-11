@@ -1,0 +1,29 @@
+<%= content_for(:title)       { (t ".title").html_safe }       %>
+<%= content_for(:description) { t ".description" } %>
+<%= content_for(:image_url) { image_url 'social/shop_card.png' } %>
+
+<h1><%= t('.title')%><small><%= t('.description')%></small></h1>
+
+<div class="container">
+  <div id="myShop"><a href="//shop.spreadshirt.fr/lewagon">lewagon</a></div>
+</div>
+
+<script>
+  var spread_shop_config = {
+    shopName: 'lewagon',
+    locale: 'fr_FR',
+    prefix: '//shop.spreadshirt.fr',
+    baseId: 'myShop'
+  };
+</script>
+
+<script type="text/javascript" src="//shop.spreadshirt.fr/shopfiles/shopclient/shopclient.nocache.js"></script>
+
+<% content_for :after_js do %>
+  <script>
+    setTimeout(() => {
+      link = document.getElementById('startpageButton')
+      link.setAttribute("href", "<%= request.original_url %>")
+    }, 3000)
+  </script>
+<% end %>

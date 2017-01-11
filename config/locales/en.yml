@@ -41,7 +41,13 @@ en:
     testimonials:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
+      more_reviews: More reviews of Le Wagons
+    testimonials_new:
+      what_our_students_say: Students Reviews
+      students_think_of_us: What our students think of us
       more_reviews: More reviews of Le Wagon
+      love_messages: Student Reviews
+      show_more_testimonials: Show more testimonials
     features:
       read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."
@@ -282,6 +288,9 @@ en:
       live_go_to_meetup: "See all our Meetup events"
     live_player_video:
       live_coming_soon: "Coming soon..."
+    shop:
+      title: "Le Wagon's shop"
+      description: "Because coders got style"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
@@ -304,6 +313,9 @@ en:
       batch_title: " amazing humans right here"
   students:
     index:
+      meta_title: "Le Wagon's Alumni"
+      meta_description_html: |
+        %{count}+ talented students sharing the same skills & passion
       title: Students' projects - Startups & web apps made in Le Wagon
       description: |
         Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
@@ -316,6 +328,7 @@ en:
       discover_us: Discover our program
       discover_our_stories: Discover our alumni stories
       watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: Show more stories
   cities:
     show:
       title: "Coding Bootcamp in %{city} - Le Wagon - Learn to code in 9 weeks"
@@ -382,6 +395,15 @@ en:
       read_more: Read more testimonials from our bootcamp's students
       title: "%{story}"
       description: "%{story}"
+  projects:
+    index:
+      meta_title_html: |
+        Browse among %{count}+ projects
+      meta_description:
+        built by our alumni in 2 weeks
+      projects_details_html: |
+        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
+      show_more_projects: Show more projects
   posts:
     index:
       title: Le Wagon - Technical Entrepreneurship Blog

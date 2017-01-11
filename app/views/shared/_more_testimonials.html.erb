@@ -1,0 +1,20 @@
+<% @testimonials.each do |testimonial| %>
+  <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
+    <div class="testimonial-card">
+      <div class="testimonial-body">
+        <%= cl_adaptive_image_tag testimonial['user']['photo_path'], class: 'alumni-picture', width: 230, height: 230, crop: :fill %>
+        <div class='testimonial-content'>
+          <%= testimonial['content'].capitalize %>
+        </div>
+        <div class="testimonial-author">
+          <div class="testimonial-user-name">
+            <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
+          </div>
+          <div class='testimonial-user-batch'>
+            Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+<% end %>

@@ -1,0 +1,4 @@
+<% if params[:project_page] %>
+  $('#projects_container').append("<%= j render 'more_projects', projects: @projects %>");
+  $('#paginator_projects').html('<%= escape_javascript(link_to_next_page(@projects, I18n.t(".projects.index.show_more_projects"), :remote => true, :param_name => 'project_page', id: 'load_more_projects', class: "more-projects")) %>');
+<% end %>
