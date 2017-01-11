@@ -304,7 +304,7 @@ en:
   - question: |
         How long does preparatory work take?
     answer: |
-        You must complete [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true). It should
+        You must complete the [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy. It should
         take you about 10 hours to complete.
   - question: |
         Do I need to speak French?
