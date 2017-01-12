@@ -119,7 +119,7 @@ class Apply < ActiveRecord::Base
 
   def strip_linkedin
     unless linkedin.blank?
-      self.linkedin = linkedin.strip
+      self.linkedin = URI.unescape(linkedin).gsub(/[^0-9A-zÀ-ÿ:\/\.-]/, '')
     end
   end
 
