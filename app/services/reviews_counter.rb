@@ -11,7 +11,7 @@ class ReviewsCounter
       html_switchup = Nokogiri::HTML(open("https://www.switchup.org/bootcamps/le-wagon"))
       switchup_data = html_switchup.search("span[itemprop='reviewcount']").text.to_i
 
-      return coursereport_data + switchup_data
+      return ((coursereport_data + switchup_data)/ 5) * 5
     end
   end
 end

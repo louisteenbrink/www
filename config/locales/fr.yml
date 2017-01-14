@@ -398,6 +398,8 @@ fr:
       projects_details_html: |
         <strong>Découvrez plus de %{count}+ products</strong><small>réalisés par nos alumni en 10 jours</small>
       show_more_projects: Voir plus de projets
+    more_projects:
+      project_cta: Voir le projet
   posts:
     index:
       title: Le Wagon Blog - Culture technique entrepreneuriale

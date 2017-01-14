@@ -404,6 +404,8 @@ en:
       projects_details_html: |
         <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
       show_more_projects: Show more projects
+    more_projects:
+      project_cta: Checkout the app
   posts:
     index:
       title: Le Wagon - Technical Entrepreneurship Blog

@@ -8,6 +8,16 @@
           </div>
         <% end %>
         <div class="project-card-details">
+          <h2><%= project.name %></h2>
+          <span><%= project.tagline[I18n.locale.to_s] %></span>
+          <a class="go-to-project" target='_blank' href='<%= project.url %>'>
+            <%= t('.project_cta') %>
+          </a>
+          <i>
+            <% if project.city.present? %>
+              <%= project.city['name'] %>, Batch #<%= project.batch %>
+            <% end %>
+          </i>
           <div class="project-makers">
             <% project.makers.each do |maker| %>
               <% maker = OpenStruct.new maker %>
@@ -18,15 +28,6 @@
               </div>
             <% end %>
           </div>
-          <a target='_blank' href='<%= project.url %>'>
-            <h2><%= project.name %></h2>
-          </a>
-          <span><%= project.tagline[I18n.locale.to_s] %></span>
-          <i>
-            <% if project.city.present? %>
-              <%= project.city['name'] %> - Batch #<%= project.batch %>
-            <% end %>
-          </i>
         </div>
       </div>
     <% end %>
