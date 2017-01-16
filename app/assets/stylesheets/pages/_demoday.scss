@@ -3,6 +3,52 @@
 /******************************************************************************/
 
 .demoday-show {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 620px;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(255,255,255,1) 3%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 90%), asset-url('banners/banner-demoday.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 100px auto 90px;
+    width: 100%;
+    font-weight: 900;
+    z-index: 1;
+
+    @media (max-width: 420px) {
+      padding: 0 20px;
+      margin-bottom: 60px;
+      text-align: center;
+      font-size: 34px;
+    }
+
+    small {
+      margin-top: 10px;
+
+      @media (max-width: 747px) {
+        max-width: 460px;
+        text-align: center;
+        line-height: 3rem;
+      }
+    }
+  }
+
   .banner-top {
     height: 300px;
     background-position-y: -124px;
@@ -21,6 +67,9 @@
   }
 
   .demo-section {
+    position: relative;
+    z-index: 1;
+
     @media (max-width: 480px) {
       padding: 0;
     }
@@ -178,6 +227,7 @@
     }
 
     .dropdown-menu {
+      margin: 1px 0 0;
       border: none !important;
       border-radius: 0 !important;
       box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 0 1px transparent !important;
@@ -253,6 +303,7 @@
 .player-container {
   margin: 3em 40px 1em 40px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1 );
+  z-index: 1;
 
   @media (max-width: 1200px) {
     margin: 3em 0 1em 0;
@@ -512,6 +563,7 @@
       justify-content: space-between;
       width: 100%;
       max-width: 325px;
+      background: white;
 
       @media (max-width: 992px) {
         max-width: 100%;

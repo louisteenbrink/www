@@ -10,11 +10,17 @@
         <div class="project-card-details">
           <h2><%= project.name %></h2>
           <span><%= project.tagline[I18n.locale.to_s] %></span>
-          <a class="go-to-project" target='_blank' href='<%= project.url %>'>
-            <%= t('.project_cta') %>
-          </a>
+          <% if project.youtube_id.present? %>
+            <%= link_to with_slug_demoday_path(project.batch, project.slug), class: "go-to-project" do %>
+              <%= t('.project_cta') %>
+            <% end %>
+          <% else %>
+            <%= link_to project.url, class: "go-to-project", target: "_blank" do %>
+              <%= t('.project_cta') %>
+            <% end %>
+          <% end %>
           <i>
-            <% if project.city.present? %>
+            <% if project.batch.present? %>
               <%= project.city['name'] %>, Batch #<%= project.batch %>
             <% end %>
           </i>
