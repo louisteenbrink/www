@@ -39,7 +39,6 @@ class PagesController < ApplicationController
   end
 
   def employers
-    @positions = @client.positions
   end
 
   def stack
