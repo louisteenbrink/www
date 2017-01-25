@@ -116,7 +116,7 @@ EOF
   end
 
   def list_id
-    Rails.env.production? ? @apply.batch.trello_inbox_list_id : '54024112c975d17cd1180489' # Will go to "TEST PROMOS in dev"
+    Rails.env.production? ? @apply.batch.trello_inbox_list_id : ENV['TRELLO_DEV_LIST_ID']
   end
 
   def price

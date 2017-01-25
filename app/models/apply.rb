@@ -47,7 +47,7 @@ class Apply < ActiveRecord::Base
   end
 
   def push_to_trello?
-    batch_id && !Rails.env.test?
+    batch_id && Rails.env.production?
   end
 
   def tracked?

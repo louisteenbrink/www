@@ -4,9 +4,9 @@ class PushApplyJob < ActiveJob::Base
     apply.fetch_linkedin_profile
 
     card = PushToTrelloRunner.new(apply).run
+    PushStudentToCrmRunner.new(card, apply).run
 
     if Rails.env.production?
-      PushStudentToCrmRunner.new(card, apply).run
       SubscribeToNewsletter.new(apply.email).run
 
       city = AlumniClient.new.city(apply.city_id)
