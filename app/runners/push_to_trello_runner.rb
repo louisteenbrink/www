@@ -25,10 +25,14 @@ class PushToTrelloRunner
         linkedin = "[View Profile](#{@apply.linkedin})"
       else
         positions = nil
-        if @apply.linkedin_profile[:positions][:total] > 0
+        if @apply.linkedin_profile[:positions] && @apply.linkedin_profile[:positions][:total] > 0 && @apply.linkedin_profile[:positions][:all]
           positions = "### Positions\n"
           @apply.linkedin_profile[:positions][:all].each do |position|
-            positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+            if position[:start_date]
+              positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+            else
+              positions << "#{position[:title]} @ #{position[:company][:name]}\n"
+            end
           end
         end
 
