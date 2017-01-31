@@ -7,7 +7,7 @@ module CityCustomHelper
 
   def course_language
     {
-      # montreal: t('montreal.course_language')
+      montreal: t('montreal.course_language')
     }.stringify_keys
   end
 end
