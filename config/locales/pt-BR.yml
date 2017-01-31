@@ -46,7 +46,7 @@ pt-BR:
     testimonials:
       what_our_students_say: Reviews dos estudantes
       students_think_of_us: O que nossos estudantes pensam da gente
-      more_reviews: Mais reviews do Le Wagon
+      more_reviews: Mais resenhas do Le Wagon
     testimonials_new:
       what_our_students_say: Resenhas dos estudantes
       students_think_of_us: O que nossos estudantes pensam da gente
@@ -57,7 +57,7 @@ pt-BR:
       read_full_program: Leia o programa completo
       pedagogy_matters_html: "Programe do jeito startup."
       pedagogy_tagline_html: |
-        Aprenda a escrever código limpo e a construir produtos web. <br />Junte-se a mais <strong>excitante comunidade de alunos da Europa</strong>.
+        Aprenda a escrever código limpo e a construir produtos web. <br />Junte-se a <strong> comunidade mais animada de alunos do Mundo</strong>.
       web_development: Aprenda desenvolvimento web
       web_development_details: |
         Aprenda tudo sobre Ruby, SQL e Rails
@@ -87,11 +87,11 @@ pt-BR:
       build_product: Construa o seu produto
       build_product_details: |
         Ninguém vai te ensinar a construir produtos web como nós.
-        Kudoz levantou 1.2 milhões de euros, Impact esta impactando a política, MaShareEcola escolas, Medpicas o sistema de saúde, Krawd marketing...
+        Kudoz levantou 1.2 milhões de euros, Impact esta impactando a política, MaShareEcole escolas, Medpics o sistema de saúde, Krawd o marketing...
         e vários outros projetos estão começando a aparecer.
       land_a_job: Encontre o trabalho dos seus sonhos
       land_a_job_details: |
-        Trabalhe como desenvolvedor junior para Stripe, Molotov, Compass, 55, Save, etc..
+        Trabalhe como desenvolvedor junior para Stripe, Gympass, PSafe, Vindi, etc..
         Nós vamos te ajudar a encontrar o trabalho dos seus sonhos, seja como dev junior, product manager
         ou growth hacker. Discuta com algum de nossos estudantes para saber mais!
       checkout: Descubra você mesmo.
@@ -242,7 +242,7 @@ pt-BR:
       yoga: "Hora do Yoga, pra relaxar e esvaziar a cabeça."
       live_code: "Sessão Live-code: vamos ver alguns dos desafios do dia e corrigi-los do zero em na tela gigante"
       talk: |
-        Masterclass empreendedor (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), ou workshops técnico (UX, design, code)
+        Masterclass empreendedor (Fabien Mendez CEO Loggi, Riq Lima CEO Worldpackers...), ou workshops técnico (UX, design, code)
     stack:
       built_by: 'Website criado por...'
       with_tools: 'Com essas ferramentas incríveis...'
@@ -258,7 +258,7 @@ pt-BR:
     press:
       title: Eles falaram do Le Wagon
     employers:
-      title: Rede de contratação Le Wagon - contrate alunos do melhor bootcamp de código da Europa
+      title: Rede de contratação Le Wagon - contrate alunos do melhor bootcamp de código da Europa e America Latina
       description: Junte-se a nós como parceiro e receba alertas sobre nossos novos candidatos e eventos.
       hiring_tagline_html: Junte-se a nós como parceiros contratantes. <strong>Trabalhe com nossos alunos</strong>.
       join_our_network: Junte-se a nossa rede
@@ -280,7 +280,7 @@ pt-BR:
       operational_details: |
         Nossos estudantes construíram aplicativos ruby on Rails. Eles conhecem
         as boas práticas para trabalhar numa startup tech. Eles podem implementar
-        funcionalidades no primeiro dia de trabalho como dev junior. Como PM ou growth marketer,
+        funcionalidades no primeiro dia de trabalho como dev junior. Como product manager ou growth hacker,
         eles serão excelentes em conectar questões de trabalho com desenvolvimento
         técnico.
       wanna_join: Quer fazer parte do nosso network?
@@ -295,7 +295,7 @@ pt-BR:
       live_coming_soon: "Em breve..."
     shop:
       title: "Le Wagon's shop"
-      description: "Because coders got style"
+      description: "Porque coders tem estilo :)"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
@@ -308,7 +308,7 @@ pt-BR:
       batch_brazilian: "Português"
     batch_demoday:
       player:
-        no_video: Nenhum vídeo disponíve
+        no_video: Nenhum vídeo disponível
         batch_intro_html: |
           %{count} alunos participaram do Le Wagon em %{city_name} entre o %{batch_start_date} e o %{batch_end_date}. Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!
         product: "Produtos"
@@ -320,7 +320,7 @@ pt-BR:
     index:
       meta_title: "Le Wagon's Alumni"
       meta_description_html: |
-        %{count}+ talented students sharing the same skills & passion
+        %{count}+ estudantes talentosos compartilhando as mesmas habilidades e paixão
       title: Os projetos de nossos alunos - Startups e aplicativos web made in Le Wagon
       description: |
         Descubra os projetos das promoções anteriores do Le Wagon. Mais de 400 empreendedores já conquistaram super-poderes, e você ?
@@ -333,7 +333,7 @@ pt-BR:
       discover_us: Descubra nosso programa
       discover_our_stories: Descubra a historia de nossos alunos
       watch_demo_day_title_html: "Assista ao nosso último Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
-      show_more_stories: Show more stories
+      show_more_stories: Mostrar mais historias
   cities:
     show:
       title: "Bootcamp de programação em %{city} - Le Wagon - Aprenda a codar em 9 semanas"
@@ -401,14 +401,14 @@ pt-BR:
   projects:
     index:
       meta_title_html: |
-        Browse among %{count}+ projects
+        Navegar entre %{count}+ projetos
       meta_description:
-        built by our alumni in 2 weeks
+        construidos pelos nossos alunos em 2 semanas
       projects_details_html: |
-        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
-      show_more_projects: Show more projects
+        <strong>Navegar entre %{count}+ projetos</strong><small>construidos pelos nossos alunos em 2 semanas</small>
+      show_more_projects: Mostrar mais projetos
     more_projects:
-      project_cta: Checkout the app
+      project_cta: Veja o site/app
   posts:
     index:
       title: Le Wagon - Blog de Empreendedorismo digital
