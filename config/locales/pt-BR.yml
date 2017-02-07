@@ -341,6 +341,7 @@ pt-BR:
         Le Wagon está em %{city}. Você quer aprender a programar? Dedique 9 semanas da sua vida pra mudar ela completamente!
       catchline_html: "Mude sua vida: <strong>aprenda a codar</strong> com <strong>Le Wagon</strong>"
       call: 'Ligar para %{name}:'
+      email: 'Contactar %{name}'
       city_arrival_html: "Bootcamp de programação em <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Candidatar-se<span class='hidden-xs'> para 9 semanas</span>"
       staff: "Professores em %{city}"

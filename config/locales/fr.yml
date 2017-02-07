@@ -329,6 +329,7 @@ fr:
         Le Wagon débarque à %{city}. Changez de vie, apprenez à coder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
       catchline_html: "<strong>Apprenez à coder</strong> avec <strong>Le Wagon</strong>"
       call: "Appeler %{name} :"
+      email: 'Contacter %{name}'
       city_arrival_html: "Formation développeur web à <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Postulez<span class='hidden-xs'> pour 9 semaines</span>"
       staff: "L'équipe à %{city}"

@@ -27,7 +27,14 @@
         <%= @city['contact_phone_number'] %>
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
-    <% else %>
+    <% end %>
+    <% if @city['email'] %>
+      <a href="mailto:<%= @city['email'] %>" class="banner-cta-item">
+        <%= t(".email", name: @city['contact_phone_number_name']) %>
+        &nbsp; <i class="fa fa-envelope"></i>
+      </a>
+    <% end %>
+    <% if !@city['contact_phone_number_displayed'] && @city['email'].blank? %>
       <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'banner-cta-item hidden-xs' do %>
         <%= t(".discover_us") %>
       <% end %>
