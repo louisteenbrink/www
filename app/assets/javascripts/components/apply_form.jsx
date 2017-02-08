@@ -125,7 +125,7 @@ class ApplyForm extends React.Component {
                         {this.props.i18n.pre_course_language}
                         <strong>{this.props.i18n.course_language[this.state.activeCity.slug] || this.props.i18n['language_' + this.state.activeCity.course_locale]}</strong>
                       </div>
-                      {this.props.i18n.price}: <strong>{this.state.activeBatch.price}</strong> {this.props.i18n.post_price[this.state.activeCity.slug]}
+                      {this.props.i18n.price}: <strong>{this.state.activeBatch.price}</strong> <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}}></span>
                     </div>
                     {submitButton}
                   </div>
