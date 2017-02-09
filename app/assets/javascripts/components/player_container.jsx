@@ -34,7 +34,7 @@ class PlayerContainer extends React.Component {
                </div>
       } else {
         var coverStyle = {
-          backgroundImage: "url(" + this.props.batch.cover_image.replace('development', 'production') + ")"
+          backgroundImage: "url(" + this.props.batch.cover_image + ")"
         }
         main = <div className="player-placeholder" style={coverStyle}>
                 <span>{this.props.i18n.no_video}</span>

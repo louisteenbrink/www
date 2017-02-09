@@ -7,9 +7,10 @@
 
 <div class="banner-container">
   <div class="container">
+
     <div class="banner banner-top banner-gradient text-center"
-      <% if @city["city_picture"].present? %>
-        style="background-image: url('<%= image_path(@city["city_picture"])%>');"
+      <% if @city["city_background_picture_path"].present? %>
+        style="background-image: url('<%= cl_image_path @city["city_background_picture_path"], crop: :fill, width: 1140 %>');"
       <% end %>
     >
       <div class="banner-gradient-shadow"></div>
@@ -60,9 +61,9 @@
 <%= render "shared/features", wrapper_up: !@city["marketing_specifics"].present? %>
 
 
-<% if @city["classroom_picture"] %>
+<% if @city["classroom_background_picture_path"] %>
 <div class="banner-container">
-  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path(@city["classroom_picture"])%>'); height: 70vh; background-position: center;" id="banner-city">
+  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= cl_image_path(@city["classroom_background_picture_path"], width: 1280, crop: :fill)%>'); height: 70vh; background-position: center;" id="banner-city">
   </div>
 </div>
 <% end %>
@@ -180,9 +181,9 @@
   </div>
 </div>
 
-<% if @city["location"].present? && @city["location_picture"].present? %>
+<% if @city["location"].present? && @city["location_background_picture_path"].present? %>
 <div class="location-overlay">
-  <div id="location" class="banner banner-flat" style="background-image: url('<%= image_path(@city["location_picture"])%>');">
+  <div id="location" class="banner banner-flat" style="background-image: url('<%= cl_image_path(@city["location_background_picture_path"], width: 1280, crop: :fill) %>');">
     <div class="banner-flat-filter banner-flat-filter-black"></div>
     <div class="banner-content">
       <div class='location-tab-overlay'>

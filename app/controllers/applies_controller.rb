@@ -83,11 +83,17 @@ class AppliesController < ApplicationController
 
   private
 
+  include CloudinaryHelper
+
   def prepare_apply_form
     @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
       first_available_batch = city['batches'].find { |b| !b['full'] }
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
+      city['pictures'] = {
+        cover: cl_image_path(city['city_background_picture_path'], width: 790, height: 200, crop: :fill),
+        thumb: cl_image_path(city['city_background_picture_path'], height: 35, crop: :scale)
+      }
 
       city['batches'].each do |batch|
         starts_at = batch['starts_at']
