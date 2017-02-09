@@ -1,3 +1,4 @@
+<% if @testimonials %>
 <% @testimonials.each do |testimonial| %>
   <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
     <div class="testimonial-card">
@@ -17,4 +18,5 @@
       </div>
     </div>
   <% end %>
+<% end %>
 <% end %>
