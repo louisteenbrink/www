@@ -91,8 +91,8 @@ class AppliesController < ApplicationController
       first_available_batch = city['batches'].find { |b| !b['full'] }
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
       city['pictures'] = {
-        cover: cl_image_path(city['city_background_picture_path'], width: 790, height: 200, crop: :fill),
-        thumb: cl_image_path(city['city_background_picture_path'], height: 35, crop: :scale)
+        cover: cl_image_path(city['city_background_picture_path'] || "", width: 790, height: 200, crop: :fill),
+        thumb: cl_image_path(city['city_background_picture_path'] || "", height: 35, crop: :scale)
       }
 
       city['batches'].each do |batch|
