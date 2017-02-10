@@ -7,10 +7,12 @@ class ApplyFormRow extends React.Component {
     }
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      error: nextProps.error
-    })
+  componentWillUpdate(nextProps, nextState) {
+    if (nextProps.error != this.state.error) {
+      this.setState({
+        error: nextProps.error
+      })
+    }
   }
 
   componentDidUpdate() {
