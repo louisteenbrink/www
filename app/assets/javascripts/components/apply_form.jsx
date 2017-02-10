@@ -101,18 +101,23 @@ class ApplyForm extends React.Component {
                     </label>
                     <div className='apply-form-row-item'>
                       <div className='post-submissions-select'>
-                        <ReactBootstrap.DropdownButton id='batchSelector' ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
-                          {batches.map((batch, _) => {
-                            return(
-                              <BatchSelector
-                                key={`batch_${batch.id}`}
-                                batch={batch}
-                                isActive={batch.id == this.state.activeBatch.id}
-                              />
-                            )
-                          })
-                          }
-                        </ReactBootstrap.DropdownButton>
+                        <div className="dropdown btn-group">
+                          <button id="batchSelector" ref="selectType" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" className="dropdown-toggle btn btn-default">
+                            <span>{this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}</span>
+                            <span className="caret"></span>
+                          </button>
+                          <ul role="menu" className="dropdown-menu" aria-labelledby="batchSelector">
+                            {batches.map((batch, _) => {
+                              return(
+                                <BatchSelector
+                                  key={`batch_${batch.id}`}
+                                  batch={batch}
+                                  isActive={batch.id == this.state.activeBatch.id}
+                                />
+                              )
+                            })}
+                          </ul>
+                        </div>
                         <input type='hidden' name='application[batch_id]' value={this.state.activeBatch.id} />
                         <input type='hidden' name='application[city_id]' value={this.state.activeCity.id} />
                         <input type='hidden' name='locale' value={this.props.locale} />
