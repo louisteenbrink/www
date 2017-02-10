@@ -97,7 +97,7 @@ class ApplyForm extends React.Component {
                   <input type='hidden' name='authenticity_token' value={this.props.token} />
                   <div className='apply-form-row apply-form-row-first'>
                     <label>
-                      <i className='mdi mdi-calendar-multiple-check'></i>Dates
+                      <i className='mdi mdi-calendar-multiple-check'></i><span>Dates</span>
                     </label>
                     <div className='apply-form-row-item'>
                       <div className='post-submissions-select'>
