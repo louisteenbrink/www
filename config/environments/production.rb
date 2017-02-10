@@ -50,6 +50,8 @@ Rails.application.configure do
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
 
+  config.react.variant = :production
+
   config.public_file_server.headers = {
     'Cache-Control' => 'public, max-age=31536000',
     'Expires'       => 1.year.from_now.to_formatted_s(:rfc822)

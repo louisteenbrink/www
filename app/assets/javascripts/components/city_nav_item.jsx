@@ -32,7 +32,8 @@ class CityNavItem extends React.Component {
     )
   }
 
-  handleClick() {
+  handleClick(e) {
+    e.preventDefault();
     this.props.setActiveCity(this.props.city);
   }
 }

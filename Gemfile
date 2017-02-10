@@ -27,7 +27,7 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem "react-rails", '1.8.2'
+gem "react-rails", '1.10.0'
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
@@ -79,6 +79,5 @@ group :test do
 end
 
 group :production do
-  gem "therubyracer", require: 'v8'
   gem "puma"
 end

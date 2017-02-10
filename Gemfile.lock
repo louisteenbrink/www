@@ -70,7 +70,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    builder (3.2.2)
+    builder (3.2.3)
     byebug (9.0.6)
     capybara (2.11.0)
       addressable
@@ -90,7 +90,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     connection_pool (2.2.1)
     debug_inspector (0.0.2)
     devise (4.2.0)
@@ -148,7 +148,6 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.4.1)
       launchy (~> 2.2)
-    libv8 (3.16.14.17)
     linkedin-oauth2 (1.0.0)
       faraday (~> 0.9)
       hashie (~> 3.2)
@@ -181,7 +180,7 @@ GEM
     multipart-post (2.0.0)
     netrc (0.11.0)
     nio4r (1.2.1)
-    nokogiri (1.6.8.1)
+    nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     oauth (0.5.1)
     oauth2 (1.2.0)
@@ -239,9 +238,9 @@ GEM
     rails-assets-headroom.js (0.7.0)
     rails-assets-mdi (1.7.22)
     rails-assets-pubsub-js (1.5.4)
-    rails-dom-testing (2.0.1)
+    rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6.0)
+      nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails-i18n (5.0.1)
@@ -260,7 +259,7 @@ GEM
       rack
     react-bootstrap-rails (0.30.2)
       rails (>= 3.1)
-    react-rails (1.8.2)
+    react-rails (1.10.0)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
       connection_pool
@@ -285,7 +284,6 @@ GEM
       redis-store (~> 1.2.0)
     redis-store (1.2.0)
       redis (>= 2.2)
-    ref (2.0.0)
     responders (2.3.0)
       railties (>= 4.2.0, < 5.1)
     rest-client (2.0.0)
@@ -348,12 +346,9 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    therubyracer (0.12.3)
-      libv8 (~> 3.16.14.15)
-      ref
     thor (0.19.4)
     thread_safe (0.3.5)
-    tilt (2.0.5)
+    tilt (2.0.6)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.4)
@@ -418,7 +413,7 @@ DEPENDENCIES
   rails-i18n
   raygun4ruby
   react-bootstrap-rails
-  react-rails (= 1.8.2)
+  react-rails (= 1.10.0)
   redcarpet
   redis
   redis-rails
@@ -433,7 +428,6 @@ DEPENDENCIES
   simple_form
   sitemap_generator
   spring
-  therubyracer
   uglifier
 
 RUBY VERSION

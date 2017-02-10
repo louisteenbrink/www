@@ -1,3 +1,4 @@
+//= require ./init
 //= require js-routes
 //= require classnames
 //= require pubsub-js
