@@ -56,7 +56,7 @@ class ApplyFormRow extends React.Component {
       return(
         <div className={componentClasses}>
           <label htmlFor={this.name()}>
-            <i className={this.props.icon}></i>{this.props.label}
+            <i className={this.props.icon}></i><span dangerouslySetInnerHTML={{__html: this.props.label}}></span>
           </label>
           <textarea
             ref="input"

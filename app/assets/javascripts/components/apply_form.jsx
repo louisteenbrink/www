@@ -130,10 +130,14 @@ class ApplyForm extends React.Component {
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
                       <div>
-                        {this.props.i18n.pre_course_language}
+                        <span>{this.props.i18n.pre_course_language}</span>
                         <strong>{this.props.i18n.course_language[this.state.activeCity.slug] || this.props.i18n['language_' + this.state.activeCity.course_locale]}</strong>
                       </div>
-                      {this.props.i18n.price}: <strong>{this.state.activeBatch.price}</strong> <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}}></span>
+                      <div>
+                        <span>{this.props.i18n.price + ": "}</span>
+                        <strong>{this.state.activeBatch.price}</strong>
+                        <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}}></span>
+                      </div>
                     </div>
                     {submitButton}
                   </div>
