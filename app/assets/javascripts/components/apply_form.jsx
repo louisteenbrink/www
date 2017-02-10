@@ -43,7 +43,7 @@ class ApplyForm extends React.Component {
                   {otherCityGroups.map((cityGroup, index) => {
                     return(
                       <CityGroupNavItem
-                        key={index}
+                        key={`city_group_${index}`}
                         cityGroup={cityGroup}
                         setActiveCityGroup={(cityGroup) => this.setActiveCityGroup(cityGroup)}
                       />
@@ -51,10 +51,10 @@ class ApplyForm extends React.Component {
                   })}
                 </ReactBootstrap.Dropdown.Menu>
               </ReactBootstrap.Dropdown>
-              {cities.map((city, index) => {
+              {cities.map((city, _) => {
                 return (
                   <CityNavItem
-                    key={index}
+                    key={`city_nav_item_${city.id}`}
                     city={city}
                     i18n={this.props.i18n}
                     firstBatch={this.firstBatch(city)}
@@ -66,7 +66,7 @@ class ApplyForm extends React.Component {
             </div>
             <div className='apply-form-body'>
               <div className='banner-city-wrapper'>
-                {this.props.cities.map((city, index) => {
+                {this.props.cities.map((city, _) => {
 
                   var bannerClasses = classNames({
                     'banner-city banner banner-top banner-gradient text-center': true,
@@ -78,7 +78,7 @@ class ApplyForm extends React.Component {
                   };
 
                   return(
-                    <div key={index} className={bannerClasses} style={bannerCityStyle}>
+                    <div key={`city_${city.id}`} className={bannerClasses} style={bannerCityStyle}>
                       <div className="banner-gradient-shadow"></div>
                       <div className="banner-content">
                         <h1 className='glitch'>
@@ -99,10 +99,10 @@ class ApplyForm extends React.Component {
                     <div className='apply-form-row-item'>
                       <div className='post-submissions-select'>
                         <ReactBootstrap.DropdownButton id='batchSelector' ref='selectType' title={this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}>
-                          {batches.map((batch, index) => {
+                          {batches.map((batch, _) => {
                             return(
                               <BatchSelector
-                                key={index}
+                                key={`batch_${batch.id}`}
                                 batch={batch}
                                 isActive={batch.id == this.state.activeBatch.id}
                               />
@@ -117,7 +117,7 @@ class ApplyForm extends React.Component {
                     </div>
                   </div>
                   {this.state.rows.map( (row, index) => {
-                    return <ApplyFormRow key={index} {... row} validate={this.validate.bind(this)} />
+                    return <ApplyFormRow key={`apply_form_row_${index}`} {... row} validate={this.validate.bind(this)} />
                   })}
                   <div className='apply-form-row-submit'>
                     <div className='apply-form-price'>
