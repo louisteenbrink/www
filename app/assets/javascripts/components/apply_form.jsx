@@ -73,9 +73,13 @@ class ApplyForm extends React.Component {
                     'is-active': this.state.activeCity.slug == city.slug
                   })
 
-                  var bannerCityStyle = {
-                    backgroundImage: "url(" + city.pictures.cover  + ")"
-                  };
+                  var bannerCityStyle = {};
+
+                  if (city.pictures.cover) {
+                    var bannerCityStyle = {
+                      backgroundImage: "url(" + city.pictures.cover  + ")"
+                    };
+                  }
 
                   return(
                     <div key={`city_${city.id}`} className={bannerClasses} style={bannerCityStyle}>
