@@ -36,8 +36,7 @@ class ApplyForm extends React.Component {
             <div className='banner-city-nav'>
               <ReactBootstrap.Dropdown id='cityGroupSelector' ref="cityGroupSelector">
                 <ReactBootstrap.Dropdown.Toggle>
-                  {this.state.activeCityGroup.group}
-                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.icon}}></span>
+                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group + ' ' + this.state.activeCityGroup.icon}}></span>
                 </ReactBootstrap.Dropdown.Toggle>
                 <ReactBootstrap.Dropdown.Menu>
                   {otherCityGroups.map((cityGroup, index) => {
