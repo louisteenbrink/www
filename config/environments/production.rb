@@ -39,7 +39,7 @@ Rails.application.configure do
   config.middleware.use Rack::Deflater
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  # config.assets.js_compressor = :uglifier
   # config.assets.css_compressor = :sass
 
   # TODO: re-disable when react-rails fixed.
@@ -49,6 +49,8 @@ Rails.application.configure do
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
+
+  config.react.variant = :development
 
   config.public_file_server.headers = {
     'Cache-Control' => 'public, max-age=31536000',
