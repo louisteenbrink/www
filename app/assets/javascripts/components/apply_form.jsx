@@ -35,7 +35,7 @@ class ApplyForm extends React.Component {
           <div className="container banner-city-container">
             <div className='banner-city-nav'>
               <ReactBootstrap.Dropdown id='cityGroupSelector' ref="cityGroupSelector">
-                <ReactBootstrap.Dropdown.Toggle>
+                <ReactBootstrap.Dropdown.Toggle noCaret={true}>
                   <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group + ' ' + this.state.activeCityGroup.icon}}></span>
                 </ReactBootstrap.Dropdown.Toggle>
                 <ReactBootstrap.Dropdown.Menu>
