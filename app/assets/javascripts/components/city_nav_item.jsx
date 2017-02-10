@@ -21,10 +21,12 @@ class CityNavItem extends React.Component {
             {city.name}
           </div>
           <div className='city-nav-item-first-batch'>
-           {this.props.firstBatch.starts_at_short}
-           <span> / </span>
-           {this.props.i18n.pre_course_language}
-           {this.props.i18n.course_language[city.slug] || this.props.i18n['language_' + city.course_locale]}
+            {
+              this.props.firstBatch.starts_at_short
+              + " / "
+              + this.props.i18n.pre_course_language
+              + (this.props.i18n.course_language[city.slug] || this.props.i18n['language_' + city.course_locale])
+            }
           </div>
         </div>
         <div className='banner-city-miniature' style={miniatureStyle} />
