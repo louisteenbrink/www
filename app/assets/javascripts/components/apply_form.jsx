@@ -6,7 +6,7 @@ class ApplyForm extends React.Component {
       activeCityGroup: this.props.city_group,
       rows: this.props.rows,
       activeCity: this.props.city,
-      activeBatch: this.firstBatch(this.props.city),
+      activeBatch: this.batch(this.props.selected_batch_id) || this.firstBatch(this.props.city),
       submitting: false
     }
   }
@@ -214,6 +214,10 @@ class ApplyForm extends React.Component {
 
   firstBatch(city) {
     return _.filter(city.batches, (n) => { return !n.full && !n.waiting_list })[0] || city.batches[0]
+  }
+
+  batch(id) {
+    return _.filter(this.props.city.batches, (n) => { return n.id == id })[0]
   }
 
   onSubmit() {
