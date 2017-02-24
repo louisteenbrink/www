@@ -49,6 +49,7 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
+    background-color: #cdcdcd;
     overflow: hidden;
     z-index: 10;
 
@@ -150,6 +151,7 @@
 
         &:nth-child(odd) {
           width: 100%;
+          background-color: white;
 
           &:after {
             content: "";
@@ -298,6 +300,7 @@
       height: 65px;
       color: #a2a2a2;
       font-weight: 600;
+      background-color: white;
 
       &:hover {
         text-decoration: none;
