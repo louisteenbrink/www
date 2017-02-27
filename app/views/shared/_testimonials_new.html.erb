@@ -23,7 +23,9 @@
     <%= render 'shared/more_testimonials', testimonials: @testimonials %>
   </div>
   <div id="paginator-testimonials">
-    <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
+    <% if @testimonials %>
+      <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
+    <% end %>
   </div>
 </div>
 
