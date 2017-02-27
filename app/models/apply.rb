@@ -40,7 +40,7 @@ class Apply < ActiveRecord::Base
   before_validation :fetch_linkedin_profile
   validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
 
-  after_create :push_to_trello, if: :push_to_trello?
+  after_commit :push_to_trello, on: :create, if: :push_to_trello?
 
   def push_to_trello
     PushApplyJob.perform_later(id)
