@@ -8,7 +8,7 @@ class ReviewsCounter
       begin
         html_coursereport = Nokogiri::HTML(open("https://www.coursereport.com/schools/le-wagon#/reviews"))
         coursereport_data = html_coursereport.search("span[itemprop='reviewCount']").text.to_i
-      rescue OpenURI::HTTPError => e
+      rescue OpenURI::HTTPError, SocketError => e
         coursereport_data = 0
         raise e if Rails.env.development?
       end
