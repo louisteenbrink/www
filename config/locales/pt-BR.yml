@@ -292,7 +292,7 @@ pt-BR:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
       demoday_title: "Demoday quando quiser"
-      demoday_tagline: "Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!"
+      demoday_tagline: "Venha descobrir os projetos desenvolvidos pelos alunos em apenas 2 semanas usando Ruby on Rails!"
       choose_batch: "Escolher a turma"
       batch_french: "Francês"
       batch_english: "Inglês"
