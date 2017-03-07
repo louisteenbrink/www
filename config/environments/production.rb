@@ -30,6 +30,10 @@ Rails.application.configure do
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
+  config.public_file_server.headers = {
+    'Cache-Control' => 'public, max-age=31536000',
+    'Expires' => "#{1.year.from_now.to_formatted_s(:rfc822)}"
+  }
 
   # Enable deflate / gzip compression of controller-generated responses
   config.middleware.use Rack::Deflater
@@ -45,6 +49,8 @@ Rails.application.configure do
   # Asset digests allow you to set far-future HTTP expiration dates on all assets,
   # yet still be able to expire them through the digest params.
   config.assets.digest = true
+
+  config.react.variant = :production
 
   config.public_file_server.headers = {
     'Cache-Control' => 'public, max-age=31536000',

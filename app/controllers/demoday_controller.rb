@@ -1,5 +1,11 @@
 class DemodayController < ApplicationController
   def show
+    if params[:id].to_i == 0
+      return redirect_to demoday_index_path
+    elsif params[:id].to_i.to_s != params[:id]
+      return redirect_to demoday_path(params[:id].to_i)
+    end
+
     @selected_product_slug = params[:product_slug]
     @batch = @client.batch(params[:id], slug: true)
     if @selected_product_slug

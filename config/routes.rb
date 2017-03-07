@@ -56,6 +56,7 @@ Rails.application.routes.draw do
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
     get "candidatar/(:city)" => "applies#new", locale: :"pt-BR", as: :apply_pt_br
     post "apply/(:city)" => "applies#create", as: :apply
+    post "apply/validate" => "applies#validate", as: :validate_apply
   end
 
   get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
@@ -71,9 +72,11 @@ Rails.application.routes.draw do
     get "employers", to: "pages#employers", template: "employers", as: :employers
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
+    get "projects" => "projects#index", as: :projects
     get "blog", to: 'posts#index', as: :blog
     get "blog/:slug", to: 'posts#show', as: :post
     get "live", to: 'pages#live', as: :live
+    get "shop" => "pages#shop", as: :shop
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city
@@ -98,6 +101,15 @@ Rails.application.routes.draw do
 
   # Old
   get 'wagon_bar', to: redirect('/fr')
+
+  # Linkedin Token
+  get 'linkedin', to: 'pages#linkedin'
+
+  # Sidekiq
+  require "sidekiq/web"
+  authenticate :user do
+    mount Sidekiq::Web => '/sidekiq'
+  end
 
   match "*path", to: "application#render_404", via: :all
 end

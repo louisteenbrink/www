@@ -1,3 +1,6 @@
+<% positions = @client.positions %>
+
+<% cache [ 'positions', positions, locale ] do %>
 <div class="positions-overlay">
   <div class="container">
     <h2 class="section-title-home section-title-home-small">
@@ -10,7 +13,7 @@
     </p>
     <div class="positions-container">
       <div class="row">
-      <% @positions.each do |position| %>
+      <% positions.each do |position| %>
         <div class="col-xs-12 col-sm-4 col-md-3">
           <div class="card-position">
             <div class="position-company-container">
@@ -38,4 +41,4 @@
     <% end %>
   </div>
 </div>
-
+<% end %>

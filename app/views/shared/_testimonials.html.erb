@@ -1,3 +1,7 @@
+<% cache [ 'testimonials', locale ] do %>
+
+<%# Cache strategy: do not randomize testimonials at each page load %>
+<% testimonials = @client.testimonials(locale.to_s).shuffle %>
 <div class="testimonials-wrapper">
   <div class="container">
     <h2 class="section-title-home section-title-home-small">
@@ -9,35 +13,39 @@
       <%= t ".students_think_of_us" %>
     </p>
     <div class="testimonials">
-      <% @testimonials.take(12).each do |testimonial| %>
-        <% testimonial = structure testimonial %>
-        <div class="testimonial-container">
-          <div class="testimonial">
-            <div class='green-quote'>
-              <i class='mdi mdi-format-quote'></i>
+      <% testimonials.each do |testimonial| %>
+        <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
+          <div class="testimonial-container">
+            <div class="testimonial">
+              <div class='green-quote'>
+                <i class='mdi mdi-format-quote'></i>
+              </div>
+              <div class="testimonial-body">
+                <div class='testimonial-content'>
+                  <%= testimonial['content'] %>
+                </div>
+              </div>
             </div>
-            <div class="testimonial-body">
-              <div class='testimonial-content'>
-                <%= testimonial.content %>
+            <div class="testimonial-user">
+              <%= cl_adaptive_image_tag testimonial['user']['photo_path'], width: 50, height: 50, crop: :fill %>
+              <div class='testimonial-user-info'>
+                <div class="testimonial-user-name">
+                  <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
+                </div>
+                <div class='testimonial-user-batch'>
+                  Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
+                </div>
               </div>
             </div>
           </div>
-          <div class="testimonial-user">
-            <%= cl_adaptive_image_tag testimonial.user.photo_path, width: 50, height: 50, crop: :fill %>
-            <div class='testimonial-user-info'>
-              <div class="testimonial-user-name">
-                <%= testimonial.user.first_name %>  <%= testimonial.user.last_name %>
-              </div>
-              <div class='testimonial-user-batch'>
-                Batch #<%= testimonial.user.batch.slug %>, <%= testimonial.user.batch.city.name%>
-              </div>
-            </div>
-          </div>
-        </div>
+        <% end %>
       <% end %>
     </div>
     <div class="testimonials-blogs">
       <h3><%= t ".more_reviews" %></h3>
+      <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank" class="testimonials-blog">
+        <%= image_tag "switchup_badge.png" %>
+      </a>
       <a href="http://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank" class="testimonials-blog">
         <%= image_tag "techcrunch-testimonial.png" %>
       </a>
@@ -47,9 +55,7 @@
       <a href="https://www.quora.com/What-is-your-review-of-Le-Wagon" target="_blank" class="testimonials-blog">
         <%= image_tag "quora.png" %>
       </a>
-      <a href="https://www.switchup.org/bootcamps/le-wagon" target="_blank" class="testimonials-blog">
-        <%= image_tag "switchup.png" %>
-      </a>
     </div>
   </div>
 </div>
+<% end %>

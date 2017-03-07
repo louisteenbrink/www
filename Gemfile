@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 ruby File.read(".ruby-version").strip
 
-gem "rails", "5.0.0.1"
+gem "rails", "5.0.1"
+gem "jbuilder"
 gem 'responders', '~> 2.0'
 gem "pg"
 gem "figaro"
@@ -13,6 +14,10 @@ gem 'redis-rails'
 gem 'devise'
 gem "omniauth-github"
 
+gem 'sidekiq'
+gem 'sidekiq_snitch'
+gem 'sidekiq-failures'
+
 gem "jquery-rails"
 gem "sass-rails", "~> 5.0"
 gem "uglifier"
@@ -22,7 +27,7 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem "react-rails"
+gem "react-rails", '1.10.0'
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
@@ -31,7 +36,8 @@ gem "jquery-slick-rails"
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
-gem 'raygun4ruby'
+gem 'json', '2.0.2'
+gem 'appsignal'
 gem 'sitemap_generator'
 gem 'builder'
 gem 'rack-utf8_sanitizer'
@@ -40,8 +46,9 @@ gem 'cloudinary'
 gem "attachinary", github: "assembler/attachinary"
 gem "jquery-fileupload-rails"
 gem "coffee-rails"
-
-gem 'critical-path-css-rails', git: 'https://github.com/mudbugmedia/critical-path-css-rails.git'
+gem "linkedin-oauth2", "~> 1.0"
+gem 'kaminari'
+gem "nokogiri"
 
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'
@@ -72,6 +79,5 @@ group :test do
 end
 
 group :production do
-  gem "rails_12factor"
   gem "puma"
 end

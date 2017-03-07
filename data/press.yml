@@ -1,8 +1,62 @@
+- name: "Want a new job ? You could learn how to code"
+  url: http://plus55.com/brazil-business/news/2017/02/how-to-code-le-wagon-brasil
+  media: plus55
+  logo: logo-plus55.jpg
+  date: 2017-02-08
+
+- name: "Curso intensivo ensina a criar aplicatiovs e produtos para internet"
+  url: http://g1.globo.com/globo-news/jornal-das-dez/videos/v/com-muita-aula-pratica-curso-intensivo-ensina-criar-aplicativos-e-produtos-para-internet/5628909/
+  media: Globo News
+  logo: logo-globonews.jpg
+  date: 2017-02-05
+
+- name: "Um Bootcamp no Rio"
+  url: http://oglobo.globo.com/economia/um-bootcamp-no-rio-20846702
+  media: O Globo
+  logo: logo-oglobo.jpg
+  date: 2017-01-31
+
+- name: "O diploma morreu… Viva o portfolio. Esta e outras reflexões sobre o que nos prepara de fato para a vida"
+  url: http://projetodraft.com/o-diploma-morreu-viva-o-portfolio-esta-e-outras-reflexoes-sobre-o-que-nos-prepara-de-fato-para-a-vida/
+  media: Draft
+  logo: logo-draft.jpg
+  date: 2016-12-23
+
+- name: "Les HEC Entrepreneurs demain tous codeurs ?"
+  url: http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs
+  media: HEC Paris
+  logo: logo-hec.jpg
+  date: 2016-12-01
+
+- name: "Os projetos apresentados no demo day do bootcamp de programação Le Wagon"
+  url: http://gizmodo.uol.com.br/demo-day-bootcamp-le-wagon/
+  media: Gizmodo Brasil
+  logo: logo-gizmodo-brasil.jpg
+  date: 2016-09-05
+
 - name: "Faire du « code » pour travailler tout de suite"
   url: http://www.lemonde.fr/emploi/article/2016/08/18/passer-le-code-pour-travailler-tout-de-suite_4984575_1698637.html
   media: Le Monde
   logo: logo-lemonde.jpg
   date: 2016-08-18
+
+- name: "Nous avons appris à coder pour lancer notre startup"
+  url: http://start.lesechos.fr/entreprendre/temoignages-entrepreneurs/nous-avons-appris-a-coder-pour-lancer-notre-startup-5360.php
+  media: Les Echos
+  logo: logo-lesechos.jpg
+  date: 2016-07-22
+
+- name: "Escola francesa de programação Le Wagon estreia no País"
+  url: http://revistapegn.globo.com/Empreendedorismo/noticia/2016/05/escola-francesa-de-programacao-le-wagon-estreia-no-pais.html
+  media: PEGN
+  logo: logo-pegn.jpg
+  date: 2016-05-31
+
+- name: "Por que você, empreendedor, não deve ligar tanto para um MBA"
+  url: http://exame.abril.com.br/pme/por-que-voce-empreendedor-nao-deve-ligar-tanto-para-um-mba/
+  media: Exame
+  logo: logo-exame.jpg
+  date: 2016-05-13
 
 - name: "How Le Wagon is quietly becoming a major coding bootcamp in Europe"
   logo: logo-techcrunch.jpg

@@ -304,7 +304,7 @@ en:
   - question: |
         How long does preparatory work take?
     answer: |
-        You must complete [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true). It should
+        You must complete the [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy. It should
         take you about 10 hours to complete.
   - question: |
         Do I need to speak French?
@@ -314,7 +314,7 @@ en:
           in the morning in French, and a 1h30 _live-code_ in the evening in French as well. So if you don't
           understand French correctly, you won't be able to attend the bootcamp in France.
       - |
-          Luckily, in Brussels, Amsterdam, Lisbon, Copenhagen and Beirut, it's **all in English**!
+          Luckily, in most of the other cities, it's **all in English**! You can check the language of the next batch on the "Apply" page.
   - question: |
         What will I be able to build at the end of 9 weeks?
     answer: |
@@ -341,7 +341,7 @@ en:
         Second, the web is THE open platform you need to understand.
         Thanks to Responsive Web Design (which is part of the program), you’ll be able to create apps that will display nicely on mobile devices.
         You’ll also learn to create APIs that will be used by your mobile apps.
-        It will then be very easy for any mobile developper to code your iOS or Android interface starting from the API you’ve built.
+        It will then be very easy for any mobile developer to code your iOS or Android interface starting from the API you’ve built.
   - question: |
         When do classes take place?
     answer: |

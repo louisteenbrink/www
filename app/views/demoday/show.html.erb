@@ -26,62 +26,52 @@
 <%= content_for(:image_url) do %>
   <% if @selected_product %>
     <%= @selected_product['cover_url'] %>
+  <% elsif @batch.meta_image && @batch.meta_image['facebook'].present? %>
+    <%= @batch.meta_image['facebook'] %>
   <% else %>
     <%= @batch.cover_image %>
   <% end %>
 <% end %>
 
-<div class="banner-container">
-  <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/10.jpg')%>');">
-      <div class="banner-gradient-shadow"></div>
-      <div class="banner-content">
-        <h1 class='glitch'>
-          <%= t(".demoday_title") %>
-        </h1>
-        <p>
-          <%= t(".demoday_tagline") %>
-        </p>
-      </div>
-    </div>
 
-    <%
-      locales = [
-        {
-          code: :en,
-          icon: render('shared/icon_flag_en'),
-          name: t('demoday.show.batch_english')
-        },
-        {
-          code: :fr,
-          icon: render('shared/icon_flag_fr'),
-          name: t('demoday.show.batch_french')
-        },
-        {
-          code: :"pt-BR",
-          icon: render('shared/icon_flag_pt_br'),
-          name: t('demoday.show.batch_brazilian')
-        }
-      ]
+<h1><%= t(".demoday_title") %><small><%= t(".demoday_tagline") %></small></h1>
 
-      json_batches = @batches.map(&:as_json)
-      json_batches.each do |batch|
-        batch["starts_at"] = format_date(batch["starts_at"])
-        batch["ends_at"] = format_date_complete(batch["ends_at"])
-      end
-    %>
-    <%= react_component "PlayerBatchSelector", {
-      locales: locales,
-      selectedBatch: json_batches.select { |b| b["slug"] == @batch.slug }.first,
-      batches: json_batches,
-      demodayPath: demoday_path(':slug'),
-      i18n: {
-        choose_batch: t("demoday.show.choose_batch"),
-        page_title: t("demoday.show.page_title")
-      }
-    }, prerender: false %>
-  </div>
-</div>
+<%
+  locales = [
+    {
+      code: :en,
+      icon: render('shared/icon_flag_en'),
+      name: t('demoday.show.batch_english')
+    },
+    {
+      code: :fr,
+      icon: render('shared/icon_flag_fr'),
+      name: t('demoday.show.batch_french')
+    },
+    {
+      code: :"pt-BR",
+      icon: render('shared/icon_flag_pt_br'),
+      name: t('demoday.show.batch_brazilian')
+    }
+  ]
+
+  json_batches = @batches.map(&:as_json)
+  json_batches.each do |batch|
+    batch["city_picture"] = cl_image_path batch['city']['city_background_picture_path'], height: 32, crop: :fill
+    batch["starts_at"] = format_date(batch["starts_at"])
+    batch["ends_at"] = format_date_complete(batch["ends_at"])
+  end
+%>
+<%= react_component "PlayerBatchSelector", {
+  locales: locales,
+  selectedBatch: json_batches.select { |b| b["slug"] == @batch.slug }.first,
+  batches: json_batches,
+  demodayPath: demoday_path(':slug'),
+  i18n: {
+    choose_batch: t("demoday.show.choose_batch"),
+    page_title: t("demoday.show.page_title")
+  }
+}, prerender: false %>
 
 <div id="batch-demoday">
   <%= render 'batch_demoday', auto_play: false, prerender: true, batch: @batch, selected_product_slug: @selected_product_slug %>

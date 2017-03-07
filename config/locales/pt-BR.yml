@@ -46,12 +46,18 @@ pt-BR:
     testimonials:
       what_our_students_say: Reviews dos estudantes
       students_think_of_us: O que nossos estudantes pensam da gente
-      more_reviews: Mais reviews do Le Wagon
+      more_reviews: Mais resenhas do Le Wagon
+    testimonials_new:
+      what_our_students_say: Resenhas dos estudantes
+      students_think_of_us: O que nossos estudantes pensam da gente
+      more_reviews: Mais resenhas do Le Wagon
+      love_messages: Resenhas dos Estudantes
+      show_more_testimonials: Mostrar mais resenhas
     features:
       read_full_program: Leia o programa completo
       pedagogy_matters_html: "Programe do jeito startup."
       pedagogy_tagline_html: |
-        Aprenda a escrever código limpo e a construir produtos web. <br />Junte-se a mais <strong>excitante comunidade de alunos da Europa</strong>.
+        Aprenda a escrever código limpo e a construir produtos web. <br />Junte-se a <strong> comunidade mais animada de alunos do Mundo</strong>.
       web_development: Aprenda desenvolvimento web
       web_development_details: |
         Aprenda tudo sobre Ruby, SQL e Rails
@@ -81,11 +87,11 @@ pt-BR:
       build_product: Construa o seu produto
       build_product_details: |
         Ninguém vai te ensinar a construir produtos web como nós.
-        Kudoz levantou 1.2 milhões de euros, Impact esta impactando a política, MaShareEcola escolas, Medpicas o sistema de saúde, Krawd marketing...
+        Kudoz levantou 1.2 milhões de euros, Impact esta impactando a política, MaShareEcole escolas, Medpics o sistema de saúde, Krawd o marketing...
         e vários outros projetos estão começando a aparecer.
       land_a_job: Encontre o trabalho dos seus sonhos
       land_a_job_details: |
-        Trabalhe como desenvolvedor junior para Stripe, Molotov, Compass, 55, Save, etc..
+        Trabalhe como desenvolvedor junior para Stripe, Gympass, PSafe, Vindi, etc..
         Nós vamos te ajudar a encontrar o trabalho dos seus sonhos, seja como dev junior, product manager
         ou growth hacker. Discuta com algum de nossos estudantes para saber mais!
       checkout: Descubra você mesmo.
@@ -236,7 +242,7 @@ pt-BR:
       yoga: "Hora do Yoga, pra relaxar e esvaziar a cabeça."
       live_code: "Sessão Live-code: vamos ver alguns dos desafios do dia e corrigi-los do zero em na tela gigante"
       talk: |
-        Masterclass empreendedor (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), ou workshops técnico (UX, design, code)
+        Masterclass empreendedor (Fabien Mendez CEO Loggi, Riq Lima CEO Worldpackers...), ou workshops técnico (UX, design, code)
     stack:
       built_by: 'Website criado por...'
       with_tools: 'Com essas ferramentas incríveis...'
@@ -246,13 +252,13 @@ pt-BR:
         Vamos te contatar em breve por email para agendar a entrevista. <br /><br />Enquanto isso, siga as intruções do nosso check-list e comece o <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby</a> no CodeCademy.
       take_advance: Check-list
       first_step: "1. Candidate-se pro Le Wagon %{name}"
-      second_step: "Assine %{name} Meetup group "
+      second_step: "Junte-se ao %{name} grupo Meetup "
       third_step: "Siga a gente no Twitter"
       fourth_step: "Comece sua track Ruby em Inglês"
     press:
       title: Eles falaram do Le Wagon
     employers:
-      title: Rede de contratação Le Wagon - contrate alunos do melhor bootcamp de código da Europa
+      title: Rede de contratação Le Wagon - contrate alunos do melhor bootcamp de código da Europa e America Latina
       description: Junte-se a nós como parceiro e receba alertas sobre nossos novos candidatos e eventos.
       hiring_tagline_html: Junte-se a nós como parceiros contratantes. <strong>Trabalhe com nossos alunos</strong>.
       join_our_network: Junte-se a nossa rede
@@ -274,7 +280,7 @@ pt-BR:
       operational_details: |
         Nossos estudantes construíram aplicativos ruby on Rails. Eles conhecem
         as boas práticas para trabalhar numa startup tech. Eles podem implementar
-        funcionalidades no primeiro dia de trabalho como dev junior. Como PM ou growth marketer,
+        funcionalidades no primeiro dia de trabalho como dev junior. Como product manager ou growth hacker,
         eles serão excelentes em conectar questões de trabalho com desenvolvimento
         técnico.
       wanna_join: Quer fazer parte do nosso network?
@@ -282,33 +288,39 @@ pt-BR:
     live:
       page_title_with_current_event: "Retransmissão ao vivo - %{event_name}"
       page_title_no_live: "Retransmissão ao vivo - Em breve"
-      page_description_no_live: "Sorry, we don't have any live running at the moment :)"
-      live_company_link: "Know more"
-      live_go_to_meetup: "See all our Meetup events"
+      page_description_no_live: "Desculpa, não tem nenhum live agora :/"
+      live_company_link: "Saber mais"
+      live_go_to_meetup: "Veja nossos eventos Meetup"
     live_player_video:
       live_coming_soon: "Em breve..."
+    shop:
+      title: "Le Wagon's shop"
+      description: "Porque coders tem estilo :)"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
       page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
       demoday_title: "Demoday quando quiser"
-      demoday_tagline: "Venha descobrir os projetos desenvolvidos pelos alunos em apenas 2 semanas usando Ruby on Rails!"
+      demoday_tagline: "Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!"
       choose_batch: "Escolher a turma"
       batch_french: "Francês"
       batch_english: "Inglês"
       batch_brazilian: "Português"
     batch_demoday:
       player:
-        no_video: Nenhum vídeo disponíve
+        no_video: Nenhum vídeo disponível
         batch_intro_html: |
           %{count} alunos participaram do Le Wagon em %{city_name} entre o %{batch_start_date} e o %{batch_end_date}. Vem descubrir os projetos desenvolvidos pelos alunos com Ruby on Rails em apenas 2 semanas!
         product: "Produtos"
         project_link: "testa ele"
         techno: "Feito com"
         cta: "Candidatar-se por 9 semanas"
-      batch_title: " Galera fina aqui :)"
+      batch_title: " membros da turma"
   students:
     index:
+      meta_title: "Le Wagon's Alumni"
+      meta_description_html: |
+        %{count}+ estudantes talentosos compartilhando as mesmas habilidades e paixão
       title: Os projetos de nossos alunos - Startups e aplicativos web made in Le Wagon
       description: |
         Descubra os projetos das promoções anteriores do Le Wagon. Mais de 400 empreendedores já conquistaram super-poderes, e você ?
@@ -321,6 +333,7 @@ pt-BR:
       discover_us: Descubra nosso programa
       discover_our_stories: Descubra a historia de nossos alunos
       watch_demo_day_title_html: "Assista ao nosso último Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: Mostrar mais historias
   cities:
     show:
       title: "Bootcamp de programação em %{city} - Le Wagon - Aprenda a codar em 9 semanas"
@@ -328,6 +341,7 @@ pt-BR:
         Le Wagon está em %{city}. Você quer aprender a programar? Dedique 9 semanas da sua vida pra mudar ela completamente!
       catchline_html: "Mude sua vida: <strong>aprenda a codar</strong> com <strong>Le Wagon</strong>"
       call: 'Ligar para %{name}:'
+      email: 'Contactar %{name}'
       city_arrival_html: "Bootcamp de programação em <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Candidatar-se<span class='hidden-xs'> para 9 semanas</span>"
       staff: "Professores em %{city}"
@@ -350,6 +364,26 @@ pt-BR:
       source_placeholder: "Quem recomendou o Le Wagon para você? Quora, Facebook, um amigo (quem?), etc."
       motivation: "Motivação"
       motivation_placeholder: "Por que Le Wagon? Qual é o seu projeto profissional?"
+      linkedin_html: Seu perfil (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=pt-BR' target='_blank'>help</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        Codecademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          Como explicamos no <a href="%{faq_path}" target="_blank">FAQ</a>, um dos pré-requisitos do Le Wagon é fazer 100% do
+          <a href="https://www.codecademy.com/learn/ruby">curso de Ruby</a> no CodeCademy.
+          Se você não tem uma conta no CodeCademy account, <a href="https://www.codecademy.com/register" target="_blank">crie uma agora</a>, é gratis!
+        </p>
+        <p>
+          Para que a gente possa acompanhar o seu progresso, você precisa informar o seu <strong>nome de usuário no CodeCademy</strong>. Você pode encontrar
+          seu nome de usuário <a href="https://www.codecademy.com/account" target="_blank">aqui</a>.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          Você <strong>pode</strong> se candidatar agora, mesmo se ainda não terminou o curso de Ruby. Assim você já pode ir agendando sua entrevista com a gente. Por enquanto a gente só quer saber seu nome de usuário!
+        </p>
+      codecademy_modal_close_button: "Encontrei meu nome de usuário!"
       apply_btn: "Candidatar-se para "
       please_wait: "Por favor aguarde..."
       pre_course_language: 'Curso em '
@@ -365,6 +399,17 @@ pt-BR:
       read_more: Leia mais testemunhos de alunos dos nossos bootcamps
       title: "%{story}"
       description: "%{story}"
+  projects:
+    index:
+      meta_title_html: |
+        Navegar entre %{count}+ projetos
+      meta_description:
+        construidos pelos nossos alunos em 2 semanas
+      projects_details_html: |
+        <strong>Navegar entre %{count}+ projetos</strong><small>construidos pelos nossos alunos em 2 semanas</small>
+      show_more_projects: Mostrar mais projetos
+    more_projects:
+      project_cta: Veja o site/app
   posts:
     index:
       title: Le Wagon - Blog de Empreendedorismo digital

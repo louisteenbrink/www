@@ -16,6 +16,7 @@
 #  tracked             :boolean          default(FALSE), not null
 #  source              :string
 #  codecademy_username :string
+#  linkedin            :string
 #
 
 class Apply < ActiveRecord::Base
@@ -29,31 +30,28 @@ class Apply < ActiveRecord::Base
   attr_accessor :skip_source_validation
   validates :source, presence: { message: I18n.translate('applies.new.source_presence_message') }, unless: :skip_source_validation
 
+  before_validation :strip_codecademy_username
   attr_accessor :validate_ruby_codecademy_completed
+  validates :codecademy_username, presence: true, if: :validate_ruby_codecademy_completed
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
 
-  after_create :push_to_trello, if: :push_to_trello?
+  attr_reader :linkedin_profile
+  before_validation :strip_linkedin
+  before_validation :fetch_linkedin_profile
+  validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
+
+  after_commit :push_to_trello, on: :create, if: :push_to_trello?
 
   def push_to_trello
-    card = PushToTrelloRunner.new(self).run
+    PushApplyJob.perform_later(id)
+  end
 
-    if Rails.env.production?
-      PushStudentToCrmRunner.new(card, self).run
-      SubscribeToNewsletter.new(email).run
-
-      city = AlumniClient.new.city(self.city_id)
-      if city.mailchimp?
-        SubscribeToNewsletter.new(email, list_id: city.mailchimp_list_id, api_key: city.mailchimp_api_key).run
-      end
-    end
+  def push_to_trello?
+    batch_id && Rails.env.production?
   end
 
   def tracked?
     tracked
-  end
-
-  def push_to_trello?
-    batch_id && !Rails.env.test? && !Rails.env.development?
   end
 
   def batch
@@ -79,15 +77,55 @@ class Apply < ActiveRecord::Base
     result["percentage"]
   end
 
+  class LinkedinError < StandardError; end
+
+  def fetch_linkedin_profile
+    return if @linkedin_profile || linkedin.blank?
+
+    unless linkedin =~ /linkedin\.com\/in/
+      fail Faraday::ResourceNotFound, nil
+    end
+
+    require 'addressable/uri'
+    uri = Addressable::URI.parse(linkedin)
+    uri.query_values = nil
+    self.linkedin = uri.to_s
+
+    @linkedin_profile = LinkedinClient.new.fetch(linkedin)
+  rescue Faraday::ResourceNotFound
+    @linkedin_profile = nil
+    errors.add :linkedin, "Sorry, this does not seem to be a valid Linkedin URL" # TODO: i18n
+  rescue Faraday::ClientError => e
+    puts "Apply #{id}: could not fetch Linkedin profile: #{linkedin}" + e.message
+  end
+
   private
 
   def ruby_codecademy_completed
+    return if codecademy_username.blank?
+
     client = CodecademyCheckerClient.new
     result = client.ruby_progress(codecademy_username)
     if result["error"]
       errors.add :codecademy_username, result["error"]["message"]
     elsif result["percentage"] < 100
       errors.add :codecademy_username, "You did #{result["percentage"]}% of the CodeCademy Ruby track. We need 100%."
+    end
+  end
+
+  def linkedin_url_exists
+    !linkedin_profile.nil?
+  end
+
+  def strip_linkedin
+    unless linkedin.blank?
+      self.linkedin = URI.unescape(linkedin).gsub(/[^0-9A-zÀ-ÿ:\/\.-]/, '')
+    end
+  end
+
+  def strip_codecademy_username
+    unless codecademy_username.blank?
+      self.codecademy_username = codecademy_username.gsub(/^.*\.com\/([^\/]+\/)?/, "")
     end
   end
 end

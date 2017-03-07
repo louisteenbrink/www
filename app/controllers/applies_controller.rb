@@ -16,6 +16,7 @@
 #  tracked             :boolean          default(FALSE), not null
 #  source              :string
 #  codecademy_username :string
+#  linkedin            :string
 #
 
 class AppliesController < ApplicationController
@@ -23,24 +24,36 @@ class AppliesController < ApplicationController
 
   def new
     prepare_apply_form
+
     if @city.nil?
       redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @applicable_cities.first['slug'])
     elsif params[:city].blank?
       redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug'])
     else
       @application = Apply.new(source: params[:source])
+      set_validate_ruby
     end
   end
 
   def create
     @application = Apply.new(application_params)
+    set_validate_ruby
+
     if @application.save
       session[:apply_id] = @application.id
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
+      city = AlumniClient.new.city(@application.city_id)
+      # NotifyErrorApplyJob.perform_later(city.name, @application.attributes, @application.errors.full_messages) unless @application.last_name.blank?
       prepare_apply_form
       render :new
     end
+  end
+
+  def validate
+    @application = Apply.new(application_params)
+    set_validate_ruby
+    @application.valid?
   end
 
   def new_hec
@@ -70,11 +83,17 @@ class AppliesController < ApplicationController
 
   private
 
+  include CloudinaryHelper
+
   def prepare_apply_form
     @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
       first_available_batch = city['batches'].find { |b| !b['full'] }
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
+      city['pictures'] = {
+        cover: cl_image_path(city['city_background_picture_path'] || "", width: 790, height: 200, crop: :fill),
+        thumb: cl_image_path(city['city_background_picture_path'] || "", height: 35, crop: :scale)
+      }
 
       city['batches'].each do |batch|
         starts_at = batch['starts_at']
@@ -113,6 +132,15 @@ class AppliesController < ApplicationController
   end
 
   def application_params
-    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id, :codecademy_username)
+    params.require(:application).permit(:first_name, :last_name, :email, :age, :phone, :motivation, :source, :batch_id, :city_id, :codecademy_username, :linkedin)
+  end
+
+  def set_validate_ruby
+    return unless @application.batch_id
+
+    batch = AlumniClient.new.batch(@application.batch_id)
+    if batch.force_completed_codecademy_at_apply
+      @application.validate_ruby_codecademy_completed = true
+    end
   end
 end

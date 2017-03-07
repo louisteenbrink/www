@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>" lang="<%= I18n.locale %>">
 <head>
-<% cache [ 'head', request: request.original_url, live: @live ] do %>
+<% cache [ 'head', request: request.original_url, live: @live, locale: I18n.locale ] do %>
   <title><%= content_for?(:title) ? yield(:title).squish : "Le Wagon" %></title>
   <meta name="description" content="<%= (yield(:description) || "").squish %>">
 
@@ -37,20 +37,12 @@
   <% end %>
   <%= yield(:headers) %>
 <% end %>
-<% if current_page?(root_url) %>
-  <style>
-    <%# Above the fold CSS %>
-    <%= raw CriticalPathCss.fetch(request.path) %>
-  </style>
-<% else %>
-  <%= stylesheet_link_tag :application, media: "all" %>
-<% end %>
 
+<%= stylesheet_link_tag :application, media: "all" %>
 <%= csrf_meta_tags %>
+
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
-  <%= render "shared/iubenda" %>
-
   <%# render "shared/ondemand" if I18n.locale == :fr %>
   <%# render "shared/medium" %>
   <%= render "shared/flashes" %>
@@ -58,19 +50,15 @@
 
   <%= yield %>
 
-  <% if current_page?(root_url) %>
-    <%= stylesheet_link_tag :application, media: "all" %>
-  <% end %>
-
-  <%= javascript_include_tag :application %>
-  <%= yield(:after_js) %>
-
   <%= render "shared/footer" %>
 
-  <%# render "shared/intercom" %>
-  <%= render "shared/drift" if Rails.env.production? %>
+  <%= render "shared/iubenda" %>
+  <%= javascript_include_tag :application, async: true %>
+  <%= yield(:after_js) %>
+  <%= render "shared/drift" if !@hide_drift && Rails.env.production? %>
   <%= render "shared/google_analytics" %>
   <%= render "shared/mixpanel" %>
-  <%= render "shared/facebook_audience" %>
+  <%= render "shared/facebook_audience" if Rails.env.production?  %>
+  <%= render "shared/hotjar" if Rails.env.production? %>
 </body>
 </html>

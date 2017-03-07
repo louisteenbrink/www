@@ -12,7 +12,7 @@ class PagesController < ApplicationController
       format.html do
         if @live
           if @live.demoday?
-            # TODO: redirect to right demoday
+            redirect_to demoday_path(@live.batch_slug)
           else
             @city = @client.city(@live.city_slug)
           end
@@ -23,11 +23,6 @@ class PagesController < ApplicationController
   end
 
   def home
-    @stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || []))
-    @projects = @client.projects("home_projects")
-    @testimonials = @client.testimonials(locale.to_s).shuffle
-    @positions = @client.positions.take(8)
-
     if locale == :"pt-BR"
       session[:city] = 'sao-paulo'
     end
@@ -44,7 +39,6 @@ class PagesController < ApplicationController
   end
 
   def employers
-    @positions = @client.positions
   end
 
   def stack
@@ -57,6 +51,10 @@ class PagesController < ApplicationController
 
   def program
     @statistics = @client.statistics
+  end
+
+  def linkedin
+    render json: params.to_json
   end
 
   private

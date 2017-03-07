@@ -1,106 +1,27 @@
-<%= content_for(:title)       { t ".title" }       %>
-<%= content_for(:description) { t ".description" } %>
-<%= content_for(:image_url) { image_url 'social/alumni_facebook_card.png' } %>
+<% count = 1000 %>
+<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
+  <% count = @statistics['alumni']['total'] %>
+<% end %>
 
-<div class="banner-container">
-  <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/alumni.jpg') %>');">
-      <div class="banner-gradient-shadow"></div>
-      <div class="banner-content">
-        <h1>
-          <%= t(".our_alumni") %>
-        </h1>
-        <p>
-          <%= t(".our_alumni_details_html", count: (@statistics['alumni']['total'] / 10) * 10) %>
-        </p>
-      </div>
-    </div>
-    <div class='banner-cta'>
-    <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'banner-cta-item hidden-xs' do %>
-      <%= t(".discover_us", default: "Découvrez notre programme") %>
-    <% end %>
-    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path"), class: "btn banner-cta-item btn-danger btn-lg" %>
-    </div>
+<%= content_for(:title)       { (t ".meta_title").html_safe }       %>
+<%= content_for(:description) { t ".meta_description_html", count: count } %>
+<%= content_for(:image_url) { image_url 'social/alumni_card.png' } %>
+
+
+<h1>
+  <%= t(".our_alumni_details_html", count: (count / 10) * 10) %>
+</h1>
+
+<% if @stories %>
+<div class="container stories-container">
+  <div id="stories_container">
+    <%= render 'more_stories', stories: @stories %>
+  </div>
+  <div id="paginator">
+    <%= link_to_next_page @stories, t(".show_more_stories"), remote: true, param_name: :story_page,id: 'load_more_stories', class: 'more-stories' %>
   </div>
 </div>
+<% end %>
 
-<div id="alumni">
-  <div class="container">
-    <div class="stories-container">
-      <div class="story-container popular-stories">
-      <%= t ".discover_our_stories" %>
-      </div>
-      <% @stories.each do |story| %>
-        <div class="story-container">
-          <div class="story-card">
-            <main>
-              <div class="story-card-title">
-                <%= story["title"][locale.to_s] || story["title"]["en"]  %>
-              </div>
-              <div class="story-card-summary">
-                <%= markdown(story['summary'][locale.to_s] || story['summary']['en']) %>
-              </div>
-              <div class='story-card-footer'>
-                <%= render 'stories/user_infos', story: story %>
-              </div>
-            </main>
-            <aside>
-              <div class="background perpetua" id="<%= story["alumni"]["github_nickname"] %>" style="background-image: url('<%= story["picture"]%>')">
-              </div>
-            </aside>
-            <%= link_to "", story_path(id: story["slug"]), class: "story-card-link" %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-
-    <h2 class='section-title-home section-title-home-small'>
-      <div class='section-title-home-content'>
-        <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
-      </div>
-    </h2>
-
-
-    <div class="projects-list">
-      <% @projects.each do |project| %>
-        <% project = OpenStruct.new project %>
-        <div class="project-item-container">
-          <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
-          <div class="project-item">
-            <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
-              </div>
-            </div>
-            <div class="project-item-infos">
-              <div class="project-item-infos-left">
-                <div class="project-item-name">
-                  <%= project.name %>
-                </div>
-                <div class="project-item-tagline">
-                  <%= project.tagline[I18n.locale.to_s] %>
-                </div>
-              </div>
-
-              <div class="project-item-makers">
-                <% project.makers.each do |maker| %>
-                  <% maker = OpenStruct.new maker %>
-                  <div class="project-item-maker">
-                    <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                      <%= cl_adaptive_image_tag maker.photo_path, width: 35, height: 35, crop: :fill, class: "avatar" %>
-                    </a>
-                  </div>
-                <% end %>
-              </div>
-            </div>
-          </div>
-        </div>
-      <% end %>
-    </div>
-
-  </div>
-</div>
-
-
-
-<%= render partial: "shared/testimonials", locals: {number: 20} %>
+<%= render "shared/testimonials_new" %>
 

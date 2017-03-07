@@ -36,10 +36,7 @@ class BatchSelector extends React.Component {
         ref='selectType'
         value={batch.id}
         onClick={this.handleClick.bind(this)}
-      >
-        <strong>{ batch.starts_at }</strong> - <strong>{ batch.ends_at }</strong>
-        {right_item}
-      </div>
+      ><strong>{ batch.starts_at }</strong><span> - </span><strong>{ batch.ends_at }</strong>{right_item}</div>
     )
   }
 

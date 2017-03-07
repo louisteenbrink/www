@@ -41,7 +41,13 @@ en:
     testimonials:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
+      more_reviews: More reviews of Le Wagons
+    testimonials_new:
+      what_our_students_say: Students Reviews
+      students_think_of_us: What our students think of us
       more_reviews: More reviews of Le Wagon
+      love_messages: Student Reviews
+      show_more_testimonials: Show more testimonials
     features:
       read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."
@@ -53,9 +59,8 @@ en:
         Develop your front-end skills by using advanced CSS technics (flexbox, grid, animations, etc..)
         and go deeper into Javascript by learning jQuery and React.js,
         the library developed by Facebook.
-      software_engineer_html: Become a Software engineer
+      software_engineer_html: Think like a Software engineer
       software_engineer_details: |
-        Become more than a developer, a Software engineer.
         A person who has the big picture on technical issues,
         who knows what is a MVC, a DB scheme, an HTTP request,
         and who can learn a new programming language within a week.
@@ -243,7 +248,7 @@ en:
       first_step: "1. Apply to Le Wagon %{name}"
       second_step: "Subscribe to %{name} Meetup group "
       third_step: "Follow us on Twitter"
-      fourth_step: "Start your Ruby track in English"
+      fourth_step: "Resume working on the CodeCademy Ruby track"
     press:
       title: They speak about Le Wagon
     employers:
@@ -282,6 +287,9 @@ en:
       live_go_to_meetup: "See all our Meetup events"
     live_player_video:
       live_coming_soon: "Coming soon..."
+    shop:
+      title: "Le Wagon's shop"
+      description: "Because coders got style"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
@@ -304,6 +312,9 @@ en:
       batch_title: " amazing humans right here"
   students:
     index:
+      meta_title: "Le Wagon's Alumni"
+      meta_description_html: |
+        %{count}+ talented students sharing the same skills & passion
       title: Students' projects - Startups & web apps made in Le Wagon
       description: |
         Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
@@ -316,6 +327,7 @@ en:
       discover_us: Discover our program
       discover_our_stories: Discover our alumni stories
       watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: Show more stories
   cities:
     show:
       title: "Coding Bootcamp in %{city} - Le Wagon - Learn to code in 9 weeks"
@@ -323,6 +335,7 @@ en:
         Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
       catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
       call: 'Call %{name}:'
+      email: 'Email %{name}'
       city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
       staff: "Teachers in %{city}"
@@ -345,6 +358,26 @@ en:
       source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
       motivation: "Motivation"
       motivation_placeholder: "Why Le Wagon? What is your professional project?"
+      linkedin_html: Your profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
+          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> on CodeCademy.
+          If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
+        </p>
+        <p>
+          To track your progress, we need you to fill in this form your <strong>CodeCademy username</strong>. You
+          will find it on your <a href="https://www.codecademy.com/account" target="_blank">Account</a> page.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
+        </p>
+      codecademy_modal_close_button: "I found my username"
       apply_btn: "Apply to "
       please_wait: "Please wait..."
       pre_course_language: 'Course in '
@@ -362,6 +395,17 @@ en:
       read_more: Read more testimonials from our bootcamp's students
       title: "%{story}"
       description: "%{story}"
+  projects:
+    index:
+      meta_title_html: |
+        Browse among %{count}+ projects
+      meta_description:
+        built by our alumni in 2 weeks
+      projects_details_html: |
+        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
+      show_more_projects: Show more projects
+    more_projects:
+      project_cta: Checkout the app
   posts:
     index:
       title: Le Wagon - Technical Entrepreneurship Blog

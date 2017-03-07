@@ -1,0 +1,41 @@
+<% @projects.each_slice(2) do |projects| %>
+  <div class="projects-bundle">
+    <% projects.each do |project| %>
+      <% project = OpenStruct.new project %>
+      <div class="project-card">
+        <%= link_to project.url, class: 'project-url', target: '_blank'  do %>
+          <div class="project-card-thumbnail" style="background: url(<%= project.card %>); background-size:cover;background-position:center center;">
+          </div>
+        <% end %>
+        <div class="project-card-details">
+          <h2><%= project.name %></h2>
+          <span><%= project.tagline[I18n.locale.to_s] %></span>
+          <% if project.youtube_id.present? %>
+            <%= link_to with_slug_demoday_path(project.batch, project.slug), class: "go-to-project" do %>
+              <%= t('.project_cta') %>
+            <% end %>
+          <% else %>
+            <%= link_to project.url, class: "go-to-project", target: "_blank" do %>
+              <%= t('.project_cta') %>
+            <% end %>
+          <% end %>
+          <i>
+            <% if project.batch.present? %>
+              <%= project.city['name'] %>, Batch #<%= project.batch %>
+            <% end %>
+          </i>
+          <div class="project-makers">
+            <% project.makers.each do |maker| %>
+              <% maker = OpenStruct.new maker %>
+              <div class="project-maker">
+                <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
+                  <%= cl_adaptive_image_tag maker.photo_path, width: 80, height: 80, crop: :fill, class: "avatar" %>
+                </a>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+<% end %>

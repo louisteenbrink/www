@@ -1,0 +1,18 @@
+<%= content_for(:title)       { (t ".meta_title_html", count: @client.projects("alumni_projects").length).html_safe }       %>
+<%= content_for(:description) { t ".meta_description" } %>
+<%= content_for(:image_url) { image_url 'social/projects_card.jpg' } %>
+
+<h1>
+  <%= t(".projects_details_html", count: @client.projects("alumni_projects").length) %>
+</h1>
+
+<% if @projects %>
+<div class="container projects-container">
+  <div id="projects_container">
+    <%= render 'more_projects', projects: @projects %>
+  </div>
+  <div id="paginator_projects">
+    <%= link_to_next_page @projects, t(".show_more_projects"), remote: true, param_name: :project_page,id: 'load_more_projects', class: 'more-projects' %>
+  </div>
+</div>
+<% end %>

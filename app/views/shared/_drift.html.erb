@@ -1,5 +1,5 @@
 <!-- Start of Async Drift Code -->
-<script>
+<script class="_iub_cs_activate-inline" type="text/plain">
 !function() {
   var t;
   if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
@@ -18,14 +18,15 @@
     n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
   });
 }();
-drift.SNIPPET_VERSION = '0.2.0'
-drift.load('h94xhv7srkyk')
+drift.SNIPPET_VERSION = '0.2.0';
+// drift.config({ locale: "<%= j I18n.locale.to_s %>" });
+drift.load('h94xhv7srkyk');
 </script>
 <!-- End of Async Drift Code -->
 
 
 <% if @apply && !@apply.tracked? %>
-<script>
+<script class="_iub_cs_activate-inline" type="text/plain">
   drift.identify('<%= j @apply.email %>', <%= raw @apply.to_drift %>);
 </script>
 <% end %>

@@ -1,4 +1,5 @@
 require "trello"
+require "open-uri"
 
 class PushToTrelloRunner
   include MoneyRails::ActionViewExtension
@@ -18,6 +19,38 @@ class PushToTrelloRunner
       codecademy = "## [Codecademy](https://codecademy-checker.herokuapp.com/#{@apply.codecademy_username})"
     end
 
+    linkedin = "No profile specified"
+    if @apply.linkedin_profile
+      if @apply.linkedin_profile[:first_name] == "private"
+        linkedin = "[View Profile](#{@apply.linkedin})"
+      else
+        positions = nil
+        if @apply.linkedin_profile[:positions] && @apply.linkedin_profile[:positions][:total] > 0 && @apply.linkedin_profile[:positions][:all]
+          positions = "### Positions\n"
+          @apply.linkedin_profile[:positions][:all].each do |position|
+            if position[:start_date]
+              positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+            else
+              positions << "#{position[:title]} @ #{position[:company][:name]}\n"
+            end
+          end
+        end
+
+        linkedin = <<-EOF
+#{@apply.linkedin_profile[:headline]}
+#{@apply.linkedin_profile[:industry]}
+
+[View Linkedin Profile](#{@apply.linkedin_profile[:public_profile_url]}) - #{@apply.linkedin_profile[:num_connections] == 500 ? '500+' : @apply.linkedin_profile[:num_connections]} connections
+
+### Summary
+
+#{@apply.linkedin_profile[:summary]}
+
+#{positions}
+EOF
+      end
+    end
+
     card = ::Trello::Card.new
     card.name = name
     card.list_id = list_id
@@ -35,6 +68,10 @@ Price: #{humanized_money_with_symbol price} TTC
 ## Referrer
 
 #{@apply.source}
+
+## Linkedin
+
+#{linkedin}
 
 ## Motivation
 
@@ -57,6 +94,22 @@ EOF
     checklist.add_item("Second Instalment paid")
     checklist.add_item("Balance paid")
 
+    if @apply.linkedin_profile && @apply.linkedin_profile[:picture_urls] && @apply.linkedin_profile[:picture_urls][:total] > 0
+      url = @apply.linkedin_profile[:picture_urls][:all].first
+      if url
+        file = Tempfile.new(["linkedin_picture", ".jpg"])
+        file.binmode
+        begin
+          file.write open(url).read
+          card.add_attachment(File.open(file.path), "linkedin_picture.jpg")
+        rescue Exception => e
+          file.close
+          file.unlink
+          raise e
+        end
+      end
+    end
+
     card
   end
 
@@ -67,7 +120,7 @@ EOF
   end
 
   def list_id
-    Rails.env.production? ? @apply.batch.trello_inbox_list_id : '54024112c975d17cd1180489' # Will go to "TEST PROMOS in dev"
+    Rails.env.production? ? @apply.batch.trello_inbox_list_id : ENV['TRELLO_DEV_LIST_ID']
   end
 
   def price

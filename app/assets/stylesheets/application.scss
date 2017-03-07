@@ -12,6 +12,7 @@
 .slick-dots { position: relative !important; } // Bug fix
 
 @import "glitch";
+$mdi-font-path: 'mdi/fonts';
 @import "mdi";
 @import "devicons";
 @import 'awwward';
