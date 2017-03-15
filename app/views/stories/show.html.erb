@@ -1,4 +1,4 @@
-<%= content_for(:title) { t(".title", story: @story["title"][locale.to_s]) } %>
+<%= content_for(:title) { t(".title", story: @story["title"][locale.to_s]).html_safe } %>
 <%= content_for(:description) { t(".description", story: @story["summary"][locale.to_s]) } %>
 <%= content_for(:image_url) { image_url @story["picture"] } %>
 
