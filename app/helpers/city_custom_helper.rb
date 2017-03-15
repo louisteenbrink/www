@@ -8,7 +8,7 @@ module CityCustomHelper
 
   def course_language
     {
-      montreal: t('montreal.course_language'),
+      # montreal: t('montreal.course_language'),
       shanghai: t('shanghai.course_language'),
       london: "English (Full-Time)", # Needed for PCDL / interest free lonas from the government.
     }.stringify_keys
