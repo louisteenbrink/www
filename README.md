@@ -35,9 +35,13 @@ The app configuration lies in `config/application.yml` and is **not**
 versionned by git (for security reasons). If you've just cloned this
 repo, ask a colleague for his `application.yml` file over a secure channel.
 
-## Credits
+### Linkedin Token
 
-The first commit of this app has been generated thanks to [lewagon/wagon_rails](https://github.com/lewagon/wagon_rails)'s rails app generator.
-## Deploying
+The token lasts 2 months. To generate it, launch a `rails c` locally then:
 
-    $ bin/deploy
+```ruby
+oauth = LinkedIn::OAuth2.new; puts oauth.auth_code_url # Go to this URL
+code = "WHAT YOU GOT FROM THE URL"
+l_token = oauth.get_access_token(code); puts l_token.token
+puts "will expire on #{Date.strptime(l_token.expires_at.to_s, '%s')}. You may want to add this date to the calendar"
+```

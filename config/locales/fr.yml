@@ -67,7 +67,7 @@ fr:
         la dernière librairie Javascript développée par Facebook.
       software_engineer_html: Comprenez la technique
       software_engineer_details: |
-        Devenez plus qu'un développeur, un "Software engineer".
+        Apprenez à penser comme un "Software engineer".
         Cette personne qui comprend les enjeux techniques,
         qui sait ce que MVC veut dire, comment marche une base de données, ce que contient une requête HTTP.
         Quelqu'un qui voit le monde sous un angle technique.
@@ -329,6 +329,7 @@ fr:
         Le Wagon débarque à %{city}. Changez de vie, apprenez à coder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
       catchline_html: "<strong>Apprenez à coder</strong> avec <strong>Le Wagon</strong>"
       call: "Appeler %{name} :"
+      email: 'Contacter %{name}'
       city_arrival_html: "Formation développeur web à <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Postulez<span class='hidden-xs'> pour 9 semaines</span>"
       staff: "L'équipe à %{city}"

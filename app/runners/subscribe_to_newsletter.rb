@@ -20,7 +20,11 @@ class SubscribeToNewsletter
       if e.body && e.body["detail"] =~ /is already a list member/
         return { ok: true, already_subscribed: true }
       else
-        return { ok: false, message: e.body["detail"], errors: e.body['errors'] }
+        if e.body
+          return { ok: false, message: e.body["detail"], errors: e.body['errors'] }
+        else
+          return { ok: false }
+        end
       end
     end
   end

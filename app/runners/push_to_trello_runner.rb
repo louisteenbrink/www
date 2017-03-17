@@ -25,10 +25,14 @@ class PushToTrelloRunner
         linkedin = "[View Profile](#{@apply.linkedin})"
       else
         positions = nil
-        if @apply.linkedin_profile[:positions][:total] > 0
+        if @apply.linkedin_profile[:positions] && @apply.linkedin_profile[:positions][:total] > 0 && @apply.linkedin_profile[:positions][:all]
           positions = "### Positions\n"
           @apply.linkedin_profile[:positions][:all].each do |position|
-            positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+            if position[:start_date]
+              positions << "#{position[:start_date][:year]} - #{position[:title]} @ #{position[:company][:name]}\n"
+            else
+              positions << "#{position[:title]} @ #{position[:company][:name]}\n"
+            end
           end
         end
 
@@ -116,7 +120,7 @@ EOF
   end
 
   def list_id
-    Rails.env.production? ? @apply.batch.trello_inbox_list_id : '54024112c975d17cd1180489' # Will go to "TEST PROMOS in dev" TODO: put that in env. kevin's : 587dffa9f4c1bdfdd7a1df63  TRELLO_DEV_LIST_ID
+    Rails.env.production? ? @apply.batch.trello_inbox_list_id : ENV['TRELLO_DEV_LIST_ID']
   end
 
   def price

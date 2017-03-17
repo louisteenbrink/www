@@ -2,13 +2,19 @@ fr:
   montreal:
     post_price: "+ taxes"
     course_language: "français ou anglais"
+  shanghai:
+    course_language: "anglais ou chinois"
 
 en:
   montreal:
     post_price: "+ taxes"
     course_language: "English or French"
+  shanghai:
+    course_language: "English or Chinese"
 
 pt-BR:
   montreal:
     post_price: "+ taxes"
     course_language: "Inglês / Francês"
+  shanghai:
+    course_language: "Inglès / Chinês"

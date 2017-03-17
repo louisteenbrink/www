@@ -143,7 +143,7 @@ Figaro vous permet de renforcer la sécurité de votre application en masquant l
 Traduisez et localisez votre site rapidement grâce à rails-i18n. Rédigez toutes vos traductions dans des fichiers `yml` placés dans `config > locals` et appelez-les au sein de vos vues en fonction de la langue sélectionnée par vos utilisateurs.
 
 
-####*Cocoon* - [<i class="fa fa-github fa-1x"></i>]()
+####*Cocoon* - [<i class="fa fa-github fa-1x"></i>](https://github.com/nathanvda/cocoon)
 
 Cocoon permet une gestion plus simple des formulaires nestés en permettant de créer, détruire, mettre à jour l'ensemble des modèles impliqués sur une unique vue.
 

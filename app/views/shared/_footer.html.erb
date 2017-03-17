@@ -43,7 +43,10 @@
             </div>
           <% end %>
           <div>
-            <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7QRxsCuR1tKhUD4g_JEh_4a" target="_blank">Apero-Talks</a>
+            <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7QRxsCuR1tKhUD4g_JEh_4a" target="_blank">Wagon Talks</a>
+          </div>
+          <div>
+            <a href="https://ondemand.lewagon.org/tracks/bootcamp-prep/go" target="_blank">Bootcamp Prep</a>
           </div>
         </div>
       </div>
@@ -80,16 +83,13 @@
             <%= link_to t(".about"), send(:"about_#{locale.to_s.underscore}_path") %>
           </div>
           <div>
-            <%= link_to "Blog", blog_path %>
+            <%= link_to 'Blog', blog_path %>
           </div>
           <div>
             <%= link_to 'Stack', stack_path %>
           </div>
           <div>
             <a href="mailto:contact@lewagon.org">Contact</a>
-          </div>
-          <div>
-            <%= link_to 'Blog', blog_path %>
           </div>
           <div>
             <%= link_to 'Shop', shop_path %>

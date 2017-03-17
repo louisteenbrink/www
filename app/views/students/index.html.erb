@@ -1,12 +1,18 @@
+<% count = 1000 %>
+<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
+  <% count = @statistics['alumni']['total'] %>
+<% end %>
+
 <%= content_for(:title)       { (t ".meta_title").html_safe }       %>
-<%= content_for(:description) { t ".meta_description_html", count: (@statistics['alumni']['total'] / 10) * 10 } %>
+<%= content_for(:description) { t ".meta_description_html", count: count } %>
 <%= content_for(:image_url) { image_url 'social/alumni_card.png' } %>
 
 
 <h1>
-  <%= t(".our_alumni_details_html", count: (@statistics['alumni']['total'] / 10) * 10) %>
+  <%= t(".our_alumni_details_html", count: (count / 10) * 10) %>
 </h1>
 
+<% if @stories %>
 <div class="container stories-container">
   <div id="stories_container">
     <%= render 'more_stories', stories: @stories %>
@@ -15,6 +21,7 @@
     <%= link_to_next_page @stories, t(".show_more_stories"), remote: true, param_name: :story_page,id: 'load_more_stories', class: 'more-stories' %>
   </div>
 </div>
+<% end %>
 
 <%= render "shared/testimonials_new" %>
 

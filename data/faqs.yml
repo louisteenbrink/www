@@ -254,7 +254,7 @@ pt-BR:
   - question: |
       Por que aprender Ruby on Rails (ao invés de PHP, por exemplo) ?
     answer: |
-        Excelente pergunta, o CTO do Wagon tem [uma resposta](/blog/pourquoi-apprendre-coder-ruby-on-rails) para você.
+        Excelente pergunta que a gente já respondeu no nosso [Medium](https://medium.com/codando/por-que-aprender-ruby-on-rails-e4ceb3774a7f#.akd1u6nd3)!
   - question: |
         Qual a duração exata da formação ?
     answer: |
@@ -341,7 +341,7 @@ en:
         Second, the web is THE open platform you need to understand.
         Thanks to Responsive Web Design (which is part of the program), you’ll be able to create apps that will display nicely on mobile devices.
         You’ll also learn to create APIs that will be used by your mobile apps.
-        It will then be very easy for any mobile developper to code your iOS or Android interface starting from the API you’ve built.
+        It will then be very easy for any mobile developer to code your iOS or Android interface starting from the API you’ve built.
   - question: |
         When do classes take place?
     answer: |

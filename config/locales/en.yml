@@ -59,9 +59,8 @@ en:
         Develop your front-end skills by using advanced CSS technics (flexbox, grid, animations, etc..)
         and go deeper into Javascript by learning jQuery and React.js,
         the library developed by Facebook.
-      software_engineer_html: Become a Software engineer
+      software_engineer_html: Think like a Software engineer
       software_engineer_details: |
-        Become more than a developer, a Software engineer.
         A person who has the big picture on technical issues,
         who knows what is a MVC, a DB scheme, an HTTP request,
         and who can learn a new programming language within a week.
@@ -336,6 +335,7 @@ en:
         Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
       catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
       call: 'Call %{name}:'
+      email: 'Email %{name}'
       city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
       apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
       staff: "Teachers in %{city}"

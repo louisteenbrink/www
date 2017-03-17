@@ -44,7 +44,7 @@ class AppliesController < ApplicationController
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
       city = AlumniClient.new.city(@application.city_id)
-      NotifyErrorApplyJob.perform_later(city.name, @application.attributes, @application.errors.full_messages) unless @application.last_name.blank?
+      # NotifyErrorApplyJob.perform_later(city.name, @application.attributes, @application.errors.full_messages) unless @application.last_name.blank?
       prepare_apply_form
       render :new
     end
@@ -83,11 +83,17 @@ class AppliesController < ApplicationController
 
   private
 
+  include CloudinaryHelper
+
   def prepare_apply_form
     @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
       first_available_batch = city['batches'].find { |b| !b['full'] }
       city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
+      city['pictures'] = {
+        cover: cl_image_path(city['city_background_picture_path'] || "", width: 790, height: 200, crop: :fill),
+        thumb: cl_image_path(city['city_background_picture_path'] || "", height: 35, crop: :scale)
+      }
 
       city['batches'].each do |batch|
         starts_at = batch['starts_at']

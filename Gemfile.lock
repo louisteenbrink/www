@@ -52,6 +52,9 @@ GEM
     annotate (2.7.1)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
+    appsignal (2.1.0)
+      rack
+      thread_safe
     arel (7.1.4)
     autoprefixer-rails (6.6.0)
       execjs
@@ -70,7 +73,7 @@ GEM
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
-    builder (3.2.2)
+    builder (3.2.3)
     byebug (9.0.6)
     capybara (2.11.0)
       addressable
@@ -90,7 +93,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.0.3)
+    concurrent-ruby (1.0.4)
     connection_pool (2.2.1)
     debug_inspector (0.0.2)
     devise (4.2.0)
@@ -120,8 +123,6 @@ GEM
     hashie (3.4.6)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    httparty (0.14.0)
-      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.6.1)
       activesupport (>= 3.0.0, < 5.1)
@@ -180,7 +181,7 @@ GEM
     multipart-post (2.0.0)
     netrc (0.11.0)
     nio4r (1.2.1)
-    nokogiri (1.6.8.1)
+    nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     oauth (0.5.1)
     oauth2 (1.2.0)
@@ -238,19 +239,14 @@ GEM
     rails-assets-headroom.js (0.7.0)
     rails-assets-mdi (1.7.22)
     rails-assets-pubsub-js (1.5.4)
-    rails-dom-testing (2.0.1)
+    rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
-      nokogiri (~> 1.6.0)
+      nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
     rails-i18n (5.0.1)
       i18n (~> 0.7)
       railties (~> 5.0)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.5)
     railties (5.0.1)
       actionpack (= 5.0.1)
       activesupport (= 5.0.1)
@@ -258,13 +254,9 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (11.3.0)
-    raygun4ruby (1.1.9)
-      httparty (~> 0.11)
-      json
-      rack
     react-bootstrap-rails (0.30.2)
       rails (>= 3.1)
-    react-rails (1.8.2)
+    react-rails (1.10.0)
       babel-transpiler (>= 0.7.0)
       coffee-script-source (~> 1.8)
       connection_pool
@@ -353,7 +345,7 @@ GEM
       sprockets (>= 3.0.0)
     thor (0.19.4)
     thread_safe (0.3.5)
-    tilt (2.0.5)
+    tilt (2.0.6)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.0.4)
@@ -374,6 +366,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  appsignal
   attachinary!
   autoprefixer-rails
   better_errors
@@ -416,10 +409,8 @@ DEPENDENCIES
   rails-assets-mdi!
   rails-assets-pubsub-js!
   rails-i18n
-  rails_12factor
-  raygun4ruby
   react-bootstrap-rails
-  react-rails (= 1.8.2)
+  react-rails (= 1.10.0)
   redcarpet
   redis
   redis-rails

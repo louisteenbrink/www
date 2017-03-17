@@ -27,7 +27,7 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem "react-rails", '1.8.2'
+gem "react-rails", '1.10.0'
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
@@ -37,7 +37,7 @@ gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'
 gem 'json', '2.0.2'
-gem 'raygun4ruby'
+gem 'appsignal'
 gem 'sitemap_generator'
 gem 'builder'
 gem 'rack-utf8_sanitizer'
@@ -79,6 +79,5 @@ group :test do
 end
 
 group :production do
-  gem "rails_12factor"
   gem "puma"
 end

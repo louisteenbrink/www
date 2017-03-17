@@ -6,7 +6,7 @@ class BatchCover extends React.Component {
   render() {
 
     var coverStudents = {
-      backgroundImage: "url(" + this.props.cover.replace('development', 'production') + ")"
+      backgroundImage: "url(" + this.props.cover + ")"
     }
 
     if (this.props.cover.match(/missing\.png/)) {
