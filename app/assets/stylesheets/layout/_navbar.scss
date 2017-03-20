@@ -465,7 +465,13 @@ a.live-on {
   color: #d6d6d6;
   padding: 10px;
   border-radius: 3px;
-  background: #f4f4f4;
+  box-shadow: 0 0px 2px #d8d8d8;
+  background-image: linear-gradient(top, #f8f8f8, #f1f1f1);
+  &:hover {
+    background-image: linear-gradient(top, darken(#f8f8f8, 10%), darken(#f1f1f1, 10%));
+    color: black;
+    cursor: pointer;
+  }
   svg {
     margin-right: 10px;
   }

@@ -14,9 +14,6 @@
 
       <ul class="dropdown-menu" aria-labelledby="languageMenuToggle" id="languageMenu">
         <li>
-          <p class="header">Choose your language</p>
-        </li>
-        <li>
           <%= link_to locale_current_url_for(:en), class: ("active" if locale == :en) do %>
             <%= render 'shared/english_flag' %> <p>English</p>
           <% end %>
