@@ -1,13 +1,13 @@
 <div class="banner-enterprise" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.1) 80%), url(<%= image_path 'officials/students-6.jpg' %>)">
   <div class="banner-content">
     <h1>
-      Re-invent work <br>in a digital world.
+      <%= t('.tagline_html', :default => 'Re-invent work <br>in a digital world.').html_safe %>
     </h1>
     <p>
-      Learn the technical skills to change the way you work <br>in your organisation.
-      <strong>Work faster, be more efficient.</strong>
+      <%= t('.tagline_details_html', :default => 'Learn the technical skills to change the way you work <br>in your organisation.
+      <strong>Work faster, be more efficient.</strong>').html_safe %>
     </p>
-    <a href="#" class="btn btn-danger">Enquire Now</a>
+    <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" > <%= t('.apply', :default => 'Enquire Now') %> </a>
   </div>
 </div>
 
@@ -15,10 +15,12 @@
   <div class="container">
     <h2 class='section-title-home' style="font-size:30px;">
       <div class='section-title-home-content'>
-        New skills for a new way of working.
+        <%= t('.skills_header', :default => 'New skills for a new way of working.') %>
       </div>
     </h2>
-    <p class="text-center" style="font-size: 19px;font-weight: 100;opacity: 0.6;margin-bottom: 20px;">In a fast changing environment, you need new tools, new workflow, new mindset.</p>
+    <p class="text-center" style="font-size: 19px;font-weight: 100;opacity: 0.6;margin-bottom: 20px;">
+      <%= t('.skills_text', :default => 'In a fast changing environment, you need new tools, new workflow, new mindset.') %>
+    </p>
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="card-enterprise-skill text-center">
@@ -26,13 +28,13 @@
             <h3 class="text-center">
               <i class="devicons devicons-trello" style="color: #026AA7;"></i>
               <br>
-              Product Management
+              <%= t('.pm', :default => 'Product Management') %>
             </h3>
             <p>
-              User stories, collaborative workflow. Learn the good way to work on a project within a team.
+              <%= t('.pm_details', :default => ' User stories, collaborative workflow. Learn the good way to work on a project within a team.') %>
             </p>
             <p>
-              <a href="#" class="btn btn-default" style="margin-bottom: 0px;">Enquire Now</a>
+              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;">Enquire Now</a>
             </p>
           </div>
         </div>
@@ -43,13 +45,13 @@
             <h3 class="text-center">
               <%= image_tag "technos/enterprise-sketch.jpg", style: "height: 70px; margin-bottom: 10px; display: inline-block"; %>
               <br>
-              UI / UX
+              <%= t('.ui', :default => 'UI / UX') %>
             </h3>
             <p>
-              Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.
+              <%= t('.ui_details', :default => 'Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.') %>
             </p>
             <p>
-              <a href="#" class="btn btn-default" style="margin-bottom: 0px;">Enquire Now</a>
+              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;">Enquire Now</a>
             </p>
           </div>
         </div>
@@ -61,13 +63,13 @@
               <i class="devicons devicons-html5" style="color: #D25836;"></i>
               <i class="devicons devicons-css3" style="color: #0271B9;"></i>
               <br>
-              Web Design / frontend
+              <%= t('.web_design', :default => 'Web-Design / Frontend') %>
             </h3>
             <p>
-              Build your own icons, keep control of your website without always depending on contractors.
+              <%= t('.web_design_details', :default => ' Build your own icons, keep control of your website without always depending on contractors.') %>
             </p>
             <p>
-              <a href="#" class="btn btn-default" style="margin-bottom: 0px;">Enquire Now</a>
+              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;">Enquire Now</a>
             </p>
           </div>
         </div>
@@ -78,13 +80,13 @@
             <h3 class="text-center">
               <%= image_tag "technos/d3.png", style: "height: 60px; margin-bottom: 10px; margin-top: 10px; display: inline-block"; %>
               <br>
-              Data Science & Visualisation
+              <%= t('.data_science', :default => 'Data Science & Visualisation') %>
             </h3>
             <p>
-              Collect data, analyze it, make it speak through visualisation.
+              <%= t('.data_science_details', :default => 'Collect data, analyze it, make it speak through visualisation.') %>
             </p>
             <p>
-              <a href="#" class="btn btn-default" style="margin-bottom: 0px;">Enquire Now</a>
+              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;">Enquire Now</a>
             </p>
           </div>
         </div>
@@ -96,13 +98,13 @@
               <i class="devicons devicons-ruby_on_rails" style="color: #C22821;"></i>
               <i class="devicons devicons-streamline" style="color: #2F6592;"></i>
               <br>
-              FullStack Development
+              <%= t('.fullstack', :default => 'FullStack Development') %>
             </h3>
             <p>
-              From the database to the web browser, learn how a web application is built.
+              <%= t('.fullstack_details', :default => 'From the database to the web browser, learn how a web application is built.') %>
             </p>
             <p>
-              <a href="#" class="btn btn-default" style="margin-bottom: 0px;">Enquire Now</a>
+              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;">Enquire Now</a>
             </p>
           </div>
         </div>
@@ -113,13 +115,13 @@
             <h3 class="text-center">
               <%= image_tag "technos/prototyping.png", style: "height: 60px; margin-bottom: 10px; margin-top: 10px; display: inline-block"; %>
               <br>
-              Lean Prototyping
+              <%= t('.prototyping', :default => 'Lean Prototyping') %>
             </h3>
             <p>
-              APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
+              <%= t('.prototyping_details', :default => 'APIs are eating the world. Discover how startups can prototype products just by connecting APIs.') %>
             </p>
             <p>
-              <a href="#" class="btn btn-default" style="margin-bottom: 0px;">Enquire Now</a>
+              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;">Enquire Now</a>
             </p>
           </div>
         </div>
@@ -131,18 +133,15 @@
 
 <div id="enterprise-why-us" class="hidden-sm hidden-xs">
   <div class="left-part">
-    <h2>Learn from the best</h2>
-    <p>
-      We have trained more than 1200 students coming from business schools, engineer schools, design schools. We know how to <strong>bridge the gap bewteen technology and business</strong>. We have teach our students to code and prototype <strong>more than 400 products</strong>.
-    </p>
+    <h2>
+      <%= t('.best', :default => 'Learn from the best') %>
+    </h2>
 
-    <p>
-      After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
-    </p>
+    <%= t('.best_details_html').html_safe %>
 
     <div class="hec-footer">
       <%= render "shared/logos/hec"%>
-      <p>In 2017, Le Wagon is the <strong>official partner of HEC</strong> (first ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.</p>
+      <p><%= t('.hec_html').html_safe %></p>
     </div>
 
   </div>
@@ -150,66 +149,72 @@
   </div>
 </div>
 
+<div id="enterprise-last-event" style: padding-top: 100px>
+  <h2 class="text-center"><%= t(".watch", default: "Watch our last workshop") %></h2>
+  <div style="position:relative;height:0;padding-bottom:56.25%; margin: 50px;"><iframe src="https://www.youtube.com/embed/0HjKQ8aNS7g?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+</div>
+
 <div id="enterprise-testimonials" class="hidden-xs">
   <div class="enterprise-nav">
-    <%= image_tag "companies/uber.png", style: "height: 25px;", "data-target" => "#uber" %>
-    <%= image_tag "companies/eki.png", style: "height: 30px;", class: "active", "data-target" => "#eki" %>
-    <%= image_tag "companies/engie.jpg", style: "height: 40px;", "data-target" => "#engie" %>
+    <% image_tag "companies/uber.png", style: "height: 25px;", "data-target" => "#uber" %>
+    <%= image_tag "companies/google.png",class: "active", style: "height: 45px;", "data-target" => "#google" %>
+    <%= image_tag "companies/eki.png", style: "height: 30px;", "data-target" => "#eki" %>
+    <%= image_tag "companies/drivy.png", style: "height: 90px;", "data-target" => "#drivy" %>
     <%= image_tag "companies/stripe.png", style: "height: 90px;", "data-target" => "#stripe" %>
     <%= image_tag "companies/algolia.png", style: "height: 35px;", "data-target" => "#algolia" %>
   </div>
 
-  <div class="enterprise-testimonial text-center" id="eki">
+  <div class="enterprise-testimonial text-center" id="google">
     <p>
       <i class="fa fa-quote-left"></i>
-      Le Wagon has been a key partner for bringing a product and UX culture in Ekimetrics. There is an immediate impact on the way we work after their workshops.
+       <%= t('.google_quote') %>
       <i class="fa fa-quote-left"></i>
-
       <br>
-      <p class="text-right">David Litvak, <strong>Manager at Ekimetrics</strong></p>
+      <p class="text-right"><a href="https://www.linkedin.com/in/marion-grandjean-67971b3/" target="blank">Marion Grandjean</a>, <strong>Business Associate at Google</strong></p>
     </p>
   </div>
-  <div class="enterprise-testimonial text-center hidden" id="uber">
+  <div class="enterprise-testimonial text-center hidden" id="eki">
     <p>
       <i class="fa fa-quote-left"></i>
-      Le Wagon has been a key partner for bringing a product and UX culture in Uber. There is an immediate impact on the way we work after their workshops.
+      <%= t('.eki_quote') %>
       <i class="fa fa-quote-left"></i>
-
       <br>
-      <p class="text-right">David Litvak, <strong>Manager at Ekimetrics</strong></p>
+      <p class="text-right"><a href="https://www.linkedin.com/in/david-litvak-aa921323/" target="blank">David Litvak</a> <strong>Manager at Ekimetrics</strong></p>
     </p>
   </div>
-  <div class="enterprise-testimonial text-center hidden" id="engie">
+  <div class="enterprise-testimonial text-center hidden" id="drivy">
     <p>
       <i class="fa fa-quote-left"></i>
-      Le Wagon has been a key partner for bringing a product and UX culture in Engie. There is an immediate impact on the way we work after their workshops.
+      <%= t('.drivy_quote') %>
       <i class="fa fa-quote-left"></i>
 
       <br>
-      <p class="text-right">David Litvak, <strong>Manager at Ekimetrics</strong></p>
+      <p class="text-right"><a href="https://www.linkedin.com/in/jean-anquetil-4996a590/" target="blank">Jean Anquetil</a>, <strong>Developer at Drivy</strong></p>
     </p>
   </div>
   <div class="enterprise-testimonial text-center hidden" id="algolia">
     <p>
       <i class="fa fa-quote-left"></i>
-      Le Wagon has been a key partner for bringing a product and UX culture in Algolia. There is an immediate impact on the way we work after their workshops.
+      <%= t('.algolia_quote') %>
       <i class="fa fa-quote-left"></i>
 
       <br>
-      <p class="text-right">David Litvak, <strong>Manager at Ekimetrics</strong></p>
+      <p class="text-right"><a href="https://www.linkedin.com/in/jeanedernlorillon/" target="blank">Jean-Edern Lorillon</a>, <strong>Product Specialist at Algolia</strong></p>
     </p>
   </div>
   <div class="enterprise-testimonial text-center hidden" id="stripe">
     <p>
       <i class="fa fa-quote-left"></i>
-      Le Wagon has been a key partner for bringing a product and UX culture in Stripe. There is an immediate impact on the way we work after their workshops.
+      <%= t('.stripe_quote') %>
       <i class="fa fa-quote-left"></i>
 
       <br>
-      <p class="text-right">David Litvak, <strong>Manager at Ekimetrics</strong></p>
+      <p class="text-right"><a href="https://www.linkedin.com/in/oliviergodement/" target="blank">Olivier Godement</a>, <strong>Country Operation at Stripe</strong></p>
     </p>
   </div>
 </div>
+
+<script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
 
 
 

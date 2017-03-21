@@ -1,14 +1,14 @@
 .banner-enterprise {
   height: calc(100vh - 130px);
   background-size: cover;
-  background-position-y: -150px;
+  background-position: center;
   display: flex;
   align-items: center;
   h1 {
     color: white;
     font-weight: 900;
     font-size: 50px;
-    max-width: 500px;
+    max-width: 700px;
     margin-top: 0px;
   }
   p {
@@ -31,7 +31,7 @@
 }
 
 .card-enterprise-skill {
-  min-height: 300px;
+  min-height: 350px;
   padding: 20px;
   background: white;
   margin: 20px;
@@ -56,7 +56,7 @@
   p {
     font-size: 15px;
     color: grey;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 
@@ -81,7 +81,7 @@
     color: white;
   }
   .hec-footer {
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     background: white;
@@ -117,6 +117,9 @@
   }
   .enterprise-nav img {
     opacity: 0.2;
+    &:hover {
+      opacity: 0.5;
+    }
     &.active {
       opacity: 1;
     }
@@ -127,12 +130,30 @@
   width: 500px;
   margin: 30px auto;
   font-weight: 100;
+  min-height: 200px;
   i {
     color: #DFDFE7;
   }
   .text-right {
     font-size: 15px;
     margin-top: 30px;
+  }
+  a {
+    color: #D23333;
+    text-decoration: underline;
+  }
+}
+
+#enterprise-last-event {
+  background: darken(#363636, 10%);
+  h2 {
+    background: darken(#363636, 10%);
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 23px;
+    padding-top: 60px;
   }
 }
 
@@ -150,3 +171,4 @@
     background-position: center;
   }
 }
+
