@@ -10,7 +10,7 @@ class LearningCurve extends React.Component {
     return(
       <div className="container text-center" ref='container'>
         <div className='module-overlay'>
-          <div className='module-nav hidden-xs'>
+          <div className='module-nav hidden-xs hidden-sm'>
             {this.props.modules.map((module, index) => {
               return (
                 <ModuleNavItem

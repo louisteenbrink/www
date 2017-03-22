@@ -142,10 +142,17 @@ en:
       apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
       nine_weeks: 9 intensive weeks - 360 hours of code
       to_build_your_ideas_html: Learn all the web stack. From the database to the browser.
-      why_us: Why us?
+      why_us: Learn from the best
       why_us_details_html: |
+        <p class="text-readable">
+        Le Wagon is rated among the 3 best coding bootcamps in the world according to <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> and <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        </p>
+
+        <p class="text-readable">
         We have taught %{batches} batches (that's more than %{alumni} students!) and our program has evolved each time to reach perfection.
+        We believe building a great curriculum takes time and it took us nearly 3 years to design the FullStack program.
         It is our longstanding experience that makes our program so efficient. <strong>You will learn in 2 months what you would have learned in 2 years:</strong>
+        </p>
         <ul>
           <li>Perfect developer set-up</li>
           <li>Software engineering and database architecture</li>
@@ -156,16 +163,16 @@ en:
       community: An exciting community
       community_details_html: |
         %{alumni}+ students with various backgrounds (engineers, journalists, architects, designers..)
-        are chatting every day on Slack, questioning our teaching staff, sharing tips, resources, code gists, job offers and news from their products.
+        are <strong style="color:white;">chatting every day on Slack</strong>, questioning our teaching staff, sharing tips, resources, code gists, job offers and news from their products.
         <strong>One of the best tech communities in the world.</strong>
         All the students of le Wagon share the same technical background and apply industry best practices.
-        This mix between <strong>diversity & technical expertise</strong> makes our community unique.
+        This mix between <strong style="color:white;">diversity & technical expertise</strong> makes our community unique.
       cv: Your developer portfolio
       cv_details_html: |
         In only 2 months, build several web applications, including
         a <strong>clone of Airbnb</strong> and <strong>your own personal project</strong>. Deploy these apps
         and build yourself a solid Github portfolio.
-      ruby: |
+      ruby_html: |
         Get familiar with the command line and Git.
         Learn the basics of programming with Ruby and code
         programs playing with variables, methods,
@@ -173,7 +180,7 @@ en:
         read and write in files and how you can collect
         interesting data by scraping a website or by calling
         an API (for instance Twitter API).
-      software: |
+      software_html: |
         Discover OOP (Object-Oriented programming) and learn to
         build advanced softwares by structuring your programs
         into different objects. If you want to build a social
@@ -183,14 +190,14 @@ en:
         wants to build a house, he must respect patterns and procedures.
         During this week, you will code your first applications
         following the MVC design pattern.
-      database: |
+      database_html: |
         Programs need to store information in a database.
         Without databases, Facebook would lose your information
         every time you log in! Learn to design a database by defining
         tables and connections. Then discover SQL,
         the language used to read/write data and make queries to
         the database.
-      frontend: |
+      frontend_html: |
         Improve your UI culture and learn all about HTML,
         CSS & best practices in web-design (positioning techniques, animations).
         Get familiar with Bootstrap, a useful library to
@@ -199,7 +206,7 @@ en:
         define events, and make AJAX requests with Javascript.
         You will play with lots of cool APIs during this
         module (Trello, Slack, Facebook , etc...).
-      rails: |
+      rails_html: |
         Time to put all your skills together and dive into Rails.
         No big deal here, you already know most of its
         elementary blocks and you will feel right at home!
@@ -208,7 +215,7 @@ en:
         learn to collaborate on Github using pull requests and deploy
         your apps on Heroku, using the same workflow as successful
         startups.
-      projects: |
+      projects_html: |
         Project Time! Code your own project during the
         2 last weeks and build an awesome product!
       awesome_entrepreneur: Entrepreneur d'exception
