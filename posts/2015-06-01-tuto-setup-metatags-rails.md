@@ -85,7 +85,7 @@ module MetaTagsHelper
 end
 ```
 
-##### **Important: gestion des urls de vos images**
+##### **Important: la gestion des urls de vos images**
 
 Par défaut, Rails retourne le chemin **relatif** de vos URLs (routing helpers suffixés en `_path`). Il est donc primordial de lui dire de retourner les urls absolues afin que celles-ci puissent être récupérées par Facebook et Twitter. Pour ce faire, placez le snippet ci-dessous dans votre `application_controller.rb`.
 
