@@ -27,7 +27,6 @@ gem 'pygmentize'
 gem 'redcarpet'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
-gem 'sass-pygments-rails'
 gem "react-rails", '1.10.0'
 gem 'react-bootstrap-rails'
 gem "lodash-rails"
