@@ -279,6 +279,45 @@ en:
         developments.
       wanna_join: Want to be part of our network?
       signup: Sign up to get alerts about our candidates and coming job events.
+    enterprise:
+      title: Re-invent work in a digital world.
+      description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
+      tagline_html: Re-invent work.<br>Through code and technology.
+      tagline_details_html: |
+        Learn the technical skills to change the way you work <br>in your organisation.
+        <strong>Work faster, be more efficient.</strong>
+      apply: Enquire now
+      skills_header: New skills for a new way of working.
+      skills_text: In a fast changing environment, you need new tools, new workflow, new mindset.
+      pm: Product Management
+      pm_details: User stories, collaborative workflow. Learn the good way to work on a project within a team.
+      ui: UI / UX
+      ui_details: Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.
+      web_design: Web Design / frontend
+      web_design_details: Build your own icons, keep control of your website without always depending on contractors.
+      data_science: Data Science & Visualisation
+      data_science_details: Collect data, analyze it, make it speak through visualisation.
+      fullstack: FullStack Development
+      fullstack_details: From the database to the web browser, learn how a web application is built.
+      prototyping: Lean Prototyping
+      prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
+      best: Learn from the best
+      best_details_html: |
+        <p>
+         We have trained more than 1200 students coming from business schools, engineer schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
+        </p>
+        <p>
+         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
+        </p>
+      hec_html: In 2017, Le Wagon is the <strong>official partner of HEC</strong> (first ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.
+      watch: Watch our last workshop
+      google_quote: Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.
+      eki_quote:  The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
+      drivy_quote: Their curriculum is very well crafted, the teachers are passionate.
+      stripe_quote: Solid workshops teaching both essential technical skills and a strong product mindset.
+      algolia_quote: If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.
+      uber_quote: Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.
+      with_us: They work with us.
     live:
       page_title_with_current_event: "Live - %{event_name}"
       page_title_no_live: "Live - Coming soon"
