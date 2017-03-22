@@ -5,11 +5,13 @@ author: edward
 labels:
   - tuto
 pushed: true
-thumbnail: thumbnail-tuto-meta-tags.jpg
-description: How to setup your social meta tags in Rails
+thumbnail: lewagon_demoday_metatags.png
+description: Sharing your product on social networks has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your social meta tags are properly set.
 ---
 
-Sharing your product on social networks has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your social meta tags are properly set.
+Sharing your product on **social networks** has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your **social meta tags** are properly set.
+
+<hr>
 
 ## WTF are meta tags?
 
@@ -17,9 +19,9 @@ Sharing your product on social networks has become one privileged way to grow yo
 
 ![Lewagon Demoday Metatags](blog_image_path lewagon_demoday_metatags.png)
 
-They provide the contents displayed on social networks whenever your product's url is shared in a post.
-Titles, descriptions and images should all be setup with care and consideration to improve your social exposure's conversion rate.
-The right content, including optimized images have shown to help posts to spread, even leading to increased shares and mentions, improving natural SEO.
+They provide the **content displayed on social networks** whenever your product's url is **shared in a post**.
+Titles, descriptions and images should all be setup with care and consideration to **improve your social exposure's conversion rate**.
+The right content, including optimized images have shown to help posts to spread, even leading to increased shares and mentions, **improving natural SEO**.
 
 **For instance:**
 
@@ -27,19 +29,22 @@ The right content, including optimized images have shown to help posts to spread
   <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/lewagon/posts/589518731246729" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lewagon/posts/589518731246729"></blockquote></div></div>
 </div>
 
+<hr>
 
 ## Setup in a Rails app
 
 In this tutorial, we'll see:
 
-- how to simply setup default meta tags for any of your website's pages,
-- how to override them in some views to be more specific and impactful.
+- how to simply setup **default** meta tags for **any** of your website's pages,
+- how to override them in **some pages** to be more specific and impactful.
+
+<hr>
 
 ##### **Default Meta Tags**
 
 Let's create a `meta.yml` file in `config`, with the following:
 
-```
+```yaml
 # config/meta.yml
 
 meta_title: "Product name"
@@ -54,30 +59,32 @@ Let's create a `default_meta.rb` file in `config/initializers` in which we load 
 # config/initializers/default_meta.rb
 
 # Initialize default meta tags.
-DEFAULT_META = YAML.load_file(Rails.root.join('config/meta.yml'))
+DEFAULT_META = YAML.load_file(Rails.root.join("config/meta.yml"))
 ```
-**Important: as any file in the** `config/initializers` **folder, it is loaded when your app is launched. Any time you change its content, restart your** `rails s` **to refresh your data!**
+
+**Important: as any file in the** `config/initializers` **folder, it is loaded when your app is launched. Any time you change the content in** `meta.yml`**, restart your** `rails s` **to refresh** `DEFAULT_META`**!**
+
+<hr>
 
 ##### **Helpers setup**
-Now before setting up our meta tags in our views, let's setup helpers that will encapsulate the following logic for our 3 keys `:meta_title`, `:meta_description` and `:meta_image`:
+Now before setting up our meta tags in our views, let's setup **helpers** that will encapsulate the following logic for our 3 keys `:meta_title`, `:meta_description` and `:meta_image`:
 
-
-> In any view, if a `content_for(:meta_key)` was defined, it should override the default value in `DEFAULT_META`.
+__In any view, if a__ `content_for(:meta_key)` __was defined, it should override__ `DEFAULT_META`__'s value.__
 
 Let's create a new `app/helpers/meta_tags_helper.rb` file with the following:
 
-```
+```ruby
 module MetaTagsHelper
   def meta_title
-    content_for?(:meta_title) ? content_for(:meta_title) : DEFAULT_META['meta_title']
+    content_for?(:meta_title) ? content_for(:meta_title) : DEFAULT_META["meta_title"]
   end
 
   def meta_description
-    content_for?(:meta_description) ? content_for(:meta_description) : DEFAULT_META['meta_description']
+    content_for?(:meta_description) ? content_for(:meta_description) : DEFAULT_META["meta_description"]
   end
 
   def meta_image
-    meta_image = (content_for?(:meta_image) ? content_for(:meta_image) : DEFAULT_META['meta_image'])
+    meta_image = (content_for?(:meta_image) ? content_for(:meta_image) : DEFAULT_META["meta_image"])
     # little twist to make it work equally with an asset or a url
     meta_image.starts_with?("http") ? meta_image : image_url(meta_image)
   end
@@ -86,11 +93,11 @@ end
 
 ##### **Important: production host setup for images absolute urls**
 
-Rails `image_url` helper requires you setup your host to generate the **absolute url** needed to load your images from the external world (Facebook, Twitter, ...).
+Rails `image_url` helper requires you setup your host to generate the **absolute url** needed to load your images from the **external world** (Facebook, Twitter, ...).
 
 Let's override `Rails.application.default_url_options[:host]` by adding the following in `app/controllers/application_controller.rb`:
 
-```
+```ruby
 # app/controllers/application_controller.rb
 
 def default_url_options
@@ -98,16 +105,18 @@ def default_url_options
 end
 ```
 
-Make sure your production `HOST` variable is set with your domain name.
+Make sure your **production** `HOST` **variable** is set with your domain name.
 If you deploy your code with Heroku for instance, just type in your terminal `heroku config:set HOST=www.my_product.com`
 
 You can check it's properly set with `heroku config:get HOST`.
 
-##### **HTML setup**
+<hr>
+
+##### **HTML setup - Layout**
 
 Finally, open your layout `app/views/layouts/application.html.erb` and copy paste the following meta tags in your layout's `<head>`:
 
-```
+```erb
 <title><%= meta_title %></title>
 <meta name="description" content="<%= meta_description %>">
 
@@ -126,20 +135,27 @@ Finally, open your layout `app/views/layouts/application.html.erb` and copy past
 <meta name="twitter:description" content="<%= meta_description %>">
 <meta name="twitter:creator" content="<%= DEFAULT_META["twitter_account"] %>">
 <meta name="twitter:image:src" content="<%= meta_image %>">
-
-<!-- Google+ Schema.org markup -->
-<meta itemprop="name" content="<%= meta_title %>">
-<meta itemprop="description" content="<%= meta_description %>">
-<meta itemprop="image" content="<%= meta_image %>">
 ```
+
+##### **HTML setup - Views**
 
 Now let's assume you have an `Offer` model and you want dynamic titles and descriptions for any `products#show` page.
 Just set the relevant `content_for`s in `app/views/offers/show.html.erb`:
 
-```
-<!-- app/views/products/show.html.erb -->
+```erb
+<!-- app/views/offers/show.html.erb -->
 <% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["title"]}" %>
 <% content_for :meta_description, @offer.description %>
 <% content_for :meta_description, cloudinary_url(@offer.photo.path) %>
 ```
 
+##### **Testing**
+
+It's time to **deploy** your code and test your setup.
+
+Social Networks provide **debugging tools** to help you check your tags are properly set.
+
+- [Facebook Debug Tool](https://developers.facebook.com/tools/debug/)
+- [Twitter Card Validator](https://cards-dev.twitter.com/validator)
+
+**Important :** Facebook's Open Graph recommends **1200x630** dimensions for meta images. [Read the documentation](https://developers.facebook.com/docs/sharing/best-practices) if you cannot manage to clear out all their warnings!
