@@ -74,6 +74,8 @@ __In any view, if a__ `content_for(:meta_key)` __was defined, it should override
 Let's create a new `app/helpers/meta_tags_helper.rb` file with the following:
 
 ```ruby
+# app/helpers/meta_tags_helper.rb
+
 module MetaTagsHelper
   def meta_title
     content_for?(:meta_title) ? content_for(:meta_title) : DEFAULT_META["meta_title"]
@@ -159,3 +161,12 @@ Social Networks provide **debugging tools** to help you check your tags are prop
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 **Important :** Facebook's Open Graph recommends **1200x630** dimensions for meta images. [Read the documentation](https://developers.facebook.com/docs/sharing/best-practices) if you cannot manage to clear out all their warnings!
+
+<hr>
+
+##### **That's all folks**
+This sets a **framework** to easily manage your meta tags in **every single page** of your website.
+It's now up to you to keep on setting relevant titles, descriptions and images **every time you code a new view**!
+
+![Airbnb Metatags](blog_image_path airbnb_meta_tags.png)
+
