@@ -1,8 +1,7 @@
 #employers-why-overlay {
   background-color: #F4F4F4;
   position: relative;
-  margin-top: -230px;
-  padding-top: 200px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 .employers-why-text {
@@ -34,5 +33,81 @@
 @media (max-width: $screen-sm) {
   #employers-apply {
     padding: 0 20px;
+  }
+}
+
+#enterprise-hiring {
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  .enterprise-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 0 0 70%;
+    img {
+      margin: 20px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+  .enterprise-nav img {
+    opacity: 0.2;
+    &:hover {
+      opacity: 0.5;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+  .alumni-preview-container {
+    flex: 1;
+    background: #F4F4F4;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .alumni-preview-content {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    height: calc(100vh - 200px);
+    h2 {
+      font-size: 22px;
+      font-weight: 900;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 19px;
+      font-weight: bold;
+    }
+    h4 {
+      font-size: 16px;
+      color: #A5A6AD;
+      font-weight: 100;
+    }
+    .alumni-title {
+      font-size: 20px;
+      padding: 20px 0;
+    }
+    a {
+      color: black;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .github-link {
+      border: 1px solid black;
+      color: black;
+      font-size: 15px;
+      width: 100%;
+      padding: 20px;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inherit;
+    }
   }
 }

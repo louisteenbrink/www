@@ -2,34 +2,80 @@
 <%= content_for(:description) { t ".description" } %>
 <%= content_for(:image_url) { image_url 'social/employers_facebook_card.png' } %>
 
-<div class="banner-container">
-  <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path "banners/header-employers.jpg" %>">
-      <div class="banner-gradient-shadow"></div>
-      <div class="banner-content">
-        <h1 class='glitch'>
-          Le Wagon <strong>Hiring Network</strong>
-        </h1>
-        <p>
-          <%= t ".hiring_tagline_html" %>
-        </p>
+<div class="banner-enterprise" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 80%), url(<%= image_path 'banners/header-employers.jpg' %>)">
+  <div class="banner-content">
+    <h1>
+      Join our hiring network<br>
+      and work with our alumni.
+    </h1>
+    <p>
+      Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through events, <br>job board and great workshops to promote your company's culture.
+    </p>
+    <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" > <%= t('.apply', :default => 'Enquire Now') %> </a>
+  </div>
+</div>
+
+
+<% positions = @client.positions %>
+
+<div id="enterprise-hiring">
+  <div class="enterprise-nav">
+  <%= image_tag positions.first["company"]["logo"], width: 120, class: "active", "data-target" => "##{positions.first['alumni']['first_name']}-#{positions.first['alumni']['last_name']}" %>
+  <% positions[1...(positions.size)].each do |position| %>
+    <%= image_tag position["company"]["logo"], width: 120, "data-target" => "##{position['alumni']['first_name']}-#{position['alumni']['last_name']}"%>
+  <% end %>
+  </div>
+  <div class="alumni-preview-container">
+    <div class="alumni-preview">
+      <div class="alumni-preview">
+        <div class="alumni-preview-content" id="<%= positions.first["alumni"]["first_name"]%>-<%= positions.first["alumni"]["last_name"]%>">
+          <h2>Meet <%=positions.first['alumni']['first_name']%> 👋</h2>
+          <%= cl_adaptive_image_tag positions.first["alumni"]["photo_path"], width: 120, height: 120, crop: :fill, class: "img-circle" %>
+          <h3><%= positions.first["alumni"]["first_name"]%> <%= positions.first["alumni"]["last_name"]%></h3>
+          <h4>
+            Batch #<%= positions.first["alumni"]["slug"]%>, <strong><%= positions.first["alumni"]["city"]%></strong>
+          </h4>
+          <p class="alumni-title"><%= positions.first["title"]%> <br>at <strong><a href="<%= positions.first["company"]["url"]%>" target="_blank" class="company-link"><%= positions.first["company"]["name"] %></a></strong></p>
+          <a href="http://github.com/<%= positions.first["alumni"]["github_nickname"]%>" target="_blank" class="github-link">
+            <i class="fa fa-github"></i> Github profile
+          </a>
+        </div>
       </div>
-    </div>
-    <div class='banner-cta'>
-      <a href="https://lewagon.typeform.com/to/bKCXIw" class='banner-cta-item btn-danger' style="padding: 30px 35px;font-size: 20px;margin-left:0;" target="_blank">
-        <%= t ".join_our_network" %>
-      </a>
+      <% positions[1...(positions.size)].each do |position| %>
+        <div class="alumni-preview">
+          <div class="alumni-preview-content hidden" id="<%= position["alumni"]["first_name"]%>-<%= position["alumni"]["last_name"]%>">
+            <h2>Meet <%=position['alumni']['first_name']%> 👋</h2>
+            <%= cl_adaptive_image_tag position["alumni"]["photo_path"], width: 120, height: 120, crop: :fill, class: "img-circle" %>
+            <h3>
+              <%= position["alumni"]["first_name"]%> <%= position["alumni"]["last_name"]%>
+            </h3>
+            <h4>
+              Batch #<%= position["alumni"]["slug"]%>, <strong><%= position["alumni"]["city"]%></strong>
+            </h4>
+            <p class="alumni-title"><%= position["title"]%> <br>at <strong><a href="<%= position["company"]["url"]%>" target="_blank" class="company-link">
+              <%= position["company"]["name"] %></a></strong>
+            </p>
+            <a href="http://github.com/<%= position["alumni"]["github_nickname"]%>" target="_blank" class="company-link">
+             <i class="fa fa-github"></i> Github profile
+            </a>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
 
+
+
+<div id="enterprise-last-event">
+  <h2 class="text-center"><%= t(".watch", default: "Watch our last job fair") %></h2>
+  <div id="video-container" style="position:relative;max-width: 700px; min-height: 400px;
+    margin: auto;margin-top: 50px;"><iframe src="https://www.youtube.com/embed/iCcKaF1sDl0" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height: 100%;left:0" allowfullscreen></iframe></div>
+</div>
+
+
 <div id="employers-why-overlay">
   <div class="container">
-    <div class="video-container">
-      <div class="video-wrapper">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/iCcKaF1sDl0" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </div>
     <h2 class="section-title-home section-title-home-small">
       <div class="section-title-home-content">
         <%= t ".why" %>
