@@ -1,3 +1,7 @@
+<%= content_for(:title)       { t ".title" }       %>
+<%= content_for(:description) { t ".description" } %>
+<%= content_for(:image_url) { image_url 'social/enterprise_card.png' } %>
+
 <div class="banner-enterprise" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.1) 80%), url(<%= image_path 'officials/students-6.jpg' %>)">
   <div class="banner-content">
     <h1>
@@ -145,22 +149,29 @@
     </div>
 
   </div>
-  <div class="right-part" style="background-image: url(<%= image_path 'officials/job-8.jpg' %>);background-size: cover; width: 50%; height: 700px; background-position-x: -250px;">
+  <div class="right-part" style="background-image: url(<%= image_path 'officials/job-8.jpg' %>);background-size: cover; background-position-x: -250px;">
   </div>
 </div>
 
-<div id="enterprise-last-event" style: padding-top: 100px>
+<div id="enterprise-last-event">
   <h2 class="text-center"><%= t(".watch", default: "Watch our last workshop") %></h2>
-  <div style="position:relative;height:0;padding-bottom:56.25%; margin: 50px;"><iframe src="https://www.youtube.com/embed/0HjKQ8aNS7g?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height:100%;left:0" allowfullscreen></iframe></div>
+  <div id="video-container" style="position:relative;max-width: 700px; min-height: 400px;
+    margin: auto;margin-top: 50px;"><iframe src="https://www.youtube.com/embed/0HjKQ8aNS7g?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height: 100%;left:0" allowfullscreen></iframe></div>
 </div>
 
 <div id="enterprise-testimonials" class="hidden-xs">
+  <h2 class='section-title-home' style="font-size:30px; margin-bottom: 50px;">
+    <div class='section-title-home-content' style="background: white;">
+      <%= t('.with_us', :default => "They work with us.") %>
+    </div>
+  </h2>
+
   <div class="enterprise-nav">
-    <% image_tag "companies/uber.png", style: "height: 25px;", "data-target" => "#uber" %>
     <%= image_tag "companies/google.png",class: "active", style: "height: 45px;", "data-target" => "#google" %>
+    <%= image_tag "companies/uber.png", style: "height: 25px;", "data-target" => "#uber" %>
+    <%= image_tag "companies/stripe.png", style: "height: 100px;", "data-target" => "#stripe" %>
     <%= image_tag "companies/eki.png", style: "height: 30px;", "data-target" => "#eki" %>
-    <%= image_tag "companies/drivy.png", style: "height: 90px;", "data-target" => "#drivy" %>
-    <%= image_tag "companies/stripe.png", style: "height: 90px;", "data-target" => "#stripe" %>
+    <% image_tag "companies/drivy.png", style: "height: 90px;", "data-target" => "#drivy" %>
     <%= image_tag "companies/algolia.png", style: "height: 35px;", "data-target" => "#algolia" %>
   </div>
 
@@ -173,13 +184,22 @@
       <p class="text-right"><a href="https://www.linkedin.com/in/marion-grandjean-67971b3/" target="blank">Marion Grandjean</a>, <strong>Business Associate at Google</strong></p>
     </p>
   </div>
+  <div class="enterprise-testimonial text-center hidden" id="uber">
+    <p>
+      <i class="fa fa-quote-left"></i>
+      <%= t('.uber_quote') %>
+      <i class="fa fa-quote-left"></i>
+      <br>
+      <p class="text-right"><a href="https://www.linkedin.com/in/emerichenon/" target="blank">Emeric Henon</a>, <strong>Marketing at Uber</strong></p>
+    </p>
+  </div>
   <div class="enterprise-testimonial text-center hidden" id="eki">
     <p>
       <i class="fa fa-quote-left"></i>
       <%= t('.eki_quote') %>
       <i class="fa fa-quote-left"></i>
       <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/david-litvak-aa921323/" target="blank">David Litvak</a> <strong>Manager at Ekimetrics</strong></p>
+      <p class="text-right"><a href="https://www.linkedin.com/in/guillaume-martin-64700998" target="blank">Guillaume Martin</a>, <strong>Head of Product Engineering at Ekimetrics</strong></p>
     </p>
   </div>
   <div class="enterprise-testimonial text-center hidden" id="drivy">
@@ -213,6 +233,12 @@
     </p>
   </div>
 </div>
+
+
+<div class="final-cta text-center">
+  <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" > <%= t('.apply', :default => 'Enquire Now') %> </a>
+</div>
+
 
 <script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
 

@@ -81,7 +81,8 @@
     color: white;
   }
   .hec-footer {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     background: white;
@@ -106,7 +107,7 @@
 
 
 #enterprise-testimonials {
-  padding: 80px;
+  padding: 20px;
   .enterprise-nav {
     display: flex;
     align-items: center;
@@ -135,7 +136,7 @@
     color: #DFDFE7;
   }
   .text-right {
-    font-size: 15px;
+    font-size: 16px;
     margin-top: 30px;
   }
   a {
@@ -146,6 +147,7 @@
 
 #enterprise-last-event {
   background: darken(#363636, 10%);
+  box-shadow: 5px 0 10px rgba(0,0,0, 0.5);
   h2 {
     background: darken(#363636, 10%);
     margin: 0;
@@ -156,7 +158,13 @@
     padding-top: 60px;
   }
 }
-
+.final-cta {
+  padding-bottom: 60px;
+  .btn-danger {
+    padding: 20px 30px;
+    font-weight: 700;
+  }
+}
 @media(max-width: $screen-xs) {
   .banner-enterprise .banner-content {
     padding-left: 20px;
@@ -171,4 +179,13 @@
     background-position: center;
   }
 }
-
+@media(max-width: $screen-sm) {
+  #video-container {
+    min-height: 300px !important;
+  }
+  .final-cta {
+    .btn-danger {
+      margin-top: 50px;
+    }
+  }
+}
