@@ -47,8 +47,8 @@ Let's create a `meta.yml` file in `config`, with the following:
 ```yaml
 # config/meta.yml
 
-meta_title: "Product name"
-meta_description: "Product tagline"
+meta_title: "Product name - Product tagline"
+meta_description: "Relevant description"
 meta_image: "cover.png" # should exist in `app/assets/images/`
 twitter_account: "@product_twitter_account" # required for Twitter Cards
 ```
