@@ -43,20 +43,48 @@
   .enterprise-nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     flex-wrap: wrap;
     flex: 0 0 70%;
+    justify-content: center;
+    background: whitesmoke;
     img {
-      margin: 20px;
+      margin: 0px 20px;
     }
     img:hover {
       cursor: pointer;
     }
   }
+
+  .img-card {
+    width: 150px;
+    height: 120px;
+    background: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0px;
+    border: 2px solid transparent;
+  }
+  .img-card.active {
+    border: 2px solid rgba(0,0,0,0.5);
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+  }
+  .img-card:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  .header h2 {
+    font-size: 24px;
+    font-weight: 100;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
   .enterprise-nav img {
-    opacity: 0.2;
+    opacity: 1;
     &:hover {
-      opacity: 0.5;
+      opacity: 1;
     }
     &.active {
       opacity: 1;
@@ -64,19 +92,17 @@
   }
   .alumni-preview-container {
     flex: 1;
-    background: #F4F4F4;
+    background: #f5f5f5;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    padding-left: 50px;
     align-items: center;
   }
-  .alumni-preview-content {
-    background: white;
-    padding: 30px;
+  .alumni-preview {
     border-radius: 5px;
     height: calc(100vh - 200px);
     h2 {
-      font-size: 22px;
+      font-size: 26px;
       font-weight: 900;
       margin-top: 0px;
       margin-bottom: 20px;
@@ -87,8 +113,9 @@
     }
     h4 {
       font-size: 16px;
-      color: #A5A6AD;
+      color: #333333;
       font-weight: 100;
+      margin-top: 0px;
     }
     .alumni-title {
       font-size: 20px;
@@ -103,11 +130,38 @@
       border: 1px solid black;
       color: black;
       font-size: 15px;
-      width: 100%;
-      padding: 20px;
+      width: 200px;
+      padding: 10px;
       border-radius: 3px;
       text-decoration: none;
       display: inherit;
     }
   }
+  .slice {
+    margin: 5px;
+  }
+}
+
+
+$scale: 1.07;
+
+.img-card {
+  cursor: pointer;
+  transition: .3s cubic-bezier(.5, 0, .1, 1) all;
+  transition-delay: .15s;
+  &:hover {
+    transform: scale($scale);
+    .play {
+      opacity: 1;
+    }
+  }
+
+  &.has-positive-translate {
+    transform: translateY($scale * 100 - 100px);
+  }
+
+  &.has-negative-translate {
+    transform: translateY(-($scale * 100 - 100px));
+  }
+
 }

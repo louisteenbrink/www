@@ -263,13 +263,13 @@ en:
       description: Join us as hiring partner and get alerted about our new candidates and job events.
       hiring_tagline_html: Join us as hiring partners. <strong>Work with our alumni</strong>.
       join_our_network: Join our Network
-      why: Why join our network?
-      reasons: Le Wagon's Network allows fast-growing companies to hire directly from our alumni community and meet with them on a quarterly basis. face-to-face.
-      exceptional: Exceptional people
+      why: What's a hiring partner?
+      reasons: Le Wagon's network allows fast-growing companies to hire directly from our alumni. We'll invite you to job fairs, push your offers on our job board and organise events together to promote your organisation's culture and vision.
+      exceptional: Exceptional alumni
       exceptional_details: |
-        Our students have dedicated two months of their life to learn programming,
+        Our alumni have dedicated two months of their life to learn programming,
         usually after a first 5-year education cycle. They have spent more than 360
-        hours coding during the program. Very rare to find individuals with such
+        hours coding during the program. You will rarely find human beings with such
         commitment.
       unique: With unique backgrounds
       unique_details: |
@@ -284,8 +284,8 @@ en:
         features from day one as a junior dev. As a PM or a growth marketer,
         they will be great at connecting business issues with tech
         developments.
-      wanna_join: Want to be part of our network?
-      signup: Sign up to get alerts about our candidates and coming job events.
+      wanna_join: Want to join Le Wagon's network?
+      signup: Contact us to become our hiring partner.
     enterprise:
       title: Re-invent work in a digital world with Le Wagon's immersive workshops.
       description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
