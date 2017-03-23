@@ -308,6 +308,15 @@
   }
   .main a { font-weight: bold !important; }
   .marged-bottom { margin-bottom: 0.8em; }
+  .flags-smartphone {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    svg {
+      width: 25px;
+      margin: 0 10px;
+    }
+  }
 }
 
 
