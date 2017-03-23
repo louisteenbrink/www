@@ -10,17 +10,19 @@
   <%= asset_path "blog/#{@post.metadata[:thumbnail]}" if @post.metadata[:thumbnail] %>
 <% end %>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-10 col-md-offset-1">
-      <article class="blog-post">
-        <h1><%= @post.metadata[:title].html_safe %></h1>
-        <%= render 'written_by', post: @post, date_format: :long %>
+<div style="overflow: hidden;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <article class="blog-post">
+          <h1><%= @post.metadata[:title].html_safe %></h1>
+          <%= render 'written_by', post: @post, date_format: :long %>
 
-        <hr>
+          <hr>
 
-        <%= raw @post.content %>
-      </article>
+          <%= raw @post.content %>
+        </article>
+      </div>
     </div>
   </div>
 </div>
