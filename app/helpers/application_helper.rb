@@ -1,10 +1,10 @@
 module ApplicationHelper
   include CloudinaryHelper
-  def image_url_with_fallback(image_url)
-    if image_url.strip.empty?
-      image_path 'social/home_facebook_card.png'
+  def image_url_with_fallback(_image_url)
+    if _image_url.strip.empty?
+      image_url 'social/home_facebook_card.png'
     else
-      image_url.strip
+      _image_url.strip
     end
   end
 
