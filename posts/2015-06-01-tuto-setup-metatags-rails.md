@@ -37,12 +37,10 @@ L'idée de ce tutoriel est de vous montrer comment obtenir ce résultat sur chac
 
 Commencez par créer un nouveau fichier `meta.yml` dans `config`, avec le contenu suivant :
 
-**Important :** Prenez soin ensuite de rédiger un titre accrocheur, une description percutante et de choisir une image mettant parfaitement en valeur votre produit ou service.
-
 ```yaml
 # config/meta.yml
-meta_title: "Titre générique"
-meta_description: "Description générique."
+meta_title: "Nom du Product - Tagline du Product"
+meta_description: "Description percutante"
 meta_image: "image.jpg" # Une image dans votre dossier app/assets/images/
 twitter_account: "@nomdevotrecompte" # indispensable pour les Twitter Cards
 ```
@@ -98,7 +96,7 @@ end
 ```
 
 Assurez-vous de bien avoir défini la variable d'environnement `HOST` en **production**.
-Si vous utilisez Heroku pour déployer votre site, il suffit de taper à la ligne de commande `heroku config:set HOST=www.my_product.com` avec l'url de votre site web.
+Si vous utilisez Heroku pour déployer votre site, il suffit de taper dans votre terminal `heroku config:set HOST=www.my_product.com` avec l'url de votre site web.
 
 Pour vérifier qu'elle est bien définie, tapez `heroku config:get HOST` à la ligne de commande et elle devrait s'afficher.
 

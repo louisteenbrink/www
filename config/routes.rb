@@ -112,6 +112,7 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
+  get "500", to: 'application#render_500', via: :all
   match "*path", to: "application#render_404", via: :all
 end
 
