@@ -280,13 +280,14 @@ fr:
     enterprise:
       title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
-      tagline_html: Ré-inventer le travail.<br> Par le code et la technologie.
+      tagline_html: "<span style='font-size: 40px;'>Transformez votre organisation. <br>En vous formant au code et à la technologie.</span>"
       tagline_details_html: |
-        Apprendre les nouveaux savoir-faire & changer votre façon de travailler <br>dans votre organisation.
-        <strong>Travailler mieux, plus efficacement.</strong>
+        Apprenez les nouveaux savoir-faire numériques et changer votre façon de travailler <br>dans votre organisation.
+        <strong>Travailler mieux, de façon plus agile et plus efficace.</strong>
       apply: Formez-vous avec Le Wagon
-      skills_header: De nouveaux savoir-faire pour une nouvelle façon de travailler.
-      skills_text: Dans un monde qui se transforme, changer vos outils, vos méthodes, la vision de vos collaborateurs.
+      apply_to: Formation %{skill}
+      skills_header: Des ateliers & des sprints faits pour votre entreprise
+      skills_text_html: Grâce à des formations de 2 heures, des ateliers d'une journée ou des sprints d'une semaine, <strong>formez vos collaborateurs à l'UI/UX Design, au Product Management ou au développement web</strong>.
       pm: Product Management
       pm_details: Découpage du travail, nouvelles techniques agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups technologiques.
       ui: UI / UX
@@ -309,7 +310,7 @@ fr:
           Après avoir formé tant d'élèves talentueux, nous savons que nous pouvons aussi <strong>vous aider à transformer votre organisation</strong>.
         </p>
       hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
-      watch: Regarder notre dernier atelier
+      watch: Notre dernier atelier "One Day of Code"
       google_quote: Le Wagon sait transmettre des compétences techniques et une culture très complémentaires pour des profils business. Leur vision de la technologie est unique.
       eki_quote: Ils ont été un partenaire clef apportant une forte culture Produit et UX chez Ekimetrics. Il y a un impact direct sur notre façon de travailler.
       drivy_quote: Leur curriculum est extrêmement bien structuré et leur professeurs sont des professionels passionés.

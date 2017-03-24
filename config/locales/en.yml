@@ -291,11 +291,12 @@ en:
       description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
       tagline_html: Re-invent work.<br>By learning code and technology.
       tagline_details_html: |
-        Learn the digital skills to change the way you work <br>in your organisation.
+        Learn digital skills to change the way people work <br>in your organisation.
         <strong>Work faster, be more efficient.</strong>
       apply: Learn with Le Wagon
-      skills_header: Workshops and Sprints designed for you
-      skills_text: 2 hour session, one-day or one-week immersion. Learn these new digital skills.
+      apply_to: Learn %{skill}
+      skills_header: Workshops & Sprints designed for your company
+      skills_text_html: Through 2-hour talks, one-day workshops or one-week prototyping sprints, <strong>we will teach you UI/UX Design, Product Management and web-development</strong>.
       pm: Learn Product Management
       pm_details: User stories, collaborative workflow. Learn the good way to work on a project within a team.
       ui: Learn UI / UX
@@ -317,7 +318,7 @@ en:
          After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
         </p>
       hec_html: Since 2017, Le Wagon is the official partner of HEC (highest ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.
-      watch: Watch our last workshop
+      watch: Our last corporate workshop "One Day of Code"
       google_quote: Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.
       eki_quote:  The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
       drivy_quote: Their curriculum is very well crafted, the teachers are passionate.
