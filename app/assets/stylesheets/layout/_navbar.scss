@@ -31,6 +31,9 @@
     flex: 0 1 auto;
     cursor: pointer;
     padding: 0 10px;
+    .dropdown-menu {
+      cursor: default;
+    }
   }
   &-spacer {
     flex: 1 1 auto;
