@@ -23,13 +23,12 @@
   @media (max-width: $screen-sm) { font-size: 35px }
 }
 .banner p {
-  font-size: 26px;
+  font-size: 23px;
   margin: 0;
   text-align: center;
   padding: 20px;
-  font-weight: $font-weight-light;
-  color: rgba(255, 255, 255, 0.9);
-
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.95);
   @media (max-width: $screen-sm) {
     font-size: 19px;
   }
@@ -61,10 +60,13 @@
 
 .banner-gradient {
   h1 {
-    font-weight: $font-weight-bold;
+    strong { animation: boxShadow 0.3s 1s cubic-bezier(0, 0, 0, 1.25) forwards }
+    font-weight: 900;
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
     color: white;
-    strong { animation: boxShadow 0.3s 1s cubic-bezier(0, 0, 0, 1.25) forwards }
+    letter-spacing: -1px;
+    font-size: 45px;
+    margin-bottom: 10px;
   }
   .btn {
     padding: 12px 30px;
@@ -87,7 +89,7 @@
 }
 
 .banner-gradient-shadow {
-  background-image: linear-gradient(-225deg, rgba(30, 30, 30, 0.6) 30%, rgba(46, 46, 46, 0.5) 80%);
+  background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 0.5) 60%);
   position: absolute;
   opacity: 0.8;
   top: 0;
@@ -95,6 +97,9 @@
   left: 0;
   right: 0;
   z-index: 1;
+  &.home {
+    background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 40%);
+  }
 }
 
 .banner-flat {
@@ -162,7 +167,6 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   justify-content: center;
   background: white;
-
   span {
     padding-left: 6px;
 
@@ -170,15 +174,24 @@
       display: none;
     }
   }
-
   &:hover {
     color: black;
     text-decoration: none;
   }
 }
-@media(max-width: $screen-md) {
+@media(max-width: $screen-lg) {
   .banner-cta a {
+    margin-left: 0px;
     margin-top: 10px;
+  }
+  .banner-cta .btn-danger {
+    margin-right: 0px;
+  }
+}
+@media(max-width: $screen-xs) {
+  .banner-cta a {
+    margin-top: 0px;
+    border-radius: 0px !important;
   }
 }
 

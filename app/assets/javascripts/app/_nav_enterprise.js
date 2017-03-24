@@ -5,4 +5,10 @@ $(function(){
     $(".enterprise-testimonial").addClass("hidden");
     $($(this).data("target")).removeClass("hidden");
   })
+  $(".enterprise-nav .img-card").click(function(){
+    $(".enterprise-nav .img-card").removeClass("active");
+    $(this).addClass("active");
+    $(".alumni-preview").addClass("hidden");
+    $($(this).data("target")).removeClass("hidden");
+  })
 })

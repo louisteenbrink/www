@@ -52,7 +52,10 @@
 
   &.is-active {
 
-    .day-hour { animation: dayHourPulse .5s ease forwards }
+    .day-hour {
+      animation: dayHourPulse .5s ease forwards;
+      font-weight: 900;
+    }
     .day-description,
     .day-hour {
       color: black;
@@ -90,16 +93,13 @@
   background: transparent;
   color: white;
   box-shadow: 0px 0px 0px transparent;
-  flex: 1 1 auto;
-  padding: 25px;
+  max-width: 500px;
+  padding: 20px;
   @media (max-width: $screen-sm) {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
     background: none !important;
     box-shadow: none !important;
     color: black;
-
-
-
   }
 
 }
@@ -174,6 +174,7 @@
   flex: 1;
   position: relative;
   z-index: 13;
+  padding-left: 50px;
   h2 {
     color: white;
     z-index: 9;
@@ -197,7 +198,7 @@
   }
 
   &:after {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.63), transparent 73%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent 70%);
     position: absolute;
     top: 0;
     right: 0;

@@ -1,8 +1,7 @@
 #employers-why-overlay {
   background-color: #F4F4F4;
   position: relative;
-  margin-top: -230px;
-  padding-top: 200px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 .employers-why-text {
@@ -34,5 +33,160 @@
 @media (max-width: $screen-sm) {
   #employers-apply {
     padding: 0 20px;
+  }
+}
+
+.header h2 {
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+#enterprise-hiring {
+  overflow-y: hidden;
+  display: flex;
+  .enterprise-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 70%;
+    background: whitesmoke;
+    img {
+      margin: 0px 20px;
+    }
+    img:hover {
+      cursor: pointer;
+    }
+  }
+
+  .img-card {
+    width: 120px;
+    height: 100px;
+    background: white;
+    box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    // border: 2px solid transparent;
+  }
+  .img-card.active {
+    // border: 2px solid rgba(0,0,0,0.5);
+    background: white;
+    box-shadow: 0 0 5px rgba(0,0,0,0.9);
+  }
+  .img-card:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  }
+  .enterprise-nav img {
+    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
+    &.active {
+      opacity: 1;
+    }
+  }
+  .alumni-preview-container {
+    flex: 1;
+    background: #f5f5f5;
+    text-align: center;
+    display: flex;
+    padding-left: 0px;
+    padding-top: 0px;
+    align-items: stretch;
+  }
+  .alumni-preview {
+    border-radius: 2px;
+    height: calc(100vh - 200px);
+    padding: 20px;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    h2 {
+      font-size: 26px;
+      font-weight: 900;
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 19px;
+      font-weight: bold;
+    }
+    h4 {
+      font-size: 16px;
+      color: #333333;
+      font-weight: 100;
+      margin-top: 0px;
+    }
+    .alumni-title {
+      font-size: 15px;
+      padding: 20px 0;
+    }
+    a {
+      color: black;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .github-link {
+      border: 1px solid black;
+      color: black;
+      font-size: 15px;
+      width: 200px;
+      padding: 10px;
+      border-radius: 3px;
+      text-decoration: none;
+      display: inherit;
+    }
+  }
+  .slice {
+    margin: 5px;
+  }
+}
+
+
+$scale: 1.07;
+
+.img-card {
+  cursor: pointer;
+  transition: .3s cubic-bezier(.5, 0, .1, 1) all;
+  transition-delay: .15s;
+  &:hover {
+    transform: scale($scale);
+    .play {
+      opacity: 1;
+    }
+  }
+
+  &.has-positive-translate {
+    transform: translateY($scale * 100 - 100px);
+  }
+
+  &.has-negative-translate {
+    transform: translateY(-($scale * 100 - 100px));
+  }
+
+}
+
+
+@media(max-width: $screen-md) {
+  #enterprise-hiring {
+    flex-direction: column;
+    .enterprise-nav {
+      flex: 1;
+      justify-content: center;
+    }
+    .img-card.active {
+      box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    }
   }
 }

@@ -3,13 +3,13 @@
 
 <div class="banner-container">
   <div class="container">
-    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('banners/6.jpg')%>');" id="banner-program">
+    <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('officials/program.jpg')%>');" id="banner-program">
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
         <h1 class='glitch'>
         <h1><%= t(".our_program") %></h1>
         </h1>
-        <p>
+        <p style="font-size: 26px;">
           <%= t(".program_details_html") %>
         </p>
       </div>
@@ -44,7 +44,7 @@
         weeks: t(".one_week"),
         startWeek: '1',
         endWeek: '2',
-        description: t('.ruby'),
+        description: t('.ruby_html').html_safe,
         skills: [
           { 'icon': 'devicons-terminal_badge' },
           { 'icon': 'devicons-git' },
@@ -59,7 +59,7 @@
         weeks: t(".one_week"),
         startWeek: '2',
         endWeek: '3',
-        description: t('.software'),
+        description: t('.software_html').html_safe,
         skills: [
           { 'icon': 'devicons-netbeans' },
         ]
@@ -72,7 +72,7 @@
         weeks: t(".one_week"),
         startWeek: '3',
         endWeek: '4',
-        description: t('.database'),
+        description: t('.database_html').html_safe,
         skills: [
           { 'icon': 'devicons-streamline' },
           { 'icon': 'devicons-postgresql' }
@@ -86,7 +86,7 @@
         startWeek: '4',
         endWeek: '5',
         curve_size: 60  ,
-        description: t('.frontend'),
+        description: t('.frontend_html').html_safe,
         skills: [
           { 'icon': 'devicons-html5' },
           { 'icon': 'devicons-css3' },
@@ -101,7 +101,7 @@
         weeks: t(".two_weeks"),
         endWeek: '7',
         curve_size: 75,
-        description: t('.rails'),
+        description: t('.rails_html').html_safe,
         skills: [
           { 'icon': 'devicons-ruby_on_rails' },
           { 'icon': 'devicons devicons-react' },
@@ -116,7 +116,7 @@
         weeks: t(".two_weeks"),
         endWeek: '9',
         curve_size: 100,
-        description: t('.projects'),
+        description: t('.projects_html').html_safe,
         skills: [
           { 'icon': 'devicons devicons-responsive' }
         ]
@@ -127,7 +127,7 @@
 <% end %>
 
 
-<div class="two-columns">
+<div class="two-columns hidden-xs">
   <div class="container">
     <div class="two-columns-description">
       <h2 class="section-header-big">
@@ -139,31 +139,53 @@
           alumni: (@statistics['alumni']['total'] / 10) * 10) %>
       </p>
     </div>
-    <div class='image-container terminal'>
+    <div class='two-columns-image-container terminal'>
       <%= image_tag "product/fullstack-challenges.png",
-          class: "two-columns-img two-columns-img-left"
+          class: "two-columns-img", style: "height:600px; margin-top: 100px;"
       %>
     </div>
   </div>
 </div>
 
-<div class="bg-blue two-columns">
+<div class="container visible-xs padded">
+  <h2 class="section-header-big">
+    <%= t(".why_us") %>
+  </h2>
+  <p class="text-readable text-opac">
+    <%= t(".why_us_details_html",
+      batches: @statistics['batches']['total'],
+      alumni: (@statistics['alumni']['total'] / 10) * 10) %>
+  </p>
+</div>
+
+<div class="bg-blue two-columns hidden-xs">
   <div class="container">
     <div class="two-columns-description" >
       <h2 class="section-header-big">
         <%= t(".community") %>
       </h2>
-      <p class="text-readable text-opac">
+      <p class="text-readable" style="color: rgba(255, 255, 255, 0.9);">
         <%= t(".community_details_html", alumni: (@statistics['alumni']['total'] / 10) * 10) %>
       </p>
     </div>
     <div class='two-columns-image-container slack'>
-      <%= image_tag "product/slack.png", class: "two-columns-img  two-columns-img-right", style: "height:600px;" %>
+      <%= image_tag "officials/slack-design.png", class: "two-columns-img  two-columns-img-right", style: "height:600px; margin-top: 0px;" %>
     </div>
   </div>
 </div>
 
-<div class="two-columns">
+<div class="bg-blue padded visible-xs">
+  <div class="container">
+    <h2 class="section-header-big">
+      <%= t(".community") %>
+    </h2>
+    <p class="text-readable text-opac">
+      <%= t(".community_details_html", alumni: (@statistics['alumni']['total'] / 10) * 10) %>
+    </p>
+  </div>
+</div>
+
+<div class="two-columns hidden-xs" style="min-height: 400px">
   <div class="container">
     <div class="two-columns-description">
       <h2 class="section-header-big">
@@ -174,49 +196,61 @@
       </p>
     </div>
     <div class='two-columns-image-container'>
-      <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:350px;margin-bottom:70px" %>
+      <%= image_tag "product/github-portfolio.png", class: "two-columns-img two-columns-img-padded-left", style: "height:350px;margin-top:0px" %>
     </div>
   </div>
 </div>
 
-<% cache [ 'day-type', locale: I18n.locale ] do %>
-<div class="day-type-overlay" id="typical-day">
-  <%= react_component 'DayType',
-    {
-      title: t(".typical_day"),
-      steps: [
-        {
-          image: image_path('banners/5.jpg'),
-          description: t(".theoretical_intro"),
-          hour: '9h',
-          circle_color: 'day-circle-red',
-          active: false
-        },
-        {
-          image: image_path('banners/4.jpg'),
-          description: t(".pair_programming"),
-          hour: '10h30',
-          circle_color: 'day-circle-blue'
-        },
-        {
-          image: image_path('banners/yoga.jpg'),
-          description: t(".yoga"),
-          hour: '16h30',
-          circle_color: 'day-circle-orange'
-        },
-        {
-          image: image_path('banners/live-code.jpg'),
-          description: t(".live_code"),
-          hour: '17h30',
-          circle_color: 'day-circle-orange'
-        },
-        {
-          image: image_path('banners/8.jpg'),
-          description: t(".talk"),
-          hour: '19h00',
-          circle_color: 'day-circle-yellow'
-        }
-      ]
-    }, prerender: prerender? %>
+<div class="container visible-xs padded">
+  <h2 class="section-header-big">
+    <%= t(".cv") %>
+  </h2>
+  <p class="text-readable text-opac">
+    <%= t(".cv_details_html") %>
+  </p>
 </div>
-<% end %>
+
+
+<div class="hidden-xs">
+  <% cache [ 'day-type', locale: I18n.locale ] do %>
+  <div class="day-type-overlay" id="typical-day">
+    <%= react_component 'DayType',
+      {
+        title: t(".typical_day"),
+        steps: [
+          {
+            image: image_path('officials/livecode-3.jpg'),
+            description: t(".theoretical_intro"),
+            hour: '9h',
+            circle_color: 'day-circle-red',
+            active: false
+          },
+          {
+            image: image_path('officials/students-3.jpg'),
+            description: t(".pair_programming"),
+            hour: '10h30',
+            circle_color: 'day-circle-blue'
+          },
+          {
+            image: image_path('officials/yoga-program.jpg'),
+            description: t(".yoga"),
+            hour: '16h30',
+            circle_color: 'day-circle-orange'
+          },
+          {
+            image: image_path('officials/students-12.jpg'),
+            description: t(".live_code"),
+            hour: '17h30',
+            circle_color: 'day-circle-orange'
+          },
+          {
+            image: image_path('officials/event.jpg'),
+            description: t(".talk"),
+            hour: '19h00',
+            circle_color: 'day-circle-yellow'
+          }
+        ]
+      }, prerender: prerender? %>
+  </div>
+  <% end %>
+</div>

@@ -43,9 +43,7 @@ class ModuleItem extends React.Component {
           ref='module'
         >
           <div className='feature-header'>
-            <div className='feature-icon hidden-xs'>
-              <i className={this.props.icon}/>
-            </div>
+            <i className={this.props.icon}/>
             <div className='feature-title text-left'>
               {this.props.title}
             </div>
@@ -53,9 +51,7 @@ class ModuleItem extends React.Component {
               {this.props.weeks}
             </div>
           </div>
-          <div className='feature-body text-left'>
-            {this.props.description}
-          </div>
+          <div className='feature-body text-left' dangerouslySetInnerHTML={{__html: this.props.description}}/>
         </div>
       </div>
     )

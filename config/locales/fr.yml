@@ -37,7 +37,11 @@ fr:
         on_site: En présentiel
         fullstack_program: FullStack - 9 semaines intensives
       apply: Postuler
-      employers: Employeurs
+      employers: Business
+      work: Travaillez avec nos alumni
+      train: Formez votre entreprise au code
+      recruitment: Recrutement
+      workshops: Ateliers Corporate
     navbar_dropdown:
       menu:
         cities: Villes
@@ -148,64 +152,69 @@ fr:
         2 mois pour <strong>devenir développeur web</strong>.
       apply_for_nine_weeks_html: "Postulez <span class='hidden-xs'>pour 9 semaines de formation</span>"
       nine_weeks: 9 semaines intensives - 360 heures de code
-      to_build_your_ideas_html: Apprenez <strong>toute la <i>stack</i> web</strong>. De la base de données au navigateur.
+      to_build_your_ideas_html: Apprenez toute la stack web. De la base de données au navigateur.
       why_us: Pourquoi Le Wagon ?
       why_us_details_html: |
-        Une expérience de %{batches} sessions depuis 2014 (ça représente plus de %{alumni} élèves !) et un programme qui a évolué à chaque fois.
-        C'est cette attention au détail qui rend Le Wagon aussi efficace. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans :</strong>
-        <ul>
-          <li>Le set-up parfait d'un développeur</li>
-          <li>Les techniques de modélisation d'une architecture logicielle & d'une base de donnée</li>
-          <li>Le travail collaboratif sur Github</li>
-          <li>Le workflow technique utilisé dans les meilleures startups</li>
-          <li>Les outils comme Heroku, Stripe, Mandrill, Algolia pour déployer vos produits et y intégrer des fonctionnalités puissantes (paiement, géolocalisation, mailing, search etc...)</li>
+        Le Wagon est classé parmi les 3 meilleurs coding bootcamps au monde selon <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> et <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        Nous avons une expérience de %{batches} sessions depuis 2014 (ça représente plus de %{alumni} élèves !) et un programme qui a évolué à chaque session.
+        Selon nous, tout est affaire de précision et nous avons mis plus de trois ans à concevoir notre programme. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans:</strong>
+        <ul style="font-size:18px;">
+          <li style="padding: 5px;">Le set-up parfait d'un développeur</li>
+          <li style="padding: 5px;">Les techniques de modélisation d'une architecture logicielle & d'une base de donnée</li>
+          <li style="padding: 5px;">Le travail collaboratif sur Github</li>
+          <li style="padding: 5px;">Le workflow technique utilisé dans les meilleures startups</li>
+          <li style="padding: 5px;">Les outils comme Heroku, Stripe, Mandrill, Algolia pour déployer vos produits et y intégrer des fonctionnalités puissantes (paiement, géolocalisation, mailing, search etc...)</li>
         </ul>
       community: Une communauté ultra active
       community_details_html: |
         %{alumni}+ élèves aux profils variés (ingénieurs, journalistes, architectes, designers..)
-        qui communiquent tous les jours sur Slack, posent des questions
+        <strong style="color: white">qui communiquent tous les jours sur Slack</strong>, posent des questions
         aux professeurs, s'échangent des ressources, des gists de
         code, des offres d'emplois, des nouvelles de leurs produits.
         <strong>Une des plus belles communautés tech au monde.</strong>
-        Tous nos élèves partagent la même expertise technique après Le Wagon.
-        C'est ce mélange entre <strong>diversité & savoir-faire technique</strong> qui rend cette communauté si unique.
-      cv: Votre cv de développeur
+
+        <p class="text-readable">Tous nos élèves partagent la même expertise technique après Le Wagon.
+        C'est ce mélange entre <strong style="color: white">diversité & savoir-faire technique</strong> qui rend cette communauté si unique.</p>
+      cv: Votre CV de développeur
       cv_details_html: |
         En 2 mois seulement, codez plusieurs applications web,
         <strong>dont votre propre projet + un clone d'Airbnb</strong>.
         Mettez ces applications en production et construisez-vous un solide portfolio sur Github.
-      ruby: |
-        Manipulez la ligne de commande et versionnez votre travail avec Git.
-        Codez des petits programmes ruby qui jouent avec les variables, les méthodes, les boucles, les conditions..
-        Apprenez à lire et écrire dans des fichiers et à collecter des données intéressantes
-        en scrapant des sites web ou en utilisant des APIs.
-      software: |
-        Plongez dans la programmation orientée-objet et construisez de vrais logiciels
-        en découpant votre programme en différents objets. Pour coder
-        un réseau social, un système de réservation de voitures, une plateforme
-        de gestion pour un restaurant, etc.. vous avez besoin d'architecturer votre code.
-        Tout comme un architecte doit respecter certains patterns pour construire une maison.
-        Codez vos premières applications MVC.
-      database: |
-        Les programmes ont besoin de stocker des informations dans une base de données.
-        Sans base, Facebook perdrait vos infos à chaque login!
-        Apprenez à dessiner votre bases de données en définissant les tables et leurs relations.
-        Maîtrisez SQL, le langage utilisé pour parler à la base et lire/écrire des données.
-      frontend: |
-        Musclez votre culture en UI et apprenez tout sur HTML, CSS et les
-        bonnes pratiques en web-design (techniques de positionnement et d'animation).
-        Maîtrisez Bootstrap pour prototyper très rapidement vos produits.
+      ruby_html: |
+        <p>Manipulez la ligne de commande et apprenez à <strong>versionner votre travail avec git.</strong></p>
+        <p>Codez des scripts en ruby qui manipulent des variables, des méthodes, des boucles, des conditions.
+        Apprenez à <strong>lire et écrire dans des fichiers</strong> et à <strong>collecter des données depuis des sites web ou en utilisant une API</strong>.</p>
+      software_html: |
+        <p>Plongez dans la programmation orientée-objet et construisez de vrais logiciels
+        en découpant votre programme en différents fichiers.</p>
+
+        <p>Pour coder une app (Facebook, Airbnb, Twitter) vous avez besoin d'<strong>architecturer votre code en différents fichiers.</strong>
+        Vous ne pouvez pas tout coder dans un seul fichier. Tout comme un architecte doit respecter une structure pour construire un immeuble.
+        Codez vos premières applications qui suivent le motif MVC utilisé par la plupart des apps que vous connaissez.</p>
+      database_html: |
+        <p>Les programmes ont besoin de stocker des informations dans une base de données.
+        Sans base de données, une application perdrait vos informations personnelles à chaque connexion.</p>
+        <p>Apprenez à concevoir votre base de données en définissant ses tables et leurs relations.
+        Maîtrisez SQL, le langage utilisé pour parler à la base et lire/écrire des données en base.</p>
+      frontend_html: |
+        Musclez votre culture en UI et recodez tous les composants graphiques classiques qui constituent une interface web
+        (boutons, formulaires, barre de navigation, badge, tabulations) avec HTML, CSS et avec la librairie Bootstrap.
+        Développer de bonnes pratiques en web-design (architecture de ses feuilles de style, dernières techniques CSS comme les flexbox).
+
         Puis passez à Javascript et jQuery. Manipulez vos pages web en Javascript,
-        définissez des évènements, et faites vos premières requêtes AJAX.
-        Nous jouerons avec pleins d'APIs très cools (Trello API, Slack API, Facebook API, etc..)
-      rails: |
+        définissez des évènements et faites vos premières requêtes AJAX.
+        Nous jouerons avec pleins d'APIs (Facebook, Trello, Slack, etc..)
+      rails_html: |
         Il est temps de passer à Rails. Vous serez vite à l'aise avec le framework étant données
         vos connaissances à ce stade du programme. Et vous allez vous sentir très puissant !
-        Durant les semaines Rails, vous coderez un clone d'Airbnb en 5 jours.
+        Durant les semaines Rails, vous coderez un clone de l'application Airbnb en 5 jours.
         Vous travaillerez par équipe en collaborant sur Github et en mettant votre
         application en production sur Heroku, avec le même workflow que dans les bonnes startups.
-      projects: |
-        Project Time ! A vous de coder votre propre projet et de construire le meilleur produit possible !
+      projects_html: |
+        <p>A vous de coder votre propre projet et de construire le meilleur produit possible avec ruby on Rails.</p>
+        <p>En amont, nous vous ferons pitcher vos idées et nous passerons une journée à prototyper votre application sans coder avec des outils
+        d'UX designer comme Skecth ou Marvelapp. Nous challengerons vos projets pour que vous donniez le meilleur de vous sur les deux dernières semaines.
+        Et enfin le dernier jour, vous présenterez votre application en groupe lors du demo day devant un public pour venir conclure ces deux mois d'apprentissage en beauté.</p>
       one_week: 1 semaine
       two_weeks: 2 semaines
       first_module: "1 - Programmation ruby"
@@ -229,7 +238,7 @@ fr:
       theoretical_intro: "Introduction théorique & live-code des professeurs projeté sur grand écran."
       pair_programming: "Challenges en binôme ou par groupe sur la plateforme autocorrigée du Wagon, encadrés par les professeurs et TAs (Teaching Assistants)."
       yoga: "Jeudi après-midi, séance de Yoga avec Claire pour se détendre et remettre ses idées en place."
-      live_code: Live-code d'élèves devant la classe from scratch !
+      live_code: Live-code d'élèves devant la classe from scratch pour apprendre à expliquer son code.
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), ou workshops techniques (UX, design, code)
     stack:
@@ -254,6 +263,20 @@ fr:
       hiring_tagline_html: Employeur ? Vous voulez <strong>travailler avec nos élèves</strong> ?
       join_our_network: Rejoignez Le Wagon
       why: Pourquoi rejoindre notre réseau ?
+      hiring_tagline_html: Rejoignez le réseau<br> du Wagon et travaillez avec nos alumni.
+      hiring_sub_tagline_html:  <strong>Le recrutement est une relation à long-terme</strong>. Rencontrez nos alumni à travers des évènements réguliers, <br>un job board et des ateliers pour présenter votre entreprise à notre communauté.
+      apply: Travaillez avec nos alumni
+      they: Ils ont recruté nos élèves
+      job_board: Le job board du Wagon
+      job_board_details_html: |
+        <p>
+          Publiez vos annonces sur le board du Wagon pour les partager avec nos alumni tout autour du monde (Le Wagon est présent dans 18 villes ce qui est très intéressant si vous développez votre activité dans plusieurs pays).
+        </p>
+        <p>
+         1200+ alumni sont actifs sur notre Slack tous les mois et réagiront à vos annonces. Nous sélectionnons avec attention nos partenaires et ne travaillons qu'avec des entreprises <strong>qui garantissent des offres de qualité pour nos alumni.</strong>
+        </p>
+      join_our_network: Join our Network
+      watch: Regardez le dernier job fair de paris
       reasons: Notre Hiring Network permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
       exceptional: Des alumni exceptionnels
       exceptional_details: |
@@ -271,17 +294,18 @@ fr:
         et le workflow des startups. Comme développeur junior, ils peuvent implémenter des features dès la première semaine.
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
-      signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
+      signup: Contactez-nous pour faire partie de nos partenaire de recrutement.
     enterprise:
-      title: Ré-inventer le travail dans un monde numérique.
-      description: Grâce à des ateliers et formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
-      tagline_html: Ré-inventer le travail.<br> Par le code et la technologie.
+      title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
+      description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
+      tagline_html: "<span style='font-size: 40px;'>Transformez votre organisation. <br>En vous formant au code et à la technologie.</span>"
       tagline_details_html: |
-        Apprendre les nouveaux savoir-faire & changer votre façon de travailler <br>dans votre organisation.
-        <strong>Travailler mieux, plus efficacement.</strong>
-      apply: En savoir plus
-      skills_header: De nouveaux savoir-faire pour une nouvelle façon de travailler.
-      skills_text: Dans un monde qui se transforme, changer vos outils, vos méthodes, la vision de vos collaborateurs.
+        Apprenez les nouveaux savoir-faire numériques et changer votre façon de travailler <br>dans votre organisation.
+        <strong>Travailler mieux, de façon plus agile et plus efficace.</strong>
+      apply: Formez-vous avec Le Wagon
+      apply_to: Formation %{skill}
+      skills_header: Des ateliers & des sprints faits pour votre entreprise
+      skills_text_html: Grâce à des formations de 2 heures, des ateliers d'une journée ou des sprints d'une semaine, <strong>formez vos collaborateurs à l'UI/UX Design, au Product Management ou au développement web</strong>.
       pm: Product Management
       pm_details: Découpage du travail, nouvelles techniques agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups technologiques.
       ui: UI / UX
@@ -304,7 +328,7 @@ fr:
           Après avoir formé tant d'élèves talentueux, nous savons que nous pouvons aussi <strong>vous aider à transformer votre organisation</strong>.
         </p>
       hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
-      watch: Regarder notre dernier atelier
+      watch: Notre dernier atelier "One Day of Code"
       google_quote: Le Wagon sait transmettre des compétences techniques et une culture très complémentaires pour des profils business. Leur vision de la technologie est unique.
       eki_quote: Ils ont été un partenaire clef apportant une forte culture Produit et UX chez Ekimetrics. Il y a un impact direct sur notre façon de travailler.
       drivy_quote: Leur curriculum est extrêmement bien structuré et leur professeurs sont des professionels passionés.
