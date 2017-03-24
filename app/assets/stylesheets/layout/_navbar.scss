@@ -332,20 +332,11 @@
     }
 
     li > a {
-      opacity: .6;
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
     li.main { a { opacity: 1 } }
-  }
-}
-
-.dropdown-cities {
-  a {
-    font-weight: 300 !important;
-    color: black !important;
-    opacity: 1 !important;
   }
 }
 
@@ -512,4 +503,23 @@ a.live-on {
     margin: 0px;
     font-weight: bold;
   }
+}
+
+.dropdown-header {
+  display: block;
+  padding: 10px 20px;
+  font-size: 15px;
+  line-height: 1.4;
+  color: #777777;
+  white-space: nowrap;
+  background: #363636;
+  color: white;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+}
+.dropdown-menu > li > a:hover {
+  color: black;
+  font-weight: 900;
 }
