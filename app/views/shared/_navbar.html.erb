@@ -45,7 +45,7 @@
                       <%= t ".menu.on_site" %> 🏫
                     </li>
                     <li>
-                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), style: "font-size: 18px; font-weight: 500" %>
+                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise" %>
                     </li>
                   </ul>
                   <ul class="list-unstyled">
@@ -105,19 +105,23 @@
             <div class="dropdown-menu dropdown-menu-right dropdown-cities">
               <div class="dropdown-cities-container">
                   <ul class="list-unstyled">
-                    <li class="title text-center">
-                      Recruitment 🌟
+                    <li class="title text-center" style="font-weight: 100;margin-top: 10px;">
+                      <%= t(".recruitment", default: "Recruitment") %> 🌟
                     </li>
                     <li class="text-center">
-                      <a class="" style="font-weight: 900, color: black">Work with our alumni</a>
+                      <%= link_to employers_path, class: "cta-enterprise" do %>
+                        <%= t(".work", default: "Work with our alumni") %>
+                      <% end %>
                     </li>
                   </ul>
                   <ul class="list-unstyled">
-                    <li class="title text-center">
-                      Corporate Workshops 🚀
+                    <li class="title text-center" style="font-weight: 100;margin-top: 10px;">
+                      <%= t(".workshops", default: "Corporate Workshop") %> 🚀
                     </li>
                     <li class="text-center">
-                      <a class="" style="font-weight: 900, color: black">Train your employees</a>
+                      <%= link_to enterprise_path, class: "cta-enterprise" do %>
+                        <%= t(".train", default: "Train your company") %>
+                      <% end %>
                     </li>
                   </ul>
               </div>

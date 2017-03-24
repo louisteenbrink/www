@@ -37,7 +37,11 @@ fr:
         on_site: En présentiel
         fullstack_program: FullStack - 9 semaines intensives
       apply: Postuler
-      employers: Employeurs
+      employers: Business
+      work: Travaillez avec nos alumni
+      train: Formez votre entreprise au code
+      recruitment: Recrutement
+      workshops: Ateliers Corporate
     navbar_dropdown:
       menu:
         cities: Villes
