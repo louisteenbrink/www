@@ -37,15 +37,13 @@
 }
 
 #enterprise-hiring {
-  height: 100vh;
+  height: 110vh;
   overflow-y: hidden;
   display: flex;
   .enterprise-nav {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     flex: 0 0 70%;
-    justify-content: center;
     background: whitesmoke;
     img {
       margin: 0px 20px;
@@ -56,7 +54,7 @@
   }
 
   .img-card {
-    width: 150px;
+    width: 140px;
     height: 120px;
     background: white;
     box-shadow: 0 0 2px rgba(0,0,0,0.3);
@@ -64,12 +62,12 @@
     align-items: center;
     justify-content: space-around;
     margin: 10px 0px;
-    border: 2px solid transparent;
+    // border: 2px solid transparent;
   }
   .img-card.active {
-    border: 2px solid rgba(0,0,0,0.5);
+    // border: 2px solid rgba(0,0,0,0.5);
     background: white;
-    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+    box-shadow: 0 0 5px rgba(0,0,0,0.9);
   }
   .img-card:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
@@ -95,12 +93,22 @@
     background: #f5f5f5;
     text-align: center;
     display: flex;
-    padding-left: 50px;
-    align-items: center;
+    padding-left: 0px;
+    padding-top: 90px;
   }
   .alumni-preview {
-    border-radius: 5px;
+    border-radius: 2px;
     height: calc(100vh - 200px);
+    padding: 20px;
+    margin-right: 50px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.26);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     h2 {
       font-size: 26px;
       font-weight: 900;
@@ -164,4 +172,18 @@ $scale: 1.07;
     transform: translateY(-($scale * 100 - 100px));
   }
 
+}
+
+
+@media(max-width: $screen-md) {
+  #enterprise-hiring {
+    flex-direction: column;
+    .enterprise-nav {
+      flex: 1;
+      justify-content: center;
+    }
+    .img-card.active {
+      box-shadow: 0 0 2px rgba(0,0,0,0.3);
+    }
+  }
 }

@@ -3,7 +3,7 @@
 <%= content_for(:image_url) { image_url 'social/employers_facebook_card.png' } %>
 
 <div class="banner-enterprise" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 80%), url(<%= image_path 'banners/header-employers.jpg' %>)">
-  <div class="banner-content">
+  <div class="banner-content container">
     <h1>
       Join our hiring network<br>
       and work with our alumni.
@@ -17,41 +17,43 @@
 
 <% positions = @client.positions %>
 
-<div id="enterprise-hiring">
-  <div class="enterprise-nav">
-    <div class="header" style="width:100%">
-      <h2 class="text-center">THEY HIRE OUR ALUMNI</h2>
+<div style="background: #F5F5F5;">
+  <div id="enterprise-hiring" class="container">
+    <div class="enterprise-nav">
+      <div class="header" style="width:100%">
+        <h2 class="text-center">THEY HIRE OUR ALUMNI</h2>
+      </div>
+      <% first = true %>
+      <% positions.each_slice(5) do |slice| %>
+      <div class="slice">
+        <% slice.each do |position| %>
+          <div class="img-card <%= 'active' if first %>" data-target="#<%= position['alumni']['first_name'] %>-<%= position['alumni']['last_name']%>">
+            <%= image_tag position["company"]["logo"], width: 100%>
+          </div>
+          <% first = false %>
+        <% end %>
+      </div>
+      <% end %>
     </div>
-    <% first = true %>
-    <% positions.each_slice(5) do |slice| %>
-    <div class="slice">
-      <% slice.each do |position| %>
-        <div class="img-card <%= 'active' if first %>" data-target="#<%= position['alumni']['first_name'] %>-<%= position['alumni']['last_name']%>">
-          <%= image_tag position["company"]["logo"], width: 100%>
+    <div class="alumni-preview-container hidden-sm hidden-xs">
+      <% first = true %>
+      <% positions.each do |position| %>
+        <div class="alumni-preview <%= 'hidden' unless first %>" id="<%= position["alumni"]["first_name"]%>-<%= position["alumni"]["last_name"]%>">
+          <div class="alumni-preview-content">
+            <%= cl_adaptive_image_tag position["alumni"]["photo_path"], width: 120, height: 120, crop: :fill, class: "img-circle" %>
+            <h3><%= position["alumni"]["first_name"]%> <%= position["alumni"]["last_name"]%></h3>
+            <h4>
+              Batch #<%= position["alumni"]["slug"]%>, <strong><%= position["alumni"]["city"]%></strong>
+            </h4>
+            <p class="alumni-title"><%= position["title"]%> <br>at <strong><a href="<%= position["company"]["url"]%>" target="_blank" class="company-link"><%= position["company"]["name"] %></a></strong></p>
+            <a href="http://github.com/<%= position["alumni"]["github_nickname"]%>" target="_blank" class="github-link">
+              <i class="fa fa-github"></i> Github profile
+            </a>
+          </div>
         </div>
         <% first = false %>
       <% end %>
     </div>
-    <% end %>
-  </div>
-  <div class="alumni-preview-container">
-    <% first = true %>
-    <% positions.each do |position| %>
-      <div class="alumni-preview <%= 'hidden' unless first %>" id="<%= position["alumni"]["first_name"]%>-<%= position["alumni"]["last_name"]%>">
-        <div class="alumni-preview-content">
-          <%= cl_adaptive_image_tag position["alumni"]["photo_path"], width: 120, height: 120, crop: :fill, class: "img-circle" %>
-          <h3><%= position["alumni"]["first_name"]%> <%= position["alumni"]["last_name"]%></h3>
-          <h4>
-            Batch #<%= position["alumni"]["slug"]%>, <strong><%= position["alumni"]["city"]%></strong>
-          </h4>
-          <p class="alumni-title"><%= position["title"]%> <br>at <strong><a href="<%= position["company"]["url"]%>" target="_blank" class="company-link"><%= position["company"]["name"] %></a></strong></p>
-          <a href="http://github.com/<%= position["alumni"]["github_nickname"]%>" target="_blank" class="github-link">
-            <i class="fa fa-github"></i> Github profile
-          </a>
-        </div>
-      </div>
-      <% first = false %>
-    <% end %>
   </div>
 </div>
 
