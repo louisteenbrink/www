@@ -261,8 +261,20 @@ en:
     employers:
       title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
       description: Join us as hiring partner and get alerted about our new candidates and job events.
-      hiring_tagline_html: Join us as hiring partners. <strong>Work with our alumni</strong>.
+      hiring_tagline_html: Join our hiring network<br>and work with our alumni.
+      hiring_sub_tagline_html:  Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.
+      apply: Work with Le Wagon alumni
+      they: They hire our alumni
+      job_board: Access Le Wagon's job board
+      job_board_details_html: |
+        <p>
+         Get access to Le Wagon's job board to <strong>publish your offers and share them with our alumni worldwide.</strong>
+        </p>
+        <p>
+         1200+ alumni worldwide are active on our Slack every month and will see you offer. We select our hiring partners very carefully to <strong>garantee only great companies and offers on our job board.</strong>
+        </p>
       join_our_network: Join our Network
+      watch: Watch our last job fair in Paris
       why: What's a hiring partner?
       reasons: Le Wagon's network allows fast-growing companies to hire directly from our alumni. We'll invite you to job fairs, push your offers on our job board and organise events together to promote your organisation's culture and vision.
       exceptional: Exceptional alumni

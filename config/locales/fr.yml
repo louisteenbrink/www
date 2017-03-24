@@ -259,6 +259,20 @@ fr:
       hiring_tagline_html: Employeur ? Vous voulez <strong>travailler avec nos élèves</strong> ?
       join_our_network: Rejoignez Le Wagon
       why: Pourquoi rejoindre notre réseau ?
+      hiring_tagline_html: Rejoignez le réseau<br> du Wagon et travaillez avec nos alumni.
+      hiring_sub_tagline_html:  <strong>Le recrutement est une relation à long-terme</strong>. Rencontrez nos alumni à travers des évènements réguliers, <br>un job board et des ateliers pour présenter votre entreprise à notre communauté.
+      apply: Travaillez avec nos alumni
+      they: Ils ont recruté nos élèves
+      job_board: Le job board du Wagon
+      job_board_details_html: |
+        <p>
+          Publiez vos annonces sur le board du Wagon pour les partager avec nos alumni tout autour du monde (Le Wagon est présent dans 18 villes ce qui est très intéressant si vous développez votre activité dans plusieurs pays).
+        </p>
+        <p>
+         1200+ alumni sont actifs sur notre Slack tous les mois et réagiront à vos annonces. Nous sélectionnons avec attention nos partenaires et ne travaillons qu'avec des entreprises <strong>qui garantissent des offres de qualité pour nos alumni.</strong>
+        </p>
+      join_our_network: Join our Network
+      watch: Regardez le dernier job fair de paris
       reasons: Notre Hiring Network permet à des entreprises à forte croissance de recruter directement les élèves du Wagon. En les rencontrant en personne, une fois par trimestre.
       exceptional: Des alumni exceptionnels
       exceptional_details: |
@@ -276,7 +290,7 @@ fr:
         et le workflow des startups. Comme développeur junior, ils peuvent implémenter des features dès la première semaine.
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
-      signup: Inscrivez-vous pour être informé des prochains évènements de recrutement.
+      signup: Contactez-nous pour faire partie de nos partenaire de recrutement.
     enterprise:
       title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.

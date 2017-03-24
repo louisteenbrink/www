@@ -36,8 +36,17 @@
   }
 }
 
+.header h2 {
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  padding: 20px;
+  padding-top: 50px;
+}
+
 #enterprise-hiring {
-  height: 110vh;
   overflow-y: hidden;
   display: flex;
   .enterprise-nav {
@@ -54,14 +63,14 @@
   }
 
   .img-card {
-    width: 140px;
-    height: 120px;
+    width: 120px;
+    height: 100px;
     background: white;
     box-shadow: 0 0 2px rgba(0,0,0,0.3);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 10px 0px;
+    margin: 5px;
     // border: 2px solid transparent;
   }
   .img-card.active {
@@ -71,13 +80,6 @@
   }
   .img-card:hover {
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
-  }
-  .header h2 {
-    font-size: 24px;
-    font-weight: 100;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
   }
   .enterprise-nav img {
     opacity: 1;
@@ -94,13 +96,15 @@
     text-align: center;
     display: flex;
     padding-left: 0px;
-    padding-top: 90px;
+    padding-top: 0px;
+    align-items: stretch;
   }
   .alumni-preview {
     border-radius: 2px;
     height: calc(100vh - 200px);
     padding: 20px;
     margin-right: 50px;
+    margin-top: 5px;
     width: 100%;
     text-align: center;
     background: white;

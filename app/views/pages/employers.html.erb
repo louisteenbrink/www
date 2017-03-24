@@ -5,11 +5,10 @@
 <div class="banner-enterprise" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.2) 80%), url(<%= image_path 'banners/header-employers.jpg' %>)">
   <div class="banner-content container">
     <h1>
-      Join our hiring network<br>
-      and work with our alumni.
+      <%= t(".hiring_tagline_html", default: "Join our hiring network<br>and work with our alumni.") %>
     </h1>
     <p>
-      Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.
+      <%= t(".hiring_sub_tagline_html", default: "Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.") %>
     </p>
     <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" > <%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
   </div>
@@ -18,22 +17,22 @@
 <% positions = @client.positions %>
 
 <div style="background: #F5F5F5;">
+  <div class="header" style="width:100%">
+    <h2 class="text-center" style="text-transform: uppercase;"><%= t(".they", default: "They hire our alumni") %></h2>
+  </div>
   <div id="enterprise-hiring" class="container">
+
+    <% hot_names = %w(Uber Stripe Google Drivy Doctolib Aligolia Front Aircall) %>
+    <% positions = positions.select {|position| hot_names.include?(position["company"]["name"])} + positions.reject {|position| hot_names.include?(position["company"]["name"])} %>
+
     <div class="enterprise-nav">
-      <div class="header" style="width:100%">
-        <h2 class="text-center">THEY HIRE OUR ALUMNI</h2>
-      </div>
       <% first = true %>
-      <% positions.each_slice(5) do |slice| %>
-      <div class="slice">
-        <% slice.each do |position| %>
-          <div class="img-card <%= 'active' if first %>" data-target="#<%= position['alumni']['first_name'] %>-<%= position['alumni']['last_name']%>">
-            <%= image_tag position["company"]["logo"], width: 100%>
-          </div>
-          <% first = false %>
-        <% end %>
-      </div>
-      <% end %>
+      <% positions.each do |position| %>
+        <div class="img-card <%= 'active' if first %>" data-target="#<%= position['alumni']['first_name'] %>-<%= position['alumni']['last_name']%>" data-toggle="tooltip" data-placement="top" title="<%= position["company"]["name"] %>">
+          <%= image_tag position["company"]["logo"], width: 100%>
+        </div>
+        <% first = false %>
+    <% end %>
     </div>
     <div class="alumni-preview-container hidden-sm hidden-xs">
       <% first = true %>
@@ -60,14 +59,14 @@
 <div id="enterprise-why-us" class="hidden-sm hidden-xs" style="min-height: 450px;">
   <div class="left-part">
     <h2>
-      <%= t('.best', :default => "Access Le Wagon's job board") %>
+      <%= t('.job_board', :default => "Access Le Wagon's job board") %>
     </h2>
-    <p>
-      Get access to Le Wagon's job board to <strong>publish your offers and share them with our alumni worldwide.</strong>
-    </p>
-    <p>
-      1200+ alumni worldwide are active on our Slack every month and will see you offer. We select our hiring partners very carefully to <strong>garantee only great companies and offers on our job board.</strong>
-    </p>
+    <%= t(".job_board_details_html", default: "<p>
+         Get access to Le Wagon's job board to <strong>publish your offers and share them with our alumni worldwide.</strong>
+        </p>
+        <p>
+         1200+ alumni worldwide are active on our Slack every month and will see you offer. We select our hiring partners very carefully to <strong>garantee only great companies and offers on our job board.</strong>
+        </p>") %>
   </div>
   <div class="right-part" style="background-image: linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 80%), url(<%= image_path 'officials/job-board.png' %>);background-size: cover; background-position: center;">
   </div>
@@ -137,7 +136,7 @@
       </div>
     </div>
     <div class="text-center" style="padding-top: 60px">
-      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 20px 25px;font-size: 20px" target="_blank">Become our partner</a>
+      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 20px 25px;font-size: 20px" target="_blank"><%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
     </div>
   </div>
 </div>
@@ -148,7 +147,6 @@
     margin: auto;margin-top: 50px;"><iframe src="https://www.youtube.com/embed/iCcKaF1sDl0" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height: 100%;left:0" allowfullscreen></iframe></div>
 </div>
 
-<% render "shared/positions" %>
 
 
 <div class="banner-container">
@@ -156,7 +154,7 @@
     <div>
       <h3 style="font-size: 40px;"><%= t ".wanna_join" %></h3>
       <p style="margin-bottom: 10px;font-size: 23px"><%= t ".signup" %></p>
-      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 20px 25px;font-size: 20px" target="_blank">Start working with our alumni</a>
+      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 20px 25px;font-size: 20px" target="_blank"><%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
     </div>
   </div>
 </div>
