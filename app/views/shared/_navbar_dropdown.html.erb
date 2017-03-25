@@ -10,7 +10,10 @@
       <%= link_to "Alumni", alumni_path, locale: locale %>
     </li>
     <li class="main">
-      <%= link_to t("shared.navbar.employers"), employers_path %>
+      <%= link_to t("shared.navbar.mobile_employers", default: "Recruitment"), employers_path %>
+    </li>
+    <li class="main">
+      <%= link_to t("shared.navbar.mobile_enterprise", default: "Corporate"), enterprise_path %>
     </li>
     <li class="main">
       <%= link_to 'FAQ', faq_path %>

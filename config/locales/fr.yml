@@ -42,6 +42,8 @@ fr:
       train: Formez votre entreprise au code
       recruitment: Recrutement
       workshops: Ateliers Corporate
+      mobile_employers: Recrutement
+      mobile_enterprise: Corporate
     navbar_dropdown:
       menu:
         cities: Villes
