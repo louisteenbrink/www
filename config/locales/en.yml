@@ -66,8 +66,8 @@ en:
       software_engineer_html: Think like a Software engineer
       software_engineer_details: |
         A person who has the big picture on technical issues,
-        who knows what is a MVC, a DB scheme, an HTTP request,
-        and who can learn a new programming language within a week.
+        who understands what MVC means, knows how to design a database schema or to dissect an HTTP request,
+        and who can start learning a new programming language very quickly.
       technical_workflow: Adopt a technical workflow
       technical_workflow_details_html: |
         There's definitely <strong>a good way</strong> of building tech products
