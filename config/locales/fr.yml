@@ -302,8 +302,8 @@ fr:
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
       tagline_html: "<span style='font-size: 40px;'>Transformez votre organisation. <br>En vous formant au code et à la technologie.</span>"
       tagline_details_html: |
-        Apprenez les nouveaux savoir-faire numériques et changer votre façon de travailler <br>dans votre organisation.
-        <strong>Travailler mieux, de façon plus agile et plus efficace.</strong>
+        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler <br>dans votre organisation.
+        <strong>Travaillez mieux, de façon plus agile et plus efficace.</strong>
       apply: Formez-vous avec Le Wagon
       apply_to: Formation %{skill}
       skills_header: Des ateliers & des sprints faits pour votre entreprise
