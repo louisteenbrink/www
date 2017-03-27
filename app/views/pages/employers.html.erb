@@ -10,7 +10,7 @@
     <p>
       <%= t(".hiring_sub_tagline_html", default: "Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.") %>
     </p>
-    <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" > <%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
+    <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/bKCXIw" data-mode="popup" target="_blank" > <%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
   </div>
 </div>
 
@@ -136,7 +136,7 @@
       </div>
     </div>
     <div class="text-center" style="padding-top: 60px">
-      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 20px 25px;font-size: 20px" target="_blank"><%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
+      <a class="typeform-share button btn btn-danger btn-lg employers-apply" href="https://lewagon.typeform.com/to/bKCXIw" data-mode="popup" target="_blank" style="padding: 20px 25px;font-size: 20px" > <%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
     </div>
   </div>
 </div>
@@ -148,14 +148,15 @@
 </div>
 
 
-
 <div class="banner-container">
   <div class="banner banner-top banner-gradient text-center" style="background-image: linear-gradient(-225deg, rgba(30,30,30,0.6) 30%, rgba(46,46,46,0.5) 80%), url('<%= image_path "officials/students-8.jpg" %>'); height: 80vh;" id="banner-city">
     <div>
       <h3 style="font-size: 40px;"><%= t ".wanna_join" %></h3>
       <p style="margin-bottom: 10px;font-size: 23px"><%= t ".signup" %></p>
-      <a href="https://lewagon.typeform.com/to/bKCXIw" class="btn btn-danger btn-lg employers-apply" style="padding: 20px 25px;font-size: 20px" target="_blank"><%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
+      <a class="typeform-share button btn btn-danger btn-lg employers-apply" href="https://lewagon.typeform.com/to/bKCXIw" data-mode="popup" target="_blank" style="padding: 20px 25px;font-size: 20px" > <%= t('.apply', :default => "Work with Le Wagon's alumni") %> </a>
     </div>
   </div>
 </div>
 
+
+<script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
