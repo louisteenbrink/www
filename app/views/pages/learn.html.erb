@@ -1,24 +1,27 @@
 <div style="background-image: linear-gradient(-180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 80%), url(<%= image_path 'officials/students-10.jpg' %>); background-size:cover;background-position-y: center" id="invitation-banner">
   <div class="banner-enterprise">
-    <div class="banner-content">
+    <div class="banner-content container">
       <h1>
         Learn to code online.
       </h1>
       <p>
-        Ask for an invitation for Le Wagon’s free online course and learn HTML/CSS, Github and all the tech skills useful for an entrepreneur.
+        <span style="font-weight: 900;">Get your invitation</span> for Le Wagon’s free online course and learn HTML / CSS, Javascript, Github and much more.
       </p>
-     <!--  <div class="discount-invitation">
-        <span style="text-decoration: line-through">100€</span>
-        <span>Free for first 500 participants</span>
-      </div> -->
       <div class="invitation">
         <div class="form-invitation">
-          <input type="email" placeholder="your email" class="form-control">
-          <input type="submit" value="Receive my invitation" class="btn btn-danger">
+          <input type="email" placeholder="you@gmail.com" class="form-control">
+          <input type="submit" value="Get my invitation" class="btn btn-danger">
         </div>
       </div>
     </div>
   </div>
-  <%= image_tag "officials/screenshot.png", width: "700px" %>
 
+  <div id="slideshow">
+    <%= image_tag "officials/screenshot-1.png" %>
+    <%= image_tag "officials/screenshot-2.png"%>
+    <%= image_tag "officials/screenshot-3.png"%>
+    <%= image_tag "officials/screenshot-4.png"%>
+    <%= image_tag "officials/screenshot-5.png"%>
+  </div>
 </div>
+
