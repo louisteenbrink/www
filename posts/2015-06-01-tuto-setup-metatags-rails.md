@@ -134,9 +134,9 @@ Vous n'avez plus qu'à définir les `content_for` pertinents dans `app/views/off
 ```erb
 <!-- app/views/offers/show.html.erb -->
 
-<% content_for :meta_title, "#{@offer.name} est sur #{DEFAULT_META["title"]}" %>
+<% content_for :meta_title, "#{@offer.name} est sur #{DEFAULT_META["meta_title"]}" %>
 <% content_for :meta_description, @offer.description %>
-<% content_for :meta_description, cloudinary_url(@offer.photo.path) %>
+<% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
 ```
 
 ##### **Déployez et testez**
