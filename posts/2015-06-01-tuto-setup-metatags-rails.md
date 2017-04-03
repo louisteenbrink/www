@@ -39,6 +39,8 @@ Commencez par créer un nouveau fichier `meta.yml` dans `config`, avec le conten
 
 ```yaml
 # config/meta.yml
+
+meta_product_name: "Nom du Product"
 meta_title: "Nom du Product - Tagline du Product"
 meta_description: "Description percutante"
 meta_image: "image.jpg" # Une image dans votre dossier app/assets/images/
@@ -134,7 +136,7 @@ Vous n'avez plus qu'à définir les `content_for` pertinents dans `app/views/off
 ```erb
 <!-- app/views/offers/show.html.erb -->
 
-<% content_for :meta_title, "#{@offer.name} est sur #{DEFAULT_META["meta_title"]}" %>
+<% content_for :meta_title, "#{@offer.name} est sur #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @offer.description %>
 <% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
 ```
