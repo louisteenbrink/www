@@ -43,8 +43,8 @@ Commencez par créer un nouveau fichier `meta.yml` dans `config`, avec le conten
 meta_product_name: "Nom du Product"
 meta_title: "Nom du Product - Tagline du Product"
 meta_description: "Description percutante"
-meta_image: "image.jpg" # Une image dans votre dossier app/assets/images/
-twitter_account: "@nomdevotrecompte" # indispensable pour les Twitter Cards
+meta_image: "image.jpg"                           # Une image dans votre dossier app/assets/images/
+twitter_account: "@nomdevotrecompte"              # indispensable pour les Twitter Cards
 ```
 
 Créez ensuite un fichier `default_meta.rb` dans `config/initializers` où le `yaml` sera chargé dans une constante Ruby `DEFAULT_META` :
