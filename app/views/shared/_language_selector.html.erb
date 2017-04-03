@@ -28,6 +28,11 @@
             <%= render 'shared/brazilian_flag' %> <p>Português</p>
           <% end %>
         </li>
+        <li>
+          <%= link_to locale_current_url_for(:"zh-CN"), class: ("active" if locale == :"zh-CN") do %>
+            <%= render 'shared/chinese_flag' %> <p>中文</p>
+          <% end %>
+        </li>
       </ul>
     </div>
 

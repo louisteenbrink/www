@@ -390,6 +390,7 @@ pt-BR:
       language_fr: 'Francês'
       language_en: 'Inglês'
       language_pt-BR: 'Português'
+      language_zh-CN: 'Chinês'
       price: 'Preço'
       source_presence_message: Como você ficou sabendo do Le Wagon? Facebook, Google, Quora, Course Report, um amigo (quem?). Obrigado!'
   stories:

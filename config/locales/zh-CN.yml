@@ -1,4 +1,4 @@
-en:
+zh-CN:
   date:
     formats:
       apply: "%B %e, %Y"
@@ -110,7 +110,7 @@ en:
       title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
       description: |
         Le Wagon is Europe's best coding school for entrepreneurs. Checkout for yourself the projects developed by our students.
-      catchline_html: "Change your life: <strong>learn to code</strong>"
+      catchline_html: "改变你的生活: <strong>学习编码</strong>"
       vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
       view_teaser: See our video
       apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
@@ -447,7 +447,7 @@ en:
       language_fr: 'French'
       language_en: 'English'
       language_pt-BR: 'Brazilian Portuguese'
-      language_zh-CN: 'Chinese'
+      language_zh-CN: 中文
       price: 'Price'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:
@@ -473,3 +473,4 @@ en:
   posts:
     index:
       title: Le Wagon - Technical Entrepreneurship Blog
+

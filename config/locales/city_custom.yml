@@ -24,3 +24,12 @@ pt-BR:
     course_language: "Inglès / Chinês"
   chengdu:
     course_language: "Inglès / Chinês"
+
+zh-CN:
+  montreal:
+    post_price: "+ 税收"
+    course_language: "英语 / 法式"
+  shanghai:
+    course_language: "英语 / 中文"
+  chengdu:
+    course_language: "英语 / 中文"

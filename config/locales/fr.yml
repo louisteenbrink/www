@@ -446,6 +446,7 @@ fr:
       language_fr: 'Français'
       language_en: 'Anglais'
       language_pt-BR: 'Portugais brésilien'
+      language_zh-CN: 'Chinois'
       price: 'Prix'
       source_presence_message: 'Comment avez-vous entendu parlé du Wagon ? Par un ami ? Google ? Facebook ? Merci !'
   stories:
