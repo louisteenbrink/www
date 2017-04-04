@@ -250,7 +250,7 @@ pt-BR:
       thanks: Obrigado
       we_will_contact_html: |
         Vamos te contatar em breve por email para agendar a entrevista. <br /><br />Enquanto isso, siga as intruções do nosso check-list e comece o <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby</a> no CodeCademy.
-      take_advance: Check-list
+      take_advance: Checklist
       first_step: "1. Candidate-se pro Le Wagon %{name}"
       second_step: "Junte-se ao %{name} grupo Meetup "
       third_step: "Siga a gente no Twitter"
