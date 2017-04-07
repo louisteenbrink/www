@@ -3,27 +3,60 @@
 <% end %>
 
 <div class="posts">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
-        <h1><%= t ".title" %></h1>
-      </div>
+  <div class="container blog-header">
+    <div class="header-main">
+      <% @posts.take(1).each do |post| %>
+        <a href="<%= post_path post.slug %>">
+          <article class="postcard element">
+            <% if post.metadata[:thumbnail] %>
+              <div class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
+                <div class="postcard-filter"></div>
+              </div>
+            <% end %>
+            <div class="content">
+              <div class="centered">
+                <h2>
+                  <%= post.metadata[:title].html_safe %>
+                </h2>
+                <span class="author">posted by <strong><%= post.metadata[:author]%></strong></span>
+                <% if post.metadata[:description] %>
+                  <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                <% end %>
+              </div>
+            </div>
+          </article>
+        </a>
+      <% end%>
     </div>
-
-    <div class="row">
-      <% Static::MEDIUM_POSTS.each do |post| %>
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="medium-postcard">
-            <a class="embedly-card" data-card-key="25a989e9e56f4a8c82a07b9e00a3ee9c" data-card-controls="0" data-card-type="article-full" href="https://medium.com/le-wagon/<%= post %>">
-              <%= post.split('-')[0...-1].map(&:capitalize).join(" ") %>
-            </a>
-          </div>
-        </div>
-      <% end %>
+    <div class="header-aside">
+      <% @posts.take(3).each do |post| %>
+        <article class="postcard element">
+          <a href="<%= post_path post.slug %>">
+            <div class="content">
+              <h2>
+                <%= post.metadata[:title].html_safe %>
+              </h2>
+              <% if post.metadata[:description] %>
+                <p class="description"><%= post.metadata[:description].truncate(120) %></p>
+              <% end %>
+              <span class="author">
+                <i class="fa fa-clock-o" aria-hidden="true"></i><strong> 2 min</strong> -
+                Posted by <strong><%= post.metadata[:author].capitalize %></strong>
+                <% if post.metadata[:date] %>
+                   on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
+                <% end %>
+              </span>
+            </div>
+          </a>
+        </article>
+      <% end%>
     </div>
   </div>
 </div>
+
+<section class="container posts-community">
+  <h3>See what our community shares<small>Lorem ipsus dolor</small></h3>
+</section>
 
 <%= content_for(:after_js) do %>
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
@@ -31,9 +64,8 @@
 
 <div class="posts">
   <div class="container">
-    <% @posts.each_slice(2) do |posts| %>
+    <% @posts.drop(4).each_slice(3) do |posts| %>
       <div class="row">
-        <div class="col-sm-2"></div>
         <% posts.each do |post| %>
           <div class="col-sm-4">
             <article class="postcard element">

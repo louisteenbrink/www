@@ -2,6 +2,7 @@
 layout: post
 title: "La genèse du Wagon OnDemand"
 author: sebastien
+date: 23-09-2015
 labels:
   - startup
   - video
