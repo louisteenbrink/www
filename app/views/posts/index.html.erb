@@ -5,28 +5,74 @@
 <div class="posts">
   <div class="container blog-header">
     <div class="header-main">
-      <% @posts.take(1).each do |post| %>
-        <a href="<%= post_path post.slug %>">
-          <article class="postcard element">
-            <% if post.metadata[:thumbnail] %>
-              <div class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
-                <div class="postcard-filter"></div>
-              </div>
-            <% end %>
-            <div class="content">
-              <div class="centered">
-                <h2>
-                  <%= post.metadata[:title].html_safe %>
-                </h2>
-                <span class="author">posted by <strong><%= post.metadata[:author]%></strong></span>
-                <% if post.metadata[:description] %>
-                  <p class="description"><%= post.metadata[:description].truncate(160) %></p>
-                <% end %>
-              </div>
+      <% Static::VIDEOS.take(1).each do |video| %>
+      <div class="main-wrapper">
+        <div id="main-container" class="main-container" style="background-image: url('<%= asset_path "videos/#{video[:thumbnail]}" %>')">
+          <h2><%= video[:title] %></h2>
+          <span><%= video[:description] %></span>
+          <i><%= video[:date].strftime("%d %b %Y") %></i>
+          <%= link_to "#", id: "play-button", class: "play-button" do %>
+            <svg class="play-button svg" x="0px" y="0px" width="57px" height="57px" viewBox="0 0 57 57" style="enable-background:new 0 0 57 57;" xml:space="preserve">
+              <circle class="play-button circle" cx="28.5" cy="28.5" r="25"/>
+              <path class="play-button play" d="M40.7,27.4L22.6,16.9c-0.4-0.2-0.9-0.2-1.3,0c-0.4,0.2-0.6,0.6-0.6,1.1V39c0,0.5,0.2,0.9,0.6,1.1c0.2,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l18.1-10.5c0.4-0.2,0.6-0.6,0.6-1.1S41.1,27.6,40.7,27.4z"/>
+              <circle class="play-button circle play-button circle-outer" cx="28.5" cy="28.5" r="27.5"/>
+            </svg>
+          <% end %>
+        </div>
+        <div id="video-wrapper" class="video-wrapper hidden">
+          <div class="video-container">
+            <div id="close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
+                <g>
+                  <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#FFFFFF"/>
+                </g>
+              </svg>
             </div>
-          </article>
-        </a>
-      <% end%>
+            <div id="ytplayer"></div>
+            <%= content_for(:after_js) do %>
+              <script>
+                // Load the IFrame Player API code asynchronously.
+                var tag = document.createElement('script');
+                tag.src = "https://www.youtube.com/player_api";
+                var firstScriptTag = document.getElementsByTagName('script')[0];
+                firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+                // Replace the 'ytplayer' element with an <iframe> and
+                // YouTube player after the API code downloads.
+                var player;
+                function onYouTubePlayerAPIReady() {
+                  player = new YT.Player('ytplayer', {
+                    height: '360',
+                    width: '640',
+                    playerVars: { 'autoplay': 0, 'controls': 0, 'showinfo': 0 },
+                    videoId: '<%= video[:youtube_slug] %>'
+                  });
+
+                  var video = document.getElementById('video-wrapper');
+                  var playButton = document.getElementById('play-button');
+                  var closeButton = document.getElementById('close-button');
+                  var thumbnail = document.getElementById('main-container');
+
+                  playButton.addEventListener('click', function(e) {
+                    thumbnail.classList.add('hidden');
+                    video.classList.remove('hidden');
+                    player.playVideo();
+                    e.preventDefault();
+                  });
+
+                  closeButton.addEventListener('click', function(e) {
+                    thumbnail.classList.remove('hidden');
+                    video.classList.add('hidden');
+                    player.stopVideo();
+                    e.preventDefault();
+                  });
+                }
+              </script>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      <% end %>
     </div>
     <div class="header-aside">
       <% @posts.take(3).each do |post| %>
@@ -49,7 +95,7 @@
             </div>
           </a>
         </article>
-      <% end%>
+      <% end %>
     </div>
   </div>
 </div>
@@ -57,10 +103,6 @@
 <section class="container posts-community">
   <h3>See what our community shares<small>Lorem ipsus dolor</small></h3>
 </section>
-
-<%= content_for(:after_js) do %>
-  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-<% end %>
 
 <div class="posts">
   <div class="container">
