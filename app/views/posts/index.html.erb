@@ -100,13 +100,61 @@
   </div>
 </div>
 
-<section class="container posts-community">
-  <h3>See what our community shares<small>Lorem ipsus dolor</small></h3>
+<section class="posts">
+  <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
+  <div class="container">
+    <% @posts.drop(3).take(6).each_slice(3) do |posts| %>
+      <div class="row">
+        <% posts.each do |post| %>
+          <div class="col-sm-4">
+            <a href="<%= post_path post.slug %>">
+              <article class="postcard element">
+                <div class="content">
+                  <div class="centered">
+                    <h2><%= post.metadata[:title].html_safe %></h2>
+                    <span class="author">
+                      <i class="fa fa-clock-o" aria-hidden="true"></i><strong> 2 min</strong> -
+                      Posted by <strong><%= post.metadata[:author].capitalize %></strong>
+                      <% if post.metadata[:date] %>
+                         on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
+                      <% end %>
+                    </span>
+                    <% if post.metadata[:description] %>
+                      <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                    <% end %>
+                  </div>
+                </div>
+              </article>
+            </a>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </section>
+
+
+<section class="container-fluid posts-community">
+  <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
+  <div class="container medium-carousel">
+    <% Static::MEDIUM_POSTS.each do |post| %>
+      <div class="medium-card">
+        <%= image_tag post[:author_pic] %>
+        <%= post[:author_name] %>
+        <%= post[:title] %>
+        <%= post[:date].strftime("%d %b %Y") %>
+        <%= link_to post[:medium_slug] do %>
+          Read the article
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</section>
+
 
 <div class="posts">
   <div class="container">
-    <% @posts.drop(4).each_slice(3) do |posts| %>
+    <% @posts.drop(9).each_slice(3) do |posts| %>
       <div class="row">
         <% posts.each do |post| %>
           <div class="col-sm-4">
