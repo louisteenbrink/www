@@ -1,12 +1,72 @@
-- 'becoming-a-programmer-what-a-funny-idea-or-is-it-b6a5a1ed8473'
-- 'a-video-to-help-new-developers-get-started-on-wechat-advanced-mode-apis-54638debbcfc'
-- 'so-you-want-to-be-a-computer-programmer-ad9fe1b9d5b2'
-- 'diploma-is-dead-long-live-portfolio-44a6d306553'
-- 'can-you-teach-entrepreneurship-b518d60e253e'
-- 'dont-sit-on-your-hands-learn-to-code-1abe9a1184b3'
-- 'what-code-really-teaches-you-6551d9e42ae4'
-- 'coding-schools-are-the-new-mbas-f2365b4452f'
-- 'web-design-for-engineers-2da68b62904f'
-- 'why-learn-ruby-on-rails-9862354c9ce6'
-- 'code-is-the-new-alphabet-9f6da7ac1ef4'
-- 'a-ride-into-the-wild-code-fba4d86ef45f'
+- title: "Becoming a programmer? What a funny idea! Or is it?"
+  author_name: "Marina Starkova"
+  author_pic: marina_starkova.jpeg
+  medium_slug: "/le-wagon/becoming-a-programmer-what-a-funny-idea-or-is-it-b6a5a1ed8473"
+  date: 2017-03-22
+
+- title: "A video to help new developers get started on WeChat advanced mode (APIs)"
+  author_name: "Thibault Genaitay"
+  author_pic: thibault_genaitay.jpg
+  medium_slug: "https://medium.com/le-wagon/a-video-to-help-new-developers-get-started-on-wechat-advanced-mode-apis-54638debbcfc"
+  date: 2016-12-21
+
+- title: "So, You Want To Be A Computer Programmer…"
+  author_name: "Andy Barnov"
+  author_pic: andy_barnov.jpeg
+  medium_slug: "/le-wagon/so-you-want-to-be-a-computer-programmer-ad9fe1b9d5b2"
+  date: 2016-12-13
+
+- title: "Diploma is dead… Long live Portfolio."
+  author_name: "Mathieu Le Roux"
+  author_pic: mathieu_leroux.jpeg
+  medium_slug: "/le-wagon/diploma-is-dead-long-live-portfolio-44a6d306553"
+  date: 2016-12-06
+
+- title: "Diploma is dead… Long live Portfolio."
+  author_name: "Mathieu Le Roux"
+  author_pic: mathieu_leroux.jpeg
+  medium_slug: "/le-wagon/diploma-is-dead-long-live-portfolio-44a6d306553"
+  date: 2016-12-06
+
+- title: "Can you teach entrepreneurship?"
+  author_name: "Mathieu Le Roux"
+  author_pic: mathieu_leroux.jpeg
+  medium_slug: "/le-wagon/can-you-teach-entrepreneurship-b518d60e253e"
+  date: 2016-07-25
+
+- title: "Don’t Sit on Your Hands. Learn to Code."
+  author_name: "Edward Ward"
+  author_pic: edward_ward.jpeg
+  medium_slug: "/le-wagon/dont-sit-on-your-hands-learn-to-code-1abe9a1184b3"
+  date: 2016-05-20
+
+- title: "Web-Design for engineers."
+  author_name: "Boris Paillard"
+  author_pic: boris_paillardd.jpeg
+  medium_slug: "/le-wagon/web-design-for-engineers-2da68b62904f"
+  date: 2016-05-17
+
+- title: "Coding schools are the new MBAs"
+  author_name: "Mathieu Le Roux"
+  author_pic: mathieu_leroux.jpeg
+  medium_slug: "/le-wagon/code-is-the-new-alphabet-9f6da7ac1ef4"
+  date: 2016-05-05
+
+- title: "Coding schools are the new MBAs"
+  author_name: "Mathieu Le Roux"
+  author_pic: mathieu_leroux.jpeg
+  medium_slug: "/le-wagon/coding-schools-are-the-new-mbas-f2365b4452f"
+  date: 2016-04-25
+
+- title: "What code really teaches you."
+  author_name: "Boris Paillard"
+  author_pic: boris_paillard.jpeg
+  medium_slug: "/le-wagon/what-code-really-teaches-you-6551d9e42ae4"
+  date: 2016-03-17
+
+- title: "Why learn Ruby on Rails?"
+  author_name: "Sébastien Saunier"
+  author_pic: sebastien_saunier.jpeg
+  medium_slug: "/le-wagon/why-learn-ruby-on-rails-9862354c9ce6"
+  date: 2015-06-29
+
