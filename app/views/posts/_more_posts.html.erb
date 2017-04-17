@@ -8,7 +8,7 @@
               <div class="centered">
                 <h2><%= post.metadata[:title].html_safe %></h2>
                 <span class="author">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i><strong> 2 min</strong> -
+                  <i class="fa fa-clock-o" aria-hidden="true"></i><strong> <%= post.read_time %> min</strong> -
                   Posted by <strong><%= post.metadata[:author].capitalize %></strong>
                   <% if post.metadata[:date] %>
                      on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>

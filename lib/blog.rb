@@ -31,6 +31,10 @@ class Blog
       @content ||= markdown.render(article_content.gsub("===", ""))
     end
 
+    def read_time
+      (1000 / content.split(" ").count).ceil  # Time in minutes
+    end
+
     def metadata
       @metadata ||= (
         yaml_content = JEKYLL_HEADER_PATTERN.match(file_content).captures[0]

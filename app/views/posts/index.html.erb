@@ -86,7 +86,7 @@
                 <p class="description"><%= post.metadata[:description].truncate(120) %></p>
               <% end %>
               <span class="author">
-                <i class="fa fa-clock-o" aria-hidden="true"></i><strong> 2 min</strong> -
+                <i class="fa fa-clock-o" aria-hidden="true"></i><strong> <%= post.read_time %> min</strong> -
                 Posted by <strong><%= post.metadata[:author].capitalize %></strong>
                 <% if post.metadata[:date] %>
                    on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
@@ -100,31 +100,32 @@
   </div>
 </div>
 
-<section class="posts">
+<section class="container-fluid posts-community">
   <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
+  <div class="container medium-carousel">
+    <% Static::MEDIUM_POSTS.each do |post| %>
+      <div class="medium-wrapper">
+        <div class="medium-card">
+          <%= image_tag post[:author_pic] %>
+          <span><%= post[:author_name] %></span>
+          <h4><%= post[:title] %></h4>
+          <i><%= post[:date].strftime("%d %b %Y") %></i>
+          <%= link_to post[:medium_slug] do %>
+            Read on Medium
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<section class="posts">
+  <h3 class="section-title"><small>Last posts</small>Crafted for your eyes only</h3>
   <div id="posts-container" class="container">
     <%= render 'more_posts', posts: @posts %>
   </div>
   <div id="paginator">
     <%= link_to_next_page @posts, t(".show_more_posts"), remote: true, param_name: :post_page, id: 'load_more_posts', class: 'more-posts' %>
-  </div>
-</section>
-
-
-<section class="container-fluid posts-community">
-  <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
-  <div class="container medium-carousel">
-    <% Static::MEDIUM_POSTS.each do |post| %>
-      <div class="medium-card">
-        <%= image_tag post[:author_pic] %>
-        <%= post[:author_name] %>
-        <%= post[:title] %>
-        <%= post[:date].strftime("%d %b %Y") %>
-        <%= link_to post[:medium_slug] do %>
-          Read the article
-        <% end %>
-      </div>
-    <% end %>
   </div>
 </section>
 
