@@ -395,7 +395,7 @@
       max-height: 480px;
       background-color: white;
       border-radius: 2px;
-      border-top: 7px solid #96e6a1;
+      border-top: 7px solid #00ab6c;
       box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
       outline: none;
 
@@ -405,7 +405,7 @@
         }
       }
 
-      img {
+      img, svg {
         margin: 0 auto;
         width: 100px;
         height: 100px;
@@ -434,7 +434,7 @@
           height: 3px;
           top: -25px;
           left: 50%;
-          background-color: #96e6a1;
+          background-color: #00ab6c;
           transform: translateX(-50%);
         }
       }

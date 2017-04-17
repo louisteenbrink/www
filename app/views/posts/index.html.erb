@@ -106,7 +106,16 @@
     <% Static::MEDIUM_POSTS.each do |post| %>
       <div class="medium-wrapper">
         <div class="medium-card">
-          <%= image_tag post[:author_pic] %>
+          <% if post[:author_pic] != nil %>
+            <%= image_tag post[:author_pic] %>
+          <% else %>
+            <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs></defs>
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <circle id="Oval" fill="#EBEBEB" cx="50" cy="50" r="50"></circle>
+              </g>
+          </svg>
+          <% end %>
           <span><%= post[:author_name] %></span>
           <h4><%= post[:title] %></h4>
           <i><%= post[:date].strftime("%d %b %Y") %></i>
