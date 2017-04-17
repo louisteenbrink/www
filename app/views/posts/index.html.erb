@@ -102,34 +102,11 @@
 
 <section class="posts">
   <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
-  <div class="container">
-    <% @posts.drop(3).take(6).each_slice(3) do |posts| %>
-      <div class="row">
-        <% posts.each do |post| %>
-          <div class="col-sm-4">
-            <a href="<%= post_path post.slug %>">
-              <article class="postcard element">
-                <div class="content">
-                  <div class="centered">
-                    <h2><%= post.metadata[:title].html_safe %></h2>
-                    <span class="author">
-                      <i class="fa fa-clock-o" aria-hidden="true"></i><strong> 2 min</strong> -
-                      Posted by <strong><%= post.metadata[:author].capitalize %></strong>
-                      <% if post.metadata[:date] %>
-                         on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
-                      <% end %>
-                    </span>
-                    <% if post.metadata[:description] %>
-                      <p class="description"><%= post.metadata[:description].truncate(160) %></p>
-                    <% end %>
-                  </div>
-                </div>
-              </article>
-            </a>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
+  <div id="posts-container" class="container">
+    <%= render 'more_posts', posts: @posts %>
+  </div>
+  <div id="paginator">
+    <%= link_to_next_page @posts, t(".show_more_posts"), remote: true, param_name: :post_page, id: 'load_more_posts', class: 'more-posts' %>
   </div>
 </section>
 
@@ -150,43 +127,5 @@
     <% end %>
   </div>
 </section>
-
-
-<div class="posts">
-  <div class="container">
-    <% @posts.drop(9).each_slice(3) do |posts| %>
-      <div class="row">
-        <% posts.each do |post| %>
-          <div class="col-sm-4">
-            <article class="postcard element">
-              <% if post.metadata[:thumbnail] %>
-                <a href="<%= post_path post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
-                  <div class="postcard-filter"></div>
-                </a>
-              <% end %>
-              <div class="content">
-                <div class="centered">
-                  <h2>
-                    <a href="<%= post_path post.slug %>">
-                      <%= post.metadata[:title].html_safe %>
-                    </a>
-                  </h2>
-                  <span class="author">posted by <strong><%= post.metadata[:author]%></strong></span>
-                  <% if post.metadata[:description] %>
-                    <p class="description"><%= post.metadata[:description].truncate(160) %></p>
-                  <% end %>
-                </div>
-              </div>
-              <div class="link-post-container text-right">
-                <a href="<%= post_path post.slug %>" class="link-post"><i class="fa fa-eye"></i>
-                </a>
-              </div>
-            </article>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
-</div>
 
 <%= render partial: "shared/playlist" %>

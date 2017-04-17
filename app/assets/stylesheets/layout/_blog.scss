@@ -31,6 +31,10 @@
 
   section {
     padding: 80px 0;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   .section-title {
@@ -59,7 +63,9 @@
       justify-content: space-around;
       align-items: center;
       padding: 0 20px;
+      background-color: white;
     }
+
     .description {
       font-weight: 100;
       font-size: 15px;
@@ -357,7 +363,7 @@
 
   /* BLOG HEADER **************************************************************/
 
-  .posts-community {
+  section.posts-community {
     position: relative;
     padding: 80px 0;
 
@@ -398,9 +404,25 @@
       box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
     }
   }
+
+  section.posts {
+    .postcard {
+      background-size: cover;
+      background-position: center center;
+      overflow: hidden;
+
+      &:hover {
+        .content {
+          transform: translateY(48%);
+        }
+      }
+
+      .content {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
 }
-
-
 
 
 

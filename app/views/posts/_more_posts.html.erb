@@ -1,0 +1,27 @@
+<% @posts.each_slice(3) do |posts| %>
+  <div class="row">
+    <% posts.each do |post| %>
+      <div class="col-sm-4">
+        <a href="<%= post_path post.slug %>">
+          <article class="postcard element" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
+            <div class="content">
+              <div class="centered">
+                <h2><%= post.metadata[:title].html_safe %></h2>
+                <span class="author">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i><strong> 2 min</strong> -
+                  Posted by <strong><%= post.metadata[:author].capitalize %></strong>
+                  <% if post.metadata[:date] %>
+                     on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
+                  <% end %>
+                </span>
+                <% if post.metadata[:description] %>
+                  <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                <% end %>
+              </div>
+            </div>
+          </article>
+        </a>
+      </div>
+    <% end %>
+  </div>
+<% end %>

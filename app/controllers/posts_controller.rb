@@ -4,7 +4,10 @@ class PostsController < ApplicationController
   before_action :hide_drift
 
   def index
-    @posts = Blog.new.all
+    if request.format.html? || params[:post_page]
+      @posts = Blog.new.all
+      @posts =  Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
+    end
   end
 
   def rss

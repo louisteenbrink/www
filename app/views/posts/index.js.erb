@@ -1,0 +1,4 @@
+<% if params[:post_page] %>
+  $('#posts-container').append("<%= j render 'more_posts', stories: @posts %>");
+  $('#paginator').html('<%= escape_javascript(link_to_next_page(@posts, I18n.t(".posts.index.show_more_posts"), :remote => true, :param_name => 'post_page', id: 'load_more_posts', class: "more-posts")) %>');
+<% end %>
