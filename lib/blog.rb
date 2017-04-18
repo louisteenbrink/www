@@ -44,12 +44,20 @@ class Blog
       )
     end
 
+    def layout
+      metadata[:layout]
+    end
+
     def title
       metadata[:title]
     end
 
     def thumbnail
       metadata[:thumbnail]
+    end
+
+    def layout
+      metadata[:layout]
     end
 
     private

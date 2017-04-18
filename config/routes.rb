@@ -71,7 +71,7 @@ Rails.application.routes.draw do
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "employers", to: "pages#employers", template: "employers", as: :employers
     get "enterprise", to: "pages#enterprise", template: "enterprise", as: :enterprise
-    get "tv", to: "pages#tv", template: "tv", as: :tv
+    get "tv", to: "posts#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
     get "projects" => "projects#index", as: :projects
     get "blog", to: 'posts#index', as: :blog

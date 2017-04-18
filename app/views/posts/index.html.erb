@@ -6,8 +6,8 @@
   <div class="container blog-header">
     <div class="header-main">
       <% Static::VIDEOS.take(1).each do |video| %>
-      <div class="main-wrapper">
-        <div id="main-container" class="main-container" style="background-image: url('<%= asset_path "videos/#{video[:thumbnail]}" %>')">
+      <div class="video-main-wrapper">
+        <div id="main-container" class="video-main-container" style="background-image: url('<%= asset_path "videos/#{video[:thumbnail]}" %>')">
           <h2><%= video[:title] %></h2>
           <span><%= video[:description] %></span>
           <i><%= video[:date].strftime("%d %b %Y") %></i>
@@ -100,6 +100,42 @@
   </div>
 </div>
 
+<section class="posts">
+  <h3 class="section-title"><small>Lastest posts</small>Crafted for your eyes only</h3>
+  <div id="posts-container" class="container">
+    <%= render 'more_posts', posts: @posts %>
+  </div>
+  <div id="paginator">
+    <%= link_to_next_page @posts, t(".show_more_posts"), remote: true, param_name: :post_page, id: 'load_more_posts', class: 'more-posts' %>
+  </div>
+</section>
+
+<section class="recorded">
+  <h3 class="section-title"><small>Lastest videos</small>We have recorded all the goodies for you!</h3>
+  <div class="container">
+    <% @videos.take(6).each_slice(3) do |videos| %>
+    <div class="row">
+      <% videos.each do |video| %>
+      <div class="col-sm-4">
+        <%= link_to post_path video.slug do %>
+          <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 30.051 30.051" style="enable-background:new 0 0 30.051 30.051;" xml:space="preserve" width="512px" height="512px">
+              <g>
+                <path d="M19.982,14.438l-6.24-4.536c-0.229-0.166-0.533-0.191-0.784-0.062c-0.253,0.128-0.411,0.388-0.411,0.669v9.069   c0,0.284,0.158,0.543,0.411,0.671c0.107,0.054,0.224,0.081,0.342,0.081c0.154,0,0.31-0.049,0.442-0.146l6.24-4.532   c0.197-0.145,0.312-0.369,0.312-0.607C20.295,14.803,20.177,14.58,19.982,14.438z" fill="#FFFFFF"/>
+                <path d="M15.026,0.002C6.726,0.002,0,6.728,0,15.028c0,8.297,6.726,15.021,15.026,15.021c8.298,0,15.025-6.725,15.025-15.021   C30.052,6.728,23.324,0.002,15.026,0.002z M15.026,27.542c-6.912,0-12.516-5.601-12.516-12.514c0-6.91,5.604-12.518,12.516-12.518   c6.911,0,12.514,5.607,12.514,12.518C27.541,21.941,21.937,27.542,15.026,27.542z" fill="#FFFFFF"/>
+              </g>
+            </svg>
+            <h4><%= video.metadata[:title] %></h4>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</section>
+
 <section class="container-fluid posts-community">
   <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
   <div class="container medium-carousel">
@@ -128,14 +164,8 @@
   </div>
 </section>
 
-<section class="posts">
-  <h3 class="section-title"><small>Last posts</small>Crafted for your eyes only</h3>
-  <div id="posts-container" class="container">
-    <%= render 'more_posts', posts: @posts %>
-  </div>
-  <div id="paginator">
-    <%= link_to_next_page @posts, t(".show_more_posts"), remote: true, param_name: :post_page, id: 'load_more_posts', class: 'more-posts' %>
-  </div>
-</section>
+<section class="more-content">
+
+<section>
 
 <%= render partial: "shared/playlist" %>
