@@ -285,6 +285,40 @@ pt-BR:
         técnico.
       wanna_join: Quer fazer parte do nosso network?
       signup: Assine para receber alertas sobre nossos candidatos e eventos.
+    enterprise:
+      tagline_html: Adapte-se ao trabalho <br>no mundo digital.
+      tagline_details_html: |
+        Adquiras habilidades técnincas que irão mudar sua forma de<br>contribuir com sua organização.
+        <strong>Acelere sua carreira, seja mais eficiente</strong>
+      apply: Saiba mais
+      skills_header: Novas habilidades para mudar sua forma de trabalhar.
+      skills_text: Você precisa acompanhar as mudanças em seu ambiente de trabalho. Conheça as ferramentas e workflows que fazem a cabeça das startups.
+      pm: Product Management
+      pm_details: Aprenda a definir user stories e conheça as melhores práticas de trabalho colaborativo.
+      ui: UI / UX
+      ui_details: Coisas visíveis facilitam a comunicação. Aprenda a construir wireframes e maquetes digitais para discutir suas idéias.
+      web_design: Web Design / frontend
+      web_design_details: Aprenda a botar a mão na massa, mantenha o seu website sem precisar de terceirizar cada pequena tarefa.
+      data_science: Data Science & Visualização
+      data_science_details: Colecione Dados, analise-os, faça seus dados falarem através de visualizações.
+      fullstack: Desenvolvimento FullStack
+      fullstack_details: Do banco de dados até o seu navegador, aprenda como aplicativos web são construídos.
+      prototyping: Prototipagem Lean
+      prototyping_details: APIs estão devorando o mundo. Descubra como startups prototipam produtos simplesmente conectando APIs.
+      best: Aprenda com o melhor
+      best_details_html: |
+        <p>
+         Nós treinamos mais de 1200 estudantes que vieram das melhores faculdades de admnistração, engenharia e design. Nós sabemos como <strong> conectar tecnologia e negócios</strong>. Nós ensinamos nossos estudantes a programar e a prototipar <strong>mais de 400 produtos digitais</strong>.
+        </p>
+        <p>
+         Depois de termos treinado tanta gente talentosa, sabemos <strong>que podemos levar as mesmas habilidades à sua organização</strong>.
+        </p>
+      hec_html: Le Wagon é o <strong>parceiro oficial da HEC</strong> (a melhor faculdade de admnistração da França) e <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">está ensinando os empreendedores da HEC a programarem seus próprios produtos digitais</a>.
+      google_quote: Le Wagon realmente sabe levar a cultura e as habilidades técnicas complementares para pessoas com um background em business. A visão de tecnologia deles é única.
+      eki_quote: Eles foram um parceiro chave para trazer uma cultura de produto e UX para a Ekimetrics. O impacto é imediato na maneira como trabalhamos, na nossa visão e no nosso mindset.
+      drivy_quote: O currículo deles é muito bem bolado, os professores apaixonados pelo que ensinam.
+      stripe_quote: Workshops sólidos ensinando habilidades técnicas essenciais e um forte mindset de produto.
+      algolia_quote: Se você tem um background de business, é espetacular como o Le Wagon pode desenvolver sua relação com tecnologia.
     live:
       page_title_with_current_event: "Retransmissão ao vivo - %{event_name}"
       page_title_no_live: "Retransmissão ao vivo - Em breve"
