@@ -64,12 +64,12 @@ pt-BR:
         Desenvolva suas habilidades em front-end usando técnicas avançadas de CSS (flexbox, grid, animações, etc..)
         e mergulhe em Javascript aprendendo Jquery e React.js,
         a biblioteca desenvolvida pelo Facebook.
-      software_engineer_html: Vire um engenheiro de software
+      software_engineer_html: Pense como um desenvolvedor
       software_engineer_details: |
-        Torne-se mais que um desenvolvedor, um engenheiro de software.
+        Aprenda a pensar como um engenheiro de software.
         Uma pessoa que entende as questões técnicas,
         que sabe o que é um MVC, um DB scheme, um request HTTP,
-        e que pode aprender novas linguages informáticas em uma semana.
+        e que pode aprender novas linguages informáticas pouco tempo.
       technical_workflow: Adote um workflow técnico
       technical_workflow_details_html: |
         Certamente existe uma maneira <strong>certa</strong> de construir produtos tech
@@ -120,7 +120,7 @@ pt-BR:
       what_they_code: O que nossos estudantes construíram durante o bootcamp
       it_works: "Engraçado, funciona!"
       freshly_coded: Codado recentemente
-      all_products: 100+ produtos construídos por nossos alunos.
+      all_products: 400+ produtos construídos por nossos alunos.
       see_all_products: Veja todos os produtos
       worldwide: Onde posso encontrar o Le Wagon?
       check_program: Mais detalhes sobre o programa
@@ -145,10 +145,10 @@ pt-BR:
       our_program: "Programa FullStack"
       program_details_html: |
         2 meses para <strong>se tornar um web developer</strong>.
-      apply_for_nine_weeks_html: Postule Agora<span class='hidden-xs'>para 9 semanas</span>
+      apply_for_nine_weeks_html: Candidate-se agora<span class='hidden-xs'>para 9 semanas</span>
       nine_weeks: 9 semanas intensivas - 360 horas de código
       to_build_your_ideas_html: Aprenda todo o stack web. Da base de dados até o browser.
-      why_us: Por que a gente?
+      why_us: Por que Le Wagon?
       why_us_details_html: |
         Nós já realizamos %{batches} batches (são mais de %{alumni} alunos!) e nosso programa evoluiu a cada vez para encontrar a perfeição.
         É a nossa longa experiência que torna o programa tão eficiente. <strong>Você vai aprender em 2 meses o que levaria 2 anos para aprender:</strong>
