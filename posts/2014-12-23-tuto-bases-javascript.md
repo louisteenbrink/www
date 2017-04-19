@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: video
 title: "JavaScript pour les débutants"
 author: cedric
 labels:

@@ -1,3 +1,8 @@
+<% count = 1000 %>
+<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
+  <% count = @statistics['alumni']['total'] %>
+<% end %>
+
 <% content_for(:title) do %>
   <%= t ".title" %>
 <% end %>
@@ -75,26 +80,46 @@
       <% end %>
     </div>
     <div class="header-aside">
-      <% @posts.take(3).each do |post| %>
-        <article class="postcard element">
-          <a href="<%= post_path post.slug %>">
-            <div class="content">
-              <h2>
-                <%= post.metadata[:title].html_safe %>
-              </h2>
-              <% if post.metadata[:description] %>
-                <p class="description"><%= post.metadata[:description].truncate(120) %></p>
-              <% end %>
-              <span class="author">
-                <i class="fa fa-clock-o" aria-hidden="true"></i><strong> <%= post.read_time %> min</strong> -
-                Posted by <strong><%= post.metadata[:author].capitalize %></strong>
-                <% if post.metadata[:date] %>
-                   on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
-                <% end %>
-              </span>
-            </div>
-          </a>
-        </article>
+      <%= link_to all_path do %>
+      <div class="header-aside-item">
+        <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-posts.jpg" %>')">
+        </div>
+        <div class="aside-item-content">
+          <h3> <%= ((@posts_count / 10) * 10) %>+ posts to explore</h3>
+          <ul>
+            <li>Tutorials</li>
+            <li>Guests</li>
+            <li>Events</li>
+          </ul>
+        </div>
+      </div>
+      <% end %>
+      <%= link_to videos_path do %>
+        <div class="header-aside-item">
+          <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-videos.jpg" %>')">
+          </div>
+          <div class="aside-item-content">
+            <h3><%= ((@videos_count / 10) * 10) %>+ videos to watch</h3>
+            <ul>
+              <li>Workshops</li>
+              <li>Talks</li>
+            </ul>
+          </div>
+        </div>
+      <% end %>
+      <%= link_to alumni_path do %>
+        <div class="header-aside-item">
+          <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-stories.jpg" %>')">
+          </div>
+          <div class="aside-item-content">
+            <h3> <%= ((@posts_count / 10) * 10) %>+ stories to read</h3>
+            <ul>
+              <li>Alumni</li>
+              <li>Startups</li>
+              <li>Developers</li>
+            </ul>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
@@ -105,33 +130,39 @@
   <div id="posts-container" class="container">
     <%= render 'more_posts', posts: @posts %>
   </div>
-  <div id="paginator">
-    <%= link_to_next_page @posts, t(".show_more_posts"), remote: true, param_name: :post_page, id: 'load_more_posts', class: 'more-posts' %>
-  </div>
+  <%= link_to all_path, class: 'content-cta' do %>
+    See all posts
+  <% end %>
 </section>
 
 <section class="recorded">
   <h3 class="section-title"><small>Lastest videos</small>We have recorded all the goodies for you!</h3>
   <div class="container">
     <% @videos.take(6).each_slice(3) do |videos| %>
-    <div class="row">
-      <% videos.each do |video| %>
-      <div class="col-sm-4">
-        <%= link_to post_path video.slug do %>
-          <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 30.051 30.051" style="enable-background:new 0 0 30.051 30.051;" xml:space="preserve" width="512px" height="512px">
-              <g>
-                <path d="M19.982,14.438l-6.24-4.536c-0.229-0.166-0.533-0.191-0.784-0.062c-0.253,0.128-0.411,0.388-0.411,0.669v9.069   c0,0.284,0.158,0.543,0.411,0.671c0.107,0.054,0.224,0.081,0.342,0.081c0.154,0,0.31-0.049,0.442-0.146l6.24-4.532   c0.197-0.145,0.312-0.369,0.312-0.607C20.295,14.803,20.177,14.58,19.982,14.438z" fill="#FFFFFF"/>
-                <path d="M15.026,0.002C6.726,0.002,0,6.728,0,15.028c0,8.297,6.726,15.021,15.026,15.021c8.298,0,15.025-6.725,15.025-15.021   C30.052,6.728,23.324,0.002,15.026,0.002z M15.026,27.542c-6.912,0-12.516-5.601-12.516-12.514c0-6.91,5.604-12.518,12.516-12.518   c6.911,0,12.514,5.607,12.514,12.518C27.541,21.941,21.937,27.542,15.026,27.542z" fill="#FFFFFF"/>
-              </g>
-            </svg>
-            <h4><%= video.metadata[:title] %></h4>
-            </div>
+      <div class="row">
+        <% videos.each do |video| %>
+          <div class="col-sm-4">
+            <%= link_to post_path video.slug do %>
+              <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+                    <title>Play</title>
+                    <desc>Created with Sketch.</desc>
+                    <defs></defs>
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+                    </g>
+                </svg>
+                <h4><%= video.metadata[:title] %></h4>
+              </div>
+            <% end %>
           </div>
         <% end %>
       </div>
-      <% end %>
-    </div>
+    <% end %>
+    <%= link_to videos_path, class: 'content-cta' do %>
+      See all videos
     <% end %>
   </div>
 </section>
@@ -165,7 +196,42 @@
 </section>
 
 <section class="more-content">
-
-<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <%= link_to alumni_path do %>
+          <div class="more-content-thumbnail" style="background-image: url('<%= asset_path "banners/banner-alumni.jpg" %>')">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
+              <g>
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26   S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" fill="#FFFFFF"/>
+                <path d="M38.5,25H27V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v12c0,0.553,0.448,1,1,1   s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z" fill="#FFFFFF"/>
+              </g>
+            </svg>
+            <div class="content-details">
+              <h4>Read our Alumni stories</h4>
+              <span><%= count %> talented students sharing the same skills & passion</span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-sm-6">
+        <%= link_to demoday_index_path do %>
+          <div class="more-content-thumbnail" style="background-image: url('<%= asset_path "banners/10.jpg" %>')">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
+              <g>
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26   S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" fill="#FFFFFF"/>
+                <path d="M38.5,25H27V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v12c0,0.553,0.448,1,1,1   s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z" fill="#FFFFFF"/>
+              </g>
+            </svg>
+            <div class="content-details">
+              <h4>Watch our Demodays</h4>
+              <span>We are proud of what our students achieved in only 10 days</span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
 
 <%= render partial: "shared/playlist" %>

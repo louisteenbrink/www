@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: video
 title: "Tout ce que vous avez toujours voulu savoir sur les APIs"
 author: cedric
 labels:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: video
 title: "Ce weekend on vous met au code"
 author: boris
 labels:

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: video
 title: "Débuter avec Git et Github"
 author: sebastien
 labels:

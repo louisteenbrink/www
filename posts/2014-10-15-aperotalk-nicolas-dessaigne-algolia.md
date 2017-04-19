@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: video
 title: AperoTalk avec Nicolas Dessaigne, CEO Algolia
 author: cedric
 labels:

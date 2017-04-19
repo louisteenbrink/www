@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: video
 title: "AperoTalk avec Rachel Delacour, cofondatrice de BIME Analytics"
 author: cedric
 labels:
