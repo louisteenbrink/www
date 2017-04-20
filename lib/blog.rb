@@ -1,6 +1,8 @@
 require "redcarpet"
 require_relative "./deep_symbolize"
 
+# NOTE(ssaunier): this file is not auto-loaded yet. So you need to restart `rails s` after a change in here.
+
 class Blog
   class Post
     JEKYLL_HEADER_PATTERN = /---(.*)---/m
@@ -31,8 +33,18 @@ class Blog
       @content ||= markdown.render(article_content.gsub("===", ""))
     end
 
+    DEFAULT_READING_TIME_IN_MINUTES = 2
+    AVERAGE_WORD_PER_MINUTES = 200
+
+    # Number of minutes neede to read post.
     def read_time
-      (1000 / content.split(" ").count).ceil  # Time in minutes
+      if content.length > 0
+        words_number = content.split(" ").count
+        reading_time = (words_number / AVERAGE_WORD_PER_MINUTES).ceil
+        [reading_time, DEFAULT_READING_TIME_IN_MINUTES].max
+      else
+        DEFAULT_READING_TIME_IN_MINUTES
+      end
     end
 
     def metadata

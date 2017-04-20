@@ -7,13 +7,12 @@
             <div class="content">
               <div class="centered">
                 <h2><%= post.metadata[:title].html_safe %></h2>
-                <span class="author">
-                  <i class="fa fa-clock-o" aria-hidden="true"></i><strong> <%= post.read_time %> min</strong> -
-                  Posted by <strong><%= post.metadata[:author].capitalize %></strong>
-                  <% if post.metadata[:date] %>
-                     on <strong><%= post.metadata[:date].to_date.strftime("%d %b %Y") %></strong>
+                <ul>
+                  <% post.metadata[:labels].each do |tag| %>
+                    <li><%= tag %></li>
                   <% end %>
-                </span>
+                  <li class="read-time"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= post.read_time %> min reading</li>
+                </ul>
                 <% if post.metadata[:description] %>
                   <p class="description"><%= post.metadata[:description].truncate(160) %></p>
                 <% end %>

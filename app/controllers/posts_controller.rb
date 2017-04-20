@@ -8,7 +8,7 @@ class PostsController < ApplicationController
       posts = Blog.new.all
       @posts = posts.select { |post| post.layout.to_sym == :post }
       @posts_count = @posts.length
-      @posts = Kaminari.paginate_array(posts).page(params[:post_page]).per(9)
+      @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
       @videos = posts.select { |post| post.layout.to_sym == :video }
       @videos_count = @videos.length
     end
@@ -24,6 +24,8 @@ class PostsController < ApplicationController
 
   def show
     @post = Blog.new.post(params[:slug])
+    posts = Blog.new.all
+    @videos = posts.select { |post| post.layout.to_sym == :video }
     render_404 if @post.nil?
   end
 

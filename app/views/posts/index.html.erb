@@ -17,17 +17,18 @@
           <span><%= video[:description] %></span>
           <i><%= video[:date].strftime("%d %b %Y") %></i>
           <%= link_to "#", id: "play-button", class: "play-button" do %>
-            <svg class="play-button svg" x="0px" y="0px" width="57px" height="57px" viewBox="0 0 57 57" style="enable-background:new 0 0 57 57;" xml:space="preserve">
-              <circle class="play-button circle" cx="28.5" cy="28.5" r="25"/>
-              <path class="play-button play" d="M40.7,27.4L22.6,16.9c-0.4-0.2-0.9-0.2-1.3,0c-0.4,0.2-0.6,0.6-0.6,1.1V39c0,0.5,0.2,0.9,0.6,1.1c0.2,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l18.1-10.5c0.4-0.2,0.6-0.6,0.6-1.1S41.1,27.6,40.7,27.4z"/>
-              <circle class="play-button circle play-button circle-outer" cx="28.5" cy="28.5" r="27.5"/>
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g class="circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+              </g>
             </svg>
           <% end %>
         </div>
         <div id="video-wrapper" class="video-wrapper hidden">
           <div class="video-container">
             <div id="close-button">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" xml:space="preserve" width="512px" height="512px">
                 <g>
                   <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#FFFFFF"/>
                 </g>
@@ -112,9 +113,8 @@
           <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-stories.jpg" %>')">
           </div>
           <div class="aside-item-content">
-            <h3> <%= ((@posts_count / 10) * 10) %>+ stories to read</h3>
+            <h3> <%= ((@posts_count / 10) * 10) %>+ alumni stories to read</h3>
             <ul>
-              <li>Alumni</li>
               <li>Startups</li>
               <li>Developers</li>
             </ul>
