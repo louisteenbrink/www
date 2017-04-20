@@ -146,15 +146,18 @@
               <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-                    <title>Play</title>
-                    <desc>Created with Sketch.</desc>
-                    <defs></defs>
-                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
-                    </g>
+                  <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+                  </g>
                 </svg>
-                <h4><%= video.metadata[:title] %></h4>
+                <div class="video-details">
+                  <h4><%= video.metadata[:title] %></h4>
+                  <ul>
+                    <% video.metadata[:labels].each do |tag| %>
+                      <li><%= tag %></li>
+                    <% end %>
+                  </ul>
+                </div>
               </div>
             <% end %>
           </div>

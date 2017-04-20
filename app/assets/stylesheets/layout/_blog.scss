@@ -345,6 +345,10 @@
       box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
       overflow: hidden;
 
+      &:hover {
+        #play { fill: #fff !important; }
+      }
+
       &:before {
         content: "";
         position: absolute;
@@ -366,6 +370,29 @@
         position: relative;
         text-align: left;
         z-index: 1;
+      }
+
+      ul {
+        display: flex;
+        list-style: none;
+        position: relative;
+        z-index: 1;
+        -webkit-margin-before: 0em;
+        -webkit-margin-after: 0em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        -webkit-padding-start: 0px;
+
+        li {
+          padding: 3px 5px;
+          margin-right: 10px;
+          background-color: white;
+          border-radius: 2px;
+          color: #333;
+          font-size: 0.6em;
+          font-weight: 900;
+          text-transform: capitalize;
+        }
       }
     }
   }
