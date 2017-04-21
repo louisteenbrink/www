@@ -1,0 +1,30 @@
+/******************************************************************************/
+/* SHOW - POST _***************************************************************/
+/******************************************************************************/
+
+.blog-post {
+  padding-bottom: 4em;
+
+  h1 {
+    font-size: 27px;
+    font-weight: bold;
+  }
+  p {
+    line-height: 24px;
+    font-weight: 200;
+    color: $gray-darker;
+  }
+  h2 {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    color: $blue;
+  }
+  iframe {
+    width: 100% !important;
+  }
+}

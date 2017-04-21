@@ -1,0 +1,67 @@
+/******************************************************************************/
+/* COMPONENT - POST THUMBNAIL *************************************************/
+/******************************************************************************/
+
+.post-thumbnail {
+  margin-top: 2em;
+  min-height: 240px;
+  background-color: #fff;
+  box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  border-top: 7px solid #2ecc71;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+
+  &:hover {
+    .content {
+      transform: translateY(50%);
+      color: #333;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    min-height: 234px;
+    padding: 0 20px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+
+    h2 {
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 22px;
+    }
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 3px 5px 1px;
+        margin-right: 10px;
+        background-color: #cdcdcd;
+        border-radius: 2px;
+        color: white;
+        font-size: 0.7em;
+        text-transform: capitalize;
+      }
+
+      .read-time {
+        background: transparent;
+        border: 1px solid #cdcdcd;
+        color: #8a8a8a;
+      }
+    }
+
+    .description {
+      font-weight: 100;
+      font-size: 15px;
+      letter-spacing: 0px;
+      color: #7D7D7D;
+      margin-top: 20px;
+    }
+  }
+}
