@@ -43,7 +43,7 @@ class PostsController < ApplicationController
     if request.format.html? || params[:post_page]
       posts = Blog.new.all
       @posts = posts.select { |post| post.layout.to_sym == :post }
-      @posts = Kaminari.paginate_array(posts).page(params[:post_page]).per(9)
+      @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
     end
   end
 

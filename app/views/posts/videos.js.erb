@@ -1,0 +1,4 @@
+<% if params[:post_page] %>
+  $('#videos-container').append("<%= j render 'more_videos', videos: @videos %>");
+  $('#paginator').html('<%= escape_javascript(link_to_next_page(@videos, I18n.t(".posts.videos.show_more_videos"), :remote => true, :param_name => 'post_page', id: 'load_more_videos', class: "content-cta")) %>');
+<% end %>
