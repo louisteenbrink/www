@@ -1,0 +1,14 @@
+<ul>
+  <li class="<%= params[:category].blank? ? 'filter-active' : nil %>">
+    <%= link_to "All", videos_path, remote: true %>
+  </li>
+  <li class="<%= params[:category] == 'workshop' ? 'filter-active' : nil %>">
+    <%= link_to "Workshops", videos_path(category: 'workshop'), remote: true %>
+  </li>
+  <li class="<%= params[:category] == 'talk' ? 'filter-active' : nil %>">
+    <%= link_to "Talks", videos_path(category: 'talk'), remote: true %>
+  </li>
+  <li class="<%= params[:category] == 'lifestyle' ? 'filter-active' : nil %>">
+    <%= link_to "Lifestyle", videos_path(category: 'lifestyle'), remote: true %>
+  </li>
+</ul>

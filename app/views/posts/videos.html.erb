@@ -1,13 +1,8 @@
 <section class="videos">
-  <h3 class="section-title"><small>Lastest videos</small>We have recorded all the goodies for you!</h3>
+  <h3 class="section-title"><small><%= ((@videos_count / 5) * 5) %>+ videos to watch</small>We have recorded all the goodies for you!</h3>
 
-  <div class="filter-container">
-    <ul>
-      <li class="filter-active">All</li>
-      <li>Workshops</li>
-      <li>Talks</li>
-      <li>Lifestyle</li>
-    </ul>
+  <div class="filter-container" id="videos-filter-container">
+    <%= render "filter_menu_video" %>
   </div>
 
   <div id="videos-container" class="container">

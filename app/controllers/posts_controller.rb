@@ -9,8 +9,10 @@ class PostsController < ApplicationController
       @posts = posts.select { |post| post.layout.to_sym == :post }
       @posts_count = @posts.length
       @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
-      @videos = posts.select { |post| post.layout.to_sym == :video }
+      @videos = posts.select(&:video?)
       @videos_count = @videos.length
+      @stories = @client.stories
+      @stories_count = @stories.length
     end
 
     if request.format.html?
@@ -25,26 +27,32 @@ class PostsController < ApplicationController
   def show
     @post = Blog.new.post(params[:slug])
     posts = Blog.new.all
-    @videos = posts.select { |post| post.layout.to_sym == :video }
+    @videos = (posts.select(&:video?) - [ @post ]).sample(2)
     render_404 if @post.nil?
   end
 
   def videos
-    if request.format.html? || params[:post_page]
-      posts = Blog.new.all
-      @videos = posts.select { |post| post.layout.to_sym == :video }
-      @workshop = @videos.select { |post| post.metadata[:labels].include? "workshop" }
-      @talks = @videos.select { |post| post.metadata[:labels].include? "talks" }
-      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
+    posts = Blog.new.all
+    @videos = posts.select(&:video?)
+    if params[:category].present?
+      @videos = @videos.select { |post| post.metadata[:labels].include? params[:category] }
+      @videos_count = @videos.length
+      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(9)
     end
+    @videos_count = @videos.length
+    @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(9)
   end
 
   def all
-    if request.format.html? || params[:post_page]
-      posts = Blog.new.all
-      @posts = posts.select { |post| post.layout.to_sym == :post }
+    posts = Blog.new.all
+    @posts = posts.select(&:post?)
+    if params[:category].present?
+      @posts = @posts.select { |post| post.metadata[:labels].include? params[:category] }
+      @posts_count = @posts.length
       @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
     end
+    @posts_count = @posts.length
+    @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
   end
 
   private

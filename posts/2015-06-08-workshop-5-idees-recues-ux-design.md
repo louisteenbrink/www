@@ -1,11 +1,9 @@
 ---
-layout: post
+layout: video
 title: "5 idées reçues sur l'UX Design"
 author: cedric
 labels:
-  - meetup
-  - tuto
-  - video
+  - workshop
 thumbnail: thumbnail-meetup-ux-design.jpg
 description: "De l'élaboration du flow jusqu'au design d'une application en passant par les problématiques liées au responsive, Joël Schillio passe en revue les 5 idées reçues sur l'UX Design."
 ---

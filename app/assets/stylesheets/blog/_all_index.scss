@@ -13,18 +13,22 @@
     box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
 
     li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
       width: 25%;
       height: 100%;
-      text-align: center;
       border-left: 1px solid #f4f4f4;
       border-bottom: 7px solid #f4f4f4;
 
       &:hover {
         cursor: pointer;
         border-bottom: 7px solid #cdcdcd;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
       }
     }
 
@@ -42,7 +46,6 @@
     }
   }
 }
-
 
 /* SPECIFICS ******************************************************************/
 
@@ -72,6 +75,14 @@
     left: 0;
     transform: skew(0deg, 9deg);
     opacity: 0.4;
+  }
+
+  section {
+    padding: 105px 0;
+
+    #video-container {
+      margin-top: 7px;
+    }
   }
 
   h3 {

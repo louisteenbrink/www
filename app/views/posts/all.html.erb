@@ -1,13 +1,8 @@
 <section class="posts">
-  <h3 class="section-title"><small>Lastest posts</small>Crafted for your eyes only</h3>
+  <h3 class="section-title"><small><%= ((@posts_count / 5) * 5) %>+ posts to explore</small>Crafted for your eyes only</h3>
 
-  <div class="filter-container">
-    <ul>
-      <li class="filter-active">All</li>
-      <li>Tutorials</li>
-      <li>Guests</li>
-      <li>Events</li>
-    </ul>
+  <div class="filter-container" id="posts-filter-container">
+    <%= render "filter_menu_post" %>
   </div>
 
   <div id="posts-container" class="container">

@@ -1,4 +1,9 @@
 <% if params[:post_page] %>
   $('#posts-container').append("<%= j render 'more_posts', posts: @posts %>");
   $('#paginator').html('<%= escape_javascript(link_to_next_page(@posts, I18n.t(".posts.index.show_more_posts"), :remote => true, :param_name => 'post_page', id: 'load_more_posts', class: "content-cta")) %>');
+<% else %>
+  $('#posts-container').html("<%= j render 'more_posts', posts: @posts %>");
+  $('#posts-filter-container').html('<%= j render "filter_menu_post" %>');
+  history.pushState({}, '', '<%= j params[:category].blank? ? all_path : all_path(category: params[:category]) %>');
+  $('#paginator').html('<%= escape_javascript(link_to_next_page(@posts, I18n.t(".posts.index.show_more_posts"), :remote => true, :param_name => 'post_page', id: 'load_more_posts', class: "content-cta")) %>');
 <% end %>

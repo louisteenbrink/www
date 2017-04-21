@@ -33,6 +33,14 @@ class Blog
       @content ||= markdown.render(article_content.gsub("===", ""))
     end
 
+    def video?
+      layout.to_sym == :video
+    end
+
+    def post?
+      layout.to_sym == :post
+    end
+
     DEFAULT_READING_TIME_IN_MINUTES = 2
     AVERAGE_WORD_PER_MINUTES = 200
 

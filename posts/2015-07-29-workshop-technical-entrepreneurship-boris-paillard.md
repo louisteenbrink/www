@@ -1,11 +1,9 @@
 ---
-layout: post
+layout: video
 title: "Workshop Technical Entrepreneurship"
 author: cedric
 labels:
-  - meetup
-  - tuto
-  - video
+  - workshop
 thumbnail: thumbnail-workshop-technical-entrepreneurship.jpg
 description: "Boris Paillard, CEO du Wagon, dresse un panorama complet et concret de tous les éléments de culture tech indispensables à tous les entrepreneurs."
 ---

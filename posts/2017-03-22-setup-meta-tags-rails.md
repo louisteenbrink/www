@@ -3,7 +3,7 @@ layout: post
 title: "Social Meta Tags Setup in Rails"
 author: edward
 labels:
-  - tuto
+  - tutorial
 pushed: true
 thumbnail: lewagon_demoday_metatags.png
 description: Sharing your product on social networks has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your social meta tags are properly set.

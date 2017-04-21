@@ -1,6 +1,6 @@
-<% @posts.each_slice(3) do |posts| %>
+<% posts.each_slice(3) do |pp| %>
   <div class="row">
-    <% posts.each do |post| %>
+    <% pp.each do |post| %>
       <div class="col-sm-4">
         <a href="<%= post_path post.slug %>">
           <article class="post-thumbnail" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">

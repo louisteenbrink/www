@@ -1,6 +1,6 @@
-<% @videos.each_slice(3) do |videos| %>
+<% videos.each_slice(3) do |vv| %>
   <div class="row">
-    <% videos.each do |video| %>
+    <% vv.each do |video| %>
       <div class="col-sm-4">
         <%= link_to post_path video.slug do %>
           <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
