@@ -35,7 +35,7 @@ class PostsController < ApplicationController
       @videos = posts.select { |post| post.layout.to_sym == :video }
       @workshop = @videos.select { |post| post.metadata[:labels].include? "workshop" }
       @talks = @videos.select { |post| post.metadata[:labels].include? "talks" }
-      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(9)
+      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
     end
   end
 

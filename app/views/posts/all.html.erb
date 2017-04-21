@@ -1,8 +1,19 @@
 <section class="posts">
   <h3 class="section-title"><small>Lastest posts</small>Crafted for your eyes only</h3>
+
+  <div class="filter-container">
+    <ul>
+      <li class="filter-active">All</li>
+      <li>Tutorials</li>
+      <li>Guests</li>
+      <li>Events</li>
+    </ul>
+  </div>
+
   <div id="posts-container" class="container">
     <%= render 'more_posts', posts: @posts %>
   </div>
+
   <div id="paginator">
     <%= link_to_next_page @posts, t(".show_more_posts"), remote: true, param_name: :post_page, id: 'load_more_posts', class: 'more-posts content-cta' %>
   </div>

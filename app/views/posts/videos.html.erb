@@ -1,8 +1,19 @@
 <section class="videos">
   <h3 class="section-title"><small>Lastest videos</small>We have recorded all the goodies for you!</h3>
+
+  <div class="filter-container">
+    <ul>
+      <li class="filter-active">All</li>
+      <li>Workshops</li>
+      <li>Talks</li>
+      <li>Lifestyle</li>
+    </ul>
+  </div>
+
   <div id="videos-container" class="container">
     <%= render 'more_videos', videos: @videos %>
   </div>
+
   <div id="paginator">
     <%= link_to_next_page @videos, t(".show_more_videos"), remote: true, param_name: :post_page, id: 'load_more_videos', class: 'more-videos content-cta' %>
   </div>
