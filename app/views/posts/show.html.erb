@@ -55,7 +55,7 @@
                       player = new YT.Player('ytplayer', {
                         height: '360',
                         width: '640',
-                        playerVars: { 'autoplay': 0, 'controls': 0, 'showinfo': 0 },
+                        playerVars: { 'autoplay': 0, 'controls': 1, 'showinfo': 0 },
                         videoId: '<%= @post.metadata[:youtube_slug] %>'
                       });
 

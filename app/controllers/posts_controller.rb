@@ -6,7 +6,7 @@ class PostsController < ApplicationController
   def index
     if request.format.html? || params[:post_page]
       posts = Blog.new.all
-      @posts = posts.select { |post| post.layout.to_sym == :post }
+      @posts = posts.select(&:post?)
       @posts_count = @posts.length
       @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
       @videos = posts.select(&:video?)
@@ -37,10 +37,10 @@ class PostsController < ApplicationController
     if params[:category].present?
       @videos = @videos.select { |post| post.metadata[:labels].include? params[:category] }
       @videos_count = @videos.length
-      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(9)
+      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(2)
     end
     @videos_count = @videos.length
-    @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(9)
+    @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
   end
 
   def all
