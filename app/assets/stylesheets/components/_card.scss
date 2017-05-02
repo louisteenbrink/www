@@ -10,7 +10,10 @@
   max-width: 380px;
   margin: auto;
   position: relative;
+
   &:hover {
+    opacity: .9;
+
     .project-item-maker {
       transform: translate(0);
     }
