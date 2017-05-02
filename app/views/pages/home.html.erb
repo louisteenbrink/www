@@ -121,8 +121,8 @@
     <div class="card-cities">
       <% @cities.each do |city| %>
         <div class="card-city-container">
-          <%= link_to city_path(city: city["slug"]) do %>
             <div class="card-city">
+              <%= link_to "", city_path(city: city["slug"]), class: "card-city-link" %>
               <div class="card-city-header" style="background-image: url('<%= cl_image_path city['city_background_picture_path'] || "", height: 200, crop: :fill %>')">
               <span class="card-city-filter"></span>
               </div>
@@ -139,7 +139,6 @@
                 </div>
               </div>
             </div>
-          <% end %>
         </div>
       <% end %>
     </div>
