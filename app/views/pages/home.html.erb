@@ -31,7 +31,6 @@
 
 <%= render partial: "shared/testimonials" %>
 
-
 <% cache [ 'stories', locale ] do %>
   <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
   <%= react_component 'Stories', {
