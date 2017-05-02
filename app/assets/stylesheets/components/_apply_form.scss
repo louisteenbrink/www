@@ -37,6 +37,15 @@
     margin-bottom: 10px;
   }
 
+  &.is-mandatory {
+    label span::after {
+      content: "*";
+      font-size: 13px;
+      margin-left: 3px;
+      vertical-align: top;
+    }
+  }
+
   &.is-focused, &.is-validated, &.has-error {
     border-left-width: 8px;
     border-left-style: solid;
@@ -62,6 +71,10 @@
     margin-left: 200px;
     margin-top: 1em;
     width: 100%;
+    @media(max-width: $screen-sm-max) {
+      margin-left: 0;
+      text-align: center;
+    }
   }
 
 
@@ -110,8 +123,16 @@
       flex: 0 0 100%;
       text-align: center;
     }
-
   }
+
+  input::-webkit-input-placeholder { opacity: 0.3; font-style: italic; }
+  input::-moz-placeholder { opacity: 0.3; font-style: italic; }
+  textarea::-webkit-input-placeholder { opacity: 0.3; font-style: italic; }
+  textarea::-moz-placeholder { opacity: 0.3; font-style: italic; }
+  input:focus::-webkit-input-placeholder { color: transparent; }
+  input:focus::-moz-placeholder { color: transparent; }
+  textarea:focus::-webkit-input-placeholder { color: transparent; }
+  textarea:focus::-moz-placeholder { color: transparent; }
 
   textarea {
     flex: 4 1 auto;

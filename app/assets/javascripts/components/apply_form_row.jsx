@@ -24,6 +24,7 @@ class ApplyFormRow extends React.Component {
   render() {
     var componentClasses = classNames({
       'apply-form-row': true,
+      'is-mandatory': this.props.mandatory,
       'is-focused': this.state.isFocused,
       'has-error': this.state.error !== "",
       'is-validated': this.state.error === "" && (this.props.value || "").toString().length > 0
