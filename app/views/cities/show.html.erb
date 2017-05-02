@@ -1,5 +1,11 @@
-<%= content_for(:title) { t(".title", city: @city["name"]) } %>
-<%= content_for(:description) { t(".description", city: @city["name"]) } %>
+<% if @city['slug'] == 'barcelona' %>
+  <%= content_for(:title) { "Coding Bootcamp in Barcelona, Spain | Le Wagon" } %>
+  <%= content_for(:description) { "Learn to code in 9 weeks and become a fullstack web developer with Europe's major coding school in Barcelona. " } %>
+<% else %>
+  <%= content_for(:title) { t(".title", city: @city["name"]) } %>
+  <%= content_for(:description) { t(".description", city: @city["name"]) } %>
+<% end %>
+
 <%
   asset = "social/#{@city["slug"]}_facebook_card.png"
   content_for(:image_url) { image_url asset } unless Rails.application.assets.find_asset(asset).nil?
