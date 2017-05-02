@@ -6,7 +6,7 @@ labels:
   - alumni
   - startup
 pushed: true
-thumbnail: thumbnail-krawd.jpg
+thumbnail: krawd-team.jpg
 description: "L'OVNI KRAWD fait son nid alors que le monde s'interroge. 'Tu veux faire une agence sans être une agence avec des créatifs dedans ?' - 'Oui mais pas que, KRAWD c'est encore mieux !' réplique Arthur avec le sourire."
 ---
 

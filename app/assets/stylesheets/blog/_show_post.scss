@@ -3,24 +3,118 @@
 /******************************************************************************/
 
 .blog-post {
-  padding-bottom: 4em;
+
+  /* COMMON *******************************************************************/
 
   h1 {
-    font-size: 27px;
+    max-width: 740px;
+    padding: 0 20px;
+    font-size: 50px;
+    color: white;
     font-weight: bold;
+    text-align: left;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+    text-shadow: 0px 2px 0px rgba(0,0,0,0.15);
+    transform: translateY(90%);
+
+    @media (max-width: 767px) {
+      transform: translateY(0);
+    }
   }
-  p {
-    line-height: 24px;
-    font-weight: 200;
-    color: $gray-darker;
-  }
+
+
   h2 {
-    font-size: 19px;
-    font-weight: bold;
+    font-size: 23px;
+    font-weight: normal;
+    margin: 50px 0 30px 0;
+    color: black;
   }
+
+  p {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.4em;
+  }
+
   img {
+    margin: 30px 0;
     max-width: 100%;
   }
+
+  .highlight {
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 2px;
+
+    pre {
+      margin: 0;
+    }
+  }
+
+  /* POST - HEADER ************************************************************/
+
+  .post-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 460px;
+    background-size: cover;
+
+    &:after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  /* POST - CONTENT ***********************************************************/
+
+  .post-content {
+    max-width: 740px;
+    margin: 0 auto;
+    padding: 4em 20px 4em 20px;
+  }
+
+  /* POST - FOOTER ************************************************************/
+
+  .post-footer {
+
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 50px 0 30px 0;
+    color: black;
+  }
+
+  p {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 1.4em;
+  }
+
+  .highlight {
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 2px;
+
+    pre {
+      margin: 0;
+    }
+  }
+
+
   a {
     color: $blue;
   }

@@ -10,8 +10,6 @@
   <%= asset_path "blog/#{@post.metadata[:thumbnail]}" if @post.metadata[:thumbnail] %>
 <% end %>
 
-
-
 <% if @post.layout.to_sym == :video %>
   <div style="overflow: hidden;">
     <div class="container video-layout">
@@ -122,18 +120,25 @@
     </div>
   </div>
 <% else %>
+  <div class="breadcrumb">
+    <ul>
+      <li>Blog</li>
+      <li>All posts</li>
+      <li><%= @post.metadata[:title].html_safe %></li>
+    </ul>
+  </div>
   <div style="overflow: hidden;">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <article class="blog-post">
-            <h1><%= @post.metadata[:title].html_safe %></h1>
-            <%= render 'written_by', post: @post, date_format: :long %>
-            <hr>
-            <%= raw @post.content %>
-          </article>
-        </div>
+    <article class="blog-post">
+      <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= asset_path "blog/#{@post.metadata[:thumbnail]}" %>')">
+        <h1><%= @post.metadata[:title].html_safe %></h1>
       </div>
-    </div>
+      <div class="post-content">
+        <%= render 'written_by', post: @post, date_format: :long %>
+        <%= raw @post.content %>
+      </div>
+      <div class="post-footer">
+
+      </div>
+    </article>
   </div>
 <% end %>
