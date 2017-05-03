@@ -146,38 +146,40 @@
       </div>
       <div class="post-content">
         <%= raw @post.content %>
-      </div>
-      <div class="post-footer">
         <% if @post.metadata[:author] %>
           <% author = Static::AUTHORS[@post.metadata[:author].to_sym] %>
           <% if author %>
-            <%= image_tag author[:picture], class: 'author-picture' %>
-            <%= author[:fname] %> <%= author[:lname] %>
-            <%= author[:position] %> at <%= link_to author[:company_website], author[:company] %>
-            <p><%= author[:bio] %></p>
-            <ul>
-              <% if author[:instagram] %>
-                <li>
-                  <a href="https://www.instagram.com/<%= author[:instagram] %>">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                  </a>
-                </li>
-              <% end %>
-              <% if author[:twitter] %>
-                <li>
-                  <a href="https://www.instagram.com/<%= author[:twitter] %>">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                </li>
-              <% end %>
-              <% if author[:linkedin] %>
-                <li>
-                  <a href="https://www.instagram.com/<%= author[:linkedin] %>">
-                     <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                </li>
-              <% end %>
-            </ul>
+            <div class="post-author">
+              <%= image_tag author[:picture], class: 'author-picture' %>
+              <div class="author-details">
+                <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
+                <i class="author-position"><%= author[:position] %> at <%= link_to author[:company_website], author[:company] %></i>
+                <p class="author-bio"><%= author[:bio] %></p>
+                <ul class="author-social">
+                  <% if author[:instagram] %>
+                    <li>
+                      <a href="https://www.instagram.com/<%= author[:instagram] %>">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  <% end %>
+                  <% if author[:twitter] %>
+                    <li>
+                      <a href="https://www.instagram.com/<%= author[:twitter] %>">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  <% end %>
+                  <% if author[:linkedin] %>
+                    <li>
+                      <a href="https://www.instagram.com/<%= author[:linkedin] %>">
+                         <i class="fa fa-linkedin" aria-hidden="true"></i>
+                      </a>
+                    </li>
+                  <% end %>
+                </ul>
+              </div>
+            </div>
           <% end %>
         <% end %>
       </div>

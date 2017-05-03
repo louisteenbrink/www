@@ -134,6 +134,45 @@
       padding: 4em 20px 4em 20px;
     }
 
+    .post-author {
+      display: flex;
+      padding-top: 30px;
+      border-top: 1px solid #f4f4f4;
+
+      .author-picture {
+        margin: 0;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+
+      .author-details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+
+        .author-name {
+          font-size: 18px;
+          font-weight: 600;
+        }
+
+        .author-bio {
+          margin: 10px 0 10px;
+          color: rgba(0,0,0,0.6);
+          font-size: 16px;
+          font-weight: inherit;
+        }
+
+        .author-social {
+          display: flex;
+
+          li:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+
     /* POST - FOOTER ************************************************************/
 
     .post-footer {
