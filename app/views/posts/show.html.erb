@@ -142,14 +142,39 @@
     <article class="blog-post">
       <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= asset_path "blog/#{@post.metadata[:thumbnail]}" %>')">
         <h1><%= @post.metadata[:title].html_safe %></h1>
+        <%= render 'written_by', post: @post, date_format: :long %>
       </div>
       <div class="post-content">
-        <%= render 'written_by', post: @post, date_format: :long %>
         <%= raw @post.content %>
       </div>
-      <div class="post-footer">
-
-      </div>
     </article>
+
+    <div class="container-fluid more-posts">
+      <h3 class="section-title"><small>Read on!</small>There is always something new</h3>
+      <div class="container">
+        <div class="row">
+          <% @posts.each do |post| %>
+            <div class="col-sm-4">
+              <a href="<%= post_path post.slug %>">
+                <article class="post-thumbnail" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
+                  <div class="content">
+                    <h2><%= post.metadata[:title].html_safe %></h2>
+                    <ul>
+                      <% post.metadata[:labels].each do |tag| %>
+                        <li><%= tag %></li>
+                      <% end %>
+                      <li class="read-time"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= post.read_time %> min reading</li>
+                    </ul>
+                    <% if post.metadata[:description] %>
+                      <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                    <% end %>
+                  </div>
+                </article>
+              </a>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
   </div>
 <% end %>

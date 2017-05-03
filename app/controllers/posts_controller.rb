@@ -28,6 +28,7 @@ class PostsController < ApplicationController
     @post = Blog.new.post(params[:slug])
     posts = Blog.new.all
     @videos = (posts.select(&:video?) - [ @post ]).sample(2)
+    @posts = (posts.select(&:post?) - [ @post ]).sample(3)
     render_404 if @post.nil?
   end
 

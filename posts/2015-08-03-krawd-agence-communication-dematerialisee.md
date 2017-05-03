@@ -49,8 +49,3 @@ On me souffle dans l'oreillette que des discussions sont en cours avec Google EU
 
 ![KRAWD, une belle team de vainqueurs](blog_image_path krawd-team.jpg)
 
-## En savoir plus
-
-- [DemoDay Batch #6 - Pitch de KRAWD](http://www.lewagon.org/blog/lewagon-demo-day-promo-6)
-- [Sur le web](http://www.krawd.com/)
-- [Sur Facebook](https://www.facebook.com/pages/Krawd/1543950642508926?fref=ts)
