@@ -9,8 +9,11 @@
   box-shadow: 1px 1px 3px #E7E5E5;
   max-width: 380px;
   margin: auto;
+  position: relative;
 
   &:hover {
+    opacity: .9;
+
     .project-item-maker {
       transform: translate(0);
     }
@@ -34,6 +37,14 @@
       }
     }
   }
+}
+
+.card-city-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
 }
 
 .card-city-teachers {

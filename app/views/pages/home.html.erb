@@ -31,7 +31,6 @@
 
 <%= render partial: "shared/testimonials" %>
 
-
 <% cache [ 'stories', locale ] do %>
   <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
   <%= react_component 'Stories', {
@@ -66,7 +65,6 @@
       <% projects.each do |project| %>
        <% project = OpenStruct.new project %>
         <div class="project-item-container">
-          <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
           <div class="project-item">
             <div class='project-item-head'>
               <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
@@ -93,6 +91,8 @@
                 <% end %>
               </div>
             </div>
+            <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
+
           </div>
         </div>
       <% end %>
@@ -120,8 +120,8 @@
     <div class="card-cities">
       <% @cities.each do |city| %>
         <div class="card-city-container">
-          <%= link_to city_path(city: city["slug"]) do %>
             <div class="card-city">
+              <%= link_to "", city_path(city: city["slug"]), class: "card-city-link" %>
               <div class="card-city-header" style="background-image: url('<%= cl_image_path city['city_background_picture_path'] || "", height: 200, crop: :fill %>')">
               <span class="card-city-filter"></span>
               </div>
@@ -138,7 +138,6 @@
                 </div>
               </div>
             </div>
-          <% end %>
         </div>
       <% end %>
     </div>
