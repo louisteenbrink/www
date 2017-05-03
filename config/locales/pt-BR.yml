@@ -105,7 +105,7 @@ pt-BR:
     error: "Opa, parece que tivemos um problema : ERROR_MESSAGE"
   blog:
     read_article: Leia o post
-    written_html: "Publicado por <a href='%{href}'>%{author}</a> em %{date}"
+    written_html: "Publicado por %{fname} %{lname} em %{date}"
     moreposts: Veja outros posts legais
   pages:
     home:

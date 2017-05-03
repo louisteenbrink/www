@@ -103,7 +103,7 @@ en:
     error: "Oups, seems to be an issue : ERROR_MESSAGE"
   blog:
     read_article: Read the post
-    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
+    written_html: "Published by %{fname} %{lname} on %{date}"
     moreposts: Take a tour on other cool posts
   pages:
     home:

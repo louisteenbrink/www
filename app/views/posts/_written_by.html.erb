@@ -3,8 +3,8 @@
   <% if author %>
     <p class="written-by">
       <%= t "blog.written_html",
-        href: "https://twitter.com/#{author[:twitter]}",
-        author: author[:name],
+        fname: author[:fname],
+        lname: author[:lname],
         date: l(post.date, format: date_format )
       %>
     </p>

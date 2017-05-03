@@ -111,7 +111,7 @@ fr:
     error: 'Oups, il y a un problème : ERROR_MESSAGE'
   blog:
     read_article: Lire l'article
-    written_html: "Publié par <a href='%{href}'>%{author}</a> le %{date}"
+    written_html: "Publié par %{fname} %{lname} le %{date}"
     moreposts: Continuez la visite !
   pages:
     home:
