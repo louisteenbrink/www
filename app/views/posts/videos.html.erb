@@ -1,7 +1,9 @@
-<nav class="breadcrumb">
-  <%= link_to 'Blog', blog_path, class: 'breadcrumb-item' %>
-  <span class="breadcrumb-item active">All videos</span>
-</nav>
+<div class="breadcrumb">
+  <ul>
+    <li><%= link_to 'Blog', blog_path %></li>
+    <li>All videos</li>
+  </ul>
+</div>
 
 <section class="videos">
   <h3 class="section-title"><small><%= ((@videos_count / 5) * 5) %>+ videos to watch</small>We have recorded all the goodies for you!</h3>
