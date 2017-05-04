@@ -4,233 +4,233 @@ zh-CN:
       apply: "%B %e, %Y"
   shared:
     positions:
-      they_hired_our_students: They hired our students
-      where_our_students_are_working: Where our students are working
-      join_our_network: Want to hire our alumni?
+      they_hired_our_students: 我们的学员就职的公司
+      where_our_students_are_working: 学员工作的地方
+      join_our_network: 想要雇佣我们的校友？
     live:
-      watch_live_html: "Discover <strong>%{count} projects</strong> made by Alumni of Batch #%{batch}</strong> in <strong>%{city}</strong>"
-      watch_now_html: "Watch demo-day <strong>now</strong>"
+      watch_live_html: "观看<strong>%{city}</strong>的第#%{batch}</strong>期学员的<strong>%{count}项目</strong>"
+      watch_now_html: "<strong>现在</strong>观看"
     footer:
-      news_and_resources: "News, events & free resources"
-      enter_your_mail: Enter your email
-      stay_tuned: Stay tuned
-      our_videos: Our video tutorials
-      find_a_city: Find a city
-      about_us: About us
-      follow_us: Follow us
-      title: "Subscribe for more!"
-      subtitle_html: "Stay up to date on Le Wagon events and <em>free</em> workshops surrounding tech, startups and innovation"
-      subtitle_end: " in %{city}"
-      subscribe: "Subscribe"
-      subscribing: "Subscribing"
-      retry: "Retry"
-      error: "Looks like your email is not valid..."
-      press: "Press"
-      alumni_platform: "Alumni Community"
-      about: "What's le Wagon?"
-      bootcamp_in_city_html: "%{city} coding bootcamp"
+      news_and_resources: "新闻，活动以及免费资源"
+      enter_your_mail: 输入你的邮箱
+      stay_tuned: 及时接收通知
+      our_videos: 我们的视频教程
+      find_a_city: 查询城市
+      about_us: 关于我们
+      follow_us: 关注我们
+      title: "订阅获取更多信息"
+      subtitle_html: "及时关注Le Wagon的活动以及围绕科技，创业，创新主题的<em>免费</em>工作坊"
+      subtitle_end: " 在%{city}"
+      subscribe: "订阅"
+      subscribing: "正在订阅"
+      retry: "重试"
+      error: "你输入的似乎是无效邮箱……"
+      press: "媒体"
+      alumni_platform: "校友社群"
+      about: "Le Wagon是什么机构？"
+      bootcamp_in_city_html: "%{城市}编程训练营"
     navbar:
       menu:
-        cities: Cities
-        program: Program
-        online: Online
-        on_site: On site
-        fullstack_program: FullStack - 9-week intensive program
-      apply: Apply Now
-      employers: Business
-      work: Work with our alumni
-      train: Learn to code with us
-      recruitment: Hiring our students
-      workshops: Corporate Workshops
+        cities: 城市
+        program: 项目
+        online: 在线
+        on_site: 现场
+        fullstack_program: 全栈式 - 九周集训项目
+      apply: 现在申请
+      employers: 商务合作
+      work: 与校友合作
+      train: 加入我们学习编程
+      recruitment: 雇佣我们的学员
+      workshops: 公司工作坊
     testimonials:
-      what_our_students_say: Students Reviews
-      students_think_of_us: What our students think of us
-      more_reviews: More reviews of Le Wagons
+      what_our_students_say: 学员评价
+      students_think_of_us: 学员是如何看待Le Wagon的
+      more_reviews: Le Wagon学员的更多评价
     testimonials_new:
-      what_our_students_say: Students Reviews
-      students_think_of_us: What our students think of us
-      more_reviews: More reviews of Le Wagon
-      love_messages: Student Reviews
-      show_more_testimonials: Show more testimonials
+      what_our_students_say: 学员评价
+      students_think_of_us: 学员是如何看待Le Wagon的
+      more_reviews: 关于Le Wagon的更多评价
+      love_messages: 学员评价
+      show_more_testimonials: 呈现更多评价
     features:
-      read_full_program: Read full program
-      pedagogy_matters_html: "Code the startup way."
+      read_full_program: 浏览项目内容
+      pedagogy_matters_html: "用创业的思维学习编程"
       pedagogy_tagline_html: |
-        Learn to write clean code and build web products. <br />Join the most <strong>exciting community of learners in Europe</strong>.
-      web_development: Learn web-development
+        学习编写精简的代码，建造网页产品。<br />加入<strong>欧洲最激动人心的学习者社群</strong>.
+      web_development: 学习网页开发
       web_development_details: |
-        Learn all about Ruby, SQL, and the Rails application framework.
-        Develop your front-end skills by using advanced CSS technics (flexbox, grid, animations, etc..)
-        and go deeper into Javascript by learning jQuery and React.js,
-        the library developed by Facebook.
-      software_engineer_html: Think like a Software engineer
+        学习Ruby，SQL，以及Rails的应用框架。
+        通过使用高级CSS技术开发你的前端技能（flexbox，grid，动画，等等）
+        通过学习jQuery，React.js和Facebook开发的library
+        深入了解Javascript。
+      software_engineer_html: 像一个软件工程师一样思考
       software_engineer_details: |
-        A person who has the big picture on technical issues,
-        who understands what MVC means, knows how to design a database schema or to dissect an HTTP request,
-        and who can start learning a new programming language very quickly.
-      technical_workflow: Adopt a technical workflow
+        对于技术问题具有全局观念
+        了解MVC（模型视图控制器）的含义，知道如何设计数据库模式或者如何剖析HTTP请求，
+        以及能够迅速开始学习一种新型编程语言。
+      technical_workflow: 采用技术化工作流程
       technical_workflow_details_html: |
-        There's definitely <strong>a good way</strong> of building tech products
-        and that's what we will teach you. Write your MVP's user stories,
-        draw your database scheme, build a mockup with Sketch,
-        collaborate using pull-requests and code-reviews on Github.
-        That's how successful startups work.
-      startup_toolkit: Get the startup toolkit
+        打造科技产品的<strong>优化方法</strong>是绝对存在的，
+        这也是我们会教授的内容。写下你的MVP（模型视图展示器）用户故事，
+        绘制数据库模式，使用Sketch打造产品模型
+        在Github上合作使用代码合并请求和代码审查。
+        成功的创业公司都是这样运作的。
+      startup_toolkit: 获取创业工具包
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
-        We will teach you how to implement all these services
-        to be more efficient at the launch of your new product.
-        Save time, use the right tool for your specific need,
-        that's our developer mindset.
-      build_product: Build your product
+        Heroku，Stripe，Mandrill，Amazon S3，Algolia......
+        我们会教你如何高效地使用这些服务
+        来帮助你打造产品，节省时间，
+        针对具体需要，使用正确的工具，
+        这就是我们的发开员思维模式。
+      build_product: 打造你的产品
       build_product_details: |
-        No one will teach you how to build web products as we do.
-        Kudoz has just raised 1.2M, Impact is disrupting politics, MaShareEcole school, MedPics healthcare, Krawd marketing...
-        and there are so many other projects in the starting blocks.
-      land_a_job: Land a new job
+        没人能像Le Wagon一样教你如何建造网页产品。
+        Kudoz筹集了一百二十万欧元资金，Impact打破了行业陈规，还有教育领域的MaShareEcole，医疗领域的MedPics，以及市场领域的Krawd......
+        还有很多其他Le Wagon学员在训练营期间完成的项目同样蓄势待发。
+      land_a_job: 获得一份新工作
       land_a_job_details: |
-        Working as a junior developer for Stripe, Algolia, Molotov, Save, Compass, 55, Save, etc..
-        We will help you find your dream job, either as a junior dev, product manager
-        or growth hacker. Discuss with any of our alumni to find out more!
-      checkout: Check it out for yourself.
-      see_all: More details.
+        在Stripe，Algolia，Molotov，Save，Compass，55，Save等公司担任初级开发人员
+        我们将帮助你找到自己的梦想工作，无论是初级开发人员，产品经理，
+        还是增长黑客。我们的任何一个学员都可以告诉你更多细节。
+      checkout: 自己了解更多。
+      see_all: 更多细节。
   newsletter:
-    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
-    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
-    email_placeholder: your e-mail
-    follow_us_button: Follow us
-    thank_you: "Thanks, see you very soon!"
-    error: "Oups, seems to be an issue : ERROR_MESSAGE"
+    teaser: "<p>邮件接受我们下一次的<strong>活动</strong>通知，<strong>教学视频</strong> & <strong>博客技术贴</strong>。</p>"
+    city_teaser_html: '邮件接受我们下一次在%{city}<strong>活动</strong> 的通知，<strong>教学视频</strong> & <strong>博客技术贴</strong>。'
+    email_placeholder: 你的邮箱地址
+    follow_us_button: 关注我们
+    thank_you: "谢谢！很快见！"
+    error: "糟糕，好像出了问题：错误_消息"
   blog:
-    read_article: Read the post
-    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
-    moreposts: Take a tour on other cool posts
+    read_article: 阅读文章
+    written_html: "<a href='%{href}'>%{author}</a>发表于%{date}"
+    moreposts: 浏览其他受欢迎的文章
   pages:
     home:
-      title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
+      title: "Le Wagon - 学习编程 - 教授Ruby on Rails，HTML，CSS以及JavaScript的编程训练营"
       description: |
-        Le Wagon is Europe's best coding school for entrepreneurs. Checkout for yourself the projects developed by our students.
-      catchline_html: "改变你的生活: <strong>学习编码</strong>"
-      vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
-      view_teaser: See our video
-      apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
-      discover_us: Discover our program
-      what_they_code: What our students have built during the bootcamp
-      it_works: "Funny thing, it works"
-      freshly_coded: Freshly coded
-      all_products: 100+ products built by our alumni.
-      see_all_products: See all products
-      worldwide: Where can you find Le Wagon?
-      check_program: More details about the program
-      our_cities: Our cities
-      open_yours: To launch the program in your city
-      and_you_html: And <strong>you</strong> ?
-      check_projects: Discover our students and their projects
-      see_more_projects: See more projects...
-      our_students_projects: Students Projects
-      only_ten_days: "...in only 10 days"
-      next_batch: "Next batch:"
-      events_to_come: Events to come
-      featured: Students Stories
-      featured_subtitle: "- What our students become"
-      read_next_vowel: "Read ::name::'s story"
-      read_next_consumn: "Read ::name::'s story"
-      read_all: Read more stories
+        Le Wagon是欧洲最棒的针对创业者的编程学校。了解我们的学员开发的项目。
+      catchline_html: "改变你的生活: <strong>学习编程</strong>"
+      vision_html: Le Wagon将<strong>技术</strong>带给<strong>有创造力的人</strong>
+      view_teaser: 观看我们的视频
+      apply_for_nine_weeks_html: 申请<span>9周训练营</span>
+      discover_us: 了解我们的课程
+      what_they_code: 我们的学员在训练营期间开发的产品
+      it_works: "真有意思，竟然成功了"
+      freshly_coded: 刚出炉的代码
+      all_products: 校友开发的100多个产品
+      see_all_products: 查看所有产品
+      worldwide: 在哪里可以找到Le Wagon？
+      check_program: 训练营的更多细节
+      our_cities: 所在城市
+      open_yours: 将Le Wagon带到你的城市
+      and_you_html: 那<strong>你</strong>呢？
+      check_projects: 了解更多关于我们的学员以及他们的项目
+      see_more_projects: 查看更多项目......
+      our_students_projects: 学员项目
+      only_ten_days: "在仅仅10天里......"
+      next_batch: "下一期训练营："
+      events_to_come: 近期活动
+      featured: 学员故事
+      featured_subtitle: "- 我们学员的后续职业发展"
+      read_next_vowel: "阅读 ::name:: 的故事"
+      read_next_consumn: "阅读 ::name:: 的故事"
+      read_all: 阅读更多故事
     program:
-      title: Program - 9 weeks to learn Ruby on Rails
+      title: 项目 - 学习Ruby on Rails的九周集训
       description: |
-        9 weeks to learn Ruby on Rails, HTML/CSS, Javascript, and web-development best practices
-      our_program: "FullStack program"
+        九周学习Ruby on Rails，HTML/CSS，Javascript，以及网页开发的最佳操作
+      our_program: "全栈式项目"
       program_details_html: |
-        2 months to <strong>become a web developer</strong>.
-      apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
-      nine_weeks: 9 intensive weeks - 360 hours of code
-      to_build_your_ideas_html: Learn all the web stack. From the database to the browser.
-      why_us: Learn from the best
+        两个月 <strong>成为网页开发人员</strong>.
+      apply_for_nine_weeks_html: 申请 <span class='hidden-xs'>九周集训项目</span>
+      nine_weeks: 九个集训周 - 360 小时的编程
+      to_build_your_ideas_html: 学习从数据库到浏览器的所有网页内容，。
+      why_us: 在最棒的培训环境中学习
       why_us_details_html: |
         <p class="text-readable">
-        Le Wagon is rated among the 3 best coding bootcamps in the world according to <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> and <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        根据<a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">来源：Coursereport</a> 以及 <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>数据显示，Le Wagon 被评为全球最棒的三所编程训练营之一。
         </p>
 
         <p class="text-readable">
-        We have taught %{batches} batches (that's more than %{alumni} students!) and our program has evolved each time to reach perfection.
-        We believe building a great curriculum takes time and it took us nearly 3 years to design the FullStack program.
-        It is our longstanding experience that makes our program so efficient. <strong>You will learn in 2 months what you would have learned in 2 years:</strong>
+        我们已经运营了 %{batches} 期训练营 ( 也就是超过 %{alumni} 名学生！) ，我们的项目内容也在每一次的实践中日趋完善。
+        我们觉得，建立一个好的课程项目是需要时间的，我们投入了三年的时间来设计全栈式项目。
+        正是我们日积月累的经验使得我们的项目能够高效运行。<strong>学员将在两个月内学习到本来需要花费两年时间学习的内容:</strong>
         </p>
         <ul>
-          <li>Perfect developer set-up</li>
-          <li>Software engineering and database architecture</li>
-          <li>Collaboration on Github</li>
-          <li>Technical workflow used in the most successful startups</li>
-          <li>Tools like Heroku, Stripe, Mandrill, Algolia to deploy your app and integrate advanced features (payment, geolocation, mailing, search, etc...)</li>
+          <li>完美的开发员全套准备</li>
+          <li>软件工程以及数据库结构</li>
+          <li>在Github上的合作技巧</li>
+          <li>成功创业公司中使用的最佳技术流程</li>
+          <li>使用Heroku，Stripe，Mandrill，Algolia等等工具，帮助你部署应用配置，整合高级功能（支付，地理定位，邮件，搜索......）</li>
         </ul>
-      community: An exciting community
+      community: 一个激动人心的社群
       community_details_html: |
-        %{alumni}+ students with various backgrounds (engineers, journalists, architects, designers..)
-        are <strong style="color:white;">chatting every day on Slack</strong>, questioning our teaching staff, sharing tips, resources, code gists, job offers and news from their products.
-        <strong>One of the best tech communities in the world.</strong>
-        All the students of le Wagon share the same technical background and apply industry best practices.
-        This mix between <strong style="color:white;">diversity & technical expertise</strong> makes our community unique.
-      cv: Your developer portfolio
+        %{alumni}+ 个学生，带着多元化背景（工程师，记者，建筑师，设计师......）
+        <strong style="color:white;">每天在Slack上交流</strong>，向导师提问，分享建议，资源，编程技巧，工作机会以及自己产品的最新消息。
+        <strong>全球最棒的科技社群之一。</strong>
+        所有le Wagon的校友都会具有相同的技术背景，能够应用最佳的实际操作。
+        这种 <strong style="color:white;">多元化和技术专长</strong> 两者的结合正是我们的社群独特之处。
+      cv: 你的开发员项目简历
       cv_details_html: |
-        In only 2 months, build several web applications, including
-        a <strong>clone of Airbnb</strong> and <strong>your own personal project</strong>. Deploy these apps
-        and build yourself a solid Github portfolio.
+        在两个月内，建造出几个网页应用， 包含
+        一个 <strong>Airbnb网站的克隆版</strong>以及<strong>你自己的个人项目</strong>。将这些应用投入运行，并且
+        在Github上给自己建立一个强大的项目简历
       ruby_html: |
-        Get familiar with the command line and Git.
-        Learn the basics of programming with Ruby and code
-        programs playing with variables, methods,
-        loops and conditional statements. Discover how you can
-        read and write in files and how you can collect
-        interesting data by scraping a website or by calling
-        an API (for instance Twitter API).
+        熟悉命令行和Git。
+        通过Ruby学习编程基础并且使用
+        变量，方法以及循环和条件语句编写代码。
+        探索在文档中读写的方法，
+        以及如何通过网站追踪或者
+        启用应用程序编程接口（比如Twitter程序接口），
+        来收集有趣的数据。
       software_html: |
-        Discover OOP (Object-Oriented programming) and learn to
-        build advanced softwares by structuring your programs
-        into different objects. If you want to build a social
-        network, a market-place, a car-rental system, a restaurant
-        booking platform... then you need to organize your code
-        with a smart architecture. Same as an architect who
-        wants to build a house, he must respect patterns and procedures.
-        During this week, you will code your first applications
-        following the MVC design pattern.
+        探索OOP（面向对象编程）并且学习
+        通过针对不同对象设计程序结构
+        来建造高级软件。如果你想要设计社交平台，
+        在线市场，租车系统，餐厅预订平台......
+        那么你需要将自己的代码放置到
+        最佳结构当中去。道理跟建筑师设计房子时需要遵循
+        特定模式和流程是一样的。
+        在这一周，你将会根据模型－视图－控制器的设计模式，
+        编写出自己的第一个应用。
       database_html: |
-        Programs need to store information in a database.
-        Without databases, Facebook would lose your information
-        every time you log in! Learn to design a database by defining
-        tables and connections. Then discover SQL,
-        the language used to read/write data and make queries to
-        the database.
+        程序需要将信息储存在数据库当中。
+        没有数据库，Facebook在你每次登录的时候都会丢失你的个人信息！
+        学习通过界定表格和关联设计数据库。
+        然后开始探索SQL语句，
+        用来读／写数据的语言，以及
+        如何操作数据库进行查询。
       frontend_html: |
-        Improve your UI culture and learn all about HTML,
-        CSS & best practices in web-design (positioning techniques, animations).
-        Get familiar with Bootstrap, a useful library to
-        prototype web-applications. Then move on to Javascript
-        and jQuery. Learn to manipulate the DOM,
-        define events, and make AJAX requests with Javascript.
-        You will play with lots of cool APIs during this
-        module (Trello, Slack, Facebook , etc...).
+        改进你的用户界面设计技能，学习HTML，
+        CSS以及网页设计中的最佳操作（排版技巧，动画）。
+        熟悉Bootstrap前端开发框架， 这是一个用来建造网页应用的
+        有效工具。然后继续学习Javascript以及jQuery。
+        学习操作DOM（文档对象模型），界定活动，
+        以及使用Javascript发出AJAX指令。
+        在这个单元里，学员将会尝试许多不同种类的
+        应用程序编程接口（Trello，Slack，Facebook，等等）。
       rails_html: |
-        Time to put all your skills together and dive into Rails.
-        No big deal here, you already know most of its
-        elementary blocks and you will feel right at home!
-        During your Rails training, you will have to code Airbnb
-        from scratch in 5 days. You will work in teams to
-        learn to collaborate on Github using pull requests and deploy
-        your apps on Heroku, using the same workflow as successful
-        startups.
+        是时候结合所有的技能开始深入学习Rails了。
+        没什么可担心的，你已经知道它大部分的基础
+        组成部分了，肯定得心应手！
+        在Rails培训期间，你将会在5天内从零开始编写出Airbnb
+        网站的代码。你将会与其它学员组成团队，共同学习
+        在Github上的合作技巧，使用请求代码合并功能，以及
+        运用成功创业公司的开发流程
+        在Heroku上运行你设计的应用。
       projects_html: |
-        Project Time! Code your own project during the
-        2 last weeks and build an awesome product!
+        项目时间到！在训练营最后两周内编写出自己的项目，
+        并且打造出实际产品！
       awesome_entrepreneur: Entrepreneur d'exception
-      one_week: 1 week
-      two_weeks: 2 weeks
-      first_module: "1 - Ruby and coding basics"
-      second_module: "2 - Software Engineering"
-      third_module: "3 - Database & SQL"
-      fourth_module: "4 - Front-end"
+      one_week: 一周
+      two_weeks: 两周
+      first_module: "1 - Ruby和编程基础"
+      second_module: "2 - 软件工程"
+      third_module: "3 - 数据库&SQL语句"
+      fourth_module: "4 - 前端开发"
       fifth_module: "5 - Rails"
-      sixth_module: "6 - Project"
+      sixth_module: "6 - 项目"
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
       amazing_employee: Salarié polyvalent
@@ -241,236 +241,236 @@ zh-CN:
       junior_dev_details: |
         Trouver un poste dans une entreprise du numérique avec ces nouvelles compétences-clef (en développement, product management, marketing, growth hacking..).
       week_by_week: Semaine par semaine
-      typical_day: Typical day
-      theoretical_intro: "Grab a coffee and attend the morning course given by the lead teacher with lots of live-code demos."
-      pair_programming: "Work on challenges with your buddy of the day on our auto-correcting platform with the help of our teaching staff."
-      yoga: "Yoga time with Claire, to relax and get some head space."
-      live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
+      typical_day: 典型的一天
+      theoretical_intro: "买杯咖啡，参加主讲导师的晨课，紧接着进入代码实训练习。"
+      pair_programming: "在导师的帮助下，和当天的搭档在我们的自动改正平台上共同应对挑战。"
+      yoga: "跟Claire练习瑜伽，放松并且腾出大脑空间。"
+      live_code: "代码实训环节: 让我们一起回顾当天经历的一些挑战，在大屏幕上从头进行梳理改正。"
       talk: |
-        Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
+        大师级的创业者（Sunrise的CEO Pierre Valade，Github的CIO Scott Chacon...），或者是技术性的工作坊（用户体验，设计，编程）
     stack:
-      built_by: 'Website built by...'
-      with_tools: 'With these awesome tools...'
+      built_by: '网站设计者'
+      with_tools: '用到的绝佳工具'
     thanks:
-      thanks: Thank you
+      thanks: 谢谢
       we_will_contact_html: |
-        We'll contact you shortly by email to plan an interview. <br /><br />In the meantime, follow the instructions of our check-list and start the <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a> on CodeCademy.
-      take_advance: Check-list
-      first_step: "1. Apply to Le Wagon %{name}"
-      second_step: "Subscribe to %{name} Meetup group "
-      third_step: "Follow us on Twitter"
-      fourth_step: "Resume working on the CodeCademy Ruby track"
+        我们会尽快邮件联系您，安排面试。<br /><br />同时，根据我们的准备清单上的要求在CodeCademy上开始<a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a>的测试。
+      take_advance: 准备清单
+      first_step: "1. 申请加入Le Wagon %{name}"
+      second_step: "加入 %{name} Meetup群"
+      third_step: "关注我们的Twitter"
+      fourth_step: "继续完成CodeCademy上的Ruby track"
     press:
-      title: They speak about Le Wagon
+      title: 他们是如何评价Le Wagon的
     employers:
-      title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
-      description: Join us as hiring partner and get alerted about our new candidates and job events.
-      hiring_tagline_html: Join our hiring network<br>and work with our alumni.
-      hiring_sub_tagline_html:  Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.
-      apply: Work with Le Wagon alumni
-      they: They hire our alumni
-      job_board: Access Le Wagon's job board
+      title: Le Wagon的招聘网络 - 雇佣欧洲最棒的编程训练营的校友
+      description: 加入我们的招聘网络，接收关于最新人才以及招聘活动的通知。
+      hiring_tagline_html: 加入我们的招聘网络，<br>与我们的校友一起工作。
+      hiring_sub_tagline_html:  招聘雇员需要建立的是<strong>长期关系</strong>。通过参加Le Wagon定期活动，招聘平台以及实用工作坊与我们的校友建立联系，<br>并且推广你们的公司文化。
+      apply: 和Le Wagon校友共同工作
+      they: 他们雇用了我们的学员
+      job_board: 如何使用Le Wagon的招聘平台
       job_board_details_html: |
         <p>
-         Get access to Le Wagon's job board to <strong>publish your offers and share them with our alumni worldwide.</strong>
+         登录Le Wagon的招聘平台<strong>发布你的职位空缺，并且分享到我们的全球学员网络中。</strong>
         </p>
         <p>
-         1200+ alumni worldwide are active on our Slack every month and will see you offer. We select our hiring partners very carefully to <strong>garantee only great companies and offers on our job board.</strong>
+         全球1200多名学员每个月在Slack上都非常活跃，一定会看见你的招聘信息。我们会非常慎重地选择招聘伙伴，<strong>来保证招聘平台上公司以及职位的质量。</strong>
         </p>
-      join_our_network: Join our Network
-      watch: Watch our last job fair in Paris
-      why: What's a hiring partner?
-      reasons: Le Wagon's network allows fast-growing companies to hire directly from our alumni. We'll invite you to job fairs, push your offers on our job board and organise events together to promote your organisation's culture and vision.
-      exceptional: Exceptional alumni
+      join_our_network: 加入我们的人脉网
+      watch: 观看我们在巴黎的上一场招聘会
+      why: 招聘伙伴是什么？
+      reasons: Le Wagon的人脉网能够让快速发展中的公司直接在我们的校友中招聘人才。我们会邀请你前来参加招聘会，将你的招聘信息推送到我们的招聘平台上，并且组织一起活动来宣传你公司的文化和愿景。
+      exceptional: 杰出的校友
       exceptional_details: |
-        Our alumni have dedicated two months of their life to learn programming,
-        usually after a first 5-year education cycle. They have spent more than 360
-        hours coding during the program. You will rarely find human beings with such
-        commitment.
-      unique: With unique backgrounds
+        我们的学员全情投入了两个月的时间来学习编程，通常是在5年的
+        传统教育之后。在训练营期间，他们花了
+        超过360个小时的时间用于编写代码。通常很少会
+        看见这么投入专注的群体。
+      unique: 拥有独特的背景
       unique_details: |
-        Most our students come from the very best business and engineering
-        schools worlwide. They already have excellent working methodology.
-        Our alumni are also designers, journalists, photographers,
-        with very different skills.
-      operational: Operational from day one
+        我们的大部分学员都来自全球顶尖的商学院和工程学院。
+        他们已经发展出了适合自己的一套工作方法论。
+        我们的学员中还包含设计师，记者，摄影师，
+        每个人都有自己不同的技能。
+      operational: 从第一天开始就迅速进入状态
       operational_details: |
-        Our students have shipped ruby on Rails applications. They know
-        the best practices to work in a tech startup. They can implement
-        features from day one as a junior dev. As a PM or a growth marketer,
-        they will be great at connecting business issues with tech
-        developments.
-      wanna_join: Want to join Le Wagon's network?
-      signup: Contact us to become our hiring partner.
+        我们的学员已经完成了ruby on Rails应用的搭建，知道了
+        科技创业公司中使用的最佳操作，能够从
+        第一天就开始作为初级开发员执行编程功能。作为产品经理或者是市场增长黑客，
+        他们都会在连接商业问题和技术方案这点上
+        如鱼得水。
+      wanna_join: 想要加入Le Wagon的人脉网？
+      signup: 联系我们，成为我们的招聘伙伴。
     enterprise:
-      title: Re-invent work in a digital world with Le Wagon's immersive workshops.
-      description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
-      tagline_html: Re-invent work.<br>By learning code and technology.
+      title: 在数码的世界里，通过Le Wagon的浸入式工作坊重新定义工作。
+      description: Le Wagon通过编程和科技给你的团队带去实用技能。通过浸入式工作坊改变你的工作方式。
+      tagline_html: <br>通过学习编程和科技。重新定义工作。
       tagline_details_html: |
-        Learn digital skills to change the way people work <br>in your organisation.
-        <strong>Work faster, be more efficient.</strong>
-      apply: Learn with Le Wagon
-      apply_to: Learn %{skill}
-      skills_header: Workshops & Sprints designed for your company
-      skills_text_html: Through 2-hour talks, one-day workshops or one-week prototyping sprints, <strong>we will teach you UI/UX Design, Product Management and web-development</strong>.
-      pm: Learn Product Management
-      pm_details: User stories, collaborative workflow. Learn the good way to work on a project within a team.
-      ui: Learn UI / UX
-      ui_details: Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.
-      web_design: Learn Web Design
-      web_design_details: Build your own icons, keep control of your website without always depending on contractors.
-      data_science: Learn Data Science
-      data_science_details: Collect data, analyze it, make it speak through visualisation.
-      fullstack:  Learn Web Development
-      fullstack_details: From the database to the web browser, learn how a web application is built.
-      prototyping: Learn lean Prototyping
-      prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
-      best: Learn from the best
+        学习数码技能，改变<br>你的团队成员们工作的方式.
+        <strong>工作更快速，更高效。</strong>
+      apply: 加入Le Wagon学习
+      apply_to: 学习%{skill}
+      skills_header: 工作坊&为你的公司设计的设计冲刺活动
+      skills_text_html: 通过两小时的演讲，一天的工作坊，或者是一周的产品原型设计冲刺，<strong>我们将会教授用户界面／用户体验设计，产品经营，以及网页开发技能。</strong>.
+      pm: 学习产品管理
+      pm_details: 用户故事，合作式工作流程。学习作为团队为项目工作的最佳方式。
+      ui: 学习用户界面／用户体验设计
+      ui_details: 可视化使得交流变得更加容易。学习通过建造线框图和模型来针对想法进行讨论。
+      web_design: 学习网页设计
+      web_design_details: 设计你自己的图标，掌控自己的网站，而不用总是依赖于承包商。
+      data_science: 学习数据科学
+      data_science_details: 收集数据，分析数据，并且得出可视化的总结。
+      fullstack:  学习网页开发
+      fullstack_details: 从数据库到浏览器，学习从头搭建网页应用的过程。
+      prototyping: 学习设计简洁的产品原型
+      prototyping_details: API正在占领世界。探索创业公司是如何仅仅通过连接API（应用程序编程接口）做出产品原型的。
+      best: 从最好的操作中学习
       best_details_html: |
         <p>
-         We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
+         我们已经在全球范围内培训了超过1200名学员，他们来自商学院，工程学院，设计学院等等。我们知道如何<strong>弥补科技与商业之间的鸿沟</strong>。在我们的帮助下，学员们已经编写并且做出了<strong>超过400多个</strong>产品原型。
         </p>
         <p>
-         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
+         在为如此多的人才提供培训之后，我们知道<strong>我们能够为您的团队带来同样的技能</strong>。
         </p>
-      hec_html: Since 2017, Le Wagon is the official partner of HEC (highest ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.
-      watch: Our last corporate workshop "One Day of Code"
-      google_quote: Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.
-      eki_quote:  The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
-      drivy_quote: Their curriculum is very well crafted, the teachers are passionate.
-      stripe_quote: Solid workshops teaching both essential technical skills and a strong product mindset.
-      algolia_quote: If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.
-      uber_quote: Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.
-      with_us: They work with us.
+      hec_html: 从2017年起，Le Wagon就是巴黎高等商学院（法国排名最高的商学院）的官方合作伙伴，并且 <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">教授巴黎高等商学院的创业家们如何用编程打造出自己的产品。</a>.
+      watch: 上一场公司培训工作坊：“一天编程“
+      google_quote: Le Wagon知道如何将具有辅助作用的科学技术和文化带给具有商业背景的人们。他们对科技的看法往往十分独特。
+      eki_quote:  Le Wagon所教授的技术栈和设计方法论是我们产品工程文化的精华部分。
+      drivy_quote: 精心安排的课程，热情满满的老师。
+      stripe_quote: 实用工作坊会教授关键的专业技术，介绍产品思维模式。
+      algolia_quote: 如果你具有商业背景，Le Wagon会大大地改善你和科技之间的关系。
+      uber_quote: Le Wagon帮助我更好地理解了Uber公司的产品设计蓝图，并且更好地将诸如API整合这样的简单概念解释给合作伙伴。
+      with_us: 他们是我们的合作伙伴。
     live:
-      page_title_with_current_event: "Live - %{event_name}"
-      page_title_no_live: "Live - Coming soon"
-      page_description_no_live: "Sorry, we don't have any live running at the moment :)"
-      live_company_link: "Know more"
-      live_go_to_meetup: "See all our Meetup events"
+      page_title_with_current_event: "直播 - %{event_name}"
+      page_title_no_live: "直播 - 即将到来"
+      page_description_no_live: "抱歉，目前没有直播正在进行：）"
+      live_company_link: "了解更多"
+      live_go_to_meetup: "查看我们的所有活动"
     live_player_video:
-      live_coming_soon: "Coming soon..."
+      live_coming_soon: "即将到来..."
     shop:
-      title: "Le Wagon's shop"
-      description: "Because coders got style"
+      title: "Le Wagon商店"
+      description: "因为程序员也有自己的风格"
   demoday:
     show:
-      page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
-      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
-      demoday_title: "Watch our Demodays"
-      demoday_tagline: "We are proud of what our students achieved in only 10 days"
-      choose_batch: "Choose Batch"
-      batch_french: "French"
-      batch_english: "English"
-      batch_brazilian: "Brazilian Portugese"
+      page_title: "第#%{batch_slug}期训练营展示日 - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - 营期 #%{batch_slug}"
+      demoday_title: "观看我们的展示日"
+      demoday_tagline: "我们为学员在10天里取得的成果感到自豪"
+      choose_batch: "选择营期"
+      batch_french: "法国"
+      batch_english: "英国"
+      batch_brazilian: "巴西 葡萄牙"
     batch_demoday:
       player:
-        no_video: No video available
+        no_video: 目前没有视频
         batch_intro_html: |
-          %{count} students attended Le Wagon in %{city_name} from %{batch_start_date} to %{batch_end_date}. Check out the projects they built with Ruby on Rails in only 2 weeks!
-        product: "Products"
-        project_link: "try it now"
-        techno: "Built with"
-        cta: "Apply for 9 weeks"
-      batch_title: " amazing humans right here"
+          %{count} 在 %{city_name} 参加从 %{batch_start_date} 到 %{batch_end_date}Le Wagon训练营的学员. 查看他们在短短两周时间里用Ruby on Rails打造出的产品！
+        product: "产品"
+        project_link: "现在就尝试"
+        techno: "使用工具"
+        cta: "申请9周训练营"
+      batch_title: " 才华横溢的学员"
   students:
     index:
-      meta_title: "Le Wagon's Alumni"
+      meta_title: "Le Wagon的校友"
       meta_description_html: |
-        %{count}+ talented students sharing the same skills & passion
-      title: Students' projects - Startups & web apps made in Le Wagon
+        %{count}+ 多个学员，才华横溢，具有相同的技巧和热情
+      title: 学员项目 - Le Wagon孕育的创业公司以及网页应用产品
       description: |
-        Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
-      our_alumni: "Le Wagon's Alumni"
+        查看往届Le Wagon学员开发的项目。超过400名创业者已经加速成功，你还在等什么？
+      our_alumni: "Le Wagon的校友"
       our_alumni_details_html: |
-        <strong>%{count}+ talented students</strong> sharing the same <strong>skills & passion</strong>.
-      apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
-      our_students_projects: What our students have built
-      only_ten_days: "...in only 10 days"
-      discover_us: Discover our program
-      discover_our_stories: Discover our alumni stories
-      watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
-      show_more_stories: Show more stories
+        <strong>%{count}+ 才华横溢的学员</strong>具有相同的<strong>技巧和热情</strong>.
+      apply_for_nine_weeks_html: 申请 <span class='hidden-xs'>九周训练营</span>
+      our_students_projects: 我们学员的开发成果
+      only_ten_days: "在仅仅10天时间里..."
+      discover_us: 了解更多我们的项目
+      discover_our_stories: 阅读更多学员故事
+      watch_demo_day_title_html: "观看我们的上一个展示日<small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>营期 #%{slug}</u></a></small>"
+      show_more_stories: 展示更多的故事
   cities:
     show:
-      title: "Coding Bootcamp in %{city} - Le Wagon - Learn to code in 9 weeks"
+      title: "%{city}的编程训练营- Le Wagon - 在九周内学会编程"
       description: |
-        Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
-      catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
-      call: 'Call %{name}:'
+        Le Wagon入驻%{city}。你想要学习编程吗？用九周的时间来彻底改变你的生活！
+      catchline_html: "改变你的生活: 跟随<strong>Le Wagon</strong><strong>学习编程</strong>"
+      call: '电话联系 %{name}:'
       email: 'Email %{name}'
-      city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
-      apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
-      staff: "Teachers in %{city}"
-      discover_us: "Discover our program"
-      apprentices: "Join %{count} apprentices"
-      next_meetup_html: "Next meetup: <i class='hidden-xs'>%{name}</i>"
-      only_in: "Tips from %{city}"
-      course_locale_html: "In %{city}, lectures are given in <strong>%{language}</strong>."
-      next_batch_html: "Next batch will start on <strong>%{starts_at}</strong>."
+      city_arrival_html: "在<strong>%{city}</strong>的编程训练营"
+      apply_for_nine_weeks_html: "申请<span class='hidden-xs'>九周训练营</span>"
+      staff: "%{city}的导师"
+      discover_us: "查看更多关于我们的项目"
+      apprentices: "加入%{count}学员"
+      next_meetup_html: "下次线下聚会: <i class='hidden-xs'>%{name}</i>"
+      only_in: "%{city}的小贴士"
+      course_locale_html: " 在%{city}，课程语言为<strong>%{language}</strong>."
+      next_batch_html: "下一期训练营开始日期为<strong>%{starts_at}</strong>."
   applies:
     new:
-      title: Apply to Le Wagon %{city} - 9-week Coding Bootcamp in Ruby on Rails
-      description: 9 weeks to learn ruby on Rails, HTML/CSS, Javascript, and web-development best practices
-      apply: Apply to
-      first_name: "First name"
-      last_name: "Last name"
-      age: "Age"
-      phone: "Phone"
-      source: "Referrer"
-      source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
-      motivation: "Motivation"
-      motivation_placeholder: "Why Le Wagon? What is your professional project?"
-      linkedin_html: Your profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      title: 申请参加%{city}的编程训练营- 使用Ruby on Rails的九周编程训练营
+      description: 用九周时间学习ruby on Rails，HTML/CSS，Javascript，以及网页开发里的最佳操作
+      apply: 申请
+      first_name: "名"
+      last_name: "姓"
+      age: "年龄"
+      phone: "手机"
+      source: "推荐人"
+      source_placeholder: "谁将Le Wagon推荐给你的？Quora，Facebook，朋友（谁？）, 等。"
+      motivation: "选择动机"
+      motivation_placeholder: "为什么选择Le Wagon？你的专业背景是什么？"
+      linkedin_html: 你的简历(<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
       linkedin_placeholder: https://www.linkedin.com/in/alan
       codecademy_username_html: |
         CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
       codecademy_username_placeholder: "alan_turing"
       codecademy_modal_body_html: |
         <p>
-          As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
-          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> on CodeCademy.
-          If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
+          <a href="%{faq_path}" target="_blank">常见问题</a>中提到过，加入Le Wagon的前提之一就是需要在CodeCademy上100%完成
+          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a>测试。
+          如果你没有CodeCademy账户，请<a href="https://www.codecademy.com/register" target="_blank">现在创建一个</a>，是免费的。
         </p>
         <p>
-          To track your progress, we need you to fill in this form your <strong>CodeCademy username</strong>. You
-          will find it on your <a href="https://www.codecademy.com/account" target="_blank">Account</a> page.
+          为了及时追踪你的进程，你需要在表格中填写<strong>CodeCademy用户名</strong>。用户名
+          可以在自己的<a href="https://www.codecademy.com/account" target="_blank">账户</a>界面上找到.
         </p>
       codecademy_modal_can_apply_without_one_hundred_percent_html:
         <p>
-          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
+          即使还没有完成测试，你也你已经<strong>可以</strong>开始申请了，以便我们安排面试。申请时需要填写你的用户名。
         </p>
-      codecademy_modal_close_button: "I found my username"
-      apply_btn: "Apply to "
-      please_wait: "Please wait..."
-      pre_course_language: 'Course in '
-      language_fr: 'French'
-      language_en: 'English'
-      language_pt-BR: 'Brazilian Portuguese'
+      codecademy_modal_close_button: "我找到了我的用户名"
+      apply_btn: "申请"
+      please_wait: "请稍等..."
+      pre_course_language: '课程语言 '
+      language_fr: '法语'
+      language_en: '英语'
+      language_pt-BR: '巴西语 葡萄牙语'
       language_zh-CN: 中文
-      price: 'Price'
-      source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
+      price: '价格'
+      source_presence_message: '你是如何听说Le Wagon的？Facebook，Google，Quora，课程报告，朋友（谁？）。谢谢！'
   stories:
     index:
-      title: Discover our alumni stories
+      title: 阅读校友故事
     show:
-      other_testimonials: Other Testimonials
-      continue: Would you like to continue?
-      read_more: Read more testimonials from our bootcamp's students
+      other_testimonials: 其它评价
+      continue: 继续？
+      read_more: 阅读更多训练营学员的评价
       title: "%{story}"
       description: "%{story}"
   projects:
     index:
       meta_title_html: |
-        Browse among %{count}+ projects
+        浏览%{count}+项目
       meta_description:
-        built by our alumni in 2 weeks
+        校友在两周内开发的项目
       projects_details_html: |
-        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
-      show_more_projects: Show more projects
+        <strong>浏览<small>校友在两周内开发的</small>%{count}+项目</strong>
+      show_more_projects: 展示更多项目
     more_projects:
-      project_cta: Checkout the app
+      project_cta: 浏览应用产品
   posts:
     index:
-      title: Le Wagon - Technical Entrepreneurship Blog
+      title: Le Wagon - 技术创业博客
 
