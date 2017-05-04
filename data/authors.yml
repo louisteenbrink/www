@@ -5,7 +5,7 @@ cedric:
   bio: "After a couple of year working for the surf industry, Cedric, pioneer from batch #1, is now taking care of our global content. From Paris to the closest beach, he helps us tackle some underground marketing tasks and organise a new Code x Surf camp!"
   company: Le Wagon
   position: Content Manager
-  compagny_website: www.lewagon.com
+  company_website: lewagon.com
   twitter: cedricmenteau
   instagram: lewagonparis
   linkedin: cedricmenteau
@@ -16,7 +16,7 @@ miruna:
   bio:
   company:
   position:
-  compagny_website:
+  company_website:
   twitter: anamiruna
   instagram:
   linkedin:
@@ -27,7 +27,7 @@ sebastien:
   bio: "Sébastien is a software engineer with more than 8 years of experience. He worked at Google & VirtuOz, and now teaches all you need to know about web programming and the technical workflow used in a startup."
   company: Le Wagon
   position: CTO
-  compagny_website: www.lewagon.com
+  company_website: www.lewagon.com
   twitter: ssaunier
   instagram: lewagonparis
   linkedin:
@@ -38,7 +38,7 @@ boris:
   bio: "After an engineering school, Boris worked for 3 years in financial markets before getting bored. He quit to live his real passion, web-development and product design. Co-founding Le Wagon as CEO, he has been teaching frontend, web-design and Rails for 4 years and also gives frequent talks on technical entrepreneurship in major business & engineering schools."
   company: Le Wagon
   position: CEO
-  compagny_website: www.lewagon.com
+  company_website: www.lewagon.com
   twitter: bpapillard
   instagram: lewagonparis
   linkedin:
@@ -49,7 +49,7 @@ edward:
   bio: "Edward and Le Wagon is a long love story. Former student of Batch #4, teaching assistant during one year, he is now an official teacher and fullstack developer at Le Wagon. Oh, and Edward also founded Lovely Hood."
   company: Le Wagon
   position: Teacher & Developer
-  compagny_website: www.lewagon.com
+  company_website: www.lewagon.com
   twitter: EdwardSchults
   instagram: lewagonparis
   linkedin:

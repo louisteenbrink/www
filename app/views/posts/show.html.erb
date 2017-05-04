@@ -1,9 +1,9 @@
 <% content_for(:title) do %>
-  Le Wagon - <%= @post.metadata[:title] %>
+  Le Wagon - <%= @post.metadata[:title].html_safe %>
 <% end %>
 
 <% content_for(:description) do %>
-  <%= @post.metadata[:description] %>
+  <%= @post.metadata[:description].html_safe %>
 <% end %>
 
 <% content_for(:image_url) do %>
@@ -15,6 +15,29 @@
 <% end %>
 
 
+<!-- FACEBOOK SDK ON SHOW VIEW -->
+<% if @post.layout.to_sym == :video || :post %>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '737501859652485',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<% end %>
+
+<!-- VIDEO SHOW VIEW -->
 <% if @post.layout.to_sym == :video %>
   <div class="breadcrumb">
     <ul>
@@ -132,6 +155,7 @@
     </div>
   </div>
 <% else %>
+<!-- POST SHOW VIEW -->
   <div class="breadcrumb">
     <ul>
       <li><%= link_to 'Blog', blog_path %></li>
@@ -147,15 +171,30 @@
       </div>
       <div class="post-content container">
         <div class="row">
+
+          <!-- AFFIX - SOCIAL SHARING OPTIONS -->
           <div class="col-md-2">
             <div data-spy="affix" data-offset-top="620" data-offset-bottom="1500">
-              <ul>
-                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
-                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+              <ul class="social-sharing">
+                <li>Share</li>
+                <li>
+                  <a href="http://twitter.com/home?status=<%= @post.metadata[:title].html_safe %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
+                      <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                </li>
+                <li>
+                  <i id="shareBtn" class="fa fa-facebook" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%=request.url %>&title=<%= @post.metadata[:title].html_safe %>&source=lewagon.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  </li>
               </ul>
             </div>
           </div>
+
+          <!-- POST - CONTENT -->
           <div class="col-md-8">
             <%= raw @post.content %>
             <% if @post.metadata[:author] %>
@@ -165,7 +204,7 @@
                   <%= image_tag author[:picture], class: 'author-picture' %>
                   <div class="author-details">
                     <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
-                    <i class="author-position"><%= author[:position] %> at <%= link_to author[:company_website], author[:company] %></i>
+                    <i class="author-position"><%= author[:position] %> at <%= link_to author[:company], "https://www." + author[:company_website].to_s %>
                     <p class="author-bio"><%= author[:bio] %></p>
                     <ul class="author-social">
                       <% if author[:instagram] %>
