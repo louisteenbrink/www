@@ -1,5 +1,6 @@
 #invitation-banner {
   width: 100vw;
+  height: calc(100vh - 130px);
   overflow-x: hidden;
   .banner-enterprise {
     height: calc(100vh - 180px);
@@ -23,8 +24,8 @@
     p {
       max-width: 600px;
       padding-right: 50px;
-      font-size: 18px;
-      color: #6d6d6d;
+      font-size: 23px;
+      color: #333333;
       font-weight: 100;
       margin-bottom: 30px;
       line-height: 1.5;
@@ -69,6 +70,7 @@
   position: absolute;
   right: 0px;
   overflow-x: hidden;
-  bottom: 50px;
+  bottom: 0px;
   width: 650px;
+  box-shadow: -1px -1px 20px rgba(0,0,0,.15);
 }
