@@ -129,9 +129,24 @@
     /* POST - CONTENT ***********************************************************/
 
     .post-content {
-      max-width: 740px;
-      margin: 0 auto;
+      position: relative;
+      //max-width: 740px;
+      //margin: 0 auto;
       padding: 4em 20px 4em 20px;
+    }
+
+    .affix {
+      top: 70px;
+      width: 100%;
+    }
+
+    .affix-top {
+      width: 100%;
+    }
+
+    .affix-bottom {
+      position: absolute;
+      width: 100%;
     }
 
     .post-author {
