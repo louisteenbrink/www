@@ -39,7 +39,7 @@
 
 <!-- VIDEO SHOW VIEW -->
 <% if @post.layout.to_sym == :video %>
-  <div class="breadcrumb">
+  <div class="container breadcrumb">
     <ul>
       <li><%= link_to 'Blog', blog_path %></li>
       <li><%= link_to 'All videos', videos_path %></li>
@@ -156,7 +156,7 @@
   </div>
 <% else %>
 <!-- POST SHOW VIEW -->
-  <div class="breadcrumb">
+  <div class="container breadcrumb">
     <ul>
       <li><%= link_to 'Blog', blog_path %></li>
       <li><%= link_to 'All posts', all_path %></li>
@@ -201,7 +201,9 @@
               <% author = Static::AUTHORS[@post.metadata[:author].to_sym] %>
               <% if author %>
                 <div class="post-author">
-                  <%= image_tag author[:picture], class: 'author-picture' %>
+                  <% if author[:picture] %>
+                    <%= image_tag author[:picture], class: 'author-picture' %>
+                  <% end %>
                   <div class="author-details">
                     <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
                     <i class="author-position"><%= author[:position] %> at <%= link_to author[:company], "https://www." + author[:company_website].to_s %>

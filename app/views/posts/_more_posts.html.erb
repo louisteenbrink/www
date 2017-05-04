@@ -1,20 +1,40 @@
 <% posts.each_slice(3) do |pp| %>
   <div class="row">
     <% pp.each do |post| %>
-      <div class="col-sm-4">
+      <div class="col-sm-8 col-sm-offset-2">
         <a href="<%= post_path post.slug %>">
-          <article class="post-thumbnail" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
-            <div class="content">
-              <h2><%= post.metadata[:title].html_safe %></h2>
+          <article class="post-thumbnail">
+            <div class="card-author">
+              <div class="background-author" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')"></div>
+              <% if post.metadata[:author] %>
+                <% author = Static::AUTHORS[post.metadata[:author].to_sym] %>
+                <% if author %>
+                  <div class="post-author">
+                    <% if author[:picture] %>
+                      <%= image_tag author[:picture], class: 'author-picture' %>
+                    <% end %>
+                    <div class="author-details">
+                      <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
+                      <i class="author-position"><%= author[:position] %><br><small>at <%= author[:company] %></small></i>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+            <div class="card-content">
               <ul>
                 <% post.metadata[:labels].each do |tag| %>
                   <li><%= tag %></li>
                 <% end %>
-                <li class="read-time"><i class="fa fa-clock-o" aria-hidden="true"></i> <%= post.read_time %> min reading</li>
               </ul>
+              <h2><%= post.metadata[:title].html_safe %></h2>
               <% if post.metadata[:description] %>
-                <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+                <p class="description"><%= post.metadata[:description].truncate(260) %></p>
               <% end %>
+              <span class="read-time">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> <%= post.read_time %> min reading
+                <% if post.metadata[:date] %> - Posted on <%= post.metadata[:date].to_date.strftime("%d %b %Y") %><% end %>
+              </span>
             </div>
           </article>
         </a>

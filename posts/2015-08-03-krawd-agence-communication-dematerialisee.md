@@ -2,6 +2,7 @@
 layout: post
 title: "KRAWD, l'agence de communication dématérialisée"
 author: cedric
+date: 2015-08-03
 labels:
   - alumni
   - startup

@@ -2,6 +2,7 @@
 layout: post
 title: "L'expérience développeur dans la construction d'une API"
 author: cedric
+date: 2015-07-21
 labels:
   - meetup
   - tuto

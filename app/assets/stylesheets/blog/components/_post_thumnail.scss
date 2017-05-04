@@ -3,27 +3,83 @@
 /******************************************************************************/
 
 .post-thumbnail {
+  display: flex;
   margin-top: 2em;
   min-height: 240px;
   background-color: #fff;
   box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
-  border-top: 7px solid #2ecc71;
-  background-size: cover;
-  background-position: center center;
+  border-left: 7px solid #2ecc71;
   overflow: hidden;
 
   &:hover {
-    .content {
-      transform: translateY(50%);
-      color: #333;
+    // .content {
+    //   transform: translateY(50%);
+    //   color: #333;
+    // }
+  }
+
+  .card-author {
+    position: relative;
+    width: 25%;
+    background-color: #f4f4f4;
+    overflow: hidden;
+
+    .background-author {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center center;
+      filter: blur(2px) grayscale(100%);
+      overflow: hidden;
+      opacity: 0.2;
+      transform: scale(1.03);
+    }
+
+    .post-author {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 100%;
+
+      img {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+      }
+
+      .author-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        color: #454545;
+
+        .author-name {
+          font-weight: 600;
+        }
+
+        .author-position {
+          font-size: 12px;
+          font-style: normal;
+          text-align: center;
+        }
+      }
     }
   }
 
-  .content {
+  .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+    width: 75%;
     padding: 15px;
     min-height: 234px;
     padding: 0 20px;
@@ -31,6 +87,7 @@
     transition: all 0.3s ease-in-out;
 
     h2 {
+      margin-top: 15px;
       font-size: 19px;
       font-weight: bold;
       line-height: 22px;
@@ -38,30 +95,34 @@
 
     ul {
       display: flex;
+      margin-top: 20px;
 
       li {
         padding: 3px 5px 1px;
         margin-right: 10px;
-        background-color: #cdcdcd;
+        background-color: #2ecc71;
         border-radius: 2px;
         color: white;
         font-size: 0.7em;
         text-transform: capitalize;
       }
+    }
 
-      .read-time {
-        background: transparent;
-        border: 1px solid #cdcdcd;
-        color: #8a8a8a;
-      }
+    .read-time {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.7em;
+      background: transparent;
+      color: #8a8a8a;
     }
 
     .description {
+      margin-top: 0;
+      height: 85px;
       font-weight: 100;
       font-size: 15px;
       letter-spacing: 0px;
       color: #7D7D7D;
-      margin-top: 20px;
     }
   }
 }

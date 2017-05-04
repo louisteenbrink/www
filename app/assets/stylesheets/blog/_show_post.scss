@@ -3,7 +3,8 @@
 /******************************************************************************/
 
 .breadcrumb {
-  margin: 0;
+  margin: 10px auto 0;
+  background: none;
 
   ul {
     display: flex;
@@ -99,6 +100,7 @@
       font-size: 22px;
       font-weight: 100;
       line-height: 1.4em;
+      opacity: 0.8;
     }
 
     a {
