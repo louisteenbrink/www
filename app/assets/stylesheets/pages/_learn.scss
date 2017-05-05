@@ -1,7 +1,7 @@
 #invitation-banner {
-  width: 100vw;
   height: calc(100vh - 130px);
   overflow-x: hidden;
+  position: relative;
   .banner-enterprise {
     height: calc(100vh - 180px);
   }
@@ -20,9 +20,9 @@
   }
   display: flex;
   .banner-content {
-    padding-left: 70px;
+    padding-top: 40px;
     p {
-      max-width: 600px;
+      max-width: 580px;
       padding-right: 50px;
       font-size: 23px;
       color: #333333;
@@ -68,9 +68,81 @@
 
 #slideshow img{
   position: absolute;
-  right: 0px;
   overflow-x: hidden;
   bottom: 0px;
-  width: 650px;
-  box-shadow: -1px -1px 20px rgba(0,0,0,.15);
+  width: 750px;
+  margin-right: -80px;
+  right: 0px;
+  border-radius: 5px 0 0 0;
+  box-shadow: -1px -1px 25px rgba(0,0,0,.15);
+}
+
+@media (max-width: 1200px) {
+  #slideshow img {
+    width: 750px;
+    margin-right: -300px;
+  }
+}
+@media (max-width: 992px) {
+  #slideshow img {
+    width: 800px;
+    margin-right: -500px;
+  }
+}
+@media (max-width: 900px) {
+  #slideshow img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #invitation-banner {
+    text-align: center;
+    justify-content: space-around;
+    h1 {
+      font-size: 35px;
+    }
+  }
+  #slideshow img {
+    display: none;
+  }
+  #invitation-banner .banner-enterprise {
+    margin: 0px;
+    flex: 1;
+  }
+  #invitation-banner .banner-content {
+    padding-left: 0px;
+    padding-top: 0px;
+    flex: 1;
+  }
+  #invitation-banner .banner-content  p {
+    max-width: 350px;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 0px;
+  }
+  .invitation {
+    justify-content: space-around;
+  }
+  .form-invitation {
+    flex-direction: column;
+    .form-control {
+      border-radius: 3px;
+      min-width: 250px;
+      height: 64px;
+      flex: 1;
+    }
+    .btn {
+      border-radius: 3px;
+      min-width: 250px;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
+
+}
+@media (min-width: 1600px) {
+  #slideshow img {
+    display: none;
+  }
 }
