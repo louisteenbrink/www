@@ -393,9 +393,9 @@ en:
       show_more_stories: Show more stories
   cities:
     show:
-      title: "Coding Bootcamp in %{city} - Learn to code in 9 weeks - Le Wagon"
+      title: "Coding Bootcamp in %{city} - Le Wagon"
       description: |
-        9 weeks of coding courses in %{city}. Become a fullstack web developer with Europe's best coding school
+        Learn to code in 9 weeks and become a fullstack web developer with Europe's major coding school in %{city}.
       catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
       call: 'Call %{name}:'
       email: 'Email %{name}'
