@@ -28,7 +28,7 @@ zh-CN:
       press: "媒体"
       alumni_platform: "校友社群"
       about: "Le Wagon是什么机构？"
-      bootcamp_in_city_html: "%{城市}编程训练营"
+      bootcamp_in_city_html: "%{city}编程训练营"
     navbar:
       menu:
         cities: 城市
@@ -77,7 +77,7 @@ zh-CN:
         成功的创业公司都是这样运作的。
       startup_toolkit: 获取创业工具包
       startup_toolkit_details: |
-        Heroku，Stripe，Mandrill，Amazon S3，Algolia......
+        Heroku，微信，Leancloud，阿里云，支付宝......
         我们会教你如何高效地使用这些服务
         来帮助你打造产品，节省时间，
         针对具体需要，使用正确的工具，
@@ -89,7 +89,7 @@ zh-CN:
         还有很多其他Le Wagon学员在训练营期间完成的项目同样蓄势待发。
       land_a_job: 获得一份新工作
       land_a_job_details: |
-        在Stripe，Algolia，Molotov，Save，Compass，55，Save等公司担任初级开发人员
+        在Stripe，Algolia，Molotov，Compass，55，Save等公司担任初级开发人员
         我们将帮助你找到自己的梦想工作，无论是初级开发人员，产品经理，
         还是增长黑客。我们的任何一个学员都可以告诉你更多细节。
       checkout: 自己了解更多。
@@ -162,7 +162,7 @@ zh-CN:
           <li>软件工程以及数据库结构</li>
           <li>在Github上的合作技巧</li>
           <li>成功创业公司中使用的最佳技术流程</li>
-          <li>使用Heroku，Stripe，Mandrill，Algolia等等工具，帮助你部署应用配置，整合高级功能（支付，地理定位，邮件，搜索......）</li>
+          <li>使用Heroku，微信，Leancloud，阿里云，支付宝等等工具，帮助你部署应用配置，整合高级功能（支付，地理定位，邮件，搜索......）</li>
         </ul>
       community: 一个激动人心的社群
       community_details_html: |
@@ -196,7 +196,7 @@ zh-CN:
         编写出自己的第一个应用。
       database_html: |
         程序需要将信息储存在数据库当中。
-        没有数据库，Facebook在你每次登录的时候都会丢失你的个人信息！
+        没有数据库，微信在你每次登录的时候都会丢失你的个人信息！
         学习通过界定表格和关联设计数据库。
         然后开始探索SQL语句，
         用来读／写数据的语言，以及
@@ -209,7 +209,7 @@ zh-CN:
         学习操作DOM（文档对象模型），界定活动，
         以及使用Javascript发出AJAX指令。
         在这个单元里，学员将会尝试许多不同种类的
-        应用程序编程接口（Trello，Slack，Facebook，等等）。
+        应用程序编程接口（Trello，Slack，微信，等等）。
       rails_html: |
         是时候结合所有的技能开始深入学习Rails了。
         没什么可担心的，你已经知道它大部分的基础
