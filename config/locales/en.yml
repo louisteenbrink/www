@@ -447,6 +447,7 @@ en:
       language_fr: 'French'
       language_en: 'English'
       language_pt-BR: 'Brazilian Portuguese'
+      language_zh-CN: 'Chinese'
       price: 'Price'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:

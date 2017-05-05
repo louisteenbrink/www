@@ -355,3 +355,71 @@ en:
         How much does it cost? When does it start?
     answer: |
         It all depends on the city! Please review your options on the [Apply](/apply) page.
+
+zh-CN:
+  - question: |
+        参加Le Wagon的申请流程是什么?
+    answer: |
+        在官网上提交了申请表之后，就会收到一封邮件，
+        里面包含几个关于你的预期以及专业技能的问题。
+        接下来我们就会安排面试（Skype或者面对面），并且很快告知是否被录取。
+        同时，我们也推荐申请者尽早开始在CodeCademy上进行[Ruby track]测试
+        (https://www.codecademy.com/en/learn/ruby?set_preferred=true)，甚至是在面试之前。
+        所有申请者都必须完成这项测试。
+  - question: |
+        我完全是新手，适合参加这个项目吗？
+    answer: |
+        我们对学员的要求只有三条：**积极性强** （非常强），**好奇心强**，**合群**。
+  - question: |
+        准备工作需要多久？
+    answer: |
+        申请者必须要在CodeCademy上完成[Ruby track]测试(https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        大概花费10个小时。
+  - question: |
+        我需要会说法语吗？
+    answer:
+      - |
+          在巴黎，里尔，波尔多以及马赛，项目语言为**法语**。早晨1.5小时的课程，
+          以及晚上1.5小时的_现场编程环节_都是用法语进行。所以如果你不会法语，
+          就没有办法参加法国的编程训练营。
+      - |
+          幸运的是，在大部分其它城市，项目**全部使用英语**！你可以在“申请”页面上查看下一期的项目使用语言。
+  - question: |
+        9周集训之后我能够建造出什么？
+    answer: |
+        你会达到Ruby on Rails的初级开发水平，也就是说你能够
+        通过创建网页应用的形式迅速地给自己的想法建造出原型。
+        比如说，你将知道如何在自己的网站里加入身份验证功能
+        （简单的登陆／注册，以及Facebook/Twitter链接），
+        加入包括付款，自动邮件发送等等的后台管理功能。
+        同时，你还会学会如何快速投入实际应用，以及创业公司使用的最佳编程模式。
+        接下来你面临的选择就是：将自己的创业项目继续下去，
+        或者是加入创业公司／大型科技公司，成为一名初级开发员。
+  - question: |
+        为什么要学习Ruby on Rails？
+    answer: |
+        好问题！Le Wagon的CTO[在Medium上回答了这个问题](https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6#.azt84ab7d).
+  - question: |
+        我能学会创建移动应用吗？
+    answer: |
+        会也不会。可以确定的一点是，学员不会学习iOS，Android或者是Windows的手机开发内容。
+        我们真心觉得这些技能是不可能（坦白说）在9周之内教授完的。
+        我们觉得教授编程基础以及网页开发更好的原因有很多。
+        首先，这些都是软件工程师的核心技能，即使你后期想要往移动应用开发方向深入发展。
+        其次，网页是工程师必须要理解的开放平台。
+        通过响应式网站设计（是课程的一部分），学员将能够建造出在移动设备上完美呈现的app。
+        同时，还会获得创造移动app所需要使用的API（应用程序编程接口）的技能。
+        接下来对于任何一个移动应用开发员来说，在你建造的API基础上编写iOS或者是Android界面都轻而易举。
+  - question: |
+        上课时间是什么时候？
+    answer: |
+        周一到周五，早上9点到晚上7点，一共为期九周360个小时。
+  - question: |
+        我需要带自己的电脑吗？
+    answer: |
+        是的，每位学生都必须有自己的电脑，需要安装Mac OS X或者Linux系统，但是如果你只有Windows系统，
+        也不用担心，第一天导师就会教你如何安装Linux系统。
+  - question: |
+        课程收费是多少？什么时候开始？
+    answer: |
+        答案因城市而异！请在[申请]（/申请）页面浏览不同选项.
