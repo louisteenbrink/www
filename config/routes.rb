@@ -55,6 +55,7 @@ Rails.application.routes.draw do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
     get "candidatar/(:city)" => "applies#new", locale: :"pt-BR", as: :apply_pt_br
+    get "postularse/(:city)" => "applies#new", locale: :es, as: :apply_es
     get "申请/(:city)" => "applies#new", locale: :"zh-CN", as: :apply_zh_cn
     post "apply/(:city)" => "applies#create", as: :apply
     post "apply/validate" => "applies#validate", as: :validate_apply
@@ -65,7 +66,7 @@ Rails.application.routes.draw do
   get "hec", to: 'applies#new_hec', as: :new_hec_apply
   post "hec", to: 'applies#create_hec', as: :hec_apply, locale: :fr
 
-  scope "(:locale)", locale: /fr|pt-BR|zh-CN/ do
+  scope "(:locale)", locale: /fr|pt-BR|zh-CN|es/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs

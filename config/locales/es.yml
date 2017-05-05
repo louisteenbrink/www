@@ -1,0 +1,475 @@
+es:
+  date:
+    formats:
+      apply: "%B %e, %Y"
+  shared:
+    positions:
+      they_hired_our_students: They hired our students
+      where_our_students_are_working: Where our students are working
+      join_our_network: Want to hire our alumni?
+    live:
+      watch_live_html: "Discover <strong>%{count} projects</strong> made by Alumni of Batch #%{batch}</strong> in <strong>%{city}</strong>"
+      watch_now_html: "Watch demo-day <strong>now</strong>"
+    footer:
+      news_and_resources: "News, events & free resources"
+      enter_your_mail: Enter your email
+      stay_tuned: Stay tuned
+      our_videos: Our video tutorials
+      find_a_city: Find a city
+      about_us: About us
+      follow_us: Follow us
+      title: "Subscribe for more!"
+      subtitle_html: "Stay up to date on Le Wagon events and <em>free</em> workshops surrounding tech, startups and innovation"
+      subtitle_end: " in %{city}"
+      subscribe: "Subscribe"
+      subscribing: "Subscribing"
+      retry: "Retry"
+      error: "Looks like your email is not valid..."
+      press: "Press"
+      alumni_platform: "Alumni Community"
+      about: "What's le Wagon?"
+      bootcamp_in_city_html: "%{city} coding bootcamp"
+    navbar:
+      menu:
+        cities: Cities
+        program: Program
+        online: Online
+        on_site: On site
+        fullstack_program: FullStack - 9-week intensive program
+      apply: Apply Now
+      employers: Business
+      work: Work with our alumni
+      train: Learn to code with us
+      recruitment: Hiring our students
+      workshops: Corporate Workshops
+    testimonials:
+      what_our_students_say: Students Reviews
+      students_think_of_us: What our students think of us
+      more_reviews: More reviews of Le Wagons
+    testimonials_new:
+      what_our_students_say: Students Reviews
+      students_think_of_us: What our students think of us
+      more_reviews: More reviews of Le Wagon
+      love_messages: Student Reviews
+      show_more_testimonials: Show more testimonials
+    features:
+      read_full_program: Read full program
+      pedagogy_matters_html: "Code the startup way."
+      pedagogy_tagline_html: |
+        Learn to write clean code and build web products. <br />Join the most <strong>exciting community of learners in Europe</strong>.
+      web_development: Learn web-development
+      web_development_details: |
+        Learn all about Ruby, SQL, and the Rails application framework.
+        Develop your front-end skills by using advanced CSS technics (flexbox, grid, animations, etc..)
+        and go deeper into Javascript by learning jQuery and React.js,
+        the library developed by Facebook.
+      software_engineer_html: Think like a Software engineer
+      software_engineer_details: |
+        A person who has the big picture on technical issues,
+        who understands what MVC means, knows how to design a database schema or to dissect an HTTP request,
+        and who can start learning a new programming language very quickly.
+      technical_workflow: Adopt a technical workflow
+      technical_workflow_details_html: |
+        There's definitely <strong>a good way</strong> of building tech products
+        and that's what we will teach you. Write your MVP's user stories,
+        draw your database scheme, build a mockup with Sketch,
+        collaborate using pull-requests and code-reviews on Github.
+        That's how successful startups work.
+      startup_toolkit: Get the startup toolkit
+      startup_toolkit_details: |
+        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        We will teach you how to implement all these services
+        to be more efficient at the launch of your new product.
+        Save time, use the right tool for your specific need,
+        that's our developer mindset.
+      build_product: Build your product
+      build_product_details: |
+        No one will teach you how to build web products as we do.
+        Kudoz has just raised 1.2M, Impact is disrupting politics, MaShareEcole school, MedPics healthcare, Krawd marketing...
+        and there are so many other projects in the starting blocks.
+      land_a_job: Land a new job
+      land_a_job_details: |
+        Working as a junior developer for Stripe, Algolia, Molotov, Save, Compass, 55, Save, etc..
+        We will help you find your dream job, either as a junior dev, product manager
+        or growth hacker. Discuss with any of our alumni to find out more!
+      checkout: Check it out for yourself.
+      see_all: More details.
+  newsletter:
+    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
+    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
+    email_placeholder: your e-mail
+    follow_us_button: Follow us
+    thank_you: "Thanks, see you very soon!"
+    error: "Oups, seems to be an issue : ERROR_MESSAGE"
+  blog:
+    read_article: Read the post
+    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
+    moreposts: Take a tour on other cool posts
+  pages:
+    home:
+      title: "Coding Bootcamp Le Wagon | Learn to code with Europe's best coding school"
+      description: |
+        Le Wagon is Europe's best coding school for entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp.
+      catchline_html: "Change your life: <strong>learn to code</strong>"
+      vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
+      view_teaser: See our video
+      apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
+      discover_us: Discover our program
+      what_they_code: What our students have built during the bootcamp
+      it_works: "Funny thing, it works"
+      freshly_coded: Freshly coded
+      all_products: 100+ products built by our alumni.
+      see_all_products: See all products
+      worldwide: Where can you find Le Wagon?
+      check_program: More details about the program
+      our_cities: Our cities
+      open_yours: To launch the program in your city
+      and_you_html: And <strong>you</strong> ?
+      check_projects: Discover our students and their projects
+      see_more_projects: See more projects...
+      our_students_projects: Students Projects
+      only_ten_days: "...in only 10 days"
+      next_batch: "Next batch:"
+      events_to_come: Events to come
+      featured: Students Stories
+      featured_subtitle: "- What our students become"
+      read_next_vowel: "Read ::name::'s story"
+      read_next_consumn: "Read ::name::'s story"
+      read_all: Read more stories
+    program:
+      title: Program - 9 weeks to learn Ruby on Rails
+      description: |
+        9 weeks to learn Ruby on Rails, HTML/CSS, Javascript, and web-development best practices
+      our_program: "FullStack program"
+      program_details_html: |
+        2 months to <strong>become a web developer</strong>.
+      apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
+      nine_weeks: 9 intensive weeks - 360 hours of code
+      to_build_your_ideas_html: Learn all the web stack. From the database to the browser.
+      why_us: Learn from the best
+      why_us_details_html: |
+        <p class="text-readable">
+        Le Wagon is rated among the 3 best coding bootcamps in the world according to <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> and <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        </p>
+
+        <p class="text-readable">
+        We have taught %{batches} batches (that's more than %{alumni} students!) and our program has evolved each time to reach perfection.
+        We believe building a great curriculum takes time and it took us nearly 3 years to design the FullStack program.
+        It is our longstanding experience that makes our program so efficient. <strong>You will learn in 2 months what you would have learned in 2 years:</strong>
+        </p>
+        <ul>
+          <li>Perfect developer set-up</li>
+          <li>Software engineering and database architecture</li>
+          <li>Collaboration on Github</li>
+          <li>Technical workflow used in the most successful startups</li>
+          <li>Tools like Heroku, Stripe, Mandrill, Algolia to deploy your app and integrate advanced features (payment, geolocation, mailing, search, etc...)</li>
+        </ul>
+      community: An exciting community
+      community_details_html: |
+        %{alumni}+ students with various backgrounds (engineers, journalists, architects, designers..)
+        are <strong style="color:white;">chatting every day on Slack</strong>, questioning our teaching staff, sharing tips, resources, code gists, job offers and news from their products.
+        <strong>One of the best tech communities in the world.</strong>
+        All the students of le Wagon share the same technical background and apply industry best practices.
+        This mix between <strong style="color:white;">diversity & technical expertise</strong> makes our community unique.
+      cv: Your developer portfolio
+      cv_details_html: |
+        In only 2 months, build several web applications, including
+        a <strong>clone of Airbnb</strong> and <strong>your own personal project</strong>. Deploy these apps
+        and build yourself a solid Github portfolio.
+      ruby_html: |
+        Get familiar with the command line and Git.
+        Learn the basics of programming with Ruby and code
+        programs playing with variables, methods,
+        loops and conditional statements. Discover how you can
+        read and write in files and how you can collect
+        interesting data by scraping a website or by calling
+        an API (for instance Twitter API).
+      software_html: |
+        Discover OOP (Object-Oriented programming) and learn to
+        build advanced softwares by structuring your programs
+        into different objects. If you want to build a social
+        network, a market-place, a car-rental system, a restaurant
+        booking platform... then you need to organize your code
+        with a smart architecture. Same as an architect who
+        wants to build a house, he must respect patterns and procedures.
+        During this week, you will code your first applications
+        following the MVC design pattern.
+      database_html: |
+        Programs need to store information in a database.
+        Without databases, Facebook would lose your information
+        every time you log in! Learn to design a database by defining
+        tables and connections. Then discover SQL,
+        the language used to read/write data and make queries to
+        the database.
+      frontend_html: |
+        Improve your UI culture and learn all about HTML,
+        CSS & best practices in web-design (positioning techniques, animations).
+        Get familiar with Bootstrap, a useful library to
+        prototype web-applications. Then move on to Javascript
+        and jQuery. Learn to manipulate the DOM,
+        define events, and make AJAX requests with Javascript.
+        You will play with lots of cool APIs during this
+        module (Trello, Slack, Facebook , etc...).
+      rails_html: |
+        Time to put all your skills together and dive into Rails.
+        No big deal here, you already know most of its
+        elementary blocks and you will feel right at home!
+        During your Rails training, you will have to code Airbnb
+        from scratch in 5 days. You will work in teams to
+        learn to collaborate on Github using pull requests and deploy
+        your apps on Heroku, using the same workflow as successful
+        startups.
+      projects_html: |
+        Project Time! Code your own project during the
+        2 last weeks and build an awesome product!
+      awesome_entrepreneur: Entrepreneur d'exception
+      one_week: 1 week
+      two_weeks: 2 weeks
+      first_module: "1 - Ruby and coding basics"
+      second_module: "2 - Software Engineering"
+      third_module: "3 - Database & SQL"
+      fourth_module: "4 - Front-end"
+      fifth_module: "5 - Rails"
+      sixth_module: "6 - Project"
+      awesome_entrepreneur_details: |
+        Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
+      amazing_employee: Salarié polyvalent
+      amazing_employee_details: |
+        Réinventer sa façon de travailler, créer ses propres outils web, automatiser des taches, se servir des APIs, utiliser la puissance de Github pour travailler à plusieurs.
+        Etre moderne et créatif dans son travail.
+      junior_dev: Développeur Junior
+      junior_dev_details: |
+        Trouver un poste dans une entreprise du numérique avec ces nouvelles compétences-clef (en développement, product management, marketing, growth hacking..).
+      week_by_week: Semaine par semaine
+      typical_day: Typical day
+      theoretical_intro: "Grab a coffee and attend the morning course given by the lead teacher with lots of live-code demos."
+      pair_programming: "Work on challenges with your buddy of the day on our auto-correcting platform with the help of our teaching staff."
+      yoga: "Yoga time with Claire, to relax and get some head space."
+      live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
+      talk: |
+        Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
+    stack:
+      built_by: 'Website built by...'
+      with_tools: 'With these awesome tools...'
+    thanks:
+      thanks: Thank you
+      we_will_contact_html: |
+        We'll contact you shortly by email to plan an interview. <br /><br />In the meantime, follow the instructions of our check-list and start the <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a> on CodeCademy.
+      take_advance: Checklist
+      first_step: "1. Apply to Le Wagon %{name}"
+      second_step: "Subscribe to %{name} Meetup group "
+      third_step: "Follow us on Twitter"
+      fourth_step: "Resume working on the CodeCademy Ruby track"
+    press:
+      title: They speak about Le Wagon
+    employers:
+      title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
+      description: Join us as hiring partner and get alerted about our new candidates and job events.
+      hiring_tagline_html: Join our hiring network<br>and work with our alumni.
+      hiring_sub_tagline_html:  Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.
+      apply: Work with Le Wagon alumni
+      they: They hire our alumni
+      job_board: Access Le Wagon's job board
+      job_board_details_html: |
+        <p>
+         Get access to Le Wagon's job board to <strong>publish your offers and share them with our alumni worldwide.</strong>
+        </p>
+        <p>
+         1200+ alumni worldwide are active on our Slack every month and will see you offer. We select our hiring partners very carefully to <strong>garantee only great companies and offers on our job board.</strong>
+        </p>
+      join_our_network: Join our Network
+      watch: Watch our last job fair in Paris
+      why: What's a hiring partner?
+      reasons: Le Wagon's network allows fast-growing companies to hire directly from our alumni. We'll invite you to job fairs, push your offers on our job board and organise events together to promote your organisation's culture and vision.
+      exceptional: Exceptional alumni
+      exceptional_details: |
+        Our alumni have dedicated two months of their life to learn programming,
+        usually after a first 5-year education cycle. They have spent more than 360
+        hours coding during the program. You will rarely find human beings with such
+        commitment.
+      unique: With unique backgrounds
+      unique_details: |
+        Most our students come from the very best business and engineering
+        schools worlwide. They already have excellent working methodology.
+        Our alumni are also designers, journalists, photographers,
+        with very different skills.
+      operational: Operational from day one
+      operational_details: |
+        Our students have shipped ruby on Rails applications. They know
+        the best practices to work in a tech startup. They can implement
+        features from day one as a junior dev. As a PM or a growth marketer,
+        they will be great at connecting business issues with tech
+        developments.
+      wanna_join: Want to join Le Wagon's network?
+      signup: Contact us to become our hiring partner.
+    enterprise:
+      title: Re-invent work in a digital world with Le Wagon's immersive workshops.
+      description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
+      tagline_html: Re-invent work.<br>By learning code and technology.
+      tagline_details_html: |
+        Learn digital skills to change the way people work <br>in your organisation.
+        <strong>Work faster, be more efficient.</strong>
+      apply: Learn with Le Wagon
+      apply_to: Learn %{skill}
+      skills_header: Workshops & Sprints designed for your company
+      skills_text_html: Through 2-hour talks, one-day workshops or one-week prototyping sprints, <strong>we will teach you UI/UX Design, Product Management and web-development</strong>.
+      pm: Learn Product Management
+      pm_details: User stories, collaborative workflow. Learn the good way to work on a project within a team.
+      ui: Learn UI / UX
+      ui_details: Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.
+      web_design: Learn Web Design
+      web_design_details: Build your own icons, keep control of your website without always depending on contractors.
+      data_science: Learn Data Science
+      data_science_details: Collect data, analyze it, make it speak through visualisation.
+      fullstack:  Learn Web Development
+      fullstack_details: From the database to the web browser, learn how a web application is built.
+      prototyping: Learn lean Prototyping
+      prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
+      best: Learn from the best
+      best_details_html: |
+        <p>
+         We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
+        </p>
+        <p>
+         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
+        </p>
+      hec_html: Since 2017, Le Wagon is the official partner of HEC (highest ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.
+      watch: Our last corporate workshop "One Day of Code"
+      google_quote: Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.
+      eki_quote:  The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
+      drivy_quote: Their curriculum is very well crafted, the teachers are passionate.
+      stripe_quote: Solid workshops teaching both essential technical skills and a strong product mindset.
+      algolia_quote: If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.
+      uber_quote: Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.
+      with_us: They work with us.
+    live:
+      page_title_with_current_event: "Live - %{event_name}"
+      page_title_no_live: "Live - Coming soon"
+      page_description_no_live: "Sorry, we don't have any live running at the moment :)"
+      live_company_link: "Know more"
+      live_go_to_meetup: "See all our Meetup events"
+    live_player_video:
+      live_coming_soon: "Coming soon..."
+    shop:
+      title: "Le Wagon's shop"
+      description: "Because coders got style"
+  demoday:
+    show:
+      page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
+      demoday_title: "Watch our Demodays"
+      demoday_tagline: "We are proud of what our students achieved in only 10 days"
+      choose_batch: "Choose Batch"
+      batch_french: "French"
+      batch_english: "English"
+      batch_brazilian: "Brazilian Portugese"
+    batch_demoday:
+      player:
+        no_video: No video available
+        batch_intro_html: |
+          %{count} students attended Le Wagon in %{city_name} from %{batch_start_date} to %{batch_end_date}. Check out the projects they built with Ruby on Rails in only 2 weeks!
+        product: "Products"
+        project_link: "try it now"
+        techno: "Built with"
+        cta: "Apply for 9 weeks"
+      batch_title: " amazing humans right here"
+  students:
+    index:
+      meta_title: "Le Wagon's Alumni"
+      meta_description_html: |
+        %{count}+ talented students sharing the same skills & passion
+      title: Students' projects - Startups & web apps made in Le Wagon
+      description: |
+        Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
+      our_alumni: "Le Wagon's Alumni"
+      our_alumni_details_html: |
+        <strong>%{count}+ talented students</strong> sharing the same <strong>skills & passion</strong>.
+      apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
+      our_students_projects: What our students have built
+      only_ten_days: "...in only 10 days"
+      discover_us: Discover our program
+      discover_our_stories: Discover our alumni stories
+      watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: Show more stories
+  cities:
+    show:
+      title: "Coding Bootcamp in %{city} - Le Wagon"
+      description: |
+        Learn to code in 9 weeks and become a fullstack web developer with Europe's major coding school in %{city}.
+      catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
+      call: 'Call %{name}:'
+      email: 'Email %{name}'
+      city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
+      apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
+      staff: "Teachers in %{city}"
+      discover_us: "Discover our program"
+      apprentices: "Join %{count} apprentices"
+      next_meetup_html: "Next meetup: <i class='hidden-xs'>%{name}</i>"
+      only_in: "Tips from %{city}"
+      course_locale_html: "In %{city}, lectures are given in <strong>%{language}</strong>."
+      next_batch_html: "Next batch will start on <strong>%{starts_at}</strong>."
+  applies:
+    new:
+      title: Apply to Le Wagon %{city} - 9-week Coding Bootcamp in Ruby on Rails
+      description: 9 weeks to learn ruby on Rails, HTML/CSS, Javascript, and web-development best practices
+      apply: Apply to
+      first_name: "First name"
+      last_name: "Last name"
+      age: "Age"
+      phone: "Phone"
+      source: "Referrer"
+      source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
+      motivation: "Motivation"
+      motivation_placeholder: "Why Le Wagon? What is your professional project?"
+      linkedin_html: Your profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
+          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> on CodeCademy.
+          If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
+        </p>
+        <p>
+          To track your progress, we need you to fill in this form your <strong>CodeCademy username</strong>. You
+          will find it on your <a href="https://www.codecademy.com/account" target="_blank">Account</a> page.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
+        </p>
+      codecademy_modal_close_button: "I found my username"
+      apply_btn: "Apply to "
+      please_wait: "Please wait..."
+      pre_course_language: 'Course in '
+      language_fr: 'French'
+      language_en: 'English'
+      language_pt-BR: 'Brazilian Portuguese'
+      language_zh-CN: 'Chinese'
+      price: 'Price'
+      source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
+  stories:
+    index:
+      title: Discover our alumni stories
+    show:
+      other_testimonials: Other Testimonials
+      continue: Would you like to continue?
+      read_more: Read more testimonials from our bootcamp's students
+      title: "%{story}"
+      description: "%{story}"
+  projects:
+    index:
+      meta_title_html: |
+        Browse among %{count}+ projects
+      meta_description:
+        built by our alumni in 2 weeks
+      projects_details_html: |
+        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
+      show_more_projects: Show more projects
+    more_projects:
+      project_cta: Checkout the app
+  posts:
+    index:
+      title: Le Wagon - Technical Entrepreneurship Blog
