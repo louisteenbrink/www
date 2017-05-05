@@ -107,9 +107,9 @@ en:
     moreposts: Take a tour on other cool posts
   pages:
     home:
-      title: "Le Wagon - Coding Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
+      title: "Coding Bootcamp Le Wagon | Learn to code with Europe's best coding school"
       description: |
-        Le Wagon is Europe's best coding school for entrepreneurs. Checkout for yourself the projects developed by our students.
+        Le Wagon is Europe's best coding school for entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp.
       catchline_html: "Change your life: <strong>learn to code</strong>"
       vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
       view_teaser: See our video

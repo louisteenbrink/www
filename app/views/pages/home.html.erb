@@ -6,9 +6,10 @@
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('officials/students-10.jpg')%>');">
       <div class="banner-gradient-shadow home"></div>
       <div class="banner-content">
-        <h1 class='glitch'>
+        <h1>Le Wagon - Coding Bootcamp</h1>
+        <h2>
           <%= t(".catchline_html") %>
-        </h1>
+        </h2>
         <p>
           <%= t(".vision_html") %>
           <!-- <span>
@@ -130,9 +131,7 @@
                 <div class="project-item-makers card-city-teachers">
                   <% @client.staff(city['slug'])["teachers"].take(3).each do |teacher| %>
                     <div class="project-item-maker">
-                      <a href=<%= "http://alumni.lewagon.org/#{teacher['github_nickname']}" %> target='_blank'>
-                        <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
-                      </a>
+                      <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
                     </div>
                   <% end %>
                 </div>
