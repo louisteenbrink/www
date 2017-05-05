@@ -5,10 +5,14 @@ class PostsController < ApplicationController
 
   def index
     if request.format.html? || params[:post_page]
-      posts = Blog.new.all
+      json_stories = @client.stories
+      stories = json_stories.map { |story| AlumniStory.new(story) }
+      articles = Blog.new.all
+      posts = (articles + stories).sort_by { |p| p.date }.reverse
+
       @posts = posts.select(&:post?)
       @posts_count = @posts.length
-      @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
+      @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(3)
       @videos = posts.select(&:video?)
       @videos_count = @videos.length
       @stories = @client.stories
@@ -45,7 +49,11 @@ class PostsController < ApplicationController
   end
 
   def all
-    posts = Blog.new.all
+    json_stories = @client.stories
+    stories = json_stories.map { |story| AlumniStory.new(story) }
+    articles = Blog.new.all
+    posts = (articles + stories).sort_by { |p| p.date }.reverse
+
     @posts = posts.select(&:post?)
     if params[:category].present?
       @posts = @posts.select { |post| post.metadata[:labels].include? params[:category] }

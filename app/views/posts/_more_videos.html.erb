@@ -3,7 +3,7 @@
     <% vv.each do |video| %>
       <div class="col-sm-4">
         <%= link_to post_path video.slug do %>
-          <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
+          <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.thumbnail}" %>')">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -11,9 +11,9 @@
               </g>
             </svg>
             <div class="video-details">
-              <h4><%= video.metadata[:title] %></h4>
+              <h4><%= video.title %></h4>
               <ul>
-                <% video.metadata[:labels].each do |tag| %>
+                <% video.labels.each do |tag| %>
                   <li><%= tag %></li>
                 <% end %>
               </ul>

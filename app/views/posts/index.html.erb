@@ -8,6 +8,7 @@
 <% end %>
 
 <div class="posts">
+  <h1>Le Wagon's Blog<small>Bringing you the latest news, tutorials and insights on coding and entrepreneurship</small></h1>
   <div class="container blog-header">
     <div class="header-main">
       <% Static::VIDEOS.take(1).each do |video| %>
@@ -143,7 +144,7 @@
         <% videos.each do |video| %>
           <div class="col-sm-4">
             <%= link_to post_path video.slug do %>
-              <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.metadata[:thumbnail]}" %>')">
+              <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.thumbnail}" %>')">
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -151,9 +152,9 @@
                   </g>
                 </svg>
                 <div class="video-details">
-                  <h4><%= video.metadata[:title] %></h4>
+                  <h4><%= video.title %></h4>
                   <ul>
-                    <% video.metadata[:labels].each do |tag| %>
+                    <% video.labels.each do |tag| %>
                       <li><%= tag %></li>
                     <% end %>
                   </ul>
@@ -166,34 +167,6 @@
     <% end %>
     <%= link_to videos_path, class: 'content-cta' do %>
       See all videos
-    <% end %>
-  </div>
-</section>
-
-<section class="container-fluid posts-community">
-  <h3 class="section-title"><small>A great community</small>makes amazing stories</h3>
-  <div class="container medium-carousel">
-    <% Static::MEDIUM_POSTS.each do |post| %>
-      <div class="medium-wrapper">
-        <div class="medium-card">
-          <% if post[:author_pic] != nil %>
-            <%= image_tag post[:author_pic] %>
-          <% else %>
-            <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <defs></defs>
-              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <circle id="Oval" fill="#EBEBEB" cx="50" cy="50" r="50"></circle>
-              </g>
-          </svg>
-          <% end %>
-          <span><%= post[:author_name] %></span>
-          <h4><%= post[:title] %></h4>
-          <i><%= post[:date].strftime("%d %b %Y") %></i>
-          <%= link_to post[:medium_slug] do %>
-            Read on Medium
-          <% end %>
-        </div>
-      </div>
     <% end %>
   </div>
 </section>

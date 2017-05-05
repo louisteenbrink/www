@@ -80,6 +80,23 @@ class Blog
       metadata[:layout]
     end
 
+
+    def youtube_slug
+      metadata[:youtube_slug]
+    end
+
+    def author
+      Static::AUTHORS[metadata[:author].to_sym]
+    end
+
+    def labels
+      metadata[:labels]
+    end
+
+    def description
+      metadata[:description]
+    end
+
     private
 
     def file_content
