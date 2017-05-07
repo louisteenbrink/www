@@ -8,62 +8,61 @@ es:
       where_our_students_are_working: Where our students are working
       join_our_network: Want to hire our alumni?
     live:
-      watch_live_html: "Discover <strong>%{count} projects</strong> made by Alumni of Batch #%{batch}</strong> in <strong>%{city}</strong>"
-      watch_now_html: "Watch demo-day <strong>now</strong>"
+      watch_live_html: "Descubre los <strong>%{count} proyectos</strong> hechos por los alumnos del Batch #%{batch}</strong> en <strong>%{city}</strong>"
+      watch_now_html: "Ver la demo day <strong>ahora</strong>"
     footer:
-      news_and_resources: "News, events & free resources"
-      enter_your_mail: Enter your email
-      stay_tuned: Stay tuned
-      our_videos: Our video tutorials
-      find_a_city: Find a city
-      about_us: About us
-      follow_us: Follow us
-      title: "Subscribe for more!"
-      subtitle_html: "Stay up to date on Le Wagon events and <em>free</em> workshops surrounding tech, startups and innovation"
-      subtitle_end: " in %{city}"
-      subscribe: "Subscribe"
-      subscribing: "Subscribing"
-      retry: "Retry"
-      error: "Looks like your email is not valid..."
-      press: "Press"
-      alumni_platform: "Alumni Community"
-      about: "What's le Wagon?"
-      bootcamp_in_city_html: "%{city} coding bootcamp"
+      news_and_resources: "Noticias, eventos y recursos gratis"
+      enter_your_mail: Informe tu email
+      stay_tuned: No te lo pierdas
+      our_videos: Nuestros video tutoriales
+      find_a_city: Donde estamos
+      about_us: Sobre nosotros
+      follow_us: Síguenos
+      title: "Suscríbete para más!"
+      subtitle_html: "Manténte al día de nuestros eventos y workshops <em>gratis</em> sobre desarrollo web, startups e innovación"
+      subtitle_end: " en %{city}"
+      subscribe: "Subscríbete"
+      subscribing: "Enviando"
+      retry: "Reintentar"
+      error: "Parece que tu dirección de email nos es válida..."
+      press: "Prensa"
+      alumni_platform: "Alumni Network"
+      about: "Qué es Le Wagon?"
+      bootcamp_in_city_html: "Bootcamp de programación en %{city}"
     navbar:
       menu:
-        cities: Cities
-        program: Program
+        cities: Ciudades
+        program: Programa
         online: Online
         on_site: On site
-        fullstack_program: FullStack - 9-week intensive program
-      apply: Apply Now
+        fullstack_program: FullStack - Programa intensivo de 9 semanas
+      apply: ¡Solicita ya!
       employers: Business
-      work: Work with our alumni
-      train: Learn to code with us
-      recruitment: Hiring our students
+      work: Emplea nuestro alumni
+      train: Aprende a programar con nosotros
+      recruitment: Encuentra talento
       workshops: Corporate Workshops
     testimonials:
-      what_our_students_say: Students Reviews
-      students_think_of_us: What our students think of us
-      more_reviews: More reviews of Le Wagons
+      what_our_students_say: Testimonios
+      students_think_of_us: Que opinan nuestros alumnos
+      more_reviews: Más reviews de Le Wagon
     testimonials_new:
-      what_our_students_say: Students Reviews
-      students_think_of_us: What our students think of us
-      more_reviews: More reviews of Le Wagon
-      love_messages: Student Reviews
-      show_more_testimonials: Show more testimonials
+      what_our_students_say: Testimonios
+      students_think_of_us: Que opinan nuestros alumnos
+      more_reviews: Más reviews de Le Wagon
+      love_messages: Reviews
+      show_more_testimonials: Mostrar más 
     features:
-      read_full_program: Read full program
-      pedagogy_matters_html: "Code the startup way."
+      read_full_program: Leer el programa completo
+      pedagogy_matters_html: "Desarrolla como una startup"
       pedagogy_tagline_html: |
-        Learn to write clean code and build web products. <br />Join the most <strong>exciting community of learners in Europe</strong>.
-      web_development: Learn web-development
+        Aprende a programar y desarrollar aplicaciones web de manera ágil y eficiente. <br />Forma parte de la <strong>comunidad de aprentices más activa de Europa</strong>.
+      web_development: Fórmate como fullstack developer
       web_development_details: |
-        Learn all about Ruby, SQL, and the Rails application framework.
-        Develop your front-end skills by using advanced CSS technics (flexbox, grid, animations, etc..)
-        and go deeper into Javascript by learning jQuery and React.js,
-        the library developed by Facebook.
-      software_engineer_html: Think like a Software engineer
+        Aprende todo sobre Ruby, SQL y Rails - un potente framework de desarrollo web.
+        Perfecciona tus capacidades de front-end con técnicas avanzadas de CSS (flexbox, grid, animaciones, etc.)
+        y Javascript (jQuery and React.js - la libería creada por Facebook).
+      software_engineer_html: Piensa como un ingienero de Software
       software_engineer_details: |
         A person who has the big picture on technical issues,
         who understands what MVC means, knows how to design a database schema or to dissect an HTTP request,
