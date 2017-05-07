@@ -64,35 +64,35 @@ es:
         y Javascript (jQuery and React.js - la libería creada por Facebook).
       software_engineer_html: Piensa como un ingienero de Software
       software_engineer_details: |
-        A person who has the big picture on technical issues,
-        who understands what MVC means, knows how to design a database schema or to dissect an HTTP request,
-        and who can start learning a new programming language very quickly.
-      technical_workflow: Adopt a technical workflow
+        Alguien con una visión técnica más completa, que entiende como funciona una MVC, 
+        sabe como plantear y diseñar una base de datos, interpretar un HTTP request y, sobretodo,
+        una persona que sea capaz de iniciarse en un nuevo lenguaje de programación con desenvoltura.
+      technical_workflow: Adopta el workflow técnico adecuado
       technical_workflow_details_html: |
-        There's definitely <strong>a good way</strong> of building tech products
-        and that's what we will teach you. Write your MVP's user stories,
-        draw your database scheme, build a mockup with Sketch,
-        collaborate using pull-requests and code-reviews on Github.
-        That's how successful startups work.
-      startup_toolkit: Get the startup toolkit
+        Sin lugar a dudas hay una <strong>manera óptima</strong> de desarrolar productos web
+        y te lo enseñaremos como. Define tu MVP a través de historias de usuario,
+        diseña tu base de datos, crea bocetos con Sketch,
+        colaborara por medio de pull-requests y code-reviews en Github.
+        Así trabajan las startups de éxito.
+      startup_toolkit: Trabaja con las herramientas esenciales
       startup_toolkit_details: |
         Heroku, Stripe, Mandrill, Amazon S3, Algolia...
-        We will teach you how to implement all these services
-        to be more efficient at the launch of your new product.
-        Save time, use the right tool for your specific need,
-        that's our developer mindset.
-      build_product: Build your product
+        Te enseñaremos como implementar estos servicios para 
+        ganar eficiencia y lanzar productos con agilidad.
+        Ahorra tiempo, utiliza la herramienta adecuada para cada necesidad.
+        Esta es nuestra mentalidad como desarrolladores. 
+      build_product: Crea tu producto web
       build_product_details: |
-        No one will teach you how to build web products as we do.
-        Kudoz has just raised 1.2M, Impact is disrupting politics, MaShareEcole school, MedPics healthcare, Krawd marketing...
-        and there are so many other projects in the starting blocks.
-      land_a_job: Land a new job
+        Nadie te enseñará como construir un producto web como nosotros.
+        Kudoz ha captado 1.2M en su primera ronda, Skello, Impact, MaShareEcole, MedPics healthcare, Krawd y 
+        más startups están dando sus primeros pasos con éxito.
+      land_a_job: Impulsa tu carrera
       land_a_job_details: |
-        Working as a junior developer for Stripe, Algolia, Molotov, Save, Compass, 55, Save, etc..
-        We will help you find your dream job, either as a junior dev, product manager
-        or growth hacker. Discuss with any of our alumni to find out more!
-      checkout: Check it out for yourself.
-      see_all: More details.
+        Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han empleado a nuestro alumni.
+        Te impulsamos a encontrar un nuevo trabajo sea como junior developer, project o product manager, 
+        growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
+      checkout: Compruébalo tu mismo. 
+      see_all: Más detalles.
   newsletter:
     teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
     city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
@@ -106,49 +106,48 @@ es:
     moreposts: Take a tour on other cool posts
   pages:
     home:
-      title: "Coding Bootcamp Le Wagon | Learn to code with Europe's best coding school"
+      title: "Bootcamp de Programación Le Wagon | Aprende a programar en 9 semanas"
       description: |
-        Le Wagon is Europe's best coding school for entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp.
-      catchline_html: "Change your life: <strong>learn to code</strong>"
-      vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
-      view_teaser: See our video
-      apply_for_nine_weeks_html: Apply <span>for 9 weeks</span>
-      discover_us: Discover our program
-      what_they_code: What our students have built during the bootcamp
-      it_works: "Funny thing, it works"
-      freshly_coded: Freshly coded
-      all_products: 100+ products built by our alumni.
-      see_all_products: See all products
-      worldwide: Where can you find Le Wagon?
-      check_program: More details about the program
-      our_cities: Our cities
-      open_yours: To launch the program in your city
-      and_you_html: And <strong>you</strong> ?
-      check_projects: Discover our students and their projects
-      see_more_projects: See more projects...
-      our_students_projects: Students Projects
-      only_ten_days: "...in only 10 days"
-      next_batch: "Next batch:"
-      events_to_come: Events to come
-      featured: Students Stories
-      featured_subtitle: "- What our students become"
-      read_next_vowel: "Read ::name::'s story"
-      read_next_consumn: "Read ::name::'s story"
-      read_all: Read more stories
+        Le Wagon es la academia de programación más importante de Europa. Aprende a programar en 9 semanas con el mejor bootcamp de programación.
+      catchline_html: "Cambia tu vida: <strong>aprende a programar</strong>"
+      vision_html: Le Wagon enseña <strong>desarrollo web</strong> a <strong>emprendedores</strong> y <strong>creativos</strong>
+      view_teaser: Ver video
+      apply_for_nine_weeks_html: Suscríbete <span>ahora</span>
+      discover_us: Descubre nuestro programa
+      what_they_code: Lo que nuestros alumnos han creado
+      it_works: "Funciona :)"
+      freshly_coded: Recién programado
+      all_products: Más de 100+ productos creados por nuestro alumni.
+      see_all_products: Ver todos los proyectos
+      worldwide: Dónde encontrar Le Wagon?
+      check_program: Más detalles sobre el programa
+      our_cities: Nuestras ubicaciones
+      open_yours: Para lanzar el bootcamp en tu ciudad
+      and_you_html: Y <strong>tu</strong> ?
+      check_projects: Conoce nuestros alumnos y sus proyectos
+      see_more_projects: Ver más proyectos...
+      our_students_projects: Proyectos de alumnos
+      only_ten_days: "...en tan sólo 10 días"
+      next_batch: "Próximo batch:"
+      events_to_come: Eventos
+      featured: Historias de alumnos
+      featured_subtitle: "- Que están haciendo nuestros alumnos"
+      read_next_vowel: "Leer historia de ::name::"
+      read_next_consumn: "Leer historia de ::name::"
+      read_all: Más historias
     program:
-      title: Program - 9 weeks to learn Ruby on Rails
+      title: Curso de Programación en 9 semanas | Temario Le Wagon
       description: |
-        9 weeks to learn Ruby on Rails, HTML/CSS, Javascript, and web-development best practices
-      our_program: "FullStack program"
+        Aprende a programar en 9 semanas con nuestro curso de desarrollo web: Ruby on Rails, HTML, CSS, Javascript y mejores prácticas para lanzar tu producto.      our_program: "FullStack program"
       program_details_html: |
-        2 months to <strong>become a web developer</strong>.
-      apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
-      nine_weeks: 9 intensive weeks - 360 hours of code
-      to_build_your_ideas_html: Learn all the web stack. From the database to the browser.
-      why_us: Learn from the best
+        9 semanas para convertirse en <strong>desarrollador web</strong>.
+      apply_for_nine_weeks_html: Suscríbete <span class='hidden-xs'>ahora</span>
+      nine_weeks: 9 semanas intensivas - 360 horas de programación
+      to_build_your_ideas_html: Aprende a desarrollar webs de A a Z. Desde su base de datos hasta el diseño web.
+      why_us: ¿Por qué nosotros?
       why_us_details_html: |
         <p class="text-readable">
-        Le Wagon is rated among the 3 best coding bootcamps in the world according to <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> and <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        Le Wagon es una de las 3 mejores academias de programación del mundo de acuerdo con <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> y <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
         </p>
 
         <p class="text-readable">
