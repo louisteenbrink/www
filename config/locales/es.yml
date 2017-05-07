@@ -35,11 +35,11 @@ es:
         program: Temario
         online: Online
         on_site: On site
-        fullstack_program: FullStack - Programa intensivo de 9 semanas
+        fullstack_program: FullStack - Formación intensiva de 9 semanas
       apply: ¡Solicita ya!
       employers: Empresas
-      work: Emplea nuestro alumni
-      train: Aprende a programar con nosotros
+      work: Contractar nuestros alumnos
+      train: Adquirir formación técnica 
       recruitment: Encuentra talento
       workshops: Corporate Workshops
     testimonials:
@@ -53,8 +53,8 @@ es:
       love_messages: Reviews
       show_more_testimonials: Mostrar más 
     features:
-      read_full_program: Leer el programa completo
-      pedagogy_matters_html: "Desarrolla como una startup"
+      read_full_program: Leer el temario completo
+      pedagogy_matters_html: "Desarrolla web apps como una startup"
       pedagogy_tagline_html: |
         Aprende a programar y desarrollar aplicaciones web de manera ágil y eficiente. <br />Forma parte de la <strong>comunidad de aprentices más activa de Europa</strong>.
       web_development: Fórmate como fullstack developer
@@ -67,28 +67,28 @@ es:
         Alguien con una visión técnica más completa, que entiende lo que significa una MVC, 
         sabe como plantear y diseñar una base de datos, interpretar un HTTP request y, sobretodo,
         una persona que sea capaz de iniciarse en un nuevo lenguaje de programación con desenvoltura.
-      technical_workflow: Adopta el workflow técnico adecuado
+      technical_workflow: Adopta el workflow adecuado
       technical_workflow_details_html: |
         Sin lugar a dudas hay una <strong>manera óptima</strong> de desarrolar productos web
         y te lo enseñaremos como. Define tu MVP a través de historias de usuario,
         diseña tu base de datos, crea bocetos con Sketch,
         colaborara por medio de pull-requests y code-reviews en Github.
         Así trabajan las startups de éxito.
-      startup_toolkit: Trabaja con las herramientas esenciales
+      startup_toolkit: Trabaja con los servicios esenciales
       startup_toolkit_details: |
         Heroku, Stripe, Mandrill, Amazon S3, Algolia...
         Te enseñaremos como implementar estos servicios para 
         ganar eficiencia y lanzar productos con agilidad.
         Ahorra tiempo, utiliza la herramienta adecuada para cada necesidad.
         Esta es nuestra mentalidad como desarrolladores. 
-      build_product: Crea tu producto web
+      build_product: Lanza tu producto web
       build_product_details: |
         Nadie te enseñará como crear un producto web como nosotros.
-        Kudoz ha captado 1.2M en su primera ronda, Skello, Impact, MaShareEcole, MedPics healthcare, Krawd y 
+        Kudoz ha captado €1.2M en su primera ronda, Skello, Impact, MaShareEcole, MedPics, Krawd y 
         más startups están dando sus primeros pasos con éxito.
       land_a_job: Impulsa tu carrera
       land_a_job_details: |
-        Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han empleado a nuestro alumni.
+        Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han contractado a nuestros alumnos.
         Te impulsamos a encontrar un nuevo trabajo sea como junior developer, project o product manager, 
         growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
       checkout: Compruébalo tu mismo. 
@@ -110,14 +110,14 @@ es:
       description: |
         Le Wagon es la academia de programación más importante de Europa. Aprende a programar en 9 semanas con el mejor bootcamp de programación.
       catchline_html: "Cambia tu vida: <strong>aprende a programar</strong>"
-      vision_html: Enseñamos <strong>desarrollo web</strong> a <strong>emprendedores</strong> y <strong>creativos</strong>
+      vision_html: Formación técnica en <strong>desarrollo web</strong> para <strong>emprendedores</strong> y <strong>creativos</strong>
       view_teaser: Ver video
       apply_for_nine_weeks_html: Suscríbete <span>ahora</span>
       discover_us: Descubre nuestro programa
       what_they_code: Lo que nuestros alumnos han creado
       it_works: "Funciona :)"
       freshly_coded: Recién programado
-      all_products: Más de 100 productos creados por nuestros alumnos.
+      all_products: Más de 100 apps creadas por nuestros alumnos.
       see_all_products: Ver todos los proyectos
       worldwide: Dónde encontrar Le Wagon?
       check_program: Más detalles sobre el programa
@@ -130,7 +130,7 @@ es:
       only_ten_days: "...en tan sólo 10 días"
       next_batch: "Próxima promoción:"
       events_to_come: Eventos
-      featured: Historias de alumnos
+      featured: Casos de éxito
       featured_subtitle: "- Que están haciendo nuestros alumnos"
       read_next_vowel: "Leer historia de ::name::"
       read_next_consumn: "Leer historia de ::name::"
@@ -143,17 +143,17 @@ es:
         9 semanas para convertirse en <strong>desarrollador web</strong>.
       apply_for_nine_weeks_html: Suscríbete <span class='hidden-xs'>ahora</span>
       nine_weeks: 9 semanas intensivas - 360 horas de programación
-      to_build_your_ideas_html: Aprende desarrollo web de A a Z. Desde la base de datos hasta el diseño web.
+      to_build_your_ideas_html: Aprende desarrollo web de A a Z: Ruby, SQL, HTML, CSS, Javascript...
       why_us: ¿Por qué nosotros?
       why_us_details_html: |
         <p class="text-readable">
-        Le Wagon es una de las 3 mejores academias de programación del mundo de acuerdo con <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> y <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        Le Wagon es una de las 3 mejores academias de programación a nivel mundial de acuerdo con <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> y <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
         </p>
 
         <p class="text-readable">
-        En Le Wagon hemos graduado a %{batches} promociones: más de %{alumni} alumnos de todo el mundo! De este modo, nuestro programa ha estado en constante evolución en búsqueda de la excelencia.
+        Hemos graduado a %{batches} promociones: más de %{alumni} alumnos de todo el mundo! De este modo, nuestra formación ha estado en constante evolución en búsqueda de la excelencia.
         Creemos que construir un gran curriculum lleva tiempo y hemos invertido casi 3 años en perfeccionarlo.
-        Un programa ampliamente experimentado y una gran comunidad internacional es lo que nos hacen únicos. <strong>Aprenderás en 2 meses lo que probablemente te llevaría 2 años.</strong>
+        Un programa ampliamente experimentado y ajustado a las necesidades de perfiles no técnicos es lo que nos hacen únicos. <strong>Aprenderás en 2 meses lo que probablemente te llevaría 2 años.</strong>
         </p>
         <ul>
           <li>El set-up de desarrollo ideal</li>
@@ -162,18 +162,18 @@ es:
           <li>Workflow técnico implementado en las startups de éxito</li>
           <li>Herramientas como Heroku, Stripe, Mandrill, Algolia para hacer el deploy de tu app e integrar recursos avanzados (plataforma de pagos, geolocalización, mailing, búsqueda, etc...)</li>
         </ul>
-      community: Una comunidad apasionante
+      community: Una comunidad internacional apasionante
       community_details_html: |
-        Más de %{alumni} alumnos con los más distintos backgrounds (ingenieros, periodistas, arquitectos, expertos de marketing, diseñadores...)
-        <strong style="color:white;">conectados en Slack</strong>, compartiendo dudas con nuestro profesorado, ayudas, recursos, oportunidades de empleo e info relevante sobre el universo startup. 
-        <strong>Unas de las mejores comunidades tech del mundo.</strong>
+        Más de %{alumni} alumnos de diferentes nacionalidades y distintos backgrounds (ingenieros, periodistas, arquitectos, expertos de marketing, diseñadores...)
+        <strong style="color:white;">conectados en Slack</strong>, compartiendo dudas con nuestro profesorado, ofreciendo ayuda, recursos, oportunidades de empleo e información relevante sobre el universo startup. 
+        <strong>Una de las más potentes redes de perfiles tech del mundo.</strong>
         Todos los alumnos de Le Wagon comparten la misma formación técnica e implementan las mejores prácticas de la industria.
         Esta unión entre <strong style="color:white;">diversidade y expertise técnico</strong> hace única nuestra comunidad.
       cv: Tu portfolio de desarrollo
       cv_details_html: |
-        In only 2 months, build several web applications, including
-        a <strong>clone of Airbnb</strong> and <strong>your own personal project</strong>. Deploy these apps
-        and build yourself a solid Github portfolio.
+        En tan sólo 2 meses desarrollarás proyectos web completos, incluso
+        un <strong>clon de Airbnb</strong> y <strong>tu proyecto final</strong>. Estos son los primeros
+        pasos para construir un solido portfolio en Github.
       ruby_html: |
         Get familiar with the command line and Git.
         Learn the basics of programming with Ruby and code
