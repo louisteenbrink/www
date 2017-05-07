@@ -4,12 +4,12 @@ es:
       apply: "%B %e, %Y"
   shared:
     positions:
-      they_hired_our_students: They hired our students
-      where_our_students_are_working: Where our students are working
-      join_our_network: Want to hire our alumni?
+      they_hired_our_students: Empresas que emplearon a nuestros alumnos
+      where_our_students_are_working: Donde trabajan nuestros alumnos
+      join_our_network: Buscas talento?
     live:
-      watch_live_html: "Descubre los <strong>%{count} proyectos</strong> hechos por los alumnos del Batch #%{batch}</strong> en <strong>%{city}</strong>"
-      watch_now_html: "Ver la demo day <strong>ahora</strong>"
+      watch_live_html: "Descubre los <strong>%{count} proyectos</strong> hechos por los alumnos de la Promoción #%{batch}</strong> en <strong>%{city}</strong>"
+      watch_now_html: "Ver video de la <strong>demo day</strong>"
     footer:
       news_and_resources: "Noticias, eventos y recursos gratis"
       enter_your_mail: Informe tu email
@@ -18,7 +18,7 @@ es:
       find_a_city: Donde estamos
       about_us: Sobre nosotros
       follow_us: Síguenos
-      title: "Suscríbete para más!"
+      title: "¡Suscríbete para más!"
       subtitle_html: "Manténte al día de nuestros eventos y workshops <em>gratis</em> sobre desarrollo web, startups e innovación"
       subtitle_end: " en %{city}"
       subscribe: "Subscríbete"
@@ -32,12 +32,12 @@ es:
     navbar:
       menu:
         cities: Ciudades
-        program: Programa
+        program: Temario
         online: Online
         on_site: On site
         fullstack_program: FullStack - Programa intensivo de 9 semanas
       apply: ¡Solicita ya!
-      employers: Business
+      employers: Empresas
       work: Emplea nuestro alumni
       train: Aprende a programar con nosotros
       recruitment: Encuentra talento
@@ -64,7 +64,7 @@ es:
         y Javascript (jQuery and React.js - la libería creada por Facebook).
       software_engineer_html: Piensa como un ingienero de Software
       software_engineer_details: |
-        Alguien con una visión técnica más completa, que entiende como funciona una MVC, 
+        Alguien con una visión técnica más completa, que entiende lo que significa una MVC, 
         sabe como plantear y diseñar una base de datos, interpretar un HTTP request y, sobretodo,
         una persona que sea capaz de iniciarse en un nuevo lenguaje de programación con desenvoltura.
       technical_workflow: Adopta el workflow técnico adecuado
@@ -83,7 +83,7 @@ es:
         Esta es nuestra mentalidad como desarrolladores. 
       build_product: Crea tu producto web
       build_product_details: |
-        Nadie te enseñará como construir un producto web como nosotros.
+        Nadie te enseñará como crear un producto web como nosotros.
         Kudoz ha captado 1.2M en su primera ronda, Skello, Impact, MaShareEcole, MedPics healthcare, Krawd y 
         más startups están dando sus primeros pasos con éxito.
       land_a_job: Impulsa tu carrera
@@ -94,30 +94,30 @@ es:
       checkout: Compruébalo tu mismo. 
       see_all: Más detalles.
   newsletter:
-    teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
-    city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'
-    email_placeholder: your e-mail
-    follow_us_button: Follow us
-    thank_you: "Thanks, see you very soon!"
-    error: "Oups, seems to be an issue : ERROR_MESSAGE"
+    teaser: "<p>Mantente al día de nuestros <strong>eventos</strong>, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.</p>"
+    city_teaser_html: 'Mantente al día de nuestros <strong>eventos</strong> en %{city}, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.'
+    email_placeholder: tu e-mail
+    follow_us_button: Síguenos
+    thank_you: "¡Gracias, nos vemos pronto!"
+    error: "Oops, parece que ha habido un error: ERROR_MESSAGE"
   blog:
-    read_article: Read the post
-    written_html: "Published by <a href='%{href}'>%{author}</a> on %{date}"
-    moreposts: Take a tour on other cool posts
+    read_article: Leer artículo
+    written_html: "Publicado por <a href='%{href}'>%{author}</a> en %{date}"
+    moreposts: Descubre más artículos
   pages:
     home:
       title: "Bootcamp de Programación Le Wagon | Aprende a programar en 9 semanas"
       description: |
         Le Wagon es la academia de programación más importante de Europa. Aprende a programar en 9 semanas con el mejor bootcamp de programación.
       catchline_html: "Cambia tu vida: <strong>aprende a programar</strong>"
-      vision_html: Le Wagon enseña <strong>desarrollo web</strong> a <strong>emprendedores</strong> y <strong>creativos</strong>
+      vision_html: Enseñamos <strong>desarrollo web</strong> a <strong>emprendedores</strong> y <strong>creativos</strong>
       view_teaser: Ver video
       apply_for_nine_weeks_html: Suscríbete <span>ahora</span>
       discover_us: Descubre nuestro programa
       what_they_code: Lo que nuestros alumnos han creado
       it_works: "Funciona :)"
       freshly_coded: Recién programado
-      all_products: Más de 100+ productos creados por nuestro alumni.
+      all_products: Más de 100 productos creados por nuestros alumnos.
       see_all_products: Ver todos los proyectos
       worldwide: Dónde encontrar Le Wagon?
       check_program: Más detalles sobre el programa
@@ -128,7 +128,7 @@ es:
       see_more_projects: Ver más proyectos...
       our_students_projects: Proyectos de alumnos
       only_ten_days: "...en tan sólo 10 días"
-      next_batch: "Próximo batch:"
+      next_batch: "Próxima promoción:"
       events_to_come: Eventos
       featured: Historias de alumnos
       featured_subtitle: "- Que están haciendo nuestros alumnos"
@@ -138,12 +138,12 @@ es:
     program:
       title: Curso de Programación en 9 semanas | Temario Le Wagon
       description: |
-        Aprende a programar en 9 semanas con nuestro curso de desarrollo web: Ruby on Rails, HTML, CSS, Javascript y mejores prácticas para lanzar tu producto.      our_program: "FullStack program"
+        Temario de nuestro curso de programación web. Aprende desarrollo web en 9 semanas: Ruby on Rails, HTML, CSS, Javascript y mejores prácticas para lanzar tu producto.      our_program: "FullStack program"
       program_details_html: |
         9 semanas para convertirse en <strong>desarrollador web</strong>.
       apply_for_nine_weeks_html: Suscríbete <span class='hidden-xs'>ahora</span>
       nine_weeks: 9 semanas intensivas - 360 horas de programación
-      to_build_your_ideas_html: Aprende a desarrollar webs de A a Z. Desde su base de datos hasta el diseño web.
+      to_build_your_ideas_html: Aprende desarrollo web de A a Z. Desde la base de datos hasta el diseño web.
       why_us: ¿Por qué nosotros?
       why_us_details_html: |
         <p class="text-readable">
@@ -151,25 +151,25 @@ es:
         </p>
 
         <p class="text-readable">
-        We have taught %{batches} batches (that's more than %{alumni} students!) and our program has evolved each time to reach perfection.
-        We believe building a great curriculum takes time and it took us nearly 3 years to design the FullStack program.
-        It is our longstanding experience that makes our program so efficient. <strong>You will learn in 2 months what you would have learned in 2 years:</strong>
+        En Le Wagon hemos graduado a %{batches} promociones: más de %{alumni} alumnos de todo el mundo! De este modo, nuestro programa ha estado en constante evolución en búsqueda de la excelencia.
+        Creemos que construir un gran curriculum lleva tiempo y hemos invertido casi 3 años en perfeccionarlo.
+        Un programa ampliamente experimentado y una gran comunidad internacional es lo que nos hacen únicos. <strong>Aprenderás en 2 meses lo que probablemente te llevaría 2 años.</strong>
         </p>
         <ul>
-          <li>Perfect developer set-up</li>
-          <li>Software engineering and database architecture</li>
-          <li>Collaboration on Github</li>
-          <li>Technical workflow used in the most successful startups</li>
-          <li>Tools like Heroku, Stripe, Mandrill, Algolia to deploy your app and integrate advanced features (payment, geolocation, mailing, search, etc...)</li>
+          <li>El set-up de desarrollo ideal</li>
+          <li>Arquitectura de Software y base de datos</li>
+          <li>Colaboración con Github</li>
+          <li>Workflow técnico implementado en las startups de éxito</li>
+          <li>Herramientas como Heroku, Stripe, Mandrill, Algolia para hacer el deploy de tu app e integrar recursos avanzados (plataforma de pagos, geolocalización, mailing, búsqueda, etc...)</li>
         </ul>
-      community: An exciting community
+      community: Una comunidad apasionante
       community_details_html: |
-        %{alumni}+ students with various backgrounds (engineers, journalists, architects, designers..)
-        are <strong style="color:white;">chatting every day on Slack</strong>, questioning our teaching staff, sharing tips, resources, code gists, job offers and news from their products.
-        <strong>One of the best tech communities in the world.</strong>
-        All the students of le Wagon share the same technical background and apply industry best practices.
-        This mix between <strong style="color:white;">diversity & technical expertise</strong> makes our community unique.
-      cv: Your developer portfolio
+        Más de %{alumni} alumnos con los más distintos backgrounds (ingenieros, periodistas, arquitectos, expertos de marketing, diseñadores...)
+        <strong style="color:white;">conectados en Slack</strong>, compartiendo dudas con nuestro profesorado, ayudas, recursos, oportunidades de empleo e info relevante sobre el universo startup. 
+        <strong>Unas de las mejores comunidades tech del mundo.</strong>
+        Todos los alumnos de Le Wagon comparten la misma formación técnica e implementan las mejores prácticas de la industria.
+        Esta unión entre <strong style="color:white;">diversidade y expertise técnico</strong> hace única nuestra comunidad.
+      cv: Tu portfolio de desarrollo
       cv_details_html: |
         In only 2 months, build several web applications, including
         a <strong>clone of Airbnb</strong> and <strong>your own personal project</strong>. Deploy these apps
