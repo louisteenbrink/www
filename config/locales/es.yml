@@ -4,7 +4,7 @@ es:
       apply: "%B %e, %Y"
   shared:
     positions:
-      they_hired_our_students: Empresas que emplearon a nuestros alumnos
+      they_hired_our_students: Empresas que han contratado a nuestros alumnos
       where_our_students_are_working: Donde trabajan nuestros alumnos
       join_our_network: Buscas talento?
     live:
@@ -38,7 +38,7 @@ es:
         fullstack_program: FullStack - Formación intensiva de 9 semanas
       apply: ¡Solicita ya!
       employers: Empresas
-      work: Contractar nuestros alumnos
+      work: Contratar nuestros alumnos
       train: Adquirir formación técnica 
       recruitment: Encuentra talento
       workshops: Corporate Workshops
@@ -88,7 +88,7 @@ es:
         más startups están dando sus primeros pasos con éxito.
       land_a_job: Impulsa tu carrera
       land_a_job_details: |
-        Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han contractado a nuestros alumnos.
+        Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han contratado a nuestros alumnos.
         Te impulsamos a encontrar un nuevo trabajo sea como junior developer, project o product manager, 
         growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
       checkout: Compruébalo tu mismo. 
