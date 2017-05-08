@@ -210,8 +210,7 @@ es:
         a través de pull requests. También utilizarás Heroku para publicar tus apps utilizando el 
         mismo workflow adoptado por las startups.
       projects_html: |
-        Durante las 2 semanas finales del curso trabajarás en equipo para definir, programar
-        y publicar tu proyecto web con un objetivo claro:
+        Durante las 2 semanas finales del curso trabajarás en equipo para definir, programar y publicar tu proyecto web con un objetivo claro:
         ¡Lanzar y presentar al mundo una app genial!  
       awesome_entrepreneur: Entrepreneur d'exception
       one_week: 1 week
@@ -270,29 +269,28 @@ es:
         </p>
       join_our_network: Forma parte de nuestra red
       watch: Mira el video de nuestra última job fair en Paris
-      why: What's a hiring partner?
-      reasons: Le Wagon's network allows fast-growing companies to hire directly from our alumni. We'll invite you to job fairs, push your offers on our job board and organise events together to promote your organisation's culture and vision.
-      exceptional: Exceptional alumni
+      why: ¿Por qué ser un hiring partner?
+      reasons: La red de empresas asociadas a Le Wagon permite la contratacción directa de miembros de nuestro alumni. Promocionaremos tus ofertas de trabajo, organizaremos job fairs y otros eventos en colaboración para dar visibilidad a tu empresa, cultura corporativa y visión.
+      exceptional: Una red de alumni única
       exceptional_details: |
-        Our alumni have dedicated two months of their life to learn programming,
-        usually after a first 5-year education cycle. They have spent more than 360
-        hours coding during the program. You will rarely find human beings with such
-        commitment.
-      unique: With unique backgrounds
+        Los miembros de nuestro alumni han dedicado 2 meses de sus vidas al aprendizaje técnico intensivo:
+        Más de 360 horas de estudios y actividades prácticas a través de un programa de máxima exigencia. 
+        Dificilmente encontrarás perfiles con tal nivel de compromiso y ganas de mejorar.
+      unique: Perfiles altamente cualificados
       unique_details: |
-        Most our students come from the very best business and engineering
-        schools worlwide. They already have excellent working methodology.
-        Our alumni are also designers, journalists, photographers,
-        with very different skills.
-      operational: Operational from day one
+        La mayoría de nuestros alumnos vienen de las mejores escuelas de negocio, ingeniería y gestión
+        a nivel mundial. Poseen excelente metodología de trabajo, pensamiento crítico y mentalidad emprendedora.
+        También componen nuestro alumni diseñadores, periodistas, fotógrafos y creativos de las
+        más distintas disciplinas y habilidades.
+      operational: Operativos desde el primer dia
       operational_details: |
-        Our students have shipped ruby on Rails applications. They know
-        the best practices to work in a tech startup. They can implement
-        features from day one as a junior dev. As a PM or a growth marketer,
-        they will be great at connecting business issues with tech
-        developments.
-      wanna_join: Want to join Le Wagon's network?
-      signup: Contact us to become our hiring partner.
+        Nuestros alumnos han creado y lanzado aplicaciones web en Ruby on Rails. Conocen las 
+        mejores prácticas para trabajar en una startup tecnológica. Son capaces de integrarse 
+        como desarrolladores junior, project managers, product owners, growth marketers, etc. 
+        y añadir valor desde el primer momento. Además, reunen habilidades únicas para connectar
+        las necesidades de negocio con los retos tecnológicos.
+      wanna_join: ¿Quieres formar parte de nuestra red?
+      signup: Ponte en contacto con nosotros y conviértete en una empresa asociada.
     enterprise:
       title: Re-invent work in a digital world with Le Wagon's immersive workshops.
       description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
@@ -334,76 +332,76 @@ es:
       uber_quote: Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.
       with_us: They work with us.
     live:
-      page_title_with_current_event: "Live - %{event_name}"
-      page_title_no_live: "Live - Coming soon"
-      page_description_no_live: "Sorry, we don't have any live running at the moment :)"
-      live_company_link: "Know more"
-      live_go_to_meetup: "See all our Meetup events"
+      page_title_with_current_event: "En directo - %{event_name}"
+      page_title_no_live: "En directo - Próximamente"
+      page_description_no_live: "No tenemos a ningun evento en directo en este momento."
+      live_company_link: "Más info"
+      live_go_to_meetup: "Ver todos nuestros eventos en Meetup"
     live_player_video:
-      live_coming_soon: "Coming soon..."
+      live_coming_soon: "Próximamente..."
     shop:
-      title: "Le Wagon's shop"
-      description: "Because coders got style"
+      title: "La tienda de Le Wagon"
+      description: "Coders got style"
   demoday:
     show:
-      page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
-      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Batch #%{batch_slug}"
-      demoday_title: "Watch our Demodays"
-      demoday_tagline: "We are proud of what our students achieved in only 10 days"
-      choose_batch: "Choose Batch"
-      batch_french: "French"
-      batch_english: "English"
-      batch_brazilian: "Brazilian Portugese"
+      page_title: "Videos Promoción #%{batch_slug} - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Promoción #%{batch_slug}"
+      demoday_title: "Ver nuestras Demodays"
+      demoday_tagline: "Estamos orgullosos de lo que nuestros alumnos han creado en los 10 días finales"
+      choose_batch: "Elegir Promoción"
+      batch_french: "En Francés"
+      batch_english: "En Inglés"
+      batch_brazilian: "En Portugués"
     batch_demoday:
       player:
-        no_video: No video available
+        no_video: Video todavía no disponible
         batch_intro_html: |
-          %{count} students attended Le Wagon in %{city_name} from %{batch_start_date} to %{batch_end_date}. Check out the projects they built with Ruby on Rails in only 2 weeks!
-        product: "Products"
-        project_link: "try it now"
-        techno: "Built with"
-        cta: "Apply for 9 weeks"
-      batch_title: " amazing humans right here"
+          %{count} alumnos han atendido al bootcamp en %{city_name} del %{batch_start_date} al %{batch_end_date}. Conoce los proyectos que han desarrollado con Ruby on Rails en las 2 semanas finales!
+        product: "Proyectos"
+        project_link: "Ver proyecto"
+        techno: "Creado con"
+        cta: "Suscríbete ahora"
+      batch_title: " changemakers de la Promoción #%{batch_slug} "
   students:
     index:
-      meta_title: "Le Wagon's Alumni"
+      meta_title: "Opiniones sobre Le Wagon y casos de éxito bootcamp de programación | Le Wagon Alumni"
       meta_description_html: |
-        %{count}+ talented students sharing the same skills & passion
-      title: Students' projects - Startups & web apps made in Le Wagon
+        Opiniones sobre Le Wagon y el bootcamp de programación. Comprueba los que piensan los alumnos y descubre los casos de éxito. 
+      title: Proyectos Bootcamp de Programación - Startups y web apps hechas en Le Wagon
       description: |
-        Discover projects developed by Le Wagon's students during previous batches. More than 400 entrepreneurs have already got their super-powers, what about you?
-      our_alumni: "Le Wagon's Alumni"
+        Descubre los proyectos desarrollados durante el bootcamp de programación de Le Wagon. 
+      our_alumni: "Alumni Le Wagon"
       our_alumni_details_html: |
-        <strong>%{count}+ talented students</strong> sharing the same <strong>skills & passion</strong>.
-      apply_for_nine_weeks_html: Apply <span class='hidden-xs'>for 9 weeks</span>
-      our_students_projects: What our students have built
-      only_ten_days: "...in only 10 days"
-      discover_us: Discover our program
-      discover_our_stories: Discover our alumni stories
-      watch_demo_day_title_html: "Watch our last Demo Day <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
-      show_more_stories: Show more stories
+        <strong>Más de %{count} alumnos compartiendo la <strong>misma pasión y habilidades</strong>.
+      apply_for_nine_weeks_html: Suscríbete <span class='hidden-xs'>ahora</span>
+      our_students_projects: Proyectos de alumnos
+      only_ten_days: "...en los 10 días finales"
+      discover_us: Descubre nuestro bootcamp
+      discover_our_stories: Descubre los casos de éxito
+      watch_demo_day_title_html: "Ver nuestra última Demoday en <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Promoción #%{slug}</u></a></small>"
+      show_more_stories: Mostrar más
   cities:
     show:
-      title: "Coding Bootcamp in %{city} - Le Wagon"
+      title: "Bootcamp de programación en %{city} - Le Wagon"
       description: |
-        Learn to code in 9 weeks and become a fullstack web developer with Europe's major coding school in %{city}.
-      catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
-      call: 'Call %{name}:'
+        Aprende a programar en 9 semanas con nuestro coding bootcamp. Conviértete en desarrollador web en la mejor academia de programación de Europa en %{city}.
+      catchline_html: "Cambia tu vida: <strong>aprende a programar</strong> con <strong>Le Wagon</strong>"
+      call: 'Llamar a %{name}:'
       email: 'Email %{name}'
-      city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
-      apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
-      staff: "Teachers in %{city}"
-      discover_us: "Discover our program"
-      apprentices: "Join %{count} apprentices"
-      next_meetup_html: "Next meetup: <i class='hidden-xs'>%{name}</i>"
-      only_in: "Tips from %{city}"
-      course_locale_html: "In %{city}, lectures are given in <strong>%{language}</strong>."
-      next_batch_html: "Next batch will start on <strong>%{starts_at}</strong>."
+      city_arrival_html: "Bootcamp de programación en <strong>%{city}</strong>"
+      apply_for_nine_weeks_html: "Suscríbete<span class='hidden-xs'> ahora</span>"
+      staff: "Profesores en %{city}"
+      discover_us: "Descubre nuestro bootcamp"
+      apprentices: "Súmate a %{count} aprendices"
+      next_meetup_html: "Próximo Meetup: <i class='hidden-xs'>%{name}</i>"
+      only_in: "Info sobre %{city}"
+      course_locale_html: "En %{city}, las clases son en <strong>%{language}</strong>."
+      next_batch_html: "Inicio de la próxima promoción: <strong>%{starts_at}</strong>."
   applies:
     new:
-      title: Apply to Le Wagon %{city} - 9-week Coding Bootcamp in Ruby on Rails
-      description: 9 weeks to learn ruby on Rails, HTML/CSS, Javascript, and web-development best practices
-      apply: Apply to
+      title: Suscribirse al Coding Bootcamp Fullstack de 9 semanas | Le Wagon %{city}
+      description: Coding bootcamp de 9 semanas en desarrollo web con Ruby on Rails, HTML/CSS, SQL y Javascript.
+      apply: Suscribirse a 
       first_name: "First name"
       last_name: "Last name"
       age: "Age"
@@ -411,12 +409,12 @@ es:
       source: "Referrer"
       source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
       motivation: "Motivation"
-      motivation_placeholder: "Why Le Wagon? What is your professional project?"
-      linkedin_html: Your profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
-      linkedin_placeholder: https://www.linkedin.com/in/alan
+      motivation_placeholder: "Why do you want to learn to code? What is your professional goal?"
+      linkedin_html: Linkedin profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      linkedin_placeholder: ex: https://www.linkedin.com/in/alan
       codecademy_username_html: |
-        CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
-      codecademy_username_placeholder: "alan_turing"
+        Codecademy username (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "ex: alan_turing"
       codecademy_modal_body_html: |
         <p>
           As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
