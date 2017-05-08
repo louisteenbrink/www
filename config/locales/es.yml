@@ -6,7 +6,7 @@ es:
     positions:
       they_hired_our_students: Empresas que han contratado a nuestros alumnos
       where_our_students_are_working: Donde trabajan nuestros alumnos
-      join_our_network: Buscas talento?
+      join_our_network: ¿Buscas talento?
     live:
       watch_live_html: "Descubre los <strong>%{count} proyectos</strong> hechos por los alumnos de la Promoción #%{batch}</strong> en <strong>%{city}</strong>"
       watch_now_html: "Ver video de la <strong>demo day</strong>"
@@ -373,11 +373,11 @@ es:
       our_alumni: "Alumni Le Wagon"
       our_alumni_details_html: |
         <strong>Más de %{count} alumnos compartiendo la <strong>misma pasión y habilidades</strong>.
-      apply_for_nine_weeks_html: Suscríbete <span class='hidden-xs'>ahora</span>
+      apply_for_nine_weeks_html: ¡Solicita <span class='hidden-xs'>ahora!</span>
       our_students_projects: Proyectos de alumnos
       only_ten_days: "...en los 10 días finales"
       discover_us: Descubre nuestro bootcamp
-      discover_our_stories: Descubre los casos de éxito
+      discover_our_stories: Explora los casos de éxito
       watch_demo_day_title_html: "Ver nuestra última Demoday en <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Promoción #%{slug}</u></a></small>"
       show_more_stories: Mostrar más
   cities:
