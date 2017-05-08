@@ -19,7 +19,7 @@ es:
       about_us: Sobre nosotros
       follow_us: Síguenos
       title: "¡Suscríbete para más!"
-      subtitle_html: "Manténte al día de nuestros eventos y workshops <em>gratis</em> sobre desarrollo web, startups e innovación"
+      subtitle_html: "Mantente al día de nuestros eventos y workshops <em>gratis</em> sobre desarrollo web, startups e innovación"
       subtitle_end: " en %{city}"
       subscribe: "Subscríbete"
       subscribing: "Enviando"
@@ -171,43 +171,38 @@ es:
         Esta unión entre <strong style="color:white;">diversidade y expertise técnico</strong> hace única nuestra comunidad.
       cv: Tu portfolio de desarrollo
       cv_details_html: |
-        En tan sólo 2 meses desarrollarás proyectos web completos, incluso
-        un <strong>clon de Airbnb</strong> y <strong>tu proyecto final</strong>. Estos son los primeros
+        En tan sólo 2 meses desarrollarás web apps por completo, incluso
+        un <strong>clon de Airbnb</strong> y <strong>tu proyecto final de curso</strong>. Estos son los primeros
         pasos para construir un solido portfolio en Github.
       ruby_html: |
-        Get familiar with the command line and Git.
-        Learn the basics of programming with Ruby and code
-        programs playing with variables, methods,
-        loops and conditional statements. Discover how you can
-        read and write in files and how you can collect
-        interesting data by scraping a website or by calling
-        an API (for instance Twitter API).
+        Te explicaremos como trabajar con la linea de comandos y Git.
+        Aprenderás los aspectos básicos de la programación con Ruby
+        como variables, métodos, bucles y condicionales.
+        Descubre como interactuar con APIs y como utilizar datos
+        de otras webs a través del web scraping.
       software_html: |
-        Discover OOP (Object-Oriented programming) and learn to
-        build advanced softwares by structuring your programs
-        into different objects. If you want to build a social
-        network, a market-place, a car-rental system, a restaurant
-        booking platform... then you need to organize your code
-        with a smart architecture. Same as an architect who
-        wants to build a house, he must respect patterns and procedures.
-        During this week, you will code your first applications
-        following the MVC design pattern.
+        Te introduciremos a conceptos avanzados de la programación orientada a objetos (OOP). 
+        Crearás software utilizando diferentes objetos para estructurar tu app. 
+        De la misma manera que un arquitecto respeta unos estándares y protocolos para construir una casa, 
+        apps como una red social, un marketplace, un sistema de alquiler de coches o
+        de reserva de restaurantes necesitan una arquitectura adecuada para organizar su código
+        de manera óptima. 
+        Durante esta semana desarrollarás tus primeras apps 
+        utilizando la arquitectura de sotfware 'MVC' (Model, View, Controller).
       database_html: |
-        Programs need to store information in a database.
-        Without databases, Facebook would lose your information
-        every time you log in! Learn to design a database by defining
-        tables and connections. Then discover SQL,
-        the language used to read/write data and make queries to
-        the database.
+        Programas informáticos necesitan almacenar la información de alguna manera.
+        Sin las bases de datos, Facebook perdería tus datos cada vez que
+        haces log out. Te enseñaremos como diseñar una base de datos por medio de
+        tablas y relaciones entre ellas. Aprenderás SQL,
+        el lenguaje utilizado para leer, escribir y realizar consultas a la
+        base de datos.
       frontend_html: |
-        Improve your UI culture and learn all about HTML,
-        CSS & best practices in web-design (positioning techniques, animations).
-        Get familiar with Bootstrap, a useful library to
-        prototype web-applications. Then move on to Javascript
-        and jQuery. Learn to manipulate the DOM,
-        define events, and make AJAX requests with Javascript.
-        You will play with lots of cool APIs during this
-        module (Trello, Slack, Facebook , etc...).
+        Aprenderás todo sobre HTML, CSS y las mejores prácticas en diseño web.
+        Te enseñaremos como trabajar con Bootstrap, un potente y muy útil framework enfocado
+        a aplicaciones móviles. A continuación trabajaremos con Javascript
+        y jQuery: como manipular el DOM (document object model),
+        definir eventos e implementar AJAX.
+        En este módulo, trabajarás con muchas APIs interesantes (Trello, Slack, Facebook , etc...)
       rails_html: |
         Time to put all your skills together and dive into Rails.
         No big deal here, you already know most of its
