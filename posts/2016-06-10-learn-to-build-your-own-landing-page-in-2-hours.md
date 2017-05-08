@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "Learn to build your own landing page in 2 hours"
+title: "Build your website with HTML & CSS "
 youtube_slug: "-9ZheXYOMeM"
 date: 10-06-2016
 author: boris
