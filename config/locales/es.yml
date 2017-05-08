@@ -249,7 +249,7 @@ es:
       first_step: "1. Enviar tu candidatura a Le Wagon %{name}"
       second_step: "Suscríbete a nuestro Meetup en %{name}"
       third_step: "Síguenos en Twitter"
-      fourth_step: "Finalizar el Ruby track en CodeCademy"
+      fourth_step: "Finalizar el Ruby track en Codecademy"
     press:
       title: Están hablando de Le Wagon
     employers:
@@ -292,29 +292,29 @@ es:
       wanna_join: ¿Quieres formar parte de nuestra red?
       signup: Ponte en contacto con nosotros y conviértete en una empresa asociada.
     enterprise:
-      title: Re-invent work in a digital world with Le Wagon's immersive workshops.
-      description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.
-      tagline_html: Re-invent work.<br>By learning code and technology.
+      title: Workshops en programación para empresas | Le Wagon Formación Coporativa
+      description: Le Wagon ofrece una serie de workshops técnicos y sobre buenas prácticas de startups para ayudarte a revolucionar la manera de trabajar en tu organización.
+      tagline_html: Revoluciona tu organización.<br>Cierra la brecha entre tecnología y negocios con nuestra oferta formativa. 
       tagline_details_html: |
-        Learn digital skills to change the way people work <br>in your organisation.
-        <strong>Work faster, be more efficient.</strong>
-      apply: Learn with Le Wagon
-      apply_to: Learn %{skill}
-      skills_header: Workshops & Sprints designed for your company
-      skills_text_html: Through 2-hour talks, one-day workshops or one-week prototyping sprints, <strong>we will teach you UI/UX Design, Product Management and web-development</strong>.
-      pm: Learn Product Management
+        Llevamos habilidades técnicas y las mejores prácticas de <br>las startups para dentro de tu organización.
+        <strong>Democratiza el conocimiento técnico, gana eficiencia.</strong>
+      apply: Aprender con Le Wagon
+      apply_to: Aprende %{skill}
+      skills_header: Workshops y sprints de trabajo diseñados para tu empresa
+      skills_text_html: Por medio de charlas, workshops de un día o sprints de una semana, te enseñamos <strong>UI/UX Design, Product Management y Web Development</strong>.
+      pm: Aprende Product Management
       pm_details: User stories, collaborative workflow. Learn the good way to work on a project within a team.
-      ui: Learn UI / UX
+      ui: Aprende UI / UX
       ui_details: Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.
-      web_design: Learn Web Design
+      web_design: Aprende Web Design
       web_design_details: Build your own icons, keep control of your website without always depending on contractors.
-      data_science: Learn Data Science
+      data_science: Aprende Data Science
       data_science_details: Collect data, analyze it, make it speak through visualisation.
-      fullstack:  Learn Web Development
+      fullstack:  Aprende Web Development
       fullstack_details: From the database to the web browser, learn how a web application is built.
-      prototyping: Learn lean Prototyping
+      prototyping: Aprende Lean Prototyping
       prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
-      best: Learn from the best
+      best: ¿Por qué nosotros?
       best_details_html: |
         <p>
          We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
@@ -399,7 +399,7 @@ es:
       next_batch_html: "Inicio de la próxima promoción: <strong>%{starts_at}</strong>."
   applies:
     new:
-      title: Solicitud Coding Bootcamp Fullstack de 9 semanas | Le Wagon %{city}
+      title: Solicitud Coding Bootcamp de 9 semanas | Le Wagon %{city}
       description: Coding bootcamp de 9 semanas en desarrollo web con Ruby on Rails, HTML/CSS, SQL y Javascript.
       apply: Solicitud  
       first_name: "First name"
@@ -430,35 +430,35 @@ es:
           You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
         </p>
       codecademy_modal_close_button: "I found my username"
-      apply_btn: "Apply to "
-      please_wait: "Please wait..."
-      pre_course_language: 'Course in '
-      language_fr: 'French'
-      language_en: 'English'
-      language_pt-BR: 'Brazilian Portuguese'
-      language_zh-CN: 'Chinese'
-      price: 'Price'
+      apply_btn: "Solicita para "
+      please_wait: "Por favor espere..."
+      pre_course_language: 'Clases en'
+      language_fr: 'Francés'
+      language_en: 'Inglés'
+      language_pt-BR: 'Portugués'
+      language_zh-CN: 'Chino'
+      price: 'Precio'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:
     index:
-      title: Discover our alumni stories
+      title: Explora los casos de éxito 
     show:
-      other_testimonials: Other Testimonials
-      continue: Would you like to continue?
-      read_more: Read more testimonials from our bootcamp's students
+      other_testimonials: Otros testimoniales
+      continue: Desea continuar?
+      read_more: Leer más testimoniales de alumnos
       title: "%{story}"
       description: "%{story}"
   projects:
     index:
       meta_title_html: |
-        Browse among %{count}+ projects
+        Explora más de %{count} proyectos
       meta_description:
-        built by our alumni in 2 weeks
+        creados por nuestros alumnos en 2 semanas
       projects_details_html: |
         <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
-      show_more_projects: Show more projects
+      show_more_projects: Más proyectos
     more_projects:
-      project_cta: Checkout the app
+      project_cta: Ver app
   posts:
     index:
-      title: Le Wagon - Technical Entrepreneurship Blog
+      title: Le Wagon - Coding Bootcamp Blog
