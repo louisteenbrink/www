@@ -7,15 +7,16 @@
       <p>
         <span style="font-weight: 900;">Get your invitation</span> for Le Wagon's free online course and learn HTML, CSS, Javascript, Github, APIs and much more 🚀.
       </p>
+      <% @prospect ||= Prospect.new %>
+      <p class="email-error hidden">Your email is not valid :(</p>
       <div class="invitation">
-        <div class="form-invitation">
-          <input type="email" placeholder="you@gmail.com" class="form-control">
-          <input type="submit" value="Get my invitation" class="btn btn-danger">
-        </div>
+        <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
+          <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
+          <%= f.submit "Get my invitation", class: "btn btn-danger" %>
+        <% end %>
       </div>
     </div>
   </div>
-
   <div id="slideshow">
     <%= image_tag "officials/screenshot-1.png" %>
     <%= image_tag "officials/screenshot-2.png", style: "opacity: 0"%>
@@ -24,4 +25,6 @@
     <%= image_tag "officials/screenshot-5.png", style: "opacity: 0"%>
   </div>
 </div>
+
+<%= render "prospects/invitation" %>
 

@@ -5,6 +5,14 @@
   .banner-enterprise {
     height: calc(100vh - 180px);
   }
+  .email-error {
+    color: $red !important;
+    font-weight: bold !important;
+  }
+  .error {
+    border: 1px solid $red;
+    color: $red;
+  }
   h1, p, span {
     color: #363636;
   }
@@ -14,8 +22,6 @@
   }
   img {
     align-self: flex-end;
-    // width: 900px;
-    //margin-right: -250px;
     box-shadow: -2px -2px 15px rgba(0, 0, 0, 0.05);
   }
   display: flex;
@@ -32,6 +38,27 @@
     }
   }
 }
+#invitationModal {
+  svg {
+    width: 150px;
+    height: 200px;
+    margin: 10px auto;
+    margin-top: 80px;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+#letter {
+  transform: translate(80px, 60px);
+  transition: 1s transform ease;
+}
+#letter.opened {
+  transform: translate(80px, -70px);
+}
 .invitation {
   display: flex;
   align-items: center;
@@ -46,8 +73,7 @@
   }
   .btn {
     border-radius: 0px 3px 3px 0px;
-    margin-left: -10px;
-  }
+    }
 }
 .discount-invitation {
   font-size: 25px;
