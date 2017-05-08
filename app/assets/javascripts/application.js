@@ -3,7 +3,6 @@
 //= require bootstrap-sprockets
 //= require jquery.slick
 //= require "headroom.js.js"
-//= require sweetalert
 
 //= require react
 //= require react_ujs
