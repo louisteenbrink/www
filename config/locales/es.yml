@@ -1,0 +1,466 @@
+es:
+  date:
+    formats:
+      apply: "%B %e, %Y"
+  shared:
+    positions:
+      they_hired_our_students: Le Wagon en las empresas
+      where_our_students_are_working: Donde están trabajando nuestros alumnos 
+      join_our_network: ¿Buscas talento?
+    live:
+      watch_live_html: "Explora los <strong>%{count} proyectos</strong> hechos por los alumnos de la Promoción #%{batch}</strong> en <strong>%{city}</strong>"
+      watch_now_html: "Ver video de la <strong>demoday</strong>"
+    footer:
+      news_and_resources: "Noticias, eventos y recursos gratis"
+      enter_your_mail: Informe tu email
+      stay_tuned: No te lo pierdas
+      our_videos: Nuestros video tutoriales
+      find_a_city: Donde estamos
+      about_us: Sobre nosotros
+      follow_us: Síguenos
+      title: "¡Suscríbete para más!"
+      subtitle_html: "Mantente al día de nuestros eventos y workshops <em>gratis</em> sobre desarrollo web, startups e innovación"
+      subtitle_end: " en %{city}"
+      subscribe: "Subscríbete"
+      subscribing: "Enviando"
+      retry: "Reintentar"
+      error: "Parece que tu dirección de email nos es válida..."
+      press: "Prensa"
+      alumni_platform: "Alumni Network"
+      about: "Qué es Le Wagon?"
+      bootcamp_in_city_html: "Bootcamp de programación en %{city}"
+    navbar:
+      menu:
+        cities: Ciudades
+        program: Temario
+        online: Online
+        on_site: On site
+        fullstack_program: FullStack - Formación intensiva de 9 semanas
+      apply: ¡Solicita ya!
+      employers: Empresas
+      work: Contratar nuestros alumnos
+      train: Adquirir formación técnica
+      recruitment: Encuentra talento
+      workshops: Corporate Workshops
+    testimonials:
+      what_our_students_say: Testimonios
+      students_think_of_us: Que opinan nuestros alumnos
+      more_reviews: Más reviews de Le Wagon
+    testimonials_new:
+      what_our_students_say: Testimonios
+      students_think_of_us: Que opinan nuestros alumnos
+      more_reviews: Más reviews de Le Wagon
+      love_messages: Reviews
+      show_more_testimonials: Mostrar más
+    features:
+      read_full_program: Leer el temario completo
+      pedagogy_matters_html: "Desarrolla web apps como una startup"
+      pedagogy_tagline_html: |
+        Aprende a programar y desarrollar aplicaciones web de manera ágil y eficiente. <br />Forma parte de la <strong>comunidad de aprentices más activa de Europa</strong>.
+      web_development: Fórmate como fullstack developer
+      web_development_details: |
+        Aprende todo sobre Ruby, SQL y Rails - un potente framework de desarrollo web.
+        Perfecciona tus capacidades de front-end con técnicas avanzadas de CSS (flexbox, grid, animaciones, etc.)
+        y Javascript (jQuery and React.js - la libería creada por Facebook).
+      software_engineer_html: Piensa como un ingienero de Software
+      software_engineer_details: |
+        Alguien con una visión técnica más completa, que entiende lo que significa una MVC,
+        sabe como plantear y diseñar una base de datos, interpretar un HTTP request y, sobretodo,
+        una persona que sea capaz de iniciarse en un nuevo lenguaje de programación con desenvoltura.
+      technical_workflow: Adopta el workflow adecuado
+      technical_workflow_details_html: |
+        Sin lugar a dudas hay una <strong>manera óptima</strong> de desarrolar productos web
+        y te lo enseñaremos como. Define tu MVP a través de historias de usuario,
+        diseña tu base de datos, crea bocetos con Sketch,
+        colaborara por medio de pull-requests y code-reviews en Github.
+        Así trabajan las startups de éxito.
+      startup_toolkit: Trabaja con los servicios esenciales
+      startup_toolkit_details: |
+        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Te enseñaremos como implementar estos servicios para
+        ganar eficiencia y lanzar productos con agilidad.
+        Ahorra tiempo, utiliza la herramienta adecuada para cada necesidad.
+        Esta es nuestra mentalidad como desarrolladores.
+      build_product: Lanza tu producto web
+      build_product_details: |
+        Nadie te enseñará como crear un producto web como nosotros.
+        Kudoz ha captado €1.2M en su primera ronda, Skello, Impact, MaShareEcole, MedPics, Krawd y
+        más startups están dando sus primeros pasos con éxito.
+      land_a_job: Impulsa tu carrera
+      land_a_job_details: |
+        Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han contratado a nuestros alumnos.
+        Te impulsamos a encontrar un nuevo trabajo sea como junior developer, project o product manager,
+        growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
+      checkout: Compruébalo tu mismo. 
+      see_all: Más detalles
+  newsletter:
+    teaser: "<p>Mantente al día de nuestros <strong>eventos</strong>, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.</p>"
+    city_teaser_html: 'Mantente al día de nuestros <strong>eventos</strong> en %{city}, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.'
+    email_placeholder: tu e-mail
+    follow_us_button: Síguenos
+    thank_you: "¡Gracias, nos vemos pronto!"
+    error: "Oops, parece que ha habido un error: ERROR_MESSAGE"
+  blog:
+    read_article: Leer artículo
+    written_html: "Publicado por <a href='%{href}'>%{author}</a> en %{date}"
+    moreposts: Leer más artículos
+  pages:
+    home:
+      title: "Bootcamp de Programación Le Wagon | Aprende a programar en 9 semanas"
+      description: |
+        Aprende a programar en 9 semanas con el mejor coding bootcamp de Europa. Le Wagon es la academia de programación para emprendedores más importante de Europa. 
+      catchline_html: "Cambia tu vida: <strong>aprende a programar</strong>"
+      vision_html: Formación en <strong>desarrollo web</strong> para <strong>emprendedores</strong> y <strong>creativos</strong>
+      view_teaser: Ver video
+      apply_for_nine_weeks_html: ¡Solicita <span>ahora</span>!
+      discover_us: Explora nuestro programa
+      what_they_code: Lo que nuestros alumnos han creado
+      it_works: "Funciona :)"
+      freshly_coded: Recién programado
+      all_products: Más de 100 apps creadas por nuestros alumnos.
+      see_all_products: Ver todos los proyectos
+      worldwide: Dónde encontrar Le Wagon?
+      check_program: Más detalles sobre el programa
+      our_cities: Nuestras ubicaciones
+      open_yours: Para lanzar el bootcamp en tu ciudad
+      and_you_html: Y <strong>tu</strong> ?
+      check_projects: Conoce nuestros alumnos y sus proyectos
+      see_more_projects: Ver más proyectos...
+      our_students_projects: Proyectos
+      only_ten_days: "...en tan sólo 10 días"
+      next_batch: "Próxima promoción:"
+      events_to_come: Eventos
+      featured: Casos de éxito
+      featured_subtitle: "- Que están haciendo nuestros alumnos"
+      read_next_vowel: "Leer historia de ::name::"
+      read_next_consumn: "Leer historia de ::name::"
+      read_all: Más historias
+    program:
+      title: Curso de Programación en 9 semanas | Temario Le Wagon
+      description: |
+        Temario de nuestro curso de programación web. Aprende desarrollo web en 9 semanas: Ruby on Rails, HTML, CSS, Javascript y mejores prácticas para lanzar tu producto.      
+      our_program: "FullStack Coding Bootcamp"
+      program_details_html: |
+        9 semanas para convertirse en <strong>desarrollador web</strong>.
+      apply_for_nine_weeks_html: ¡Solicita <span class='hidden-xs'>ahora</span>!
+      nine_weeks: 9 semanas intensivas - 360 horas de programación
+      to_build_your_ideas_html: "Aprende desarrollo web de A a Z: Ruby, SQL, HTML, CSS, Javascript..."
+      why_us: ¿Por qué nosotros?
+      why_us_details_html: |
+        <p class="text-readable">
+        Le Wagon es una de las 3 mejores academias de programación a nivel mundial de acuerdo con <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon#/reviews' target="_blank">Coursereport</a> y <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps" target="_blank">Switchup</a>.
+        </p>
+
+        <p class="text-readable">
+        Hemos formado a %{batches} promociones: más de %{alumni} alumnos de todo el mundo! De este modo, nuestra formación ha estado en constante evolución en búsqueda de la excelencia.
+        Creemos que construir un gran curriculum lleva tiempo y hemos invertido casi 3 años en perfeccionarlo.
+        Un programa ampliamente experimentado y ajustado a las necesidades de perfiles no técnicos es lo que nos hacen únicos. <strong>Aprenderás en 2 meses lo que probablemente te llevaría 2 años.</strong>
+        </p>
+        <ul>
+          <li>El set-up de desarrollo ideal</li>
+          <li>Arquitectura de Software y base de datos</li>
+          <li>Colaboración con Github</li>
+          <li>Workflow técnico implementado en las startups de éxito</li>
+          <li>Herramientas como Heroku, Stripe, Mandrill, Algolia para hacer el deploy de tu app e integrar recursos avanzados (plataforma de pagos, geolocalización, mailing, búsqueda, etc...)</li>
+        </ul>
+      community: Una comunidad internacional apasionante
+      community_details_html: |
+        Más de %{alumni} alumnos de diferentes nacionalidades y distintos backgrounds (ingenieros, periodistas, arquitectos, expertos de marketing, diseñadores...)
+        <strong style="color:white;">conectados en Slack</strong>, compartiendo dudas con nuestro profesorado, ofreciendo ayuda, recursos, oportunidades de empleo e información relevante sobre el universo startup.
+        <strong>Una de las más potentes redes de perfiles tech del mundo.</strong>
+        Todos los alumnos de Le Wagon comparten la misma formación técnica e implementan las mejores prácticas de la industria.
+        Esta unión entre <strong style="color:white;">diversidade y expertise técnico</strong> hace única nuestra comunidad.
+      cv: Tu portfolio de desarrollo
+      cv_details_html: |
+        En tan sólo 2 meses desarrollarás web apps por completo, incluso
+        un <strong>clon de Airbnb</strong> y <strong>tu proyecto final de curso</strong>. Estos son los primeros
+        pasos para construir un solido portfolio en Github.
+      ruby_html: |
+        Te explicaremos como trabajar con la linea de comandos y Git.
+        Aprenderás los aspectos básicos de la programación con Ruby
+        como variables, métodos, bucles y condicionales.
+        Descubre como interactuar con APIs y como utilizar datos
+        de otras webs a través del web scraping.
+      software_html: |
+        De la misma manera que un arquitecto respeta unos estándares y protocolos para construir una casa,
+        apps como una red social, un marketplace, un sistema de alquiler de coches o
+        de reserva de restaurantes necesitan una estructura adecuada para organizar su código
+        de manera óptima. Te introduciremos a conceptos avanzados de la programación orientada a objetos (OOP)
+        y crearás software utilizando diferentes objetos para estructurar tu app.
+        Durante esta semana, desarrollarás tus primeras apps
+        utilizando la arquitectura de software 'MVC' (Model, View, Controller).
+      database_html: |
+        Programas informáticos necesitan almacenar la información de alguna manera.
+        Sin las bases de datos, Facebook perdería tus datos cada vez que
+        haces log out. Te enseñaremos como diseñar una base de datos por medio de
+        tablas y relaciones entre ellas. Aprenderás SQL,
+        el lenguaje utilizado para leer, escribir y realizar consultas a la
+        base de datos.
+      frontend_html: |
+        Aprenderás todo sobre HTML, CSS y las mejores prácticas en diseño web.
+        Te enseñaremos como trabajar con Bootstrap, un potente y muy útil framework enfocado
+        a aplicaciones móviles. A continuación trabajaremos con Javascript
+        y jQuery: como manipular el DOM (document object model),
+        definir eventos e implementar AJAX.
+        En este módulo trabajarás con muchas APIs interesantes (Trello, Slack, Facebook , etc...)
+      rails_html: |
+        Hora de poner en práctica todas las habilidades adquiridas y sumergirse en Rails.
+        A estas alturas, los principales conceptos ya estarán claros y todo cobrará aun más sentido.
+        Durante tu formación en Ruby on Rails, desarrollarás un clon de Airbnb desde cero
+        en 5 días. Trabajarás en equipo para aprender las técnicas de colaboración en Github,
+        a través de pull requests. También utilizarás Heroku para publicar tus apps utilizando el
+        mismo workflow adoptado por las startups.
+      projects_html: |
+        Durante las 2 semanas finales del curso trabajarás en equipo para definir, programar y publicar tu proyecto web con un objetivo claro:
+        ¡Lanzar y presentar al mundo una app genial!
+      awesome_entrepreneur: Entrepreneur d'exception
+      one_week: 1 week
+      two_weeks: 2 weeks
+      first_module: "1 - Ruby y programación web básica"
+      second_module: "2 - Ingeniería de Software"
+      third_module: "3 - Bases de datos y SQL"
+      fourth_module: "4 - Front-end y diseño web"
+      fifth_module: "5 - Rails"
+      sixth_module: "6 - Proyecto final"
+      awesome_entrepreneur_details: |
+        Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
+      amazing_employee: Salarié polyvalent
+      amazing_employee_details: |
+        Réinventer sa façon de travailler, créer ses propres outils web, automatiser des taches, se servir des APIs, utiliser la puissance de Github pour travailler à plusieurs.
+        Etre moderne et créatif dans son travail.
+      junior_dev: Développeur Junior
+      junior_dev_details: |
+        Trouver un poste dans une entreprise du numérique avec ces nouvelles compétences-clef (en développement, product management, marketing, growth hacking..).
+      week_by_week: Semaine par semaine
+      typical_day: Un día típico en Le Wagon
+      theoretical_intro: "Cógete un cafe y acompaña atentamente la clase y los live-codes presentados por el lead coach sobre los conceptos a trabajar durante el día."
+      pair_programming: "Trabaja en los cuatro retos propuestos con tu compañer@ del día en nuestra plataforma inteligente con el soporte de los mentores y teaching assistants."
+      yoga: "Pausa para la Yoga :)"
+      live_code: "Live-code: Sesión participativa donde programaremos en la pantalla algunos de los retos del día y debatiremos los diferentes planteamientos."
+      talk: |
+        Masterclasses con emprendedores de la comunidad local o workshops (UX, product management, diseño, etc...)
+    stack:
+      built_by: 'Website creado por...'
+      with_tools: 'Con estas increíbles herramientas...'
+    thanks:
+      thanks: ¡Gracias!
+      we_will_contact_html: |
+        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">prep-work de  Ruby</a> en CodeCademy.
+      take_advance: Checklist
+      first_step: "1. Enviar tu candidatura a Le Wagon %{name}"
+      second_step: "Suscríbete a nuestro Meetup en %{name}"
+      third_step: "Síguenos en Twitter"
+      fourth_step: "Finalizar el Ruby track en Codecademy"
+    press:
+      title: Están hablando de Le Wagon
+    employers:
+      title: Le Wagon Hiring Network | Encuentra talento en la red alumni del mejor coding bootcamp de Europa
+      description: Integra nuestra red como hiring partner y accede a una comunidad de más de 1200 profesionales cualificados.
+      hiring_tagline_html: Forma parte de nuestra red <br>y trabaja con nuestro alumni.
+      hiring_sub_tagline_html:  ¡Encuentra <strong>talento</strong>! Conéctate a nuestra red de alumni, colabora en nuestros workshops, promociona tus eventos y <br>oportunidades de empleo directamente en nuestro job board.
+      apply: Trabaja con el alumni de Le Wagon
+      they: Estas empresas contratan a nuestros alumnos
+      job_board: Accede a nuestro job board
+      job_board_details_html: |
+        <p>
+         Accede a nuestro job board y <strong>consigue visibilidad para tus ofertas de trabajo en nuestra red internacional de alumni.</strong>
+        </p>
+        <p>
+         Más de 1200 profesionales cualificados y activos en nuestro canal de Slack por todo el mundo podrán acceder a tus oportunidades de trabajo.
+        </p>
+      join_our_network: Forma parte de nuestra red
+      watch: Mira el video de nuestra última job fair en Paris
+      why: ¿Por qué ser un hiring partner?
+      reasons: La red de empresas asociadas a Le Wagon permite la contratacción directa de miembros de nuestro alumni. Promocionaremos tus ofertas de trabajo, organizaremos job fairs y otros eventos en colaboración para dar visibilidad a tu empresa, cultura corporativa y visión.
+      exceptional: Una red de alumni única
+      exceptional_details: |
+        Los miembros de nuestro alumni han dedicado 2 meses de sus vidas al aprendizaje técnico intensivo:
+        Más de 360 horas de estudios y actividades prácticas a través de un programa de máxima exigencia.
+        Dificilmente encontrarás perfiles con tal nivel de compromiso y ganas de mejorar.
+      unique: Perfiles altamente cualificados
+      unique_details: |
+        La mayoría de nuestros alumnos vienen de las mejores escuelas de negocio, ingeniería y gestión
+        a nivel mundial. Poseen excelente metodología de trabajo, pensamiento crítico y mentalidad emprendedora.
+        También componen nuestro alumni diseñadores, periodistas, fotógrafos y creativos de las
+        más distintas disciplinas y habilidades.
+      operational: Operativos desde el primer dia
+      operational_details: |
+        Nuestros alumnos han creado y lanzado aplicaciones web en Ruby on Rails. Conocen las
+        mejores prácticas para trabajar en una startup tecnológica. Son capaces de integrarse
+        como desarrolladores junior, project managers, product owners, growth marketers, etc.
+        y añadir valor desde el primer momento. Además, reunen habilidades únicas para connectar
+        las necesidades de negocio con los retos tecnológicos.
+      wanna_join: ¿Quieres formar parte de nuestra red?
+      signup: Ponte en contacto con nosotros y conviértete en una empresa asociada.
+    enterprise:
+      title: Workshops en programación para empresas | Le Wagon Formación Coporativa
+      description: Le Wagon ofrece una serie de workshops técnicos y sobre buenas prácticas de startups para ayudarte a revolucionar la manera de trabajar en tu organización.
+      tagline_html: Cierra la brecha entre tecnología y negocios con nuestra oferta formativa. 
+      tagline_details_html: |
+        Llevamos habilidades técnicas y las mejores prácticas de las startups
+        <br>para dentro de tu organización.
+        <br><strong>Democratiza el conocimiento técnico, gana eficiencia.</strong>
+      apply: Contáctanos ahora
+      apply_to: Aprende %{skill}
+      skills_header: Workshops y sprints de trabajo diseñados para tu empresa
+      skills_text_html: Por medio de charlas, workshops de un día o sprints de una semana, te enseñamos <strong>UI/UX Design, Product Management y Web Development</strong>.
+      pm: Aprende Product Management
+      pm_details: User stories, collaborative workflow. Learn the good way to work on a project within a team.
+      ui: Aprende UI / UX
+      ui_details: Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.
+      web_design: Aprende Web Design
+      web_design_details: Build your own icons, keep control of your website without always depending on contractors.
+      data_science: Aprende Data Science
+      data_science_details: Collect data, analyze it, make it speak through visualisation.
+      fullstack:  Aprende Web Development
+      fullstack_details: From the database to the web browser, learn how a web application is built.
+      prototyping: Aprende Lean Prototyping
+      prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
+      best: ¿Por qué nosotros?
+      best_details_html: |
+        <p>
+         We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
+        </p>
+        <p>
+         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
+        </p>
+      hec_html: Since 2017, Le Wagon is the official partner of HEC (highest ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.
+      watch: Our last corporate workshop "One Day of Code"
+      google_quote: Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.
+      eki_quote:  The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
+      drivy_quote: Their curriculum is very well crafted, the teachers are passionate.
+      stripe_quote: Solid workshops teaching both essential technical skills and a strong product mindset.
+      algolia_quote: If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.
+      uber_quote: Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.
+      with_us: They work with us.
+    live:
+      page_title_with_current_event: "En directo - %{event_name}"
+      page_title_no_live: "En directo - Próximamente"
+      page_description_no_live: "No tenemos a ningun evento en directo en este momento."
+      live_company_link: "Más info"
+      live_go_to_meetup: "Ver todos nuestros eventos en Meetup"
+    live_player_video:
+      live_coming_soon: "Próximamente..."
+    shop:
+      title: "La tienda de Le Wagon"
+      description: "Coders got style"
+  demoday:
+    show:
+      page_title: "Videos Promoción #%{batch_slug} - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - Promoción #%{batch_slug}"
+      demoday_title: "Ver nuestras Demodays"
+      demoday_tagline: "Estamos orgullosos de lo que nuestros alumnos han creado en los 10 días finales"
+      choose_batch: "Elegir promoción"
+      batch_french: "En Francés"
+      batch_english: "En Inglés"
+      batch_brazilian: "En Portugués"
+    batch_demoday:
+      player:
+        no_video: Video todavía no disponible
+        batch_intro_html: |
+          %{count} alumnos han atendido al bootcamp en %{city_name} del %{batch_start_date} al %{batch_end_date}. Conoce los proyectos que han desarrollado con Ruby on Rails en las 2 semanas finales!
+        product: "Proyectos"
+        project_link: "Ver proyecto"
+        techno: "Creado con"
+        cta: "¡Solicita ahora!"
+      batch_title: " changemakers de la Promoción #%{batch_slug} "
+  students:
+    index:
+      meta_title: "Opiniones sobre Le Wagon y casos de éxito bootcamp de programación | Le Wagon Alumni"
+      meta_description_html: |
+        Opiniones sobre Le Wagon y el bootcamp de programación. Comprueba los que piensan los alumnos y descubre los casos de éxito.
+      title: Proyectos Bootcamp de Programación - Startups y web apps hechas en Le Wagon
+      description: |
+        Descubre los proyectos desarrollados durante el bootcamp de programación de Le Wagon.
+      our_alumni: "Alumni Le Wagon"
+      our_alumni_details_html: |
+        <strong>Más de %{count} alumnos compartiendo la <strong>misma pasión y habilidades</strong>.
+      apply_for_nine_weeks_html: ¡Solicita <span class='hidden-xs'>ahora!</span>
+      our_students_projects: Proyectos de alumnos
+      only_ten_days: "...en los 10 días finales"
+      discover_us: Descubre nuestro bootcamp
+      discover_our_stories: Explora los casos de éxito
+      watch_demo_day_title_html: "Ver nuestra última Demoday en <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Promoción #%{slug}</u></a></small>"
+      show_more_stories: Mostrar más
+  cities:
+    show:
+      title: "Bootcamp de programación en %{city} - Le Wagon"
+      description: |
+        Aprende a programar en 9 semanas con nuestro coding bootcamp. Conviértete en desarrollador web en la mejor academia de programación de Europa en %{city}.
+      catchline_html: "Cambia tu vida: <strong>aprende a programar</strong> con <strong>Le Wagon</strong>"
+      call: 'Llamar a %{name}:'
+      email: 'Email %{name}'
+      city_arrival_html: "Bootcamp de programación en <strong>%{city}</strong>"
+      apply_for_nine_weeks_html: "Suscríbete<span class='hidden-xs'> ahora</span>"
+      staff: "Profesores en %{city}"
+      discover_us: "Descubre nuestro bootcamp"
+      apprentices: "Súmate a %{count} aprendices"
+      next_meetup_html: "Próximo Meetup: <i class='hidden-xs'>%{name}</i>"
+      only_in: "Info sobre %{city}"
+      course_locale_html: "En %{city}, las clases son en <strong>%{language}</strong>."
+      next_batch_html: "Inicio de la próxima promoción: <strong>%{starts_at}</strong>."
+  applies:
+    new:
+      title: Solicitud Coding Bootcamp de 9 semanas | Le Wagon %{city}
+      description: Coding bootcamp de 9 semanas en desarrollo web con Ruby on Rails, HTML/CSS, SQL y Javascript.
+      apply: Solicitud
+      first_name: "First name"
+      last_name: "Last name"
+      age: "Age"
+      phone: "Phone"
+      source: "Referrer"
+      source_placeholder: "Who recommended Le Wagon to you? Quora, Facebook, a friend (who?), etc."
+      motivation: "Motivation"
+      motivation_placeholder: "Why do you want to learn to code? What is your professional goal?"
+      linkedin_html: Linkedin profile (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      linkedin_placeholder: "ex: https://www.linkedin.com/in/alan"
+      codecademy_username_html: |
+        Codecademy username (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "ex: alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
+          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> on CodeCademy.
+          If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
+        </p>
+        <p>
+          To track your progress, we need you to fill in this form your <strong>CodeCademy username</strong>. You
+          will find it on your <a href="https://www.codecademy.com/account" target="_blank">Account</a> page.
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
+        </p>
+      codecademy_modal_close_button: "I found my username"
+      apply_btn: "Enviar solicitud para "
+      please_wait: "Por favor espere..."
+      pre_course_language: 'Clases en '
+      language_fr: 'Francés'
+      language_en: 'Inglés'
+      language_pt-BR: 'Portugués'
+      language_zh-CN: 'Chino'
+      price: 'Precio'
+      source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
+  stories:
+    index:
+      title: Explora los casos de éxito
+    show:
+      other_testimonials: Otros testimoniales
+      continue: Desea continuar?
+      read_more: Leer más testimoniales de alumnos
+      title: "%{story}"
+      description: "%{story}"
+  projects:
+    index:
+      meta_title_html: |
+        Explora más de %{count} proyectos
+      meta_description:
+        creados por nuestros alumnos en 2 semanas
+      projects_details_html: |
+        <strong>Browse among %{count}+ projects</strong><small>built by our alumni in 2 weeks</small>
+      show_more_projects: Más proyectos
+    more_projects:
+      project_cta: Ver app
+  posts:
+    index:
+      title: Le Wagon - Coding Bootcamp Blog

@@ -6,9 +6,10 @@
     <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= image_path('officials/students-10.jpg')%>');">
       <div class="banner-gradient-shadow home"></div>
       <div class="banner-content">
-        <h1 class='glitch'>
+        <h1>Le Wagon - Coding Bootcamp</h1>
+        <h2>
           <%= t(".catchline_html") %>
-        </h1>
+        </h2>
         <p>
           <%= t(".vision_html") %>
           <!-- <span>
@@ -30,7 +31,6 @@
 <%= render "shared/features", wrapper_up: true %>
 
 <%= render partial: "shared/testimonials" %>
-
 
 <% cache [ 'stories', locale ] do %>
   <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
@@ -66,7 +66,6 @@
       <% projects.each do |project| %>
        <% project = OpenStruct.new project %>
         <div class="project-item-container">
-          <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
           <div class="project-item">
             <div class='project-item-head'>
               <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
@@ -93,6 +92,8 @@
                 <% end %>
               </div>
             </div>
+            <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
+
           </div>
         </div>
       <% end %>
@@ -120,8 +121,8 @@
     <div class="card-cities">
       <% @cities.each do |city| %>
         <div class="card-city-container">
-          <%= link_to city_path(city: city["slug"]) do %>
             <div class="card-city">
+              <%= link_to "", city_path(city: city["slug"]), class: "card-city-link" %>
               <div class="card-city-header" style="background-image: url('<%= cl_image_path city['city_background_picture_path'] || "", height: 200, crop: :fill %>')">
               <span class="card-city-filter"></span>
               </div>
@@ -130,15 +131,12 @@
                 <div class="project-item-makers card-city-teachers">
                   <% @client.staff(city['slug'])["teachers"].take(3).each do |teacher| %>
                     <div class="project-item-maker">
-                      <a href=<%= "http://alumni.lewagon.org/#{teacher['github_nickname']}" %> target='_blank'>
-                        <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
-                      </a>
+                      <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
                     </div>
                   <% end %>
                 </div>
               </div>
             </div>
-          <% end %>
         </div>
       <% end %>
     </div>

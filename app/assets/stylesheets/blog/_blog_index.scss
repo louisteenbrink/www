@@ -60,19 +60,22 @@
 
   .blog-header {
     display: flex;
+    flex-direction: column;
     padding-top: 3em;
 
     .header-main {
       position: relative;
-      padding-right: 10px;
+      margin: 0 auto;
       width: 66.66666%;
 
       .video-main-wrapper {
         background: black;
+        min-height: 460px;
 
         .video-main-container {
           padding: 0;
           height: 100%;
+          min-height: 460px;
 
           #play-button {
             position: relative;
@@ -112,18 +115,23 @@
     }
 
     .header-aside {
+      display: flex;
       position: relative;
-      margin-left: 10px;
-      width: 33.33333%;
+      width: 66.66666%;
+      margin: 30px auto 0;
 
       a {
+        width: 49%;
         text-decoration: none;
         color: inherit;
       }
 
+      a:nth-of-type(1) {
+        margin-right: 1%;
+      }
+
       a:nth-of-type(2) {
-        display: block;
-        margin: 20px 0;
+       margin-left: 1%;
       }
 
       .header-aside-item {

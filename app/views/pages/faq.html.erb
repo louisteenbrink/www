@@ -1,25 +1,5 @@
 <%= content_for(:title) { "Le Wagon - FAQ" } %>
 
-<style>
-  .flag-container {
-    display: none; /* Hide from Navbar */
-  }
-</style>
-
-<nav class="text-center faq-nav">
-  <%= link_to faq_path(locale: :fr), class: (locale == :fr ? 'active' : nil) do %>
-    <%= render 'shared/french_flag' %>
-  <% end %>
-
-  <%= link_to faq_path(locale: :en), class: (locale == :en ? 'active' : nil) do %>
-    <%= render 'shared/english_flag' %>
-  <% end %>
-
-  <%= link_to faq_path(locale: :"pt-BR"), class: (locale == :"pt-BR" ? 'active' : nil) do %>
-    <%= render 'shared/brazilian_flag' %>
-  <% end %>
-</nav>
-
 <div class="container">
   <% Static::FAQS[locale].each do |question_item| %>
   <% question_item = structure question_item %>

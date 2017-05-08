@@ -6,6 +6,10 @@
           <%= render 'shared/french_flag' %>
         <% elsif locale == :"pt-BR" %>
           <%= render 'shared/brazilian_flag' %>
+        <% elsif locale == :"zh-CN" %>
+          <%= render 'shared/chinese_flag' %>
+        <%# elsif locale == :es %>
+          <%#= render 'shared/spanish_flag' %>
         <% else %>
           <%= render 'shared/english_flag' %>
         <% end %>
@@ -26,6 +30,18 @@
         <li>
           <%= link_to locale_current_url_for(:"pt-BR"), class: ("active" if locale == :"pt-BR") do %>
             <%= render 'shared/brazilian_flag' %> <p>Português</p>
+          <% end %>
+        </li>
+        <!--
+        <li>
+          <%= link_to locale_current_url_for(:es), class: ("active" if locale == :es) do %>
+            <%= render 'shared/spanish_flag' %> <p>Español</p>
+          <% end %>
+        </li>
+        -->
+        <li>
+          <%= link_to locale_current_url_for(:"zh-CN"), class: ("active" if locale == :"zh-CN") do %>
+            <%= render 'shared/chinese_flag' %> <p>中文</p>
           <% end %>
         </li>
       </ul>

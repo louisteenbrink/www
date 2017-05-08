@@ -24,6 +24,14 @@
     height: 35px;
   }
 
+  &:hover {
+    opacity: .9;
+
+    .project-item-maker {
+      transform: translateX(0);
+    }
+  }
+
   &-container {
     display: flex;
     flex: 0 0 33%;
@@ -43,24 +51,7 @@
     opacity: 1;
     padding: 10px;
     position: relative;
-
-    &:hover {
-      opacity: .9;
-
-      .project-item-makers {
-        background: rgba(255, 255, 255, 0.7);
-
-      }
-
-      .project-item-maker {
-        transform: translateX(0);
-      }
-    }
   }
-
-  // &:hover {
-  //   background: #f7f7fa;
-  // }
 }
 
 .project-item-url {

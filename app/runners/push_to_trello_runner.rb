@@ -81,10 +81,18 @@ Price: #{humanized_money_with_symbol price} TTC
 
 Who's doing the interview? 👉
 
-- **Background**:
-- **Plans for after**:
-- **English**:
-- **Computer**:
+**Background**
+
+**Plans for after**
+
+**How did you first hear about us?**
+
+**Did you attend a meetup? How many?**
+
+**English Level**
+
+**Computer**
+
 EOF
 
     card.save
