@@ -181,14 +181,13 @@ es:
         Descubre como interactuar con APIs y como utilizar datos
         de otras webs a través del web scraping.
       software_html: |
-        Te introduciremos a conceptos avanzados de la programación orientada a objetos (OOP). 
-        Crearás software utilizando diferentes objetos para estructurar tu app. 
         De la misma manera que un arquitecto respeta unos estándares y protocolos para construir una casa, 
         apps como una red social, un marketplace, un sistema de alquiler de coches o
-        de reserva de restaurantes necesitan una arquitectura adecuada para organizar su código
-        de manera óptima. 
-        Durante esta semana desarrollarás tus primeras apps 
-        utilizando la arquitectura de sotfware 'MVC' (Model, View, Controller).
+        de reserva de restaurantes necesitan una estructura adecuada para organizar su código
+        de manera óptima. Te introduciremos a conceptos avanzados de la programación orientada a objetos (OOP)
+        y crearás software utilizando diferentes objetos para estructurar tu app. 
+        Durante esta semana, desarrollarás tus primeras apps 
+        utilizando la arquitectura de software 'MVC' (Model, View, Controller).
       database_html: |
         Programas informáticos necesitan almacenar la información de alguna manera.
         Sin las bases de datos, Facebook perdería tus datos cada vez que
@@ -202,28 +201,27 @@ es:
         a aplicaciones móviles. A continuación trabajaremos con Javascript
         y jQuery: como manipular el DOM (document object model),
         definir eventos e implementar AJAX.
-        En este módulo, trabajarás con muchas APIs interesantes (Trello, Slack, Facebook , etc...)
+        En este módulo trabajarás con muchas APIs interesantes (Trello, Slack, Facebook , etc...)
       rails_html: |
-        Time to put all your skills together and dive into Rails.
-        No big deal here, you already know most of its
-        elementary blocks and you will feel right at home!
-        During your Rails training, you will have to code Airbnb
-        from scratch in 5 days. You will work in teams to
-        learn to collaborate on Github using pull requests and deploy
-        your apps on Heroku, using the same workflow as successful
-        startups.
+        Hora de poner en práctica todas las habilidades adquiridas y sumergirse en Rails.  
+        A estas alturas, los principales conceptos ya estarán claros y todo cobrará aun más sentido. 
+        Durante tu formación en Ruby on Rails, desarrollarás un clon de Airbnb desde cero
+        en 5 días. Trabajarás en equipo para aprender las técnicas de colaboración en Github,
+        a través de pull requests. También utilizarás Heroku para publicar tus apps utilizando el 
+        mismo workflow adoptado por las startups.
       projects_html: |
-        Project Time! Code your own project during the
-        2 last weeks and build an awesome product!
+        Durante las 2 semanas finales del curso trabajarás en equipo para definir, programar
+        y publicar tu proyecto web con un objetivo claro:
+        ¡Lanzar y presentar al mundo una app genial!  
       awesome_entrepreneur: Entrepreneur d'exception
       one_week: 1 week
       two_weeks: 2 weeks
-      first_module: "1 - Ruby and coding basics"
-      second_module: "2 - Software Engineering"
-      third_module: "3 - Database & SQL"
-      fourth_module: "4 - Front-end"
+      first_module: "1 - Ruby y programación web básica"
+      second_module: "2 - Ingeniería de Software"
+      third_module: "3 - Bases de datos y SQL"
+      fourth_module: "4 - Front-end y diseño web"
       fifth_module: "5 - Rails"
-      sixth_module: "6 - Project"
+      sixth_module: "6 - Proyecto final"
       awesome_entrepreneur_details: |
         Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
       amazing_employee: Salarié polyvalent
@@ -234,44 +232,44 @@ es:
       junior_dev_details: |
         Trouver un poste dans une entreprise du numérique avec ces nouvelles compétences-clef (en développement, product management, marketing, growth hacking..).
       week_by_week: Semaine par semaine
-      typical_day: Typical day
-      theoretical_intro: "Grab a coffee and attend the morning course given by the lead teacher with lots of live-code demos."
-      pair_programming: "Work on challenges with your buddy of the day on our auto-correcting platform with the help of our teaching staff."
-      yoga: "Yoga time with Claire, to relax and get some head space."
-      live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
+      typical_day: Un día típico en Le Wagon
+      theoretical_intro: "Cógete un cafe y acompaña atentamente la clase y los live-codes presentados por el lead coach sobre los conceptos a trabajar durante el día."
+      pair_programming: "Trabaja en los cuatro retos propuestos con tu compañer@ del día en nuestra plataforma inteligente con el soporte de los mentores y teaching assistants."
+      yoga: "Pausa para la Yoga :)"
+      live_code: "Live-code: Sesión participativa donde programaremos en la pantalla algunos de los retos del día y debatiremos los diferentes planteamientos."
       talk: |
-        Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
+        Masterclasses con emprendedores de la comunidad local o workshops (UX, product management, diseño, etc...)
     stack:
-      built_by: 'Website built by...'
-      with_tools: 'With these awesome tools...'
+      built_by: 'Website creado con...'
+      with_tools: 'Con estas increíbles herramientas...'
     thanks:
-      thanks: Thank you
+      thanks: ¡Gracias!
       we_will_contact_html: |
-        We'll contact you shortly by email to plan an interview. <br /><br />In the meantime, follow the instructions of our check-list and start the <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a> on CodeCademy.
+        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">prep-work de  Ruby</a> en CodeCademy.
       take_advance: Checklist
-      first_step: "1. Apply to Le Wagon %{name}"
-      second_step: "Subscribe to %{name} Meetup group "
-      third_step: "Follow us on Twitter"
-      fourth_step: "Resume working on the CodeCademy Ruby track"
+      first_step: "1. Enviar tu candidatura a Le Wagon %{name}"
+      second_step: "Suscríbete a nuestro Meetup en %{name}"
+      third_step: "Síguenos en Twitter"
+      fourth_step: "Finalizar el Ruby track en CodeCademy"
     press:
-      title: They speak about Le Wagon
+      title: Están hablando de Le Wagon
     employers:
-      title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
-      description: Join us as hiring partner and get alerted about our new candidates and job events.
-      hiring_tagline_html: Join our hiring network<br>and work with our alumni.
-      hiring_sub_tagline_html:  Recruitment is a <strong>long-term relationship</strong>. Connect to our alumni through regular events, <br>job board and great workshops to promote your company's culture.
-      apply: Work with Le Wagon alumni
-      they: They hire our alumni
-      job_board: Access Le Wagon's job board
+      title: Le Wagon Hiring Network | Encuentra talento en la red alumni del mejor coding bootcamp de Europa
+      description: Integra nuestra red como hiring partner y accede a una comunidad de más de 1200 profesionales cualificados. 
+      hiring_tagline_html: Forma parte de nuestra red <br>y trabaja con nuestro alumni.
+      hiring_sub_tagline_html:  ¡Encuentra <strong>talento</strong>! Conéctate a nuestra red de alumni, colabora en nuestros workshops, promociona tus eventos y <br>oportunidades de empleo directamente en nuestro job board.
+      apply: Trabaja con el alumni de Le Wagon
+      they: Estas empresas contratan a nuestros alumnos
+      job_board: Accede a nuestro job board
       job_board_details_html: |
         <p>
-         Get access to Le Wagon's job board to <strong>publish your offers and share them with our alumni worldwide.</strong>
+         Accede a nuestro job board y <strong>consigue visibilidad para tus ofertas de trabajo en nuestra red internacional de alumni.</strong>
         </p>
         <p>
-         1200+ alumni worldwide are active on our Slack every month and will see you offer. We select our hiring partners very carefully to <strong>garantee only great companies and offers on our job board.</strong>
+         Más de 1200 profesionales cualificados y activos en nuestro canal de Slack por todo el mundo podrán acceder a tus oportunidades de trabajo. 
         </p>
-      join_our_network: Join our Network
-      watch: Watch our last job fair in Paris
+      join_our_network: Forma parte de nuestra red
+      watch: Mira el video de nuestra última job fair en Paris
       why: What's a hiring partner?
       reasons: Le Wagon's network allows fast-growing companies to hire directly from our alumni. We'll invite you to job fairs, push your offers on our job board and organise events together to promote your organisation's culture and vision.
       exceptional: Exceptional alumni
