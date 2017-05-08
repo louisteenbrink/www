@@ -423,3 +423,71 @@ zh-CN:
         课程收费是多少？什么时候开始？
     answer: |
         答案因城市而异！请在[申请]（/申请）页面浏览不同选项.
+        
+es:
+  - question: |
+        What's the application process to Le Wagon?
+    answer: |
+        Once you’ve submitted the application form on our website, you will
+        receive a mail with few additional questions about your expectations and technical skills.
+        From this point, we will schedule an interview (Skype or on-site) after which
+        we will tell you very quickly if you get on board. We also recommend you start working on the
+        [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy
+        as soon as possible (even before the interview). We'll ask you to finish this track.
+  - question: |
+        I’m really a beginner, is it the right program for me?
+    answer: |
+        We expect 3 things from our students: be **motivated** (very motivated), be **curious**, be **social**.
+  - question: |
+        How long does preparatory work take?
+    answer: |
+        You must complete the [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy. It should
+        take you about 10 hours to complete.
+  - question: |
+        What language are the classes taught in?
+    answer:
+      - | 
+          In Barcelona and most of the other cities, it's **all in English**! You can check the language of the next batch on the "Apply" page.
+      - | 
+          In France the program is taught in **French**. 
+  - question: |
+        What will I be able to build at the end of 9 weeks?
+    answer: |
+        You’ll have a Ruby on Rails junior developer level. This means you’ll be able to
+        quickly prototype your ideas by creating a web application on your own.
+        For instance, you will know how to include authentification to your site
+        (simple signin/signup, or Facebook/Twitter connect), add an admin back-office,
+        include payment features, automate emails sending, and much more.
+        You’ll also know how to quickly deploy in production and you will have
+        learnt the programming best practices used by top-level startups. You’ll then
+        be facing a choice: continue your entrepreneurial project or become a junior
+        developer in a startup or a bigger tech company.
+  - question: |
+        Why Ruby on Rails?
+    answer: |
+        Great question! Our CTO [answered this one on Medium](https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6#.azt84ab7d).
+  - question: |
+        Will I learn to create mobile apps?
+    answer: |
+        Yes and no. Let’s be clear, you’ll not learn iOS, Android or Windows Phone development.
+        We really think these skills cannot be taught (honestly) in 9 weeks.
+        We prefer teaching you the basics of programming and web development for many reasons.
+        First, these are the core skills of a software engineer, even if you want to dive into mobile development later on.
+        Second, the web is THE open platform you need to understand.
+        Thanks to Responsive Web Design (which is part of the program), you’ll be able to create apps that will display nicely on mobile devices.
+        You’ll also learn to create APIs that will be used by your mobile apps.
+        It will then be very easy for any mobile developer to code your iOS or Android interface starting from the API you’ve built.
+  - question: |
+        When do classes take place?
+    answer: |
+        Monday to Friday, 9am to 7pm, which makes 360 hours during 9 weeks.
+  - question: |
+        Should I bring my laptop?
+    answer: |
+        Yes, each student must have a laptop. You’ll need Mac OS X or Linux, but if you only have Windows,
+        no worries you’ll learn how to install Linux the first day.
+  - question: |
+        How much does it cost? When does it start?
+    answer: |
+        It all depends on the city! Please review your options on the [Apply](/apply) page.
+
