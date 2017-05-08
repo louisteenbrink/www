@@ -25,6 +25,15 @@ pt-BR:
   chengdu:
     course_language: "Inglès / Chinês"
 
+es:
+  montreal:
+    post_price: "+ taxes"
+    course_language: "Inglés / Francés"
+  shanghai:
+    course_language: "Inglés / Chino"
+  chengdu:
+    course_language: "Inglés / Chino"
+
 zh-CN:
   montreal:
     post_price: "+ 税收"
