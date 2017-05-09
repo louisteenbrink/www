@@ -3,7 +3,8 @@ class ApplyFormRow extends React.Component {
     super(props)
     this.state = {
       isFocused: false,
-      error: props.error
+      error: props.error,
+      charCounter: 0
     }
   }
 
@@ -35,6 +36,12 @@ class ApplyFormRow extends React.Component {
       errorDiv = <div className="error">{this.state.error}</div>;
     }
 
+    var charCounterDiv = null;
+    if (this.props.param === "motivation" && this.state.charCounter <= this.props.minMotivLength) {
+      var deltaChars = this.props.minMotivLength - this.state.charCounter
+      charCounterDiv = <div className="">still {deltaChars} characters to type</div>
+    }
+
     if (_.includes(['text', 'phone', 'tel', 'email'], this.props.type)) {
       return(
         <div className={componentClasses}>
@@ -58,11 +65,13 @@ class ApplyFormRow extends React.Component {
         <div className={componentClasses}>
           <label htmlFor={this.name()}>
             <i className={this.props.icon}></i><span dangerouslySetInnerHTML={{__html: this.props.label}}></span>
+            {charCounterDiv}
           </label>
           <textarea
             ref="input"
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
+            onChange={this.handleChange.bind(this)}
             placeholder={this.props.placeholder}
             id={this.props.param}
             defaultValue={this.props.value}
@@ -74,6 +83,10 @@ class ApplyFormRow extends React.Component {
     } else {
       throw `Not implemented type: ${this.props.type}`;
     }
+  }
+
+  handleChange() {
+    this.setState({ charCounter: this.value().length });
   }
 
   handleFocus() {

@@ -238,6 +238,7 @@ GEM
     rails-assets-devicons (1.8.0)
     rails-assets-headroom.js (0.7.0)
     rails-assets-mdi (1.7.22)
+    rails-assets-pluralize (4.0.0)
     rails-assets-pubsub-js (1.5.4)
     rails-dom-testing (2.0.2)
       activesupport (>= 4.2.0, < 6.0)
@@ -407,6 +408,7 @@ DEPENDENCIES
   rails-assets-devicons!
   rails-assets-headroom.js!
   rails-assets-mdi!
+  rails-assets-pluralize!
   rails-assets-pubsub-js!
   rails-i18n
   react-bootstrap-rails
