@@ -38,10 +38,15 @@ class ApplyFormRow extends React.Component {
     }
 
     var charCounterDiv = null;
-    if (this.props.param === "motivation" && this.state.charCounter <= this.props.minMotivLength) {
-      var deltaChars = this.props.minMotivLength - this.state.charCounter
-      var pluralizedCharacter = pluralize('character', deltaChars);
-      charCounterDiv = <div className="input-tip">still {deltaChars} {pluralizedCharacter} to type</div>
+    if (this.props.minMotivLength != null && this.state.charCounter < this.props.minMotivLength) {
+      var deltaChars = this.props.minMotivLength - this.state.charCounter;
+      var motivationTip = null;
+      if (deltaChars == 1) {
+        motivationTip = this.props.singular_motivation_tip;
+      } else if (deltaChars > 1) {
+        motivationTip = this.props.plural_motivation_tip.replace(/(\d+)/, deltaChars);
+      }
+      charCounterDiv = <div className="input-tip">{motivationTip}</div>
     }
 
     if (_.includes(['text', 'phone', 'tel', 'email'], this.props.type)) {

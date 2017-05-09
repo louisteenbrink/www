@@ -449,6 +449,10 @@ en:
       language_en: 'English'
       language_pt-BR: 'Brazilian Portuguese'
       language_zh-CN: 'Chinese'
+      motivation_tip:
+        zero: ''
+        one: 'still 1 character to type'
+        other: 'still %{count} characters to type'
       price: 'Price'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:

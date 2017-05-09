@@ -10,7 +10,7 @@ module ApplyHelper
       value: @application.send(param),
       icon: icon.starts_with?("fa") ? "fa #{icon}" : "mdi mdi-#{icon}"
     }
-    row = row.merge(options)
+    row.merge(options)
   end
 
   def apply_rows
@@ -23,7 +23,7 @@ module ApplyHelper
       apply_row(:source, true, :text, t("applies.new.source"), t("applies.new.source_placeholder"), "tag"),
       apply_row(:linkedin, false, :text, t("applies.new.linkedin_html"), t("applies.new.linkedin_placeholder"), "fa-linkedin"),
       apply_row(:codecademy_username, false, :text, t("applies.new.codecademy_username_html"), t("applies.new.codecademy_username_placeholder"), "fa-code"),
-      apply_row(:motivation, true, :textarea, t("applies.new.motivation"), t("applies.new.motivation_placeholder"), "content-paste", { minMotivLength: Apply::MININUM_MOTIVATION_LENGTH })
+      apply_row(:motivation, true, :textarea, t("applies.new.motivation"), t("applies.new.motivation_placeholder"), "content-paste", { minMotivLength: Apply::MININUM_MOTIVATION_LENGTH, singular_motivation_tip: t('applies.new.motivation_tip', count: 1), plural_motivation_tip: t('applies.new.motivation_tip', count: 140), })
     ]
   end
 end

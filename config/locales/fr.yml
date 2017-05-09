@@ -449,6 +449,10 @@ fr:
       language_en: 'Anglais'
       language_pt-BR: 'Portugais brésilien'
       language_zh-CN: 'Chinois'
+      motivation_tip:
+        zero: ''
+        one: '1 caractère minimum restant'
+        other: '%{count} caractères minimum restant'
       price: 'Prix'
       source_presence_message: 'Comment avez-vous entendu parlé du Wagon ? Par un ami ? Google ? Facebook ? Merci !'
   stories:
