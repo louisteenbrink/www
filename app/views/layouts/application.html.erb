@@ -2,8 +2,8 @@
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>" lang="<%= I18n.locale %>">
 <head>
 <% cache [ 'head', request: request.original_url, live: @live, locale: I18n.locale ] do %>
-  <title><%= content_for?(:title) ? yield(:title).squish : "Le Wagon" %></title>
-  <meta name="description" content="<%= (yield(:description) || "").squish %>">
+  <title><%= content_for?(:title) ? yield(:title).squish.html_safe : "Le Wagon" %></title>
+  <meta name="description" content="<%= (yield(:description) || "").squish.html_safe %>">
 
   <meta charset="utf-8" />
   <link rel="icon" href="<%= image_path 'favicon.png' %>" type="image/png" />

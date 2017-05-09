@@ -26,13 +26,17 @@
         <%= link_to locale_current_url_for(:fr), style: ("opacity: .3" unless locale == :fr) do %>
           <%= render 'shared/french_flag' %>
         <% end %>
-        <span class='separator'>/</span>
+
         <%= link_to locale_current_url_for(:en), style: ("opacity: .3" unless locale == :en) do %>
           <%= render 'shared/english_flag' %>
         <% end %>
-        <span class='separator'>/</span>
+
         <%= link_to locale_current_url_for(:"pt-BR"), style: ("opacity: .3" unless locale == :"pt-BR") do %>
           <%= render 'shared/brazilian_flag' %>
+        <% end %>
+
+        <%= link_to locale_current_url_for(:"zh-CN"), style: ("opacity: .3" unless locale == :"zh-CN") do %>
+          <%= render 'shared/chinese_flag' %>
         <% end %>
       </div>
     </li>

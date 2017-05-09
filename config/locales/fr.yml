@@ -117,7 +117,7 @@ fr:
     moreposts: Continuez la visite !
   pages:
     home:
-      title: "Le Wagon - Formation Développeur Web - Coding Bootcamp"
+      title: "Le Wagon - Formation Développeur Web - Coding Bootcamp Ruby on Rails"
       description: |
         Changez de vie, apprenez à coder. Le Wagon est la meilleure formation Développeur Web d'Europe en Ruby on Rails et Javascript.
       catchline_html: "Changez de vie : <strong>apprenez à coder</strong>"
@@ -448,6 +448,7 @@ fr:
       language_fr: 'Français'
       language_en: 'Anglais'
       language_pt-BR: 'Portugais brésilien'
+      language_zh-CN: 'Chinois'
       price: 'Prix'
       source_presence_message: 'Comment avez-vous entendu parlé du Wagon ? Par un ami ? Google ? Facebook ? Merci !'
   stories:

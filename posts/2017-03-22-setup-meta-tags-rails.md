@@ -47,10 +47,11 @@ Let's create a `meta.yml` file in `config`, with the following:
 ```yaml
 # config/meta.yml
 
+meta_product_name: "Product Name"
 meta_title: "Product name - Product tagline"
 meta_description: "Relevant description"
-meta_image: "cover.png" # should exist in `app/assets/images/`
-twitter_account: "@product_twitter_account" # required for Twitter Cards
+meta_image: "cover.png"                       # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
 ```
 
 Let's create a `default_meta.rb` file in `config/initializers` in which we load the content as a Hash in a `DEFAULT_META` Ruby constant.
@@ -146,9 +147,9 @@ Just set the relevant `content_for`s in `app/views/offers/show.html.erb`:
 
 ```erb
 <!-- app/views/offers/show.html.erb -->
-<% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["title"]}" %>
+<% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @offer.description %>
-<% content_for :meta_description, cloudinary_url(@offer.photo.path) %>
+<% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
 ```
 
 ##### **Testing**

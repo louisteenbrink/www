@@ -108,9 +108,9 @@ en:
     moreposts: Take a tour on other cool posts
   pages:
     home:
-      title: "Le Wagon - Learn to code - Bootcamp in Ruby on Rails, HTML, CSS and JavaScript"
+      title: "Coding Bootcamp Le Wagon | Learn to code with Europe's best coding school"
       description: |
-        Le Wagon is Europe's best coding school for entrepreneurs. Checkout for yourself the projects developed by our students.
+        Le Wagon is Europe's best coding school for entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp.
       catchline_html: "Change your life: <strong>learn to code</strong>"
       vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
       view_teaser: See our video
@@ -256,7 +256,7 @@ en:
       thanks: Thank you
       we_will_contact_html: |
         We'll contact you shortly by email to plan an interview. <br /><br />In the meantime, follow the instructions of our check-list and start the <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a> on CodeCademy.
-      take_advance: Check-list
+      take_advance: Checklist
       first_step: "1. Apply to Le Wagon %{name}"
       second_step: "Subscribe to %{name} Meetup group "
       third_step: "Follow us on Twitter"
@@ -394,9 +394,9 @@ en:
       show_more_stories: Show more stories
   cities:
     show:
-      title: "Coding Bootcamp in %{city} - Le Wagon - Learn to code in 9 weeks"
+      title: "Coding Bootcamp in %{city} - Le Wagon"
       description: |
-        Le Wagon is in %{city}. You want to learn programming? Take 9 weeks of your life to change it forever!
+        Learn to code in 9 weeks and become a fullstack web developer with Europe's major coding school in %{city}.
       catchline_html: "Change your life: <strong>learn to code</strong> with <strong>Le Wagon</strong>"
       call: 'Call %{name}:'
       email: 'Email %{name}'
@@ -448,6 +448,7 @@ en:
       language_fr: 'French'
       language_en: 'English'
       language_pt-BR: 'Brazilian Portuguese'
+      language_zh-CN: 'Chinese'
       price: 'Price'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:

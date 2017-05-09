@@ -16,12 +16,18 @@
   background-color: white;
 }
 
-.banner h1 {
+.banner h1, .pages-home .banner h2 {
   font-size: 45px;
   margin-bottom: 30px;
   @media (max-width: $screen-md) { font-size: 38px }
   @media (max-width: $screen-sm) { font-size: 35px }
 }
+.pages-home h1 {
+  font-weight: normal !important;
+  font-size: 24px !important;
+  margin-bottom: 45px !important;
+}
+
 .banner p {
   font-size: 23px;
   margin: 0;
@@ -59,7 +65,7 @@
 // Specific background classes (gradient / flat color bg / etc..)
 
 .banner-gradient {
-  h1 {
+  h1, h2 {
     strong { animation: boxShadow 0.3s 1s cubic-bezier(0, 0, 0, 1.25) forwards }
     font-weight: 900;
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.1);
