@@ -1,3 +1,4 @@
+//= require pluralize
 class ApplyFormRow extends React.Component {
   constructor(props) {
     super(props)
@@ -39,7 +40,8 @@ class ApplyFormRow extends React.Component {
     var charCounterDiv = null;
     if (this.props.param === "motivation" && this.state.charCounter <= this.props.minMotivLength) {
       var deltaChars = this.props.minMotivLength - this.state.charCounter
-      charCounterDiv = <div className="">still {deltaChars} characters to type</div>
+      var pluralizedCharacter = pluralize('character', deltaChars);
+      charCounterDiv = <div className="input-tip">still {deltaChars} {pluralizedCharacter} to type</div>
     }
 
     if (_.includes(['text', 'phone', 'tel', 'email'], this.props.type)) {
