@@ -70,15 +70,6 @@ ActiveRecord::Schema.define(version: 20170505124852) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "testimonials", force: :cascade do |t|
-    t.string   "source"
-    t.string   "source_id"
-    t.string   "github_nickname"
-    t.text     "content"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
-  end
-
   create_table "users", force: :cascade do |t|
     t.integer  "sign_in_count",      default: 0, null: false
     t.datetime "current_sign_in_at"
