@@ -4,12 +4,16 @@ fr:
     course_language: "français ou anglais"
   shanghai:
     course_language: "anglais ou chinois"
+  chengdu:
+    course_language: "anglais ou chinois"
 
 en:
   montreal:
     post_price: "+ taxes"
     course_language: "English or French"
   shanghai:
+    course_language: "English or Chinese"
+  chengdu:
     course_language: "English or Chinese"
 
 pt-BR:
@@ -18,3 +22,23 @@ pt-BR:
     course_language: "Inglês / Francês"
   shanghai:
     course_language: "Inglès / Chinês"
+  chengdu:
+    course_language: "Inglès / Chinês"
+
+es:
+  montreal:
+    post_price: "+ taxes"
+    course_language: "Inglés / Francés"
+  shanghai:
+    course_language: "Inglés / Chino"
+  chengdu:
+    course_language: "Inglés / Chino"
+
+zh-CN:
+  montreal:
+    post_price: "+ 税收"
+    course_language: "英语 / 法语"
+  shanghai:
+    course_language: "英语 / 中文"
+  chengdu:
+    course_language: "英语 / 中文"

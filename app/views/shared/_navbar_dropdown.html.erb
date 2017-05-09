@@ -10,7 +10,10 @@
       <%= link_to "Alumni", alumni_path, locale: locale %>
     </li>
     <li class="main">
-      <%= link_to t("shared.navbar.employers"), employers_path %>
+      <%= link_to t("shared.navbar.mobile_employers", default: "Recruitment"), employers_path %>
+    </li>
+    <li class="main">
+      <%= link_to t("shared.navbar.mobile_enterprise", default: "Corporate"), enterprise_path %>
     </li>
     <li class="main">
       <%= link_to 'FAQ', faq_path %>
@@ -19,7 +22,23 @@
       <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale.to_s.underscore}_path") %>
     </li>
     <li class="main hidden-md hidden-lg">
-      <%= render 'shared/language_selector' %>
+      <div class="flags-smartphone">
+        <%= link_to locale_current_url_for(:fr), style: ("opacity: .3" unless locale == :fr) do %>
+          <%= render 'shared/french_flag' %>
+        <% end %>
+
+        <%= link_to locale_current_url_for(:en), style: ("opacity: .3" unless locale == :en) do %>
+          <%= render 'shared/english_flag' %>
+        <% end %>
+
+        <%= link_to locale_current_url_for(:"pt-BR"), style: ("opacity: .3" unless locale == :"pt-BR") do %>
+          <%= render 'shared/brazilian_flag' %>
+        <% end %>
+
+        <%= link_to locale_current_url_for(:"zh-CN"), style: ("opacity: .3" unless locale == :"zh-CN") do %>
+          <%= render 'shared/chinese_flag' %>
+        <% end %>
+      </div>
     </li>
   </ul>
 </div>

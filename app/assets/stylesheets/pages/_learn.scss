@@ -1,0 +1,228 @@
+#invitation-banner {
+  height: calc(100vh - 130px);
+  overflow-x: hidden;
+  position: relative;
+  .banner-enterprise {
+    height: calc(100vh - 180px);
+  }
+  .email-error {
+    color: $red !important;
+    font-weight: bold !important;
+  }
+  .error {
+    border: 1px solid $red;
+    color: $red;
+  }
+  h1, p, span {
+    color: #363636;
+  }
+  h1 {
+    font-size: 42px;
+    font-weight: 900;
+  }
+  img {
+    align-self: flex-end;
+    box-shadow: -2px -2px 15px rgba(0, 0, 0, 0.05);
+  }
+  display: flex;
+  .banner-content {
+    padding-top: 40px;
+    p {
+      max-width: 580px;
+      padding-right: 50px;
+      font-size: 23px;
+      color: #333333;
+      font-weight: 100;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+  }
+}
+#invitationModal {
+  svg {
+    width: 150px;
+    height: 200px;
+    margin: 10px auto;
+    margin-top: 50px;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+}
+#letter {
+  transform: translate(80px, 60px);
+  transition: 1s transform ease;
+}
+#letter.opened {
+  transform: translate(80px, -70px);
+}
+.invitation {
+  display: flex;
+  align-items: center;
+}
+.form-invitation {
+  display: flex;
+  align-items: center;
+  .form-control {
+    border-radius: 3px 0px 0px 3px;
+    width: 200px;
+    height: 64px;
+  }
+  .btn {
+    border-radius: 0px 3px 3px 0px;
+    }
+}
+.discount-invitation {
+  font-size: 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  span:first-child {
+    font-weight: 900;
+    font-size: 30px;
+  }
+  span:last-child {
+    padding-left: 15px;
+    font-size: 15px;
+    opacity: 0.8;
+  }
+}
+
+
+#slideshow img{
+  position: absolute;
+  overflow-x: hidden;
+  bottom: 0px;
+  height: calc(100vh - 150px);
+  right: 0px;
+  border-radius: 5px 0 0 0;
+  box-shadow: -1px -1px 25px rgba(0,0,0,.15);
+}
+
+@media (max-width: 1500px) {
+  #slideshow img {
+    height: calc(100vh - 150px);
+    margin-right: -100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  #slideshow img {
+    height: calc(100vh - 150px);
+    margin-right: -110px;
+  }
+}
+
+@media (max-width: 1200px) {
+  #slideshow img {
+    height: calc(100vh - 150px);
+    margin-right: -300px;
+  }
+}
+@media (max-width: 1000px) {
+  #slideshow img {
+    height: calc(100vh - 150px);
+    margin-right: -550px;
+  }
+}
+@media (max-width: 900px) {
+  #slideshow img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  #invitation-banner {
+    text-align: center;
+    justify-content: space-around;
+    h1 {
+      font-size: 35px;
+    }
+  }
+  #slideshow img {
+    display: none;
+  }
+  #invitation-banner .banner-enterprise {
+    margin: 0px;
+    flex: 1;
+  }
+  #invitation-banner .banner-content {
+    padding-left: 0px;
+    padding-top: 0px;
+    flex: 1;
+  }
+  #invitation-banner .banner-content  p {
+    max-width: 350px;
+    font-size: 17px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 0px;
+  }
+  .invitation {
+    justify-content: space-around;
+  }
+  .form-invitation {
+    flex-direction: column;
+    .form-control {
+      border-radius: 3px;
+      min-width: 250px;
+      height: 64px;
+      flex: 1;
+    }
+    .btn {
+      border-radius: 3px;
+      min-width: 250px;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  #invitation-banner {
+    text-align: center;
+    justify-content: space-around;
+    h1 {
+      font-size: 60px;
+      max-width: 100%;
+    }
+  }
+  #slideshow img {
+    display: none;
+  }
+  #invitation-banner .banner-enterprise {
+    margin: 0px;
+    flex: 1;
+  }
+  #invitation-banner .banner-content {
+    padding-left: 0px;
+    padding-top: 0px;
+    flex: 1;
+  }
+  #invitation-banner .banner-content  p {
+    max-width: 600px;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-right: 0px;
+  }
+  .invitation {
+    justify-content: space-around;
+  }
+  .form-invitation {
+    flex-direction: column;
+    .form-control {
+      border-radius: 3px;
+      min-width: 350px;
+      height: 64px;
+      flex: 1;
+    }
+    .btn {
+      border-radius: 3px;
+      min-width: 350px;
+      margin-top: 10px;
+      margin-left: 0px;
+    }
+  }
+}

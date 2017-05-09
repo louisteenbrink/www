@@ -13,11 +13,11 @@ class DayType extends React.Component {
       <div>
         <div className="row">
           <div className='timeline-overlay'>
-            <div className='container story-label-container'>
+            <div className='story-label-container story-label-container-program'>
               <div className='story-label yellow'>
                 <i className="fa fa-sun-o"></i>
               </div>
-              <span>{this.props.title}</span>
+              <span style={{color: "white",paddingLeft: "10px"}}>{this.props.title}</span>
             </div>
             <div className='day-type-detail-container'>
               <div>
@@ -34,7 +34,7 @@ class DayType extends React.Component {
                   )
                 })}
               </div>
-              <div className="timeline-container container">
+              <div className="timeline-container">
                 <div className="days">
                   <div className="days-border hidden-xs"></div>
                   <div className="days-container">

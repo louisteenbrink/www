@@ -64,12 +64,12 @@ pt-BR:
         Desenvolva suas habilidades em front-end usando técnicas avançadas de CSS (flexbox, grid, animações, etc..)
         e mergulhe em Javascript aprendendo Jquery e React.js,
         a biblioteca desenvolvida pelo Facebook.
-      software_engineer_html: Vire um engenheiro de software
+      software_engineer_html: Pense como um desenvolvedor
       software_engineer_details: |
-        Torne-se mais que um desenvolvedor, um engenheiro de software.
+        Aprenda a pensar como um engenheiro de software.
         Uma pessoa que entende as questões técnicas,
         que sabe o que é um MVC, um DB scheme, um request HTTP,
-        e que pode aprender novas linguages informáticas em uma semana.
+        e capaz de aprender novas linguagens em pouco tempo.
       technical_workflow: Adote um workflow técnico
       technical_workflow_details_html: |
         Certamente existe uma maneira <strong>certa</strong> de construir produtos tech
@@ -120,7 +120,7 @@ pt-BR:
       what_they_code: O que nossos estudantes construíram durante o bootcamp
       it_works: "Engraçado, funciona!"
       freshly_coded: Codado recentemente
-      all_products: 100+ produtos construídos por nossos alunos.
+      all_products: 400+ produtos construídos por nossos alunos.
       see_all_products: Veja todos os produtos
       worldwide: Onde posso encontrar o Le Wagon?
       check_program: Mais detalhes sobre o programa
@@ -145,10 +145,10 @@ pt-BR:
       our_program: "Programa FullStack"
       program_details_html: |
         2 meses para <strong>se tornar um web developer</strong>.
-      apply_for_nine_weeks_html: Postule Agora<span class='hidden-xs'>para 9 semanas</span>
+      apply_for_nine_weeks_html: Candidate-se agora<span class='hidden-xs'>para 9 semanas</span>
       nine_weeks: 9 semanas intensivas - 360 horas de código
       to_build_your_ideas_html: Aprenda todo o stack web. Da base de dados até o browser.
-      why_us: Por que a gente?
+      why_us: Por que Le Wagon?
       why_us_details_html: |
         Nós já realizamos %{batches} batches (são mais de %{alumni} alunos!) e nosso programa evoluiu a cada vez para encontrar a perfeição.
         É a nossa longa experiência que torna o programa tão eficiente. <strong>Você vai aprender em 2 meses o que levaria 2 anos para aprender:</strong>
@@ -171,7 +171,7 @@ pt-BR:
         Em apenas 2 meses, construa vários aplicativos web, inclusive
         um <strong>clone do Airbnb</strong> e <strong>o seu projeto pessoal</strong>. Lance esses aplicativos
         e construa um super portfolio Github.
-      ruby: |
+      ruby_html: |
         Fique familiar com a linha de comando e Git.
         Aprenda os fundamentos de programação com Ruby e crie
         programas brincando com variáveis, métodos,
@@ -179,7 +179,7 @@ pt-BR:
         ler e escrever arquivos e como pode coletar
         dados interessantes fazendo scraping de websites ou usando
         uma API ( como do Twitter ou Facebook ).
-      software: |
+      software_html: |
         Descubra OOP (Programação orientada a objeto) e aprenda a
         construir softwares avançados estruturando seus programas
         em diferentes objetos. Se você quer construir uma rede
@@ -189,14 +189,14 @@ pt-BR:
         um arquiteto que quer construir uma casa tem que respeitar padrões e procedimentos.
         Durante essa semana você vai programar suas primeiras aplicações
         seguindo o padrão de design MVC.
-      database: |
+      database_html: |
         Programas precisam armazenar informação em sua base de dados.
         Sem bases de dados, o Facebook ia perder toda a informação
         cada vez que fizesse login! Aprenda a desenhar a base de dados
         definindo tabelas e conexões. Descubra então SQL,
         a linguagem usada para ler/escrever dados e fazer pesquisas na
         sua database.
-      frontend: |
+      frontend_html: |
         Melhore sua cultura UI e aprenda tudo sobre HTML,
         CSS & boas práticas em web-design (técnicas de diagramação, animações).
         Familiarize-se com Bootstrap, uma útil biblioteca para
@@ -205,7 +205,7 @@ pt-BR:
         fazer chamados AJAX com Javascript.
         Você vai brincar com várias APIs durante este
         módulo (Trello, Slack, Facebook, etc...).
-      rails: |
+      rails_html: |
         Hora de juntar todas suas habilidades e mergulhar em Rails.
         Nada demais, você agora já sabe muito sobre seus blocos
         elementares e vai se sentir em casa!
@@ -214,7 +214,7 @@ pt-BR:
         aprender a colaborar no Github usando pull requests e lançar
         seus apps no Heroku, usando o mesmo workflow de startups
         de sucesso.
-      projects: |
+      projects_html: |
         Hora do projeto! Programe o seu próprio projeto durante
         as 2 últimas semanas e construa um produto impressionante!
       awesome_entrepreneur: Super empreendedor
@@ -250,7 +250,7 @@ pt-BR:
       thanks: Obrigado
       we_will_contact_html: |
         Vamos te contatar em breve por email para agendar a entrevista. <br /><br />Enquanto isso, siga as intruções do nosso check-list e comece o <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby</a> no CodeCademy.
-      take_advance: Check-list
+      take_advance: Checklist
       first_step: "1. Candidate-se pro Le Wagon %{name}"
       second_step: "Junte-se ao %{name} grupo Meetup "
       third_step: "Siga a gente no Twitter"
@@ -285,6 +285,40 @@ pt-BR:
         técnico.
       wanna_join: Quer fazer parte do nosso network?
       signup: Assine para receber alertas sobre nossos candidatos e eventos.
+    enterprise:
+      tagline_html: Adapte-se ao trabalho <br>no mundo digital.
+      tagline_details_html: |
+        Adquiras habilidades técnincas que irão mudar sua forma de<br>contribuir com sua organização.
+        <strong>Acelere sua carreira, seja mais eficiente</strong>
+      apply: Saiba mais
+      skills_header: Novas habilidades para mudar sua forma de trabalhar.
+      skills_text: Você precisa acompanhar as mudanças em seu ambiente de trabalho. Conheça as ferramentas e workflows que fazem a cabeça das startups.
+      pm: Product Management
+      pm_details: Aprenda a definir user stories e conheça as melhores práticas de trabalho colaborativo.
+      ui: UI / UX
+      ui_details: Coisas visíveis facilitam a comunicação. Aprenda a construir wireframes e maquetes digitais para discutir suas idéias.
+      web_design: Web Design / frontend
+      web_design_details: Aprenda a botar a mão na massa, mantenha o seu website sem precisar de terceirizar cada pequena tarefa.
+      data_science: Data Science & Visualização
+      data_science_details: Colecione Dados, analise-os, faça seus dados falarem através de visualizações.
+      fullstack: Desenvolvimento FullStack
+      fullstack_details: Do banco de dados até o seu navegador, aprenda como aplicativos web são construídos.
+      prototyping: Prototipagem Lean
+      prototyping_details: APIs estão devorando o mundo. Descubra como startups prototipam produtos simplesmente conectando APIs.
+      best: Aprenda com o melhor
+      best_details_html: |
+        <p>
+         Nós treinamos mais de 1200 estudantes que vieram das melhores faculdades de admnistração, engenharia e design. Nós sabemos como <strong> conectar tecnologia e negócios</strong>. Nós ensinamos nossos estudantes a programar e a prototipar <strong>mais de 400 produtos digitais</strong>.
+        </p>
+        <p>
+         Depois de termos treinado tanta gente talentosa, sabemos <strong>que podemos levar as mesmas habilidades à sua organização</strong>.
+        </p>
+      hec_html: Le Wagon é o <strong>parceiro oficial da HEC</strong> (a melhor faculdade de admnistração da França) e <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">está ensinando os empreendedores da HEC a programarem seus próprios produtos digitais</a>.
+      google_quote: Le Wagon realmente sabe levar a cultura e as habilidades técnicas complementares para pessoas com um background em business. A visão de tecnologia deles é única.
+      eki_quote: Eles foram um parceiro chave para trazer uma cultura de produto e UX para a Ekimetrics. O impacto é imediato na maneira como trabalhamos, na nossa visão e no nosso mindset.
+      drivy_quote: O currículo deles é muito bem bolado, os professores apaixonados pelo que ensinam.
+      stripe_quote: Workshops sólidos ensinando habilidades técnicas essenciais e um forte mindset de produto.
+      algolia_quote: Se você tem um background de business, é espetacular como o Le Wagon pode desenvolver sua relação com tecnologia.
     live:
       page_title_with_current_event: "Retransmissão ao vivo - %{event_name}"
       page_title_no_live: "Retransmissão ao vivo - Em breve"
@@ -390,6 +424,7 @@ pt-BR:
       language_fr: 'Francês'
       language_en: 'Inglês'
       language_pt-BR: 'Português'
+      language_zh-CN: 'Chinês'
       price: 'Preço'
       source_presence_message: Como você ficou sabendo do Le Wagon? Facebook, Google, Quora, Course Report, um amigo (quem?). Obrigado!'
   stories:

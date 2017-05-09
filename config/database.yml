@@ -2,10 +2,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  pool: 5
-  # host: postgres
-  # username: postgres
-
 
 development:
   <<: *default
@@ -18,4 +14,5 @@ test:
 
 production:
   <<: *default
-  database: www_rails_production
+  url:  <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["DB_POOL"] || 10 %>

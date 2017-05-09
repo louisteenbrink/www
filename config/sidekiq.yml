@@ -3,3 +3,4 @@
 :verbose: <%= ENV['RAILS_ENV'] != 'production' %>
 :queues:
   - default
+  - mailers

@@ -33,6 +33,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def render_500
+    render 'pages/500', status: 500
+  end
+
   private
 
   def devise_or_pages_controller?

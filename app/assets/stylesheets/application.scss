@@ -9,13 +9,13 @@
 @import "font-awesome";
 @import 'slick';
 @import 'slick-theme';
+@import "solarized_dark";
 .slick-dots { position: relative !important; } // Bug fix
 
 @import "glitch";
 $mdi-font-path: 'mdi/fonts';
 @import "mdi";
 @import "devicons";
-@import 'awwward';
 
 // Your CSS
 @import "layout/index";

@@ -22,7 +22,7 @@
                     </li>
                     <% city_group["cities"].each do |city| %>
                       <li>
-                        <%= link_to city["name"], city_path(city: city["slug"]) %>
+                        <%= link_to city["name"], city_path(city: city["slug"]), style: "font-weight: 200; color: black" %>
                       </li>
                     <% end %>
                   </ul>
@@ -33,39 +33,58 @@
         </div>
         <hr class='hidden-xs'>
 
-      <% if I18n.locale == :fr %>
-        <div class="dropdown">
-          <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
-          <ul class="dropdown-menu dropdown-menu-right dropdown-program">
-            <li class="dropdown-header"><%= t ".menu.on_site" %></li>
-            <li class="main marged-bottom">
-              <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path") %>
-            </li>
 
-            <li class="dropdown-header online-program-header">
-              <%= t ".menu.online" %>
-            </li>
-            <% Static::ONDEMAND_TRACKS.each do |track| %>
-              <li>
-                <a href="https://ondemand.lewagon.org/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank'>
-                  <%= track[:title] %>
-                  <% if track[:new] %>
-                  <span class="new">new</span>
+        <div class="navbar-wagon-item has-no-padding">
+          <div class="dropdown">
+            <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
+            <div class="dropdown-menu dropdown-menu-right dropdown-cities">
+              <div class="dropdown-cities-container <%= 'text-center' unless I18n.locale == :fr %>">
+                  <ul class="list-unstyled">
+                    <li class="title">
+                      <%= t ".menu.on_site", default: "Onsite" %>
+                    </li>
+                    <li>
+                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red" %>
+                    </li>
+                    <% unless I18n.locale == :fr %>
+                      </ul>
+                      <ul class="list-unstyled">
+                    <% end %>
+
+                    <li class="title" style="<%= 'margin-top: 27px;' if I18n.locale == :fr %>">
+                      <%= t ".menu.online", default: "Online" %>
+                    </li>
+                    <li style="padding: 3px 0px;">
+                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise" %>
+                    </li>
+                  </ul>
+
+                  <% if I18n.locale == :fr %>
+                    <ul class="list-unstyled">
+                      <li class="title">
+                        <%= t ".menu.ondemand", default: "On-Demand" %>
+                      </li>
+                        <% Static::ONDEMAND_TRACKS.each do |track| %>
+                          <li style="padding: 3px 0px;text-align: left;">
+                            <a href="https://ondemand.lewagon.org/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank' style="font-size: 15px; font-weight: 100;">
+                              <%= track[:title] %>
+                              <% if track[:new] %>
+                              <span class="new">new</span>
+                              <% end %>
+                           </a>
+                          </li>
+                        <% end %>
+                        <li style="padding: 3px 0px;text-align: left;">
+                          <a href="https://ondemand.lewagon.org/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target="_blank" style="font-size: 15px; font-weight: 100;">
+                            <i class="fa fa-gift"></i> <em>Offrez une track</em>
+                          </a>
+                        </li>
+                    </ul>
                   <% end %>
-               </a>
-              </li>
-            <% end %>
-            <li>
-              <a href="https://ondemand.lewagon.org/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target="_blank">
-                <i class="fa fa-gift"></i> <em>Offrez une track</em>
-              </a>
-            </li>
-          </ul>
+              </div>
+            </div>
+          </div>
         </div>
-      <% else %>
-        <%= link_to t(".menu.program"), send(:"program_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link' %>
-      <% end %>
-
         <hr class="hidden-xs">
         <%= link_to "FAQ", faq_path, class: 'navbar-wagon-link' %>
         <hr class='fake-hr hidden-sm hidden-xs'>
@@ -89,7 +108,35 @@
         <hr class="hidden-xs">
         <%= link_to t(".alumni", default: "Alumni"), alumni_path, class: " hidden-xs navbar-wagon-link", data: {text: t(".alumni", default: "Alumni")} %>
         <hr class='hidden-xs'>
-        <%= link_to t(".employers"), employers_path, class: "hidden-xs navbar-wagon-link", data: {text: t(".employers")} %>
+        <div class="navbar-wagon-item has-no-padding">
+          <div class="dropdown">
+            <%= link_to t(".employers"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
+            <div class="dropdown-menu dropdown-menu-right dropdown-cities">
+              <div class="dropdown-cities-container">
+                  <ul class="list-unstyled">
+                    <li class="title text-center" style="font-weight: 100;margin-top: 10px;">
+                      <%= t(".recruitment", default: "Recruitment") %> 🌟
+                    </li>
+                    <li class="text-center">
+                      <%= link_to employers_path, class: "cta-enterprise" do %>
+                        <%= t(".work", default: "Work with our alumni") %>
+                      <% end %>
+                    </li>
+                  </ul>
+                  <ul class="list-unstyled">
+                    <li class="title text-center" style="font-weight: 100;margin-top: 10px;">
+                      <%= t(".workshops", default: "Corporate Workshop") %> 🚀
+                    </li>
+                    <li class="text-center">
+                      <%= link_to enterprise_path, class: "cta-enterprise" do %>
+                        <%= t(".train", default: "Train your company") %>
+                      <% end %>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <% unless @hide_banner_apply_button %>
           <div class="left" id="navbar-apply">

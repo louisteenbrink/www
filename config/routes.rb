@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     delete '/log_out', to: 'base#log_out'
   end
 
+  resources :prospects, only: :create
+
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|
@@ -32,6 +34,7 @@ Rails.application.routes.draw do
   get 'sp', to: redirect('pt-BR/sao-paulo')
   get 'bh', to: redirect('pt-BR/belo-horizonte')
   get 'en', to: redirect('/')
+  get 'learn', to: redirect('learn-to-code'), as: :learn_to_code
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
@@ -55,6 +58,8 @@ Rails.application.routes.draw do
     get "apply/(:city)" => "applies#new", locale: :en, as: :apply_en
     get "postuler/(:city)" => "applies#new", locale: :fr, as: :apply_fr
     get "candidatar/(:city)" => "applies#new", locale: :"pt-BR", as: :apply_pt_br
+    get "postularse/(:city)" => "applies#new", locale: :es, as: :apply_es
+    get "申请/(:city)" => "applies#new", locale: :"zh-CN", as: :apply_zh_cn
     post "apply/(:city)" => "applies#create", as: :apply
     post "apply/validate" => "applies#validate", as: :validate_apply
   end
@@ -64,12 +69,14 @@ Rails.application.routes.draw do
   get "hec", to: 'applies#new_hec', as: :new_hec_apply
   post "hec", to: 'applies#create_hec', as: :hec_apply, locale: :fr
 
-  scope "(:locale)", locale: /fr|pt-BR/ do
+  scope "(:locale)", locale: /fr|pt-BR|zh-CN|es/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "employers", to: "pages#employers", template: "employers", as: :employers
+    get "learn-to-code", to: "pages#learn", template: "learn", as: :learn
+    get "enterprise", to: "pages#enterprise", template: "enterprise", as: :enterprise
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni
     get "projects" => "projects#index", as: :projects
@@ -111,6 +118,7 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
+  get "500", to: 'application#render_500', via: :all
   match "*path", to: "application#render_404", via: :all
 end
 

@@ -1,0 +1,13 @@
+<% if @prospect.errors.details[:email].any? {|e| e[:error] == :invalid} %>
+  $('.email-error').removeClass('hidden');
+  $("input[type='email']").addClass("error");
+<% else %>
+  $(".email-error").addClass("hidden");
+  $("input[type='email']").removeClass("error");
+  $('#invitationModal').on('shown.bs.modal', function (e) {
+    $('#letter').addClass('opened')
+  });
+  $('#invitationModal').modal('show');
+<% end %>
+
+
