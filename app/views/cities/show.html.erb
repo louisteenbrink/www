@@ -4,6 +4,9 @@
   <%= content_for(:title) { t(".title", city: @city["name"]) } %>
 <% end %>
 <%= content_for(:description) { t(".description", city: @city["name"]) } %>
+<%= content_for(:headers) do %>
+  <link rel="canonical" href="<%= root_url(locale: I18n.locale) %>" />
+<% end %>
 
 <%
   asset = "social/#{@city["slug"]}_facebook_card.png"
