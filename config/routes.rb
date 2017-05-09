@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     delete '/log_out', to: 'base#log_out'
   end
 
+  resources :prospects, only: :create
+
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|
@@ -72,6 +74,7 @@ Rails.application.routes.draw do
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "employers", to: "pages#employers", template: "employers", as: :employers
+    get "learn", to: "pages#learn", template: "learn", as: :learn
     get "enterprise", to: "pages#enterprise", template: "enterprise", as: :enterprise
     get "tv", to: "pages#tv", template: "tv", as: :tv
     get "alumni" => "students#index", as: :alumni

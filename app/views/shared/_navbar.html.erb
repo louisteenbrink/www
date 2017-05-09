@@ -33,49 +33,58 @@
         </div>
         <hr class='hidden-xs'>
 
-      <% if I18n.locale == :fr %>
 
         <div class="navbar-wagon-item has-no-padding">
           <div class="dropdown">
             <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
             <div class="dropdown-menu dropdown-menu-right dropdown-cities">
-              <div class="dropdown-cities-container">
+              <div class="dropdown-cities-container <%= 'text-center' unless I18n.locale == :fr %>">
                   <ul class="list-unstyled">
                     <li class="title">
-                      <%= t ".menu.on_site" %> 🏫
+                      <%= t ".menu.on_site", default: "Onsite" %>
                     </li>
                     <li>
-                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise" %>
+                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red" %>
                     </li>
-                  </ul>
-                  <ul class="list-unstyled">
-                    <li class="title">
-                      <%= t ".menu.online" %> 📺
-                    </li>
-                    <% Static::ONDEMAND_TRACKS.each do |track| %>
-                      <li style="padding: 3px 0px;">
-                        <a href="https://ondemand.lewagon.org/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank' style="font-size: 17px; font-weight: 100;">
-                          <%= track[:title] %>
-                          <% if track[:new] %>
-                          <span class="new">new</span>
-                          <% end %>
-                       </a>
-                      </li>
+                    <% unless I18n.locale == :fr %>
+                      </ul>
+                      <ul class="list-unstyled">
                     <% end %>
-                    <li>
-                      <a href="https://ondemand.lewagon.org/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target="_blank">
-                        <i class="fa fa-gift"></i> <em>Offrez une track</em>
-                      </a>
+
+                    <li class="title" style="<%= 'margin-top: 27px;' if I18n.locale == :fr %>">
+                      <%= t ".menu.online", default: "Online" %>
+                    </li>
+                    <li style="padding: 3px 0px;">
+                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise" %>
                     </li>
                   </ul>
+
+                  <% if I18n.locale == :fr %>
+                    <ul class="list-unstyled">
+                      <li class="title">
+                        <%= t ".menu.ondemand", default: "On-Demand" %>
+                      </li>
+                        <% Static::ONDEMAND_TRACKS.each do |track| %>
+                          <li style="padding: 3px 0px;text-align: left;">
+                            <a href="https://ondemand.lewagon.org/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank' style="font-size: 15px; font-weight: 100;">
+                              <%= track[:title] %>
+                              <% if track[:new] %>
+                              <span class="new">new</span>
+                              <% end %>
+                           </a>
+                          </li>
+                        <% end %>
+                        <li style="padding: 3px 0px;text-align: left;">
+                          <a href="https://ondemand.lewagon.org/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target="_blank" style="font-size: 15px; font-weight: 100;">
+                            <i class="fa fa-gift"></i> <em>Offrez une track</em>
+                          </a>
+                        </li>
+                    </ul>
+                  <% end %>
               </div>
             </div>
           </div>
         </div>
-      <% else %>
-        <%= link_to t(".menu.program"), send(:"program_#{locale.to_s.underscore}_path"), class: 'navbar-wagon-link' %>
-      <% end %>
-
         <hr class="hidden-xs">
         <%= link_to "FAQ", faq_path, class: 'navbar-wagon-link' %>
         <hr class='fake-hr hidden-sm hidden-xs'>

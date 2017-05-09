@@ -33,9 +33,11 @@ fr:
       menu:
         cities: Villes
         program: Programme
-        online: En ligne (Vidéos)
+        online: Debutez en ligne
+        ondemand: OnDemand
         on_site: En présentiel
-        fullstack_program: FullStack - 9 semaines intensives
+        fullstack_program: FullStack (9 semaines intensives)
+        free_track: Web-Development Basics (gratuit)
       apply: Postuler
       employers: Business
       work: Travaillez avec nos alumni
