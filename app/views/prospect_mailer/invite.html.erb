@@ -1,9 +1,15 @@
-<p>Hello <%= @prospect.email %>,</p>
+<style>
+  p, ol, li {
+    font-family: helvetica, sans-serif;
+  }
+</style>
+
+<p>Hello,</p>
 
 <p>Welcome on board!</p>
 
 <p>
-  This is your invitation to Le Wagon's web-development introduction course. You will learn the basics of HTML, CSS, Javascript, Github, APIs and a lot of useful stuff if you want to pursue a career in the tech industry. We hope you will enjoy! To start the program:
+  This is your invitation to Le Wagon's introduction course. You will learn the basics of HTML, CSS, Javascript, Github, APIs and a lot of useful stuff if you want to pursue a career in the tech industry. We hope you will enjoy! To start the program:
 </p>
 
 <ol>
@@ -11,11 +17,13 @@
     <%= link_to "Sign up on GitHub", "https://github.com" %> if you don't have an account yet.
   </li>
   <li>
-    Go to <%= link_to "Le Wagon free online track", "https://ondemand.lewagon.org/tracks/web-development-basics/go" %>
+    Go to Le Wagon's <%= link_to "Web-Development basics track", "https://ondemand.lewagon.org/tracks/web-development-basics/go" %>
   </li>
   <li>
-    Happy online track! We will see you in the first video.
+    Ping us if you need help on your journey to learn tech! We'll be happy to help.
   </li>
 </ol>
 
-Sebastien and Boris
+<p>
+  Boris Paillard, <br> CEO @ Le Wagon
+</p>
