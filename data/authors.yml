@@ -53,3 +53,14 @@ edward:
   twitter: EdwardSchults
   instagram: lewagonparis
   linkedin:
+antonin:
+  fname: Antonin
+  lname: Archer
+  picture: authors/antonin_archer.jpg
+  bio: "Antonin Archer is a French entrepreneur who graduated from HEC Paris and learned to code at Le Wagon. He started his podcast -Nouvelle École- to encourage people to get out of conventional paths."
+  company: Nouvelle École
+  position: Producer
+  company_website: nouvelleecole.org
+  twitter: antoninarcher
+  instagram: antoninarcher
+  linkedin: antoninarcher
