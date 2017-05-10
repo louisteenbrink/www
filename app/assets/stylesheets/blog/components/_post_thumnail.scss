@@ -12,18 +12,21 @@
   border-left: 7px solid #2ecc71;
   overflow: hidden;
 
-  &:hover {
-    // .content {
-    //   transform: translateY(50%);
-    //   color: #333;
-    // }
+  @media (max-width: 600px) {
+    flex-direction: column;
   }
 
   .card-author {
     position: relative;
-    width: 25%;
+    min-width: 175px;
+    max-width: 175px;
     background-color: #f4f4f4;
     overflow: hidden;
+
+    @media (max-width: 600px) {
+      order: 2;
+      min-width: 100%;
+    }
 
     .background-author {
       position: absolute;
@@ -37,6 +40,10 @@
       overflow: hidden;
       opacity: 0.2;
       transform: scale(1.03);
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
 
     .post-author {
@@ -47,10 +54,22 @@
       position: relative;
       height: 100%;
 
+      @media (max-width: 600px) {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px 20px;
+        width: 100%;
+      }
+
       img {
         width: 75px;
         height: 75px;
         border-radius: 50%;
+
+        @media (max-width: 600px) {
+          width: 30px;
+          height: 30px;
+        }
       }
 
       .author-details {
@@ -61,14 +80,34 @@
         margin-top: 10px;
         color: #454545;
 
+        @media (max-width: 600px) {
+          align-items: flex-start;
+          margin-left: 10px;
+        }
+
         .author-name {
           font-weight: 600;
+
+          @media (max-width: 600px) {
+            font-size: 12px;
+          }
         }
 
         .author-position {
           font-size: 12px;
           font-style: normal;
           text-align: center;
+
+          @media (max-width: 600px) {
+            br {
+              display: none;
+            }
+
+            small {
+              margin-left: 4px;
+              font-size: 12px;
+            }
+          }
         }
       }
     }
@@ -85,6 +124,11 @@
     padding: 0 20px;
     background-color: white;
     transition: all 0.3s ease-in-out;
+
+    @media (max-width: 600px) {
+      width: 100%;
+      min-height: 260px;
+    }
 
     h2 {
       margin-top: 15px;
