@@ -191,6 +191,30 @@
       width: 100%;
     }
 
+    .learn-cta {
+      padding: 20px;
+      margin-bottom: 60px;
+      background-color: #f4f4f4;
+      border-radius: 2px;
+
+      p {
+        margin: 0 auto 30px;
+        width: 80%;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      input[type="submit"] {
+        height: 64px;
+        font-weight: 700;
+      }
+
+      .invitation {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     .post-author {
       display: flex;
       padding-top: 30px;

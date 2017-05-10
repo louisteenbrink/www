@@ -43,7 +43,6 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 20px;
     margin: 0 auto;
     max-width: 820px;
     min-height: 200px;
@@ -69,11 +68,36 @@
 
     span {
       display: flex;
-      margin-top: 20px;
+      margin: 20px 0 30px;
       font-weight: 100;
       font-size: 15px;
       letter-spacing: 0px;
       color: #7D7D7D;
+    }
+
+    .video-specs {
+      padding: 20px;
+    }
+
+    .learn-cta {
+      padding: 20px;
+      background-color: #f4f4f4;
+
+      p {
+        margin: 0 auto 30px;
+        width: 80%;
+        text-align: center;
+      }
+
+      input[type="submit"] {
+        height: 64px;
+        font-weight: 700;
+      }
+
+      .invitation {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
