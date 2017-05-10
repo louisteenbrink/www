@@ -19,6 +19,8 @@ Rails.application.routes.draw do
     delete '/log_out', to: 'base#log_out'
   end
 
+  resources :prospects, only: :create
+
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|
@@ -32,6 +34,7 @@ Rails.application.routes.draw do
   get 'sp', to: redirect('pt-BR/sao-paulo')
   get 'bh', to: redirect('pt-BR/belo-horizonte')
   get 'en', to: redirect('/')
+  get 'learn', to: redirect('learn-to-code'), as: :learn_to_code
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
@@ -72,6 +75,7 @@ Rails.application.routes.draw do
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "employers", to: "pages#employers", template: "employers", as: :employers
+    get "learn-to-code", to: "pages#learn", template: "learn", as: :learn
     get "enterprise", to: "pages#enterprise", template: "enterprise", as: :enterprise
     get "blog/videos", to: "posts#videos", template: "videos", as: :videos
     get "blog/all", to: "posts#all", template: "all", as: :all
