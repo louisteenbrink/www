@@ -18,14 +18,7 @@ class AlumniStory
     {
       fname: @json['alumni']['first_name'],
       lname: @json['alumni']['last_name'],
-      # picture: authors/cedric_menteau.jpg
-      # bio: "After a couple of year working for the surf industry, Cedric, pioneer from batch #1, is now taking care of our global content. From Paris to the closest beach, he helps us tackle some underground marketing tasks and organise a new Code x Surf camp!"
-      # company: Le Wagon
-      # position: Content Manager
-      # company_website: lewagon.com
-      # twitter: cedricmenteau
-      # instagram: lewagonparis
-      # linkedin: cedricmenteau
+      picture: @json['alumni']['photo_path'],
     }
   end
 

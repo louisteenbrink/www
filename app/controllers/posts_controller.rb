@@ -9,7 +9,6 @@ class PostsController < ApplicationController
       stories = json_stories.map { |story| AlumniStory.new(story) }
       articles = Blog.new.all
       posts = (articles + stories).sort_by { |p| p.date }.reverse
-
       @posts = posts.select(&:post?)
       @posts_count = @posts.length
       @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(3)
