@@ -9,61 +9,62 @@
 
 <div class="posts">
   <h1>Le Wagon's Blog<small>Bringing you the latest news, tutorials and insights on coding and entrepreneurship</small></h1>
-  <div class="container blog-header">
-    <div class="header-main">
-      <% @videos.take(1).each do | video| %>
-        <%= link_to post_path video.slug do %>
-          <div class="header-wrapper" style="background-image: url('<%= asset_path "blog/videos/#{video.thumbnail}" %>')">
-            <div class="header-details">
-              <i>Latest video</i>
-              <h2><%= video.title %></h2>
-              <i><%= video.date.strftime("%d %b %Y") %></i>
+  <div class="container-fluid blog-header">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 header-main">
+        <% @videos.take(1).each do | video| %>
+          <%= link_to post_path video.slug do %>
+            <div class="header-wrapper" style="background-image: url('<%= asset_path "blog/videos/#{video.thumbnail}" %>')">
+              <div class="header-details">
+                <i>Latest video</i>
+                <h2><%= video.title %></h2>
+                <i><%= video.date.strftime("%d %b %Y") %></i>
+              </div>
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg id="play-button" width="50px" height="50px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g class="circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+                </g>
+              </svg>
             </div>
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg id="play-button" width="50px" height="50px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g class="circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
-              </g>
-            </svg>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="col-md-8 col-md-offset-2 header-aside">
+        <%= link_to all_path do %>
+          <div class="header-aside-item">
+            <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-posts.jpg" %>')">
+            </div>
+            <div class="aside-item-content">
+              <h3>Get inpired by our amazing community</h3>
+              <ul>
+                <li>Tutorials</li>
+                <li>Alumni stories</li>
+              </ul>
+            </div>
           </div>
         <% end %>
-      <% end %>
-    </div>
-
-
-    <div class="header-aside">
-      <%= link_to all_path do %>
-      <div class="header-aside-item">
-        <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-posts.jpg" %>')">
-        </div>
-        <div class="aside-item-content">
-          <h3>Get inpired by our amazing community</h3>
-          <ul>
-            <li>Tutorials</li>
-            <li>Alumni stories</li>
-          </ul>
-        </div>
+        <%= link_to videos_path do %>
+          <div class="header-aside-item">
+            <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-videos.jpg" %>')">
+            </div>
+            <div class="aside-item-content">
+              <h3>Learn from the best developers & entrepreneurs</h3>
+              <ul>
+                <li>Workshops</li>
+                <li>Talks</li>
+              </ul>
+            </div>
+          </div>
+        <% end %>
       </div>
-      <% end %>
-      <%= link_to videos_path do %>
-        <div class="header-aside-item">
-          <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "blog/blog-videos.jpg" %>')">
-          </div>
-          <div class="aside-item-content">
-            <h3>Learn from the best developers & entrepreneurs</h3>
-            <ul>
-              <li>Workshops</li>
-              <li>Talks</li>
-            </ul>
-          </div>
-        </div>
-      <% end %>
     </div>
   </div>
 </div>
 
 <section class="posts">
-  <h3 class="section-title"><small>Lastest posts</small>Crafted for your eyes only</h3>
+  <h3 class="section-title"><small>Lastest posts</small>Empower yourself reading our stories and ressources</h3>
   <div id="posts-container" class="container-fluid">
     <%= render 'more_posts', posts: @posts %>
   </div>
@@ -73,8 +74,8 @@
 </section>
 
 <section class="recorded">
-  <h3 class="section-title"><small>Lastest videos</small>We have recorded all the goodies for you!</h3>
-  <div class="container">
+  <h3 class="section-title"><small>Latest videos</small>Watch videos and learn the skills to work in tech</h3>
+  <div class="container-fluid">
     <% @videos.take(4).each_slice(2) do |videos| %>
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
