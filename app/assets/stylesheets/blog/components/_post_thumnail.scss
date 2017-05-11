@@ -131,6 +131,11 @@
       min-height: 260px;
     }
 
+    @media (max-width: 320px) {
+      width: 100%;
+      min-height: 325px;
+    }
+
     h2 {
       margin-top: 15px;
       font-size: 19px;

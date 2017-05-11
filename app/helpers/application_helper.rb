@@ -37,6 +37,18 @@ module ApplicationHelper
     ENV['PRERENDER'] == 'false' ? false : true
   end
 
+  def author_image_tag(slug)
+    image_tag "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}"
+  end
+
+  def post_image_tag(slug)
+    image_tag "https://raw.githubusercontent.com/lewagon/www-images/blob/master/blog/posts/#{slug}"
+  end
+
+  def video_image_tag(slug)
+    image_tag "https://raw.githubusercontent.com/lewagon/www-images/blob/master/blog/videos/#{slug}"
+  end
+
   def cl_adaptive_image_tag(image_path, opt={})
     w = opt[:width]
     h = opt[:height]

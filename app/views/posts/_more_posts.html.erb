@@ -18,7 +18,7 @@
                     <%= image_tag "http://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/#{author[:picture]}", class: 'author-picture' %>
                     <% else %>
                       <% if author[:picture] %>
-                        <%= image_tag author[:picture], class: 'author-picture' %>
+                        <%= author_image_tag(author[:picture]) %>
                       <% end %>
                     <% end %>
                     <div class="author-details">

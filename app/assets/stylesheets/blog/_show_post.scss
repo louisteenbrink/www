@@ -44,7 +44,7 @@
   align-items: center;
   max-width: 163px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     display: none;
   }
 
@@ -248,7 +248,11 @@
       padding-top: 30px;
       border-top: 1px solid #f4f4f4;
 
-      .author-picture {
+      @media (max-width: 520px) {
+        flex-direction: column;
+      }
+
+      img {
         margin: 0;
         width: 100px;
         height: 100px;
@@ -259,6 +263,10 @@
         display: flex;
         flex-direction: column;
         margin-left: 20px;
+
+        @media (max-width: 520px) {
+          margin: 10px 0 0 0px;
+        }
 
         .author-name {
           font-size: 18px;

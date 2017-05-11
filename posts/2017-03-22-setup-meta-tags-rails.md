@@ -29,16 +29,12 @@ The right content, including optimized images have shown to help posts to spread
   <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/lewagon/posts/589518731246729" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lewagon/posts/589518731246729"></blockquote></div></div>
 </div>
 
-<hr>
-
 ## Setup in a Rails app
 
 In this tutorial, we'll see:
 
 - how to simply setup **default** meta tags for **any** of your website's pages,
 - how to override them in **some pages** to be more specific and impactful.
-
-<hr>
 
 ##### **Default Meta Tags**
 
@@ -64,8 +60,6 @@ DEFAULT_META = YAML.load_file(Rails.root.join("config/meta.yml"))
 ```
 
 **Important: as any file in the** `config/initializers` **folder, it is loaded when your app is launched. Any time you change the content in** `meta.yml`**, restart your** `rails s` **to refresh** `DEFAULT_META`**!**
-
-<hr>
 
 ##### **Helpers setup**
 Now before setting up our meta tags in our views, let's setup **helpers** that will encapsulate the following logic for our 3 keys `:meta_title`, `:meta_description` and `:meta_image`:
@@ -112,8 +106,6 @@ Make sure your **production** `HOST` **variable** is set with your domain name.
 If you deploy your code with Heroku for instance, just type in your terminal `heroku config:set HOST=www.my_product.com`
 
 You can check it's properly set with `heroku config:get HOST`.
-
-<hr>
 
 ##### **HTML setup - Layout**
 
@@ -162,8 +154,6 @@ Social Networks provide **debugging tools** to help you check your tags are prop
 - [Twitter Card Validator](https://cards-dev.twitter.com/validator)
 
 **Important :** Facebook's Open Graph recommends **1200x630** dimensions for meta images. [Read the documentation](https://developers.facebook.com/docs/sharing/best-practices) if you cannot manage to clear out all their warnings!
-
-<hr>
 
 ##### **That's all folks**
 This sets a **framework** to easily manage your meta tags in **every single page** of your website.

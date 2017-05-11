@@ -253,11 +253,11 @@
             <% if @post.author %>
               <div class="post-author">
                 <% if @post.author[:picture] %>
-                  <%= image_tag @post.author[:picture], class: 'author-picture' %>
+                  <%= author_image_tag(@post.author[:picture]) %>
                 <% end %>
                 <div class="author-details">
                   <span class="author-name"><%= @post.author[:fname] %> <%= @post.author[:lname] %></span>
-                  <i class="author-position"><%= @post.author[:position] %> at <%= link_to @post.author[:company], "https://www." + @post.author[:company_website].to_s %>
+                  <i class="author-position"><%= @post.author[:position] %> at <%= link_to @post.author[:company], "https://www." + @post.author[:company_website].to_s %></i>
                   <p class="author-bio"><%= @post.author[:bio] %></p>
                   <ul class="author-social">
                     <% if @post.author[:instagram] %>
@@ -276,7 +276,7 @@
                     <% end %>
                     <% if @post.author[:linkedin] %>
                       <li>
-                        <a href="https://www.instagram.com/<%= @post.author[:linkedin] %>">
+                        <a href="https://www.linkedin.com/in/<%= @post.author[:linkedin] %>">
                           <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
                       </li>
@@ -303,7 +303,7 @@
                     <% if post.author %>
                       <div class="post-author">
                         <% if post.author[:picture] %>
-                          <%= image_tag post.author[:picture], class: 'author-picture' %>
+                          <%= author_image_tag(post.author[:picture]) %>
                         <% end %>
                         <div class="author-details">
                           <span class="author-name"><%= post.author[:fname] %> <%= post.author[:lname] %></span>
