@@ -39,7 +39,7 @@
               </ul>
               <h2><%= post.title %></h2>
               <% if post.description %>
-                <p class="description"><%= post.description.truncate(260) %></p>
+                <p class="description"><%= post.description.truncate(160) %></p>
               <% end %>
               <span class="read-time">
                 <i class="fa fa-clock-o" aria-hidden="true"></i> <%= post.read_time %> min reading
