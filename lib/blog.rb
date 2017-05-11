@@ -107,7 +107,7 @@ class Blog
       @article_content ||= (
         content = file_content.gsub(JEKYLL_HEADER_PATTERN, '')
         content = content.gsub(BLOG_IMAGE_PATH_PATTERN) do
-          "#{ActionController::Base.helpers.image_path "blog/#{$1}"}"
+          "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{$1}"
         end
       )
     end

@@ -2,10 +2,11 @@
 layout: post
 title: "Social Meta Tags Setup in Rails"
 author: edward
+date: 22-03-2017
 labels:
   - tutorial
 pushed: true
-thumbnail: lewagon_demoday_metatags.png
+thumbnail: 22-03-2017-rails-social-metatags.jpg
 description: Sharing your product on social networks has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your social meta tags are properly set.
 ---
 
@@ -17,7 +18,7 @@ Sharing your product on **social networks** has become one privileged way to gro
 
 `<meta>` tags are HTML tags in the `<head>` of a webpage, visible to anyone.
 
-![Lewagon Demoday Metatags](blog_image_path lewagon_demoday_metatags.png)
+![Lewagon Demoday Metatags](blog_image_path 22-03-2017-rails-social-metatags.jpg)
 
 They provide the **content displayed on social networks** whenever your product's url is **shared in a post**.
 Titles, descriptions and images should all be setup with care and consideration to **improve your social exposure's conversion rate**.
@@ -159,5 +160,5 @@ Social Networks provide **debugging tools** to help you check your tags are prop
 This sets a **framework** to easily manage your meta tags in **every single page** of your website.
 It's now up to you to keep on setting relevant titles, descriptions and images **every time you code a new view**!
 
-![Airbnb Metatags](blog_image_path airbnb_meta_tags.png)
+![Airbnb Metatags](blog_image_path 22-03-2017-airbnb-meta-tags.jpg)
 

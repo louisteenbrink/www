@@ -8,9 +8,9 @@
 
 <% content_for(:image_url) do %>
   <% if @post.layout.to_sym == :video %>
-    <%= asset_path "blog/videos/#{@post.thumbnail}" if @post.thumbnail %>
+    <%= video_image_tag(@post.thumbnail) if @post.thumbnail %>
   <% else %>
-    <%= asset_path "blog/#{@post.thumbnail}" if @post.thumbnail %>
+    <%= post_image_tag(@post.thumbnail) if @post.thumbnail %>
   <% end %>
 <% end %>
 
