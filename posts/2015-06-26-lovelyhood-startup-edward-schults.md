@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Lovely Hood, facilitez-vous les échanges de bons procédés entre voisins"
-author: cedric
+author: edward
+date: 26-06-2015
 labels:
   - alumni
-  - startup
 pushed: true
-thumbnail: thumbnail-lovelyhood.jpg
+thumbnail: 2015-06-26-thumbnail-lovelyhood.jpg
 description: "Il aura suffi d'un TED Talk de Rachel Botsman pour décider Edward Schults, alumni du Wagon, à franchir le pas de l'entrepreneuriat. Avec sa marketplace Lovely Hood, ce dernier souhaite faciliter les échanges de bons procédés entre voisins. Découvrez son projet sans plus attendre !"
 ---
 

@@ -4,7 +4,6 @@ title: "uSlide, synchronisez vos vidéos et présentations"
 author: cedric
 labels:
   - alumni
-  - startup
 pushed: true
 thumbnail: thumbnail-uslide.jpg
 description: "uSlide vous permet de synchroniser vos vidéos et présentations en quelques clicks avant de les partager auprès de vos communautés. Présentation de cette toute jeune startup, fondée par Vincent Simon, alumni de la deuxième promotion du Wagon."

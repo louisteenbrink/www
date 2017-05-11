@@ -36,8 +36,8 @@ class PostsController < ApplicationController
     posts = Blog.new.all
     @videos = posts.select(&:video?)
     if params[:category].present?
-      @videos = @videos.select { |post| post.metadata[:labels].include? params[:category] }
-      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(2)
+      @videos = @videos.select { |post| post.labels.include? params[:category] }
+      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
     end
     @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
   end

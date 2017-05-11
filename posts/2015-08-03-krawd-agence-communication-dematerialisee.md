@@ -5,7 +5,6 @@ author: cedric
 date: 2015-08-03
 labels:
   - alumni
-  - startup
 pushed: true
 thumbnail: 2015-08-03-krawd-team.jpg
 description: "L'OVNI KRAWD fait son nid alors que le monde s'interroge. 'Tu veux faire une agence sans être une agence avec des créatifs dedans ?' - 'Oui mais pas que, KRAWD c'est encore mieux !' réplique Arthur avec le sourire."
@@ -13,13 +12,13 @@ description: "L'OVNI KRAWD fait son nid alors que le monde s'interroge. 'Tu veux
 
 L'OVNI [KRAWD](http://www.krawd.com/) fait son nid alors que le monde s'interroge. "Tu veux faire une agence de communication sans être une agence avec des créatifs dedans ?" - "Oui mais pas que, KRAWD c'est encore mieux !" réplique [Arthur Hagiage](https://twitter.com/arthur_h) avec le sourire.
 
-![KRAWD, l'agence de communication dématérialisée](blog_image_path thumbnail-krawd.jpg)
+![KRAWD, l'agence de communication dématérialisée](blog_image_path 2015-08-03-krawd-intro.jpg)
 
 ## Le processus créatif
 
 À l'origine intégralement codé pendant [les deux semaines de projet de la promo 6](http://www.lewagon.org/blog/lewagon-demo-day-promo-6), [KRAWD](http://www.krawd.com/) est un outil pour répondre aux besoins de production de contenus des marques dans le but d'alimenter leurs réseaux sociaux. Une description un chouia littéraire pour décrire une marketplace sur laquelle les créatifs peuvent proposer des visuels aux marques pour lesquelles ils se sentent inspirés. Le prix de leur création est soumis à un barème déterminé par la cote du créatif. De leur côté, les marques, souvent accompagnées par une agence, bénéficient d'une page profil recensant toutes les créations les concernant et d'une toolbox pour mettre leurs assets graphiques à dispositions des designers.
 
-![Les cofounders de KRAWD en chiffres](blog_image_path krawd-cofounders.jpg)
+![Les cofounders de KRAWD en chiffres](blog_image_path 2015-08-03-krawd-cofounders.jpg)
 
 ## Mais quelque chose coince.
 
@@ -29,7 +28,7 @@ Suite aux premiers rendez-vous clients, les deux associés se rendent compte que
 
 Après avoir rencontré quelques créatifs, si l'idée de rentrer par le social média pour apporter de la valeur aux marques à de quoi séduire, les créatifs de haut niveau spécialisés sur l'identité de marque se retrouvent naturellement limités par le positionnement spécifique de KRAWD. Sans parler du fait que la grande majorité des créatifs souhaite trouver un moyen de réduire les délais de paiement imposés par les agences.
 
-![La homepage de KRAWD](blog_image_path krawd-homepage.jpg)
+![La homepage de KRAWD](blog_image_path 2015-08-03-krawd-homepage.jpg)
 
 ## Eurêka
 
@@ -37,7 +36,7 @@ Fort de ces rencontres, KRAWD prend désormais la forme d'une agence dématéria
 
 Afin de simplifier la relation client/prestataire, KRAWD joue le rôle du tiers en accompagnant les clients dans la rédaction des briefs et en automatisant le paiement et l’émission de contrats juridiques pour les créatifs. Ces derniers reçoivent leur rémunération dès qu’ils ont livré. Pour équilibrer les risques, les agences sont intégralement remboursées si le créatif à mal délivré. Côté business model, KRAWD prélève un pourcentage de la transaction de chaque côté. Aux agences de le prévoir dans leur budget et aux créatifs dans leurs honoraires !
 
-![Porfolio de créatif sur KRAWD](blog_image_path krawd-portfolio.jpg)
+![Porfolio de créatif sur KRAWD](blog_image_path 2015-08-03-krawd-portfolio.jpg)
 
 
 ## Les débuts
@@ -48,5 +47,5 @@ Pour répondre aux critères d'exigence des marques et des grandes agences, seul
 
 On me souffle dans l'oreillette que des discussions sont en cours avec Google EU et d’autres start-ups renommées.
 
-![KRAWD, une belle team de vainqueurs](blog_image_path krawd-team.jpg)
+![KRAWD, une belle team de vainqueurs](blog_image_path 2015-08-03-krawd-team.jpg)
 

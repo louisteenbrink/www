@@ -3,9 +3,9 @@ layout: post
 title: "Pourquoi apprendre Ruby on Rails ?"
 thumbnail: thumbnail-pourquoi-apprendre-ruby-on-rails.jpg
 author: sebastien
+date: 16-03-2015
 labels:
-  - Startup
-  - Misc
+  - tutorial
 pushed: true
 description: Pourquoi apprendre Ruby on Rails ? Question récurrente posée par de nombreux entrepreneurs  désireux d’apprendre à coder, nous vous proposons une liste de 7 points clés expliquant ce parti pris.
 ---
