@@ -202,6 +202,10 @@
             @media (max-width: 520px) {
               font-size: 1.35em;
             }
+
+            @media (max-width: 320px) {
+              font-size: 1.2em;
+            }
           }
 
           ul {
@@ -214,6 +218,10 @@
               border-radius: 2px;
               color: white;
               font-size: 0.7em;
+
+              @media (max-width: 320px) {
+                font-size: 0.6em;
+              }
             }
           }
         }
