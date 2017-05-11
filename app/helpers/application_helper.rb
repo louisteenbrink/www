@@ -45,6 +45,10 @@ module ApplicationHelper
     "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
   end
 
+  def content_post_image_tag(slug)
+    image_tag "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
+  end
+
   def video_image_tag(slug)
     "https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/#{slug}"
   end
