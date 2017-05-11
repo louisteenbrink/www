@@ -1,12 +1,12 @@
 <div class="container breadcrumb">
   <ul>
-    <li><%= link_to 'Blog', blog_path %></li>
-    <li>All posts</li>
+    <li><%= link_to t('.breadcrumb_1'), blog_path %></li>
+    <li><%= t('.breadcrumb_2') %></li>
   </ul>
 </div>
 
 <section class="posts">
-  <h3 class="section-title"><small>All posts</small>Empower yourself reading our stories and ressources</h3>
+  <h3 class="section-title"><small><%= t('.posts_small') %></small><%= t('.posts_title') %></h3>
 
   <div class="filter-container" id="posts-filter-container">
     <%= render "filter_menu_post" %>

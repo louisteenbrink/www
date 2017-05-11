@@ -41,8 +41,8 @@
 <% if @post.layout.to_sym == :video %>
   <div class="container breadcrumb">
     <ul>
-      <li><%= link_to 'Blog', blog_path %></li>
-      <li><%= link_to 'All videos', videos_path %></li>
+      <li><%= link_to t('.breadcrumb_1'), blog_path %></li>
+      <li><%= link_to t('.breadcrumb_videos_2'), videos_path %></li>
       <li><%= @post.title.html_safe %></li>
     </ul>
   </div>
@@ -54,7 +54,7 @@
         <div class="col-md-2">
 
             <ul class="social-sharing social-sharing-video">
-              <li>Share</li>
+              <li><%= ('share') %></li>
               <li>
                 <a href="http://twitter.com/home?status=<%= @post.title.html_safe %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -146,13 +146,13 @@
               <span><%= @post.description %></span>
             </div>
             <div class="learn-cta">
-              <p><strong>Get your invitation</strong> for Le Wagon's free online course and learn HTML, CSS, Javascript, Github, APIs and much more 🚀.</p>
+              <p><strong><%= t('.learn_cta') %></strong> 🚀</p>
               <% @prospect ||= Prospect.new %>
               <p class="email-error hidden">Your email is not valid :(</p>
               <div class="invitation">
                 <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
                   <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
-                  <%= f.submit "Get my invitation", class: "btn btn-danger" %>
+                  <%= f.submit t('.learn_button'), class: "btn btn-danger" %>
                 <% end %>
               </div>
             </div>
@@ -161,7 +161,7 @@
           <%= render "prospects/invitation" %>
 
           <div class="more-videos">
-            <h3 class="section-title"><small>You know what?</small>Binge watching is ok</h3>
+            <h3 class="section-title"><small><%= t('.watch_more_title') %></small><%= t('.watch_more_catchline') %></h3>
             <div class="row">
               <% @videos.each do |video| %>
                 <div class="col-sm-6">
@@ -195,8 +195,8 @@
 <!-- POST SHOW VIEW -->
   <div class="container breadcrumb">
     <ul>
-      <li><%= link_to 'Blog', blog_path %></li>
-      <li><%= link_to 'All posts', all_path %></li>
+      <li><%= link_to t('.breadcrumb_1'), blog_path %></li>
+      <li><%= link_to t('.breadcrumb_posts_2'), all_path %></li>
       <li><%= @post.title.html_safe %></li>
     </ul>
   </div>
@@ -213,7 +213,7 @@
           <div class="col-md-2">
             <div data-spy="affix" data-offset-top="620" data-offset-bottom="2100">
               <ul class="social-sharing">
-                <li>Share</li>
+                <li><%= t('.share') %></li>
                 <li>
                   <a href="http://twitter.com/home?status=<%= @post.title.html_safe %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
                       <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -237,13 +237,13 @@
 
             <!-- POST - LEARN CTA -->
             <div class="learn-cta">
-              <p><strong>Get your invitation</strong> for Le Wagon's free online course and learn HTML, CSS, Javascript, Github, APIs and much more 🚀.</p>
+              <p><strong><%= t('.learn_cta') %></strong> 🚀</p>
               <% @prospect ||= Prospect.new %>
               <p class="email-error hidden">Your email is not valid :(</p>
               <div class="invitation">
                 <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
                   <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
-                  <%= f.submit "Get my invitation", class: "btn btn-danger" %>
+                  <%= f.submit t('.learn_button'), class: "btn btn-danger" %>
                 <% end %>
               </div>
             </div>
@@ -291,7 +291,7 @@
     </article>
 
     <div class="container-fluid more-posts">
-      <h3 class="section-title"><small>Read on!</small>There is always something new</h3>
+      <h3 class="section-title"><small><%= t('.read_more_title') %></small><%= t('.read_more_catchline') %></h3>
       <div class="container-fluid">
         <div class="row">
           <% @posts.each do |post| %>

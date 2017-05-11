@@ -1,12 +1,12 @@
 <div class="container breadcrumb">
   <ul>
-    <li><%= link_to 'Blog', blog_path %></li>
-    <li>All videos</li>
+    <li><%= link_to t('.breadcrumb_1'), blog_path %></li>
+    <li><%= t('.breadcrumb_2') %></li>
   </ul>
 </div>
 
 <section class="videos">
-  <h3 class="section-title"><small>All videos</small>Watch our videos and get new skills</h3>
+  <h3 class="section-title"><small><%= t('.videos_small') %></small><%= t('.videos_title') %></h3>
 
   <div class="filter-container" id="videos-filter-container">
     <%= render "filter_menu_video" %>

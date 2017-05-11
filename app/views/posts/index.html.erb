@@ -8,7 +8,7 @@
 <% end %>
 
 <div class="posts">
-  <h1>Code Matters<small>Bringing you the latest news, tutorials and insights on coding and entrepreneurship</small></h1>
+  <h1><%= t(".blog_title") %><small><%= t(".blog_catchline") %></small></h1>
   <div class="container-fluid blog-header">
     <div class="row">
       <div class="col-md-8 col-md-offset-2 header-main">
@@ -22,7 +22,7 @@
                 </g>
               </svg>
               <div class="video-details">
-                <i>Latest video</i>
+                <i><%= t(".header_latest") %></i>
                 <h4><%= video.title %></h4>
                 <ul>
                   <% video.labels.each do |tag| %>
@@ -41,10 +41,11 @@
             <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "banners/blog-posts.jpg" %>')">
             </div>
             <div class="aside-item-content">
-              <h3>Get inpired by our amazing community</h3>
+              <h3><%= t(".header_aside_1") %></h3>
               <ul>
                 <li>Tutorials</li>
-                <li>Alumni stories</li>
+                <li>Alumni</li>
+                <li>Podcasts</li>
               </ul>
             </div>
           </div>
@@ -54,7 +55,7 @@
             <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "banners/blog-videos.jpg" %>')">
             </div>
             <div class="aside-item-content">
-              <h3>Learn from the best developers & entrepreneurs</h3>
+              <h3><%= t(".header_aside_2") %></h3>
               <ul>
                 <li>Workshops</li>
                 <li>Talks</li>
@@ -68,17 +69,17 @@
 </div>
 
 <section class="posts">
-  <h3 class="section-title"><small>Lastest posts</small>Empower yourself reading our stories and ressources</h3>
+  <h3 class="section-title"><small><%= t(".posts_small") %></small><%= t(".posts_title") %></h3>
   <div id="posts-container" class="container-fluid">
     <%= render 'more_posts', posts: @posts %>
   </div>
   <%= link_to all_path, class: 'content-cta' do %>
-    See all posts
+    <%= t(".see_all_posts") %>
   <% end %>
 </section>
 
 <section class="recorded">
-  <h3 class="section-title"><small>Latest videos</small>Watch our videos and get new skills</h3>
+  <h3 class="section-title"><small><%= t(".videos_small") %></small><%= t(".videos_title") %></h3>
   <div class="container-fluid">
     <% @videos.take(4).each_slice(2) do |videos| %>
       <div class="row">
@@ -111,7 +112,7 @@
       </div>
     <% end %>
     <%= link_to videos_path, class: 'content-cta' do %>
-      See all videos
+      <%= t(".see_all_videos") %>
     <% end %>
   </div>
 </section>
@@ -129,8 +130,8 @@
               </g>
             </svg>
             <div class="content-details">
-              <h4>Read our Alumni stories</h4>
-              <span><%= count %> talented students sharing the same skills & passion</span>
+              <h4><%= t(".more_stories") %></h4>
+              <span><%= count %> <%= t(".more_stories_details") %></span>
             </div>
           </div>
         <% end %>
@@ -145,8 +146,8 @@
               </g>
             </svg>
             <div class="content-details">
-              <h4>Watch our Demodays</h4>
-              <span>We are proud of what our students achieved in only 10 days</span>
+              <h4><%= t(".more_videos") %></h4>
+              <span><%= t(".more_videos_details") %></span>
             </div>
           </div>
         <% end %>
