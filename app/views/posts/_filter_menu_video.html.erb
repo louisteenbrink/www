@@ -8,7 +8,7 @@
   <li class="<%= params[:category] == 'talk' ? 'filter-active' : nil %>">
     <%= link_to "Talks", videos_path(category: 'talk'), remote: true %>
   </li>
-  <li class="<%= params[:category] == 'lifestyle' ? 'filter-active' : nil %>">
-    <%= link_to "Lifestyle", videos_path(category: 'lifestyle'), remote: true %>
+  <li class="<%= params[:category] == 'backstage' ? 'filter-active' : nil %>">
+    <%= link_to "Backstage", videos_path(category: 'backstage'), remote: true %>
   </li>
 </ul>

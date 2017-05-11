@@ -19,6 +19,8 @@ class AlumniStory
       fname: @json['alumni']['first_name'],
       lname: @json['alumni']['last_name'],
       picture: @json['alumni']['photo_path'],
+      batch: @json['alumni']['slug'],
+      city: @json['alumni']['city'],
     }
   end
 

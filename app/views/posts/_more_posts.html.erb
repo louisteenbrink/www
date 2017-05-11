@@ -23,6 +23,9 @@
                     <% end %>
                     <div class="author-details">
                       <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
+                      <% if post.is_a?(AlumniStory) %>
+                        <i class="author-position">Batch #<%= author[:batch] %><br><small>in <%= author[:city] %></small></i>
+                      <% end %>
                       <% if author[:position] %>
                         <i class="author-position"><%= author[:position] %><br><small>at <%= author[:company] %></small></i>
                       <% end %>
