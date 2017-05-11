@@ -5,7 +5,7 @@ es:
   shared:
     positions:
       they_hired_our_students: Le Wagon en las empresas
-      where_our_students_are_working: Donde están trabajando nuestros alumnos 
+      where_our_students_are_working: Donde están trabajando nuestros alumnos
       join_our_network: ¿Buscas talento?
     live:
       watch_live_html: "Explora los <strong>%{count} proyectos</strong> hechos por los alumnos de la Promoción #%{batch}</strong> en <strong>%{city}</strong>"
@@ -91,7 +91,7 @@ es:
         Stripe, Algolia, Molotov, Save, Compass, 55...todas esta empresas han contratado a nuestros alumnos.
         Te impulsamos a encontrar un nuevo trabajo sea como junior developer, project o product manager,
         growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
-      checkout: Compruébalo tu mismo. 
+      checkout: Compruébalo tu mismo.
       see_all: Más detalles
   newsletter:
     teaser: "<p>Mantente al día de nuestros <strong>eventos</strong>, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.</p>"
@@ -108,7 +108,7 @@ es:
     home:
       title: "Bootcamp de Programación Le Wagon | Aprende a programar en 9 semanas"
       description: |
-        Aprende a programar en 9 semanas con el mejor coding bootcamp de Europa. Le Wagon es la academia de programación para emprendedores más importante de Europa. 
+        Aprende a programar en 9 semanas con el mejor coding bootcamp de Europa. Le Wagon es la academia de programación para emprendedores más importante de Europa.
       catchline_html: "Cambia tu vida: <strong>aprende a programar</strong>"
       vision_html: Formación en <strong>desarrollo web</strong> para <strong>emprendedores</strong> y <strong>creativos</strong>
       view_teaser: Ver video
@@ -138,7 +138,7 @@ es:
     program:
       title: Curso de Programación en 9 semanas | Temario Le Wagon
       description: |
-        Temario de nuestro curso de programación web. Aprende desarrollo web en 9 semanas: Ruby on Rails, HTML, CSS, Javascript y mejores prácticas para lanzar tu producto.      
+        Temario de nuestro curso de programación web. Aprende desarrollo web en 9 semanas: Ruby on Rails, HTML, CSS, Javascript y mejores prácticas para lanzar tu producto.
       our_program: "FullStack Coding Bootcamp"
       program_details_html: |
         9 semanas para convertirse en <strong>desarrollador web</strong>.
@@ -295,7 +295,7 @@ es:
     enterprise:
       title: Workshops en programación para empresas | Le Wagon Formación Coporativa
       description: Le Wagon ofrece una serie de workshops técnicos y sobre buenas prácticas de startups para ayudarte a revolucionar la manera de trabajar en tu organización.
-      tagline_html: Cierra la brecha entre tecnología y negocios con nuestra oferta formativa. 
+      tagline_html: Cierra la brecha entre tecnología y negocios con nuestra oferta formativa.
       tagline_details_html: |
         Llevamos habilidades técnicas y las mejores prácticas de las startups
         <br>para dentro de tu organización.
@@ -439,6 +439,10 @@ es:
       language_en: 'Inglés'
       language_pt-BR: 'Portugués'
       language_zh-CN: 'Chino'
+      motivation_tip:
+        zero: ''
+        one: 'falta sólo 1 carácter'
+        other: "faltan %{count} caracteres"
       price: 'Precio'
       source_presence_message: 'How did you hear about Le Wagon? Facebook, Google, Quora, Course Report, a friend (who?). Thanks!'
   stories:
