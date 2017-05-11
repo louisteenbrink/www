@@ -8,7 +8,7 @@
               <% if post.is_a?(AlumniStory) %>
                <div class="background-author" style="background-image: url('<%= post.thumbnail %>')"></div>
               <% else %>
-                 <div class="background-author" style="background-image: url('<%= asset_path "blog/#{post.thumbnail}" %>')"></div>
+                 <div class="background-author" style="background-image: url('<%= post_image_tag(post.thumbnail) %>')"></div>
               <% end %>
               <% if post.author %>
                 <% author = post.author %>

@@ -6,7 +6,7 @@ date: 10-06-2017
 labels:
   - inspiration
 pushed: true
-thumbnail: posts/2017-06-10-nouvelle-ecole-16.jpg
+thumbnail: 2017-06-10-nouvelle-ecole-16.jpg
 description: Pour ce 16e épisode, Nouvelle École accueille Alice Zagury, cofondatrice et CEO de The Family.
 ---
 

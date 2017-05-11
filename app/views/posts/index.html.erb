@@ -14,7 +14,7 @@
       <div class="col-md-8 col-md-offset-2 header-main">
         <% @videos.take(1).each do | video| %>
           <%= link_to post_path video.slug do %>
-            <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.thumbnail}" %>')">
+            <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -87,7 +87,7 @@
             <% videos.each do |video| %>
               <div class="col-sm-6">
                 <%= link_to post_path video.slug do %>
-                  <div class="video-thumbnail" style="background-image: url('<%= asset_path "blog/videos/#{video.thumbnail}" %>')">
+                  <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
                     <?xml version="1.0" encoding="UTF-8"?>
                     <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
