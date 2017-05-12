@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Romain Saillet et les nouveaux médias"
-author: miruna
+author: boris
 date: 07-05-2014
 labels:
   - startup

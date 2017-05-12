@@ -496,10 +496,12 @@ es:
       breadcrumb_1 : Blog
       breadcrumb_posts_2 : All posts
       breadcrumb_videos_2 : All videos
-      share: Share
-      learn_cta: Get your invitation for Le Wagon's free online course and learn HTML, CSS, Javascript, Github, APIs and much more
-      learn_button: Get my invitation
       read_more_title: Read on!
       read_more_catchline: There is always something new
       watch_more_title: You know what?
       watch_more_catchline: Binge watching is ok
+    social_sharing:
+      share: Share
+    learn_cta:
+      learn_cta: Get your invitation for Le Wagon's free online course and learn HTML, CSS, Javascript, Github, APIs and much more
+      learn_button: Get my invitation

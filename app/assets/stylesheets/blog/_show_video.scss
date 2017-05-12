@@ -32,6 +32,15 @@
     opacity: 0.4;
   }
 
+  .social-sharing {
+    margin-top: 40px;
+    color: white;
+
+    li .fa::before {
+      color: white;
+    }
+  }
+
   /* ADAPT - VIDEO CARD COMPONENT *********************************************/
   .video-main-wrapper {
     margin-top: 40px;

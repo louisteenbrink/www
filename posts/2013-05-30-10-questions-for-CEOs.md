@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "10 questions for modern CEOs"
-author: miruna
+author: boris
 date: 30-05-2015
 labels:
   - startup

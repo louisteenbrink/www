@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Les alumnis de la première saison reviennent sur leur expérience au Wagon"
-author: miruna
+author: boris
 date: 15-04-2014
 labels:
   - alumni

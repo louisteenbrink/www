@@ -50,28 +50,12 @@
     <div class="container video-layout">
       <div class="row">
 
-      <!-- AFFIX - SOCIAL SHARING OPTIONS -->
+        <!-- AFFIX - SOCIAL SHARING OPTIONS -->
         <div class="col-md-2">
-
-            <ul class="social-sharing social-sharing-video">
-              <li><%= ('share') %></li>
-              <li>
-                <a href="http://twitter.com/home?status=<%= @post.title.html_safe %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                </a>
-              </li>
-              <li>
-                <i id="shareBtn" class="fa fa-facebook" aria-hidden="true"></i>
-              </li>
-              <li>
-                <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%=request.url %>&title=<%= @post.title.html_safe %>&source=lewagon.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
-                  <i class="fa fa-linkedin" aria-hidden="true"></i>
-                </a>
-                </li>
-            </ul>
-
+          <%= render "posts/social_sharing" %>
         </div>
 
+        <!-- CONTENT - VIDEO CONTAINER -->
         <article class="blog-video col-md-8">
           <div class="video-main-wrapper">
             <div id="main-container" class="video-main-container" style="background-image: url('<%= video_image_tag(@post.thumbnail)%>')">
@@ -84,6 +68,7 @@
               <% end %>
             </div>
 
+            <!-- CONTENT - VIDEO WRAPPER -->
             <div id="video-wrapper" class="video-wrapper hidden">
               <div class="video-container">
                 <div id="close-button">
@@ -94,6 +79,7 @@
                   </svg>
                 </div>
 
+                <!-- CONTENT - VIDEO PLAYER -->
                 <div id="ytplayer"></div>
                 <%= content_for(:after_js) do %>
                   <script>
@@ -139,26 +125,18 @@
             </div>
           </div>
 
+          <!-- CONTENT - VIDEO DETAILS -->
           <div class="video-description">
             <div class="video-specs">
               <h1><%= @post.title %></h1>
               <span>Posted on <%= @post.date.to_date.strftime("%d %b %Y") %> by <%= @post.author[:fname].capitalize %> <%= @post.author[:lname].capitalize %></span>
               <span><%= @post.description %></span>
             </div>
-            <div class="learn-cta">
-              <p><strong><%= t('.learn_cta') %></strong> 🚀</p>
-              <% @prospect ||= Prospect.new %>
-              <p class="email-error hidden">Your email is not valid :(</p>
-              <div class="invitation">
-                <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
-                  <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
-                  <%= f.submit t('.learn_button'), class: "btn btn-danger" %>
-                <% end %>
-              </div>
-            </div>
-          </div>
 
-          <%= render "prospects/invitation" %>
+            <!-- CTA - LEARN TO CODE FOR FREE -->
+            <%= render 'posts/learn_cta' %>
+            <%= render "prospects/invitation" %>
+          </div>
 
           <div class="more-videos">
             <h3 class="section-title"><small><%= t('.watch_more_title') %></small><%= t('.watch_more_catchline') %></h3>
@@ -192,6 +170,7 @@
     </div>
   </div>
 <% else %>
+
 <!-- POST SHOW VIEW -->
   <div class="container breadcrumb">
     <ul>
@@ -212,22 +191,7 @@
           <!-- AFFIX - SOCIAL SHARING OPTIONS -->
           <div class="col-md-2">
             <div data-spy="affix" data-offset-top="620" data-offset-bottom="2100">
-              <ul class="social-sharing">
-                <li><%= t('.share') %></li>
-                <li>
-                  <a href="http://twitter.com/home?status=<%= @post.title.html_safe %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
-                      <i class="fa fa-twitter" aria-hidden="true"></i>
-                  </a>
-                </li>
-                <li>
-                  <i id="shareBtn" class="fa fa-facebook" aria-hidden="true"></i>
-                </li>
-                <li>
-                  <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%=request.url %>&title=<%= @post.title.html_safe %>&source=lewagon.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                  </a>
-                  </li>
-              </ul>
+              <%= render 'posts/social_sharing' %>
             </div>
           </div>
 
@@ -235,18 +199,8 @@
           <div class="col-md-8">
             <%= raw @post.content %>
 
-            <!-- POST - LEARN CTA -->
-            <div class="learn-cta">
-              <p><strong><%= t('.learn_cta') %></strong> 🚀</p>
-              <% @prospect ||= Prospect.new %>
-              <p class="email-error hidden">Your email is not valid :(</p>
-              <div class="invitation">
-                <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
-                  <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
-                  <%= f.submit t('.learn_button'), class: "btn btn-danger" %>
-                <% end %>
-              </div>
-            </div>
+            <!-- CTA - LEARN TO CODE FOR FREE -->
+            <%= render 'posts/learn_cta' %>
             <%= render "prospects/invitation" %>
 
             <!-- POST - AUTHOR INFO -->
@@ -290,6 +244,7 @@
       </div>
     </article>
 
+    <!-- END - READ MORE POSTS -->
     <div class="container-fluid more-posts">
       <h3 class="section-title"><small><%= t('.read_more_title') %></small><%= t('.read_more_catchline') %></h3>
       <div class="container-fluid">
