@@ -1,4 +1,3 @@
-//= require pluralize
 class ApplyFormRow extends React.Component {
   constructor(props) {
     super(props)
