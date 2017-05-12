@@ -5,13 +5,13 @@ date: 01-11-2014
 author: cedric
 labels:
   - alumni
-thumbnail: thumbnail-kudoz-application-recherche-emploi.jpg
+thumbnail: 2014-11-01-intro-kudoz-application-recherche-emploi.jpg
 description: "Olivier Xu est le cofondateur de Kudoz, l’application de recherche d'emploi au swipe aguicheur destinée aux cadres en quête de nouveaux horizons professionnels. Nous vous avions déjà présenté Kudoz en vidéo, nous vous proposons aujourd’hui de faire le point sur le parcours entrepreneurial de ce pionnier du Wagon."
 ---
 
 [Olivier Xu](http://fr.linkedin.com/in/olivierxu) est le cofondateur de [Kudoz](http://www.getkudoz.com/), l’application de recherche d'emploi au swipe aguicheur destinée aux cadres en quête de nouveaux horizons professionnels. Nous vous avions déjà présenté Kudoz [en vidéo](http://youtu.be/reIOVSgaFT0), nous vous proposons aujourd’hui de faire le point sur le parcours entrepreneurial de ce pionnier du Wagon.
 
-![Kudoz, outil de veille pour cadre à la recherche d'un nouveau job](blog_image_path kudoz-homepage.jpg)
+![Kudoz, outil de veille pour cadre à la recherche d'un nouveau job](blog_image_path 2014-11-01-kudoz-homepage.jpg)
 
 ## Peux-tu nous faire un état des lieux du projet Kudoz ?
 
@@ -47,7 +47,7 @@ Ce changement de business model a eu de grosses répercussions sur la structure 
 
 C’est à ce moment qu’un bon lead dev fait la différence. Lorsque cette personne est capable de déterminer les priorités et de changer la roadmap du projet pour s’adapter à la demande de ses utilisateurs tout en tenant compte des retours de son équipe. La résistance des développeurs s’avère souvent très judicieuse. Il est indispensable de trouver un équilibre entre tous ces facteurs et d'assumer ses prises de décision.
 
-![Kudoz, outil de veille pour cadre à la recherche d'un nouveau job](blog_image_path kudoz-application-recherche-emploi.jpg)
+![Kudoz, outil de veille pour cadre à la recherche d'un nouveau job](blog_image_path 2014-11-01-kudoz-application-recherche-emploi.jpg)
 
 
 ## Peux-tu nous en dire plus sur vos enjeux commerciaux et marketing ?

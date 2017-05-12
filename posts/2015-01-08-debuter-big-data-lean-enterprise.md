@@ -5,10 +5,8 @@ author: cedric
 date: 08-01-2015
 youtube_slug: "OEFOwU0v-P4"
 labels:
-  - meetup
-  - tuto
-  - video
+  - workshop
 pushed: true
-thumbnail: thumbnail-workshop-bigdata-leanstartup.jpg
+thumbnail: 2015-01-08-workshop-bigdata-leanstartup.jpg
 description: Johann Romefort nous a fait le plaisir d'animer un Meetup dans nos locaux afin de présenter les principes du Lean Enterprise et sa relation étroite avec le big data.
 ---

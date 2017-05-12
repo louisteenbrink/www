@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fizzer : action d’envoyer une carte postale en 2014."
-thumbnail: thumbnail-fizzer.jpg
+thumbnail: 2014-11-06-fizzer.jpg
 author: cedric
 date: 06-11-2014
 labels:
@@ -11,7 +11,7 @@ description: Oubliez ces moments laborieux passés devant un tourniquet bancal. 
 
 Oubliez ces moments laborieux passés devant un tourniquet bancal. Envoyez désormais vos cartes postales personnalisées depuis votre smartphone avec [Fizzer](https://www.fizzer.io/), l'application de deux alumni du Wagon qui se charge de les imprimer puis de les acheminer par la poste auprès de vos proches.
 
-![Fizzer, partager vos meilleurs moments avec une carte postale](blog_image_path fizzer-carte-postale.jpg)
+![Fizzer, partager vos meilleurs moments avec une carte postale](blog_image_path 2014-11-06-fizzer-carte-postale.jpg)
 
 Elles envahissaient nos boîtes à souvenir pendant des années avant de se raréfier. Pourtant, dans l’esprit de nos parents et grands-parents elles sont toujours considérées comme la petite attention agréable voir indispensable. L'hiver dernier, [Baptiste Hamain](https://twitter.com/Bapmain) et [Vincent Porquet](https://twitter.com/VincentPorquet) se sont heurtés à ce choix cornélien que nous connaissons tous : quelle carte postale choisir entre le panorama de monts enneigés et la traditionnelle mère noël dénudée?
 

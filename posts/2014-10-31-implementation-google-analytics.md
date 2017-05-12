@@ -7,6 +7,6 @@ youtube_slug: "0aaKXA6zxnY"
 labels:
   - workshop
 pushed: true
-thumbnail: thumbnail-workshop-googleanalytics.jpg
+thumbnail: 2014-10-31-workshop-googleanalytics.jpg
 description: "Aujourd’hui, les analytics sont au coeur de toutes les discussions et de toutes les stratégies. Avec Google Analytics, vous avez accès à un outil de mesure gratuit, fiable et performant. Dans cette vidéo, Bertrand Girard, Conversion Specialist, vous donne toutes les clés et best practices pour son implémentation sur votre site."
 ---

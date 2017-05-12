@@ -7,13 +7,13 @@ date: 07-11-2014
 labels:
   - tutorial
 pushed: true
-thumbnail: thumbnail-google-autocomplete.jpg
+thumbnail: 2014-11-07-google-autocomplete.jpg
 description: Apprenez rapidement à installer Google Place Autocomplete dans vos formulaires comportant une adresse. Ces quelques lignes de code faciliteront grandement l'expérience de vos utilisateurs sur votre site. À vous de jouer !
 ---
 
 Apprenez rapidement à installer Google Place Autocomplete dans vos formulaires comportant un champ adresse. Ces quelques lignes de code faciliteront grandement l'expérience de vos utilisateurs sur votre site. À vous de jouer !
 
-![Tutorial, Google Place Autocomplete](blog_image_path tuto-google-place-autocomplete.gif)
+![Tutorial, Google Place Autocomplete](blog_image_path 2014-11-07-tuto-google-place-autocomplete.gif)
 
 **Disclaimer** Pour les codeurs / intégrateurs / dev de tous poils, jetez directement un oeil à la documentation de [@ssaunier](https://twitter.com/ssaunier) sur [le repo github](https://github.com/lewagon/google-place-autocomplete). Pour les autres, nous détaillerons l'ensemble de la procédure et expliciterons dans les quelques lignes ci-dessous.
 
@@ -27,11 +27,11 @@ Le champ dans lequel l'utilisateur tape son adresse retourne une liste d'adresse
 
 Dernière étape du setup, récupérez une clé API de Google Map afin d'obtenir un pool de 25.000 requêtes API gratuites par jour. Pour cela, rendez-vous sur [Google API Console](https://code.google.com/apis/console) et activez Google Maps JavaScript API v3.
 
-![Tutorial, Google Place API](blog_image_path tuto-google-place-autocomplete-api.jpg)
+![Tutorial, Google Place API](blog_image_path 2014-11-07-tuto-google-place-autocomplete-api.jpg)
 
 Dans le menu APIs & auth, cliquez sur l'onglet Credentials et activez votre Public API access sans oublier de préciser la liste des domaines autorisés à effectuer des requêtes (n'oubliez pas que votre quota est limité !).
 
-![Tutorial, Google Maps API Key](blog_image_path tuto-google-place-autocomplete-api-key.jpg)
+![Tutorial, Google Maps API Key](blog_image_path 2014-11-07-tuto-google-place-autocomplete-api-key.jpg)
 
 Enfin, appellez l'API de Google Maps dans votre ficher HTML en insérant votre clé à la fin en suivant l'exemple ci-dessous.
 

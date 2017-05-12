@@ -6,7 +6,7 @@ date: 01-06-2015
 labels:
   - tutorial
 pushed: true
-thumbnail: thumbnail-tuto-meta-tags.jpg
+thumbnail: 2015-06-01-tuto-meta-tags.jpg
 description: Éléments indispensables pour obtenir un aperçu qualitatif de vos contenus sur les réseaux sociaux, nous vous proposons ce tutoriel pour suivre pas à pas le setup des Meta Tags dans une application Rails.
 ---
 
@@ -15,8 +15,6 @@ description: Éléments indispensables pour obtenir un aperçu qualitatif de vos
 ## Meta Tags, mais de quoi parle-t-on ?
 
 Les Meta Tags sont présents dans le `<head>` de vos pages et peuvent être consultables sur n'importe quel site web.
-
-![Lewagon Demoday Metatags](blog_image_path lewagon_demoday_metatags.png)
 
 Les Meta Tags fournissent les informations affichées dans l'aperçu de vos contenus sur les réseaux sociaux. Les titres, descriptions et images associés sont autant d'éléments à choyer et à considérer avec attention afin de susciter l'intérêt de vos futurs visiteurs / clients via vos posts Facebook, Tweet et Pinterest Rich Pins.
 
@@ -158,6 +156,4 @@ Les réseaux sociaux fournissent des outils de debug en ligne vous permettant de
 ##### **That's all folks**
 Ce tutoriel s'achève déjà ! Mais rappelez-vous bien que nous n'avons défini là qu'une **base de travail** pour avoir de bons meta tags sur **toutes les pages** de votre site.
 A vous de continuer de définir des **titres**, **descriptions** et **photos** percutantes pour **toutes** les nouvelles pages de votre site — **au fur et à mesure que vous les codez** — afin d'avoir la même crédibilité que les grands acteurs de la scène Tech !
-
-![Airbnb Metatags](blog_image_path airbnb_meta_tags.png)
 

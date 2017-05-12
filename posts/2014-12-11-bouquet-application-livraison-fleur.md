@@ -5,14 +5,14 @@ author: cedric
 date: 11-12-2014
 labels:
   - alumni
-thumbnail: thumbnail-bouquet.jpg
+thumbnail: 2014-12-11-bouquet.jpg
 description: Pionnier du Wagon, Laurent Cuzin évolue dans l’univers des startups depuis plus de 10 ans. En octobre dernier il lance Bouquet, une application pour envoyer facilement de jolies fleurs en moins de 4 heures à Paris. Voilà de quoi donner des idées à certains à l’aube des fêtes de Noël !
 ---
 
 Pionnier du Wagon, [Laurent Cuzin](https://twitter.com/laurentc) évolue dans l’univers des startups depuis plus de 10 ans. En octobre dernier il lance [Bouquet](https://www.bouquetapp.com/), une application pour envoyer facilement de jolies fleurs en moins de 4 heures à Paris. Voilà de quoi donner des idées à certains à l’aube des fêtes de Noël !
 
 
-![Bouquet, l’app de livraison de fleurs indispensable](blog_image_path bouquet-intro.jpg)
+![Bouquet, l’app de livraison de fleurs indispensable](blog_image_path 2014-12-11-bouquet-intro.jpg)
 
 ### L’origine du projet
 
@@ -25,7 +25,7 @@ Quoi qu'il en soit, nous avons rapidement lancé Bouquet sous forme de web servi
 Une fois les premières hypothèses validées nous avons structuré l’équipe (composée aujourd’hui de 5 personnes) en nous entourant de talents qui nous ont permis de réaliser le produit et de lancer [l’application iOS]((https://itunes.apple.com/us/app/bouquet-livraison-de-fleurs/id878665429?ls=1&mt=8)
 ) en octobre dernier.
 
-![Bouquet, envoyez des fleurs depuis votre mobile](blog_image_path bouquet-mobile.jpg)
+![Bouquet, envoyez des fleurs depuis votre mobile](blog_image_path 2014-12-11-bouquet-mobile.jpg)
 
 ### En quoi l’app Bouquet est-elle unique ?
 
@@ -35,7 +35,7 @@ Nous souhaitons simplement réenchanter la commande de fleurs au travers d’un 
 
 La garantie esthétique et l'expérience utilisateur priment à tous les niveaux afin de ne jamais faire de faute de goût. D'ailleurs à ce sujet, je suis associé depuis le début de l’aventure avec [Etienne Achard](http://etienneachard.com/), web designer et également pionnier du Wagon !
 
-![3 bouquets au choix](blog_image_path bouquet-produits.jpg)
+![3 bouquets au choix](blog_image_path 2014-12-11-bouquet-produits.jpg)
 
 ### Quelle est ta relation au code aujourd'hui ?
 

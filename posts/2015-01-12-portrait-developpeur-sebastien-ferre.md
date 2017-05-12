@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Portrait d'un développeur junior formé au Wagon"
-date: 01/11/2014
+date: 01-11-2014
 author: cedric
 labels:
   - alumni
 pushed: true
-thumbnail: thumbnail-sebastien-ferre.jpg
+thumbnail: 2014-11-01-sebastien-ferre.jpg
 description: "Sebastien Ferré est aujourd'hui développeur chez Finexkap après avoir intégré le programme fullstack du Wagon il y a moins d'un an. Retour sur le parcours et les aspirations futures de ce nouvel adepte du code."
 ---
 
 [Sebastien Ferré](https://www.twitter.com/sbfrr) est aujourd'hui développeur chez Finexkap après avoir intégré le programme fullstack du Wagon il y a moins d'un an. Retour sur le parcours de ce nouvel adepte du code.
 
-![Sebastien Ferré, ancien élève du Wagon](blog_image_path thumbnail-sebastien-ferre.jpg)
+![Sebastien Ferré, ancien élève du Wagon](blog_image_path 2014-11-01-sebastien-ferre.jpg)
 
 ## Entrepreneur et maintenant développeur, peux-tu nous éclairer sur ton parcours ?
 
@@ -34,7 +34,7 @@ Suite à ces 9 semaines au Wagon j’ai trouvé un CDD de 3 mois chez [WeRoom](h
 
 L’environnement qu’ils me proposaient correspondait réellement à mes attentes en terme de montée en compétence au sein d’une équipe de développeurs confirmés. On me proposait d’acquérir les connaissances génériques permettant de mettre en place une architecture technique, d'apprendre à scaler une application en plus de savoir la prototyper. Mon but à long terme est d’être capable de prendre la charge de CTO pour mon propre projet.
 
-![Sebastien Ferré et la team Finexkap](blog_image_path sebastien-ferre-finexkap.jpg)
+![Sebastien Ferré et la team Finexkap](blog_image_path 2014-11-01-sebastien-ferre-finexkap.jpg)
 
 ## Comment as-tu construit ton “portefeuille” de compétences ?
 

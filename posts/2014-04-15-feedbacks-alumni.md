@@ -5,13 +5,11 @@ author: miruna
 date: 15-04-2014
 labels:
   - alumni
-thumbnail: lewagon-feedbacks-alumni-first-season.jpg
+thumbnail: 2014-04-15-lewagon-feedbacks-alumni-first-season.jpg
 description: "Quatre élèves de la première promotion reviennent sur leur parcours au sein du Wagon, et l'avancement de leurs projets depuis la fin de la saison 1. Félix, Céline, Niels et Estelle nous ont fait le plaisir d'évoquer ce que le Wagon leur a apporté de concret et comment cette expérience a enrichi leur vie au quotidien."
 ---
 
 Quatre élèves de la première promotion reviennent sur leur parcours au sein du Wagon, et l'avancement de leurs projets depuis la fin de la saison 1. Félix, Céline, Niels et Estelle nous ont fait le plaisir d'évoquer ce que le Wagon leur a apporté de concret et comment cette expérience a enrichi leur vie au quotidien.
-
-![Promo 1](blog_image_path promo-1.jpg)
 
 ###Quel était ton projet entrepreneurial avant le Wagon ?
 

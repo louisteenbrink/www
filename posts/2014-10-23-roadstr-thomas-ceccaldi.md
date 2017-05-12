@@ -6,13 +6,13 @@ date: 23-10-2014
 labels:
   - alumni
 pushed: true
-thumbnail: thumbnail-roadstr-thomas-ceccaldi.jpg
+thumbnail: 2014-10-23-roadstr-thomas-ceccaldi.jpg
 description: "Amateur de belles voitures depuis l’enfance, Thomas Ceccaldi lancera le 31 octobre prochain Roadstr, un service de location de voitures vintage entre particuliers. La promesse est belle pour tous les amoureux d’épopées en vieille cylindrée ainsi que pour tous les passionnés d’asphalte. Spotlight sur le parcours de cet ancien élève du Wagon et son projet."
 ---
 
 Amateur de belles voitures depuis l’enfance, [Thomas Ceccaldi](https://twitter.com/thomasceccaldi) lancera le 31 octobre prochain [Roadstr](http://www.roadstr.fr/), un service de location de voitures vintage entre particuliers. La promesse est belle pour tous les amoureux d’épopées en vieille cylindrée ainsi que pour tous les passionnés d’asphalte. Spotlight sur le parcours de cet ancien élève du Wagon et son projet.
 
-![Roadstr, location de voitures vintage entre particuliers](blog_image_path roadstr-location-voiture-vintage.jpg)
+![Roadstr, location de voitures vintage entre particuliers](blog_image_path 2014-10-23-roadstr-location-voiture-vintage.jpg)
 
 ## Peux-tu nous présenter Roadstr et l'origine de ton idée ?
 
@@ -29,7 +29,7 @@ Cela fait huit semaines que nous avançons sur le développement du service. Je 
 
 Nous commençons à fédérer des propriétaires en contactant les clubs de passionnés à Paris, à Lyon et dans le sud de la France. Plus de 600 000 voitures de collection existent en France et notre objectif à terme est d’avoir une offre sur tout le territoire en réunissant entre 2 000 et 3 000 références avant d’exporter le modèle en Europe.
 
-![Team Roadstr](blog_image_path roadstr-team.jpg)
+![Team Roadstr](blog_image_path 2014-10-23-roadstr-team.jpg)
 
 
 ## Comment se passe la relation entre le locataire et le propriétaire d'un véhicule de collection ?
@@ -42,7 +42,7 @@ Un autre point important sur lequel nous avons travaillé : l’assurance. En ef
 
 Jusqu'à maintenant, les propriétaires perçoivent très rapidement l’intérêt de notre service. En tant que passionnés, ils apprécient particulièrement l'idée d'avoir eux-mêmes accès à de nouveaux véhicules à conduire très prochainement.
 
-![Homepage Roadstr](blog_image_path homepage-roadstr.jpg)
+![Homepage Roadstr](blog_image_path 2014-10-23-homepage-roadstr.jpg)
 
 ## Comment perçois-tu l'apport du Wagon dans ton parcours entrepreneurial ?
 

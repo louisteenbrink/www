@@ -6,13 +6,13 @@ date: 18-03-2015
 labels:
   - alumni
 pushed: true
-thumbnail: thumbnail-projet-parol.jpg
+thumbnail: 2015-18-03-projet-parol.jpg
 description: "Parol est une plateforme de visualisation et de collaboration permettant de suivre et de participer à l’élaboration des lois en temps réel. Interview de son fondateur, Valentin Chaput, alumni de la 6e promotion."
 ---
 
 [Parol](http://parol-production.herokuapp.com/) est une plateforme de visualisation et de collaboration permettant de suivre et de participer à l’élaboration des lois en temps réel. Interview de son fondateur, [Valentin Chaput](https://twitter.com/valentinchaput), alumni de la 6e promotion.
 
-![Parol, le Github de l'Assemblée Nationale](blog_image_path thumbnail-projet-parol.jpg)
+![Parol, le Github de l'Assemblée Nationale](blog_image_path 2015-18-03-projet-parol.jpg)
 
 ### Pourquoi as-tu décidé d’apprendre à coder ?
 
@@ -30,7 +30,7 @@ Parol est une plateforme de visualisation et de collaboration permettant de suiv
 
 La communication politique s’est déjà bien adaptée aux réseaux sociaux et l’organisation des partis politiques s’est professionnalisée grâce aux nouveaux outils de gestion. Cependant, les démarches participatives n’ont jamais réussi à s’imposer sur le long terme. Le déclic est venu lors d’une discussion sur le fonctionnement de la plateforme open source [Github](https://github.com/), utilisée par tous les développeurs pour gérer les modifications successives de leurs fichiers de code source.
 
-![Qu'est-ce qu'une loi ?](blog_image_path parol-definition-loi.jpg)
+![Qu'est-ce qu'une loi ?](blog_image_path 2015-18-03-parol-definition-loi.jpg)
 
 De manière similaire, [Parol](http://parol-production.herokuapp.com/) part de la source de la décision politique : le texte de loi. Or, la loi est complètement inaccessible aux citoyens, qui ignorent bien souvent comment elle est construite. En réalité, si le contenu peut être extrêmement technique, la mécanique demeure assez simple : un article de loi et un amendement sont des séries de modifications d’écriture portant sur les articles des codes de loi en vigueur. Il s’agit donc d’ajouter, de supprimer ou de modifier du contenu écrit dans les codes de lois. La similarité avec les commandes basiques de tous les programmes informatiques est flagrante, tout comme la possibilité de représenter chaque modification comme un commentaire sur un document Word, un Google Doc ou, encore mieux, un texte de rap du site genius.com !
 
@@ -40,7 +40,7 @@ Les lois et les codes sont bien entendu déjà disponibles sur les sites de l’
 
 Grâce au soutien des professeurs et à l’inspiration transmise par [Scott Chacon](https://twitter.com/chacon), l’un des cofondateurs de Github [invité lors d’un ApéroTalk du Wagon](https://www.youtube.com/watch?v=TOV6BQO4M6g), nous avons pu développer un premier prototype en quinze jours avec [Amélie Beurrier](https://twitter.com/peanutbeubeurre), [Jean Hamant](https://twitter.com/jeanhamant) et [Sophia Kecir Camper](https://twitter.com/_sophiakc/). Le concept est simple, mais l’ingénierie derrière une plateforme telle que Github est vraiment complexe. Elle ouvre toutefois des perspectives très intéressantes. En sauvegardant toutes les versions de chaque texte sur [Parol](http://parol-production.herokuapp.com/), nous rendons possibles de futures recherches sur les évolutions du droit, par exemple en filtrant par période, par majorité ou par thématique. En s’ouvrant au travail collaboratif sur un même texte rendu parfaitement compréhensible, notre projet permet surtout de redonner la parole aux citoyens.
 
-![Processus de rédaction d'une loi](blog_image_path parol-comment-rediger-une-loi.jpg)
+![Processus de rédaction d'une loi](blog_image_path 2015-18-03-parol-comment-rediger-une-loi.jpg)
 
 ### Et la suite ?
 
