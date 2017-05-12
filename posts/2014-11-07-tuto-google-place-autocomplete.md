@@ -2,11 +2,12 @@
 layout: post
 label: startup
 title: Google Place Autocomplete
-thumbnail: thumbnail-google-autocomplete.jpg
 author: cedric
+date: 07-11-2014
 labels:
-  - tuto
+  - tutorial
 pushed: true
+thumbnail: thumbnail-google-autocomplete.jpg
 description: Apprenez rapidement à installer Google Place Autocomplete dans vos formulaires comportant une adresse. Ces quelques lignes de code faciliteront grandement l'expérience de vos utilisateurs sur votre site. À vous de jouer !
 ---
 
@@ -16,13 +17,13 @@ Apprenez rapidement à installer Google Place Autocomplete dans vos formulaires 
 
 **Disclaimer** Pour les codeurs / intégrateurs / dev de tous poils, jetez directement un oeil à la documentation de [@ssaunier](https://twitter.com/ssaunier) sur [le repo github](https://github.com/lewagon/google-place-autocomplete). Pour les autres, nous détaillerons l'ensemble de la procédure et expliciterons dans les quelques lignes ci-dessous.
 
-### La logique
+## La logique
 
 Le champ dans lequel l'utilisateur tape son adresse retourne une liste d'adresses possibles en fonction des quelques caractères déjà écrits. Lorsque l'adresse souhaitée est sélectionnée, les données la composant (rue, numéro de voie ...) sont parsées et injectées dans les champs de la base de données de votre service.
 
 [Voir la démo](http://lewagon.github.io/google-place-autocomplete/)
 
-### API Key Google Map
+## API Key Google Map
 
 Dernière étape du setup, récupérez une clé API de Google Map afin d'obtenir un pool de 25.000 requêtes API gratuites par jour. Pour cela, rendez-vous sur [Google API Console](https://code.google.com/apis/console) et activez Google Maps JavaScript API v3.
 
@@ -47,7 +48,7 @@ Enfin, appellez l'API de Google Maps dans votre ficher HTML en insérant votre c
 <script type="text/javascript" src="autocomplete.js"></script>
 ```
 
-### Le formulaire HTML
+## Le formulaire HTML
 
 Pour notre exemple nous utiliserons un formulaire composé de 5 champs. Le premier, *Address*, sera accessible à l'utilisateur afin de lui permettre de saisir son adresse postale. Les 4 autres champs ; `street_number`, `route`, `locality` et `country` seront désactivés et ne serviront qu'à recueillir la donnée.
 
@@ -66,7 +67,7 @@ Pour notre exemple nous utiliserons un formulaire composé de 5 champs. Le premi
 </form>
 ```
 
-### La recherche
+## La recherche
 
 ```js
 function initializeAutocomplete(id) {
@@ -84,7 +85,7 @@ function initializeAutocomplete(id) {
 
 La méthode ```initializeAutocomplete``` prend l'id de l'input sur lequel se greffer (soit dans notre cas ```user_input_autocomplete_address```), crée un autocomplete, et écoute l'événement ```place_changed```. Lorsque cet évènement a lieu (c'est à dire lorsque l'utilisateur choisit une adresse), alors la fonction de callback ```onPlaceChanged``` est appelée. C'est dans cette dernière que nous allons récupérer les informations détaillées de l'adresse choisie
 
-### La récupération des données
+## La récupération des données
 
 ```js
 function onPlaceChanged() {
@@ -131,7 +132,7 @@ function onPlaceChanged() {
 Dans la vie réelle, il suffira de passer ces `input` en `type="hidden"` pour qu'ils soient soumis à
 l'envoi du formulaire. Vous récupérerez ainsi l'adresse prédécoupée correctement.
 
-### Exécuter le code
+## Exécuter le code
 
 Afin de démarrer le code il est nécessaire d'exécuter ```initializeAutocomplete``` lorsque Google est disponible et que la page est prête.
 
@@ -141,7 +142,7 @@ google.maps.event.addDomListener(window, 'load', function() {
 });
 ```
 
-### Pour aller plus loin
+## Pour aller plus loin
 
 Il est possible de customiser votre Autocomplete et de restreindre les recherches à une zone géographie précise voir à un type exclusif de lieux (villes, business...).
 
@@ -163,7 +164,7 @@ autocomplete = new google.maps.places.Autocomplete(input, options);
 
 N'hésitez pas à laisser vos propres trucs et astuces dans les commentaires de cet article !
 
-### Liens utiles
+## Liens utiles
 
 - [lewagon/google-place-autocomplete sur GitHub](https://github.com/lewagon/google-place-autocomplete)
 - [Démo](http://lewagon.github.io/google-place-autocomplete/)

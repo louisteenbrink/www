@@ -2,8 +2,9 @@
 layout: post
 title: "Publiez votre premier site web en moins de 10 minutes"
 author: cedric
+date: 19-11-2014
 labels:
-  - tuto
+  - tutorial
 pushed: true
 thumbnail: thumbnail-tuto-gh-pages.jpg
 description: Vous souhaitez tester une idée ou mettre votre portfolio en ligne ? Alors ce tuto sur Github Pages est fait pour vous. En seulement quelques clics, vous pourrez héberger gratuitement votre premier site statique intégralement customisable et le partager ensuite au gré de vos envies.
@@ -11,13 +12,13 @@ description: Vous souhaitez tester une idée ou mettre votre portfolio en ligne 
 
 Vous souhaitez tester une idée ou mettre votre portfolio en ligne ? Alors ce tuto sur Github Pages est fait pour vous. En seulement quelques clics, vous pourrez héberger gratuitement votre premier site statique intégralement customisable et le partager ensuite au gré de vos envies.
 
-### Votre compte Github
+## Votre compte Github
 
 Si vous ne connaissez pas encore Github, le service de collaboration entre développeurs, nous vous recommandons de suivre [le tuto vidéo sur Git et Github](http://www.lewagon.org/blog/meetup-git-github) de [@ssaunier](https://twitter.com/ssaunier), CTO du Wagon, et de vous créer un compte gratuitement sur [GitHub](https://github.com/) (obligatoire pour la suite).
 
 ![Inscription Github](blog_image_path tuto-gh-pages-1.jpg)
 
-### Le Setup : GitHub Mac/Windows
+## Le Setup : GitHub Mac/Windows
 
 Téléchargez ensuite [GitHub Mac](https://mac.github.com/) ou [GitHub Windows](https://windows.github.com/) et configurez là en suivant les 3 étapes :
 
@@ -25,7 +26,7 @@ Téléchargez ensuite [GitHub Mac](https://mac.github.com/) ou [GitHub Windows](
 - Pour la config Git, précisez absolument l'email que vous avez utilisé lors de la création de votre compte GitHub afin de permettre au service de bien associer votre travail à votre compte.
 - L'application cherchera des projets existants sur votre machine. Vous pouvez passer cette étape si vous le souhaitez.
 
-### Votre premier projet
+## Votre premier projet
 
 Créez un dossier sur votre machine ```github-pages-exemple``` (le nom reste à votre convenance) et glissez-le sur la fenêtre de l'application GitHub.
 

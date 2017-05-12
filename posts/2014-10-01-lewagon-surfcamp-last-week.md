@@ -2,8 +2,9 @@
 layout: post
 title: Le Wagon Surfcamp | Last week
 author: cedric
+date: 01-10-2014
 labels:
-  - misc
+  - lifestyle
 thumbnail: lewagon-surfcamp-second-week.jpg
 description: "Everything must eventually come to an end. But some ends come more quickly than others. If you catch up with one participant of our fist surfcamp, we’re pretty sure they will endorse this claim. Last week they were struggling with the waves. Today, the situation is the opposite. The waves were not plenty enough to feed our 20 hungry surfers devs."
 ---

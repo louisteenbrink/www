@@ -1,11 +1,10 @@
 ---
 layout: post
 title: "1 million de matches pour Kudoz !"
-date: 01/11/2014
+date: 01-11-2014
 author: cedric
 labels:
   - alumni
-  - startup
 thumbnail: thumbnail-kudoz-application-recherche-emploi.jpg
 description: "Olivier Xu est le cofondateur de Kudoz, l’application de recherche d'emploi au swipe aguicheur destinée aux cadres en quête de nouveaux horizons professionnels. Nous vous avions déjà présenté Kudoz en vidéo, nous vous proposons aujourd’hui de faire le point sur le parcours entrepreneurial de ce pionnier du Wagon."
 ---
@@ -14,7 +13,7 @@ description: "Olivier Xu est le cofondateur de Kudoz, l’application de recherc
 
 ![Kudoz, outil de veille pour cadre à la recherche d'un nouveau job](blog_image_path kudoz-homepage.jpg)
 
-###Peux-tu nous faire un état des lieux du projet Kudoz ?
+## Peux-tu nous faire un état des lieux du projet Kudoz ?
 
 Depuis la fin de la première saison du Wagon, au mois de février dernier, il s’est passé beaucoup de choses. Entre mars et juin, nous avons effectué une phase de test via une bêta fermée avant de lancer la version publique sur iOS en juillet dernier. La version Androïd est disponible depuis 15 jours.
 
@@ -27,7 +26,7 @@ Du côté de l’agenda, nous avons prévu d’être un peu plus agressifs comme
 <div class="video-wrapper"><iframe src="//player.vimeo.com/video/101933154" width="750" height="422" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 
 
-###As-tu toujours les mains dans le code ?
+## As-tu toujours les mains dans le code ?
 
 Tout d'abord, je dois préciser que je n’ai pas rejoint le Wagon pour devenir développeur. Suite à mes précédentes expériences, je savais qu'élaborer de nouvelles features sans être capable de me représenter les implications techniques pour les développeurs aurait été quelque chose d'impossible pour le management et le recrutement de l'équipe.
 
@@ -40,7 +39,7 @@ Aujourd’hui, notre équipe compte 3 développeurs et mon rôle a complètement
 Les deux tiers restants, je les consacre à la coordination des développeurs afin de m’assurer que nous suivons le plus précisément possible notre roadmap produit. Pour résumer, je dirais que mon défi principal aujourd’hui est de maîtriser l’art d’allier les enjeux business aux enjeux techniques, souvent contradictoires.
 
 
-###Tu penses à une situation en particulier ?
+## Tu penses à une situation en particulier ?
 
 Effectivement. Dans notre business model de base, les recruteurs ne payaient rien jusqu’à ce qu’ils trouvent des profils intéressants. Le paiement s’effectuait ensuite au coup par coup pour débloquer les coordonnées des candidats. Rapidement, nous nous sommes rendu compte que le principe était mal adapté aux entreprises qui préfèrent payer un prix fixe au moment du dépôt de l’offre.
 
@@ -51,7 +50,7 @@ C’est à ce moment qu’un bon lead dev fait la différence. Lorsque cette per
 ![Kudoz, outil de veille pour cadre à la recherche d'un nouveau job](blog_image_path kudoz-application-recherche-emploi.jpg)
 
 
-###Peux-tu nous en dire plus sur vos enjeux commerciaux et marketing ?
+## Peux-tu nous en dire plus sur vos enjeux commerciaux et marketing ?
 
 Dans l’écosystème startup, beaucoup de gens parlent de leur produit et très peu de leur stratégie commerciale. À mon sens, c’est une erreur. Tu auras beau avoir le meilleur produit du monde, si tu ne le commercialises pas bien, tu risques fortement de te planter.
 
@@ -66,12 +65,12 @@ Côté marketing et acquisition, nous partons du principe que le gratuit n’exi
 À l’heure actuelle, nous travaillons à l’établissement de partenariats avec quelques marques et écoles qui font sens avec Kudoz avant de débuter une campagne d’acquisition payante. En résumé, il ne faut pas s’arrêter aux contraintes et toujours essayer de les contourner !
 
 
-###Un dernier mot ?
+## Un dernier mot ?
 
 Kudoz est encore en pleine construction. J’invite tous les lecteurs à nous envoyer leurs *feedbacks* par mail. Cela nous aide beaucoup et nous amène sans cesse de nouvelles idées. À titre d’exemple, suite à la demande de nombreux utilisateurs, nous lançons cette semaine la lettre de motivation en 140 caractères afin de nous mettre en avant via un simple #Kweet !
 
 
-###Liens utiles
+## Liens utiles
 
 - Les applications [iPhone](https://itunes.apple.com/fr/app/kudoz-swipez-le-job-vos-reves./id897507108?mt=8) et [Androïd](https://play.google.com/store/apps/details?id=com.kudoz.kudoz)
 - Sur le web : [www.getkudoz.com](http://www.getkudoz.com/)

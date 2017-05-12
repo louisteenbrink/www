@@ -2,6 +2,7 @@
 layout: post
 title:  "Romain Saillet et les nouveaux médias"
 author: miruna
+date: 07-05-2014
 labels:
   - startup
 thumbnail: romain-saillet-medialab-session.jpg
@@ -12,7 +13,7 @@ description: "Nous avons rencontré Romain Saillet fondateur de MédiaLab Sessio
 
 Nous avons rencontré [Romain Saillet](https://twitter.com/RomainSaillet) fondateur de [MédiaLab Sessions](http://www.medialabsession.org/) et CEO de Story Tailor et on a discuté ensemble des nouveaux médias. Voici son interview.
 
-###Bonjour Romain, parle-nous de tes projets.
+## Bonjour Romain, parle-nous de tes projets.
 
 J'ai 2 gros projets en ce moment. Le premier MediaLab Sessions - une communauté d'entrepreneurs et d'innovateurs média que j’ai fondé avec des potes, ayant une triple mission:
 
@@ -22,30 +23,30 @@ J'ai 2 gros projets en ce moment. Le premier MediaLab Sessions - une communauté
 
 Mon deuxième projet est Story Tailor, ma boîte avec laquelle j’accompagne des entreprises dans leur stratégie de communication. Le but est d’arrêter de considérer l’audience de ces boîtes en termes de “ménagère de moins de 50 ans” mais en termes de communauté, et tout faire pour l’impliquer. La communauté devient acteur et non plus spectateur.
 
-###Tu as écrit sur la problématique du nouveau journalisme</a>. Quels sont à ton avis les problématiques actuelles autour du concept du nouveau journalisme ?
+## Tu as écrit sur la problématique du nouveau journalisme</a>. Quels sont à ton avis les problématiques actuelles autour du concept du nouveau journalisme ?
 
 Il me semble que le plus important c’est que les médias comprennent quelle est leur valeur ajoutée. Aujourd’hui, celle-ci est double: elle est dans la manière de créer du contenu innovant à la fois dans le fond et la forme, et le positionnement. Personnellement, je ne vois aucune valeur ajoutée aux 15 médias qui me pushent tous la même info quand il y a une actu. Pourquoi j’irais plus voir du côté d’un média que d’un autre? Avant, il y avait la politique qui faisait qu’on lisait plus Libé ou Figaro, maintenant trop de médias se positionnent grand publique, et les journalistes sont un peu paumés là-dedans, ils ne font pas forcément l’effort d’être créatif. À mon avis, une des solutions possibles serait d’ouvrir la rédaction. Pourquoi ne pas faire entrer des statisticiens ou des community managers? Pourquoi ne pas ouvrir à des nouveaux métiers qui sont porteurs de talents et d’idées nouvelles pour s’adapter dans le numérique? Facebook, Google, Amazon deviennent des médias. Il faut regarder comment ils font, pourquoi c’est pertinent, pourquoi c’est bien fait, pourquoi les gens vont dessus, et les calquer.
 
-###Qu’est-ce que tu penses du travail effectué par le New York Times ?
+## Qu’est-ce que tu penses du travail effectué par le New York Times ?
 
 Le NYT teste des nouvelles formes de narration sur le net: ils ont compris ce qu’est le numérique et la culture du numérique: tester en continu. On ne peut plus revenir en arrière et dire qu’il y a des règles d’or, des choses à faire et à ne pas faire; on a dépassé ce stade-là. Il faut tester. Il y a des choses qui me paraissent intéressantes à piquer à la culture start-up comme le pivot, le testing, la réactivité. Là où le NYT est très smart c’est sur sa transformation culturelle effectuée en mode startup c’est-à-dire en créant des side-projects pertinents pour mettre en avant un contenu enrichi par la culture du numérique. C’est là à mon avis où ils sont très forts. La direction a compris qu’il fallait présenter le contenu autrement, mettre en avant d’autres choses et ils ont vraiment réussi de façon intelligente à changer leur “culture d’entreprise”.
 
-###Tu cites Facebook & Co. comme exemple pour les nouveaux médias, qu’entends-tu par là ?
+## Tu cites Facebook & Co. comme exemple pour les nouveaux médias, qu’entends-tu par là ?
 
 C’est quoi un média à l’origine? Selon moi c’est une entreprise qui a 2 missions : un travail de production de l’info et un travail de diffusion. À l’heure actuelle, personne n’aide les médias traditionnels dans la diffusion et c’est en grande partie pour ça qu’internet les a autant chamboulés: d’un coup ils ont dû travailler avec d’autres acteurs pour leur diffusion. Or, Facebook est un diffuseur d’information et c’est dans ce sens qu’il est également un média. Une chose qui mérite d’être soulignée c’est le fait que ces boîtes-là ont toutes été créées par des développeurs. En France on a Melty qui marche très bien et qui a aussi été monté par un dév: Alexandre Malsch. Des sites comme Melty ou Topito sont des médias à part entière, malheureusement, il arrive encore qu’ils ne soient pas toujours reconnus comme tels.
 
-###Codes-tu ?
+## Codes-tu ?
 
 Je sais lire du code, mais je ne sais pas le construire. Je m’y suis mis plein de fois, mais j’ai beaucoup de potes développeurs avec qui je collabore et qui font les choses plus rapidement et mieux que moi. Du coup je m’appuie beaucoup sur eux.
 
-###Tu sais qu’au Wagon on prend 9 semaines pour apprendre à un entrepreneur ou CEO les bases du développement, serais-tu tenté de le faire ?
+## Tu sais qu’au Wagon on prend 9 semaines pour apprendre à un entrepreneur ou CEO les bases du développement, serais-tu tenté de le faire ?
 
 Complètement ! Quand on voit que les plus grands dirigeants viennent du développement, ça fait beaucoup réfléchir. Apprendre à coder, ou en tout cas être sensibilisé aux langages informatiques c'est une richesse incroyable pour un CEO. Je pense que nous devrions avoir plus d'initiatives comme le Wagon!
 
-###Quels sont tes autres projets du moment ?
+## Quels sont tes autres projets du moment ?
 
 Je travaille également avec Luc Jacquet, scientifique et metteur en scène oscarisé pour La Marche de l’Empereur, qui a monté une association nommée Wild Touch afin de sensibiliser le public aux thématiques qui lui sont chères comme l’écologie et le développement durable, très présentes dans ses films. Ensemble nous bâtissons et rassemblons une communauté autour de ces thématiques, pour que ses films ne soient pas une fin en soi.
 
-###Merci Romain pour le temps accordé.
+## Merci Romain pour le temps accordé.
 
 Merci à toi et bonne continuation avec Le Wagon.

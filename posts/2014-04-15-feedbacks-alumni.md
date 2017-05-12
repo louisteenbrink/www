@@ -2,6 +2,7 @@
 layout: post
 title:  "Les alumnis de la première saison reviennent sur leur expérience au Wagon"
 author: miruna
+date: 15-04-2014
 labels:
   - alumni
 thumbnail: lewagon-feedbacks-alumni-first-season.jpg
