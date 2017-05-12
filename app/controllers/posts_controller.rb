@@ -37,7 +37,6 @@ class PostsController < ApplicationController
     @videos = posts.select(&:video?)
     if params[:category].present?
       @videos = @videos.select { |post| post.labels.include? params[:category] }
-      @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
     end
     @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
   end
@@ -51,7 +50,6 @@ class PostsController < ApplicationController
     @posts = posts.select(&:post?)
     if params[:category].present?
       @posts = @posts.select { |post| post.labels.include? params[:category] }
-      @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
     end
     @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
   end
