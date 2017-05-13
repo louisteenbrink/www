@@ -448,6 +448,10 @@ zh-CN:
       language_en: '英语'
       language_pt-BR: '巴西语 葡萄牙语'
       language_zh-CN: 中文
+      motivation_tip:
+        zero: ''
+        one: 'still 1 character to type'
+        other: 'still %{count} characters to type'
       price: '价格'
       source_presence_message: '你是如何听说Le Wagon的？Facebook，Google，Quora，课程报告，朋友（谁？）。谢谢！'
   stories:

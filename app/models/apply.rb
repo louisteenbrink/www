@@ -20,6 +20,8 @@
 #
 
 class Apply < ActiveRecord::Base
+  MININUM_MOTIVATION_LENGTH = 140
+
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :phone, presence: true
