@@ -2,10 +2,12 @@
   <h2><%= t('.learn_cta_title') %></h2>
   <p><%= t('.learn_cta_html') %> 🚀</p>
   <% @prospect ||= Prospect.new %>
+  <% @prospect.from_path = request.env['PATH_INFO'] %>
   <p class="email-error hidden">Your email is not valid :(</p>
   <div class="invitation">
     <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
       <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
+      <%= f.input :from_path, as: :hidden %>
       <%= f.submit t('.learn_button'), class: "btn btn-danger" %>
     <% end %>
   </div>
