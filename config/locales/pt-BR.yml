@@ -467,6 +467,7 @@ pt-BR:
     all:
       breadcrumb_1 : Blog
       breadcrumb_2 : All posts
+      posts_description: Get inpired by our amazing community
       posts_small: Latest posts
       posts_title: Empower yourself reading our stories and ressources
       show_more_posts: See more posts
@@ -475,6 +476,7 @@ pt-BR:
       breadcrumb_2 : All videos
       videos_small: Latest videos
       videos_title: Watch our videos and get new skills
+      videos_description: Learn from the best developers & entrepreneurs
       show_more_videos: See more videos
     show:
       breadcrumb_1 : Blog
@@ -487,5 +489,7 @@ pt-BR:
     social_sharing:
       share: Share
     learn_cta:
-      learn_cta: Get your invitation for Le Wagon's free online course and learn HTML, CSS, Javascript, Github, APIs and much more
+      learn_cta_title: Learn to code online
+      learn_cta_html: |
+        <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
       learn_button: Get my invitation

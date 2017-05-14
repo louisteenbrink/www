@@ -1,5 +1,5 @@
 <% content_for(:title) do %>
-  Le Wagon - <%= @post.title.html_safe %>
+  <%= @post.title.html_safe %> - Le Wagon
 <% end %>
 
 <% content_for(:description) do %>
@@ -129,8 +129,8 @@
           <div class="video-description">
             <div class="video-specs">
               <h1><%= @post.title %></h1>
-              <span>Posted on <%= @post.date.to_date.strftime("%d %b %Y") %> by <%= @post.author[:fname].capitalize %> <%= @post.author[:lname].capitalize %></span>
               <span><%= @post.description %></span>
+              <span><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Posted on <%= @post.date.to_date.strftime("%d %b %Y") %> by <%= @post.author[:fname].capitalize %> <%= @post.author[:lname].capitalize %></span>
             </div>
 
             <!-- CTA - LEARN TO CODE FOR FREE -->
@@ -183,9 +183,9 @@
     <article class="blog-post">
       <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= post_image_tag(@post.thumbnail) %>')">
         <h1><%= @post.title.html_safe %></h1>
-        <p class="written-by">Published by <%= @post.author[:fname] %> <%= @post.author[:lname] %> on <%= @post.date.to_date.strftime("%d %b %Y") %></p>
+        <p class="written-by"><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Published by <%= @post.author[:fname] %> <%= @post.author[:lname] %> on <%= @post.date.to_date.strftime("%d %b %Y") %></p>
       </div>
-      <div class="post-content container">
+      <div class="post-wrapper container">
         <div class="row">
 
           <!-- AFFIX - SOCIAL SHARING OPTIONS -->
@@ -196,7 +196,7 @@
           </div>
 
           <!-- POST - CONTENT -->
-          <div class="col-md-8">
+          <div class="col-md-8 post-content">
             <%= raw @post.content %>
 
             <!-- CTA - LEARN TO CODE FOR FREE -->

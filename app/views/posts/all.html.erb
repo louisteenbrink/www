@@ -1,3 +1,7 @@
+<% content_for(:title) { t ".posts_title" } %>
+<% content_for(:description) { t '.posts_description' } %>
+<%= content_for(:image_url) { image_url 'social/all_posts_card.png' } %>
+
 <div class="container breadcrumb">
   <ul>
     <li><%= link_to t('.breadcrumb_1'), blog_path %></li>

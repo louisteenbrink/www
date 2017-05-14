@@ -62,7 +62,7 @@
     z-index: 2;
 
     h1 {
-      margin: 0 0 10px;
+      margin: 0 0 20px;
       font-size: 1.5em;
       font-weight: 900;
     }
@@ -77,11 +77,23 @@
 
     span {
       display: flex;
-      margin: 20px 0 30px;
+      align-items: center;
+      margin: 10px 0 30px;
       font-weight: 100;
       font-size: 15px;
       letter-spacing: 0px;
       color: #7D7D7D;
+
+      img {
+        margin: 0 10px 0 0;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+
+        @media (max-width: 520px) {
+          display: none;
+        }
+      }
     }
 
     .video-specs {
@@ -91,6 +103,13 @@
     .learn-cta {
       padding: 20px;
       background-color: #f4f4f4;
+
+      h2 {
+        margin: 0 0 20px;
+        font-size: 1.5em;
+        font-weight: 900;
+        text-align: center;
+      }
 
       p {
         margin: 0 auto 30px;

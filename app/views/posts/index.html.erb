@@ -3,9 +3,9 @@
   <% count = @statistics['alumni']['total'] %>
 <% end %>
 
-<% content_for(:title) do %>
-  <%= t ".title" %>
-<% end %>
+<% content_for(:title) { t ".title" } %>
+<% content_for(:description) { t '.blog_catchline' } %>
+<%= content_for(:image_url) { image_url 'social/all_posts_card.png' } %>
 
 <div class="posts">
   <h1><%= t(".blog_title") %><small><%= t(".blog_catchline") %></small></h1>
