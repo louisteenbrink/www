@@ -15,7 +15,7 @@
                 <% if author %>
                   <div class="post-author">
                     <% if post.is_a?(AlumniStory) %>
-                    <%= image_tag "http://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/#{author[:picture]}", class: 'author-picture' %>
+                    <%= image_tag "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/#{author[:picture]}", class: 'author-picture' %>
                     <% else %>
                       <% if author[:picture] %>
                         <%= author_image_tag(author[:picture]) %>
