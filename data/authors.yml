@@ -1,15 +1,66 @@
 cedric:
-  name: Cédric
+  fname: Cédric
+  lname: Menteau
+  picture: cedric-menteau.jpg
+  bio: "After a couple of year working for the surf industry, Cedric, pioneer from batch #1, is now taking care of our global content. From Paris to the closest beach, he helps us tackle some underground marketing tasks and organise a new Code x Surf camp!"
+  company: Le Wagon
+  position: Content Manager
+  company_website: lewagon.com
   twitter: cedricmenteau
-miruna:
-  name: Miruna
-  twitter: anamiruna
+  instagram: lewagonparis
+  linkedin: cedricmenteau
 sebastien:
-  name: Sébastien
+  fname: Sébastien
+  lname: Saunier
+  picture: sebastien-saunier.jpg
+  bio: "Sébastien is a software engineer with more than 8 years of experience. He worked at Google & VirtuOz, and now teaches all you need to know about web programming and the technical workflow used in a startup."
+  company: Le Wagon
+  position: CTO
+  company_website: www.lewagon.com
   twitter: ssaunier
+  instagram: lewagonparis
+  linkedin:
 boris:
-  name: Boris
+  fname: Boris
+  lname: Paillard
+  picture: boris-paillard.jpg
+  bio: "After an engineering school, Boris worked for 3 years in financial markets before getting bored. He quit to live his real passion, web-development and product design. Co-founding Le Wagon as CEO, he has been teaching frontend, web-design and Rails for 4 years and also gives frequent talks on technical entrepreneurship in major business & engineering schools."
+  company: Le Wagon
+  position: CEO
+  company_website: www.lewagon.com
   twitter: bpapillard
+  instagram: lewagonparis
+  linkedin:
 edward:
-  name: Edward
+  fname: Edward
+  lname: Schults
+  picture: edward-schults.jpg
+  bio: "Edward and Le Wagon is a long love story. Former student of Batch #4, teaching assistant during one year, he is now an official teacher and fullstack developer at Le Wagon. Oh, and Edward also founded Lovely Hood."
+  company: Le Wagon
+  position: Teacher & Developer
+  company_website: www.lewagon.com
   twitter: EdwardSchults
+  instagram: lewagonparis
+  linkedin: edward-schults-b81b2abb
+antonin:
+  fname: Antonin
+  lname: Archer
+  picture: antonin-archer.jpg
+  bio: "Antonin Archer is a French entrepreneur who graduated from HEC Paris and learned to code at Le Wagon. He started his podcast -Nouvelle École- to encourage people to get out of conventional paths."
+  company: Nouvelle École
+  position: Producer
+  company_website: nouvelleecole.org
+  twitter: antoninarcher
+  instagram: antoninarcher
+  linkedin: antoninarcher
+mg:
+  fname: Marie-Gabrielle
+  lname: Ayoub
+  picture: marie-gabrielle.jpg
+  bio: "Antonin Archer is a French entrepreneur who graduated from HEC Paris and learned to code at Le Wagon. He started his podcast -Nouvelle École- to encourage people to get out of conventional paths."
+  company: La Wagon Montréal
+  position: Driver
+  company_website: lewagon.com/montreal
+  twitter: lewagonmontreal
+  instagram: lewagonmontreal
+  linkedin: mgayoubher

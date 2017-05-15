@@ -1,0 +1,57 @@
+<% posts.each_slice(3) do |pp| %>
+  <div class="row">
+    <% pp.each do |post| %>
+      <div class="col-sm-12 col-md-8 col-md-offset-2">
+        <a href="<%= post.is_a?(AlumniStory) ? story_path(post.slug) : post_path(post.slug) %>">
+          <article class="post-thumbnail">
+            <div class="card-author">
+              <% if post.is_a?(AlumniStory) %>
+               <div class="background-author" style="background-image: url('<%= post.thumbnail %>')"></div>
+              <% else %>
+                 <div class="background-author" style="background-image: url('<%= post_image_tag(post.thumbnail) %>')"></div>
+              <% end %>
+              <% if post.author %>
+                <% author = post.author %>
+                <% if author %>
+                  <div class="post-author">
+                    <% if post.is_a?(AlumniStory) %>
+                    <%= image_tag "http://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/#{author[:picture]}", class: 'author-picture' %>
+                    <% else %>
+                      <% if author[:picture] %>
+                        <%= author_image_tag(author[:picture]) %>
+                      <% end %>
+                    <% end %>
+                    <div class="author-details">
+                      <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
+                      <% if post.is_a?(AlumniStory) %>
+                        <i class="author-position">Batch #<%= author[:batch] %><br><small>in <%= author[:city] %></small></i>
+                      <% end %>
+                      <% if author[:position] %>
+                        <i class="author-position"><%= author[:position] %><br><small>at <%= author[:company] %></small></i>
+                      <% end %>
+                    </div>
+                  </div>
+                <% end %>
+              <% end %>
+            </div>
+            <div class="card-content">
+              <ul>
+                <% post.labels.each do |tag| %>
+                  <li><%= tag %></li>
+                <% end %>
+              </ul>
+              <h2><%= post.title %></h2>
+              <% if post.description %>
+                <p class="description"><%= post.description.truncate(160) %></p>
+              <% end %>
+              <span class="read-time">
+                <i class="fa fa-clock-o" aria-hidden="true"></i> <%= post.read_time %> min reading
+                <% if post.date %> - Posted on <%= post.date.to_date.strftime("%d %b %Y") %><% end %>
+              </span>
+            </div>
+          </article>
+        </a>
+      </div>
+    <% end %>
+  </div>
+<% end %>

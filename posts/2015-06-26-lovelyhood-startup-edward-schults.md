@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Lovely Hood, facilitez-vous les échanges de bons procédés entre voisins"
-author: cedric
+author: edward
+date: 26-06-2015
 labels:
   - alumni
-  - startup
 pushed: true
-thumbnail: thumbnail-lovelyhood.jpg
+thumbnail: 2015-06-26-lovelyhood.jpg
 description: "Il aura suffi d'un TED Talk de Rachel Botsman pour décider Edward Schults, alumni du Wagon, à franchir le pas de l'entrepreneuriat. Avec sa marketplace Lovely Hood, ce dernier souhaite faciliter les échanges de bons procédés entre voisins. Découvrez son projet sans plus attendre !"
 ---
 
@@ -14,7 +14,7 @@ Il aura suffi d'un [TED Talk de Rachel Botsman](http://www.ted.com/talks/rachel_
 
 Avec [Lovely Hood](https://www.lovely-hood.com/), son objectif est double: fluidifier les échanges de biens et services entre particuliers et y incorporer une notion de proximité, afin de créer le lien de confiance entre individus, nécessaire aux microtransactions.
 
-![Lovely Hood, présentation du concept](blog_image_path lovelyhood_1.jpg)
+![Lovely Hood, présentation du concept](blog_image_path 2015-06-26-lovelyhood_1.jpg)
 
 
 ### Comment a germé l'idée de Lovely Hood ?
@@ -30,7 +30,7 @@ J'ai commencé par regarder du côté des formations en ligne et c'est à ce mom
 
 En parallèle de Lovely Hood j'ai lancé deux side-projects : le premier est une application pour [stocker les digicodes de vos amis]( https://digicode.herokuapp.com), le deuxième, réalisé en collaboration avec [Thomas Chrétien](https://twitter.com/tchret), est un site pour consulter rapidement toutes les dernières actualités de la scène tech : [Freshest](http://www.frshst.com/).
 
-![Edward Schults, fondateur de Lovely Hood](blog_image_path lovelyhood_2.jpg)
+![Edward Schults, fondateur de Lovely Hood](blog_image_path 2015-06-26-lovelyhood_2.jpg)
 
 
 ### Peux-tu définir le service en une phrase ?
@@ -45,7 +45,7 @@ Pour moi ce n'est qu'une affaire de bon sens et particulièrement en zone urbain
 
 En terme de fonctionnalités, on retrouve bien entendu une liste des offres, une interface de gestion des réservations, une wish list, des commentaires, des notations, un système de paiement et une messagerie.
 
-![Lovely Hood, profile et liste des offres](blog_image_path lovelyhood_3.jpg)
+![Lovely Hood, profile et liste des offres](blog_image_path 2015-06-26-lovelyhood_3.jpg)
 
 
 ### C'est tout de même un pari audacieux, non ?
@@ -63,7 +63,7 @@ Pour répondre à ces deux critères, j'ai imaginé Lovely Hood comme un hub de 
 
 La place de marché permet de recréer l'offre, mais le jour où je vais sur Lovely Hood et que je ne trouve pas ce que je cherche, je peux laisser un message que mes voisins pourront consulter !
 
-![Lovely Hood, le social wall](blog_image_path lovelyhood_4.jpg)
+![Lovely Hood, le social wall](blog_image_path 2015-06-26-lovelyhood_4.jpg)
 
 
 ### Quel est ton prochain challenge désormais ?

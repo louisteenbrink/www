@@ -2,17 +2,17 @@
 layout: post
 title: "uSlide, synchronisez vos vidéos et présentations"
 author: cedric
+date: 15-06-2015
 labels:
   - alumni
-  - startup
 pushed: true
-thumbnail: thumbnail-uslide.jpg
+thumbnail: 2015-06-15-uslide.jpg
 description: "uSlide vous permet de synchroniser vos vidéos et présentations en quelques clicks avant de les partager auprès de vos communautés. Présentation de cette toute jeune startup, fondée par Vincent Simon, alumni de la deuxième promotion du Wagon."
 ---
 
 [uSlide](https://www.uslide.io/) vous permet de synchroniser vos vidéos et présentations en quelques clicks avant de les partager auprès de vos communautés. Présentation de cette toute jeune startup, fondée par [Vincent Simon](https://twitter.com/vincentsimon64), alumni de la deuxième promotion du Wagon.
 
-![uSlide, présentation du concept](blog_image_path uslide-exemple.jpg)
+![uSlide, présentation du concept](blog_image_path 2015-06-15-uslide-exemple.jpg)
 
 ## Hello Vincent, peux-tu te présenter et nous éclairer sur ton parcours ?
 
@@ -20,7 +20,7 @@ Hello ! Je suis tout d'abord passé par les Arts et Métiers en spécialisation 
 
 Pendant les deux mois de formation, j'ai longuement échangé avec Romain, l'un des cofondateurs. D'une première idée de produit dédié à la retransmission multividéo en live pendant un concert, le concept du service à évolué pour devenir uSlide.
 
-![Vincent Simon, cofondateur uSlide](blog_image_path photo-uslide-vincent.jpg)
+![Vincent Simon, cofondateur uSlide](blog_image_path 2015-06-15-uslide-vincent.jpg)
 
 ## Comment s'est déroulé le lancement du projet ?
 
@@ -40,7 +40,7 @@ La formation du Wagon nous a parfaitement préparés à tous les challenges que 
 
 Nous nous sommes lancés sur un gros travail de refonte à partir de décembre 2014. Dans le même temps, nous avons énormément monté en compétence en JavaScript afin de prendre parfaitement en main l'API de YouTube. Cela n'en a peut-être pas l'air, mais le service est relativement complexe à faire tourner sur un serveur (une histoire de script et de binaires chevelus que je préfère vous éviter). Nous avons donc réalisé la mise en production sur [Docker](https://www.docker.com/) pour créer une machine virtuelle scalable afin de nous éviter d'avoir à reconfigurer un serveur à l'avenir.
 
-![Vincent Simon en action sur uSlide](blog_image_path uslide-workforce.jpg)
+![Vincent Simon en action sur uSlide](blog_image_path 2015-06-15-uslide-workforce.jpg)
 
 ## Existe t-il d'autres startups sur ce créneau ?
 

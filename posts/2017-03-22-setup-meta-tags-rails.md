@@ -2,22 +2,21 @@
 layout: post
 title: "Social Meta Tags Setup in Rails"
 author: edward
+date: 22-03-2017
 labels:
-  - tuto
+  - tutorial
 pushed: true
-thumbnail: lewagon_demoday_metatags.png
+thumbnail: 22-03-2017-rails-social-metatags.jpg
 description: Sharing your product on social networks has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your social meta tags are properly set.
 ---
 
 Sharing your product on **social networks** has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your **social meta tags** are properly set.
 
-<hr>
-
 ## WTF are meta tags?
 
 `<meta>` tags are HTML tags in the `<head>` of a webpage, visible to anyone.
 
-![Lewagon Demoday Metatags](blog_image_path lewagon_demoday_metatags.png)
+![Lewagon Demoday Metatags](blog_image_path 22-03-2017-rails-social-metatags.jpg)
 
 They provide the **content displayed on social networks** whenever your product's url is **shared in a post**.
 Titles, descriptions and images should all be setup with care and consideration to **improve your social exposure's conversion rate**.
@@ -29,8 +28,6 @@ The right content, including optimized images have shown to help posts to spread
   <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-post" data-href="https://www.facebook.com/lewagon/posts/589518731246729" data-width="500"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lewagon/posts/589518731246729"></blockquote></div></div>
 </div>
 
-<hr>
-
 ## Setup in a Rails app
 
 In this tutorial, we'll see:
@@ -38,9 +35,7 @@ In this tutorial, we'll see:
 - how to simply setup **default** meta tags for **any** of your website's pages,
 - how to override them in **some pages** to be more specific and impactful.
 
-<hr>
-
-##### **Default Meta Tags**
+## Default Meta Tags
 
 Let's create a `meta.yml` file in `config`, with the following:
 
@@ -65,9 +60,8 @@ DEFAULT_META = YAML.load_file(Rails.root.join("config/meta.yml"))
 
 **Important: as any file in the** `config/initializers` **folder, it is loaded when your app is launched. Any time you change the content in** `meta.yml`**, restart your** `rails s` **to refresh** `DEFAULT_META`**!**
 
-<hr>
+## Helpers setup
 
-##### **Helpers setup**
 Now before setting up our meta tags in our views, let's setup **helpers** that will encapsulate the following logic for our 3 keys `:meta_title`, `:meta_description` and `:meta_image`:
 
 __In any view, if a__ `content_for(:meta_key)` __was defined, it should override__ `DEFAULT_META`__'s value.__
@@ -94,7 +88,7 @@ module MetaTagsHelper
 end
 ```
 
-##### **Important: production host setup for images absolute urls**
+## Important: production host setup for images absolute urls
 
 Rails `image_url` helper requires you setup your host to generate the **absolute url** needed to load your images from the **external world** (Facebook, Twitter, ...).
 
@@ -113,9 +107,7 @@ If you deploy your code with Heroku for instance, just type in your terminal `he
 
 You can check it's properly set with `heroku config:get HOST`.
 
-<hr>
-
-##### **HTML setup - Layout**
+## HTML setup - Layout
 
 Finally, open your layout `app/views/layouts/application.html.erb` and copy paste the following meta tags in your layout's `<head>`:
 
@@ -140,7 +132,7 @@ Finally, open your layout `app/views/layouts/application.html.erb` and copy past
 <meta name="twitter:image:src" content="<%= meta_image %>">
 ```
 
-##### **HTML setup - Views**
+## HTML setup - Views
 
 Now let's assume you have an `Offer` model and you want dynamic titles and descriptions for any `products#show` page.
 Just set the relevant `content_for`s in `app/views/offers/show.html.erb`:
@@ -152,7 +144,7 @@ Just set the relevant `content_for`s in `app/views/offers/show.html.erb`:
 <% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
 ```
 
-##### **Testing**
+## Testing
 
 It's time to **deploy** your code and test your setup.
 
@@ -163,11 +155,9 @@ Social Networks provide **debugging tools** to help you check your tags are prop
 
 **Important :** Facebook's Open Graph recommends **1200x630** dimensions for meta images. [Read the documentation](https://developers.facebook.com/docs/sharing/best-practices) if you cannot manage to clear out all their warnings!
 
-<hr>
-
-##### **That's all folks**
+## That's all folks
 This sets a **framework** to easily manage your meta tags in **every single page** of your website.
 It's now up to you to keep on setting relevant titles, descriptions and images **every time you code a new view**!
 
-![Airbnb Metatags](blog_image_path airbnb_meta_tags.png)
+![Airbnb Metatags](blog_image_path 22-03-2017-airbnb-meta-tags.jpg)
 

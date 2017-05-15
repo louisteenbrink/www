@@ -1,0 +1,9 @@
+<% if params[:post_page] && params[:post_page] >= "2" %>
+  $('#videos-container').append("<%= j render 'more_videos', videos: @videos %>");
+  $('#paginator').html('<%= escape_javascript(link_to_next_page(@videos, I18n.t(".posts.videos.show_more_videos"), :remote => true, :param_name => 'post_page', id: 'load_more_videos', class: "content-cta")) %>');
+<% else %>
+  $('#videos-container').html("<%= j render 'more_videos', videos: @videos %>");
+  $('#videos-filter-container').html('<%= j render "filter_menu_video" %>');
+  $('#paginator').html('<%= escape_javascript(link_to_next_page(@videos, I18n.t(".posts.videos.show_more_videos"), :remote => true, :param_name => 'post_page', id: 'load_more_videos', class: "content-cta")) %>');
+  history.pushState({}, '', '<%= j params[:category].blank? ? videos_path : videos_path(category: params[:category]) %>');
+<% end %>

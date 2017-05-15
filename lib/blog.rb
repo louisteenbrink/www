@@ -1,6 +1,8 @@
 require "redcarpet"
 require_relative "./deep_symbolize"
 
+# NOTE(ssaunier): this file is not auto-loaded yet. So you need to restart `rails s` after a change in here.
+
 class Blog
   class Post
     JEKYLL_HEADER_PATTERN = /---(.*)---/m
@@ -31,6 +33,28 @@ class Blog
       @content ||= markdown.render(article_content.gsub("===", ""))
     end
 
+    def video?
+      layout.to_sym == :video
+    end
+
+    def post?
+      layout.to_sym == :post
+    end
+
+    DEFAULT_READING_TIME_IN_MINUTES = 2
+    AVERAGE_WORD_PER_MINUTES = 200
+
+    # Number of minutes neede to read post.
+    def read_time
+      if content.length > 0
+        words_number = content.split(" ").count
+        reading_time = (words_number / AVERAGE_WORD_PER_MINUTES).ceil
+        [reading_time, DEFAULT_READING_TIME_IN_MINUTES].max
+      else
+        DEFAULT_READING_TIME_IN_MINUTES
+      end
+    end
+
     def metadata
       @metadata ||= (
         yaml_content = JEKYLL_HEADER_PATTERN.match(file_content).captures[0]
@@ -40,12 +64,37 @@ class Blog
       )
     end
 
+    def layout
+      metadata[:layout]
+    end
+
     def title
       metadata[:title]
     end
 
     def thumbnail
       metadata[:thumbnail]
+    end
+
+    def layout
+      metadata[:layout]
+    end
+
+
+    def youtube_slug
+      metadata[:youtube_slug]
+    end
+
+    def author
+      Static::AUTHORS[metadata[:author].to_sym]
+    end
+
+    def labels
+      metadata[:labels]
+    end
+
+    def description
+      metadata[:description]
     end
 
     private
@@ -58,7 +107,7 @@ class Blog
       @article_content ||= (
         content = file_content.gsub(JEKYLL_HEADER_PATTERN, '')
         content = content.gsub(BLOG_IMAGE_PATH_PATTERN) do
-          "#{ActionController::Base.helpers.image_path "blog/#{$1}"}"
+          "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{$1}"
         end
       )
     end

@@ -1,68 +1,159 @@
-<% content_for(:title) do %>
-  <%= t ".title" %>
+<% count = 1000 %>
+<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
+  <% count = @statistics['alumni']['total'] %>
 <% end %>
 
-<div class="posts">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-sm-8 col-sm-offset-2 text-center">
-        <h1><%= t ".title" %></h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <% Static::MEDIUM_POSTS.each do |post| %>
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="medium-postcard">
-            <a class="embedly-card" data-card-key="25a989e9e56f4a8c82a07b9e00a3ee9c" data-card-controls="0" data-card-type="article-full" href="https://medium.com/le-wagon/<%= post %>">
-              <%= post.split('-')[0...-1].map(&:capitalize).join(" ") %>
-            </a>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-<%= content_for(:after_js) do %>
-  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
-<% end %>
+<% content_for(:title) { t ".title" } %>
+<% content_for(:description) { t '.blog_catchline' } %>
+<%= content_for(:image_url) { image_url 'social/all_posts_card.png' } %>
 
 <div class="posts">
-  <div class="container">
-    <% @posts.each_slice(2) do |posts| %>
-      <div class="row">
-        <div class="col-sm-2"></div>
-        <% posts.each do |post| %>
-          <div class="col-sm-4">
-            <article class="postcard element">
-              <% if post.metadata[:thumbnail] %>
-                <a href="<%= post_path post.slug %>" class="link-img" style="background-image: url('<%= asset_path "blog/#{post.metadata[:thumbnail]}" %>')">
-                  <div class="postcard-filter"></div>
-                </a>
-              <% end %>
-              <div class="content">
-                <div class="centered">
-                  <h2>
-                    <a href="<%= post_path post.slug %>">
-                      <%= post.metadata[:title].html_safe %>
-                    </a>
-                  </h2>
-                  <span class="author">posted by <strong><%= post.metadata[:author]%></strong></span>
-                  <% if post.metadata[:description] %>
-                    <p class="description"><%= post.metadata[:description].truncate(160) %></p>
+  <h1><%= t(".blog_title") %><small><%= t(".blog_catchline") %></small></h1>
+  <div class="container-fluid blog-header">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 header-main">
+        <% @videos.take(1).each do | video| %>
+          <%= link_to post_path video.slug do %>
+            <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
+              <?xml version="1.0" encoding="UTF-8"?>
+              <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+                </g>
+              </svg>
+              <div class="video-details">
+                <i><%= t(".header_latest") %></i>
+                <h4><%= video.title %></h4>
+                <ul>
+                  <% video.labels.each do |tag| %>
+                    <li><%= tag %></li>
                   <% end %>
-                </div>
+                </ul>
               </div>
-              <div class="link-post-container text-right">
-                <a href="<%= post_path post.slug %>" class="link-post"><i class="fa fa-eye"></i>
-                </a>
-              </div>
-            </article>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+
+      <div class="col-md-8 col-md-offset-2 header-aside">
+        <%= link_to all_path do %>
+          <div class="header-aside-item">
+            <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "banners/blog-posts.jpg" %>')">
+            </div>
+            <div class="aside-item-content">
+              <h3><%= t(".header_aside_1") %></h3>
+              <ul>
+                <li>Tutorials</li>
+                <li>Alumni</li>
+                <li>Podcasts</li>
+              </ul>
+            </div>
+          </div>
+        <% end %>
+        <%= link_to videos_path do %>
+          <div class="header-aside-item">
+            <div class="aside-item-thumbnail" style="background-image: url('<%= asset_path "banners/blog-videos.jpg" %>')">
+            </div>
+            <div class="aside-item-content">
+              <h3><%= t(".header_aside_2") %></h3>
+              <ul>
+                <li>Workshops</li>
+                <li>Talks</li>
+              </ul>
+            </div>
           </div>
         <% end %>
       </div>
-    <% end %>
+    </div>
   </div>
 </div>
+
+<section class="posts">
+  <h3 class="section-title"><small><%= t(".posts_small") %></small><%= t(".posts_title") %></h3>
+  <div id="posts-container" class="container-fluid">
+    <%= render 'more_posts', posts: @posts %>
+  </div>
+  <%= link_to all_path, class: 'content-cta' do %>
+    <%= t(".see_all_posts") %>
+  <% end %>
+</section>
+
+<section class="recorded">
+  <h3 class="section-title"><small><%= t(".videos_small") %></small><%= t(".videos_title") %></h3>
+  <div class="container-fluid">
+    <% @videos.take(4).each_slice(2) do |videos| %>
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="row">
+            <% videos.each do |video| %>
+              <div class="col-sm-6">
+                <%= link_to post_path video.slug do %>
+                  <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+                      </g>
+                    </svg>
+                    <div class="video-details">
+                      <h4><%= video.title %></h4>
+                      <ul>
+                        <% video.labels.each do |tag| %>
+                          <li><%= tag %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+    <%= link_to videos_path, class: 'content-cta' do %>
+      <%= t(".see_all_videos") %>
+    <% end %>
+  </div>
+</section>
+
+<section class="more-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <%= link_to alumni_path do %>
+          <div class="more-content-thumbnail" style="background-image: url('<%= asset_path "banners/banner-alumni.jpg" %>')">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
+              <g>
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26   S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" fill="#FFFFFF"/>
+                <path d="M38.5,25H27V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v12c0,0.553,0.448,1,1,1   s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z" fill="#FFFFFF"/>
+              </g>
+            </svg>
+            <div class="content-details">
+              <h4><%= t(".more_stories") %></h4>
+              <span><%= count %> <%= t(".more_stories_details") %></span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-sm-6">
+        <%= link_to demoday_index_path do %>
+          <div class="more-content-thumbnail" style="background-image: url('<%= asset_path "banners/10.jpg" %>')">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
+              <g>
+                <path d="M26,0C11.664,0,0,11.663,0,26s11.664,26,26,26s26-11.663,26-26S40.336,0,26,0z M26,50C12.767,50,2,39.233,2,26   S12.767,2,26,2s24,10.767,24,24S39.233,50,26,50z" fill="#FFFFFF"/>
+                <path d="M38.5,25H27V14c0-0.553-0.448-1-1-1s-1,0.447-1,1v11H13.5c-0.552,0-1,0.447-1,1s0.448,1,1,1H25v12c0,0.553,0.448,1,1,1   s1-0.447,1-1V27h11.5c0.552,0,1-0.447,1-1S39.052,25,38.5,25z" fill="#FFFFFF"/>
+              </g>
+            </svg>
+            <div class="content-details">
+              <h4><%= t(".more_videos") %></h4>
+              <span><%= t(".more_videos_details") %></span>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render partial: "shared/playlist" %>

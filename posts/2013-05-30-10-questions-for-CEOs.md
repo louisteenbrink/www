@@ -1,16 +1,17 @@
 ---
 layout: post
 title:  "10 questions for modern CEOs"
-author: miruna
+author: boris
+date: 30-05-2015
 labels:
   - startup
-thumbnail: 10-questions-for-modern-ceos.jpg
+thumbnail: 2013-05-30-10-questions-for-modern-ceos.jpg
 description: "Last May, Le wagon introduced CEOs from le camping, Season4 to the basics of design, front-end & back-end development. The idea behing these courses was to give them a basic overview on the essentials: how a website works, responds to requests, treats and stores data, builds and stylizes responses."
 ---
 
 *Last May, Le wagon introduced CEOs from <a href="http://www.lecamping.org/">le camping</a>, Season4 to the basics of design, front-end & back-end development. The idea behing these courses was to give them a basic overview on the essentials: how a website works, responds to requests, treats and stores data, builds and stylizes responses.*
 
-![code au camping](blog_image_path code_camping.jpg)
+![code au camping](blog_image_path 2013-05-30-10-questions-for-modern-ceos.jpg)
 
 The conclusion was what we had predicted. With enough will and analytical background, any beginner can learn to code. Additionally, any entrepreneur worth his salt should at least grasp some web concepts before taking the plunge. Here are a few questions an entrepreneur should ask himself, before starting the journey.
 

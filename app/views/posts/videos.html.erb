@@ -1,0 +1,26 @@
+<% content_for(:title) { t ".videos_title" } %>
+<% content_for(:description) { t '.videos_description' } %>
+<%= content_for(:image_url) { image_url 'social/all_videos_card.png' } %>
+
+<div class="container breadcrumb">
+  <ul>
+    <li><%= link_to t('.breadcrumb_1'), blog_path %></li>
+    <li><%= t('.breadcrumb_2') %></li>
+  </ul>
+</div>
+
+<section class="videos">
+  <h3 class="section-title"><small><%= t('.videos_small') %></small><%= t('.videos_title') %></h3>
+
+  <div class="filter-container" id="videos-filter-container">
+    <%= render "filter_menu_video" %>
+  </div>
+
+  <div id="videos-container" class="container">
+    <%= render 'more_videos', videos: @videos %>
+  </div>
+
+  <div id="paginator">
+    <%= link_to_next_page @videos, t(".show_more_videos"), remote: true, param_name: :post_page, id: 'load_more_videos', class: 'more-videos content-cta' %>
+  </div>
+</div>
