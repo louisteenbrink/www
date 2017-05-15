@@ -21,7 +21,7 @@ class Prospect < ApplicationRecord
       "channel": Rails.env.development? ? "test" : "incoming",
       "username": "www",
       "icon_url": "https://raw.githubusercontent.com/lewagon/mooc-images/master/slack_bot.png",
-      "text": "New prospect from #{from_path} on /learn: #{email}"
+      "text": "New prospect for the free Web Development Basics track on *#{from_path}*: #{email}"
     })
   end
 end
