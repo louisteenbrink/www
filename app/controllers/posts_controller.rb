@@ -21,7 +21,11 @@ class PostsController < ApplicationController
   end
 
   def rss
-    @posts = Blog.new.all
+    json_stories = @client.stories
+    stories = json_stories.map { |story| AlumniStory.new(story) }
+    articles = Blog.new.all
+    @posts = (articles + stories).sort_by { |p| p.date }.reverse
+    render layout: false
   end
 
   def show

@@ -64,7 +64,7 @@ Rails.application.routes.draw do
     post "apply/validate" => "applies#validate", as: :validate_apply
   end
 
-  get "blog/rss", to: 'posts#rss', defaults: { format: :xml }
+  get "blog/rss", to: 'posts#rss', defaults: { format: :xml }, as: :rss
 
   get "hec", to: 'applies#new_hec', as: :new_hec_apply
   post "hec", to: 'applies#create_hec', as: :hec_apply, locale: :fr
