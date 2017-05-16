@@ -493,7 +493,7 @@ pt-BR:
     social_sharing:
       share: Share
     learn_cta:
-      learn_cta_title: Learn to code online
+      learn_cta_title: Aprenda a codar online
       learn_cta_html: |
-        <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
-      learn_button: Get my invitation
+        <strong>Peça seu convite</strong> para nosso <strong>curso gratuito online</strong> e aprenda HTML, CSS, Javascript, Github, APIs e muito mais
+      learn_button: Quero meu convite!
