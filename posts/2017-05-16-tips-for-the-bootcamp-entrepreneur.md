@@ -8,7 +8,7 @@ labels:
   - guest
 pushed: true
 thumbnail: 2017-05-16-tips-for-the-bootcamp-entrepreneur.jpg
-description: While the goal of most prospective bootcamp students is to get hired, a growing number of students use the experience to launch their own ventures.
+description: While the goal of most prospective bootcamp students is to get hired, a growing number of students use the experience to launch their own ventures. Here are a few things to keep in mind before you get started!
 ---
 
 While the goal of most prospective bootcamp students is to get hired, a growing number of students use the experience to launch their own ventures. Here at [SwitchUp](https://www.switchup.org/), we’ve seen several companies get their start at a bootcamp, and startup-focused programs like Le Wagon are becoming a popular option for entrepreneurs.
