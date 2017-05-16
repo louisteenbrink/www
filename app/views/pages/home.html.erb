@@ -1,5 +1,8 @@
 <%= content_for(:title)       { t ".title" }       %>
 <%= content_for(:description) { t ".description" } %>
+<%= content_for(:headers) do %>
+  <link rel="canonical" href="<%= I18n.locale == :en ? root_url : root_url(locale: I18n.locale) %>" />
+<% end %>
 
 <div class="banner-container">
   <div class="container">
