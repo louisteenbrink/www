@@ -14,8 +14,9 @@
   <h1><%= t(".blog_title") %><small><%= t(".blog_catchline") %></small></h1>
   <div class="container-fluid blog-header">
     <div class="row">
-      <div class="col-md-8 col-md-offset-2 header-main">
-        <% @videos.take(1).each do | video| %>
+      <% if @videos && @videos.any? %>
+        <div class="col-md-8 col-md-offset-2 header-main">
+          <% video = @videos.first %>
           <%= link_to post_path video.slug do %>
             <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
               <?xml version="1.0" encoding="UTF-8"?>
@@ -35,8 +36,8 @@
               </div>
             </div>
           <% end %>
-        <% end %>
-      </div>
+        </div>
+      <% end %>
 
       <div class="col-md-8 col-md-offset-2 header-aside">
         <%= link_to all_path do %>
