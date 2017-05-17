@@ -354,8 +354,6 @@ en:
     shop:
       title: "Le Wagon's shop"
       description: "Because coders got style"
-    vae:
-      title: "Validation of Acquired Experience"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

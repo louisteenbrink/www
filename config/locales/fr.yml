@@ -351,8 +351,6 @@ fr:
     shop:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
-    vae:
-      title: "Validation des Acquis de l'Expérience"
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
