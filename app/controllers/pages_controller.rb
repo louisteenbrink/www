@@ -57,6 +57,9 @@ class PagesController < ApplicationController
     render json: params.to_json
   end
 
+  def vae
+  end
+
   private
 
   def mark_as_tracked
