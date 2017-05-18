@@ -12,19 +12,17 @@ description: Il aimait écrire, mais n'était pas le meilleur. Il aimait le rap 
 
 <iframe width="100%" height="220" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/322726602&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
 
-<blockquote>
-J'ai longtemps complexé face aux vrais passionnés. Ceux qui ont découvert à 5 ans qu'ils aimaient coder, prendre des photos ou jouer du violon. Ceux qui étaient en freelance à 16 ans et dépassaient leur statut d'autoentrepreneur quand je vendais mon temps 10 euros (une autre histoire).<br>
+J'ai longtemps complexé face aux vrais passionnés. Ceux qui ont découvert à 5 ans qu'ils aimaient coder, prendre des photos ou jouer du violon. Ceux qui étaient en freelance à 16 ans et dépassaient leur statut d'autoentrepreneur quand je vendais mon temps 10 euros (une autre histoire).
 
-<br>Le temps m'a aidé à comprendre plusieurs choses.<br>
+Le temps m'a aidé à comprendre plusieurs choses.
 
-<br>Tout d'abord, que le passionné n'est qu'une représentation mentale de mon esprit. J'aimerais croire que les poursuites artistiques sont réservées à ceux qui ont le talent. Qu'ils sont meilleurs, ou différents. C'est une bonne excuse, mais ce n'est qu'une excuse.<br>
+Tout d'abord, que le passionné n'est qu'une représentation mentale de mon esprit. J'aimerais croire que les poursuites artistiques sont réservées à ceux qui ont le talent. Qu'ils sont meilleurs, ou différents. C'est une bonne excuse, mais ce n'est qu'une excuse.
 
-<br>Ensuite, j'ai abandonné l'idée de devenir le meilleur dans une discipline. J'ai passé trop d'années à angoisser face aux génies des algorithmes, aux prodiges du foot et aux musiciens précoces. Faire partie des 5% mondiaux dans un domaine, c'est trop difficile. 10 ans de pratique quotidienne au moins. Comme je change de carrière tous les 6 mois, ce n'est pas près d'arriver. J'ai tout commencé trop tard pour devenir le Mozart de quoi que ce soit.<br>
+Ensuite, j'ai abandonné l'idée de devenir le meilleur dans une discipline. J'ai passé trop d'années à angoisser face aux génies des algorithmes, aux prodiges du foot et aux musiciens précoces. Faire partie des 5% mondiaux dans un domaine, c'est trop difficile. 10 ans de pratique quotidienne au moins. Comme je change de carrière tous les 6 mois, ce n'est pas près d'arriver. J'ai tout commencé trop tard pour devenir le Mozart de quoi que ce soit.<br>
 
-<br>Tant mieux. Il existe une meilleure solution.<br>
+Tant mieux. Il existe une meilleure solution.
 
-<br>Plutôt que de m'échiner à faire partie des 5% meilleurs dans un domaine, je peux faire partie des 20% dans plusieurs disciplines et devenir le meilleur à l'intersection.
-</blockquote>
+Plutôt que de m'échiner à faire partie des 5% meilleurs dans un domaine, je peux faire partie des 20% dans plusieurs disciplines et devenir le meilleur à l'intersection.
 
 ## L'intersection des passions
 
