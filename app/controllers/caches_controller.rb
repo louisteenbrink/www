@@ -6,7 +6,7 @@ class CachesController < ApplicationController
 
   def destroy
     AlumniClient.new.del_all
-    render nothing: true
+    render body: nil
   end
 
   private
