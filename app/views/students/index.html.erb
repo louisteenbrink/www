@@ -1,11 +1,11 @@
 <% count = 1000 %>
-<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
+<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Integer) %>
   <% count = @statistics['alumni']['total'] %>
 <% end %>
 
 <%= content_for(:title)       { (t ".meta_title").html_safe }       %>
 <%= content_for(:description) { t ".meta_description_html", count: count } %>
-<%= content_for(:image_url) { image_url 'social/alumni_card.png' } %>
+<%= content_for(:image_url) { image_url 'social/alumni_card.jpg' } %>
 
 
 <h1>
