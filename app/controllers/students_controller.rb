@@ -3,7 +3,7 @@ class StudentsController < ApplicationController
 
   def index
     if request.format.html? || params[:testimonial_page]
-      @testimonials = @client.testimonials(locale.to_s)
+      @testimonials = @client.testimonials(locale.to_s).reverse
       @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
     end
 
