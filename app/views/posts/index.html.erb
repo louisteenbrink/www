@@ -85,7 +85,7 @@
 <section class="recorded">
   <h3 class="section-title"><small><%= t(".videos_small") %></small><%= t(".videos_title") %></h3>
   <div class="container-fluid">
-    <% @videos.take(4).each_slice(2) do |videos| %>
+    <% @videos && @videos.take(4).each_slice(2) do |videos| %>
       <div class="row">
         <div class="col-md-8 col-md-offset-2">
           <div class="row">
