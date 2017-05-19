@@ -1,17 +1,17 @@
 source "https://rubygems.org"
 ruby File.read(".ruby-version").strip
 
-gem "rails", "5.0.1"
+gem "rails", "5.1.1"
 gem "jbuilder"
 gem 'responders', '~> 2.0'
-gem "pg"
+gem "pg", '~> 0.20'
 gem "figaro"
-gem "simple_form"
+gem "simple_form", '~> 3.5'
 gem "rest-client"
 gem 'meetup_client'
 gem "redis"
 gem 'redis-rails'
-gem 'devise'
+gem 'devise', '~> 4.3.0'
 gem "omniauth-github"
 
 gem 'sidekiq'
@@ -61,7 +61,7 @@ end
 group :development, :test do
   gem "spring"
   gem "letter_opener"
-  gem "rspec-rails"
+  gem "rspec-rails", '~> 3.6'
 end
 
 group :development do
