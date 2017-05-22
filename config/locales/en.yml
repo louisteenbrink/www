@@ -109,8 +109,7 @@ en:
   pages:
     home:
       title: "Coding Bootcamp Le Wagon | Learn to code with Europe's best coding school"
-      description: |
-        Le Wagon is Europe's best coding school for entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp.
+      description: "Le Wagon is Europe's best coding school for entrepreneurs. Learn to code in 9 weeks with our fullstack coding bootcamp."
       catchline_html: "Change your life: <strong>learn to code</strong>"
       vision_html: Le Wagon brings <strong>technical skills</strong> to <strong>creative people</strong>
       view_teaser: See our video

@@ -1,3 +1,6 @@
+<%= content_for(:title)       { "Press - Le Wagon" }       %>
+<%= content_for(:description) { Static::PRESS.map { |article| article[:media] }.uniq.take(8).to_sentence + " are talking about Le Wagon" } %>
+
 <div class="padded" id="press">
   <div class="container">
     <div class="row">

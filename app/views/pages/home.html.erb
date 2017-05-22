@@ -1,5 +1,5 @@
-<%= content_for(:title)       { t ".title" }       %>
-<%= content_for(:description) { t ".description" } %>
+<%= content_for(:title)       { raw t ".title" }       %>
+<%= content_for(:description) { raw t(".description") } %>
 <%= content_for(:headers) do %>
   <link rel="canonical" href="<%= I18n.locale == :en ? root_url : root_url(locale: I18n.locale) %>" />
 <% end %>
