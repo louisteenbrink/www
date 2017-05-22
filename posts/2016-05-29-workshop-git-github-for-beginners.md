@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "Git and GitHub for Beginners "
+title: "Git and GitHub for Beginners"
 author: sebastien
 date: 29-05-2016
 youtube_slug: "Z9fIBT2NBGY"
