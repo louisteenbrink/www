@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "ApéroTalk avec Quentin Nickmans, Cofondateur eFounders "
+title: "ApéroTalk avec Quentin Nickmans, Cofondateur eFounders"
 author: cedric
 date: 07-03-2015
 youtube_slug: "7esHm3ZFDUw"
