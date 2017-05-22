@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html class="<%= "#{params[:controller]}-#{params[:action]}".gsub('/', '-') %>" lang="<%= I18n.locale %>">
 <head>
-<% cache [ 'head', request: request.original_url, live: @live, locale: I18n.locale ] do %>
   <title><%= content_for?(:title) ? yield(:title).squish.html_safe : "Le Wagon" %></title>
   <meta name="description" content="<%= (yield(:description) || "").squish.html_safe %>">
 
@@ -35,11 +34,11 @@
   <% if request.path_info == '/' %>
     <link rel="alternate" href="<%= url_for('/') %>" hreflang="x-default" />
   <% end %>
-  <%= yield(:headers) %>
-<% end %>
 
-<%= stylesheet_link_tag :application, media: "all" %>
-<%= csrf_meta_tags %>
+  <%= yield(:headers) %>
+
+  <%= stylesheet_link_tag :application, media: "all" %>
+  <%= csrf_meta_tags %>
 
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
