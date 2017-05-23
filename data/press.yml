@@ -40,6 +40,12 @@
   logo: logo-hec.jpg
   date: 2016-12-01
 
+- name: "Where to learn how to code in London"
+  url: http://www.standard.co.uk/lifestyle/london-life/where-to-learn-how-to-code-in-london-a3403131.html
+  media: Evening Standard
+  logo: logo-eveningstandard.jpg
+  date: 2016-11-23
+
 - name: "Os projetos apresentados no demo day do bootcamp de programação Le Wagon"
   url: http://gizmodo.uol.com.br/demo-day-bootcamp-le-wagon/
   media: Gizmodo Brasil
