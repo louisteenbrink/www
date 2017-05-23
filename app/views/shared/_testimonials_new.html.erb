@@ -1,5 +1,17 @@
+<div class="container-fluid testimonials-wrapper">
+  <h2><%= t(".sneak_peek_html") %></h2>
+  <div id="testimonials-container" class="container testimonials-container">
+    <%= render 'shared/more_testimonials', testimonials: @testimonials %>
+  </div>
+  <div id="paginator-testimonials">
+    <% if @testimonials %>
+      <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
+    <% end %>
+  </div>
+</div>
+
 <div class="testimonials-services">
-  <h2><i><%= @reviews %>+</i> <%= t(".love_messages") %></h2>
+  <h2>Read <i><%= @reviews %>+</i> <%= t(".love_messages") %></h2>
   <div class="services-logos">
     <a href="https://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank">
       <%= image_tag "techcrunch-testimonial.png" %>
@@ -16,16 +28,4 @@
   </div>
 </div>
 
-
-<div class="container-fluid testimonials-wrapper">
-  <h2><%= t(".sneak_peek") %></h2>
-  <div id="testimonials-container" class="container testimonials-container">
-    <%= render 'shared/more_testimonials', testimonials: @testimonials %>
-  </div>
-  <div id="paginator-testimonials">
-    <% if @testimonials %>
-      <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
-    <% end %>
-  </div>
-</div>
 

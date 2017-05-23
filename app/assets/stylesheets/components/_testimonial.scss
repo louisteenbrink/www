@@ -1,7 +1,10 @@
 .testimonials-wrapper {
   background: white;
-  padding: 30px 0;
-  padding-bottom: 80px;
+  padding: 60px 0 0;
+}
+
+#paginator-testimonials {
+  display: none;
 }
 
 .testimonials {
@@ -61,7 +64,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 17px;
-  padding: 28px;
+  padding: 30px 0;
   padding-top: 30px;
   font-weight: lighter;
   color: #747070;
@@ -137,14 +140,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 90px 0 0;
+  padding: 0 0 80px;
   width: 100%;
   min-height: 150px;
 
   h2 {
     margin-bottom: 50px;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 30px;
     color: #a2a2a2;
 
     @media (max-width: 767px) {
@@ -218,6 +221,42 @@
 
 .testimonials-wrapper {
 
+  h2 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    background-color: #fff;
+
+    small {
+      margin-top: 20px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 1px;
+      top: 15px;
+      left: 0;
+      background-color: #E0E0E0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 1px;
+      top: 15px;
+      right: 0;
+      background-color: #E0E0E0;
+    }
+  }
+
   .quotes-icon {
     position: relative;
     margin: 55px 0 85px 0px;
@@ -228,12 +267,11 @@
   .testimonials-container {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 80px;
+    margin-top: 50px;
 
     .testimonial-card {
       position: relative;
       padding: 0 40px;
-      width: 50%;
 
       @media (max-width: 767px) {
         width: 100%;
@@ -246,7 +284,7 @@
 
       .testimonial-body {
         position: relative;
-        padding-left: 85px;
+        padding-left: 115px;
         margin-bottom: 30px;
         min-height: 185px;
         background-color: white;
@@ -260,8 +298,8 @@
           position: absolute;
           width: 115px;
           height: 115px;
-          top: 50%;
-          left: -57px;
+          top: 90px;
+          left: -40px;
           transform: translateY(-50%);
           border-radius: 50%;
           border: 3px solid white;
