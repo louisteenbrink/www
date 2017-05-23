@@ -2,26 +2,27 @@
   <% @testimonials.each_slice(2) do |testimonials| %>
     <div class="row">
       <% testimonials.each do |testimonial| %>
-        <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
-          <div class="col-md-6">
-            <div class="testimonial-card">
-              <div class="testimonial-body">
-                <%= cl_adaptive_image_tag testimonial['user']['photo_path'], class: 'alumni-picture', width: 230, height: 230, crop: :fill %>
-                <div class='testimonial-content'>
-                  <%= testimonial['content'].capitalize %>
+        <div class="col-md-6">
+          <div class="testimonial-card">
+            <div class="testimonial-body">
+              <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
+              <div class='testimonial-content'>
+                <%= raw testimonial.content_html %>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-user-name">
+                  <%= testimonial.first_name %>  <%= testimonial.last_name %>
                 </div>
-                <div class="testimonial-author">
-                  <div class="testimonial-user-name">
-                    <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
-                  </div>
-                  <div class='testimonial-user-batch'>
-                    Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
-                  </div>
+                <div class='testimonial-user-batch'>
+                  Batch #<%= testimonial.batch_slug %>, <%= testimonial.city.name %>
+                </div>
+                <div class='testimonial-user-batch'>
+                  <%= t('.published_on') %> <%= testimonial.origin %>, <%= testimonial.publication_date.strftime('%d %b %Y') %>
                 </div>
               </div>
             </div>
           </div>
-         <% end %>
+        </div>
       <% end %>
     </div>
   <% end %>

@@ -1,3 +1,5 @@
+<% reviews = @reviews %>
+
 <div class="container-fluid testimonials-wrapper">
   <h2><%= t(".sneak_peek_html") %></h2>
   <div id="testimonials-container" class="container testimonials-container">
@@ -11,7 +13,7 @@
 </div>
 
 <div class="testimonials-services">
-  <h2>Read <i><%= @reviews %>+</i> <%= t(".love_messages") %></h2>
+  <h2><%= t(".love_messages_html", reviews: @reviews) %></h2>
   <div class="services-logos">
     <a href="https://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank">
       <%= image_tag "techcrunch-testimonial.png" %>
