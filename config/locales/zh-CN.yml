@@ -51,7 +51,12 @@ zh-CN:
       students_think_of_us: 学员是如何看待Le Wagon的
       more_reviews: 关于Le Wagon的更多评价
       love_messages: 学员评价
+      love_messages_html: |
+        or read %{reviews}+ more reviews on
+      sneak_peek: What our studients think of us
       show_more_testimonials: 呈现更多评价
+    more_testimonials:
+      published_on: Published on
     features:
       read_full_program: 浏览项目内容
       pedagogy_matters_html: "用创业的思维学习编程"
