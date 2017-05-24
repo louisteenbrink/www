@@ -59,8 +59,12 @@ fr:
       what_our_students_say: Reviews d'élèves
       students_think_of_us: Ce que nos élèves pensent de nous
       more_reviews: Plus de reviews sur Le Wagon
-      love_messages: reviews sur le web
+      love_messages_html: |
+        ou découvrez %{reviews}+ reviews à lire sur
+      sneak_peek: Ce que nos élèves pensent de nous
       show_more_testimonials: Voir plus de reviews
+    more_testimonials:
+      published_on: Publié sur
     features:
       read_full_program: Lire le programme
       pedagogy_matters_html: |

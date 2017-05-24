@@ -1,7 +1,11 @@
 <% reviews = @reviews %>
 
 <div class="container-fluid testimonials-wrapper">
-  <h2><%= t(".sneak_peek_html") %></h2>
+  <h2 class="section-title-home" style="font-size:30px;">
+    <div class="section-title-home-content" style="background-color: white;">
+      <%= t(".sneak_peek") %>
+    </div>
+  </h2>
   <div id="testimonials-container" class="container testimonials-container">
     <%= render 'shared/more_testimonials', testimonials: @testimonials %>
   </div>
@@ -13,7 +17,11 @@
 </div>
 
 <div class="testimonials-services">
-  <h2><%= t(".love_messages_html", reviews: @reviews) %></h2>
+  <h2 class="section-title-home" style="font-size:30px;">
+    <div class="section-title-home-content" style="background-color: white;">
+      <%= t(".love_messages_html", reviews: @reviews) %>
+    </div>
+  </h2>
   <div class="services-logos">
     <a href="https://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank">
       <%= image_tag "techcrunch-testimonial.png" %>
@@ -27,6 +35,23 @@
      <a href="https://www.coursereport.com/schools/le-wagon#/reviews" target="_blank">
       <%= image_tag "course_report.png" %>
     </a>
+  </div>
+</div>
+
+<div class="quote-overlay">
+  <div class="container">
+    <div class='quote'>
+      <h2 class='section-title-home quote'>
+        <div class='section-title-home-content'>
+          "We're now ranked <strong>1st best Coding Bootcamp</strong> in the world on SwitchUp"
+        </div>
+      </h2>
+      <div class='techcrunch-view hidden-sm hidden-xs'>
+        <a href='https://www.switchup.org/research/best-coding-bootcamps' target='_blank'>
+          <%= image_tag "press/switchup.png" %>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 

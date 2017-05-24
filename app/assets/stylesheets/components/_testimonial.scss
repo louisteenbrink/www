@@ -1,6 +1,11 @@
 .testimonials-wrapper {
   background: white;
   padding: 60px 0 0;
+
+  .section-title-home-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .testimonials {
@@ -141,37 +146,17 @@
   min-height: 150px;
 
   h2 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-    max-width: 1140px;
-    margin: 40px auto 55px;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: center;
-    background-color: #fff;
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 28%;
-      height: 1px;
-      top: 17px;
-      left: 0;
-      background-color: #E0E0E0;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 100%;
+      max-width: 1140px;
+      margin: 40px auto 55px;
+      font-size: 30px;
+      font-weight: 900;
+      text-align: center;
+      background-color: #fff;
     }
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 28%;
-      height: 1px;
-      top: 17px;
-      right: 0;
-      background-color: #E0E0E0;
-    }
-  }
 
   .services-logos {
     display: flex;
@@ -229,8 +214,6 @@
 .testimonials-wrapper {
 
   h2 {
-    display: flex;
-    flex-direction: column;
     position: relative;
     max-width: 1140px;
     margin: 0 auto;
@@ -238,30 +221,6 @@
     font-weight: 900;
     text-align: center;
     background-color: #fff;
-
-    small {
-      margin-top: 20px;
-    }
-
-    &:before {
-      content: "";
-      position: absolute;
-      width: 330px;
-      height: 1px;
-      top: 15px;
-      left: 0;
-      background-color: #E0E0E0;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      width: 330px;
-      height: 1px;
-      top: 15px;
-      right: 0;
-      background-color: #E0E0E0;
-    }
   }
 
   .quotes-icon {
@@ -283,6 +242,7 @@
       @media (max-width: 767px) {
         width: 100%;
         padding: 0 20px;
+        margin-top: 70px;
 
         &:not(:last-of-type) {
           margin-bottom: 60px;

@@ -53,8 +53,7 @@ en:
       more_reviews: More reviews of Le Wagon
       love_messages_html: |
         or read %{reviews}+ more reviews on
-      sneak_peek_html: |
-        What our studients think of us<small>It's just a sneak peek</small>
+      sneak_peek: What our studients think of us
       show_more_testimonials: Show more testimonials
     more_testimonials:
       published_on: Published on

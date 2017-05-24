@@ -50,8 +50,12 @@ es:
       what_our_students_say: Testimonios
       students_think_of_us: Que opinan nuestros alumnos
       more_reviews: Más reviews de Le Wagon
-      love_messages: Reviews
+      love_messages_html: |
+        or read %{reviews}+ more reviews on
+      sneak_peek: What our studients think of us
       show_more_testimonials: Mostrar más
+    more_testimonials:
+      published_on: Published on
     features:
       read_full_program: Leer el temario completo
       pedagogy_matters_html: "Desarrolla web apps como una startup"
