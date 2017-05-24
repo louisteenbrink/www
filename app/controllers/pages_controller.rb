@@ -60,6 +60,9 @@ class PagesController < ApplicationController
   def vae
   end
 
+  def cgv
+  end
+
   private
 
   def mark_as_tracked
