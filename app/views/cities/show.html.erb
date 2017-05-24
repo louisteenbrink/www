@@ -8,6 +8,8 @@
   <!-- <link rel="canonical" href="<%= root_url(locale: I18n.locale) %>" /> -->
 <%# end %>
 
+<% reviews = @reviews %>
+
 <%
   asset = "social/#{@city["slug"]}_facebook_card.png"
   content_for(:image_url) { image_url asset } unless Rails.application.assets.find_asset(asset).nil?
@@ -76,7 +78,7 @@
 </div>
 <% end %>
 
-<%= render partial: "shared/testimonials" %>
+<%= render partial: "shared/testimonials_new" %>
 
 
 <div id="staff">

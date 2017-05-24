@@ -1,0 +1,5 @@
+<% if params[:testimonial_page] %>
+  $('#testimonials-container').append("<%= j render 'shared/more_testimonials', testimonials: @testimonials %>");
+  $('#paginator-testimonials').html('<%= escape_javascript(link_to_next_page(@testimonials, I18n.t(".shared.testimonials_new.show_more_testimonials"), :remote => true, :param_name => 'testimonial_page', id: 'load_more_testimonials', class: "more-testimonials")) %>');
+  truncateTestimonials();
+<% end %>
