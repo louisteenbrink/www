@@ -32,7 +32,6 @@ gem 'react-bootstrap-rails'
 gem "lodash-rails"
 gem 'js-routes'
 gem 'autoprefixer-rails'
-gem "jquery-slick-rails"
 gem 'money-rails'
 gem 'gibbon'
 gem 'ruby-trello'

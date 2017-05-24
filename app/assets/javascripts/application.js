@@ -1,7 +1,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap-sprockets
-//= require jquery.slick
 //= require "headroom.js.js"
 
 //= require react
