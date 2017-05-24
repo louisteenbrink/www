@@ -2,12 +2,15 @@
   <% @testimonials.each_slice(2) do |testimonials| %>
     <div class="row">
       <% testimonials.each do |testimonial| %>
+
+        <!-- EXCERPT CONTENT -->
         <div class="col-md-6">
           <div class="testimonial-card">
             <div class="testimonial-body">
               <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
               <div class='testimonial-content'>
-                <%= raw testimonial.content_html %>
+                <%= raw testimonial.content_html.truncate(120) %>
+                <a href="#", data-toggle="modal" data-target="#fullTestimonial-<%= testimonial.hash %>">Read more</a>
               </div>
               <div class="testimonial-author">
                 <div class="testimonial-user-name">
@@ -19,6 +22,25 @@
                 <div class='testimonial-user-batch'>
                   <%= t('.published_on') %> <%= testimonial.origin %>, <%= testimonial.publication_date.strftime('%d %b %Y') %>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODAL CONTENT -->
+        <div class="modal fade" id="fullTestimonial-<%= testimonial.hash %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+              </div>
+              <div class="modal-body">
+                <%= raw testimonial.content_html %>
+
+              </div>
+              <div class="modal-footer">
+
               </div>
             </div>
           </div>
