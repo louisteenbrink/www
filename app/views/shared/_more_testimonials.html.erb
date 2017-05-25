@@ -47,21 +47,21 @@
                     </div>
                   </div>
                   <% if testimonial.job_before.present? && testimonial.job_after.present? && testimonial.new_company.present? %>
-                    <div class="col-md-10 col-md-offset-1 alumni-timeline">
+                    <div class="col-xs-10 col-xs-offset-1 alumni-timeline">
                       <div class="row">
-                        <div class="col-md-4 now marker-before <%= I18n.locale.to_s.underscore %>">
+                        <div class="col-xs-4 now marker-before <%= I18n.locale.to_s.underscore %>">
                           <i class="alumni-job-position"><%= testimonial.job_before %></i>
                         </div>
-                        <div class="col-md-4 lewagon">
+                        <div class="col-xs-4 lewagon">
                           <%= render "shared/logos/logo_circle_red" %>
                         </div>
-                        <div class="col-md-4  after marker-after <%= I18n.locale.to_s.underscore %>">
+                        <div class="col-xs-4  after marker-after <%= I18n.locale.to_s.underscore %>">
                           <i class="alumni-job-position"><%= testimonial.job_after %><br>at <%= testimonial.new_company %></i>
                         </div>
                       </div>
                     </div>
                   <% end %>
-                  <div class="col-md-10 col-md-offset-1 alumni-content">
+                  <div class="col-xs-10 col-xs-offset-1 alumni-content">
                     <i><%= t('.published_on') %> <%= testimonial.origin %>, <%= testimonial.publication_date.strftime('%d %b %Y') %></i>
                     <%= raw testimonial.content_html %>
                   </div>

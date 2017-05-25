@@ -272,6 +272,10 @@
           padding: 85px 28px 28px 28px;
         }
 
+        @media (max-width: 420px) {
+          padding: 85px 0 28px 0;
+        }
+
         .alumni-picture {
           position: absolute;
           width: 115px;
@@ -297,6 +301,10 @@
             font-style: normal;
             font-weight: 600;
 
+            @media (max-width: 767px) {
+              display: block;
+            }
+
             &:hover {
               text-decoration: none;
               color: black;
@@ -314,10 +322,19 @@
   }
 }
 
-@media (min-width: 768px) {
+/******************************************************************************/
+/* TESTIMONIALS - MODAL */
+/******************************************************************************/
+
+
   .modal-testimonial {
     width: 700px;
     margin: 30px auto;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      margin: inherit;
+    }
 
     .modal-header {
       height: 220px;
@@ -382,6 +399,10 @@
           left: 50%;
           transform: translateX(-50%);
           font-style: italic;
+
+          @media(max-width: 520px) {
+            font-size: 10px
+          }
         }
 
         .marker-before {
@@ -519,6 +540,10 @@
         h4 {
           font-weight: 600;
           margin-bottom: 17px;
+
+          @media(max-width: 767px) {
+            text-align: center;
+          }
         }
 
         .video-thumbnail {
@@ -548,4 +573,4 @@
       }
     }
   }
-}
+
