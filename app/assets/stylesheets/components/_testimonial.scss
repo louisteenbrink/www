@@ -370,6 +370,22 @@
           span {
             opacity: 0.6;
           }
+
+          .linkedin svg {
+            width: 22px;
+            height: 22px;
+            vertical-align: -2px;
+            #background {
+              fill: #444;
+              transition: fill .3s ease;
+            }
+          }
+          .linkedin:hover svg {
+            #background {
+              fill: #0071A1;
+              transition: fill .3s ease;
+            }
+          }
         }
 
         h4 {

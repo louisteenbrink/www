@@ -41,7 +41,14 @@
                     <div class="alumni-profil">
                       <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
                       <div class="alumni-details">
-                        <h4 class="modal-title" id="exampleModalLabel"><%= testimonial.first_name %>  <%= testimonial.last_name %></h4>
+                        <h4 class="modal-title">
+                          <%= testimonial.first_name %>  <%= testimonial.last_name %>
+                          <% if testimonial.linkedin_url.present? %>
+                            <%= link_to testimonial.linkedin_url, target: :_blank, class: 'linkedin' do %>
+                              <%= render 'shared/linkedin' %>
+                            <% end %>
+                          <% end %>
+                        </h4>
                         <span>Batch #<%= testimonial.batch_slug %> - <%= testimonial.city.name %></span>
                       </div>
                     </div>

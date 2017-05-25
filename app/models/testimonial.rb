@@ -3,7 +3,7 @@ class Testimonial
 
   class RecordNotFound < Exception; end
 
-  PROPERTIES = %w(first_name last_name batch_slug project_slug publication_date job_before job_after new_company origin content_html)
+  PROPERTIES = %w(first_name last_name batch_slug project_slug publication_date job_before job_after new_company origin content_html linkedin_url)
   PROPERTIES.each do |prop|
     attr_reader prop.to_sym
   end

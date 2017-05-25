@@ -105,6 +105,7 @@ testimonials:
     new_company: Sportl
     origin: Course Report
     picture: london_catherine_oxley.jpg
+    linkedin_url: https://www.linkedin.com/in/croxley/
     content_html: |
       <p>I always knew I was interested in becoming a Web Developer but I was doing a non-technical degree at university and wasn't sure I would find work as a developer afterwards. (I studied French). I was teaching English abroad and when I was asked to teach a Technology course I realised I was a lot more interested in coding than most of my students...this was when I seriously started looking at becoming a dev.</p>
       <p>I ended up picking Le Wagon for a couple of reasons - the reviews were pretty unanimous that it was a great place to study, and it was also only 9-weeks long and I wanted to get working ASAP so I didn't mind signing up to something pretty intensive.</p>
