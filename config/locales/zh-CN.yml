@@ -57,6 +57,8 @@ zh-CN:
       show_more_testimonials: 呈现更多评价
     more_testimonials:
       published_on: Published on
+      read_more: Read more
+      watch: Watch what %{name} built in 10 days
     features:
       read_full_program: 浏览项目内容
       pedagogy_matters_html: "用创业的思维学习编程"

@@ -57,6 +57,8 @@ en:
       show_more_testimonials: Show more testimonials
     more_testimonials:
       published_on: Published on
+      read_more: Read more
+      watch: Watch what %{name} built in 10 days
     features:
       read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."

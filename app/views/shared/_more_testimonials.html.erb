@@ -11,7 +11,7 @@
               <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
               <div class='testimonial-content'>
                 <%= raw testimonial.content_html.truncate(120) %>
-                <i class="read-more-text">Read more</i>
+                <i class="read-more-text"><%= t('.read_more') %></i>
               </div>
               <div class="testimonial-author">
                 <div class="testimonial-user-name">
@@ -49,13 +49,13 @@
                   <% if testimonial.job_before.present? && testimonial.job_after.present? && testimonial.new_company.present? %>
                     <div class="col-md-10 col-md-offset-1 alumni-timeline">
                       <div class="row">
-                        <div class="col-md-4 now marker-before">
+                        <div class="col-md-4 now marker-before <%= I18n.locale.to_s.underscore %>">
                           <i class="alumni-job-position"><%= testimonial.job_before %></i>
                         </div>
                         <div class="col-md-4 lewagon">
                           <%= render "shared/logos/logo_circle_red" %>
                         </div>
-                        <div class="col-md-4  after marker-after">
+                        <div class="col-md-4  after marker-after <%= I18n.locale.to_s.underscore %>">
                           <i class="alumni-job-position"><%= testimonial.job_after %><br>at <%= testimonial.new_company %></i>
                         </div>
                       </div>
@@ -70,7 +70,7 @@
               <div class="modal-footer">
                 <% if testimonial.project.present? %>
                   <div class="alumni-product-container">
-                    <h4>Watch what <%= testimonial.first_name %> built in 10 days</h4>
+                    <h4><%= t('.watch', name: testimonial.first_name) %></h4>
                     <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.project['slug'] %>">
                       <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.project['thumbnail'] %>);">
                         <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

@@ -57,6 +57,8 @@ pt-BR:
       show_more_testimonials: Mostrar mais resenhas
     more_testimonials:
       published_on: Published on
+      read_more: Read more
+      watch: Watch what %{name} built in 10 days
     features:
       read_full_program: Leia o programa completo
       pedagogy_matters_html: "Programe do jeito startup."

@@ -65,6 +65,8 @@ fr:
       show_more_testimonials: Voir plus de reviews
     more_testimonials:
       published_on: Publié sur
+      read_more: En savoir +
+      watch: Jetez un oeil au projet final de %{name}
     features:
       read_full_program: Lire le programme
       pedagogy_matters_html: |

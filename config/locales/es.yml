@@ -56,6 +56,8 @@ es:
       show_more_testimonials: Mostrar más
     more_testimonials:
       published_on: Published on
+      read_more: Read more
+      watch: Watch what %{name} built in 10 days
     features:
       read_full_program: Leer el temario completo
       pedagogy_matters_html: "Desarrolla web apps como una startup"
