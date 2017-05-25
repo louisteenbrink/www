@@ -235,6 +235,17 @@
     flex-wrap: wrap;
     margin-top: 50px;
 
+    .read-more {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+
     .testimonial-card {
       position: relative;
       padding: 0 40px;
@@ -281,8 +292,9 @@
         }
 
         .testimonial-content {
-          .read-more {
+          .read-more-text {
             font-size: 14px;
+            font-style: normal;
             font-weight: 600;
 
             &:hover {
@@ -295,6 +307,228 @@
         .testimonial-author {
           .testimonial-user-name {
             margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-testimonial {
+    width: 700px;
+    margin: 30px auto;
+
+    .modal-header {
+      height: 220px;
+      background-size: cover;
+      background-position: center center;
+      border-bottom: none;
+    }
+
+    .modal-content {
+      border: none;
+      box-shadow: none;
+
+      .alumni-profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: -85px;
+        margin-bottom: -80px;
+
+        .alumni-picture {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          border: 3px solid white;
+          box-shadow: 0 2px 26px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .alumni-details {
+          width: 100%;
+          text-align: center;
+
+          span {
+            opacity: 0.6;
+          }
+        }
+
+        h4 {
+          margin-top: 20px;
+          font-weight: 600;
+          font-size: 26px;
+        }
+      }
+
+      .alumni-timeline {
+        position: relative;
+        padding: 55px 0 0;
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 57px;
+          height: 1px;
+          width: 100%;
+          background-color: #e0e0e0;
+        }
+
+        .alumni-job-position {
+          position: absolute;
+          width: 100%;
+          top: 15px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-style: italic;
+        }
+
+        .marker-before {
+          position: relative;
+
+          &:before {
+            content: "Before";
+            position: absolute;
+            width: 100%;
+            top: -20px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            opacity: 0.6;
+          }
+        }
+
+        .lewagon {
+          text-align: center;
+
+          svg {
+            position: relative;
+            top: -18px;
+            width: 40px;
+            height: 40px;
+            z-index: 1;
+          }
+        }
+
+        .marker-after {
+          position: relative;
+
+          &:before {
+            content: "Now";
+            position: absolute;
+            width: 100%;
+            top: -20px;
+            transform: translateX(-50%);
+            font-size: 14px;
+            opacity: 0.6;
+          }
+        }
+
+        .marker-before,
+        .marker-after {
+          position: relative;
+          text-align: center;
+
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: #e0e0e0;
+          }
+        }
+      }
+
+      .alumni-content {
+        padding-top: 55px;
+      }
+
+      i {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-style: normal;
+      }
+
+      p {
+        margin-top: 20px;
+        font-weight: lighter;
+        color: #747070;
+      }
+    }
+
+    .modal-footer {
+      position: relative;
+      border-top: none;
+      overflow: hidden;
+
+      a:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:before {
+        content: '';
+        width: 100%;
+        height: 660px;
+        z-index: 2;
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        transform-origin: left bottom;
+        position: absolute;
+        top: 220px;
+        left: 0;
+        transform: skew(0deg, -15deg);
+      }
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 740px;
+        z-index: 1;
+        background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+        transform-origin: right bottom;
+        position: absolute;
+        top: 168px;
+        left: 0;
+        transform: skew(0deg, 9deg);
+        opacity: 0.4;
+      }
+
+      .alumni-product-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+
+        h4 {
+          font-weight: 600;
+          margin-bottom: 17px;
+        }
+
+        .video-thumbnail {
+          margin: 10px 0 0;
+          width: 320px;
+          height: 167px;
+          border-radius: 2px 2px 0 0;
+        }
+
+        .video-details {
+          position: relative;
+          padding: 5px;
+          top: -5px;
+          border-radius: 0 0 2px 2px;
+
+          h4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            small {
+              margin-top: 10px;
+              font-weight: 100;
+            }
           }
         }
       }

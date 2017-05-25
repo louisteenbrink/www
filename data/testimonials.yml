@@ -61,6 +61,10 @@ testimonials:
     city_slug: paris
     batch_slug: 59
     publication_date: 2017-05-22
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: paris_quentin_coray.jpg
     content_html: |
@@ -73,6 +77,10 @@ testimonials:
     city_slug: paris
     batch_slug: 59
     publication_date: 2017-05-22
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: paris_annesophie_chambon.jpg
     content_html: |
@@ -91,6 +99,10 @@ testimonials:
     city_slug: london
     batch_slug: 54
     publication_date: 2017-05-05
+    job_before: English Teacher
+    project_slug: sportl
+    job_after: Front-End developer
+    new_company: Sportl
     origin: Course Report
     picture: london_catherine_oxley.jpg
     content_html: |
@@ -106,6 +118,10 @@ testimonials:
     city_slug: london
     batch_slug: 54
     publication_date: 2017-02-05
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: london_archie_gilbert.jpg
     content_html: |
@@ -118,6 +134,10 @@ testimonials:
     city_slug: amsterdam
     batch_slug: 62
     publication_date: 2017-01-05
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: amsterdam_diosa_taylor.jpg
     content_html: |
@@ -131,6 +151,10 @@ testimonials:
     city_slug: amsterdam
     batch_slug: 62
     publication_date: 2017-04-29
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: amsterdam_joao_silva.png
     content_html: |
@@ -147,6 +171,10 @@ testimonials:
     city_slug: amsterdam
     batch_slug: 62
     publication_date: 2017-04-28
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: amsterdam_guillaume_lannes.jpg
     content_html: |
@@ -160,6 +188,10 @@ testimonials:
     city_slug: london
     batch_slug: 54
     publication_date: 2017-04-28
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: london_theodore_laurent.jpg
     content_html: |
@@ -174,6 +206,10 @@ testimonials:
     city_slug: london
     batch_slug: 54
     publication_date: 2017-04-27
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: london_fahad_alkubaisi.jpg
     content_html: |
@@ -186,6 +222,10 @@ testimonials:
     city_slug: paris
     batch_slug: 59
     publication_date: 2017-04-25
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: paris_jonathan_parisot.jpg
     content_html: |
@@ -200,6 +240,10 @@ testimonials:
     city_slug: london
     batch_slug: 54
     publication_date: 2017-04-19
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: london_evan_thomas.jpg
     content_html: |
@@ -213,6 +257,10 @@ testimonials:
     city_slug: london
     batch_slug: 54
     publication_date: 2017-04-18
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: london_edouard_debeauffort.jpg
     content_html: |
@@ -227,6 +275,10 @@ testimonials:
     city_slug: amsterdam
     batch_slug: 62
     publication_date: 2017-05-13
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: amsterdam_friso_jelsma.jpg
     content_html: |
@@ -240,6 +292,10 @@ testimonials:
     city_slug: paris
     batch_slug: 48
     publication_date: 2017-04-07
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: paris_thimothee_goguely.jpg
     content_html: |
@@ -253,6 +309,10 @@ testimonials:
     city_slug: paris
     batch_slug: 48
     publication_date: 2017-03-13
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: paris_julie_ehrmann.jpg
     content_html: |
@@ -270,6 +330,10 @@ testimonials:
     city_slug: paris
     batch_slug: 43
     publication_date: 2017-04-07
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: paris_isabelle_bonnard.jpg
     content_html: |
@@ -285,6 +349,10 @@ testimonials:
     city_slug: lisbon
     batch_slug: 49
     publication_date: 2017-03-26
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: lisbon_rui_jorge.jpg
     content_html: |
@@ -301,6 +369,10 @@ testimonials:
     city_slug: lisbon
     batch_slug: 49
     publication_date: 2017-03-23
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: lisbon_andre_pires.jpg
     content_html: |
@@ -315,6 +387,10 @@ testimonials:
     city_slug: lisbon
     batch_slug: 28
     publication_date: 2017-03-23
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: lisbon_lina_garcia.jpg
     content_html: |
@@ -329,6 +405,10 @@ testimonials:
     city_slug: lisbon
     batch_slug: 28
     publication_date: 2016-11-16
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: lisbon_ricardo_serrao.jpg
     content_html: |
@@ -342,6 +422,10 @@ testimonials:
     city_slug: sao-paulo
     batch_slug: 46
     publication_date: 2017-03-06
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: saopaulo_etienne_curati.jpg
     content_html: |
@@ -358,6 +442,10 @@ testimonials:
     city_slug: sao-paulo
     batch_slug: 46
     publication_date: 2017-02-22
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: saopaulo_antoine_moreau.jpg
     content_html: |
@@ -371,6 +459,10 @@ testimonials:
     city_slug: sao-paulo
     batch_slug: 46
     publication_date: 2017-02-06
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: saopaulo_ana_mukoyama.jpg
     content_html: |
@@ -383,6 +475,10 @@ testimonials:
     city_slug: sao-paulo
     batch_slug: 46
     publication_date: 2017-02-06
+    job_before:
+    project_slug:
+    job_after:
+    new_company:
     origin: Course Report
     picture: saopaulo_adriano_barroso.png
     content_html: |
