@@ -33,7 +33,7 @@
 
 <%= render "shared/features", wrapper_up: true %>
 
-<%= render partial: "shared/testimonials" %>
+<%= render partial: "shared/testimonials_new" %>
 
 <% cache [ 'stories', locale ] do %>
   <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>

@@ -15,8 +15,15 @@ class CitiesController < ApplicationController
       return
     end
 
-    @testimonials = @client.testimonials(locale.to_s, params[:city]).shuffle
-    @testimonials = @client.testimonials(locale.to_s).shuffle if @testimonials.empty?
+    @reviews = ReviewsCounter.new.review_count
+
+    if request.format.html? || params[:testimonial_page]
+      @testimonials = Testimonial.where(route: params[:city])
+      if @testimonials.empty?
+        @testimonials = Testimonial.where(route: Testimonial::DEFAULT_ROUTE)
+      end
+      @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
+    end
 
     @teachers = @client.staff(params[:city])["teachers"]
     @assistants = @client.staff(params[:city])["teacher_assistants"]

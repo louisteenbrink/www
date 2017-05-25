@@ -37,6 +37,12 @@ class ApplicationController < ActionController::Base
     render 'pages/500', status: 500
   end
 
+  before_action :better_errors_hack, if: -> { Rails.env.development? }
+
+  def better_errors_hack
+    request.env['puma.config'].options.user_options.delete :app
+  end
+
   private
 
   def devise_or_pages_controller?

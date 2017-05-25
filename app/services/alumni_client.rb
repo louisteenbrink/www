@@ -31,16 +31,6 @@ class AlumniClient
     end
   end
 
-  def testimonials(locale, slug = nil)
-    from_cache(:testimonials, locale, slug) do
-      if slug
-        get "#{@base_url}/testimonials" , params: { locale: locale, slug: slug }
-      else
-        get "#{@base_url}/testimonials" , params: { locale: locale }
-      end
-    end
-  end
-
   def projects(list_name = nil)
     from_cache(:projects, list_name) do
       if list_name

@@ -1,5 +1,25 @@
+<div class="container-fluid testimonials-wrapper">
+  <h2 class="section-title-home" style="font-size:30px;">
+    <div class="section-title-home-content" style="background-color: white;">
+      <%= t(".sneak_peek") %>
+    </div>
+  </h2>
+  <div id="testimonials-container" class="container testimonials-container">
+    <%= render 'shared/more_testimonials', testimonials: @testimonials %>
+  </div>
+  <div id="paginator-testimonials">
+    <% if @testimonials %>
+      <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
+    <% end %>
+  </div>
+</div>
+
 <div class="testimonials-services">
-  <h2><i><%= @reviews %>+</i> <%= t(".love_messages") %></h2>
+  <h2 class="section-title-home" style="font-size:30px;">
+    <div class="section-title-home-content" style="background-color: white;">
+      <%= t(".love_messages_html", reviews: @reviews) %>
+    </div>
+  </h2>
   <div class="services-logos">
     <a href="https://techcrunch.com/2016/04/21/how-le-wagon-is-quietly-becoming-a-major-coding-bootcamp-in-europe/" target="_blank">
       <%= image_tag "techcrunch-testimonial.png" %>
@@ -16,16 +36,21 @@
   </div>
 </div>
 
-
-<div class="container-fluid testimonials-wrapper">
-  <%= image_tag 'quotes.svg', class: 'quotes-icon' %>
-  <div id="testimonials-container" class="container testimonials-container">
-    <%= render 'shared/more_testimonials', testimonials: @testimonials %>
-  </div>
-  <div id="paginator-testimonials">
-    <% if @testimonials %>
-      <%= link_to_next_page @testimonials,  t(".show_more_testimonials"), param_name: :testimonial_page,  remote: true, id: 'load_more_testimonials', class: 'more-testimonials' %>
-    <% end %>
+<div class="quote-overlay">
+  <div class="container">
+    <div class='quote'>
+      <h2 class='section-title-home quote'>
+        <div class='section-title-home-content quote-background'>
+          "We're now ranked <strong>1st best Coding Bootcamp</strong> in the world on SwitchUp"
+        </div>
+      </h2>
+      <div class='techcrunch-view hidden-sm hidden-xs'>
+        <a href='https://www.switchup.org/research/best-coding-bootcamps' target='_blank'>
+          <%= image_tag "press/switchup.png" %>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
+
 

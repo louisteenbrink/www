@@ -51,8 +51,14 @@ en:
       what_our_students_say: Students Reviews
       students_think_of_us: What our students think of us
       more_reviews: More reviews of Le Wagon
-      love_messages: Student Reviews
+      love_messages_html: |
+        or read %{reviews}+ more reviews on
+      sneak_peek: What our studients think of us
       show_more_testimonials: Show more testimonials
+    more_testimonials:
+      published_on: Published on
+      read_more: Read more
+      watch: Watch what %{name} built in 10 days
     features:
       read_full_program: Read full program
       pedagogy_matters_html: "Code the startup way."

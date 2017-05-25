@@ -26,6 +26,13 @@ class PagesController < ApplicationController
     if locale == :"pt-BR"
       session[:city] = 'sao-paulo'
     end
+
+    @reviews = ReviewsCounter.new.review_count
+
+    if request.format.html? || params[:testimonial_page]
+      @testimonials = Testimonial.where(route: Testimonial::DEFAULT_ROUTE)
+      @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
+    end
   end
 
   def thanks

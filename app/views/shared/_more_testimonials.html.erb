@@ -1,22 +1,102 @@
 <% if @testimonials %>
-<% @testimonials.each do |testimonial| %>
-  <% cache [ 'testimonial', locale, testimonial['id'] ] do %>
-    <div class="testimonial-card">
-      <div class="testimonial-body">
-        <%= cl_adaptive_image_tag testimonial['user']['photo_path'], class: 'alumni-picture', width: 230, height: 230, crop: :fill %>
-        <div class='testimonial-content'>
-          <%= testimonial['content'].capitalize %>
-        </div>
-        <div class="testimonial-author">
-          <div class="testimonial-user-name">
-            <%= testimonial['user']['first_name'] %>  <%= testimonial['user']['last_name'] %>
+  <% @testimonials.each_slice(2) do |testimonials| %>
+    <div class="row">
+      <% testimonials.each do |testimonial| %>
+
+        <!-- EXCERPT CONTENT -->
+        <div class="col-md-6">
+          <%= link_to '', '#', class: 'read-more', "data-toggle" => "modal", 'data-target' => "#fullTestimonial-#{testimonial.github_nickname}" %>
+          <div class="testimonial-card">
+            <div class="testimonial-body">
+              <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
+              <div class='testimonial-content'>
+                <%= raw testimonial.content_html.truncate(120) %>
+                <i class="read-more-text"><%= t('.read_more') %></i>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-user-name">
+                  <%= testimonial.first_name %>  <%= testimonial.last_name %>
+                </div>
+                <div class='testimonial-user-batch'>
+                  Batch #<%= testimonial.batch_slug %>, <%= testimonial.city.name %>
+                </div>
+                <div class='testimonial-user-batch'>
+                  <%= t('.published_on') %> <%= testimonial.origin %>, <%= testimonial.publication_date.strftime('%d %b %Y') %>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class='testimonial-user-batch'>
-            Batch #<%= testimonial['user']['batch']['slug'] %>, <%= testimonial['user']['batch']['city']['name'] %>
+        </div>
+
+        <!-- MODAL CONTENT -->
+        <div class="modal fade" id="fullTestimonial-<%= testimonial.github_nickname %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+          <div class="modal-dialog modal-testimonial" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background-image: url(<%= cl_image_path testimonial.city.city_background_picture_path %>)">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-md-10 col-md-offset-1">
+                    <div class="alumni-profil">
+                      <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
+                      <div class="alumni-details">
+                        <h4 class="modal-title">
+                          <%= testimonial.first_name %>  <%= testimonial.last_name %>
+                          <% if testimonial.linkedin_url.present? %>
+                            <%= link_to testimonial.linkedin_url, target: :_blank, class: 'linkedin' do %>
+                              <%= render 'shared/linkedin' %>
+                            <% end %>
+                          <% end %>
+                        </h4>
+                        <span>Batch #<%= testimonial.batch_slug %> - <%= testimonial.city.name %></span>
+                      </div>
+                    </div>
+                  </div>
+                  <% if testimonial.job_before.present? && testimonial.job_after.present? && testimonial.new_company.present? %>
+                    <div class="col-xs-10 col-xs-offset-1 alumni-timeline">
+                      <div class="row">
+                        <div class="col-xs-4 now marker-before <%= I18n.locale.to_s.underscore %>">
+                          <i class="alumni-job-position"><%= testimonial.job_before %></i>
+                        </div>
+                        <div class="col-xs-4 lewagon">
+                          <%= render "shared/logos/logo_circle_red" %>
+                        </div>
+                        <div class="col-xs-4  after marker-after <%= I18n.locale.to_s.underscore %>">
+                          <i class="alumni-job-position"><%= testimonial.job_after %><br>at <%= testimonial.new_company %></i>
+                        </div>
+                      </div>
+                    </div>
+                  <% end %>
+                  <div class="col-xs-10 col-xs-offset-1 alumni-content">
+                    <i><%= t('.published_on') %> <%= testimonial.origin %>, <%= testimonial.publication_date.strftime('%d %b %Y') %></i>
+                    <%= raw testimonial.content_html %>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <% if testimonial.project.present? %>
+                  <div class="alumni-product-container">
+                    <h4><%= t('.watch', name: testimonial.first_name) %></h4>
+                    <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.project['slug'] %>">
+                      <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.project['thumbnail'] %>);">
+                        <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
+                          </g>
+                        </svg>
+                      </div>
+                      <div class="video-details">
+                        <h4><%= testimonial.project['name'] %><small><%= testimonial.project['tagline']['en'] %></small></h4>
+                      </div>
+                    </a>
+                  </div>
+                <% end %>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
+      <% end %>
     </div>
   <% end %>
-<% end %>
 <% end %>
