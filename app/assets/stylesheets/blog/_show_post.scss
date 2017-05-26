@@ -61,6 +61,7 @@
     blockquote {
       padding: 0 20px;
       margin: 0 0 40px;
+      border-left: 5px solid #D23333;
     }
 
     /* POST - HEADER ************************************************************/
@@ -73,6 +74,7 @@
       align-items: center;
       min-height: 460px;
       background-size: cover;
+      background-position: center center;
 
       &:after {
         position: absolute;
