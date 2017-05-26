@@ -62,7 +62,7 @@ testimonials:
     batch_slug: 59
     publication_date: 2017-05-22
     job_before:
-    project_slug:
+    project_slug: bookshare
     job_after:
     new_company:
     origin: Course Report
@@ -78,7 +78,7 @@ testimonials:
     batch_slug: 59
     publication_date: 2017-05-22
     job_before:
-    project_slug:
+    project_slug: bookshare
     job_after:
     new_company:
     origin: Course Report
@@ -120,7 +120,7 @@ testimonials:
     batch_slug: 54
     publication_date: 2017-02-05
     job_before:
-    project_slug:
+    project_slug: sportl
     job_after:
     new_company:
     origin: Course Report
@@ -136,7 +136,7 @@ testimonials:
     batch_slug: 62
     publication_date: 2017-01-05
     job_before:
-    project_slug:
+    project_slug: what-the-finance
     job_after:
     new_company:
     origin: Course Report
@@ -153,7 +153,7 @@ testimonials:
     batch_slug: 62
     publication_date: 2017-04-29
     job_before:
-    project_slug:
+    project_slug: habitat
     job_after:
     new_company:
     origin: Course Report
@@ -173,7 +173,7 @@ testimonials:
     batch_slug: 62
     publication_date: 2017-04-28
     job_before:
-    project_slug:
+    project_slug: miam-miam
     job_after:
     new_company:
     origin: Course Report
@@ -190,7 +190,7 @@ testimonials:
     batch_slug: 54
     publication_date: 2017-04-28
     job_before:
-    project_slug:
+    project_slug: socialive
     job_after:
     new_company:
     origin: Course Report
@@ -208,7 +208,7 @@ testimonials:
     batch_slug: 54
     publication_date: 2017-04-27
     job_before:
-    project_slug:
+    project_slug: deskjoy
     job_after:
     new_company:
     origin: Course Report
@@ -224,7 +224,7 @@ testimonials:
     batch_slug: 59
     publication_date: 2017-04-25
     job_before:
-    project_slug:
+    project_slug: garantme
     job_after:
     new_company:
     origin: Course Report
@@ -242,7 +242,7 @@ testimonials:
     batch_slug: 54
     publication_date: 2017-04-19
     job_before:
-    project_slug:
+    project_slug: socialive
     job_after:
     new_company:
     origin: Course Report
@@ -259,7 +259,7 @@ testimonials:
     batch_slug: 54
     publication_date: 2017-04-18
     job_before:
-    project_slug:
+    project_slug: best-bet
     job_after:
     new_company:
     origin: Course Report
@@ -277,7 +277,7 @@ testimonials:
     batch_slug: 62
     publication_date: 2017-05-13
     job_before:
-    project_slug:
+    project_slug: answer-this
     job_after:
     new_company:
     origin: Course Report
@@ -294,7 +294,7 @@ testimonials:
     batch_slug: 48
     publication_date: 2017-04-07
     job_before:
-    project_slug:
+    project_slug: mnemosyne
     job_after:
     new_company:
     origin: Course Report
@@ -311,7 +311,7 @@ testimonials:
     batch_slug: 48
     publication_date: 2017-03-13
     job_before:
-    project_slug:
+    project_slug: weres
     job_after:
     new_company:
     origin: Course Report
@@ -332,7 +332,7 @@ testimonials:
     batch_slug: 43
     publication_date: 2017-04-07
     job_before:
-    project_slug:
+    project_slug: zadl
     job_after:
     new_company:
     origin: Course Report
@@ -351,7 +351,7 @@ testimonials:
     batch_slug: 49
     publication_date: 2017-03-26
     job_before:
-    project_slug:
+    project_slug: feed-the-resistance
     job_after:
     new_company:
     origin: Course Report
@@ -371,7 +371,7 @@ testimonials:
     batch_slug: 49
     publication_date: 2017-03-23
     job_before:
-    project_slug:
+    project_slug: clerkbot
     job_after:
     new_company:
     origin: Course Report
@@ -389,7 +389,7 @@ testimonials:
     batch_slug: 28
     publication_date: 2017-03-23
     job_before:
-    project_slug:
+    project_slug: papaye
     job_after:
     new_company:
     origin: Course Report
@@ -407,7 +407,7 @@ testimonials:
     batch_slug: 28
     publication_date: 2016-11-16
     job_before:
-    project_slug:
+    project_slug: sunshine
     job_after:
     new_company:
     origin: Course Report
@@ -424,7 +424,7 @@ testimonials:
     batch_slug: 46
     publication_date: 2017-03-06
     job_before:
-    project_slug:
+    project_slug: programathor
     job_after:
     new_company:
     origin: Course Report
@@ -444,7 +444,7 @@ testimonials:
     batch_slug: 46
     publication_date: 2017-02-22
     job_before:
-    project_slug:
+    project_slug: easymoveis
     job_after:
     new_company:
     origin: Course Report
@@ -461,7 +461,7 @@ testimonials:
     batch_slug: 46
     publication_date: 2017-02-06
     job_before:
-    project_slug:
+    project_slug: programathor
     job_after:
     new_company:
     origin: Course Report
@@ -474,10 +474,10 @@ testimonials:
     first_name: Adriano
     last_name: Wiermann Barroso
     city_slug: sao-paulo
-    batch_slug: 46
+    batch_slug: 34
     publication_date: 2017-02-06
     job_before:
-    project_slug:
+    project_slug: numooh
     job_after:
     new_company:
     origin: Course Report
