@@ -162,6 +162,7 @@
     display: flex;
     justify-content: space-around;
     width: 100%;
+    max-width: 1140px;
 
     @media (max-width: 767px) {
       flex-wrap: wrap;

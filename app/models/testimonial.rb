@@ -28,6 +28,10 @@ class Testimonial
     projects.select { |project| project["slug"] == @hash['project_slug'] }.first
   end
 
+  def batch_thumbnail
+    AlumniClient.new.batch(@hash['batch_slug'])
+  end
+
   def picture_url
     "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}"
   end
