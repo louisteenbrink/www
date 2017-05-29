@@ -258,6 +258,10 @@ en:
       built_by: 'Website built by...'
       with_tools: 'With these awesome tools...'
     thanks:
+      already_applied_html: |
+        You already applied to <strong>%{city}</strong>.
+        Please wait for the Driver to contact you to set up your interview.
+        If you wish to change the city you applied to, you can discuss that with him / her!
       thanks: Thank you
       we_will_contact_html: |
         We'll contact you shortly by email to plan an interview. <br /><br />In the meantime, follow the instructions of our check-list and start the <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a> on CodeCademy.

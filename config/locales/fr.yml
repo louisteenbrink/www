@@ -255,6 +255,10 @@ fr:
       built_by: 'Site créé par'
       with_tools: 'Avec ces technos...'
     thanks:
+      already_applied_html: |
+        Vous avez déjà postulé pour <strong>%{city}</strong>.
+        Merci d'attendre que le <em>Driver</em> revienne vers vous pour planifier votre entretien.
+        Si vous souhaitez finalement candidater à une autre ville, vous pourrez en discuter à ce moment là avec lui / elle.
       thanks: Merci
       we_will_contact_html: |
         Nous vous contacterons rapidement pour un entretien. <br /><br />D'ici là, <strong>suivez toutes les instructions de la check-list</strong> et commencez la <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby en anglais</a> sur CodeCademy.

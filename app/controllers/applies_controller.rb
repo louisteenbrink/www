@@ -23,6 +23,15 @@ class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
 
   def new
+    if session[:apply_id].present?
+      apply = Apply.where(id: session[:apply_id]).first
+      if apply && (apply.created_at + 1.day) > Time.now
+        return redirect_to send(:"thanks_#{locale.to_s.underscore}_path", already: true)
+      else
+        session[:apply_id] = nil
+      end
+    end
+
     prepare_apply_form
 
     if @city.nil?

@@ -260,6 +260,10 @@ zh-CN:
       with_tools: '用到的绝佳工具'
     thanks:
       thanks: 谢谢
+      already_applied_html: |
+        You already applied to <strong>%{city}</strong>.
+        Please wait for the Driver to contact you to set up your interview.
+        If you wish to change the city you applied to, you can discuss that with him / her!
       we_will_contact_html: |
         我们会尽快邮件联系您，安排面试。<br /><br />同时，根据我们的准备清单上的要求在CodeCademy上开始<a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a>的测试。
       take_advance: 准备清单

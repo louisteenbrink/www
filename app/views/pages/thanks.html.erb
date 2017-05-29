@@ -1,5 +1,10 @@
 <div class='apply-form'>
   <div class="banner-container">
+    <% if params[:already] %>
+      <div class="thanks-already">
+        <%= t('.already_applied_html', city: @city['name']) %>
+      </div>
+    <% end %>
     <div class="container banner-city-container">
       <div class='banner-city-nav thanks-message'>
         <div class='thanks-message-title'>
