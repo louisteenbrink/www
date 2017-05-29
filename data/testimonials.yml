@@ -18,7 +18,6 @@ routes:
     - isabellebonnard
     - ruijorge
     - apires89
-    - linusjig
     - ricardoserrao
     - etienne-c
     - antoinemor
@@ -32,7 +31,6 @@ routes:
   lisbon:
     - ruijorge
     - apires89
-    - linusjig
     - ricardoserrao
   london:
     - bibiiii
@@ -357,7 +355,7 @@ testimonials:
     origin: Course Report
     picture: lisbon_rui_jorge.jpg
     content_html: |
-      <p<Le Wagon is worth the investment and lives up to its reputation. Before joining the bootcamp I was trying to follow online tutorials to learn how I could build some prototypes of ideas we had for web apps but with the feeling I would never be able to leave the training wheels and ride on my own. I found Le Wagon by chance and seeing that the technology stack covered in the programmed matched what I was trying to learn, it looked like a perfect fit.</p>
+      <p>Le Wagon is worth the investment and lives up to its reputation. Before joining the bootcamp I was trying to follow online tutorials to learn how I could build some prototypes of ideas we had for web apps but with the feeling I would never be able to leave the training wheels and ride on my own. I found Le Wagon by chance and seeing that the technology stack covered in the programmed matched what I was trying to learn, it looked like a perfect fit.</p>
       <p>The program is demanding and fast-paced, but it is aimed and suited at complete beginners, although I feel that if you take the time to explore the technologies covered before starting you will get so much more out of this bootcamp.</p>
       <p>The teachers are experienced in software engineering and they approach topics both from practical standpoints as well as theoretical.   The teaching staff is always available to help you with your doubts at all times.</p>
       <p>There’s alsomore than simply coding though. Le Wagon organises talks and interviews with entrepreneurs and people involved in the start-up scene, which greatly complements the content of the course.</p>
