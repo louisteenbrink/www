@@ -19,6 +19,7 @@ routes:
     - ruijorge
     - apires89
     - ricardoserrao
+    - linusjig
     - etienne-c
     - antoinemor
     - anamukoyama
@@ -32,6 +33,7 @@ routes:
     - ruijorge
     - apires89
     - ricardoserrao
+    - linusjig
   london:
     - bibiiii
     - archiejg
@@ -65,6 +67,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: paris_quentin_coray.jpg
+    linkedin_url:
     content_html: |
       <p>I just graduated from a Business School with a Master of Science in Digital Marketing. During my internships, I had the opportunity to work on various digital projects, however, I was always frustrated not to work on the technical aspects of these projects, and not to be able to correctly understand how developers work. After meeting a former schoolmate who also did Le Wagon, I thought about it and decided to dedicate 9 weeks to learn how to code.</p>
       <p>As a "marketing specialist", I think it was a strong asset to combine it with technical knowledge for my future career. Moreover, coding always intrigued me and it was the perfect opportunity to learn it, because it is quite hard to do it by ourselves. So I joined Le Wagon in January 2017 as member of Paris Batch #59.</p>
@@ -81,6 +84,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: paris_annesophie_chambon.jpg
+    linkedin_url:
     content_html: |
       <p>My name is Anne-Sophie, and I was part of Le Wagon Batch #59 in Paris - which ended in March 2017. I was nothing close to coding or tech...  I first majored in English Literature, then switched to Human Resources. I worked 7years in an international company but realized I wanted to use my skills to help people rather than help a company.</p>
       <p>My first drive to learn about coding came from the frustration I experienced in one of my assignments in my previous job: I was part of a project to implement an information system to facilitate human resources management - and I got to see how HR people and developers could hardly understand each other… which put the whole project at risk.</p>
@@ -123,6 +127,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: london_archie_gilbert.jpg
+    linkedin_url: https://www.linkedin.com/in/archie-gilbert-071b54138/
     content_html: |
       <p>I’ve always been interested in technology and have wanted to study it ever since I was a kid, but school just wasn’t teaching me what I wanted to learn so I left when I was 18. I looked into some coding bootcamps and Le Wagon was clearly leading the game with the best reviews, highest ratings, most interesting alumni projects.</p>
       <p>So I started in London in January 2017 and I learnt more technical skills in the space of 2 weeks than I did in my entirety of formal education! Even my friends who decided to go to university can’t compete with the scale of things I can now create.</p>
@@ -139,6 +144,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: amsterdam_diosa_taylor.jpg
+    linkedin_url:
     content_html: |
       <p>Before Le Wagon, I spent about a year doing various online courses to try to learn how to code. They taught me the basics of HTML, CSS, JS and some other areas of programming but I couldn’t build anything completely from scratch and couldn’t tie together what I knew with any degree of confidence.</p>
       <p>Le Wagon’s bootcamp was exactly what I needed. It took the bits and pieces I already knew, filled in the gaps and amalgamated all of this knowledge so I now have a much better understanding of the bigger picture of web development and programming in general.</p>
@@ -156,6 +162,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: amsterdam_joao_silva.png
+    linkedin_url:
     content_html: |
       <p>When I decided to change my career, I quickly realised that I needed to acquire new skills in a fast way, so no university, no Masters, no Bachelors. After benchmarking several Coding Schools, Le Wagon seemed to the best choice based on countless reviews, curriculum, price, duration and staff, and I was correct!</p>
       <p>When I started my coding journey at Le Wagon, I brought with me some tech skills that I acquired during my BSc in Computer Science and during my previous job as an IT Consultant. I've learned so much over the course of 9 weeks, even though I had some prior knowledge before the bootcamp. Le Wagon offers a well structured curriculum, starting from the very beginning and building up to more complex topics and finally allowing you to build complete apps. Each module is taught by teachers who have the perfect knowledge of the material covered during these modules and who know the market.</p>
@@ -176,6 +183,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: amsterdam_guillaume_lannes.jpg
+    linkedin_url:
     content_html: |
       <p>I used to work as a structural engineer but I was not satisfied with the day to day challenges and the work I had to do. I wanted to join a startup with a more young, dynamic environment but I didn't have any transferable skills. A friend of mine suggested I joined le wagon.</p>
       <p>My experience at le wagon has been very positive. Not only because of the actual course and how in 7 weeks I had learned enough to code my final product in 2 weeks but also because of the community at le wagon and the network it has created for my professional career.</p>
@@ -193,6 +201,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: london_theodore_laurent.jpg
+    linkedin_url:
     content_html: |
       <p>My name is Theodore, I am French, 29 years old. Born and raised in Paris, I studied Business and Finance at McGill University (Montreal) for 4 years and then a master “Grande Ecole” at EM Lyon (Lyon and Shanghai).</p>
       <p>Right after this, I started straight in market finance as an equity derivatives and structured products sales at BNP Paribas for three years. First in Paris, then NY and finally London. Although these were very fun years of my life, I was introduced to the great world of tech and startups in NY and got very passionate about it. Along with the realization that finance is not what it used to be, I felt the urge to do something more creative with my life…</p>
@@ -211,6 +220,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: london_fahad_alkubaisi.jpg
+    linkedin_url:
     content_html: |
       <p>I was looking to change my career from sales to being a web developer, so I did a lot of searching on the web. I saw Le Wagon has five stars so I contacted them and they invited me to their demo day in December 2016.</p>
       <p>I was surprised how amazing their presentations and products were. I had a word with a few of the students and most of them didn't know how to code before they join Le Wagon and that’s what made me so comfortable joining the bootcamp.</p>
@@ -227,6 +237,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: paris_jonathan_parisot.jpg
+    linkedin_url:
     content_html: |
       <p>I had been wanting to learn coding for a while before enrolling to Le Wagon. I started learning with some online services but was not convinced. After benchmarking several bootcamps in both US and Europe, it seemed Le Wagon gave the best value for money.</p>
       <p>I didn’t regret one second joining them. The pedagogy - focused on practice - is extremely innovative. The courses are very well structured and engaging. The teachers are clear, professional and friendly. The technologies and methodologies you learn are what companies are using.</p>
@@ -245,6 +256,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: london_evan_thomas.jpg
+    linkedin_url:
     content_html: |
       <p>I’ll give you some life context so that you can understand how Le Wagon legitimately changed mine. I left university midway through my degree in History and German. I didn’t feel that I was getting enough value to make the investment sensible. I was there because of ambition. I want to have a good career in a job that I enjoy. I went to an academic school in London and was taught that university was the only way forward after 18. To not go would be to forfeit my right to a successful future; to stagnate. Keep paddling, don’t rest, you’ll make it.</p>
       <p>I was on holiday in Lisbon, staying in a house share. Sitting at the kitchen table I saw fluorescent text tapping along a dark laptop screen. Coding, just like in the movies. It still excites me when I open up my laptop and see the arcane looking terminal and text-editor in which I do most of my work. I asked the guy operating the laptop how I might be able to sneak into his mystical world. He asked what I was studying. History I said. Well then, a coding bootcamp he said. And that’s when I found Le Wagon. Googling away and trying to find the best bootcamp in Europe. I hit gold, but I didn’t know it at the time. I applied, I got a place and I left university.</p>
@@ -262,6 +274,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: london_edouard_debeauffort.jpg
+    linkedin_url:
     content_html: |
       <p>Before knowing Le Wagon I was working at Ladbrokes (gaming industry) on offering customers new products. Obviously, every new product release had to come from the IT department and from developers. But daily meetings with them wasn't easy as computer science was hard for me to understand. Therefore, for a given product I had no idea of the necessary workload and I had no credibility among external providers. My frustration was at its height…</p>
       <p>Then, some friends told me about Le Wagon and its fast track coding course ending with a real product release. It was a good opportunity to learn quickly and in a structured way the art of coding. Besides, my colleagues and I had an idea for a new mobile game. This could be the perfect spot to build a prototype and to test its potential.</p>
@@ -280,6 +293,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: amsterdam_friso_jelsma.jpg
+    linkedin_url:
     content_html: |
       <p>My background lies in sales where I first came in contact with a group of programmers in Malaysia. I was fascinated to see how a dedicated team of programmers, testers and designers were able to create a tech solution that helped companies engage with their target audience. The idea to work in a team and create a custom made solutions from scratch appealed greatly to me. Choosing Le Wagon as the place to learn how to code turned out to be a great decision.</p>
       <p>The bootcamp is well organised by people that truly care about their students and teachers. The teaching material is phenomenal, they basically succeeded in creating a summary of the internet on how to code in Ruby, Ruby on Rails, JavaScript, HTML, CSS, jQuery and much more. There is a structured approach for every module, day and exercise. Everyday you team up with one of your fellow students which creates great teamspirit and group dynamics but also improves your learning curve.</p>
@@ -297,6 +311,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: paris_thimothee_goguely.jpg
+    linkedin_url:
     content_html: |
       <p>After studying graphic design and working for two years as a freelance UI/UX designer in Paris, I decided to join batch #48 because I wanted to be able to develop my own projects, from the first idea to an actual web app. And I was not disappointed!</p>
       <p>The pedagogical approach and teaching methods are designed to help the student to learn by himself and become an autonomous web developer, while learning how to work among others as part of a team — physically and online. Moreover, Le Wagon Paris staff is full of very cool and talented persons who care a lot about the welfare of all the people involved in this crazy adventure.</p>
@@ -314,6 +329,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: paris_julie_ehrmann.jpg
+    linkedin_url:
     content_html: |
       <p>I graduated in 2013 from a business school with a specialisation in finance, then worked for 3 years in startups before joining Le Wagon's Fullstack program.</p>
       <p>Being immersed in this tech environment and following the latest news on startups, certainly got me curious - but how do they do it? - and I slowly gained interest in code. I first tried to learn a bit by myself thanks to online resources. The problem was that learning code on and off through 1-hour lessons on my free-time turned out to be very difficult.</p>
@@ -335,6 +351,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: paris_isabelle_bonnard.jpg
+    linkedin_url:
     content_html: |
       <p>You are a creative individual and you don't have the tech skills to make your ideas real? You feel that your studies, even prestigious, haven't provided you these skills, focusing more on theory than practice? You want to change your life? Don't hesitate any more, just jump on the band wagon!</p>
       <p>I made this choice 6 months ago and I don't regret it! After a MSc in Engineering, I spent 5 years in a consulting company before I decided to launch my own startup: ZADL, a service to plan paid events between friends.</p>
@@ -354,6 +371,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: lisbon_rui_jorge.jpg
+    linkedin_url:
     content_html: |
       <p>Le Wagon is worth the investment and lives up to its reputation. Before joining the bootcamp I was trying to follow online tutorials to learn how I could build some prototypes of ideas we had for web apps but with the feeling I would never be able to leave the training wheels and ride on my own. I found Le Wagon by chance and seeing that the technology stack covered in the programmed matched what I was trying to learn, it looked like a perfect fit.</p>
       <p>The program is demanding and fast-paced, but it is aimed and suited at complete beginners, although I feel that if you take the time to explore the technologies covered before starting you will get so much more out of this bootcamp.</p>
@@ -362,24 +380,6 @@ testimonials:
       <p>What really surprised me was the atmosphere between students and that’s something Le Wagon staff fosters and encourages – creating a network of contacts and fellow-students which will continue beyond the bootcamp.</p>
       <p>The pace of the last two weeks is hectic due to the final projects but that’s where it all comes together. My team and I built a web app to track routines through user created questions/forms and it was great to see that I was able to build and structure a product on my own that differed from what I had been taught.</p>
       <p>Now I understand why some of the reviewers wrote that Le Wagon changed their lives or that it was the greatest thing they’ve ever done. It’s not cliché. Even if you don’t plan on becoming a developer, it is an enriching experience and a fantastic coding program. As for me, I found something I really love doing.</p>
-  apires89:
-    first_name: Andre
-    last_name: Pires
-    city_slug: lisbon
-    batch_slug: 49
-    publication_date: 2017-03-23
-    job_before:
-    project_slug: clerkbot
-    job_after:
-    new_company:
-    origin: Course Report
-    picture: lisbon_andre_pires.jpg
-    content_html: |
-      <p>My experience in the bootcamp was more than I could have expected. It started a bit scary and overwhelming in the first weeks but once time passed and programming and ruby notions were quickly building up in my head, it became more and more fun. The more I learned, the more possibilities I could envision. Honestly, I didn't think that I could learn how to build a fully functional web app in 9 weeks, but hey! it did happen!</p>
-      <p>Also, what really made the bootcamp for me, was the people involved - teachers, the driver, and all the other students. Its much easier to learn when everyone is heading in the same direction.</p>
-      <p>Learning to collaborate is a very important step, and the final weeks of the bootcamp are all about collaboration. I saw 10 amazing final projects built from 27 students in 2 weeks and I felt happy and proud of everyone!</p>
-      <p>My final project was a Facebook Messenger Bot that can pretty much work as a receptionist for a small hotels/hostels. And yes, in two weeks, my group figured out how to actually make it work.</p>
-      <p>The feeling that stuck with me after finishing the bootcamp was that now I have the freedom and the tools to build anything I want and that feels really good! I loved it, definitely recommend it and wish I could do it again.</p>
   linusjig:
     first_name: Lina
     last_name: Garcia Jordan
@@ -392,12 +392,32 @@ testimonials:
     new_company:
     origin: Course Report
     picture: lisbon_lina_garcia.jpg
+    linkedin_url:
     content_html: |
       <p>I started studying computational linguistic a year before I joined Le Wagon. Before my studies, I had zero computer skills, to the point I that I had to call my brother every time I installed a new program or something was off. I started programing in university but I knew my skills were by far not good enough to land a job as a working student in the hopes of becoming one day a great software engineer. I decided to go to a coding bootcamp to make up for all those years missed not programming and to accelerate following my dreams.</p>
       <p>The bootcamp proved to be tough. By day 5, I was already learning things I hadn't seen in university before. The struggle began and didn't end until Le Wagon finished nine weeks later. I learned so much in such a short time. I could never have done this on my own and I don't think it’s possible to achieve that much when you are on your own.</p>
       <p>Le Wagon’s teachers were a great help, answering all my personal questions and always keeping us motivated. Going through a process like this wouldn't have been bearable if it wasn't for the other students though, we pushed and helped each other and formed our own little community.</p>
       <p>The last two weeks we worked in groups to make a final project which we presented on the final day. My group created a prototype to handle freelancer invoicing. It was really hard work but an opportunity to focus on the things we like, for me backend, but also to get better at the ones we struggled with - frontend.</p>
       <p>Going to Le Wagon is perhaps one of the best experiences of my life. I would't be able to work as a software developer right now if it wasn't for those 9 weeks.</p>
+  apires89:
+    first_name: Andre
+    last_name: Pires
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-03-23
+    job_before:
+    project_slug: clerkbot
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: lisbon_andre_pires.jpg
+    linkedin_url:
+    content_html: |
+      <p>My experience in the bootcamp was more than I could have expected. It started a bit scary and overwhelming in the first weeks but once time passed and programming and ruby notions were quickly building up in my head, it became more and more fun. The more I learned, the more possibilities I could envision. Honestly, I didn't think that I could learn how to build a fully functional web app in 9 weeks, but hey! it did happen!</p>
+      <p>Also, what really made the bootcamp for me, was the people involved - teachers, the driver, and all the other students. Its much easier to learn when everyone is heading in the same direction.</p>
+      <p>Learning to collaborate is a very important step, and the final weeks of the bootcamp are all about collaboration. I saw 10 amazing final projects built from 27 students in 2 weeks and I felt happy and proud of everyone!</p>
+      <p>My final project was a Facebook Messenger Bot that can pretty much work as a receptionist for a small hotels/hostels. And yes, in two weeks, my group figured out how to actually make it work.</p>
+      <p>The feeling that stuck with me after finishing the bootcamp was that now I have the freedom and the tools to build anything I want and that feels really good! I loved it, definitely recommend it and wish I could do it again.</p>
   ricardoserrao:
     first_name: Ricardo
     last_name: Serrão
@@ -410,6 +430,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: lisbon_ricardo_serrao.jpg
+    linkedin_url:
     content_html: |
       <p>My idea to join a Coding Bootcamp goes back way before I heard about Le Wagon. My first contact with Le Wagon was in an TechCrunch article and what really impressed me the most was the synergy between 'coding' and 'entrepreneurship’. With a background in finance, I felt learning to code would be valuable and also help me get involved in the startup scene.</p>
       <p>The decision to dive into a bootcamp is not an easy one -the value is huge, but the investment money/time is also considerable. After a few days at Le Wagon batch #28 in Lisbon I realized my investment was a smart one.  I really felt the time and money put into the program was being invested back on me from everyone involved.</p>
@@ -427,6 +448,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: saopaulo_etienne_curati.jpg
+    linkedin_url:
     content_html: |
       <p>My history with Le Wagon began e few years ago, I had just presented an IT recruiting system at a Ruby meetup in Paris and chance had it that someone from Le Wagon came to this same event to present their Bootcamp. The idea of learning to code started to sprout - but with a 9 to 5 job it would not be easy to find the time for a two months full-time bootcamp.</p>
       <p>Some springs later, destiny (or rather my wife) made me move to São Paulo. So I quit my job and started learning Portuguese. Once again, destiny made things right when I heard that Le Wagon had just launched their bootcamp in São Paulo. This time I had the available time and I jumped on the opportunity to apply to their next batch.</p>
@@ -447,6 +469,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: saopaulo_antoine_moreau.jpg
+    linkedin_url:
     content_html: |
       <p>I attended Le Wagon batch #46 in São Paulo, Brazil, and it was a truly transformative experience. I’m 23, and a soon-to-be business graduate from HEC Paris, France. After interning twice in VC, it quickly became clear that I needed to considerably improve my technical skills, whether I was to stay in VC start a company or join a product management team in a startup, which were the three main options I am considering for my first job out of college. So I started working on FreeCodeCamp and Codecademy, putting 300+ hours in learning to code in JavaScript, Python and Ruby. I quickly got the grasp of algorithm coding, but I was far from being able to build the web apps I was dreaming of: the transition from coding algorithms to actually building software was much bigger than I expected, and I couldn’t find the right e-learning program for me. Working and studying, my time was limited, and it was clear I had to go another route if I wanted to quickly improve my skills. Living in Brazil at the time, I met the formidable team of Le Wagon in Sao Paulo, and signed up for the next session.</p>
       <p>The next two months have been incredible. I had the chance of attending le Wagon in a small batch of 12 students, which considerably improved the experience and helped built a great relationship between students and teachers.</p>
@@ -464,6 +487,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: saopaulo_ana_mukoyama.jpg
+    linkedin_url:
     content_html: |
       <p>I had never coded a single line before in my life, but those classes were so complete that after only 9 weeks I am now confident enough about my code skills to apply for a tech position.</p>
       <p>For the past 3 years I worked with Marketing and Communications, but right after Le Wagon I started applying some logic knowledge and hacks in my daily tasks and this led me to get a spot in the tech team of my company!</p>
@@ -480,6 +504,7 @@ testimonials:
     new_company:
     origin: Course Report
     picture: saopaulo_adriano_barroso.png
+    linkedin_url:
     content_html: |
       <p>First of all I totally recommend doing Le Wagon bootcamp if you are keen on entering the programming world. Before doing Le Wagon last winter here in Brazil I was kind of worried about my future and having a hard time finding a good job. I have studied and worked with oceanography here and before the bootcamp I was disappointed with the lack of opportunities in my field, I spent more than a year looking for a job and nothing came up.</p>
       <p>Work with programming was something that I always thought about, but the initial learning curve was very discouraging. So coding bootcamps were already in my mind to break through this curve. Then I heard that a really good bootcamp was landing here in Brazil, so I thought it was my chance of changing. I ended up being the first student to enroll in the first brazilian batch.</p>

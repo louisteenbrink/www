@@ -207,7 +207,17 @@
 
 .students-index {
   .testimonials-wrapper {
+    padding-top: 125px;
+  }
+
+  .quote-overlay,
+  .quote-background {
     background-color: #DF694E;
+
+    .quote {
+      color: #000;
+      border-bottom: 1px solid #000;
+    }
   }
 }
 
