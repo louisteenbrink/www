@@ -54,6 +54,8 @@ es:
         or read %{reviews}+ more reviews on
       sneak_peek: What our studients think of us
       show_more_testimonials: Mostrar más
+      switchup_html: |
+        Le Wagon is rated <strong>first coding bootcamp</strong> on SwitchUp
     more_testimonials:
       published_on: Published on
       read_more: Read more

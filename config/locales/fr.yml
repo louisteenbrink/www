@@ -63,6 +63,8 @@ fr:
         ou découvrez %{reviews}+ reviews à lire sur
       sneak_peek: Ce que nos élèves pensent de nous
       show_more_testimonials: Voir plus de reviews
+      switchup_html: |
+        Le Wagon est classé <strong>premier coding bootcamp</strong> sur SwitchUp
     more_testimonials:
       published_on: Publié sur
       read_more: En savoir +
