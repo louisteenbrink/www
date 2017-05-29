@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
 
     if request.format.html? || params[:story_page]
       @stories = @client.stories
-      @stories =  Kaminari.paginate_array(@stories).page(params[:story_page]).per(4)
+      @stories =  Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
     end
 
     if request.format.html?
