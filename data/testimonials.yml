@@ -387,7 +387,7 @@ testimonials:
     batch_slug: 28
     publication_date: 2017-03-23
     job_before:
-    project_slug: papaye
+    project_slug:
     job_after:
     new_company:
     origin: Course Report
@@ -425,7 +425,7 @@ testimonials:
     batch_slug: 28
     publication_date: 2016-11-16
     job_before:
-    project_slug: sunshine
+    project_slug:
     job_after:
     new_company:
     origin: Course Report
