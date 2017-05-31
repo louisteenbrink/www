@@ -34,6 +34,7 @@ class Apply < ActiveRecord::Base
 
   before_validation :strip_codecademy_username
   attr_accessor :validate_ruby_codecademy_completed
+  validate :codecademy_username_exists, if: ->() { codecademy_username.present? }
   validates :codecademy_username, presence: true, if: :validate_ruby_codecademy_completed
   validate :ruby_codecademy_completed, if: :validate_ruby_codecademy_completed
 
@@ -96,7 +97,7 @@ class Apply < ActiveRecord::Base
     @linkedin_profile = LinkedinClient.new.fetch(linkedin)
   rescue Faraday::ResourceNotFound
     @linkedin_profile = nil
-    errors.add :linkedin, "Sorry, this does not seem to be a valid Linkedin URL" # TODO: i18n
+    errors.add :linkedin, "Sorry, this does not seem to be a <a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>valid Linkedin URL</a>." # TODO: i18n
   rescue Faraday::ClientError => e
     puts "Apply #{id}: could not fetch Linkedin profile: #{linkedin}" + e.message
   end
@@ -112,6 +113,16 @@ class Apply < ActiveRecord::Base
       errors.add :codecademy_username, result["error"]["message"]
     elsif result["percentage"] < 100
       errors.add :codecademy_username, "You did #{result["percentage"]}% of the CodeCademy Ruby track. We need 100%."
+    end
+  end
+
+  def codecademy_username_exists
+    client = CodecademyCheckerClient.new
+    result = client.ruby_progress(codecademy_username)
+    if result["error"] && (
+      result["error"]["type"] == "Codeacademy::User::UnknownUserError" ||
+      result["error"]["message"] =~ /is not a codecademy username/i)
+      errors.add(:codecademy_username, "This is not a valid Codecademy username. Please check it at <a href='https://www.codecademy.com/account' target='_blank'>codecademy.com/account</a>")
     end
   end
 

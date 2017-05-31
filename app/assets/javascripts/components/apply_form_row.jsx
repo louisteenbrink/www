@@ -2,6 +2,7 @@ class ApplyFormRow extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      value: null,
       isFocused: false,
       error: props.error,
       charCounter: 0
@@ -33,7 +34,7 @@ class ApplyFormRow extends React.Component {
 
     var errorDiv = null;
     if (this.state.error) {
-      errorDiv = <div className="error">{this.state.error}</div>;
+      errorDiv = <div className="error" dangerouslySetInnerHTML={{__html: this.state.error}}></div>;
     }
 
     var charCounterDiv = null;
@@ -56,6 +57,7 @@ class ApplyFormRow extends React.Component {
           </label>
           <input
             ref="input"
+            tabIndex={this.props.tabindex}
             placeholder={this.props.placeholder}
             type={this.props.type}
             onFocus={this.handleFocus.bind(this)}
@@ -75,6 +77,7 @@ class ApplyFormRow extends React.Component {
           </label>
           <textarea
             ref="input"
+            tabIndex={this.props.tabindex}
             onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
             onChange={this.handleChange.bind(this)}
@@ -101,7 +104,13 @@ class ApplyFormRow extends React.Component {
 
   handleBlur() {
     this.setState({ isFocused: false });
-    this.props.validate(this.name(), this.value());
+    var newValue = this.value();
+    if (newValue.length > 0) {
+      if (this.state.value != newValue) {
+        this.setState({ value: newValue });
+        this.props.validate(this.name(), newValue);
+      }
+    }
   }
 
   name() {
