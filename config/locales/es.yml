@@ -441,7 +441,7 @@ es:
         </p>
       codecademy_modal_can_apply_without_one_hundred_percent_html:
         <p>
-          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us. We just need your username.
+          You <strong>can</strong> already apply even if you haven't finished the Ruby track yet so that you can book an interview with us.
         </p>
       codecademy_modal_close_button: "I found my username"
       apply_btn: "Enviar solicitud para "
