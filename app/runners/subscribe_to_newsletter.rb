@@ -7,12 +7,13 @@ class SubscribeToNewsletter
     @email = email
   end
 
-  def run
+  def run(merge_fields = {})
     begin
       @gibbon.lists(@list_id).members.create(
         body: {
           email_address: @email,
-          status: "subscribed"
+          status: "subscribed",
+          merge_fields: merge_fields
         }
       )
       return { ok: true, already_subscribed: false }

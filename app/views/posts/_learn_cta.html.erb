@@ -8,6 +8,13 @@
     <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
       <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
       <%= f.input :from_path, as: :hidden %>
+      <div class="city-dropdown-wrapper">
+        <select class="form-control city-dropdown" name="prospect[city]">
+          <% @cities.each do |city| %>
+            <option value="<%= city['slug']%>"><%= city['name']%></option>
+          <% end %>
+        </select>
+      </div>
       <%= f.submit t('.learn_button'), class: "btn btn-danger" %>
     <% end %>
   </div>
