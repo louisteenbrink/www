@@ -18,7 +18,11 @@
         <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
           <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
           <%= f.input :from_path, as: :hidden %>
-          <%= f.input :city, collection: @cities.map{|city| city["name"]}, prompt: "Which city?", label: false %>
+          <select class="form-control" name="prospect[city]">
+          <% @cities.each do |city| %>
+            <option value="<%= city['slug']%>"><%= city['name']%></option>
+          <% end %>
+          </select>
           <%= f.submit "Get my invitation", class: "btn btn-danger" %>
         <% end %>
       </div>
