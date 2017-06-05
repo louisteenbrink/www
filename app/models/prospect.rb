@@ -7,6 +7,7 @@
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  from_path  :string
+#  city       :string
 #
 
 class Prospect < ApplicationRecord
