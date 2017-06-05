@@ -87,9 +87,3 @@ ActiveRecord::Schema.define(version: 20170514130732) do
 
   add_foreign_key "lives", "users"
 end
-t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  add_foreign_key "lives", "users"
-end

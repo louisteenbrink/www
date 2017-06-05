@@ -23,7 +23,7 @@ class Prospect < ApplicationRecord
       "channel": Rails.env.development? ? "test" : "incoming",
       "username": "www",
       "icon_url": "https://raw.githubusercontent.com/lewagon/mooc-images/master/slack_bot.png",
-      "text": "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect for the free Web Development Basics track on *#{from_path}*: #{email}"
+      "text": "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect, coming from #{city}, for the free Web Development Basics track on *#{from_path}*: #{email}"
     })
   end
 end
