@@ -19,11 +19,12 @@ class Prospect < ApplicationRecord
 
   def notify_slack
     count_prospect_for_today = Prospect.where("created_at >= ?", Date.today).count
+    city_part = city.blank? ? nil : ", coming from *#{city.capitalize}*,"
     NotifySlack.perform_later({
       "channel": Rails.env.development? ? "test" : "incoming",
       "username": "www",
       "icon_url": "https://raw.githubusercontent.com/lewagon/mooc-images/master/slack_bot.png",
-      "text": "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect, coming from #{city}, for the free Web Development Basics track on *#{from_path}*: #{email}"
+      "text": "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect#{city_part} for the free Web Development Basics track on *#{from_path}*: #{email}"
     })
   end
 end
