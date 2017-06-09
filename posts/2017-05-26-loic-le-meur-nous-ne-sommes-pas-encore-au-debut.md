@@ -26,5 +26,5 @@ Et comme pour illustrer sa pensée, il lance à 44 ans son projet le plus ambiti
 
 Bonne écoute !
 
-- Article d'abord publié sur [Nouvelle École](http://nouvelleecole.org/ep-17-mehdi-maizi-passion-oklm/)
+- Article d'abord publié sur [Nouvelle École](http://nouvelleecole.org/ep-18-loic-meur-made-in-california/)
 - Abonne-toi sur [iTunes](https://itunes.apple.com/fr/podcast/nouvelle-ecole/id1126434008?mt=2)
