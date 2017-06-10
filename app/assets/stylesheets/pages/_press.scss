@@ -10,9 +10,9 @@
 .card-press {
   display: flex;
   align-items: center;
-  background: white;
+  background: #f8f8f8;
   border-radius: 1px;
-  box-shadow: 1px 1px 3px #EFEEEE;
+  box-shadow: 1px 1px 3px #ddd;
   height: 130px;
   margin-bottom: 10px;
 }
@@ -21,6 +21,7 @@
   img {
     width: 90px;
     border-radius: 50%;
+    background-color: white;
   }
 }
 .card-press-content {

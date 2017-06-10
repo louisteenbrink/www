@@ -1,3 +1,9 @@
+- name: "Savoir coder, c'est avoir son permis Internet"
+  url: "http://www.magazine-decideurs.com/news/romain-paillard-le-wagon-savoir-coder-c-est-avoir-son-permis-internet"
+  media: "Dédideurs Magazine"
+  logo: logo-decideurs.png
+  date: 2017-06-08
+
 - name: "À Lille, Le Wagon forme des développeurs web à grande vitesse"
   url: http://etudiant.lefigaro.fr/article/a-lille-les-recettes-du-wagon-pour-former-des-developpeurs-web-a-grande-vitesse_489046d0-4a05-11e7-ac15-23b387afccae/
   media: Le Figaro Étudiant
