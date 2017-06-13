@@ -73,3 +73,13 @@ mary:
   position: Community Manager
   company_website: switchup.org
   twitter: switchorg
+shannon:
+  fname: Shannon
+  lname: Graybill
+  picture: shannon-graybill.jpg
+  bio: "This cowgirl turned wannabe-European spent the first 5 years after university working and traveling through Asia and Africa before discovering her love of Southern Europe – Portugal in particular. Shannon’s professional focus was mainly marketing and business development, but entering Lisbon’s startup scene has changed her tune. She is now warming up her tech muscles while pursuing her own startup dreams and mobilizing Portugal's inspired-entrepreneurs to bootstrap and build “it” themselves."
+  company: Le Wagon Lisbon
+  position: Driver
+  company_website: lewagon.com/lisbon
+  twitter: lewagonlisbon
+  instagram: lewagonlisbon
