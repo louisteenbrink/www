@@ -10,7 +10,7 @@ thumbnail: 2017-06-12-why-lisbon-1.jpg
 description: Such was the question asked repeatly when I decided to move to the post-recession city in 2013. That question now has an obvious answer.
 ---
 
-Why would you relocate to Lisbon?" was the question asked repeatly when I decided to move to the post-recession city in 2013. That question now has an obvious answer.
+"Why would you relocate to Lisbon?" was the question asked repeatly when I decided to move to the post-recession city in 2013. That question now has an obvious answer.
 
 Four years ago, I gambled on Lisbon and ended up hitting the jackpot. Now that the secret is out and the world has discovered this hidden gem, I thought I would share some of the winnings.
 
