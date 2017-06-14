@@ -359,6 +359,27 @@ testimonials:
       <p>In only 2 months, we went through all the basic skills a beginner needs in order to build a web application from A to Z. Ruby programming for the backend side, SQL for the database, HTML/CSS and Javascript for the front-end part, and also very useful product design tools like Sketch or Marvelapp. We also learnt how to collaborate within a developers' team using Github, and used Ruby on Rails to speed up our app development and not re-invent the wheel for every new web application. During the 3 last weeks of the programme, we worked on two projects, that we built completely and put in production with Heroku. One of these projects was my startup idea, http://beta.zadl.fr/.</p>
       <p>In my opinion, Le Wagon made me save nearly 2 years compared to what I would have learnt on my own with online MOOC and tutorials. Le Wagon's program is really intense and requires a 100% commitment. But there is also a very cool atmosphere, with a team of dedicated and passionate teachers and teaching assistants. Besides the "coding" part, Le Wagon also connect you to a great community: young grads, artists, engineers who want to switch their careers... We all helped each other during the 9 weeks and some of us really became close friends. After Le Wagon, part of my buddies pursued their entrepreneur's journey, and a lot of them started working as developers, either doing freelance or in full-time positions.</p>
       <p>To conclude, I would recommend Le Wagon to anyone willing to learn how to build a web application with a very thorough curriculum and an amazing students' community, that be for working on your own project or literally for changing your life!</p>
+  rodloboz:
+    first_name: Rui
+    last_name: Freitas
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-03-26
+    job_before:
+    project_slug: routineio
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: lisbon_rui_freitas.jpg
+    linkedin_url:
+    content_html: |
+      <p>Le Wagon is worth the investment and lives up to its reputation. Before joining the bootcamp I was trying to follow online tutorials to learn how I could build some prototypes of ideas we had for web apps but with the feeling I would never be able to leave the training wheels and ride on my own. I found Le Wagon by chance and seeing that the technology stack covered in the programmed matched what I was trying to learn, it looked like a perfect fit.</p>
+      <p>The program is demanding and fast-paced, but it is aimed and suited at complete beginners, although I feel that if you take the time to explore the technologies covered before starting you will get so much more out of this bootcamp.</p>
+      <p>The teachers are experienced in software engineering and they approach topics both from practical standpoints as well as theoretical. The teaching staff is always available to help you with your doubts at all times.</p>
+      <p>There’s alsomore than simply coding though. Le Wagon organises talks and interviews with entrepreneurs and people involved in the start-up scene, which greatly complements the content of the course.</p>
+      <p>What really surprised me was the atmosphere between students and that’s something Le Wagon staff fosters and encourages – creating a network of contacts and fellow-students which will continue beyond the bootcamp.</p>
+      <p>The pace of the last two weeks is hectic due to the final projects but that’s where it all comes together. My team and I built a web app to track routines through user created questions/forms and it was great to see that I was able to build and structure a product on my own that differed from what I had been taught.</p>
+      <p>Now I understand why some of the reviewers wrote that Le Wagon changed their lives or that it was the greatest thing they’ve ever done. It’s not cliché. Even if you don’t plan on becoming a developer, it is an enriching experience and a fantastic coding program. As for me, I found something I really love doing.</p>
   ruijorge:
     first_name: Rui
     last_name: Jorge
