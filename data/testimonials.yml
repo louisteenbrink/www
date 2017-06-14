@@ -32,9 +32,11 @@ routes:
   lisbon:
     - apires89
     - rodloboz
+    - brunasiloto
+    - tomgauth
     - ruijorge
-    - ricardoserrao
     - linusjig
+    - ricardoserrao
   london:
     - bibiiii
     - archiejg
@@ -56,6 +58,47 @@ routes:
     - adrianorob
 
 testimonials:
+  tomgauth:
+    first_name: Tom
+    last_name: Gauthier
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-05-28
+    job_before:
+    project_slug: routineio
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: lisbon_tom_gauthier.jpg
+    linkedin_url:
+    content_html: |
+      <p>November 2016. I just turned 27, I was broke like a millennial online-entrepreneur and Trump was president of the USA. "What am I doing with my life?" The existential crisis kicked in. I was too broke to get drunk, not bored enough to watch cat videos on youtube to distract myself from myself. The usual solutions would not work this time. I had to use my brain and come up with a long-lasting solution.</p>
+      <p>What is the #1 advice for millennials? Learn to code. I decided to do at least one safe move in my life: go to Lisbon and learn to code at LeWagon. Turned out it was the best decision I've made for a long time! 4 months later I was standing on a stage pitching a web app we've created with 2 other LeWagon students. I've learned in 2 months how to code and I've learned in 2 months more about myself than during the last years of my life.</p>
+      <p>Doing LeWagon is fucking epic. It's far more than just learning to code! It's a real human experience with incredible people. Spending 10 hours a day together in the same struggle and the same Friday nights drinking the same beer is the best way to create a strong group. That part of LeWagon was the number 1 value to me (not the beer, the strong group).</p>
+      <p>Some people would say "it's possible to learn alone how to code! You don't need a bootcamp" And they are right. But I prefer have an incredible experience during 2 intensive months with great teachers and awesome teammates.</p>
+      <p>Doing LeWagon is fail-proof. Don't think Udemy or CodeCademy are alternatives to real bootcamp. It's really hard to discipline yourself to learn to code and most people take too much time to learn. It's hard but nobody wanted to give up, because the days you hate code you still come for people and patient teachers, and you end up loving code again.</p>
+      <p>Don't think code is not for you. Code is a tool anyone can use and learn. People around me told me that I wouldn't like code. Because I'm more of a dreamer and a creative who doesn't pay attention to details and doesn't really like to follow the rules. Anyone can learn and love code in different manners. Creatives love the possibilities it offers, entrepreneurs love the scalability and opportunities it gives you access to, meticulous people love spending time on their code and making great craft, hard core brains love the challenge and rewards it gives.</p>
+      <p>After Le Wagon I kept working online. But now I can create a prototype of any of my ideas quickly and outsource code knowing what's going on. I know I can create anything or learn any new language/technology if I put enough time on it. So if you're young, full of ideas and want to make the best investment in time, energy and money of your career. Do Le Wagon. If you don't learn to code, a robot will take your job and a programmer will take your girlfriend. Learn to code.</p>
+  brunasiloto:
+    first_name: Bruna
+    last_name: Siloto
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-05-28
+    job_before:
+    project_slug: routineio
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: lisbon_bruna_siloto.jpg
+    linkedin_url:
+    content_html: |
+      <p>I have a background in Graphic Design, working with front end for two years when I decided to do a programing bootcamp. I had a few ideas of web apps I’d like to develop myself and although the online tutorials were slowly helping me understand programing, I felt like I was a long way from creating something myself, so I decided to take a programing bootcamp.</p>
+      <p>Searching for a bootcamp that matched my needs was a bit overwhelming, there are many options out there, but I felt like Le Wagon had the most complete curriculum of all the other bootcamps I encountered. From the many bootcamp options I saw back home in the US, I chose Le Wagon Lisbon and honestly couldn’t have been more satisfied with the experience.</p>
+      <p>The program was fast paced, they covered many technologies in only 9 weeks, sometimes it was hard to process so much information, especially for me who considered myself a beginner, but I trusted the curriculum and the feedback from the teachers and it paid off at the end. I look back now and see how much I’ve learned and how much I’ve accomplished in only 9 weeks, it’s incredible. I now feel much more confident to start my own web apps and most importantly, I feel like I can learn any coding languages using the process I learned from Le Wagon.</p>
+      <p>The other aspect of the program, that I had never expected before starting, was the connection with the other students, TAs, teachers and the driver - I immediately felt at home with them. Today I can say I am part of a strong community of developers and have true friends around the world, people I will always see as inspiration to continue coding and building products.</p>
+      <p>As far as the location… Lisbon is just AWESOME! When we were not coding, we were out having fun, experiencing the city’s amazing gastronomic scene, visiting historic places, museums, castles, surfing and enjoying the beautiful city. It couldn’t have been better.</p>
+      <p>Le Wagon was an intensive 9 week experience (emphasis on the last two weeks, when we developed our final project), filled with knowledge, new experiences, challenges and new opportunities. I have returned home with a strong foundation to start a new stage of my life and look forward to being part of the Le Wagon alumni community!</p>
   quentincoray:
     first_name: Quentin
     last_name: Coray
