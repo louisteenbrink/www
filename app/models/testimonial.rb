@@ -29,7 +29,7 @@ class Testimonial
   end
 
   def batch_thumbnail
-    AlumniClient.new.batch(@hash['batch_slug'])
+    AlumniClient.new.batch(@hash['batch_slug'], slug: true)
   end
 
   def picture_url
