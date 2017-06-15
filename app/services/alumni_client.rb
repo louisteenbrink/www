@@ -104,6 +104,7 @@ class AlumniClient
   private
 
   def get(url, headers = {})
+    puts url
     JSON.parse RestClient::Request.execute({
       method: :get,
       url: url,
