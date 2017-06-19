@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20170605083431) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "applies", force: :cascade do |t|
+  create_table "applies", id: :serial, force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
     t.integer "age"
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20170605083431) do
     t.string "linkedin"
   end
 
-  create_table "attachinary_files", force: :cascade do |t|
+  create_table "attachinary_files", id: :serial, force: :cascade do |t|
     t.string "attachinariable_type"
     t.integer "attachinariable_id"
     t.string "scope"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20170605083431) do
     t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent"
   end
 
-  create_table "lives", force: :cascade do |t|
+  create_table "lives", id: :serial, force: :cascade do |t|
     t.string "category"
     t.integer "user_id"
     t.datetime "started_at"
@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(version: 20170605083431) do
     t.index ["user_id"], name: "index_lives_on_user_id"
   end
 
-  create_table "prospects", force: :cascade do |t|
+  create_table "prospects", id: :serial, force: :cascade do |t|
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20170605083431) do
     t.string "city"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", id: :serial, force: :cascade do |t|
     t.integer "sign_in_count", default: 0, null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"

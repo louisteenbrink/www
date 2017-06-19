@@ -54,7 +54,7 @@
 <%= render "shared/positions" %>
 
 <% cache [ 'projects', locale ] do %>
-<% projects = @client.projects("home_projects") %>
+<% projects = KittClient.new.products #("home_projects") TODO read home_projects list from a yml %>
 <div id="alumni-home">
   <div class="container">
     <h2 class='section-title-home' style="font-size:30px;">
