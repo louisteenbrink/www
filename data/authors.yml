@@ -83,3 +83,13 @@ shannon:
   company_website: lewagon.com/lisbon
   twitter: lewagonlisbon
   instagram: lewagonlisbon
+arthur:
+  fname: Arthur
+  lname: Littmann
+  picture: arthur-littmann.jpg
+  bio: "Arthur was born in France and grew up in Italy, after graduating from ESSEC business school he worked in a french tech startup as a business developer and then decided he wanted to learn how to code to put his entrepreneurial ideas in application. Since then he's been coding and sharing his tech knowledge, teaching and assisting students at Le Wagon."
+  company: Le Wagon London
+  position: Teacher
+  company_website: lewagon.com/london
+  twitter: lewagonlondon
+  instagram: lewagonlondon
