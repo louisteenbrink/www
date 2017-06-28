@@ -3,7 +3,6 @@ class ApplyFormRow extends React.Component {
     super(props)
     this.state = {
       value: null,
-      isFocused: false,
       error: props.error,
       charCounter: 0
     }
@@ -17,17 +16,10 @@ class ApplyFormRow extends React.Component {
     }
   }
 
-  componentDidUpdate() {
-    if (this.state.isFocused) {
-      setTimeout(() => { ReactDOM.findDOMNode(this.refs.input).focus() }, 1);
-    }
-  }
-
   render() {
     var componentClasses = classNames({
       'apply-form-row': true,
       'is-mandatory': this.props.mandatory,
-      'is-focused': this.state.isFocused,
       'has-error': this.state.error !== "",
       'is-validated': this.state.error === "" && (this.props.value || "").toString().length > 0
     });
@@ -60,7 +52,6 @@ class ApplyFormRow extends React.Component {
             tabIndex={this.props.tabindex}
             placeholder={this.props.placeholder}
             type={this.props.type}
-            onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
             defaultValue={this.props.value}
             id={this.props.param}
@@ -78,7 +69,6 @@ class ApplyFormRow extends React.Component {
           <textarea
             ref="input"
             tabIndex={this.props.tabindex}
-            onFocus={this.handleFocus.bind(this)}
             onBlur={this.handleBlur.bind(this)}
             onChange={this.handleChange.bind(this)}
             placeholder={this.props.placeholder}
@@ -98,12 +88,7 @@ class ApplyFormRow extends React.Component {
     this.setState({ charCounter: this.value().length });
   }
 
-  handleFocus() {
-    this.setState({ isFocused: true });
-  }
-
   handleBlur() {
-    this.setState({ isFocused: false });
     var newValue = this.value();
     if (newValue.length > 0) {
       if (this.state.value != newValue) {
