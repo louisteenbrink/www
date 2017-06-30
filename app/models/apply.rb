@@ -27,6 +27,7 @@ class Apply < ActiveRecord::Base
   validates :phone, presence: true
   validates :age, presence: true, numericality: { only_integer: true }
   validates :email, presence: true, email: true
+  validate :email_is_valid_with_mailgun
   validates :motivation, presence: true, length: { minimum: 140 }
 
   attr_accessor :skip_source_validation
@@ -139,6 +140,18 @@ class Apply < ActiveRecord::Base
   def strip_codecademy_username
     unless codecademy_username.blank?
       self.codecademy_username = codecademy_username.gsub(/^.*\.com\/([^\/]+\/)?/, "")
+    end
+  end
+
+  def email_is_valid_with_mailgun
+    validation = Mailgun.new.validate_email(email)
+    unless validation["is_valid"]
+      if validation["did_you_mean"]
+        message = "Oh oh. Did you mean #{validation["did_you_mean"]}?"
+      else
+        message = "Are you sure this is a valid email address?"
+      end
+      errors.add(:email, message)
     end
   end
 end
