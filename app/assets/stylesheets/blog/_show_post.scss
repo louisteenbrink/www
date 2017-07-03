@@ -165,6 +165,47 @@
             font-size: 75%;
           }
         }
+
+        .photo-gallery {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          width: 100%;
+
+          .mid {
+            width: 49.5%;
+            height: 100%;
+
+            @media (max-width: 520px) {
+              width: 100%;
+            }
+          }
+
+          .mid:nth-child(3n+1) {
+            margin-right: 0.5%;
+
+            @media (max-width: 520px) {
+              margin: 0.5% 0;
+            }
+          }
+
+          .mid:nth-child(3n+2) {
+            margin-left: 0.5%;
+
+            @media (max-width: 520px) {
+              margin: 0.5% 0;
+            }
+          }
+
+          .full {
+            margin: 1% 0;
+            width: 100%;
+
+            @media (max-width: 520px) {
+              margin: 0.5% 0;
+            }
+          }
+        }
       }
     }
 
