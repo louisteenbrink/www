@@ -314,14 +314,18 @@ fr:
     enterprise:
       title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
-      tagline_html: "<span style='font-size: 40px;'>Transformez votre organisation. <br>En vous formant au code et à la technologie.</span>"
+      tagline_html: "<span style='font-size: 40px;'>Nous accompagnons les entreprises <br>dans leur transition digitale.</span>"
       tagline_details_html: |
         Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler <br>dans votre organisation.
-        <strong>Travaillez mieux, de façon plus agile et plus efficace.</strong>
-      apply: Formez-vous avec Le Wagon
+        <strong>1 workshop à la fois</strong>
+      apply: Contact
+      apply_phone_html: |
+        Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contacter Benjamin<br><small>benjamin@lewagon.org</small>
       apply_to: Formation %{skill}
-      skills_header: Des ateliers & des sprints faits pour votre entreprise
-      skills_text_html: Grâce à des formations de 2 heures, des ateliers d'une journée ou des sprints d'une semaine, <strong>formez vos collaborateurs à l'UI/UX Design, au Product Management ou au développement web</strong>.
+      skills_header: Des ateliers aux format adaptés à l’entreprise
+      skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management ou au développement web, aux methodologie Agile et lean</strong>.
       pm: Product Management
       pm_details: Découpage du travail, nouvelles techniques agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups technologiques.
       ui: UI / UX
