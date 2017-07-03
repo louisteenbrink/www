@@ -19,11 +19,11 @@ Digging back into Le Wagon history and DNA it didn’t take us long to agree tha
 But the real treasure of Ericeira is… the Portuguese people. They are among the most welcoming and helpful humans you could dream of. Many thanks to José, our host, and his incredible connections all over the city, also to the local representants who opened us the doors of the Ericeira Business Factory for 2 days, there is no way we could thank you all enough!
 
 <div class="photo-gallery">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-6.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-5.jpg" alt="">
-  <img class="full" src="blog_image_path 2017-06-28-ericeira-22.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-19.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-1.jpg" alt="">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-6.jpg" alt="Should we just hang there?">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-5.jpg" alt="Having a stroll in Ericeira streets">
+  <img class="full" src="blog_image_path 2017-06-28-ericeira-22.jpg" alt="Yep. One of the best spot available in Ericeira">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-19.jpg" alt="Ericeira Business Factory panoramic">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-1.jpg" alt="Chillin' at the beach, Ericeira">
 </div>
 
 ## A retreat is the best way to create bonds between people
@@ -35,11 +35,11 @@ It is now a thing done. At first sight, the magic happened as everyone was reall
 From there, it’s been a pure bliss revolving around workshops, yoga, surfing, good food and parties with too many smiles to count them all!
 
 <div class="photo-gallery">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-3.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-16.jpg" alt="">
-  <img class="full" src="blog_image_path 2017-06-28-ericeira-9.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-17.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-21.jpg" alt="">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-3.jpg" alt="What would be a company retreat without a few drinks by the beach?">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-16.jpg" alt="A company retreat must have its Yoga classes">
+  <img class="full" src="blog_image_path 2017-06-28-ericeira-9.jpg" alt="Official meeting at the line up">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-17.jpg" alt="Unofficial meeting somewhere into a bar">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-21.jpg" alt="Do you mind if I get one more octopus?">
 </div>
 
 ## There's even a video to prove it!
@@ -57,11 +57,11 @@ Don’t be fooled by the pictures, half of our time in Ericeira has been dedicat
 We now have a livecode battle platform, a chrome extension enabling the localisation of our documentation examples (quite important to have a real local restaurant name when you are building a ordering system. Yep.), an index of all the companies using Ruby and Ruby on Rails in the countries we are operating in and a nice upgrade of our ticketing system in order to quickly fix minor issues when our students are stuck somewhere. Again. In 5 hours. Big up guys!
 
 <div class="photo-gallery">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-4.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-10.jpg" alt="">
-  <img class="full" src="blog_image_path 2017-06-28-ericeira-12.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-13.jpg" alt="">
-  <img class="mid" src="blog_image_path 2017-06-28-ericeira-10.jpg" alt="">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-4.jpg" alt="Yep. We had our own Keynote!">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-27.jpg" alt="This is love. Right there.">
+  <img class="full" src="blog_image_path 2017-06-28-ericeira-12.jpg" alt="Focused team ready to go big">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-13.jpg" alt="Teachers' hackaton organisation">
+  <img class="mid" src="blog_image_path 2017-06-28-ericeira-10.jpg" alt="Jean-Michel was here">
 </div>
 
 ## What’s next?
