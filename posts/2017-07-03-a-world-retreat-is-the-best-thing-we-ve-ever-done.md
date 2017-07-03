@@ -32,7 +32,7 @@ It may be a bit cliché to assess that Retreat is the best team building event y
 
 It is now a thing done. At first sight, the magic happened as everyone was really psyched to put a real face on our respective Slack avatars! (hint: the Playa de Ribeira d’Ilhas is surely responsible for that). As soon as everyone landed in Portugal, we gathered the whole crew around a few sangrias and a buffet full of Portuguese specialties while our COO kicked off the event with a speech (while our CTO was enjoying a few waves :D)
 
-From there, it’s been a pure bliss revolving around yoga, surfing, good food and parties with too many smiles to count them all!
+From there, it’s been a pure bliss revolving around workshops, yoga, surfing, good food and parties with too many smiles to count them all!
 
 <div class="photo-gallery">
   <img class="mid" src="blog_image_path 2017-06-28-ericeira-3.jpg" alt="">
@@ -52,7 +52,7 @@ From there, it’s been a pure bliss revolving around yoga, surfing, good food a
 
 ## But we were also amazingly serious!
 
-Don’t be fooled by the pictures, half of our time in Ericeira has been dedicated to work. We split our group to make sure everyone gets some proper food for thoughts on their way back home. While the city drivers shared tips and tricks related to their previous experiences, the teachers got back to students’ mode and… just killed it. In less than 5 hours, they built 4 amazing products ready to use on our various platforms and even pulled-off a Demo Day of their own!
+Don’t be fooled by the pictures, half of our time in Ericeira has been dedicated to work. We split our group to make sure everyone gets some proper food for thoughts on their way back home. While the city drivers shared tips and tricks related to their previous experiences, the teachers got back to students’ mode and… just killed it. In less than 5 hours of hackaton, they built 4 amazing products ready to use on our various platforms and even pulled-off a Demo Day of their own!
 
 We now have a livecode battle platform, a chrome extension enabling the localisation of our documentation examples (quite important to have a real local restaurant name when you are building a ordering system. Yep.), an index of all the companies using Ruby and Ruby on Rails in the countries we are operating in and a nice upgrade of our ticketing system in order to quickly fix minor issues when our students are stuck somewhere. Again. In 5 hours. Big up guys!
 
@@ -68,7 +68,7 @@ We now have a livecode battle platform, a chrome extension enabling the localisa
 
 It’s too early to see all the benefits of such an event but only one week later, new connections has been formed, a few trips have been organised to work remotely from a location or another and even more help has been provided or offered than before (which is truly amazing when you already know the level of commitment and care we are all able to deploy from the beginning of this adventure).
 
-Last but not least, be sure that we will do it again next year! We truly don’t know if retreats are the elixir of happiness at work, but for sure, it’s one of it’s main ingredients. So let’s enjoy it without moderation ;)
+Last but not least, be sure that we will do it again next year! We truly don’t know if retreats are the elixir of happiness at work, but for sure, it’s one of it’s main ingredients. So let’s enjoy it without moderation!
 
 With love,
 
