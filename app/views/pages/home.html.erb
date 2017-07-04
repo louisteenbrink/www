@@ -54,7 +54,8 @@
 <%= render "shared/positions" %>
 
 <% cache [ 'projects', locale ] do %>
-<% projects = KittClient.new.products #("home_projects") TODO read home_projects list from a yml %>
+<% home_projects_list = Static::PROJECTS[:home] %>
+<% projects = KittClient.new.products.select { |product| home_projects_list.map { |p| p[:slug] }.include? product["slug"] } %>
 <div id="alumni-home">
   <div class="container">
     <h2 class='section-title-home' style="font-size:30px;">
@@ -71,7 +72,7 @@
         <div class="project-item-container">
           <div class="project-item">
             <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
+              <div class="project-thumbnail" style="background: url(<%= card_url(project) %>);background-size:cover;background-position:center center;">
               </div>
             </div>
             <div class="project-item-infos">
