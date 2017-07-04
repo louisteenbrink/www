@@ -1,6 +1,7 @@
-<%= content_for(:title)       { (t ".meta_title_html", count: @kitt_client.new.products.length).html_safe } #("alumni_projects") TODO read alumni_projects list from a yml %>
+<%= content_for(:title)       { (t ".meta_title_html", count: @kitt_client.products.length).html_safe } %>
+<!-- ("alumni_projects") TODO read alumni_projects list from a yml -->
 <%= content_for(:description) { t ".meta_description" } %>
-<%= content_for(:image_url) { image_url 'social/projects_card.jpg' } %>
+<%= content_for(:image_url) { image_url "social/projects_card.jpg" } %>
 
 <h1>
   <%= t(".projects_details_html", count: @client.projects("alumni_projects").length) %>

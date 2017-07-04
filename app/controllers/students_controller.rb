@@ -13,7 +13,6 @@ class StudentsController < ApplicationController
     end
 
     if request.format.html?
-      @projects = @kitt_client.new.products #("alumni_projects") TODO read alumni_projects list from a yml
       @statistics = @client.statistics
       @reviews = ReviewsCounter.new.review_count
     end

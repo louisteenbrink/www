@@ -11,7 +11,9 @@ class KittClient
     else
       url = "#{@base_url}/products"
     end
-    get(url)["products"]
+    from_cache(:projects, camp_slug) do
+      get(url)["products"]
+    end
   end
 
   private

@@ -24,7 +24,7 @@ class Testimonial
   end
 
   def project
-    projects = AlumniClient.new.projects
+    projects = KittClient.new.products
     projects.select { |project| project["slug"] == @hash['project_slug'] }.first
   end
 

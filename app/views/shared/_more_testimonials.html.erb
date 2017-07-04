@@ -79,10 +79,10 @@
                   <div class="alumni-product-container">
                     <h4><%= t('.watch', name: testimonial.first_name) %></h4>
                     <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.project['slug'] %>">
-                      <% if testimonial.project['thumbnail'] =~ /missing/ %>
+                      <% if testimonial.project['cloudinary_image_id'].blank? %>
                         <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.batch_thumbnail.meta_image['facebook'] %>);">
                       <% else %>
-                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.project['thumbnail'] %>);">
+                        <div class="video-thumbnail" style="background-image: url(<%= thumbnail(testimonial.project) %>);">
                       <% end %>
                         <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
