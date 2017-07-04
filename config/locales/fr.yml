@@ -327,25 +327,23 @@ fr:
       skills_header: Des ateliers aux format adaptés à l’entreprise
       skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management ou au développement web, aux methodologie Agile et lean</strong>.
       pm: Product Management
-      pm_details: Découpage du travail, nouvelles techniques agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups technologiques.
-      ui: UI / UX
-      ui_details: Rendre les choses visibles facilite la communication dans vos équipes. Apprenez à faire rapidement des maquettes et des wireframes pour discuter vos idées de façon plus claire.
-      web_design: Web Design / frontend
-      web_design_details: Construisez vos icônes, retouchez tout seul votre site. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
+      pm_details: Apprenez les nouvelles techniques Agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups
+      ui: Le design et l'expérience utilisateur (UI / UX)
+      ui_details: Apprenez à faire rapidement des maquettes et des wireframespour discuter vos idées de façon plus claire. Facilite la communication dans vos équipes et avec vos prestataire techniques.
+      web_design: Web Design & Developement frontend
+      web_design_details: Apprenez à construire vos icônes, votre site. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
       data_science: Data Science & Visualisation
-      data_science_details: Collectez les données, analyser-les, faites-les parler. Les consultants doivent ré-inventer leur travail et leurs méthodologies.
+      data_science_details: Apprenez à collecter les données, analyser-les, faites-les parler. Les consultants doivent ré-inventer leur travail et leurs méthodologies.
       fullstack: FullStack Development
       fullstack_details: Depuis la base de données jusqu'au navigateur, apprenez comment un produit web est construit et comment il fonctionne pour discuter plus efficacement avec vos équipes techniques.
-      prototyping: Lean Prototyping
+      prototyping: L'art du prototyping
       prototyping_details: |
-        Les APIs transforment notre économie. Découvrez comment les startups prototypent très rapidement de nouveaux services en connectant simplement des APIs.
-      best: Apprenez des meilleurs
+        Apprenez à prototyper très rapidement de nouveaux services en connectant simplement des APIs comme le font les startups.
+      formats_title: À chaque problématique ses ateliers
+      best: Motiver vos équipe par l’apprentissage du code
       best_details_html: |
         <p>
-          Nous avons formé plus de 1200 étudiants aux profils variés (école de commerce, ingénieurs, graphistes). Nous savons <strong>créer un lien entre la technologie et le business</strong>. Nous avons encadré <strong>plus de 400 produits</strong>, en aidant nos élèves à les concevoir et les prototyper.
-        </p>
-        <p>
-          Après avoir formé tant d'élèves talentueux, nous savons que nous pouvons aussi <strong>vous aider à transformer votre organisation</strong>.
+          1 journée en immerssion avec 2 atelier
         </p>
       hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
       watch: Notre dernier atelier "One Day of Code"

@@ -31,30 +31,11 @@
         <div class="card-enterprise-skill">
           <div>
             <h3>
-              <span><%= t('.pm', :default => 'Product Management') %></span>
-              <i class="devicons devicons-trello" style="color: #026AA7;"></i>
-            </h3>
-            <p>
-              <%= t('.pm_details', :default => ' User stories, collaborative workflow. Learn the good way to work on a project within a team.') %>
-            </p>
-            <p>
-              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;"><%= t('.apply_to', skill: "Product Management", :default => 'Learn with Le Wagon') %></a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-enterprise-skill">
-          <div>
-            <h3>
               <span><%= t('.ui', :default => 'UI / UX') %></span>
               <%= image_tag "technos/enterprise-sketch.jpg", style: "height: 40px; margin-bottom: 10px; display: inline-block"; %>
             </h3>
             <p>
               <%= t('.ui_details', :default => 'Visible things makes communication easier. Learn to build wireframes and mockups to discuss your ideas.') %>
-            </p>
-            <p>
-              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;"><%= t('.apply_to', skill: "UI / UX design", :default => 'Learn with Le Wagon') %></a>
             </p>
           </div>
         </div>
@@ -69,13 +50,23 @@
             <p>
               <%= t('.web_design_details', :default => ' Build your own icons, keep control of your website without always depending on contractors.') %>
             </p>
-            <p>
-              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;"><%= t('.apply_to', skill: "Web design", :default => 'Learn with Le Wagon') %></a>
-            </p>
           </div>
         </div>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="card-enterprise-skill">
+          <div>
+            <h3>
+              <span><%= t('.pm', :default => 'Product Management') %></span>
+              <i class="devicons devicons-trello" style="color: #026AA7;"></i>
+            </h3>
+            <p>
+              <%= t('.pm_details', :default => ' User stories, collaborative workflow. Learn the good way to work on a project within a team.') %>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-2">
         <div class="card-enterprise-skill">
           <div>
             <h3 class="text-center">
@@ -84,25 +75,6 @@
             </h3>
             <p>
               <%= t('.data_science_details', :default => 'Collect data, analyze it, make it speak through visualisation.') %>
-            </p>
-            <p>
-              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;"><%= t('.apply_to', skill: "Data Science", :default => 'Learn with Le Wagon') %></a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="card-enterprise-skill">
-          <div>
-            <h3 class="text-center">
-              <span><%= t('.fullstack', :default => 'FullStack Development') %></span>
-              <i class="devicons devicons-ruby_on_rails" style="color: #C22821;"></i>
-            </h3>
-            <p>
-              <%= t('.fullstack_details', :default => 'From the database to the web browser, learn how a web application is built.') %>
-            </p>
-            <p>
-              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;"><%= t('.apply_to', skill: "Web development", :default => 'Learn with Le Wagon') %></a>
             </p>
           </div>
         </div>
@@ -117,9 +89,6 @@
             <p>
               <%= t('.prototyping_details', :default => 'APIs are eating the world. Discover how startups can prototype products just by connecting APIs.') %>
             </p>
-            <p>
-              <a href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" class="btn btn-default typeform-share button" style="margin-bottom: 0px;"><%= t('.apply_to', skill: "Lean Prototyping", :default => 'Learn with Le Wagon') %></a>
-            </p>
           </div>
         </div>
       </div>
@@ -127,34 +96,10 @@
   </div>
 </div>
 
-
-<div id="enterprise-why-us" class="hidden-sm hidden-xs">
-  <div class="left-part">
-    <h2>
-      <%= t('.best', :default => 'Learn from the best') %>
-    </h2>
-
-    <%= t('.best_details_html', default: "<p>
-         We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
-        </p>
-        <p>
-         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
-        </p>").html_safe %>
-
-    <div class="hec-footer">
-      <%= render "shared/logos/hec"%>
-      <p><%= t('.hec_html', default: "Since 2017, Le Wagon is the official partner of HEC (highest ranked French business school) and <a href='http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs' target='_blank'>is teaching HEC entrepreneurs to code their own product</a>.").html_safe %></p>
-    </div>
-
+<div class="container-fluid section-wrapper">
+  <div class="section-formats" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2) 45%), url(<%= image_path 'officials/yonomi-2.jpg' %>)">
+      <h2><%= t('.formats_title', :default => "What we can do for you") %></h2>
   </div>
-  <div class="right-part" style="background-image: url(<%= image_path 'officials/job-8-bis.jpg' %>);background-size: cover;">
-  </div>
-</div>
-
-<div id="enterprise-last-event">
-  <h2 class="text-center"><%= t(".watch", default: "Watch our last workshop") %></h2>
-  <div id="video-container" style="position:relative;max-width: 700px; min-height: 400px;
-    margin: auto;margin-top: 50px;"><iframe src="https://www.youtube.com/embed/0HjKQ8aNS7g?ecver=2<%= I18n.locale == :fr ? nil : "&cc_lang_pref=en&cc_load_policy=1" %>" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height: 100%;left:0" allowfullscreen></iframe></div>
 </div>
 
 <div id="enterprise-testimonials" class="hidden-xs">
@@ -236,6 +181,12 @@
 
 <div class="final-cta text-center">
   <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/LOs0uR" data-mode="popup" target="_blank" > <%= t('.apply', :default => 'Learn with Le Wagon') %> </a>
+</div>
+
+<div id="enterprise-last-event">
+  <h2 class="text-center"><%= t(".watch", default: "Watch our last workshop") %></h2>
+  <div id="video-container" style="position:relative;max-width: 700px; min-height: 400px;
+    margin: auto;margin-top: 50px;"><iframe src="https://www.youtube.com/embed/0HjKQ8aNS7g?ecver=2<%= I18n.locale == :fr ? nil : "&cc_lang_pref=en&cc_load_policy=1" %>" width="640" height="360" frameborder="0" style="position:absolute;width:100%;height: 100%;left:0" allowfullscreen></iframe></div>
 </div>
 
 

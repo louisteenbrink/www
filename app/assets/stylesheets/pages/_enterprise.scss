@@ -35,7 +35,7 @@
 }
 
 .card-enterprise-skill {
-  min-height: 400px;
+  min-height: 280px;
   padding: 20px 30px;
   padding-top: 10px;
   background: white;
@@ -81,6 +81,20 @@
       opacity: 1;
     }
   }
+}
+
+.section-wrapper {
+  overflow: hidden,
+}
+
+.section-formats {
+  position: relative;
+  width: 100%;
+  min-height: 680px;
+  //filter: blur(2px) grayscale(0%);
+  transform: scale(1.03);
+  background-size: cover;
+  background-position: center center;
 }
 
 #enterprise-why-us {
