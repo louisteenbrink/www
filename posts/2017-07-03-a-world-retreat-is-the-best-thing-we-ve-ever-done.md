@@ -68,7 +68,7 @@ We now have a livecode battle platform, a chrome extension enabling the localisa
 
 It’s too early to see all the benefits of such an event but only one week later, new connections have been formed, a few trips have been organised to work remotely from one location or another and even more help has been provided or offered than before (which is truly amazing when you already know the level of commitment and care we are all able to deploy from the beginning of this adventure).
 
-Last but not least, be sure that we'll do it again next year! We don’t realy know if retreats are the elixir of happiness at work, but for sure, it’s one of the main ingredients. So let’s enjoy it without moderation!
+Last but not least, be sure that we'll do it again next year! We don’t really know if retreats are the elixir of happiness at work, but for sure, it’s one of the main ingredients. So let’s enjoy it without moderation!
 
 With love,
 
