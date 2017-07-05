@@ -1,5 +1,11 @@
-<% cache ['navbar', @hide_language_selector, @hide_banner_apply_button, @city_groups, @live, I18n.locale ] do %>
-<nav class="navbar-wagon navbar-wagon-white">
+<% if @top_bar_message.present? && @top_bar_cta.present? %>
+  <div id="sticky-banner">
+    <i><%= @top_bar_message %>, <%= link_to @top_bar_cta, @top_bar_url %> 📺</i>
+  </div>
+<% end %>
+
+<nav class="navbar-wagon navbar-wagon-white <% if @top_bar_message.present? %>navbar-jump<% end %>">
+  <% cache ['navbar', @hide_language_selector, @hide_banner_apply_button, @city_groups, @live, I18n.locale ] do %>
   <div class="container navbar-wagon-container">
     <div class='navbar-wagon-side'>
       <%= render 'shared/navbar_dropdown', full_item: false %>
