@@ -285,7 +285,14 @@
   }
   .story-label-container span {
     margin-left: 0px;
-    font-size: 22px;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: #333;
+  }
+
+  .story-label-subtitle {
+    display: none;
   }
 }
 .stories-title {

@@ -553,8 +553,16 @@ a.live-on {
       font-decoration: none;
     }
   }
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 }
 
 .navbar-jump {
   padding-top: 60px;
+
+  @media (max-width: 550px) {
+    padding-top: 30px;
+  }
 }
