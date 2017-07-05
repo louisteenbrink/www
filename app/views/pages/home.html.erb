@@ -51,63 +51,6 @@
     }, prerender: prerender? %>
 <% end %>
 
-<%= render "shared/positions" %>
-
-<% cache [ 'projects', locale ] do %>
-<% projects = @client.projects("home_projects") %>
-<div id="alumni-home">
-  <div class="container">
-    <h2 class='section-title-home' style="font-size:30px;">
-      <div class='section-title-home-content'>
-        <%= t(".our_students_projects", default: "Les projets de nos élèves") %>
-      </div>
-    </h2>
-    <p class="text-muted text-center section-title-home-subtitle">
-      <%= t(".what_they_code") %>
-    </p>
-    <div class="projects-list">
-      <% projects.each do |project| %>
-       <% project = OpenStruct.new project %>
-        <div class="project-item-container">
-          <div class="project-item">
-            <div class='project-item-head'>
-              <div class="project-thumbnail" style="background: url(<%= project.card %>);background-size:cover;background-position:center center;">
-              </div>
-            </div>
-            <div class="project-item-infos">
-              <div class="project-item-infos-left">
-                <div class="project-item-name">
-                  <%= project.name %>
-                </div>
-                <div class="project-item-tagline">
-                  <%= project.tagline[I18n.locale.to_s] || project.tagline["en"] %>
-                </div>
-              </div>
-
-              <div class="project-item-makers">
-                <% project.makers.each do |maker| %>
-                  <% maker = OpenStruct.new maker %>
-                  <div class="project-item-maker">
-                    <a href=<%= "http://alumni.lewagon.org/#{maker.github_nickname}" %> target='_blank'>
-                      <%= cl_adaptive_image_tag maker.photo_path, width: 35, height: 35, crop: :fill, class: 'avatar' %>
-                    </a>
-                  </div>
-                <% end %>
-              </div>
-            </div>
-            <a class='project-item-url' target='_blank' href=<%= project.url %>></a>
-
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <div class="text-center" id="more-projects">
-      <%= link_to t(".see_more_projects"), projects_path, class: 'link-big' %>
-    </div>
-  </div>
-</div>
-<% end %>
-
 <% cache ['home_cities', locale ] do %>
 <div class="wordlwide-overlay">
   <div class="container padded">
