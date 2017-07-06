@@ -1,14 +1,7 @@
 home:
-  - slug: kudoz
-    position: 1
-  - slug: roadstr
-    position: 2
-  - slug: open_lodge
-    position: 3
-  - slug: fizzer
-    position: 4
-  - slug: monmecanicien_fr
-    position: 5
-  - slug: lovely_hood
-    position: 6
-
+  - kudoz
+  - roadstr
+  - open_lodge
+  - fizzer
+  - monmecanicien_fr
+  - lovely_hood

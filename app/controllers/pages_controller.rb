@@ -26,6 +26,8 @@ class PagesController < ApplicationController
     if locale == :"pt-BR"
       session[:city] = 'sao-paulo'
     end
+    home_projects_slugs = Static::PROJECTS[:home]
+    @projects = KittClient.new.products(home_projects_slugs)
 
     @reviews = ReviewsCounter.new.review_count
 

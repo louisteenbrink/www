@@ -41,6 +41,7 @@ class AlumniClient
     end
   end
 
+  # TODO: put back in a yaml in www.
   def positions
     from_cache(:positions) do
       get("#{@base_url}/positions")["positions"]

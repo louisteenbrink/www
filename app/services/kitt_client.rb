@@ -5,15 +5,21 @@ class KittClient
     @base_url = ENV.fetch('KITT_BASE_URL', 'https://kitt.lewagon.com/api/v1')
   end
 
-  def products(camp_slug = nil)
-    if camp_slug
-      url = "#{@base_url}/camps/#{camp_slug}/products"
-    else
+  def products(slugs = [])
+    if slugs.empty?
       url = "#{@base_url}/products"
+    else
+      slugs_query = slugs.to_query('slugs')
+      url = "#{@base_url}/products?#{slugs_query}"
     end
-    from_cache(:projects, camp_slug) do
+    from_cache(:projects, slugs.join(',')) do
       get(url)["products"]
     end
+  end
+
+  def camp(camp_slug)
+    url = "#{@base_url}/camps/#{camp_slug}"
+    get(url)
   end
 
   private

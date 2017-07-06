@@ -53,9 +53,6 @@
 
 <%= render "shared/positions" %>
 
-<% cache [ 'projects', locale ] do %>
-<% home_projects_list = Static::PROJECTS[:home] %>
-<% projects = KittClient.new.products.select { |product| home_projects_list.map { |p| p[:slug] }.include? product["slug"] } %>
 <div id="alumni-home">
   <div class="container">
     <h2 class='section-title-home' style="font-size:30px;">
@@ -67,7 +64,7 @@
       <%= t(".what_they_code") %>
     </p>
     <div class="projects-list">
-      <% projects.each do |project| %>
+      <% @projects.each do |project| %>
        <% project = OpenStruct.new project %>
         <div class="project-item-container">
           <div class="project-item">
@@ -107,7 +104,6 @@
     </div>
   </div>
 </div>
-<% end %>
 
 <% cache ['home_cities', locale ] do %>
 <div class="wordlwide-overlay">
