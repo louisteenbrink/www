@@ -8,7 +8,7 @@ pt-BR:
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
     order: [day, month, year]
   top_bar_message: Veja o que nossos alunos podem fazer em 9 semanas
-  top_bar_cta: assista nossas demonstrações
+  top_bar_cta: assista ao demoday
   shared:
     positions:
       they_hired_our_students: Quem contrata nossos alunos
