@@ -7,8 +7,8 @@ pt-BR:
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
     order: [day, month, year]
-  top_bar_message: Want to know what our students are up to in 9 weeks
-  top_bar_cta: watch our demos
+  top_bar_message: Veja o que nossos alunos podem fazer em 9 semanas
+  top_bar_cta: assista ao demoday
   shared:
     positions:
       they_hired_our_students: Quem contrata nossos alunos

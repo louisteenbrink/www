@@ -2,8 +2,8 @@ es:
   date:
     formats:
       apply: "%B %e, %Y"
-  top_bar_message: Want to know what our students are up to in 9 weeks
-  top_bar_cta: watch our demos
+  top_bar_message: Descubre lo que nuestros alumnos han creado tras 9 semanas
+  top_bar_cta: vea nuestras demos
   shared:
     positions:
       they_hired_our_students: Le Wagon en las empresas
