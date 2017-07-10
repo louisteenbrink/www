@@ -316,10 +316,10 @@ fr:
     enterprise:
       title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
-      tagline_html: "<span style='font-size: 40px;'>Nous accompagnons les entreprises <br>dans leur transition digitale.</span>"
+      tagline_html: "Nous accompagnons les entreprises <br>dans leur transition digitale."
       tagline_details_html: |
         Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler.
-        <br><strong>1 workshop à la fois</strong>
+        <strong>1 workshop à la fois</strong>
       apply: Contact
       apply_phone_html: |
         Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
@@ -375,6 +375,7 @@ fr:
       algolia_quote: Si vous avez un profil business ou chef de projet, c'est incroyable comme Le Wagon peut transformer votre rapport à la technologie.
       uber_quote: Le Wagon permet aux équipes de comprendre les problématiques tech dans la roadmap produit d'Uber et d'expliquer simplement et clairement aux partenaires des concepts tels qu'une intégration API.
       with_us: Ils nous font confiance.
+      testimonial_cta: Embarquez vos collaborateurs
     live:
       page_title_with_current_event: "Live - %{event_name}"
       page_title_no_live: "Live en préparation"
