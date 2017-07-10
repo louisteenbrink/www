@@ -316,8 +316,8 @@ fr:
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
       tagline_html: "<span style='font-size: 40px;'>Nous accompagnons les entreprises <br>dans leur transition digitale.</span>"
       tagline_details_html: |
-        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler <br>dans votre organisation.
-        <strong>1 workshop à la fois</strong>
+        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler.
+        <br><strong>1 workshop à la fois</strong>
       apply: Contact
       apply_phone_html: |
         Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
@@ -329,9 +329,9 @@ fr:
       pm: Product Management
       pm_details: Apprenez les nouvelles techniques Agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups
       ui: Le design et l'expérience utilisateur (UI / UX)
-      ui_details: Apprenez à faire rapidement des maquettes et des wireframespour discuter vos idées de façon plus claire. Facilite la communication dans vos équipes et avec vos prestataire techniques.
+      ui_details: Apprenez à faire rapidement des maquettes pour discuter de vos idées de façon plus claire. Facilite la communication dans vos équipes et avec vos prestataire techniques.
       web_design: Web Design & Developement frontend
-      web_design_details: Apprenez à construire vos icônes, votre site. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
+      web_design_details: Apprenez à construire vos icônes, votre site. Ne dépendez plus de sous-traitants, apprenez à parler la même langue, soyez autonomes, reprenez le contrôle de vos projets.
       data_science: Data Science & Visualisation
       data_science_details: Apprenez à collecter les données, analyser-les, faites-les parler. Les consultants doivent ré-inventer leur travail et leurs méthodologies.
       fullstack: FullStack Development
@@ -340,6 +340,24 @@ fr:
       prototyping_details: |
         Apprenez à prototyper très rapidement de nouveaux services en connectant simplement des APIs comme le font les startups.
       formats_title: À chaque problématique ses ateliers
+      format_1_title: Motiver par l’apprentissage du code
+      format_1_description_html: |
+          <i><strong>1</strong> journée immersion en 2 atelier</i>
+      format_2_title: Faciliter les échanges entre les equipes
+      format_2_description_html: |
+          <i><strong>7</strong> ateliers d’acculturation aux metiers web</i>
+      format_3_title: Transformer leur chef de projet en « Product Owners »
+      format_3_description_html: |
+          <i><strong>1</strong> an d’atelier sur 6 thématiques</i>
+      format_4_title: Faciliter le recrutement de profils techniques
+      format_4_description_html: |
+          <i><strong>5</strong> workshops d’initiation au metier d’un developpeur web</i>
+      format_5_title: Apporter des ressources pour l’intrapreuneuriat
+      format_5_description_html: |
+          <i><strong>1</strong> série d’ateliers Front end et back end pour savoir lancer son MVP</i>
+      format_6_title: Adopter une culture startup
+      format_6_description_html: |
+          <i><strong>3</strong> workshops d’initiation au developement web et au workflow d’une startup</i>
       best: Motiver vos équipe par l’apprentissage du code
       best_details_html: |
         <p>

@@ -96,9 +96,19 @@
   </div>
 </div>
 
-<div class="container-fluid section-wrapper">
-  <div class="section-formats" style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0.2) 15%, rgba(0, 0, 0, 0.2) 45%), url(<%= image_path 'officials/yonomi-2.jpg' %>)">
+<div class="section-wrapper">
+  <div class="formats-illustration" style="background-image: url(<%= image_path 'officials/yonomi-2.jpg' %>)">
+    <div class="container">
       <h2><%= t('.formats_title', :default => "What we can do for you") %></h2>
+      <ul>
+        <li><%= t('.format_1_title') %> <%= t('.format_1_description_html') %></li>
+        <li><%= t('.format_2_title') %> <%= t('.format_2_description_html') %></li>
+        <li><%= t('.format_3_title') %> <%= t('.format_3_description_html') %></li>
+        <li><%= t('.format_4_title') %> <%= t('.format_4_description_html') %></li>
+        <li><%= t('.format_5_title') %> <%= t('.format_5_description_html') %></li>
+        <li><%= t('.format_6_title') %> <%= t('.format_6_description_html') %></li>
+      </ul>
+    </div>
   </div>
 </div>
 
