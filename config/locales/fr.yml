@@ -2,6 +2,8 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
+  top_bar_message: Découvrez ce que nos étudiants codent en 9 semaines
+  top_bar_cta: regardez les démos
   shared:
     positions:
       they_hired_our_students: Ils recrutent nos élèves
@@ -339,11 +341,11 @@ fr:
       prototyping: L'art du prototyping
       prototyping_details: |
         Apprenez à prototyper très rapidement de nouveaux services en connectant simplement des APIs comme le font les startups.
-      formats_title: À chaque problématique ses ateliers
-      format_1_title: Motiver par l’apprentissage du code
+      formats_title: À chaque objectif ses ateliers
+      format_1_title: Motiver ses collaborateurs par l’apprentissage du code
       format_1_description_html: |
           <i><strong>1</strong> journée immersion en 2 atelier</i>
-      format_2_title: Faciliter les échanges entre les equipes
+      format_2_title: Faciliter les échanges entre les equipes tech et marketing
       format_2_description_html: |
           <i><strong>7</strong> ateliers d’acculturation aux metiers web</i>
       format_3_title: Transformer leur chef de projet en « Product Owners »
@@ -355,9 +357,10 @@ fr:
       format_5_title: Apporter des ressources pour l’intrapreuneuriat
       format_5_description_html: |
           <i><strong>1</strong> série d’ateliers Front end et back end pour savoir lancer son MVP</i>
-      format_6_title: Adopter une culture startup
+      format_6_title: Adopter une culture startup pour délivrer rapidement
       format_6_description_html: |
           <i><strong>3</strong> workshops d’initiation au developement web et au workflow d’une startup</i>
+      cta-objectives: Quel est votre projet ?
       best: Motiver vos équipe par l’apprentissage du code
       best_details_html: |
         <p>

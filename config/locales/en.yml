@@ -2,6 +2,8 @@ en:
   date:
     formats:
       apply: "%B %e, %Y"
+  top_bar_message: Discover what our students are able to build after 9 weeks
+  top_bar_cta: watch our demos
   shared:
     positions:
       they_hired_our_students: They hired our students

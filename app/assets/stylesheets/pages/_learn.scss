@@ -135,6 +135,10 @@
   border-radius: 5px 0 0 0;
   box-shadow: -1px -1px 25px rgba(0,0,0,.15);
   margin-left: 100px;
+
+  @media (min-width: 1201px) {
+    left: 620px;
+  }
 }
 
 // @media (max-width: 1500px) {

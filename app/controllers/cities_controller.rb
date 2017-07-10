@@ -1,5 +1,10 @@
 class CitiesController < ApplicationController
   def show
+
+    @top_bar_message = I18n.t('.top_bar_message')
+    @top_bar_cta = I18n.t('.top_bar_cta')
+    @top_bar_url = demoday_index_path
+
     if params[:city].downcase != params[:city]
       redirect_to city_path(city: params[:city].downcase)
       return
