@@ -324,8 +324,10 @@ zh-CN:
       tagline_details_html: |
         学习数码技能，改变<br>你的团队成员们工作的方式.
         <strong>工作更快速，更高效。</strong>
-      apply: 加入Le Wagon学习
-      apply_to: 学习%{skill}
+      apply_phone_html: |
+        Call Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contact Benjamin<br><small>benjamin@lewagon.org</small>
       skills_header: 工作坊&为你的公司设计的设计冲刺活动
       skills_text_html: 通过两小时的演讲，一天的工作坊，或者是一周的产品原型设计冲刺，<strong>我们将会教授用户界面／用户体验设计，产品经营，以及网页开发技能。</strong>.
       pm: 学习产品管理
@@ -340,23 +342,34 @@ zh-CN:
       fullstack_details: 从数据库到浏览器，学习从头搭建网页应用的过程。
       prototyping: 学习设计简洁的产品原型
       prototyping_details: API正在占领世界。探索创业公司是如何仅仅通过连接API（应用程序编程接口）做出产品原型的。
-      best: 从最好的操作中学习
-      best_details_html: |
-        <p>
-         我们已经在全球范围内培训了超过1200名学员，他们来自商学院，工程学院，设计学院等等。我们知道如何<strong>弥补科技与商业之间的鸿沟</strong>。在我们的帮助下，学员们已经编写并且做出了<strong>超过400多个</strong>产品原型。
-        </p>
-        <p>
-         在为如此多的人才提供培训之后，我们知道<strong>我们能够为您的团队带来同样的技能</strong>。
-        </p>
-      hec_html: 从2017年起，Le Wagon就是巴黎高等商学院（法国排名最高的商学院）的官方合作伙伴，并且 <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">教授巴黎高等商学院的创业家们如何用编程打造出自己的产品。</a>.
-      watch: 上一场公司培训工作坊：“一天编程“
-      google_quote: Le Wagon知道如何将具有辅助作用的科学技术和文化带给具有商业背景的人们。他们对科技的看法往往十分独特。
-      eki_quote:  Le Wagon所教授的技术栈和设计方法论是我们产品工程文化的精华部分。
-      drivy_quote: 精心安排的课程，热情满满的老师。
-      stripe_quote: 实用工作坊会教授关键的专业技术，介绍产品思维模式。
-      algolia_quote: 如果你具有商业背景，Le Wagon会大大地改善你和科技之间的关系。
-      uber_quote: Le Wagon帮助我更好地理解了Uber公司的产品设计蓝图，并且更好地将诸如API整合这样的简单概念解释给合作伙伴。
-      with_us: 他们是我们的合作伙伴。
+      formats_title: À chaque objectif ses ateliers
+      format_1_title: Motiver ses collaborateurs par l’apprentissage du code
+      format_1_description_html: |
+          <i><strong>1</strong> journée immersion en 2 atelier</i>
+      format_2_title: Faciliter les échanges entre les equipes tech et marketing
+      format_2_description_html: |
+          <i><strong>7</strong> ateliers d’acculturation aux metiers web</i>
+      format_3_title: Transformer leur chef de projet en « Product Owners »
+      format_3_description_html: |
+          <i><strong>1</strong> an d’atelier sur 6 thématiques</i>
+      format_4_title: Faciliter le recrutement de profils techniques
+      format_4_description_html: |
+          <i><strong>5</strong> workshops d’initiation au metier d’un developpeur web</i>
+      format_5_title: Apporter des ressources pour l’intrapreuneuriat
+      format_5_description_html: |
+          <i><strong>1</strong> série d’ateliers Front end et back end pour savoir lancer son MVP</i>
+      format_6_title: Adopter une culture startup pour délivrer rapidement
+      format_6_description_html: |
+          <i><strong>3</strong> workshops d’initiation au developement web et au workflow d’une startup</i>
+      cta-objectives: Quel est votre projet ?
+      watch: Our last corporate workshop "One Day of Code"
+      with_us: They work with us.
+      testimonial_1: Une journée très interessante et très riche. Parfait pour découvrir le monde du web et de la programmation.
+      testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir dévelopeuse !
+      testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
+      testimonial_4: 3 heures hyper denses mais très intéressantes pour apprendre à coder une landing page. Ca donne envie d’approfondir le sujet !
+      testimonial_5: Super onboarding dans l’univers du code, une journée aurait pu permettre de se sentir plus autonome à la fin, ça donne envie de poursuivre.
+      testimonial_cta: Embarquez vos collaborateurs
     live:
       page_title_with_current_event: "直播 - %{event_name}"
       page_title_no_live: "直播 - 即将到来"

@@ -325,7 +325,6 @@ fr:
         Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
       apply_mail_html: |
         Contacter Benjamin<br><small>benjamin@lewagon.org</small>
-      apply_to: Formation %{skill}
       skills_header: Des ateliers aux formats adaptés à l’entreprise
       skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management ou au développement web, aux méthodologies Agile et lean</strong>.
       pm: Product Management
@@ -361,12 +360,6 @@ fr:
       format_6_description_html: |
           <i><strong>3</strong> workshops d’initiation au dévelopement web et au workflow d’une startup</i>
       cta-objectives: Quel est votre projet ?
-      best: Motiver vos équipes par l’apprentissage du code
-      best_details_html: |
-        <p>
-          1 journée en immersion avec 2 ateliers
-        </p>
-      hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
       watch: Notre dernier atelier "One Day of Code"
       testimonial_1: Une journée très intéressante et très riche. Parfait pour découvrir le monde du web et de la programmation.
       testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir développeuse !
