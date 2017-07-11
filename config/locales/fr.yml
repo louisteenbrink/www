@@ -368,12 +368,11 @@ fr:
         </p>
       hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
       watch: Notre dernier atelier "One Day of Code"
-      google_quote: Le Wagon sait transmettre des compétences techniques et une culture très complémentaires pour des profils business. Leur vision de la technologie est unique.
-      eki_quote: Ils ont été un partenaire clef apportant une forte culture Produit et UX chez Ekimetrics. Il y a un impact direct sur notre façon de travailler.
-      drivy_quote: Leur curriculum est extrêmement bien structuré et leur professeurs sont des professionels passionés.
-      stripe_quote: Des ateliers solides qui transmettent à la fois les compétences techniques essentielles mais aussi une forte culture du produit.
-      algolia_quote: Si vous avez un profil business ou chef de projet, c'est incroyable comme Le Wagon peut transformer votre rapport à la technologie.
-      uber_quote: Le Wagon permet aux équipes de comprendre les problématiques tech dans la roadmap produit d'Uber et d'expliquer simplement et clairement aux partenaires des concepts tels qu'une intégration API.
+      testimonial_1: Une journée très interessante et très riche. Parfait pour découvrir le monde du web et de la programmation.
+      testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir dévelopeuse !
+      testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
+      testimonial_4: 3 heures hyper denses mais très intéressantes pour apprendre à coder une landing page. Ca donne envie d’approfondir le sujet !
+      testimonial_5: Super onboarding dans l’univers du code, une journée aurait pu permettre de se sentir plus autonome à la fin, ça donne envie de poursuivre.
       with_us: Ils nous font confiance.
       testimonial_cta: Embarquez vos collaborateurs
     live:

@@ -136,76 +136,59 @@
   </h2>
 
   <div class="enterprise-nav">
-    <%= image_tag "companies/google.png",class: "active", style: "height: 45px;", "data-target" => "#google" %>
-    <%= image_tag "companies/uber.png", style: "height: 25px;", "data-target" => "#uber" %>
-    <%= image_tag "companies/stripe.png", style: "height: 100px;", "data-target" => "#stripe" %>
-    <%= image_tag "companies/eki.png", style: "height: 30px;", "data-target" => "#eki" %>
-    <% image_tag "companies/drivy.png", style: "height: 90px;", "data-target" => "#drivy" %>
-    <%= image_tag "companies/algolia.png", style: "height: 35px;", "data-target" => "#algolia" %>
+    <%= image_tag "b2b/testimonial-1.jpg", class: "active quote-author", "data-target" => "#testimonial-1" %>
+    <%= image_tag "b2b/testimonial-2.jpg", class: "quote-author", "data-target" => "#testimonial-2" %>
+    <%= image_tag "b2b/testimonial-3.jpg", class: "quote-author", "data-target" => "#testimonial-3" %>
+    <%= image_tag "b2b/testimonial-4.jpg", class: "quote-author", "data-target" => "#testimonial-4" %>
+    <%= image_tag "b2b/testimonial-5.jpg", class: "quote-author", "data-target" => "#testimonial-5" %>
   </div>
 
-  <div class="enterprise-testimonial text-center" id="google">
-    <%= image_tag 'b2B/test.jpg', class: "quote-author" %>
+  <div class="enterprise-testimonial text-center" id="testimonial-1">
     <p>
       <i class="fa fa-quote-left"></i>
-       <%= t('.google_quote', default: "Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.") %>
+       <%= t('.testimonial_1', default: "Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.") %>
       <i class="fa fa-quote-left"></i>
       <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/marion-grandjean-67971b3/" target="blank">Marion Grandjean</a>, <strong>Business Associate at Google</strong></p>
+      <p class="text-right">Janick, <strong>Assurance</strong></p>
     </p>
   </div>
-  <div class="enterprise-testimonial text-center hidden" id="uber">
-    <%= image_tag 'b2B/test.jpg', class: "quote-author" %>
+  <div class="enterprise-testimonial text-center hidden" id="testimonial-2">
     <p>
       <i class="fa fa-quote-left"></i>
-      <%= t('.uber_quote', default: "Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.") %>
+      <%= t('.testimonial_2', default: "Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.") %>
       <i class="fa fa-quote-left"></i>
       <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/emerichenon/" target="blank">Emeric Henon</a>, <strong>Marketing at Uber</strong></p>
+      <p class="text-right">Laura, <strong>FinTech</strong></p>
     </p>
   </div>
-  <div class="enterprise-testimonial text-center hidden" id="eki">
-    <%= image_tag 'b2B/test.jpg', class: "quote-author" %>
+  <div class="enterprise-testimonial text-center hidden" id="testimonial-3">
     <p>
       <i class="fa fa-quote-left"></i>
-      <%= t('.eki_quote', default: "The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
+      <%= t('.testimonial_3', default: "The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
       drivy_quote: Their curriculum is very well crafted, the teachers are passionate.") %>
       <i class="fa fa-quote-left"></i>
       <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/guillaume-martin-64700998" target="blank">Guillaume Martin</a>, <strong>Head of Product Engineering at Ekimetrics</strong></p>
+      <p class="text-right">Raphaël, <strong>Finance</strong></p>
     </p>
   </div>
-  <div class="enterprise-testimonial text-center hidden" id="drivy">
-    <%= image_tag 'b2B/test.jpg', class: "quote-author" %>
+  <div class="enterprise-testimonial text-center hidden" id="testimonial-4">
     <p>
       <i class="fa fa-quote-left"></i>
-      <%= t('.drivy_quote', default: "Their curriculum is very well crafted, the teachers are passionate.") %>
+      <%= t('.testimonial_4', default: "If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.") %>
       <i class="fa fa-quote-left"></i>
 
       <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/jean-anquetil-4996a590/" target="blank">Jean Anquetil</a>, <strong>Developer at Drivy</strong></p>
+      <p class="text-right">Valérie, <strong>Conseil</strong></p>
     </p>
   </div>
-  <div class="enterprise-testimonial text-center hidden" id="algolia">
-    <%= image_tag 'b2B/test.jpg', class: "quote-author" %>
+  <div class="enterprise-testimonial text-center hidden" id="testimonial-5">
     <p>
       <i class="fa fa-quote-left"></i>
-      <%= t('.algolia_quote', default: "If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.") %>
+      <%= t('.testimonial_5', default: "Solid workshops teaching both essential technical skills and a strong product mindset.") %>
       <i class="fa fa-quote-left"></i>
 
       <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/jeanedernlorillon/" target="blank">Jean-Edern Lorillon</a>, <strong>Product Specialist at Algolia</strong></p>
-    </p>
-  </div>
-  <div class="enterprise-testimonial text-center hidden" id="stripe">
-    <%= image_tag 'b2B/test.jpg', class: "quote-author" %>
-    <p>
-      <i class="fa fa-quote-left"></i>
-      <%= t('.stripe_quote', default: "Solid workshops teaching both essential technical skills and a strong product mindset.") %>
-      <i class="fa fa-quote-left"></i>
-
-      <br>
-      <p class="text-right"><a href="https://www.linkedin.com/in/oliviergodement/" target="blank">Olivier Godement</a>, <strong>Country Operation at Stripe</strong></p>
+      <p class="text-right">Jill, <strong>Grande distribution</strong></p>
     </p>
   </div>
   <div class="final-cta text-center">
