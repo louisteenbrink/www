@@ -1,0 +1,30 @@
+.event-wrapper {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 660px;
+  border-radius: 8px;
+  box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
+  background-color: #04A777;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .event {
+    position: relative;
+    padding: 0 50px 30px;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+}
