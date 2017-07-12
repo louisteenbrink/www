@@ -332,14 +332,6 @@ es:
       fullstack_details: From the database to the web browser, learn how a web application is built.
       prototyping: Aprende Lean Prototyping
       prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
-      best: ¿Por qué nosotros?
-      best_details_html: |
-        <p>
-         We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
-        </p>
-        <p>
-         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
-        </p>
       formats_title: À chaque objectif ses ateliers
       format_1_title: Motiver ses collaborateurs par l’apprentissage du code
       format_1_description_html: |
