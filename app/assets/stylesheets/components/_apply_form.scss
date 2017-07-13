@@ -46,18 +46,14 @@
     }
   }
 
-  &.is-focused, &.is-validated, &.has-error {
+  &.is-validated, &.has-error {
     border-left-width: 8px;
     border-left-style: solid;
 
     animation: 4s ease alternate-reverse infinite;
   }
 
-  &.is-focused {
-    border-left-color: #333333;
-  }
-
-  &.has-error, &.is-focused.has-error {
+  &.has-error {
     border-left-color: $red;
   }
 

@@ -29,11 +29,19 @@ routes:
     - joaopfsilva
     - glannes
     - felsmo
+  barcelona:
+    - james-becker
+    - fra0074
+    - erincom
+    - beehane
   lisbon:
-    - ruijorge
     - apires89
-    - ricardoserrao
+    - rodloboz
+    - brunasiloto
+    - tomgauth
+    - ruijorge
     - linusjig
+    - ricardoserrao
   london:
     - bibiiii
     - archiejg
@@ -41,6 +49,9 @@ routes:
     - alkubaisi
     - evanht
     - edebeauffort
+  montreal:
+    - liolev
+    - julien-fooducoin
   paris:
     - quentincoray
     - heninapso
@@ -55,6 +66,161 @@ routes:
     - adrianorob
 
 testimonials:
+  liolev:
+    first_name: Lionel
+    last_name: Levaux
+    city_slug: montreal
+    batch_slug: 63
+    publication_date: 2017-06-01
+    job_before:
+    project_slug: umami
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: montreal_lionel_levaux.jpg
+    linkedin_url:
+    content_html: |
+      <p>My name is Lionel and I'm from Belgium. I'm a 3D Graphic Designer but I've always been interested about Web Development, especially Web Design. I'll give you some life context so that you can understand why Le Wagon was such a game changer for me!</p>
+      <p>After my studies, I worked few years in Belgium as a graphic designer but then I decided to leave my comfort zone and travel the world. I've been to Australia, New Zealand, and Asia during more than a year, working as a freelancer to carry on my trip. During my studies, I gained a set of skills combining rigour, technique, and creativity but something was missing : coding.</p>
+      <p>I knew le Wagon for a while but I was working and was busy on some projects, so not able to apply for the bootcamp while I was in Europe. But when I was in Indonesia, I received my canadian visa and at the same time I heard Le Wagon will do his first batch in Montreal in February 2017. It was a sign and the perfect timing so I told myself, LET'S DO THIS ! My only regret ? I didn't apply earlier!</p>
+      <p>It was an amazing experience and I'm still in touch with most of my classmates and teachers. Le Wagon is not only an amazing community, it's also a family. After Le Wagon, with one of my classmates, we've decided to work as freelance Web Developers during our freetime and after only 3 weeks I found a job in a great startup as a Front-End Developer ! Plus, I'm also now a Teacher Assistant for the next batch and will do my best to give the students the best experience possible, as I got.</p>
+      <p>Honestly, I'm really impressed by what we learned in just 9 weeks and I'm so glad I did it because I can now combine my graphic design skills with web development. So don't hesitate guys, it's 200% worth it and you won't regret it for sure.</p>
+  julien-fooducoin:
+    first_name: Julien
+    last_name: Pauss
+    city_slug: montreal
+    batch_slug: 63
+    publication_date: 2017-05-01
+    job_before:
+    project_slug: umami
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: montreal_julien_pauss.jpg
+    linkedin_url:
+    content_html: |
+      <p>As a CEO of my start-up, I always have to face technical challenges. After a few researches, I discover Le Wagon that supplies the perfect technical bootcamp. 9 weeks to become full-stack developper with a focus on technologies commonly used by startups.</p>
+      <p>My experience at Le Wagon Montréal (https://www.lewagon.com/montreal) was really amazing. On the one hand, it offers intense classes and challenges that allow you to understand clearly front end and back end web development. On the other hand, you share with other students from all over the world the same goal during 9 weeks; it is like a second family. In my batch #63 there were students from the US, UK, Belgium, France and of course Québec !</p>
+      <p>I highly recommend to join Le Wagon; the bootcamp could open many doors in your career path. It has been one of the most exciting experience in my life !</p>
+  fra0074:
+    first_name: Francesco
+    last_name: Ecclesie
+    city_slug: barcelona
+    batch_slug: 57
+    publication_date: 2017-03-01
+    job_before:
+    project_slug: adsmash
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: barcelona_francesco_ecclesie.jpg
+    linkedin_url:
+    content_html: |
+      <p>When I first came across on Le Wagon website the first thing caught my attention was their slogan: “Change your life: learn to code”. I thought this was exactly what I wanted, change my life, jump in another “adventure”.</p>
+      <p>After my 4 years in China and almost 1 in Cambodia working as a Project manager in the garment business, I wanted to go back to Europe and start again a new career. Cause my IT background and cause ,as Project Manager, I always worked with developers I decided that the best way to go back in the market was to polish off my coding skills, which I was not touching since the university times. To me coding always been something boring to do. I remember at the university studying C or Pascal was a torture, thats why I decided to follow the networking path and avoid code.</p>
+      <p>But since today the world need coders I decided to give it a second opportunity and study it again in some cool course all around Europe.. and boom! That is exactly when I came across Le Wagon. I made my decision in one night.. “if it’s cool as it look like then I have found the right course for me”.</p>
+      <p>I signed in the day after. The first available batch was in Barcelona (beautiful city!) I called them, I did my interview and finally ,after few days, I got the confirmation: I was in! After a wait of almost 1 month, here I was , learning code in a beautiful city like Barcelona, and yes, everything was like I expected It was, absolutely fantastic.</p>
+      <p>All teachers and people from Le Wagon they were not just teachers but they were and are great human beings, taught me how to code and how to love it, they transmit me their passion and their will to keep going and to learn something new everyday. And right now I just can’t stop! I do code everyday and I am hungry of learning more and more, knowing that now I am part of an amazing community that is there anytime I will need help. Thanks Le Wagon for this great experience, you really changed my life.</p>
+  beehane:
+    first_name: Hanae
+    last_name: Bezad
+    city_slug: barcelona
+    batch_slug: 44
+    publication_date: 2017-03-01
+    job_before:
+    project_slug: destinose
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: barcelona_hanae_bezad.jpg
+    linkedin_url:
+    content_html: |
+      <p>After 3 years working in Paris as a consultant, among which the past 2 years at eleven, a strategy and management firm specialized in digital strategy (http://eleven-strategy.com/en/) , I’ve decided to take a deeper step “behind the digital scenes”. This gradual slide stems from several opportunities that made me aware of the need to enhance my tech skills, in particular through my latest assignment as a consultant. I worked as a project manager for a cross-functional cross-country flagship project that was meant to diversify the earn and burn opportunities in the loyalty program of a major player in the hospitality industry through e-commerce. I could only be relevant and meet the ambitious objectives of the project if I effectively managed to challenge each team and external provider that I was coordinating. While, based on my previous experience, I could easily take a deep-dive into the stakes of most of the aspects of the project (marketing, finance, legal, tax, etc.), I still needed to fully grasp the challenges the multiple IT teams were facing. I thus applied to do an intense 9 weeks coding training at Le Wagon Barcelona, which allowed me to gain technical skills in both back-end and front-end programming languages and experience the work of a fullstack developer.</p>
+      <p>Le Wagon … the very name holds the promise of a singular journey, right? Now, let me tell you a bit me about how this journey felt. I remember the first Monday, when we went around the table to listen to the story of each of the 14 individuals gathered, aging from 17 to 35+, all with a very diverse cultural professional and personal background (investor, former consultants, freelancers, “proven” and aspiring entrepreneurs) … Some people had previous technical experience and most did not. At the very beginning, I thought: “Great, it very much feels like a retreat for cosmopolitan and ambitious yuppies…”. And then, as we moved on with the set-up of our computers and I discussed more thoroughly with each one, I realized how much it would be a challenging and humbling collective learning experience. And that’s exactly what it was.</p>
+      <p>On this first day at Le Wagon, I shared my first coffee of the journey (and there were many more) with my then buddy-for-the-day, Hugh Mitton, and we chatted about travels, previous work experiences, movie making and other activities. 9 weeks later, after 10 days of intense coding and debugging, we’ve introduced the MVP of Destinosé (www.destinose.com) , a travel app meant to help people that like perusing the world pick their next destination.</p>
+      <p>Working each day with a new buddy as per Le Wagon methodology, doing about 8-10h of problem-solving on cases that did NOT look like business cases for which I could use what I had learnt to do so far was quite challenging. It obviously gave me a renewed and thrilling feeling of being totally out of my comfort zone … everyday!</p>
+      <p>As much as it could also feel a little bit frustrating to learn a new set of coding elements everyday without having the comfort of thinking you’ve fully digested the tricks of the previous day, I realized that these layers came together in a very “neuroergonomic” way after I was done with the bootcamp. It is rather impressive to see how well designed this immersion into the vast world of coding is. The material itself (kitt and karr platforms) encompasses the best practices of coding in a very accessible and readable manner. The TAs that are taking turns into teaching parts of the curriculum are all fully committed to deliver digest explanations given the fast-paced learning curve that’s proposed. They are also keen on spending extra-time with students to make sure they feel fully on track. The whole pedagogical team is smoothly coordinated by a very inspiring driver, Gustavo De Vita, whom I feel incarnates really well the very concept of equanimity applied to management. Le Wagon Barcelona is also well connected to the tech startup scene there, which allowed us to meet a lot of interesting entrepreneurs and try their product/service (e.g. founders of GetYourHero, Eoz, Yugo, etc.).</p>
+      <p>Slowly, I started making programming related puns and speaking in Spanglish over lunch preparation with my teammates. And yes, we did prepare lunch together everyday, shared it at the terrace of the coworking space, with a sunny view on La Sagrada Familia! Some days, knowing we had to get through a very heavy workload, we would start with a xocolata a la tassa and churros. At the end of the day, when backs were hurting too much for having kept ourselves behind the screens for the whole day, we could enjoy a good Kundalini yoga class at a school around the corner or a tailored session put in place by the staff of Le Wagon Barcelona.</p>
+  erincom:
+    first_name: Erin
+    last_name: Douglas
+    city_slug: barcelona
+    batch_slug: 57
+    publication_date: 2017-06-01
+    job_before:
+    project_slug: call-out
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: barcelona_erin_douglas.jpg
+    linkedin_url:
+    content_html: |
+      <p>If you can see from the other reviews, Le Wagon gets high marks as a programming bootcamp. It has a well-designed, rigorous curriculum that does a great job starting you at A (almost no knowledge of programming) and getting you to Z (being an autonomous developer that can build applications). The teachers and TAs were knowledgeable, supportive and great teachers. The bootcamp is absolutely worth the price. It has made me an autonomous software developer, which is exactly what I was looking for - of course, I have plenty more to learn but I have no problem digging into documentation that would've intimidated me before.</p>
+      <p>About Barcelona in particular, I couldn't have made a better choice of location. Seriously, if you decide to go with Le Wagon, do it in Barcelona. The batch had an amazing group of people that you rarely find in one place - different nationalities who had all lived abroad and developed the open-mindedness and maturity that comes with that. When the bootcamp ended, I think I can speak for all of us when I say that we experienced "Le Wagon withdrawal". This was not linked to the program and curriculum (as great as it was) but the sense of community that developed during the Barcelona batch.</p>
+  james-becker:
+    first_name: James
+    last_name: Becker
+    city_slug: barcelona
+    batch_slug: 57
+    publication_date: 2017-06-01
+    job_before:
+    project_slug: volunteasy
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: barcelona_james_becker.jpg
+    linkedin_url:
+    content_html: |
+      <p>I’ve done lots of fun things with great people, and I’ve studied in a lot of places, but never have I experienced something that was such a great experience and taught me so much in such a short time.</p>
+      <p>My experience at Le Wagon, Batch #57 (Barcelona) was worth every penny, no question. I can’t imagine having a better learning environment with more supportive and knowledgeable staff and diverse and interesting classmates. We had people from all over—the US, France, Italy, Bulgaria, Ireland, and of course a few Spanish locals.</p>
+      <p>Don’t get me wrong, most of the bootcamp was spent indoors, but what can I say? It’s hard not to love studying in a place like Barcelona. Being in such a beautiful setting really boosted my experience. I mean, I got to walk past La Sagrada Familia every day on my way to class. If you’re a Barcelona native you probably try to look the other way, but I think I hurt my neck looking up so many times. The coworking space we were in was modern and well equipped. There were some minor issues with Wi-Fi on occasion, but I believe those have been fixed, and I think the batch is actually in the process of moving to a different space.</p>
+      <p>The leadership really made the experience. I can’t imagine having better instructors and TA’s than the ones we had in Batch #57. Our lead instructor was an incredibly humble and personable guy who carried us through each lesson with a sense of humor and an approach that was laid-back while taking his role quite seriously. Since he was the lead instructor, he gets his own sentence here, but I can say that the other instructors and the TAs were also very knowledgeable, encouraging and enjoyable to learn from. I’m still in touch with several of them!</p>
+      <p>As far as the technical expertise of the instructors, I never once doubted their qualification to be teaching us. They really seemed to know above and beyond the stuff they were teaching us, and had an immediate answer for almost every question that was thrown at them. There was always the sense that the instructors wanted to make sure everyone was on the same page and that no one got left behind. For those who struggled, the leadership did a great job of giving them extra help while balancing their commitment to the rest of the class.</p>
+      <p>Everything was well-organized and there were never any logistical issues that I noticed. This is in contrast to some horror stories I’ve heard about certain bootcamps stateside. From the Driver, instructors and TAs there was no snark, there were no walls up, everyone was receptive and communicative, and took their position seriously.</p>
+      <p>To the guys doing hiring at Le Wagon: keep up that good work! You’ve impressed me.</p>
+      <p>I’d been teaching myself web development for a couple years prior to my attendance, but Le Wagon really enabled me to bring it all together and gain the confidence I needed to know that I was in this game for the long term. During the 7th week, my small group was able to quickly bootstrap a robust Rails app with several pages and a fully functional UI and back end. And during the final two weeks, we put together a much more functional app that made the first one look like child’s play. Our final presentation was made a success thanks to the coaching and technical help from our Driver and couple of the TA’s who gave us feedback during our presentation rehearsal.</p>
+      <p>Upon returning to the US, I quickly found a part-time remote position working for a startup that’s basing their SAAS product on Rails and AngularJS, and am currently negotiating with several contacts at local companies for a full time position. As of writing this review, it’s been about 80 days since the program ended. To add to that, I made some great friends and acquaintances during our extracurricular activities (hiking Montserrat, going out for drinks, getting daily lunches). My classmates were the type of people that like to get things done: intelligent, personable, mature. I truly enjoyed having the classmates I did.</p>
+  tomgauth:
+    first_name: Tom
+    last_name: Gauthier
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-05-28
+    job_before:
+    project_slug: routineio
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: lisbon_tom_gauthier.jpg
+    linkedin_url:
+    content_html: |
+      <p>November 2016. I just turned 27, I was broke like a millennial online-entrepreneur and Trump was president of the USA. "What am I doing with my life?" The existential crisis kicked in. I was too broke to get drunk, not bored enough to watch cat videos on youtube to distract myself from myself. The usual solutions would not work this time. I had to use my brain and come up with a long-lasting solution.</p>
+      <p>What is the #1 advice for millennials? Learn to code. I decided to do at least one safe move in my life: go to Lisbon and learn to code at LeWagon. Turned out it was the best decision I've made for a long time! 4 months later I was standing on a stage pitching a web app we've created with 2 other LeWagon students. I've learned in 2 months how to code and I've learned in 2 months more about myself than during the last years of my life.</p>
+      <p>Doing LeWagon is fucking epic. It's far more than just learning to code! It's a real human experience with incredible people. Spending 10 hours a day together in the same struggle and the same Friday nights drinking the same beer is the best way to create a strong group. That part of LeWagon was the number 1 value to me (not the beer, the strong group).</p>
+      <p>Some people would say "it's possible to learn alone how to code! You don't need a bootcamp" And they are right. But I prefer have an incredible experience during 2 intensive months with great teachers and awesome teammates.</p>
+      <p>Doing LeWagon is fail-proof. Don't think Udemy or CodeCademy are alternatives to real bootcamp. It's really hard to discipline yourself to learn to code and most people take too much time to learn. It's hard but nobody wanted to give up, because the days you hate code you still come for people and patient teachers, and you end up loving code again.</p>
+      <p>Don't think code is not for you. Code is a tool anyone can use and learn. People around me told me that I wouldn't like code. Because I'm more of a dreamer and a creative who doesn't pay attention to details and doesn't really like to follow the rules. Anyone can learn and love code in different manners. Creatives love the possibilities it offers, entrepreneurs love the scalability and opportunities it gives you access to, meticulous people love spending time on their code and making great craft, hard core brains love the challenge and rewards it gives.</p>
+      <p>After Le Wagon I kept working online. But now I can create a prototype of any of my ideas quickly and outsource code knowing what's going on. I know I can create anything or learn any new language/technology if I put enough time on it. So if you're young, full of ideas and want to make the best investment in time, energy and money of your career. Do Le Wagon. If you don't learn to code, a robot will take your job and a programmer will take your girlfriend. Learn to code.</p>
+  brunasiloto:
+    first_name: Bruna
+    last_name: Siloto
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-05-28
+    job_before:
+    project_slug: routineio
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: lisbon_bruna_siloto.jpg
+    linkedin_url:
+    content_html: |
+      <p>I have a background in Graphic Design, working with front end for two years when I decided to do a programing bootcamp. I had a few ideas of web apps I’d like to develop myself and although the online tutorials were slowly helping me understand programing, I felt like I was a long way from creating something myself, so I decided to take a programing bootcamp.</p>
+      <p>Searching for a bootcamp that matched my needs was a bit overwhelming, there are many options out there, but I felt like Le Wagon had the most complete curriculum of all the other bootcamps I encountered. From the many bootcamp options I saw back home in the US, I chose Le Wagon Lisbon and honestly couldn’t have been more satisfied with the experience.</p>
+      <p>The program was fast paced, they covered many technologies in only 9 weeks, sometimes it was hard to process so much information, especially for me who considered myself a beginner, but I trusted the curriculum and the feedback from the teachers and it paid off at the end. I look back now and see how much I’ve learned and how much I’ve accomplished in only 9 weeks, it’s incredible. I now feel much more confident to start my own web apps and most importantly, I feel like I can learn any coding languages using the process I learned from Le Wagon.</p>
+      <p>The other aspect of the program, that I had never expected before starting, was the connection with the other students, TAs, teachers and the driver - I immediately felt at home with them. Today I can say I am part of a strong community of developers and have true friends around the world, people I will always see as inspiration to continue coding and building products.</p>
+      <p>As far as the location… Lisbon is just AWESOME! When we were not coding, we were out having fun, experiencing the city’s amazing gastronomic scene, visiting historic places, museums, castles, surfing and enjoying the beautiful city. It couldn’t have been better.</p>
+      <p>Le Wagon was an intensive 9 week experience (emphasis on the last two weeks, when we developed our final project), filled with knowledge, new experiences, challenges and new opportunities. I have returned home with a strong foundation to start a new stage of my life and look forward to being part of the Le Wagon alumni community!</p>
   quentincoray:
     first_name: Quentin
     last_name: Coray
@@ -359,6 +525,27 @@ testimonials:
       <p>In only 2 months, we went through all the basic skills a beginner needs in order to build a web application from A to Z. Ruby programming for the backend side, SQL for the database, HTML/CSS and Javascript for the front-end part, and also very useful product design tools like Sketch or Marvelapp. We also learnt how to collaborate within a developers' team using Github, and used Ruby on Rails to speed up our app development and not re-invent the wheel for every new web application. During the 3 last weeks of the programme, we worked on two projects, that we built completely and put in production with Heroku. One of these projects was my startup idea, http://beta.zadl.fr/.</p>
       <p>In my opinion, Le Wagon made me save nearly 2 years compared to what I would have learnt on my own with online MOOC and tutorials. Le Wagon's program is really intense and requires a 100% commitment. But there is also a very cool atmosphere, with a team of dedicated and passionate teachers and teaching assistants. Besides the "coding" part, Le Wagon also connect you to a great community: young grads, artists, engineers who want to switch their careers... We all helped each other during the 9 weeks and some of us really became close friends. After Le Wagon, part of my buddies pursued their entrepreneur's journey, and a lot of them started working as developers, either doing freelance or in full-time positions.</p>
       <p>To conclude, I would recommend Le Wagon to anyone willing to learn how to build a web application with a very thorough curriculum and an amazing students' community, that be for working on your own project or literally for changing your life!</p>
+  rodloboz:
+    first_name: Rui
+    last_name: Freitas
+    city_slug: lisbon
+    batch_slug: 49
+    publication_date: 2017-03-26
+    job_before:
+    project_slug: routineio
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: lisbon_rui_freitas.jpg
+    linkedin_url:
+    content_html: |
+      <p>Le Wagon is worth the investment and lives up to its reputation. Before joining the bootcamp I was trying to follow online tutorials to learn how I could build some prototypes of ideas we had for web apps but with the feeling I would never be able to leave the training wheels and ride on my own. I found Le Wagon by chance and seeing that the technology stack covered in the programmed matched what I was trying to learn, it looked like a perfect fit.</p>
+      <p>The program is demanding and fast-paced, but it is aimed and suited at complete beginners, although I feel that if you take the time to explore the technologies covered before starting you will get so much more out of this bootcamp.</p>
+      <p>The teachers are experienced in software engineering and they approach topics both from practical standpoints as well as theoretical. The teaching staff is always available to help you with your doubts at all times.</p>
+      <p>There’s alsomore than simply coding though. Le Wagon organises talks and interviews with entrepreneurs and people involved in the start-up scene, which greatly complements the content of the course.</p>
+      <p>What really surprised me was the atmosphere between students and that’s something Le Wagon staff fosters and encourages – creating a network of contacts and fellow-students which will continue beyond the bootcamp.</p>
+      <p>The pace of the last two weeks is hectic due to the final projects but that’s where it all comes together. My team and I built a web app to track routines through user created questions/forms and it was great to see that I was able to build and structure a product on my own that differed from what I had been taught.</p>
+      <p>Now I understand why some of the reviewers wrote that Le Wagon changed their lives or that it was the greatest thing they’ve ever done. It’s not cliché. Even if you don’t plan on becoming a developer, it is an enriching experience and a fantastic coding program. As for me, I found something I really love doing.</p>
   ruijorge:
     first_name: Rui
     last_name: Jorge

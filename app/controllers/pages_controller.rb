@@ -26,9 +26,9 @@ class PagesController < ApplicationController
     if locale == :"pt-BR"
       session[:city] = 'sao-paulo'
     end
-    home_projects_slugs = Static::PROJECTS[:home]
-    @projects = KittClient.new.products(home_projects_slugs)
-
+    @top_bar_message = I18n.t('.top_bar_message')
+    @top_bar_cta = I18n.t('.top_bar_cta')
+    @top_bar_url = demoday_index_path
     @reviews = ReviewsCounter.new.review_count
 
     if request.format.html? || params[:testimonial_page]
@@ -60,6 +60,10 @@ class PagesController < ApplicationController
 
   def program
     @statistics = @client.statistics
+
+    @top_bar_message = I18n.t('.top_bar_message')
+    @top_bar_cta = I18n.t('.top_bar_cta')
+    @top_bar_url = demoday_index_path
   end
 
   def linkedin
