@@ -18,8 +18,7 @@ class KittClient
   end
 
   def camp(camp_slug)
-    url = "#{@base_url}/camps/#{camp_slug}"
-    get(url)
+    Api::Batch.new get("#{@base_url}/camps/#{camp_slug}")
   end
 
   private

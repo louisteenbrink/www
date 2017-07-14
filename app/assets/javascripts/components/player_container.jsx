@@ -16,12 +16,12 @@ class PlayerContainer extends React.Component {
     var product_icon = this.props.product_icon;
 
     var main = null;
-    if (this.props.batch.youtube_id) {
+    if (this.props.batch.youtube_demo_id) {
       main = <PlayerVideo
                 autoPlay={this.props.autoPlay}
                 jump={this.state.jump}
                 i18n={this.props.i18n}
-                youtubeVideoId={this.props.batch.youtube_id}
+                youtubeVideoId={this.props.batch.youtube_demo_id}
                 selectedProduct={this.state.selectedProduct}
                 reportCurrentTime={this.reportCurrentTime} />
     } else {
@@ -34,7 +34,7 @@ class PlayerContainer extends React.Component {
                </div>
       } else {
         var coverStyle = {
-          backgroundImage: "url(" + this.props.batch.cover_image + ")"
+          backgroundImage: "url(" + this.props.batch.cover_image_url + ")"
         }
         main = <div className="player-placeholder" style={coverStyle}>
                 <span>{this.props.i18n.no_video}</span>

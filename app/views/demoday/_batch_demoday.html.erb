@@ -3,6 +3,7 @@
     react_batch = batch.as_json
     react_batch["starts_at"] = l(Time.parse(react_batch["starts_at"]), format: '%B').camelcase
     react_batch["ends_at"] = l(Time.parse(react_batch["ends_at"]), format: '%B %Y').camelcase
+    react_batch["cover_image_url"] = batch.cover_image_url
 
     techno_special_names = {
       css3: 'CSS3',
@@ -56,5 +57,5 @@
 </div>
 
 <div class="container-fluid container-batch-cover">
-  <%= react_component "BatchCover", cover: batch.cover_image, prerender: prerender %>
+  <%= react_component "BatchCover", cover: batch.cover_image_url, prerender: prerender %>
 </div>

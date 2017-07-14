@@ -1,5 +1,6 @@
 module Api
   class Batch
+    include CloudinaryHelper
     def initialize(json)
       @json = json
     end
@@ -14,6 +15,10 @@ module Api
 
     def as_json(options = {})
       @json
+    end
+
+    def cover_image_url
+      @cover_image_url ||= cloudinary_url("#{@json['cover_image']}.jpg")
     end
 
     def analytics_slug

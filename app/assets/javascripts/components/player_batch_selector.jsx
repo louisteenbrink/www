@@ -46,7 +46,7 @@ class PlayerBatchSelector extends React.Component {
         <ReactBootstrap.Dropdown.Menu>
           {otherBatches.map((batch, index) => {
             var videoCamera = null;
-            if (batch.youtube_id) {
+            if (batch.youtube_demo_id) {
               videoCamera = <i className="fa fa-video-camera" aria-hidden="true"></i>
             }
             return <li key={index} onClick={() => this.changeBatch(batch)}>
