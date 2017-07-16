@@ -41,7 +41,8 @@ module ApplicationHelper
     image_tag "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}"
   end
 
-  def post_image_tag(slug)
+  def post_image_url(slug)
+    return slug if slug =~ /^http/  # Handy to quickly try a post background image from a URL.
     "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
   end
 
