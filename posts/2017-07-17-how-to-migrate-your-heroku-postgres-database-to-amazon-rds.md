@@ -43,7 +43,7 @@ psql$ \list
 psql$ \du
 ```
 
-OK, let's create a new user and a new database, granting all rights for this user. Let's suppose your Heroku app is named `white-unicorn-1234`. First generate a url friendly password on your laptop with the following command:
+OK, let's create a new user and a new database, granting all rights for this user. Let's suppose your Heroku app is named `whiteunicorn1234`. First generate a url friendly password on your laptop with the following command:
 
 ```bash
 $ openssl rand -base64 32 | tr -d '=/+'
@@ -52,9 +52,9 @@ $ openssl rand -base64 32 | tr -d '=/+'
 Then in the `psql` prompt, create a PG user and a dedicated database. **Do not blindly copy paste**.
 
 ```bash
-psql$ create role white-unicorn-1234 with password 'PASTE_P'W'D_HERE' login;
-psql$ create database white-unicorn-1234;
-psql$ grant all on database white-unicorn-1234 to white-unicorn-1234;
+psql$ create role whiteunicorn1234 with password 'PASTE_P'W'D_HERE' login;
+psql$ create database whiteunicorn1234;
+psql$ grant all on database whiteunicorn1234 to whiteunicorn1234;
 psql$ \q
 ```
 
@@ -87,17 +87,17 @@ The goal is to send all the data which was stored on Heroku to Amazon RDS before
 ```bash
 $ pg_restore --verbose --clean --no-acl --no-owner \
     -h $NAME.$ID.$DATACENTER.rds.amazonaws.com \
-    -U white-unicorn-1234 \
-    -d white-unicorn-1234 \
+    -U whiteunicorn1234 \
+    -d whiteunicorn1234 \
     /tmp/latest.dump
 ```
 
-This will ask for the `white-unicorn-1234` password you generated before thanks to the `openssl` command.
+This will ask for the `whiteunicorn1234` password you generated before thanks to the `openssl` command.
 
 Let's open a new `psql` prompt and run the following commandes to see if the `pg_restore` command was successful:
 
 ```bash
-$ psql -U white-unicorn-1234 -h $NAME.$ID.$DATACENTER.rds.amazonaws.com
+$ psql -U whiteunicorn1234 -h $NAME.$ID.$DATACENTER.rds.amazonaws.com
 psql$ SELECT
         nspname AS schemaname,relname,reltuples
       FROM pg_class C
@@ -117,7 +117,7 @@ You will need to destroy your Heroku Database on Heroku as Heroku does not want 
 ```bash
 $ heroku addons:destroy heroku-postgresql
 $ heroku config:set \
-    DATABASE_URL="postgres://white-unicorn-1234:$PASSWORD@$NAME.$ID.$DATACENTER.rds.amazonaws.com/white-unicorn-1234?sslca=config/amazon-rds-ca-cert.pem"
+    DATABASE_URL="postgres://whiteunicorn1234:$PASSWORD@$NAME.$ID.$DATACENTER.rds.amazonaws.com/whiteunicorn1234?sslca=config/amazon-rds-ca-cert.pem"
 $ heroku maintenance:off
 ```
 
