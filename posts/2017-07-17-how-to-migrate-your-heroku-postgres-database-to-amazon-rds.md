@@ -10,7 +10,7 @@ thumbnail: 2017-07-17-elephant.jpg
 description: The Heroku Hobby Dev Postgresql Addon plan gives you 10,000 rows for free. This tutorial will show you how to move your existing data to Amazon RDS.
 ---
 
-If you are currently hosting an application on Heroku using the [Heroku PostgreSQL](https://elements.heroku.com/addons/heroku-postgresql) add-on, you get 10,000 rows for free with the Hobby Dev. This limit may fill up quite fast depending on your app. If so, you will receive an email like this:
+If you are currently hosting an application on Heroku using the [Heroku PostgreSQL](https://elements.heroku.com/addons/heroku-postgresql) add-on, you get 10,000 rows for free with the Hobby Dev plan. This limit may fill up quite fast depending on your app. If so, you will receive an email like this one:
 
 
 ![[Warning] Approaching row limit for hobby-dev database on Heroku app](blog_image_path 2017-07-17-heroku-warning-hobby-dev.png)
@@ -23,7 +23,7 @@ $ heroku addons:create heroku-postgresql:hobby-basic
 ```
 ## Moving to Amazon RDS
 
-Instead of creating a dedicated database for every new Heroku app, you might want to launch a RDS instance on AWS and create a new database on this instance for every new application. We won't cover the creation of a PostgreSQL RDS Instance (you can do that easily through your AWS console), just letting you know that we use a `db.t2.micro` multi-az instance with **100GB** of general purpose SSD. This means that we are paying $29.20/month for the instances (multi site) and $25.30/month for allocated storage. RDS provides auto-snapshots to restore backups. Upgrading to a bigger instance class or add more allocated storage is always possible.
+Instead of creating a dedicated database for every new Heroku app, you might want to launch a RDS instance on AWS and create a new database on this instance for every new application. We won't cover the creation of a PostgreSQL RDS Instance here (you can do that easily through your AWS console). But just so you know, we use for that matter a `db.t2.micro` multi-az instance with **100GB** of general purpose SSD, which costs us $29.20/month for the instances (multi site) and $25.30/month for allocated storage. RDS provides daily auto-snapshots to restore backups. Upgrading to a bigger instance class or adding more allocated storage is always possible.
 
 
 ### Creating a new database
@@ -131,11 +131,11 @@ $ rm /tmp/latest.dump
 
 ### Conclusion
 
-We always started new Rails application with the default Heroku stack, meaning using a Hobby Dev plan. We then migrated to Hobby Basic and even Standard, so at some point it made economic sense to merge all those databases together to one single Amazon RDS instance.
+Historically at Le Wagon, we have always started new Rails applications using Heroku's default Hobby Dev plan. When and only when we reached Hobby Dev plan's limits, we migrated to Hobby Basic plan and even Standard plan sometimes. At some point it made economic sense to merge all of these databases together on one single Amazon RDS instance.
 
 ### Bonus
 
-At [Le Wagon](https://www.lewagon.com), we like to use real production data locally when working on new features. That's a good way to safely repro a bug a real user had. That's how we do it:
+At [Le Wagon](https://www.lewagon.com), we like using real production data locally when working on new features. That's a good way to safely reproduce a bug a real user had. That's how we do it:
 
 ```ruby
 # lib/tasks/db.rake
