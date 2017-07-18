@@ -1,3 +1,15 @@
+- name: "Apprendre à coder, le nouveau sésamet"
+  url: "http://www.lecho.be/entreprises/management-entrepreneuriat/Apprendre-a-coder-le-nouveau-sesame/9912186?ckc=1&ts=1500370622"
+  media: "L'Echo"
+  logo: logo-lecho.jpg
+  date: 2017-07-07
+
+- name: "Demain, devrons-nous tous savoir coder ?"
+  url: " https://atelier.bnpparibas/life-work/article/demain-devrons-nous-savoir-coder"
+  media: "L'Atelier BNP Paribas"
+  logo: logo-latelierbnpparibas.jpg
+  date: 2017-07-04
+
 - name: "Savoir coder, c'est avoir son permis Internet"
   url: "http://www.magazine-decideurs.com/news/romain-paillard-le-wagon-savoir-coder-c-est-avoir-son-permis-internet"
   media: "Dédideurs Magazine"
