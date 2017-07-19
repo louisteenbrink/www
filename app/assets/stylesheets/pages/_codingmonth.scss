@@ -43,15 +43,15 @@
 
   .event-wrapper {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     position: relative;
-    height: 780px;
+    height: 850px;
     border-radius: 8px;
     box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
     background-color: #04A777;
     overflow: hidden;
 
-    @media (max-width: 992px) {
+    @media (max-width: 1199px) {
       flex-direction: column;
       height: auto;
     }
@@ -67,7 +67,7 @@
       background-color: #fff;
       z-index: 1;
 
-      @media (max-width: 992px) {
+      @media (max-width: 1199px) {
         display: none;
       }
     }
@@ -103,7 +103,7 @@
       background-size: cover;
       background-position: center center;
 
-      @media (max-width: 992px) {
+      @media (max-width: 1199px) {
         padding: 45px 20px 20px;
         width: 100%;
       }
@@ -126,6 +126,21 @@
           font-size: 26px;
         }
       }
+
+      h2.special,
+      p.special {
+        position: relative;
+        top: -40px;
+
+        @media (max-width: 1199px){
+          top: 0;
+        }
+      }
+
+      .special-2 {
+        margin-top: 114px;
+      }
+
 
       a, a:hover {
         color: #333;
