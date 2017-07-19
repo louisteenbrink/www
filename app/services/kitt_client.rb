@@ -17,9 +17,34 @@ class KittClient
     end
   end
 
-  def camp(camp_slug)
-    Api::Batch.new get("#{@base_url}/camps/#{camp_slug}")
+  def batch(slug)
+    Api::Batch.new get("#{@base_url}/camps/#{slug}")
   end
+
+
+  # def cities
+  #   from_cache(:cities) do
+  #     get("#{@base_url}/cities")["cities"]
+  #   end
+  # end
+
+  # def city_groups
+  #   from_cache(:city_groups) do
+  #     get("#{@base_url}/city_groups")["groups"]
+  #   end
+  # end
+
+  # def city_slugs
+  #   from_cache(:city_slugs) do
+  #     get("#{@base_url}/cities/slugs")["slugs"]
+  #   end
+  # end
+
+  # def city(slug_or_id)
+  #   from_cache(:city, slug_or_id) do
+  #     Api::City.new(get("#{@base_url}/cities/#{slug_or_id}")["city"])
+  #   end
+  # end
 
   private
 
