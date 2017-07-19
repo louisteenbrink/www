@@ -87,6 +87,7 @@ Rails.application.routes.draw do
     get "shop" => "pages#shop", as: :shop
     get "vae" => "pages#vae", as: :vae
     get "cgv" => "pages#cgv", as: :cgv
+    get "lemoisducode" => "pages#lemoisducode", as: :lemoisducode
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city

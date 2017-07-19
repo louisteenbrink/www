@@ -314,46 +314,60 @@ fr:
       wanna_join: Vous voulez nous rejoindre ?
       signup: Contactez-nous pour faire partie de nos partenaire de recrutement.
     enterprise:
-      title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
+      title: Réinventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
-      tagline_html: "<span style='font-size: 40px;'>Transformez votre organisation. <br>En vous formant au code et à la technologie.</span>"
+      tagline_html: "Nous accompagnons les entreprises <br>dans leur transition digitale."
       tagline_details_html: |
-        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler <br>dans votre organisation.
-        <strong>Travaillez mieux, de façon plus agile et plus efficace.</strong>
-      apply: Formez-vous avec Le Wagon
-      apply_to: Formation %{skill}
-      skills_header: Des ateliers & des sprints faits pour votre entreprise
-      skills_text_html: Grâce à des formations de 2 heures, des ateliers d'une journée ou des sprints d'une semaine, <strong>formez vos collaborateurs à l'UI/UX Design, au Product Management ou au développement web</strong>.
+        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler.
+        <strong>Un workshop à la fois.</strong>
+      apply: Contact
+      apply_phone_html: |
+        Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contacter Benjamin<br><small>benjamin@lewagon.org</small>
+      skills_header: Des ateliers adaptés à votre entreprise
+      skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management, au développement web et aux méthodologies Agile et Lean</strong>.
       pm: Product Management
-      pm_details: Découpage du travail, nouvelles techniques agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups technologiques.
-      ui: UI / UX
-      ui_details: Rendre les choses visibles facilite la communication dans vos équipes. Apprenez à faire rapidement des maquettes et des wireframes pour discuter vos idées de façon plus claire.
-      web_design: Web Design / frontend
-      web_design_details: Construisez vos icônes, retouchez tout seul votre site. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
+      pm_details: Apprenez les nouvelles techniques agiles de collaboration. Travailler en équipe sur un projet technique à la manière des startups, avec les mêmes méthodologies.
+      ui: Design et expérience utilisateur (UI / UX)
+      ui_details: Prototypez votre application et donnez vie à vos idées. Communiquez mieux avec vos équipes et vos prestataires techniques en adoptant l'approche d'un designer.
+      web_design: Web-design & Dévelopement frontend
+      web_design_details: Coder votre propre site avec HTML et CSS et designer vos icônes. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
       data_science: Data Science & Visualisation
-      data_science_details: Collectez les données, analyser-les, faites-les parler. Les consultants doivent ré-inventer leur travail et leurs méthodologies.
+      data_science_details: Apprenez à collecter des données, à les analyser, à les faire parler. Les consultants doivent réinventer leur travail et leurs méthodologies grâce à la data-science.
       fullstack: FullStack Development
-      fullstack_details: Depuis la base de données jusqu'au navigateur, apprenez comment un produit web est construit et comment il fonctionne pour discuter plus efficacement avec vos équipes techniques.
-      prototyping: Lean Prototyping
+      fullstack_details: Depuis la base de données, jusqu'au navigateur, apprenez comment un produit web est construit et comment il fonctionne pour discuter plus efficacement avec vos équipes techniques.
+      prototyping: L'art du Prototyping
       prototyping_details: |
-        Les APIs transforment notre économie. Découvrez comment les startups prototypent très rapidement de nouveaux services en connectant simplement des APIs.
-      best: Apprenez des meilleurs
-      best_details_html: |
-        <p>
-          Nous avons formé plus de 1200 étudiants aux profils variés (école de commerce, ingénieurs, graphistes). Nous savons <strong>créer un lien entre la technologie et le business</strong>. Nous avons encadré <strong>plus de 400 produits</strong>, en aidant nos élèves à les concevoir et les prototyper.
-        </p>
-        <p>
-          Après avoir formé tant d'élèves talentueux, nous savons que nous pouvons aussi <strong>vous aider à transformer votre organisation</strong>.
-        </p>
-      hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
+        Prototyper rapidement de nouveaux services en connectant simplement des APIs à la manière des startups. Comprenez ce qu'est un MVP, et comment tester un produit en un temps record.
+      formats_title: À chaque objectif ses ateliers
+      format_1_title: Motiver ses collaborateurs par l’apprentissage du code
+      format_1_description_html: |
+          <i><strong>1</strong> journée immersion en 2 ateliers</i>
+      format_2_title: Faciliter les échanges entre les équipes tech et marketing
+      format_2_description_html: |
+          <i><strong>7</strong> ateliers d’acculturation aux métiers web</i>
+      format_3_title: Transformer ses chefs de projet en « Product Owners »
+      format_3_description_html: |
+          <i><strong>1</strong> an d’atelier sur 6 thématiques</i>
+      format_4_title: Faciliter le recrutement de profils techniques
+      format_4_description_html: |
+          <i><strong>5</strong> workshops d’initiation au métier de développeur web</i>
+      format_5_title: Encourager l’intrapreuneuriat grâce aux bonnes ressources
+      format_5_description_html: |
+          <i><strong>1</strong> série d’ateliers front-end et back-end pour savoir lancer son MVP</i>
+      format_6_title: Adopter une culture startup pour délivrer rapidement
+      format_6_description_html: |
+          <i><strong>3</strong> workshops d’initiation au développement web et au workflow d’une startup</i>
+      cta-objectives: Quel est votre projet ?
       watch: Notre dernier atelier "One Day of Code"
-      google_quote: Le Wagon sait transmettre des compétences techniques et une culture très complémentaires pour des profils business. Leur vision de la technologie est unique.
-      eki_quote: Ils ont été un partenaire clef apportant une forte culture Produit et UX chez Ekimetrics. Il y a un impact direct sur notre façon de travailler.
-      drivy_quote: Leur curriculum est extrêmement bien structuré et leur professeurs sont des professionels passionés.
-      stripe_quote: Des ateliers solides qui transmettent à la fois les compétences techniques essentielles mais aussi une forte culture du produit.
-      algolia_quote: Si vous avez un profil business ou chef de projet, c'est incroyable comme Le Wagon peut transformer votre rapport à la technologie.
-      uber_quote: Le Wagon permet aux équipes de comprendre les problématiques tech dans la roadmap produit d'Uber et d'expliquer simplement et clairement aux partenaires des concepts tels qu'une intégration API.
+      testimonial_1: Une journée très intéressante et très riche. Parfait pour découvrir le monde du web et de la programmation.
+      testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir développeuse !
+      testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
+      testimonial_4: 3 heures hyper denses, mais très intéressantes pour apprendre à coder une landing page. Ça donne envie d’approfondir le sujet !
+      testimonial_5: Super onboarding dans l’univers du code, ça donne envie de poursuivre !
       with_us: Ils nous font confiance.
+      testimonial_cta: Embarquez vos collaborateurs
     live:
       page_title_with_current_event: "Live - %{event_name}"
       page_title_no_live: "Live en préparation"
