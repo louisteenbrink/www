@@ -342,34 +342,34 @@ zh-CN:
       fullstack_details: 从数据库到浏览器，学习从头搭建网页应用的过程。
       prototyping: 学习设计简洁的产品原型
       prototyping_details: API正在占领世界。探索创业公司是如何仅仅通过连接API（应用程序编程接口）做出产品原型的。
-      formats_title: À chaque objectif ses ateliers
-      format_1_title: Motiver ses collaborateurs par l’apprentissage du code
+      formats_title: One workshop for each of your goals
+      format_1_title: "Motivate your teammates: give them the opportunity to learn how to code"
       format_1_description_html: |
-          <i><strong>1</strong> journée immersion en 2 atelier</i>
-      format_2_title: Faciliter les échanges entre les equipes tech et marketing
+          <i><strong>1</strong>full day, two workshops</i>
+      format_2_title: Improve communication between technical and marketing teams
       format_2_description_html: |
-          <i><strong>7</strong> ateliers d’acculturation aux metiers web</i>
-      format_3_title: Transformer leur chef de projet en « Product Owners »
+          <i><strong>7</strong> workshops to help your non-technical teams understand the role of a web developer</i>
+      format_3_title: Transform project managers into “Product Owners”
       format_3_description_html: |
-          <i><strong>1</strong> an d’atelier sur 6 thématiques</i>
-      format_4_title: Faciliter le recrutement de profils techniques
+          <i><strong>1</strong> year of workshops on 6 different themes</i>
+      format_4_title: Improve the ability of your HR team to evaluate technical talent
       format_4_description_html: |
-          <i><strong>5</strong> workshops d’initiation au metier d’un developpeur web</i>
-      format_5_title: Apporter des ressources pour l’intrapreuneuriat
+          <i><strong>5</strong> workshops about the web developer role</i>
+      format_5_title: Foster intraspreneurship by providing adequate resources
       format_5_description_html: |
-          <i><strong>1</strong> série d’ateliers Front end et back end pour savoir lancer son MVP</i>
-      format_6_title: Adopter une culture startup pour délivrer rapidement
+          <i><strong>1</strong> set of workshops on frontend and backend development to learn how to launch an MVP.</i>
+      format_6_title: Deliver faster by adopting a startup culture
       format_6_description_html: |
-          <i><strong>3</strong> workshops d’initiation au developement web et au workflow d’une startup</i>
-      cta-objectives: Quel est votre projet ?
+          <i><strong>3</strong> workshops on web development and the workflow of a startup</i>
+      cta-objectives: What is your goal?
       watch: Our last corporate workshop "One Day of Code"
       with_us: They work with us.
-      testimonial_1: Une journée très interessante et très riche. Parfait pour découvrir le monde du web et de la programmation.
-      testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir dévelopeuse !
-      testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
-      testimonial_4: 3 heures hyper denses mais très intéressantes pour apprendre à coder une landing page. Ca donne envie d’approfondir le sujet !
-      testimonial_5: Super onboarding dans l’univers du code, une journée aurait pu permettre de se sentir plus autonome à la fin, ça donne envie de poursuivre.
-      testimonial_cta: Embarquez vos collaborateurs
+      testimonial_1: A very interesting and enriching day. Perfect to discover web and programming.
+      testimonial_2: A beautifully executed pedagogy and an enticing mindset, I almost want to become a coder myself!
+      testimonial_3: A perfect training program to take your first steps in the world of web development.
+      testimonial_4: 3 super dense hours, but very interesting to learn how to code a landing page. I’d like to learn more!
+      testimonial_5: Awesome introduction to coding, I wish I had done a full day to feel more autonomous by the end of it, it makes me want to go further.
+      testimonial_cta: Sign up your teammates
     live:
       page_title_with_current_event: "直播 - %{event_name}"
       page_title_no_live: "直播 - 即将到来"
