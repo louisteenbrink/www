@@ -344,7 +344,7 @@ fr:
       format_1_title: Motiver ses collaborateurs par l’apprentissage du code
       format_1_description_html: |
           <i><strong>1</strong> journée immersion en 2 ateliers</i>
-      format_2_title: Faciliter les échanges entre les equipes tech et marketing
+      format_2_title: Faciliter les échanges entre les équipes tech et marketing
       format_2_description_html: |
           <i><strong>7</strong> ateliers d’acculturation aux métiers web</i>
       format_3_title: Transformer leur chef de projet en « Product Owners »
@@ -358,7 +358,7 @@ fr:
           <i><strong>1</strong> série d’ateliers Front end et back end pour savoir lancer son MVP</i>
       format_6_title: Adopter une culture startup pour délivrer rapidement
       format_6_description_html: |
-          <i><strong>3</strong> workshops d’initiation au dévelopement web et au workflow d’une startup</i>
+          <i><strong>3</strong> workshops d’initiation au développement web et au workflow d’une startup</i>
       cta-objectives: Quel est votre projet ?
       watch: Notre dernier atelier "One Day of Code"
       testimonial_1: Une journée très intéressante et très riche. Parfait pour découvrir le monde du web et de la programmation.
