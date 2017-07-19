@@ -319,27 +319,27 @@ fr:
       tagline_html: "Nous accompagnons les entreprises <br>dans leur transition digitale."
       tagline_details_html: |
         Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler.
-        <strong>1 workshop à la fois</strong>
+        <strong>Un workshop à la fois.</strong>
       apply: Contact
       apply_phone_html: |
         Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
       apply_mail_html: |
         Contacter Benjamin<br><small>benjamin@lewagon.org</small>
-      skills_header: Des ateliers aux formats adaptés à l’entreprise
-      skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management ou au développement web, aux méthodologies Agile et lean</strong>.
+      skills_header: Des ateliers adaptés à votre entreprise
+      skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management, au développement web et aux méthodologies Agile et Lean</strong>.
       pm: Product Management
-      pm_details: Apprenez les nouvelles techniques Agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups
-      ui: Le design et l'expérience utilisateur (UI / UX)
-      ui_details: Apprenez à faire rapidement des maquettes pour discuter de vos idées de façon plus claire. Facilite la communication dans vos équipes et avec vos prestataires techniques.
-      web_design: Web Design & Developement frontend
-      web_design_details: Apprenez à construire vos icônes, votre site. Ne dépendez plus de sous-traitants, apprenez à parler la même langue, soyez autonomes, reprenez le contrôle de vos projets.
+      pm_details: Apprenez les nouvelles techniques agiles de collaboration. Travailler en équipe sur un projet technique à la manière des startups, avec les mêmes méthodologies.
+      ui: Design et expérience utilisateur (UI / UX)
+      ui_details: Prototypez votre application et donnez vie à vos idées. Communiquez mieux avec vos équipes et vos prestataires techniques en adoptant l'approche d'un designer.
+      web_design: Web-design & Dévelopement frontend
+      web_design_details: Coder votre propre site avec HTML et CSS et designer vos icônes. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
       data_science: Data Science & Visualisation
-      data_science_details: Apprenez à collecter les données, analyser-les, faites-les parler. Les consultants doivent réinventer leur travail et leurs méthodologies.
+      data_science_details: Apprenez à collecter des données, à les analyser, à les faire parler. Les consultants doivent réinventer leur travail et leurs méthodologies grâce à la data-science.
       fullstack: FullStack Development
       fullstack_details: Depuis la base de données, jusqu'au navigateur, apprenez comment un produit web est construit et comment il fonctionne pour discuter plus efficacement avec vos équipes techniques.
-      prototyping: L'art du prototyping
+      prototyping: L'art du Prototyping
       prototyping_details: |
-        Apprenez à prototyper très rapidement de nouveaux services en connectant simplement des APIs comme le font les startups.
+        Prototyper rapidement de nouveaux services en connectant simplement des APIs à la manière des startups. Comprenez ce qu'est un MVP, et comment tester un produit en un temps record.
       formats_title: À chaque objectif ses ateliers
       format_1_title: Motiver ses collaborateurs par l’apprentissage du code
       format_1_description_html: |
@@ -347,15 +347,15 @@ fr:
       format_2_title: Faciliter les échanges entre les équipes tech et marketing
       format_2_description_html: |
           <i><strong>7</strong> ateliers d’acculturation aux métiers web</i>
-      format_3_title: Transformer leur chef de projet en « Product Owners »
+      format_3_title: Transformer ses chefs de projet en « Product Owners »
       format_3_description_html: |
           <i><strong>1</strong> an d’atelier sur 6 thématiques</i>
       format_4_title: Faciliter le recrutement de profils techniques
       format_4_description_html: |
           <i><strong>5</strong> workshops d’initiation au métier de développeur web</i>
-      format_5_title: Apporter des ressources pour l’intrapreuneuriat
+      format_5_title: Encourager l’intrapreuneuriat grâce aux bonnes ressources
       format_5_description_html: |
-          <i><strong>1</strong> série d’ateliers Front end et back end pour savoir lancer son MVP</i>
+          <i><strong>1</strong> série d’ateliers front-end et back-end pour savoir lancer son MVP</i>
       format_6_title: Adopter une culture startup pour délivrer rapidement
       format_6_description_html: |
           <i><strong>3</strong> workshops d’initiation au développement web et au workflow d’une startup</i>
@@ -365,7 +365,7 @@ fr:
       testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir développeuse !
       testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
       testimonial_4: 3 heures hyper denses, mais très intéressantes pour apprendre à coder une landing page. Ça donne envie d’approfondir le sujet !
-      testimonial_5: Super onboarding dans l’univers du code, une journée aurait pu permettre de se sentir plus autonome à la fin, ça donne envie de poursuivre.
+      testimonial_5: Super onboarding dans l’univers du code, ça donne envie de poursuivre !
       with_us: Ils nous font confiance.
       testimonial_cta: Embarquez vos collaborateurs
     live:
