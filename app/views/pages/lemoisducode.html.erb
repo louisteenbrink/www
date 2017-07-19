@@ -116,49 +116,30 @@
   </div>
 </div>
 
+<%
+speakers = {
+  eschults: 'Edward Schults',
+  krokrob: 'Kevin Robert',
+  thomassertorio: 'Thomas Sertorio',
+  karine03: 'Karine Bialobroda',
+  maximedelpit: 'Maxime Delpit',
+  llanowars: 'Julien Da Silva',
+  ofriedel: 'Oscar Friedel',
+  clementraffenoux: 'Clement Raffenoux',
+  gautierlevha: 'Gautier Lehva',
+  timotheegoguely: 'Thimotee Goguely',
+}
+%>
+
 <div class="container">
   <h2 class="title-speakers">Nos intervenants</h2>
   <div class="speakers-container">
-    <div class="speaker-info">
-      <%= image_tag "b2b/eschults.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Edward Schultz</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/krokrob.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Kevin Robert</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/thomassertorio.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Thomas Sertorio</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/karine03.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Karine Bialobroda</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/maximedelpit.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Maxime Delpit</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/llanowars.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Julien Da Silva</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/ofriedel.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Oscar Friedel</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/clementraffenoux.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Clement Raffenoux</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/gautierlevha.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Gautier Lehva</p>
-    </div>
-    <div class="speaker-info">
-      <%= image_tag "b2b/timotheegoguely.jpg", class: "speaker-picture" %>
-      <p class="speaker-name">Thimotee Goguely</p>
-    </div>
+    <% speakers.each do |github_nickname, name| %>
+      <div class="speaker-info">
+        <%= image_tag "b2b/#{github_nickname}.jpg", class: "speaker-picture" %>
+        <p class="speaker-name"><%= name %></p>
+      </div>
+    <% end %>
   </div>
 </div>
 
