@@ -1,7 +1,11 @@
 #invitation-banner {
-  height: calc(100vh - 130px);
-  overflow-x: hidden;
+  display: flex;
+  align-items: center;
   position: relative;
+  height: 100%;
+  min-height: 500px;
+  overflow-x: hidden;
+
   .banner-enterprise {
     height: calc(100vh - 180px);
   }
@@ -24,7 +28,7 @@
     align-self: flex-end;
     box-shadow: -2px -2px 15px rgba(0, 0, 0, 0.05);
   }
-  display: flex;
+
   .banner-content {
     padding-top: 40px;
     p {
