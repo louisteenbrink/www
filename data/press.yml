@@ -1,3 +1,9 @@
+- name: "Les meilleurs meetups Parisiens pour entrepreneurs"
+  url: "https://99designs.fr/blog/business-fr/meilleurs-meet-ups-parisiens-pour-entrepreneurs/"
+  media: "99Designs"
+  logo: logo-99designs.jpg
+  date: 2017-07-19
+
 - name: "Apprendre à coder, le nouveau sésame"
   url: "http://www.lecho.be/entreprises/management-entrepreneuriat/Apprendre-a-coder-le-nouveau-sesame/9912186?ckc=1&ts=1500370622"
   media: "L'Echo"
