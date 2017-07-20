@@ -41,13 +41,13 @@ fr:
         fullstack_program: FullStack (9 semaines intensives)
         free_track: Web-Development Basics (gratuit)
       apply: Postuler
-      employers: Business
+      employers: Entreprises
       work: Travaillez avec nos alumni
       train: Formez votre entreprise au code
       recruitment: Recrutement
       workshops: Ateliers Corporate
       mobile_employers: Recrutement
-      mobile_enterprise: Corporate
+      mobile_enterprise: Entreprises
     navbar_dropdown:
       menu:
         cities: Villes
