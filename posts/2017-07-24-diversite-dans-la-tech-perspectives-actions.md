@@ -1,7 +1,7 @@
 ---
 layout: video
 title: "Diversité dans la Tech : Perspectives & Actions"
-youtube_slug: "JJdfcs_Zj88"
+youtube_slug: 'JJdfcs_Zj88'
 date: 24-07-2017
 author: mg
 labels:
