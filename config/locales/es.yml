@@ -259,7 +259,7 @@ es:
         Please wait for the Driver to contact you to set up your interview.
         If you wish to change the city you applied to, you can discuss that with him / her!
       we_will_contact_html: |
-        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">prep-work de  Ruby</a> en CodeCademy.
+        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/learn/learn-ruby" target="_blank">prep-work de  Ruby</a> en CodeCademy.
       take_advance: Checklist
       first_step: "1. Enviar tu candidatura a Le Wagon %{name}"
       second_step: "Suscríbete a nuestro Meetup en %{name}"
