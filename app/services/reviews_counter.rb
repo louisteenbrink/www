@@ -13,9 +13,13 @@ class ReviewsCounter
         raise e if Rails.env.development?
       end
 
-      html_switchup = Nokogiri::HTML(open("https://www.switchup.org/bootcamps/le-wagon"))
-      switchup_data = html_switchup.search("span[itemprop='reviewcount']").text.to_i
-
+      begin
+        html_switchup = Nokogiri::HTML(open("https://www.switchup.org/bootcamps/le-wagon"))
+        switchup_data = html_switchup.search("span[itemprop='reviewcount']").text.to_i
+      rescue OpenURI::HTTPError, SocketError => e
+        switchup_data = 0
+        # raise e if Rails.env.development?
+      end
       ((coursereport_data + switchup_data)/ 5) * 5
     end
   end

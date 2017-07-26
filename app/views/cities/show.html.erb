@@ -105,10 +105,10 @@
                     <i class="fa fa-github"></i> <%= teacher["github_nickname"] %></p>
                   </a>
                 <p>
-                <% if teacher["twitter_nickname"].present? %>
+                <% if teacher["twitter_url"].present? %>
                   <p>
-                    <a href="http://twitter.com/<%= teacher["twitter_nickname"] %>" target="_blank">
-                      <i class="fa fa-twitter"></i> <%= teacher["twitter_nickname"] %></p>
+                    <a href="<%= teacher["twitter_url"] %>" target="_blank">
+                      <i class="fa fa-twitter"></i> <%= teacher["twitter_url"].gsub(/http?s:\/\/twitter.com\//, '') %></p>
                     </a>
                   <p>
                 <% end %>
@@ -140,6 +140,32 @@
                 <%= cl_adaptive_image_tag ta["photo_path"], width: 80, height: 80, crop: :fill, class: "img-circle" %>
               <% end %>
               <h4><%= ta["first_name"]%> <%= ta["last_name"]%></h4>
+            </div>
+          <% end %>
+        </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <% unless @staff.nil? %>
+    <div class="container">
+      <h2 class="section-title-home text-center">
+        <div class="section-title-home-content" style="font-size:30px;">
+          Staff
+        </div>
+      </h2>
+    </div>
+
+    <div class="container">
+      <div class="row text-center">
+        <% @staff.each_slice(3).each do |slice| %>
+        <div class="col-xs-12 col-sm-offset-<%= (12 % slice.count) / 2 %>">
+          <% slice.each do |member| %>
+            <div class="col-xs-6 col-sm-<%= 12 / slice.count %> ta-card">
+              <%= cl_adaptive_image_tag member[:avatar_id], width: 100, height: 100, crop: :fill, gravity: :face, class: "img-circle" %>
+              <h4><strong><%= member[:name]%></strong></h4>
+              <h4><%= member[:role] %></h4>
             </div>
           <% end %>
         </div>

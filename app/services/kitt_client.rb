@@ -28,23 +28,35 @@ class KittClient
   #   end
   # end
 
-  # def city_groups
-  #   from_cache(:city_groups) do
-  #     get("#{@base_url}/city_groups")["groups"]
-  #   end
-  # end
+  def city_groups
+    Static::CITIES.map do |group|
+      slugs = group[:cities]
+      slugs_query = slugs.to_query('slugs')
+      from_cache(:city_groups, slugs.join(',')) do
+        group[:cities] = get("#{@base_url}/cities?#{slugs_query}")["cities"]
+      end
+      group
+    end
+  end
 
-  # def city_slugs
-  #   from_cache(:city_slugs) do
-  #     get("#{@base_url}/cities/slugs")["slugs"]
-  #   end
-  # end
+  def city_slugs
+    #TODO how to invalidate this cache?
+    from_cache(:city_slugs) do
+      get("#{@base_url}/cities/slugs")["slugs"]
+    end
+  end
 
-  # def city(slug_or_id)
-  #   from_cache(:city, slug_or_id) do
-  #     Api::City.new(get("#{@base_url}/cities/#{slug_or_id}")["city"])
-  #   end
-  # end
+  def city(slug)
+    from_cache(:city, slug) do
+      Api::City.new(get("#{@base_url}/cities/#{slug}"))
+    end
+  end
+
+  def teachers(city_slug)
+    from_cache(:teachers, city_slug) do
+      get("#{@base_url}/cities/#{city_slug}/teachers")["team"]
+    end
+  end
 
   private
 

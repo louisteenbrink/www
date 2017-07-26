@@ -18,18 +18,17 @@ class Testimonial
   end
 
   def city
-    AlumniClient.new.city(@hash['city_slug'])
+    KittClient.new.city(@hash['city_slug'])
   rescue RestClient::ResourceNotFound
     nil
   end
 
   def project
-    projects = KittClient.new.products
-    projects.select { |project| project["slug"] == @hash['project_slug'] }.first
+    KittClient.new.products([@project_slug]).first
   end
 
   def batch_thumbnail
-    AlumniClient.new.batch(@hash['batch_slug'], slug: true)
+    KittClient.new.batch(@batch_slug)
   end
 
   def picture_url

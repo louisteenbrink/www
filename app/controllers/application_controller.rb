@@ -68,10 +68,9 @@ class ApplicationController < ActionController::Base
 
   def load_cities
     # needed in navbar
-    @city_groups = @client.city_groups
-
+    @city_groups = @kitt_client.city_groups
     # needed in footer
-    @cities = @city_groups.map { |city_group| city_group['cities'] }.flatten
+    @cities = @city_groups.map { |city_group| city_group[:cities] }.flatten
   end
 
   def set_clients
