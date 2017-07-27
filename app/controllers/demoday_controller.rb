@@ -7,12 +7,12 @@ class DemodayController < ApplicationController
     end
 
     @selected_product_slug = params[:product_slug]
-    @batch = @kitt_client.camp(params[:id])
+    @batch = @kitt_client.batch(params[:id])
     if @selected_product_slug
       @selected_product = @batch.products.select { |p| p["slug"] == @selected_product_slug }.first
       return redirect_to demoday_path(params[:id]) unless @selected_product
     end
-    @batches = @client.completed.reverse  # For batch selector
+    @batches = @kitt_client.batches("completed") # For batch selector
   end
 
   def index

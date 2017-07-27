@@ -21,6 +21,11 @@ class KittClient
     Api::Batch.new get("#{@base_url}/camps/#{slug}")
   end
 
+  def batches(filter = "all")
+    if filter == 'completed'
+      get("#{@base_url}/camps/completed")["batches"].map { |json| Api::Batch.new(json) }
+    end
+  end
 
   # def cities
   #   from_cache(:cities) do
