@@ -1,4 +1,4 @@
-<%= content_for(:title)       { (t ".meta_title_html", count: @kitt_client.products(Static::PROJECTS[:top]).length).html_safe } %>
+<%= content_for(:title)       { (t ".meta_title_html", count: @projects).length).html_safe } %>
 <%= content_for(:description) { t ".meta_description" } %>
 <%= content_for(:image_url) { image_url "social/projects_card.jpg" } %>
 
