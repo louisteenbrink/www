@@ -27,7 +27,7 @@
 #
 
 class Live < ApplicationRecord
-  CATEGORIES = %w(demoday aperotalk)
+  CATEGORIES = %w(demoday event)
 
   belongs_to :user, required: true
 
@@ -39,7 +39,7 @@ class Live < ApplicationRecord
     live.validates :batch_slug, presence: true, uniqueness: true
   end
 
-  with_options if: :aperotalk? || :workshop? do |live|
+  with_options if: :event? do |live|
     live.validates :city_slug, presence: true
     live.validates :title, presence: true
     live.validates :description, length: { maximum: 300 }
@@ -51,12 +51,8 @@ class Live < ApplicationRecord
     category == 'demoday'
   end
 
-  def aperotalk?
-    category == 'aperotalk'
-  end
-
-  def workshop?
-    category == 'workshop'
+  def event?
+    category == 'event'
   end
 
   def self.running_now
