@@ -32,12 +32,14 @@ class Live < ApplicationRecord
   belongs_to :user, required: true
 
   has_attachment :meta_image
+  has_attachment :company_logo
+  has_attachment :interviewee_picture
 
   with_options if: :demoday? do |live|
     live.validates :batch_slug, presence: true, uniqueness: true
   end
 
-  with_options if: :aperotalk? do |live|
+  with_options if: :aperotalk? || :workshop? do |live|
     live.validates :city_slug, presence: true
     live.validates :title, presence: true
     live.validates :description, length: { maximum: 300 }
@@ -51,6 +53,10 @@ class Live < ApplicationRecord
 
   def aperotalk?
     category == 'aperotalk'
+  end
+
+  def workshop?
+    category == 'workshop'
   end
 
   def self.running_now
