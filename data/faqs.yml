@@ -270,21 +270,25 @@ pt-BR:
         que o seu embarque é definitivo. O saldo restante da fatura deverá ser pago em outras duas
         vezes durante a duração da formação.
   - question: |
-        Devo levar o meu computador ?
+        Devo levar o meu computador?
     answer: |
         Sim, todos os alunos devem ter um laptop.
         Nós utilisaremos Mac OS X ou Linux, se você só tiver Windows
         não se preocupe, o primeiro dia é dedicado para instalar
         Linux na sua máquina (em _dual boot_ ao lado do Windows).
   - question: |
-        Tenho menos de 18 anos, posso me candidatar ?
+        Tenho menos de 18 anos, posso me candidatar?
     answer: |
         Sentimos muito, mas essa formação é exclusiva para maiores.
   - question: |
-        Quanto custa ? Quando começa a próxima sessão ?
+        Quanto custa ? Quando começa a próxima sessão?
     answer: |
         Depende da cidade ! Você encontrará os valores e todas as próximas partidas do Wagon na
         página [**Apply**](/apply).
+  - question: |
+        Há algum apoio para quem é de outra cidade?
+    answer: |
+        Em São Paulo você pode contar com a parceria Le Wagon e B2bee. A B2bee é a melhor plataforma de coliving que ajudará você encontrar o lugar ideal com preço acessível e sem burocracia. Acesse o site da [B2bee](https://www.b2bee.com.br) para saber mais! Por enquanto essa facilidade só está disponível em São Paulo.
 
 
 en:
@@ -423,7 +427,7 @@ zh-CN:
         课程收费是多少？什么时候开始？
     answer: |
         答案因城市而异！请在[申请]（/申请）页面浏览不同选项.
-        
+
 es:
   - question: |
         What's the application process to Le Wagon?
@@ -446,10 +450,10 @@ es:
   - question: |
         What language are the classes taught in?
     answer:
-      - | 
+      - |
           In Barcelona and most of the other cities, it's **all in English**! You can check the language of the next batch on the "Apply" page.
-      - | 
-          In France the program is taught in **French**. 
+      - |
+          In France the program is taught in **French**.
   - question: |
         What will I be able to build at the end of 9 weeks?
     answer: |
