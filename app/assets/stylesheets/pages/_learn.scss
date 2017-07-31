@@ -8,6 +8,10 @@
 
   .banner-enterprise {
     height: calc(100vh - 180px);
+
+    @media(max-width: 520px) {
+      height: auto;
+    }
   }
   .email-error {
     color: $red !important;
