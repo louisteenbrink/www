@@ -1,7 +1,9 @@
 module CityCustomHelper
   def post_price
     {
-      montreal: t('montreal.post_price')
+      montreal: t('montreal.post_price'),
+      "aix-marseille": "early bird (<strike><em>5500 €</em></strike>)".html_safe,
+      "bordeaux": "early bird (<strike><em>5500 €</em></strike>)".html_safe
     }.stringify_keys
   end
 
