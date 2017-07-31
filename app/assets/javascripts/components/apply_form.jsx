@@ -136,7 +136,7 @@ class ApplyForm extends React.Component {
                       <div>
                         <span>{this.props.i18n.price + ": "}</span>
                         <strong>{this.state.activeBatch.price}</strong>
-                        <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}}></span>
+                        <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}} style={{'padding-left' : '4px'}}></span>
                       </div>
                     </div>
                     {submitButton}
