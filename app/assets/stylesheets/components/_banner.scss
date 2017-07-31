@@ -196,7 +196,8 @@
 }
 @media(max-width: $screen-xs) {
   .banner-cta a {
-    margin-top: 0px;
+    margin: 0;
+    width: 100%;
     border-radius: 0px !important;
   }
 }
