@@ -88,6 +88,7 @@ Rails.application.routes.draw do
     get "vae" => "pages#vae", as: :vae
     get "cgv" => "pages#cgv", as: :cgv
     get "lemoisducode" => "pages#lemoisducode", as: :lemoisducode
+    get "react" => "pages#react", as: :react
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city
