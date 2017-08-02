@@ -60,7 +60,7 @@
           <% @cities.each do |city| %>
             <div>
               <%= link_to city_path(city: city["slug"]) do %>
-                <% if @city && @city['slug'] == city['slug'] %>
+                <% if @city && @city["slug"] == city["slug"] %>
                   <% city_name = "<strong>#{city["name"]}</strong>".html_safe %>
                 <% else %>
                   <% city_name = city["name"] %>

@@ -14,7 +14,7 @@ class PagesController < ApplicationController
           if @live.demoday?
             redirect_to demoday_path(@live.batch_slug)
           else
-            @city = @client.city(@live.city_slug)
+            @city = @kitt_client.city(@live.city_slug)
           end
         end
       end
@@ -43,7 +43,7 @@ class PagesController < ApplicationController
     else
       @apply = Apply.find(session[:apply_id])
       @city = @cities.find { |city| city["id"] == @apply.city_id }
-      @batch = @client.batch(@apply.batch_id)
+      @batch = @kitt_client.batch(@apply.batch_id)
     end
   end
 

@@ -75,7 +75,7 @@
               <div class="card-city-body">
                 <h3><%= city["name"] %></h3>
                 <div class="project-item-makers card-city-teachers">
-                  <% @client.staff(city['slug'])["teachers"].take(3).each do |teacher| %>
+                  <% @kitt_client.teachers(city["slug"])["teachers"].take(3).each do |teacher| %>
                     <div class="project-item-maker">
                       <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
                     </div>

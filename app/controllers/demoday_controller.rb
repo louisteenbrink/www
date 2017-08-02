@@ -16,7 +16,7 @@ class DemodayController < ApplicationController
   end
 
   def index
-    completed_batches = @client.completed
+    completed_batches = @kitt_client.batches('completed')
     latest_batch = (completed_batches.select do |b|
       b.youtube_demo_id.present? && b.city['course_locale'].to_sym == I18n.locale
     end).last || completed_batches.select { |b| b.slug.to_i == 36 }.first

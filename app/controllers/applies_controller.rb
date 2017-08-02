@@ -130,13 +130,13 @@ class AppliesController < ApplicationController
     end
 
     @apply_city_groups = @city_groups.map do |city_group|
-      slugs = city_group['cities'].map { |city| city['slug'] }
+      slugs = city_group[:cities].map { |city| city['slug'] }
       apply_city_group = city_group.clone
-      apply_city_group['cities'] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city['slug']) }
+      apply_city_group[:cities] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city['slug']) }
       apply_city_group
     end
 
-    @city_group = @apply_city_groups.find { |city_group| city_group['cities'].map { |city| city['slug'] }.include?(@city['slug']) } unless @city.nil?
+    @city_group = @apply_city_groups.find { |city_group| city_group[:cities].map { |city| city['slug'] }.include?(@city['slug']) } unless @city.nil?
   end
 
   def application_params
