@@ -33,10 +33,6 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def render_500
-    render 'pages/500', status: 500
-  end
-
   before_action :better_errors_hack, if: -> { Rails.env.development? }
 
   def better_errors_hack
