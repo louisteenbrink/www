@@ -226,6 +226,7 @@ GEM
     puma (3.9.1)
     pygmentize (0.0.3)
     rack (2.0.3)
+    rack-cors (0.4.0)
     rack-mini-profiler (0.10.1)
       rack (>= 1.2.0)
     rack-protection (1.5.3)
@@ -413,6 +414,7 @@ DEPENDENCIES
   pry-rails
   puma
   pygmentize
+  rack-cors
   rack-mini-profiler
   rack-utf8_sanitizer
   rails (= 5.1.3)
