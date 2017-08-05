@@ -4,6 +4,7 @@ require 'open-uri'
 
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: :render_404
+  before_action :fetch_critical_css, if: -> { Rails.env.production? }
   before_action :set_locale
   before_action :set_client
   before_action :set_live
@@ -29,7 +30,7 @@ class ApplicationController < ActionController::Base
   def render_404
     respond_to do |format|
       format.html { render 'pages/404', status: :not_found }
-      format.all { render text: 'Not Found', status: :not_found }
+      format.all { render plain: 'Not Found', status: :not_found }
     end
   end
 
@@ -76,5 +77,12 @@ class ApplicationController < ActionController::Base
 
   def set_live
     @live = Live.running_now
+  end
+
+  def fetch_critical_css
+    if request.get?
+      @critical_css = CriticalPathCss.fetch(request.path)
+      GenerateCriticalCssJob.perform_later(request.path) if @critical_css.empty?
+    end
   end
 end
