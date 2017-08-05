@@ -25,7 +25,11 @@ class ApplicationController < ActionController::Base
   rescue_from RestClient::ResourceNotFound, with: :render_404  # From Alumni API
 
   def default_url_options
-    { locale: ((I18n.locale == I18n.default_locale) ? nil : I18n.locale) }
+    {
+      locale: ((I18n.locale == I18n.default_locale) ? nil : I18n.locale),
+      protocol: Rails.env.production? ? 'https' : 'http',
+      host: (ENV['HOST'] || "localhost:3000")
+    }
   end
 
   def render_404
