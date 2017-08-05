@@ -7,8 +7,9 @@ GIT
       rails (>= 3.2)
 
 GIT
-  remote: https://github.com/mudbugmedia/critical-path-css-rails.git
-  revision: 47d7896d563dd08729d88f053af26889192cccfe
+  remote: https://github.com/lewagon/critical-path-css-rails.git
+  revision: 55b4f7c0b30efbbe9724223a94f4e0a580d08482
+  branch: do-not-enhance-assets-precompile
   specs:
     critical-path-css-rails (0.4.0)
       phantomjs (~> 2.1)

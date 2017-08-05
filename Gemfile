@@ -51,7 +51,7 @@ gem "linkedin-oauth2", "~> 1.0"
 gem 'kaminari'
 gem "nokogiri"
 
-gem 'critical-path-css-rails', git: 'https://github.com/mudbugmedia/critical-path-css-rails.git'
+gem 'critical-path-css-rails', git: 'https://github.com/lewagon/critical-path-css-rails.git', branch: 'do-not-enhance-assets-precompile'
 
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'
