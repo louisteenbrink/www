@@ -62,4 +62,8 @@ module ApplicationHelper
     opt[:srcset] = "#{image_url} 1x, #{image_url_2x} 2x"
     return cl_image_tag image_path, opt
   end
+
+  def critical_css
+    raw @critical_css
+  end
 end

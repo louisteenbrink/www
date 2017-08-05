@@ -38,10 +38,17 @@
   <% end %>
 
   <%= yield(:headers) %>
-
-  <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 
+  <% if Rails.env.production? && critical_css.present? %>
+    <style><%= critical_css %></style>
+    <%= tag :link, as: 'style', href: stylesheet_path('application'), onload: raw("this.rel='stylesheet'"), rel: 'preload' %>
+    <noscript>
+      <%= stylesheet_link_tag 'application', media: 'all' %>
+    </noscript>
+  <% else %>
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  <% end %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
   <%# render "shared/ondemand" if I18n.locale == :fr %>
