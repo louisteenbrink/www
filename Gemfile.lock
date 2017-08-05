@@ -6,14 +6,6 @@ GIT
       cloudinary (~> 1.1.0)
       rails (>= 3.2)
 
-GIT
-  remote: https://github.com/lewagon/critical-path-css-rails.git
-  revision: 55b4f7c0b30efbbe9724223a94f4e0a580d08482
-  branch: do-not-enhance-assets-precompile
-  specs:
-    critical-path-css-rails (0.4.0)
-      phantomjs (~> 2.1)
-
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -104,6 +96,8 @@ GEM
     colorize (0.8.1)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
+    critical-path-css-rails (0.4.0)
+      phantomjs (~> 2.1.1)
     debug_inspector (0.0.2)
     devise (4.3.0)
       bcrypt (~> 3.0)
@@ -399,7 +393,7 @@ DEPENDENCIES
   capybara
   cloudinary
   coffee-rails
-  critical-path-css-rails!
+  critical-path-css-rails
   devise (~> 4.3.0)
   email_validator
   figaro
