@@ -38,20 +38,20 @@ module ApplicationHelper
   end
 
   def author_image_tag(slug)
-    image_tag proxy_path(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}")
+    image_tag proxy_url(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}")
   end
 
   def post_image_url(slug)
     return slug if slug =~ /^http/  # Handy to quickly try a post background image from a URL.
-    proxy_path url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
+    proxy_url url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
   end
 
   def content_post_image_tag(slug)
-    image_tag proxy_path(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}")
+    image_tag proxy_url(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}")
   end
 
   def video_image_tag(slug)
-    proxy_path url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/#{slug}"
+    proxy_url url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/#{slug}"
   end
 
   def cl_adaptive_image_tag(image_path, opt={})
