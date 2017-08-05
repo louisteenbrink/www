@@ -6,6 +6,8 @@ end
 Rails.application.routes.draw do
   mount Attachinary::Engine => "/attachinary"
 
+  get "/proxy", to: 'proxy#show'
+
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
 
   namespace :admin do
