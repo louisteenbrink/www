@@ -1,3 +1,5 @@
+require 'digest/sha1'
+
 class Testimonial
   DEFAULT_ROUTE = "home"
 
@@ -34,6 +36,10 @@ class Testimonial
 
   def picture_url
     "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}"
+  end
+
+  def cache_key
+    "#{first_name}:#{last_name}:#{Digest::SHA1.hexdigest(content_html)}"
   end
 
   def self.where(options = {})

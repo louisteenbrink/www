@@ -1,3 +1,12 @@
+<% cache ['navbar',
+    Digest::SHA1.hexdigest(@top_bar_message || ""),
+    Digest::SHA1.hexdigest(@top_bar_cta || ""),
+    @hide_language_selector,
+    @city_groups.map { |cg| cg["cities"].map { |c| c["name"] } }.flatten,
+    params[:action],
+    Static::ONDEMAND_TRACKS.map { |track| track[:slug] },
+    I18n.locale ] do %>
+
 <% if @top_bar_message.present? && @top_bar_cta.present? %>
   <div id="sticky-banner">
     <i><%= @top_bar_message %>, <%= link_to @top_bar_cta, @top_bar_url %> 📺</i>
@@ -168,3 +177,4 @@
     </div>
   </div>
 </div>
+<% end %>

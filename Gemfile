@@ -1,7 +1,8 @@
 source "https://rubygems.org"
 ruby File.read(".ruby-version").strip
 
-gem "rails", "5.1.1"
+gem "rails", "5.1.3"
+gem "puma"
 gem "jbuilder"
 gem 'responders', '~> 2.0'
 gem "pg", '~> 0.20'
@@ -70,12 +71,9 @@ group :development do
   gem "binding_of_caller"
   gem "better_errors"
   gem 'rack-mini-profiler'
+  gem 'httplog'
 end
 
 group :test do
   gem "capybara"
-end
-
-group :production do
-  gem "puma"
 end
