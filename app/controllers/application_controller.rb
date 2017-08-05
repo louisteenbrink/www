@@ -5,6 +5,7 @@ require 'open-uri'
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: :render_404
   before_action :fetch_critical_css, if: -> { Rails.env.production? }
+  before_action :better_errors_hack, if: -> { Rails.env.development? }
   before_action :set_locale
   before_action :set_client
   before_action :set_live
@@ -84,5 +85,9 @@ class ApplicationController < ActionController::Base
       @critical_css = CriticalPathCss.fetch(request.path)
       GenerateCriticalCssJob.perform_later(request.path) if @critical_css.empty?
     end
+  end
+
+  def better_errors_hack
+    request.env['puma.config'].options.user_options.delete(:app) if request.env.has_key?('puma.config')
   end
 end

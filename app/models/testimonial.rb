@@ -1,6 +1,8 @@
 require 'digest/sha1'
 
 class Testimonial
+  include Rails.application.routes.url_helpers
+
   DEFAULT_ROUTE = "home"
 
   class RecordNotFound < Exception; end
@@ -35,7 +37,7 @@ class Testimonial
   end
 
   def picture_url
-    "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}"
+    proxy_path url: "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}"
   end
 
   def cache_key
