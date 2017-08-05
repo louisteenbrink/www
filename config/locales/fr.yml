@@ -2,7 +2,7 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
-  top_bar_message: Découvrez ce que nos étudiants codent en 9 semaines
+  top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
   shared:
     positions:
