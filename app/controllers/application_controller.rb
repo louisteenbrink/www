@@ -80,7 +80,7 @@ class ApplicationController < ActionController::Base
   end
 
   def fetch_critical_css
-    if request.get?
+    if request.get? && request.format.html?
       @critical_css = CriticalPathCss.fetch(request.path)
       GenerateCriticalCssJob.perform_later(request.path) if @critical_css.empty?
     end
