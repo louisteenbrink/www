@@ -1,57 +1,66 @@
 source 'https://rubygems.org'
 ruby File.read('.ruby-version').strip
 
-gem 'devise', '~> 4.3.0'
+# Core
 gem 'figaro'
 gem 'jbuilder'
-gem 'meetup_client'
-gem 'omniauth-github'
+gem 'json', '2.0.2'
 gem 'pg', '~> 0.20'
 gem 'puma'
+gem 'rack-cors'
+gem 'rack-utf8_sanitizer'
 gem 'rails', '5.1.3'
 gem 'redis'
 gem 'redis-rails'
-gem 'responders', '~> 2.0'
-gem 'rest-client'
-gem 'simple_form', '~> 3.5'
 
+# Enhacements
 gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'sidekiq_snitch'
 
-gem 'appsignal'
+# Addons
+gem 'devise', '~> 4.3.0'
+gem 'email_validator'
+gem 'money-rails'
+gem 'nokogiri'
+gem 'rails-i18n'
+gem 'simple_form', '~> 3.5'
+gem 'sitemap_generator'
+
+# Assets
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
-gem 'builder'
-gem 'email_validator'
+gem 'coffee-rails'
+gem 'critical-path-css-rails'
 gem 'font-awesome-sass'
-gem 'gibbon'
 gem 'jquery-rails'
 gem 'js-routes'
-gem 'json', '2.0.2'
 gem 'lodash-rails'
-gem 'money-rails'
-gem 'pygmentize'
-gem 'rack-cors'
-gem 'rack-utf8_sanitizer'
-gem 'rails-i18n'
 gem 'react-bootstrap-rails'
 gem 'react-rails', '1.10.0'
-gem 'redcarpet'
-gem 'ruby-trello'
 gem 'sass-rails', '~> 5.0'
-gem 'sitemap_generator'
 gem 'uglifier'
 
+# Api Clients
+gem 'appsignal'
+gem 'gibbon'
+gem 'linkedin-oauth2', '~> 1.0'
+gem 'meetup_client'
+gem 'omniauth-github'
+gem 'rest-client'
+gem 'ruby-trello'
+
+# Markdown
+gem 'pygmentize'
+gem 'redcarpet'
+
+# Images
 gem 'attachinary', github: 'assembler/attachinary'
 gem 'cloudinary'
-gem 'coffee-rails'
 gem 'jquery-fileupload-rails'
-gem 'kaminari'
-gem 'linkedin-oauth2', '~> 1.0'
-gem 'nokogiri'
 
-gem 'critical-path-css-rails'
+# Pagination
+gem 'kaminari'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-classnames'
