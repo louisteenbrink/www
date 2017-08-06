@@ -1,6 +1,6 @@
 class GenerateCriticalCssJob < ActiveJob::Base
   def perform(route)
-    return if route.nil? || CriticalPathCss.fetch(route).empty?
+    return if route.nil?
     CriticalPathCss.generate route
   end
 
