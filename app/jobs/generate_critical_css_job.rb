@@ -1,7 +1,8 @@
 class GenerateCriticalCssJob
   include Sidekiq::Worker
   sidekiq_options queue: :default,
-                  unique: :until_executing,
+                  unique: :until_and_while_executing,
+                  unique_expiration: 1.minute,
                   unique_args: :unique_args
 
   def perform(route)
