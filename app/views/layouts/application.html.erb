@@ -42,7 +42,6 @@
 
   <% if Rails.env.production? && critical_css.present? %>
     <style><%= critical_css %></style>
-    <%= tag :link, as: 'style', href: stylesheet_path('application'), onload: raw("this.rel='stylesheet'"), rel: 'preload' %>
     <noscript>
       <%= stylesheet_link_tag 'application', media: 'all' %>
     </noscript>
@@ -60,6 +59,7 @@
 
   <%= render "shared/footer" %>
 
+  <%= stylesheet_link_tag("application") %>
   <%= render "shared/iubenda" %>
   <%= javascript_include_tag :application, async: true %>
   <%= yield(:after_js) %>
