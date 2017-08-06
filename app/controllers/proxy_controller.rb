@@ -1,35 +1,31 @@
 require "mini_magick"
 
 class ProxyController < ActionController::Base
-  include Cache
-  ALLOWED_ORIGINS = [
-    /https?:\/\/raw.githubusercontent.com/
-  ]
-
-  DEFAULT_JPEG_QUALITY = 90
+  include ActiveSupport::SecurityUtils
+  before_action :set_proxy_service
+  before_action :check_signature
 
   def show
     url = params[:url]
-    width = params[:width].to_i
     height = params[:height].to_i
-    quality = params[:quality].to_i > 0 ? params[:quality].to_i : DEFAULT_JPEG_QUALITY
+    width = params[:width].to_i
+    quality = params[:quality].to_i > 0 ? params[:quality].to_i : nil
 
-    if ALLOWED_ORIGINS.any? { |origin| url =~ origin }
-      image = from_cache(:proxy, url, width, height, quality, expire: 1.month) do
-        mm_image = MiniMagick::Image.open(url)
-        mm_image.resize "#{height}x#{width}" if height > 0 && width > 0
-        mm_image.format "jpg"
-        mm_image.quality quality
-        {
-          blob: mm_image.to_blob,
-          type: mm_image.mime_type,
-          name: URI.parse(url).path.split("/").last
-        }
-      end
-      expires_in 1.month, public: true
-      send_data image[:blob], type: image[:type], filename: image[:name], disposition: :inline
-    else
-      render plain: 'Not Authorized', status: 403
+    image = @proxy.image(url, height, width, quality)
+    expires_in 1.month, public: true
+    send_data image.blob, type: image.type, filename: image.name, disposition: :inline
+  end
+
+  private
+
+  def set_proxy_service
+    @proxy = ProxyService.new
+  end
+
+  def check_signature
+    unless secure_compare(@proxy.sign(params.to_unsafe_h), params[:signature])
+      render plain: 'Signature Error', status: 403
+      return false
     end
   end
 end

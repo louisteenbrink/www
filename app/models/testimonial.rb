@@ -2,6 +2,7 @@ require 'digest/sha1'
 
 class Testimonial
   include Rails.application.routes.url_helpers
+  include ProxyHelper
 
   DEFAULT_ROUTE = "home"
 
@@ -41,7 +42,7 @@ class Testimonial
   end
 
   def picture_url(height, width, quality)
-    proxy_url \
+    proxy_url_with_signature \
       host: Rails.configuration.action_mailer.default_url_options[:host],
       url: "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}",
       height: height,
