@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'wait_for_ajax'
 
 RSpec.describe 'Free Track Page', type: :feature do
   it 'fails if bad email', js: true do
@@ -27,7 +28,7 @@ RSpec.describe 'Free Track Page', type: :feature do
 
     expect do
       click_button 'prospect_submit'
-      sleep(3)
+      wait_for_ajax
     end.to change { Prospect.count }.by(1)
     expect(page.current_path).to eq '/learn-to-code'
     expect(page).to have_selector('.email-error', visible: false)
