@@ -9,7 +9,7 @@ RSpec.describe 'Free Track Page', type: :feature, js: true do
 
     click_button 'prospect_submit'
 
-    expect(page).to have_css('#prospect_email.error')
+    expect(page).to have_css('input#prospect_email.error')
   end
 
   it 'prefills the city if specified in params' do
