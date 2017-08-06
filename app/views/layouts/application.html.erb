@@ -42,6 +42,8 @@
 
   <% if Rails.env.production? && critical_css.present? %>
     <style><%= critical_css %></style>
+  <% else %>
+    <%= stylesheet_link_tag("application") %>
   <% end %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
@@ -54,7 +56,9 @@
 
   <%= render "shared/footer" %>
 
-  <%= stylesheet_link_tag("application") %>
+  <% if Rails.env.production? && critical_css.present? %>
+    <%= stylesheet_link_tag("application") %>
+  <% end %>
   <%= render "shared/iubenda" %>
   <%= javascript_include_tag :application, async: true %>
   <%= yield(:after_js) %>
