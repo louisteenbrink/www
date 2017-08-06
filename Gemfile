@@ -42,6 +42,7 @@ gem 'sitemap_generator'
 gem 'builder'
 gem 'rack-utf8_sanitizer'
 gem 'rack-cors'
+gem 'mini_magick', require: false # Rquire only in ProxyController
 
 gem 'cloudinary'
 gem "attachinary", github: "assembler/attachinary"

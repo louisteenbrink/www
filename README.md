@@ -4,15 +4,18 @@
 
 ## Dependencies
 
-You need Postgresql and Redis running on your computer.
+You need Postgresql and Redis running on your computer. You also need [ImageMagick](http://brewformulas.org/Imagemagick)
 
-## Cache
+## Setup
 
-You can run this in development to bypass the API cache.
+After cloning the project, run:
 
+```bash
+bundle install
+bin/rails db:create db:schema:load
 ```
-$ DISABLE_CACHE=true rails s
-```
+
+Then ask for the ENV variables below before starting your `bin/rails s` server.
 
 ## Configuration
 
@@ -27,6 +30,14 @@ The bare minimum variables you need to start the website are:
 ALUMNI_WWW_SHARED_SECRET: "ask_for_it"
 ALUMNI_WWW_ENCRYPTING_KEY: "ask_for_it"
 CLOUDINARY_URL: "ask_for_it"
+```
+
+## Cache
+
+You can run this in development to bypass the API cache.
+
+```
+$ DISABLE_CACHE=true rails s
 ```
 
 ## API Development

@@ -27,6 +27,10 @@ class Testimonial
     nil
   end
 
+  def name
+    "#{first_name} #{last_name}"
+  end
+
   def project
     projects = AlumniClient.new.projects
     projects.select { |project| project["slug"] == @hash['project_slug'] }.first
@@ -36,10 +40,13 @@ class Testimonial
     AlumniClient.new.batch(@hash['batch_slug'], slug: true)
   end
 
-  def picture_url
+  def picture_url(height, width, quality)
     proxy_url \
       host: Rails.configuration.action_mailer.default_url_options[:host],
-      url: "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}"
+      url: "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}",
+      height: height,
+      width: width,
+      quality: quality
   end
 
   def cache_key
