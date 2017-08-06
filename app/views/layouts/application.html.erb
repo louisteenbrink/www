@@ -42,11 +42,6 @@
 
   <% if Rails.env.production? && critical_css.present? %>
     <style><%= critical_css %></style>
-    <noscript>
-      <%= stylesheet_link_tag 'application', media: 'all' %>
-    </noscript>
-  <% else %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
   <% end %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
