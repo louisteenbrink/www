@@ -77,7 +77,10 @@ class ApplicationController < ActionController::Base
   def fetch_critical_css
     if request.get? && request.format.html?
       @critical_css = CriticalPathCss.fetch(request.path)
-      GenerateCriticalCssJob.perform_later(request.path) if @critical_css.empty?
+      if @critical_css.empty?
+        # Wait 1 minute to be sure that Heroku deployment is complete and server ready.
+        GenerateCriticalCssJob.perform_in(1.minute, request.path)
+      end
     end
   end
 

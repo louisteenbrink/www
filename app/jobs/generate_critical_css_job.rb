@@ -1,5 +1,8 @@
-class GenerateCriticalCssJob < ActiveJob::Base
-  queue_as :default
+class GenerateCriticalCssJob
+  include Sidekiq::Worker
+  sidekiq_options queue: :default,
+                  unique: :until_executing,
+                  unique_args: :unique_args
 
   CSS_SEMAPHOR_NAMESPACE = 'critical-path-css-semaphor'.freeze
 
@@ -10,5 +13,9 @@ class GenerateCriticalCssJob < ActiveJob::Base
     Rails.cache.write(route, 'generating', { namespace: CSS_SEMAPHOR_NAMESPACE, expires_in: 10.minutes })
     CriticalPathCss.generate route
     Rails.cache.delete(route, namespace: CSS_SEMAPHOR_NAMESPACE)
+  end
+
+  def self.unique_args(args)
+    args.first # route
   end
 end
