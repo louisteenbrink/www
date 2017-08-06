@@ -89,7 +89,7 @@ pt-BR:
         Assim trabalham as startups de sucesso.
       startup_toolkit: Use as ferramentas do mundo startup
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         Nós vamos te ensinar como implementar todos esses serviços
         para ser mais eficiente ao lançar seu produto.
         Poupe tempo, use a ferramenta certa para necessidades específicias,
