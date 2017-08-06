@@ -1,10 +1,4 @@
-class GenerateCriticalCssJob
-  include Sidekiq::Worker
-  sidekiq_options queue: :default,
-                  unique: :until_and_while_executing,
-                  unique_expiration: 1.minute,
-                  unique_args: :unique_args
-
+class GenerateCriticalCssJob < ActiveJob::Base
   def perform(route)
     return if route.nil? || CriticalPathCss.fetch(route).empty?
     CriticalPathCss.generate route

@@ -17,7 +17,6 @@ gem 'redis-rails'
 gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'sidekiq_snitch'
-gem 'sidekiq-unique-jobs'
 
 # Addons
 gem 'devise', '~> 4.3.0'
