@@ -2,7 +2,7 @@
 <%= content_for(:description) { "TBD." } %>
 <%= content_for(:image_url) { image_url 'social/tbd.png' } %>
 
-<div class="container">
+<div class="banner-react">
   <h1>Codez votre première application React</h1>
   <div class="circles">
   <div></div>
@@ -10,5 +10,72 @@
   <div></div>
   <span></span>
 </div>
-  <small>Construisez vos composants web d'une manière plus efficace grace à la libraire ReactJS, maîtrisez Redux et JSX6.</small></h1>
+  <small>Construisez vos composants web d'une manière plus efficace grace à la libraire ReactJS, maîtrisez Redux et ES6 .</small></h1>
 </div>
+
+React is completely transforming Front-End Development. Master Facebook’s wildly popular UI library with Udacity and enrol today.
+Enrol by August 28 to be part of the next cohort!
+
+Get the skills and experience you will need to becae a react developer
+
+
+Présentation
+
+*Qu'est-ce que React ?*
+ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.
+
+*Qu'est-ce que Redux ?*
+Redux est une librairie JavaScript dédiée à gérer le flux de données à reverser dans vos différents composants pour mettre à jour leur état, suite à un changement dans votre base de données.
+
+*Faut-il utiliser React quel que soit le projet que vous codez ?*
+Non. React est particulièrement utile et performante lorsque :
+- vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout"),
+- et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …).
+
+En effet, React vous permet de penser vos composants comme des objets, porteurs :
+- de propriétés (ou `props`, données immuables, propres à l'objet),
+- d'états (ou `state`, susceptibles de changer au cours de la vie du composant) et
+- de comportement.
+
+Les deux librairies associées offrent un framework performant pour construire des applications frontend complexes dotées d'une interface dynamique et réactive.
+
+*Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?*
+Oui, depuis la version 5.1 de Rails et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.
+Cette intégration fera l'objet de la dernière journée du programme, détaillé ci-dessous :
+
+*Objectifs*
+- Modéliser ses composants de vue avec React
+- Modéliser sa donnée avec Redux
+- Construire une application complexe avec React + Redux connecté à une API
+- Intégrer React + Redux à une application Rails
+
+*Syllabus*
+- Day 1:
+    - ES6 - babel - webpack - yarn
+    - Prise en main de React - présentation de la classe Component
+    - Notion de `props` et `state`
+    - JSX pour générer le HTML
+    - import / export
+- Day 2:
+    - Combiner des composants React pour faire une App
+    - Récupérer de la donnée en AJAX avec fetch pour alimenter nos composants
+    - Utiliser `map` pour les patterns de listes
+    - Prise en main de Redux - notion de state global au niveau de l'App
+    - Modélisation du state de l'App
+    - Promouvoir les Composants qui ont besoin de connaitre ce state en Containers
+    - Définir les Reducers responsables de reverser les changements de state aux différents Containers
+- Day 3:
+    - Définir les Action creators - Action
+    - Middleware pour le traitement des Promises
+    - Connecter une App frontend à une API REST fournie
+    - React Router pour simuler la navigation sur une SPA
+    - Redux Form pour poster de la donnée sur l'API
+    - Form Validation pour gérer la validité des données postées
+- Day 4:
+    - Testing in React
+    - TDD?
+    - Projet perso ?
+
+- Day 5:
+    - mettre en place React & Redux dans une app Rails fournie
+    - construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)
