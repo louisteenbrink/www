@@ -36,6 +36,7 @@ gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'js-routes'
 gem 'lodash-rails'
+gem 'mini_magick', require: false # Require only in ProxyController
 gem 'react-bootstrap-rails'
 gem 'react-rails', '1.10.0'
 gem 'sass-rails', '~> 5.0'

@@ -51,7 +51,9 @@ RSpec.configure do |config|
   config.infer_spec_type_from_file_location!
 
   config.after(:each) do |scenario|
-    puts page.body unless scenario.exception.nil? && scenario.metadata[:type] == :feature
+    if !scenario.exception.nil? && scenario.metadata[:type] == :feature
+      puts page.body
+    end
   end
 end
 

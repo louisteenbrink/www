@@ -9,7 +9,7 @@
           <%= link_to '', '#', class: 'read-more', "data-toggle" => "modal", 'data-target' => "#fullTestimonial-#{testimonial.github_nickname}" %>
           <div class="testimonial-card">
             <div class="testimonial-body">
-              <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
+              <%= image_tag testimonial.picture_url(109, 109, 90), alt: testimonial.name, class: 'alumni-picture' %>
               <div class='testimonial-content'>
                 <%= raw testimonial.content_html.truncate(120) %>
                 <i class="read-more-text"><%= t('.read_more') %></i>
@@ -40,10 +40,10 @@
                 <div class="row">
                   <div class="col-md-10 col-md-offset-1">
                     <div class="alumni-profil">
-                      <%= image_tag testimonial.picture_url, class: 'alumni-picture' %>
+                      <%= image_tag testimonial.picture_url(109, 109, 90), alt: testimonial.name, class: 'alumni-picture' %>
                       <div class="alumni-details">
                         <h4 class="modal-title">
-                          <%= testimonial.first_name %>  <%= testimonial.last_name %>
+                          <%= testimonial.name %>
                           <% if testimonial.linkedin_url.present? %>
                             <%= link_to testimonial.linkedin_url, target: :_blank, class: 'linkedin' do %>
                               <%= render 'shared/linkedin' %>
