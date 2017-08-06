@@ -82,6 +82,7 @@
   }
 
   .city-dropdown-wrapper {
+    margin-bottom: 0;
     position: relative;
     width: 100%;
     max-width: calc(100% - 10px);
@@ -103,14 +104,15 @@
     }
   }
 
-  .city-dropdown {
+  select#prospect_city {
     position: relative;
     -webkit-appearance: none;
+    -moz-appearance: none;
     margin-right: -10px;
     border-radius: 0;
     border-left: none;
     border-right: none;
-    width: 160px;
+    width: 100%;
   }
 
   .btn {
@@ -145,41 +147,10 @@
   margin-left: 100px;
 
   @media (min-width: 1201px) {
-    left: 620px;
+    left: 50%;
   }
 }
 
-// @media (max-width: 1500px) {
-//   #slideshow img {
-//     height: calc(100vh - 150px);
-//     margin-right: -100px;
-//   }
-// }
-
-// @media (max-width: 1300px) {
-//   #slideshow img {
-//     height: calc(100vh - 150px);
-//     margin-right: -110px;
-//   }
-// }
-
-// @media (max-width: 1200px) {
-//   #slideshow img {
-//     height: calc(100vh - 150px);
-//     margin-right: -300px;
-//   }
-// }
-// @media (max-width: 1000px) {
-//   #slideshow img {
-//     height: calc(100vh - 150px);
-//     margin-right: -550px;
-//   }
-// }
-// @media (max-width: 900px) {
-//   #slideshow img {
-//     display: none;
-//   }
-// }
 @media (max-width: 500px) {
   #invitation-banner {
     text-align: center;
@@ -218,7 +189,7 @@
 
     .form-control {
       border-radius: 3px;
-      min-width: 250px;
+      min-width: 275px;
       height: 64px;
       flex: 1;
     }
@@ -229,63 +200,16 @@
       }
     }
 
-    .city-dropdown {
+    select#prospect_city {
       margin: 10px 0 0 -5px;
       border: 1px solid #ccc;
       box-shadow: none;
+      border-radius: 3px;
     }
 
     .btn {
       border-radius: 3px;
-      min-width: 250px;
-      margin-top: 10px;
-      margin-left: 0px;
-    }
-  }
-}
-
-@media (min-width: 1500px) {
-  #invitation-banner {
-    text-align: center;
-    justify-content: space-around;
-    h1 {
-      font-size: 60px;
-      max-width: 100%;
-    }
-  }
-  #slideshow img {
-    display: none;
-  }
-  #invitation-banner .banner-enterprise {
-    margin: 0px;
-    flex: 1;
-  }
-  #invitation-banner .banner-content {
-    padding-left: 0px;
-    padding-top: 0px;
-    flex: 1;
-  }
-  #invitation-banner .banner-content  p {
-    max-width: 600px;
-    font-size: 25px;
-    margin: auto;
-    margin-bottom: 20px;
-    padding-right: 0px;
-  }
-  .invitation {
-    justify-content: space-around;
-  }
-  .form-invitation {
-    flex-direction: column;
-    .form-control {
-      border-radius: 3px;
-      min-width: 350px;
-      height: 64px;
-      flex: 1;
-    }
-    .btn {
-      border-radius: 3px;
-      min-width: 350px;
+      min-width: 275px;
       margin-top: 10px;
       margin-left: 0px;
     }
