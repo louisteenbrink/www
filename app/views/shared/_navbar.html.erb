@@ -105,7 +105,10 @@
         <hr class='fake-hr hidden-sm hidden-xs'>
       </div>
       </div>
-      <%= link_to root_path, class: 'wagon-link' do %>
+      <%= link_to root_path, class: 'wagon-link hidden-sm hidden-md hidden-lg' do %>
+        <%= render "shared/logos/logo_red" %>
+      <% end %>
+      <%= link_to root_path, class: 'wagon-link hidden-xs' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
       <% if params[:action] =~ /hec/ %>

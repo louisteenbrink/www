@@ -401,6 +401,14 @@
     position: relative;
     top: 2px;
   }
+  @media(max-width: $screen-sm) {
+    svg {
+      background-color: transparent;
+      border-radius: 0;
+      height: 60px;
+      width: calc(2.97 * 60px);
+    }
+  }
 }
 
 .applies-new {
