@@ -86,7 +86,7 @@ es:
         Así trabajan las startups de éxito.
       startup_toolkit: Trabaja con los servicios esenciales
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         Te enseñaremos como implementar estos servicios para
         ganar eficiencia y lanzar productos con agilidad.
         Ahorra tiempo, utiliza la herramienta adecuada para cada necesidad.

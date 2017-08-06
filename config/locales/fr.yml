@@ -98,7 +98,7 @@ fr:
         Apprenez à travailler avec la méthodologie des meilleures startups.
       startup_toolkit: Utilisez les outils des startups
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         Nous vous apprendrons à implémenter toutes ces solutions
         pour être plus efficace quand vous lancez un nouveau produit.
         Gagnez du temps, utilisez le bon outil pour la bonne raison.
