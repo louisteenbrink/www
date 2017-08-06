@@ -88,4 +88,6 @@ end
 
 group :test do
   gem 'capybara'
+  gem 'capybara-selenium'
+  gem 'chromedriver-helper'
 end
