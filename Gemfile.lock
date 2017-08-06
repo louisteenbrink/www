@@ -56,7 +56,7 @@ GEM
       rack
       thread_safe
     arel (8.0.0)
-    autoprefixer-rails (6.6.0)
+    autoprefixer-rails (7.1.2.3)
       execjs
     aws_cf_signer (0.1.3)
     babel-source (5.8.35)
@@ -389,7 +389,6 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
-  builder
   capybara
   cloudinary
   coffee-rails
@@ -433,7 +432,6 @@ DEPENDENCIES
   redcarpet
   redis
   redis-rails
-  responders (~> 2.0)
   rest-client
   rspec-rails (~> 3.6)
   ruby-trello
