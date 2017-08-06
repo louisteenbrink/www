@@ -16,7 +16,7 @@
       <p class="email-error hidden">Your email is not valid :(</p>
       <div class="invitation">
         <%= simple_form_for @prospect, html: { class: 'form-invitation' }, remote: true do |f| %>
-          <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false %>
+          <%= f.input :email, as: :email, label: false, placeholder: 'you@gmail.com', wrapper: false, error: false %>
           <div class="city-dropdown-wrapper">
             <%= f.input :city,
               collection: @cities.sort_by { |c| c['name'] },
@@ -28,7 +28,7 @@
               selected: @cities.find { |c| c['slug'] == params[:city] } ? params[:city] : 'paris' %>
           </div>
           <%= f.input :from_path, as: :hidden %>
-          <%= f.submit "Get my invitation", class: "btn btn-danger" %>
+          <%= f.submit 'Get my invitation', class: 'btn btn-danger', id: 'prospect_submit' %>
         <% end %>
       </div>
     </div>
