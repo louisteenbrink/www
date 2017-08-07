@@ -3,79 +3,195 @@
 <%= content_for(:image_url) { image_url 'social/tbd.png' } %>
 
 <div class="banner-react">
-  <h1>Codez votre première application React</h1>
+  <h1><small>Get the skills and experience you will need to</small>become a react developer</h1>
+  <!-- React Logo animation -->
   <div class="circles">
-  <div></div>
-  <div></div>
-  <div></div>
-  <span></span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <span></span>
+  </div>
+  <ul class="pricing">
+    <li>€2,500</li>
+    <li>€900</li>
+  </ul>
+  <i>60% off for the first 10 applicants</i>
+  <a class="button btn btn-danger">Book your seat now</a>
 </div>
-  <small>Construisez vos composants web d'une manière plus efficace grace à la libraire ReactJS, maîtrisez Redux et ES6 .</small></h1>
+
+
+<div class="container react-content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="section-intro">
+        <h2>Présentation</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum eu metus in fermentum. Nulla facilisi. Maecenas vitae nisl nec magna efficitur porttitor sed vel mauris. Pellentesque urna felis, ultrices ut ipsum at, sodales commodo lacus. Aliquam imperdiet enim ac pharetra sagittis. Duis in urna tortor.</p>
+      </div>
+
+      <div class="section section-goals">
+        <h2>Objectifs <%= image_tag 'technos/react.svg', class: "tech-icon" %> + <%= image_tag 'technos/redux.svg', class: "tech-icon" %> + <%= image_tag 'technos/rails.svg', class: "tech-icon" %></h2>
+        <p>
+          <ul>
+            <li><i>1</i>Modéliser ses composants de vue avec React</li>
+            <li><i>2</i>Modéliser sa donnée avec Redux</li>
+            <li><i>3</i>Construire une application complexe avec React + Redux connecté à une API</li>
+            <li><i>4</i>Intégrer React + Redux à une application Rails</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="section section-requirement">
+        <h2>Pré-requis</h2>
+        <p>
+          <ul>
+            <li>Être à l'aise avec JavaScript</li>
+            <li>Les bases d'ES6</li>
+            <li>API REST</li>
+            <li>Rails</li>
+          </ul>
+        </p>
+      </div>
+
+      <div class="section section-syllabus">
+        <h2>What will you learn?</h2>
+        <div class="timeline">
+          <p>
+            <h3>Day 1</h3>
+            <ul>
+              <li>ES6 - babel - webpack - yarn</li>
+              <li>Prise en main de React - présentation de la classe Component</li>
+              <li>Notion de "props" et "state"</li>
+              <li>JSX pour générer le HTML</li>
+              <li>Import / export</li>
+            </ul>
+            <h3>Day 2</h3>
+            <ul>
+              <li>Combiner des composants React pour faire une App</li>
+              <li>Récupérer de la donnée en AJAX avec fetch pour alimenter nos composants</li>
+              <li>Utiliser `map` pour les patterns de listes</li>
+              <li>Prise en main de Redux - notion de state global au niveau de l'App</li>
+              <li>Modélisation du state de l'App</li>
+              <li>Promouvoir les Composants qui ont besoin de connaitre ce state en Containers</li>
+              <li>Définir les Reducers responsables de reverser les changements de state aux différents Containers</li>
+            </ul>
+            <h3>Day 3</h3>
+            <ul>
+              <li>Définir les Action creators - Action</li>
+              <li>Middleware pour le traitement des Promises</li>
+              <li>Connecter une App frontend à une API REST fournie</li>
+              <li>React Router pour simuler la navigation sur une SPA</li>
+              <li>Redux Form pour poster de la donnée sur l'API</li>
+              <li>Form Validation pour gérer la validité des données postées</li>
+            </ul>
+            <h3>Day 4</h3>
+            <ul>
+              <li>Testing in React</li>
+              <li>TDD</li>
+              <li>Projet perso</li>
+            </ul>
+            <h3>Day 5</h3>
+            <ul>
+              <li>Mettre en place React & Redux dans une app Rails fournie</li>
+              <li>construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <h2>FAQ</h2>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Qu'est-ce que React ?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Qu'est-ce que Redux ?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              Redux est une librairie JavaScript dédiée à gérer le flux de données à reverser dans vos différents composants pour mettre à jour leur état, suite à un changement dans votre base de données.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Faut-il utiliser React quel que soit le projet que vous codez ?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              Non. React est particulièrement utile et performante lorsque :
+              <ul>
+                <li>Vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout")</li>
+                <li>Et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …)</li>
+              </ul>
+              En effet, React vous permet de penser vos composants comme des objets, porteurs :
+              <ul>
+                <li>de propriétés (ou `props`, données immuables, propres à l'objet)</li>
+                <li>d'états (ou `state`, susceptibles de changer au cours de la vie du composant)</li>
+                <li>de comportement</li>
+              </ul>
+              Les deux librairies associées offrent un framework performant pour construire des applications frontend complexes dotées d'une interface dynamique et réactive.
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingFour">
+            <h4 class="panel-title">
+              <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?
+              </a>
+            </h4>
+          </div>
+          <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+            <div class="panel-body">
+              Oui, depuis la version 5.1 de Rails et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="react-aside affix" data-spy="affix" data-offset-top="615" data-offset-bottom="1200">
+        <div class="aside-picture" style="background-image: url(<%= image_path 'banners/blog-posts.jpg' %>)"></div>
+        <%= image_tag 'technos/react.svg', class: "tech-icon" %>
+        <div class="aside-item" style="padding-top: 46px;">
+          <span class="item-title">Next session</span>
+          <i>September 25th - 29th</i>
+        </div>
+        <div class="aside-item">
+          <span class="item-title">Participants</span>
+          <i>10</i>
+        </div>
+        <div class="aside-item">
+          <span class="item-title">Special offer</span>
+          <i>60% off for the first 10 applicants</i>
+        </div>
+        <div class="aside-item">
+          <span class="item-title">Price</span>
+          <i><small>€2,500</small>€900</i>
+        </div>
+        <a class="button btn btn-danger">Book your seat now</a>
+      </div>
+    </div>
+  </div>
 </div>
-
-React is completely transforming Front-End Development. Master Facebook’s wildly popular UI library with Udacity and enrol today.
-Enrol by August 28 to be part of the next cohort!
-
-Get the skills and experience you will need to becae a react developer
-
-
-Présentation
-
-*Qu'est-ce que React ?*
-ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.
-
-*Qu'est-ce que Redux ?*
-Redux est une librairie JavaScript dédiée à gérer le flux de données à reverser dans vos différents composants pour mettre à jour leur état, suite à un changement dans votre base de données.
-
-*Faut-il utiliser React quel que soit le projet que vous codez ?*
-Non. React est particulièrement utile et performante lorsque :
-- vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout"),
-- et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …).
-
-En effet, React vous permet de penser vos composants comme des objets, porteurs :
-- de propriétés (ou `props`, données immuables, propres à l'objet),
-- d'états (ou `state`, susceptibles de changer au cours de la vie du composant) et
-- de comportement.
-
-Les deux librairies associées offrent un framework performant pour construire des applications frontend complexes dotées d'une interface dynamique et réactive.
-
-*Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?*
-Oui, depuis la version 5.1 de Rails et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.
-Cette intégration fera l'objet de la dernière journée du programme, détaillé ci-dessous :
-
-*Objectifs*
-- Modéliser ses composants de vue avec React
-- Modéliser sa donnée avec Redux
-- Construire une application complexe avec React + Redux connecté à une API
-- Intégrer React + Redux à une application Rails
-
-*Syllabus*
-- Day 1:
-    - ES6 - babel - webpack - yarn
-    - Prise en main de React - présentation de la classe Component
-    - Notion de `props` et `state`
-    - JSX pour générer le HTML
-    - import / export
-- Day 2:
-    - Combiner des composants React pour faire une App
-    - Récupérer de la donnée en AJAX avec fetch pour alimenter nos composants
-    - Utiliser `map` pour les patterns de listes
-    - Prise en main de Redux - notion de state global au niveau de l'App
-    - Modélisation du state de l'App
-    - Promouvoir les Composants qui ont besoin de connaitre ce state en Containers
-    - Définir les Reducers responsables de reverser les changements de state aux différents Containers
-- Day 3:
-    - Définir les Action creators - Action
-    - Middleware pour le traitement des Promises
-    - Connecter une App frontend à une API REST fournie
-    - React Router pour simuler la navigation sur une SPA
-    - Redux Form pour poster de la donnée sur l'API
-    - Form Validation pour gérer la validité des données postées
-- Day 4:
-    - Testing in React
-    - TDD?
-    - Projet perso ?
-
-- Day 5:
-    - mettre en place React & Redux dans une app Rails fournie
-    - construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)
