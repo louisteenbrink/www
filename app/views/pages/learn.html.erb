@@ -15,19 +15,20 @@
       <% @prospect.from_path = request.env['PATH_INFO'] %>
       <p class="email-error hidden">Your email is not valid :(</p>
       <div class="invitation">
-        <%= simple_form_for @prospect, html: {class: "form-invitation"}, remote: true do |f| %>
-          <%= f.input :email, as: :email, label: false, placeholder: "you@gmail.com", wrapper: false, error: false%>
-          <%= f.input :from_path, as: :hidden %>
+        <%= simple_form_for @prospect, html: { class: 'form-invitation' }, remote: true do |f| %>
+          <%= f.input :email, as: :email, label: false, placeholder: 'you@gmail.com', wrapper: false, error: false %>
           <div class="city-dropdown-wrapper">
-            <select class="form-control city-dropdown" name="prospect[city]">
-              <option value="paris">Paris</option>
-              <optgroup label="---"></optgroup>
-              <% @cities.sort_by { |c| c['name'] }.reject { |c| c['name'] == 'paris' }.each do |city| %>
-                <option value="<%= city['slug']%>" <%= city['slug'] == params[:city] ? 'selected' : nil %>><%= city['name']%></option>
-              <% end %>
-            </select>
+            <%= f.input :city,
+              collection: @cities.sort_by { |c| c['name'] },
+              label_method: lambda { |c| c['name'] },
+              value_method: lambda { |c| c['slug'] },
+              label: false,
+              wrapper: false,
+              include_blank: false,
+              selected: @cities.find { |c| c['slug'] == params[:city] } ? params[:city] : 'paris' %>
           </div>
-          <%= f.submit "Get my invitation", class: "btn btn-danger" %>
+          <%= f.input :from_path, as: :hidden %>
+          <%= f.submit 'Get my invitation', class: 'btn btn-danger', id: 'prospect_submit' %>
         <% end %>
       </div>
     </div>

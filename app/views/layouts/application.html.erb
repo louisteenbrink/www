@@ -38,10 +38,13 @@
   <% end %>
 
   <%= yield(:headers) %>
-
-  <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 
+  <% if Rails.env.production? && critical_css.present? %>
+    <style><%= critical_css %></style>
+  <% else %>
+    <%= stylesheet_link_tag("application") %>
+  <% end %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
   <%# render "shared/ondemand" if I18n.locale == :fr %>
@@ -52,10 +55,13 @@
   <%= yield %>
 
   <%= render "shared/footer" %>
+
+  <% if Rails.env.production? && critical_css.present? %>
+    <%= stylesheet_link_tag("application") %>
+  <% end %>
   <%= render "shared/iubenda" %>
   <%= javascript_include_tag :application, async: true %>
   <%= yield(:after_js) %>
-  <%#= render "shared/drift" if !@hide_drift && Rails.env.production? %>
   <%= render "shared/intercom" if !@hide_drift && Rails.env.production? %>
   <%= render "shared/google_analytics" %>
   <%= render "shared/mixpanel" %>

@@ -2,7 +2,7 @@ en:
   date:
     formats:
       apply: "%B %e, %Y"
-  top_bar_message: Discover what our students are able to build after 9 weeks
+  top_bar_message: Discover what our students are able to build in only 10 days
   top_bar_cta: watch our demos
   shared:
     positions:
@@ -88,7 +88,7 @@ en:
         That's how successful startups work.
       startup_toolkit: Get the startup toolkit
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         We will teach you how to implement all these services
         to be more efficient at the launch of your new product.
         Save time, use the right tool for your specific need,

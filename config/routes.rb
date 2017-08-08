@@ -6,6 +6,8 @@ end
 Rails.application.routes.draw do
   mount Attachinary::Engine => "/attachinary"
 
+  get "/proxy/image", to: 'proxy#image', as: :proxy_image
+
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
 
   namespace :admin do
@@ -123,7 +125,6 @@ Rails.application.routes.draw do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  get "500", to: 'application#render_500', via: :all
   match "*path", to: "application#render_404", via: :all
 end
 

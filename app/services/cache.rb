@@ -5,6 +5,7 @@ module Cache
     expire = default_expire
     if args.last.is_a?(Hash)
       options = args.pop
+      return yield(self) if options[:disabled]
       expire = options.fetch(:expire, expire)
     end
     the_key = key(*args)
