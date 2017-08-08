@@ -129,9 +129,11 @@
           <div class="video-description">
             <div class="video-specs">
               <h1><%= @post.title %></h1>
-              <div>
-                <%= @post.content.blank? ? @post.description : (raw @post.content)  %>
-              </div>
+              <% if @post.content.blank? %>
+                <p><%= @post.description  %></p>
+              <% else %>
+                <%= raw @post.content  %>
+              <% end %>
               <span><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Posted on <%= @post.date.to_date.strftime("%d %b %Y") %> by <%= @post.author[:fname].capitalize %> <%= @post.author[:lname].capitalize %></span>
             </div>
 

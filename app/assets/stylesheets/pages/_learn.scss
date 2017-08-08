@@ -88,6 +88,10 @@
     max-width: calc(100% - 10px);
     height: 100%;
 
+    @media (max-width: 1199px) {
+      height: auto;
+    }
+
     &:before {
       content: "";
       position: absolute;
@@ -116,6 +120,7 @@
   }
 
   .btn {
+    padding: 20px 17px;
     border-radius: 0px 3px 3px 0px;
   }
 }
