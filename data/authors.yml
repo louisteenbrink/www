@@ -93,3 +93,13 @@ arthur:
   company_website: lewagon.com/london
   twitter: lewagonlondon
   instagram: lewagonlondon
+sandrine:
+  fname: Sandrine
+  lname: Ayral
+  picture: sandrine-ayral.jpg
+  bio: "Sandrine has worked in tech for 6 years, in the US, France and London. She started on the VC side, then joined TheFamily's founding team in 2013 to help build the Parisian startup accelerator. In 2014, she joined the Bitcoin industry, first at Coinbase then went on to create a new cryptocurrency, which raised $1M in a 3-day crowdfunding campaign. And when she's not working, she's learning how to code (yes!)."
+  company: Le Wagon London
+  position: Head of Marketing
+  company_website: lewagon.com/london
+  twitter: lewagonlondon
+  instagram: lewagonlondon
