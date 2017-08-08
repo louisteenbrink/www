@@ -99,6 +99,12 @@
     .video-specs {
       padding: 20px;
 
+      p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+        opacity: 0.9;
+      }
+
       p:last-of-type {
         a {
           text-transform: uppercase;
@@ -106,34 +112,6 @@
           font-size: 12px;
           font-weight: 600;
         }
-      }
-    }
-
-    .learn-cta {
-      padding: 20px;
-      background-color: #f4f4f4;
-
-      h2 {
-        margin: 0 0 20px;
-        font-size: 1.5em;
-        font-weight: 900;
-        text-align: center;
-      }
-
-      p {
-        margin: 0 auto 30px;
-        width: 80%;
-        text-align: center;
-      }
-
-      input[type="submit"] {
-        height: 64px;
-        font-weight: 700;
-      }
-
-      .invitation {
-        display: flex;
-        justify-content: center;
       }
     }
   }

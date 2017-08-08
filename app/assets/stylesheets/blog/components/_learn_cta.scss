@@ -1,0 +1,74 @@
+.posts-show {
+  .learn-cta {
+    padding: 20px;
+    background-color: #f4f4f4;
+
+    h2 {
+      margin: 0 0 20px;
+      font-size: 1.5em;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 auto 30px;
+      width: 80%;
+      text-align: center;
+    }
+
+    input[type="email"] {
+      padding: 20px 17px;
+
+      @media (max-width: 1199px) {
+        border-radius: 3px 3px 0 0;
+        border-bottom: none;
+      }
+    }
+
+    .city-dropdown-wrapper {
+      min-width: 200px;
+      max-width: auto;
+      width: auto;
+
+      @media(max-width: 1199px) {
+        max-width: 100%;
+        height: auto;
+
+        &:before {
+          top: 32px;
+        }
+      }
+
+      select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        margin-right: 0;
+
+        @media(max-width: 1199px) {
+          border-left: 1px solid #ccc;
+          border-right: 1px solid #ccc;
+          border-bottom: none;
+        }
+      }
+    }
+
+    input[type="submit"] {
+      height: 64px;
+      font-weight: 700;
+
+      @media(max-width: 1199px) {
+        margin-top: 0;
+        border-radius: 0 0 3px 3px;
+      }
+    }
+
+    .invitation {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
