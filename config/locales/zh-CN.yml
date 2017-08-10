@@ -457,7 +457,7 @@ zh-CN:
       codecademy_modal_body_html: |
         <p>
           <a href="%{faq_path}" target="_blank">常见问题</a>中提到过，加入Le Wagon的前提之一就是需要在CodeCademy上100%完成
-          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a>测试。
+          <a href="https://www.codecademy.com/learn/learn-ruby">Ruby Track</a>测试。
           如果你没有CodeCademy账户，请<a href="https://www.codecademy.com/register" target="_blank">现在创建一个</a>，是免费的。
         </p>
         <p>

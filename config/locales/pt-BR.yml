@@ -437,7 +437,7 @@ pt-BR:
       codecademy_modal_body_html: |
         <p>
           Como explicamos no <a href="%{faq_path}" target="_blank">FAQ</a>, um dos pré-requisitos do Le Wagon é fazer 100% do
-          <a href="https://www.codecademy.com/learn/ruby">curso de Ruby</a> no CodeCademy.
+          <a href="https://www.codecademy.com/learn/learn-ruby">curso de Ruby</a> no CodeCademy.
           Se você não tem uma conta no CodeCademy account, <a href="https://www.codecademy.com/register" target="_blank">crie uma agora</a>, é gratis!
         </p>
         <p>
