@@ -379,6 +379,108 @@ fr:
     shop:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
+    react:
+      catchline: "Découvrez nouvelle façon d'aborder le développement front-end"
+      main_title: "Formez-vous à React"
+      special_offer: "60% de remise pour les 10 premiers inscrits"
+      pricing: "€2,500"
+      new_pricing: "€900"
+      react_cta: "Je réserve ma place"
+      affix_title_date: "Prochaine session"
+      affix_date: "Du 25 au 29 septembre"
+      affix_title_participants: "Participants"
+      affix_participant: "10"
+      affix_title_offer: "Offre spéciale"
+      affix_title_pricing: "Prix"
+      title_intro: "Présentation"
+      content_intro_html: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum eu metus in fermentum. Nulla facilisi. Maecenas vitae nisl nec magna efficitur porttitor sed vel mauris. Pellentesque urna felis, ultrices ut ipsum at, sodales commodo lacus. Aliquam imperdiet enim ac pharetra sagittis. Duis in urna tortor.
+      title_goals: "Objectifs"
+      content_goals_html: |
+        <ul>
+          <li><i>1</i>Modéliser ses composants de vue avec React</li>
+          <li><i>2</i>Modéliser sa donnée avec Redux</li>
+          <li><i>3</i>Construire une application complexe avec React + Redux connecté à une API</li>
+          <li><i>4</i>Intégrer React + Redux à une application Rails</li>
+        </ul>
+      title_requirements: "Pré-requis"
+      content_requirements_html: |
+        <ul>
+          <li>Être à l'aise avec JavaScript</li>
+          <li>Les bases d'ES6</li>
+          <li>API REST</li>
+          <li>Rails</li>
+        </ul>
+      title_teachers: "Formateurs"
+      quote: "This curiculium is outstandingly amazing because hocus pocus rails tout ça, puis boom react, à vous la piña colada en slip de bain !"
+      title_syllabus: "Qu'allez-vous apprendre ?"
+      day_1: "Premier jour"
+      day_1_content_html: |
+        <ul>
+          <li>ES6 - babel - webpack - yarn</li>
+          <li>Prise en main de React - présentation de la classe Component</li>
+          <li>Notion de "props" et "state"</li>
+          <li>JSX pour générer le HTML</li>
+          <li>Import / export</li>
+        </ul>
+      day_2: "Deuxième jour"
+      day_2_content_html: |
+        <ul>
+          <li>Combiner des composants React pour faire une App</li>
+          <li>Récupérer de la donnée en AJAX avec fetch pour alimenter nos composants</li>
+          <li>Utiliser `map` pour les patterns de listes</li>
+          <li>Prise en main de Redux - notion de state global au niveau de l'App</li>
+          <li>Modélisation du state de l'App</li>
+          <li>Promouvoir les Composants qui ont besoin de connaitre ce state en Containers</li>
+          <li>Définir les Reducers responsables de reverser les changements de state aux différents Containers</li>
+        </ul>
+      day_3: "Troisième jour"
+      day_3_content_html: |
+        <ul>
+          <li>Définir les Action creators - Action</li>
+          <li>Middleware pour le traitement des Promises</li>
+          <li>Connecter une App frontend à une API REST fournie</li>
+          <li>React Router pour simuler la navigation sur une SPA</li>
+          <li>Redux Form pour poster de la donnée sur l'API</li>
+          <li>Form Validation pour gérer la validité des données postées</li>
+        </ul>
+      day_4: "Quatrième jour"
+      day_4_content_html: |
+        <ul>
+          <li>Testing in React</li>
+          <li>TDD</li>
+          <li>Projet perso</li>
+        </ul>
+      day_5: "Cinquième jour"
+      day_5_content_html: |
+        <ul>
+          <li>Mettre en place React & Redux dans une app Rails fournie</li>
+          <li>construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)</li>
+        </ul>
+      title_faq: "F.A.Q"
+      content_faq_html: |
+        <h3>Qu'est-ce que React ?</h3>
+        <p>ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.</p>
+
+        <h3>Qu'est-ce que Redux ?</h3>
+        <p>Redux est une librairie JavaScript dédiée à gérer le flux de données à reverser dans vos différents composants pour mettre à jour leur état, suite à un changement dans votre base de données.</p>
+
+        <h3>Faut-il utiliser React quel que soit le projet que vous codez ?</h3>
+        <p>Non. React est particulièrement utile et performante lorsque :</p>
+        <ul>
+          <li>Vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout")</li>
+          <li>Et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …)</li>
+        </ul>
+        <p>En effet, React vous permet de penser vos composants comme des objets, porteurs :</p>
+        <ul>
+          <li>de propriétés (ou `props`, données immuables, propres à l'objet)</li>
+          <li>d'états (ou `state`, susceptibles de changer au cours de la vie du composant)</li>
+          <li>de comportement</li>
+        </ul>
+        <p>Les deux librairies associées offrent un framework performant pour construire des applications frontend complexes dotées d'une interface dynamique et réactive.</p>
+
+        <h3>Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?</h3>
+        <p>Oui, depuis la version 5.1 de Rails et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.</p>
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

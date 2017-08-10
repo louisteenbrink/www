@@ -1,10 +1,10 @@
-<%= content_for(:title) { "TBD."}       %>
-<%= content_for(:description) { "TBD." } %>
+<%= content_for(:title) { ".main_title"}       %>
+<%= content_for(:description) { ".catchline" } %>
 <%= content_for(:image_url) { image_url 'social/tbd.png' } %>
 
 <!-- SECTION 1: PAGE BANNER -->
 <div class="banner-react">
-  <h1><small>Get the skills and experience you will need to</small>become a react developer</h1>
+  <h1><small><%= t('.catchline') %></small><%= t('.main_title') %></h1>
   <!-- React Logo animation -->
   <div class="circles">
     <div></div>
@@ -13,11 +13,11 @@
     <span></span>
   </div>
   <ul class="pricing">
-    <li>€2,500</li>
-    <li>€900</li>
+    <li><%= t('.pricing') %></li>
+    <li><%= t('.new_pricing') %></li>
   </ul>
-  <i>60% off for the first 10 applicants</i>
-  <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" >Book your seat now</a>
+  <i><%= t('.special_offer') %></i>
+  <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
 </div>
 
 <!-- SECTION 2: CONTENT -->
@@ -25,37 +25,24 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
+
         <div class="section-intro">
-          <h2>Présentation</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum eu metus in fermentum. Nulla facilisi. Maecenas vitae nisl nec magna efficitur porttitor sed vel mauris. Pellentesque urna felis, ultrices ut ipsum at, sodales commodo lacus. Aliquam imperdiet enim ac pharetra sagittis. Duis in urna tortor.</p>
+          <h2><%= t('.title_intro') %></h2>
+          <p><%= t('.content_intro_html') %></p>
         </div>
 
         <div class="section section-goals">
-          <h2>Objectifs <%= image_tag 'technos/react.svg', class: "tech-icon" %> + <%= image_tag 'technos/redux.svg', class: "tech-icon" %> + <%= image_tag 'technos/rails.svg', class: "tech-icon" %></h2>
-          <p>
-            <ul>
-              <li><i>1</i>Modéliser ses composants de vue avec React</li>
-              <li><i>2</i>Modéliser sa donnée avec Redux</li>
-              <li><i>3</i>Construire une application complexe avec React + Redux connecté à une API</li>
-              <li><i>4</i>Intégrer React + Redux à une application Rails</li>
-            </ul>
-          </p>
+          <h2><%= t('.title_goals') %> <%= image_tag 'technos/react.svg', class: "tech-icon" %> + <%= image_tag 'technos/redux.svg', class: "tech-icon" %> + <%= image_tag 'technos/rails.svg', class: "tech-icon" %></h2>
+          <%= t('.content_goals_html') %>
         </div>
 
         <div class="section section-requirement">
-          <h2>Pré-requis</h2>
-          <p>
-            <ul>
-              <li>Être à l'aise avec JavaScript</li>
-              <li>Les bases d'ES6</li>
-              <li>API REST</li>
-              <li>Rails</li>
-            </ul>
-          </p>
+          <h2><%= t('.title_requirements') %></h2>
+          <%= t('.content_requirements_html') %>
         </div>
 
         <div class="section section-teachers">
-          <h2>Teachers</h2>
+          <h2><%= t('.title_teachers') %></h2>
           <div class="teachers-wrapper">
             <div class="teacher-card">
               <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/edward-schults.jpg', width: 100, height: 100), class: "teacher-pic" %>
@@ -72,74 +59,28 @@
               </div>
             </div>
           </div>
-          <blockquote>This curiculium is outstandingly amazing because hocus pocus rails tout ça, puis boom react, à vous la piña colada en slip de bain !</blockquote>
+          <blockquote><%= t('.quote') %></blockquote>
         </div>
 
         <div class="section section-syllabus">
-          <h2>What will you learn?</h2>
+          <h2><%= t('.title_syllabus') %></h2>
           <div class="timeline">
-            <h3>Day 1</h3>
-            <ul>
-              <li>ES6 - babel - webpack - yarn</li>
-              <li>Prise en main de React - présentation de la classe Component</li>
-              <li>Notion de "props" et "state"</li>
-              <li>JSX pour générer le HTML</li>
-              <li>Import / export</li>
-            </ul>
-            <h3>Day 2</h3>
-            <ul>
-              <li>Combiner des composants React pour faire une App</li>
-              <li>Récupérer de la donnée en AJAX avec fetch pour alimenter nos composants</li>
-              <li>Utiliser `map` pour les patterns de listes</li>
-              <li>Prise en main de Redux - notion de state global au niveau de l'App</li>
-              <li>Modélisation du state de l'App</li>
-              <li>Promouvoir les Composants qui ont besoin de connaitre ce state en Containers</li>
-              <li>Définir les Reducers responsables de reverser les changements de state aux différents Containers</li>
-            </ul>
-            <h3>Day 3</h3>
-            <ul>
-              <li>Définir les Action creators - Action</li>
-              <li>Middleware pour le traitement des Promises</li>
-              <li>Connecter une App frontend à une API REST fournie</li>
-              <li>React Router pour simuler la navigation sur une SPA</li>
-              <li>Redux Form pour poster de la donnée sur l'API</li>
-              <li>Form Validation pour gérer la validité des données postées</li>
-            </ul>
-            <h3>Day 4</h3>
-            <ul>
-              <li>Testing in React</li>
-              <li>TDD</li>
-              <li>Projet perso</li>
-            </ul>
-            <h3>Day 5</h3>
-            <ul>
-              <li>Mettre en place React & Redux dans une app Rails fournie</li>
-              <li>construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)</li>
-            </ul>
+            <h3><%= t('.day_1') %></h3>
+            <%= t('.day_1_content_html') %>
+            <h3><%= t('.day_2') %></h3>
+            <%= t('.day_2_content_html') %>
+            <h3><%= t('.day_3') %></h3>
+            <%= t('.day_3_content_html') %>
+            <h3><%= t('.day_4') %></h3>
+            <%= t('.day_4_content_html') %>
+            <h3><%= t('.day_5') %></h3>
+            <%= t('.day_5_content_html') %>
           </div>
         </div>
 
         <div class="section section-faq">
-          <h2>FAQ</h2>
-          <h3>Qu'est-ce que React ?</h3>
-          <p>ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.</p>
-          <h3>Qu'est-ce que Redux ?</h3>
-          <p>Redux est une librairie JavaScript dédiée à gérer le flux de données à reverser dans vos différents composants pour mettre à jour leur état, suite à un changement dans votre base de données.</p>
-          <h3>Faut-il utiliser React quel que soit le projet que vous codez ?</h3>
-          <p>Non. React est particulièrement utile et performante lorsque :</p>
-          <ul>
-            <li>Vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout")</li>
-            <li>Et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …)</li>
-          </ul>
-          <p>En effet, React vous permet de penser vos composants comme des objets, porteurs :</p>
-          <ul>
-            <li>de propriétés (ou `props`, données immuables, propres à l'objet)</li>
-            <li>d'états (ou `state`, susceptibles de changer au cours de la vie du composant)</li>
-            <li>de comportement</li>
-          </ul>
-          <p>Les deux librairies associées offrent un framework performant pour construire des applications frontend complexes dotées d'une interface dynamique et réactive.</p>
-          <h3>Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?</h3>
-          <p>Oui, depuis la version 5.1 de Rails et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.</p>
+          <h2><%= t('.title_faq') %></h2>
+          <%= t('.content_faq_html') %>
         </div>
       </div>
 
@@ -151,22 +92,22 @@
             <%= image_tag 'technos/react-white.svg', class: "tech-icon" %>
           </div>
           <div class="aside-item" style="padding-top: 46px;">
-            <span class="item-title">Next session</span>
-            <i>September 25th - 29th</i>
+            <span class="item-title"><%= t('.affix_title_date') %></span>
+            <i><%= t('.affix_date') %></i>
           </div>
           <div class="aside-item">
-            <span class="item-title">Participants</span>
-            <i>10</i>
+            <span class="item-title"><%= t('.affix_title_participants') %></span>
+            <i><%= t('.affix_participant') %></i>
           </div>
           <div class="aside-item">
-            <span class="item-title">Special offer</span>
-            <i>60% off for the first 10 applicants</i>
+            <span class="item-title"><%= t('.affix_title_offer') %></span>
+            <i><%= t('.special_offer') %></i>
           </div>
           <div class="aside-item">
-            <span class="item-title">Price</span>
-            <i><small>€2,500</small>€900</i>
+            <span class="item-title"><%= t('.affix_title_pricing') %>:</span>
+            <i><small><%= t('.pricing') %></small><%= t('.new_pricing') %></i>
           </div>
-          <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" >Book your seat now</a>
+          <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
         </div>
       </div>
     </div>
@@ -186,7 +127,7 @@
 </div>
 
 <!-- SECTION 4: MOBILE CTA -->
-<a class="mobile-cta typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" >Book your seat now</a>
+<a class="mobile-cta typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
 
 
 

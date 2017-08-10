@@ -53,12 +53,12 @@ $width: 320px;
     }
 
     small {
+      margin-bottom: 20px;
+      max-width: 70%;
       font-size: 22px;
       color: #333;
 
       @media(max-width: 520px) {
-        margin-bottom: 20px;
-        max-width: 70%;
         font-size: 18px;
       }
     }
@@ -69,7 +69,7 @@ $width: 320px;
     color: white;
     width: $width;
     height: $width;
-    top: 163px;
+    top: 183px;
     left: 50%;
     transform: translateX(-50%);
     perspective: 50000px;
