@@ -32,6 +32,14 @@ ALUMNI_WWW_ENCRYPTING_KEY: "ask_for_it"
 CLOUDINARY_URL: "ask_for_it"
 ```
 
+## Create a new post
+
+To create a new blog post file, you run this command:
+
+```bash
+rails post:create
+```
+
 ## Cache
 
 You can run this in development to bypass the API cache.
