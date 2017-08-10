@@ -380,7 +380,7 @@ fr:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
     react:
-      catchline: "Découvrez nouvelle façon d'aborder le développement front-end"
+      catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
       main_title: "Formez-vous à React"
       special_offer: "60% de remise pour les 10 premiers inscrits"
       pricing: "€2,500"

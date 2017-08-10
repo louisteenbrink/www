@@ -362,6 +362,7 @@ $width: 320px;
 .react-aside {
   display: flex;
   flex-direction: column;
+  max-width: 360px;
   background-color: #4facfe;
   border-radius: 8px;
   box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
