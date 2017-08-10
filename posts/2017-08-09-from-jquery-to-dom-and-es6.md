@@ -12,7 +12,7 @@ description: "Looking back in time, jQuery was created to cope with JavaScript i
 
 Looking back in time, jQuery was created to cope with JavaScript implementation differences between browsers. Internet Explorer was the main culprit at that time and lagged behind Mozilla Firefox and then Google Chrome. As an easy to use solution, jQuery has been widely embraced by developers and beginners who, for the majority started to use JavaScript through this library.
 
-In 2017, IE8 to IE11 usage have droppped to a very small part of web traffic and can be [safely ignored](https://www.microsoft.com/en-gb/WindowsForBusiness/End-of-IE-support). This means that we can drop jQuery from our applicaiton and rely on [standard DOM](https://dom.spec.whatwg.org/) and some ES6 sprinkles. Speed being one of the main criterias for SEO (and users), sparing our browser the effort of loading a whole library before processing our code offers a nice bonus we all should consider to get quickly!
+In 2017, IE8 to IE11 usage have droppped to a very small part of web traffic and can be [safely ignored](https://www.microsoft.com/en-gb/WindowsForBusiness/End-of-IE-support). This means that we can drop jQuery from our application and rely on [standard DOM](https://dom.spec.whatwg.org/) and some ES6 sprinkles. Speed being one of the main criterias for SEO (and users), sparing our browser the effort of loading a whole library before processing our code offers a nice bonus we all should consider to get quickly!
 
 ## Selecting DOM elements
 
