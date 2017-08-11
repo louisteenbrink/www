@@ -39,7 +39,7 @@ There is another way, using a CSS selector:
 const list = document.querySelector("#cities");
 ```
 
-Those two methods will always return a **single** element. Guaranted. If you want to select all `li` with the `europe` class inside your list, you will use a fancier CSS query selector:
+Those two methods will always return a **single** element. Guaranteed. If you want to select all the `li`s with the `europe` class inside your list, you will use a fancier CSS query selector:
 
 ```js
 const europeanCities = document.querySelectorAll("#cities .europe");
@@ -49,7 +49,7 @@ europeanCities.forEach((city) => {
 });
 ```
 
-In the code above, notice that `querySelectorAll` **always** return an **array** (which may contain only one element). We also used an [ES6 arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) which has a [wide support](http://caniuse.com/#search=arrow%20function). You should consider [Babel](https://babeljs.io/) to support the remaining ones or revert to a classic anonymous `function` definition.
+In the code above, notice that `querySelectorAll` **always** returns a [**`NodeList`**](https://developer.mozilla.org/en-US/docs/Web/API/NodeList) (which may contain only one element). You can call the `forEach` method on this list. We also used an [ES6 arrow function](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions) which has a [wide support](http://caniuse.com/#search=arrow%20function). You should consider [Babel](https://babeljs.io/) to support the remaining ones or revert to a classic anonymous `function` definition.
 
 To walk the DOM from a given element, have a look at [parentElement](https://developer.mozilla.org/en/docs/Web/API/Node/parentElement), [children](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children) and [nextElementSibling](https://developer.mozilla.org/en-US/docs/Web/API/NonDocumentTypeChildNode/nextElementSibling). It's a big family tree!
 
@@ -63,7 +63,7 @@ When using a website, the browser emits tons of events. Every time you scroll on
 document.addEventListener('scroll', () => console.log(document.body.scrollTop));
 ```
 
-And now, scroll! Crazy isn't it? What is you see is how many pixels you have scrolled from the top of the page.
+And now, scroll! Crazy isn't it? Each event logged represents one pixel scrolled down or up since the page was loaded
 
 Suppose you have the following HTML:
 
@@ -88,7 +88,7 @@ You can read more about [`addEventListener`](https://developer.mozilla.org/en-US
 
 ## 3 - AJAX
 
-AJAX is the cornerstone of the modern Web. Thanks to this technology, a web page can be refreshed in the background with new information. You can think about Gmail which shows up new emails in the Inbox, Facebook notifying you that new content is available in your timeline, etc.
+AJAX is the cornerstone of the modern Web. Thanks to this technology, a web page can be refreshed in the background with new information. You can think of Gmail's new emails showing up in the Inbox, Facebook notifying you that new content is available in your timeline, etc.
 
 With modern web browsers, we can use [`fetch`](http://caniuse.com/#search=fetch). Here is an example of calling a JSON API with a `GET` request:
 
@@ -121,6 +121,6 @@ fetch(url, {
 
 ## Conclusion
 
-You can now combien these three techniques to create dynamic web pages! You will select elements thanks to one of the three methods at hand (`getElementById`, `querySelector` or the one returning an `Array`: `querySelectorAll`). With an element at hand, you can `addEventListener` on a given event type (`click`, `focus`, `blur`, `submit`, etc.). The callback passed to this listener could contain an AJAX call using `fetch`.
+You can now combine these three techniques to create dynamic web pages! You will select elements thanks to one of the three methods (`getElementById`, `querySelector` or the one returning an `NodeList`: `querySelectorAll`). With an element at hand, you can `addEventListener` on a given event type (`click`, `focus`, `blur`, `submit`, etc.). The callback passed to this listener could contain an AJAX call using `fetch`.
 
 Happy JavaScripting!
