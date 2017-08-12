@@ -11,12 +11,13 @@ class CitiesController < ApplicationController
       return
     end
 
-    @city = @kitt_client.city(city_slug)
+    @city = Kitt::Client.query(City::Query, variables: { slug: city_slug }).data.city
+
     if I18n.locale == I18n.default_locale &&
-        @city['course_locale'].to_sym != I18n.locale &&
+        @city.locale.to_sym != I18n.locale &&
         !session[:city_locale_already_forced] &&
-        (request.env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^#{Regexp.quote(@city['course_locale'])}/
-      redirect_to city_path(city_slug, locale: @city['course_locale'])
+        (request.env["HTTP_ACCEPT_LANGUAGE"] || "").split(",").first =~ /^#{Regexp.quote(@city.locale)}/
+      redirect_to city_path(city_slug, locale: @city.locale)
       session[:city_locale_already_forced] = true
       return
     end
@@ -30,26 +31,27 @@ class CitiesController < ApplicationController
       end
       @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
     end
+
     lead_teachers_slugs = Static::LEAD_TEACHERS[city_slug.to_sym].nil? ? [] : Static::LEAD_TEACHERS[city_slug.to_sym]
-    pedagogic_team = @kitt_client.teachers(city_slug)
-    all_teachers = pedagogic_team["teachers"]
-    lead_teachers = all_teachers
-      .select { |teacher| lead_teachers_slugs.include?(teacher["github_nickname"]) }
-      .sort_by { |teacher| lead_teachers_slugs.index(teacher["github_nickname"]) }
-    teachers = all_teachers - lead_teachers
+    pedagogic_team = @city.current_batch.teachers.sort_by { |teacher| teacher.user.github_nickname }
+    lead_teachers = pedagogic_team
+      .select { |teacher| lead_teachers_slugs.include?(teacher.user.github_nickname) }
+      .sort_by { |teacher| lead_teachers_slugs.index(teacher.user.github_nickname) }
+    teachers = pedagogic_team - lead_teachers
+    @assistants = teachers.reject { |teacher| teacher.lecturer }
+    teachers -= @assistants
     @teachers = lead_teachers.concat(teachers)
-    @assistants = pedagogic_team["assistants"]
     @staff = Static::STAFF[city_slug.to_sym]
 
-    meetup_cli = MeetupApiClient.new(@city["meetup_id"])
+    meetup_cli = MeetupApiClient.new(@city.meetup_id)
     @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
-    session[:city] = @city['slug']
+    session[:city] = @city.slug
 
     # Next batch
-    batch_city = @cities.find { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }
-    if batch_city
-      @next_batch = batch_city['batches'].find { |batch| !batch['full'] }
-    end
+    # batch_city = @cities.find { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }
+    # if batch_city
+    #   @next_batch = batch_city['batches'].find { |batch| !batch['full'] }
+    # end
 
   end
 end

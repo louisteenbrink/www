@@ -1,6 +1,7 @@
 city_constraint = Proc.new do |req|
   city = req.params[:city]
-  city.blank? || city.match(/^(#{KittClient.new.city_slugs.join("|")})$/i)
+  true
+  #city.blank? || city.match(/^(#{KittClient.new.city_slugs.join("|")})$/i)
 end
 
 Rails.application.routes.draw do

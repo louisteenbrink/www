@@ -1,15 +1,15 @@
-<% if @city['slug'] == 'barcelona' %>
+<% if @city.slug == 'barcelona' %>
   <%= content_for(:title) { "Coding Bootcamp in Barcelona, Spain - Le Wagon" } %>
 <% else %>
-  <%= content_for(:title) { raw t(".title", city: @city["name"]) } %>
+  <%= content_for(:title) { raw t(".title", city: @city.name) } %>
 <% end %>
-<%= content_for(:description) { raw t(".description", city: @city["name"]) } %>
+<%= content_for(:description) { raw t(".description", city: @city.name) } %>
 <%#= content_for(:headers) do %>
-  <!-- <link rel="canonical" href="<%= root_url(locale: I18n.locale) %>" /> -->
+  <!-- <link rel="canonical" href="<%#= root_url(locale: I18n.locale) %>" /> -->
 <%# end %>
 
 <%
-  asset = "social/#{@city["slug"]}_facebook_card.png"
+  asset = "social/#{@city.slug}_facebook_card.png"
   content_for(:image_url) { image_url asset } unless Rails.application.assets.find_asset(asset).nil?
 %>
 
@@ -17,61 +17,61 @@
   <div class="container">
 
     <div class="banner banner-top banner-gradient text-center"
-      <% if @city["city_background_picture_path"].present? %>
-        style="background-image: url('<%= cl_image_path @city["city_background_picture_path"], crop: :fill, width: 1140 %>');"
+      <% if @city.city_background_picture_url.present? %>
+        style="background-image: url('<%= cl_image_path @city.city_background_picture_url, crop: :fill, width: 1140 %>');"
       <% end %>
     >
       <div class="banner-gradient-shadow"></div>
       <div class="banner-content">
-        <h1><%= t ".city_arrival_html", city: @city["name"] %></h1>
-        <p><%= t(".catchline_html", city: @city["name"]) %></p>
+        <h1><%= t ".city_arrival_html", city: @city.name %></h1>
+        <p><%= t(".catchline_html", city: @city.name) %></p>
       </div>
     </div>
     <div class='banner-cta'>
 
     <%# I look at you all see the love there that's sleeping... %>
-    <% if @city['contact_phone_number_displayed'] %>
-      <a href="tel:<%= @city['contact_phone_number'].gsub(' ', '') %>" class="banner-cta-item">
-        <%= t(".call", name: @city['contact_phone_number_name']) %>
-        <%= @city['contact_phone_number'] %>
+    <% if @city.contact_phone_number_displayed %>
+      <a href="tel:<%= @city.contact_phone_number.gsub(' ', '') %>" class="banner-cta-item">
+        <%= t(".call", name: @city.contact_phone_number_name) %>
+        <%= @city.contact_phone_number %>
         &nbsp;<i class="fa fa-mobile fa-2x"></i>
       </a>
     <% end %>
-    <% if @city['email'] %>
-      <a href="mailto:<%= @city['email'] %>" class="banner-cta-item">
-        <%= t(".email", name: @city['contact_phone_number_name']) %>
+    <% if @city.email %>
+      <a href="mailto:<%= @city.email %>" class="banner-cta-item">
+        <%= t(".email", name: @city.contact_phone_number_name) %>
         &nbsp; <i class="fa fa-envelope"></i>
       </a>
     <% end %>
-    <% if !@city['contact_phone_number_displayed'] && @city['email'].blank? %>
+    <% if !@city.contact_phone_number_displayed && @city.email.blank? %>
       <%= link_to send(:"program_#{locale.to_s.underscore}_path"), class: 'banner-cta-item hidden-xs' do %>
         <%= t(".discover_us") %>
       <% end %>
     <% end %>
 
-    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug']), class: "btn banner-cta-item btn-danger btn-lg" %>
+    <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path", city: @city.slug), class: "btn banner-cta-item btn-danger btn-lg" %>
     </div>
   </div>
 </div>
 
-<% if @city["marketing_specifics"].present? %>
+<% if @city.marketing_specifics.present? %>
   <div class="marketing-wrapper">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <%= markdown(@city["marketing_specifics"]) %>
+          <%= markdown(@city.marketing_specifics) %>
         </div>
       </div>
     </div>
   </div>
 <% end %>
 
-<%= render "shared/features", wrapper_up: !@city["marketing_specifics"].present? %>
+<%= render "shared/features", wrapper_up: !@city.marketing_specifics.present? %>
 
 
-<% if @city["classroom_background_picture_path"] %>
+<% if @city.classroom_background_picture_url %>
 <div class="banner-container">
-  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= cl_image_path(@city["classroom_background_picture_path"], width: 1280, crop: :fill)%>'); height: 70vh; background-position: center;" id="banner-city">
+  <div class="banner banner-top banner-gradient text-center" style="background-image: url('<%= cl_image_path(@city.classroom_background_picture_url, width: 1280, crop: :fill)%>'); height: 70vh; background-position: center;" id="banner-city">
   </div>
 </div>
 <% end %>
@@ -83,7 +83,7 @@
   <div class="container">
     <h2 class="section-title-home text-center">
       <div class="section-title-home-content" style="font-size:30px;">
-        <%= t ".staff", city: @city["name"]%>
+        <%= t ".staff", city: @city.name%>
       </div>
     </h2>
   </div>
@@ -174,16 +174,16 @@
     </div>
   <% end %>
 
-  <% if @city["logistic_specifics"].present? %>
+  <% if @city.logistic_specifics.present? %>
     <div class="container specifics">
       <h2 class="section-title-home text-center">
         <div class="section-title-home-content" style="font-size: 30px;">
-          <%= t(".only_in", city: @city["name"]) %>
+          <%= t(".only_in", city: @city.name) %>
         </div>
       </h2>
       <div class="row">
         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-          <%= markdown(@city["logistic_specifics"]) %>
+          <%= markdown(@city.logistic_specifics) %>
         </div>
       </div>
     </div>
@@ -215,24 +215,24 @@
   </div>
 </div>
 
-<% if @city["location"].present? && @city["location_background_picture_path"].present? %>
+<% if @city.location.present? && @city.location_background_picture_path.present? %>
 <div class="location-overlay">
-  <div id="location" class="banner banner-flat" style="background-image: url('<%= cl_image_path(@city["location_background_picture_path"], width: 1280, crop: :fill) %>');">
+  <div id="location" class="banner banner-flat" style="background-image: url('<%= cl_image_path(@city.location_background_picture_path, width: 1280, crop: :fill) %>');">
     <div class="banner-flat-filter banner-flat-filter-black"></div>
     <div class="banner-content">
       <div class='location-tab-overlay'>
         <div class='location-tab'>
           <h2>
-            <%= @city["location"] %>,
-            <a target='_blank' class='location-google-maps-link' href='<%= "https://www.google.com/maps/place/#{@city["address"]}" %>'>
-            <span><%= @city["address"] %></span>
+            <%= @city.location %>,
+            <a target='_blank' class='location-google-maps-link' href='<%= "https://www.google.com/maps/place/#{@city.address}" %>'>
+            <span><%= @city.address %></span>
             </a>
           </h2>
         </div>
       </div>
       <div class="location-content">
-        <% if @city["location"]%>
-          <%= markdown(@city["description"][locale.to_s] || @city["description"]["en"]) %>
+        <% if @city.location%>
+          <%= markdown(@city.description[locale.to_s] || @city.description["en"]) %>
         <% end %>
       </div>
       <% if @meetup[:infos].blank? %>
@@ -256,14 +256,14 @@
 </div>
 <% end %>
 
-<% if @city["location"] && @city["latitude"] %>
+<% if @city.location && @city.latitude %>
   <% content_for(:after_js) do %>
     <script class="_iub_cs_activate-inline" type="text/plain" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCukr6vo0mkusgzjemMGVI83TDUo-oqpzw"></script>
     <script class="_iub_cs_activate-inline" type="text/plain">
       prepareMap(
-        '<%= @city['name'] %>',
-        <%= @city['latitude'] %>,
-        <%= @city['longitude'] %>,
+        '<%= @city.name %>',
+        <%= @city.latitude %>,
+        <%= @city.longitude %>,
         '<%= asset_path 'misc/pin_icon.png' %>');
     </script>
   <% end %>
@@ -276,16 +276,16 @@
 <div class="container text-center next-batch">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <%= t '.course_locale_html', city: @city['name'], language: course_language[@city['slug']] || t("applies.new.language_#{@city['course_locale']}") %>
+      <%= t '.course_locale_html', city: @city.name, language: course_language[@city.slug] || t("applies.new.language_#{@city.course_locale}") %>
       <% if @next_batch %>
         <%= t '.next_batch_html', starts_at: l(@next_batch['starts_at'].to_date, format: :apply) %>
       <% end %>
-      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug']) %>
+      <%= link_to t('shared.navbar.apply'), send(:"apply_#{locale.to_s.underscore}_path", city: @city.slug) %>
     </div>
   </div>
 </div>
 
-<% unless @city["apply_facebook_pixel"].blank? %>
+<% unless @city.apply_facebook_pixel.blank? %>
   <%= content_for(:after_js) do %>
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -294,11 +294,11 @@
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '<%= @city["apply_facebook_pixel"] %>');
+    fbq('init', '<%= @city.apply_facebook_pixel %>');
     fbq('track', "PageView");
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=<%= @city["apply_facebook_pixel"] %>&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=<%= @city.apply_facebook_pixel %>&ev=PageView&noscript=1"
     /></noscript>
   <% end %>
 <% end %>

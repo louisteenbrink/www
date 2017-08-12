@@ -49,9 +49,7 @@ gem "linkedin-oauth2", "~> 1.0"
 gem 'kaminari'
 gem "nokogiri"
 
-gem "roar"
-gem 'multi_json'
-gem "virtus"
+gem "graphql-client"
 
 source "https://rails-assets.org" do
   gem 'rails-assets-mdi'

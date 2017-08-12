@@ -59,10 +59,6 @@ GEM
     autoprefixer-rails (6.6.0)
       execjs
     aws_cf_signer (0.1.3)
-    axiom-types (0.1.1)
-      descendants_tracker (~> 0.0.4)
-      ice_nine (~> 0.11.0)
-      thread_safe (~> 0.3, >= 0.3.1)
     babel-source (5.8.35)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
@@ -90,8 +86,6 @@ GEM
       aws_cf_signer
       rest-client
     coderay (1.1.1)
-    coercible (1.0.0)
-      descendants_tracker (~> 0.0.1)
     coffee-rails (4.2.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.2.x)
@@ -102,10 +96,6 @@ GEM
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
     debug_inspector (0.0.2)
-    declarative (0.0.9)
-    declarative-option (0.1.0)
-    descendants_tracker (0.0.4)
-      thread_safe (~> 0.3, >= 0.3.1)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -117,7 +107,6 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     email_validator (1.6.0)
       activemodel
-    equalizer (0.0.11)
     erubi (1.6.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -132,11 +121,14 @@ GEM
       multi_json (>= 1.11.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    graphql (1.6.6)
+    graphql-client (0.12.1)
+      activesupport (>= 3.0, < 6.0)
+      graphql (~> 1.6)
     hashie (3.4.6)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.7.0)
-    ice_nine (0.11.2)
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
@@ -301,10 +293,6 @@ GEM
       redis-store (>= 1.2, < 2)
     redis-store (1.3.0)
       redis (>= 2.2)
-    representable (3.0.4)
-      declarative (< 0.1.0)
-      declarative-option (< 0.2.0)
-      uber (< 0.2.0)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -312,8 +300,6 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
-    roar (1.1.0)
-      representable (~> 3.0.0)
     rspec-core (3.6.0)
       rspec-support (~> 3.6.0)
     rspec-expectations (3.6.0)
@@ -375,17 +361,11 @@ GEM
     tilt (2.0.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    uber (0.1.0)
     uglifier (3.0.4)
       execjs (>= 0.3.0, < 3)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.2)
-    virtus (1.0.5)
-      axiom-types (~> 0.1)
-      coercible (~> 1.0)
-      descendants_tracker (~> 0.0, >= 0.0.3)
-      equalizer (~> 0.0, >= 0.0.9)
     warden (1.2.7)
       rack (>= 1.0)
     websocket-driver (0.6.5)
@@ -414,6 +394,7 @@ DEPENDENCIES
   figaro
   font-awesome-sass
   gibbon
+  graphql-client
   jbuilder
   jquery-fileupload-rails
   jquery-rails
@@ -425,7 +406,6 @@ DEPENDENCIES
   lodash-rails
   meetup_client
   money-rails
-  multi_json
   nokogiri
   omniauth-github
   pg (~> 0.20)
@@ -449,7 +429,6 @@ DEPENDENCIES
   redis-rails
   responders (~> 2.0)
   rest-client
-  roar
   rspec-rails (~> 3.6)
   ruby-trello
   sass-rails (~> 5.0)
@@ -460,7 +439,6 @@ DEPENDENCIES
   sitemap_generator
   spring
   uglifier
-  virtus
 
 RUBY VERSION
    ruby 2.4.1p111
