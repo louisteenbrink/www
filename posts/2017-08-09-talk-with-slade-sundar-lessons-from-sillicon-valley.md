@@ -12,7 +12,7 @@ description: |
   ... And how to avoid them. This talk will teach you how to spot critical issues and what steps you need to take before it is too late!
 ---
 
-*... And how to avoid them.*
+*The most common startup mistakes... And how to avoid them.*
 
 When a venture-backed startup begins to experience employee turnover, missed milestones, and constantly shifting goals - you may just think these are “normal” startup growth pains. But they may also be the first signs of a startup on the verge of collapse.
 
