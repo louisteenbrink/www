@@ -1,8 +1,10 @@
 require "mini_magick"
+require "base64"
 
 class ProxyController < ActionController::Base
   include ActiveSupport::SecurityUtils
   before_action :set_proxy_service
+  before_action :decode
   before_action :check_signature
 
   def image
@@ -17,6 +19,13 @@ class ProxyController < ActionController::Base
   end
 
   private
+
+  def decode
+    result = JSON.parse(Base64.decode64(params[:request]))
+    %i(url height width quality signature).each do |key|
+      params[key] = result[key.to_s] if result[key.to_s]
+    end
+  end
 
   def set_proxy_service
     @proxy = ProxyService.new
