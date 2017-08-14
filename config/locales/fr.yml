@@ -387,7 +387,8 @@ fr:
       new_pricing: "€900"
       react_cta: "Je réserve ma place"
       affix_title_date: "Prochaine session"
-      affix_date: "Du 25 au 29 septembre"
+      affix_date: "25 au 29 septembre"
+      affix_location: "16 villa Gaudelet, 75011 Paris"
       affix_title_participants: "Participants"
       affix_participant: "10"
       affix_title_offer: "Offre spéciale"
@@ -427,7 +428,7 @@ fr:
           <li>Prise en main de React - présentation de la classe Component</li>
           <li>Notion de "props" et "state"</li>
           <li>L'extension JSX pour générer le HTML</li>
-          <li>Gérer ses modules avec `import` / `export`</li>
+          <li>Gérer ses modules avec import / export</li>
         </ul>
       day_2: "Deuxième jour"
       day_2_content_html: |

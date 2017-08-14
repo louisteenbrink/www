@@ -320,7 +320,7 @@ $width: 320px;
 
       h3 {
         position: relative;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
 
         &:before {
@@ -339,6 +339,10 @@ $width: 320px;
         &:before {
           background-color: #4facfe;
         }
+      }
+
+      ul {
+        opacity: 0.8;
       }
     }
   }
@@ -416,6 +420,10 @@ $width: 320px;
 
       small {
         text-decoration: line-through;
+        margin-right: 10px;
+      }
+
+      .fa {
         margin-right: 10px;
       }
     }

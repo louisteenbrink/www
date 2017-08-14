@@ -91,9 +91,10 @@
             <div class="aside-picture" style="background-image: url(<%= image_path 'banners/blog-posts.jpg' %>)"></div>
             <%= image_tag 'technos/react-white.svg', class: "tech-icon" %>
           </div>
-          <div class="aside-item" style="padding-top: 46px;">
+          <div class="aside-item" style="padding-top: 20px;">
             <span class="item-title"><%= t('.affix_title_date') %></span>
-            <i><%= t('.affix_date') %></i>
+            <i><i class="fa fa-calendar" aria-hidden="true"></i><%= t('.affix_date') %></i>
+            <i><i class="fa fa-map-marker" aria-hidden="true"></i> <%= t('.affix_location') %></i>
           </div>
           <div class="aside-item">
             <span class="item-title"><%= t('.affix_title_participants') %></span>
