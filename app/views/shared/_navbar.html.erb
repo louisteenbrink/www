@@ -29,7 +29,7 @@
                     </li>
                     <% city_group[:cities].each do |city| %>
                       <li>
-                        <%= link_to city["name"], city_path(city: city["slug"]), style: "font-weight: 200; color: black" %>
+                        <%= link_to city.name, city_path(city: city.slug), style: "font-weight: 200; color: black" %>
                       </li>
                     <% end %>
                   </ul>

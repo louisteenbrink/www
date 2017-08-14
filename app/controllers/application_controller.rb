@@ -68,7 +68,15 @@ class ApplicationController < ActionController::Base
 
   def load_cities
     # needed in navbar
-    @city_groups = [] #@kitt_client.city_groups
+    # TODO add cache
+    cities = Kitt::Client.query(City::GroupsQuery).data.cities
+    @city_groups ||= Static::CITIES.map do |group|
+      slugs = group[:cities]
+      group[:cities] = slugs.map do |slug|
+        cities.find { |city| city.slug == slug }
+      end
+      group
+    end
     # needed in footer
     @cities = @city_groups.map { |city_group| city_group[:cities] }.flatten
   end

@@ -18,17 +18,17 @@ class Testimonial
   end
 
   def city
-    KittClient.new.city(@hash['city_slug'])
+    Kitt::Client.query(City::Query, variables: { slug: @hash['city_slug'] }).data.city
   rescue RestClient::ResourceNotFound
     nil
   end
 
   def project
-    KittClient.new.products([@project_slug]).first
+    Kitt::Client.query(Project::Query, variables: { slug: @project_slug }).data.project
   end
 
   def batch_thumbnail
-    KittClient.new.batch(@batch_slug)
+    Kitt::Client.query(Batch::Query, variables: { slug: @batch_slug.to_s }).data.batch
   end
 
   def picture_url

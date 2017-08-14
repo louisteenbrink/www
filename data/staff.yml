@@ -62,3 +62,18 @@ paris:
     bio_en:
     bio_fr:
     avatar_id: vzbuksaodmm318ypvmwr.jpg
+bordeaux:
+  - github_nickname: bertrandbussac
+    twitter_nickname:
+    name: Bertrand Bussac
+    role: Driver
+    bio_en:
+    bio_fr:
+    avatar_id: https://avatars2.githubusercontent.com/u/9798952?v=3
+  - github_nickname: volpeo
+    twitter_nickname:
+    name: Sylvain Peigney
+    role: Class Manager
+    bio_en:
+    bio_fr:
+    avatar_id: https://avatars1.githubusercontent.com/u/466015?v=4

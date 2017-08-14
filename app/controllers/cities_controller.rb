@@ -11,6 +11,7 @@ class CitiesController < ApplicationController
       return
     end
 
+    # TODO add cache
     @city = Kitt::Client.query(City::Query, variables: { slug: city_slug }).data.city
 
     if I18n.locale == I18n.default_locale &&
@@ -48,10 +49,6 @@ class CitiesController < ApplicationController
     session[:city] = @city.slug
 
     # Next batch
-    # batch_city = @cities.find { |city| city['slug'] == @city['slug'] && !city['batches'].empty? }
-    # if batch_city
-    #   @next_batch = batch_city['batches'].find { |batch| !batch['full'] }
-    # end
-
+    @next_batch = @city.next_batch
   end
 end
