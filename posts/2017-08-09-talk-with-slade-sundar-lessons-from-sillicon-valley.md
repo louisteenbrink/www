@@ -1,6 +1,6 @@
 ---
 layout: video
-title: "Talk with Slade Sundar, lessons from Sillicon Valley"
+title: "Talk with Slade Sundar, lessons from Silicon Valley"
 youtube_slug: AOJbfqJKWes
 date: 2017-08-09
 author: sandrine
