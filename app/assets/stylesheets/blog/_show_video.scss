@@ -103,10 +103,15 @@
         font-size: 1.1em;
         line-height: 1.5em;
         opacity: 0.9;
+
+        a {
+          font-weight: 600;
+        }
       }
 
       p:last-of-type {
         a {
+          font-weight: 200;
           text-transform: uppercase;
           text-decoration: underline;
           font-size: 12px;

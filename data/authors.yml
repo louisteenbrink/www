@@ -103,3 +103,13 @@ sandrine:
   company_website: lewagon.com/london
   twitter: lewagonlondon
   instagram: lewagonlondon
+bertrand:
+  fname: Bertrand
+  lname: Bussac
+  picture: bertrand-bussac.jpg
+  bio: "After several years of working as an entrepreneur in innovation, Bertrand recognized that in order to work more effectively and autonomously, he needed to master coding and website development. Now, he wants to share this knowledge and make you coding champions!"
+  company: Le Wagon Bordeaux
+  position: Briver
+  company_website: lewagon.com/bordeaux
+  twitter: lewagonbordeaux
+  instagram: lewagonbordeaux
