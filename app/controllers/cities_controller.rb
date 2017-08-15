@@ -33,15 +33,18 @@ class CitiesController < ApplicationController
       @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
     end
 
-    lead_teachers_slugs = Static::LEAD_TEACHERS[city_slug.to_sym].nil? ? [] : Static::LEAD_TEACHERS[city_slug.to_sym]
-    pedagogic_team = @city.current_batch.teachers.sort_by { |teacher| teacher.user.github_nickname }
-    lead_teachers = pedagogic_team
-      .select { |teacher| lead_teachers_slugs.include?(teacher.user.github_nickname) }
-      .sort_by { |teacher| lead_teachers_slugs.index(teacher.user.github_nickname) }
-    teachers = pedagogic_team - lead_teachers
-    @assistants = teachers.reject { |teacher| teacher.lecturer }
-    teachers -= @assistants
-    @teachers = lead_teachers.concat(teachers)
+    if @city.current_batch
+      pedagogic_team = @city.current_batch.teachers.sort_by { |teacher| teacher.user.github_nickname }
+      lead_teachers_slugs = Static::LEAD_TEACHERS[city_slug.to_sym].nil? ? [] : Static::LEAD_TEACHERS[city_slug.to_sym]
+      lead_teachers = pedagogic_team
+        .select { |teacher| lead_teachers_slugs.include?(teacher.user.github_nickname) }
+        .sort_by { |teacher| lead_teachers_slugs.index(teacher.user.github_nickname) }
+      teachers = pedagogic_team - lead_teachers
+      @assistants = teachers.reject { |teacher| teacher.lecturer }
+      teachers -= @assistants
+      @teachers = lead_teachers.concat(teachers)
+    end
+
     @staff = Static::STAFF[city_slug.to_sym]
 
     meetup_cli = MeetupApiClient.new(@city.meetup_id)

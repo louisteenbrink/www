@@ -87,41 +87,43 @@
       </div>
     </h2>
   </div>
-  <div class="container">
-    <div>
-      <% @teachers.each do |teacher| %>
-      <div class="row">
-        <div class="col-xs-12">
-          <div class="card-staff">
-            <div class="card-staff-description">
-              <h3><%= teacher.user.first_name %> <%= teacher.user.last_name %></h3>
-              <p><%= markdown(teacher.send("bio_#{locale}".to_sym) || teacher.bio_en) %></p>
-            </div>
-            <div class="card-staff-infos">
-              <div class="card-staff-role">
-                <h4><%= teacher.role %></h4>
-                <p>
-                  <a href="http://github.com/<%= teacher.user.github_nickname %>" target="_blank">
-                    <i class="fa fa-github"></i> <%= teacher.user.github_nickname %></p>
-                  </a>
-                <p>
-                <% if teacher.user.twitter_url.present? %>
+  <% unless (@teachers.nil? || @teachers.empty?) %>
+    <div class="container">
+      <div>
+        <% @teachers.each do |teacher| %>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="card-staff">
+              <div class="card-staff-description">
+                <h3><%= teacher.user.first_name %> <%= teacher.user.last_name %></h3>
+                <p><%= markdown(teacher.send("bio_#{locale}".to_sym) || teacher.bio_en) %></p>
+              </div>
+              <div class="card-staff-infos">
+                <div class="card-staff-role">
+                  <h4><%= teacher.role %></h4>
                   <p>
-                    <a href="<%= teacher.user.twitter_url %>" target="_blank">
-                      <i class="fa fa-twitter"></i> <%= teacher.user.twitter_url.gsub(/https?:\/\/(www.)?twitter.com\//, '') %></p>
+                    <a href="http://github.com/<%= teacher.user.github_nickname %>" target="_blank">
+                      <i class="fa fa-github"></i> <%= teacher.user.github_nickname %></p>
                     </a>
                   <p>
-                <% end %>
+                  <% if teacher.user.twitter_url.present? %>
+                    <p>
+                      <a href="<%= teacher.user.twitter_url %>" target="_blank">
+                        <i class="fa fa-twitter"></i> <%= teacher.user.twitter_url.gsub(/https?:\/\/(www.)?twitter.com\//, '') %></p>
+                      </a>
+                    <p>
+                  <% end %>
+                </div>
+                <%= cl_adaptive_image_tag teacher.user.avatar_url, width: 100, height: 100, crop: :fill, class: "img-circle card-staff-img" %>
               </div>
-              <%= cl_adaptive_image_tag teacher.user.avatar_url, width: 100, height: 100, crop: :fill, class: "img-circle card-staff-img" %>
             </div>
           </div>
         </div>
+        <% end %>
       </div>
-      <% end %>
     </div>
-  </div>
-  <% unless @assistants.empty? %>
+  <% end %>
+  <% unless (@assistants.nil? || @assistants.empty?) %>
     <div class="container">
       <h2 class="section-title-home text-center">
         <div class="section-title-home-content" style="font-size:30px;">

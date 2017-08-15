@@ -57,6 +57,7 @@ module City
         id
         slug
         name
+        city_background_picture_url
       }
     }
   GRAPHQL
