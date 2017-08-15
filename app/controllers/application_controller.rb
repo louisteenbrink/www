@@ -5,7 +5,7 @@ require 'open-uri'
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: :render_404
   before_action :set_locale
-  before_action :set_clients
+  before_action :set_client
   before_action :set_live
 
   before_action :load_static, if: -> { Rails.env.development? }
@@ -81,7 +81,7 @@ class ApplicationController < ActionController::Base
     @cities = @city_groups.map { |city_group| city_group[:cities] }.flatten
   end
 
-  def set_clients
+  def set_client
     @client ||= AlumniClient.new
   end
 

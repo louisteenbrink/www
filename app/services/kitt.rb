@@ -7,17 +7,6 @@ module Kitt
   Schema = GraphQL::Client.load_schema(HTTP)
   Client = GraphQL::Client.new(schema: Schema, execute: HTTP)
 end
-# class KittClient
-  # include Graphql::Client
-  # include Graphql::Client::Http
-  # # include Cache
-
-  # def initialize
-  #   @base_url = ENV.fetch('KITT_BASE_URL', 'https://kitt.lewagon.com/graphql')
-  #   @http = GraphQL::Client::HTTP.new("http://graphql-swapi.parseapp.com/")
-  # end
-
-  # HTTP = GraphQL::Client::HTTP.new("http://graphql-swapi.parseapp.com/")
 
   # def products(slugs = [])
   #   if slugs.empty?
@@ -41,31 +30,6 @@ end
   #   end
   # end
 
-  # def city_groups
-  #   Static::CITIES.map do |group|
-  #     slugs = group[:cities]
-  #     #TODO how to invalidate this cache?
-  #     group[:cities] = from_cache(:cities, slugs.join(',')) do
-  #       get("#{@base_url}/cities?#{slugs.to_query('slugs')}")["cities"]
-  #     end
-  #     group
-  #   end
-  # end
-
-  # def city_slugs
-  #   #TODO how to invalidate this cache?
-  #   from_cache(:city_slugs) do
-  #     get("#{@base_url}/cities/slugs")["slugs"]
-  #   end
-  # end
-
-  # def city(slug)
-  #   #TODO how to invalidate this cache?
-  #   from_cache(:city, slug) do
-  #     Api::City.new(get("#{@base_url}/cities/#{slug}"))
-  #   end
-  # end
-
   # def teachers(city_slug)
   #   #TODO how to invalidate this cache?
   #   from_cache(:teachers, city_slug) do
@@ -73,18 +37,6 @@ end
   #   end
   # end
 
-#   private
-
-#   def get(url, headers = {})
-#     JSON.parse RestClient::Request.execute({
-#       method: :get,
-#       url: url,
-#       user: 'lewagon',
-#       password: ENV['KITT_WWW_SHARED_SECRET'],
-#       headers: headers
-#     })
-#   end
-# end
 
 
 

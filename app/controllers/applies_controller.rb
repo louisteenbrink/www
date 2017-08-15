@@ -94,29 +94,28 @@ class AppliesController < ApplicationController
   include CloudinaryHelper
 
   def prepare_apply_form
-    @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
-      city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
-      first_available_batch = city['batches'].find { |b| !b['full'] }
-      city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
-      city['pictures'] = {
-        cover: cl_image_path(city['city_background_picture_path'] || "", width: 790, height: 200, crop: :fill),
-        thumb: cl_image_path(city['city_background_picture_path'] || "", height: 35, crop: :scale)
-      }
+    # @applicable_cities = @cities.select{ |city| !city.batches.empty? }.select do |city|
+    #   sorted_batches = city.batches.sort_by { |batch| batch.starts_at.to_date }
+    #   sorted_batches.find { |b| b.apply_status ==  "open_for_registration" }.nil?
+      # city.pictures = {
+      #   cover: cl_image_path(city['city_background_picture_path'] || "", width: 790, height: 200, crop: :fill),
+      #   thumb: cl_image_path(city['city_background_picture_path'] || "", height: 35, crop: :scale)
+      # }
 
-      city['batches'].each do |batch|
-        starts_at = batch['starts_at']
-        batch['starts_at'] = I18n.l starts_at.to_date, format: :apply
-        batch['starts_at_short'] = I18n.l starts_at.to_date, format: :short
-        batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
-        batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
-      end
-    end
+      # city.batches.each do |batch|
+      #   starts_at = batch.starts_at
+      #   batch['starts_at'] = I18n.l starts_at.to_date, format: :apply
+      #   batch['starts_at_short'] = I18n.l starts_at.to_date, format: :short
+      #   batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
+      #   batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
+      # end
+    # end
 
-    @applicable_cities = @applicable_cities.reject { |c| c['first_batch_date'].nil? }
+    # @applicable_cities = @applicable_cities.reject { |c| first_batch_date.nil? }
 
     # Sort by first available batch
-    @applicable_cities.sort! do |city_a, city_b|
-      if city_a['first_batch_date'] == city_b['first_batch_date']
+    @applicable_cities.sort do |city_a, city_b|
+      if city_a.first_batch_date == city_b['first_batch_date']
         city_a['name'] <=> city_b['name']
       else
         city_a['first_batch_date'] <=> city_b['first_batch_date']

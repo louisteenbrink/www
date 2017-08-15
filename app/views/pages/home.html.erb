@@ -75,14 +75,8 @@
               <div class="card-city-body">
                 <h3><%= city.name %></h3>
                 <div class="project-item-makers card-city-teachers">
-                  <% current_batch = Kitt::Client.query(City::Query, variables: { slug: city.slug }).data.city.current_batch %>
-                  <% if current_batch %>
-                  <!-- TODO controller logic -->
-                    <% lead_teachers_slugs = Static::LEAD_TEACHERS[city.slug.to_sym].nil? ? [] : Static::LEAD_TEACHERS[city.slug.to_sym] %>
-                    <% lead_teachers = current_batch.teachers
-                      .select { |teacher| lead_teachers_slugs.include?(teacher.user.github_nickname) }
-                      .sort_by { |teacher| lead_teachers_slugs.index(teacher.user.github_nickname) }
-                      .take(3).each do |teacher| %>
+                  <% if city.current_batch %>
+                    <% lead_teachers(city).take(3).each do |teacher| %>
                       <div class="project-item-maker">
                         <%= cl_adaptive_image_tag teacher.user.avatar_url, width: 30, height: 30, crop: :fill, class: 'avatar' %>
                       </div>
