@@ -47,6 +47,12 @@ module City
           slug
           starts_at
         }
+        next_batches: next_camps {
+          id
+          slug
+          starts_at
+          apply_status
+        }
       }
     }
   GRAPHQL

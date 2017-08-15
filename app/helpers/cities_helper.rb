@@ -5,4 +5,8 @@ module CitiesHelper
       .select { |teacher| lead_teachers_slugs.include?(teacher.user.github_nickname) }
       .sort_by { |teacher| lead_teachers_slugs.index(teacher.user.github_nickname) }
   end
+
+  def next_open_batch_date(city)
+    city.next_batches.find { |b| b.apply_status ==  "open_for_registration" }.starts_at.to_date
+  end
 end

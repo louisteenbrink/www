@@ -213,7 +213,7 @@ class ApplyForm extends React.Component {
   }
 
   firstBatch(city) {
-    return _.filter(city.batches, (n) => { return !n.full && !n.waiting_list })[0] || city.batches[0]
+    return _.filter(city.next_batches, (n) => { return n.apply_status != 'full' && n.apply_status != 'waiting_list' })[0] || city.next_batches[0]
   }
 
   batch(id) {
