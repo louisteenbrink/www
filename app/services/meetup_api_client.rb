@@ -1,5 +1,5 @@
 class MeetupApiClient
-  EXPIRE = 300
+  EXPIRE = 1.day # TODO(ssaunier): should push out meetup refresh to a worker
 
   def initialize(meetup_id)
     @id = meetup_id

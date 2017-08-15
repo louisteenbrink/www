@@ -86,7 +86,12 @@ class Blog
     end
 
     def author
-      Static::AUTHORS[metadata[:author].to_sym]
+      the_author = Static::AUTHORS[metadata[:author].to_sym]
+      if the_author.blank?
+        raise "Please specify a valid author. '#{metadata[:author]}' is not."
+      else
+        return the_author
+      end
     end
 
     def labels

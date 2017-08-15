@@ -2,7 +2,7 @@ zh-CN:
   date:
     formats:
       apply: "%B %e, %Y"
-  top_bar_message: Want to know what our students are up to in 9 weeks
+  top_bar_message: Discover what our students are able to build in only 10 days
   top_bar_cta: watch our demos
   shared:
     positions:
@@ -269,7 +269,7 @@ zh-CN:
         Please wait for the Driver to contact you to set up your interview.
         If you wish to change the city you applied to, you can discuss that with him / her!
       we_will_contact_html: |
-        我们会尽快邮件联系您，安排面试。<br /><br />同时，根据我们的准备清单上的要求在CodeCademy上开始<a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a>的测试。
+        我们会尽快邮件联系您，安排面试。<br /><br />同时，根据我们的准备清单上的要求在CodeCademy上开始<a href="https://www.codecademy.com/learn/learn-ruby" target="_blank">ruby track</a>的测试。
       take_advance: 准备清单
       first_step: "1. 申请加入Le Wagon %{name}"
       second_step: "加入 %{name} Meetup群"
@@ -324,8 +324,10 @@ zh-CN:
       tagline_details_html: |
         学习数码技能，改变<br>你的团队成员们工作的方式.
         <strong>工作更快速，更高效。</strong>
-      apply: 加入Le Wagon学习
-      apply_to: 学习%{skill}
+      apply_phone_html: |
+        Call Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contact Benjamin<br><small>benjamin@lewagon.org</small>
       skills_header: 工作坊&为你的公司设计的设计冲刺活动
       skills_text_html: 通过两小时的演讲，一天的工作坊，或者是一周的产品原型设计冲刺，<strong>我们将会教授用户界面／用户体验设计，产品经营，以及网页开发技能。</strong>.
       pm: 学习产品管理
@@ -340,23 +342,34 @@ zh-CN:
       fullstack_details: 从数据库到浏览器，学习从头搭建网页应用的过程。
       prototyping: 学习设计简洁的产品原型
       prototyping_details: API正在占领世界。探索创业公司是如何仅仅通过连接API（应用程序编程接口）做出产品原型的。
-      best: 从最好的操作中学习
-      best_details_html: |
-        <p>
-         我们已经在全球范围内培训了超过1200名学员，他们来自商学院，工程学院，设计学院等等。我们知道如何<strong>弥补科技与商业之间的鸿沟</strong>。在我们的帮助下，学员们已经编写并且做出了<strong>超过400多个</strong>产品原型。
-        </p>
-        <p>
-         在为如此多的人才提供培训之后，我们知道<strong>我们能够为您的团队带来同样的技能</strong>。
-        </p>
-      hec_html: 从2017年起，Le Wagon就是巴黎高等商学院（法国排名最高的商学院）的官方合作伙伴，并且 <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">教授巴黎高等商学院的创业家们如何用编程打造出自己的产品。</a>.
-      watch: 上一场公司培训工作坊：“一天编程“
-      google_quote: Le Wagon知道如何将具有辅助作用的科学技术和文化带给具有商业背景的人们。他们对科技的看法往往十分独特。
-      eki_quote:  Le Wagon所教授的技术栈和设计方法论是我们产品工程文化的精华部分。
-      drivy_quote: 精心安排的课程，热情满满的老师。
-      stripe_quote: 实用工作坊会教授关键的专业技术，介绍产品思维模式。
-      algolia_quote: 如果你具有商业背景，Le Wagon会大大地改善你和科技之间的关系。
-      uber_quote: Le Wagon帮助我更好地理解了Uber公司的产品设计蓝图，并且更好地将诸如API整合这样的简单概念解释给合作伙伴。
-      with_us: 他们是我们的合作伙伴。
+      formats_title: One workshop for each of your goals
+      format_1_title: "Motivate your teammates: give them the opportunity to learn how to code"
+      format_1_description_html: |
+          <i><strong>1</strong>full day, two workshops</i>
+      format_2_title: Improve communication between technical and marketing teams
+      format_2_description_html: |
+          <i><strong>7</strong> workshops to help your non-technical teams understand the role of a web developer</i>
+      format_3_title: Transform project managers into “Product Owners”
+      format_3_description_html: |
+          <i><strong>1</strong> year of workshops on 6 different themes</i>
+      format_4_title: Improve the ability of your HR team to evaluate technical talent
+      format_4_description_html: |
+          <i><strong>5</strong> workshops about the web developer role</i>
+      format_5_title: Foster intraspreneurship by providing adequate resources
+      format_5_description_html: |
+          <i><strong>1</strong> set of workshops on frontend and backend development to learn how to launch an MVP.</i>
+      format_6_title: Deliver faster by adopting a startup culture
+      format_6_description_html: |
+          <i><strong>3</strong> workshops on web development and the workflow of a startup</i>
+      cta-objectives: What is your goal?
+      watch: Our last corporate workshop "One Day of Code"
+      with_us: They work with us.
+      testimonial_1: A very interesting and enriching day. Perfect to discover web and programming.
+      testimonial_2: A beautifully executed pedagogy and an enticing mindset, I almost want to become a coder myself!
+      testimonial_3: A perfect training program to take your first steps in the world of web development.
+      testimonial_4: 3 super dense hours, but very interesting to learn how to code a landing page. I’d like to learn more!
+      testimonial_5: Awesome introduction to coding, I wish I had done a full day to feel more autonomous by the end of it, it makes me want to go further.
+      testimonial_cta: Sign up your teammates
     live:
       page_title_with_current_event: "直播 - %{event_name}"
       page_title_no_live: "直播 - 即将到来"
@@ -444,7 +457,7 @@ zh-CN:
       codecademy_modal_body_html: |
         <p>
           <a href="%{faq_path}" target="_blank">常见问题</a>中提到过，加入Le Wagon的前提之一就是需要在CodeCademy上100%完成
-          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a>测试。
+          <a href="https://www.codecademy.com/learn/learn-ruby">Ruby Track</a>测试。
           如果你没有CodeCademy账户，请<a href="https://www.codecademy.com/register" target="_blank">现在创建一个</a>，是免费的。
         </p>
         <p>

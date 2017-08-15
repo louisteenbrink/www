@@ -4,6 +4,8 @@ require 'open-uri'
 
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception, except: :render_404
+  before_action :fetch_critical_css, if: -> { Rails.env.production? }
+  before_action :better_errors_hack, if: -> { Rails.env.development? }
   before_action :set_locale
   before_action :set_client
   before_action :set_live
@@ -29,18 +31,8 @@ class ApplicationController < ActionController::Base
   def render_404
     respond_to do |format|
       format.html { render 'pages/404', status: :not_found }
-      format.all { render text: 'Not Found', status: :not_found }
+      format.all { render plain: 'Not Found', status: :not_found }
     end
-  end
-
-  def render_500
-    render 'pages/500', status: 500
-  end
-
-  before_action :better_errors_hack, if: -> { Rails.env.development? }
-
-  def better_errors_hack
-    request.env['puma.config'].options.user_options.delete :app
   end
 
   private
@@ -87,5 +79,19 @@ class ApplicationController < ActionController::Base
 
   def set_live
     @live = Live.running_now
+  end
+
+  def fetch_critical_css
+    if request.get? && request.format.html?
+      @critical_css = CriticalPathCss.fetch(request.path)
+      if @critical_css.empty?
+        # Wait 1 minute to be sure that Heroku deployment is complete and server ready.
+        GenerateCriticalCssJob.set(wait: 1.minute).perform_later(request.path)
+      end
+    end
+  end
+
+  def better_errors_hack
+    request.env['puma.config'].options.user_options.delete(:app) if request.env.has_key?('puma.config')
   end
 end

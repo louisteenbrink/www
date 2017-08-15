@@ -1,4 +1,9 @@
+require 'digest/sha1'
+
 class Testimonial
+  include Rails.application.routes.url_helpers
+  include ProxyHelper
+
   DEFAULT_ROUTE = "home"
 
   class RecordNotFound < Exception; end
@@ -23,6 +28,10 @@ class Testimonial
     nil
   end
 
+  def name
+    "#{first_name} #{last_name}"
+  end
+
   def project
     Kitt::Client.query(Project::Query, variables: { slug: @project_slug }).data.project
   end
@@ -31,8 +40,17 @@ class Testimonial
     Kitt::Client.query(Batch::Query, variables: { slug: @batch_slug.to_s }).data.batch
   end
 
-  def picture_url
-    "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}"
+  def picture_url(height, width, quality)
+    proxy_url_with_signature \
+      host: Rails.configuration.action_mailer.default_url_options[:host],
+      url: "https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/#{@hash['picture']}",
+      height: height,
+      width: width,
+      quality: quality
+  end
+
+  def cache_key
+    "#{first_name}:#{last_name}:#{Digest::SHA1.hexdigest(content_html)}"
   end
 
   def self.where(options = {})
