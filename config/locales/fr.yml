@@ -80,9 +80,8 @@ fr:
       web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
-        Apprenez des techniques de design avancées en CSS.
-        Plongez dans Javascript et explorez jQuery ou encore React.js,
-        la dernière librairie Javascript développée par Facebook.
+        Apprenez des techniques de design avancées en CSS (flexbox, CSS grid).
+        Plongez dans Javascript et explorez ES6, la dernière version de Javascript.
       software_engineer_html: Comprenez la technique
       software_engineer_details: |
         Apprenez à penser comme un "Software engineer".
