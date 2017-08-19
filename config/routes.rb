@@ -120,6 +120,7 @@ Rails.application.routes.draw do
 
   # Sidekiq
   require "sidekiq/web"
+  require "sidekiq/cron/web"
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end

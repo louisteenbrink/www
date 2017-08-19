@@ -16,7 +16,7 @@ gem 'redis-rails'
 # Enhacements
 gem 'sidekiq'
 gem 'sidekiq-failures'
-gem 'sidekiq_snitch'
+gem 'sidekiq-cron'
 
 # Addons
 gem 'devise', '~> 4.3.0'
