@@ -45,14 +45,18 @@
           <h2><%= t('.title_teachers') %></h2>
           <div class="teachers-wrapper">
             <div class="teacher-card">
-              <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/edward-schults.jpg', width: 100, height: 100), class: "teacher-pic" %>
+              <%= link_to "https://www.linkedin.com/in/edward-schults-b81b2abb", target: :_blank do %>
+                <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/edward-schults.jpg', width: 100, height: 100), class: "teacher-pic" %>
+              <% end %>
               <div class="teacher-details">
                 <span>Edward<small>Schults</small></span>
                 <i>Lead Teacher</i>
               </div>
             </div>
             <div class="teacher-card">
-              <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
+              <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
+                <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
+              <% end %>
               <div class="teacher-details">
                 <span>Sébastien<small>Saunier</small></span>
                 <i>CTO</i>
@@ -98,7 +102,7 @@
           </div>
           <div class="aside-item">
             <span class="item-title"><%= t('.affix_title_participants') %></span>
-            <i><%= t('.affix_participant') %></i>
+            <i>20</i>
           </div>
           <div class="aside-item">
             <span class="item-title"><%= t('.affix_title_offer') %></span>

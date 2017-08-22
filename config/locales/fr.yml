@@ -382,7 +382,7 @@ fr:
     react:
       catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
       main_title: "Formez-vous à React + Redux"
-      special_offer: "60% de remise pour les 10 premiers inscrits"
+      special_offer: "64% de remise pour les 10 premiers inscrits"
       pricing: "€2,500"
       new_pricing: "€900"
       react_cta: "Je réserve ma place"
@@ -390,7 +390,6 @@ fr:
       affix_date: "25 au 29 septembre"
       affix_location: "16 villa Gaudelet, 75011 Paris"
       affix_title_participants: "Participants"
-      affix_participant: "10"
       affix_title_offer: "Offre spéciale"
       affix_title_pricing: "Prix"
       title_intro: "Présentation"
@@ -414,49 +413,48 @@ fr:
         </ul>
       title_teachers: "Formateurs"
       quote: |
-        What a goaaaal! Listen to the crooooowd!!!
+        Du JS en spaghetti de jQuery, ce n'est pas une fatalité !
       title_syllabus: "Ce que vous allez apprendre :"
-      day_1: "Premier jour"
+      day_1: "Jour 1 : Écosystème du JavaScript moderne"
       day_1_content_html: |
         <ul>
-          <li>L'ecosystème JavaScript</li>
-          <li>Babel pour compiler l'ES6</li>
-          <li>Webpack pour empaqueter des modules </li>
-          <li>npm comme source de librairies</li>
-          <li>yarn pour les intégrer</li>
+          <li><strong>Babel</strong> pour compiler l'<strong>ES6</strong></li>
+          <li><strong>Webpack</strong> pour empaqueter des modules</li>
+          <li><strong>npm</strong> comme source de librairies</li>
+          <li><strong>yarn</strong> pour les intégrer</li>
           <li>ES6 : nouvelles syntaxes</li>
-          <li>Prise en main de React - présentation de la classe Component</li>
+          <li>Prise en main de <strong>React</strong> - présentation de la classe Component</li>
           <li>Notion de "props" et "state"</li>
-          <li>L'extension JSX pour générer le HTML</li>
-          <li>Gérer ses modules avec import / export</li>
+          <li><strong>JSX</strong> comme language de template</li>
+          <li>Gérer ses modules avec <code>import</code> / <code>export</code></li>
         </ul>
-      day_2: "Deuxième jour"
+      day_2: "Jour 2 : React + Redux"
       day_2_content_html: |
         <ul>
           <li>Combiner des composants React pour faire une application web complexe</li>
-          <li>Récupérer de la donnée en AJAX avec fetch pour alimenter nos composants</li>
-          <li>Utiliser `map` pour les patterns de listes</li>
-          <li>Prise en main de Redux - notion de state global au niveau de l'application</li>
+          <li>Récupérer de la donnée en AJAX avec <code>fetch</code> pour alimenter nos composants</li>
+          <li>Utiliser <code>map</code> pour les patterns de listes</li>
+          <li>Prise en main de <strong>Redux</strong> - notion de state global au niveau de l'application</li>
           <li>Modélisation et gestion du state de l'app</li>
           <li>Promouvoir les Composants qui ont besoin de connaitre ce state en Containers</li>
           <li>Définir les Reducers et Action Creators responsables de reverser les changements de state aux différents Containers</li>
         </ul>
-      day_3: "Troisième jour"
+      day_3: "Jour 3 : React + Redux (Suite)"
       day_3_content_html: |
         <ul>
-          <li>Middleware pour le traitement des Promises</li>
+          <li><strong>Middleware</strong> pour le traitement des Promises</li>
           <li>Connecter une app front-end à une API REST fournie</li>
-          <li>React Router pour simuler la navigation sur une SPA</li>
-          <li>Redux Form pour poster de la donnée sur l'API</li>
+          <li>React <strong>Router</strong> pour simuler la navigation sur une SPA</li>
+          <li>Redux <strong>Form</strong> pour poster de la donnée sur l'API</li>
           <li>Form Validation pour gérer la validité des données postées</li>
         </ul>
-      day_4: "Quatrième jour"
+      day_4: "Jour 4 : Tests + Projet"
       day_4_content_html: |
         <ul>
           <li>Renforcer son workflow avec des tests</li>
           <li>Développer un MVP personnel</li>
         </ul>
-      day_5: "Cinquième jour"
+      day_5: "Jour 5 : React + Rails"
       day_5_content_html: |
         <ul>
           <li>Mettre en place React + Redux dans une app Rails fournie</li>
@@ -478,8 +476,8 @@ fr:
         </ul>
         <p>En effet, React vous permet de penser vos composants comme des objets, porteurs :</p>
         <ul>
-          <li>de propriétés (ou `props`, données immuables, propres à l'objet)</li>
-          <li>d'états (ou `state`, susceptibles de changer au cours de la vie du composant)</li>
+          <li>de propriétés (ou <code>props</code>, données immuables, propres à l'objet)</li>
+          <li>d'états (ou <code>state</code>, susceptibles de changer au cours de la vie du composant)</li>
           <li>de comportement</li>
         </ul>
         <p>Les deux librairies associées offrent un framework performant pour construire des applications front-end complexes dotées d'une interface dynamique et réactive.</p>
