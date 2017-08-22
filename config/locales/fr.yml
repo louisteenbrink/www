@@ -469,7 +469,7 @@ fr:
         <p>Redux est une librairie JavaScript dédiée à la gestion du flux de données à reverser dans vos différents composants pour mettre à jour leur état.</p>
 
         <h3>Faut-il utiliser React quel que soit le projet que vous codez ?</h3>
-        <p>Non. React est particulièrement utile et performante lorsque :</p>
+        <p>Non. React est particulièrement utile et performant lorsque :</p>
         <ul>
           <li>Vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout")</li>
           <li>Et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …)</li>
@@ -483,7 +483,7 @@ fr:
         <p>Les deux librairies associées offrent un framework performant pour construire des applications front-end complexes dotées d'une interface dynamique et réactive.</p>
 
         <h3>Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?</h3>
-        <p>Oui, depuis la version 5.1 de Rails et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.</p>
+        <p>Oui, depuis la <a href="http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/">version 5.1 de Rails</a> et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.</p>
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
