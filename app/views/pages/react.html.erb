@@ -16,7 +16,7 @@
     <li><%= t('.pricing') %></li>
     <li><%= t('.new_pricing') %></li>
   </ul>
-  <i><%= t('.special_offer') %></i>
+  <i class="disclaimer"><%= t('.special_offer') %></i>
   <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
 </div>
 
@@ -25,6 +25,12 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
+
+        <div class="section-mobile">
+          <h2><%= t('.affix_title_date') %></h2>
+          <span><i class="fa fa-calendar" aria-hidden="true"></i><%= t('.affix_date') %></span>
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i> <%= t('.affix_location') %></span>
+        </div>
 
         <div class="section-intro">
           <h2><%= t('.title_intro') %></h2>

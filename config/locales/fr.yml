@@ -2,6 +2,8 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
+  top_bar_react_message: Formez-vous à React + Redux
+  top_bar_react_cta: 64% de remise pour les 10 premiers inscrits
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
   shared:
