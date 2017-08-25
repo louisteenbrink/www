@@ -150,14 +150,13 @@ $width: 320px;
     -webkit-padding-start: 0px;
 
     li:nth-child(1) {
-      font-size: 14px;
-      line-height: 22px;
-      text-decoration: line-through;
+      font-weight: 900;
     }
 
     li:nth-child(2) {
       margin-left: 5px;
-      font-weight: 900;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 
@@ -469,8 +468,8 @@ $width: 320px;
       opacity: 0.8;
 
       small {
-        text-decoration: line-through;
-        margin-right: 10px;
+        margin-left: 5px;
+        font-size: 14px;
       }
 
       .fa {
