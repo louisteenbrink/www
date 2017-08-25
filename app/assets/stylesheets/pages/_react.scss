@@ -79,6 +79,12 @@ $width: 320px;
     opacity: 0.15;
     z-index: -1;
 
+    @media(max-width: 520px) {
+      width: $width - 100px;
+      height: $width - 100px;
+    }
+
+
     span {
       position: absolute;
       top: 50%;
@@ -100,6 +106,13 @@ $width: 320px;
       border-top:
         $width / 25 solid transparent;
       border-radius: 100%;
+
+      @media(max-width: 520px) {
+        border-left:
+          ($width - 100px) / 25 solid;
+        border-top:
+          ($width - 100px) / 25 solid transparent;
+      }
 
       @for $i from 1 through 3 {
         &:nth-child(#{$i}) {
