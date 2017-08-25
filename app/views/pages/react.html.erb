@@ -12,11 +12,6 @@
     <div></div>
     <span></span>
   </div>
-  <ul class="pricing">
-    <li><%= t('.pricing') %></li>
-    <li><%= t('.new_pricing') %></li>
-  </ul>
-  <i class="disclaimer"><%= t('.special_offer') %></i>
   <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
 </div>
 
@@ -112,11 +107,12 @@
           </div>
           <div class="aside-item">
             <span class="item-title"><%= t('.affix_title_offer') %></span>
-            <i><%= t('.special_offer') %></i>
+            <i style="font-style: italic; font-size: 16px;"><%= t('.special_offer') %></i>
+            <i><%= t('.special_offer_vat') %><small><%= t('.special_offer_no_vat') %></small></i>
           </div>
           <div class="aside-item">
             <span class="item-title"><%= t('.affix_title_pricing') %>:</span>
-            <i><small><%= t('.pricing') %></small><%= t('.new_pricing') %></i>
+            <i><%= t('.pricing_vat') %><small><%= t('.pricing_no_vat') %></small></i>
           </div>
           <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/T0mrph" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
         </div>
