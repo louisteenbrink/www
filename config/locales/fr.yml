@@ -3,7 +3,7 @@ fr:
     formats:
       apply: "%e %B %Y"
   top_bar_react_message: Formez-vous à React + Redux
-  top_bar_react_cta: 64% de remise pour les 10 premiers inscrits
+  top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
   shared:
@@ -383,9 +383,11 @@ fr:
     react:
       catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
       main_title: "Formez-vous à React + Redux"
-      special_offer: "64% de remise pour les 10 premiers inscrits"
-      pricing: "€2,500"
-      new_pricing: "€900"
+      special_offer: "Alumni programme Fullstack"
+      pricing_vat: "€2,500 TTC"
+      pricing_no_vat: "soit €2,083 HT"
+      special_offer_vat: "€1,500 TTC"
+      special_offer_no_vat: "soit €1,250 HT"
       react_cta: "Je réserve ma place"
       affix_title_date: "Prochaine session"
       affix_date: "25 au 29 septembre"

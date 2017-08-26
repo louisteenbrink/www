@@ -1,3 +1,9 @@
+- name: "Le Wagon, une initiative française sur les rails du codage au Québec"
+  url: "http://loutardeliberee.com/wagon-initiative-francaise-rails-codage-quebec/"
+  media: "L'Outarde libérée"
+  logo: logo-loutardeliberee.jpg
+  date: 2017-08-07
+
 - name: "Le Wagon é a principal escola de programação da Europa – conheça dois cases!"
   url: "https://conteudo.startse.com.br/startups/lucas-bicudo/le-wagon-e-principal-escola-de-programacao-da-europa-conheca-dois-cases/"
   media: "StartSe"

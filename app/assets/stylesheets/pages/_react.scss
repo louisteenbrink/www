@@ -79,6 +79,12 @@ $width: 320px;
     opacity: 0.15;
     z-index: -1;
 
+    @media(max-width: 520px) {
+      width: $width - 100px;
+      height: $width - 100px;
+    }
+
+
     span {
       position: absolute;
       top: 50%;
@@ -100,6 +106,13 @@ $width: 320px;
       border-top:
         $width / 25 solid transparent;
       border-radius: 100%;
+
+      @media(max-width: 520px) {
+        border-left:
+          ($width - 100px) / 25 solid;
+        border-top:
+          ($width - 100px) / 25 solid transparent;
+      }
 
       @for $i from 1 through 3 {
         &:nth-child(#{$i}) {
@@ -137,14 +150,13 @@ $width: 320px;
     -webkit-padding-start: 0px;
 
     li:nth-child(1) {
-      font-size: 14px;
-      line-height: 22px;
-      text-decoration: line-through;
+      font-weight: 900;
     }
 
     li:nth-child(2) {
       margin-left: 5px;
-      font-weight: 900;
+      font-size: 14px;
+      line-height: 22px;
     }
   }
 
@@ -456,8 +468,8 @@ $width: 320px;
       opacity: 0.8;
 
       small {
-        text-decoration: line-through;
-        margin-right: 10px;
+        margin-left: 5px;
+        font-size: 14px;
       }
 
       .fa {
