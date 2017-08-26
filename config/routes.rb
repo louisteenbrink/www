@@ -41,7 +41,7 @@ Rails.application.routes.draw do
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
-  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
+  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.com/#{req.fullpath.gsub("/ondemand/", "")}" }
   get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
   {
