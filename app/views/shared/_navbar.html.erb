@@ -59,8 +59,13 @@
                       <%= t ".menu.on_site", default: "Onsite" %>
                     </li>
                     <li>
-                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red" %>
+                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red", style: "min-width: 304px;"%>
                     </li>
+                    <% if I18n.locale == :fr %>
+                      <li>
+                        <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 304px;" %>
+                      </li>
+                    <% end %>
                     <% unless I18n.locale == :fr %>
                       </ul>
                       <ul class="list-unstyled">
@@ -70,7 +75,7 @@
                       <%= t ".menu.online", default: "Online" %>
                     </li>
                     <li style="padding: 3px 0px;">
-                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise" %>
+                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise", style: "min-width: 304px;" %>
                     </li>
                   </ul>
 
