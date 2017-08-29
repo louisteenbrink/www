@@ -20,5 +20,5 @@ Fervent défenseur du droit à être curieux toute sa vie et de s'essayer à aut
 
 Bonne écoute !
 
-- Article d'abord publié sur [Nouvelle École](ep-32-romain-paillard-le-droit-detre-curieux-toute-sa-vie/)
+- Article d'abord publié sur [Nouvelle École](http://nouvelleecole.org/ep-32-romain-paillard-le-droit-detre-curieux-toute-sa-vie/)
 - Abonne-toi sur [iTunes](https://itunes.apple.com/fr/podcast/nouvelle-ecole/id1126434008?mt=2)
