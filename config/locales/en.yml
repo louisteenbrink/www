@@ -71,8 +71,8 @@ en:
       web_development: Learn web-development
       web_development_details: |
         Learn all about Ruby, SQL, and the Rails application framework.
-        Develop your front-end skills by using advanced CSS technics (flexbox, grid, animations, etc..)
-        and go deeper into Javascript by learning jQuery and React.js,
+        Develop your front-end skills by using advanced CSS patterns (flexbox, CSS grid)
+        and go deeper into Javascript and ES6, the latest version of Javascript.
         the library developed by Facebook.
       software_engineer_html: Think like a Software engineer
       software_engineer_details: |
@@ -428,7 +428,7 @@ en:
       call: 'Call %{name}:'
       email: 'Email %{name}'
       city_arrival_html: "Coding bootcamp in <strong>%{city}</strong>"
-      apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> for 9 weeks</span>"
+      apply_for_nine_weeks_html: "Apply<span class='hidden-xs'> now</span>"
       staff: "Teachers in %{city}"
       discover_us: "Discover our program"
       apprentices: "Join %{count} apprentices"

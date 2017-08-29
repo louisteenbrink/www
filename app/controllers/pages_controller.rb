@@ -1,6 +1,7 @@
 # app/controllers/pages_controller.rb
 class PagesController < ApplicationController
   before_action :switch_to_french_if_needed, only: :home
+  before_action :set_top_bar, only: :home
   after_action :mark_as_tracked, only: :thanks
 
   def show
@@ -26,9 +27,7 @@ class PagesController < ApplicationController
     if locale == :"pt-BR"
       session[:city] = 'sao-paulo'
     end
-    @top_bar_message = I18n.t('.top_bar_message')
-    @top_bar_cta = I18n.t('.top_bar_cta')
-    @top_bar_url = demoday_index_path
+
     @reviews = ReviewsCounter.new.review_count
 
     if request.format.html? || params[:testimonial_page]
@@ -64,11 +63,8 @@ class PagesController < ApplicationController
 
   def program
     @statistics = @client.statistics
-
-    @top_bar_message = I18n.t('.top_bar_message')
-    @top_bar_cta = I18n.t('.top_bar_cta')
-    @top_bar_url = demoday_index_path
   end
+
 
   def linkedin
     render json: params.to_json
@@ -81,6 +77,14 @@ class PagesController < ApplicationController
   end
 
   private
+
+  def set_top_bar
+    if I18n.locale == :fr
+      @top_bar_message = I18n.t('.top_bar_react_message')
+      @top_bar_cta = I18n.t('.top_bar_react_cta')
+      @top_bar_url = react_path
+    end
+  end
 
   def mark_as_tracked
     @apply.update tracked: true if @apply

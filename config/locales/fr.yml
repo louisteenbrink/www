@@ -2,6 +2,8 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
+  top_bar_react_message: Formez-vous à React + Redux
+  top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
   shared:
@@ -39,6 +41,7 @@ fr:
         ondemand: OnDemand
         on_site: En présentiel
         fullstack_program: FullStack (9 semaines intensives)
+        react_program: React (5 jours intensifs)
         free_track: Web-Development Basics (gratuit)
       apply: Postuler
       employers: Entreprises
@@ -80,9 +83,8 @@ fr:
       web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
-        Apprenez des techniques de design avancées en CSS.
-        Plongez dans Javascript et explorez jQuery ou encore React.js,
-        la dernière librairie Javascript développée par Facebook.
+        Apprenez des techniques de design avancées en CSS (flexbox, CSS grid).
+        Plongez dans Javascript et explorez ES6, la dernière version de Javascript.
       software_engineer_html: Comprenez la technique
       software_engineer_details: |
         Apprenez à penser comme un "Software engineer".
@@ -379,6 +381,113 @@ fr:
     shop:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
+    react:
+      catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
+      main_title: "Formez-vous à React + Redux"
+      special_offer: "Alumni programme Fullstack"
+      pricing_vat: "€2,500 TTC"
+      pricing_no_vat: "soit €2,083 HT"
+      special_offer_vat: "€1,500 TTC"
+      special_offer_no_vat: "soit €1,250 HT"
+      react_cta: "Je réserve ma place"
+      affix_title_date: "Prochaine session"
+      affix_date: "25 au 29 septembre"
+      affix_location: "16 villa Gaudelet, 75011 Paris"
+      affix_title_participants: "Participants"
+      affix_title_offer: "Offre spéciale"
+      affix_title_pricing: "Prix"
+      title_intro: "Présentation"
+      content_intro_html: |
+        Apprenez à développer des applications front-end complexes avec React et Redux.
+      title_goals: "Objectifs"
+      content_goals_html: |
+        <ul>
+          <li><i>1</i>Modéliser ses composants de vues avec React</li>
+          <li><i>2</i>Modéliser ses flux de données avec Redux</li>
+          <li><i>3</i>Construire une application web complexe avec React + Redux et une API REST fournie</li>
+          <li><i>4</i>Intégrer une application web React + Redux à une application Rails existante</li>
+        </ul>
+      title_requirements: "Pré-requis"
+      content_requirements_html: |
+        <ul>
+          <li>Bonnes connaissances en JavaScript</li>
+          <li>Quelques notions d'ES6</li>
+          <li>Savoir utiliser une API REST</li>
+          <li>Bonnes connaissances en Rails</li>
+        </ul>
+      title_teachers: "Formateurs"
+      quote: |
+        Du JS en spaghetti de jQuery, ce n'est pas une fatalité !
+      title_syllabus: "Ce que vous allez apprendre :"
+      day_1: "Jour 1 : Écosystème du JavaScript moderne"
+      day_1_content_html: |
+        <ul>
+          <li><strong>Babel</strong> pour compiler l'<strong>ES6</strong></li>
+          <li><strong>Webpack</strong> pour empaqueter des modules</li>
+          <li><strong>npm</strong> comme source de librairies</li>
+          <li><strong>yarn</strong> pour les intégrer</li>
+          <li>ES6 : nouvelles syntaxes</li>
+          <li>Prise en main de <strong>React</strong> - présentation de la classe Component</li>
+          <li>Notion de "props" et "state"</li>
+          <li><strong>JSX</strong> comme language de template</li>
+          <li>Gérer ses modules avec <code>import</code> / <code>export</code></li>
+        </ul>
+      day_2: "Jour 2 : React + Redux"
+      day_2_content_html: |
+        <ul>
+          <li>Combiner des composants React pour faire une application web complexe</li>
+          <li>Récupérer de la donnée en AJAX avec <code>fetch</code> pour alimenter nos composants</li>
+          <li>Utiliser <code>map</code> pour les patterns de listes</li>
+          <li>Prise en main de <strong>Redux</strong> - notion de state global au niveau de l'application</li>
+          <li>Modélisation et gestion du state de l'app</li>
+          <li>Promouvoir les Composants qui ont besoin de connaitre ce state en Containers</li>
+          <li>Définir les Reducers et Action Creators responsables de reverser les changements de state aux différents Containers</li>
+        </ul>
+      day_3: "Jour 3 : React + Redux (Suite)"
+      day_3_content_html: |
+        <ul>
+          <li><strong>Middleware</strong> pour le traitement des Promises</li>
+          <li>Connecter une app front-end à une API REST fournie</li>
+          <li>React <strong>Router</strong> pour simuler la navigation sur une SPA</li>
+          <li>Redux <strong>Form</strong> pour poster de la donnée sur l'API</li>
+          <li>Form Validation pour gérer la validité des données postées</li>
+        </ul>
+      day_4: "Jour 4 : Tests + Projet"
+      day_4_content_html: |
+        <ul>
+          <li>Renforcer son workflow avec des tests</li>
+          <li>Développer un MVP personnel</li>
+        </ul>
+      day_5: "Jour 5 : React + Rails"
+      day_5_content_html: |
+        <ul>
+          <li>Mettre en place React + Redux dans une app Rails fournie</li>
+          <li>Construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)</li>
+        </ul>
+      title_faq: "F.A.Q"
+      content_faq_html: |
+        <h3>Qu'est-ce que React ?</h3>
+        <p>ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.</p>
+
+        <h3>Qu'est-ce que Redux ?</h3>
+        <p>Redux est une librairie JavaScript dédiée à la gestion du flux de données à reverser dans vos différents composants pour mettre à jour leur état.</p>
+
+        <h3>Faut-il utiliser React quel que soit le projet que vous codez ?</h3>
+        <p>Non. React est particulièrement utile et performant lorsque :</p>
+        <ul>
+          <li>Vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout")</li>
+          <li>Et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …)</li>
+        </ul>
+        <p>En effet, React vous permet de penser vos composants comme des objets, porteurs :</p>
+        <ul>
+          <li>de propriétés (ou <code>props</code>, données immuables, propres à l'objet)</li>
+          <li>d'états (ou <code>state</code>, susceptibles de changer au cours de la vie du composant)</li>
+          <li>de comportement</li>
+        </ul>
+        <p>Les deux librairies associées offrent un framework performant pour construire des applications front-end complexes dotées d'une interface dynamique et réactive.</p>
+
+        <h3>Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?</h3>
+        <p>Oui, depuis la <a href="http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/">version 5.1 de Rails</a> et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.</p>
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"

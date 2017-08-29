@@ -41,7 +41,7 @@ Rails.application.routes.draw do
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
-  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
+  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.com/#{req.fullpath.gsub("/ondemand/", "")}" }
   get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
   {
@@ -90,6 +90,7 @@ Rails.application.routes.draw do
     get "vae" => "pages#vae", as: :vae
     get "cgv" => "pages#cgv", as: :cgv
     get "lemoisducode" => "pages#lemoisducode", as: :lemoisducode
+    get "react" => "pages#react", locale: :fr, as: :react
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city
@@ -120,6 +121,7 @@ Rails.application.routes.draw do
 
   # Sidekiq
   require "sidekiq/web"
+  require "sidekiq/cron/web"
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end

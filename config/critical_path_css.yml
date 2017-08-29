@@ -8,9 +8,12 @@ defaults: &defaults
   routes: <%= [ "/" ] + locales.map { |l| "/#{l}" } +
                 AlumniClient.new.city_slugs.map { |slug| locales.map { |l| "/" + [ l, "cities", slug ].compact.join("/") }}.flatten %>
 
-development:
+development: &development
   <<: *defaults
   base_url: http://localhost:3000
+
+test:
+  <<: *development
 
 production:
   <<: *defaults
