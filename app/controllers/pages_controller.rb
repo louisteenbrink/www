@@ -34,10 +34,6 @@ class PagesController < ApplicationController
       @testimonials = Testimonial.where(route: Testimonial::DEFAULT_ROUTE)
       @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
     end
-
-    @cities = @cities.map do |city|
-      Kitt::Client.query(City::Query, variables: { slug: city.slug }).data.city
-    end
   end
 
   def thanks

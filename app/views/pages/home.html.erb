@@ -74,16 +74,6 @@
               </div>
               <div class="card-city-body">
                 <h3><%= city.name %></h3>
-                <div class="project-item-makers card-city-teachers">
-                  <% if city.current_batch %>
-                    <% lead_teachers(city).take(3).each do |teacher| %>
-                      <div class="project-item-maker">
-                        <%= cl_adaptive_image_tag teacher.user.avatar_url, width: 30, height: 30, crop: :fill, class: 'avatar' %>
-                      </div>
-                    <% end %>
-                  <% end %>
-                </div>
-                <% end %>
               </div>
             </div>
         </div>

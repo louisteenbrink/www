@@ -60,7 +60,6 @@ class ApplicationController < ActionController::Base
 
   def load_cities
     # needed in navbar
-    # TODO add cache
     cities = Kitt::Client.query(City::GroupsQuery).data.cities
     @city_groups ||= Static::CITIES.map do |group|
       slugs = group[:cities]

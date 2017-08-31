@@ -23,36 +23,6 @@ module City
         city_background_picture_url
         classroom_background_picture_url
         location_background_picture_url
-        current_batch: current_camp {
-          id
-          slug
-          teachers {
-            id
-            role
-            lecturer
-            bio_en
-            bio_fr
-            user {
-              id
-              github_nickname
-              first_name
-              last_name
-              twitter_url
-              avatar_url
-            }
-          }
-        }
-        next_batch: next_camp {
-          id
-          slug
-          starts_at
-        }
-        next_batches: next_camps {
-          id
-          slug
-          starts_at
-          apply_status
-        }
       }
     }
   GRAPHQL

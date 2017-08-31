@@ -61,7 +61,7 @@ module Admin
     end
 
     def set_city_slugs
-      @city_slugs = AlumniClient.new.city_slugs.sort
+      @city_slugs = Kitt::Client.query(City::GroupsQuery).data.cities.map(&:slug)
     end
   end
 end
