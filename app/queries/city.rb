@@ -23,6 +23,14 @@ module City
         city_background_picture_url
         classroom_background_picture_url
         location_background_picture_url
+        next_batches: next_camps {
+          id
+          starts_at
+        }
+        current_batch: current_camp {
+          id
+          slug
+        }
       }
     }
   GRAPHQL

@@ -13,7 +13,6 @@ class CitiesController < ApplicationController
       return
     end
 
-    # TODO add cache
     @city = Kitt::Client.query(City::Query, variables: { slug: city_slug }).data.city
 
     if I18n.locale == I18n.default_locale &&
@@ -36,8 +35,16 @@ class CitiesController < ApplicationController
     end
 
     if @city.current_batch
-      pedagogic_team = @city.current_batch.teachers.sort_by { |teacher| teacher.user.github_nickname }
-      lead_teachers = lead_teachers(@city)
+      pedagogic_team = Kitt::Client.query(
+        Teacher::BatchQuery,
+        variables: {
+          batch_slug: @city.current_batch.slug
+        }
+      ).data.teachers.sort_by { |teacher| teacher.github_nickname }
+      lead_teachers_slugs = Static::LEAD_TEACHERS[@city.slug.to_sym].nil? ? [] : Static::LEAD_TEACHERS[@city.slug.to_sym]
+      lead_teachers = pedagogic_team
+        .select { |teacher| lead_teachers_slugs.include?(teacher.github_nickname) }
+        .sort_by { |teacher| lead_teachers_slugs.index(teacher.github_nickname) }
       teachers = pedagogic_team - lead_teachers
       @assistants = teachers.reject { |teacher| teacher.lecturer }
       teachers -= @assistants
@@ -49,8 +56,5 @@ class CitiesController < ApplicationController
     meetup_cli = MeetupApiClient.new(@city.meetup_id)
     @meetup = { events: meetup_cli.meetup_events, infos: meetup_cli.meetup  }
     session[:city] = @city.slug
-
-    # Next batch
-    @next_batch = @city.next_batch
   end
 end

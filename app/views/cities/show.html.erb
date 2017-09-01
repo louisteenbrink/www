@@ -95,26 +95,26 @@
             <div class="col-xs-12">
               <div class="card-staff">
                 <div class="card-staff-description">
-                  <h3><%= teacher.user.first_name %> <%= teacher.user.last_name %></h3>
+                  <h3><%= teacher.name %></h3>
                   <p><%= markdown(teacher.send("bio_#{locale}".to_sym) || teacher.bio_en) %></p>
                 </div>
                 <div class="card-staff-infos">
                   <div class="card-staff-role">
                     <h4><%= teacher.role %></h4>
                     <p>
-                      <a href="http://github.com/<%= teacher.user.github_nickname %>" target="_blank">
-                        <i class="fa fa-github"></i> <%= teacher.user.github_nickname %></p>
+                      <a href="http://github.com/<%= teacher.github_nickname %>" target="_blank">
+                        <i class="fa fa-github"></i> <%= teacher.github_nickname %></p>
                       </a>
                     <p>
-                    <% if teacher.user.twitter_url.present? %>
+                    <% if teacher.twitter_url.present? %>
                       <p>
-                        <a href="<%= teacher.user.twitter_url %>" target="_blank">
-                          <i class="fa fa-twitter"></i> <%= teacher.user.twitter_url.gsub(/https?:\/\/(www.)?twitter.com\//, '') %></p>
+                        <a href="<%= teacher.twitter_url %>" target="_blank">
+                          <i class="fa fa-twitter"></i> <%= teacher.twitter_url.gsub(/https?:\/\/(www.)?twitter.com\//, '') %></p>
                         </a>
                       <p>
                     <% end %>
                   </div>
-                  <%= cl_adaptive_image_tag teacher.user.avatar_url, width: 100, height: 100, crop: :fill, class: "img-circle card-staff-img" %>
+                  <%= cl_adaptive_image_tag teacher.avatar_url, width: 100, height: 100, crop: :fill, class: "img-circle card-staff-img" %>
                 </div>
               </div>
             </div>
@@ -138,10 +138,10 @@
         <div class="col-xs-12 col-sm-offset-<%= (12 % slice.count) / 2 %>">
           <% slice.each do |ta| %>
             <div class="col-xs-6 col-sm-<%= 12 / slice.count %> ta-card">
-              <%= link_to "http://alumni.lewagon.org/#{ta.user.github_nickname}", target: :blank do %>
-                <%= cl_adaptive_image_tag ta.user.avatar_url, width: 80, height: 80, crop: :fill, class: "img-circle" %>
+              <%= link_to "http://alumni.lewagon.org/#{ta.github_nickname}", target: :blank do %>
+                <%= cl_adaptive_image_tag ta.avatar_url, width: 80, height: 80, crop: :fill, class: "img-circle" %>
               <% end %>
-              <h4><%= ta.user.first_name %> <%= ta.user.last_name %></h4>
+              <h4><%= ta.name %></h4>
             </div>
           <% end %>
         </div>
