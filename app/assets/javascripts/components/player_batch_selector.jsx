@@ -2,14 +2,14 @@ class PlayerBatchSelector extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedLocale: this.props.locales.filter((locale) => { return locale.code === this.props.selectedBatch.city.course_locale })[0],
+      selectedLocale: this.props.locales.filter((locale) => { return locale.code === this.props.selectedBatch.city.locale })[0],
       selectedBatch: this.props.selectedBatch
     }
   }
 
   render() {
     var otherLocales = this.props.locales.filter((locale) => { return locale.code !== this.state.selectedLocale.code });
-    var otherBatches = this.props.batches.filter((batch) => { return batch.city.course_locale === this.state.selectedLocale.code && (!this.state.selectedBatch || batch.slug !== this.state.selectedBatch.slug) });
+    var otherBatches = this.props.batches.filter((batch) => { return batch.city.locale === this.state.selectedLocale.code && (!this.state.selectedBatch || batch.slug !== this.state.selectedBatch.slug) });
 
     var languageSelector =
       <ReactBootstrap.Dropdown id="languageSelector" ref="languageSelector">

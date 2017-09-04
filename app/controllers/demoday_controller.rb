@@ -7,18 +7,20 @@ class DemodayController < ApplicationController
     end
 
     @selected_product_slug = params[:product_slug]
-    @batch = @kitt_client.batch(params[:id])
+    @batch = Kitt::Client.query(Batch::Query, variables: { slug: params[:id] }).data.batch
+    @students = Kitt::Client.query(Student::BatchQuery, variables: { batch_slug: @batch.slug }).data.students
+    @products = Kitt::Client.query(Product::BatchQuery, variables: { batch_slug: @batch.slug }).data.products
     if @selected_product_slug
-      @selected_product = @batch.products.select { |p| p["slug"] == @selected_product_slug }.first
+      @selected_product = @products.select { |p| p.slug == @selected_product_slug }.first
       return redirect_to demoday_path(params[:id]) unless @selected_product
     end
-    @batches = @kitt_client.batches("completed") # For batch selector
+    @batches = Kitt::Client.query(Batch::CompletedQuery).data.batches # For batch selector
   end
 
   def index
-    completed_batches = @kitt_client.batches('completed')
+    completed_batches = Kitt::Client.query(Batch::CompletedQuery).data.batches
     latest_batch = (completed_batches.select do |b|
-      b.youtube_demo_id.present? && b.city['course_locale'].to_sym == I18n.locale
+      b.demoday_youtube_id.present? && b.city.locale.to_sym == I18n.locale
     end).last || completed_batches.select { |b| b.slug.to_i == 36 }.first
     redirect_to demoday_path(latest_batch.slug)
   end

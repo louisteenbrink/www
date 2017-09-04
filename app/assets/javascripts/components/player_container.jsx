@@ -3,15 +3,13 @@ class PlayerContainer extends React.Component {
     super(props);
     this.state = {
       jump: false,
-      selectedProduct: this.props.selectedProdutSlug === null ? null :
-        _.filter(this.props.batch.products, (p) => { return p.slug == this.props.selectedProdutSlug })[0]
+      selectedProduct: this.props.selectedProductSlug === null ? null :
+        _.filter(this.props.products, (p) => { return p.slug == this.props.selectedProductSlug })[0]
     }
   }
-
   render() {
-
     var batch = this.props.batch;
-    var products = this.props.batch.products;
+    var products = this.props.products;
     var i18n = this.props.i18n;
     var product_icon = this.props.product_icon;
 
@@ -25,7 +23,7 @@ class PlayerContainer extends React.Component {
                 selectedProduct={this.state.selectedProduct}
                 reportCurrentTime={this.reportCurrentTime} />
     } else {
-      if (this.props.batch.cover_image.match(/missing\.png/)) {
+      if (this.props.batch.cover_image_url) {
         var noCoverStyle = {
           backgroundImage: "url(" + this.props.videoPlaceholder + ")"
         }
@@ -50,10 +48,10 @@ class PlayerContainer extends React.Component {
 
     return (
       <div className="player-container">
-        <PlayerHeader batch={batch} i18n={i18n} product_icon={product_icon} flag_icon={this.props.flag_icon} />
+        <PlayerHeader batch={batch} i18n={i18n} product_icon={product_icon} flag_icon={this.props.flag_icon} products={this.props.products} />
         <div className="player-content">
           {main}
-          <PlayerProduct technos={this.props.technos} batch={batch} product={this.state.selectedProduct} i18n={i18n} />
+          <PlayerProduct technos={this.props.technos} batch={batch} product={this.state.selectedProduct} i18n={i18n} students={this.props.students} />
         </div>
         {footerNavigation}
       </div>
@@ -80,7 +78,7 @@ class PlayerContainer extends React.Component {
 
   reportCurrentTime = (time) => {
     var currentProduct = null;
-    var products = this.props.batch.products;
+    var products = this.props.products;
     for (var i = 0; i < products.length; i++) {
       var product = products[i];
       if (product.demoday_timestamp > 0 && product.demoday_timestamp <= time && (i == products.length - 1 || time < products[i + 1].demoday_timestamp)) {
