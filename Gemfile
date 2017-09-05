@@ -41,6 +41,7 @@ gem 'react-bootstrap-rails'
 gem 'react-rails', '1.10.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier'
+gem 'momentjs-rails'
 
 # Api Clients
 gem 'appsignal'

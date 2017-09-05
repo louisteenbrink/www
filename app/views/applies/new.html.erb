@@ -1,12 +1,16 @@
 <%= content_for(:title)       { t ".title", city: @city.name }       %>
 <%= content_for(:description) { t ".description" } %>
 
+<% react_apply_city_groups = @apply_city_groups.map do |group|
+    group[:cities] = group[:cities].map { |city| city.as_json["data"] }
+    group
+  end %>
 <div class='apply-form-overlay'>
   <%= react_component 'ApplyForm', {
-    city_groups: @apply_city_groups,
+    city_groups: react_apply_city_groups,
     city_group: @city_group,
-    cities: @applicable_cities,
-    city: @city,
+    cities: @applicable_cities.as_json.map { |city| city["data"]},
+    city: @city.as_json["data"],
     token: form_authenticity_token,
     apply_path: send(:"apply_#{locale.to_s.underscore}_path", ':city'),
     locale: I18n.locale,
@@ -25,7 +29,7 @@
       post_price: post_price
     },
     selected_batch_id: @application.batch_id,
-    rows: apply_rows,
+    rows: apply_rows
   }, prerender: prerender? %>
 </div>
 

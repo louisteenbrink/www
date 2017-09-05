@@ -32,8 +32,8 @@ class Testimonial
     "#{first_name} #{last_name}"
   end
 
-  def project
-    Kitt::Client.query(Project::Query, variables: { slug: @project_slug }).data.project
+  def product
+    Kitt::Client.query(Product::Query, variables: { slug: @project_slug }).data.product
   end
 
   def batch_thumbnail

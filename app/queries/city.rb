@@ -45,4 +45,23 @@ module City
       }
     }
   GRAPHQL
+
+  ApplyQuery = Kitt::Client.parse <<-'GRAPHQL'
+    query {
+      cities {
+        id
+        name
+        slug
+        locale
+        city_background_picture_url
+        next_batches: next_camps {
+          id
+          starts_at
+          ends_at
+          apply_status
+          price
+        }
+      }
+    }
+  GRAPHQL
 end

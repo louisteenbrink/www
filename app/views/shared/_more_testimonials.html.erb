@@ -76,14 +76,14 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <% if testimonial.project.present? %>
+                <% if testimonial.product.present? %>
                   <div class="alumni-product-container">
                     <h4><%= t('.watch', name: testimonial.first_name) %></h4>
-                    <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.project.slug %>">
-                      <% if testimonial.project.cover_picture_url.blank? %>
+                    <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.product.slug %>">
+                      <% if testimonial.product.cover_picture_url.blank? %>
                         <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.batch_thumbnail.meta_image_url %>);">
                       <% else %>
-                        <div class="video-thumbnail" style="background-image: url(<%= thumbnail_url(testimonial.project) %>);">
+                        <div class="video-thumbnail" style="background-image: url(<%= thumbnail_url(testimonial.product) %>);">
                       <% end %>
                         <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -92,7 +92,7 @@
                         </svg>
                       </div>
                       <div class="video-details">
-                        <h4 class="text-center"><%= testimonial.project.name %><small><%= testimonial.project.tagline %></small></h4>
+                        <h4 class="text-center"><%= testimonial.product.name %><small><%= testimonial.product.tagline %></small></h4>
                       </div>
                     </a>
                   </div>

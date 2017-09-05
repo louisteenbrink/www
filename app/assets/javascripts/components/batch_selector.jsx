@@ -29,14 +29,13 @@ class BatchSelector extends React.Component {
     else if (this.props.isActive) {
       var right_item = <div className='last-seats'><i className='fa fa-check'/></div>;
     }
-
     return(
       <div
         className={componentClasses}
         ref='selectType'
         value={batch.id}
         onClick={this.handleClick.bind(this)}
-      ><strong>{ batch.starts_at }</strong><span> - </span><strong>{ batch.ends_at }</strong>{right_item}</div>
+      ><strong>{ moment(batch.starts_at).locale(this.props.locale).format('LL') }</strong><span> - </span><strong>{ moment(batch.ends_at).locale(this.props.locale).format('LL') }</strong>{right_item}</div>
     )
   }
 

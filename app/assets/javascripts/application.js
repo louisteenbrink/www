@@ -6,6 +6,11 @@
 //= require react
 //= require react_ujs
 //= require visibility_sensor
+//= require moment
+//= require moment/fr.js
+//= require moment/pt-br.js
+//= require moment/es.js
+//= require moment/zh-cn.js
 
 //= require components
 //= require_tree ./app
