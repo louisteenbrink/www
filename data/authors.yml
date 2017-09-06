@@ -109,7 +109,16 @@ bertrand:
   picture: bertrand-bussac.jpg
   bio: "After several years of working as an entrepreneur in innovation, Bertrand recognized that in order to work more effectively and autonomously, he needed to master coding and website development. Now, he wants to share this knowledge and make you coding champions!"
   company: Le Wagon Bordeaux
-  position: Briver
+  position: Driver
   company_website: lewagon.com/bordeaux
   twitter: lewagonbordeaux
   instagram: lewagonbordeaux
+pierre:
+  fname: Pierre
+  lname: Facq
+  picture: pierre-facq.jpg
+  bio: "During 10 years working in digital agencies as Creative Director, Pierre helped people design their brand identity, UX, content and marketing strategy. He also developed a conviction : today, digital creativity is fed by technical skills. Pierre launched Le Wagon in Nantes top help students code the best products."
+  company: Le Wagon Nantes
+  position: Driver
+  company_website: lewagon.com/nantes
+  twitter: lewagonnantes
