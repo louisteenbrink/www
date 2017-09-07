@@ -52,7 +52,7 @@ class AppliesController < ApplicationController
       session[:apply_id] = @application.id
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
-      city = AlumniClient.new.city(@application.city_id)
+      city = Kitt::Client.query(City::Query, variables: { id: @application.city_id }).data.city
       prepare_apply_form
       render :new
     end
@@ -95,8 +95,8 @@ class AppliesController < ApplicationController
   include CitiesHelper
 
   def prepare_apply_form
-    @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.next_batches.empty? }.reject do |city|
-      city.next_batches.find { |b| b.apply_status ==  "open_for_registration" }.nil?
+    @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.apply_batches.empty? }.reject do |city|
+      city.apply_batches.find { |b| b.apply_status ==  "open_for_registration" }.nil?
     end
     # Sort by first available batch
     @applicable_cities.sort do |city_a, city_b|
@@ -130,7 +130,7 @@ class AppliesController < ApplicationController
   def set_validate_ruby
     return unless @application.batch_id
 
-    batch = AlumniClient.new.batch(@application.batch_id)
+    batch = Kitt::Client.query(Batch::Query, variables: { id: @application.batch_id }).data.batch
     if batch.force_completed_codecademy_at_apply
       @application.validate_ruby_codecademy_completed = true
     end

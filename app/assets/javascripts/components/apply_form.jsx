@@ -14,7 +14,7 @@ class ApplyForm extends React.Component {
 
     var cities = this.state.activeCityGroup.cities;
     var otherCityGroups = this.props.city_groups.filter((cityGroup) => { return cityGroup.group !== this.state.activeCityGroup.group });
-    var batches = this.state.activeCity.next_batches;
+    var batches = this.state.activeCity.apply_batches;
     var componentClasses = classNames({ 'apply-form': true });
     var submitButton = null;
 
@@ -214,7 +214,7 @@ class ApplyForm extends React.Component {
   }
 
   firstBatch(city) {
-    return _.filter(city.next_batches, (n) => { return n.apply_status != 'full' && n.apply_status != 'waiting_list' })[0] || city.next_batches[0]
+    return _.filter(city.apply_batches, (n) => { return n.apply_status != 'full' && n.apply_status != 'waiting_list' })[0] || city.apply_batches[0]
   }
 
   batch(id) {

@@ -1,7 +1,7 @@
 module Batch
   Query = Kitt::Client.parse <<-'GRAPHQL'
-    query($slug: String!) {
-      batch: camp(slug: $slug) {
+    query($slug: String, $id: ID) {
+      batch: camp(slug: $slug, id: $id) {
         id
         slug
         starts_at
@@ -9,6 +9,8 @@ module Batch
         meta_image_url
         cover_image_url
         demoday_youtube_id
+        force_completed_codecademy_at_apply
+        analytics_slug
         city {
           id
           slug

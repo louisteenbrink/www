@@ -41,8 +41,9 @@ class PagesController < ApplicationController
       redirect_to root_path
     else
       @apply = Apply.find(session[:apply_id])
-      @city = @cities.find { |city| city["id"] == @apply.city_id }
-      @batch = @kitt_client.batch(@apply.batch_id)
+      @city = @apply.city
+      @batch = @apply.batch
+      @meetup_url = MeetupApiClient.new(@apply.city.meetup_id).meetup['link']
     end
   end
 

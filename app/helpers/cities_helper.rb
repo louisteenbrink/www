@@ -7,6 +7,6 @@ module CitiesHelper
   # end
 
   def next_open_batch_date(city)
-    city.next_batches.find { |b| b.apply_status ==  "open_for_registration" }.starts_at.to_date
+    city.apply_batches.find { |b| b.apply_status ==  "open_for_registration" }.starts_at.to_date
   end
 end

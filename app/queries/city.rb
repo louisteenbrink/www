@@ -1,7 +1,7 @@
 module City
   Query = Kitt::Client.parse <<-'GRAPHQL'
-    query($slug: String!) {
-      city(slug: $slug) {
+    query($slug: String, $id: ID) {
+      city(slug: $slug, id: $id) {
         id
         name
         slug
@@ -23,7 +23,8 @@ module City
         city_background_picture_url
         classroom_background_picture_url
         location_background_picture_url
-        next_batches: next_camps {
+        twitter_url
+        apply_batches: apply_camps {
           id
           starts_at
         }
@@ -54,7 +55,7 @@ module City
         slug
         locale
         city_background_picture_url
-        next_batches: next_camps {
+        apply_batches: apply_camps {
           id
           starts_at
           ends_at
