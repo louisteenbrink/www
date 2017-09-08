@@ -6,7 +6,6 @@ module Teacher
         name
         github_nickname
         avatar_url
-        role
         lecturer
         twitter_url
         bio_en

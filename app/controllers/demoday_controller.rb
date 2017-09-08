@@ -21,7 +21,7 @@ class DemodayController < ApplicationController
     completed_batches = Kitt::Client.query(Batch::CompletedQuery).data.batches
     latest_batch = (completed_batches.select do |b|
       b.demoday_youtube_id.present? && b.city.locale.to_sym == I18n.locale
-    end).last || completed_batches.select { |b| b.slug.to_i == 36 }.first
+    end).first || completed_batches.select { |b| b.slug.to_i == 36 }.first
     redirect_to demoday_path(latest_batch.slug)
   end
 end
