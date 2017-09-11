@@ -91,6 +91,7 @@ Rails.application.routes.draw do
     get "cgv" => "pages#cgv", as: :cgv
     get "lemoisducode" => "pages#lemoisducode", as: :lemoisducode
     get "react" => "pages#react", locale: :fr, as: :react
+    get "partners" => "pages#partners", as: :partners
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city

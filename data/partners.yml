@@ -1,0 +1,29 @@
+- name: "Algolia"
+  url: "https://www.algolia.com/"
+  logo: logo-algolia.png
+  description: "Algolia is the most reliable platform for building lightning-fast, typo-tolerant search no matter where our users are."
+
+- name: "Aircall"
+  url: "https://www.aircall.co"
+  logo: logo-loutardeliberee.jpg
+  description: "Aircall empowers Sales & Support teams to ace every call with a phone system specifically built for their favorite business tools."
+
+- name: "Amazon Web Services"
+  url: "https://aws.amazon.com/"
+  logo: logo-loutardeliberee.jpg
+  description: 'Powering half of Silicon Valley websites, including the beloved PaaS Heroku, AWS brought to the world modern "Cloud Computing".'
+
+- name: "AppSignal"
+  url: "https://appsignal.com/"
+  logo: logo-loutardeliberee.jpg
+  description: "AppSignal helps teams getting insights into errors and performance issues, plus host monitoring and an easy to use custom metrics platform."
+
+- name: "Clever Cloud"
+  url: "https://www.clever-cloud.com/"
+  logo: logo-loutardeliberee.jpg
+  description: "Clever Cloud helps developers deploy and run their apps with bulletproof infrastructure, automatic scaling, fair pricing and other cool features."
+
+- name: "Stripe"
+  url: "https://stripe.com/"
+  logo: logo-stripe.svg
+  description: "Stripe’s meticulously-designed APIs and unmatched functionality help you create the best subscription service or marketplace for your users."
