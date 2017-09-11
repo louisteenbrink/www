@@ -423,7 +423,7 @@ zh-CN:
         课程收费是多少？什么时候开始？
     answer: |
         答案因城市而异！请在[申请]（/申请）页面浏览不同选项.
-        
+
 es:
   - question: |
         What's the application process to Le Wagon?
@@ -446,10 +446,10 @@ es:
   - question: |
         What language are the classes taught in?
     answer:
-      - | 
+      - |
           In Barcelona and most of the other cities, it's **all in English**! You can check the language of the next batch on the "Apply" page.
-      - | 
-          In France the program is taught in **French**. 
+      - |
+          In France the program is taught in **French**.
   - question: |
         What will I be able to build at the end of 9 weeks?
     answer: |
@@ -491,3 +491,67 @@ es:
     answer: |
         It all depends on the city! Please review your options on the [Apply](/apply) page.
 
+
+ja:
+  - question: |
+        Le Wagonへの申請方法と流れは？
+    answer: |
+        ウェブサイトを通してアプリケーションを提出後、
+        あなたのプログラムに対する期待や現在の技術的なスキルのレベル等を聞く質問がまとまってあるメールを送らせて頂きます。
+        参加決定次第、オンライン上での面接をセッティングします。
+        面接が始まる前からCodeCademyの[Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) を進めることをお勧めします。
+        最終的にRuby trackを全て完了して頂く必要があります。
+  - question: |
+        初心者ですが、このプログラムを受けられるのでしょうか？
+    answer: |
+        私たちが生徒に求める姿勢は三つです ー **モチベーションが高い** (やる気がある)、**好奇心旺盛**、**社交的**.
+  - question: |
+        事前準備はどのくらいの期間かかりますか？
+    answer: |
+        CodeCademyにて[Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true)を完了させることが必須です。10時間前後で終わります。
+  - question: |
+        フランス語は話せないといけませんか？
+    answer:
+      - |
+          パリ、リール、ボルドー、マルセイユではプログラム自体がフランス語で行われます。
+          毎朝の90分の講義を含めた、日中の講義の全てがフランス語で行われます。
+          フランス語が理解できないとフランスで行われるブートキャンプには参加することができません。
+      - |
+          幸運なことに、他の都市では全て**英語**で行われます!
+          "申請する"というページで次の期生が何語で行われるかを確認できます。
+  - question: |
+        9週間で何を作れるようになりますか？
+    answer: |
+        Ruby on Railsのジュニア開発者のレベルまで身に付けることができます。
+        自分のアイディアを素早くプロトタイプし、ウェブアプリケーションを作ることが可能になります。
+        例えば、自分のウェブサイトに認証(ログイン/会員登録、またはFacebook/Twitterとの連携)、
+        アドミンのバックオフィス、入金システム、メールの自動送信のシステム等を付け加えることができるようになります。
+        短時間でプロダクションをデブロイする方法を学び、成功しているスタートアップ同様の最上級のプログラミング実践法を身につけることができます。
+        起業するための自分のプロジェクトを続けるか、スタートアップまたは大企業にてジュニア開発者として働くか。
+        今まで選択肢になかった道が見えてきます。
+  - question: |
+        どうして主にRuby on Railsの言語を使用するのでしょうか？
+    answer: |
+        とても良い質問ですね！私たちのCTOが[こちらのメディアにて話されています](https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6#.azt84ab7d)。
+  - question: |
+        モバイルアプリも作れるようになりますか？
+    answer: |
+        はいといいえの両方です。もっとハッキリ答えましょう。プログラム中ではiOS、AndroidまたはWindows Phone開発は学びません。
+        これらのスキルを学ぶにあたって9週間では足りないと私たちは考えます。
+        様々な理由を考慮した上で私たちはプログラミングとウェブ開発の基礎を教えることを選びました。
+        まず、のちにモバイル開発を始めるにしても、これらの基礎がソフトウェアエンジニアの技術の軸となります。
+        プログラム中にはモバイルアプリに使われるAPIの作り方も学びます。
+        どのモバイル開発者にしても、まずは自分で作ったAPIを使ってから始めた方がiOSまたはAndroid interfaceのコーディングをする際に簡単になります。
+  - question: |
+        クラスはいつ行われるのでしょうか？
+    answer: |
+        月曜日から金曜日、朝の9時から夜の7時まで。合計して9週間で360時間受講する形になります。
+  - question: |
+        自分のPCを持参する必要はありますか？
+    answer: |
+        はい、生徒は自分のPCを持参する必要があります。Mac OS X または Linuxが好ましいですが、
+        Windowsしか持っていない場合は初日にLinuxのインストール方法を学ぶので安心してください。
+  - question: |
+        費用はいくらですか？そしていつから始まりますか？
+    answer: |
+        プログラムを受講する都市によって異なります！[申請する](/apply)というページで自分の受講するプログラムの都市を確認してみて下さい。
