@@ -1,21 +1,23 @@
-<h1>Partners<small>and we're proud to call them as such!</h1>
+<h1>We love our partners ❤️️</h1>
 <div class="container-wrapper">
   <div class="container container-partner">
     <% Static::PARTNERS.each_with_index do |partner, index| %>
-      <div class="card-partner">
+      <div class="card-partner" style="border-right: 20px solid <%= partner[:color] %>;">
         <%= link_to "", partner[:url], target: :blank %>
         <div class="card-partner-content">
           <%= image_tag "partners/#{partner[:logo]}", alt: partner[:name] %>
           <p><%= partner[:description] %></p>
-          <span>know more</span>
+          <span>Learn more</span>
           <?xml version="1.0" encoding="UTF-8"?>
-          <svg width="466px" height="229px" viewBox="0 0 466 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg width="466px" height="231px" viewBox="0 0 466 231" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
               <title>Path</title>
               <desc>Created with Sketch.</desc>
               <defs></defs>
               <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                  <path d="M0.548828125,159.6875 L0.548828125,228.560547 L465.837891,228.560547 L465.837891,0.681640625 L406.265625,0.681640625 C412.77376,88.7442692 379.709958,146.950649 307.074219,175.300781 C234.438479,203.650913 132.263349,198.446486 0.548828125,159.6875 Z" id="Path" fill="#6772e5"></path>
+                  <g id="Path" fill="<%= partner[:color]%>" fill-rule="nonzero">
+                      <path d="M0.548828125,159.6875 L0.548828125,230.993901 L465.837891,230.993901 L465.837891,0.681640625 L406.265625,0.681640625 C412.77376,88.7442692 379.709958,146.950649 307.074219,175.300781 C234.438479,203.650913 132.263349,198.446486 0.548828125,159.6875 Z"></path>
+                  </g>
               </g>
           </svg>
         </div>
