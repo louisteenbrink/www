@@ -267,7 +267,7 @@ fr:
         Si vous souhaitez finalement candidater à une autre ville, vous pourrez en discuter à ce moment là avec lui / elle.
       thanks: Merci
       we_will_contact_html: |
-        Nous vous contacterons rapidement pour un entretien. <br /><br />D'ici là, <strong>suivez toutes les instructions de la check-list</strong> et commencez la <a href="https://www.codecademy.com/learn/learn-ruby" target="_blank">track ruby en anglais</a> sur CodeCademy.
+        Nous vous contacterons rapidement pour un entretien. <br /><br />D'ici là, <strong>suivez toutes les instructions de la check-list</strong> et commencez la <a href="https://www.codecademy.com/en/learn/learn-ruby" target="_blank">track ruby en anglais</a> sur CodeCademy.
       we_will_contact_hec: |
         Nous vous contacterons rapidement pour un entretien.
       take_advance: Prenez de l'avance
@@ -567,7 +567,7 @@ fr:
         <p>
           Comme mentionné dans la <a href="%{faq_path}" target="_blank">FAQ</a>, un pré-requis pour
           intrégrer la formation Fullstack du Wagon est de terminer à 100% la
-          <a href="https://www.codecademy.com/learn/learn-ruby">track Ruby</a> de CodeCademy, <strong>en anglais</strong>.
+          <a href="https://www.codecademy.com/en/learn/learn-ruby">track Ruby</a> de CodeCademy, <strong>en anglais</strong>.
           Si vous n'avez pas encore de compte CodeCademy <a href="https://www.codecademy.com/register" target="_blank">créez-en un maintenant</a>, c'est gratuit.
         </p>
         <p>
