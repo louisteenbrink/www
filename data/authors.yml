@@ -122,3 +122,12 @@ pierre:
   position: Driver
   company_website: lewagon.com/nantes
   twitter: lewagonnantes
+manu:
+  fname: Emmanuel
+  lname: Louisy-gabriel
+  picture: emmanuel-louisy-gabriel.jpg
+  bio: "Eagle eye with a camera in both hands"
+  company: Le Wagon Paris
+  position: Filmer
+  company_website: lewagon.com/paris
+  twitter: lewagonparis
