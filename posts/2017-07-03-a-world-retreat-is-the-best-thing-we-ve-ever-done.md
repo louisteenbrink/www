@@ -42,7 +42,13 @@ From there, it was pure bliss revolving around workshops, yoga, surfing, good fo
   <img class="mid" src="blog_image_path 2017-06-28-ericeira-21.jpg" alt="Do you mind if I get one more octopus?">
 </div>
 
-## There's even a video to prove it!
+## There's even two videos to prove it!
+
+<div class="video-container">
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VUwd0J86_14" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
 
 <div class="video-container">
   <div class="video-wrapper">
