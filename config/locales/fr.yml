@@ -30,6 +30,7 @@ fr:
       retry: "Ré-essayer"
       error: "Votre email n'a pas l'air bon :("
       press: "Presse"
+      partners: "Partenaires"
       alumni_platform: "Communauté Alumni"
       about: "Le Wagon, c'est quoi ?"
       bootcamp_in_city_html: "Formation Développeur Web à %{city}"
