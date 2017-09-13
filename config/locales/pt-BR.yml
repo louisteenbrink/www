@@ -33,6 +33,7 @@ pt-BR:
       retry: "Tente de novo"
       error: "Parece que seu email não é valido..."
       press: "Imprensa"
+      partners: "Parceiros"
       alumni_platform: "Comunidade Alumni"
       about: "O que é Le Wagon?"
       bootcamp_in_city_html: "%{city} coding bootcamp"

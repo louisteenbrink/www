@@ -28,6 +28,7 @@ en:
       retry: "Retry"
       error: "Looks like your email is not valid..."
       press: "Press"
+      partners: "Partners"
       alumni_platform: "Alumni Community"
       about: "What's le Wagon?"
       bootcamp_in_city_html: "%{city} coding bootcamp"
