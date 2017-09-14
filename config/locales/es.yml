@@ -2,8 +2,8 @@ es:
   date:
     formats:
       apply: "%B %e, %Y"
-  top_bar_message: Want to know what our students are up to in 9 weeks
-  top_bar_cta: watch our demos
+  top_bar_message: Descubre lo que nuestros alumnos han creado tras 9 semanas
+  top_bar_cta: vea nuestras demos
   shared:
     positions:
       they_hired_our_students: Le Wagon en las empresas
@@ -28,6 +28,7 @@ es:
       retry: "Reintentar"
       error: "Parece que tu dirección de email nos es válida..."
       press: "Prensa"
+      partners: "Socios"
       alumni_platform: "Alumni Network"
       about: "Qué es Le Wagon?"
       bootcamp_in_city_html: "Bootcamp de programación en %{city}"
@@ -86,7 +87,7 @@ es:
         Así trabajan las startups de éxito.
       startup_toolkit: Trabaja con los servicios esenciales
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         Te enseñaremos como implementar estos servicios para
         ganar eficiencia y lanzar productos con agilidad.
         Ahorra tiempo, utiliza la herramienta adecuada para cada necesidad.
@@ -259,7 +260,7 @@ es:
         Please wait for the Driver to contact you to set up your interview.
         If you wish to change the city you applied to, you can discuss that with him / her!
       we_will_contact_html: |
-        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">prep-work de  Ruby</a> en CodeCademy.
+        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/en/learn/learn-ruby" target="_blank">prep-work de  Ruby</a> en CodeCademy.
       take_advance: Checklist
       first_step: "1. Enviar tu candidatura a Le Wagon %{name}"
       second_step: "Suscríbete a nuestro Meetup en %{name}"
@@ -314,8 +315,10 @@ es:
         Llevamos habilidades técnicas y las mejores prácticas de las startups
         <br>para dentro de tu organización.
         <br><strong>Democratiza el conocimiento técnico, gana eficiencia.</strong>
-      apply: Contáctanos ahora
-      apply_to: Aprende %{skill}
+      apply_phone_html: |
+        Call Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contact Benjamin<br><small>benjamin@lewagon.org</small>
       skills_header: Workshops y sprints de trabajo diseñados para tu empresa
       skills_text_html: Por medio de charlas, workshops de un día o sprints de una semana, te enseñamos <strong>UI/UX Design, Product Management y Web Development</strong>.
       pm: Aprende Product Management
@@ -330,23 +333,34 @@ es:
       fullstack_details: From the database to the web browser, learn how a web application is built.
       prototyping: Aprende Lean Prototyping
       prototyping_details: APIs are eating the world. Discover how startups can prototype products just by connecting APIs.
-      best: ¿Por qué nosotros?
-      best_details_html: |
-        <p>
-         We have trained more than 1200 students coming from business schools, engineering schools, design schools. We know how to <strong>bridge the gap between technology and business</strong>. We have taught our students to code and prototype <strong>more than 400 products</strong>.
-        </p>
-        <p>
-         After having trained so many talented people, we know <strong>we can bring the same skills to your organisation</strong>.
-        </p>
-      hec_html: Since 2017, Le Wagon is the official partner of HEC (highest ranked French business school) and <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">is teaching HEC entrepreneurs to code their own product</a>.
+      formats_title: One workshop for each of your goals
+      format_1_title: "Motivate your teammates: give them the opportunity to learn how to code"
+      format_1_description_html: |
+          <i><strong>1</strong>full day, two workshops</i>
+      format_2_title: Improve communication between technical and marketing teams
+      format_2_description_html: |
+          <i><strong>7</strong> workshops to help your non-technical teams understand the role of a web developer</i>
+      format_3_title: Transform project managers into “Product Owners”
+      format_3_description_html: |
+          <i><strong>1</strong> year of workshops on 6 different themes</i>
+      format_4_title: Improve the ability of your HR team to evaluate technical talent
+      format_4_description_html: |
+          <i><strong>5</strong> workshops about the web developer role</i>
+      format_5_title: Foster intraspreneurship by providing adequate resources
+      format_5_description_html: |
+          <i><strong>1</strong> set of workshops on frontend and backend development to learn how to launch an MVP.</i>
+      format_6_title: Deliver faster by adopting a startup culture
+      format_6_description_html: |
+          <i><strong>3</strong> workshops on web development and the workflow of a startup</i>
+      cta-objectives: What is your goal?
       watch: Our last corporate workshop "One Day of Code"
-      google_quote: Le Wagon really knows how to bring complementary tech skills and culture to people with a business background. Their vision of technology is unique.
-      eki_quote:  The tech stack & design methodologies taught at Le Wagon are the foundations of our Product Engineering culture.
-      drivy_quote: Their curriculum is very well crafted, the teachers are passionate.
-      stripe_quote: Solid workshops teaching both essential technical skills and a strong product mindset.
-      algolia_quote: If you come from a business background, it's amazing how Le Wagon can develop your relationship with technology.
-      uber_quote: Le Wagon allows me to understand better Uber's product roadmap, and to be able to explain simply concepts such as API integration to our partners.
       with_us: They work with us.
+      testimonial_1: A very interesting and enriching day. Perfect to discover web and programming.
+      testimonial_2: A beautifully executed pedagogy and an enticing mindset, I almost want to become a coder myself!
+      testimonial_3: A perfect training program to take your first steps in the world of web development.
+      testimonial_4: 3 super dense hours, but very interesting to learn how to code a landing page. I’d like to learn more!
+      testimonial_5: Awesome introduction to coding, I wish I had done a full day to feel more autonomous by the end of it, it makes me want to go further.
+      testimonial_cta: Sign up your teammates
     live:
       page_title_with_current_event: "En directo - %{event_name}"
       page_title_no_live: "En directo - Próximamente"
@@ -434,7 +448,7 @@ es:
       codecademy_modal_body_html: |
         <p>
           As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
-          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> on CodeCademy.
+          <a href="https://www.codecademy.com/en/learn/learn-ruby">Ruby Track</a> on CodeCademy.
           If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
         </p>
         <p>

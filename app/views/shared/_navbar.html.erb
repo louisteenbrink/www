@@ -1,11 +1,19 @@
+<% cache ['navbar',
+    Digest::SHA1.hexdigest(@top_bar_message || ""),
+    Digest::SHA1.hexdigest(@top_bar_cta || ""),
+    @hide_language_selector,
+    @city_groups.map { |cg| cg["cities"].map { |c| c["name"] } }.flatten,
+    params[:action],
+    Static::ONDEMAND_TRACKS.map { |track| track[:slug] },
+    I18n.locale ] do %>
+
 <% if @top_bar_message.present? && @top_bar_cta.present? %>
   <div id="sticky-banner">
-    <i><%= @top_bar_message %>, <%= link_to @top_bar_cta, @top_bar_url %> 📺</i>
+    <i><%= @top_bar_message %>, <%= link_to @top_bar_cta, @top_bar_url %> ⚛️</i>
   </div>
 <% end %>
 
 <nav class="navbar-wagon navbar-wagon-white <% if @top_bar_message.present? %>navbar-jump<% end %>">
-  <% cache ['navbar', @hide_language_selector, @hide_banner_apply_button, @city_groups, @live, I18n.locale ] do %>
   <div class="container navbar-wagon-container">
     <div class='navbar-wagon-side'>
       <%= render 'shared/navbar_dropdown', full_item: false %>
@@ -51,8 +59,13 @@
                       <%= t ".menu.on_site", default: "Onsite" %>
                     </li>
                     <li>
-                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red" %>
+                      <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red", style: "min-width: 304px;"%>
                     </li>
+                    <% if I18n.locale == :fr %>
+                      <li>
+                        <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 304px;" %>
+                      </li>
+                    <% end %>
                     <% unless I18n.locale == :fr %>
                       </ul>
                       <ul class="list-unstyled">
@@ -62,7 +75,7 @@
                       <%= t ".menu.online", default: "Online" %>
                     </li>
                     <li style="padding: 3px 0px;">
-                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise" %>
+                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise", style: "min-width: 304px;" %>
                     </li>
                   </ul>
 
@@ -73,7 +86,7 @@
                       </li>
                         <% Static::ONDEMAND_TRACKS.each do |track| %>
                           <li style="padding: 3px 0px;text-align: left;">
-                            <a href="https://ondemand.lewagon.org/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank' style="font-size: 15px; font-weight: 100;">
+                            <a href="https://ondemand.lewagon.com/tracks/<%= track[:slug] %>/go?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target='_blank' style="font-size: 15px; font-weight: 100;">
                               <%= track[:title] %>
                               <% if track[:new] %>
                               <span class="new">new</span>
@@ -82,7 +95,7 @@
                           </li>
                         <% end %>
                         <li style="padding: 3px 0px;text-align: left;">
-                          <a href="https://ondemand.lewagon.org/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target="_blank" style="font-size: 15px; font-weight: 100;">
+                          <a href="https://ondemand.lewagon.com/gift?utm_medium=referral&utm_source=www.lewagon.com&utm_campaign=navbar_wagon" target="_blank" style="font-size: 15px; font-weight: 100;">
                             <i class="fa fa-gift"></i> <em>Offrez une track</em>
                           </a>
                         </li>
@@ -94,10 +107,15 @@
         </div>
         <hr class="hidden-xs">
         <%= link_to "FAQ", faq_path, class: 'navbar-wagon-link' %>
+        <hr class="hidden-xs">
+        <%= link_to "Blog", blog_path, class: 'navbar-wagon-link' %>
         <hr class='fake-hr hidden-sm hidden-xs'>
       </div>
       </div>
-      <%= link_to root_path, class: 'wagon-link' do %>
+      <%= link_to root_path, class: 'wagon-link hidden-sm hidden-md hidden-lg' do %>
+        <%= render "shared/logos/logo_red" %>
+      <% end %>
+      <%= link_to root_path, class: 'wagon-link hidden-xs' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
       <% if params[:action] =~ /hec/ %>

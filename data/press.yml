@@ -1,3 +1,39 @@
+- name: "Les 10 lieux phares du digital et de l’entrepreneuriat à Paris"
+  url: "https://www.welcometothejungle.co/articles/les-lieux-phares-du-digital-et-de-l-entrepreneuriat-a-paris"
+  media: "Welecome to the Jungle"
+  logo: logo-wttj.jpg
+  date: 2017-09-11
+
+- name: "Le Wagon, une initiative française sur les rails du codage au Québec"
+  url: "http://loutardeliberee.com/wagon-initiative-francaise-rails-codage-quebec/"
+  media: "L'Outarde libérée"
+  logo: logo-loutardeliberee.jpg
+  date: 2017-08-07
+
+- name: "Le Wagon é a principal escola de programação da Europa – conheça dois cases!"
+  url: "https://conteudo.startse.com.br/startups/lucas-bicudo/le-wagon-e-principal-escola-de-programacao-da-europa-conheca-dois-cases/"
+  media: "StartSe"
+  logo: logo-startse.jpg
+  date: 2017-07-26
+
+- name: "Les meilleurs meetups Parisiens pour entrepreneurs"
+  url: "https://99designs.fr/blog/business-fr/meilleurs-meet-ups-parisiens-pour-entrepreneurs/"
+  media: "99Designs"
+  logo: logo-99designs.jpg
+  date: 2017-07-19
+
+- name: "Apprendre à coder, le nouveau sésame"
+  url: "http://www.lecho.be/entreprises/management-entrepreneuriat/Apprendre-a-coder-le-nouveau-sesame/9912186?ckc=1&ts=1500370622"
+  media: "L'Echo"
+  logo: logo-lecho.jpg
+  date: 2017-07-07
+
+- name: "Demain, devrons-nous tous savoir coder ?"
+  url: " https://atelier.bnpparibas/life-work/article/demain-devrons-nous-savoir-coder"
+  media: "L'Atelier BNP Paribas"
+  logo: logo-latelierbnpparibas.jpg
+  date: 2017-07-04
+
 - name: "Savoir coder, c'est avoir son permis Internet"
   url: "http://www.magazine-decideurs.com/news/romain-paillard-le-wagon-savoir-coder-c-est-avoir-son-permis-internet"
   media: "Dédideurs Magazine"

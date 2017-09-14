@@ -6,6 +6,8 @@ end
 Rails.application.routes.draw do
   mount Attachinary::Engine => "/attachinary"
 
+  get "/proxy/image", to: 'proxy#image', as: :proxy_image
+
   devise_for :users, controllers: { omniauth_callbacks: "users/omniauth_callbacks" }
 
   namespace :admin do
@@ -34,12 +36,12 @@ Rails.application.routes.draw do
   get 'sp', to: redirect('pt-BR/sao-paulo')
   get 'bh', to: redirect('pt-BR/belo-horizonte')
   get 'en', to: redirect('/')
-  get 'learn', to: redirect('learn-to-code'), as: :learn_to_code
+  get 'learn(/:city)', to: redirect { |params, _| params[:city].blank? ? 'learn-to-code' : "learn-to-code/#{params[:city]}" }, as: :learn_to_code
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
-  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.org/#{req.fullpath.gsub("/ondemand/", "")}" }
+  get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.com/#{req.fullpath.gsub("/ondemand/", "")}" }
   get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
   {
@@ -76,7 +78,7 @@ Rails.application.routes.draw do
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
     get "stack", to: "pages#stack", template: "stack", as: :stack
     get "employers", to: "pages#employers", template: "employers", as: :employers
-    get "learn-to-code", to: "pages#learn", template: "learn", as: :learn
+    get "learn-to-code(/:city)", to: "pages#learn", template: "learn", as: :learn
     get "enterprise", to: "pages#enterprise", template: "enterprise", as: :enterprise
     get "blog/videos", to: "posts#videos", template: "videos", as: :videos
     get "blog/all", to: "posts#all", template: "all", as: :all
@@ -88,6 +90,9 @@ Rails.application.routes.draw do
     get "shop" => "pages#shop", as: :shop
     get "vae" => "pages#vae", as: :vae
     get "cgv" => "pages#cgv", as: :cgv
+    get "lemoisducode" => "pages#lemoisducode", as: :lemoisducode
+    get "react" => "pages#react", locale: :fr, as: :react
+    get "partners" => "pages#partners", as: :partners
 
     constraints(city_constraint) do
       get ":city" => "cities#show", as: :city
@@ -118,11 +123,11 @@ Rails.application.routes.draw do
 
   # Sidekiq
   require "sidekiq/web"
+  require "sidekiq/cron/web"
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end
 
-  get "500", to: 'application#render_500', via: :all
   match "*path", to: "application#render_404", via: :all
 end
 

@@ -74,6 +74,7 @@
               </div>
               <div class="card-city-body">
                 <h3><%= city["name"] %></h3>
+                <% if false %>
                 <div class="project-item-makers card-city-teachers">
                   <% @client.staff(city['slug'])["teachers"].take(3).each do |teacher| %>
                     <div class="project-item-maker">
@@ -81,6 +82,7 @@
                     </div>
                   <% end %>
                 </div>
+                <% end %>
               </div>
             </div>
         </div>

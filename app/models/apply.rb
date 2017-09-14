@@ -27,7 +27,7 @@ class Apply < ActiveRecord::Base
   validates :phone, presence: true
   validates :age, presence: true, numericality: { only_integer: true }
   validates :email, presence: true, email: true
-  validate :email_is_valid_with_mailgun
+  validate :email_is_valid_with_mailgun, unless: ->() { email.blank? }
   validates :motivation, presence: true, length: { minimum: 140 }
 
   attr_accessor :skip_source_validation

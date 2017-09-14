@@ -31,17 +31,20 @@
   <link rel="alternate" hreflang="en" href="<%= locale_current_url_for(:en) %>" />
   <link rel="alternate" hreflang="pt-BR" href="<%= locale_current_url_for(:"pt-BR") %>" />
   <link rel="alternate" hreflang="es" href="<%= locale_current_url_for(:es) %>" />
-  <link rel="alternate" hreflang="zh-CN" href="<%= locale_current_url_for(:"zh-CH") %>" />
+  <link rel="alternate" hreflang="zh-CN" href="<%= locale_current_url_for(:"zh-CN") %>" />
 
   <% if request.path_info == '/' %>
     <link rel="alternate" href="<%= url_for('/') %>" hreflang="x-default" />
   <% end %>
 
   <%= yield(:headers) %>
-
-  <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 
+  <% if Rails.env.production? && critical_css.present? %>
+    <style><%= critical_css %></style>
+  <% else %>
+    <%= stylesheet_link_tag("application") %>
+  <% end %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
   <%# render "shared/ondemand" if I18n.locale == :fr %>
@@ -52,10 +55,13 @@
   <%= yield %>
 
   <%= render "shared/footer" %>
+
+  <% if Rails.env.production? && critical_css.present? %>
+    <%= stylesheet_link_tag("application") %>
+  <% end %>
   <%= render "shared/iubenda" %>
   <%= javascript_include_tag :application, async: true %>
   <%= yield(:after_js) %>
-  <%#= render "shared/drift" if !@hide_drift && Rails.env.production? %>
   <%= render "shared/intercom" if !@hide_drift && Rails.env.production? %>
   <%= render "shared/google_analytics" %>
   <%= render "shared/mixpanel" %>

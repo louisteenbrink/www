@@ -38,19 +38,20 @@ module ApplicationHelper
   end
 
   def author_image_tag(slug)
-    image_tag "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}"
+    image_tag proxy_url_with_signature(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}")
   end
 
-  def post_image_tag(slug)
-    "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
+  def post_image_url(slug)
+    return slug if slug =~ /^http/  # Handy to quickly try a post background image from a URL.
+    proxy_url_with_signature url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
   end
 
   def content_post_image_tag(slug)
-    image_tag "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
+    image_tag proxy_url_with_signature(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}")
   end
 
   def video_image_tag(slug)
-    "https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/#{slug}"
+    proxy_url_with_signature url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/#{slug}"
   end
 
   def cl_adaptive_image_tag(image_path, opt={})
@@ -60,5 +61,9 @@ module ApplicationHelper
     image_url = cloudinary_url image_path, width: w, height: h, crop: :fill
     opt[:srcset] = "#{image_url} 1x, #{image_url_2x} 2x"
     return cl_image_tag image_path, opt
+  end
+
+  def critical_css
+    raw @critical_css
   end
 end

@@ -49,6 +49,11 @@ routes:
     - alkubaisi
     - evanht
     - edebeauffort
+  lyon:
+    - blancfrancois
+    - lafiente
+    - baptprn
+    - knopfler81
   montreal:
     - liolev
     - julien-fooducoin
@@ -64,8 +69,117 @@ routes:
     - antoinemor
     - anamukoyama
     - adrianorob
+  shanghai:
+    - hamiltonle
+    - kwnath
+    - kikinz
 
 testimonials:
+  kikinz:
+    first_name: Kirsten
+    last_name: Judd
+    city_slug: shanghai
+    batch_slug: 72
+    publication_date: 2017-09-01
+    job_before:
+    project_slug: techforgood
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: shanghai_kirsten_judd.jpg
+    linkedin_url:
+    content_html: |
+      <p>Le Wagon is the best way to learn a lot in a short amount of time in a fun environment with supportive teachers and classmates. I wish I could do it all over again!</p>
+  kwnath:
+    first_name: Nathan
+    last_name: Lee
+    city_slug: shanghai
+    batch_slug: 72
+    publication_date: 2017-09-01
+    job_before:
+    project_slug: seeme
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: shanghai_nathan_lee.jpg
+    linkedin_url:
+    content_html: |
+      <p>What makes Le Wagon different from most bootcamps is the fact that they craft their curriculums based around the students needs and goals as well as the area that they are in. And I am extremely thankful for that, it was awesome to learn about the ecosystem of Shanghai as well as the tech culture.</p>
+  hamiltonle:
+    first_name: Hamilton
+    last_name: Le
+    city_slug: shanghai
+    batch_slug: 72
+    publication_date: 2017-09-01
+    job_before:
+    project_slug: techforgood
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: shanghai_hamilton_le.jpg
+    linkedin_url:
+    content_html: |
+      <p>More than what I had hoped for. I was really pleased with the quality of the teachers, the classroom environment, and the set-up of the courses. I had compared LeWagon to many other physical and online bootcamps, and feel that LeWagon has found a great balance (teaching style, community, price).</p><p>It has also allowed me to leap 2-4 years ahead in my career, as I had wanted to become a technical product manager, which I’ve already found a job in, and had 20 interview opportunities and many offers for PM or fullstack developer. I’m really grateful and feel indebted to LeWagon and the Shanghai team.</p>
+  blancfrancois:
+    first_name: François
+    last_name: Blanc
+    city_slug: lyon
+    batch_slug: 52
+    publication_date: 2017-08-17
+    job_before: Process & Energy Engineer
+    project_slug: wedressfair
+    job_after: Node.JS Fullstack Developer
+    new_company: Optimiz.me
+    origin: Course Report
+    picture: lyon_francois_blanc.jpg
+    linkedin_url: https://www.linkedin.com/in/frblanc/
+    content_html: |
+      <p>When I heard about Le Wagon Lyon I had been coding for a few months on basic iOS apps. Coding was almost a random choice at first. I needed to learn something new and a friend of mine offered me to teach me how to code. At some point, I got really bored with my former job but more and more into coding. So I decided to quit even though I wasn’t ready to apply for a job as a developer. Meanwhile, Le Wagon launched its first batch in Lyon :)</p><p>I was looking for a quick and intense training that would hopefully allow me to find a job in a startup as a developer. I have been immediately attracted by Le Wagon bootcamp when I read about it on the website. As soon as I got on the phone with Etienne, one of the drivers in Lyon, I knew this was a perfect fit for me. I couldn’t wait to begin!</p><p>It’s been 9 really motivating weeks, to say the least. Every day I was excited about getting to work on the exercises, and it was sometimes hard to get off the computer to get lunch! In the last two weeks, we developed ‘We Dress Fair’, a platform to find clothes fitting your ethic in one click. It was really stimulating to learn how to work with a team of developers and how to stay organized to make the best project possible in no time!</p><p>A few weeks after Le Wagon, I found a job in Lyon at Optimiz.me (a startup making SEO easy for business with homemade tools) as a fullstack web developer. I am learning Node.JS there, a new programming language, surrounded by a great team. It has been hard at the beginning but the bootcamp gave me the knowledge and the mindset necessaries to get started quickly. I am learning new things and I get better everyday. I finally wake up every morning happy to go to work!</p>
+  lafiente:
+    first_name: Laurène
+    last_name: Daccache
+    city_slug: lyon
+    batch_slug: 52
+    publication_date: 2017-08-17
+    job_before: Marketing Assistant
+    project_slug: easytrip
+    job_after: Ruby on Rails Fullstack Developer
+    new_company: Meal Canteen
+    origin: Course Report
+    picture: lyon_laurene_daccache.jpg
+    linkedin_url: https://www.linkedin.com/in/laurenedaccache/
+    content_html: |
+      <p>After years studying marketing and e-commerce, I did one last internship. It made me notice the gap that too often exists between marketing and IT departments, even if they're inter-dependent. This professional experience decided me to learn how to code. At first, I just wanted to understand how it worked. But it motivated me to the point of joining Le Wagon batch #52 in Lyon, not without some pressure as I was total novice!</p><p>Best decision ever. I loved the 9-intensive weeks at Le Wagon, I learnt more there than in my entire Bachelor thanks to lovely and competent teachers Nicolas, Cecile, and obviously Kevin, and the drivers Mathieu and Etienne. Coding is a philosophy with principles and advantages: honesty, productivity, team spirit. Coding's also an eternal headache, but it keeps you excited and always more motivated to build great products!</p><p>Spending 9 weeks with the 13 incredible people of my batch was amazing, and I found a job thanks to one of our guest teacher in the month following the bootcamp! I work now at Meal Canteen as a fullstack web developer in Ruby on Rails, along with Baptiste Perrin (also from batch #52).</p><p>Meal Canteen is a great startup based in Saint-Etienne fighting against food waste where we're both lucky enough to work with seniors developers there and learn new things everyday. I would never been here without my experience at Le Wagon in Lyon!</p>
+  baptprn:
+    first_name: Baptiste
+    last_name: Perrin
+    city_slug: lyon
+    batch_slug: 52
+    publication_date: 2017-08-17
+    job_before: Business Manager
+    project_slug: easytrip
+    job_after: Ruby on Rails Fullstack Developer
+    new_company: Meal Canteen
+    origin: Course Report
+    picture: lyon_baptiste_perrin.jpg
+    linkedin_url: https://www.linkedin.com/in/baptiste-perrin-b19459111/
+    content_html: |
+      <p>I have always wanted to start my own company so I chose to study business when I was 18. Seven years, three internships and four countries later, I was done with it but still felt I was lacking something…  I therefore decided to attend Le Wagon batch #52 in Lyon to learn to code and be able to develop my own projects.</p><p>I have to say I have not been disappointed by this experience. During these 9 (intense) weeks, I have had an amazing time every single day, met some extraordinary people and created a great product called Easy Trip, an app to help backpackers meet each other to share their transportation expenses. I learned way more than I could have expected and even found a job I started straight after Le Wagon bootcamp!</p><p>Indeed, when one of our guest teachers offered me a to work as a web-developer in his company, I could not refuse this opportunity to keep building my technological skills, even though I would have to postpone my own projects to embrace it. I am now working at Meal Canteen along with Laurène Daccache (also from batch #52)! We both became Ruby on Rails fullstack web-developers in this great startup from Saint-Etienne fighting against food waste.</p><p>Attending Le Wagon is definitely the best decision I made for my career and being one of their alumni is more valuable to me than any other university diplomas I can think of!</p>
+  knopfler81:
+    first_name: Nelly
+    last_name: Duclos
+    city_slug: lyon
+    batch_slug: 52
+    publication_date: 2017-08-17
+    job_before: Operator Receptionist
+    project_slug: easytrip
+    job_after: Ruby on Rails Fullstack Developer
+    new_company: Keycoopt
+    origin: Course Report
+    picture: lyon_nelly_duclos.jpg
+    linkedin_url: https://www.linkedin.com/in/nelly-duclos/
+    content_html: |
+      <p>After short studies (level A in sales and marketing), I worked for a couple of years in call centers (health insurances, Pôle Emploi…) and as an operator-receptionist. But that was not for me. I gave up everything and started thinking about a new life. It's never too late to change your carrier, proof is I just turned 36!</p><p>I wanted to become a web developer. Well, I had this in mind for some time but I didn't dare to really do it, and I didn't know how to start… I first took online courses on HTML and CSS, I also tried another bootcamp but I wasn't satisfied and didn't feel strong enough afterwards.</p><p>As someone who never gives up and keep trying until I succeed, I applied to Le Wagon and joined the batch #52 in Lyon in January 2017. I got convinced by alumni reviews and already had a glimpse of their great teaching skills with Sébastien and Boris videos on Youtube.</p><p>I now believe it was one of the best decisions I made in my life, and it was worth all the sacrifices during the 9 weeks. Kevin (the lead teacher), Etienne & Mathieu (the drivers) and everyone was wonderful, the courses & materiel were  very qualitative. Everything was just better than I expected!</p><p>During batch #52, our drivers organised us some interesting talks with recruitment agencies, developers, entrepreneurs every week. It was very helpful for my job hunting!</p><p>Every batch ends up with 3 weeks dedicated to projets. We work in teams on one Airbnb-like project for a week and on OUR own final projects for two weeks. My mates and I have built 'Easy Trip', a platform to help backpackers create trips together. We had a great experience together thanks to the great good mindset of each team member! And when the batch ended, we all gathered at my place for a week to keep on pushing the project further and learn new skills!</p><p>And the intensive work during and after the bootcamp has now paid! I'm about to start my very first job (and permanent contract) as a Ruby on Rails fullstack web-developer at Keycoopt, a startup promoting cooptation as the best way to quickly find the right candidate for a job! I can say truly Le Wagon changed my life, I finally feel confident and would recommend it to anyone.</p>
   liolev:
     first_name: Lionel
     last_name: Levaux

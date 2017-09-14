@@ -5,6 +5,7 @@ class ReviewsCounter
 
   def review_count
     from_cache(:total_review_count) do
+      puts "Fetching Review Count from CourseReport..."
       begin
         html_coursereport = Nokogiri::HTML(open("https://www.coursereport.com/schools/le-wagon#/reviews"))
         coursereport_data = html_coursereport.search("span[itemprop='reviewCount']").text.to_i
@@ -13,6 +14,7 @@ class ReviewsCounter
         raise e if Rails.env.development?
       end
 
+      puts "Fetching Review Count from Switchup..."
       html_switchup = Nokogiri::HTML(open("https://www.switchup.org/bootcamps/le-wagon"))
       switchup_data = html_switchup.search("span[itemprop='reviewcount']").text.to_i
 

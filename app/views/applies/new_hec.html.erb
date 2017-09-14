@@ -36,13 +36,13 @@
           price: t('applies.new.price')
         },
         rows: [
-          apply_row(:first_name, :text, t("applies.new.first_name"), "Alan", "account"),
-          apply_row(:last_name, :text, t("applies.new.last_name"), "Turing", "format-text"),
-          apply_row(:codecademy_username, :text, t("applies.new.codecademy_username"), "alan_turing", "format-text"),
-          apply_row(:age, :text, "Age", "42", "crown"),
-          apply_row(:email, :email, "Email", "alan@turing.com", "email-open"),
-          apply_row(:phone, :tel, t("applies.new.phone"), "+33612345678", "cellphone-iphone"),
-          apply_row(:motivation, :textarea, "Motivation", t("applies.new.motivation"), "content-paste")
+          apply_row(:first_name, true, :text, t("applies.new.first_name"), "Alan", "account", 1),
+          apply_row(:last_name, true, :text, t("applies.new.last_name"), "Turing", "format-text", 2),
+          apply_row(:codecademy_username, true, :text, t("applies.new.codecademy_username"), "alan_turing", "format-text", 3),
+          apply_row(:age, true, :text, "Age", "42", "crown", 4),
+          apply_row(:email, true, :email, "Email", "alan@turing.com", "email-open", 5),
+          apply_row(:phone, true, :tel, t("applies.new.phone"), "+33612345678", "cellphone-iphone", 6),
+          apply_row(:motivation, true, :textarea, "Motivation", t("applies.new.motivation"), "content-paste", 7)
         ]
       }, prerender: prerender? %>
     </div>
