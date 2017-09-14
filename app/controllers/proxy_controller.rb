@@ -20,7 +20,7 @@ class ProxyController < ActionController::Base
       expires_in 1.month, public: true
       send_data image.blob, type: image.type, filename: image.name, disposition: :inline
     end
-  rescue URI::InvalidURIError
+  rescue URI::InvalidURIError, JSON::ParserError
     head 404
   end
 
