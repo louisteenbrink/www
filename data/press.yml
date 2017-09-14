@@ -1,3 +1,9 @@
+- name: "Les 10 lieux phares du digital et de l’entrepreneuriat à Paris"
+  url: "https://www.welcometothejungle.co/articles/les-lieux-phares-du-digital-et-de-l-entrepreneuriat-a-paris"
+  media: "Welecome to the Jungle"
+  logo: logo-wttj.jpg
+  date: 2017-09-11
+
 - name: "Le Wagon, une initiative française sur les rails du codage au Québec"
   url: "http://loutardeliberee.com/wagon-initiative-francaise-rails-codage-quebec/"
   media: "L'Outarde libérée"
