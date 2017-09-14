@@ -80,7 +80,7 @@ testimonials:
     last_name: Judd
     city_slug: shanghai
     batch_slug: 72
-    publication_date: 2018-09-01
+    publication_date: 2017-09-01
     job_before:
     project_slug: techforgood
     job_after:
@@ -95,7 +95,7 @@ testimonials:
     last_name: Lee
     city_slug: shanghai
     batch_slug: 72
-    publication_date: 2018-09-01
+    publication_date: 2017-09-01
     job_before:
     project_slug: seeme
     job_after:
@@ -110,7 +110,7 @@ testimonials:
     last_name: Le
     city_slug: shanghai
     batch_slug: 72
-    publication_date: 2018-09-01
+    publication_date: 2017-09-01
     job_before:
     project_slug: techforgood
     job_after:
@@ -125,7 +125,7 @@ testimonials:
     last_name: Blanc
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Process & Energy Engineer
     project_slug: wedressfair
     job_after: Node.JS Fullstack Developer
@@ -140,7 +140,7 @@ testimonials:
     last_name: Daccache
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Marketing Assistant
     project_slug: easytrip
     job_after: Ruby on Rails Fullstack Developer
@@ -155,7 +155,7 @@ testimonials:
     last_name: Perrin
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Business Manager
     project_slug: easytrip
     job_after: Ruby on Rails Fullstack Developer
@@ -170,7 +170,7 @@ testimonials:
     last_name: Duclos
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Operator Receptionist
     project_slug: easytrip
     job_after: Ruby on Rails Fullstack Developer

@@ -28,6 +28,7 @@ zh-CN:
       retry: "重试"
       error: "你输入的似乎是无效邮箱……"
       press: "媒体"
+      partners: "夥伴"
       alumni_platform: "校友社群"
       about: "Le Wagon是什么机构？"
       bootcamp_in_city_html: "%{city}编程训练营"

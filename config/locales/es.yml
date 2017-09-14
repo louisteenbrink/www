@@ -28,6 +28,7 @@ es:
       retry: "Reintentar"
       error: "Parece que tu dirección de email nos es válida..."
       press: "Prensa"
+      partners: "Socios"
       alumni_platform: "Alumni Network"
       about: "Qué es Le Wagon?"
       bootcamp_in_city_html: "Bootcamp de programación en %{city}"
