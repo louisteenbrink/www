@@ -31,6 +31,7 @@ ja:
       alumni_platform: "Alumni Community"
       about: "What's le Wagon?"
       bootcamp_in_city_html: "%{city} coding bootcamp"
+      partners: Partners
     navbar:
       menu:
         cities: Cities
