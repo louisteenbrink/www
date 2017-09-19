@@ -11,7 +11,6 @@ class ApplyForm extends React.Component {
     }
   }
   render() {
-
     var cities = this.state.activeCityGroup.cities;
     var otherCityGroups = this.props.city_groups.filter((cityGroup) => { return cityGroup.group !== this.state.activeCityGroup.group });
     var batches = this.state.activeCity.apply_batches;
