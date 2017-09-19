@@ -28,6 +28,7 @@ es:
       retry: "Reintentar"
       error: "Parece que tu dirección de email nos es válida..."
       press: "Prensa"
+      partners: "Socios"
       alumni_platform: "Alumni Network"
       about: "Qué es Le Wagon?"
       bootcamp_in_city_html: "Bootcamp de programación en %{city}"
@@ -259,7 +260,7 @@ es:
         Please wait for the Driver to contact you to set up your interview.
         If you wish to change the city you applied to, you can discuss that with him / her!
       we_will_contact_html: |
-        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/learn/learn-ruby" target="_blank">prep-work de  Ruby</a> en CodeCademy.
+        Recibirás un correo en algunas horas para agendar una entrevista donde debatiremos tus expectativas y motivación. <br /><br />Mientras tanto, comprueba nuestra checklist y empieza el <a href="https://www.codecademy.com/en/learn/learn-ruby" target="_blank">prep-work de  Ruby</a> en CodeCademy.
       take_advance: Checklist
       first_step: "1. Enviar tu candidatura a Le Wagon %{name}"
       second_step: "Suscríbete a nuestro Meetup en %{name}"
@@ -447,7 +448,7 @@ es:
       codecademy_modal_body_html: |
         <p>
           As mentioned in the <a href="%{faq_path}" target="_blank">FAQ</a>, one prerequisite of Le Wagon is to complete 100% of the
-          <a href="https://www.codecademy.com/learn/learn-ruby">Ruby Track</a> on CodeCademy.
+          <a href="https://www.codecademy.com/en/learn/learn-ruby">Ruby Track</a> on CodeCademy.
           If you don't have a CodeCademy account, please <a href="https://www.codecademy.com/register" target="_blank">create one now</a>, it's free.
         </p>
         <p>

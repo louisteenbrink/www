@@ -3,7 +3,7 @@
     <div class="row">
       <% testimonials.each do |testimonial| %>
 
-        <% cache [ 'testimonial', testimonial ] do %>
+        <% cache [ 'testimonial', testimonial, I18n.locale ] do %>
         <!-- EXCERPT CONTENT -->
         <div class="col-md-6">
           <%= link_to '', '#', class: 'read-more', "data-toggle" => "modal", 'data-target' => "#fullTestimonial-#{testimonial.github_nickname}" %>

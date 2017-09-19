@@ -4,7 +4,7 @@ fr:
     answer: |
         Après avoir [postulé](/postuler) via le site, nous vous contacterons afin de prendre rendez-vous pour un entretien (Skype ou dans nos locaux). Pour préparer cet entretien,
         vous devez **compléter 100%** de la **track Ruby**
-        sur le site [CodeCademy en anglais](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        sur le site [CodeCademy en anglais](https://www.codecademy.com/en/learn/learn-ruby).
         Commencez dès maintenant, c'est gratuit !
   - question: |
         Dois-je parler français ? anglais ? les deux ?
@@ -58,7 +58,7 @@ fr:
         Le travail de préparation me prendra combien de temps ?
     answer:
         - |
-            Vous devriez avoir besoin d'une **dizaine d'heures** pour terminer la [track Ruby](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+            Vous devriez avoir besoin d'une **dizaine d'heures** pour terminer la [track Ruby](https://www.codecademy.com/en/learn/learn-ruby).
             Cette track est obligatoire. Pour vous garantir une place dans la session de votre choix, **bloquez-vous un week-end** pour
             terminer cette track le plus rapidement possible. Les places sont limitées et partent très vite.
         - |
@@ -128,7 +128,7 @@ fr:
     answer: |
         Après avoir postulé sur le site nous vous proposerons un rendez-vous pour discuter de
         vos attentes et répondre à vos questions. Vous devrez avoir validé
-        la [track Ruby](https://www.codecademy.com/en/learn/ruby?set_preferred=true) (on se répète là non ? :p).
+        la [track Ruby](https://www.codecademy.com/en/learn/learn-ruby) (on se répète là non ? :p).
         Ensuite, nous vous enverrons votre contrat à signer en ligne, ainsi qu'une facture.
         Ce n'est qu'au **paiement d'un acompte** de **30%** du montant de la formation
         que votre embarquement est **définitif**. Le solde de la facture sera à régler en deux fois au cours
@@ -158,7 +158,7 @@ pt-BR:
         Depois de ter [enviado a sua candidatura](/postuler) pelo formulário do site nós vamos entrar em contato para marcarmos uma entrevista (Skype ou presencial)
         sobre as suas habilidades técnicas, motivações e expectativas.
         Logo após a entrevista te diremos se você poderá ser aceito no bootcamp Le Wagon.
-        Recomendamos que comece e complete o ***track Ruby*** no [CodeCademy](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        Recomendamos que comece e complete o ***track Ruby*** no [CodeCademy](https://www.codecademy.com/en/learn/learn-ruby).
         Comece agora mesmo, é gratuito!
   - question: |
         Tenho que falar inglês ? português ? Os dois ?
@@ -201,7 +201,7 @@ pt-BR:
   - question: |
         Quanto tempo vou precisar pra me preparar ?
     answer: |
-        Você vai precisar de aproximadamente **10 horas** para terminar a [track Ruby](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        Você vai precisar de aproximadamente **10 horas** para terminar a [track Ruby](https://www.codecademy.com/en/learn/learn-ruby).
         Essa track é obrigatória. Para garantir o seu lugar na sessão de sua escolha, **bloqueie um fim de semana** para
         terminar ela o mais rápido possível. Os lugares são limitados e terminam rápido.
   - question: |
@@ -264,7 +264,7 @@ pt-BR:
     answer: |
         Depois de ter se candidatado pelo site nós vamos te propor uma entrevista para discutir sobre
         suas expectativas e responder às suas questões. Antes ou depois disso você deverá terminar
-        a [track Ruby](https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        a [track Ruby](https://www.codecademy.com/en/learn/learn-ruby).
         Se tudo se passou bem te enviaremos um contrato para assinar assim como uma fatura.
         Somente no pagamento de uma prestação de **30%** do montante da formação
         que o seu embarque é definitivo. O saldo restante da fatura deverá ser pago em outras duas
@@ -299,7 +299,7 @@ en:
         receive a mail with few additional questions about your expectations and technical skills.
         From this point, we will schedule an interview (Skype or on-site) after which
         we will tell you very quickly if you get on board. We also recommend you start working on the
-        [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy
+        [Ruby track](https://www.codecademy.com/en/learn/learn-ruby) on CodeCademy
         as soon as possible (even before the interview). We'll ask you to finish this track.
   - question: |
         I’m really a beginner, is it the right program for me?
@@ -308,7 +308,7 @@ en:
   - question: |
         How long does preparatory work take?
     answer: |
-        You must complete the [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy. It should
+        You must complete the [Ruby track](https://www.codecademy.com/en/learn/learn-ruby) on CodeCademy. It should
         take you about 10 hours to complete.
   - question: |
         Do I need to speak French?
@@ -368,7 +368,7 @@ zh-CN:
         里面包含几个关于你的预期以及专业技能的问题。
         接下来我们就会安排面试（Skype或者面对面），并且很快告知是否被录取。
         同时，我们也推荐申请者尽早开始在CodeCademy上进行[Ruby track]测试
-        (https://www.codecademy.com/en/learn/ruby?set_preferred=true)，甚至是在面试之前。
+        (https://www.codecademy.com/en/learn/learn-ruby)，甚至是在面试之前。
         所有申请者都必须完成这项测试。
   - question: |
         我完全是新手，适合参加这个项目吗？
@@ -377,7 +377,7 @@ zh-CN:
   - question: |
         准备工作需要多久？
     answer: |
-        申请者必须要在CodeCademy上完成[Ruby track]测试(https://www.codecademy.com/en/learn/ruby?set_preferred=true).
+        申请者必须要在CodeCademy上完成[Ruby track]测试(https://www.codecademy.com/en/learn/learn-ruby).
         大概花费10个小时。
   - question: |
         我需要会说法语吗？
@@ -436,7 +436,7 @@ es:
         receive a mail with few additional questions about your expectations and technical skills.
         From this point, we will schedule an interview (Skype or on-site) after which
         we will tell you very quickly if you get on board. We also recommend you start working on the
-        [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy
+        [Ruby track](https://www.codecademy.com/en/learn/learn-ruby) on CodeCademy
         as soon as possible (even before the interview). We'll ask you to finish this track.
   - question: |
         I’m really a beginner, is it the right program for me?
@@ -445,7 +445,7 @@ es:
   - question: |
         How long does preparatory work take?
     answer: |
-        You must complete the [Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) on CodeCademy. It should
+        You must complete the [Ruby track](https://www.codecademy.com/en/learn/learn-ruby) on CodeCademy. It should
         take you about 10 hours to complete.
   - question: |
         What language are the classes taught in?
@@ -495,3 +495,67 @@ es:
     answer: |
         It all depends on the city! Please review your options on the [Apply](/apply) page.
 
+
+ja:
+  - question: |
+        Le Wagonへの申請方法と流れは？
+    answer: |
+        ウェブサイトを通してアプリケーションを提出後、
+        あなたのプログラムに対する期待や現在の技術的なスキルのレベル等を聞く質問がまとまってあるメールを送らせて頂きます。
+        参加決定次第、オンライン上での面接をセッティングします。
+        面接が始まる前からCodeCademyの[Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true) を進めることをお勧めします。
+        最終的にRuby trackを全て完了して頂く必要があります。
+  - question: |
+        初心者ですが、このプログラムを受けられるのでしょうか？
+    answer: |
+        私たちが生徒に求める姿勢は三つです ー **モチベーションが高い** (やる気がある)、**好奇心旺盛**、**社交的**.
+  - question: |
+        事前準備はどのくらいの期間かかりますか？
+    answer: |
+        CodeCademyにて[Ruby track](https://www.codecademy.com/en/learn/ruby?set_preferred=true)を完了させることが必須です。10時間前後で終わります。
+  - question: |
+        フランス語は話せないといけませんか？
+    answer:
+      - |
+          パリ、リール、ボルドー、マルセイユではプログラム自体がフランス語で行われます。
+          毎朝の90分の講義を含めた、日中の講義の全てがフランス語で行われます。
+          フランス語が理解できないとフランスで行われるブートキャンプには参加することができません。
+      - |
+          幸運なことに、他の都市では全て**英語**で行われます!
+          "申請する"というページで次の期生が何語で行われるかを確認できます。
+  - question: |
+        9週間で何を作れるようになりますか？
+    answer: |
+        Ruby on Railsのジュニア開発者のレベルまで身に付けることができます。
+        自分のアイディアを素早くプロトタイプし、ウェブアプリケーションを作ることが可能になります。
+        例えば、自分のウェブサイトに認証(ログイン/会員登録、またはFacebook/Twitterとの連携)、
+        アドミンのバックオフィス、入金システム、メールの自動送信のシステム等を付け加えることができるようになります。
+        短時間でプロダクションをデブロイする方法を学び、成功しているスタートアップ同様の最上級のプログラミング実践法を身につけることができます。
+        起業するための自分のプロジェクトを続けるか、スタートアップまたは大企業にてジュニア開発者として働くか。
+        今まで選択肢になかった道が見えてきます。
+  - question: |
+        どうして主にRuby on Railsの言語を使用するのでしょうか？
+    answer: |
+        とても良い質問ですね！私たちのCTOが[こちらのメディアにて話されています](https://medium.com/le-wagon/why-learn-ruby-on-rails-9862354c9ce6#.azt84ab7d)。
+  - question: |
+        モバイルアプリも作れるようになりますか？
+    answer: |
+        はいといいえの両方です。もっとハッキリ答えましょう。プログラム中ではiOS、AndroidまたはWindows Phone開発は学びません。
+        これらのスキルを学ぶにあたって9週間では足りないと私たちは考えます。
+        様々な理由を考慮した上で私たちはプログラミングとウェブ開発の基礎を教えることを選びました。
+        まず、のちにモバイル開発を始めるにしても、これらの基礎がソフトウェアエンジニアの技術の軸となります。
+        プログラム中にはモバイルアプリに使われるAPIの作り方も学びます。
+        どのモバイル開発者にしても、まずは自分で作ったAPIを使ってから始めた方がiOSまたはAndroid interfaceのコーディングをする際に簡単になります。
+  - question: |
+        クラスはいつ行われるのでしょうか？
+    answer: |
+        月曜日から金曜日、朝の9時から夜の7時まで。合計して9週間で360時間受講する形になります。
+  - question: |
+        自分のPCを持参する必要はありますか？
+    answer: |
+        はい、生徒は自分のPCを持参する必要があります。Mac OS X または Linuxが好ましいですが、
+        Windowsしか持っていない場合は初日にLinuxのインストール方法を学ぶので安心してください。
+  - question: |
+        費用はいくらですか？そしていつから始まりますか？
+    answer: |
+        プログラムを受講する都市によって異なります！[申請する](/apply)というページで自分の受講するプログラムの都市を確認してみて下さい。

@@ -1,0 +1,533 @@
+ja:
+  date:
+    formats:
+      apply: "%B %e, %Y"
+  top_bar_message: 9週間のプログラムを受講した生徒たちが実際に作った
+  top_bar_cta: デモはこちらから
+  shared:
+    positions:
+      they_hired_our_students: これらの会社が卒業生を歓迎しています
+      where_our_students_are_working: 卒業生の就職先
+      join_our_network: 卒業生と繋がりたい?
+    live:
+      watch_live_html: "<strong> #%{batch}期生の卒業生による </strong> <strong>%{city}</strong> での <strong>%{count} のプロジェクト</strong> を見てみる "
+      watch_now_html: "<strong>今すぐ</strong>デモデイを見てみる"
+    footer:
+      news_and_resources: "ニュース, イベント & 無料リソース"
+      enter_your_mail: メールアドレスの記入
+      stay_tuned: お見逃しなく！
+      our_videos: 私たちのビデオチュートリアル
+      find_a_city: 開催都市を探す
+      about_us: 会社概要
+      follow_us: メディア
+      title: "無料登録はこちらから!"
+      subtitle_html: "テクノロジー、スタートアップ、イノベーション満載のLe Wagonのイベントや <em>無料</em> のワークショップの最新情報を受け取ろう！"
+      subtitle_end: " %{city}　にて"
+      subscribe: "購読"
+      subscribing: "購読しています"
+      retry: "再度記入してください"
+      error: "このメールアドレスは有効ではありません"
+      press: "Press"
+      alumni_platform: "卒業生のコミュニティ"
+      about: "Le Wagonとは?"
+      bootcamp_in_city_html: "%{city} コーディングブートキャンプ"
+      partners: Partners
+    navbar:
+      menu:
+        cities: 開催都市
+        program: プログラム
+        online: Online
+        on_site: Onsite
+        fullstack_program: フルスタック プログラム (9週間集中型研修)
+        free_track: ウェブ開発の基本講座 (受講無料)
+      apply: 申し込みはこちらから
+      employers: 法人のお客様
+      work: 卒業生と働く
+      train: 私たちと一緒にコードを学ぶ
+      recruitment: 卒業生を雇う
+      workshops: 企業用ワークショップ
+    testimonials:
+      what_our_students_say: 生徒たちのお話
+      students_think_of_us: 生徒たちの経験談
+      more_reviews: Le Wagonsのレビューはこちらから
+    testimonials_new:
+      what_our_students_say: 生徒たちのお話
+      students_think_of_us: 生徒たちの経験談
+      more_reviews: Le Wagonのレビューはこちらから
+      love_messages_html: |
+        他の %{reviews}以上あるレビューを見る
+      sneak_peek: 生徒たちの経験談
+      show_more_testimonials: 経験談をもっと見る
+      switchup_html: |
+        SwitchUpが<strong>史上初のコーディングブートキャンプ</strong>として紹介しました
+    more_testimonials:
+      published_on: Published on
+      read_more: もっと読む
+      watch: が10日間で作ったものを見る
+    features:
+      read_full_program: プログラムを全て見る
+      pedagogy_matters_html: "スタートアップの様にコードしよう。"
+      pedagogy_tagline_html: |
+        コードの書き方、ウェブプロダクトの作り方を学ぼう。 <br />の一員になろう <strong>ヨーロッパの一番エキサイティングな生徒たちのコミュニティ</strong>.
+      web_development: ウェブ開発を学ぶ
+      web_development_details: |
+        Ruby、SQL、そして、Railsアプリケーションのフレームワークまで全て学ぶ。
+        高度なCSS（flexbox、grid、animationsなど）を使って初期段階のスキルを伸ばし、
+        jQuery and React.jsを学びながら
+        Facebookが作ったJavascriptライブラリを深掘る。
+      software_engineer_html: ソフトウェアエンジニアの様に考える
+      software_engineer_details: |
+        テクニカルな問題の全体像を見れる人は
+        MVCの意味も分かり、データベーススキーマのデザインやHTTPのリクエストの解剖ができ、
+        新しいプログラミング言語もすぐに学ぶことができる。
+      technical_workflow: 技術的なワークフローを身につけよう
+      technical_workflow_details_html: |
+        技術的なプロダクトを作る上で絶対的に良い方法が存在する。それを私たちは教えます。
+        MVPのユーザーストーリーを書き出し、データーベーススキームをデザインし、スケッチを活用しながら大型模型を作り、
+        プルリクエストを使いこなしながら、Githubでコードレビューをする。
+        これが成功するスタートアップのあるべき姿である。
+      startup_toolkit: スタートアップに必要なツールキット
+      startup_toolkit_details: |
+        私たちはあなたの新しいプロジェクト開発を効率化するために
+        Heroku、Stripe、Mandrill、Amazon S3、Algoliaなどの
+        サービスの導入方法を教えます。
+        私たちのデベロッパーのマインドセットは
+        時間を節約し、特定のニーズに適切なツールを使うことです。
+      build_product: プロダクトを開発する
+      build_product_details: |
+        他が真似できない私たち独自のウェブプロダクトの開発方法を教えます。
+        プログラム中に作ったプロダクトを元に卒業生が起業したKudozは1.2億の売り上げを達成し、そのインパクトは政治、MaShareEcoleスクール、MedPicsヘルスケア、Krawdマーケティングまでに及びます。
+        このような将来性のあるプロジェクトが数多く存在します。
+      land_a_job: 新しい仕事に就く
+      land_a_job_details: |
+        Stripe、Algolia、Molotov、Save、Compass、55、などのジュニア開発者として働く。
+        私たちはジュニア開発者、プロダクトマネジャー、またはグロースハッカーなどのあなたが憧れる仕事に就ける様にお手伝いします。
+        私たちの今までの卒業生と実際に話をして、詳細を聞いてみよう！
+      checkout: チェックしてみる
+      see_all: もっと見る
+  newsletter:
+    teaser: "<p>私たちの次の <strong>イベント</strong>の最新情報や <strong>ビデオチュートリアル</strong> & <strong>テクノロジーに関するポスト</strong> を自分のインボックスにて受け取ろう</p>"
+    city_teaser_html: '%{city},にて開催する次の <strong>イベント</strong> や <strong>ビデオチュートリアル</strong> & <strong>テクノロジーの関するポスト</strong> を自分のインボックスにて受け取ろう'
+    email_placeholder: あなたのメールアドレス
+    follow_us_button: 私たちをフォローする
+    thank_you: "ありがとうございます！近いうちに会えることを楽しみにしています！"
+    error: "あら、エラーが発生しているそうです。: ERROR_MESSAGE"
+  blog:
+    read_article: ポストを読む
+    written_html: "%{date}に%{fname} %{lname}によって投稿されました"
+    moreposts: 今までのクールな投稿をツアーして見る
+  pages:
+    home:
+      title: 「Le Wagonのコーディング・ブートキャンプ | ヨーロッパの最上級のコーディングスクールでコードを学ぼう」
+      description: 「Le Wagonは起業家のためのヨーロッパ最上級のコーディングスクールです。9週間の集中型プログラムでコーディングができるように学びましょう」 "
+      catchline_html: "あなたの人生を変える: <strong>コードを学ぶ</strong>"
+      vision_html: Le Wagonは<strong>クリエイティブな人々に</strong>技術的なスキルを<strong>提供します</strong>
+      view_teaser: ビデオを見る
+      apply_for_nine_weeks_html: <span>9週間のフルスタックコース(集中型)</span>を始める
+      discover_us: 私たちのプログラムをもっと見る
+      what_they_code: 私たちの生徒がブートキャンプにて作ったプロダクト
+      it_works: "面白いことに、使える"
+      freshly_coded: フレッシュなコード
+      all_products: 100以上のプロダクトが卒業生によって作られました。
+      see_all_products: 全てのプロダクトを見る
+      worldwide: あなたはどこでLe Wagonを見つけられますか？
+      check_program: プログラムのもっと詳しい内容はこちらから
+      our_cities: 私たちの都市
+      open_yours: あなたの住む地域でプログラムを始めるには
+      and_you_html: そして<strong>あなたは</strong> ?
+      check_projects: 私たちの生徒と彼らのプロジェクトをもっと見てみる
+      see_more_projects: もっと見る...
+      our_students_projects: 生徒たちのプロジェクト
+      only_ten_days: "...たったの10日間だけで"
+      next_batch: "次のバッチ:"
+      events_to_come: 今後のイベント
+      featured: 生徒たちの経験談
+      featured_subtitle: "卒業した生徒たちの今"
+      read_next_vowel: " ::name::のストーリーを読む"
+      read_next_consumn: " ::name::のストーリーを読む"
+      read_all: もっと読む
+    program:
+      title: プログラム - Ruby on Railsを学ぶ9週間
+      description: |
+        Ruby on Rails、HTML/CSS、Javascript、and web開発の最良の実践法を学ぶ9週間
+      our_program: "フルスタック プログラム(9週間集中型)"
+      program_details_html: |
+        2ヶ月で<strong>ウェブデベロッパーになる</strong>.
+      apply_for_nine_weeks_html: 9週間プログラムを<span class='hidden-xs'>受講する</span>
+      nine_weeks: 9週間の集中型 - 360時間のコーディング
+      to_build_your_ideas_html: 全てのウェブスタックを学ぼう。データベースからブラウザまで全部。
+      why_us: 最上級の環境で学ぶ
+      why_us_details_html: |
+        <p class="text-readable">
+        <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon'>Coursereport</a> と <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps">Switchup</a>にてLe Wagonは世界で一番のコーディングキャンプとして紹介されています.
+        </p>
+
+        <p class="text-readable">
+
+        私たちは今まで %{batches} 期生 ( %{alumni} 以上の生徒です!) を迎えると共に、プログラムの質を上げてきました。
+        私たちは最高なカリキュラムを作り上げることを目指して3年間、今の9週間集中型のフルスタックプログラムを完成させました。
+        私たちが長年費やしてきたからこそ、このプログラムは効率的で実践的なのです。<strong>あなたが2年間で学ぼうとしている内容が2ヶ月で学べます:</strong>
+        </p>
+        <ul>
+          <li>完璧なデベロッパーになるためのフル装備</li>
+          <li>ソフトウェアエンジニアとデータベースアーキテクチャー</li>
+          <li>Githubでの共同作業</li>
+          <li>成功しているスタートアップが使っているテクニカル・ワークフロー</li>
+          <li>あなたのアプリを展開し、高機能な特徴(支払い、位置情報、メール、検索など)を組み込むためのHeroku、Stripe、Mandrill、Algoliaなどのツール</li>
+        </ul>
+      community: ワクワクするコミュニティー
+      community_details_html: |
+        様々な背景を持つ%{alumni}人以上の卒業生（エンジニア、ジャーナリスト、建築家、デザイナーなど）
+        が毎日スラックのチャットを通して、私たちの教員スタッフに質問を投げかけています。プロジェクト状況を共有しながら、秘訣・求人情報・コードGistなどを教えあっています。
+
+        <strong>世界中でテクノロジーに強いコミュニティの一つ。</strong>
+        Le Wagonの生徒全員がプログラムで学んだ同じテクノロジーの背景を持ち、業界で最高な実例を残します。
+        <strong style="color:white;">多様性 & テクノロジー熟練者の</strong> 掛け合わせが私たちのコミュニティをユニークにするのです。
+      cv: 開発者としてのポートフォリオ
+      cv_details_html: |
+
+        たったの２ヶ月で<strong>Airbnbの複製版</strong>を含む複数のウェブアプリケーションや自分のプロジェクトを作ります。
+        この様なアプリを展開し、自分だけの内容の詰まったGithubポートフォリオを作ろう。
+      ruby_html: |
+        Command lineとGitを使いこなせる様になろう。
+        プログラミングの基礎であるRubyやコードのプログラムの
+        変数、メソッド、ループ展開、条件文で遊びながら学ぼう。
+        WebスクレイピングやAPI(例えば、TwitterのAPIなど)を利用しながら、
+        ファイルで読み込んだり、書き込んだりして面白いデータを集める新たな発見をしよう。
+      software_html: |
+        OOP(オブジェクト指向プログラミング)を学び、自分のプログラムを様々なオブジェクトに構成しながら
+        高度なソフトウェアを作ろう。
+        例えばSNS、e-マーケットプレイス、車の貸し出しシステム、レストランの予約プラットフォームなどを作るなら
+        高性能であるアーキテクチャを使って自分のコードをまとめます。
+        建築士と同様、家を建築したければ置かれたパターンと過程を丁寧に踏んでいくことが大切です。
+        この週では、MVCデザインパターンを利用しながら自分の初めてのアプリケーションをコーディングします。
+      database_html: |
+        プログラムを作る際はデータベースに情報を記憶させる必要があります。
+        例えば、データベースなしではFacebookのログイン時にあなたの個人情報が消えて無くなったりします。
+        テーブルの列やコネクションを定義しながらデータベースをデザインする方法を学ぼう。
+        そしてデータの読み書きに使われている言語であるSQLを使いながら、データベースを照会しよう。
+      frontend_html: |
+        あなたのUI cultureに磨きをかけて、HTML・CSS&ウェブデザインの最良方法の全てを学ぼう(レイアウトやアニメーションなど)。
+        ウェブアプリをプロトタイプする便利なライブラリであるBoostrapを使いこなそう。
+        そして次はJavascriptとjQuery。
+        DOMを操り、イベントを定義して、Javascriptを使いながらAJAXへのリクエストを作ろう。
+        このモジュールを通して沢山のクールなAPIと遊びます(Trello、Slack、Facebookなど)。
+      rails_html: |
+        次は今までの自分のスキルを総括してRailsに突入しよう。
+        基礎的なブロックはこの時点で分かってるはずなので、
+        落ち着いて進められるでしょう。
+        Railsに手をつけている間は、５日間で一からAirbnbのコードを完成させます。
+        Github上でプルリクエストを活用し、自分のアプリをHerokuにデプロイしながらチームでプロジェクトを進め、
+        成功しているベンチャー企業同様のワークフローに沿って完成させていきます。
+      projects_html: |
+        プロジェクトを始めよう！最後の2週間で自分のプロジェクトをコーディングして
+        最高のプロダクトを作ろう！
+      awesome_entrepreneur: Entrepreneur d'exception
+      one_week: 1週間目
+      two_weeks: 2週間目
+      first_module: "1 - Rubyとコーディングの基礎"
+      second_module: "2 - ソフトウェアエンジニアリング"
+      third_module: "3 - データベース&SQL"
+      fourth_module: "4 - フロントエンド"
+      fifth_module: "5 - Rails"
+      sixth_module: "6 - プロジェクト"
+      awesome_entrepreneur_details: |
+        Devenir un entrepreneur d'exception, capable de coder son appli web & maitrisant les enjeux techniques.
+      amazing_employee: Salarié polyvalent
+      amazing_employee_details: |
+        Réinventer sa façon de travailler, créer ses propres outils web, automatiser des taches, se servir des APIs, utiliser la puissance de Github pour travailler à plusieurs.
+        Etre moderne et créatif dans son travail.
+      junior_dev: Développeur Junior
+      junior_dev_details: |
+        Trouver un poste dans une entreprise du numérique avec ces nouvelles compétences-clef (en développement, product management, marketing, growth hacking..).
+      week_by_week: Semaine par semaine
+      typical_day: 普段の一日
+      theoretical_intro:
+        "コーヒーを片手に先生たちが直接教える朝のコースのコードのデモを受ける。"
+      pair_programming:
+        "先生たちのサポートを活用しながら自分のパートナーとわからない点を突き詰めていこう。"
+      yoga: "クレアとヨガをしながら、落ち着いて頭をスッキリさせよう。"
+      live_code:
+        "直接指導のコードセッション: 教室にある大きいスクリーンに映しながらその日につまずいた問題をみんなで一から解消していこう"
+      talk: |
+        上級クラスの起業家(Stripeの日本支部取締役 Daniel Heffernan,Doorkeeperの創業者 Paul McMahonなど)のトーク、またはテクノロジーに関するワークショップ(UX、デザイン、コード)に参加する
+    stack:
+      built_by: 'ウェブサイトを作った人'
+      with_tools: 'この様なクールなツールを使いました'
+    thanks:
+      already_applied_html: |
+        あなたは<strong>%{city}</strong>にて申し込みを完了しています。
+        面接の日程を調整するための連絡が来るまでお待ちください。
+        万が一申し込んだ場所を変更したい場合はその面接官に申し出てください！
+      thanks: ありがとうございました。
+      we_will_contact_html: |
+        電子メールを通して面接日程を調整するために連絡させて頂きます。br /><br />その間にチェックリストにある説明に沿って、CodeCademyの<a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">ruby track</a>を始めよう。
+      take_advance: チェックリスト
+      first_step: "1.Le Wagonに申請する %{name}"
+      second_step: "Meetupグループの%{name} を購読する"
+      third_step: "ツイッターをフォローする"
+      fourth_step: "CodeCademyのRuby trackを再開する"
+    press:
+      title: Le Wagonが話題になっています
+    employers:
+      title: Le Wagonのネットワーク - ヨーロッパ最上級のコーディングブートキャンプの卒業生を雇おう
+      description: 雇用パートナーとして私たちのコミュニティに参加し、新しい候補者や就職情報のお知らせを受け取ろう。
+      hiring_tagline_html: 私達のネットワークに参加し、<br>卒業生と働こう。
+      hiring_sub_tagline_html: 採用活動は<strong>長期的に候補者と関係を構築していく必要があります</strong>。 定期的に開催されるイベント、<br>自分の会社を広報する求人募集、素晴らしいワークショップを通して卒業生と繋がろう。
+      apply: Le Wagonの卒業生と働く
+      they: 卒業生の内定先
+      job_board: 私たちの求人募集にアクセスする
+      job_board_details_html: |
+        <p>
+        Le Wagonの求人募集にアクセスして<strong>求人を世界中の卒業生に向けて発信しよう。</strong>
+        </p>
+        <p>
+        1200人以上の世界中の卒業生がSlackにて毎月あなたの求人を確認します。私たちの求人募集に記載する<strong>会社と求人が信用できる質であることを保証するために</strong>雇用パートナーをしっかりと選びます。
+        </p>
+      join_our_network: 私たちのネットワークに参加する
+      watch: 前回のパリで行われた就活イベントの様子を見てみる
+      why: 雇用パートナーとは？
+
+      reasons:
+        Le Wagonのネットワークは急成長している会社が私たちの卒業生を直接雇用することを可能にします。あなたを就活イベントに招待し、私たちの求人募集に記載したあなたの会社のカルチャーやビジョンを広報するイベントを一緒に企画します。
+      exceptional: 卓越した卒業生
+      exceptional_details: |
+        私たちの卒業生はほとんど大卒であり、人生の２ヶ月をプログラミングに費やしました。
+        彼らはプログラム中に360時間以上コーディングをしてきました。これほど成果を残した人材を探すことは滅多にないでしょう。
+      unique: ユニークな背景を持つ
+      unique_details: |
+        私たちの卒業生の多くは世界中の最高のビジネススクールやエンジニアリングスクール出身です。
+        彼らはすでに働くことに対して卓越した思考を持っています。
+        さらに卒業生の中にはデザイナー、ジャーナリスト、写真家など様々なスキルを持った人がいます。
+      operational: 研修不要
+      operational_details: |
+        私たちの卒業生はRuby on Railsのアプリケーションを作り上げてきました。
+        彼らはテクノロジーに特化したスタートアップにて働くベストな実践方法を知っています。
+        一日目からジュニアデベロッパーとして技術を実践します。プロジェクトマネジャーやマーケットを成長させる身として
+        ビジネスにおける問題をテクノロジーに結びつけることに卓越しています。
+      wanna_join: Le Wagonのネットワークに参加しますか？
+      signup: 私たちの雇用パートナーになるにはこちらから連絡してください。
+    enterprise:
+      title:
+        Le Wagonの洗練されたワークショップと共にデジタル世界の仕事を改革しよう。
+      description: Le Wagonはあなたの組織にコードとテクノロジーを通してテクニカルな技術をお届けします。洗練されたワークショップを通して自分の働き方を変えよう。
+      tagline_html: 働き方を改革しよう。<br>コードとテクノロジーを通して。
+      tagline_details_html: |
+        デジタルな技術の学習を通して、あなたの組織の人材の働き方を変えよう。
+        <strong>もっと早く、効率よく仕事をしよう。</strong>
+      apply: Le Wagonと学ぶ
+      apply_to: "%{skill}を学ぶ"
+      skills_header: あなたの会社のために考案するワークショップ
+      skills_text_html: 2時間のセッション、一日型ワークショップ、一週間のプロトタイピングスプリントを通して、<strong>私たちはUI/UX デザイン、プロダクトマネジメント、そしてウェブ開発を教えます</strong>。
+      pm: プロダクトマネジメントを学ぶ
+      pm_details: ユーザーストーリーと共同ワークフロー。 チーム一丸になってプロジェクトに取り掛かる最善の方法を学ぼう。
+      ui: UI / UXを学ぶ
+      ui_details: 可視化できることでコミュニケーションが円滑になります。自分のアイディアを話し合うためにワイヤーフローとモックアップの制作方法を学ぼう。
+      web_design: ウェブデザインを学ぶ
+      web_design_details: 自分のアイコンの作成して、業者に頼らず自分でウェブサイトの運営・管理をしよう。
+      data_science: データサイエンスを学ぶ
+      data_science_details: データ収集をし、分析して可視化できるように完成させよう。
+      fullstack:  ウェブ開発を学ぶ
+      fullstack_details: データベースからウェブのブラウザまで、ウェブアプリケーションがどう作られているのかを学ぼう。
+      prototyping: リーン的プロトタイピング手法を学ぼう
+      prototyping_details: 世界中はAPIで溢れかえっている。APIに繋げるだけでスタートアップがプロダクトを実働できる方法を発見しよう。
+      best: プロから学ぼう
+      best_details_html: |
+        <p>
+        私たちはビジネススクール、エンジニアリングスクール、デザインスクール出身を含む1200人を超える生徒たちを養成してきました。
+        私たちは<strong>ビジネスとテクノロジーの隙間を埋め、架け橋となります</strong>。私たちは生徒たちに<strong>400個を超えるプロダクト</strong>のプロトタイピングとコーディングの方法を教えてきました。
+        </p>
+        <p>
+        素晴らしい人材の養成を通して、<strong>私たちはあなたの組織にも同じスキルを提供することに自信があります</strong>。
+        </p>
+      hec_html: 2017年からLe WagonはHEC(高い評価を受けているフランスのビジネススクール)とパートナーシップを組み、<a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">HECの起業家に自分でプロダクトのコードを打つ教育をしています</a>。
+      watch: 先日開講した企業用ワークショップ"One Day of Code"
+      google_quote: Le Wagonは職歴を持つ人材に相補的なテクノロジーのスキルとカルチャーをもたらす方法を熟知しています。彼らのテクノロジーに対してのビジョンはとてもユニークです。
+      eki_quote: Le Wagonに教わったテクノロジーのスタック&デザインの方法論は私たちのプロダクトエンジニアリング文化の土台となっています。
+      drivy_quote: 彼らのカリキュラムはとてもよく作られており、先生がとても情熱的である。
+      stripe_quote: 必須のテクニカルスキルとプロダクトに対しての優秀な考え方の両方を教えてくれる内容の詰まったワークショップ。
+      algolia_quote: ビジネスの背景を持つ人ならば尚更、テクノロジーとの関係を開拓してくれるLe Wagonの魅力に気づくでしょう。
+      uber_quote: Le WagonのおかげでUberのプロダクトのロードマップの理解やAPI統合の仕組みを簡易的に提携企業に説明することができるようになりました。
+      with_us: 卒業生の内定先
+    live:
+      page_title_with_current_event: "ライブ映像 - %{event_name}"
+      page_title_no_live: "ライブ映像 - 近日公開"
+      page_description_no_live: "すみません、今中継しているライブがありません:)"
+      live_company_link: "もっと知る"
+      live_go_to_meetup: "全てのMeetupイベントを見る"
+    live_player_video:
+      live_coming_soon: "近日公開..."
+    shop:
+      title: "Le Wagonのお店"
+      description: "コーダーのスタイルに合わせて"
+  demoday:
+    show:
+      page_title: "デモデイ #%{batch_slug}期生 - Le Wagon %{city_name}"
+      page_title_with_selected_product: "%{product_name} - Le Wagon %{city_name} - #%{batch_slug}期生"
+      demoday_title: "生徒たちが作ったプロダクトを見てみる"
+      demoday_tagline: "私たちは生徒の10日間の成果に誇りを持っています。"
+      choose_batch: "期生を選ぶ"
+      batch_french: "フランス語"
+      batch_english: "英語"
+      batch_brazilian: "ブラジルポルトガル語"
+    batch_demoday:
+      player:
+        no_video: 動画を視聴することができません。
+        batch_intro_html: |
+
+         %{batch_start_date} から %{batch_end_date}年の間に %{count} 人の生徒が %{city_name} にあるLe Wagonに参加しました。彼らがたったの2週間でRuby on Railsを使って作り上げたプロジェクトを是非見てみてください！
+        product: "プロダクト"
+        project_link: "今試して見る"
+        techno: "を使って作る"
+        cta: "9週間のプログラムに申請する"
+      batch_title: " 人の素晴らしい人材がここに揃ってます"
+  students:
+    index:
+      meta_title: "Le Wagonの卒業生"
+      meta_description_html: |
+        %{count}+ の同じスキルとパッションを持つ素敵な生徒たち
+      title: 生徒のプロジェクト - Le Wagonで作ったスタートアップとウェブアプリ
+      description: |
+        Le Wagonの前期生の生徒たちが開発したプロジェクトを見てみよう。400人を越える起業家がすでに世界で活躍をしています。さあ、あなたは？
+      our_alumni: "Le Wagonの卒業生"
+      our_alumni_details_html: |
+        <strong>%{count}人以上の有能な生徒たちが</strong>共通して持つ<strong>スキルとパッション</strong>
+      apply_for_nine_weeks_html: <span class='hidden-xs'>9週間のプログラムに申請する</span>
+      our_students_projects: 私たちの生徒が作り上げたもの
+      only_ten_days: "...たったの10日間で"
+      discover_us: 私たちのプログラムをもっと知る
+      discover_our_stories: 卒業生のストーリーを読む
+      watch_demo_day_title_html: "私たちの最後のデモデイを見る <small>%{city} - %{date} - <a href='http://alumni.lewagon.org/batches/%{slug}' target='_blank'><u>Batch #%{slug}</u></a></small>"
+      show_more_stories: さらに経験談を表示する
+  cities:
+    show:
+      title: " %{city}のコーディング ブートキャンプ- Le Wagon"
+      description: |
+        %{city}にあるヨーロッパの有名なコーディングスクールにて9週間で精通したウェブ開発者になるためにコードを学ぼう。
+      catchline_html: "人生を変えよう、<strong>コードを学ぼうLe Wagonと一緒に</strong>"
+      call: '%{name}に電話する'
+      email: '%{name}にメールする'
+      city_arrival_html: "<strong>%{city}</strong>のコーディングブートキャンプ"
+      apply_for_nine_weeks_html: "<span class='hidden-xs'>9週間のプログラム</span>に申請する"
+      staff: "%{city}の先生"
+      discover_us: "私たちのプログラムを知る"
+      apprentices: "%{count} の実習生に参加しよう"
+      next_meetup_html: "次のmeetup: <i class='hidden-xs'>%{name}</i>"
+      only_in: "%{city}からのヒント"
+      course_locale_html: "%{city}では、<strong>%{language}</strong>で授業が行われます。"
+      next_batch_html: "次の期生は<strong>%{starts_at}</strong>から開始します。"
+  applies:
+    new:
+      title: "%{city}のLe Wagonに申請する-Ruby on Railsを使った9週間のコーディングブートキャンプ"
+      description: ruby on Rails、HTML/CSS、Javascript、そしてウェブ開発の最善の実践方法を学ぶ9週間
+      apply: に申請する
+
+      first_name: "名"
+      last_name: "姓"
+      age: "年齢"
+      phone: "電話番号"
+      source: "紹介者"
+      source_placeholder: "何をきっかけにLe Wagonを知りましたか? Quora、Facebook、知人など"
+      motivation: "動機"
+      motivation_placeholder: "どうしてLe Wagonで学ぼうと思いましたか?プログラム終了後はどの様な計画を立てていますか？現在のあなたの得意分野にどう活かしますか？"
+      linkedin_html: プロフィール (<small><a href='https://www.linkedin.com/help/linkedin/answer/49315/finding-your-linkedin-public-profile-url?lang=en' target='_blank'>help</a></small>)
+      linkedin_placeholder: https://www.linkedin.com/in/alan
+      codecademy_username_html: |
+        CodeCademy (<small><a href='#' data-toggle="modal" data-target="#codecademy">help</a></small>)
+      codecademy_username_placeholder: "alan_turing"
+      codecademy_modal_body_html: |
+        <p>
+          <a href="%{faq_path}" target="_blank">FAQ</a>に記載してあった通り、 one prerequisite of Le Wagonの必須条件はCodeCademyの
+          <a href="https://www.codecademy.com/learn/ruby">Ruby Track</a> を100%やりきることです。
+          もしCodeCademyのアカウントがなければ、<a href="https://www.codecademy.com/register" target="_blank">create one now</a>無料登録をお願いします。
+        </p>
+        <p>
+        あなたの進捗状況を知るために、<strong>CodeCademyユーザーネーム</strong>からフォーム記入をする必要があります。
+        ここから自分の <a href="https://www.codecademy.com/account" target="_blank">アカウント</a> ページを探せます。
+        </p>
+      codecademy_modal_can_apply_without_one_hundred_percent_html:
+        <p>
+          Rubyのトラックを終わらせていなくても私たちとの面接の予約と<strong>プログラムの申請をすることができます</strong>。
+        </p>
+      codecademy_modal_close_button: "自分のユーザーネームを見つけました"
+      apply_btn: "に申請する"
+      please_wait: "少しお待ちください..."
+      pre_course_language: '使用言語'
+      language_fr: 'フランス語'
+      language_en: '英語'
+      language_pt-BR: 'ブラジルポルトガル語'
+      language_zh-CN: '中国語'
+      motivation_tip:
+        zero: ''
+        one: 'あと１文字記入する必要があります'
+        other: あと %{count} 文字記入する必要があります
+      price: '値段'
+      source_presence_message: '何をきっかけにLe Wagonを知りましたか? Facebook、Google、Quora、Course Report、知人 (もしよければお名前のご記入をお願いします)、など。'
+  stories:
+    index:
+      title: 私たちの卒業生の体験談を読む
+    show:
+      other_testimonials: 他の人の体験談
+      continue: 続けますか?
+      read_more: ブートキャンプの生徒たちの体験談をもっと読む
+      title: "%{story}"
+      description: "%{story}"
+  projects:
+    index:
+      meta_title_html: |
+        %{count}+ のプロジェクトを閲覧する
+      meta_description:
+        卒業生によって2週間で作り上げられた
+      projects_details_html: |
+        <small>卒業生によって2週間で作り上げられた</small><strong>%{count}+ のプロジェクトを閲覧する</strong>
+      show_more_projects: プロジェクトをもっと見る
+    more_projects:
+      project_cta: アプリをチェックしてみる
+  posts:
+    index:
+      title: Code Matters - Le Wagonの公式ブログ
+      blog_title: Code Matters
+      blog_catchline: あなたに最新情報、コーディングや起業家精神についてのチュートリアルやインサイトをお届けします。
+      header_latest: 最新のビデオ
+      header_aside_1: 魅力的なコミュニティから刺激を受けよう
+      header_aside_2: 最高の開発者と起業家から学ぼう
+      posts_small: 最新の投稿
+      posts_title: ここで働く先生、生徒たちの体験談を読んで刺激を受けよう。
+      show_more_posts: さらに投稿を見る
+      see_all_posts: 全ての投稿を見る
+      videos_small: 最新のビデオ
+      videos_title: 私たちのビデオを見て、新しいスキルを身につけよう
+      see_all_videos: 全てのビデオを見る
+      more_stories: 私たちの卒業生の体験談を読む
+      more_stories_details: スキルとパッションを共通して持つ有能な生徒たち
+      more_videos: 私たちのデモデイを見る
+      more_videos_details: 生徒たちがたったの10日間で達成した成果に誇りを持っています。
+    all:
+      breadcrumb_1 : ブログ
+      breadcrumb_2 : 全ての投稿
+      posts_description: 魅力的なコミュニティから刺激を受けよう
+      posts_small: 最近の投稿
+      posts_title: ここで働く先生、生徒たちの投稿を読んで刺激を受けよう。
+      show_more_posts: さらに投稿を見る
+    videos:
+      breadcrumb_1 : ブログ
+      breadcrumb_2 : 全てのビデオ
+      videos_small: 最近のビデオ
+      videos_title: 私たちのビデオを見て、新しいスキルを身につけよう
+      videos_description: 最高の開発者と起業家から学ぼう
+      show_more_videos: もっとビデオを見る
+    show:
+      breadcrumb_1 : ブログ
+      breadcrumb_posts_2 : 全ての投稿
+      breadcrumb_videos_2 : 全てのビデオ
+      read_more_title: もっと読む
+      read_more_catchline: いつも新しい何かがある
+      watch_more_title: 知ってる？
+      watch_more_catchline: 一気に全部見ちゃってもok
+    social_sharing:
+      share: シェア
+    learn_cta:
+      learn_cta_title: オンラインでコードを学ぶ
+      learn_cta_html: |
+        Le WagonのHTML、CSS、Javascript、Github、APIsなどを学べる<strong>無料オンラインコース</strong>の<strong>案内を受け取ろう</strong>
+      learn_button: 案内を受け取る　

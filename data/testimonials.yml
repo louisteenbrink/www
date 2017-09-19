@@ -69,14 +69,63 @@ routes:
     - antoinemor
     - anamukoyama
     - adrianorob
+  shanghai:
+    - hamiltonle
+    - kwnath
+    - kikinz
 
 testimonials:
+  kikinz:
+    first_name: Kirsten
+    last_name: Judd
+    city_slug: shanghai
+    batch_slug: 72
+    publication_date: 2017-09-01
+    job_before:
+    project_slug: techforgood
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: shanghai_kirsten_judd.jpg
+    linkedin_url:
+    content_html: |
+      <p>Le Wagon is the best way to learn a lot in a short amount of time in a fun environment with supportive teachers and classmates. I wish I could do it all over again!</p>
+  kwnath:
+    first_name: Nathan
+    last_name: Lee
+    city_slug: shanghai
+    batch_slug: 72
+    publication_date: 2017-09-01
+    job_before:
+    project_slug: seeme
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: shanghai_nathan_lee.jpg
+    linkedin_url:
+    content_html: |
+      <p>What makes Le Wagon different from most bootcamps is the fact that they craft their curriculums based around the students needs and goals as well as the area that they are in. And I am extremely thankful for that, it was awesome to learn about the ecosystem of Shanghai as well as the tech culture.</p>
+  hamiltonle:
+    first_name: Hamilton
+    last_name: Le
+    city_slug: shanghai
+    batch_slug: 72
+    publication_date: 2017-09-01
+    job_before:
+    project_slug: techforgood
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: shanghai_hamilton_le.jpg
+    linkedin_url:
+    content_html: |
+      <p>More than what I had hoped for. I was really pleased with the quality of the teachers, the classroom environment, and the set-up of the courses. I had compared LeWagon to many other physical and online bootcamps, and feel that LeWagon has found a great balance (teaching style, community, price).</p><p>It has also allowed me to leap 2-4 years ahead in my career, as I had wanted to become a technical product manager, which I’ve already found a job in, and had 20 interview opportunities and many offers for PM or fullstack developer. I’m really grateful and feel indebted to LeWagon and the Shanghai team.</p>
   blancfrancois:
     first_name: François
     last_name: Blanc
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Process & Energy Engineer
     project_slug: wedressfair
     job_after: Node.JS Fullstack Developer
@@ -91,7 +140,7 @@ testimonials:
     last_name: Daccache
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Marketing Assistant
     project_slug: easytrip
     job_after: Ruby on Rails Fullstack Developer
@@ -106,7 +155,7 @@ testimonials:
     last_name: Perrin
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Business Manager
     project_slug: easytrip
     job_after: Ruby on Rails Fullstack Developer
@@ -121,7 +170,7 @@ testimonials:
     last_name: Duclos
     city_slug: lyon
     batch_slug: 52
-    publication_date: 2018-08-17
+    publication_date: 2017-08-17
     job_before: Operator Receptionist
     project_slug: easytrip
     job_after: Ruby on Rails Fullstack Developer

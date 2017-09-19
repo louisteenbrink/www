@@ -4,8 +4,7 @@ module CityCustomHelper
     {
       montreal: t('montreal.post_price'),
       "aix-marseille": early_bird_fr,
-      "bordeaux": early_bird_fr,
-      "nantes": early_bird_fr
+      "bordeaux": early_bird_fr
     }.stringify_keys
   end
 

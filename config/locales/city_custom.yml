@@ -42,3 +42,12 @@ zh-CN:
     course_language: "英语 / 中文"
   chengdu:
     course_language: "英语 / 中文"
+
+ja:
+  montreal:
+    post_price: "+ 税金"
+    course_language: "英語 / フランス語"
+  shanghai:
+    course_language: "英語 / チャイニーズ"
+  chengdu:
+    course_language: "英語 / チャイニーズ"
