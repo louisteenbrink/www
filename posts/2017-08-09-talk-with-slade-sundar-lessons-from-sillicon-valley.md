@@ -7,7 +7,7 @@ author: sandrine
 pushed: true
 labels:
   - talk
-thumbnail: 2017-08-09-talk-with-slade-sundar.jpg
+thumbnail: 2017-08-09-talk-with-slade-sundar-1.jpg
 description: |
   ... And how to avoid them. This talk will teach you how to spot critical issues and what steps you need to take before it is too late!
 ---
