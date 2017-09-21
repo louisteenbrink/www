@@ -7,7 +7,7 @@ author: arthur
 pushed: true
 labels:
   - talk
-thumbnail: 2017-08-23-talk-max-rofagha-founder-at-finimize.jpg
+thumbnail: 2017-08-23-talk-max-rofagha-founder-at-finimize-1.jpg
 description: |
   Have you ever felt lost when thinking about what you should do with your personal finances? To solve this, Max created Finimize: a daily email which explains finance concepts in simple terms, contextualised with current financial news and is now building Finimize MyLife, a free financial planning app.
 ---
