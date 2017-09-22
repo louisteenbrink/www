@@ -7,6 +7,6 @@ author: cedric
 labels:
   - workshop
 pushed: true
-thumbnail: 2017-05-30-one-hour-killer-chatbot.jpg
+thumbnail: 2017-05-30-one-hour-killer-chatbot-1.jpg
 description: "Après avoir vu comment créer un chatbot sur Messenger de A à Z, nous allons vous montrer cette fois-ci comment développer un bot avec du NLP (Natural Language Processing) sur la plateforme Recast.AI."
 ---
