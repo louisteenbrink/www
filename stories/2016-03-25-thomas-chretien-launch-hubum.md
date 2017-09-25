@@ -1,12 +1,10 @@
 ---
 layout: story
-title:
-  en: From business school student to digital nomad & CEO at Hubum
-  fr: Digital nomade dans l’âme, Thomas lance Hubum, la plateforme de curation de release Vinyle
+title: From business school student to digital nomad & CEO at Hubum
 alumnus_gh_nickname: tchret
 date: 2016-03-25T10:50:04Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/007/cover/tchret_reverse.jpg?1464278707
-company_slug: hubum-com
+company_slug: hubum
 ---
 
 ## Why did you join Le Wagon ?
@@ -46,42 +44,3 @@ In parallel, we try to engage a maximum of curators/guests by inviting them to s
 ## Next step?
 
 Continue to learn by teaching for Le Wagon in [Paris](https://www.lewagon.com/paris), [Brussels](https://www.lewagon.com/brussels), [Amsterdam](https://www.lewagon.com/amsterdam) or [Lisbon](https://www.lewagon.com/lisbon). I had the opportunity to coach a lot of students on their project from batch #4. Today, we are already at [Batch #18](alumni.lewagon.org/batches/18) and it is still with the same pleasure and excitement that I help students to push their products as far as possible in terms of features and graphic design. In return, students and teachers help me develop my product vision and my coding skills. It’s a win-win, and that’s why Le Wagon's teaching program is working so well!
-
-
-## Pourquoi as-tu rejoint Le Wagon ?
-
-J’ai arrêté mes études de web marketing au bout de deux ans afin de me "lancer dans le code” sans trop savoir ou j'allais, mais avec la volonté de créer un produit web. Je suis parti explorer le milieu startup Parisien pour finalement découvrir Le Wagon. J’ai intégré la troisième promo et malgré les regards un peu inquiets de mes amis, je me suis donné cette chance et j’ai foncé.
-
-## Qu’as-tu fait après le programme FullStack ?
-
-J’ai commencé par développer [TrackGuru](https://www.lewagon.com/blog/interview-thomas-chretien-trackguru) lors des deux dernières semaines dédiées aux projets avec la volonté de lui donner vie ensuite. Quelques mois plus tard, plus de 500 utilisateurs se sont inscrits sur la plateforme, mais j’avais le sentiment de ne pas avoir été au bout de ce pour quoi j’ai intégré Le Wagon en premier lieu.
-
-J’y suis donc retourné en tant que Teaching Assistant. Le tout premier T.A en fait ! Motivé, j’ai intégré l’équipe comme Web Designer/ Web Developer afin de monter en compétence sous la tutelle de Sebastien et Boris. En moins d’un an nous avons sorti [Le Wagon Ondemand](https://ondemand.lewagon.org/), la [plateforme alumni](alumni.lewagon.org) et la nouvelle version du site du Wagon.
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/tchret/hubum-4.jpg" alt="Tchret - Teaching Assistant"></p>
-
-## Imprégné de la culture Digital Nomad, tu ne t’es pas arrêté là !
-
-Durant cette période, j’ai énormément appris sur moi-même. Sur mon propre rythme, mes besoins. Je pense avoir fait l’erreur de passer des mois à coder tous les jours jusqu’à 23h00 sans bouger, sans rien faire d’autre. J’ai eu une sorte de prise de conscience sur mes envies doublée d’une solide envie de bouger.
-
-Je suis parti quelques semaines au Brésil. De là, j’ai savouré quelques séances de Yoga face à la mer. Rapidement le code m’a manqué. J’ai repensé à l’expérience TrackGuru et j’ai eu l’envie  de réessayer de lancer un produit du même style, sous un angle nouveau, avec mes nouvelles skills. J’ai pris le temps d’analyser mes erreurs et de peaufiner ce qui allait devenir [Hubum](http://www.hubum.com/).
-
-Fruit du hasard, en janvier dernier, **Adrien Coudriol**, fondateur de [Mangrove](http://www.meetmangrove.com/) et alumni du batch #5, a organisé une startup house à Essaouira. J’ai embarqué avec lui et 9 autres personnes au Maroc avec pour objectif de créer la plateforme from scratch en 20 jours. 20 jours intensifs, 20 jours à échanger du feedback sur nos projets respectifs. Au retour je tenais la première version d’Hubum. Depuis Thomas Deschamps est venu me rejoindre sur le projet et développe de nouvelles features pendant que je peaufine le design et active la communauté autour de la plateforme.
-
-<p><img src="https://github.com/lewagon/www-images/blob/master/testimonials/tchret/hubum-1.jpeg?raw=true" alt="Keep calm and code"></p>
-
-## Hubum en quelques mots ?
-
-[Hubum](http://www.hubum.com/) se veut être le [Product Hunt](http://producthunt.com) des sorties vinyles électroniques.
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/tchret/hubum-2.jpg" alt="Preview - Hubum v2"></p>
-
-L’idée est de permettre aux utilisateurs de découvrir la culture de la release vinyle en se positionnant comme digger de référence sur cette niche. Ce qu’il faut savoir c’est que tous les labels travaillent avec des artistes techno afin de produire leurs sorties vinyles. Un album vinyle est un peu comme une histoire avec énormément de protagonistes et de matière autour du support. Les passionnés de release en sont friands et incarnent une communauté assidue, engagée et sensible, à la recherche de bons sons, mais privilégiant la qualité à la quantité.
-
-En parallèle nous essayons d’engager un maximum nos curateurs/guests en les invitants à partager exclusivement leurs découvertes sur la plateforme. Le challenge est de trouver des influencers (artistes, YouToubers…) de renom pour nous aider ! À l’heure actuelle, quelques beaux noms nous ont déjà rejoints : [Audu Simion](http://www.hubum.com/andusimion), [Moskalus](http://www.hubum.com/moskalus), [Judaah](http://www.hubum.com/Judaah666), [DDD](http://www.hubum.com/hurfyd), [Hurfyd](http://www.hubum.com/DDD)…
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/tchret/hubum-3.jpg" alt="Hubum Sticker"></p>
-
-## La suite du programme ?
-
-Continuer à apprendre en enseignant au Wagon Paris, au [Wagon Brussels](https://www.lewagon.com/brussels) et au [Wagon Amsterdam](https://www.lewagon.com/amsterdam). J’ai eu la chance de coacher chaque élève sur leurs projets depuis le Batch #4. Aujourd'hui c'est le [batch #18](alumni.lewagon.org/batches/18) et c'est toujours un plaisir d'aider les élèves à pousser leurs produits le plus loin possible au niveau front-end/design. En retour ils m'aident à développer vision produit et technique. C'est gagnant-gagnant et c'est ça qui rend l'enseignement dispensé par le Wagon aussi puissant !

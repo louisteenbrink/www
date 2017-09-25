@@ -1,12 +1,10 @@
 ---
 layout: story
-title:
-  en: From student at Le Wagon to CEO at Forest Admin, a new eFounders project
-  fr: Sorti du Wagon, David devient CEO de Forest Admin, nouveau projet de eFounders
+title: From student at Le Wagon to CEO at Forest Admin, a new eFounders project
 alumnus_gh_nickname: davidverbustel
 date: 2015-11-04T17:01:08Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/003/cover/forest_reverse.jpg?1464278841
-company_slug: forestadmin-com
+company_slug: efounders
 ---
 
 ### What led you to enroll with Le Wagon?
@@ -42,44 +40,3 @@ The dynamic is really unique and I have never enjoyed as much a new Internet ven
 
 <p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/davidverbustel/3.jpg" alt="David Verbustel, CEO Forest Admin, a new eFounders project"></p>
 
-
-
-### Qu'est-ce qui t'a conduit à faire Le Wagon ?
-
-Pendant 8 ans, j'ai participé au lancement de beaucoup de projets web. A chaque fois, j'ai joué un rôle très "business". Je mettais un peu les mains dans le design de temps en temps mais la technique restait une grosse "boite noire" pour moi. J'étais incapable d'évaluer les contraintes techniques d'un projet, ni de prototyper mes propres applications de façon autonome. J'ai toujours vu le web comme une grande cours de récréation pour exprimer ma créativité, et le fait de ne pas savoir coder était pour moi un vrai handicap.
-
-
-### Comment as-tu entendu parler du programme fullstack ?
-
-Vers 2013 je vivais dans la Silicon Valley et j'ai découvert l'existence de nouvelles "coding schools" comme Dev Bootcamp à San Francisco. En discutant avec des anciens élèves, j'ai été surpris par leur backgrounds (comptable, biologiste, journaliste..). Tous étaient ravis de leur expérience et de leur apprentissage du code sur un format intensif type "bootcamp". En rentrant en Europe, j'ai vu que Le Wagon lancait son programme fullstack à Brussels après plusieurs batch à Paris. En me renseignant un peu, j'ai vu qu'ils avaient l'air très bons (témoignages d'élèves, article dans TechCrunch..) et j'ai embarqué !
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/davidverbustel/1.jpg" alt="David Verbustel, CEO Forest Admin, a new eFounders project"></p>
-
-### As-tu rencontré des difficultés pendant le programme ?
-
-Le plus gros challenge pour moi, c'était de changer ma façon de penser. Vu mon background professionnel, je voulais toujours avoir la "big picture". Mais quand tu codes un produit web, tu ne peux pas avoir la vision d'ensemble dès le départ. Tu codes, tu testes, tu debug, etc.. Tu apprends en expérimentant et en itérant, sans essayer de tout contrôler et de tout anticiper dès le départ. Petit à petit, j'ai changé de mindset. Le mindset du développeur est très puissant. Je suis beaucoup plus pragmatique dans ma façon de résoudre des problèmes maintenant.
-
-
-### Pourquoi recommandes-tu Le Wagon plutôt qu'un autre programme de code ?
-
-
-Ce qui m'a surpris au Wagon, c'est la force de sa communauté. Si tu regardes un incubateur comme Ycombinator, la communauté a une valeur immense. Au Wagon, c'est aussi le cas. Que ce soit pour un conseil, de l'aide technique sur du code, ou des beta-testeurs pour ton application ou pour un upvote sur Product Hunt, tu trouveras toujours des gens pour t'aider.
-
-En plus de ça, le programme est extrêmement bien pensé. En rentrant de la Silicon Valley, je m'étais inscrit à un programme de code en ligne mais je ne progressais pas du tout. Beaucoup moins avancé techniquement, et pas d'effet de groupe ni de coach pour répondre à toutes tes questions.
-
-### Quelle est la meilleure chose que tu tires de ton expérience au Wagon?
-
-Le workflow. Le programme est découpé par semaine et chaque jour a des objectifs précis à atteindre. Il m'aurait fallu deux ans pour apprendre autant de choses tout seul. Dès le premier jour, tu apprends à versionner ton code avec git et soumettre tes solutions d'exercices en utilisant Github. L'équipe du Wagon sait comment construire un produit web avec des bonnes pratiques. Ca se sent vraiment dans le programme.
-
-### Qu'as tu fait après le programme ?
-
-J'ai pris des vacances ! Le Wagon est tellement intensif que j'avais besoin de décrocher quelques jours et de me vider la tête :) Ensuite, j'ai continué à coder pendant l'été (pour le fun et pour garder la main) et j'ai rencontré Sandro Munda en même temps, qui est maintenant mon co-founder. Il travaillait sur une idée de ‘back-office-as-a-service’ avec [eFounders](https://efounders.co/), un produit très technique. Nous avons parlé longtemps du produit, de son architecture et de sa vision. Cela ne fait aucun doute que ma formation au Wagon m'a aidé à comprendre très vite le challenge technique et le potentiel du projet et d'être crédible auprès de Sandro et eFounders.
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/davidverbustel/2.png" alt="Forest Admin, admin as a service"></p>
-
-### Où en es-tu ?
-En Septembre, nous avons décidé de passer à l'action et j'ai rejoins Sandro, le CTO, en tant que CEO au sein d'eFounders. Notre solution SaaS, [Forest Admin](http://forestadmin.com), aide les startups à déployer une interface admin hautement customisable et flexible sans avoir besoin de développer le frontend.
-
-Ensemble, nous avons bati une vision forte et ambitieuse pour le produit: alléger la charge du CTO sur le développement de l'interface admin au moment critique où il doit se concentrer sur son produits et ses utilisateurs. Mon co-fondateur et moi-même avons souvent vécu ce problème. Nous sommes convaincus d'avoir trouvé une solution à ce problème. On se dit parfois que Forest Admin est aussi un produit pour rendre à la communauté startup ce qu'elle nous a donné. La dynamique du projet est incroyable, et je n'ai jamais autant aimé une expérience Web. Le produit est très technique mais nous avons déjà abattu des forêts ;) L'application est toujours privée, mais nous avons déjà plusieurs projets pilotes qui l'utilisent ! 2016 va être une année excitante pour nous puisque nous lancerons la version publique !
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/davidverbustel/3.jpg" alt="David Verbustel, CEO Forest Admin, a new eFounders project"></p>

@@ -1,12 +1,10 @@
 ---
 layout: story
-title:
-  en: From Business School to junior backend dev at Save
-  fr: Dev backend junior chez Save après une école de commerce.
+title: From Business School to junior backend dev at Save
 alumnus_gh_nickname: aliceclv
 date: 2015-11-27T11:04:49Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/006/cover/stories_alice_clavel_copy.jpg?1448622595
-company_slug: save-co
+company_slug: save
 ---
 
 ## What led you to enroll with Le Wagon?
@@ -47,41 +45,3 @@ Keep on coding!
 
 <p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/aliceclv/save_alice.jpg" alt="Alice Clavel at Save corner"></p>
 
-
-
-## Pourquoi as-tu rejoint Le Wagon ?
-
-Après un an à Berlin dans une startup, j'ai réalisé que mon background technique était bien trop léger pour continuer à travailler dans la "tech" et postuler à des offres intéressantes. Pour moi, il fallait absolument que j'apprenne à coder pour avoir un profil vraiment percutant et des perspectives plus excitantes ! A cette époque, je n'avais pas deux ans devant moi pour apprendre toute seule. Le programme du Wagon collait bien à mes attentes: très orienté sur le produit et en même temps très rigoureux sur l'enseignement du code.
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/aliceclv/save_team.jpg" alt="Alice Clavel and Save dev team"></p>
-
-## Comment as-tu entendu parler du programme ?
-
-J'ai tappé "coding school europe" sur Google et Le Wagon remontait dans les résultats avec beaucoup de bons feedbacks d'élèves. C'est bête mais ça m'a rassuré. J'ai ensuite contacté certains de ces élèves. Ils étaient tous enthousiastes, plein d'énergie et travaillant tous sur des projets tech intéressants en freelance, en CDI ou en stage. C'est ce qui a achevé de me convaincre.
-
-## As-tu rencontré des difficultés pendant le programme ?
-
-
-Le rythme d'apprentissage est vraiment très rapide, du début à fin ! Pas une minute pour respirer. Parfois, tu as l'impression de ne pas avoir compris une partie à 100% mais tu dois quand même passer à la suite et absorber de nouveaux concepts (on n'a que 9 semaines !). Ca peut un peu inquiéter. Mais le cursus est très bien foutu, et basé sur beaucoup de répétition. Du coup, tout fini par s'assembler à la fin.
-
-En rejoignant Save en tant que dev backend junior, j'ai réalisé tout ce que j'avais appris en deux mois. Je ne dis pas que j'étais une crack en algorithmie, en script shell ou en machine-learning. Bien sûr j'ai souffert les deux premiers mois ! Mais j'avais assimilé les concepts importants et j'avais une base suffisante pour progresser rapidement et comprendre des concepts beaucoup plus complexes avec l'aide de très bons mentors chez Save.
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/aliceclv/alice_talk.jpg" alt="Alice Clavel making a code talk"></p>
-
-## Pourquoi recommandes-tu Le Wagon ?
-
-Pour moi, Le Wagon a une approche pédagogique unique, à la fois basée sur des bonnes pratiques de code et des technologies modernes et stable, mais aussi sur beaucoup de collaboration entre les élèves, les *teaching assistants* et les professeurs. Tout ça contribue à rendre le programme très sympa en plus d'être très efficace.
-
-## C'est quoi la meilleure chose du Wagon ?
-
-Sebastien Saunier :)
-
-## Qu'as-tu fait juste après le programme FullStack ?
-
-J'ai travaillé en freelance sur des petits projets pendant un mois. Je ne voulais pas rejoindre tout de suite un gros projet tech mais plutôt me faire la main pour gagner en confiance et bien fixer tout ce que j'avais appris au Wagon. Suite à ça j'ai rejoint [Save](https://www.save.co/) en tant que développeuse backend Rails. L'équipe technique est incroyable, et la startup elle-même est une des plus belles boites française du moment. C'est vraiment génial de faire partie de l'aventure. Sortie d'une école de commerce, et 3 mois plus tard je me retrouve développeuse backend, quelle histoire ! Je ne suis pas peu fière ;)
-
-## Et maintenant, qu'est-ce que tu vas faire ?
-
-Continuer à coder.
-
-<p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/aliceclv/save_alice.jpg" alt="Alice Clavel at Save corner"></p>
