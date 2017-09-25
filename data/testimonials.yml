@@ -1,5 +1,6 @@
 routes:
   home:
+    - jay-g2017
     - bibiiii
     - archiejg
     - diosat91
@@ -70,11 +71,32 @@ routes:
     - anamukoyama
     - adrianorob
   shanghai:
+    - jay-g2017
     - hamiltonle
     - kwnath
     - kikinz
 
 testimonials:
+  jay-g2017:
+    first_name: Jay
+    last_name: Gao
+    city_slug: shanghai
+    batch_slug: 76
+    publication_date: 2017-09-23
+    job_before: Mechanical Engineer
+    project_slug: seeme
+    job_after: Junior Ruby Engineer
+    new_company: ALO7
+    origin: Course Report
+    picture: shanghai_jay_gao.jpg
+    linkedin_url:
+    content_html: |
+      <p>Before joining Le Wagon, I have been working as a mechanical engineer for more than 5 years and have accumulated abundant experience in the industry. However, I have always harbored great zest for programing and software engineering. So for me, the hardest part about learning to code from scratch is whether I’m willing to give up everything I’ve built up for myself in my previous field to embrace something completely new and challenging.</p>
+      <p>It wasn’t an easy decision to make. To start with, I was uncertain about my potential performance in coding due to my limited understanding of IT industry. And consulting the internet and reading online answers only made it more confusing for me, as those are all other people’s experience and opinions and each person varies in terms of ability. Age was my other concern since compared to other students I’m considered a late beginner. Extra effort is a must in order to bridge the gap between me and those who started in college. But in the end, I followed my heart to pursue what I’m really interested in- coding, and everything else matters less.</p>
+      <p>I didn’t hesitate at all to choose Le Wagon because based on my research, it is probably the best coding bootcamp available in China. My later satisfying experience in every aspect proved me right. Mentors here are experts with rich industrial experience, but except for the professional knowledge they delivered, the skill that we gained in learning new things is even more precious. I enjoyed very much the company and help of other fellow students as well. Every day was quite fulfilling when we immerse ourselves in numerous practices for better application of the theoretical knowledge.
+      <p>We formed a team of 4 during the final 2 weeks to work on projects and I was in charge of the back-end development. Our team delivered an awesome social app in form of mini program since mobile app attracts more traffic nowadays compared to traditional websites. It was a great challenge but being able to overcome difficulties as a team and build up our own app is a fantastic feeling!</p>
+      <p>I didn't start job searching immediately after the camp but instead continued to strengthen all the skills I learned with the help from our mentors. Most of the camp graduates would choose to learn something new but for me reviewing has greater significance since it enables me to form a more comprehensive and productive knowledge framework. I feel very lucky to have received an offer from ALO7 to become a junior Ruby engineer 3 weeks after leaving Le Wagon. Despite many challenges ahead, It’s a great start!</p>
+      <p>Looking back at the 2 months spent at Le Wagon, coding apart, the strong bonding I harvested with mentors and students is to cherish for a lifetime. Hope Le Wagon will continue to do a great job in leading more people into the wonderland of coding!</p>
   kikinz:
     first_name: Kirsten
     last_name: Judd
