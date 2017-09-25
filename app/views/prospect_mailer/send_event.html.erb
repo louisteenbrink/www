@@ -1,0 +1,24 @@
+<h1>Come to our free event "<%= @meetup[:event]["name"] %>"<small>on <%= @meetup_time.strftime("%B %e") %> at <%= @meetup[:event]["venue"]["name"] %></small></h1>
+
+<p>Hi there!</p>
+<p><%= @meetup_host["name"] %> from Le Wagon <%= @city.capitalize %>! I've seen you signed up to our online free track, congrats!</p>
+<p>We are organising a pretty cool event on <%= @meetup_time.strftime("%B %e") %>: <%= @meetup[:event]["name"] %>.</p>
+<p>I thought you may want to join us: it will be a good occasion for you to learn more and to meet Le Wagon team! 🚀</p>
+<p>Please <a href="<%= @meetup[:event]["link"] %>">sign up if you're interested</a>!
+<p>Cheers,</p>
+<p> and Le Wagon <%= @city.capitalize %> team</p>
+
+<!-- Event Name -->
+<h2><%= @meetup[:event]["name"] %></h2>
+<!-- Event Date -->
+<%= @meetup_time.strftime("%A, %d %b %Y %l:%M %p") %>
+<!-- Event Location -->
+<span>Le Wagon <%= @city.capitalize %></span>
+<address><%= @meetup[:event]["venue"]["address_1"] %>, <%= @meetup[:event]["venue"]["city"] %></address>
+<a href="<%= @meetup[:event]["link"] %>">I will be there</a>
+
+<img src="<%= @meetup_host["picture"] %>" alt="<%= @meetup_host["name"] %>">
+<h2>Ask us anything!</h2>
+<p>Feel free to join us anytime for our free events at Le Wagon <%= @city.capitalize %>, the team and I will always be happy to welcome you!</p>
+
+<a href="<%= @meetup[:event]["link"] %>">Learn more about our Meetups</a>
