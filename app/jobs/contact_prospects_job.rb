@@ -1,6 +1,6 @@
 class ContactProspectsJob < ActiveJob::Base
+  TIME_SPAN = 7
   def perform
-    TIME_SPAN = 7
     Prospect.where('created_at >= ? AND created_at < ?', Time.now - TIME_SPAN.days , Time.now).each do |prospect|
       city = AlumniClient.new.city(prospect.city)
       meetup = MeetupApiClient.new(city.meetup_id)
