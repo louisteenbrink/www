@@ -61,7 +61,7 @@ class ApplicationController < ActionController::Base
   def load_cities
     # needed in navbar
     cities = Kitt::Client.query(City::GroupsQuery).data.cities
-    @city_groups ||= Static::CITIES.map do |group|
+    @city_groups ||= Static::CITY_GROUPS.map do |group|
       slugs = group[:cities]
       group[:cities] = slugs.map do |slug|
         cities.find { |city| city.slug == slug }

@@ -41,6 +41,10 @@ module ApplicationHelper
     image_tag proxy_url_with_signature(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}")
   end
 
+  def user_image_tag(slug, opt={})
+    image_tag proxy_url_with_signature(url: "#{ENV['WWW_IMAGES_BASE_URL']}/users/#{slug}"), opt
+  end
+
   def post_image_url(slug)
     return slug if slug =~ /^http/  # Handy to quickly try a post background image from a URL.
     proxy_url_with_signature url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
