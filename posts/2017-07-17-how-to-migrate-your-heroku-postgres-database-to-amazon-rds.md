@@ -21,9 +21,10 @@ Let's not panic! The first easy solution is to upgrade to the **Hobby Basic** pl
 ```bash
 $ heroku addons:create heroku-postgresql:hobby-basic
 ```
+
 ## Moving to Amazon RDS
 
-Instead of creating a dedicated database for every new Heroku app, you might want to launch a RDS instance on AWS and create a new database on this instance for every new application. We won't cover the creation of a PostgreSQL RDS Instance here (you can do that easily through your AWS console). But just so you know, we use for that matter a `db.t2.micro` multi-az instance with **100GB** of general purpose SSD, which costs us $29.20/month for the instances (multi site) and $25.30/month for allocated storage. RDS provides daily auto-snapshots to restore backups. Upgrading to a bigger instance class or adding more allocated storage is always possible.
+Instead of creating a dedicated database for every new Heroku app, you might want to launch a RDS instance on AWS and create a new database on this instance for every new application. We won't cover the creation of a PostgreSQL RDS Instance here (you can do that easily through your AWS console). But just so you know, we use for that matter a `db.t2.micro` multi-az instance with **100GB** of general purpose SSD, which costs us $29.20/month for the instances (multi site) and $25.30/month for allocated storage. RDS provides daily auto-snapshots to restore backups. Upgrading to a bigger instance class or adding more allocated storage is always possible. You might want to create a parameter group where you set the `force_ssl` to `1` (not `0`) and apply this new parameter group to your RDS instance. That way you make sure that only encrypted connections will be established with your RDS instance.
 
 
 ### Creating a new database
@@ -31,10 +32,10 @@ Instead of creating a dedicated database for every new Heroku app, you might wan
 We want to provide each app with a dedicated database and credentials. To do so, we'll use the `psql` binary to remotely connect to the RDS instance (Check that port `5432` is open on this instance for `0.0.0.0/0`  through its security group):
 
 ```bash
-$ psql -U $RDS_ROOT_USER -h $NAME.$ID.$DATACENTER.rds.amazonaws.com
+$ psql -U $RDS_ROOT_USER -h $NAME.$ID.$DATACENTER.rds.amazonaws.com --dbname=postgresql
 ```
 
-It will prompt for your `$ROOT_PASSWORD`. you can find your `amazonaws.com` url on the RDS Dashboard, and the `$ROOT_USER` is the one you specified when you created this instance.
+It will prompt for your `$ROOT_PASSWORD`. you can find your `amazonaws.com` url on the RDS Dashboard, and the `$ROOT_USER` is the one you specified when you created this instance. The `dbname` is `postgresql` if you left this field blank when creating the RDS instance.
 
 Once connected, you can have a look at the existing databases and existing users:
 
@@ -63,8 +64,8 @@ psql$ \q
 ```bash
 $ cd your_app
 $ mkdir -p config
-$ curl https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem > ./config/amazon-rds-ca-cert.pem
-$ git add config/amazon-rds-ca-cert.pem
+$ curl https://s3.amazonaws.com/rds-downloads/rds-combined-ca-bundle.pem > ./config/rds-combined-ca-bundle.pem
+$ git add config/rds-combined-ca-bundle.pem
 $ git commit -m "Add RDS certificate to app files"
 $ git push heroku master
 ```
@@ -117,7 +118,7 @@ You will need to destroy your Heroku Database on Heroku as Heroku does not want 
 ```bash
 $ heroku addons:destroy heroku-postgresql
 $ heroku config:set \
-    DATABASE_URL="postgres://whiteunicorn1234:$PASSWORD@$NAME.$ID.$DATACENTER.rds.amazonaws.com/whiteunicorn1234?sslca=config/amazon-rds-ca-cert.pem"
+    DATABASE_URL="postgres://whiteunicorn1234:$PASSWORD@$NAME.$ID.$DATACENTER.rds.amazonaws.com/whiteunicorn1234?sslca=config/rds-combined-ca-bundle.pem"
 $ heroku maintenance:off
 ```
 

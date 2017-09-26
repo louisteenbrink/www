@@ -85,7 +85,7 @@ fr:
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
         Apprenez des techniques de design avancées en CSS (flexbox, CSS grid).
-        Plongez dans Javascript et explorez ES6, la dernière version de Javascript.
+        Plongez dans Javascript et explorez ES6.
       software_engineer_html: Comprenez la technique
       software_engineer_details: |
         Apprenez à penser comme un "Software engineer".
@@ -392,7 +392,7 @@ fr:
       special_offer_no_vat: "soit €1,250 HT"
       react_cta: "Je réserve ma place"
       affix_title_date: "Prochaine session"
-      affix_date: "25 au 29 septembre"
+      affix_date: "26 au 30 mars 2018"
       affix_location: "16 villa Gaudelet, 75011 Paris"
       affix_title_participants: "Participants"
       affix_title_offer: "Offre spéciale"

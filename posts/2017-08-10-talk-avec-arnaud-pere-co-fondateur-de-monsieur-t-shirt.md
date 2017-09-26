@@ -7,7 +7,7 @@ author: bertrand
 pushed: true
 labels:
   - talk
-thumbnail: 2017-08-10-talk-arnaud-pere-monsieur-tshirt.jpg
+thumbnail: 2017-08-10-talk-arnaud-pere-monsieur-tshirt-1.jpg
 description: |
   Arnaud nous partage quelques leçons entrepreneuriales tirées de ses expériences sur le terrain, ainsi qu'une poignée de bonnes et mauvaises pratiques du monde des startups dont il a été témoin ! #nobullshit
 ---

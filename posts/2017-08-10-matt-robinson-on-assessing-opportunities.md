@@ -7,7 +7,7 @@ labels:
   - entrepreneurship
 pushed: true
 thumbnail: 2017-05-17-matt-robinsons-notes-on-assessing-opportunities.jpg
-description: "Last month, Le Wagon London welcomed Matt Robinson, Cofounder of GoCardless and CEO of Nested.com. After his visit, he made us the honor to share a few insight "
+description: "Last month, Le Wagon London welcomed Matt Robinson, Cofounder of GoCardless and CEO of Nested.com. After his visit, he made us the honor to share a few insight."
 ---
 
 [Matt Robinson](https://twitter.com/mattjackrob) co-founded [GoCardless](https://gocardless.com) in 2012, a leading FinTech company, which offers a simple way for online businesses to set up and accept direct debit payments. GoCardless has raised $24.8M in funding, and is processing around £3 billion in transaction volume per year.
