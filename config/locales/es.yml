@@ -1,3 +1,4 @@
+
 es:
   date:
     formats:
@@ -548,7 +549,6 @@ es:
     send_event:
       subject: "Come to our next free event in %{prospect_city} on %{meetup_time}: %{meetup_name}!"
       disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
-      thanks: "Thanks again for signed up to Le Wagon Freetrack."
       title: "Come to our free workshop: #{meetup_name}"
       schedule: "#{meetup_time}"
       main_copy_html: |
