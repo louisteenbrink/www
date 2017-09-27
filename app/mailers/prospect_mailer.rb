@@ -14,8 +14,8 @@ class ProspectMailer < ApplicationMailer
     meetup_cli = MeetupApiClient.new(meetup_city.meetup_id)
     @meetup = { event: meetup_cli.meetup_events.first, infos: meetup_cli.meetup }
     @meetup_time = Time.at(@meetup[:event]["time"] / 1000)
-    meetups_organizer = YAML.load_file(Rails.root.join("data/hosts.yml"))
-    @meetup_host = meetups_organizer[@city]
+    meetups_organizer = YAML.load_file(Rails.root.join("data/cities.yml"))
+    @meetup_host = meetups_organizer[@city]["meetup_host"]
 
     mail(to: prospect.email, subject: "Come to our next free event in #{prospect.city} next #{@meetup_time.strftime("%A")}: #{@meetup[:event]["name"]}!")
 
