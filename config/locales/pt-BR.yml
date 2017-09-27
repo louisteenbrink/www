@@ -550,7 +550,7 @@ pt-BR:
       host_content: "Nossos workshops são sempre gratuitos e abertos a todos. Junte-se ao grupo no Meetup do Le Wagon #{city}, eu e todo o time do Le Wagon estamos aqui pra te receber!"
       host_cta: "Saiba mais sobre nossos Meetups"
     send_content:
-      subject: "We are bringing you the latest news, tutorials and insights on coding and entrepreneurship!"
+      subject: "As últimas dicas e novidades em programação e empreendedorismo!"
       disclaimer: "Obrigado por se cadastrar no Le Wagon Freetrack."
       title: "Você está apenas no começo de sua jornada!"
       main_copy_html: |
