@@ -24,7 +24,7 @@ bali:
 
 barcelona:
   marketing_automation:
-    enabled: true
+    enabled: false
     locale: es
   meetup_host:
     name: "Gustavo"

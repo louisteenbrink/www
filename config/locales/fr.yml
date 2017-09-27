@@ -2,6 +2,9 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
+  time:
+    formats:
+      event: "le %e %B"
   top_bar_react_message: Formez-vous à React + Redux
   top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
@@ -660,3 +663,37 @@ fr:
       learn_cta_html: |
         <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
       learn_button: Get my invitation
+  prospect_mailer:
+    send_event:
+      subject: "Ne rate pas notre prochaine événement gratuit à %{prospect_city} %{meetup_time} : %{meetup_name}!"
+      disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
+      thanks: "Thanks again for signed up to Le Wagon Freetrack."
+      title: "Viens à notre prochaine workshop gratuit: #{meetup_name}"
+      schedule: "#{meetup_time}"
+      main_copy_html: |
+        <p>Hello! C'est #{meetup_host} du Le Wagon #{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations !</p>
+        <p>Ce message pour te dire que nous organisons un workshop le #{meetup_time}: #{meetup_name}. J'ai pensé que tu pourrais nous rejoindre pour en apprendre plus et rencontrer toute l'équipe du Le Wagon !</p>
+        <p>Merci de t'inscrire via le lien ci-dessous si ça te dit.</p>
+        <p>Cheers!</p>
+        <p>#{meetup_host} et toute la team du Le Wagon #{city}</p>
+      cta: "Je serai là"
+      host_title: "Pose-nous toutes tes questions !"
+      host_content: "Tu es le/la bienvenu(e) à tous nos événements gratuits à #{city}, toute l'équipe et moi-même seront heureux de t'accueillir !"
+      host_cta: "En savoir plus sur nos Meetups"
+    send_content:
+      subject: "Découvre les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat"
+      disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
+      title: "Tu n'es encore qu'au début du voyage"
+      main_copy_html: |
+        <p>Hello! C'est #{meetup_host} du Le Wagon #{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations !</p>
+        <p>Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat !</p>
+        <p>Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer !</p>
+        <p>Cheers!</p>
+        <p>#{meetup_host} et toute la team du Le Wagon #{city}</p>
+      card_1_title: "Regarde nos vidéos et monte en compétence"
+      card_1_content: "Apprend des meilleurs développeurs et entrepreneurs"
+      card_2_title: "Empower yourself reading ous stories and ressoruces"
+      card_2_content: "Inspire toi de notre communauté"
+      host_title: "Ne rate pas nos événements tech à #{city}"
+      host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à #{city}. Tout le monde est le bienvenue !"
+      host_cta: "En savoir plus sur nos Meetups"
