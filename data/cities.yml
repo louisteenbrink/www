@@ -1,0 +1,183 @@
+aix-marseille:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "Louis"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854300/oonc7kaygzksydra5zmc.jpg"
+
+amsterdam:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Feiko"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1475676507/q8kfwwpiavgqodr16qe6.jpg"
+
+bali:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Dirk"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1501493689/mse6n1mx5wb9fwnsoorg.jpg"
+
+barcelona:
+  marketing_automation:
+    enabled: true
+    locale: es
+  meetup_host:
+    name: "Gustavo"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855121/cpj6ie7r6ess6zgn0lv1.jpg"
+
+belo-horizonte:
+  marketing_automation:
+    enabled: true
+    locale: pt-BR
+  meetup_host:
+    name: "Fernando"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855127/dmhuwktkxl7gqfzm4mtg.jpg"
+
+berlin:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Philipp"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854882/zzfng6kruvdlmz0w9ryc.jpg"
+
+bordeaux:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "Bertrand"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854624/pl9k3ceyupisgif4p5fl.jpg"
+
+brussels:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Anne"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854768/sy10zsxt7ubnjf0taib5.jpg"
+
+budapest:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Zoltan"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1484565424/is6lkmyihxbcol4o0uld.jpg"
+
+chengdu:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Allen"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1503908928/sczu7agbnzchlim41mfz.jpg"
+
+copenhagen:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Nicolas"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855000/wt4fmh0o1exyljdcnbxz.jpg"
+
+lille:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "François-Xavier"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854608/lvez3nl2hci1vmpav1j4.jpg"
+
+lisbon:
+  marketing_automation:
+    enabled: true
+    locale: pt-BR
+  meetup_host:
+    name: "Shannon"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855119/i2txdsuo3alvav4ieome.jpg"
+
+london:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Sandrine"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1497456529/biotb7bueahkmnprodtg.jpg"
+
+lyon:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "Kevin"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1482749003/pgsskldtssxi2yljtaj3.jpg"
+
+milan:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Francesco"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1502978538/wqtucx3kmuv123sb4gsv.jpg"
+
+montreal:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "Marie-Gabrielle"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1476372237/w6hm3txsxhu2s5mga0ms.jpg"
+
+nantes:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "Pierre"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854792/lgpuytxlznjqjf80dwdl.jpg"
+
+paris:
+  marketing_automation:
+    enabled: true
+    locale: fr
+  meetup_host:
+    name: "Edouard"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855094/my487xpvdpefw0c2sbtn.jpg"
+
+sao-paulo:
+  marketing_automation:
+    enabled: true
+    locale: pt-BR
+  meetup_host:
+    name: "Mathieu"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855006/s1fc5zqmanel2naazfas.jpg"
+
+shanghai:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Thibault"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1502962677/rn1agyk9ynwgni8qcesp.jpg"
+
+rio:
+  marketing_automation:
+    enabled: true
+    locale: pt-BR
+  meetup_host:
+    name: "Pedro"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855012/a5jz10e7wkt6djjnf1sq.jpg"
+
+tokyo:
+  marketing_automation:
+    enabled: true
+    locale: en
+  meetup_host:
+    name: "Paul"
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855004/qg0a8plknyvjq17gyo8e.jpg"
