@@ -672,7 +672,7 @@ fr:
         <h1 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:21px;font-weight:bolder;line-height:1.3;margin:0 15px;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">%{meetup_name}</h1>
       schedule: "%{meetup_time}"
       main_copy_html: |
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Hello! C'est %{meetup_host} de Le Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations! </p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations! </p>
         <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Ce message pour te dire que nous organisons un workshop %{meetup_time}: %{meetup_name}. J'ai pensé que tu pourrais nous rejoindre pour en apprendre plus et rencontrer toute l'équipe du Wagon! 🚀</p>
         <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Merci de
       main_copy_link:
@@ -689,15 +689,17 @@ fr:
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
       title: "Tu n'es encore qu'au début du voyage"
       main_copy_html: |
-        <p>Hello! C'est #{meetup_host} du Le Wagon #{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations !</p>
-        <p>Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat !</p>
-        <p>Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer !</p>
-        <p>Cheers!</p>
-        <p>#{meetup_host} et toute la team du Le Wagon #{city}</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat! 🚀</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer! 👇</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Cheers!</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">%{meetup_host} et toute la team du Wagon %{city}</p>
       card_1_title: "Regarde nos vidéos et monte en compétence"
-      card_1_content: "Apprend des meilleurs développeurs et entrepreneurs"
-      card_2_title: "Empower yourself reading ous stories and ressoruces"
-      card_2_content: "Inspire toi de notre communauté"
-      host_title: "Ne rate pas nos événements tech à #{city}"
-      host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à #{city}. Tout le monde est le bienvenue !"
+      card_1_content: "Apprends des meilleurs devs et entrepreneurs"
+      cta_1: "Regarde nos tutos"
+      card_2_title: "Va plus loin en explorant nos ressources et tutoriels"
+      card_2_content: "Inspire-toi de notre communauté"
+      cta_2: "Apprends plus"
+      host_title: "Ne rate pas nos événements tech à %{city}"
+      host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à %{city}. Tout le monde est le bienvenu!"
       host_cta: "En savoir plus sur nos Meetups"
