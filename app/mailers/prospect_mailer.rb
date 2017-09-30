@@ -22,7 +22,7 @@ class ProspectMailer < ApplicationMailer
       I18n.with_locale(@user_locale) do
         mail(
           to: prospect.email,
-          subject: I18n.t('prospect_mailer.send_event.subject', prospect_city: prospect.city, meetup_time: l(@meetup_time, format: :event), meetup_name: @meetup[:event]["name"])
+          subject: I18n.t('prospect_mailer.send_event.subject', prospect_city: prospect.city.capitalize, meetup_time: l(@meetup_time, format: :event), meetup_name: @meetup[:event]["name"])
         )
       end
     end
