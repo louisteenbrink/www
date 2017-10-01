@@ -1,4 +1,5 @@
 class ProspectMailer < ApplicationMailer
+
   def invite(prospect)
     @prospect = prospect
 
