@@ -33,7 +33,7 @@ barcelona:
 belo-horizonte:
   marketing_automation:
     enabled: true
-    locale: pt-BR
+    locale: "pt-BR"
   meetup_host:
     name: "Fernando"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855127/dmhuwktkxl7gqfzm4mtg.jpg"
@@ -97,7 +97,7 @@ lille:
 lisbon:
   marketing_automation:
     enabled: true
-    locale: pt-BR
+    locale: "pt-BR"
   meetup_host:
     name: "Shannon"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855119/i2txdsuo3alvav4ieome.jpg"
@@ -153,7 +153,7 @@ paris:
 sao-paulo:
   marketing_automation:
     enabled: true
-    locale: pt-BR
+    locale: "pt-BR"
   meetup_host:
     name: "Mathieu"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855006/s1fc5zqmanel2naazfas.jpg"
@@ -169,7 +169,7 @@ shanghai:
 rio:
   marketing_automation:
     enabled: true
-    locale: pt-BR
+    locale: "pt-BR"
   meetup_host:
     name: "Pedro"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855012/a5jz10e7wkt6djjnf1sq.jpg"
