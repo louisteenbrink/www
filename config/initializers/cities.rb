@@ -1,0 +1,1 @@
+CITIES = YAML.load_file(Rails.root.join("data/cities.yml"))

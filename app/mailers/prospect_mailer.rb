@@ -15,11 +15,10 @@ class ProspectMailer < ApplicationMailer
     meetup_cli = MeetupApiClient.new(meetup_city.meetup_id)
     @meetup = { event: meetup_cli.meetup_events.first, infos: meetup_cli.meetup }
     @meetup_time = Time.at(@meetup[:event]["time"] / 1000)
-    cities_data = YAML.load_file(Rails.root.join("data/cities.yml"))
-    @meetup_host = cities_data[@city]["meetup_host"]
-    @user_locale = cities_data[@city]["marketing_automation"]["locale"]
+    @meetup_host = CITIES[@city]["meetup_host"]
+    @user_locale = CITIES[@city]["marketing_automation"]["locale"]
 
-    if cities_data[@city]["marketing_automation"]["enabled"] == true
+    if CITIES[@city]["marketing_automation"]["enabled"]
       I18n.with_locale(@user_locale) do
         mail(
           to: prospect.email,
@@ -35,11 +34,11 @@ class ProspectMailer < ApplicationMailer
 
   def send_content(prospect)
     @city = prospect.city
-    cities_data = YAML.load_file(Rails.root.join("data/cities.yml"))
-    @meetup_host = cities_data[@city]["meetup_host"]
-    @user_locale = cities_data[@city]["marketing_automation"]["locale"]
 
-    if cities_data[@city]["marketing_automation"]["enabled"] == true
+    if CITIES[@city]["marketing_automation"]["enabled"]
+      @meetup_host = CITIES[@city]["meetup_host"]
+      @user_locale = CITIES[@city]["marketing_automation"]["locale"]
+
       I18n.with_locale(@user_locale) do
         mail(
           to: prospect.email,
