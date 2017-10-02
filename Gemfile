@@ -20,12 +20,17 @@ gem 'sidekiq-cron'
 
 # Addons
 gem 'devise', '~> 4.3.0'
-gem 'email_validator'
 gem 'money-rails'
 gem 'nokogiri'
 gem 'rails-i18n'
 gem 'simple_form', '~> 3.5'
 gem 'sitemap_generator'
+
+# Emails
+gem 'email_validator'
+gem 'mailkick', github: 'lewagon/mailkick' # Gibbon compatibility
+gem 'ahoy_email'
+gem 'gibbon'
 
 # Assets
 gem 'autoprefixer-rails'
@@ -44,7 +49,6 @@ gem 'uglifier'
 
 # Api Clients
 gem 'appsignal'
-gem 'gibbon'
 gem 'linkedin-oauth2', '~> 1.0'
 gem 'meetup_client'
 gem 'omniauth-github'

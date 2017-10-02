@@ -127,8 +127,6 @@ Rails.application.routes.draw do
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end
-
-  match "*path", to: "application#render_404", via: :all
 end
 
 # Create helper for static_routes

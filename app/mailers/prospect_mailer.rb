@@ -1,16 +1,20 @@
 class ProspectMailer < ApplicationMailer
+  after_action :prevent_emailing_opted_out_prospects,
+               :prevent_double_deliveries
 
-  def invite(prospect)
-    @prospect = prospect
+  def invite(prospect_id)
+    @prospect = Prospect.find(prospect_id)
 
+    track user: @prospect
     mail(to: @prospect.email, subject: 'Join Le Wagon free online track!')
   rescue Net::SMTPSyntaxError => e
     puts "#{e.message} for #{@prospect.email}"
-    @prospect.destroy
   end
 
-  def send_event(prospect)
-    @city = prospect.city
+  def send_event(prospect_id)
+    @prospect = Prospect.find(prospect_id)
+
+    @city = @prospect.city
     meetup_city = AlumniClient.new.city(@city)
     meetup_cli = MeetupApiClient.new(meetup_city.meetup_id)
     @meetup = { event: meetup_cli.meetup_events.first, infos: meetup_cli.meetup }
@@ -20,35 +24,49 @@ class ProspectMailer < ApplicationMailer
 
     if CITIES[@city]["marketing_automation"]["enabled"]
       I18n.with_locale(@user_locale) do
-        mail(
-          to: prospect.email,
-          subject: I18n.t('prospect_mailer.send_event.subject', prospect_city: prospect.city.capitalize, meetup_time: l(@meetup_time, format: :event), meetup_name: @meetup[:event]["name"])
-        )
+        track user: @prospect
+        mail \
+          to: @prospect.email,
+          subject: I18n.t('prospect_mailer.send_event.subject',
+                          prospect_city: @prospect.city.capitalize,
+                          meetup_time: l(@meetup_time, format: :event),
+                          meetup_name: @meetup[:event]["name"])
       end
     end
 
   rescue Net::SMTPSyntaxError => e
     puts "#{e.message} for #{@prospect.email}"
-    @prospect.destroy
   end
 
-  def send_content(prospect)
-    @city = prospect.city
+  def send_content(prospect_id)
+    @prospect = Prospect.find(prospect_id)
+    @city = @prospect.city
 
     if CITIES[@city]["marketing_automation"]["enabled"]
       @meetup_host = CITIES[@city]["meetup_host"]
       @user_locale = CITIES[@city]["marketing_automation"]["locale"]
 
       I18n.with_locale(@user_locale) do
-        mail(
-          to: prospect.email,
+        track user: @prospect
+        mail \
+          to: @prospect.email,
           subject: I18n.t('prospect_mailer.send_content.subject')
-        )
       end
     end
-
   rescue Net::SMTPSyntaxError => e
     puts "#{e.message} for #{@prospect.email}"
-    @prospect.destroy
+  end
+
+  private
+
+  def prevent_emailing_opted_out_prospects
+    mail.perform_deliveries = !@prospect.opted_out?
+  end
+
+  def prevent_double_deliveries
+    mail.perform_deliveries = @prospect.messages.
+      where(mailer: "#{self.class.name}##{action_name}").
+      where.not(sent_at: nil).
+      empty?
   end
 end
