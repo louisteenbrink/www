@@ -1,6 +1,6 @@
 class ProspectMailer < ApplicationMailer
-  after_action :prevent_emailing_opted_out_prospects,
-               :prevent_double_deliveries
+  after_action :prevent_emailing_opted_out_prospects, if: ->() { Rails.env.production? }
+  after_action :prevent_double_deliveries, if: ->() { Rails.env.production? }
 
   def invite(prospect_id)
     @prospect = Prospect.find(prospect_id)

@@ -5,6 +5,6 @@ class EmailInterceptor
   end
 end
 
-if Rails.env.development?
+if Rails.env.development? && ActionMailer::Base.delivery_method == :smtp
   ActionMailer::Base.register_interceptor(EmailInterceptor)
 end
