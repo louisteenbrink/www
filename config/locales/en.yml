@@ -381,6 +381,113 @@ en:
     shop:
       title: "Le Wagon's shop"
       description: "Because coders got style"
+    react:
+      catchline: "Discover a new way to approach front-end development"
+      main_title: "Learn React + Redux"
+      special_offer: "Fullstack program Alumni"
+      pricing_vat: "£2,500 incl. VAT"
+      pricing_no_vat: "i.e. £2,083 excl. VAT"
+      special_offer_vat: "£1,500 incl. VAT"
+      special_offer_no_vat: "soit €1,250 HT"
+      react_cta: "Book my spot"
+      affix_title_date: "Next session"
+      affix_date: "December 4 to December 8 2018"
+      affix_location: "138 Kingsland Road, E2 8DY London"
+      affix_title_participants: "Number of students"
+      affix_title_offer: "Special offer"
+      affix_title_pricing: "Price"
+      title_intro: "About the program"
+      content_intro_html: |
+        Learn to develop complex front-end applications with React and Redux.
+      title_goals: "Goals"
+      content_goals_html: |
+        <ul>
+          <li><i>1</i>Model your view components with React</li>
+          <li><i>2</i>Model your data flow with Redux</li>
+          <li><i>3</i>Build a complex web application with React + Redux and a full REST API</li>
+          <li><i>4</i>Incorporate a React + Redux web application to an existing Rails application</li>
+        </ul>
+      title_requirements: "Prerequisite"
+      content_requirements_html: |
+        <ul>
+          <li>Good Javascript knowledge</li>
+          <li>Some ES6 knowledge</li>
+          <li>Know how to use a REST API</li>
+          <li>Good Rails knowledge</li>
+        </ul>
+      title_teachers: "Teachers"
+      quote: |
+        You don't have to put up with 💩 Jquery JS any longer !
+      title_syllabus: "What you are going to learn:"
+      day_1: "Day 1: Modern Javascript ecosystem"
+      day_1_content_html: |
+        <ul>
+          <li><strong>Babel</strong> to compile <strong>ES6</strong></li>
+          <li><strong>Webpack</strong> to pack modules</li>
+          <li><strong>npm</strong> as a library resource</li>
+          <li><strong>yarn</strong> to incorporate those libraries</li>
+          <li>ES6: new syntax</li>
+          <li>Get familiar with <strong>React</strong> - presentation of the Components class</li>
+          <li>"props" and "state" notions</li>
+          <li><strong>JSX</strong> as a template language</li>
+          <li>Manage your module with <code>import</code> / <code>export</code></li>
+        </ul>
+      day_2: "Day 2: React + Redux"
+      day_2_content_html: |
+        <ul>
+          <li>Combine your React components to build a complex web application</li>
+          <li>Get data in AJAX with <code>fetch</code> to feed your components</li>
+          <li>Use <code>map</code> for list patterns</li>
+          <li>Get familiar with <strong>Redux</strong> - concept of global state at the application level</li>
+          <li>App state modeling and management</li>
+          <li>Promote components that need to know this state in Containers</li>
+          <li>Define Reducers and Action Creators responsible for distributing the state changes to Containers</li>
+        </ul>
+      day_3: "Day 3: React + Redux (Follow Up)"
+      day_3_content_html: |
+        <ul>
+          <li><strong>Middleware</strong> for the processing of Promises</li>
+          <li>Connect a front-end app to a full REST API</li>
+          <li>React <strong>Router</strong> to simulate navigation on a SPA</li>
+          <li>Redux <strong>Form</strong> to send data to the API</li>
+          <li>Form Validation to manage the validity of the data sent</li>
+        </ul>
+      day_4: "Day 4: Tests + Project"
+      day_4_content_html: |
+        <ul>
+          <li>Strengthen your workflow with tests</li>
+          <li>Develop your own MVP</li>
+        </ul>
+      day_5: "Day 5: React + Rails"
+      day_5_content_html: |
+        <ul>
+          <li>Set up React + Redux in a sophisticated Rails app</li>
+          <li>Build a real-time chat application with React + Redux in Rails with ActionCable (web sockets)</li>
+        </ul>
+      title_faq: "F.A.Q"
+      content_faq_html: |
+        <h3>What is React?</h3>
+        <p>ReactJS is a JavaScript library whose purpose is to create HTML snippets, which will be read by a web browser.</p>
+
+        <h3>What is Redux?</h3>
+        <p>Redux is a JavaScript library which manages the flow of data that needs to be distributed to your different components to update their state.</p>
+
+        <h3>Do I need to use React no matter the project I'm developing?</h3>
+        <p>No. React is particularly useful and reliable when:</p>
+        <ul>
+          <li>You identify components in your views (i.e. subsections that together create a "whole")</li>
+          <li>Those components have a dynamic behavior (they change color when clicked, appearance of a component when hovering above an image, ...)</li>
+        </ul>
+        <p>Indeed, React enables you to create components as objects, which have:</p>
+        <ul>
+          <li>properties (or <code>props</code>, unchanging data specific to the object)</li>
+          <li>states (or <code>state</code>, which can change during the lifetime of the component)</li>
+          <li>behaviors</li>
+        </ul>
+        <p>Both libraries, when used together, offer a reliable framework to build complex front-end applications with a fast and dynamic interface.</p>
+
+        <h3>I am a Ruby on Rails developer, will I be able to use what I will be learning during this program in my Rails applications?</h3>
+        <p>Yes, since <a href="http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/">Rails 5.1 version</a> and the integration of the webpacker gem, it is very simple to implement React and Redux in a Rails app.</p>
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
