@@ -45,24 +45,54 @@
         <div class="section section-teachers">
           <h2><%= t('.title_teachers') %></h2>
           <div class="teachers-wrapper">
-            <div class="teacher-card">
-              <%= link_to "https://www.linkedin.com/in/edward-schults-b81b2abb", target: :_blank do %>
-                <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/edward-schults.jpg', width: 100, height: 100), class: "teacher-pic" %>
-              <% end %>
-              <div class="teacher-details">
-                <span>Edward<small>Schults</small></span>
-                <i>Lead Teacher</i>
+            <% if locale == :fr %>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/edward-schults-b81b2abb", target: :_blank do %>
+                  <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/edward-schults.jpg', width: 100, height: 100), class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Edward<small>Schults</small></span>
+                  <i>Lead Teacher</i>
+                </div>
               </div>
-            </div>
-            <div class="teacher-card">
-              <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
-                <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
-              <% end %>
-              <div class="teacher-details">
-                <span>Sébastien<small>Saunier</small></span>
-                <i>CTO</i>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
+                  <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Sébastien<small>Saunier</small></span>
+                  <i>CTO</i>
+                </div>
               </div>
-            </div>
+            <% else %>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
+                  <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Sébastien<small>Saunier</small></span>
+                  <i>CTO</i>
+                </div>
+              </div>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/edward-schults-b81b2abb", target: :_blank do %>
+                  <%= image_tag 'https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1497894234/lxofq2nhoiuondhsrbhy.jpg', class: "teacher-pic" %>
+                  <% end %>
+                <div class="teacher-details">
+                  <span>Alex<small>Benoit</small></span>
+                  <i>Teacher</i>
+                </div>
+              </div>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
+                  <%= image_tag 'https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1498678909/meer67lxmporul6enslv.jpg', class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Arthur<small>Littmann</small></span>
+                  <i>Teacher</i>
+                </div>
+              </div>
+            <% end %>
           </div>
           <blockquote><%= t('.quote') %></blockquote>
         </div>
