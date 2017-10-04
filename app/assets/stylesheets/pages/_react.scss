@@ -282,6 +282,7 @@ $width: 320px;
   .section-teachers {
     .teachers-wrapper {
       display: flex;
+      flex-wrap: wrap;
       margin-top: 22px;
       width: 100%;
 
@@ -293,6 +294,7 @@ $width: 320px;
     .teacher-card {
       display: flex;
       width: 50%;
+      margin-bottom: 20px;
 
       @media(max-width: 520px) {
         margin-bottom: 20px;
@@ -346,9 +348,9 @@ $width: 320px;
     }
 
     blockquote {
-        margin-top: 36px;
-        border-color: #c73333;
-      }
+      margin-top: 10px;
+      border-color: #c73333;
+    }
   }
 
   .section-syllabus {
