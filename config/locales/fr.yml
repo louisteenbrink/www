@@ -668,7 +668,7 @@ fr:
       subject: "Ne rate pas notre prochain événement gratuit à %{prospect_city} %{meetup_time}: %{meetup_name}!"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon!"
       title: "Ne rate pas notre prochain événement: %{meetup_name}"
-      schedule: "%{meetup_time}"
+      schedule: "%{meetup_time} à "
       main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
       main_copy_2: "Ce message pour te dire que nous organisons un workshop %{meetup_time}: %{meetup_name}. J'ai pensé que tu pourrais nous rejoindre pour en apprendre plus et rencontrer toute l'équipe du Wagon! 🚀"
       main_copy_3: "Merci de"

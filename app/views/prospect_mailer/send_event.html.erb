@@ -6,7 +6,7 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>My Email Templates</title>
+  <title><%= t('prospect_mailer.send_event.title', meetup_name: @meetup[:event]["name"]) %></title>
   <style>@media only screen and (max-width:607px){.disclaimer{margin:0 auto!important;max-width:350px!important}}@media only screen and (max-width:607px){.header-email{padding:20px!important;margin-bottom:15px!important;max-width:350px!important}}@media only screen and (max-width:607px){.header-email h1{margin:20px 20px 5px 0!important;font-size:22px!important}}@media only screen and (max-width:607px){.header-email span{font-size:16px!important;line-height:26px!important}}@media only screen and (max-width:607px){.header-email .logo{padding:20px!important}}@media only screen and (max-width:607px){.slice-bottom{width:350px!important;margin:-16px auto 0}}@media only screen and (max-width:607px){.slice-top{width:350px!important;margin:30px auto 0!important}}@media only screen and (max-width:607px){.event-details{margin:20px auto 20px!important;max-width:350px!important}}@media only screen and (max-width:607px){.event-details .event-cover{border-radius:3px 3px 0 0!important}}@media only screen and (max-width:607px){.call-to-action{border-radius:0 0 3px 3px!important}}@media only screen and (max-width:607px){.host-section{max-width:350px!important}}@media only screen and (max-width:607px){.host-section h2{font-size:22px!important;padding:16px 10px 0 10px!important;text-align:center!important}}@media only screen and (max-width:607px){.host-section p{text-align:center!important}}@media only screen and (max-width:607px){.footer{max-width:350px!important}}@media only screen{html{min-height:100%;background:#f3f3f3}}@media only screen and (max-width:607px){table.body img{width:auto;height:auto}table.body center{min-width:0!important}table.body .container{width:95%!important}table.body .columns{height:auto!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;padding-left:0!important;padding-right:0!important}th.small-4{display:inline-block!important;width:33.33333%!important}th.small-8{display:inline-block!important;width:66.66667%!important}th.small-12{display:inline-block!important;width:100%!important}}</style>
 </head>
 <body style="-moz-box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-box-sizing:border-box;-webkit-text-size-adjust:100%;Margin:0;box-sizing:border-box;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;min-width:100%;padding:0;text-align:left;width:100%!important">
@@ -21,16 +21,17 @@
 
              <div class="disclaimer" style="margin-top:10px;padding:10px">
                 <p class="intro" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0!important;margin-bottom:10px;opacity:.7;padding:0;text-align:left">
-                  Thanks again for signing up to Le Wagon Free Track!
+                  <%= t('prospect_mailer.send_event.disclaimer') %>
                 </p>
               </div>
 
               <div class="header-email" style="background:#fff;background-repeat:no-repeat;box-sizing:border-box;margin:0 auto;padding:50px 50px 0;width:100%">
                 <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%"><tbody><tr style="padding:0;text-align:left;vertical-align:top">
                   <th class="small-8 large-10 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:0;padding-left:0;padding-right:0;text-align:left;width:505.83px"><table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tr style="padding:0;text-align:left;vertical-align:top"><th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                    <h1 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:31px;font-weight:bolder;line-height:1.3;margin:0;margin-bottom:0;max-width:390px;padding:0;text-align:left;word-wrap:normal">Come to our free event "API for beginners"</h1>
-                    <span style="display:block;font-size:20px;font-weight:lighter;line-height:35px;margin-bottom:24px">on October 26th at Campus London
-                  </span></th></tr></table></th>
+                    <!-- Main Title -->
+                    <h1 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:31px;font-weight:bolder;line-height:1.3;margin:0;margin-bottom:0;max-width:390px;padding:0;text-align:left;word-wrap:normal"><%= t('prospect_mailer.send_event.title', meetup_name: @meetup[:event]["name"]) %></h1>
+                    <!-- Schedule -->
+                    <span style="display:block;font-size:20px;font-weight:lighter;line-height:35px;margin-bottom:24px"><%= t('prospect_mailer.send_event.schedule', meetup_time: l(@meetup_time, format: :event)) %> <%= @meetup[:event]["venue"]["name"] %></span></th></tr></table></th>
                   <th class="small-4 large-2 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:0;padding-left:0;padding-right:0;text-align:left;width:101.17px"><table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tr style="padding:0;text-align:left;vertical-align:top"><th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
                     <div class="logo-wrapper">
                       <img class="logo" src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/logo-lewagon.png" alt="" style="-ms-interpolation-mode:bicubic;box-sizing:border-box;clear:both;display:block;margin:0 auto;max-width:100%;outline:0;padding:0 0 0 20px;text-decoration:none;width:100%">
@@ -41,19 +42,19 @@
                 <table class="row" style="border-collapse:collapse;border-spacing:0;display:table;padding:0;position:relative;text-align:left;vertical-align:top;width:100%"><tbody><tr style="padding:0;text-align:left;vertical-align:top">
                   <th class="small-12 large-12 columns first last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:0;padding-left:0;padding-right:0;text-align:left;width:607px"><table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tr style="padding:0;text-align:left;vertical-align:top"><th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
                     <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:10px;opacity:.8;padding:0;text-align:left">
-                      Hi there, it's Edouard from Le Wagon Paris! I've seen you signed up to our online free track, congrats!
+                      <%= t('prospect_mailer.send_event.main_copy_1', meetup_host: @meetup_host["name"], city: @city.capitalize) %>
                     </p>
                     <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:10px;opacity:.8;padding:0;text-align:left">
-                      We're organising a pretty cool event on October 26th: "API for beginners". I thought you may want to join us: it will be a good occasion for you to learn more and to meet Le Wagon team! 🚀
+                      <%= t('prospect_mailer.send_event.main_copy_2', meetup_time: l(@meetup_time, format: :event), meetup_name:@meetup[:event]["name"]) %>
                     </p>
                     <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:10px;opacity:.8;padding:0;text-align:left">
-                      Please <a href="#" class="a-tag" style="Margin:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none">sign up if you're interested.</a> 👇
+                      <%= t('prospect_mailer.send_event.main_copy_3') %> <a href="<%= @meetup[:event]["event_url"] %>" class="a-tag" style="Margin:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none"><%= t('prospect_mailer.send_event.main_copy_link') %></a> 👇
                     </p>
                     <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:10px;opacity:.8;padding:0;text-align:left">
-                      Cheers,
+                      <%= t('prospect_mailer.send_event.main_copy_4') %>
                     </p>
                     <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:10px;opacity:.8;padding:0;text-align:left">
-                      Edouard and Le Wagon Paris team
+                      <%= t('prospect_mailer.send_event.main_copy_5', meetup_host: @meetup_host["name"], city: @city.capitalize) %>
                     </p>
                   </th>
                   <th class="expander" style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0!important;text-align:left;visibility:hidden;width:0"></th></tr></table></th>
@@ -74,20 +75,20 @@
                   </th></tr></table></th>
                   <th class="small-12 large-8 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:0;padding-left:0;padding-right:0;text-align:left;width:404.67px"><table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tr style="padding:0;text-align:left;vertical-align:top"><th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
                     <div class="event-info">
-                      <h2 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:bolder;line-height:1.3;margin:0;margin-bottom:10px;padding:20px 20px 10px;text-align:left;word-wrap:normal">Workshop - Git & Github for beginners</h2>
+                      <h2 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:24px;font-weight:bolder;line-height:1.3;margin:0;margin-bottom:10px;padding:20px 20px 10px;text-align:left;word-wrap:normal"><a href="<%= @meetup[:event]["event_url"] %>" alt="<%= @meetup[:event]["name"] %> %>" style="text-decoration:none;color:black;"><%= @meetup[:event]["name"] %></a></h2>
                       <div class="card-info" style="display:flex;padding:0 20px 16px">
                         <span class="emoji" style="font-size:26px"><img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/calendar-icon.jpg" alt="" style="-ms-interpolation-mode:bicubic;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:auto"></span>
                         <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0!important;margin-bottom:10px;padding:0 0 0 15px;text-align:left">Wednesday, July 26, 2017<br>7:00 PM to 10:00PM</p>
                       </div>
                       <div class="card-info" style="display:flex;padding:0 20px 16px">
                         <span class="emoji" style="font-size:26px"><img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/marker-icon.jpg" alt="" style="-ms-interpolation-mode:bicubic;clear:both;display:block;height:24px;max-width:100%;outline:0;text-decoration:none;width:auto"></span>
-                         <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0!important;margin-bottom:10px;padding:0 0 0 15px;text-align:left">Le Wagon<br>16 Villa Gaudelet, 75011 Paris</p>
+                         <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0!important;margin-bottom:10px;padding:0 0 0 15px;text-align:left"><%= @meetup[:event]["venue"]["name"] %><br><%= @meetup[:event]["venue"]["address_1"] %></p>
                       </div>
                     </div>
                     <div class="call-to-action" style="background-color:#D23333;border-radius:0 0 3px 0;color:#fff;font-size:16px;font-weight:bolder;padding:12px 40px;text-align:center">
-                      I will be there
+                      <a href="<%= @meetup[:event]["event_url"] %>" alt="<%= @meetup[:event]["name"] %> %>" style="text-decoration:none;color:white;"><%= t('prospect_mailer.send_event.cta') %></a>
                     </div>
-                    <a class="card-link" href="#" style="Margin:0;background:#000;bottom:0;color:#2199e8;font-family:Helvetica,Arial,sans-serif;font-weight:400;line-height:1.3;margin:0;opacity:0;padding:0;position:absolute;right:0;text-align:left;text-decoration:none;top:0;width:100%;z-index:2"></a>
+
                   </th></tr></table></th>
                 </tr></tbody></table>
               </div>
@@ -105,12 +106,12 @@
                     <img src="<%= @meetup_host['picture'] %>" alt="<%= @meetup_host['name'] %>" style="-ms-interpolation-mode:bicubic;clear:both;display:block;margin:0 auto;max-width:100%;outline:0;text-decoration:none;width:auto;border-radius:50%;">
                   </th></tr></table></th>
                   <th class="small-12 large-8 columns last" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-bottom:0;padding-left:0;padding-right:0;text-align:left;width:404.67px"><table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%"><tr style="padding:0;text-align:left;vertical-align:top"><th style="Margin:0;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:left">
-                    <h2 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bolder;line-height:1.3;margin:0;margin-bottom:14px!important;padding:0;text-align:left;word-wrap:normal">Ask us anything!</h2>
-                    <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:16px!important;padding:0;text-align:left">Feel free to join us anytime for our free events at Le Wagon Paris, the team and I will always be happy to welcome you!</p>
+                    <h2 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:18px;font-weight:bolder;line-height:1.3;margin:0;margin-bottom:14px!important;padding:0;text-align:left;word-wrap:normal"><%= t('prospect_mailer.send_event.host_title') %></h2>
+                    <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:0;margin-bottom:16px!important;padding:0;text-align:left"><%= t('prospect_mailer.send_event.host_content', city: @city) %></p>
 
                     <div class="link-to-meetup">
                       <a href="#" style="Margin:0;color:#000;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bolder;line-height:1.3;margin:0;padding:0;text-align:left;text-decoration:none">
-                        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bolder;line-height:25px!important;margin:0;margin-bottom:16px!important;padding:0;text-align:left">Learn more about our Meetups <img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/triangle.png" alt="" style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:inline;height:9px;margin:0 auto;margin-left:5px;max-width:100%;outline:0;text-decoration:none;width:9px"></p>
+                        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:bolder;line-height:25px!important;margin:0;margin-bottom:16px!important;padding:0;text-align:left"><%= t('prospect_mailer.send_event.host_cta') %> <img src="https://raw.githubusercontent.com/lewagon/www-images/master/newsletter/triangle.png" alt="" style="-ms-interpolation-mode:bicubic;border:none;clear:both;display:inline;height:9px;margin:0 auto;margin-left:5px;max-width:100%;outline:0;text-decoration:none;width:9px"></p>
                       </a>
                     </div>
                   </th></tr></table></th>
