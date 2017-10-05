@@ -558,12 +558,11 @@ pt-BR:
       subject: "As últimas dicas e novidades em programação e empreendedorismo!"
       disclaimer: "Obrigado por se cadastrar no Le Wagon Freetrack."
       title: "Você está apenas no começo de sua jornada!"
-      main_copy_html: |
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Yo! Sou %{meetup_host} do Le Wagon %{city}! Vi que você se cadastrou para nosso curso gratuito, parabéns!</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Queria aprovitar pra compartilhar com você as últimas notícias, tutoriais e dicas sobre aprender a programar e empreendedorismo! 🚀</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Abaixo você vai encontrar uma tonelada de artigos e videos sobre estes assuntos. Explore! 👇</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Cheers!</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">%{meetup_host} e o time do Le Wagon %{city}</p>
+      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon %{city}! Vi que você se cadastrou para nosso curso gratuito, parabéns!"
+      main_copy_2: "Queria aprovitar pra compartilhar com você as últimas notícias, tutoriais e dicas sobre aprender a programar e empreendedorismo! 🚀"
+      main_copy_3: "Abaixo você vai encontrar uma tonelada de artigos e videos sobre estes assuntos. Explore! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} e o time do Le Wagon %{city}"
       card_1_title: "Adquira novas habilidades, assista a nossos videos"
       card_1_content: "Aprenda com os melhores desenvolvedores e empreendedores"
       cta_1: "Watch"

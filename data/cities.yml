@@ -5,6 +5,10 @@ aix-marseille:
   meetup_host:
     name: "Louis"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854300/oonc7kaygzksydra5zmc.jpg"
+    meetup_url: "Le-Wagon-Aix-Marseille-Coding-Station"
+    facebook: "lewagonmarseille"
+    twitter: "lewagonaixmrs"
+    instagram: "lewagonaixmarseille"
 
 amsterdam:
   marketing_automation:
@@ -13,6 +17,10 @@ amsterdam:
   meetup_host:
     name: "Feiko"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1475676507/q8kfwwpiavgqodr16qe6.jpg"
+    meetup_url: "Le-Wagon-Amsterdam"
+    facebook: "lewagonamsterdam"
+    twitter: "lewagonadam"
+    instragram: "lewagonbenelux"
 
 bali:
   marketing_automation:
@@ -21,14 +29,22 @@ bali:
   meetup_host:
     name: "Dirk"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1501493689/mse6n1mx5wb9fwnsoorg.jpg"
+    meetup_url: "Le-Wagon-Bali-Coding-School"
+    facebook: "lewagonbali"
+    twitter: "lewagonbali"
+    instragram: ""
 
 barcelona:
   marketing_automation:
-    enabled: false
-    locale: es
+    enabled: true
+    locale: en
   meetup_host:
     name: "Gustavo"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855121/cpj6ie7r6ess6zgn0lv1.jpg"
+    meetup_url: "Le-Wagon-Barcelona"
+    facebook: "lewagonbcn"
+    twitter: "lewagonbcn"
+    instragram: "lewagonbcn"
 
 belo-horizonte:
   marketing_automation:
@@ -37,6 +53,10 @@ belo-horizonte:
   meetup_host:
     name: "Fernando"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855127/dmhuwktkxl7gqfzm4mtg.jpg"
+    meetup_url: "Le-Wagon-Belo-Horizonte-Coding-Station"
+    facebook: "lewagonbrasil"
+    twitter: "lewagonbrasil"
+    instragram: "lewagonbrasil"
 
 berlin:
   marketing_automation:
@@ -45,6 +65,10 @@ berlin:
   meetup_host:
     name: "Philipp"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854882/zzfng6kruvdlmz0w9ryc.jpg"
+    meetup_url: "Le-Wagon-Berlin-Coding-School"
+    facebook: "lewagonberlin"
+    twitter: "lewagonberlin"
+    instragram: "lewagonberlin"
 
 bordeaux:
   marketing_automation:
@@ -53,6 +77,10 @@ bordeaux:
   meetup_host:
     name: "Bertrand"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854624/pl9k3ceyupisgif4p5fl.jpg"
+    meetup_url: "Le-Wagon-Bordeaux-Coding-Station-Bootcamp"
+    facebook: "lewagonfrance"
+    twitter: "lewagonbordeaux"
+    instragram: "lewagonbordeaux"
 
 brussels:
   marketing_automation:
@@ -61,6 +89,10 @@ brussels:
   meetup_host:
     name: "Anne"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854768/sy10zsxt7ubnjf0taib5.jpg"
+    meetup_url: "Le-Wagon-Brussels-Coding-Station"
+    facebook: "lewagonbrussels"
+    twitter: "lewagonbrussels"
+    instragram: "lewagonbenelux"
 
 budapest:
   marketing_automation:
@@ -69,6 +101,10 @@ budapest:
   meetup_host:
     name: "Zoltan"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1484565424/is6lkmyihxbcol4o0uld.jpg"
+    meetup_url: "Le-Wagon-Budapest-Coding-School"
+    facebook: "lewagonbudapest"
+    twitter: "lewagonbudapest"
+    instragram: "lewagonbudapest"
 
 chengdu:
   marketing_automation:
@@ -77,6 +113,10 @@ chengdu:
   meetup_host:
     name: "Allen"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1503908928/sczu7agbnzchlim41mfz.jpg"
+    meetup_url: "Le-Wagon-Chengdu"
+    facebook: "lewagon"
+    twitter: ""
+    instragram: ""
 
 copenhagen:
   marketing_automation:
@@ -85,6 +125,10 @@ copenhagen:
   meetup_host:
     name: "Nicolas"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855000/wt4fmh0o1exyljdcnbxz.jpg"
+    meetup_url: "Le-Wagon-Copenhagen-Coding-Station"
+    facebook: "lewagoncph"
+    twitter: "lewagoncph"
+    instragram: ""
 
 lille:
   marketing_automation:
@@ -93,6 +137,10 @@ lille:
   meetup_host:
     name: "François-Xavier"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854608/lvez3nl2hci1vmpav1j4.jpg"
+    meetup_url: "Le-Wagon-Lille-Coding-Station"
+    facebook: "lewagon"
+    twitter: "lewagonlille"
+    instragram: "lewagonparis"
 
 lisbon:
   marketing_automation:
@@ -101,6 +149,10 @@ lisbon:
   meetup_host:
     name: "Shannon"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855119/i2txdsuo3alvav4ieome.jpg"
+    meetup_url: "Le-Wagon-Lisbon-Coding-Station"
+    facebook: "lewagonlisbon"
+    twitter: "lewagonlisbon"
+    instragram: "lewagonlisbon"
 
 london:
   marketing_automation:
@@ -109,6 +161,10 @@ london:
   meetup_host:
     name: "Sandrine"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1497456529/biotb7bueahkmnprodtg.jpg"
+    meetup_url: "Le-Wagon-London-Coding-School"
+    facebook: "lewagonlondon"
+    twitter: "lewagonlondon"
+    instragram: "lewagonlondon"
 
 lyon:
   marketing_automation:
@@ -117,6 +173,22 @@ lyon:
   meetup_host:
     name: "Kevin"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1482749003/pgsskldtssxi2yljtaj3.jpg"
+    meetup_url: "le-wagon-lyon"
+    facebook: "lewagonlyon"
+    twitter: "lewagonlyon"
+    instragram: ""
+
+melbourne:
+  marketing_automation:
+    enabled: false
+    locale: en
+  meetup_host:
+    name: "Paal"
+    picture: ""
+    meetup_url: ""
+    facebook: ""
+    twitter: ""
+    instragram: ""
 
 milan:
   marketing_automation:
@@ -125,6 +197,10 @@ milan:
   meetup_host:
     name: "Francesco"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1502978538/wqtucx3kmuv123sb4gsv.jpg"
+    meetup_url: "Le-Wagon-Milan-Coding-Station"
+    facebook: "lewagonmilano"
+    twitter: "lewagonmilano"
+    instragram: ""
 
 montreal:
   marketing_automation:
@@ -133,6 +209,10 @@ montreal:
   meetup_host:
     name: "Marie-Gabrielle"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1476372237/w6hm3txsxhu2s5mga0ms.jpg"
+    meetup_url: "Le-Wagon-Montreal"
+    facebook: "lewagonmontreal"
+    twitter: "lewagonmontreal"
+    instragram: "lewagonmontreal"
 
 nantes:
   marketing_automation:
@@ -141,6 +221,10 @@ nantes:
   meetup_host:
     name: "Pierre"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473854792/lgpuytxlznjqjf80dwdl.jpg"
+    meetup_url: "Le-Wagon-Nantes-Coding-Station"
+    facebook: "lewagonnantes"
+    twitter: "lewagonnantes"
+    instragram: ""
 
 paris:
   marketing_automation:
@@ -149,6 +233,10 @@ paris:
   meetup_host:
     name: "Edouard"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855094/my487xpvdpefw0c2sbtn.jpg"
+    meetup_url: "Le-Wagon-Paris-Coding-Station"
+    facebook: "lewagonfrance"
+    twitter: "lewagonparis"
+    instragram: "lewagonparis"
 
 sao-paulo:
   marketing_automation:
@@ -157,6 +245,10 @@ sao-paulo:
   meetup_host:
     name: "Mathieu"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855006/s1fc5zqmanel2naazfas.jpg"
+    meetup_url: "Le-Wagon-Sao-Paulo-Coding-Station"
+    facebook: "lewagonbrasil"
+    twitter: "lewagonbrasil"
+    instragram: "lewagonbrasil"
 
 shanghai:
   marketing_automation:
@@ -165,6 +257,22 @@ shanghai:
   meetup_host:
     name: "Thibault"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1502962677/rn1agyk9ynwgni8qcesp.jpg"
+    meetup_url: "Le-Wagon-Shanghai-Coding-Station"
+    facebook: "lewagon"
+    twitter: ""
+    instragram: ""
+
+sydney:
+  marketing_automation:
+    enabled: false
+    locale: en
+  meetup_host:
+    name: "Charly"
+    picture: ""
+    meetup_url: ""
+    facebook: ""
+    twitter: ""
+    instragram: ""
 
 rio:
   marketing_automation:
@@ -173,6 +281,10 @@ rio:
   meetup_host:
     name: "Pedro"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855012/a5jz10e7wkt6djjnf1sq.jpg"
+    meetup_url: "Le-Wagon-Rio-de-Janeiro-Coding-Station"
+    facebook: "lewagonbrasil"
+    twitter: "lewagonbrasil"
+    instragram: "lewagonbrasil"
 
 tokyo:
   marketing_automation:
@@ -181,3 +293,7 @@ tokyo:
   meetup_host:
     name: "Paul"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1473855004/qg0a8plknyvjq17gyo8e.jpg"
+    meetup_url: "Le-Wagon-Tokyo-Coding-Station"
+    facebook: "lewagontokyo"
+    twitter: "lewagontokyo"
+    instragram: "lewagontokyo"

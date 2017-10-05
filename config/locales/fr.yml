@@ -688,12 +688,11 @@ fr:
       subject: "Découvre les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
       title: "Tu n'es encore qu'au début du voyage"
-      main_copy_html: |
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat! 🚀</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer! 👇</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Cheers!</p>
-        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">%{meetup_host} et toute la team du Wagon %{city}</p>
+      main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
+      main_copy_2: "Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat! 🚀"
+      main_copy_3: "Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} et toute la team du Wagon %{city}"
       card_1_title: "Regarde nos vidéos et monte en compétence"
       card_1_content: "Apprends des meilleurs devs et entrepreneurs"
       cta_1: "Regarde nos tutos"
