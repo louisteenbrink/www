@@ -108,7 +108,13 @@ class AppliesController < ApplicationController
         batch['starts_at'] = I18n.l starts_at.to_date, format: :apply
         batch['starts_at_short'] = I18n.l starts_at.to_date, format: :short
         batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
-        batch['price'] = humanized_money_with_symbol Money.new(batch['price_cents'], batch['price_currency'])
+        price = Money.new(batch['price_cents'], batch['price_currency'])
+        if %w($ ¥).include?(price.currency.symbol)
+          # Symbol is ambiguous
+          batch['price'] = "#{price.currency.iso_code} #{humanized_money price}"
+        else
+          batch['price'] = humanized_money_with_symbol price
+        end
       end
     end
 
