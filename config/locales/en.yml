@@ -39,6 +39,7 @@ en:
         online: Online
         on_site: Onsite
         fullstack_program: FullStack Program (9-week intensive)
+        react_program: React (5-day intensive)
         free_track: Web-Development Basics (free course)
       apply: Apply Now
       employers: Business
@@ -391,7 +392,7 @@ en:
       special_offer_no_vat: "soit €1,250 HT"
       react_cta: "Book my spot"
       affix_title_date: "Next session"
-      affix_date: "December 4 to December 8 2018"
+      affix_date: "December 4 to December 8 2017"
       affix_location: "138 Kingsland Road, E2 8DY London"
       affix_title_participants: "Number of students"
       affix_title_offer: "Special offer"
