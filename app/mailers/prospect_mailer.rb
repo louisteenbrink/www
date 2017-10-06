@@ -19,6 +19,7 @@ class ProspectMailer < ApplicationMailer
     meetup_cli = MeetupApiClient.new(meetup_city.meetup_id)
     @meetup = { event: meetup_cli.meetup_events.first, infos: meetup_cli.meetup }
     @meetup_time = Time.at(@meetup[:event]["time"] / 1000)
+    @city_info = CITIES[@city]
     @meetup_host = CITIES[@city]["meetup_host"]
     @user_locale = CITIES[@city]["marketing_automation"]["locale"]
 
@@ -41,6 +42,7 @@ class ProspectMailer < ApplicationMailer
   def send_content(prospect_id)
     @prospect = Prospect.find(prospect_id)
     @city = @prospect.city
+    @city_info = CITIES[@city]
 
     if CITIES[@city]["marketing_automation"]["enabled"]
       @meetup_host = CITIES[@city]["meetup_host"]

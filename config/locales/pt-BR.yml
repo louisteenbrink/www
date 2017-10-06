@@ -10,6 +10,9 @@ pt-BR:
   time:
     formats:
       event: "dia %e no %B"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "%l:%M"
+      newsletter_event_end_time: "%l:%M"
     day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
   top_bar_message: Veja o que nossos alunos podem fazer em 9 semanas
@@ -539,12 +542,13 @@ pt-BR:
       disclaimer: "Obrigado por fazer o Le Wagon Freetrack."
       title: "Venha a um de nossos workshops gratuitos: %{meetup_name}"
       schedule: "%{meetup_time}"
-      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon #{city} Vi que você se cadastrou para nosso curso gratuito, parabéns!"
+      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon %{city} Vi que você se cadastrou para nosso curso gratuito, parabéns!"
       main_copy_2: "Sempre organizamos oficinas e palestras gratuitas com conteúdos relevantes pra quem quer aprender a programar. O próximo acontece no %{meetup_time} : %{meetup_name}. Pensei que você pudesse achar interessante, será uma ótima oportunidade para aprender mais e conhecer outras pessoas! 🚀"
       main_copy_3: ""
       main_copy_link: "Cadastre-se abaixo se estiver interessado. 👇"
       main_copy_4: "Cheers!"
       main_copy_5: "%{meetup_host} e o time Le Wagon %{city}"
+      no_location: "Localização visível para os membros"
       cta: "Quero ir!"
       host_title: "Pergunte-nos qualquer coisa!"
       host_content: "Nossos workshops são sempre gratuitos e abertos a todos. Junte-se ao grupo no Meetup do Le Wagon %{city}, eu e todo o time do Le Wagon estamos aqui pra te receber!"

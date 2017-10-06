@@ -5,6 +5,9 @@ fr:
   time:
     formats:
       event: "le %e %B"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "De %l:%M %p"
+      newsletter_event_end_time: "à %l:%M %p"
   top_bar_react_message: Formez-vous à React + Redux
   top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
@@ -668,7 +671,7 @@ fr:
       subject: "Ne rate pas notre prochain événement gratuit à %{prospect_city} %{meetup_time}: %{meetup_name}!"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon!"
       title: "Ne rate pas notre prochain événement: %{meetup_name}"
-      schedule: "%{meetup_time} à "
+      schedule: "%{meetup_time}"
       main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
       main_copy_2: "Ce message pour te dire que nous organisons un workshop %{meetup_time}: %{meetup_name}. J'ai pensé que tu pourrais nous rejoindre pour en apprendre plus et rencontrer toute l'équipe du Wagon! 🚀"
       main_copy_3: "Merci de"
@@ -676,6 +679,7 @@ fr:
         "t'inscrire via le lien ci-dessous si ça te dit. 👇"
       main_copy_4: "Cheers!"
       main_copy_5: "%{meetup_host} et toute la team du Wagon %{city}"
+      no_location: "Lieu uniquement visible par les membres"
       cta: "Je serai là"
       host_title: "Pose-nous toutes tes questions !"
       host_content: "Tu es le/la bienvenu(e) à tous nos événements gratuits à %{city}, toute l'équipe et moi-même seront heureux de t'accueillir !"
