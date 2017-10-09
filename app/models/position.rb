@@ -4,18 +4,18 @@ class Position
 
   class RecordNotFound < Exception; end
 
-  attr_reader :title, :company_name, :company_url
+  attr_reader :title, :company_name, :company_url, :github_nickname
   delegate :name, :avatar_url, :camp, to: :user
   delegate :city, to: :camp
 
-  def initialize(hash)
+  def initialize(github_nickname, hash)
+    @github_nickname = github_nickname
     @title = hash['title']
     @company_name = hash['company_name']
     @company_url = hash['company_url']
-    @github_nickname = hash['github_nickname']
   end
 
-  def company_image(height = nil, width = nil, quality = 100)
+  def company_logo(height = nil, width = nil, quality = 100)
     proxy_url_with_signature \
       host: Rails.configuration.action_mailer.default_url_options[:host],
       url: "https://raw.githubusercontent.com/lewagon/www-images/master/companies/#{company_name.parameterize}.png",
@@ -25,8 +25,9 @@ class Position
   end
 
   def self.all
-    (POSITIONS || YAML.load_file(Rails.root.join("data/positions.yml"))).map do |position|
-      Position.new(position)
+    positions = (POSITIONS || YAML.load_file(Rails.root.join("data/positions.yml"))).with_indifferent_access
+    positions[:default].map do |github_nickname|
+      Position.new(github_nickname, positions[:positions][github_nickname])
     end
   end
 
