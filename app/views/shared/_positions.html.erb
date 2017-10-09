@@ -1,4 +1,4 @@
-<% positions = @client.positions %>
+<% positions = Position.all %>
 
 <% cache [ 'positions', positions, locale ] do %>
 <div class="positions-overlay">

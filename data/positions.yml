@@ -1,0 +1,349 @@
+# NOTE(ssaunier): add pictures in lewagon/www-images repo, `companies` folder.
+#                 Name will follow this convention: `#{company_name.parameterize}.png`
+
+- github_nickname: oliviergodement
+  title: Country Operations
+  company_name: Stripe
+  company_url: https://stripe.com
+
+- github_nickname: JeanEdern
+  title: Business Development
+  company_name: Algolia
+  company_url: https://www.algolia.com/
+
+# - title: Web Developer
+#   company:
+#     name: Compass
+#     url: https://www.compass.co/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/009/thumbnail/compass.png?1464353549
+#   alumni:
+#       github_nickname: louispinot
+#     first_name: Louis
+#     last_name: Pinot
+#     photo_path: v1473854138/j9o28xbm0bh3zmud7cao.png
+#     slug: '2'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: Instantly
+#     url: https://www.instant.ly/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/011/thumbnail/instantly.png?1464354242
+#   alumni:
+#       github_nickname: amelie-beurrier
+#     first_name: Amélie
+#     last_name: Beurrier
+#     photo_path: v1473854530/z3ba7ju0ugc2o7rd3uf8.jpg
+#     slug: '6'
+#     city: Paris
+# - title: Business Development
+#   company:
+#     name: Scalr
+#     url: http://www.scalr.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/012/thumbnail/scalr-bis.png?1464354546
+#   alumni:
+#       github_nickname: jbaptistebeck
+#     first_name: Jean-Baptiste
+#     last_name: Beck
+#     photo_path: v1473854070/ugbmfwuox4tayic18puc.jpg
+#     slug: '11'
+#     city: Paris
+# - title: Back-end Developer
+#   company:
+#     name: Save
+#     url: https://www.save.co/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/005/thumbnail/save.png?1448881918
+#   alumni:
+#       github_nickname: aliceclv
+#     first_name: Alice
+#     last_name: Clavel
+#     photo_path: v1488028177/vyzxou5dzo13mliptg27.png
+#     slug: '6'
+#     city: Paris
+# - title: Software Engineer
+#   company:
+#     name: Pisano
+#     url: http://www.pisano.co/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/010/thumbnail/pisano.png?1464354022
+#   alumni:
+#       github_nickname: NoryDev
+#     first_name: Fabien
+#     last_name: Loup
+#     photo_path: v1473854149/l4xt6mrlqvrlqxbjxx4i.jpg
+#     slug: '7'
+#     city: Brussels
+# - title: Product Manager
+#   company:
+#     name: Molotov
+#     url: http://www.molotov.tv/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/004/thumbnail/molotov.png?1448881928
+#   alumni:
+#       github_nickname: maxbrodi
+#     first_name: Maxime
+#     last_name: Braud
+#     photo_path: v1473854051/rin3eerd9hib31bsulfe.jpg
+#     slug: '10'
+#     city: Paris
+# - title: Front-end Developer
+#   company:
+#     name: KissKissBankBank
+#     url: https://www.kisskissbankbank.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/013/thumbnail/kisskiss.png?1465397406
+#   alumni:
+#       github_nickname: camilledel
+#     first_name: Camille
+#     last_name: Delbove
+#     photo_path: v1473854322/a8q0ucvunq7rsnetix6w.jpg
+#     slug: '15'
+#     city: Paris
+# - title: Back-end developer
+#   company:
+#     name: Event Corner
+#     url: http://www.event-corner.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/014/thumbnail/event.png?1465465934
+#   alumni:
+#       github_nickname: Michael3434
+#     first_name: Michael
+#     last_name: Monin
+#     photo_path: v1473854277/ihiug46tvxwk6vus4zqh.jpg
+#     slug: '17'
+#     city: Brussels
+# - title: FullStack developer
+#   company:
+#     name: Finexkap
+#     url: https://www.finexkap.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/015/thumbnail/finexkap.png?1465397716
+#   alumni:
+#       github_nickname: Sbfrr
+#     first_name: Sébastien
+#     last_name: Ferre
+#     photo_path: v1473854264/uqlaqumjg2yrg8k9kn47.png
+#     slug: '2'
+#     city: Paris
+# - title: Developer Ruby on Rails
+#   company:
+#     name: Brand and Celebrities
+#     url: http://brandandcelebrities.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/017/thumbnail/brandcelebrities.png?1465399508
+#   alumni:
+#       github_nickname: marinados
+#     first_name: Marina
+#     last_name: Starkova
+#     photo_path: v1473855096/xi4oczs2fhaimsknkycx.jpg
+#     slug: '8'
+#     city: Paris
+# - title: Backend Developer
+#   company:
+#     name: Aircall
+#     url: https://aircall.io/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/020/thumbnail/Aircall.png?1465898432
+#   alumni:
+#       github_nickname: tdeschamps
+#     first_name: Thomas
+#     last_name: Deschamps
+#     photo_path: v1473853854/uslxnem19laxuefgwtaz.jpg
+#     slug: '2'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: Heetch
+#     url: https://www.heetch.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/016/thumbnail/heetcha.png?1465399955
+#   alumni:
+#       github_nickname: LinSN
+#     first_name: Nordine
+#     last_name: Slimani
+#     photo_path: v1473854029/ngayxommm2yden3qlupl.jpg
+#     slug: '3'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: Artsper
+#     url: http://www.artsper.com/en
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/021/thumbnail/Rectangle_3_Copy_2___Bitmap.png?1467372767
+#   alumni:
+#       github_nickname: zonblar
+#     first_name: Mehdi
+#     last_name: Ayouche
+#     photo_path: v1473854478/l7rvccpfyn8itb4sac94.jpg
+#     slug: '18'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: Lucca
+#     url: http://www.lucca.fr/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/023/thumbnail/Rectangle_3_Copy___Bitmap.png?1467372816
+#   alumni:
+#       github_nickname: thomasjoet
+#     first_name: Thomas
+#     last_name: Joët
+#     photo_path: v1473854254/qdokpzouqs5wweemzqpr.jpg
+#     slug: '15'
+#     city: Paris
+# - title: Digital Marketing Manager
+#   company:
+#     name: Front
+#     url: https://frontapp.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/026/thumbnail/frontfront.png?1484926568
+#   alumni:
+#       github_nickname: OliveCas
+#     first_name: Olivier
+#     last_name: Casassus
+#     photo_path: v1483637948/vfr5jjjlp6yk0gizdh5n.jpg
+#     slug: '11'
+#     city: Paris
+# - title: Full Stack Developer
+#   company:
+#     name: Drivy
+#     url: https://www.drivy.com
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/027/thumbnail/drivy_logo.png?1485166590
+#   alumni:
+#       github_nickname: Jeanquetil
+#     first_name: Jean
+#     last_name: Anquetil
+#     photo_path: v1473855100/u8izdaugttvxlhf2beil.jpg
+#     slug: '30'
+#     city: Paris
+# - title: Front-end Developer
+#   company:
+#     name: Aircall
+#     url: https://aircall.io/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/020/thumbnail/Aircall.png?1465898432
+#   alumni:
+#       github_nickname: manoufeb
+#     first_name: Manou
+#     last_name: Febvret
+#     photo_path: v1473855074/cb9eu0ebswzor6enzntl.jpg
+#     slug: '30'
+#     city: Paris
+# - title: Junior Ruby Developer
+#   company:
+#     name: Kudoz
+#     url: http://www.getkudoz.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/001/thumbnail/kudoz.png?1448881908
+#   alumni:
+#       github_nickname: iliasHM
+#     first_name: Ilias
+#     last_name: Hicham
+#     photo_path: v1473854139/lcu3yjg6ycdfxhzwjmko.jpg
+#     slug: '6'
+#     city: Paris
+# - title: Strategic Partnerships Manager
+#   company:
+#     name: Doctolib
+#     url: https://www.doctolib.fr/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/028/thumbnail/doctolib_logo1.png?1484932977
+#   alumni:
+#       github_nickname: alicegigi
+#     first_name: Alice
+#     last_name: Gillet
+#     photo_path: v1473854364/xphu8yfb9f77zktap60c.jpg
+#     slug: '24'
+#     city: Paris
+# - title: Customer Success Manager
+#   company:
+#     name: Kameleoon
+#     url: http://www.kameleoon.com/fr/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/032/thumbnail/1464343533-a595585107acdf88728f61e630218435.png?1484933985
+#   alumni:
+#       github_nickname: miawarde
+#     first_name: Mia
+#     last_name: Wardé
+#     photo_path: v1473854646/vlkmlk59gy5d14dfjemr.jpg
+#     slug: '24'
+#     city: Paris
+# - title: Software Engineer
+#   company:
+#     name: Talent.io
+#     url: https://www.talent.io/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/029/thumbnail/lPS6ILYl.png?1484933695
+#   alumni:
+#       github_nickname: elacaille18
+#     first_name: Eric
+#     last_name: Lacaille
+#     photo_path: v1473854206/jvvm3sbal2ptln5svoc8.jpg
+#     slug: '24'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: FoodChéri
+#     url: https://www.foodcheri.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/031/thumbnail/images.png?1484933786
+#   alumni:
+#       github_nickname: syksteaz
+#     first_name: Edouard
+#     last_name: Winia
+#     photo_path: v1473855009/aoicpfzpehqgu7ldwz2x.jpg
+#     slug: '15'
+#     city: Paris
+# - title: Fullstack Developer
+#   company:
+#     name: Skello
+#     url: https://www.skello.io/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/030/thumbnail/Logo_skello_bleu_.937912883.png?1484933734
+#   alumni:
+#       github_nickname: ArianeCln
+#     first_name: Ariane
+#     last_name: Coulon
+#     photo_path: v1473854515/ytbfql5xsejobtapdedf.jpg
+#     slug: '18'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: Finalcad
+#     url: https://www.finalcad.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/035/thumbnail/FINALCAD_logo_blue-308603-smaller.png?1489765507
+#   alumni:
+#       github_nickname: NicoBiencourt
+#     first_name: Nicolas
+#     last_name: Biencourt
+#     photo_path: v1473854086/q5d6hpygyeaypaqgfz0s.jpg
+#     slug: '8'
+#     city: Paris
+# - title: Marketing Manager API
+#   company:
+#     name: Uber
+#     url: https://www.uber.com
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/036/thumbnail/logo_uber.png?1489765638
+#   alumni:
+#       github_nickname: Emerichenon
+#     first_name: Emeric
+#     last_name: Henon
+#     photo_path: v1473854813/htrbpsr8wh7xvil6knao.jpg
+#     slug: '30'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: PSafe
+#     url: http://www.psafe.com/en/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/038/thumbnail/logo_psafe.png?1493710749
+#   alumni:
+#       github_nickname: Louisrbrt
+#     first_name: Louis
+#     last_name: Robert
+#     photo_path: v1481195983/yg9rqatd4pdvd3tlaaqp.jpg
+#     slug: '43'
+#     city: Paris
+# - title: Data Scientist
+#   company:
+#     name: Happn
+#     url: https://www.happn.com/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/041/thumbnail/hpppppn.png?1502965707
+#   alumni:
+#       github_nickname: hugovandernotte
+#     first_name: Hugo
+#     last_name: Vandernotte
+#     photo_path: v1473854958/acsh6axrufeapirqpcm7.jpg
+#     slug: '30'
+#     city: Paris
+# - title: Product Manager
+#   company:
+#     name: Talent.io
+#     url: https://www.talent.io/
+#     logo: https://d1gofzrmx0fcbg.cloudfront.net/production/companies/logos/000/000/029/thumbnail/lPS6ILYl.png?1484933695
+#   alumni:
+#       github_nickname: gregcha
+#     first_name: Grégoire
+#     last_name: Charles
+#     photo_path: v1473853851/l1o2lhjlersqvkdhzy3w.jpg
+#     slug: '10'
+#     city: Paris
