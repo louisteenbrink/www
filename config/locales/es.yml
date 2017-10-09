@@ -1,7 +1,11 @@
+
 es:
   date:
     formats:
       apply: "%B %e, %Y"
+  time:
+    formats:
+      event: "el %e %B"
   top_bar_message: Descubre lo que nuestros alumnos han creado tras 9 semanas
   top_bar_cta: vea nuestras demos
   shared:
@@ -541,3 +545,43 @@ es:
       learn_cta_html: |
         <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
       learn_button: Get my invitation
+  prospect_mailer:
+    send_event:
+      subject: "Come to our next free event in %{prospect_city} on %{meetup_time}: %{meetup_name}!"
+      disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
+      title_html: |
+        <h1 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:31px;font-weight:bolder;line-height:1.3;margin:0 15px;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">Come to our free workshop:</h1>
+        <h1 style="Margin:0;Margin-bottom:10px;color:inherit;font-family:Helvetica,Arial,sans-serif;font-size:23px;font-weight:bolder;line-height:1.3;margin:0 15px;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">%{meetup_name}</h1>
+      schedule: "%{meetup_time}"
+      main_copy_html: |
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Hi there! It's %{meetup_host} from Le Wagon %{city}, I've seen you signed up to our online free track, contrats!</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">We're organising a pretty cool workshop on %{meetup_time}: %{meetup_name} I thought you may want to join us: it will be a good occasion for you to learn more and to meet Le Wagon team! 🚀</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Please
+      main_copy_link:
+        "sign up below if you're interested. 👇"
+      main_copy2_html: |
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">Cheers!</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:10px;opacity:.8;padding:0;text-align:left">%{meetup_host} and Le Wagon %{city} team</p>
+      cta: "I will be there"
+      host_title: "Ask us anything!"
+      host_content: "Feel free to join us anytime for our free events at Le Wagon %{city}, the team and I will always be happy to welcome you!"
+      host_cta: "Learn more about our Meetups"
+    send_content:
+      subject: "We are bringing you the latest news, tutorials and insights on coding and entrepreneurship!"
+      disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
+      title: "You're just at the beginning of your journey"
+      main_copy_html: |
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Hi there! It's %{meetup_host} from Le Wagon %{city}, I've seen you signed up to our online free track, congrats!</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">I also wanted to share with you the latest news, tutorials and insights on coding and entrepreneurship! 🚀</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">You will find bellow tons of useful articles and videos, feel free to explore! 👇</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">Cheers!</p>
+        <p style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:lighter;line-height:25px!important;margin:15px 15px 0 15px;margin-bottom:20px;opacity:.8;padding:0;text-align:left">%{meetup_host} and Le Wagon %{city} team</p>
+      card_1_title: "Watch our videos and get new skills"
+      card_1_content: "Learn from the best developers & entrepreneurs"
+      cta_1: "Watch"
+      card_2_title: "Empower yourself reading ous stories and ressources"
+      card_2_content: "Get inspired by our amazing community"
+      cta_2: "Read"
+      host_title: "Don't miss our tech events in %{city}"
+      host_content: "We organise free evening workshops and talks with famous entrepreneurs during the week, open to everyone. In the heart of %{city}, I will welcome you there!"
+      host_cta: "Learn more about our Meetups"

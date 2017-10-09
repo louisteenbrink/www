@@ -7,6 +7,14 @@ pt-BR:
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
     order: [day, month, year]
+  time:
+    formats:
+      event: "dia %e no %B"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "%l:%M"
+      newsletter_event_end_time: "%l:%M"
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
   top_bar_message: Veja o que nossos alunos podem fazer em 9 semanas
   top_bar_cta: assista ao demoday
   shared:
@@ -528,3 +536,38 @@ pt-BR:
       learn_cta_html: |
         <strong>Peça seu convite</strong> para nosso <strong>curso gratuito online</strong> e aprenda HTML, CSS, Javascript, Github, APIs e muito mais
       learn_button: Quero meu convite!
+  prospect_mailer:
+    send_event:
+      subject: "Venha a um de nossos workshops gratuitos para %{prospect_city} %{meetup_time}: %{meetup_name}!"
+      disclaimer: "Obrigado por fazer o Le Wagon Freetrack."
+      title: "Venha a um de nossos workshops gratuitos: %{meetup_name}"
+      schedule: "%{meetup_time}"
+      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon %{city} Vi que você se cadastrou para nosso curso gratuito, parabéns!"
+      main_copy_2: "Sempre organizamos oficinas e palestras gratuitas com conteúdos relevantes pra quem quer aprender a programar. O próximo acontece no %{meetup_time} : %{meetup_name}. Pensei que você pudesse achar interessante, será uma ótima oportunidade para aprender mais e conhecer outras pessoas! 🚀"
+      main_copy_3: ""
+      main_copy_link: "Cadastre-se abaixo se estiver interessado. 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} e o time Le Wagon %{city}"
+      no_location: "Localização visível para os membros"
+      cta: "Quero ir!"
+      host_title: "Pergunte-nos qualquer coisa!"
+      host_content: "Nossos workshops são sempre gratuitos e abertos a todos. Junte-se ao grupo no Meetup do Le Wagon %{city}, eu e todo o time do Le Wagon estamos aqui pra te receber!"
+      host_cta: "Saiba mais sobre nossos Meetups"
+    send_content:
+      subject: "As últimas dicas e novidades em programação e empreendedorismo!"
+      disclaimer: "Obrigado por se cadastrar no Le Wagon Freetrack."
+      title: "Você está apenas no começo de sua jornada!"
+      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon %{city}! Vi que você se cadastrou para nosso curso gratuito, parabéns!"
+      main_copy_2: "Queria aprovitar pra compartilhar com você as últimas notícias, tutoriais e dicas sobre aprender a programar e empreendedorismo! 🚀"
+      main_copy_3: "Abaixo você vai encontrar uma tonelada de artigos e videos sobre estes assuntos. Explore! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} e o time do Le Wagon %{city}"
+      card_1_title: "Adquira novas habilidades, assista a nossos videos"
+      card_1_content: "Aprenda com os melhores desenvolvedores e empreendedores"
+      cta_1: "Watch"
+      card_2_title: "Artigos pensados para quem está começando a aprender a codar"
+      card_2_content: "Aprenda com quem já ensinou a mais de 2000 pessoas no mundo todo"
+      cta_2: "Apprends plus"
+      host_title: "Não perca nossos eventos para %{city}"
+      host_content: "Estamos sempre organizando eventos gratuitos para quem quer saber mais sobre programação e empreendedorismo, todo mundo é convidado! Te espero lá!"
+      host_cta: "Saiba mais sobre nossos meetups"

@@ -2,6 +2,12 @@ en:
   date:
     formats:
       apply: "%B %e, %Y"
+  time:
+    formats:
+      event: "%B %e"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "From %l:%M %p"
+      newsletter_event_end_time: "to %l:%M %p"
   top_bar_message: Discover what our students are able to build in only 10 days
   top_bar_cta: watch our demos
   shared:
@@ -658,8 +664,38 @@ en:
       learn_cta_html: |
         <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
       learn_button: Get my invitation
-
-
-
-
-
+  prospect_mailer:
+    send_event:
+      subject: "Come to our next free event in %{prospect_city} on %{meetup_time}: %{meetup_name}!"
+      disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
+      title: "Come to our free workshop: %{meetup_name}"
+      schedule: "%{meetup_time}"
+      main_copy_1: "Hi there! It's %{meetup_host} from Le Wagon %{city}, I've seen you signed up to our online free track, congrats!"
+      main_copy_2: "We're organising a pretty cool workshop on %{meetup_time}: %{meetup_name} I thought you may want to join us: it will be a good occasion for you to learn more and to meet Le Wagon team! 🚀"
+      main_copy_3: "Please"
+      main_copy_link: "sign up below if you're interested.👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} and Le Wagon %{city} team"
+      no_location: "Location visible to members"
+      cta: "I will be there"
+      host_title: "Ask us anything!"
+      host_content: "Feel free to join us anytime for our free events at Le Wagon %{city}, the team and I will always be happy to welcome you!"
+      host_cta: "Learn more about our Meetups"
+    send_content:
+      subject: "We are bringing you the latest news, tutorials and insights on coding and entrepreneurship!"
+      disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
+      title: "You're just at the beginning of your journey"
+      main_copy_1: "Hi there! It's %{meetup_host} from Le Wagon %{city}, I've seen you signed up to our online free track, congrats!"
+      main_copy_2: "I also wanted to share with you the latest news, tutorials and insights on coding and entrepreneurship! 🚀"
+      main_copy_3: "You will find bellow tons of useful articles and videos, feel free to explore! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} and Le Wagon %{city} team"
+      card_1_title: "Watch our videos and get new skills"
+      card_1_content: "Learn from the best developers & entrepreneurs"
+      cta_1: "Watch"
+      card_2_title: "Empower yourself reading ous stories and ressources"
+      card_2_content: "Get inspired by our amazing community"
+      cta_2: "Read"
+      host_title: "Don't miss our tech events in %{city}"
+      host_content: "We organise free evening workshops and talks with famous entrepreneurs during the week, open to everyone. In the heart of %{city}, I will welcome you there!"
+      host_cta: "Learn more about our Meetups"
