@@ -12,5 +12,5 @@ end
 
 Sidekiq::Cron::Job.create(
   name: 'Send Meetup invitation to last week Free Track subscribers',
-  cron: '0 0 11 ? * 6', # every friday at 11 am.
+  cron: '0 11 * * FRI',
   klass: 'ContactProspectsJob')
