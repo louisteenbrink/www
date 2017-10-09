@@ -41,6 +41,12 @@ Rails.application.routes.draw do
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
+  react_exceptions = ["pt-BR", "zh-CN", "es", "ja"]
+  react_exceptions.each do | exception |
+    get "#{exception.to_s}/react", to: redirect("/react")
+  end
+
+
   get 'ondemand/*path', to: redirect { |path_params, req| "https://ondemand.lewagon.com/#{req.fullpath.gsub("/ondemand/", "")}" }
   get 'codingstationparis', to: redirect('https://www.meetup.com/fr-FR/Le-Wagon-Paris-Coding-Station')
 
@@ -90,8 +96,8 @@ Rails.application.routes.draw do
     get "shop" => "pages#shop", as: :shop
     get "vae" => "pages#vae", as: :vae
     get "cgv" => "pages#cgv", as: :cgv
+    get "react" => "pages#react", locale: :en, as: :react
     get "lemoisducode" => "pages#lemoisducode", as: :lemoisducode
-    get "react" => "pages#react", locale: :fr, as: :react
     get "partners" => "pages#partners", as: :partners
 
     constraints(city_constraint) do
@@ -127,8 +133,6 @@ Rails.application.routes.draw do
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end
-
-  match "*path", to: "application#render_404", via: :all
 end
 
 # Create helper for static_routes

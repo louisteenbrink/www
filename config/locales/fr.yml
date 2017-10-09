@@ -2,6 +2,12 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
+  time:
+    formats:
+      event: "le %e %B"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "De %l:%M %p"
+      newsletter_event_end_time: "à %l:%M %p"
   top_bar_react_message: Formez-vous à React + Redux
   top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
@@ -364,10 +370,10 @@ fr:
           <i><strong>3</strong> workshops d’initiation au développement web et au workflow d’une startup</i>
       cta-objectives: Quel est votre projet ?
       watch: Notre dernier atelier "One Day of Code"
-      testimonial_1: Une journée très intéressante et très riche. Parfait pour découvrir le monde du web et de la programmation.
+      testimonial_1: Le code est un véritable langage et cette formation m'a permis d'en comprendre l'essentiel.
       testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir développeuse !
       testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
-      testimonial_4: 3 heures hyper denses, mais très intéressantes pour apprendre à coder une landing page. Ça donne envie d’approfondir le sujet !
+      testimonial_4: Une expérience client simple grâce à la pertinence des use case et sa traduction numérique c'est ce que cette belle formation nous rappelle.
       testimonial_5: Super onboarding dans l’univers du code, ça donne envie de poursuivre !
       with_us: Ils nous font confiance.
       testimonial_cta: Embarquez vos collaborateurs
@@ -392,7 +398,7 @@ fr:
       special_offer_no_vat: "soit €1,250 HT"
       react_cta: "Je réserve ma place"
       affix_title_date: "Prochaine session"
-      affix_date: "25 au 29 septembre"
+      affix_date: "26 au 30 mars 2018"
       affix_location: "16 villa Gaudelet, 75011 Paris"
       affix_title_participants: "Participants"
       affix_title_offer: "Offre spéciale"
@@ -660,3 +666,39 @@ fr:
       learn_cta_html: |
         <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
       learn_button: Get my invitation
+  prospect_mailer:
+    send_event:
+      subject: "Ne rate pas notre prochain événement gratuit à %{prospect_city} %{meetup_time}: %{meetup_name}!"
+      disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon!"
+      title: "Ne rate pas notre prochain événement: %{meetup_name}"
+      schedule: "%{meetup_time}"
+      main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
+      main_copy_2: "Ce message pour te dire que nous organisons un workshop %{meetup_time}: %{meetup_name}. J'ai pensé que tu pourrais nous rejoindre pour en apprendre plus et rencontrer toute l'équipe du Wagon! 🚀"
+      main_copy_3: "Merci de"
+      main_copy_link:
+        "t'inscrire via le lien ci-dessous si ça te dit. 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} et toute la team du Wagon %{city}"
+      no_location: "Lieu uniquement visible par les membres"
+      cta: "Je serai là"
+      host_title: "Pose-nous toutes tes questions !"
+      host_content: "Tu es le/la bienvenu(e) à tous nos événements gratuits à %{city}, toute l'équipe et moi-même seront heureux de t'accueillir !"
+      host_cta: "En savoir plus sur nos Meetups"
+    send_content:
+      subject: "Découvre les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat"
+      disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
+      title: "Tu n'es encore qu'au début du voyage"
+      main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
+      main_copy_2: "Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat! 🚀"
+      main_copy_3: "Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} et toute la team du Wagon %{city}"
+      card_1_title: "Regarde nos vidéos et monte en compétence"
+      card_1_content: "Apprends des meilleurs devs et entrepreneurs"
+      cta_1: "Regarde nos tutos"
+      card_2_title: "Va plus loin en explorant nos ressources et tutoriels"
+      card_2_content: "Inspire-toi de notre communauté"
+      cta_2: "Apprends plus"
+      host_title: "Ne rate pas nos événements tech à %{city}"
+      host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à %{city}. Tout le monde est le bienvenu!"
+      host_cta: "En savoir plus sur nos Meetups"

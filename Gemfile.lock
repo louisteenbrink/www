@@ -6,6 +6,14 @@ GIT
       cloudinary (~> 1.1.0)
       rails (>= 3.2)
 
+GIT
+  remote: git://github.com/lewagon/mailkick.git
+  revision: b24babbd6b078a299d1874eea22f56ffaf0ecc45
+  specs:
+    mailkick (0.2.0)
+      activesupport
+      safely_block (>= 0.1.1)
+
 GEM
   remote: https://rubygems.org/
   remote: https://rails-assets.org/
@@ -49,6 +57,11 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
+    ahoy_email (0.5.0)
+      addressable
+      nokogiri
+      rails
+      safely_block (>= 0.1.1)
     annotate (2.7.1)
       activerecord (>= 3.2, < 6.0)
       rake (>= 10.4, < 12.0)
@@ -119,6 +132,7 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     email_validator (1.6.0)
       activemodel
+    errbase (0.0.3)
     erubi (1.6.1)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -353,6 +367,8 @@ GEM
     rubyzip (1.2.1)
     rufus-scheduler (3.3.2)
       tzinfo
+    safely_block (0.2.0)
+      errbase
     sass (3.5.1)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -416,6 +432,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ahoy_email
   annotate
   appsignal
   attachinary!
@@ -445,6 +462,7 @@ DEPENDENCIES
   letter_opener
   linkedin-oauth2 (~> 1.0)
   lodash-rails
+  mailkick!
   meetup_client
   mini_magick
   momentjs-rails
