@@ -1,6 +1,7 @@
 class ContactProspectJob < ActiveJob::Base
   def perform(prospect_id)
     @prospect = Prospect.find(prospect_id)
+    return if @prospect.city.blank? # Can't send the prospect email.
 
     city = AlumniClient.new.city(@prospect.city) # TODO(krokrob): change this
     client = MeetupApiClient.new(city.meetup_id)
