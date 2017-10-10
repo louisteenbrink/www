@@ -3,7 +3,9 @@
     Digest::SHA1.hexdigest(@top_bar_cta || ""),
     @hide_language_selector,
     @city_groups.map { |cg| cg[:cities].map { |c| c.name } }.flatten,
+    params[:controller],
     params[:action],
+    params[:city],
     Static::ONDEMAND_TRACKS.map { |track| track[:slug] },
     I18n.locale ] do %>
 

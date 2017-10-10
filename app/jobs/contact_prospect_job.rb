@@ -16,6 +16,10 @@ class ContactProspectJob < ActiveJob::Base
       : send_content
   end
 
+  rescue_from(Net::SMTPSyntaxError) do |exception|
+    # Do nothing, email must be wrong.
+  end
+
   private
 
   def send_event
