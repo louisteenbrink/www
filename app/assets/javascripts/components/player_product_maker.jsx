@@ -9,7 +9,7 @@ class PlayerProductMaker extends React.Component {
 
   render() {
     var title = this.props.maker.name;
-    var maker_picture = this.props.maker.official_photo_url.replace('http://', 'https://');
+    var maker_picture = this.props.maker.official_avatar_url.replace('http://', 'https://');
     return (
       <li>
         <img src={maker_picture} className="team-member"

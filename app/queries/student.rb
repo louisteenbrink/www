@@ -5,7 +5,7 @@ module Student
         id
         name
         github_nickname
-        official_photo_url
+        official_avatar_url
       }
     }
   GRAPHQL
@@ -18,7 +18,7 @@ module Student
         first_name
         last_name
         name
-        avatar_url
+        official_avatar_url
         camp {
           slug
           city {
