@@ -5,7 +5,7 @@ module Student
         id
         name
         github_nickname
-        avatar_url
+        official_photo_url
       }
     }
   GRAPHQL

@@ -51,7 +51,7 @@
   <div class="students-container">
     <% students.each do |student| %>
       <div class="student-info">
-        <img src=<%= student.avatar_url.gsub('http://', 'https://') %> class="student-picture"/>
+        <img src=<%= student.official_photo_url.gsub('http://', 'https://') %> class="student-picture"/>
         <p class="student-name"><%= student.name %></p>
       </div>
     <% end %>
