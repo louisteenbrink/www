@@ -2,7 +2,7 @@ class ProspectsController < ApplicationController
   def create
     @prospect = Prospect.find_or_create_by(email: params[:prospect][:email], from_path: params[:prospect][:from_path], city: params[:prospect][:city])
     if @prospect.valid?
-      ProspectMailer.invite(@prospect).deliver_later
+      ProspectMailer.invite(@prospect.id).deliver_later
       # Global NL
       SubscribeToNewsletter.new(@prospect.email).run({
         FROM_PATH: @prospect.from_path,

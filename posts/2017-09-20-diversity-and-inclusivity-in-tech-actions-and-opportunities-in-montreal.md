@@ -3,7 +3,6 @@ layout: post
 title: "Diversity and inclusivity in tech: Actions and opportunities in Montreal"
 date: 2017-08-11
 author: mg
-pushed: true
 labels:
   - lifestyle
 thumbnail: 2017-09-20-diversity-and-inclusivity-in-tech-actions-and-opportunities-in-montreal.jpg

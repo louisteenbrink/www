@@ -1,7 +1,7 @@
 ---
 layout: story
 title: Diego van Dyk, Cofounder Numooh
-alumnus_gh_nickname: diegolearnstocode
+alumnus_github_nickname: diegolearnstocode
 date: 2017-08-15T14:37:14Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/017/cover/test-2.jpg?1502809326
 company_slug: numooh
@@ -9,7 +9,7 @@ company_slug: numooh
 
 ## What brought you to study at Le Wagon?
 
-Having worked in commerce for most of my professional career, in large companies such as Casino Groups and other smaller startup initiatives as project leader, I was always in contact with development teams, working closely on product development and product roadmaps, but always with a business perspective and never with a product development perspective. 
+Having worked in commerce for most of my professional career, in large companies such as Casino Groups and other smaller startup initiatives as project leader, I was always in contact with development teams, working closely on product development and product roadmaps, but always with a business perspective and never with a product development perspective.
 
 That lack of insight into the inner workings of the product made me go out and look for ways to learn more about product development and programming skills, not only for corporate product management, but also for my own startup aspirations.
 

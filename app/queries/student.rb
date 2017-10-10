@@ -9,4 +9,23 @@ module Student
       }
     }
   GRAPHQL
+
+  UserQuery = Kitt::Client.parse <<-'GRAPHQL'
+    query($github_nickname: String!) {
+      user: user(github_nickname: $github_nickname) {
+        id
+        github_nickname
+        first_name
+        last_name
+        name
+        avatar_url
+        camp {
+          slug
+          city {
+            name
+          }
+        }
+      }
+    }
+  GRAPHQL
 end

@@ -1,7 +1,7 @@
 ---
 layout: story
 title: After Le Wagon, I joined Stripe to work on Operations in France.
-alumnus_gh_nickname: oliviergodement
+alumnus_github_nickname: oliviergodement
 date: 2015-11-05T17:44:00Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/004/cover/cover-olivier.jpg?1446745432
 company_slug: stripe
@@ -23,7 +23,7 @@ After leaving my startup, I gained interest in the API and developers market. It
 
 ### How does Le Wagon stand out from similar programs in Europe?
 
-The program has two key strengths: 
+The program has two key strengths:
 
 - A very demanding curriculum that teaches in-depth programming basics and software architecture
 - A very hands-on approach focusing on product development's methodology and workflow (heroku, git, etc.)

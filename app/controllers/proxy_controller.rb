@@ -20,7 +20,7 @@ class ProxyController < ActionController::Base
       expires_in 1.month, public: true
       send_data image.blob, type: image.type, filename: image.name, disposition: :inline
     end
-  rescue URI::InvalidURIError, JSON::ParserError
+  rescue URI::InvalidURIError, OpenURI::HTTPError
     head 404
   end
 
@@ -31,6 +31,9 @@ class ProxyController < ActionController::Base
     %i(url height width quality signature).each do |key|
       params[key] = result[key.to_s] if result[key.to_s]
     end
+  rescue JSON::ParserError
+    render plain: 'Invalid Request', status: 400
+    return false
   end
 
   def set_proxy_service

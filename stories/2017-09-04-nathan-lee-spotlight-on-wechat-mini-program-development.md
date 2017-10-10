@@ -1,7 +1,7 @@
 ---
 layout: story
 title: Spotlight on Wechat Mini Program Development
-alumnus_gh_nickname: kwnath
+alumnus_github_nickname: kwnath
 date: 2017-09-04T08:12:24Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/020/cover/nathan-lee.jpg?1504512744
 company_slug: freelancer

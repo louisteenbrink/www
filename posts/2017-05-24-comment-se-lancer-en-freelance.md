@@ -6,7 +6,6 @@ date: 24-05-2017
 author: cedric
 labels:
   - workshop
-pushed: true
 thumbnail: 2017-05-24-comment-se-lancer-en-freelance.jpg
 description: "Les raisons qui poussent à apprendre à coder sont multiples.
 Pour certains, cela va leur permettre de monter leurs projets entrepreneuriaux de façon autonome, tandis que d'autres le font pour doper leur set de compétences afin de rejoindre une startup tech.

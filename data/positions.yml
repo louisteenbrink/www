@@ -1,0 +1,123 @@
+default:
+  - oliviergodement
+  - JeanEdern
+  - louispinot
+  - amelie-beurrier
+  - jbaptistebeck
+  - aliceclv
+  - NoryDev
+  - maxbrodi
+  - camilledel
+  - Michael3434
+  - Sbfrr
+  - marinados
+  - tdeschamps
+  - LinSN
+  - zonblar
+  - thomasjoet
+  - OliveCas
+  - Jeanquetil
+  - manoufeb
+  - iliasHM
+  - alicegigi
+  - miawarde
+  - elacaille18
+  - syksteaz
+  - ArianeCln
+  - NicoBiencourt
+  - Emerichenon
+  - Louisrbrt
+  - hugovandernotte
+  - gregcha
+
+positions:
+  oliviergodement:
+    title: Country Operations
+    company_slug: stripe
+  JeanEdern:
+    title: Business Development
+    company_slug: algolia
+  louispinot:
+    title: Web Developer
+    company_slug: compass
+  amelie-beurrier:
+    title: Product Manager
+    company_slug: instantly
+  jbaptistebeck:
+    title: Business Development
+    company_slug: scalr
+  aliceclv:
+    title: Back-end Developer
+    company_slug: save
+  NoryDev:
+    title: Software Engineer
+    company_slug: pisano
+  maxbrodi:
+    title: Product Manager
+    company_slug: molotov
+  camilledel:
+    title: Front-end Developer
+    company_slug: kisskissbankbank
+  Michael3434:
+    title: Back-end developer
+    company_slug: eventcorner
+  Sbfrr:
+    title: FullStack developer
+    company_slug: finexkap
+  marinados:
+    title: Developer Ruby on Rails
+    company_slug: brandandcelebrities
+  tdeschamps:
+    title: Backend Developer
+    company_slug: aircall
+  LinSN:
+    title: Product Manager
+    company_slug: heetch
+  zonblar:
+    title: Product Manager
+    company_slug: artsper
+  thomasjoet:
+    title: Product Manager
+    company_slug: lucca
+  OliveCas:
+    title: Digital Marketing Manager
+    company_slug: front
+  Jeanquetil:
+    title: Full Stack Developer
+    company_slug: drivy
+  manoufeb:
+    title: Front-end Developer
+    company_slug: aircall
+  iliasHM:
+    title: Junior Ruby Developer
+    company_slug: kudoz
+  alicegigi:
+    title: Strategic Partnerships Manager
+    company_slug: doctolib
+  miawarde:
+    title: Customer Success Manager
+    company_slug: kameleoon
+  elacaille18:
+    title: Software Engineer
+    company_slug: talentio
+  syksteaz:
+    title: Product Manager
+    company_slug: foodcheri
+  ArianeCln:
+    title: Fullstack Developer
+    company_slug: skello
+  NicoBiencourt:
+    title: Product Manager
+    company_slug: finalcad
+  Emerichenon:
+    title: Marketing Manager API
+    company_slug: uber
+  Louisrbrt:
+    title: Product Manager
+    company_slug: psafe
+  hugovandernotte:
+    title: Data Scientist
+    company_slug: happn
+  gregcha:
+    title: Product Manager
+    company_slug: talentio

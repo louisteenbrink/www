@@ -1,176 +1,87 @@
-- slug: getkudoz-com
-  name: Kudoz
-  url: http://www.getkudoz.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/001/original/kudoz.png?1448881908
-- slug: forestadmin-com
-  name: eFounders
-  url: http://beta.forestadmin.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/002/original/eFounders.png?1448881876
-- slug: stripe-com
+# NOTE(ssaunier): add pictures in lewagon/www-images repo, `companies` folder.
+#                 Name will follow this convention: `#{company_name.parameterize}.png`
+
+stripe:
   name: Stripe
   url: https://stripe.com
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/003/original/stripe.png?1448881938
-- slug: molotov-tv
+algolia:
+  name: Algolia
+  url: https://www.algolia.com
+compass:
+  name: Compass
+  url: https://www.compass.co
+instantly:
+  name: Instantly
+  url: https://www.instant.ly
+scalr:
+  name: Scalr
+  url: http://www.scalr.com
+save:
+  name: Save
+  url: https://www.save.co
+pisano:
+  name: Pisano
+  url: http://www.pisano.co
+molotov:
   name: Molotov
   url: http://www.molotov.tv/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/004/original/molotov.png?1448881928
-- slug: save-co
-  name: Save
-  url: https://www.save.co/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/005/original/save.png?1448881918
-- slug: hubum-com
-  name: Hubum
-  url: http://www.hubum.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/006/original/hubum_small.jpg?1459254198
-- slug: clustree-com
-  name: Clustree
-  url: https://www.clustree.com/fr
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/007/original/clustree-bis.png?1464354627
-- slug: algolia-com
-  name: Algolia
-  url: https://www.algolia.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/008/original/algolia.png?1464351582
-- slug: compass-co
-  name: Compass
-  url: https://www.compass.co/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/009/original/compass.png?1464353549
-- slug: pisano-co
-  name: Pisano
-  url: http://www.pisano.co/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/010/original/pisano.png?1464354022
-- slug: instant-ly
-  name: Instantly
-  url: https://www.instant.ly/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/011/original/instantly.png?1464354242
-- slug: scalr-com
-  name: Scalr
-  url: http://www.scalr.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/012/original/scalr-bis.png?1464354546
-- slug: kisskissbankbank-com
+kisskissbankbank:
   name: KissKissBankBank
-  url: https://www.kisskissbankbank.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/013/original/kisskiss.png?1465397406
-- slug: event-corner-com
+  url: https://www.kisskissbankbank.com
+eventcorner:
   name: Event Corner
-  url: http://www.event-corner.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/014/original/event.png?1465465934
-- slug: finexkap-com
+  url: http://www.event-corner.com
+finexkap:
   name: Finexkap
-  url: https://www.finexkap.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/015/original/finexkap.png?1465397716
-- slug: heetch-com
-  name: Heetch
-  url: https://www.heetch.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/016/original/heetcha.png?1465399955
-- slug: brandandcelebrities-com
+  url: https://www.finexkap.com
+brandandcelebrities:
   name: Brand and Celebrities
-  url: http://brandandcelebrities.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/017/original/brandcelebrities.jpg?1465399508
-- slug: dubsmash-com
-  name: Dubsmash
-  url: https://www.dubsmash.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/018/original/dubsss.png?1465465876
-- slug: af83-com
-  name: Af83
-  url: http://af83.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/019/original/affff83.png?1465492248
-- slug: aircall-io
+  url: http://brandandcelebrities.com
+aircall:
   name: Aircall
-  url: https://aircall.io/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/020/original/Aircall.png?1465898432
-- slug: artsper-com
+  url: https://aircall.io
+heetch:
+  name: Heetch
+  url: https://www.heetch.com
+artsper:
   name: Artsper
   url: http://www.artsper.com/en
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/021/original/Rectangle_3_Copy_2___Bitmap.png?1467372767
-- slug: wesave-fr
-  name: WeSave
-  url: https://www.wesave.fr/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/022/original/Screen_Shot_2016-07-01_at_13.17.28.png?1467372324
-- slug: lucca-fr
+lucca:
   name: Lucca
-  url: http://www.lucca.fr/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/023/original/Rectangle_3_Copy___Bitmap.png?1467372816
-- slug: lewagon-com
-  name: Le Wagon
-  url: http://www.lewagon.com
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/024/original/Rectangle_3_Copy_2___logo_red_circle.png?1467373094
-- slug: frontapp-com
+  url: http://www.lucca.fr
+front:
   name: Front
-  url: https://frontapp.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/026/original/frontfront.png?1484926568
-- slug: drivy-com
+  url: https://frontapp.com
+drivy:
   name: Drivy
   url: https://www.drivy.com
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/027/original/drivy_logo.jpg?1485166590
-- slug: doctolib-fr
+kudoz:
+  name: Kudoz
+  url: http://www.getkudoz.com
+doctolib:
   name: Doctolib
-  url: https://www.doctolib.fr/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/028/original/doctolib_logo1.png?1484932977
-- slug: talent-io
-  name: Talent.io
-  url: https://www.talent.io/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/029/original/lPS6ILYl.jpg?1484933695
-- slug: skello-io
-  name: Skello
-  url: https://www.skello.io/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/030/original/Logo_skello_bleu_.937912883.png?1484933734
-- slug: foodcheri-com
-  name: FoodChéri
-  url: https://www.foodcheri.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/031/original/images.png?1484933786
-- slug: kameleoon-com
+  url: https://www.doctolib.fr
+kameleoon:
   name: Kameleoon
-  url: http://www.kameleoon.com/fr/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/032/original/1464343533-a595585107acdf88728f61e630218435.jpeg?1484933985
-- slug: digitalskillsbar-com
-  name: Digital Skills Bar
-  url: http://digitalskillsbar.com/realisations.html
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/033/original/logo_digitalskillsbar.jpg?1487692740
-- slug: headstartapp-com
-  name: Headstart App
-  url: http://www.headstartapp.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/034/original/logo_headstartapp.jpg?1487955235
-- slug: finalcad-com
+  url: http://www.kameleoon.com/fr
+talentio:
+  name: Talent.io
+  url: https://www.talent.io
+foodcheri:
+  name: FoodChéri
+  url: https://www.foodcheri.com
+skello:
+  name: Skello
+  url: https://www.skello.io
+finalcad:
   name: Finalcad
-  url: https://www.finalcad.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/035/original/FINALCAD_logo_blue-308603-smaller.png?1489765507
-- slug: uber-com
+  url: https://www.finalcad.com
+uber:
   name: Uber
   url: https://www.uber.com
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/036/original/logo_uber.jpg?1489765638
-- slug: fitle-com
-  name: Fitle
-  url: https://fitle.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/037/original/logo_fitle.jpg?1491824822
-- slug: psafe-com
+psafe:
   name: PSafe
-  url: http://www.psafe.com/en/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/038/original/logo_psafe.jpg?1493710749
-- slug: seraphin-be
-  name: Seraphin
-  url: https://seraphin.be/fr
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/039/original/logo-seraphin.png?1500561025
-- slug: numooh-com-br
-  name: Numooh
-  url: http://numooh.com.br/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/040/original/logo-numooh.jpg?1502807736
-- slug: happn-com
+  url: http://www.psafe.com/en
+happn:
   name: Happn
-  url: https://www.happn.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/041/original/hpppppn.png?1502965707
-- slug: hey-shop
-  name: HeyShop
-  url: http://hey.shop
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/042/original/heyshoplogowhite.jpg?1503506504
-- slug: spendesk-com
-  name: Spendesk
-  url: https://www.spendesk.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/043/original/logo-spendesk.jpg?1503668047
-- slug:
-  name: Freelancer
-  url:
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/044/original/nathan-lee-logo.png?1504518654
-- slug: fastnotas-com
-  name: FastNotas
-  url: https://fastnotas.com/
-  logo: https://d1gofzrmx0fcbg.cloudfront.net/development/companies/logos/000/000/045/original/logo-fastnotas.jpg?1505316721
+  url: https://www.happn.com

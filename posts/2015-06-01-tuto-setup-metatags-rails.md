@@ -5,7 +5,6 @@ author: cedric
 date: 01-06-2015
 labels:
   - tutorial
-pushed: true
 thumbnail: 2015-06-01-tuto-meta-tags.jpg
 description: Éléments indispensables pour obtenir un aperçu qualitatif de vos contenus sur les réseaux sociaux, nous vous proposons ce tutoriel pour suivre pas à pas le setup des Meta Tags dans une application Rails.
 ---

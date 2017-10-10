@@ -4,7 +4,6 @@ title: "Talk with Rodrigo Machado, cofunder at Catarse"
 youtube_slug: "Y1bRYSqtec8"
 date: 2017-09-21
 author: cedric
-pushed: true
 labels:
   - talk
 thumbnail: 2017-09-21-talk-with-rodrigo-machado-cofunder-at-catarse.md.jpg

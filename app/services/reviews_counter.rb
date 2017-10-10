@@ -4,6 +4,8 @@ class ReviewsCounter
   include Cache
 
   def review_count
+    return 0 if Rails.env.development?
+
     from_cache(:total_review_count) do
       puts "Fetching Review Count from CourseReport..."
       begin

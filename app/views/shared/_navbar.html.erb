@@ -3,7 +3,9 @@
     Digest::SHA1.hexdigest(@top_bar_cta || ""),
     @hide_language_selector,
     @city_groups.map { |cg| cg[:cities].map { |c| c.name } }.flatten,
+    params[:controller],
     params[:action],
+    params[:city],
     Static::ONDEMAND_TRACKS.map { |track| track[:slug] },
     I18n.locale ] do %>
 
@@ -64,6 +66,10 @@
                     <% if I18n.locale == :fr %>
                       <li>
                         <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 304px;" %>
+                      </li>
+                    <% elsif I18n.locale == :en %>
+                      <li>
+                        <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 323px; text-align: left;" %>
                       </li>
                     <% end %>
                     <% unless I18n.locale == :fr %>

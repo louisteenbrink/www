@@ -63,7 +63,7 @@ EOF
 
 ## Invoice
 
-Price: #{humanized_money_with_symbol price} TTC
+Price: #{price.currency.iso_code} #{humanized_money price}
 
 ## Referrer
 
