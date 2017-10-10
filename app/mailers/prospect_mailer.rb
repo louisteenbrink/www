@@ -27,6 +27,10 @@ class ProspectMailer < ApplicationMailer
       I18n.with_locale(@user_locale) do
         track user: @prospect
         mail \
+          from: I18n.t('prospect_mailer.send_event.from',
+                        meetup_host: @meetup_host["name"],
+                        prospect_city: @prospect.city.capitalize,
+                        email_city: @prospect.city),
           to: @prospect.email,
           subject: I18n.t('prospect_mailer.send_event.subject',
                           prospect_city: @prospect.city.capitalize,
@@ -51,6 +55,10 @@ class ProspectMailer < ApplicationMailer
       I18n.with_locale(@user_locale) do
         track user: @prospect
         mail \
+          from: I18n.t('prospect_mailer.send_event.from',
+                        meetup_host: @meetup_host["name"],
+                        prospect_city: @prospect.city.capitalize,
+                        email_city: @prospect.city),
           to: @prospect.email,
           subject: I18n.t('prospect_mailer.send_content.subject')
       end
