@@ -33,11 +33,11 @@ class Testimonial
   end
 
   def product
-    Kitt::Client.query(Product::Query, variables: { slug: @project_slug }).data.product
+    @product ||= Kitt::Client.query(Product::Query, variables: { slug: @project_slug }).data.product
   end
 
-  def batch_thumbnail
-    Kitt::Client.query(Batch::Query, variables: { slug: @batch_slug.to_s }).data.batch
+  def batch
+    @batch ||= Kitt::Client.query(Batch::Query, variables: { slug: @batch_slug.to_s }).data.batch
   end
 
   def picture_url(height, width, quality)

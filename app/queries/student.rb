@@ -15,6 +15,8 @@ module Student
       user: user(github_nickname: $github_nickname) {
         id
         github_nickname
+        first_name
+        last_name
         name
         avatar_url
         camp {

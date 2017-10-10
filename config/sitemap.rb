@@ -30,8 +30,7 @@ SitemapGenerator::Sitemap.create do
     add "fr/stories/#{github_nickname}", priority: 0.6
   end
 
-  require "blog"
-  Blog.new.all.each do |post|
+  Post.all.each do |post|
     add "blog/#{post.slug}", priority: 0.6
   end
 end

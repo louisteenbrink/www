@@ -1,7 +1,7 @@
 ---
 layout: story
-title: After meeting at Le Wagon, they have launched their own studio: Digital Skills Bar
-alumnus_gh_nickname: hugohow
+title: "After meeting at Le Wagon, they have launched their own studio: Digital Skills Bar"
+alumnus_github_nickname: hugohow
 date: 2017-02-21T15:15:38Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/009/cover/hugo_wilfried_1.jpg?1487690137
 company_slug: digital-skills-bar

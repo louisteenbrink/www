@@ -4,7 +4,6 @@ title: "Talk with Max Rofagha, Founder at Finimize"
 youtube_slug: Kgsak0j0jbE
 date: 2017-08-23
 author: arthur
-pushed: true
 labels:
   - talk
 thumbnail: 2017-08-23-talk-max-rofagha-founder-at-finimize-1.jpg

@@ -81,7 +81,7 @@
                     <h4><%= t('.watch', name: testimonial.first_name) %></h4>
                     <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.product.slug %>">
                       <% if testimonial.product.cover_picture_url.blank? %>
-                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.batch_thumbnail.meta_image_url %>);">
+                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.batch.meta_image_url %>);">
                       <% else %>
                         <div class="video-thumbnail" style="background-image: url(<%= thumbnail_url(testimonial.product) %>);">
                       <% end %>

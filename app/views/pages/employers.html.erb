@@ -14,7 +14,7 @@
   </div>
 </div>
 
-<% positions = Position.all.select { |position| %w(Uber Stripe Google Drivy Doctolib Aligolia Front Aircall).include?(position.company_name) } %>
+<% positions = Position.all.select { |position| %w(Uber Stripe Google Drivy Doctolib Aligolia Front Aircall).include?(position.company.name) } %>
 
 <div style="background: #F5F5F5; padding-bottom: 50px;">
   <div class="header" style="width:100%">
@@ -24,8 +24,8 @@
     <div class="enterprise-nav">
       <% first = true %>
       <% positions.each do |position| %>
-        <div class="img-card <%= 'active' if first %>" data-target="#<%= position.name.parameterize %>" data-toggle="tooltip" data-placement="top" title="<%= position.company_name %>">
-          <%= image_tag position.company_logo, width: 100 %>
+        <div class="img-card <%= 'active' if first %>" data-target="#<%= position.name.parameterize %>" data-toggle="tooltip" data-placement="top" title="<%= position.company.name %>">
+          <%= image_tag position.company.logo, width: 100 %>
         </div>
         <% first = false %>
     <% end %>
@@ -40,7 +40,7 @@
             <h4>
               Batch #<%= position.camp.slug %>, <strong><%= position.city.name %></strong>
             </h4>
-            <p class="alumni-title"><%= position.title %> <br>at <strong><a href="<%= position.company_url %>" target="_blank" class="company-link"><%= position.company_name %></a></strong></p>
+            <p class="alumni-title"><%= position.title %> <br>at <strong><a href="<%= position.company.url %>" target="_blank" class="company-link"><%= position.company.name %></a></strong></p>
             <a href="http://github.com/<%= position.github_nickname %>" target="_blank" class="github-link">
               <i class="fa fa-github"></i> Github profile
             </a>

@@ -1,18 +1,12 @@
-require "blog"
-
 class PostsController < ApplicationController
   before_action :hide_drift
 
   def index
     if request.format.html? || params[:post_page]
-      json_stories = @client.stories
-      stories = json_stories.map { |story| AlumniStory.new(story) }
-      articles = Blog.new.all
-      posts = (articles + stories).sort_by { |p| p.date }.reverse
-      @posts = posts.select(&:post?)
-      @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(3)
+      posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
+      @posts = Kaminari.paginate_array(posts.select(&:post?)).page(params[:post_page]).per(3)
       @videos = posts.select(&:video?)
-      @stories = @client.stories
+      @stories = posts.select(&:story?)
     end
 
     if request.format.html?
@@ -21,23 +15,20 @@ class PostsController < ApplicationController
   end
 
   def rss
-    json_stories = @client.stories
-    stories = json_stories.map { |story| AlumniStory.new(story) }
-    articles = Blog.new.all
-    @posts = (articles + stories).sort_by { |p| p.date }.reverse
+    @posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
     render layout: false
   end
 
   def show
-    @post = Blog.new.post(params[:slug])
-    posts = Blog.new.all
+    @post = Post.find(params[:slug])
+    posts = Post.all
     @videos = (posts.select(&:video?) - [ @post ]).sample(2)
     @posts = (posts.select(&:post?) - [ @post ]).sample(3)
     render_404 if @post.nil?
   end
 
   def videos
-    posts = Blog.new.all
+    posts = Post.all
     @videos = posts.select(&:video?)
     if params[:category].present?
       @videos = @videos.select { |post| post.labels.include? params[:category] }
@@ -46,11 +37,7 @@ class PostsController < ApplicationController
   end
 
   def all
-    json_stories = @client.stories
-    stories = json_stories.map { |story| AlumniStory.new(story) }
-    articles = Blog.new.all
-    posts = (articles + stories).sort_by { |p| p.date }.reverse
-
+    posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
     @posts = posts.select(&:post?)
     if params[:category].present?
       @posts = @posts.select { |post| post.labels.include? params[:category] }

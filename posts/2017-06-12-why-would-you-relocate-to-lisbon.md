@@ -5,7 +5,6 @@ author: shannon
 date: 12-06-2017
 labels:
   - lifestyle
-pushed: true
 thumbnail: 2017-06-12-why-lisbon-1.jpg
 description: Such was the question asked repeatly when I decided to move to the post-recession city in 2013. That question now has an obvious answer.
 ---

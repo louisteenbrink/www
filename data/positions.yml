@@ -1,6 +1,3 @@
-# NOTE(ssaunier): add pictures in lewagon/www-images repo, `companies` folder.
-#                 Name will follow this convention: `#{company_name.parameterize}.png`
-
 default:
   - oliviergodement
   - JeanEdern
@@ -35,122 +32,92 @@ default:
 
 positions:
   oliviergodement:
-    :title: Country Operations
-    :company_name: Stripe
-    :company_url: https://stripe.com
+    title: Country Operations
+    company_slug: stripe
   JeanEdern:
-    :title: Business Development
-    :company_name: Algolia
-    :company_url: https://www.algolia.com/
+    title: Business Development
+    company_slug: algolia
   louispinot:
-    :title: Web Developer
-    :company_name: Compass
-    :company_url: https://www.compass.co/
+    title: Web Developer
+    company_slug: compass
   amelie-beurrier:
-    :title: Product Manager
-    :company_name: Instantly
-    :company_url: https://www.instant.ly/
+    title: Product Manager
+    company_slug: instantly
   jbaptistebeck:
-    :title: Business Development
-    :company_name: Scalr
-    :company_url: http://www.scalr.com/
+    title: Business Development
+    company_slug: scalr
   aliceclv:
-    :title: Back-end Developer
-    :company_name: Save
-    :company_url: https://www.save.co/
+    title: Back-end Developer
+    company_slug: save
   NoryDev:
-    :title: Software Engineer
-    :company_name: Pisano
-    :company_url: http://www.pisano.co/
+    title: Software Engineer
+    company_slug: pisano
   maxbrodi:
-    :title: Product Manager
-    :company_name: Molotov
-    :company_url: http://www.molotov.tv/
+    title: Product Manager
+    company_slug: molotov
   camilledel:
-    :title: Front-end Developer
-    :company_name: KissKissBankBank
-    :company_url: https://www.kisskissbankbank.com/
+    title: Front-end Developer
+    company_slug: kisskissbankbank
   Michael3434:
-    :title: Back-end developer
-    :company_name: Event Corner
-    :company_url: http://www.event-corner.com/
+    title: Back-end developer
+    company_slug: eventcorner
   Sbfrr:
-    :title: FullStack developer
-    :company_name: Finexkap
-    :company_url: https://www.finexkap.com/
+    title: FullStack developer
+    company_slug: finexkap
   marinados:
-    :title: Developer Ruby on Rails
-    :company_name: Brand and Celebrities
-    :company_url: http://brandandcelebrities.com/
+    title: Developer Ruby on Rails
+    company_slug: brandandcelebrities
   tdeschamps:
-    :title: Backend Developer
-    :company_name: Aircall
-    :company_url: https://aircall.io/
+    title: Backend Developer
+    company_slug: aircall
   LinSN:
-    :title: Product Manager
-    :company_name: Heetch
-    :company_url: https://www.heetch.com/
+    title: Product Manager
+    company_slug: heetch
   zonblar:
-    :title: Product Manager
-    :company_name: Artsper
-    :company_url: http://www.artsper.com/en
+    title: Product Manager
+    company_slug: artsper
   thomasjoet:
-    :title: Product Manager
-    :company_name: Lucca
-    :company_url: http://www.lucca.fr/
+    title: Product Manager
+    company_slug: lucca
   OliveCas:
-    :title: Digital Marketing Manager
-    :company_name: Front
-    :company_url: https://frontapp.com/
+    title: Digital Marketing Manager
+    company_slug: front
   Jeanquetil:
-    :title: Full Stack Developer
-    :company_name: Drivy
-    :company_url: https://www.drivy.com
+    title: Full Stack Developer
+    company_slug: drivy
   manoufeb:
-    :title: Front-end Developer
-    :company_name: Aircall
-    :company_url: https://aircall.io/
+    title: Front-end Developer
+    company_slug: aircall
   iliasHM:
-    :title: Junior Ruby Developer
-    :company_name: Kudoz
-    :company_url: http://www.getkudoz.com/
+    title: Junior Ruby Developer
+    company_slug: kudoz
   alicegigi:
-    :title: Strategic Partnerships Manager
-    :company_name: Doctolib
-    :company_url: https://www.doctolib.fr/
+    title: Strategic Partnerships Manager
+    company_slug: doctolib
   miawarde:
-    :title: Customer Success Manager
-    :company_name: Kameleoon
-    :company_url: http://www.kameleoon.com/fr/
+    title: Customer Success Manager
+    company_slug: kameleoon
   elacaille18:
-    :title: Software Engineer
-    :company_name: Talent.io
-    :company_url: https://www.talent.io/
+    title: Software Engineer
+    company_slug: talentio
   syksteaz:
-    :title: Product Manager
-    :company_name: FoodChéri
-    :company_url: https://www.foodcheri.com/
+    title: Product Manager
+    company_slug: foodcheri
   ArianeCln:
-    :title: Fullstack Developer
-    :company_name: Skello
-    :company_url: https://www.skello.io/
+    title: Fullstack Developer
+    company_slug: skello
   NicoBiencourt:
-    :title: Product Manager
-    :company_name: Finalcad
-    :company_url: https://www.finalcad.com/
+    title: Product Manager
+    company_slug: finalcad
   Emerichenon:
-    :title: Marketing Manager API
-    :company_name: Uber
-    :company_url: https://www.uber.com
+    title: Marketing Manager API
+    company_slug: uber
   Louisrbrt:
-    :title: Product Manager
-    :company_name: PSafe
-    :company_url: http://www.psafe.com/en/
+    title: Product Manager
+    company_slug: psafe
   hugovandernotte:
-    :title: Data Scientist
-    :company_name: Happn
-    :company_url: https://www.happn.com/
+    title: Data Scientist
+    company_slug: happn
   gregcha:
-    :title: Product Manager
-    :company_name: Talent.io
-    :company_url: https://www.talent.io/
+    title: Product Manager
+    company_slug: talentio

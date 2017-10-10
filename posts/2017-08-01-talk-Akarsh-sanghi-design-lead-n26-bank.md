@@ -6,7 +6,6 @@ date: 01-08-2017
 author: sandrine
 labels:
   - talk
-pushed: true
 thumbnail: 2017-08-01-talk-Akarsh-sanghi-design-lead-n26-bank.jpg
 description: "N26 is clearly a well known disruptor in finance and banking which has made it's mark as a leading Fintech company. As the design lead we'll hear from Akarsh Sanghi what it takes to create a bank from scratch."
 ---

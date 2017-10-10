@@ -5,7 +5,6 @@ author: cedric
 date: 25-10-2014
 labels:
   - tutorial
-pushed: true
 thumbnail: 2014-10-25-ressources-dev-debutant.jpg
 description: "Suite à la vidéo - The Rocket Landing - voici un listing de plus d'une vingtaine d'outils et ressources (frameworks, extensions, banques d'images, bibliothèques de polices...) faciles à prendre en main afin d'optimiser le design de vos récentes créations."
 ---

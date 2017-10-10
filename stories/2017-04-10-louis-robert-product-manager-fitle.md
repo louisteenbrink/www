@@ -1,7 +1,7 @@
 ---
 layout: story
 title: Louis Robert, Product Manager at Fitle
-alumnus_gh_nickname: Louisrbrt
+alumnus_github_nickname: Louisrbrt
 date: 2017-04-10T11:49:48Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/014/cover/louis_robert_cover.jpg?1491825934
 company_slug: fitle
@@ -26,12 +26,12 @@ The teaching method is based on stacks that are built on top of each other. You 
 The whole experience was career -(life?)- changing for me. The community is very active, helping and fun. I met amazing people there, with great and inspiring stories. This is what Le Wagon is about. The people. I loved their passion and commitment. And beers are always fresh!
 
 <p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/louisrobert/louis_robert_2.jpg" alt="Louis Robert working at Fitle Paris office"></p>
- 
+
 ## What was the transition out of Le Wagon like? And what are you doing now?
 
 The transition was fast because I was focused. I only looked for Product Manager positions and intensively prepared myself in addition to Le Wagon training. In less than 3 weeks of research I got a job. I currently am the first Product Manager at [Fitle](https://www.fitle.com/).
 
-## How did attending at Le Wagon help you advance your career in product management?    
+## How did attending at Le Wagon help you advance your career in product management?
 
 Le Wagon taught me the technical knowledge I needed to bring a tangible value to a startup. Besides, the mindset they teach really helped me to get even more focused on what I have to do and what I should do first. Also, Le Wagon’s alumni network provides useful advice to successfully start your new life!
 

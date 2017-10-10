@@ -1,7 +1,7 @@
 ---
 layout: story
 title: Christos Dimitroulas, Developer at Headstart App
-alumnus_gh_nickname: cdimitroulas
+alumnus_github_nickname: cdimitroulas
 date: 2017-02-24T16:50:17Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/010/cover/cover_christos.jpg?1487956410
 company_slug: headstart-app

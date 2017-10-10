@@ -1,7 +1,7 @@
 ---
 layout: story
 title: From business school student to digital nomad & CEO at Hubum
-alumnus_gh_nickname: tchret
+alumnus_github_nickname: tchret
 date: 2016-03-25T10:50:04Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/007/cover/tchret_reverse.jpg?1464278707
 company_slug: hubum

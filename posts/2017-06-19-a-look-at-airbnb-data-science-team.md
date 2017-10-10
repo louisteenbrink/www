@@ -6,7 +6,6 @@ date: 19-06-2017
 author: cedric
 labels:
   - workshop
-pushed: true
 thumbnail: 2017-06-19-a-look-at-airbnb-data-science-team-1.jpg
 description: "In this talk, Martin Daniel, Data Scientist at Airbnb, will discuss Airbnb's emphasis on having an experimentation-centric culture and applying machine learning rigorously to address Airbnb's unique product challenges."
 ---

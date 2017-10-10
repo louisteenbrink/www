@@ -2,10 +2,10 @@
   <div class="row">
     <% pp.each do |post| %>
       <div class="col-sm-12 col-md-8 col-md-offset-2">
-        <a href="<%= post.is_a?(AlumniStory) ? story_path(post.slug) : post_path(post.slug) %>">
+        <a href="<%= post.is_a?(Story) ? story_path(post.slug) : post_path(post.slug) %>">
           <article class="post-thumbnail">
             <div class="card-author">
-              <% if post.is_a?(AlumniStory) %>
+              <% if post.is_a?(Story) %>
                <div class="background-author" style="background-image: url('<%= post.thumbnail %>')"></div>
               <% else %>
                  <div class="background-author" style="background-image: url('<%= post_image_url(post.thumbnail) %>')"></div>
@@ -14,7 +14,7 @@
                 <% author = post.author %>
                 <% if author %>
                   <div class="post-author">
-                    <% if post.is_a?(AlumniStory) %>
+                    <% if post.is_a?(Story) %>
                     <%= image_tag "https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/#{author[:picture]}", class: 'author-picture' %>
                     <% else %>
                       <% if author[:picture] %>
@@ -23,7 +23,7 @@
                     <% end %>
                     <div class="author-details">
                       <span class="author-name"><%= author[:fname] %> <%= author[:lname] %></span>
-                      <% if post.is_a?(AlumniStory) %>
+                      <% if post.is_a?(Story) %>
                         <i class="author-position">Batch #<%= author[:batch] %><br><small>in <%= author[:city] %></small></i>
                       <% end %>
                       <% if author[:position] %>

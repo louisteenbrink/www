@@ -5,7 +5,6 @@ author: cedric
 date: 03-07-2017
 labels:
   - lifestyle
-pushed: true
 thumbnail: 2017-06-28-ericeira-cover.jpg
 description: What a hell of a week it has been! For the first time ever we gathered all Le Wagon 57 drivers and teachers from all around the world in the same spot, at the same time.
 ---

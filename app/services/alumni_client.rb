@@ -5,11 +5,11 @@ class AlumniClient
     @base_url = ENV.fetch('ALUMNI_BASE_URL', 'http://alumni.lewagon.org/api/v1')
   end
 
-  def stories()
-    from_cache(:stories) do
-      get("#{@base_url}/stories")["stories"]
-    end
-  end
+  # def stories()
+  #   from_cache(:stories) do
+  #     get("#{@base_url}/stories")["stories"]
+  #   end
+  # end
 
   def random_stories(options = {})
     limit = options.fetch(:limit, 1)
@@ -19,11 +19,11 @@ class AlumniClient
     end
   end
 
-  def story(slug)
-    from_cache(:stories, slug) do
-      get "#{@base_url}/stories/#{slug}"
-    end
-  end
+  # def story(slug)
+  #   from_cache(:stories, slug) do
+  #     get "#{@base_url}/stories/#{slug}"
+  #   end
+  # end
 
   def alumni
     from_cache(:alumni) do

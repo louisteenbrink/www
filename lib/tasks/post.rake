@@ -40,7 +40,6 @@ namespace :post do
       post.puts "youtube_slug: TODO" if video
       post.puts "date: #{date}"
       post.puts "author: TODO"
-      post.puts "pushed: true"
       post.puts "labels:"
       post.puts "  - TODO"
       post.puts "thumbnail: TODO"

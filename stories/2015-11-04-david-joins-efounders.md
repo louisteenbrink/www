@@ -1,7 +1,7 @@
 ---
 layout: story
 title: From student at Le Wagon to CEO at Forest Admin, a new eFounders project
-alumnus_gh_nickname: davidverbustel
+alumnus_github_nickname: davidverbustel
 date: 2015-11-04T17:01:08Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/003/cover/forest_reverse.jpg?1464278841
 company_slug: efounders

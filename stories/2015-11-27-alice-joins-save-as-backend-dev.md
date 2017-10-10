@@ -1,7 +1,7 @@
 ---
 layout: story
 title: From Business School to junior backend dev at Save
-alumnus_gh_nickname: aliceclv
+alumnus_github_nickname: aliceclv
 date: 2015-11-27T11:04:49Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/006/cover/stories_alice_clavel_copy.jpg?1448622595
 company_slug: save

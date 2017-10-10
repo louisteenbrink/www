@@ -5,7 +5,6 @@ author: cedric
 date: 19-11-2014
 labels:
   - tutorial
-pushed: true
 thumbnail: 2014-11-19-tuto-gh-pages.jpg
 description: Vous souhaitez tester une idée ou mettre votre portfolio en ligne ? Alors ce tuto sur Github Pages est fait pour vous. En seulement quelques clics, vous pourrez héberger gratuitement votre premier site statique intégralement customisable et le partager ensuite au gré de vos envies.
 ---

@@ -1,7 +1,7 @@
 ---
 layout: story
 title: Roger Scott, Product Manager at PSafe
-alumnus_gh_nickname: rogerpscott
+alumnus_github_nickname: rogerpscott
 date: 2017-05-02T07:43:34Z
 cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/015/cover/rogerscott-1.jpg?1493711014
 company_slug: psafe
