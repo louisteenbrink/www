@@ -538,6 +538,7 @@ pt-BR:
       learn_button: Quero meu convite!
   prospect_mailer:
     send_event:
+      from: "%{meetup_host} do Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Venha a um de nossos workshops gratuitos para %{prospect_city} %{meetup_time}: %{meetup_name}!"
       disclaimer: "Obrigado por fazer o Le Wagon Freetrack."
       title: "Venha a um de nossos workshops gratuitos: %{meetup_name}"
@@ -554,6 +555,7 @@ pt-BR:
       host_content: "Nossos workshops são sempre gratuitos e abertos a todos. Junte-se ao grupo no Meetup do Le Wagon %{city}, eu e todo o time do Le Wagon estamos aqui pra te receber!"
       host_cta: "Saiba mais sobre nossos Meetups"
     send_content:
+      from: "%{meetup_host} do Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "As últimas dicas e novidades em programação e empreendedorismo!"
       disclaimer: "Obrigado por se cadastrar no Le Wagon Freetrack."
       title: "Você está apenas no começo de sua jornada!"
