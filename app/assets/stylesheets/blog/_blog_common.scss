@@ -34,6 +34,14 @@
     -webkit-padding-start: 0px;
   }
 
+  ul.icon-list {
+    li {
+      padding: 0;
+      margin-right: 7px;
+      background-color: transparent;
+    }
+  }
+
   .section-title {
     display: flex;
     flex-direction: column;

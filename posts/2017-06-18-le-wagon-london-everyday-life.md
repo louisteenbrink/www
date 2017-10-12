@@ -4,6 +4,7 @@ title: "Everyday life at Le Wagon London"
 youtube_slug: "qL5zJRj7Cec"
 date: 18-06-2017
 author: arthur
+locale: "en"
 labels:
   - backstage
 pushed: true

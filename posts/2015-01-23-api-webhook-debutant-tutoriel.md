@@ -4,6 +4,7 @@ title: "Tout ce que vous avez toujours voulu savoir sur les APIs"
 author: sebastien
 date: 23-01-2015
 youtube_slug: "0FQ6w4CO5Nw"
+locale: "fr"
 labels:
   - workshop
 pushed: true

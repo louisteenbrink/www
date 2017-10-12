@@ -4,6 +4,7 @@ title: "Everyday life at Le Wagon London"
 youtube_slug: "2EmXDFfH4L8"
 date: 10-03-2017
 author: mg
+locale: "en"
 labels:
   - backstage
 pushed: true

@@ -4,6 +4,7 @@ title: "Talk avec Alix de Sagazan, Co-fondatrice de AB Tasty"
 youtube_slug: "nUktNwiebJY"
 date: 26-06-2016
 author: cedric
+locale: "fr"
 labels:
   - talk
 pushed: true

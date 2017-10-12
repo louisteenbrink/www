@@ -4,6 +4,7 @@ title: "5 idées reçues sur l'UX Design"
 author: cedric
 date: 08-06-2015
 youtube_slug: "WcUTwhnsTDs"
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2015-06-08-meetup-ux-design.jpg

@@ -4,6 +4,7 @@ title: "Introduction et implémentation de Google Analytics"
 author: sebastien
 date: 31-10-2014
 youtube_slug: "0aaKXA6zxnY"
+locale: "fr"
 labels:
   - workshop
 pushed: true

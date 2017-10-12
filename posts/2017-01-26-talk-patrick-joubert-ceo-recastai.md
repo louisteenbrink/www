@@ -4,6 +4,7 @@ title: "Talk avec Patrick Joubert, Recast.AI"
 youtube_slug: "gl4j-XHnl0w"
 date: 26-01-2017
 author: cedric
+locale: "fr"
 labels:
   - talk
 pushed: true

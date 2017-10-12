@@ -94,6 +94,12 @@ class Blog
       end
     end
 
+    def locale
+      locale = metadata[:locale].to_s.underscore.downcase
+      locale_icon = "icon_flag_#{locale}"
+      return locale_icon
+    end
+
     def labels
       metadata[:labels]
     end

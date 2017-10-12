@@ -5,6 +5,7 @@ youtube_slug: AOJbfqJKWes
 date: 2017-08-09
 author: sandrine
 pushed: true
+locale: "en"
 labels:
   - talk
 thumbnail: 2017-08-09-talk-with-slade-sundar-1.jpg
