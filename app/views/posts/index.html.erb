@@ -20,11 +20,9 @@
           <%= link_to post_path video.slug do %>
             <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
               <ul class="icon-list">
-                <% if video.locale.present? %>
-                  <li>
-                    <%= render "shared/#{video.locale}" %>
-                  </li>
-                <% end %>
+                <li>
+                  <%= render "shared/#{video.locale}" %>
+                </li>
                 <li>
                   <?xml version="1.0" encoding="UTF-8"?>
                   <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -103,11 +101,9 @@
                 <%= link_to post_path video.slug do %>
                   <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
                     <ul class="icon-list">
-                      <% if video.locale.present? %>
-                        <li>
-                          <%= render "shared/#{video.locale}" %>
-                        </li>
-                      <% end %>
+                      <li>
+                        <%= render "shared/#{video.locale}" %>
+                      </li>
                       <li>
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
