@@ -61,10 +61,22 @@
     box-shadow: 3px 6px 16px 0px rgba(0, 0, 0, 0.1);
     z-index: 2;
 
-    h1 {
-      margin: 0 0 20px;
-      font-size: 1.5em;
-      font-weight: 900;
+    .video-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+
+      @media(max-width: 520px) {
+        svg {
+          display: none;
+        }
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 1.5em;
+        font-weight: 900;
+      }
     }
 
     i {

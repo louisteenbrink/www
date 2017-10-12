@@ -4,6 +4,7 @@ title: "Coding Bootcamp Review - Le Wagon Barcelona"
 youtube_slug: "0mqW6JGFDd4"
 date: 16-03-2017
 author: mg
+locale: "en"
 labels:
   - backstage
 pushed: true

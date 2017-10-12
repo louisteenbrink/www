@@ -4,6 +4,7 @@ title: "Build your UI library with CSS"
 youtube_slug: "GNtohfhj_A4"
 date: 29-06-2016
 author: boris
+locale: "en"
 labels:
   - workshop
 pushed: true

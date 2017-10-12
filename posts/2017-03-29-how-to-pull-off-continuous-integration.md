@@ -4,6 +4,7 @@ title: "How to pull off Continuous Integration?"
 youtube_slug: "FjtpWhfLchg"
 date: 20-03-2017
 author: cedric
+locale: "fr"
 labels:
   - workshop
 pushed: true

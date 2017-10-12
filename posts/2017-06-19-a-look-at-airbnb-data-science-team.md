@@ -4,6 +4,7 @@ title: "Scaling Knowledge: A Look at Airbnb Data Science Team"
 youtube_slug: "6QVXPNrSbLU"
 date: 19-06-2017
 author: cedric
+locale: "en"
 labels:
   - workshop
 pushed: true
