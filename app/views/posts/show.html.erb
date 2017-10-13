@@ -8,7 +8,7 @@
 
 <% content_for(:image_url) do %>
   <% if @post.layout.to_sym == :video %>
-    <%= video_image_tag(@post.thumbnail) if @post.thumbnail %>
+    <%= video_image_url(@post.thumbnail) if @post.thumbnail %>
   <% else %>
     <%= post_image_url(@post.thumbnail) if @post.thumbnail %>
   <% end %>
@@ -58,7 +58,7 @@
         <!-- CONTENT - VIDEO CONTAINER -->
         <article class="blog-video col-md-8">
           <div class="video-main-wrapper">
-            <div id="main-container" class="video-main-container" style="background-image: url('<%= video_image_tag(@post.thumbnail)%>')">
+            <div id="main-container" class="video-main-container" style="background-image: url('<%= video_image_url(@post.thumbnail)%>')">
               <%= link_to "#", id: "play-button", class: "play-button" do %>
                 <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -148,7 +148,7 @@
               <% @videos.each do |video| %>
                 <div class="col-sm-6">
                   <%= link_to post_path video.slug do %>
-                    <div class="video-thumbnail" style="background-image: url('<%= video_image_tag(video.thumbnail) %>')">
+                    <div class="video-thumbnail" style="background-image: url('<%= video_image_url(video.thumbnail) %>')">
                       <?xml version="1.0" encoding="UTF-8"?>
                       <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">

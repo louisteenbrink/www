@@ -1,10 +1,12 @@
 ---
 layout: story
 title: Arthur Littmann, Web Developer and Teacher at Le Wagon
+date: '2017-03-13'
+thumbnail: arthur-littmann-web-developer-teacher.jpg
+description: Thanks to Le Wagon, in just a few weeks I learned how to code and completely
+  changed my career path. I am now a part of the team running the bootcamp!
 alumnus_github_nickname: arthur-littm
-date: 2017-03-13T16:41:32Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/012/cover/IMG_4458_copy.jpg?1489423290
-company_slug: le-wagon
+company_slug: lewagon
 ---
 
 ## Where were you before Le Wagon and what led you to enroll?

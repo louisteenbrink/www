@@ -1,6 +1,9 @@
 # NOTE(ssaunier): add pictures in lewagon/www-images repo, `companies` folder.
 #                 Name will follow this convention: `#{company_name.parameterize}.png`
 
+lewagon:
+  name: "Le Wagon"
+  url: https://www.lewagon.com
 stripe:
   name: Stripe
   url: https://stripe.com
@@ -85,3 +88,36 @@ psafe:
 happn:
   name: Happn
   url: https://www.happn.com
+fastnotas:
+  name: fastnotas
+  url: https://fastnotas.com
+headstart:
+  name: Headstart
+  url: https://www.headstartapp.com
+efounders:
+  name: eFounders
+  url: https://efounders.co
+numooh:
+  name: Numooh
+  url: http://www.numooh.com.br
+spendesk:
+  name: Spendesk
+  url: https://www.spendesk.com
+heyshop:
+  name: Hey Shop
+  url: http://hey.shop
+digitalskillsbar:
+  name: Digital Skills Bar
+  url: http://digitalskillsbar.com/realisations.html
+fitle:
+  name: Fitle
+  url: https://fitle.com
+mangrove:
+  name: Mangrove
+  url:
+seraphin:
+  name: Seraphin
+  url: https://seraphin.be/fr
+mangrove:
+  name: Mangrove
+  url: https://mangrove.io

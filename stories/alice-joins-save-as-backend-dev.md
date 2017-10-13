@@ -1,9 +1,11 @@
 ---
 layout: story
 title: From Business School to junior backend dev at Save
+date: '2015-11-27'
+thumbnail: alice-joins-save-as-backend-dev.jpg
+description: After Le Wagon, Alice works one month as freelance then joins Save, one
+  of the most promising french startups, as backend Rails developer.
 alumnus_github_nickname: aliceclv
-date: 2015-11-27T11:04:49Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/006/cover/stories_alice_clavel_copy.jpg?1448622595
 company_slug: save
 ---
 
@@ -44,4 +46,3 @@ Keep on coding!
 
 
 <p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/aliceclv/save_alice.jpg" alt="Alice Clavel at Save corner"></p>
-

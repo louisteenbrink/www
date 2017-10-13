@@ -14,7 +14,7 @@ class Company
   def logo(height = nil, width = nil, quality = 100)
     proxy_url_with_signature \
       host: Rails.configuration.action_mailer.default_url_options[:host],
-      url: "#{LOGO_FOLDER}/#{name.parameterize}.png",
+      url: "#{LOGO_FOLDER}/#{slug}.png",
       height: height,
       width: width,
       quality: quality

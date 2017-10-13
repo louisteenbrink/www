@@ -12,7 +12,13 @@ class ProxyService
   def image(url, height, width, quality)
     from_cache(:proxy, url, height, width, quality, expire: 1.month) do
       mm_image = MiniMagick::Image.open(url)
-      mm_image.resize "#{height}x#{width}" if height > 0 && width > 0
+      if height > 0 && width > 0
+        mm_image.resize "#{height}x#{width}"
+      elsif width > 0
+        mm_image.resize "x#{width}>"
+      elsif height > 0
+        mm_image.resize "#{height}x>"
+      end
       mm_image.format url.end_with?("png") ? "png" : "jpg"
       mm_image.quality quality == 0 ? DEFAULT_JPEG_QUALITY : quality
       mm_image.strip

@@ -1,9 +1,11 @@
 ---
 layout: story
 title: After Le Wagon, I joined Stripe to work on Operations in France.
+date: '2015-11-05'
+thumbnail: olivier-joined-stripe-as-user-ops-lead.jpg
+description: After completing Le Wagon program, I was hired by Stripe to work on Operations
+  in France.
 alumnus_github_nickname: oliviergodement
-date: 2015-11-05T17:44:00Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/004/cover/cover-olivier.jpg?1446745432
 company_slug: stripe
 ---
 
@@ -31,4 +33,3 @@ The program has two key strengths:
 I feel like the coding bootcamp industry in Europe is getting crowded. Le Wagon main strength lies in its solid program that teaches both essential technical skills and a strong product mindset.
 
 <p><img src="https://raw.githubusercontent.com/lewagon/www-images/master/testimonials/oliviergodement/ALEX6540.jpg" alt="Stripe Paris team work"></p>
-

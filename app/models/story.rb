@@ -9,14 +9,18 @@ class Story
     true
   end
 
+  def slug
+    @slug ||= (Pathname.new(@file).basename.to_s[/(.*)\.md/, 1])
+  end
+
   def company
-    @company ||= Company.find(company_slug)
+    @company ||= Company.find(metadata[:company_slug])
   end
 
   def alumnus
     @alumnus ||= Kitt::Client.query(
       Student::UserQuery,
-      variables: { github_nickname: alumnus_github_nickname }
+      variables: { github_nickname: metadata[:alumnus_github_nickname] }
     ).data.user
   end
 

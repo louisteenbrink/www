@@ -36,7 +36,7 @@
 <%= render partial: "shared/testimonials_new" %>
 
 <% cache [ 'stories', locale ] do %>
-  <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
+  <% stories = Story.random(limit: 2, excluded_slugs: session[:story_slugs]) %>
   <%= react_component 'Stories', {
       stories: enriched_stories(stories),
       storiesPath: alumni_path,

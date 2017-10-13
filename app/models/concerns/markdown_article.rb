@@ -16,6 +16,14 @@ module MarkdownArticle
       end
     end
 
+    def random(options = { limit: 1, excluded_slugs: [] })
+      stories = files
+      if options[:excluded_slugs].is_a? Array
+        stories = files.reject { |file| options[:excluded_slugs].include?(file) }
+      end
+      files.sample(options[:limit]).map { |file| self.new(file) }
+    end
+
     def find(slug)
       slug.gsub!(".html", '')
       files.each do |file|
@@ -32,10 +40,6 @@ module MarkdownArticle
   JEKYLL_HEADER_PATTERN = /---(.*)---/m
   JEKYLL_EXCERPT_SEPARATOR = /===/
   BLOG_IMAGE_PATH_PATTERN = /blog_image_path ([^\)"']*)/
-
-  def slug
-    @slug ||= (Pathname.new(@file).basename.to_s[/\d{4}-\d{2}-\d{2}-(.*)\.md/, 1])
-  end
 
   def date
     @date ||= Date.parse(Pathname.new(@file).basename.to_s[/(\d{4}-\d{2}-\d{2})-.*\.md/, 1])
@@ -85,8 +89,16 @@ module MarkdownArticle
     end
   end
 
-  def method_missing(m)
-    metadata[m]
+  def title
+    metadata[:title]
+  end
+
+  def description
+    metadata[:description]
+  end
+
+  def thumbnail
+    metadata[:thumbnail]
   end
 
   private

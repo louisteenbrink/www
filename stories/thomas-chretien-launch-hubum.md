@@ -1,10 +1,12 @@
 ---
 layout: story
 title: From business school student to digital nomad & CEO at Hubum
+date: '2016-03-25'
+thumbnail: thomas-chretien-launch-hubum.jpg
+description: Digital nomad at heart, design enthusiast and great fan of electro sound,
+  Thomas Chrétien just launched Hubum, a curation platform of Vinyl releases.
 alumnus_github_nickname: tchret
-date: 2016-03-25T10:50:04Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/007/cover/tchret_reverse.jpg?1464278707
-company_slug: hubum
+company_slug: mangrove
 ---
 
 ## Why did you join Le Wagon ?

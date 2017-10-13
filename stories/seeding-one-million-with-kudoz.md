@@ -1,11 +1,12 @@
 ---
 layout: story
 title: Seeding 1.2M with his startup built after Le Wagon
+date: '2015-09-22'
+thumbnail: seeding-one-million-with-kudoz.jpg
+description: Launched in 2014, Kudoz has just raised 1,2 million euros with Schibsted
+  Media Group, the investor of Leboncoin & MonsieurDrive.
 alumnus_github_nickname: olixier
-date: 2015-09-22T13:38:59Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/001/cover/xu.jpg?1445419932
 company_slug: kudoz
-city_slug: paris
 ---
 
 ### Why did you join Le Wagon?

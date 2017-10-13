@@ -1,9 +1,12 @@
 ---
 layout: story
-title: Two months after Le Wagon, I'm now junior Full-Stack Developer at Drivy
+title: 'Two months after Le Wagon, I''m now junior Full-Stack Developer at Drivy '
+date: '2017-01-20'
+thumbnail: lewagon-alumni-jean-anquetil-junior-full-stack-developer-drivy.jpg
+description: I'm very excited to be part of the team. It is my first job as a full-stack
+  developer and I feel grateful they trust me and give me the opportunity to improve
+  my skills.
 alumnus_github_nickname: Jeanquetil
-date: 2017-01-20T15:58:55Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/008/cover/drivy_jean_anquetil_1.jpg?1484927928
 company_slug: drivy
 ---
 

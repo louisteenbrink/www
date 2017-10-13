@@ -1,14 +1,23 @@
 <div class="story-banner-user">
-  <div class="story-user-avatar">
-    <%= cl_adaptive_image_tag story["alumni"]["photo_path"], width: 45, height: 45, crop: :fill %>
-  </div>
-  <div class="story-banner-infos">
-    <div class="story-user-name">
-      <span>Featuring</span> <%= story["alumni"]["first_name"]  %> <%= story["alumni"]["last_name"]  %>
+  <% if story.alumnus %>
+    <div class="story-user-avatar">
+      <%= link_to alumnus_profile_path(story.alumnus), target: :_blank do %>
+        <%= cl_adaptive_image_tag story.alumnus.avatar_url, width: 45, height: 45, crop: :fill %>
+      <% end %>
     </div>
-    <div class="story-user-batch">
-      Le Wagon, Batch #<%= story["alumni"]["slug"]  %>, <%= story["alumni"]["city"]  %>
+    <div class="story-banner-infos">
+      <div class="story-user-name">
+        <span>Featuring</span>
+        <%= link_to story.alumnus.name, alumnus_profile_path(story.alumnus), target: :_blank %>
+      </div>
+      <div class="story-user-batch">
+        Le Wagon, Batch #<%= story.alumnus.camp.slug %>, <%= story.alumnus.camp.city.name %>
+      </div>
     </div>
-  </div>
-  <img class="story-company-logo" src="<%= story["company"]["logo"] %>" />
+  <% end %>
+  <% if story.company %>
+    <img class="story-company-logo" src="<%= story.company.logo %>" />
+  <% else %>
+    <img src="<%= Company.find('lewagon').logo %>" alt="" class="story-company-logo">
+  <% end %>
 </div>

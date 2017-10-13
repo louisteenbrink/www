@@ -1,9 +1,10 @@
 ---
 layout: story
 title: Diego van Dyk, Cofounder Numooh
+date: '2017-08-15'
+thumbnail: diego-van-dyk-how-le-wagon-helped-me-launch-my-startup.jpg
+description: How Le Wagon helped me and my cofounders launch our startup.
 alumnus_github_nickname: diegolearnstocode
-date: 2017-08-15T14:37:14Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/017/cover/test-2.jpg?1502809326
 company_slug: numooh
 ---
 

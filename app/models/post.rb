@@ -12,4 +12,8 @@ class Post
   def story?
     false
   end
+
+  def slug
+    @slug ||= (Pathname.new(@file).basename.to_s[/\d{4}-\d{2}-\d{2}-(.*)\.md/, 1])
+  end
 end

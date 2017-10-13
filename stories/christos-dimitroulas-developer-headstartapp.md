@@ -1,10 +1,12 @@
 ---
 layout: story
 title: Christos Dimitroulas, Developer at Headstart App
+date: '2017-02-24'
+thumbnail: christos-dimitroulas-developer-headstartapp.jpg
+description: My role is developer in Javascript. It shows that though the course is
+  Ruby, we get taught the right mindset to become really diverse developers.
 alumnus_github_nickname: cdimitroulas
-date: 2017-02-24T16:50:17Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/010/cover/cover_christos.jpg?1487956410
-company_slug: headstart-app
+company_slug: headstart
 ---
 
 ## Where were you before Le Wagon and what let you to enroll?

@@ -1,10 +1,12 @@
 ---
 layout: story
 title: Spotlight on Wechat Mini Program Development
+date: '2017-09-04'
+thumbnail: nathan-lee-spotlight-on-wechat-mini-program-development.jpg
+description: 'After 2 months'' dedicated study, now shortly after finishing the bootcamp,
+  Nathan successfully landed several freelance projects of building wechat mini programs
+  while receiving other offers as developers. '
 alumnus_github_nickname: kwnath
-date: 2017-09-04T08:12:24Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/020/cover/nathan-lee.jpg?1504512744
-company_slug: freelancer
 ---
 
 Nathan Lee is a Le Wagon alumni from **batch 76** in Shanghai. Before he was working at a **Fin Tech startup**, but he wanted to combine **creativity** in a more **analytical way** in his career. After 2 months' dedicated study, now shortly after finishing the bootcamp, Nathan successfully landed several freelance projects of building **wechat mini programs** while receiving other **offers as developers**.
