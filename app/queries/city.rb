@@ -23,6 +23,8 @@ module City
         city_background_picture_url
         classroom_background_picture_url
         location_background_picture_url
+        mailchimp_list_id
+        mailchimp_api_key
         twitter_url
         apply_batches: apply_camps {
           id
