@@ -131,3 +131,21 @@ manu:
   position: Filmer
   company_website: lewagon.com/paris
   twitter: lewagonparis
+gustavo:
+  fname: Gustavo
+  lname: De Vita
+  picture: gustavo-devita.jpg
+  bio: "It was 2005 when Gus left a stable job as a Product Manager in São Paulo to follow his dreams in beautiful Barcelona. After obtaining a Master in Digital Arts, he worked as a freelance web-designer until he decided to pick up his career in product management working for online companies. In 2015 he quit his job as a VP Product and took out time to travel and improve his coding skills. Along his sabbatical journey the red van crossed his path. He didn't think twice, jumped behind the wheel and drove Le Wagon to Barcelona."
+  company: Le Wagon Barcelona
+  position: Driver
+  company_website: lewagon.com/barcelona
+  twitter: lewagonbcn
+mathieu:
+  fname: Mathieu
+  lname: Le Roux
+  picture: mathieu-leroux.jpg
+  bio: "Mathieu has been involved in tech startups for the last 15 years, having participated in Amazon France’s opening in 2000. After 6 years working as a VC in Paris, he came back to Brazil in 2012 to launch Deezer’s operations in Latam. Fan of travel and education, he spent a year travelling the world in 2004 and authored a book translated in 9 languages about sustainable innovation where he portrayed entrepreneurs changing the world."
+  company: Le Wagon São Paulo
+  position: Driver
+  company_website: lewagon.com/sao-paulo
+  twitter: lewagonbrazil
