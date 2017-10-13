@@ -4,6 +4,7 @@ title: "Le Wagon Talk - Romain Niccoli, cofondateur et CTO de Criteo"
 youtube_slug: "y-hnoSlvTlQ"
 date: 27-04-2015
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2015-04-27-video-talk-criteo.jpg

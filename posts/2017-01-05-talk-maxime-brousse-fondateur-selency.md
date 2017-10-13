@@ -4,6 +4,7 @@ title: "Talk avec Maxime Brousse, Co-fondateur de Selency"
 youtube_slug: "m_7y572Txyg"
 date: 05-01-2017
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2017-01-05-maxime-brousse-fondateur-selency.jpg

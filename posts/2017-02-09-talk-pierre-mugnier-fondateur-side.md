@@ -4,6 +4,7 @@ title: "Talk avec Pierre Mugnier, co-fondateur de Side"
 youtube_slug: "YieLGJixnHA"
 date: 09-02-2017
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2017-02-09-pierre-mugnier-fondateur-side.jpg

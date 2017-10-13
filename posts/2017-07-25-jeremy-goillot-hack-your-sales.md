@@ -4,6 +4,7 @@ title: "B2B - Hack your Sales!"
 youtube_slug: "HhALH1gNpek"
 date: 25-07-2017
 author: cedric
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2017-07-25-jeremy-goillot-hack-your-sales-1.jpg

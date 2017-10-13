@@ -4,6 +4,7 @@ title: "AperoTalk avec Marie Ekeland, coprésidente de France Digitale"
 author: cedric
 date: 14-04-2015
 youtube_slug: "ilmnecWZls8"
+locale: "fr"
 labels:
   - talk
 thumbnail: 2015-04-14-aperotalk-marie-ekeland.jpg

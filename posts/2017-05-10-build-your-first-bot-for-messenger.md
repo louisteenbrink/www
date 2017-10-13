@@ -4,6 +4,7 @@ title: "Build your first bot for Messenger"
 youtube_slug: "hmfh27oyBCM"
 date: 10-05-2017
 author: cedric
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2017-05-10-build-your-first-bot-for-messenger-1.jpg

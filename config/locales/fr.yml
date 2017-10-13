@@ -668,6 +668,7 @@ fr:
       learn_button: Get my invitation
   prospect_mailer:
     send_event:
+      from: "%{meetup_host} du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Ne rate pas notre prochain événement gratuit à %{prospect_city} %{meetup_time}: %{meetup_name}!"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon!"
       title: "Ne rate pas notre prochain événement: %{meetup_name}"
@@ -685,6 +686,7 @@ fr:
       host_content: "Tu es le/la bienvenu(e) à tous nos événements gratuits à %{city}, toute l'équipe et moi-même seront heureux de t'accueillir !"
       host_cta: "En savoir plus sur nos Meetups"
     send_content:
+      from: "%{meetup_host} du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Découvre les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
       title: "Tu n'es encore qu'au début du voyage"

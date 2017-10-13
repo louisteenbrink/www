@@ -4,6 +4,7 @@ title: "Talk avec Steve Anavi, cofondateur de Qonto"
 youtube_slug: "mZiUCl_C1As"
 date: 06-07-2017
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2017-07-06-talk-avec-steve-anavi-cofondateur-de-qonto.jpg

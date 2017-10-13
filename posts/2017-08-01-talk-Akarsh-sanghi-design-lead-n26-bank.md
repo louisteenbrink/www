@@ -4,6 +4,7 @@ title: "Talk with Akarsh Sanghi, Design Lead at N26 Bank"
 youtube_slug: "4XoafeipWiA"
 date: 01-08-2017
 author: sandrine
+locale: "en"
 labels:
   - talk
 thumbnail: 2017-08-01-talk-Akarsh-sanghi-design-lead-n26-bank.jpg

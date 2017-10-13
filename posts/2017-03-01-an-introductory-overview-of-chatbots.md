@@ -4,6 +4,7 @@ title: "An introductory overview of Chatbots"
 youtube_slug: "3eCa79NHZdU"
 date: 01-03-2017
 author: cedric
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2017-03-01-an-introductory-overview-of-chatbots-1.jpg

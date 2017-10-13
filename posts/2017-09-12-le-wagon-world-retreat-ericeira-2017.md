@@ -4,6 +4,7 @@ title: "Le Wagon first World Retreat was a blast"
 youtube_slug: VUwd0J86_14
 date: 2017-09-12
 author: manu
+locale: "en"
 labels:
   - backstage
 thumbnail: 2017-09-12-le-wagon-world-retreat-ericeira-2017.jpg

@@ -128,7 +128,10 @@
           <!-- CONTENT - VIDEO DETAILS -->
           <div class="video-description">
             <div class="video-specs">
-              <h1><%= @post.title %></h1>
+              <div class="video-title">
+                <%= render "shared/#{@post.locale}" %>
+                <h1><%= @post.title %></h1>
+              </div>
               <% if @post.content.blank? %>
                 <p><%= @post.description  %></p>
               <% else %>

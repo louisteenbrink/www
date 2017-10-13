@@ -4,6 +4,7 @@ title: "Comprendre et manager son équipe technique"
 author: cedric
 date: 25-03-2015
 youtube_slug: "sF_gTP9F1wo"
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2015-03-25-workshop-tech-team.jpg

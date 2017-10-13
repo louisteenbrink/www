@@ -1,9 +1,10 @@
 ---
 layout: video
-title: "Talk with Rodrigo Machado, cofunder at Catarse"
+title: "Talk with Rodrigo Machado, cofounder of Catarse"
 youtube_slug: "Y1bRYSqtec8"
 date: 2017-09-21
 author: cedric
+locale: "en"
 labels:
   - talk
 thumbnail: 2017-09-21-talk-with-rodrigo-machado-cofunder-at-catarse.md.jpg

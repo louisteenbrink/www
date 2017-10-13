@@ -4,6 +4,7 @@ title: "Le prototypage : de l'idée à votre premier MVP."
 author: cedric
 date: 05-12-2015
 youtube_slug: "6PjTA3zxF-c"
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2015-12-05-workshop-mvp.jpg

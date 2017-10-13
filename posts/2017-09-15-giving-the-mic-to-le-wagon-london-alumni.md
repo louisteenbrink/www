@@ -4,6 +4,7 @@ title: "Giving the mic to Le Wagon London Alumni"
 youtube_slug: "ZSuq6iTfQ6M"
 date: 2017-09-15
 author: arthur
+locale: "en"
 labels:
   - backstage
 thumbnail: 2017-09-15-giving-the-mic-to-le-wagon-london-alumni.jpg

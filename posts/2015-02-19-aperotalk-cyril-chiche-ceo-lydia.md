@@ -4,6 +4,7 @@ title: "AperoTalk avec Cyril Chiche, CEO Lydia"
 date: 19-02-2015
 youtube_slug: "5VycLeeX4Yg"
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2015-02-19-aperotalk-lydia.jpg

@@ -4,6 +4,7 @@ title: "Comment réussir la communication de sa start-up ?"
 youtube_slug: "XgIL8khfXBY"
 date: 17-05-2017
 author: cedric
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2017-05-17-comment-reussir-la-communication-de-sa-start-up-1.jpg
