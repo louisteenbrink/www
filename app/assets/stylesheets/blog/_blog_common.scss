@@ -34,11 +34,14 @@
     -webkit-padding-start: 0px;
   }
 
-  ul.icon-list {
-    li {
-      padding: 0;
-      margin-right: 7px;
-      background-color: transparent;
+  .catergory-items {
+    display: flex;
+
+    .flag {
+      width: 34px;
+      height: 23px;
+      margin-right: 10px;
+      border-radius: 2px;
     }
   }
 
