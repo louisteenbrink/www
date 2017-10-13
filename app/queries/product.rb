@@ -28,7 +28,7 @@ module Product
         makers: users {
           id
           name
-          avatar_url
+          official_avatar_url
         }
       }
     }

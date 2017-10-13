@@ -2,7 +2,6 @@
 layout: video
 title: "Talk with Max Rofagha, Founder at Finimize"
 youtube_slug: Kgsak0j0jbE
-date: 2017-08-23
 author: arthur
 locale: "fr"
 labels:

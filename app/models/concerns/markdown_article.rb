@@ -41,10 +41,6 @@ module MarkdownArticle
   JEKYLL_EXCERPT_SEPARATOR = /===/
   BLOG_IMAGE_PATH_PATTERN = /blog_image_path ([^\)"']*)/
 
-  def date
-    @date ||= Date.parse(Pathname.new(@file).basename.to_s[/(\d{4}-\d{2}-\d{2})-.*\.md/, 1])
-  end
-
   def excerpt
     @excerpt ||= markdown.render(article_content.split(JEKYLL_EXCERPT_SEPARATOR).first)
   end
@@ -89,16 +85,12 @@ module MarkdownArticle
     end
   end
 
-  def title
-    metadata[:title]
+  def locale_icon
+    "icon_flag_#{metadata[:locale]}"
   end
 
-  def description
-    metadata[:description]
-  end
-
-  def thumbnail
-    metadata[:thumbnail]
+  def method_missing(m)
+    metadata[m]
   end
 
   private

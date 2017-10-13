@@ -38,7 +38,6 @@ namespace :post do
       post.puts "layout: #{video ? 'video' : 'post'}"
       post.puts "title: \"#{title}\""
       post.puts "youtube_slug: TODO" if video
-      post.puts "date: #{date}"
       post.puts "author: TODO"
       post.puts "labels:"
       post.puts "  - TODO"

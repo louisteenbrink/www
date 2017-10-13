@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec François-Xavier Trancart, CEO d'Artsper"
 youtube_slug: "--VU9YLIaXE"
-date: 27-10-2016
 author: cedric
 locale: "fr"
 labels:

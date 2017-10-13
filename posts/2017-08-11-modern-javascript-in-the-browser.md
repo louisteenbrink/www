@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Modern Javascript in the Browser"
-date: 2017-08-11
 author: sebastien
 labels:
   - tutorial

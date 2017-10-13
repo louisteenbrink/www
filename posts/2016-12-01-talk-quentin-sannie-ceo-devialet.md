@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec Quentin Sannié de Devialet"
 youtube_slug: "5txkUjiuxkA"
-date: 01-12-2016
 author: cedric
 locale: "fr"
 labels:

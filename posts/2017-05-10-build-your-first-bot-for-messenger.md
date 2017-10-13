@@ -2,7 +2,6 @@
 layout: video
 title: "Build your first bot for Messenger"
 youtube_slug: "hmfh27oyBCM"
-date: 10-05-2017
 author: cedric
 locale: "fr"
 labels:

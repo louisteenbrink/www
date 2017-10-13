@@ -2,7 +2,6 @@
 layout: post
 title: "Lovely Hood, facilitez-vous les échanges de bons procédés entre voisins"
 author: edward
-date: 26-06-2015
 labels:
   - alumni
 thumbnail: 2015-06-26-lovelyhood.jpg

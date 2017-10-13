@@ -81,13 +81,13 @@ group :development, :test do
   gem 'letter_opener'
   gem 'rspec-rails', '~> 3.6'
   gem 'spring'
+  gem 'pry-byebug'
+  gem 'pry-rails'
 end
 
 group :development do
   gem 'annotate'
   gem 'httplog'
-  gem 'pry-byebug'
-  gem 'pry-rails'
   gem 'rack-mini-profiler'
   gem 'web-console'
 end

@@ -2,7 +2,6 @@ v---
 layout: video
 title: "Build your website with HTML & CSS"
 youtube_slug: "-9ZheXYOMeM"
-date: 10-06-2016
 author: boris
 locale: "fr"
 labels:

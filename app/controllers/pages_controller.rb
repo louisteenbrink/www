@@ -53,13 +53,17 @@ class PagesController < ApplicationController
   def stack
   end
 
+  def about
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
+  end
+
   def robots
     respond_to :text
     expires_in 6.hours, public: true
   end
 
   def program
-    @statistics = @client.statistics
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
   end
 
 

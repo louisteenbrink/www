@@ -5,7 +5,7 @@ class CachesController < ApplicationController
   class HttpAuthorizationHeaderException < Exception; end
 
   def destroy
-    AlumniClient.new.del_all
+    # TODO: Implement this for Kitt
     render body: nil
   end
 

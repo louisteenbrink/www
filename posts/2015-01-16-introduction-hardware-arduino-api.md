@@ -2,7 +2,6 @@
 layout: video
 title: "Introduction hardware et arduino avec HappyTrucs"
 author: cedric
-date: 16-01-2015
 youtube_slug: "eKgF0c9O-8g"
 locale: "fr"
 labels:

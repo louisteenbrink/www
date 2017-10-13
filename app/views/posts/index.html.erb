@@ -1,6 +1,6 @@
-<% count = 1000 %>
-<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
-  <% count = @statistics['alumni']['total'] %>
+<% count = 2000 %>
+<% if @statistics && @statistics.alumni_count && @statistics.alumni_count.is_a?(Fixnum) %>
+  <% count = @statistics.alumni_count %>
 <% end %>
 
 <% content_for(:title) { t ".title" } %>
@@ -21,7 +21,7 @@
             <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
               <ul class="icon-list">
                 <li>
-                  <%= render "shared/#{video.locale}" %>
+                  <%= render "shared/#{video.locale_icon}" %>
                 </li>
                 <li>
                   <?xml version="1.0" encoding="UTF-8"?>
@@ -102,7 +102,7 @@
                   <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
                     <ul class="icon-list">
                       <li>
-                        <%= render "shared/#{video.locale}" %>
+                        <%= render "shared/#{video.locale_icon}" %>
                       </li>
                       <li>
                         <?xml version="1.0" encoding="UTF-8"?>

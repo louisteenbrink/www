@@ -10,7 +10,7 @@ class PostsController < ApplicationController
     end
 
     if request.format.html?
-      @statistics = @client.statistics
+      @statistics = Kitt::Client.query(Statistics::Query).data.statistics
     end
   end
 

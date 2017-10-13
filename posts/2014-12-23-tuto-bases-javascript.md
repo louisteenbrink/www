@@ -2,7 +2,6 @@
 layout: video
 title: "JavaScript pour les débutants"
 author: cedric
-date: 23-12-2014
 youtube_slug: "cQZOfeKrWDs"
 locale: "fr"
 labels:

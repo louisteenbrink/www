@@ -2,7 +2,6 @@
 layout: video
 title: "Débuter avec le Big Data et le Lean Enterprise"
 author: cedric
-date: 08-01-2015
 youtube_slug: "OEFOwU0v-P4"
 locale: "fr"
 labels:

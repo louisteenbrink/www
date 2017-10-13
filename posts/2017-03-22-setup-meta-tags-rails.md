@@ -2,7 +2,6 @@
 layout: post
 title: "Social Meta Tags Setup in Rails"
 author: edward
-date: 22-03-2017
 labels:
   - tutorial
 thumbnail: 22-03-2017-rails-social-metatags.jpg

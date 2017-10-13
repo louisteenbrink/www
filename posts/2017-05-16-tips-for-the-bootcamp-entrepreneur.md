@@ -2,7 +2,6 @@
 layout: post
 title: "From Student to Startup Success: Tips For The Bootcamp Entrepreneur"
 author: mary
-date: 16-05-2017
 labels:
   - entrepreneurship
   - guest

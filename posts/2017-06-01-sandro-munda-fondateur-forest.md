@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec Sandro Munda, Fondateur de Forest Admin "
 youtube_slug: "JdOdzM20jcU"
-date: 01-06-2017
 author: cedric
 locale: "fr"
 labels:

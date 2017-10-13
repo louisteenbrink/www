@@ -2,7 +2,6 @@
 layout: video
 title: "Batch #93 - Everyday life at Le Wagon London"
 youtube_slug: tgPdjLlmSVI
-date: 2017-08-23
 author: arthur
 locale: "en"
 labels:

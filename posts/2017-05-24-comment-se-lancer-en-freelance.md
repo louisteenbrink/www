@@ -2,7 +2,6 @@
 layout: video
 title: "Comment se lancer en freelance ?"
 youtube_slug: "y_VYKu5xB1o"
-date: 24-05-2017
 author: cedric
 locale: "en"
 labels:

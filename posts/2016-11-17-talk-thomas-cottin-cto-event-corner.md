@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec Thomas Cottin, CTO & Co-Fondateur d'Event Corner"
 youtube_slug: "HTnY09A5qkM"
-date: 17-11-2016
 author: cedric
 locale: "fr"
 labels:

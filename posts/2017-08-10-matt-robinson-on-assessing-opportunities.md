@@ -2,7 +2,6 @@
 layout: post
 title: "Matt Robinson's notes on assessing opportunities"
 author: sandrine
-date: 10-08-2017
 labels:
   - entrepreneurship
 thumbnail: 2017-05-17-matt-robinsons-notes-on-assessing-opportunities.jpg

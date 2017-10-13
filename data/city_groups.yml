@@ -8,7 +8,7 @@
     <rect x="38" fill="#FF0000" width="18" height="40"/>
     </g>
     </svg>
-  cities:
+  city_slugs:
     - paris
     - bordeaux
     - lille
@@ -47,14 +47,16 @@
     <use xlink:href="#l" transform="scale(-1,1)" />
     </g>
     </svg>
-  cities:
+  city_slugs:
     - london
     - berlin
     - amsterdam
     - brussels
     - lisbon
-    - copenhagen
     - barcelona
+    - copenhagen
+    - budapest
+    - milan
 - group: World
   flag_svg: |
     <?xml version="1.0" encoding="iso-8859-1"?>
@@ -96,7 +98,7 @@
     <g>
     </g>
     </svg>
-  cities:
+  city_slugs:
     - montreal
     - sao-paulo
     - rio
@@ -104,3 +106,6 @@
     - shanghai
     - chengdu
     - tokyo
+    - bali
+    - sydney
+    - melbourne

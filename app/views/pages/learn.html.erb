@@ -19,13 +19,13 @@
           <%= f.input :email, as: :email, label: false, placeholder: 'you@gmail.com', wrapper: false, error: false %>
           <div class="city-dropdown-wrapper">
             <%= f.input :city,
-              collection: @cities.sort_by { |c| c['name'] },
-              label_method: lambda { |c| c['name'] },
-              value_method: lambda { |c| c['slug'] },
+              collection: @cities.sort_by(&:name),
+              label_method: :name,
+              value_method: :slug,
               label: false,
               wrapper: false,
               include_blank: false,
-              selected: @cities.find { |c| c['slug'] == params[:city] } ? params[:city] : 'paris' %>
+              selected: @cities.find { |c| c.slug == params[:city] } ? params[:city] : 'paris' %>
           </div>
           <%= f.input :from_path, as: :hidden %>
           <%= f.submit 'Get my invitation', class: 'btn btn-danger', id: 'prospect_submit' %>

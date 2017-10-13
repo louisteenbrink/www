@@ -2,7 +2,7 @@
   <% if story.alumnus %>
     <div class="story-user-avatar">
       <%= link_to alumnus_profile_path(story.alumnus), target: :_blank do %>
-        <%= cl_adaptive_image_tag story.alumnus.avatar_url, width: 45, height: 45, crop: :fill %>
+        <%= cl_adaptive_image_tag story.alumnus.official_avatar_url, width: 45, height: 45, crop: :fill %>
       <% end %>
     </div>
     <div class="story-banner-infos">
@@ -15,9 +15,5 @@
       </div>
     </div>
   <% end %>
-  <% if story.company %>
-    <img class="story-company-logo" src="<%= story.company.logo %>" />
-  <% else %>
-    <img src="<%= Company.find('lewagon').logo %>" alt="" class="story-company-logo">
-  <% end %>
+  <img class="story-company-logo" src="<%= story.company.logo %>" />
 </div>

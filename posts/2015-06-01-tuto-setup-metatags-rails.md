@@ -2,7 +2,6 @@
 layout: post
 title: "Le setup des Meta Tags dans Rails"
 author: cedric
-date: 01-06-2015
 labels:
   - tutorial
 thumbnail: 2015-06-01-tuto-meta-tags.jpg

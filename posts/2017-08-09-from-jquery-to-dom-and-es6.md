@@ -2,7 +2,6 @@
 layout: post
 title: "From jQuery to DOM and ES6"
 author: sebastien
-date: 17-07-2017
 labels:
   - tutorial
 thumbnail: 2017-08-09-from-jquery-to-dom-and-es6.jpg

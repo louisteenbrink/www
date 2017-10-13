@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Diversity and inclusivity in tech: Actions and opportunities in Montreal"
-date: 2017-08-11
 author: mg
 labels:
   - lifestyle

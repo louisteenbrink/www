@@ -5,7 +5,7 @@ module Teacher
         id
         name
         github_nickname
-        avatar_url
+        official_avatar_url
         lecturer
         twitter_url
         bio_en

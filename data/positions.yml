@@ -3,7 +3,7 @@ default:
   - JeanEdern
   - louispinot
   - amelie-beurrier
-  - jbaptistebeck
+  - jeanbaptistebeck
   - aliceclv
   - NoryDev
   - maxbrodi
@@ -43,7 +43,7 @@ positions:
   amelie-beurrier:
     title: Product Manager
     company_slug: instantly
-  jbaptistebeck:
+  jeanbaptistebeck:
     title: Business Development
     company_slug: scalr
   aliceclv:

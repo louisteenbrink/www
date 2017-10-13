@@ -9,12 +9,20 @@ class Story
     true
   end
 
+  def video?
+    false
+  end
+
   def slug
     @slug ||= (Pathname.new(@file).basename.to_s[/(.*)\.md/, 1])
   end
 
+  def date
+    @date ||= Date.parse(metadata[:date])
+  end
+
   def company
-    @company ||= Company.find(metadata[:company_slug])
+    @company ||= (Company.find(metadata[:company_slug]) || Company.find('lewagon'))
   end
 
   def alumnus
@@ -37,9 +45,32 @@ class Story
     {
       fname: alumnus.first_name,
       lname: alumnus.last_name,
-      picture: alumnus.avatar_url,
+      picture: alumnus.official_avatar_url,
       batch: alumnus.camp.slug,
       city: alumnus.camp.city.name
+    }
+  end
+
+  def as_json(options = {})
+    {
+      slug: slug,
+      thumbnail: thumbnail,
+      title: title,
+      description: description,
+      company: {
+        url: company.url,
+        logo: company.logo
+      },
+      alumnus: {
+        first_name: alumnus.first_name,
+        official_avatar_url: alumnus.official_avatar_url,
+        camp: {
+          slug: alumnus.camp.slug
+        },
+        city: {
+          name: alumnus.camp.city.name
+        }
+      }
     }
   end
 end

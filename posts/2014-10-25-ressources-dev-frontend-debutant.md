@@ -2,7 +2,6 @@
 layout: post
 title: "La boîte à outils du dev front débutant"
 author: cedric
-date: 25-10-2014
 labels:
   - tutorial
 thumbnail: 2014-10-25-ressources-dev-debutant.jpg

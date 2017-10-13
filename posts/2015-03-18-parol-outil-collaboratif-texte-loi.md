@@ -2,7 +2,6 @@
 layout: post
 title: "Parol, le Github de l'Assemblée Nationale"
 author: cedric
-date: 18-03-2015
 labels:
   - alumni
 thumbnail: 2015-18-03-projet-parol.jpg

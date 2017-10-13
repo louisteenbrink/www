@@ -2,7 +2,7 @@
     Digest::SHA1.hexdigest(@top_bar_message || ""),
     Digest::SHA1.hexdigest(@top_bar_cta || ""),
     @hide_language_selector,
-    @city_groups.map { |cg| cg[:cities].map { |c| c.name } }.flatten,
+    @city_groups,
     params[:controller],
     params[:action],
     params[:city],
