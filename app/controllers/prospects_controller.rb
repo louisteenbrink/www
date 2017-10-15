@@ -18,7 +18,7 @@ class ProspectsController < ApplicationController
       # City NL
       if params[:prospect][:city]
         city = Kitt::Client.query(City::Query, variables: { id: @prospect.city }).data.city
-        if city.mailchimp_list_id
+        if city.mailchimp_list_id.present? && city.mailchimp_list_id.present?
           SubscribeToNewsletter.new(@prospect.email,
             list_id: city.mailchimp_list_id, api_key: city.mailchimp_api_key).run
         end

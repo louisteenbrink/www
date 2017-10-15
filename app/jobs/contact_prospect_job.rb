@@ -3,7 +3,7 @@ class ContactProspectJob < ActiveJob::Base
     @prospect = Prospect.find(prospect_id)
     return if @prospect.city.blank? # Can't send the prospect email.
 
-    city = AlumniClient.new.city(@prospect.city) # TODO(krokrob): change this
+    city = Kitt::Client.query(City::Query, variables: { slug: @prospect.city }).data.city
     client = MeetupApiClient.new(city.meetup_id)
     meetups = client.meetup_events
 
