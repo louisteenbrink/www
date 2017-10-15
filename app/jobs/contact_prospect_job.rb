@@ -23,11 +23,13 @@ class ContactProspectJob < ActiveJob::Base
   private
 
   def send_event
-    ProspectMailer.send_event(@prospect.id).deliver_later
+    mailer = ProspectMailer.send_event(@prospect.id)
+    mailer.deliver_later if mailer.to
   end
 
   def send_content
-    ProspectMailer.send_content(@prospect.id).deliver_later
+    mailer = ProspectMailer.send_content(@prospect.id)
+    mailer.deliver_later if mailer.to
   end
 
   def less_than_a_week?(meetup_time)
