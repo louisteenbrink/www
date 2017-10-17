@@ -180,15 +180,15 @@ lyon:
 
 melbourne:
   marketing_automation:
-    enabled: false
+    enabled: true
     locale: en
   meetup_host:
     name: "Paal"
-    picture: ""
-  meetup_url: ""
-  facebook: ""
-  twitter: ""
-  instagram: ""
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1481195524/hcz4ihodwpjeqp9m8ga5.jpg"
+  meetup_url: "Le-Wagon-Melbourne-Coding-Bootcamp/"
+  facebook: "lewagonaustralia"
+  twitter: "lewagonmel"
+  instagram: "lewagonmelbourne"
 
 milan:
   marketing_automation:
@@ -264,15 +264,15 @@ shanghai:
 
 sydney:
   marketing_automation:
-    enabled: false
+    enabled: true
     locale: en
   meetup_host:
     name: "Charly"
-    picture: ""
-  meetup_url: ""
-  facebook: ""
-  twitter: ""
-  instagram: ""
+    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1473854932/zicccbbn3t6ubfdwxais.jpg"
+  meetup_url: "Le-Wagon-Sydney-Coding-Bootcamp"
+  facebook: "lewagonaustralia"
+  twitter: "lewagonsyd"
+  instagram: "lewagonsydney"
 
 rio:
   marketing_automation:
