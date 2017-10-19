@@ -75,8 +75,74 @@ routes:
     - hamiltonle
     - kwnath
     - kikinz
+  tokyo:
+    - souebina
+    - khalid-bkr
+    - dmbf29
 
 testimonials:
+  dmbf29:
+    first_name: Douglas
+    last_name: Berkley
+    city_slug: tokyo
+    batch_slug: 58
+    publication_date: 2017-10-17
+    job_before: English Teacher
+    project_slug: gibbit
+    job_after: Software Developer
+    new_company: Solaris
+    origin: Course Report
+    picture: tokyo_douglas_berkley.jpg
+    linkedin_url: https://www.linkedin.com/in/dougberkley/
+    content_html: |
+        <p>Before Le Wagon Tokyo, I was teaching English in South Korea. I always had an interest in coding but I could never manage the time or the patience to teach myself after regular work hours. I was a bit reluctant at first to do a bootcamp. But after I read all of the rave reviews online about Le Wagon, I figured it was time to take a chance. I signed up for the first batch in Tokyo.</p>
+        <p>The course is as intense as everyone says it is. You get out of it how much you want to put in. You might as well push yourself if you're going to join a bootcamp, right? All of the exercises or extra work have a purpose in improving your skills. I still look back to some of my old code or lessons for helpful reminders.</p>
+        <p>The final project/pitch was a great experience that really challenged me in ways regular code work couldn't: working with peers, managing time, and meeting expectations. All of these are things that I deal with on a regular basis now and I'm grateful for the practice I had.</p>
+        <p>Afterwards, I found a job fairly easy. I was setup with a lot of contacts from the tech scene in Tokyo through all of the Le Wagon events. I'm currently working for an e-commerce startup that does a lot of work on Shopify. We develop apps, plugins, you name it, to help merchants and consumers in Japan. To this day, I still talk with a lot of people through the program and will be forever grateful for it.</p>
+  khalid-bkr:
+    first_name: Khalid
+    last_name: Abubaker
+    city_slug: tokyo
+    batch_slug: 78
+    publication_date: 2017-10-17
+    job_before: Student
+    project_slug: missing-out
+    job_after: Freelance Developer
+    new_company:
+    origin: Course Report
+    picture: tokyo_khalid_abubaker.jpg
+    linkedin_url:
+    content_html: |
+        <p>Technology is something that I always liked, that's why I decided to major in computer engineering. It was that moment when I started to love coding, as c++ was the first programming language I learned my passion for coding started to grow. I wanted to know more and increase my knowledge in that aspect. While online courses may teach you the syntax, they can't teach you how to solve problems or think in various ways to reach a certain solution.</p>
+        <p>After searching for something different for a while I found Le Wagon Tokyo. At first I was a bit hesitant to take the course as I was short on time and the course took place in Tokyo (Japan) which is very far from my country. I didn't even know if it was worth it , but i must say I'm really glad that i took it.</p>
+        <p>It was well worth it as it doesn't just teach you how to code, it teaches you how to think , to actually be able to solve a problem. Then it goes to teaching you everything you need to know on how to be able to build a colorful website, backend to frontend and how to use that knowledge to start your own projects or even work as developer which was my main goal from this bootcamp.</p>
+        <p>But furthermore, it wasn't only about coding and programming, we also had many activities there such as yoga sessions and group lunches. I personally met many many great people, from teachers to students and many others. I've gained many experiences from each of them, we worked together daily from 9AM to 7PM each day with a different partner, which in a way taught me how to work with different people and bonded the students together as well.</p>
+        <p>After graduation, I was finally able to call myself a full stack developer and I knew i was able to create any website I could think of. I honestly never imagined i could learn all of that in just 9 weeks, it was just GREAT.</p>
+  souebina:
+    first_name: Sosuke
+    last_name: Ebina
+    city_slug: tokyo
+    batch_slug: 78
+    publication_date: 2017-10-04
+    job_before: Marketing Manager
+    project_slug: bosai
+    job_after: Project Manager
+    new_company:
+    origin: SwitchUp
+    picture: tokyo_sosuke_ebina.jpg
+    linkedin_url: https://www.linkedin.com/in/sosuke-ebina/
+    content_html: |
+        <p>Before I started the wagon, I was a marketing manager of IT company in Japan. After few years of working on projects with startups and developers, I felt the need to grow my technical skills and thought a bootcamp of a few months would be perfect. I decided to join Le Wagon because it is the best bootcamp in Japan and, luckily, also one of the best in the world. Plus, I had collected nothing but very positive feedback about this training from my friends / network.</p>
+        <p>These 9 weeks of intense coding were probably some of the most enriching weeks of my life. The quality of the teachers, the real learning challenge set by the day to day pace, the new connections with really cool and interesting people, the Yoga classes... I truly recommend this bootcamp.</p>
+        <p>What was very interesting and useful for me is:</p>
+        <ul>
+          <li>I’ve got to know more about Developer and entrepreneurial culture through great teachers and assistants</li>
+          <li>I’ve got to know more about importance of Digital experience by designed, implemented and shipped to production a clone of Airbnb</li>
+          <li>I’ve got to know latest web development techniques and Digital trends through great materials</li>
+          <li>I’ve got to know what is product Management and how to do it by making Rails prototype</li>
+        </ul>
+        <p>I think I can say this bootcamp enabled me to build an interesting profile, both business and technical.</p>
+        <p>Thanks again to Le Wagon Tokyo! I still feel Meguro is my hometown!</p>
   jay-g2017:
     first_name: Jay
     last_name: Gao
