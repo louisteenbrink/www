@@ -1,5 +1,11 @@
 routes:
   home:
+    - souebina
+    - khalid-bkr
+    - twentyfivemtl
+    - milanbarande
+    - gabpoiss
+    - dmbf29
     - jay-g2017
     - bibiiii
     - archiejg
@@ -56,6 +62,9 @@ routes:
     - baptprn
     - knopfler81
   montreal:
+    - twentyfivemtl
+    - milanbarande
+    - gabpoiss
     - liolev
     - julien-fooducoin
   paris:
@@ -81,6 +90,61 @@ routes:
     - dmbf29
 
 testimonials:
+  twentyfivemtl:
+    first_name: Thibault
+    last_name: Derennes
+    city_slug: montreal
+    batch_slug: 77
+    publication_date: 2017-09-27
+    job_before:
+    project_slug: work-oasis
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: montreal_thibault_derennes.jpg
+    linkedin_url: https://www.linkedin.com/in/thibaultderennes/
+    content_html: |
+        <p>I was one of the student of batch #77 in Montreal (summer 2017) and my only regret about LeWagon is that I didn't apply earlier !</p>
+        <p>I'm currently studying in Entrepreneurship and before even starting the program, I realized that I had one major issue that I tried to solve without success. I had loads of ideas, but I couldn't transform them into a product that I could test and promote because I was not able to code by myself. I tried different online classes, CodeCademy, Treehouse, Udemy to name a few. After a year or so, I realized that I was not progressing fast enough. It would take me years to be able to code MVPs.</p>
+        <p>I looked online for different coding bootcamp. Le Wagon was the one offering not only a coding bootcamp but an access to a network of 1500+ alumni. Needless to say that being a part of that family is incredibly helpful in every aspect. The platform offers you access to a ton of content as well as design feedback, job opportunities, etc. Plus, every single question is answered in a matter of hours. It is by far the most disciplined community page I've seen.</p>
+        <p>On top of that Le Wagon is not just another coding bootcamp, the learning process revolves around two main topics. Coding is the obvious one, but entrepreneurship is also a big part of is learned. It would be the best training for any aspiring entrepreneur who wants to know how to code and have a better understanding of the technical part of the projects.</p>
+        <p>What an experience it was, while I'm finishing my entrepreneurship study, I am still impressed by what we learned in just 9 weeks. I can now work on ideas and products I wanted to code and have them finished before the end of the year.</p>
+        <p>It was 100% worth it and you won't regret it, stop waiting and go for it!</p>
+  milanbarande:
+    first_name: Milan
+    last_name: Barande
+    city_slug: montreal
+    batch_slug: 77
+    publication_date: 2017-09-10
+    job_before:
+    project_slug: work-oasis
+    job_after:
+    new_company:
+    origin: switchup
+    picture: montreal_milan_barande.jpg
+    linkedin_url: https://www.linkedin.com/in/milan-barande-89a25a55/
+    content_html: |
+        <p>I took part of batch #77 in Montreal during the summer 2017. With a background in Neurosciences, I had been somewhat disappointed by the field of research, notably its lack of autonomy and freedom. I felt like I needed to make a career change and always had an attraction for coding and technology in general. Doing Le Wagon was a fantastic decision as I managed to find a junior front end developer position even before the end of my training.</p>
+        <p>Those two months have probably been my best experience in terms of education. I met great people coming from every corner of the world and with very different backgrounds, but all focused on a common goal of learning to code. The teaching was excellent and the program in itself targets the right skills that you will need to start a career in tech.</p>
+        <p>Today, one of the technologies I use in my job is different than the ones I've learnt at Le Wagon but the training gave me everything I need to learn new skills quickly and efficiently. To be honest, it had not been an easy decision to take to make such an abrupt career change but I am extremely satisfied that I took it.</p>
+  gabpoiss:
+    first_name: Gabriel
+    last_name: Poissant
+    city_slug: montreal
+    batch_slug: 63
+    publication_date: 2017-10-10
+    job_before: Hockey Referee
+    project_slug: zebrasclub
+    job_after: Entrepreneur & Full-Satck developer
+    new_company: zebrasclub
+    origin: switchup
+    picture: montreal_gabriel_poissant.jpg
+    linkedin_url: https://www.linkedin.com/in/gabriel-poissant-8b9818128/
+    content_html: |
+        <p>It might be cliché but doing Le Wagon Montréal truly changed my life. Before the course, I was not working or studying anything related to coding or computer science. I came from a background of hockey refereeing, sound engineering and video editing.</p>
+        <p>After completing Le Wagon Montreal’s 9 week coding bootcamp, I am still working and improving upon the final project we built in the last 2 weeks of the bootcamp. I learned how to build a website from scratch in just 9 weeks and now I’m using those skills to keep building the website for my business: zebrasclub.com.</p>
+        <p>I also met a lot of incredible people because of the Wagon Talks, which provided access to entrepreneurs and influential people in the Montreal tech industry.</p>
+        <p>That being said, the most important part of my experience is that I met great friends from around the world, and we continue to collaborate on my projects as well as theirs.</p>
   dmbf29:
     first_name: Douglas
     last_name: Berkley
