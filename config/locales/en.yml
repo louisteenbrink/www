@@ -395,7 +395,7 @@ en:
       pricing_vat: "£2,500 incl. VAT"
       pricing_no_vat: "i.e. £2,083 excl. VAT"
       special_offer_vat: "£1,500 incl. VAT"
-      special_offer_no_vat: "soit €1,250 HT"
+      special_offer_no_vat: "i.e. £1,250 excl. VAT"
       react_cta: "Book my spot"
       affix_title_date: "Next session"
       affix_date: "December 4 to December 8 2017"
