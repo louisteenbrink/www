@@ -104,6 +104,7 @@ class AppliesController < ApplicationController
       }
 
       city['batches'].each do |batch|
+        batch['special_message'] = 'Perchoir (20 seats)' if batch['id'] == 153 # TODO(ssaunier): replace with proper back-end
         starts_at = batch['starts_at']
         batch['starts_at'] = I18n.l starts_at.to_date, format: :apply
         batch['starts_at_short'] = I18n.l starts_at.to_date, format: :short
