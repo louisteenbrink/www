@@ -7,7 +7,8 @@ class ProspectsController < ApplicationController
       SubscribeToNewsletter.new(@prospect.email).run({
         FROM_PATH: @prospect.from_path,
         FREE_TRACK: "true",
-        CITY: @prospect.city
+        CITY: @prospect.city,
+        LOCALE: I18n.locale.to_s
       })
 
       # City NL
