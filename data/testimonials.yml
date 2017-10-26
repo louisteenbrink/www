@@ -1,5 +1,15 @@
 routes:
   home:
+    - Eth3rnit3
+    - ArianePhelizot
+    - OdaiaLCMB
+    - lilimsa
+    - HbCbAk
+    - jeremycartesse
+    - florentdaubas
+    - PerrineMet
+    - drea23
+    - fractalatcarf
     - souebina
     - khalid-bkr
     - twentyfivemtl
@@ -88,6 +98,18 @@ routes:
     - souebina
     - khalid-bkr
     - dmbf29
+  marseille:
+    - Eth3rnit3
+    - ArianePhelizot
+    - OdaiaLCMB
+    - lilimsa
+    - HbCbAk
+    - jeremycartesse
+    - fractalatcarf
+    - drea23
+    - PerrineMet
+    - florentdaubas
+    - OdaiaLCMB
 
 testimonials:
   twentyfivemtl:
@@ -964,3 +986,176 @@ testimonials:
       <p>And let me tell you it’s been an amazing experience, I have met really good people and looking back I still cannot believe how much me and all my colleagues could learn in only 9 weeks. This is the most interesting point where Le Wagon stand out, it's a very well structured and crafted program. And it explains how they manage to have anyone learn so much so fast.</p>
       <p>Their philosophy is learning by doing, and that's also another diferenciating fact about them. You really get your hands dirty and « squeeze »  your brain. The last 2 weeks are devoted to a project which teaches you how to work in team and release a functional project in only ten days. Some of my teammates are still working on the project that is turning into a startup called numooh. Check it out!</p>
       <p>Two months after I finished the course I’ve been involved in some freelancing dev for a nice French startup and just got hired in another major startup here in Brazil. (Gympass, the netflix of gym club :) So, in my opinion, if you seriously want to dive into this world with a solid understanding of what’s going on. You should consider Le Wagon.</p>
+  fractalatcarf:
+    first_name: Damien
+    last_name: Vincent
+    city_slug: marseille
+    batch_slug: 37
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: imparato
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_damien_vincent.png
+    linkedin_url:
+    content_html: |
+      <p>Avant la formation du Wagon, je venais de quitter un poste de pre-sales pour une startup marseillaise. J’avais un gros background technique puisque j'ai travaillé 20 dans l'informatique. Pour autant mes connaissances techniques commençaient à dater et comme je portais un projet de startup dans le Théâtre, il fallait réactualiser mes connaissances en code. Par hasard j'ai croisé Louis Chavane, CEO du Wagon Aix-Marseille, à un meetup sur Sketch. J'ai tout de suite voulu y enseigner, mais je devais d’abord mettre à jour mes connaissances et me former sur Ruby.</p>
+      <p>L'esprit du Wagon est certainement la chose qui m'a le plus plu pendant mon stage de 9 semaines ! J’ai apprécié la bienveillance des professeurs et la culture du partage omniprésente. J’attendais beaucoup du Wagon car pour développer mon projet, je savais que j'allais avoir besoin d'un savoir-faire pragmatique et opérationnel. Effectivement, j'ai eu la chance de pouvoir travailler sur mon projet IMPARATO, l'application pour les comédiens. Et je continue de monter mon projet IMPARATO aujourd’hui. En parallèle, j'enseigne au Wagon Aix-Marseille et c'est un réel plaisir de transmettre, à mon tour, les connaissances et l'esprit du Wagon.</p> 
+      <p>Les résultats ont vraiment dépassés mes attentes ! J'ai découvert une équipe exceptionnelle, des élèves captivants, une communauté enthousiasmante et la formation vraiment bien pensée. Maintenant que je suis Teacher, j'ai aussi découvert à quel point elle était intense et dans l’accompagnement de l’élève. C’est un vrai plaisir de la transmettre à mon tour. Le Wagon fait parti de mon parcours et j'invite souvent les entrepreneurs que je croise à tenter l'aventure du code au Wagon Aix-Marseille.</p>    
+  drea23:
+    first_name: Andréa
+    last_name: Simoes
+    city_slug: marseille
+    batch_slug: 53
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: manufact
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_andrea_simoes.png
+    linkedin_url:
+    content_html: |
+      <p>Avant de passer par le Wagon j’étais graphiste spécialisée Print, j’ai travaillé en imprimerie et en agence. Dans mon métier j’aime apprendre les choses jusqu’au bout, comprendre les tenants et les aboutissants de chaque projet. Dans le Graphisme, il y a 2 grandes familles d’application : le Print et le Web. Après avoir expérimenté le print en profondeur, j’ai décidé de m’attaquer au web. J’ai trouvé la formation en pesant le pour et le contre de chaque organisme proposant une formation similaire. Ce qui m’a motivé, c’est l’idée de passer directement de la théorie à la pratique dans mon travail.</p>
+      <p>Au wagon j’ai découvert comment optimiser le design que je crée, mais aussi comment le mettre en place concrètement. J’ai codé Manufact.co, qui sera (à terme) une plateforme qui met en relation les créateurs et les manufactures Françaises, dans le but de promouvoir la fabrication Made in France.</p>
+      <p>Aujourd’hui je suis « Fullstack designer » freelance, j’interviens à chaque phase de projet, de la Direction artistique au Développement. J’ai trouvé les Teachers excellents, complètement ouverts aux difficultés de chacun. Ils ont su adapter leur discours pour être certains que l’exercice de code a bien été compris. Le tout dans une ambiance carrément entrainante et fédératrice ! Je recommande le wagon à toutes les personnes créatives qui en ont marre de passer pour des “colorieurs” auprès des tech !</p>
+  PerrineMet:
+    first_name: Perrine
+    last_name: Meteyer
+    city_slug: marseille
+    batch_slug: 53
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: manufact
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_perinne_meteyer.png
+    linkedin_url:
+    content_html: |
+      <p>Avant la formation du Wagon, j’étais jeune diplômée en marketing et stratégie commerciale. J’étais à la recherche d’un job dans le domaine du marketing. Mais je ne trouvais pas « LE » job. J’avais appris toutes les notions stratégiques relatives au web. Il me manquait les connaissances purement techniques. J’ai donc décidé de faire le wagon pour acquérir ces compétences techniques. En rejoignant le Batch#53 du Wagon Aix-Marseille, j’ai été servie : Ruby, Html, Css, Javascript, Ajax, Jquery etc.</p>
+      <p>Faire la formation du Wagon à Marseille m’a permis d’approfondir mes compétences, d’apprendre tous les jours de nouvelles choses avec l’aide des professeurs très passionnés. Avec mon équipe j’ai codé le projet « Manufact ». Il s’agit d’une plateforme mettant en relation les créateurs/porteurs de projet avec l’ensemble des acteurs de la chaîne de production/fabrication. Avec Alexis Fieujean et Andréa Simoes, nous avons décidé de continuer l’aventure commencée au Wagon et nous travaillons également sur de nombreux projets ensemble.</p>
+      <p>Suite au wagon, j’ai donc décidé de me lancer en freelance dans le développement web. Cela fait un peu plus de 6 mois et je suis très contente : les clients sont nombreux, pas besoin d’aller démarcher ! Je recommande cette formation !</p>
+  florentdaubas:
+    first_name: Florent
+    last_name: Daubas
+    city_slug: marseille
+    batch_slug: 53
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: hack-the-radio
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_florent_daubas.png
+    linkedin_url:
+    content_html: |
+      <p>Avant le Wagon j’étais ingénieur dans l’environnement à l’international, principalement en Afrique. Je voulais changer de vie et sortir de ma routine professionnelle, une envie de faire des choses plus pour moi et plus créatives. Je voulais apprendre à coder et j’ai trouvé la formation du Wagon Aix-Marseille par des recherches sur internet. Le slogan du wagon était fait pour moi ! En route pour le Batch #53 à Marseille.</p>
+      <p>Les 3 premières semaines de code sont intenses et tous les jours on ajoute une couche ! Et pour autant la formation est bien construite, on ne travaille jamais seul, on s’entraide, on s’explique et on progresse ensemble. Je retiens tout particulièrement la super expérience humaine que j’ai vécue durant la formation. Les professeurs nous ont apportés beaucoup de briques qui aboutissent à un moment donné à un ensemble très cohérent et permettent finalement de réaliser des projets vraiment sympas. Avec Carine Fillot, Alexandre Perdomo et Fabien Martinez, nous avons codé Hack the Radio, un projet concernant la radio et les podcasts.</p>
+      <p>C’est vraiment deux semaines chouettes, tout le monde est concentré sur cet objectif de présentation au Demo Day. Il faut gérer le travail en équipe, la répartition des tâches, les options techniques, tous les profs sont là pour aider et il y a vraiment une super ambiance. De temps en temps, on code sur la terrasse au soleil, un des avantages de Marseille ! Cet automne 2017, avec Carine Fillot, nous accélérons le projet Hacktheradio chez Paris Pionnières (Wodi) et à la nurserie Audiens. Nous allons bientôt pitcher notre produit à Harvard !</p> 
+  jeremycartesse:
+    first_name: Jeremy
+    last_name: Cartesse
+    city_slug: marseille
+    batch_slug: 53
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: martien
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_jeremy_cartesse.png
+    linkedin_url:
+    content_html: |
+      <p>Venant du monde de l’aéronautique, la programmation, je cherchais à approfondir mes connaissance en code. J’ai cherché sur Internet une formation et je suis tombé sur le Wagon. Par la suite, j’ai rejoint le batch#53 en Janvier 2017 à Marseille !</p>
+      <p>Incroyable ! Le Wagon Aix-Marseille m’a permis de me réconcilier avec le monde du code que je détestais ! Les cours sont vraiment bien structurés et précis. Cela permet de comprendre les fondamentaux et surtout d’exécuter immédiatement les notions. J’ai beaucoup apprécié le Batch #53 avec lequel nous avons codé les produits les plus fous avec la fine complicité des profs.</p>
+      <p>Il faut avouer que la promesse est audacieuse, et après 9 semaines, coder des produits web est bien une réalité ! Nous avons appris tellement de choses en deux mois et demi que j’ai eu l’impression d’avoir un deuxième diplôme d’ingénieur ! J’avais  essayé de me former par moi-même dans le passé, mais jamais je n’aurais acquis un tel niveau en si peu de temps. Je recommande à tous ceux qui ne connaissent rien au code et qui veulent apprendre de rejoindre l’aventure ! Le Wagon m’a donné les armes pour pouvoir coder mes idées. Maintenant c’est à moi de jouer !</p>
+  HbCbAk:
+    first_name: Hervé
+    last_name: Blasse
+    city_slug: marseille
+    batch_slug: 53
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: martien
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_herve_blasse.png
+    linkedin_url:
+    content_html: |
+      <p>Avant de faire la formation du Wagon à Marseille, j’avais une idée bien précise de la start-up que je souhaitais lancer. Mais je me sentais trop dépendant des développeurs que j’avais pu rencontrer et dont je comprenais mal les devis. En recherchant sur google, j’ai trouvé « Apprenez à coder en 9 semaines ». Je me lance ! J’ai pris la décision de participer à cette formation sur Marseille et j’intègre le Batch 53  le 09 Janvier 2017 !</p>
+      <p>Quand on embarque au Wagon, on apprend à coder en à peine 9 semaines et on se crée un réseau indispensable pour lancer sa start-up ! C’est une des grandes forces de la formation. La cerise sur le gâteau : les profs sont professionnels, patients, compétents, disponibles et toujours prêts à rendre service. J’ai codé en seulement 10 jours un projet de fin de batch avec mon équipe permettant aux jeunes artistes des beaux arts d’enfin vivre de leur passion.</p>
+      <p>J’étais pour le moins sceptique avant de commencer la formation et j’en suis ressorti extrêmement heureux. Je mesure chaque jour l’énorme chance que j’ai eu d’y participer. 9 semaines après, je me retrouve doté de nouveaux superpouvoirs comme créer un site internet de A à Z ! Impressionnant. Un conseil : courez vous inscrire ! Vos trois premières semaines seront hard mais au final vous passerez 9 semaines aussi fun qu’enrichissantes !</p>
+  lilimsa:
+    first_name: Salim
+    last_name: Lalam
+    city_slug: marseille
+    batch_slug: 53
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: tribaland
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_salim_lalam.png
+    linkedin_url:
+    content_html: |
+      <p>Après 15 ans dans le domaine des assurances, j’ai décidé en 2009 de reprendre mes études dans le marketing digital. Cependant, je bloquais toujours sur le même problème, trouver un développeur web qui construirait mes idées comme je le veux. Lors d’une conférence, Adrien Aumont - Co-fondateur de Kisskiss bankbank&Co a prononcé une phrase qui a tout fait changer : « Si je devais re-monter une startup aujourd’hui, la 1ére chose que je ferais, c’est d’apprendre à coder, pas pour devenir développeur mais pour comprendre le langage du développement web. » Il a ajouté avoir suivi une formation pour apprendre à coder en seulement 9 semaines au Wagon. Le lendemain je m’inscrivais et j’ai rejoint la formation du Wagon à Marseille le 09 Janvier 2017 !</p>
+      <p>J’ai choisi d’apprendre à coder au Wagon à Marseille, loin du stress de la vie parisienne. Je me disais que coder devant la mer et le soleil apporterait des idées plus créatives ! La formation a été difficile : je mangeais du code le matin, le midi, le soir, le week-end et j’en rêvais même la nuit ! Et petit à petit, tout s’est mis en place et je comprenais le langage du code. J’ai pu m’en sortir car au Wagon, l’esprit d’équipe et la solidarité régnaient. Les formateurs, tous professionnels, tous dotés de très grandes qualités, ayant la capacité de s’adapter aux besoins de chaque personne, de chaque projets. Une équipe encadrante au top : humaine, à l’écoute, professionnelle et proposant des meetups de qualités.</p>
+      <p>Je recommande cette formation à toutes celles et ceux qui souhaitent devenir développeur web ou qui ont des idées mais pas les outils pour les mettre en oeuvre !  Un conseil, ne baissez jamais les bras. Chaque petit pas créent de grandes enjambées et chaque avancée vous emmène vers votre but. LE WAGON, c’est avant tout une grande famille, une grande aventure humaine et pleines d’émotions qui fait ressortir le meilleur de vous-même !</p>
+      <p>Merci Le Wagon Marseille !</p>
+  OdaiaLCMB:
+    first_name: Odaïa
+    last_name: Lacombes
+    city_slug: marseille
+    batch_slug: 66
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: diwyh
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_odaia_lacombes.png
+    linkedin_url:
+    content_html: |
+      <p>Après quelques années d’étude dans la filière scientifique, j’ai obtenu un BTS en production Audiovisuelle. Je me suis rendu compte que ce métier et Paris n’étaient pas en adéquation avec moi même. J’ai donc tout quitté pour venir vivre à Marseille. Et en tâtonnant, j’ai découvert que le code me plaisait énormément ! Puis  en recherchant sur Google, j’ai trouvé Le Wagon et j’ai rejoint le Batch#66 à Marseille.</p>
+      <p>Me voici lancée dans une aventure de neuf semaines intensives. La formation est enrichissante, riche en émotions et les profs sont passionnés. Du jour au lendemain je sais coder une application web ultra performante ! Il n’y a rien de plus satisfaisant et excitant que de se dire à la fin de ces 9 semaines : regardez le site que j’ai codé avec mon équipe ! Regardez ce dont j’en suis capable !</p>
+      <p>Cette école m’a tout de suite plu. J’ai tâtonné longtemps avant d’avoir trouvé ma voix. Je suis maintenant développeur fullstack en freelance et ça me plait. Je vous recommande le Wagon et plus spécialement celui d’Aix-Marseille ! Quoi de mieux que de coder au soleil avec la mer à proximité ?</p>
+   ArianePhelizot:
+    first_name: Ariane
+    last_name: Phelizot 
+    city_slug: marseille
+    batch_slug: 66
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: asanasano
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_ariane_phelizot.png
+    linkedin_url:
+    content_html: |
+      <p>Cela faisait longtemps que je voulais apprendre à coder sans jamais passer sérieusement à l’action. J’étais convaincue que savoir coder, c’est comme parler anglais de nos jours, c’est indispensable !</p>
+      <p>Je réfléchissais à plusieurs projets de création de boîtes dans le digital mais je n’avais aucune idée de la complexité technique de mes projets. Je voulais savoir bien m’entourer, choisir les bons développeurs et savoir interagir au mieux avec eux. Et je ne voulais pas raquer des mille et des cents à chaque fois que je voulais changer une virgule. Bref, c’était le moment pour moi de plonger.</p>
+      <p>J’ai entendu parlé du wagon, « une formation intensive, pensée par et pour des entrepreneurs et orientée produits ». Sur le papier, c’est ce qu’il me fallait. Je suis allée à un Démo Day et j’ai été complètement convaincue et époustouflée par ce que les apprentis codeurs avaient pu réaliser en 2 semaines. Je me suis de suite inscrite au Wagon à Marseille et je n’ai pas été déçue.</p>
+      <p>De supers profs, une promo au top, le soleil de Marseille, plus qu’il m’en fallait pour bien apprendre le code. Coder m’est apparu comme une activité passionnante, qui permet tout simplement de créer. Je suis sortie de la formation avec un prototype de mon projet et là je vais sortir ma beta.</p>
+  Eth3rnit3:
+    first_name: David
+    last_name: Marie
+    city_slug: marseille
+    batch_slug: 91
+    publication_date: 2017-10-25
+    job_before:
+    project_slug: walt
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: marseille_david_marie.png
+    linkedin_url:
+    content_html: |
+      <p>J'ai toujours était passionné d'informatique. Ceci étant mes choix et mon parcours m’ont éloignés de ma passion pendant des années, jusqu’au jour où en cherchant sur le web, j’ai découvert le Wagon. J’ai tenté l’expérience au Wagon à Marseille et j’ai intégré le batch#91 en juillet 2017.</p>
+      <p>Le programme, l’ambiance et l’équipe pédagogique m’ont immédiatement donné envie de m’investir à fond dans la formation. En 10 jours seulement, avec mon équipe, nous avons codé une application Web : impressionnant !</p>
+      <p>Aujourd’hui je suis vraiment content et fier de mon choix. Grâce au contenu de la formation expliqué par les supers teachers du Wagon Marseille,  j’ai pu en seulement 2 mois apprendre tout ce qu’il faut pour développer une web app. Depuis je suis devenu freelance et ai déjà décroché mes premiers contrats, je recommande vivement le Wagon à tout ceux qui voudraient apprendre à coder et à Marseille tout particulièrement car apprendre à coder au soleil fait un bien fou.</p>
+
