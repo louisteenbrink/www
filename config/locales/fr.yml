@@ -12,6 +12,8 @@ fr:
   top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
+  top_bar_podcast_message: "Chaque semaine, un entrepreneur nous raconte l'histoire de sa startup"
+  top_bar_podcast_cta: "abonne-toi au Podcast du Wagon 🎙"
   shared:
     positions:
       they_hired_our_students: Ils recrutent nos élèves
