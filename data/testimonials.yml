@@ -110,7 +110,6 @@ routes:
     - PerrineMet
     - florentdaubas
     - OdaiaLCMB
-
 testimonials:
   twentyfivemtl:
     first_name: Thibault
@@ -1001,8 +1000,8 @@ testimonials:
     linkedin_url:
     content_html: |
       <p>Avant la formation du Wagon, je venais de quitter un poste de pre-sales pour une startup marseillaise. J’avais un gros background technique puisque j'ai travaillé 20 dans l'informatique. Pour autant mes connaissances techniques commençaient à dater et comme je portais un projet de startup dans le Théâtre, il fallait réactualiser mes connaissances en code. Par hasard j'ai croisé Louis Chavane, CEO du Wagon Aix-Marseille, à un meetup sur Sketch. J'ai tout de suite voulu y enseigner, mais je devais d’abord mettre à jour mes connaissances et me former sur Ruby.</p>
-      <p>L'esprit du Wagon est certainement la chose qui m'a le plus plu pendant mon stage de 9 semaines ! J’ai apprécié la bienveillance des professeurs et la culture du partage omniprésente. J’attendais beaucoup du Wagon car pour développer mon projet, je savais que j'allais avoir besoin d'un savoir-faire pragmatique et opérationnel. Effectivement, j'ai eu la chance de pouvoir travailler sur mon projet IMPARATO, l'application pour les comédiens. Et je continue de monter mon projet IMPARATO aujourd’hui. En parallèle, j'enseigne au Wagon Aix-Marseille et c'est un réel plaisir de transmettre, à mon tour, les connaissances et l'esprit du Wagon.</p> 
-      <p>Les résultats ont vraiment dépassés mes attentes ! J'ai découvert une équipe exceptionnelle, des élèves captivants, une communauté enthousiasmante et la formation vraiment bien pensée. Maintenant que je suis Teacher, j'ai aussi découvert à quel point elle était intense et dans l’accompagnement de l’élève. C’est un vrai plaisir de la transmettre à mon tour. Le Wagon fait parti de mon parcours et j'invite souvent les entrepreneurs que je croise à tenter l'aventure du code au Wagon Aix-Marseille.</p>    
+      <p>L'esprit du Wagon est certainement la chose qui m'a le plus plu pendant mon stage de 9 semaines ! J’ai apprécié la bienveillance des professeurs et la culture du partage omniprésente. J’attendais beaucoup du Wagon car pour développer mon projet, je savais que j'allais avoir besoin d'un savoir-faire pragmatique et opérationnel. Effectivement, j'ai eu la chance de pouvoir travailler sur mon projet IMPARATO, l'application pour les comédiens. Et je continue de monter mon projet IMPARATO aujourd’hui. En parallèle, j'enseigne au Wagon Aix-Marseille et c'est un réel plaisir de transmettre, à mon tour, les connaissances et l'esprit du Wagon.</p>
+      <p>Les résultats ont vraiment dépassés mes attentes ! J'ai découvert une équipe exceptionnelle, des élèves captivants, une communauté enthousiasmante et la formation vraiment bien pensée. Maintenant que je suis Teacher, j'ai aussi découvert à quel point elle était intense et dans l’accompagnement de l’élève. C’est un vrai plaisir de la transmettre à mon tour. Le Wagon fait parti de mon parcours et j'invite souvent les entrepreneurs que je croise à tenter l'aventure du code au Wagon Aix-Marseille.</p>
   drea23:
     first_name: Andréa
     last_name: Simoes
@@ -1053,7 +1052,7 @@ testimonials:
     content_html: |
       <p>Avant le Wagon j’étais ingénieur dans l’environnement à l’international, principalement en Afrique. Je voulais changer de vie et sortir de ma routine professionnelle, une envie de faire des choses plus pour moi et plus créatives. Je voulais apprendre à coder et j’ai trouvé la formation du Wagon Aix-Marseille par des recherches sur internet. Le slogan du wagon était fait pour moi ! En route pour le Batch #53 à Marseille.</p>
       <p>Les 3 premières semaines de code sont intenses et tous les jours on ajoute une couche ! Et pour autant la formation est bien construite, on ne travaille jamais seul, on s’entraide, on s’explique et on progresse ensemble. Je retiens tout particulièrement la super expérience humaine que j’ai vécue durant la formation. Les professeurs nous ont apportés beaucoup de briques qui aboutissent à un moment donné à un ensemble très cohérent et permettent finalement de réaliser des projets vraiment sympas. Avec Carine Fillot, Alexandre Perdomo et Fabien Martinez, nous avons codé Hack the Radio, un projet concernant la radio et les podcasts.</p>
-      <p>C’est vraiment deux semaines chouettes, tout le monde est concentré sur cet objectif de présentation au Demo Day. Il faut gérer le travail en équipe, la répartition des tâches, les options techniques, tous les profs sont là pour aider et il y a vraiment une super ambiance. De temps en temps, on code sur la terrasse au soleil, un des avantages de Marseille ! Cet automne 2017, avec Carine Fillot, nous accélérons le projet Hacktheradio chez Paris Pionnières (Wodi) et à la nurserie Audiens. Nous allons bientôt pitcher notre produit à Harvard !</p> 
+      <p>C’est vraiment deux semaines chouettes, tout le monde est concentré sur cet objectif de présentation au Demo Day. Il faut gérer le travail en équipe, la répartition des tâches, les options techniques, tous les profs sont là pour aider et il y a vraiment une super ambiance. De temps en temps, on code sur la terrasse au soleil, un des avantages de Marseille ! Cet automne 2017, avec Carine Fillot, nous accélérons le projet Hacktheradio chez Paris Pionnières (Wodi) et à la nurserie Audiens. Nous allons bientôt pitcher notre produit à Harvard !</p>
   jeremycartesse:
     first_name: Jeremy
     last_name: Cartesse
@@ -1123,9 +1122,9 @@ testimonials:
       <p>Après quelques années d’étude dans la filière scientifique, j’ai obtenu un BTS en production Audiovisuelle. Je me suis rendu compte que ce métier et Paris n’étaient pas en adéquation avec moi même. J’ai donc tout quitté pour venir vivre à Marseille. Et en tâtonnant, j’ai découvert que le code me plaisait énormément ! Puis  en recherchant sur Google, j’ai trouvé Le Wagon et j’ai rejoint le Batch#66 à Marseille.</p>
       <p>Me voici lancée dans une aventure de neuf semaines intensives. La formation est enrichissante, riche en émotions et les profs sont passionnés. Du jour au lendemain je sais coder une application web ultra performante ! Il n’y a rien de plus satisfaisant et excitant que de se dire à la fin de ces 9 semaines : regardez le site que j’ai codé avec mon équipe ! Regardez ce dont j’en suis capable !</p>
       <p>Cette école m’a tout de suite plu. J’ai tâtonné longtemps avant d’avoir trouvé ma voix. Je suis maintenant développeur fullstack en freelance et ça me plait. Je vous recommande le Wagon et plus spécialement celui d’Aix-Marseille ! Quoi de mieux que de coder au soleil avec la mer à proximité ?</p>
-   ArianePhelizot:
+  ArianePhelizot:
     first_name: Ariane
-    last_name: Phelizot 
+    last_name: Phelizot
     city_slug: marseille
     batch_slug: 66
     publication_date: 2017-10-25
