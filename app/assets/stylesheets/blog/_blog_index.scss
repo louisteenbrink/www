@@ -77,50 +77,11 @@
     .header-main {
       position: relative;
 
-      &:hover {
-        cursor: pointer;
-
-        #play-button {
-          .circle {
-            fill: #fff !important;
-          }
-        }
-      }
-
-
       .video-thumbnail {
-        height: 520px;
+        padding-bottom: 53%;
 
-        @media (max-width: 992px) {
-          height: 430px;
-        }
-
-        @media (max-width: 520px) {
-          height: 230px;
-        }
-
-        @media (min-width: 768px) {
-          .play {
-            height: 50px !important;
-            width: 50px !important;
-          }
-        }
-
-        .video-details {
-          text-align: left;
-
-          @media (min-width: 768px) {
-            h4 {
-              width: 60%;
-              font-size: 2em;
-            }
-          }
-
-          i {
-            position: relative;
-            font-size: 0.8em;
-            font-style: normal;
-          }
+        &:before {
+          display: none;
         }
       }
     }
