@@ -2,7 +2,6 @@
   <% @testimonials.each_slice(2) do |testimonials| %>
     <div class="row">
       <% testimonials.each do |testimonial| %>
-
         <% cache [ 'testimonial', testimonial, I18n.locale ] do %>
         <!-- EXCERPT CONTENT -->
         <div class="col-md-6">

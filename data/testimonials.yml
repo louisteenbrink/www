@@ -109,7 +109,6 @@ routes:
     - drea23
     - PerrineMet
     - florentdaubas
-    - OdaiaLCMB
 testimonials:
   twentyfivemtl:
     first_name: Thibault
@@ -988,7 +987,7 @@ testimonials:
   fractalatcarf:
     first_name: Damien
     last_name: Vincent
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 37
     publication_date: 2017-10-25
     job_before:
@@ -1005,7 +1004,7 @@ testimonials:
   drea23:
     first_name: Andréa
     last_name: Simoes
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 53
     publication_date: 2017-10-25
     job_before:
@@ -1022,7 +1021,7 @@ testimonials:
   PerrineMet:
     first_name: Perrine
     last_name: Meteyer
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 53
     publication_date: 2017-10-25
     job_before:
@@ -1039,7 +1038,7 @@ testimonials:
   florentdaubas:
     first_name: Florent
     last_name: Daubas
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 53
     publication_date: 2017-10-25
     job_before:
@@ -1056,7 +1055,7 @@ testimonials:
   jeremycartesse:
     first_name: Jeremy
     last_name: Cartesse
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 53
     publication_date: 2017-10-25
     job_before:
@@ -1073,7 +1072,7 @@ testimonials:
   HbCbAk:
     first_name: Hervé
     last_name: Blasse
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 53
     publication_date: 2017-10-25
     job_before:
@@ -1090,7 +1089,7 @@ testimonials:
   lilimsa:
     first_name: Salim
     last_name: Lalam
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 53
     publication_date: 2017-10-25
     job_before:
@@ -1108,7 +1107,7 @@ testimonials:
   OdaiaLCMB:
     first_name: Odaïa
     last_name: Lacombes
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 66
     publication_date: 2017-10-25
     job_before:
@@ -1125,7 +1124,7 @@ testimonials:
   ArianePhelizot:
     first_name: Ariane
     last_name: Phelizot
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 66
     publication_date: 2017-10-25
     job_before:
@@ -1143,7 +1142,7 @@ testimonials:
   Eth3rnit3:
     first_name: David
     last_name: Marie
-    city_slug: marseille
+    city_slug: aix-marseille
     batch_slug: 91
     publication_date: 2017-10-25
     job_before:
