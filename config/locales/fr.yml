@@ -12,6 +12,8 @@ fr:
   top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
+  top_bar_podcast_message: "Chaque semaine, un entrepreneur nous raconte l'histoire de sa startup"
+  top_bar_podcast_cta: "abonne-toi au Podcast du Wagon 🎙"
   shared:
     positions:
       they_hired_our_students: Ils recrutent nos élèves
@@ -626,6 +628,7 @@ fr:
       header_latest: Latest video
       header_aside_1: Get inpired by our amazing community
       header_aside_2: Learn from the best developers & entrepreneurs
+      header_aside_3: Abonne-toi au Podcast du Wagon
       posts_small: Latest posts
       posts_title: Empower yourself reading our stories and resources
       show_more_posts: See more posts

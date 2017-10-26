@@ -18,25 +18,7 @@
         <div class="col-md-8 col-md-offset-2 header-main">
           <% video = @videos.first %>
           <%= link_to post_path video.slug do %>
-            <div class="video-thumbnail" style="background-image: url('https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/<%= video.thumbnail %>')">
-              <?xml version="1.0" encoding="UTF-8"?>
-              <svg class="play" id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                    <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
-                </g>
-              </svg>
-              <div class="video-details">
-                <i><%= t(".header_latest") %></i>
-                <h4><%= video.title %></h4>
-                <div class="catergory-items">
-                  <%= render "shared/flags/#{video.locale}" %>
-                  <ul>
-                    <% video.labels.each do |tag| %>
-                      <li><%= tag %></li>
-                    <% end %>
-                  </ul>
-                </div>
-              </div>
+            <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/<%= video.youtube_slug %>/maxresdefault.jpg')">
             </div>
           <% end %>
         </div>
