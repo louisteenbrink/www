@@ -94,7 +94,6 @@
 
       @media (max-width: 767px) {
         flex-direction: column;
-        margin-top: 30px;
 
         a:nth-of-type(2) {
           margin-top: 20px;
@@ -184,6 +183,45 @@
               @media (max-width: 320px) {
                 font-size: 0.6em;
               }
+            }
+          }
+        }
+      }
+    }
+
+    .aside-podcast {
+      margin-top: 30px;
+
+      a {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .header-aside-item {
+        background-size: cover;
+        background-position: right;
+        border-right: none;
+
+        @media (max-width: 750px) {
+          background-image: none !important;
+        }
+
+        .aside-item-thumbnail {
+          width: 16%;
+
+          @media (max-width: 767px) {
+            width: 33.33333%
+          }
+        }
+
+        .aside-item-content {
+          max-width: 530px;
+
+          p {
+            max-width: 460px;
+
+            @media (max-width: 1200px) {
+              display: none;
             }
           }
         }
