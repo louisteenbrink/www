@@ -1,25 +1,16 @@
 routes:
   home:
-    - Eth3rnit3
-    - ArianePhelizot
-    - OdaiaLCMB
-    - lilimsa
-    - HbCbAk
-    - jeremycartesse
-    - florentdaubas
-    - PerrineMet
-    - drea23
-    - fractalatcarf
+    - bibiiii
     - souebina
     - khalid-bkr
+    - julie-e
+    - diosat91
     - twentyfivemtl
     - milanbarande
     - gabpoiss
     - dmbf29
     - jay-g2017
-    - bibiiii
     - archiejg
-    - diosat91
     - glannes
     - felsmo
     - joaopfsilva
@@ -31,7 +22,6 @@ routes:
     - evanht
     - edebeauffort
     - timotheegoguely
-    - julie-e
     - isabellebonnard
     - ruijorge
     - apires89
@@ -98,7 +88,7 @@ routes:
     - souebina
     - khalid-bkr
     - dmbf29
-  marseille:
+  aix-marseille:
     - Eth3rnit3
     - ArianePhelizot
     - OdaiaLCMB
@@ -995,7 +985,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_damien_vincent.png
+    picture: marseille_damien_vincent.jpg
     linkedin_url:
     content_html: |
       <p>Avant la formation du Wagon, je venais de quitter un poste de pre-sales pour une startup marseillaise. J’avais un gros background technique puisque j'ai travaillé 20 dans l'informatique. Pour autant mes connaissances techniques commençaient à dater et comme je portais un projet de startup dans le Théâtre, il fallait réactualiser mes connaissances en code. Par hasard j'ai croisé Louis Chavane, CEO du Wagon Aix-Marseille, à un meetup sur Sketch. J'ai tout de suite voulu y enseigner, mais je devais d’abord mettre à jour mes connaissances et me former sur Ruby.</p>
@@ -1012,7 +1002,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_andrea_simoes.png
+    picture: marseille_andrea_simoes.jpg
     linkedin_url:
     content_html: |
       <p>Avant de passer par le Wagon j’étais graphiste spécialisée Print, j’ai travaillé en imprimerie et en agence. Dans mon métier j’aime apprendre les choses jusqu’au bout, comprendre les tenants et les aboutissants de chaque projet. Dans le Graphisme, il y a 2 grandes familles d’application : le Print et le Web. Après avoir expérimenté le print en profondeur, j’ai décidé de m’attaquer au web. J’ai trouvé la formation en pesant le pour et le contre de chaque organisme proposant une formation similaire. Ce qui m’a motivé, c’est l’idée de passer directement de la théorie à la pratique dans mon travail.</p>
@@ -1029,7 +1019,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_perinne_meteyer.png
+    picture: marseille_perinne_meteyer.jpg
     linkedin_url:
     content_html: |
       <p>Avant la formation du Wagon, j’étais jeune diplômée en marketing et stratégie commerciale. J’étais à la recherche d’un job dans le domaine du marketing. Mais je ne trouvais pas « LE » job. J’avais appris toutes les notions stratégiques relatives au web. Il me manquait les connaissances purement techniques. J’ai donc décidé de faire le wagon pour acquérir ces compétences techniques. En rejoignant le Batch#53 du Wagon Aix-Marseille, j’ai été servie : Ruby, Html, Css, Javascript, Ajax, Jquery etc.</p>
@@ -1046,7 +1036,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_florent_daubas.png
+    picture: marseille_florent_daubas.jpg
     linkedin_url:
     content_html: |
       <p>Avant le Wagon j’étais ingénieur dans l’environnement à l’international, principalement en Afrique. Je voulais changer de vie et sortir de ma routine professionnelle, une envie de faire des choses plus pour moi et plus créatives. Je voulais apprendre à coder et j’ai trouvé la formation du Wagon Aix-Marseille par des recherches sur internet. Le slogan du wagon était fait pour moi ! En route pour le Batch #53 à Marseille.</p>
@@ -1063,7 +1053,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_jeremy_cartesse.png
+    picture: marseille_jeremy_cartesse.jpg
     linkedin_url:
     content_html: |
       <p>Venant du monde de l’aéronautique, la programmation, je cherchais à approfondir mes connaissance en code. J’ai cherché sur Internet une formation et je suis tombé sur le Wagon. Par la suite, j’ai rejoint le batch#53 en Janvier 2017 à Marseille !</p>
@@ -1080,7 +1070,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_herve_blasse.png
+    picture: marseille_herve_blasse.jpg
     linkedin_url:
     content_html: |
       <p>Avant de faire la formation du Wagon à Marseille, j’avais une idée bien précise de la start-up que je souhaitais lancer. Mais je me sentais trop dépendant des développeurs que j’avais pu rencontrer et dont je comprenais mal les devis. En recherchant sur google, j’ai trouvé « Apprenez à coder en 9 semaines ». Je me lance ! J’ai pris la décision de participer à cette formation sur Marseille et j’intègre le Batch 53  le 09 Janvier 2017 !</p>
@@ -1097,7 +1087,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_salim_lalam.png
+    picture: marseille_salim_lalam.jpg
     linkedin_url:
     content_html: |
       <p>Après 15 ans dans le domaine des assurances, j’ai décidé en 2009 de reprendre mes études dans le marketing digital. Cependant, je bloquais toujours sur le même problème, trouver un développeur web qui construirait mes idées comme je le veux. Lors d’une conférence, Adrien Aumont - Co-fondateur de Kisskiss bankbank&Co a prononcé une phrase qui a tout fait changer : « Si je devais re-monter une startup aujourd’hui, la 1ére chose que je ferais, c’est d’apprendre à coder, pas pour devenir développeur mais pour comprendre le langage du développement web. » Il a ajouté avoir suivi une formation pour apprendre à coder en seulement 9 semaines au Wagon. Le lendemain je m’inscrivais et j’ai rejoint la formation du Wagon à Marseille le 09 Janvier 2017 !</p>
@@ -1115,7 +1105,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_odaia_lacombes.png
+    picture: marseille_odaia_lacombes.jpg
     linkedin_url:
     content_html: |
       <p>Après quelques années d’étude dans la filière scientifique, j’ai obtenu un BTS en production Audiovisuelle. Je me suis rendu compte que ce métier et Paris n’étaient pas en adéquation avec moi même. J’ai donc tout quitté pour venir vivre à Marseille. Et en tâtonnant, j’ai découvert que le code me plaisait énormément ! Puis  en recherchant sur Google, j’ai trouvé Le Wagon et j’ai rejoint le Batch#66 à Marseille.</p>
@@ -1132,7 +1122,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_ariane_phelizot.png
+    picture: marseille_ariane_phelizot.jpg
     linkedin_url:
     content_html: |
       <p>Cela faisait longtemps que je voulais apprendre à coder sans jamais passer sérieusement à l’action. J’étais convaincue que savoir coder, c’est comme parler anglais de nos jours, c’est indispensable !</p>
@@ -1150,7 +1140,7 @@ testimonials:
     job_after:
     new_company:
     origin: Course Report
-    picture: marseille_david_marie.png
+    picture: marseille_david_marie.jpg
     linkedin_url:
     content_html: |
       <p>J'ai toujours était passionné d'informatique. Ceci étant mes choix et mon parcours m’ont éloignés de ma passion pendant des années, jusqu’au jour où en cherchant sur le web, j’ai découvert le Wagon. J’ai tenté l’expérience au Wagon à Marseille et j’ai intégré le batch#91 en juillet 2017.</p>
