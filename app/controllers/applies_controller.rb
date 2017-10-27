@@ -74,8 +74,8 @@ class AppliesController < ApplicationController
   def create_hec
     I18n.locale = :fr
     @application = Apply.new(application_params)
-    @application.batch_id = 68 # HEC - Paris - Janvier 2017
-    @application.city_id = 1   # Paris
+    @application.batch_id = 153 # HEC - Paris - Janvier 2018
+    @application.city_id = 1    # Paris
     # @application.validate_ruby_codecademy_completed = true
     @application.skip_source_validation = true # No referrer
 

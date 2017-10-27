@@ -13,14 +13,16 @@
       <% else %>
         <div class="intro">
           <p>
-            HEC propose en exclusivité une track <i>Le Wagon</i> limitée à <strong>16 étudiants</strong>.
-            Cette track se déroulera dans les locaux du Wagon, au <a href="https://www.google.fr/maps/place/Le+Wagon/@48.8648515,2.3776643,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66df010ec3bff:0x6b419acfa77236a0!8m2!3d48.864848!4d2.379853?hl=fr" target="_blank">16 Villa Gaudelet</a> dans le XI<sup>ème</sup>
-            du 30 janvier au 31 mars 2017.
+            HEC et Le Wagon proposent en exclusivité une track <i>FullStack Entrepreneur</i> limitée à <strong>8 étudiants</strong>.
+            <!-- Cette track se déroulera dans les locaux du Wagon Perchoir, au <a href="https://www.google.fr/maps/place/14+Rue+Crespin+du+Gast,+75011+Paris/@48.8660032,2.3780234,16.14z/data=!4m5!3m4!1s0x47e66df1d595cf1d:0x3941de3db62c8c37!8m2!3d48.8654569!4d2.3820249" target="_blank">14 Crespin du Gast</a> et du Wagon Gaudelet, au <a href="https://www.google.fr/maps/place/Le+Wagon/@48.8648515,2.3776643,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66df010ec3bff:0x6b419acfa77236a0!8m2!3d48.864848!4d2.379853?hl=fr" target="_blank">16 Villa Gaudelet</a>, dans le XI<sup>ème</sup>. -->
+            La formation se déroulera du 29 janvier au 30 mars 2018.
           </p>
           <p>
-            Vous pouvez postuler dès maintenant pour <strong>pré-reserver</strong> une place, mais sachez que nous demandons aux candidats de terminer <strong>100%</strong> de la
-            <a href="https://www.codecademy.com" target="_blank">track Ruby sur CodeCademy</a> avant de pouvoir embarquer. Votre <em>username</em> est d'ailleurs demandé ci-dessous dans le formulaire, pour le récupérer,
-            <a href="https://www.codecademy.com/profiles/me" target="_blank">cliquez ici</a> et regardez l'URL vers laquelle vous êtes redirigé(e)s.
+            Nous appliquerons la règle du <strong>premier arrivé, premier servi</strong> pour les candidatures.
+          </p>
+          <p>
+            Votre <em>username</em> <a href="https://www.codecademy.com/">CodeCademy</a> est demandé ci-dessous dans le formulaire, pour le récupérer,
+            <a href="https://www.codecademy.com/profiles/me" target="_blank">cliquez ici</a> et regardez l'URL vers laquelle vous êtes redirigé(e)s. Un pré-requis est de terminer 100% du tutoriel Ruby.
           </p>
         </div>
       <% end %>
@@ -30,7 +32,7 @@
         apply_path: hec_apply_path,
         locale: I18n.locale,
         banner: image_path("officials/pair-programming.jpg"),
-        price: "2000€ TTC à régler à HEC",
+        price: "1500 € (le reste est pris en charge par HEC)",
         i18n: {
           please_wait: t("applies.new.please_wait"),
           price: t('applies.new.price')
@@ -38,7 +40,7 @@
         rows: [
           apply_row(:first_name, true, :text, t("applies.new.first_name"), "Alan", "account", 1),
           apply_row(:last_name, true, :text, t("applies.new.last_name"), "Turing", "format-text", 2),
-          apply_row(:codecademy_username, true, :text, t("applies.new.codecademy_username"), "alan_turing", "format-text", 3),
+          apply_row(:codecademy_username, false, :text, t("applies.new.codecademy_username"), "alan_turing", "format-text", 3),
           apply_row(:age, true, :text, "Age", "42", "crown", 4),
           apply_row(:email, true, :email, "Email", "alan@turing.com", "email-open", 5),
           apply_row(:phone, true, :tel, t("applies.new.phone"), "+33612345678", "cellphone-iphone", 6),
