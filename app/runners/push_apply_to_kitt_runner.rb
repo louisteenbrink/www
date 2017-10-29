@@ -20,7 +20,9 @@ class PushApplyToKittRunner
         source: @apply.source,
         motivation: @apply.motivation,
         price_cents: price_cents,
-        price_currency: price_currency
+        price_currency: price_currency,
+        created_at: @apply.created_at,
+        updated_at: @apply.updated_at
       }
     }
 

@@ -95,6 +95,7 @@ class AppliesController < ApplicationController
   include CloudinaryHelper
 
   def prepare_apply_form
+    binding.pry
     @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
       city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
       first_available_batch = city['batches'].find { |b| !b['full'] }
