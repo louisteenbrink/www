@@ -79,10 +79,6 @@
               <% end %>
               <span><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Posted on <%= @post.date.to_date.strftime("%d %b %Y") %> by <%= @post.author[:fname].capitalize %> <%= @post.author[:lname].capitalize %></span>
             </div>
-
-            <!-- CTA - LEARN TO CODE FOR FREE -->
-            <%= render 'posts/learn_cta' %>
-            <%= render "prospects/invitation" %>
           </div>
 
           <div class="more-videos">
@@ -145,10 +141,6 @@
           <!-- POST - CONTENT -->
           <div class="col-md-8 post-content">
             <%= raw @post.content %>
-
-            <!-- CTA - LEARN TO CODE FOR FREE -->
-            <%= render 'posts/learn_cta' %>
-            <%= render "prospects/invitation" %>
 
             <!-- POST - AUTHOR INFO -->
             <% if @post.author %>
