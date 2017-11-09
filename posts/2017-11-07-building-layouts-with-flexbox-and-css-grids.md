@@ -3,7 +3,7 @@ layout: video
 title: "Building layouts with flexbox and CSS grids"
 youtube_slug: "dA00K9qmiWM"
 date: 2017-11-07
-author: gustavo
+author: boris
 pushed: true
 locale: "en"
 labels:
