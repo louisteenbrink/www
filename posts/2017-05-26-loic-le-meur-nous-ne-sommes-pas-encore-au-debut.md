@@ -2,7 +2,6 @@
 layout: post
 title: "Loic Le Meur : Nous ne sommes pas encore au début"
 author: antonin
-date: 26-06-2017
 labels:
   - podcast
 thumbnail: 2017-05-26-nouvelle-ecole-e18.jpg

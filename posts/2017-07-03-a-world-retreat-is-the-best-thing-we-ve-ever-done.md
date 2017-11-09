@@ -2,7 +2,6 @@
 layout: post
 title: "A world retreat is the best thing we've ever done!"
 author: cedric
-date: 03-07-2017
 labels:
   - lifestyle
 thumbnail: 2017-06-28-ericeira-cover.jpg

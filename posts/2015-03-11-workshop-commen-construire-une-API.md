@@ -2,7 +2,6 @@
 layout: video
 title: "Comment bien construire l'API de son service ?"
 author: cedric
-date: 11-02-2015
 youtube_slug: "D_XFUE1GeWk"
 locale: "fr"
 labels:

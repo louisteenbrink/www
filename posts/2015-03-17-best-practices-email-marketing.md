@@ -2,7 +2,6 @@
 layout: video
 title: "Les best practices de l'email marketing et transactionnel"
 author: cedric
-date: 17-03-2015
 youtube_slug: "jEBDJQP8qyU"
 locale: "fr"
 labels:

@@ -1,10 +1,13 @@
 ---
 layout: story
-title: "After meeting at Le Wagon, they have launched their own studio: Digital Skills Bar"
+title: 'After meeting at Le Wagon, they have launched their own studio: Digital Skills
+  Bar'
+date: '2017-02-21'
+thumbnail: lewagon-alumni-hugo-wilfried-digital-skills-bar.jpg
+description: From there, we have worked closely with a few radio stations and even
+  released a mobile app!
 alumnus_github_nickname: hugohow
-date: 2017-02-21T15:15:38Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/009/cover/hugo_wilfried_1.jpg?1487690137
-company_slug: digital-skills-bar
+company_slug: digitalskillsbar
 ---
 
 ## What were you doing before Le Wagon and what led you to enroll?

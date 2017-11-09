@@ -2,7 +2,6 @@
 layout: post
 title:  "Romain Saillet et les nouveaux médias"
 author: boris
-date: 07-05-2014
 labels:
   - startup
 thumbnail: 2014-05-07-romain-saillet-medialab-session.jpg

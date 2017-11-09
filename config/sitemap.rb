@@ -9,11 +9,6 @@ SitemapGenerator::Sitemap.create do
     end
   end
 
-  AlumniClient.new.cities.map { |city_group| city_group["cities"] }.flatten.map { |city| city["slug"] }.each do |slug|
-    add slug
-    add "fr/#{slug}"
-  end
-
   add "alumni", priority: 0.8
   add "fr/alumni", priority: 0.8
 
@@ -23,11 +18,8 @@ SitemapGenerator::Sitemap.create do
   add "stack", priority: 0.6
   add "fr/stack", priority: 0.6
 
-  client = AlumniClient.new
-  client.stories.each do |story|
-    github_nickname = story["alumni"]["github_nickname"]
-    add "stories/#{github_nickname}", priority: 0.6
-    add "fr/stories/#{github_nickname}", priority: 0.6
+  Story.all.each do |slug|
+    add "stories/#{slug}", priority: 0.6
   end
 
   Post.all.each do |post|

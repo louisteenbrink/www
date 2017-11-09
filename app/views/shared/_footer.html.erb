@@ -10,7 +10,7 @@
         subscribe: t(".subscribe"),
         subscribing: t(".subscribing")
       },
-      city_id: @city ? @city.id : nil,
+      city_slug: @city ? @city.slug : nil,
       token: form_authenticity_token
     }, prerender: false %>
 

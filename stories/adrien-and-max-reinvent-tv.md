@@ -1,9 +1,11 @@
 ---
 layout: story
 title: Two friends building the future of TV with Molotov.
+date: '2015-11-26'
+thumbnail: adrien-and-max-reinvent-tv.jpg
+description: Adrien and Maxime, two friends who met in San Francisco, both joined
+  Molotov after Le Wagon's FullStack program. They are now building the future of TV.
 alumnus_github_nickname: amontcoudiol
-date: 2015-11-26T09:51:45Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/005/cover/adrien_max_reverse.jpg?1464278782
 company_slug: molotov
 ---
 

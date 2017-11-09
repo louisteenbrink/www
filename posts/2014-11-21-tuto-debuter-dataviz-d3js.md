@@ -2,7 +2,6 @@
 layout: video
 title: "Initiation à la Dataviz avec d3.js"
 author: cedric
-date: 21-11-2014
 youtube_slug: "ZEtyr9C01cg"
 locale: "fr"
 labels:

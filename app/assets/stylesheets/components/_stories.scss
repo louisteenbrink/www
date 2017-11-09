@@ -72,6 +72,9 @@
   }
   .story-user-name {
     font-weight: 300;
+    a, a:hover {
+      color: white;
+    }
   }
   .story-link {
     position: absolute;
@@ -364,7 +367,8 @@
   align-items: center;
 
   .story-company-logo {
-    width: 80px;
+    height: 80px;
+    margin-top: 10px;
     flex-shrink: 1;
     margin-left: auto;
   }

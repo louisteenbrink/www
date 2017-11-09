@@ -2,7 +2,6 @@
 layout: video
 title: "What it's like to experience Le Wagon Montreal"
 youtube_slug: "RODFbVCmnk4"
-date: 01-06-2017
 author: mg
 locale: "en"
 labels:

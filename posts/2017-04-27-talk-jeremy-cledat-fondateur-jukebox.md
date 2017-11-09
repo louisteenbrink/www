@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec Jérémy Clédat, fondateur de Jukebox"
 youtube_slug: "nxe21HZAm18"
-date: 27-04-2017
 author: cedric
 locale: "fr"
 labels:

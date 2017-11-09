@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec Edouard Rudolf, fondateur d'En Voiture Simone"
 youtube_slug: "PcRNJLQy1m0"
-date: 17-05-2017
 author: cedric
 locale: "fr"
 labels:

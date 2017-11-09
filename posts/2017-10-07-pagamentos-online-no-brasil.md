@@ -2,9 +2,7 @@
 layout: video
 title: "Pagamentos Online no Brasil"
 youtube_slug: "b3rzJqEFg1M"
-date: 2017-10-07
 author: mathieu
-pushed: true
 locale: "pt-BR"
 labels:
   - workshop

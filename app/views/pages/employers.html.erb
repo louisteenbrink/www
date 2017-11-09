@@ -35,7 +35,7 @@
       <% positions.each do |position| %>
         <div class="alumni-preview <%= 'hidden' unless first %>" id="<%= position.name.parameterize %>">
           <div class="alumni-preview-content">
-            <%= cl_adaptive_image_tag position.avatar_url, width: 120, height: 120, crop: :fill, class: "img-circle" %>
+            <%= cl_adaptive_image_tag position.official_avatar_url, width: 120, height: 120, crop: :fill, class: "img-circle" %>
             <h3><%= position.name %></h3>
             <h4>
               Batch #<%= position.camp.slug %>, <strong><%= position.city.name %></strong>

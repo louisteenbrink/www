@@ -1,9 +1,11 @@
 ---
 layout: story
 title: They got hired as developers before finishing Le Wagon Shanghai
+date: '2017-08-23'
+thumbnail: john-and-max-got-hired-as-developers-before-finishing-le-wagon-shanghai.jpg
+description: 'Le Wagon Shanghai Alumni John and Max from Batch #61 got a job offer
+  before finishing Le Wagon as front-end and back-end developers at HeyShop.'
 alumnus_github_nickname: khier996
-date: 2017-08-23T16:38:00Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/018/cover/_H4A1105.jpg?1503506267
 company_slug: heyshop
 ---
 

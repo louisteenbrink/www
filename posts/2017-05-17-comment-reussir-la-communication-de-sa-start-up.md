@@ -2,7 +2,6 @@
 layout: video
 title: "Comment réussir la communication de sa start-up ?"
 youtube_slug: "XgIL8khfXBY"
-date: 17-05-2017
 author: cedric
 locale: "fr"
 labels:

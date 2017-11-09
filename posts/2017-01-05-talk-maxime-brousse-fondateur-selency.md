@@ -2,7 +2,6 @@
 layout: video
 title: "Talk avec Maxime Brousse, Co-fondateur de Selency"
 youtube_slug: "m_7y572Txyg"
-date: 05-01-2017
 author: cedric
 locale: "fr"
 labels:

@@ -2,7 +2,6 @@
 layout: post
 title: "Publiez votre premier site web en moins de 10 minutes"
 author: cedric
-date: 19-11-2014
 locale: "fr"
 labels:
   - tutorial

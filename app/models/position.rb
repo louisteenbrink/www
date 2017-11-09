@@ -1,6 +1,6 @@
 class Position
   attr_reader :title, :github_nickname
-  delegate :name, :avatar_url, :camp, to: :user
+  delegate :name, :official_avatar_url, :camp, to: :user
   delegate :city, to: :camp
 
   def initialize(github_nickname, hash)

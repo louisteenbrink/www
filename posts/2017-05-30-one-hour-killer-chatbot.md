@@ -2,7 +2,6 @@
 layout: video
 title: "1-Hour killer chatbot with Recast.ai"
 youtube_slug: "p1UNO5wZH3s"
-date: 30-05-2017
 author: cedric
 locale: "fr"
 labels:

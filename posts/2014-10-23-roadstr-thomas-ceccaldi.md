@@ -2,7 +2,6 @@
 layout: post
 title: "Roadstr, location de voitures vintage entre particuliers"
 author: cedric
-date: 23-10-2014
 labels:
   - alumni
 thumbnail: 2014-10-23-roadstr-thomas-ceccaldi.jpg

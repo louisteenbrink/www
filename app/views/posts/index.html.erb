@@ -1,6 +1,6 @@
-<% count = 1000 %>
-<% if @statistics && @statistics['alumni'] && @statistics['alumni']['total'].is_a?(Fixnum) %>
-  <% count = @statistics['alumni']['total'] %>
+<% count = 2000 %>
+<% if @statistics && @statistics.alumni_count && @statistics.alumni_count.is_a?(Fixnum) %>
+  <% count = @statistics.alumni_count %>
 <% end %>
 
 <% content_for(:title) { t ".title" } %>
@@ -23,7 +23,6 @@
           <% end %>
         </div>
       <% end %>
-
 
       <% if I18n.locale == :fr %>
         <div class="col-md-8 col-md-offset-2 header-aside aside-podcast">
@@ -109,7 +108,7 @@
                     <div class="video-details">
                       <h4><%= video.title %></h4>
                       <div class="catergory-items">
-                        <%= render "shared/flags/#{video.locale}" %>
+                        <%= render "shared/flags/#{video.locale_icon}" %>
                         <ul>
                           <% video.labels.each do |tag| %>
                             <li><%= tag %></li>

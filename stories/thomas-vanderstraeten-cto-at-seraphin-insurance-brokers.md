@@ -1,10 +1,13 @@
 ---
 layout: story
 title: Seraphin snags €1.2M in investment
-date: 2017-07-20T14:37:29Z
+date: '2017-07-20'
+thumbnail: thomas-vanderstraeten-cto-at-seraphin-insurance-brokers.jpg
+description: "\r\nLe Wagon Brussels alumni Thomas Vanderstraeten is Seraphin’s cofounder
+  and CTO. The company just raised €1.2M and Thomas did us the honor of sharing his
+  story and telling us what led him to be where he is today."
 alumnus_github_nickname: thomasvds
 company_slug: seraphin
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/016/cover/ca0c9e1d2e3324868d03726a1c131743b353cb91.jpg?1500561448
 ---
 
 ## What were you doing before Le Wagon?

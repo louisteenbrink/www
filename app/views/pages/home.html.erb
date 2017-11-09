@@ -36,9 +36,12 @@
 <%= render partial: "shared/testimonials_new" %>
 
 <% cache [ 'stories', locale ] do %>
-  <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
+  <% stories = Story.random(limit: 2, excluded_slugs: session[:story_slugs]).map(&:as_json) %>
+  <% stories.each do |story| %>
+    <% story[:thumbnail] = story_image_url(story[:thumbnail]) %>
+  <% end %>
   <%= react_component 'Stories', {
-      stories: enriched_stories(stories),
+      stories: stories,
       storiesPath: alumni_path,
       i18n: {
         title: t(".featured"),

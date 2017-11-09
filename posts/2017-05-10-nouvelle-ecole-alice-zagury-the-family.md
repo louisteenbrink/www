@@ -2,7 +2,6 @@
 layout: post
 title: "Nouvelle École #16 - Alice Zagury"
 author: antonin
-date: 10-06-2017
 labels:
   - podcast
 thumbnail: 2017-05-10-nouvelle-ecole-16.jpg

@@ -2,7 +2,6 @@
 layout: post
 title: "Personnalisez l'url de votre site"
 author: cedric
-date: 28-11-2014
 labels:
   - tutorial
 thumbnail: 2014-11-28-tuto-url-custom.jpg

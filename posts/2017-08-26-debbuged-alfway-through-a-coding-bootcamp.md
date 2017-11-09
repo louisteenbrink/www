@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Debugged"
-date: 2017-08-11
 author: sandrine
 labels:
   - alumni

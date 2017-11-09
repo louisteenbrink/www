@@ -2,7 +2,6 @@
 layout: post
 title: "uSlide, synchronisez vos vidéos et présentations"
 author: cedric
-date: 15-06-2015
 labels:
   - alumni
 thumbnail: 2015-06-15-uslide.jpg

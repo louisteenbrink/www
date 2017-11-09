@@ -1,9 +1,12 @@
 ---
 layout: story
 title: Louis Robert, Product Manager at Fitle
+date: '2017-04-10'
+thumbnail: louis-robert-product-manager-fitle.jpg
+description: I only looked for Product Manager positions and intensively prepared
+  myself in addition to Le Wagon training. In less than 3 weeks of research I got
+  a job.
 alumnus_github_nickname: Louisrbrt
-date: 2017-04-10T11:49:48Z
-cover_picture: https://d1gofzrmx0fcbg.cloudfront.net/development/stories/pictures/000/000/014/cover/louis_robert_cover.jpg?1491825934
 company_slug: fitle
 ---
 

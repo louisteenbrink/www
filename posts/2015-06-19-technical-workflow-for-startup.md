@@ -2,7 +2,6 @@
 layout: video
 title: "Technical Workflow (for a startup)"
 author: sebastien
-date: 19-06-2015
 youtube_slug: "JQRiwZKJktE"
 locale: "fr"
 labels:
