@@ -27,8 +27,7 @@ The bare minimum variables you need to start the website are:
 
 ```yml
 # config/application.yml
-ALUMNI_WWW_SHARED_SECRET: "ask_for_it"
-ALUMNI_WWW_ENCRYPTING_KEY: "ask_for_it"
+KITT_WWW_SHARED_SECRET: "ask_for_it"
 CLOUDINARY_URL: "ask_for_it"
 ```
 
