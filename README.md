@@ -50,10 +50,10 @@ $ DISABLE_CACHE=true rails s
 
 ## API Development
 
-You can work with development API by launching a `rails s -p 5000` of [lewagon/alumni](https://github.com/lewagon/alumni) in another terminal tab, then launch the `www` rails app with:
+You can work with development API by launching a `rails s -p 5000` of [lewagon/kitt](https://github.com/lewagon/kitt) in another terminal tab, then launch the `www` rails app with:
 
 ```bash
-ALUMNI_BASE_URL=http://localhost:5000/api/v1 DISABLE_CACHE=true rails s
+KITT_BASE_URL=http://localhost:5000 DISABLE_CACHE=true rails s
 ```
 
 ### Linkedin Token
