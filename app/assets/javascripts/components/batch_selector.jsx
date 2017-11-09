@@ -9,7 +9,10 @@ class BatchSelector extends React.Component {
       'is-full': batch.apply_status === 'full'
     });
 
-    if (batch.apply_status === 'full') {
+    if (batch.special_message) {
+      var right_item = <div className='last-seats'>{batch.special_message}</div>;
+    }
+    else if (batch.apply_status === 'full') {
       var right_item = <div className='last-seats'>FULL</div>;
     }
     else if (batch.apply_status === 'waiting_list') {

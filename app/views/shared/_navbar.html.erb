@@ -11,7 +11,7 @@
 
 <% if @top_bar_message.present? && @top_bar_cta.present? %>
   <div id="sticky-banner">
-    <i><%= @top_bar_message %>, <%= link_to @top_bar_cta, @top_bar_url %> ⚛️</i>
+    <i><%= @top_bar_message %>, <%= link_to @top_bar_cta, @top_bar_url %></i>
   </div>
 <% end %>
 
@@ -69,20 +69,13 @@
                       </li>
                     <% elsif I18n.locale == :en %>
                       <li>
-                        <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 323px; text-align: left;" %>
+                        <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 323px;" %>
                       </li>
                     <% end %>
                     <% unless I18n.locale == :fr %>
                       </ul>
                       <ul class="list-unstyled">
                     <% end %>
-
-                    <li class="title" style="<%= 'margin-top: 27px;' if I18n.locale == :fr %>">
-                      <%= t ".menu.online", default: "Online" %>
-                    </li>
-                    <li style="padding: 3px 0px;">
-                      <%= link_to t(".menu.free_track", default: "Free web-development track"), learn_path, class:  "cta-enterprise", style: "min-width: 304px;" %>
-                    </li>
                   </ul>
 
                   <% if I18n.locale == :fr %>

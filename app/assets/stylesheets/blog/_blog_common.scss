@@ -34,6 +34,17 @@
     -webkit-padding-start: 0px;
   }
 
+  .catergory-items {
+    display: flex;
+
+    .flag {
+      width: 34px;
+      height: 23px;
+      margin-right: 10px;
+      border-radius: 2px;
+    }
+  }
+
   .section-title {
     display: flex;
     flex-direction: column;

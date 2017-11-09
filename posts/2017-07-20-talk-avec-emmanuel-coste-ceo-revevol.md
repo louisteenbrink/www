@@ -4,6 +4,7 @@ title: "Talk avec Emmanuel Coste, CEO de Revevol "
 youtube_slug: "MxmRQj0Bulg"
 date: 20-07-2017
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2017-07-20-talk-avec-emmanuel-coste-ceo-revevol.jpg

@@ -4,6 +4,7 @@ title: "Talk avec Edouard Rudolf, fondateur d'En Voiture Simone"
 youtube_slug: "PcRNJLQy1m0"
 date: 17-05-2017
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2017-05-17-edouard-rudolf-fondateur-en-voiture-simone.jpg

@@ -4,6 +4,7 @@ title: "Talk avec François-Xavier Trancart, CEO d'Artsper"
 youtube_slug: "--VU9YLIaXE"
 date: 27-10-2016
 author: cedric
+locale: "fr"
 labels:
   - talk
 thumbnail: 2016-10-27-francois-xavier-trancart-ceo-artsper.jpg

@@ -4,6 +4,7 @@ title: "Les best practices de l'email marketing et transactionnel"
 author: cedric
 date: 17-03-2015
 youtube_slug: "jEBDJQP8qyU"
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2015-03-17-workshop-emailing-marketing-transactionnel.jpg

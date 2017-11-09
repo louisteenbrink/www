@@ -390,12 +390,12 @@ en:
       description: "Because coders got style"
     react:
       catchline: "Discover a new way to approach front-end development"
-      main_title: "Learn React + Redux"
+      main_title: "React 5 days training in London"
       special_offer: "Fullstack program Alumni"
       pricing_vat: "£2,500 incl. VAT"
       pricing_no_vat: "i.e. £2,083 excl. VAT"
       special_offer_vat: "£1,500 incl. VAT"
-      special_offer_no_vat: "soit €1,250 HT"
+      special_offer_no_vat: "i.e. £1,250 excl. VAT"
       react_cta: "Book my spot"
       affix_title_date: "Next session"
       affix_date: "December 4 to December 8 2017"
@@ -666,6 +666,7 @@ en:
       learn_button: Get my invitation
   prospect_mailer:
     send_event:
+      from: "%{meetup_host} from Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Come to our next free event in %{prospect_city} on %{meetup_time}: %{meetup_name}!"
       disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
       title: "Come to our free workshop: %{meetup_name}"
@@ -682,6 +683,7 @@ en:
       host_content: "Feel free to join us anytime for our free events at Le Wagon %{city}, the team and I will always be happy to welcome you!"
       host_cta: "Learn more about our Meetups"
     send_content:
+      from: "%{meetup_host} from Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "We are bringing you the latest news, tutorials and insights on coding and entrepreneurship!"
       disclaimer: "Thanks again for signing up to Le Wagon Free Track!"
       title: "You're just at the beginning of your journey"

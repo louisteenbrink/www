@@ -14,11 +14,14 @@
                 </svg>
                 <div class="video-details">
                   <h4><%= video.title %></h4>
-                  <ul>
-                    <% video.labels.each do |tag| %>
-                      <li><%= tag %></li>
-                    <% end %>
-                  </ul>
+                  <div class="catergory-items">
+                    <%= render "shared/flags/#{video.locale}" %>
+                    <ul>
+                      <% video.labels.each do |tag| %>
+                        <li><%= tag %></li>
+                      <% end %>
+                    </ul>
+                  </div>
                 </div>
               </div>
             <% end %>

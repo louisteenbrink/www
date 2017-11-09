@@ -4,6 +4,7 @@ title: "Débuter avec Git et Github"
 author: sebastien
 date: 20-10-2014
 youtube_slug: "V6Zo68uQPqE"
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2014-10-20-workshop-github.jpg

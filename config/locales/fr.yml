@@ -12,6 +12,8 @@ fr:
   top_bar_react_cta: En savoir +
   top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
+  top_bar_podcast_message: "Chaque semaine, un entrepreneur nous raconte l'histoire de sa startup"
+  top_bar_podcast_cta: "abonne-toi au Podcast du Wagon 🎙"
   shared:
     positions:
       they_hired_our_students: Ils recrutent nos élèves
@@ -390,7 +392,7 @@ fr:
       description: "Le nouveau chic - Paris"
     react:
       catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
-      main_title: "Formez-vous à React + Redux"
+      main_title: "Formation React + Redux à Paris"
       special_offer: "Alumni programme Fullstack"
       pricing_vat: "€2,500 TTC"
       pricing_no_vat: "soit €2,083 HT"
@@ -626,6 +628,8 @@ fr:
       header_latest: Latest video
       header_aside_1: Get inpired by our amazing community
       header_aside_2: Learn from the best developers & entrepreneurs
+      header_aside_3: Get your weekly dose of entrepreneurship
+      header_aside_3_content: Subscribe to our podcast on iTunes to get premium insights from influencial entrepreneurs!
       posts_small: Latest posts
       posts_title: Empower yourself reading our stories and resources
       show_more_posts: See more posts
@@ -668,6 +672,7 @@ fr:
       learn_button: Get my invitation
   prospect_mailer:
     send_event:
+      from: "%{meetup_host} du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Ne rate pas notre prochain événement gratuit à %{prospect_city} %{meetup_time}: %{meetup_name}!"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon!"
       title: "Ne rate pas notre prochain événement: %{meetup_name}"
@@ -685,6 +690,7 @@ fr:
       host_content: "Tu es le/la bienvenu(e) à tous nos événements gratuits à %{city}, toute l'équipe et moi-même seront heureux de t'accueillir !"
       host_cta: "En savoir plus sur nos Meetups"
     send_content:
+      from: "%{meetup_host} du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Découvre les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat"
       disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
       title: "Tu n'es encore qu'au début du voyage"

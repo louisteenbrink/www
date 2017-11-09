@@ -4,6 +4,8 @@ title: "Talk avec Arnaud Péré, co-fondateur de Monsieur T-Shirt"
 youtube_slug: hb_PO4hTqpk
 date: 2017-08-10
 author: bertrand
+pushed: true
+locale: "fr"
 labels:
   - talk
 thumbnail: 2017-08-10-talk-arnaud-pere-monsieur-tshirt-1.jpg

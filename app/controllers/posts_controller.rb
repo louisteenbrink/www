@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :hide_drift
+  before_action :set_top_bar
 
   def index
     if request.format.html? || params[:post_page]
@@ -46,6 +47,14 @@ class PostsController < ApplicationController
   end
 
   private
+
+  def set_top_bar
+    if I18n.locale == :fr
+      @top_bar_message = I18n.t('.top_bar_podcast_message')
+      @top_bar_cta = I18n.t('.top_bar_podcast_cta')
+      @top_bar_url = "https://itunes.apple.com/us/podcast/le-wagon/id1298074014?mt=2"
+    end
+  end
 
   def hide_drift
     @hide_drift = true

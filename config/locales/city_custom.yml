@@ -6,6 +6,8 @@ fr:
     course_language: "anglais ou chinois"
   chengdu:
     course_language: "anglais ou chinois"
+  tokyo:
+    course_language: "anglais ou japonais"
 
 en:
   montreal:
@@ -15,6 +17,8 @@ en:
     course_language: "English or Chinese"
   chengdu:
     course_language: "English or Chinese"
+  tokyo:
+    course_language: "English or Japanese"
 
 pt-BR:
   montreal:

@@ -67,6 +67,14 @@ class PagesController < ApplicationController
     render json: params.to_json
   end
 
+  def react
+    if I18n.locale == :fr
+      @typeform_slug = "T0mrph"
+    else
+      @typeform_slug = "CJKtlE"
+    end
+  end
+
   def vae
   end
 

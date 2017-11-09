@@ -4,6 +4,8 @@ title: "Batch #93 - Everyday life at Le Wagon London"
 youtube_slug: tgPdjLlmSVI
 date: 2017-08-23
 author: arthur
+pushed: true
+locale: "en"
 labels:
   - backstage
 thumbnail: 2017-09-06-everyday-life-at-le-wagon-london-batch-93.jpg

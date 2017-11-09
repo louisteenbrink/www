@@ -4,6 +4,7 @@ title: "Codez votre premier site web - HTML & CSS"
 author: boris
 date: 24-11-2014
 youtube_slug: "SXBX5UFHW64"
+locale: "fr"
 labels:
   - workshop
 thumbnail: 2014-11-24-rocket-landing.jpg

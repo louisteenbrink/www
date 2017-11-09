@@ -4,6 +4,11 @@ title: "Talk with Slade Sundar, lessons from Silicon Valley"
 youtube_slug: AOJbfqJKWes
 date: 2017-08-09
 author: sandrine
+<<<<<<< HEAD
+=======
+pushed: true
+locale: "en"
+>>>>>>> master
 labels:
   - talk
 thumbnail: 2017-08-09-talk-with-slade-sundar-1.jpg

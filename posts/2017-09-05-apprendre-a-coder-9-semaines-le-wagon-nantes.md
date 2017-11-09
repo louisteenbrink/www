@@ -4,6 +4,8 @@ title: "9 semaines au Le Wagon Nantes"
 youtube_slug: CX_2XN0w2zU
 date: 2017-08-22
 author: pierre
+pushed: true
+locale: "fr"
 labels:
   - backstage
 thumbnail: 2017-09-05-apprendre-a-coder-9-semaines-le-wagon-nantes.jpg
