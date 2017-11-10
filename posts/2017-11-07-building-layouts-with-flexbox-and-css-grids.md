@@ -7,7 +7,7 @@ author: boris
 pushed: true
 locale: "en"
 labels:
-  - talk
+  - workshop
 thumbnail: 2017-11-07-building-layouts-with-flexbox-and-css-grids.jpg
 description: |
   Let's code 4 professional layouts in only 1h30 using the latest CSS techniques like flexbox and CSS grid.
