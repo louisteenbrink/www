@@ -36,9 +36,9 @@ class CitiesController < ApplicationController
 
     if @city.current_batch
       pedagogic_team = Kitt::Client.query(
-        Teacher::BatchQuery,
+        Teacher::CityQuery,
         variables: {
-          batch_slug: @city.current_batch.slug
+          city_slug: @city.slug
         }
       ).data.teachers.sort_by { |teacher| teacher.github_nickname }
       lead_teachers_slugs = Static::LEAD_TEACHERS[@city.slug.to_sym].nil? ? [] : Static::LEAD_TEACHERS[@city.slug.to_sym]
