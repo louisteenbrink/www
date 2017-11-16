@@ -35,12 +35,12 @@ paris:
     name: Tatiana Perillo
     role: Business Developer
     avatar: paris_tatiana_perillo.jpg
-bordeaux:
-  - github_nickname: bertrandbussac
-    name: Bertrand Bussac
-    role: Driver
-    avatar:
-  - github_nickname: volpeo
-    name: Sylvain Peigney
-    role: Class Manager
-    avatar:
+# bordeaux:
+#   - github_nickname: bertrandbussac
+#     name: Bertrand Bussac
+#     role: Driver
+#     avatar:
+#   - github_nickname: volpeo
+#     name: Sylvain Peigney
+#     role: Class Manager
+#     avatar:
