@@ -2,6 +2,26 @@
 <%= content_for(:description) { t(".description", story: @story.description) } %>
 <%= content_for(:image_url) { story_image_url(@story.thumbnail) if @story.thumbnail } %>
 
+<!-- FACEBOOK SDK ON SHOW VIEW -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '737501859652485',
+      xfbml      : true,
+      version    : 'v2.9'
+    });
+
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 
 <div class="story-banner banner banner-top">
   <div class="filter" class="perpetua filter"
@@ -12,22 +32,30 @@
   </div>
 </div>
 
-<div class='story-container'>
-  <div class="story-body">
-    <% if @story.company %>
+<div class='container story-wrapper'>
+  <div class="row">
+
+    <!-- AFFIX - SOCIAL SHARING OPTIONS -->
+    <div class="col-md-2">
+      <div data-spy="affix" data-offset-top="630" data-offset-bottom="2300">
+        <%= render 'stories/social_sharing' %>
+      </div>
+    </div>
+
+    <div class="col-md-8 story-body">
       <div class="story-company">
-        <%= link_to @story.company.url,target: :_blank do %>
-          <%= image_tag @story.company.logo, alt: @story.company.name, class: 'story-company-logo' %>
+        <% if @story["company"] %>
+          <img src="<%= @story["company"]["logo"] %>" class="story-company-logo">
         <% end %>
       </div>
-    <% end %>
-    <div class="story-summary">
-      <%= @story.description %>
-    </div>
-    <div class="story-description">
-      <%= raw @story.content %>
-      <h3 class="last"><%= t(".continue") %></h3>
-      <p><%= t(".read_more") %></p>
+      <div class="story-summary">
+        <%= markdown(@story['summary'][locale.to_s] || @story['summary']["en"]) %>
+      </div>
+      <div class="story-description">
+        <%= markdown(@story['description'][locale.to_s] || @story['description']["en"]) %>
+        <h3 class="last"><%= t(".continue") %></h3>
+        <p><%= t(".read_more") %></p>
+      </div>
     </div>
   </div>
 </div>
@@ -60,3 +88,14 @@
   <% end %>
 </div>
 
+<% content_for(:after_js) do %>
+  <script>
+    document.getElementById('shareBtn').onclick = function() {
+      FB.ui({
+        method: 'share',
+        display: 'popup',
+        href: window.location.href,
+      }, function(response){});
+    }
+  </script>
+<% end %>
