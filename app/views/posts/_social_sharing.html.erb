@@ -1,7 +1,7 @@
 <ul class="social-sharing">
   <li><%= ('share') %></li>
   <li>
-    <a href="http://twitter.com/home?status=<%= @post.title.html_safe %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
+    <a href="http://twitter.com/home?status=<%= raw @post.title %>+<%=request.url %>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
         <i class="fa fa-twitter" aria-hidden="true"></i>
     </a>
   </li>
@@ -9,7 +9,7 @@
     <i id="shareBtn" class="fa fa-facebook" aria-hidden="true"></i>
   </li>
   <li>
-    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%=request.url %>&title=<%= @post.title.html_safe %>&source=lewagon.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%=request.url %>&title=<%= raw @post.title %>&source=lewagon.com" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=240,width=600');return false;">
       <i class="fa fa-linkedin" aria-hidden="true"></i>
     </a>
     </li>
