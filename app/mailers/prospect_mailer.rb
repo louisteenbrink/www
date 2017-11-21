@@ -2,6 +2,8 @@ class ProspectMailer < ApplicationMailer
   after_action :prevent_emailing_opted_out_prospects, if: ->() { Rails.env.production? }
   after_action :prevent_double_deliveries, if: ->() { Rails.env.production? }
 
+  class MissingCityProspectInformation < StandardError; end
+
   def invite(prospect_id)
     @prospect = Prospect.find(prospect_id)
 
@@ -20,6 +22,9 @@ class ProspectMailer < ApplicationMailer
     @meetup = { event: meetup_cli.meetup_events.first, infos: meetup_cli.meetup }
     @meetup_time = Time.at(@meetup[:event]["time"] / 1000)
     @city_info = CITIES[@city]
+    if @city_info.blank?
+      raise MissingCityProspectInformation.new("data/cities.yml does not have an entry for #{@city}. Ping @cedric")
+    end
     @meetup_host = CITIES[@city]["meetup_host"]
     @user_locale = CITIES[@city]["marketing_automation"]["locale"]
 
