@@ -133,6 +133,8 @@ Rails.application.routes.draw do
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end
+
+  match "/404" => "application#render_404", via: :all
 end
 
 # Create helper for static_routes
