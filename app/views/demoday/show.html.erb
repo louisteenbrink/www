@@ -57,7 +57,7 @@
 
   json_batches = @batches.map { |batch| batch.as_json["data"] }
   json_batches.each do |batch|
-    batch["city_picture"] = cl_image_path batch['city']['city_background_picture_url'], height: 32, crop: :fill
+    batch["city_picture"] = cl_image_path batch['city']['city_background_picture_url'], height: 32, crop: :fill if batch['city']['city_background_picture_url']
     batch["starts_at"] = format_date(batch["starts_at"])
     batch["ends_at"] = format_date_complete(batch["ends_at"])
   end

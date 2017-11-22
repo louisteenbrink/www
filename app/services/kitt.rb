@@ -2,8 +2,7 @@ require "graphql/client"
 require "graphql/client/http"
 
 module Kitt
-  base_url = ENV.fetch('KITT_BASE_URL', 'https://kitt.lewagon.com') + "/graphql"
-  HTTP = GraphQL::Client::HTTP.new(base_url)
+  HTTP = GraphQL::Client::HTTP.new("#{ENV['KITT_BASE_URL']}/graphql")
   Schema = GraphQL::Client.load_schema(HTTP)
   class Client
     include Singleton
