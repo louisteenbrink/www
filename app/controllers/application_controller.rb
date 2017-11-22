@@ -3,7 +3,7 @@ require "timeout"
 require 'open-uri'
 
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception, except: :render_404
+  protect_from_forgery with: :reset_session, except: :render_404
   before_action :fetch_critical_css, if: -> { Rails.env.production? }
   before_action :better_errors_hack, if: -> { Rails.env.development? }
   before_action :set_locale
