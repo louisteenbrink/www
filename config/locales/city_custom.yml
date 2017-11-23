@@ -8,6 +8,12 @@ fr:
     course_language: "anglais ou chinois"
   tokyo:
     course_language: "anglais ou japonais"
+  recife:
+    course_language: "portugais brésilien"
+  belo-horizonte:
+    course_language: "portugais brésilien"
+  sao-paulo:
+    course_language: "portugais brésilien"
 
 en:
   montreal:
@@ -19,17 +25,29 @@ en:
     course_language: "English or Chinese"
   tokyo:
     course_language: "English or Japanese"
+  recife:
+    course_language: "Portuguese"
+  belo-horizonte:
+    course_language: "Portuguese"
+  sao-paulo:
+    course_language: "Portuguese"
 
 pt-BR:
   montreal:
     post_price: "+ taxes"
     course_language: "Inglês / Francês"
   shanghai:
-    course_language: "Inglès / Chinês"
+    course_language: "Inglês / Chinês"
   chengdu:
-    course_language: "Inglès / Chinês"
+    course_language: "Inglês / Chinês"
   tokyo:
-    course_language: "Inglès / Japonês"
+    course_language: "Inglês / Japonês"
+  recife:
+    course_language: "Português"
+  belo-horizonte:
+    course_language: "Português"
+  sao-paulo:
+    course_language: "Português"
 
 es:
   montreal:
@@ -41,6 +59,12 @@ es:
     course_language: "Inglés / Chino"
   tokyo:
     course_language: "Inglés / Japonés"
+  recife:
+    course_language: "Portugués"
+  belo-horizonte:
+    course_language: "Portugués"
+  sao-paulo:
+    course_language: "Portugués"
 
 zh-CN:
   montreal:
