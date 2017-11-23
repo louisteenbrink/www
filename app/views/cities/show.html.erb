@@ -91,7 +91,7 @@
     <div class="container">
       <div>
         <% @teachers.each do |teacher| %>
-          <% bio = teacher.send("bio_#{locale}".to_sym) || teacher.bio_en %>
+          <% bio = I18n.locale == :fr ? (teacher.bio_fr.blank? ? teacher.bio_en : teacher.bio_fr) : teacher.bio_en %>
           <% next if bio.blank? %>
           <div class="row">
             <div class="col-xs-12">
