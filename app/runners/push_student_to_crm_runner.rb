@@ -37,10 +37,10 @@ class PushStudentToCrmRunner
   private
 
   def price_cents
-    Rails.env.production? ? @apply.batch.price.cents : 100000
+    Rails.env.production? ? @apply.batch.price["cents"] : 100000
   end
 
   def price_currency
-    Rails.env.production? ? @apply.batch.price.currency.to_s : 'EUR'
+    Rails.env.production? ? @apply.batch.price["currency"] : 'EUR'
   end
 end
