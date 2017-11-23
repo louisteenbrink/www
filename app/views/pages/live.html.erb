@@ -49,7 +49,7 @@
           <div class="event-details">
             <ul class="event-speaker">
               <li>
-                <% if @live.company.logo %>
+                <% if @live.company_logo %>
                   <%= cl_image_tag @live.company.logo.path, width: 60, height: 60, crop: :fill, class: "company-logo" %>
                 <% end %>
               </li>
