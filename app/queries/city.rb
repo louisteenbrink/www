@@ -57,6 +57,7 @@ module City
         slug
         locale
         city_background_picture_url
+        apply_facebook_pixel
         apply_batches: apply_camps {
           id
           starts_at
