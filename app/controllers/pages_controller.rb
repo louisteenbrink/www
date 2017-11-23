@@ -15,7 +15,7 @@ class PagesController < ApplicationController
           if @live.demoday?
             redirect_to demoday_path(@live.batch_slug)
           else
-            @city = @kitt_client.city(@live.city_slug)
+            @city = Kitt::client.query(City::Query, variables: { slug: @live.city_slug }).data.city
           end
         end
       end
