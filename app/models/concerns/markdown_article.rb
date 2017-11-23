@@ -89,7 +89,7 @@ module MarkdownArticle
     "icon_flag_#{metadata[:locale]}"
   end
 
-  def method_missing(m)
+  def method_missing(m, *args)
     metadata[m]
   end
 

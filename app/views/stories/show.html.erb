@@ -44,15 +44,15 @@
 
     <div class="col-md-8 story-body">
       <div class="story-company">
-        <% if @story["company"] %>
-          <img src="<%= @story["company"]["logo"] %>" class="story-company-logo">
+        <% if @story.company %>
+          <img src="<%= @story.company.logo %>" class="story-company-logo">
         <% end %>
       </div>
       <div class="story-summary">
-        <%= markdown(@story['summary'][locale.to_s] || @story['summary']["en"]) %>
+        <%= markdown(@story.description) %>
       </div>
       <div class="story-description">
-        <%= markdown(@story['description'][locale.to_s] || @story['description']["en"]) %>
+        <%= markdown(@story.content) %>
         <h3 class="last"><%= t(".continue") %></h3>
         <p><%= t(".read_more") %></p>
       </div>
