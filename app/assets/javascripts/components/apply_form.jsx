@@ -135,7 +135,7 @@ class ApplyForm extends React.Component {
                       </div>
                       <div>
                         <span>{this.props.i18n.price + ": "}</span>
-                        <strong>{this.state.activeBatch.price.currency} {this.state.activeBatch.price.cents / 100}</strong>
+                        <strong>{this.state.activeBatch.price}</strong>
                         <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}} style={{'paddingLeft' : '4px'}}></span>
                       </div>
                     </div>
