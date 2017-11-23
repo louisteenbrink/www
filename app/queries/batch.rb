@@ -11,6 +11,7 @@ module Batch
         demoday_youtube_id
         force_completed_codecademy_at_apply
         analytics_slug
+        trello_inbox_list_id
         city {
           id
           slug
