@@ -2,7 +2,7 @@
   general_audience_tracker = '751967801553090'
 %>
 
-<% unless (@city && @city["apply_facebook_pixel"] == general_audience_tracker) %>
+<% unless (@city && @city.apply_facebook_pixel == general_audience_tracker) %>
 <script class="_iub_cs_activate-inline" type="text/plain">(function() {
   var _fbq = window._fbq || (window._fbq = []);
   if (!_fbq.loaded) {
