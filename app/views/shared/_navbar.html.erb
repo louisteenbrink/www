@@ -2,7 +2,7 @@
     Digest::SHA1.hexdigest(@top_bar_message || ""),
     Digest::SHA1.hexdigest(@top_bar_cta || ""),
     @hide_language_selector,
-    @city_groups.map { |cg| cg["cities"].map { |c| c["name"] } }.flatten,
+    @city_groups,
     params[:controller],
     params[:action],
     params[:city],
@@ -34,12 +34,12 @@
                 <% @city_groups.each do |city_group| %>
                   <ul class="list-unstyled">
                     <li class="title">
-                      <%= city_group["group"].upcase %>
-                      <%= city_group["icon"].html_safe %>
+                      <%= city_group[:group].upcase %>
+                      <%= city_group[:flag_svg].html_safe %>
                     </li>
-                    <% city_group["cities"].each do |city| %>
+                    <% city_group[:cities].each do |city| %>
                       <li>
-                        <%= link_to city["name"], city_path(city: city["slug"]), style: "font-weight: 200; color: black" %>
+                        <%= link_to city.name, city_path(city: city.slug), style: "font-weight: 200; color: black" %>
                       </li>
                     <% end %>
                   </ul>

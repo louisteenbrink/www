@@ -8,8 +8,8 @@ class PlayerProductMaker extends React.Component {
   }
 
   render() {
-    var title = this.props.maker["first_name"] + " " + this.props.maker["last_name"];
-    var maker_picture = this.props.maker["thumbnail"].replace('http://', 'https://');
+    var title = this.props.maker.name;
+    var maker_picture = this.props.maker.official_avatar_url.replace('http://', 'https://');
     return (
       <li>
         <img src={maker_picture} className="team-member"

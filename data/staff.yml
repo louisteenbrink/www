@@ -1,0 +1,46 @@
+paris:
+  - github_nickname: monsieurpaillard
+    name: Romain Paillard
+    role: COO
+    avatar: paris_romain_paillard.jpg
+  - github_nickname: Papillard
+    name: Boris Paillard
+    role: CEO
+    avatar: paris_boris_paillard.jpg
+  - github_nickname: ssaunier
+    name: Sébastien Saunier
+    role: CTO
+    avatar: paris_sebastien_saunier.jpg
+  - github_nickname: Benb1982
+    name: Benjamin Bignon
+    role: Key Account Manager
+    avatar: paris_benjamin_bignon.jpg
+  - github_nickname: clairecou
+    name: Claire Counilh
+    role: Yoga Master
+    avatar: paris_claire_counilh.jpg
+  - github_nickname: edouardfoussier
+    name: Edouard Foussier
+    role: All Things Community
+    avatar: paris_edouard_foussier.jpg
+  - github_nickname: cedricmenteau
+    name: Cédric Menteau
+    role: All Things Marketing
+    avatar: paris_cedric_menteau.jpg
+  - github_nickname: windguimo
+    name: Guillaume Morin
+    role: CFO
+    avatar: paris_guillaume_morin.jpg
+  - github_nickname: Tatianaprl
+    name: Tatiana Perillo
+    role: Business Developer
+    avatar: paris_tatiana_perillo.jpg
+# bordeaux:
+#   - github_nickname: bertrandbussac
+#     name: Bertrand Bussac
+#     role: Driver
+#     avatar:
+#   - github_nickname: volpeo
+#     name: Sylvain Peigney
+#     role: Class Manager
+#     avatar:

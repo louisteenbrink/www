@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
     @top_bar_url = demoday_index_path
 
     if request.format.html? || params[:project_page]
-      @projects = @client.projects("alumni_projects")
+      @projects = @kitt_client.products(Static::PROJECTS[:top])
       @projects = Kaminari.paginate_array(@projects).page(params[:project_page]).per(10)
     end
   end

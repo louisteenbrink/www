@@ -1,35 +1,35 @@
 <%= content_for(:title) do  %>
   <% if @selected_product %>
     <%= t ".page_title_with_selected_product",
-      product_name: @selected_product["name"], batch_slug: @batch.slug, city_name: @batch.city["name"] %>
+      product_name: @selected_product.name, batch_slug: @batch.slug, city_name: @batch.city.name %>
   <% else %>
-    <%= t ".page_title", batch_slug: @batch.slug, city_name: @batch.city["name"] %>
+    <%= t ".page_title", batch_slug: @batch.slug, city_name: @batch.city.name %>
   <% end %>
 <% end %>
 
 <%= content_for(:navbar_apply_button) do %>
-  <%= render "shared/navbar_apply_button", city: @batch.city['slug'] %>
+  <%= render "shared/navbar_apply_button", city: @batch.city.slug %>
 <% end %>
 
 <%= content_for(:description) do  %>
   <% if @selected_product %>
-    <% if @selected_product["tagline_fr"].present? && I18n.locale == :fr %>
-      <%= @selected_product["tagline_fr"] %>
-    <% else %>
-      <%= @selected_product["tagline_en"] %>
-    <% end %>
+    <%= @selected_product.tagline %>
   <% else %>
-    <%= t("demoday.batch_demoday.player.batch_intro_html", count: @batch.students.count, city_name: @batch.city['name'], batch_start_date: format_date(@batch.starts_at), batch_end_date: format_date(@batch.ends_at)) %>
+    <%= t("demoday.batch_demoday.player.batch_intro_html", count: @students.count, city_name: @batch.city.name, batch_start_date: format_date(@batch.starts_at), batch_end_date: format_date(@batch.ends_at)) %>
   <% end %>
 <% end %>
 
 <%= content_for(:image_url) do %>
   <% if @selected_product %>
-    <%= @selected_product['cover_url'] %>
-  <% elsif @batch.meta_image && @batch.meta_image['facebook'].present? %>
-    <%= @batch.meta_image['facebook'] %>
+    <% if @selected_product.cover_picture_url.nil? %>
+      <%= @selected_product.og_image_url %>
+    <% else %>
+      <%= @selected_product.cover_picture_url %>
+    <% end %>
+  <% elsif @batch.meta_image_url  %>
+    <%= @batch.meta_image_url %>
   <% else %>
-    <%= @batch.cover_image %>
+    <%= @batch.cover_image_url %>
   <% end %>
 <% end %>
 
@@ -55,9 +55,9 @@
     }
   ]
 
-  json_batches = @batches.map(&:as_json)
+  json_batches = @batches.map { |batch| batch.as_json["data"] }
   json_batches.each do |batch|
-    batch["city_picture"] = cl_image_path batch['city']['city_background_picture_path'], height: 32, crop: :fill
+    batch["city_picture"] = cl_image_path batch['city']['city_background_picture_url'], height: 32, crop: :fill if batch['city']['city_background_picture_url']
     batch["starts_at"] = format_date(batch["starts_at"])
     batch["ends_at"] = format_date_complete(batch["ends_at"])
   end
@@ -74,5 +74,5 @@
 }, prerender: false %>
 
 <div id="batch-demoday">
-  <%= render 'batch_demoday', auto_play: false, prerender: true, batch: @batch, selected_product_slug: @selected_product_slug %>
+  <%= render 'batch_demoday', auto_play: false, prerender: false, batch: @batch, selected_product_slug: @selected_product_slug, students: @students, products: @products %>
 </div>

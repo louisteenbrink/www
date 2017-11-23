@@ -7,7 +7,6 @@ class ApplicationController < ActionController::Base
   before_action :fetch_critical_css, if: -> { Rails.env.production? }
   before_action :better_errors_hack, if: -> { Rails.env.development? }
   before_action :set_locale
-  before_action :set_client
   before_action :set_live
 
   before_action :load_static, if: -> { Rails.env.development? }
@@ -60,14 +59,15 @@ class ApplicationController < ActionController::Base
 
   def load_cities
     # needed in navbar
-    @city_groups = @client.city_groups
-
+    cities = Kitt::Client.query(City::GroupsQuery).data.cities
+    @city_groups ||= Static::CITY_GROUPS.map do |group|
+      group[:cities] = group[:city_slugs].map do |slug|
+        cities.find { |city| city.slug == slug }
+      end
+      group
+    end
     # needed in footer
-    @cities = @city_groups.map { |city_group| city_group['cities'] }.flatten
-  end
-
-  def set_client
-    @client ||= AlumniClient.new
+    @cities = @city_groups.map { |city_group| city_group[:cities] }.flatten
   end
 
   def set_live

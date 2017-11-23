@@ -2,10 +2,8 @@
 layout: post
 title: "Patrick Pelloux : il ne faut rien s'interdire"
 author: antonin
-date: 02-06-2017
 labels:
   - podcast
-pushed: true
 thumbnail: 2017-06-02-nouvelle-ecole-e19.jpg
 description: Paul Duan est le fondateur de Bayes Impact, l'ONG qui met la technologie au service du bien commun. Dans cet épisode nous évoquerons sa recherche de sens et sa volonté de se rendre utile.
 ---

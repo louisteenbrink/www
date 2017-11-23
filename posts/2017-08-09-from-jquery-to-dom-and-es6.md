@@ -2,10 +2,8 @@
 layout: post
 title: "From jQuery to DOM and ES6"
 author: sebastien
-date: 17-07-2017
 labels:
   - tutorial
-pushed: true
 thumbnail: 2017-08-09-from-jquery-to-dom-and-es6.jpg
 description: "Looking back in time, jQuery was created to cope with JavaScript implementation differences between browsers. But time have changed. For the better."
 ---

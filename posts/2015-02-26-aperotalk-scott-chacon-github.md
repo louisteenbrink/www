@@ -2,7 +2,6 @@
 layout: video
 title: "AperoTalk avec Scott Chacon, CIO Github"
 author: cedric
-date: 26-02-2015
 youtube_slug: "TOV6BQO4M6g"
 locale: "fr"
 labels:

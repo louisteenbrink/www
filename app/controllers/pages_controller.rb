@@ -15,7 +15,7 @@ class PagesController < ApplicationController
           if @live.demoday?
             redirect_to demoday_path(@live.batch_slug)
           else
-            @city = @client.city(@live.city_slug)
+            @city = @kitt_client.city(@live.city_slug)
           end
         end
       end
@@ -41,8 +41,9 @@ class PagesController < ApplicationController
       redirect_to root_path
     else
       @apply = Apply.find(session[:apply_id])
-      @city = @cities.find { |city| city["id"] == @apply.city_id }
-      @batch = @client.batch(@apply.batch_id)
+      @city = @apply.city
+      @batch = @apply.batch
+      @meetup_url = MeetupApiClient.new(@apply.city.meetup_id).meetup['link']
     end
   end
 
@@ -52,13 +53,17 @@ class PagesController < ApplicationController
   def stack
   end
 
+  def about
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
+  end
+
   def robots
     respond_to :text
     expires_in 6.hours, public: true
   end
 
   def program
-    @statistics = @client.statistics
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
   end
 
 

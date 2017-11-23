@@ -1,6 +1,6 @@
-<%= content_for(:title) { t(".title", story: @story["title"][locale.to_s]).html_safe } %>
-<%= content_for(:description) { t(".description", story: @story["summary"][locale.to_s]) } %>
-<%= content_for(:image_url) { image_url @story["picture"] } %>
+<%= content_for(:title) { t(".title", story: @story.title).html_safe } %>
+<%= content_for(:description) { t(".description", story: @story.description) } %>
+<%= content_for(:image_url) { story_image_url(@story.thumbnail) if @story.thumbnail } %>
 
 <!-- FACEBOOK SDK ON SHOW VIEW -->
 <script>
@@ -24,9 +24,10 @@
 </script>
 
 <div class="story-banner banner banner-top">
-  <div class="filter" class="perpetua filter" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= @story["picture"]%>');"></div>
+  <div class="filter" class="perpetua filter"
+       style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= story_image_url @story.thumbnail, width: 1400 %>');"></div>
   <div class="story-banner-content story-container">
-    <h2><%= @story["title"][locale.to_s] || @story["title"]["en"] %></h2>
+    <h2><%= @story.title %></h2>
     <%= render 'user_infos', story: @story %>
   </div>
 </div>
@@ -63,25 +64,25 @@
   <div class="story-container popular-stories">
     <%= t(".other_testimonials") %>
   </div>
-  <% @stories.reject{ |story| story["id"] == @story["id"] }.each do |story| %>
+  <% @stories.each do |story| %>
     <div class="story-container">
       <div class="story-card">
         <main>
           <div class="story-card-title">
-            <%= story["title"][locale.to_s] || story["title"]["en"] %>
+            <%= story.title %>
           </div>
           <div class="story-card-summary">
-            <%= markdown(story['summary'][locale.to_s] || story['summary']["en"]) %>
+            <%= story.description %>
           </div>
           <div class='story-card-footer'>
             <%= render 'user_infos', story: story %>
           </div>
         </main>
         <aside>
-          <div class="background perpetua" id="<%= story["alumni"]["github_nickname"] %>" style="background-image: url('<%= story["picture"]%>')">
+          <div class="background perpetua" id="<%= story.alumnus.github_nickname %>" style="background-image: url('<%= story_image_url story.thumbnail, width: 240 %>')">
           </div>
         </aside>
-        <%= link_to "", story_path(id: story["slug"]), class: "story-card-link" %>
+        <%= link_to "", story_path(id: story.slug), class: "story-card-link" %>
       </div>
     </div>
   <% end %>

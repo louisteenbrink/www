@@ -59,11 +59,14 @@ class Apply < ActiveRecord::Base
   end
 
   def batch
-    @batch ||= AlumniClient.new.batch(batch_id)
+    @batch ||= Kitt::Client.query(Batch::Query, variables: { id: batch_id }).data.batch
+  end
+
+  def city
+    @city ||= Kitt::Client.query(City::Query, variables: { id: city_id }).data.city
   end
 
   def to_drift
-    city = AlumniClient.new.city(self.city_id)
     {
       email: email,
       first_name: first_name,

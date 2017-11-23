@@ -2,10 +2,8 @@
 layout: post
 title: "Romain Paillard au micro de Nouvelle École"
 author: antonin
-date: 28-08-2017
 labels:
   - podcast
-pushed: true
 thumbnail: 2017-05-26-nouvelle-ecole-romain-paillard.jpg
 description: "Ancien avocat pénaliste et toujours adepte des bons mots, Romain était cette semaine au micro de Nouvelle École pour échanger autour de son parcours et de sa vision du monde de la formation."
 ---

@@ -46,9 +46,11 @@ gem 'react-bootstrap-rails'
 gem 'react-rails', '1.10.0'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier'
+gem 'momentjs-rails'
 
 # Api Clients
 gem 'appsignal'
+gem "graphql-client"
 gem 'linkedin-oauth2', '~> 1.0'
 gem 'meetup_client'
 gem 'omniauth-github'
@@ -79,16 +81,15 @@ group :development, :test do
   gem 'letter_opener'
   gem 'rspec-rails', '~> 3.6'
   gem 'spring'
+  gem 'pry-byebug'
+  gem 'pry-rails'
 end
 
 group :development do
   gem 'annotate'
-  gem 'better_errors'
-  gem 'binding_of_caller'
   gem 'httplog'
-  gem 'pry-byebug'
-  gem 'pry-rails'
   gem 'rack-mini-profiler'
+  gem 'web-console'
 end
 
 group :test do

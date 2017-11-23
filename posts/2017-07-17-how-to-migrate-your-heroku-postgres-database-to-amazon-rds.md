@@ -2,10 +2,8 @@
 layout: post
 title: "How to migrate your Heroku Postgres database to Amazon RDS"
 author: sebastien
-date: 17-07-2017
 labels:
   - tutorial
-pushed: true
 thumbnail: 2017-07-17-elephant.jpg
 description: The Heroku Hobby Dev Postgresql Addon plan gives you 10,000 rows for free. This tutorial will show you how to move your existing data to Amazon RDS.
 ---

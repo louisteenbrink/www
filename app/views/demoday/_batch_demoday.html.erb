@@ -1,9 +1,8 @@
 <div class="container demo-section">
   <%
-    react_batch = batch.as_json
+    react_batch = batch.as_json["data"]
     react_batch["starts_at"] = l(Time.parse(react_batch["starts_at"]), format: '%B').camelcase
     react_batch["ends_at"] = l(Time.parse(react_batch["ends_at"]), format: '%B %Y').camelcase
-
     techno_special_names = {
       css3: 'CSS3',
       gmap: 'Google Maps',
@@ -26,11 +25,13 @@
     videoPlaceholder: image_path('officials/pair-programming.jpg'),
     autoPlay: auto_play,
     batch: react_batch,
+    products: products.as_json.map { |product| product["data"] },
+    students: students.as_json.map { |student| student["data"] },
     demodayPath: demoday_path,
     withSlugDemodayPath: with_slug_demoday_path(product_slug: ':slug'),
-    selectedProdutSlug: selected_product_slug,
+    selectedProductSlug: selected_product_slug,
     product_icon: render('shared/product_icon'),
-    flag_icon: render('shared/icon_flag_' + batch.city['course_locale'].underscore.downcase),
+    flag_icon: render('shared/icon_flag_' + batch.city.locale.underscore.downcase),
     i18n: {
       locale: I18n.locale,
       page_title: t("demoday.show.page_title"),
@@ -46,15 +47,20 @@
 </div>
 
 <div class="container demo-section">
-  <%= react_component 'StudentsTitle', {
-    counter: batch.students.count,
-    i18n: {
-      batch_title: t(".batch_title")
-    }
-  }, prerender: prerender %>
-  <%= react_component "StudentsList", students: batch.students, cover: batch.cover_image, prerender: prerender %>
+  <h2 class="demoday-title"><%= students.count %> <%= t(".batch_title") %></h2>
+  <div class="students-container">
+    <% students.each do |student| %>
+      <div class="student-info">
+        <img src=<%= student.official_avatar_url.gsub('http://', 'https://') %> class="student-picture"/>
+        <p class="student-name"><%= student.name %></p>
+      </div>
+    <% end %>
+  </div>
 </div>
 
 <div class="container-fluid container-batch-cover">
-  <%= react_component "BatchCover", cover: batch.cover_image, prerender: prerender %>
+  <div>
+    <div class="cover-students" style="background-image: url(<%= batch.cover_image_url %>)"></div>
+  </div>
 </div>
+

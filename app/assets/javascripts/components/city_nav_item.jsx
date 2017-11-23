@@ -11,7 +11,7 @@ class CityNavItem extends React.Component {
     var city = this.props.city;
 
     var miniatureStyle = {
-      backgroundImage: "url(" + city.pictures.thumb + ")"
+      backgroundImage: "url(" + city.city_background_picture_url + ")" // TODO manage image size
     }
 
     return(
@@ -22,10 +22,10 @@ class CityNavItem extends React.Component {
           </div>
           <div className='city-nav-item-first-batch'>
             {
-              this.props.firstBatch.starts_at_short
+              moment(this.props.firstBatch.starts_at).locale(this.props.locale).format('ll').replace(/, \d{4}/, '')
               + " / "
               + this.props.i18n.pre_course_language
-              + (this.props.i18n.course_language[city.slug] || this.props.i18n['language_' + city.course_locale])
+              + (this.props.i18n.course_language[city.slug] || this.props.i18n['language_' + city.locale])
             }
           </div>
         </div>

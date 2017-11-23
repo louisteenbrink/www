@@ -33,25 +33,39 @@ module ApplicationHelper
     puts e.message
   end
 
+  def alumnus_profile_path(alumnus)
+    "https://kitt.lewagon.com/alumni/#{alumnus.github_nickname}"
+  end
+
   def prerender?
     ENV['PRERENDER'] == 'false' ? false : true
   end
 
-  def author_image_tag(slug)
-    image_tag proxy_url_with_signature(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/#{slug}")
+  WWW_IMAGES_BASE_URL = "https://raw.githubusercontent.com/lewagon/www-images/master"
+
+  def author_image_tag(slug, options = {})
+    image_tag proxy_url_with_signature(url: "#{WWW_IMAGES_BASE_URL}/blog/authors/#{slug}")
   end
 
-  def post_image_url(slug)
+  def user_image_tag(slug, options = {}, html_options = {})
+    image_tag proxy_url_with_signature(options.merge(url: "#{WWW_IMAGES_BASE_URL}/users/#{slug}")), html_options
+  end
+
+  def post_image_url(slug, options = {})
     return slug if slug =~ /^http/  # Handy to quickly try a post background image from a URL.
-    proxy_url_with_signature url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}"
+    proxy_url_with_signature options.merge(url: "#{WWW_IMAGES_BASE_URL}/blog/posts/#{slug}")
   end
 
-  def content_post_image_tag(slug)
-    image_tag proxy_url_with_signature(url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/#{slug}")
+  def content_post_image_tag(slug, options = {})
+    image_tag proxy_url_with_signature(options.merge(url: "#{WWW_IMAGES_BASE_URL}/blog/posts/#{slug}"))
   end
 
-  def video_image_tag(slug)
-    proxy_url_with_signature url: "https://raw.githubusercontent.com/lewagon/www-images/master/blog/videos/#{slug}"
+  def video_image_url(slug, options = {})
+    proxy_url_with_signature options.merge(url: "#{WWW_IMAGES_BASE_URL}/blog/videos/#{slug}")
+  end
+
+  def story_image_url(slug, options = {})
+    proxy_url_with_signature options.merge(url: "#{WWW_IMAGES_BASE_URL}/stories/#{slug}")
   end
 
   def cl_adaptive_image_tag(image_path, opt={})

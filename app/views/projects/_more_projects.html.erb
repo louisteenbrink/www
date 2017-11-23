@@ -4,7 +4,7 @@
       <% project = OpenStruct.new project %>
       <div class="project-card">
         <%= link_to project.url, class: 'project-url', target: '_blank'  do %>
-          <div class="project-card-thumbnail" style="background: url(<%= project.card %>); background-size:cover;background-position:center center;">
+          <div class="project-card-thumbnail" style="background: url(<%= card_url(project) %>); background-size:cover;background-position:center center;">
           </div>
         <% end %>
         <div class="project-card-details">

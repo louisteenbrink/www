@@ -1,9 +1,7 @@
 ---
 layout: post
 title: "Debugged"
-date: 2017-08-11
 author: sandrine
-pushed: true
 labels:
   - alumni
 thumbnail: 2017-08-26-debbuged-alfway-through-a-coding-bootcamp.jpg

@@ -4,13 +4,13 @@
     <%= react_component 'NewsletterForm', {
       i18n: {
         title: t(".title"),
-        subtitle: t(".subtitle_html") + (@city ? t(".subtitle_end", city: @city['name']) : nil),
+        subtitle: t(".subtitle_html") + (@city ? t(".subtitle_end", city: @city.name) : nil),
         retry: t(".retry"),
         error: t(".error"),
         subscribe: t(".subscribe"),
         subscribing: t(".subscribing")
       },
-      city_id: @city ? @city['id'] : nil,
+      city_slug: @city ? @city.slug : nil,
       token: form_authenticity_token
     }, prerender: false %>
 
@@ -59,11 +59,11 @@
           <%= I18n.locale == :fr ? 'style="font-size: 14px"'.html_safe : nil %>>
           <% @cities.each do |city| %>
             <div>
-              <%= link_to city_path(city: city["slug"]) do %>
-                <% if @city && @city['slug'] == city['slug'] %>
-                  <% city_name = "<strong>#{city["name"]}</strong>".html_safe %>
+              <%= link_to city_path(city: city.slug) do %>
+                <% if @city && @city.slug == city.slug %>
+                  <% city_name = "<strong>#{city.name}</strong>".html_safe %>
                 <% else %>
-                  <% city_name = city["name"] %>
+                  <% city_name = city.name %>
                 <% end %>
 
                 <%= t ".bootcamp_in_city_html", city: city_name %>

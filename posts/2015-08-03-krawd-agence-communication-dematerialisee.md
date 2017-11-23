@@ -2,10 +2,8 @@
 layout: post
 title: "KRAWD, l'agence de communication dématérialisée"
 author: cedric
-date: 2015-08-03
 labels:
   - alumni
-pushed: true
 thumbnail: 2015-08-03-krawd-team.jpg
 description: "L'OVNI KRAWD fait son nid alors que le monde s'interroge. 'Tu veux faire une agence sans être une agence avec des créatifs dedans ?' - 'Oui mais pas que, KRAWD c'est encore mieux !' réplique Arthur avec le sourire."
 ---

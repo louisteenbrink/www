@@ -2,10 +2,8 @@
 layout: post
 title: "Matt Robinson's notes on assessing opportunities"
 author: sandrine
-date: 10-08-2017
 labels:
   - entrepreneurship
-pushed: true
 thumbnail: 2017-05-17-matt-robinsons-notes-on-assessing-opportunities.jpg
 description: "Last month, Le Wagon London welcomed Matt Robinson, Cofounder of GoCardless and CEO of Nested.com. After his visit, he made us the honor to share a few insight."
 ---
