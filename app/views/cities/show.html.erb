@@ -235,8 +235,8 @@
         </div>
       </div>
       <div class="location-content">
-        <% if @city.location%>
-          <%= markdown(@city.send("description_#{locale}".to_sym) || @city.description_en) %>
+        <% if @city.location %>
+          <%= markdown(I18n.locale == :fr ? @city.description_fr : @city.description_en) %>
         <% end %>
       </div>
       <% if @meetup[:infos].blank? %>

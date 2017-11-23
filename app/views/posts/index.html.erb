@@ -101,7 +101,7 @@
                   <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/<%= video.youtube_slug %>/maxresdefault.jpg')">
                     <div class="video-details">
                       <div class="catergory-items">
-                        <%= render "shared/flags/icon_flag_#{video.locale_icon}" %>
+                        <%= render "shared/flags/#{video.locale_icon}" %>
                         <ul>
                           <% video.labels.each do |tag| %>
                             <li><%= tag %></li>
