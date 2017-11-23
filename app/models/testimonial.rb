@@ -33,7 +33,7 @@ class Testimonial
   end
 
   def product
-    @product ||= Kitt::Client.query(Product::Query, variables: { slug: @project_slug }).data.product
+    @product ||= @project_slug ? Kitt::Client.query(Product::Query, variables: { slug: @project_slug }).data.product : nil
   end
 
   def batch
