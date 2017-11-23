@@ -44,7 +44,7 @@ class BatchSelector extends React.Component {
 
 
   handleClick(e) {
-    if (!this.props.batch.apply_status == "full" && !this.props.isActive) {
+    if (this.props.batch.apply_status != "full" && !this.props.isActive) {
       PubSub.publish('setActiveBatch', this.props.batch)
     }
   }
