@@ -160,3 +160,9 @@
     </div>
   </div>
 </div>
+
+<% content_for :after_js do %>
+  <script>
+    showModalIfError('#employer-form-modal', <%= @employer.errors.any? %>)
+  </script>
+<% end %>
