@@ -91,7 +91,7 @@
     <div class="container">
       <div>
         <% @teachers.each do |teacher| %>
-          <% bio = teacher.send("bio_#{locale}".to_sym) || teacher.bio_en %>
+          <% bio = locale == 'fr' ? teacher.bio_fr : teacher.bio_en %>
           <% next if bio.blank? %>
           <div class="row">
             <div class="col-xs-12">
@@ -236,7 +236,7 @@
       </div>
       <div class="location-content">
         <% if @city.location%>
-          <%= markdown(@city.send("description_#{locale}".to_sym) || @city.description_en) %>
+          <%= markdown(locale == 'fr' ? @city.description_fr : @city.description_en) %>
         <% end %>
       </div>
       <% if @meetup[:infos].blank? %>

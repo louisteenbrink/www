@@ -28,6 +28,8 @@ pt-BR:
     course_language: "Inglès / Chinês"
   chengdu:
     course_language: "Inglès / Chinês"
+  tokyo:
+    course_language: "Inglès / Japonês"
 
 es:
   montreal:
@@ -37,6 +39,8 @@ es:
     course_language: "Inglés / Chino"
   chengdu:
     course_language: "Inglés / Chino"
+  tokyo:
+    course_language: "Inglés / Japonés"
 
 zh-CN:
   montreal:
@@ -46,6 +50,8 @@ zh-CN:
     course_language: "英语 / 中文"
   chengdu:
     course_language: "英语 / 中文"
+  tokyo:
+    course_language: "英语 / 日语"
 
 ja:
   montreal:
@@ -55,3 +61,6 @@ ja:
     course_language: "英語 / チャイニーズ"
   chengdu:
     course_language: "英語 / チャイニーズ"
+  tokyo:
+    course_language: "英語 / 日本語"
+
