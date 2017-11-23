@@ -11,7 +11,7 @@ class CityNavItem extends React.Component {
     var city = this.props.city;
 
     var miniatureStyle = {
-      backgroundImage: "url(" + city.city_background_picture_url + ")" // TODO manage image size
+      backgroundImage: "url(" + city.city_background_picture_url + ")"
     }
 
     return(

@@ -20,9 +20,9 @@ module City
         latitude
         longitude
         apply_facebook_pixel
-        city_background_picture_url
-        classroom_background_picture_url
-        location_background_picture_url
+        city_background_picture
+        classroom_background_picture
+        location_background_picture
         mailchimp_list_id
         mailchimp_api_key
         twitter_url
@@ -44,7 +44,7 @@ module City
         id
         slug
         name
-        city_background_picture_url
+        city_background_picture
       }
     }
   GRAPHQL
@@ -56,7 +56,7 @@ module City
         name
         slug
         locale
-        city_background_picture_url
+        city_background_picture
         apply_facebook_pixel
         apply_batches: apply_camps {
           id

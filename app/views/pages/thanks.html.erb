@@ -20,7 +20,7 @@
       </div>
       <div class='apply-form-body thanks-checklist'>
         <div class='banner-city-wrapper'>
-          <div class='banner-city is-active banner banner-top banner-gradient text-center' style="background-image: url('<%= cl_image_path @apply.city.city_background_picture_url || "" %>');">
+          <div class='banner-city is-active banner banner-top banner-gradient text-center' style="background-image: url('<%= cl_image_path @apply.city.city_background_picture || "", height: 300, crop: :fill %>');">
             <div class="banner-gradient-shadow"></div>
             <div class="banner-content">
               <h1 class='glitch'>

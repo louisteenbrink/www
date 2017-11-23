@@ -72,7 +72,7 @@
         <div class="card-city-container">
             <div class="card-city">
               <%= link_to "", city_path(city: city.slug), class: "card-city-link" %>
-              <div class="card-city-header" style="background-image: url('<%= cl_image_path city.city_background_picture_url || "", height: 200, crop: :fill %>')">
+              <div class="card-city-header" style="background-image: url('<%= cl_image_path city.city_background_picture || "", height: 200, crop: :fill %>')">
               <span class="card-city-filter"></span>
               </div>
               <div class="card-city-body">

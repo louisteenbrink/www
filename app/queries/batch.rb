@@ -18,7 +18,7 @@ module Batch
           slug
           name
           locale
-          city_background_picture_url
+          city_background_picture
         }
       }
     }
@@ -38,7 +38,7 @@ module Batch
           slug
           locale
           name
-          city_background_picture_url
+          city_background_picture
         }
       }
     }
