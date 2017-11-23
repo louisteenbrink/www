@@ -63,7 +63,7 @@ EOF
 
 ## Invoice
 
-Price: #{price.currency.iso_code} #{humanized_money price}
+Price: #{price.currency} #{humanized_money price}
 
 ## Referrer
 
@@ -132,6 +132,6 @@ EOF
   end
 
   def price
-    Rails.env.production? ? @apply.batch.price : Money.new(1000, 'EUR')
+    Rails.env.production? ? Money.new(@apply.batch.price.cents, @apply.batch.price.currency) : Money.new(1000, 'EUR')
   end
 end
