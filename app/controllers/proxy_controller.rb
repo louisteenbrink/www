@@ -6,6 +6,7 @@ class ProxyController < ActionController::Base
   before_action :set_proxy_service
   before_action :decode, unless: :empty_request?
   before_action :check_signature, unless: :empty_request?
+  after_action :set_headers
 
   def image
     if empty_request?
@@ -18,6 +19,7 @@ class ProxyController < ActionController::Base
 
       image = @proxy.image(url, height, width, quality)
       expires_in 1.month, public: true
+
       send_data image.blob, type: image.type, filename: image.name, disposition: :inline
     end
   rescue URI::InvalidURIError, OpenURI::HTTPError
@@ -49,5 +51,13 @@ class ProxyController < ActionController::Base
 
   def empty_request?
     params[:request].blank?
+  end
+
+  def set_headers
+    response.headers.except! 'X-Frame-Options'
+    response.headers.except! 'X-XSS-Protection'
+    response.headers.except! 'X-Content-Type-Options'
+    response.headers["Cache-Control"] = "public, maxage=#{ProxyService::DEFAULT_EXPIRE.seconds.to_i}"
+    response.headers["Expires"] = ProxyService::DEFAULT_EXPIRE.from_now.to_formatted_s(:rfc822)
   end
 end

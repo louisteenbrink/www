@@ -5,12 +5,13 @@ class ProxyService
   include Cache
   PARAMETERS = %i(width height quality url)
   DEFAULT_JPEG_QUALITY = 90
+  DEFAULT_EXPIRE = 1.week
 
   class Image < Struct.new(:blob, :type, :name)
   end
 
   def image(url, height, width, quality)
-    from_cache(:proxy, url, height, width, quality, expire: 1.month) do
+    from_cache(:proxy, url, height, width, quality, expire: DEFAULT_EXPIRE) do
       mm_image = MiniMagick::Image.open(url)
       if height > 0 && width > 0
         mm_image.resize "#{height}x#{width}"
