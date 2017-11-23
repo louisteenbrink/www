@@ -91,7 +91,11 @@
     <div class="container">
       <div>
         <% @teachers.each do |teacher| %>
+<<<<<<< HEAD
           <% bio = locale == 'fr' ? teacher.bio_fr : teacher.bio_en %>
+=======
+          <% bio = I18n.locale == :fr ? (teacher.bio_fr.blank? ? teacher.bio_en : teacher.bio_fr) : teacher.bio_en %>
+>>>>>>> 3699325f730c52f24f33cb2a0b1e342134350a6d
           <% next if bio.blank? %>
           <div class="row">
             <div class="col-xs-12">
@@ -235,8 +239,13 @@
         </div>
       </div>
       <div class="location-content">
+<<<<<<< HEAD
         <% if @city.location%>
           <%= markdown(locale == 'fr' ? @city.description_fr : @city.description_en) %>
+=======
+        <% if @city.location %>
+          <%= markdown(I18n.locale == :fr ? @city.description_fr : @city.description_en) %>
+>>>>>>> 3699325f730c52f24f33cb2a0b1e342134350a6d
         <% end %>
       </div>
       <% if @meetup[:infos].blank? %>

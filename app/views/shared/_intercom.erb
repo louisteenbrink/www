@@ -10,7 +10,7 @@
   });
   Intercom('trackEvent', 'Application', {
     'camp': '<%= @batch.analytics_slug %>',
-    'city': '<%= @city['name'] %>'
+    'city': '<%= @city.name %>'
   });
 <% end %>
 </script>
