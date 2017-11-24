@@ -60,13 +60,13 @@ positions:
     company_slug: kisskissbankbank
   Michael3434:
     title: Back-end developer
-    company_slug: eventcorner
+    company_slug: event-corner
   Sbfrr:
     title: FullStack developer
     company_slug: finexkap
   marinados:
     title: Developer Ruby on Rails
-    company_slug: brandandcelebrities
+    company_slug: brand-and-celebrities
   tdeschamps:
     title: Backend Developer
     company_slug: aircall
@@ -99,7 +99,7 @@ positions:
     company_slug: kameleoon
   elacaille18:
     title: Software Engineer
-    company_slug: talentio
+    company_slug: talent-io
   syksteaz:
     title: Product Manager
     company_slug: foodcheri
@@ -120,4 +120,4 @@ positions:
     company_slug: happn
   gregcha:
     title: Product Manager
-    company_slug: talentio
+    company_slug: talent-io

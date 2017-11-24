@@ -48,6 +48,7 @@ class PagesController < ApplicationController
   end
 
   def employers
+    @positions = Position.all
   end
 
   def stack
