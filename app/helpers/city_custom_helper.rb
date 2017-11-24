@@ -14,7 +14,7 @@ module CityCustomHelper
       tokyo: t('tokyo.course_language'),
       recife: t('recife.course_language'),
       :"belo-horizonte" => t('belo-horizonte.course_language'),
-      :"sao-paulo" => t('tokyo.course_language'),
+      :"sao-paulo" => t('sao-paulo.course_language'),
       london: "English (Full-Time)", # Needed for PCDL / interest free lonas from the government.
     }.stringify_keys
   end
