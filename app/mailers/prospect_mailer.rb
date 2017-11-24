@@ -16,7 +16,7 @@ class ProspectMailer < ApplicationMailer
   def send_event(prospect_id)
     @prospect = Prospect.find(prospect_id)
     @city = Kitt::Client.query(City::Query, variables: { slug: @prospect.city }).data.city
-    meetup_cli = MeetupApiClient.new(city.meetup_id)
+    meetup_cli = MeetupApiClient.new(@city.meetup_id)
     @meetup = { event: meetup_cli.meetup_events.first, infos: meetup_cli.meetup }
     @meetup_time = Time.at(@meetup[:event]["time"] / 1000)
     @city_info = CITIES[@city.slug]
