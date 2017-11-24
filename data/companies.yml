@@ -31,13 +31,13 @@ molotov:
 kisskissbankbank:
   name: KissKissBankBank
   url: https://www.kisskissbankbank.com
-eventcorner:
+event-corner:
   name: Event Corner
   url: http://www.event-corner.com
 finexkap:
   name: Finexkap
   url: https://www.finexkap.com
-brandandcelebrities:
+brand-and-celebrities:
   name: Brand and Celebrities
   url: http://brandandcelebrities.com
 aircall:
@@ -67,7 +67,7 @@ doctolib:
 kameleoon:
   name: Kameleoon
   url: http://www.kameleoon.com/fr
-talentio:
+talent-io:
   name: Talent.io
   url: https://www.talent.io
 foodcheri:
