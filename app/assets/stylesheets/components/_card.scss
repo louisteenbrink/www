@@ -474,7 +474,7 @@
 }
 @media (max-width: $screen-md) {
   .position-company-container  img {
-    width: 100px !important;
+    max-width: 100px !important;
   }
 }
 
