@@ -96,9 +96,7 @@ class AppliesController < ApplicationController
   include CitiesHelper
 
   def prepare_apply_form
-    @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.apply_batches.empty? }.reject do |city|
-      city.apply_batches.find { |b| b.apply_status ==  "open_for_registration" }.nil?
-    end
+    @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.apply_batches.empty? }
     # Sort by first available batch
     @applicable_cities.sort do |city_a, city_b|
       if next_open_batch_date(city_a) == next_open_batch_date(city_b)

@@ -1,4 +1,6 @@
 module City
+  GAP_BETWEEN_BATCHES = 90.days
+
   Query = Kitt::Client.parse <<-'GRAPHQL'
     query($slug: String, $id: ID) {
       city(slug: $slug, id: $id) {
