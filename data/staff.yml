@@ -35,6 +35,11 @@ paris:
     name: Tatiana Perillo
     role: Business Developer
     avatar: paris_tatiana_perillo.jpg
+milan:
+  - github_nickname: fra0074
+    name: Francesco Ecclesie
+    role: Driver && Teacher
+    avatar: milan_francesco_ecclesie.jpg
 # bordeaux:
 #   - github_nickname: bertrandbussac
 #     name: Bertrand Bussac
