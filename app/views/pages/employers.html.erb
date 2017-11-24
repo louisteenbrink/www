@@ -14,8 +14,6 @@
   </div>
 </div>
 
-<% positions = Position.all.select { |position| %w(Uber Stripe Google Drivy Doctolib Aligolia Front Aircall).include?(position.company.name) } %>
-
 <div style="background: #F5F5F5; padding-bottom: 50px;">
   <div class="header" style="width:100%">
     <h2 class="text-center" style="text-transform: uppercase;"><%= t(".they", default: "They hire our alumni") %></h2>
@@ -23,7 +21,7 @@
   <div id="enterprise-hiring" class="container">
     <div class="enterprise-nav">
       <% first = true %>
-      <% positions.each do |position| %>
+      <% @positions.each do |position| %>
         <div class="img-card <%= 'active' if first %>" data-target="#<%= position.name.parameterize %>" data-toggle="tooltip" data-placement="top" title="<%= position.company.name %>">
           <%= image_tag position.company.logo, width: 100 %>
         </div>
@@ -32,7 +30,7 @@
     </div>
     <div class="alumni-preview-container hidden-sm hidden-xs">
       <% first = true %>
-      <% positions.each do |position| %>
+      <% @positions.each do |position| %>
         <div class="alumni-preview <%= 'hidden' unless first %>" id="<%= position.name.parameterize %>">
           <div class="alumni-preview-content">
             <%= cl_adaptive_image_tag position.official_avatar_url, width: 120, height: 120, crop: :fill, class: "img-circle" %>
