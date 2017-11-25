@@ -5,19 +5,11 @@ require 'open-uri'
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :reset_session, except: :render_404
   before_action :fetch_critical_css, if: -> { Rails.env.production? }
-  before_action :better_errors_hack, if: -> { Rails.env.development? }
   before_action :set_locale
   before_action :set_live
 
   before_action :load_static, if: -> { Rails.env.development? }
   before_action :load_cities
-
-  # before_action :authenticate_user!, unless: :pages_controller?
-
-  # after_action :verify_authorized, except:  :index, unless: :devise_or_pages_controller?
-  # after_action :verify_policy_scoped, only: :index, unless: :devise_or_pages_controller?
-
-  # rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
   rescue_from ActionController::RoutingError, with: :render_404
   rescue_from ActionController::UnknownFormat, with: :render_404
@@ -75,16 +67,13 @@ class ApplicationController < ActionController::Base
   end
 
   def fetch_critical_css
-    if request.get? && request.format.html? && CRITICAL_PATH_CSS_ROUTES.include?(request.path)
+    critical_path_css_routes = CriticalPathCss::Rails::ConfigLoader.new.load["routes"]
+    if request.get? && request.format.html? && critical_path_css_routes.include?(request.path)
       @critical_css = CriticalPathCss.fetch(request.path)
       if @critical_css.empty?
-        # Wait 15 seconds to be sure that Heroku deployment is complete and server ready.
-        GenerateCriticalCssJob.set(wait: 15.seconds).perform_later(request.path)
+        # Wait 5 minutes to be sure that Heroku deployment is complete and server ready (preload enabled)
+        GenerateCriticalCssJob.set(wait: 5.minutes).perform_later(request.path)
       end
     end
-  end
-
-  def better_errors_hack
-    request.env['puma.config'].options.user_options.delete(:app) if request.env.has_key?('puma.config')
   end
 end
