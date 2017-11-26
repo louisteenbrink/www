@@ -113,8 +113,7 @@ GEM
     colorize (0.8.1)
     concurrent-ruby (1.0.5)
     connection_pool (2.2.1)
-    critical-path-css-rails (0.4.0)
-      phantomjs (~> 2.1.1)
+    critical-path-css-rails (1.0.1)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -240,7 +239,6 @@ GEM
       omniauth (~> 1.2)
     orm_adapter (0.5.0)
     pg (0.20.0)
-    phantomjs (2.1.1.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -502,4 +500,4 @@ RUBY VERSION
    ruby 2.4.2p198
 
 BUNDLED WITH
-   1.16.0.pre.2
+   1.16.0

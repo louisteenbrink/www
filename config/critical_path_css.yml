@@ -2,17 +2,14 @@
 <% city_slugs = Kitt::Client.query(City::GroupsQuery).data.cities.map(&:slug) %>
 
 defaults: &defaults
-  # If using the asset pipeline, provide the manifest name
   manifest_name: application
-  # Else provide the relative path of your CSS file from the /public directory
-  # css_path: /path/to/css/from/public/main.css
-  routes: <%#= [ "/" ] + locales.map { |l| "/#{l}" } + city_slugs.map { |slug| locales.map { |l| "/" + [ l, "cities", slug ].compact.join("/") }}.flatten %>
+  routes: <%= [ "/" ] + locales.map { |l| "/#{l}" } + city_slugs.map { |slug| locales.map { |l| "/" + [ l, "cities", slug ].compact.join("/") }}.flatten %>
 
 development: &development
   <<: *defaults
   base_url: http://localhost:3000
 
-test:
+staging:
   <<: *development
 
 production:
