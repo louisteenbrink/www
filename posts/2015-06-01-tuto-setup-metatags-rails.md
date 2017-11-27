@@ -135,7 +135,7 @@ Vous n'avez plus qu'à définir les `content_for` pertinents dans `app/views/off
 
 <% content_for :meta_title, "#{@offer.name} est sur #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @offer.description %>
-<% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
+<% content_for :meta_image, cl_image_path(@offer.photo.path) %>
 ```
 
 ##### **Déployez et testez**

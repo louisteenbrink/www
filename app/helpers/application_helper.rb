@@ -71,8 +71,8 @@ module ApplicationHelper
   def cl_adaptive_image_tag(image_path, opt={})
     w = opt[:width]
     h = opt[:height]
-    image_url_2x = cloudinary_url image_path, width: 2 * w, height: 2 * h, crop: :fill
-    image_url = cloudinary_url image_path, width: w, height: h, crop: :fill
+    image_url_2x = cl_image_path image_path, width: 2 * w, height: 2 * h, crop: :fill
+    image_url = cl_image_path image_path, width: w, height: h, crop: :fill
     opt[:srcset] = "#{image_url} 1x, #{image_url_2x} 2x"
     return cl_image_tag image_path, opt
   end

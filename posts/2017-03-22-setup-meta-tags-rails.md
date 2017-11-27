@@ -139,7 +139,7 @@ Just set the relevant `content_for`s in `app/views/offers/show.html.erb`:
 <!-- app/views/offers/show.html.erb -->
 <% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @offer.description %>
-<% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
+<% content_for :meta_image, cl_image_path(@offer.photo.path) %>
 ```
 
 ## Testing
