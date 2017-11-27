@@ -40,6 +40,11 @@ milan:
     name: Francesco Ecclesie
     role: Driver && Teacher
     avatar: milan_francesco_ecclesie.jpg
+bali:
+  - github_nickname: dirkschuler
+    name: Dirk Schuler
+    role: Founder Le Wagon Bali
+    avatar: bali_dirk_schuler.jpg
 # bordeaux:
 #   - github_nickname: bertrandbussac
 #     name: Bertrand Bussac
