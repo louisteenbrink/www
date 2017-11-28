@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Start-up & Co: Le Wagon, 1er coding bootcamp au monde"
+title: "BFM Tech&Co: Le Wagon, 1er coding bootcamp au monde"
 author: cedric
 labels:
   - alumni
@@ -13,4 +13,5 @@ description: "Classé 1er coding bootcamp au monde, Le Wagon a formé 2 000 pers
 
 Classé [1er coding bootcamp au monde](https://www.switchup.org/research/best-coding-bootcamps), Le Wagon a formé 2 000 personnes au code dans plus de 26 villes. L'occasion pour notre COO, [Romain Paillard](https://www.linkedin.com/in/romain-paillard-27575711/), de rappeler tout ce que l'on peut accomplir en apprenant à coder sa propre application web en 9 semaines.
 
-Initialement publié sur [Start-up & Co - BFM Business](http://bfmbusiness.bfmtv.com/mediaplayer/video/start-up-co-le-wagon-le-premier-bootcamp-de-code-sur-les-plateformes-de-references-mondiales-2711-1007659.html).
+Initialement publié sur [BFM Tech&Co](http://bfmbusiness.bfmtv.com/mediaplayer/video/start-up-co-le-wagon-le-premier-bootcamp-de-code-sur-les-plateformes-de-references-mondiales-2711-1007659.html).
+
