@@ -45,6 +45,15 @@ bali:
     name: Dirk Schuler
     role: Founder Le Wagon Bali
     avatar: bali_dirk_schuler.jpg
+tokyo:
+  - github_nickname: paulgaumer
+    name: Paul Gaumer
+    role: Co-founder
+    avatar: tokyo_paul_gaumer.jpg
+  - github_nickname: SylvainPierre
+    name: Sylvain Pierre
+    role: Co-founder
+    avatar: tokyo_sylvain_pierre.jpg
 # bordeaux:
 #   - github_nickname: bertrandbussac
 #     name: Bertrand Bussac
