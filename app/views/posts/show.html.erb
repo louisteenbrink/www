@@ -120,7 +120,7 @@
   </div>
   <div style="overflow: hidden;">
     <article class="blog-post">
-      <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= post_image_url(@post.thumbnail) %>')">
+      <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('<%= post_image_url(@post.thumbnail) %>')">
         <h1><%= @post.title.html_safe %></h1>
         <p class="written-by"><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Published by <%= @post.author[:fname] %> <%= @post.author[:lname] %> on <%= @post.date.to_date.strftime("%d %b %Y") %></p>
       </div>
