@@ -65,7 +65,7 @@
                     </li>
                     <% if I18n.locale == :fr %>
                       <li>
-                        <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 304px;" %>
+                        <%= link_to t(".menu.react_program"), react_path(locale: :fr), class: "cta-enterprise", style: "min-width: 304px;" %>
                       </li>
                     <% elsif I18n.locale == :en %>
                       <li>

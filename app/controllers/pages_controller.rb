@@ -89,11 +89,11 @@ class PagesController < ApplicationController
   private
 
   def set_top_bar
-    if I18n.locale == :fr
-      @top_bar_message = I18n.t('.top_bar_react_message')
-      @top_bar_cta = I18n.t('.top_bar_react_cta')
-      @top_bar_url = react_path
-    end
+    # if I18n.locale == :fr
+    #   @top_bar_message = I18n.t('.top_bar_react_message')
+    #   @top_bar_cta = I18n.t('.top_bar_react_cta')
+    #   @top_bar_url = react_path
+    # end
   end
 
   def mark_as_tracked
