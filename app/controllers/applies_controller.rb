@@ -112,14 +112,22 @@ class AppliesController < ApplicationController
       @city = @applicable_cities.find { |city| city.slug == session[:city] }
     end
 
+    @applicable_cities.map! do |city|
+      batches = city.apply_batches.map do |batch|
+        batch.to_h.merge(formatted_price: Money.new(batch.price["cents"], batch.price["currency"]).
+          format(with_currency: true, symbol: false, no_cents: true))
+      end
+      city.to_h.merge(apply_batches: batches)
+    end
+
     @apply_city_groups = @city_groups.map do |city_group|
       slugs = city_group[:cities].map { |city| city.slug }
       apply_city_group = city_group.clone
-      apply_city_group[:cities] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city.slug) }
+      apply_city_group[:cities] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city["slug"]) }
       apply_city_group
     end
 
-    @city_group = @apply_city_groups.find { |city_group| city_group[:cities].map { |city| city.slug }.include?(@city.slug) } unless @city.nil?
+    @city_group = @apply_city_groups.find { |city_group| city_group[:cities].map { |city| city["slug"] }.include?(@city.slug) } unless @city.nil?
   end
 
   def application_params

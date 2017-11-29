@@ -3,14 +3,12 @@
 
 <%
   react_apply_city_groups = @apply_city_groups.map do |group|
-    group[:cities] = group[:cities].map { |city| city.as_json["data"] }
     group[:cities].each do |city|
       city["city_background_picture_url"] = cl_image_path city["city_background_picture"], crop: :fill, height: 70
     end
     group
   end
-  cities = @applicable_cities.as_json.map { |city| city["data"] }
-  cities.each do |city|
+  @applicable_cities.each do |city|
     city["city_background_picture_url"] = cl_image_path city["city_background_picture"], crop: :fill, height: 400
   end
 %>
@@ -19,8 +17,8 @@
   <%= react_component 'ApplyForm', {
     city_groups: react_apply_city_groups,
     city_group: @city_group,
-    cities: cities,
-    city: @city.as_json["data"],
+    cities: @applicable_cities,
+    city: @applicable_cities.find { |city| city["slug"] == @city.slug },
     token: form_authenticity_token,
     apply_path: send(:"apply_#{locale.to_s.underscore}_path", ':city'),
     locale: I18n.locale,
