@@ -6,6 +6,12 @@ class DemodayController < ApplicationController
       return redirect_to demoday_path(params[:id].to_i)
     end
 
+    @batches = Kitt::Client.query(Batch::CompletedQuery).data.batches # For batch selector
+    unless @batches.map(&:slug).include? params[:id]
+      flash[:alert] = "The Batch ##{params[:id]}'s demoday did not happen yet!"
+      return redirect_to demoday_index_path
+    end
+
     @selected_product_slug = params[:product_slug]
     @batch = Kitt::Client.query(Batch::Query, variables: { slug: params[:id] }).data.batch
     @students = Kitt::Client.query(Student::BatchQuery, variables: { batch_slug: @batch.slug }).data.students
@@ -14,7 +20,6 @@ class DemodayController < ApplicationController
       @selected_product = @products.select { |p| p.slug == @selected_product_slug }.first
       return redirect_to demoday_path(params[:id]) unless @selected_product
     end
-    @batches = Kitt::Client.query(Batch::CompletedQuery).data.batches # For batch selector
   end
 
   def index
