@@ -64,7 +64,7 @@
 %>
 <%= react_component "PlayerBatchSelector", {
   locales: locales,
-  selectedBatch: json_batches.select { |b| b["slug"] == @batch.slug }.first,
+  selectedBatch: json_batches.select { |b| b["slug"] == @batch.slug }.first || @batch.as_json["data"],
   batches: json_batches,
   demodayPath: demoday_path(':slug'),
   i18n: {

@@ -23,7 +23,7 @@ class PlayerContainer extends React.Component {
                 selectedProduct={this.state.selectedProduct}
                 reportCurrentTime={this.reportCurrentTime} />
     } else {
-      if (this.props.batch.cover_image_url) {
+      if (!this.props.batch.cover_image_url) {
         var noCoverStyle = {
           backgroundImage: "url(" + this.props.videoPlaceholder + ")"
         }
