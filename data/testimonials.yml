@@ -3,7 +3,7 @@ routes:
     - bibiiii
     - souebina
     - khalid-bkr
-    - julie-e
+    - juliepierre
     - diosat91
     - twentyfivemtl
     - milanbarande
@@ -72,7 +72,7 @@ routes:
     - heninapso
     - joparisot
     - timotheegoguely
-    - julie-e
+    - juliepierre
     - isabellebonnard
   sao-paulo:
     - etienne-c
@@ -759,18 +759,18 @@ testimonials:
       <p>The pedagogical approach and teaching methods are designed to help the student to learn by himself and become an autonomous web developer, while learning how to work among others as part of a team — physically and online. Moreover, Le Wagon Paris staff is full of very cool and talented persons who care a lot about the welfare of all the people involved in this crazy adventure.</p>
       <p>After probably the 9 most intense weeks of my life, I was really proud and excited to present the MVP of mnemosyne.io, the project we built during the last 10 days with 3 other students — here is a link if you want to watch it. It’s a platform to share and discover art and design master theses. I’m now working on an alpha private version and hopefully a public beta version at the end of this summer!</p>
       <p>So if like me, you want to give life to your best ideas, I can only recommend you to apply to Le Wagon FullStack program. I promise you that you won’t regret it ;)</p>
-  julie-e:
+  juliepierre:
     first_name: Julie
-    last_name: Ehrmann
+    last_name: Pierre
     city_slug: paris
-    batch_slug: 48
+    batch_slug: 43
     publication_date: 2017-03-13
     job_before:
-    project_slug: weres
+    project_slug: kitepirinha
     job_after:
     new_company:
     origin: Course Report
-    picture: paris_julie_ehrmann.jpg
+    picture: paris_julie_pierre.jpg
     linkedin_url:
     content_html: |
       <p>I graduated in 2013 from a business school with a specialisation in finance, then worked for 3 years in startups before joining Le Wagon's Fullstack program.</p>
