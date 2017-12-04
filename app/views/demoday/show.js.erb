@@ -1,4 +1,4 @@
-$('#batch-demoday').html('<%= j render 'batch_demoday', auto_play: true, batch: @batch, selected_product_slug: nil, prerender: false %>');
+$('#batch-demoday').html('<%= j render 'batch_demoday', auto_play: true, batch: @batch, selected_product_slug: nil, prerender: false, products: @products, students: @students %>');
 ReactRailsUJS.mountComponents();
 window.onYouTubeIframeAPIReady();
-$('#navbar-apply').html('<%= j render "shared/navbar_apply_button", city: @batch.city["slug"] %>');
+$('#navbar-apply').html('<%= j render "shared/navbar_apply_button", city: @batch.city.slug %>');

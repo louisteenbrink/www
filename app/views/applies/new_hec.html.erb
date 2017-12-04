@@ -11,10 +11,11 @@
           Désolé, votre candidature n'a pu être prise en compte. Merci de jeter un oeil au formulaire ci-dessous.
         </div>
       <% else %>
+        <!--
         <div class="intro">
           <p>
             HEC et Le Wagon proposent en exclusivité une track <i>FullStack Entrepreneur</i> limitée à <strong>8 étudiants</strong>.
-            <!-- Cette track se déroulera dans les locaux du Wagon Perchoir, au <a href="https://www.google.fr/maps/place/14+Rue+Crespin+du+Gast,+75011+Paris/@48.8660032,2.3780234,16.14z/data=!4m5!3m4!1s0x47e66df1d595cf1d:0x3941de3db62c8c37!8m2!3d48.8654569!4d2.3820249" target="_blank">14 Crespin du Gast</a> et du Wagon Gaudelet, au <a href="https://www.google.fr/maps/place/Le+Wagon/@48.8648515,2.3776643,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66df010ec3bff:0x6b419acfa77236a0!8m2!3d48.864848!4d2.379853?hl=fr" target="_blank">16 Villa Gaudelet</a>, dans le XI<sup>ème</sup>. -->
+            <!--Cette track se déroulera dans les locaux du Wagon Perchoir, au <a href="https://www.google.fr/maps/place/14+Rue+Crespin+du+Gast,+75011+Paris/@48.8660032,2.3780234,16.14z/data=!4m5!3m4!1s0x47e66df1d595cf1d:0x3941de3db62c8c37!8m2!3d48.8654569!4d2.3820249" target="_blank">14 Crespin du Gast</a> et du Wagon Gaudelet, au <a href="https://www.google.fr/maps/place/Le+Wagon/@48.8648515,2.3776643,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66df010ec3bff:0x6b419acfa77236a0!8m2!3d48.864848!4d2.379853?hl=fr" target="_blank">16 Villa Gaudelet</a>, dans le XI<sup>ème</sup>. - ->
             La formation se déroulera du 29 janvier au 30 mars 2018.
           </p>
           <p>
@@ -25,9 +26,14 @@
             <a href="https://www.codecademy.com/profiles/me" target="_blank">cliquez ici</a> et regardez l'URL vers laquelle vous êtes redirigé(e)s. Un pré-requis est de terminer 100% du tutoriel Ruby avant de démarrer la formation.
           </p>
         </div>
+        -->
+
+        <div class="intro">
+          Les inscriptions à la track FullStack Le Wagon/HEC sont maintenant clôturées pour l'année 2017/2018.
+        </div>
       <% end %>
 
-      <%= react_component 'HecApplyForm', {
+      <%#= react_component 'HecApplyForm', {
         token: form_authenticity_token,
         apply_path: hec_apply_path,
         locale: I18n.locale,

@@ -2,10 +2,8 @@
 layout: post
 title: "J'ai demandé à Paul Duan comment trouver du sens"
 author: antonin
-date: 09-06-2017
 labels:
   - podcast
-pushed: true
 thumbnail: 2017-06-09-nouvelle-ecole-e20.jpg
 description: Paul Duan est le fondateur de Bayes Impact, l'ONG qui met la technologie au service du bien commun. Dans cet épisode nous évoquerons sa recherche de sens et sa volonté de se rendre utile.
 ---

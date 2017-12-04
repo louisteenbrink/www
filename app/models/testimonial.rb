@@ -23,7 +23,7 @@ class Testimonial
   end
 
   def city
-    AlumniClient.new.city(@hash['city_slug'])
+    Kitt::Client.query(City::Query, variables: { slug: @hash['city_slug'] }).data.city
   rescue RestClient::ResourceNotFound
     nil
   end
@@ -32,13 +32,12 @@ class Testimonial
     "#{first_name} #{last_name}"
   end
 
-  def project
-    projects = AlumniClient.new.projects
-    projects.select { |project| project["slug"] == @hash['project_slug'] }.first
+  def product
+    @product ||= @project_slug ? Kitt::Client.query(Product::Query, variables: { slug: @project_slug }).data.product : nil
   end
 
-  def batch_thumbnail
-    AlumniClient.new.batch(@hash['batch_slug'], slug: true)
+  def batch
+    @batch ||= Kitt::Client.query(Batch::Query, variables: { slug: @batch_slug.to_s }).data.batch
   end
 
   def picture_url(height, width, quality)

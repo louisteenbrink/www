@@ -50,11 +50,11 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/docs
   config.infer_spec_type_from_file_location!
 
-  config.after(:each) do |scenario|
-    if !scenario.exception.nil? && scenario.metadata[:type] == :feature
-      puts page.body
-    end
-  end
+  # config.after(:each) do |scenario|
+  #   if !scenario.exception.nil? && scenario.metadata[:type] == :feature
+  #     puts page.body
+  #   end
+  # end
 end
 
 Capybara.default_max_wait_time = 30

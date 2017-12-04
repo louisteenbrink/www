@@ -5,7 +5,7 @@ class PlayerNavigationListItem extends React.Component {
 
   render() {
 
-    var product_name = this.props.product["name"];
+    var product_name = this.props.product.name;
 
     var componentClasses = classNames({
       'player-menu-item': true,

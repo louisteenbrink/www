@@ -1,9 +1,7 @@
 ---
 layout: post
 title: "Modern Javascript in the Browser"
-date: 2017-08-11
 author: sebastien
-pushed: true
 labels:
   - tutorial
 thumbnail: 2017-08-11-modern-javascript-in-the-browser.jpg

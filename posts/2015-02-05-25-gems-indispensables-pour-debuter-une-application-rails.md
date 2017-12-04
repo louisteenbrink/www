@@ -2,7 +2,6 @@
 layout: post
 title: "25 gems indispensables pour débuter une application rails"
 author: cedric
-date: 23-01-2015
 labels:
   - tutorial
 thumbnail: 2015-01-23-25-gems-starts-rubyonrails-project.jpg

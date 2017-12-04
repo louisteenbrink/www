@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "1 million de matches pour Kudoz !"
-date: 01-11-2014
 author: cedric
 labels:
   - alumni

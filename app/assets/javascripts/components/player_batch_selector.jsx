@@ -2,14 +2,14 @@ class PlayerBatchSelector extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedLocale: this.props.locales.filter((locale) => { return locale.code === this.props.selectedBatch.city.course_locale })[0],
+      selectedLocale: this.props.locales.filter((locale) => { return locale.code === this.props.selectedBatch.city.locale })[0],
       selectedBatch: this.props.selectedBatch
     }
   }
 
   render() {
     var otherLocales = this.props.locales.filter((locale) => { return locale.code !== this.state.selectedLocale.code });
-    var otherBatches = this.props.batches.filter((batch) => { return batch.city.course_locale === this.state.selectedLocale.code && (!this.state.selectedBatch || batch.slug !== this.state.selectedBatch.slug) });
+    var otherBatches = this.props.batches.filter((batch) => { return batch.city.locale === this.state.selectedLocale.code && (!this.state.selectedBatch || batch.slug !== this.state.selectedBatch.slug) });
 
     var languageSelector =
       <ReactBootstrap.Dropdown id="languageSelector" ref="languageSelector">
@@ -46,7 +46,7 @@ class PlayerBatchSelector extends React.Component {
         <ReactBootstrap.Dropdown.Menu>
           {otherBatches.map((batch, index) => {
             var videoCamera = null;
-            if (batch.youtube_id) {
+            if (batch.demoday_youtube_id) {
               videoCamera = <i className="fa fa-video-camera" aria-hidden="true"></i>
             }
             return <li key={index} onClick={() => this.changeBatch(batch)}>

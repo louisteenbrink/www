@@ -32,7 +32,7 @@
         <div class="modal fade" id="fullTestimonial-<%= testimonial.github_nickname %>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
           <div class="modal-dialog modal-testimonial" role="document">
             <div class="modal-content">
-              <div class="modal-header" style="background-image: url(<%= cl_image_path testimonial.city.city_background_picture_path, width: 938, height: 266, crop: :fill %>)">
+              <div class="modal-header" style="background-image: url(<%= cl_image_path testimonial.city.city_background_picture, width: 938, height: 266, crop: :fill if testimonial.city.city_background_picture %>)">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
               <div class="modal-body">
@@ -75,14 +75,16 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <% if testimonial.project.present? %>
+                <% if testimonial.product.present? %>
                   <div class="alumni-product-container">
                     <h4><%= t('.watch', name: testimonial.first_name) %></h4>
-                    <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.project['slug'] %>">
-                      <% if testimonial.project['thumbnail'] =~ /missing/ %>
-                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.batch_thumbnail.meta_image['facebook'] %>);">
+                    <a href=" <%= demoday_path testimonial.batch_slug %>/<%= testimonial.product.slug %>">
+                      <% if testimonial&.product&.cover_picture_url %>
+                        <div class="video-thumbnail" style="background-image: url(<%= thumbnail_url(testimonial.product) %>);">
+                      <% elsif testimonial&.batch&.meta_image_url %>
+                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.batch.meta_image_url %>);">
                       <% else %>
-                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.project['thumbnail'] %>);">
+                        <div class="video-thumbnail" style="background-image: url(<%= cl_image_path testimonial.city.city_background_picture, height: 200, crop: :fill %>);">
                       <% end %>
                         <svg id="play-button" width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -91,7 +93,7 @@
                         </svg>
                       </div>
                       <div class="video-details">
-                        <h4><%= testimonial.project['name'] %><small><%= testimonial.project['tagline']['en'] %></small></h4>
+                        <h4 class="text-center"><%= testimonial.product.name %><small><%= testimonial.product.tagline %></small></h4>
                       </div>
                     </a>
                   </div>

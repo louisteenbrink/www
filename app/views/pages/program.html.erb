@@ -135,8 +135,8 @@
       </h2>
       <p class="text-readable text-opac">
         <%= t(".why_us_details_html",
-          batches: @statistics['batches']['total'],
-          alumni: (@statistics['alumni']['total'] / 10) * 10) %>
+          batches: @statistics.batch_count,
+          alumni: (@statistics.alumni_count / 10) * 10) %>
       </p>
     </div>
     <div class='two-columns-image-container terminal'>
@@ -153,8 +153,8 @@
   </h2>
   <p class="text-readable text-opac">
     <%= t(".why_us_details_html",
-      batches: @statistics['batches']['total'],
-      alumni: (@statistics['alumni']['total'] / 10) * 10) %>
+      batches: @statistics.batch_count,
+      alumni: (@statistics.alumni_count / 10) * 10) %>
   </p>
 </div>
 
@@ -165,7 +165,7 @@
         <%= t(".community") %>
       </h2>
       <p class="text-readable" style="color: rgba(255, 255, 255, 0.9);">
-        <%= t(".community_details_html", alumni: (@statistics['alumni']['total'] / 10) * 10) %>
+        <%= t(".community_details_html", alumni: (@statistics.alumni_count / 10) * 10) %>
       </p>
     </div>
     <div class='two-columns-image-container slack'>
@@ -180,7 +180,7 @@
       <%= t(".community") %>
     </h2>
     <p class="text-readable text-opac">
-      <%= t(".community_details_html", alumni: (@statistics['alumni']['total'] / 10) * 10) %>
+      <%= t(".community_details_html", alumni: (@statistics.alumni_count / 10) * 10) %>
     </p>
   </div>
 </div>

@@ -2,7 +2,6 @@
 layout: video
 title: "L'expérience développeur dans la construction d'une API"
 author: sebastien
-date: 21-01-2015
 youtube_slug: "2c32rz8d-gM"
 locale: "fr"
 labels:

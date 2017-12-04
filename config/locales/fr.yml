@@ -47,7 +47,7 @@ fr:
         cities: Villes
         program: Programme
         online: Debutez en ligne
-        ondemand: OnDemand
+        ondemand: En ligne (On Demand)
         on_site: En présentiel
         fullstack_program: FullStack (9 semaines intensives)
         react_program: React (5 jours intensifs)
@@ -392,7 +392,7 @@ fr:
       description: "Le nouveau chic - Paris"
     react:
       catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
-      main_title: "Formez-vous à React + Redux"
+      main_title: "Formation React + Redux à Paris"
       special_offer: "Alumni programme Fullstack"
       pricing_vat: "€2,500 TTC"
       pricing_no_vat: "soit €2,083 HT"
@@ -540,7 +540,7 @@ fr:
     show:
       title: "Formation Développeur Web à %{city} - Le Wagon"
       description: |
-        Le Wagon débarque à %{city}. Changez de vie, apprenez à coder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
+        Formation développeur web à %{city} en 9 semaines. Changez de vie, apprenez à coder avec Le Wagon %{city}, la formation classée numéro une pour devenir développeur web.
       catchline_html: "<strong>Apprenez à coder</strong> avec <strong>Le Wagon</strong>"
       call: "Appeler %{name} :"
       email: 'Contacter %{name}'

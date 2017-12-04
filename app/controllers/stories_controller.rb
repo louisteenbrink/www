@@ -1,10 +1,12 @@
 class StoriesController < ApplicationController
   def show
-    @story = @client.story(params[:id])
-    session[:story_ids] = [] if session[:story_ids].nil?
-    session[:story_ids] << @story['id']
-    session[:story_ids].uniq!
+    @story = Story.find(params[:id])
+    return render_404 if @story.blank?
 
-    @stories = @client.random_stories(limit: 3, excluded_ids: session[:story_ids])
+    session[:story_slug] = [] if session[:story_slug].nil?
+    session[:story_slug] << @story.slug
+    session[:story_slug].uniq!
+
+    @stories = Story.random(limit: 2, excluded_slugs: session[:story_slugs])
   end
 end

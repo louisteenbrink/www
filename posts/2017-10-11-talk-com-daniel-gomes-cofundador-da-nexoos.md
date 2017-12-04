@@ -2,9 +2,7 @@
 layout: video
 title: "Talk com Daniel Gomes, Cofundador da Nexoos"
 youtube_slug: "EqANktSWu6U"
-date: 2017-10-11
 author: mathieu
-pushed: true
 locale: "pt-BR"
 labels:
   - talk

@@ -297,3 +297,8 @@ tokyo:
   facebook: "lewagontokyo"
   twitter: "lewagontokyo"
   instagram: "lewagontokyo"
+
+casablanca:
+  marketing_automation:
+    enabled: false
+

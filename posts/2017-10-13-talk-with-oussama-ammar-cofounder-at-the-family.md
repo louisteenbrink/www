@@ -2,9 +2,7 @@
 layout: video
 title: "Talk with Oussama Ammar, co-founder at The Family"
 youtube_slug: "zCqZUaYr8ZE"
-date: 2017-10-13
 author: sandrine
-pushed: true
 locale: "en"
 labels:
   - talk

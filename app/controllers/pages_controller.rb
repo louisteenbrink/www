@@ -15,7 +15,7 @@ class PagesController < ApplicationController
           if @live.demoday?
             redirect_to demoday_path(@live.batch_slug)
           else
-            @city = @client.city(@live.city_slug)
+            @city = Kitt::Client.query(City::Query, variables: { slug: @live.city_slug }).data.city
           end
         end
       end
@@ -41,15 +41,21 @@ class PagesController < ApplicationController
       redirect_to root_path
     else
       @apply = Apply.find(session[:apply_id])
-      @city = @cities.find { |city| city["id"] == @apply.city_id }
-      @batch = @client.batch(@apply.batch_id)
+      @city = @apply.city
+      @batch = @apply.batch
+      @meetup_url = MeetupApiClient.new(@apply.city.meetup_id).meetup['link']
     end
   end
 
   def employers
+    @positions = Position.all
   end
 
   def stack
+  end
+
+  def about
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
   end
 
   def robots
@@ -58,7 +64,7 @@ class PagesController < ApplicationController
   end
 
   def program
-    @statistics = @client.statistics
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
   end
 
 
@@ -83,11 +89,11 @@ class PagesController < ApplicationController
   private
 
   def set_top_bar
-    if I18n.locale == :fr
-      @top_bar_message = I18n.t('.top_bar_react_message')
-      @top_bar_cta = I18n.t('.top_bar_react_cta')
-      @top_bar_url = react_path
-    end
+    # if I18n.locale == :fr
+    #   @top_bar_message = I18n.t('.top_bar_react_message')
+    #   @top_bar_cta = I18n.t('.top_bar_react_cta')
+    #   @top_bar_url = react_path
+    # end
   end
 
   def mark_as_tracked

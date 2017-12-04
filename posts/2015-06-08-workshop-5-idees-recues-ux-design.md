@@ -2,7 +2,6 @@
 layout: video
 title: "5 idées reçues sur l'UX Design"
 author: cedric
-date: 08-06-2015
 youtube_slug: "WcUTwhnsTDs"
 locale: "fr"
 labels:

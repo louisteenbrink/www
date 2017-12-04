@@ -35,9 +35,9 @@ class AppliesController < ApplicationController
     prepare_apply_form
 
     if @city.nil?
-      redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @applicable_cities.first['slug'])
+      redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @applicable_cities.first["slug"])
     elsif params[:city].blank?
-      redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @city['slug'])
+      redirect_to send(:"apply_#{locale.to_s.underscore}_path", city: @city.slug)
     else
       @application = Apply.new(source: params[:source])
       set_validate_ruby
@@ -52,7 +52,7 @@ class AppliesController < ApplicationController
       session[:apply_id] = @application.id
       redirect_to send(:"thanks_#{I18n.locale.to_s.underscore}_path")
     else
-      city = AlumniClient.new.city(@application.city_id)
+      city = Kitt::Client.query(City::Query, variables: { id: @application.city_id }).data.city
       prepare_apply_form
       render :new
     end
@@ -93,59 +93,41 @@ class AppliesController < ApplicationController
   private
 
   include CloudinaryHelper
+  include CitiesHelper
 
   def prepare_apply_form
-    binding.pry
-    @applicable_cities = @cities.select{ |city| !city['batches'].empty? }.each do |city|
-      city['batches'].sort_by! { |batch| batch['starts_at'].to_date }
-      first_available_batch = city['batches'].find { |b| !b['full'] }
-      city['first_batch_date'] = first_available_batch.nil? ? nil : first_available_batch['starts_at'].to_date
-      city['pictures'] = {
-        cover: cl_image_path(city['city_background_picture_path'] || "", width: 790, height: 200, crop: :fill),
-        thumb: cl_image_path(city['city_background_picture_path'] || "", height: 35, crop: :scale)
-      }
-
-      city['batches'].each do |batch|
-        batch['special_message'] = 'Perchoir (20 seats)' if batch['id'] == 153 # TODO(ssaunier): replace with proper back-end
-        starts_at = batch['starts_at']
-        batch['starts_at'] = I18n.l starts_at.to_date, format: :apply
-        batch['starts_at_short'] = I18n.l starts_at.to_date, format: :short
-        batch['ends_at'] = I18n.l batch['ends_at'].to_date, format: :apply
-        price = Money.new(batch['price_cents'], batch['price_currency'])
-        if %w($ ¥).include?(price.currency.symbol)
-          # Symbol is ambiguous
-          batch['price'] = "#{price.currency.iso_code} #{humanized_money price}"
-        else
-          batch['price'] = humanized_money_with_symbol price
-        end
-      end
-    end
-
-    @applicable_cities = @applicable_cities.reject { |c| c['first_batch_date'].nil? }
-
+    @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.apply_batches.empty? }
     # Sort by first available batch
-    @applicable_cities.sort! do |city_a, city_b|
-      if city_a['first_batch_date'] == city_b['first_batch_date']
-        city_a['name'] <=> city_b['name']
+    @applicable_cities.sort do |city_a, city_b|
+      if next_open_batch_date(city_a) == next_open_batch_date(city_b)
+        city_a.name <=> city_b.name
       else
-        city_a['first_batch_date'] <=> city_b['first_batch_date']
+        next_open_batch_date(city_a) <=> next_open_batch_date(city_b)
       end
     end
 
     if params[:city]
-      @city = @applicable_cities.find { |city| city['slug'] == params[:city] }
+      @city = @applicable_cities.find { |city| city.slug == params[:city] }
     elsif session[:city]
-      @city = @applicable_cities.find { |city| city['slug'] == session[:city] }
+      @city = @applicable_cities.find { |city| city.slug == session[:city] }
+    end
+
+    @applicable_cities.map! do |city|
+      batches = city.apply_batches.map do |batch|
+        batch.to_h.merge(formatted_price: Money.new(batch.price["cents"], batch.price["currency"]).
+          format(with_currency: true, symbol: false, no_cents: true))
+      end
+      city.to_h.merge(apply_batches: batches)
     end
 
     @apply_city_groups = @city_groups.map do |city_group|
-      slugs = city_group['cities'].map { |city| city['slug'] }
+      slugs = city_group[:cities].map { |city| city.slug }
       apply_city_group = city_group.clone
-      apply_city_group['cities'] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city['slug']) }
+      apply_city_group[:cities] = @applicable_cities.select { |applicable_city| slugs.include?(applicable_city["slug"]) }
       apply_city_group
     end
 
-    @city_group = @apply_city_groups.find { |city_group| city_group['cities'].map { |city| city['slug'] }.include?(@city['slug']) } unless @city.nil?
+    @city_group = @apply_city_groups.find { |city_group| city_group[:cities].map { |city| city["slug"] }.include?(@city.slug) } unless @city.nil?
   end
 
   def application_params
@@ -155,7 +137,7 @@ class AppliesController < ApplicationController
   def set_validate_ruby
     return unless @application.batch_id
 
-    batch = AlumniClient.new.batch(@application.batch_id)
+    batch = Kitt::Client.query(Batch::Query, variables: { id: @application.batch_id }).data.batch
     if batch.force_completed_codecademy_at_apply
       @application.validate_ruby_codecademy_completed = true
     end

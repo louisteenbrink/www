@@ -2,10 +2,8 @@
 layout: post
 title: "Mehdi Maizi : L'intersection des passions, au calme"
 author: antonin
-date: 18-06-2017
 labels:
   - podcast
-pushed: true
 thumbnail: 2017-05-18-nouvelle-ecole-e17.jpg
 description: Il aimait écrire, mais n'était pas le meilleur. Il aimait le rap mais il ne savait pas à quoi cela lui servirait. Pourtant, en moins de 3 ans, Mehdi est passé d'un CDI en audit à un statut de journaliste rap reconnu, auteur d'un livre, créateur et animateur de plusieurs émissions phares.
 ---

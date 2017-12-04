@@ -2,10 +2,8 @@
 layout: post
 title: "Le setup des Meta Tags dans Rails"
 author: cedric
-date: 01-06-2015
 labels:
   - tutorial
-pushed: true
 thumbnail: 2015-06-01-tuto-meta-tags.jpg
 description: Éléments indispensables pour obtenir un aperçu qualitatif de vos contenus sur les réseaux sociaux, nous vous proposons ce tutoriel pour suivre pas à pas le setup des Meta Tags dans une application Rails.
 ---
@@ -137,7 +135,7 @@ Vous n'avez plus qu'à définir les `content_for` pertinents dans `app/views/off
 
 <% content_for :meta_title, "#{@offer.name} est sur #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @offer.description %>
-<% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
+<% content_for :meta_image, cl_image_path(@offer.photo.path) %>
 ```
 
 ##### **Déployez et testez**

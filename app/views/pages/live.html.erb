@@ -33,7 +33,7 @@
           </div>
           <div class="live-details">
             <div class="live-event-name">
-              <i><%= @city['name'] %> </i> <%= @live.title %>
+              <i><%= @city.name %> </i> <%= @live.title %>
             </div>
             <div class="live-speaker-jobtitle">
               <%= @live.subtitle %>
@@ -64,7 +64,7 @@
               <%= link_to t(".live_company_link"), @live.link, target: '_blank', class: "company-link" %>
             <% end %>
           </div>
-          <%= link_to t(".live_go_to_meetup"), @city["meetup_url"], target: '_blank', class: "go-to-meetup" %>
+          <%= link_to t(".live_go_to_meetup"), MeetupApiClient.new(@city.meetup_id).meetup["link"], target: '_blank', class: "go-to-meetup" %>
         </div>
       </div>
     </div>

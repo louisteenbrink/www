@@ -9,7 +9,7 @@ class PlayerProductDetails extends React.Component {
 
   render() {
     if (this.props.product === null || this.props.product === ':intro:') {
-      var text = this.props.i18n.batch_intro.replace('%{count}', this.props.batch.students.length)
+      var text = this.props.i18n.batch_intro.replace('%{count}', this.props.students.length)
                                             .replace('%{city_name}', this.props.batch.city.name)
                                             .replace('%{batch_start_date}', this.props.batch.starts_at)
                                             .replace('%{batch_end_date}', this.props.batch.ends_at);
@@ -21,9 +21,9 @@ class PlayerProductDetails extends React.Component {
         </div>
       )
     } else {
-      var product_name = this.props.product["name"];
-      var tagline = this.props.product["tagline_en"];
-      var product_url = this.props.product["url"];
+      var product_name = this.props.product.name;
+      var tagline = this.props.product.tagline;
+      var product_url = this.props.product.url;
       var makers = this.props.product.makers
 
       var technos = null;

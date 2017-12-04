@@ -9,9 +9,11 @@ module ProxyHelper
   #   - quality (optional): Image will be converted to JPG by the proxy. Specify quality if necessary (default: 90)
   def proxy_url_with_signature(args = {})
     signature = ProxyService.new.sign(args)
-    host = args.delete(:host)
+    host = Rails.env.production? ? ENV['CDN_URL'] : args.delete(:host)
     the_params = { request: Base64.encode64(args.merge(signature: signature).to_json).chomp }
+    the_params[:locale] = nil
     the_params.merge!({ host: host }) if host
+    the_params.merge!({ protocol: "https" }) if Rails.env.production?
     proxy_image_url the_params
   end
 end

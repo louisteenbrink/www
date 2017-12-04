@@ -36,9 +36,12 @@
 <%= render partial: "shared/testimonials_new" %>
 
 <% cache [ 'stories', locale ] do %>
-  <% stories = @client.random_stories(limit: 2, excluded_ids: (session[:story_ids] || [])) %>
+  <% stories = Story.random(limit: 2, excluded_slugs: session[:story_slugs]).map(&:as_json) %>
+  <% stories.each do |story| %>
+    <% story[:thumbnail] = story_image_url(story[:thumbnail]) %>
+  <% end %>
   <%= react_component 'Stories', {
-      stories: enriched_stories(stories),
+      stories: stories,
       storiesPath: alumni_path,
       i18n: {
         title: t(".featured"),
@@ -68,21 +71,12 @@
       <% @cities.each do |city| %>
         <div class="card-city-container">
             <div class="card-city">
-              <%= link_to "", city_path(city: city["slug"]), class: "card-city-link" %>
-              <div class="card-city-header" style="background-image: url('<%= cl_image_path city['city_background_picture_path'] || "", height: 200, crop: :fill %>')">
+              <%= link_to "", city_path(city: city.slug), class: "card-city-link" %>
+              <div class="card-city-header" style="background-image: url('<%= cl_image_path city.city_background_picture || "", height: 200, crop: :fill %>')">
               <span class="card-city-filter"></span>
               </div>
               <div class="card-city-body">
-                <h3><%= city["name"] %></h3>
-                <% if false %>
-                <div class="project-item-makers card-city-teachers">
-                  <% @client.staff(city['slug'])["teachers"].take(3).each do |teacher| %>
-                    <div class="project-item-maker">
-                      <%= cl_adaptive_image_tag teacher['photo_path'], width: 30, height: 30, crop: :fill, class: 'avatar' %>
-                    </div>
-                  <% end %>
-                </div>
-                <% end %>
+                <h3><%= city.name %></h3>
               </div>
             </div>
         </div>

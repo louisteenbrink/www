@@ -1,6 +1,6 @@
 city_constraint = Proc.new do |req|
   city = req.params[:city]
-  city.blank? || city.match(/^(#{AlumniClient.new.city_slugs.join("|")})$/i)
+  city.blank? || city.match(/^(#{Kitt::Client.query(City::GroupsQuery).data.cities.map { |city| city.slug }.join("|")})$/i)
 end
 
 Rails.application.routes.draw do
@@ -133,6 +133,8 @@ Rails.application.routes.draw do
   authenticate :user do
     mount Sidekiq::Web => '/sidekiq'
   end
+
+  match "/404" => "application#render_404", via: :all
 end
 
 # Create helper for static_routes

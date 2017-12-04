@@ -2,10 +2,8 @@
 layout: post
 title: "Social Meta Tags Setup in Rails"
 author: edward
-date: 22-03-2017
 labels:
   - tutorial
-pushed: true
 thumbnail: 22-03-2017-rails-social-metatags.jpg
 description: Sharing your product on social networks has become one privileged way to grow your userbase. But before you unleash your sharing fury, make sure your social meta tags are properly set.
 ---
@@ -141,7 +139,7 @@ Just set the relevant `content_for`s in `app/views/offers/show.html.erb`:
 <!-- app/views/offers/show.html.erb -->
 <% content_for :meta_title, "#{@offer.name} is on #{DEFAULT_META["meta_product_name"]}" %>
 <% content_for :meta_description, @offer.description %>
-<% content_for :meta_image, cloudinary_url(@offer.photo.path) %>
+<% content_for :meta_image, cl_image_path(@offer.photo.path) %>
 ```
 
 ## Testing
