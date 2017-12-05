@@ -27,6 +27,9 @@ namespace :post do
     puts "Is this a video? (no)"
     video = STDIN.gets.chomp =~ /y/
 
+    puts "Choose your locale: fr, en, pt-BR"
+    locale = STDIN.gets.chomp
+
     filename = File.join('posts', "#{date}-#{slug}.md")
     if File.exist?(filename)
       abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
@@ -39,6 +42,7 @@ namespace :post do
       post.puts "title: \"#{title}\""
       post.puts "youtube_slug: TODO" if video
       post.puts "author: TODO"
+      post.puts "locale: \"#{locale}\""
       post.puts "labels:"
       post.puts "  - TODO"
       post.puts "thumbnail: TODO"
