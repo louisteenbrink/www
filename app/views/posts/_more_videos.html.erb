@@ -5,7 +5,7 @@
         <% vv.each do |video| %>
           <div class="col-sm-6">
             <%= link_to post_path video.slug do %>
-              <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/<%= video.youtube_slug %>/maxresdefault.jpg')">
+              <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/<%= video.youtube_slug %>/hqdefault.jpg')">
                 <div class="video-details">
                   <div class="catergory-items">
                     <%= render "shared/flags/icon_flag_#{video.locale}" %>
