@@ -79,6 +79,8 @@ class ApplicationController < ActionController::Base
   end
 
   def redirect_on_referer
+    return if ENV['REDIRECT_ON_REFERER'].blank?
+
     if request.referer =~ /#{ENV['REDIRECT_ON_REFERER']}/
       redirect_to "https://www.switchup.org/research/best-coding-bootcamps"
       false
