@@ -4,6 +4,7 @@ require 'open-uri'
 
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :reset_session, except: :render_404
+  before_action :redirect_on_referer
   before_action :fetch_critical_css, if: -> { Rails.env.production? }
   before_action :set_locale
   before_action :set_live
@@ -74,6 +75,13 @@ class ApplicationController < ActionController::Base
         # Wait 5 minutes to be sure that Heroku deployment is complete and server ready (preload enabled)
         GenerateCriticalCssJob.set(wait: 5.minutes).perform_later(request.path)
       end
+    end
+  end
+
+  def redirect_on_referer
+    if request.referer =~ /#{ENV['REDIRECT_ON_REFERER']}/
+      redirect_to "https://www.switchup.org/research/best-coding-bootcamps"
+      false
     end
   end
 end
