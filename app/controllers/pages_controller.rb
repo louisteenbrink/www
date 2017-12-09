@@ -49,7 +49,7 @@ class PagesController < ApplicationController
 
   def employers
     @positions = Position.all
-    @employer = Employer.new
+    @employer = EmployerProspect.new
   end
 
   def stack
