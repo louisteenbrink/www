@@ -17,10 +17,16 @@ namespace :apply do
     puts "Created card for #{apply.email}"
   end
 
-  task send_london_to_kitt: :environment do
-    Apply.where(batch_id: [38, 49, 77, 67, 131, 107, 88]).each do |apply|
-      PushApplyToKittRunner.new(apply).run
-      puts '=== Sent! ==='
+  task send_all_to_kitt: :environment do
+    puts "=== Sending #{Apply.count} appications ==="
+    i = 1
+    t = Apply.count / 1000
+    Apply.find_in_batches do |applies|
+      puts "#{i} / #{t}"
+      applies.each do |apply|
+        PushApplyToKittRunner.new(apply).run
+      end
     end
+    puts '=== Done! ==='
   end
 end
