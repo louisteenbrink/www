@@ -1,9 +1,9 @@
 ---
 layout: story
 title: Discovering the digital nomad life with Dimitri Bosch in Tokyo.
-date: '2017-01-19'
-thumbnail: story-dimitri-bosch-portrait.jpg
-description: How does life look like in Japan as a freelance web developer? We sat down with [Dimitri](https://twitter.com/dimitribosch), recently settled in Tokyo and one of our teacher for the coming batch, to talk about his experience so far in one of the world’s most buzzing city.
+date: "2017-01-19"
+thumbnail: https://raw.githubusercontent.com/lewagon/www-images/master/stories/story-dimitri-bosh-portrait.jpg
+description: "How does life look like in Japan as a freelance web developer? We sat down with Dimitri, recently settled in Tokyo and one of our teacher for the coming batch, to talk about his experience so far."
 alumnus_github_nickname: db0sch
 company_slug: lewagon
 ---
