@@ -26,6 +26,7 @@ namespace :apply do
       applies.each do |apply|
         PushApplyToKittRunner.new(apply).run
       end
+      i += 1
     end
     puts '=== Done! ==='
   end
