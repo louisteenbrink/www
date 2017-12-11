@@ -6,7 +6,7 @@ thumbnail: roger-scott-product-manager-psafe.jpg
 description: Doing Le Wagon in Brazil is a great option both for people interested
   in discovering a country while learning new skills.
 alumnus_github_nickname: rogerpscott
-company_slug: stripe
+company_slug: psafe
 ---
 
 ## What brought you to study at Le Wagon?
