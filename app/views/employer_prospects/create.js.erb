@@ -1,0 +1,13 @@
+const modalContent = document.getElementById("modalForm");
+console.log(<%= @employer.errors.messages.any? %>)
+<% if @employer.errors.messages.any? %>
+  const form = '<%= j render "employer_prospects/form", employer: @employer %>';
+  modalContent.innerHTML = form;
+<% else %>
+  const thank = "<%= j render "employer_prospects/thank_you" %>"
+  modalContent.innerHTML = thank;
+<% end %>
+
+
+// const modalContent = document.getElementById("modalForm");
+// modalContent.innerHTML = '<div class="thank_you_container"><h2 class="underlined">Thank You!</h2><p>We will contact you shortly.</p></div>'

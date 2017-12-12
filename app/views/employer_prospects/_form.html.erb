@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="employer-form-rows-container">
-    <%= simple_form_for(employer) do |f| %>
+    <%= simple_form_for employer, remote: true do |f| %>
       <%= f.input :first_name, wrapper_html: { class: 'employer-form-row' }, placeholder: 'Alan', label: label_with_icon("account", "First Name") %>
       <%= f.input :last_name, wrapper_html: { class: 'employer-form-row' }, placeholder: 'Turing', label: label_with_icon("format-text", "Last Name") %>
       <%= f.input :email, wrapper_html: { class: 'employer-form-row' }, placeholder: 'alan@turing.com', label: label_with_icon("email-open", "Email") %>

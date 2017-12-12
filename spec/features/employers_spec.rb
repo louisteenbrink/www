@@ -11,6 +11,7 @@ RSpec.describe "Employers", type: :feature do
   end
 
   it 'notifies Slack if every field is filled' do
+    count_before_create = EmployerProspect.count
     visit "/employers"
     within('#employer-form-modal') do
       fill_in 'First Name', with: 'John'
@@ -28,9 +29,11 @@ RSpec.describe "Employers", type: :feature do
       click_button "Join our Hiring Network"
     end
     expect(page).to have_content("Thank you for joining Le Wagon's network.")
+    expect(count_before_create + 1).to eq(EmployerProspect.count)
   end
 
   it 'is not working if one field is not filled' do
+    count_before_create = EmployerProspect.count
     visit "/employers"
     within('#employer-form-modal') do
       fill_in 'First Name', with: 'John'
@@ -48,5 +51,6 @@ RSpec.describe "Employers", type: :feature do
     end
     expect(page).to have_content("can't be blank")
     expect(page).to_not have_content("Thank you for joining Le Wagon's network.")
+    expect(count_before_create).to eq(EmployerProspect.count)
   end
 end
