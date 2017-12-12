@@ -1,0 +1,59 @@
+AllCops:
+  TargetRubyVersion: 2.4.2
+  Exclude:
+      - 'db/**/*'
+      - 'config/**/*'
+      - 'script/**/*'
+      - 'support/**/*'
+
+Rails:
+  Enabled: true
+
+# forces single assignment out of if/case statements
+ConditionalAssignment:
+  Enabled: false
+# forces correct use of single vs double quotes
+StringLiterals:
+  Enabled: false
+# forces documentation of classes and modules
+Documentation:
+  Enabled: false
+# forces specific regex syntax
+RegexpLiteral:
+  Enabled: false
+# forces if to be potentialy replaced with guard clause return if
+GuardClause:
+  Enabled: false
+# forces %w notation for array of words
+WordArray:
+  Enabled: false
+# forces %w[] instead of %w()
+PercentLiteralDelimiters:
+  Enabled: false
+# forces maximum on size of methods
+AbcSize:
+  Enabled: false
+# forces max complexity of methods
+CyclomaticComplexity:
+  Enabled: false
+# forces correct usage of fail vs raise
+SignalException:
+  Enabled: false
+# forces frozen literal magic comment
+FrozenStringLiteralComment:
+  Enabled: false
+# forces %i[] for an array of symbols
+SymbolArray:
+  Enabled: false
+# forces weird looking syntax on hashes as last argument of method
+IndentHash:
+  Enabled: false
+# forces weird looking syntax on closing of parenthesis of multi-line methods
+ClosingParenthesisIndentation:
+  Enabled: false
+# increases the line length to 160 chars
+LineLength:
+  Max: 160
+# increase the method length to 20 lines
+MethodLength:
+  Max: 30
