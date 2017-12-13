@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe EmployersController, type: :controller do
+RSpec.describe EmployerProspectsController, type: :controller do
   it "notifies Slack" do
     ActiveJob::Base.queue_adapter = :test
     params = {
@@ -14,8 +14,7 @@ RSpec.describe EmployersController, type: :controller do
       locations: ["Tokyo", "Paris"],
       message: "Realllllyyyyyy long text of more"
     }
-    employer = Employer.from_hash(params)
-    post :create, params: { employer: params }
+    post :create, params: { employer_prospect: params }
     expect(NotifySlack).to have_been_enqueued
   end
 end
