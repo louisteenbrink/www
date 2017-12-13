@@ -16,7 +16,6 @@ RSpec.describe EmployersController, type: :controller do
     }
     employer = Employer.from_hash(params)
     post :create, params: { employer: params }
-    # expect(NotifySlack).to have_enqueued_sidekiq_job(channel: "hiring", text: employer.to_slack_message)
     expect(NotifySlack).to have_been_enqueued
   end
 end
