@@ -98,11 +98,13 @@ class AppliesController < ApplicationController
   def prepare_apply_form
     @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.apply_batches.empty? }
     # Sort by first available batch
-    @applicable_cities.sort do |city_a, city_b|
-      if next_open_batch_date(city_a) == next_open_batch_date(city_b)
+    @applicable_cities.sort! do |city_a, city_b|
+      city_a_next_open_batch_date = next_open_batch_date(city_a)
+      city_b_next_open_batch_date = next_open_batch_date(city_b)
+      if city_a_next_open_batch_date == city_b_next_open_batch_date
         city_a.name <=> city_b.name
       else
-        next_open_batch_date(city_a) <=> next_open_batch_date(city_b)
+        city_a_next_open_batch_date <=> city_b_next_open_batch_date
       end
     end
 
