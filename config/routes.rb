@@ -21,6 +21,8 @@ Rails.application.routes.draw do
     delete '/log_out', to: 'base#log_out'
   end
 
+  resources :employer_prospects, only: [:create]
+
   resources :prospects, only: :create
 
   # config/static_routes.yml

@@ -57,6 +57,7 @@ class ApplicationController < ActionController::Base
       group[:cities] = group[:city_slugs].map do |slug|
         cities.find { |city| city.slug == slug }
       end
+      group[:cities].compact!
       group
     end
     # needed in footer
