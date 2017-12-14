@@ -7,8 +7,8 @@ class CreateEmployerProspects < ActiveRecord::Migration[5.1]
       t.string :phone_number
       t.string :company
       t.string :website
-      t.string :targets
-      t.string :locations
+      t.string :targets, array: true
+      t.string :locations, array: true
       t.string :message
 
       t.timestamps

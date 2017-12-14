@@ -9,8 +9,8 @@
 #  phone_number :string
 #  company      :string
 #  website      :string
-#  targets      :string
-#  locations    :string
+#  targets      :string           is an Array
+#  locations    :string           is an Array
 #  message      :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
@@ -40,6 +40,20 @@ RSpec.describe EmployerProspect, type: :model do
     it 'is not valid with if one attribute is missing' do
       employer.first_name = nil
       expect(employer.valid?).to be false
+    end
+  end
+
+  describe "#targets" do
+    it 'stores and returns an array' do
+      expect(employer.targets).to be_a_kind_of Array
+      expect(employer.targets).to eq ["Product manager", "Front-end developer"]
+    end
+  end
+
+  describe "#locations" do
+    it 'stores and returns an array' do
+      expect(employer.locations).to be_a_kind_of Array
+      expect(employer.locations).to eq ["Tokyo", "Berlin", "Paris"]
     end
   end
 

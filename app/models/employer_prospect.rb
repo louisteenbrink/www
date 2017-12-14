@@ -9,8 +9,8 @@
 #  phone_number :string
 #  company      :string
 #  website      :string
-#  targets      :string
-#  locations    :string
+#  targets      :string           is an Array
+#  locations    :string           is an Array
 #  message      :string
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
@@ -21,10 +21,6 @@ class EmployerProspect < ApplicationRecord
   validates :first_name, :last_name, :phone_number, :company, :website, :targets, :locations, :message, presence: true
   validates :email, format: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
   validates :website, format: /\A(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?\z/
-
-  # targets and locations are arrays of strings
-  serialize :targets
-  serialize :locations
 
   def full_name
     "#{first_name.capitalize} #{last_name.capitalize}"

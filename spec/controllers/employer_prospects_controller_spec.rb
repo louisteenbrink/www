@@ -1,3 +1,21 @@
+# == Schema Information
+#
+# Table name: employer_prospects
+#
+#  id           :integer          not null, primary key
+#  first_name   :string
+#  last_name    :string
+#  email        :string
+#  phone_number :string
+#  company      :string
+#  website      :string
+#  targets      :string           is an Array
+#  locations    :string           is an Array
+#  message      :string
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#
+
 require 'rails_helper'
 
 RSpec.describe EmployerProspectsController, type: :controller do

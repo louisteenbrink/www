@@ -68,8 +68,8 @@ ActiveRecord::Schema.define(version: 20171209184315) do
     t.string "phone_number"
     t.string "company"
     t.string "website"
-    t.string "targets"
-    t.string "locations"
+    t.string "targets", array: true
+    t.string "locations", array: true
     t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,5 +1,4 @@
 const modalContent = document.getElementById("modalForm");
-console.log(<%= @employer.errors.messages.any? %>)
 <% if @employer.errors.messages.any? %>
   const form = '<%= j render "employer_prospects/form", employer: @employer %>';
   modalContent.innerHTML = form;
