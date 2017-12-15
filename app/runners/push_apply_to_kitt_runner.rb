@@ -21,14 +21,15 @@ class PushApplyToKittRunner
         price_cents: price_cents,
         price_currency: price_currency,
         created_at: @apply.created_at,
-        updated_at: @apply.updated_at
+        updated_at: @apply.updated_at,
+        www_apply_id: @apply.id
       }
     }
 
     begin
       RestClient.post url, payload.to_json, content_type: :json, accept: :json
     rescue => e
-      puts "#{e} for #{@apply.batch_id}"
+      puts "#{e} for #{@apply.id}"
     end
   end
 
