@@ -4,7 +4,7 @@ class PushApplyToKittRunner
   end
 
   def run
-    url =  Rails.env.production? ? 'https://kitt.lewagon.com/ap1/v1/applies' : "#{ENV['KITT_BASE_URL']}/ap1/v1/applies"
+    url =  Rails.env.production? ? 'https://kitt.lewagon.com/api/v1/applies' : "#{ENV['KITT_BASE_URL']}/api/v1/applies"
 
     payload = {
       camp_id: @apply.batch_id,
