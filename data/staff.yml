@@ -40,6 +40,10 @@ milan:
     name: Francesco Ecclesie
     role: Driver && Teacher
     avatar: milan_francesco_ecclesie.jpg
+  - github_nickname:
+    name: Eleonora Rocca
+    role: Commnity partner
+    avatar: milan_eleonora_rocca.png
 bali:
   - github_nickname: dirkschuler
     name: Dirk Schuler
