@@ -42,7 +42,7 @@ milan:
     avatar: milan_francesco_ecclesie.jpg
   - github_nickname:
     name: Eleonora Rocca
-    role: Commnity partner
+    role: Commnity Partner
     avatar: milan_eleonora_rocca.png
 bali:
   - github_nickname: dirkschuler
@@ -58,6 +58,11 @@ tokyo:
     name: Sylvain Pierre
     role: Co-founder
     avatar: tokyo_sylvain_pierre.jpg
+budapest:
+  - github_nickname: angyalg
+    name: Gergo Angyal
+    role: Driver
+    avatar: budapest_gergo_angyal.jpg
 # bordeaux:
 #   - github_nickname: bertrandbussac
 #     name: Bertrand Bussac
