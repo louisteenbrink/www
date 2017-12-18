@@ -64,12 +64,4 @@ RSpec.describe EmployerProspect, type: :model do
       expect(employer.full_name).to eq("George Abitbol")
     end
   end
-
-  describe "#to_slack_message" do
-    it 'returns a formated text' do
-      message = employer.to_slack_message
-      expect(message).to match(/George/)
-      expect(message).to match(/\*Company\:\*/)
-    end
-  end
 end

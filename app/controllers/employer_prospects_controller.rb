@@ -21,9 +21,51 @@ class EmployerProspectsController < ApplicationController
   def notify_slack(employer)
     NotifySlack.perform_later(
       "channel": Rails.env.development? ? "test" : "hiring",
-      "username": "www",
+      "username": "Employer Prospect",
       "icon_url": "https://raw.githubusercontent.com/lewagon/mooc-images/master/slack_bot.png",
-      "text": employer.to_slack_message
+      "attachments": [
+        "color": "#2980b9",
+        "attachment_type": "default",
+        "fallback": "New Employer Prospect (#{employer.company})",
+        "fields": [
+          {
+            "title": "Name",
+            "value": employer.full_name,
+          },
+          {
+            "title": "Phone number",
+            "value": employer.phone_number,
+            "short": true
+          },
+          {
+            "title": "Email",
+            "value": employer.email,
+            "short": true
+          },
+          {
+            "title": "Company",
+            "value": employer.company,
+            "short": true
+          },
+          {
+            "title": "Website",
+            "value": employer.website,
+            "short": true
+          },
+          {
+            "title": "Why",
+            "value": employer.message,
+          },
+          {
+            "title": "Which cities",
+            "value": employer.locations.join(", ")
+          },
+          {
+            "title": "Looking for",
+            "value": employer.targets.join(", ")
+          }
+        ]
+      ]
     )
   end
 
