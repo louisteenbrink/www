@@ -63,6 +63,23 @@ budapest:
     name: Gergo Angyal
     role: Driver
     avatar: budapest_gergo_angyal.jpg
+belo-horizonte:
+  - github_nickname: american0
+    name: Fernando Americano
+    role: Driver and Teacher
+    avatar: belo_horizonte_fernando_americano.jpg
+  - github_nickname: andrealmar
+    name: Andre Almar
+    role: Lead Teacher
+    avatar: belo_horizonte_andre_almar.jpg
+  - github_nickname: tulioti
+    name: Tulio Fernandes
+    role: Lead Teacher
+    avatar: belo_horizonte_tulio_fernandes.jpg
+  - github_nickname: yanmagale
+    name: Yan Magalhães
+    role: Lead Teacher
+    avatar: belo_horizonte_yan_magalhaes.jpg
 # bordeaux:
 #   - github_nickname: bertrandbussac
 #     name: Bertrand Bussac
