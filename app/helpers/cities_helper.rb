@@ -7,8 +7,9 @@ module CitiesHelper
   # end
 
   def next_open_batch_date(city)
-    next_date = city.apply_batches.find { |b| b.apply_status ==  "last_seats" }&.starts_at&.to_date
-    next_date = city.apply_batches.find { |b| b.apply_status ==  "open_for_registration" }&.starts_at&.to_date if next_date.nil?
+    next_date = (city.apply_batches.select do |b|
+      b.apply_status ==  "last_seats" || b.apply_status == "open_for_registration"
+    end).map(&:starts_at).sort.first
     next_date = Date.today + City::GAP_BETWEEN_BATCHES if next_date.nil?
     return next_date
   end

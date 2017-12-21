@@ -58,9 +58,11 @@
   </div>
 </div>
 
-<div class="container-fluid container-batch-cover">
-  <div>
-    <div class="cover-students" style="background-image: url(<%= batch.cover_image_url %>)"></div>
+<% if batch.cover_image_url.present? %>
+  <div class="container-fluid container-batch-cover">
+    <div>
+      <div class="cover-students" style="background-image: url(<%= batch.cover_image_url %>)"></div>
+    </div>
   </div>
-</div>
+<% end %>
 
