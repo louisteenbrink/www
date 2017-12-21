@@ -27,7 +27,15 @@ class PushApplyToKittRunner
     }
 
     begin
-      RestClient.post url, payload.to_json, content_type: :json, accept: :json
+      RestClient.execute(
+        method: :post,
+        url: url,
+        payload: payload.to_json,
+        user: 'lewagon',
+        password: ENV['ALUMNI_WWW_SHARED_SECRET'],
+        content_type: :json,
+        accept: :json
+      )
     rescue => e
       puts "#{e} for #{@apply.id}"
     end
