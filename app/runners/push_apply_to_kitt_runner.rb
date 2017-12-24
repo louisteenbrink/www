@@ -27,7 +27,7 @@ class PushApplyToKittRunner
     }
 
     begin
-      RestClient.execute(
+      RestClient::Request.execute(
         method: :post,
         url: url,
         payload: payload.to_json,
