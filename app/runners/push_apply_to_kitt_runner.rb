@@ -35,10 +35,10 @@ class PushApplyToKittRunner
 
   def price_cents
     # This is to avoid excess API calls in development
-    Rails.env.production? ? @apply.batch.price['cents'] : 600_000
+    Rails.env.production? ? (@apply.batch ? @apply.batch.price['cents'] : 0) : 600_000
   end
 
   def price_currency
-    Rails.env.production? ? @apply.batch.price['currency'] : 'EUR'
+    Rails.env.production? ? (@apply.batch ? @apply.batch.price['currency'] : 'EUR') : 'EUR'
   end
 end
