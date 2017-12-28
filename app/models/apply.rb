@@ -44,14 +44,15 @@ class Apply < ActiveRecord::Base
   before_validation :fetch_linkedin_profile
   validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
 
-  after_commit :push_to_trello, on: :create, if: :push_to_trello?
+  after_commit :push_to_services, on: :create, if: :push_to_services?
 
-  def push_to_trello
+  def push_to_services
     PushApplyJob.perform_later(id)
   end
 
-  def push_to_trello?
-    batch_id && Rails.env.production?
+  def push_to_services?
+    # TODO(alex): add back production condition
+    batch_id # && Rails.env.production?
   end
 
   def tracked?

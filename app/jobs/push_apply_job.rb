@@ -5,6 +5,7 @@ class PushApplyJob < ActiveJob::Base
 
     card = PushToTrelloRunner.new(apply).run
     PushStudentToCrmRunner.new(card, apply).run
+    PushApplyToKittRunner.new(apply).run
 
     if Rails.env.production?
       SubscribeToNewsletter.new(apply.email).run
