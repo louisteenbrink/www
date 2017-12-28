@@ -19,8 +19,8 @@ namespace :apply do
 
   task remove_test: :environment do
     Apply.all.each do |apply|
-      if apply.motivation.match?(/test ?test/) \
-        || apply.email.match?(/test/)
+      if apply.motivation.match?(/test ?test/i) \
+        || apply.email.match?(/test/i)
         apply.destroy
         puts "Removed #{apply.email}"
       end
