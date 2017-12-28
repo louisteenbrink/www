@@ -4,7 +4,9 @@ class PushApplyToKittRunner
   end
 
   def run
-    url =  Rails.env.production? ? 'https://kitt.lewagon.com/api/v1/applies' : "#{ENV['KITT_BASE_URL']}/api/v1/applies"
+    if !Rails.env.production? && ENV["KITT_BASE_URL"] =~ /kitt\.lewagon\.com/
+      fail "[SAFETY NET] Do not send local applies to production Kitt!"
+    end
 
     payload = {
       camp_id: @apply.batch_id,
@@ -26,19 +28,7 @@ class PushApplyToKittRunner
       }
     }
 
-    begin
-      RestClient::Request.execute(
-        method: :post,
-        url: url,
-        payload: payload.to_json,
-        user: 'lewagon',
-        password: ENV['ALUMNI_WWW_SHARED_SECRET'],
-        content_type: :json,
-        accept: :json
-      )
-    rescue => e
-      puts "#{e} for #{@apply.id}"
-    end
+    RestClient.post("#{ENV['KITT_BASE_URL']}/api/v1/applies", payload.to_json, { content_type: :json })
   end
 
   private

@@ -18,12 +18,13 @@ namespace :apply do
   end
 
   task remove_test: :environment do
-    count = Apply.count
     Apply.all.each do |apply|
-      apply.destroy if apply.motivation.match? /test ?test/
-      apply.destroy if apply.email.match? /test/
+      if apply.motivation.match?(/test ?test/) \
+        || apply.email.match?(/test/)
+        apply.destroy
+        puts "Removed #{apply.email}"
+      end
     end
-    puts "Deleted #{count - Apply.count} reviews!"
   end
 
   task migrate: :environment do
@@ -48,15 +49,19 @@ namespace :apply do
   end
 
   task send_all_to_kitt: :environment do
-    puts "=== Sending #{Apply.count} appications ==="
+    puts "=== Sending #{Apply.count} appications to Kitt ==="
     i = 1
-    t = (Apply.count / 1000) + 1
     Apply.find_in_batches do |applies|
-      puts "#{i} / #{t}"
       applies.each do |apply|
-        PushApplyToKittRunner.new(apply).run
+        begin
+          PushApplyToKittRunner.new(apply).run
+          puts "#{i}. Pushed #{apply.email}"
+        rescue Exception => e
+          puts "#{i} ⚠️  Error for #{apply.email}: #{e.message} - #{e.response.body}"
+        ensure
+          i += 1
+        end
       end
-      i += 1
     end
     puts '=== Done! ==='
   end
