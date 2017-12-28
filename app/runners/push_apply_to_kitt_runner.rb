@@ -34,11 +34,20 @@ class PushApplyToKittRunner
   private
 
   def price_cents
-    # This is to avoid excess API calls in development
-    Rails.env.production? ? (@apply.batch ? @apply.batch.price['cents'] : 0) : 600_000
+    batch ? batch.price["cents"] : 0
   end
 
   def price_currency
-    Rails.env.production? ? (@apply.batch ? @apply.batch.price['currency'] : 'EUR') : 'EUR'
+    batch ? batch.price["currency"] : "EUR"
+  end
+
+  def batch
+    @batch = (
+      begin
+        @apply.batch
+      rescue Kitt::Client::Error
+        nil
+      end
+    )
   end
 end
