@@ -302,3 +302,10 @@ casablanca:
   marketing_automation:
     enabled: false
 
+buenos-aires:
+  marketing_automation:
+    enabled: false
+
+mexico:
+  marketing_automation:
+    enabled: false
