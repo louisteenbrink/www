@@ -34,7 +34,7 @@ Rails.application.routes.draw do
 
   # Redirects
   get 'premiere', to: redirect('programme')
-  get 'marseille', to: redirect('aix-marseille')
+  get 'aix-marseille', to: redirect('marseille')
   get 'sp', to: redirect('pt-BR/sao-paulo')
   get 'bh', to: redirect('pt-BR/belo-horizonte')
   get 'en', to: redirect('/')
