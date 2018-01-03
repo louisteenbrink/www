@@ -36,7 +36,7 @@ class PagesController < ApplicationController
     end
 
     @stories = Story.all
-    if locale == :"fr"
+    if locale == :fr
       @stories = @stories.select { |m| m.locale == "fr" }
       @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
     else
