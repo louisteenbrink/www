@@ -2,6 +2,7 @@
 layout: post
 title: "La boîte à outils du dev front débutant"
 author: cedric
+locale: "fr"
 labels:
   - tutorial
 thumbnail: 2014-10-25-ressources-dev-debutant.jpg

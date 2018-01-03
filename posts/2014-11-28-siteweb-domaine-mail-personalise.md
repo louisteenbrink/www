@@ -2,6 +2,7 @@
 layout: post
 title: "Personnalisez l'url de votre site"
 author: cedric
+locale: "fr"
 labels:
   - tutorial
 thumbnail: 2014-11-28-tuto-url-custom.jpg

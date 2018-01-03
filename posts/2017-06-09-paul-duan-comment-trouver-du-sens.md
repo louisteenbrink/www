@@ -2,6 +2,7 @@
 layout: post
 title: "J'ai demandé à Paul Duan comment trouver du sens"
 author: antonin
+locale: "fr"
 labels:
   - podcast
 thumbnail: 2017-06-09-nouvelle-ecole-e20.jpg

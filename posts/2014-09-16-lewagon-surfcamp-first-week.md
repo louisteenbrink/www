@@ -2,6 +2,7 @@
 layout: post
 title:  "Le Wagon Surfcamp | first week"
 author: cedric
+locale: "fr"
 labels:
   - lifestyle
 thumbnail: 2014-09-16-lewagon-surfcamp-first-week.jpg

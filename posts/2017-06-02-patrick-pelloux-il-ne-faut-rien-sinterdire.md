@@ -2,6 +2,7 @@
 layout: post
 title: "Patrick Pelloux : il ne faut rien s'interdire"
 author: antonin
+locale: "fr"
 labels:
   - podcast
 thumbnail: 2017-06-02-nouvelle-ecole-e19.jpg

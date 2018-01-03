@@ -2,6 +2,7 @@
 layout: post
 title: "Why would you relocate to Lisbon?"
 author: shannon
+locale: "en"
 labels:
   - lifestyle
 thumbnail: 2017-06-12-why-lisbon-1.jpg

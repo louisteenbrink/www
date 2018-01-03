@@ -2,6 +2,7 @@
 layout: post
 title: "Pourquoi apprendre Ruby on Rails ?"
 author: sebastien
+locale: "fr"
 labels:
   - tutorial
 thumbnail: 2015-03-16-pourquoi-apprendre-ruby-on-rails.jpg
