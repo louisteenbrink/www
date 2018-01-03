@@ -37,15 +37,15 @@ class PostsController < ApplicationController
     @videos = (posts.select(&:video?) - [ @post ])
     @posts = (posts.select(&:post?) - [ @post ])
 
-    if I18n.locale == :"fr"
+    if I18n.locale == :fr
       @videos = @videos.select { |m| m.locale == "fr" }.sample(2)
       @posts = @posts.select { |m| m.locale == "fr" }.sample(3)
     elsif I18n.locale == :"pt-BR"
-      @videos.select { |m| m.locale == "pt-BR" }.sample(2)
-      @posts.select { |m| m.locale == "en" }.sample(3)
+      @videos = @videos.select { |m| m.locale == "pt-BR" }.sample(2)
+      @posts = @posts.select { |m| m.locale == "en" }.sample(3)
     else
-      @videos.select { |m| m.locale == "en" }.sample(2)
-      @posts.select { |m| m.locale == "en" }.sample(3)
+      @videos = @videos.select { |m| m.locale == "en" }.sample(2)
+      @posts = @posts.select { |m| m.locale == "en" }.sample(3)
     end
     render_404 if @post.nil?
   end
@@ -54,7 +54,7 @@ class PostsController < ApplicationController
     posts = Post.all
     @videos = posts.select(&:video?)
 
-    if I18n.locale == :"fr"
+    if I18n.locale == :fr
       select_video("fr")
     elsif I18n.locale == :"pt-BR"
       select_video("pt-BR")
@@ -67,7 +67,7 @@ class PostsController < ApplicationController
     posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
     @posts = posts.select(&:post?)
 
-    if I18n.locale == :"fr"
+    if I18n.locale == :fr
       select_post("fr")
     else
       select_post("en")
