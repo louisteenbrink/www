@@ -2,6 +2,7 @@
 layout: story
 title: From student at Le Wagon to CEO at Forest Admin, a new eFounders project
 date: '2015-11-04'
+locale: en
 thumbnail: david-joins-efounders.jpg
 description: Just after Le Wagon, David Verbustel has launched Forest Admin, a SaaS
   to help startup's CTOs instantly deploy an admin interface/back-office that’s highly

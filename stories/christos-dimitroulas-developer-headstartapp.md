@@ -2,6 +2,7 @@
 layout: story
 title: Christos Dimitroulas, Developer at Headstart App
 date: '2017-02-24'
+locale: en
 thumbnail: christos-dimitroulas-developer-headstartapp.jpg
 description: My role is developer in Javascript. It shows that though the course is
   Ruby, we get taught the right mindset to become really diverse developers.

@@ -2,6 +2,7 @@
 layout: story
 title: From Business School to junior backend dev at Save
 date: '2015-11-27'
+locale: en
 thumbnail: alice-joins-save-as-backend-dev.jpg
 description: After Le Wagon, Alice works one month as freelance then joins Save, one
   of the most promising french startups, as backend Rails developer.

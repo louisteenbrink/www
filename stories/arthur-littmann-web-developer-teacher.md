@@ -2,6 +2,7 @@
 layout: story
 title: Arthur Littmann, Web Developer and Teacher at Le Wagon
 date: '2017-03-13'
+locale: en
 thumbnail: arthur-littmann-web-developer-teacher.jpg
 description: Thanks to Le Wagon, in just a few weeks I learned how to code and completely
   changed my career path. I am now a part of the team running the bootcamp!

@@ -2,6 +2,7 @@
 layout: story
 title: Manou Febvret & Thomas Deschamps, developers at aircall
 date: '2017-03-15'
+locale: en
 thumbnail: manou-febvret-thomas-deschamps-developer-aircall.jpg
 description: 'Thomas did Batch #2, Manou did Batch #30, but they now work in the same
   team.'

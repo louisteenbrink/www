@@ -2,6 +2,7 @@
 layout: story
 title: Jérémy Goillot, growth hacker chez Spendesk
 date: '2017-08-25'
+locale: fr
 thumbnail: jeremy-goillot-growth-hacker-chez-spendesk.jpg
 description: Le code est une clef de compréhension pour tous les métiers du web. C’est
   aussi une source d’autonomie et d’indépendance !

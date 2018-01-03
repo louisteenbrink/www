@@ -2,6 +2,7 @@
 layout: story
 title: "How Le Wagon helped me turn my startup MVP into a true product"
 date: "2017-12-21"
+locale: en
 thumbnail: https://raw.githubusercontent.com/lewagon/www-images/master/stories/how-le-wagon-helped-me-turn-my-startup-mvp-into-a-true-product-1.jpg
 description: "I had started with a very drafty MVP before Le Wagon but the complete operating platform was built from scratch as a project in the final weeks of the bootcamp."
 alumnus_github_nickname: lmontezzo

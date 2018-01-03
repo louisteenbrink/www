@@ -2,6 +2,7 @@
 layout: story
 title: From lawyer to developer and entrepreneur in less than 6 months
 date: '2017-12-11'
+locale: en
 thumbnail: https://raw.githubusercontent.com/lewagon/www-images/master/stories/viola-stockli-story-1.jpg
 description: "With programming it’s always black and white, and I guess that’s why I really like to code."
 alumnus_github_nickname: ViolaSt

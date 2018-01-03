@@ -2,6 +2,7 @@
 layout: story
 title: "Launching a startup in Montreal: Le Wagon spurred my desire to become an entrepreneur"
 date: "2017-12-21"
+locale: en
 thumbnail: https://raw.githubusercontent.com/lewagon/www-images/master/stories/launching-a-startup-in-montreal-le-wagon-spurred-my-desire-to-become-an-entrepreneur-1.jpg
 description: "Gabriel Poissant is one of Le Wagon Montreal’s pioneering alumni. Over the last 10 days of the bootcamp, he and his team developed a web product that became ZebrasClub, a startup he launched in partnership with his brother Matt."
 alumnus_github_nickname: gabpoiss
