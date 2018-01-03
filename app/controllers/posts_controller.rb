@@ -5,9 +5,20 @@ class PostsController < ApplicationController
   def index
     if request.format.html? || params[:post_page]
       posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
-      @posts = Kaminari.paginate_array(posts.select(&:post?)).page(params[:post_page]).per(3)
+      @posts = posts.select(&:post?)
       @videos = posts.select(&:video?)
       @stories = posts.select(&:story?)
+
+      if I18n.locale == :fr
+        @videos = @videos.select { |m| m.locale == "fr" }
+        select_content("fr")
+      elsif I18n.locale == :"pt-BR"
+        @videos = @videos.select { |m| m.locale == "pt-BR" }
+        select_content("en")
+      else
+        @videos = @videos.select { |m| m.locale == "en" }
+        select_content("en")
+      end
     end
 
     if request.format.html?
@@ -23,30 +34,69 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:slug])
     posts = Post.all
-    @videos = (posts.select(&:video?) - [ @post ]).sample(2)
-    @posts = (posts.select(&:post?) - [ @post ]).sample(3)
+    @videos = (posts.select(&:video?) - [ @post ])
+    @posts = (posts.select(&:post?) - [ @post ])
+
+    if I18n.locale == :"fr"
+      @videos = @videos.select { |m| m.locale == "fr" }.sample(2)
+      @posts = @posts.select { |m| m.locale == "fr" }.sample(3)
+    elsif I18n.locale == :"pt-BR"
+      @videos.select { |m| m.locale == "pt-BR" }.sample(2)
+      @posts.select { |m| m.locale == "en" }.sample(3)
+    else
+      @videos.select { |m| m.locale == "en" }.sample(2)
+      @posts.select { |m| m.locale == "en" }.sample(3)
+    end
     render_404 if @post.nil?
   end
 
   def videos
     posts = Post.all
     @videos = posts.select(&:video?)
+
+    if I18n.locale == :"fr"
+      select_video("fr")
+    elsif I18n.locale == :"pt-BR"
+      select_video("pt-BR")
+    else
+      select_video("en")
+    end
+  end
+
+  def all
+    posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
+    @posts = posts.select(&:post?)
+
+    if I18n.locale == :"fr"
+      select_post("fr")
+    else
+      select_post("en")
+    end
+  end
+
+  private
+
+  def select_content(locale)
+    @stories = @stories.select { |m| m.locale == locale }
+    @posts = @posts.select { |m| m.locale == locale }
+    @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(3)
+  end
+
+  def select_video(locale)
+    @videos = @videos.select { |m| m.locale == locale }
     if params[:category].present?
       @videos = @videos.select { |post| post.labels.include? params[:category] }
     end
     @videos = Kaminari.paginate_array(@videos).page(params[:post_page]).per(6)
   end
 
-  def all
-    posts = (Post.all + Story.all).sort_by { |p| p.date }.reverse
-    @posts = posts.select(&:post?)
+  def select_post(locale)
+    @posts = @posts.select { |m| m.locale == locale }
     if params[:category].present?
       @posts = @posts.select { |post| post.labels.include? params[:category] }
     end
     @posts = Kaminari.paginate_array(@posts).page(params[:post_page]).per(9)
   end
-
-  private
 
   def set_top_bar
     if I18n.locale == :fr

@@ -15,6 +15,10 @@ class Post
     false
   end
 
+  def locale
+    metadata[:locale]
+  end
+
   def slug
     @slug ||= (Pathname.new(@file).basename.to_s[FILENAME_PATTERN, 1])
   end
