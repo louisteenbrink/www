@@ -14,7 +14,13 @@ class StudentsController < ApplicationController
 
     if request.format.html? || params[:story_page]
       @stories = Story.all
-      @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
+      if locale == :fr
+        @stories = @stories.select { |m| m.locale == "fr" }
+        @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
+      else
+        @stories = @stories.select { |m| m.locale == "en" }
+        @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
+      end
     end
 
     if request.format.html?

@@ -1,7 +1,6 @@
 ---
 layout: story
-title: 'After meeting at Le Wagon, they have launched their own studio: Digital Skills
-  Bar'
+title: 'After meeting at Le Wagon, they have launched their own studio: Digital Skills Bar'
 date: '2017-02-21'
 locale: en
 thumbnail: lewagon-alumni-hugo-wilfried-digital-skills-bar.jpg
