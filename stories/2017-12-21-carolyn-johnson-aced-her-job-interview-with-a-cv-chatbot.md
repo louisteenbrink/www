@@ -2,6 +2,7 @@
 layout: story
 title: Carolyn aced her job interview with a CV chatbot
 date: '2017-12-21'
+locale: en
 thumbnail: https://raw.githubusercontent.com/lewagon/www-images/master/stories/carolyn-johnson-aced-her-job-interview-with-a-cv-chatbot-1.jpg
 description: Coding isn’t that different from knitting. It’s all about patterns.
 alumnus_github_nickname: cyjorosz

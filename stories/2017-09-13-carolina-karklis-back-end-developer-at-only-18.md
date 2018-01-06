@@ -2,6 +2,7 @@
 layout: story
 title: Hired as back-end developer at only 18
 date: '2017-09-13'
+locale: en
 thumbnail: carolina-karklis-back-end-developer-at-only-18.jpg
 description: The two founders of FastNotas looked at my Github profile and gave me
   a chance to pass a test. I killed it and got the job. I was 18.

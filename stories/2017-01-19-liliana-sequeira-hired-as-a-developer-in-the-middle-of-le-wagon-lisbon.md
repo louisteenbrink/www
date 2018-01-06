@@ -2,6 +2,7 @@
 layout: story
 title: Hired as a developer in the middle of Le Wagon.
 date: '2017-01-19'
+locale: en
 thumbnail: blog-lisbon-liliana-batch71-1.jpg
 description: “I was learning to code alone, I started trying to do things on my own and it did not go much further.  I did not feel that I was evolving. I decided to join Le Wagon to try to learn the basics that I could have skipped.”
 alumnus_github_nickname: lisequeira

@@ -2,6 +2,7 @@
 layout: story
 title: The code injection that changed Rui's life
 date: "2017-12-11"
+locale: en
 thumbnail: rui-jorge-4.jpg
 description: "When you can build a product, however small it may be and everything works, it is super rewarding."
 alumnus_github_nickname: ruiJorge

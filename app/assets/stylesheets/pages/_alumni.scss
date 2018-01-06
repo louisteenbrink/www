@@ -231,16 +231,16 @@
             @media (max-width: 1200px) {
               color: white;
             }
+
+            .story-company-logo {
+              height: 30px;
+            }
           }
 
           &:hover {
 
             .story-card-summary {
               opacity: 0.8;
-            }
-
-            .story-company-logo {
-              transform: scale(0.9);
             }
           }
         }
@@ -270,10 +270,6 @@
 
             .story-card-summary {
               opacity: 0.8;
-            }
-
-            .story-company-logo {
-              transform: scale(0.9);
             }
           }
 

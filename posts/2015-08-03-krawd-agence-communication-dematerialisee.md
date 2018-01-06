@@ -2,6 +2,7 @@
 layout: post
 title: "KRAWD, l'agence de communication dématérialisée"
 author: cedric
+locale: "fr"
 labels:
   - alumni
 thumbnail: 2015-08-03-krawd-team.jpg

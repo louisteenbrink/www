@@ -2,6 +2,7 @@
 layout: story
 title: After Le Wagon, I joined Stripe to work on Operations in France.
 date: '2015-11-05'
+locale: en
 thumbnail: olivier-joined-stripe-as-user-ops-lead.jpg
 description: After completing Le Wagon program, I was hired by Stripe to work on Operations
   in France.

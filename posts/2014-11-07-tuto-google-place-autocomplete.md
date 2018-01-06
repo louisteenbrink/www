@@ -3,6 +3,7 @@ layout: post
 label: startup
 title: Google Place Autocomplete
 author: cedric
+locale: "fr"
 labels:
   - tutorial
 thumbnail: 2014-11-07-google-autocomplete.jpg

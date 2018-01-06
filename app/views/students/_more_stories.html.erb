@@ -7,7 +7,7 @@
             <%= story.title %>
           </div>
           <div class="story-card-summary">
-            <%= story.description %>
+            <%= story.description.truncate(160) %>
           </div>
           <div class='story-card-footer'>
             <%= render 'stories/user_infos', story: story %>

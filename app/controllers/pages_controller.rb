@@ -34,6 +34,15 @@ class PagesController < ApplicationController
       @testimonials = Testimonial.where(route: Testimonial::DEFAULT_ROUTE)
       @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
     end
+
+    @stories = Story.all
+    if locale == :fr
+      @stories = @stories.select { |m| m.locale == "fr" }
+      @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(2)
+    else
+      @stories = @stories.select { |m| m.locale == "en" }
+      @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(2)
+    end
   end
 
   def thanks

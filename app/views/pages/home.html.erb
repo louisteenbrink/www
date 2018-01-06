@@ -36,7 +36,7 @@
 <%= render partial: "shared/testimonials_new" %>
 
 <% cache [ 'stories', locale ] do %>
-  <% stories = Story.random(limit: 2, excluded_slugs: session[:story_slugs]).map(&:as_json) %>
+  <% stories = @stories.map(&:as_json) %>
   <% stories.each do |story| %>
     <% story[:thumbnail] = story_image_url(story[:thumbnail]) %>
   <% end %>

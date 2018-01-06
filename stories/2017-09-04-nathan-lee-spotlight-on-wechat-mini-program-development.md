@@ -2,6 +2,7 @@
 layout: story
 title: Spotlight on Wechat Mini Program Development
 date: '2017-09-04'
+locale: en
 thumbnail: nathan-lee-spotlight-on-wechat-mini-program-development.jpg
 description: 'After 2 months'' dedicated study, now shortly after finishing the bootcamp,
   Nathan successfully landed several freelance projects of building wechat mini programs

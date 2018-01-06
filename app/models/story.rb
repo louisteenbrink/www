@@ -25,6 +25,10 @@ class Story
     @company ||= (Company.find(metadata[:company_slug]) || Company.find('lewagon'))
   end
 
+  def locale
+    metadata[:locale]
+  end
+
   def alumnus
     @alumnus ||= Kitt::Client.query(
       Student::UserQuery,

@@ -2,6 +2,7 @@
 layout: story
 title: From business school student to digital nomad & CEO at Hubum
 date: '2016-03-25'
+locale: en
 thumbnail: thomas-chretien-launch-hubum.jpg
 description: Digital nomad at heart, design enthusiast and great fan of electro sound,
   Thomas Chrétien just launched Hubum, a curation platform of Vinyl releases.

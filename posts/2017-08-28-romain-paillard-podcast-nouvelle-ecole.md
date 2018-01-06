@@ -2,6 +2,7 @@
 layout: post
 title: "Romain Paillard au micro de Nouvelle École"
 author: antonin
+locale: "fr"
 labels:
   - podcast
 thumbnail: 2017-05-26-nouvelle-ecole-romain-paillard.jpg

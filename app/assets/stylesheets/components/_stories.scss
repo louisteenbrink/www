@@ -9,7 +9,6 @@
   padding: 50px 0;
 
   @media (max-width: $screen-md) {
-    // box-shadow: inset 0 0px 2px 0 rgba(0, 0, 0, 0.12);
     min-height: auto;
     border-top: 5px solid white;
 
@@ -203,18 +202,6 @@
   }
 }
 
-// .story-detail-extended {
-//   height: 200px;
-//   width: 200px;
-//   background-size: cover;
-//   background-position: 54% 36%;
-//   border-radius: 50%;
-//   position: absolute;
-//   border: 6px solid white;
-//   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.12);
-//   transform: translateX(-50%) translateY(20%);
-// }
-
 .latest-projects-overlay {
   background: #F4F4F4;
 }
@@ -388,7 +375,7 @@
   align-items: center;
 
   .story-company-logo {
-    height: 80px;
+    height: 40px;
     margin-top: 10px;
     flex-shrink: 1;
     margin-left: auto;
@@ -484,7 +471,7 @@
 }
 
 .story-card-title {
-  font-size: 27px;
+  font-size: 26px;
   font-weight: 900;
   line-height: 1.1;
   letter-spacing: -2px;

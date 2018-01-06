@@ -2,6 +2,7 @@
 layout: post
 title: "BFM Tech&Co: Le Wagon, 1er coding bootcamp au monde"
 author: cedric
+locale: "fr"
 labels:
   - alumni
 thumbnail: 2017-11-28-le-wagon-1er-coding-bootcamp-au-monde-bfm.jpg

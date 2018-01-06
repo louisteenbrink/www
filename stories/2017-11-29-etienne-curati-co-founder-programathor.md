@@ -2,6 +2,7 @@
 layout: story
 title: Etienne Curati co-founder ProgramaThor
 date: '2017-11-29'
+locale: en
 thumbnail: etienne-curati-co-founder-programathor-5.jpg
 description: "How I became the CTO of my own startup with no coding background thanks to Le Wagon."
 alumnus_github_nickname: Etienne-C

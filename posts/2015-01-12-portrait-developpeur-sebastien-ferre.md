@@ -2,6 +2,7 @@
 layout: post
 title: "Portrait d'un développeur junior formé au Wagon"
 author: cedric
+locale: "fr"
 labels:
   - alumni
 thumbnail: 2014-11-01-sebastien-ferre.jpg

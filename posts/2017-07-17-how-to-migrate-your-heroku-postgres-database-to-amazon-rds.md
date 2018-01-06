@@ -2,6 +2,7 @@
 layout: post
 title: "How to migrate your Heroku Postgres database to Amazon RDS"
 author: sebastien
+locale: "en"
 labels:
   - tutorial
 thumbnail: 2017-07-17-elephant.jpg

@@ -2,6 +2,7 @@
 layout: post
 title: "Debugged"
 author: sandrine
+locale: "en"
 labels:
   - alumni
 thumbnail: 2017-08-26-debbuged-alfway-through-a-coding-bootcamp.jpg
