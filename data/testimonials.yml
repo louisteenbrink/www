@@ -1,5 +1,9 @@
 routes:
   home:
+    - taku-yeah
+    - ShinnoT
+    - debbiejong
+    - rose-piilani
     - bibiiii
     - souebina
     - khalid-bkr
@@ -85,6 +89,10 @@ routes:
     - kwnath
     - kikinz
   tokyo:
+    - taku-yeah
+    - ShinnoT
+    - debbiejong
+    - rose-piilani
     - souebina
     - khalid-bkr
     - dmbf29
@@ -100,6 +108,75 @@ routes:
     - PerrineMet
     - florentdaubas
 testimonials:
+  taku-yeah:
+    first_name: Takuya
+    last_name: Asako
+    city_slug: tokyo
+    batch_slug: 94
+    publication_date: 2017-12-26
+    job_before: Project Manager
+    project_slug: skill4space
+    job_after: Project Manager
+    new_company: Monstar Lab
+    origin: Switch Up
+    picture: tokyo_takuya_asako.jpg
+    linkedin_url: https://www.linkedin.com/in/takuya-asako-49b37041/
+    content_html: |
+        <p>Before I joined Le Wagon, I worked as a manager of Bridge SE team of Software development company in Vietnam. I started my career as web/mobile project manager but I always was struggling with my lack of technical skills/knowledge working with developers. When I decided to back to Japan to gain more experiences in the Japanese market, I luckily found Le Wagon Tokyo. One of the biggest reason that I chose it was because all the program of Le Wagon proceeds in English. (The second biggest reason is the reputations on the internet). For that reasons, I made my choice to jump into the most challenging environment.</p>
+        <p>Even though I’ve been in the software industry and I knew some concepts to make web applications, the first week of the program was the hardest time for me. It took time getting used thinking like a programmer and writing codes but thanks to the great help from the skilled teachers and the teaching assistants, I gradually started loving coding.</p>
+        <p>The final project was the best thing in the program. Although I have participated in the project as a project manager before, it was my first time for me to be in a team as a developer and develop our own product. It was really challenging to build a website within 2 weeks from scratch but working as a team to build a “real” product was the best learning experience in my life.</p>
+        <p>After graduation, I'm back to the previous working company as the same role, project manager utilizing the skill of full stack developer. I do recommend Le Wagon if you want to learn to code. It is literally GREAT and I’m sure you will gain unforgettable experience.</p>
+  ShinnoT:
+    first_name: Shinnosuke
+    last_name: Taguchi
+    city_slug: tokyo
+    batch_slug: 94
+    publication_date: 2018-01-03
+    job_before: Student
+    project_slug: sakesan
+    job_after: Web Developer
+    new_company: Tokyo Hearth
+    origin: Switch Up
+    picture: tokyo_shinno_taguchi.jpg
+    linkedin_url: https://www.linkedin.com/in/shinnosuke-taguchi-32570913a/
+    content_html: |
+        <p>As an undergraduate student, I had many ideas I wanted to put to life. However, I soon realized that I needed to further develop my skills to create projects of my own. I soon turned to coding because it was the most resourceful way to put ideas to life, I mean all you need is your laptop! So I started off by doing some free online courses but the pace at which I was learning was too slow; I needed a better way to learn. That's how I found Le Wagon.</p>
+        <p>My experience at Le Wagon was an experience of a lifetime. The camp teaches you not just about code, but about so much more. Being with extremely motivated and passionate people all day for 9 weeks, you learn to develop a work ethic that will translate into every other aspect of your life. You also learn to develop a business mindset to increase efficiency and productivity when working in a group, but also by yourself. The camp also incourages you to go to meetups and network with as many people as you can in order to find as many job opportunities as possible. However, most importantly, it was fun.</p>
+        <p>I enjoyed every second of the camp and will do it all over again if I could. Shoutout to all the amazing teachers and fellow students who taught me so much!</p>
+  debbiejong:
+    first_name: Debbie
+    last_name: Jong
+    city_slug: tokyo
+    batch_slug: 94
+    publication_date: 2017-12-11
+    job_before: English Teacher
+    project_slug: skill4space
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: tokyo_debbie_jong.jpg
+    linkedin_url:
+    content_html: |
+        <p>I taught English as a Second Language to international students for two years before finally deciding to make the leap and apply for Le Wagon Tokyo. I had been wanting to learn to code for years, but starting and staying motivated alone was hard. Prior to Le Wagon, I had finished multiple online coding courses - but at the end of it all, I still couldn't create anything on my own. I didn't fully understand what I was doing in the lessons - I was passively following the guided instructions and exercises instead of actively grasping and applying the concepts. There was also no one I could turn to for help if I was struggling or had questions.</p>
+        <p>Here's where Le Wagon came in: the bootcamp gave me the structure, the resources, the community, and the drive to finally commit to learning coding full-time. Being surrounded by motivated classmates from nine different countries and taught by international teachers each specializing in his or her lecture topics was inspiring and pushed me to work hard through the long hours each day. For the first time, I found myself looking forward to going to class and becoming completely absorbed in my studies. By the end of the first week, I had learned more from the Le Wagon teachers than I had in my past year of self-studying. I usually have a short attention span, but during the course I would be so intently coding that I'd forget to stop to take breaks. I was impressed by how much programming knowledge the teachers were able to pack in for us in just two months' time. My favorite part of the bootcamp was working with my team on the group project during the last weeks of the program. There was a sense of camaraderie and achievement as we communicated, collaborated, and coded together everyday for hours on end, and all of us voluntarily continued working long after class had ended each day and on the weekends too. Our endless hours of work culminated in the demo day presentation on the last day of class which was a great success for all the teams!</p>
+        <p>Overall, I had an amazing time at Le Wagon Tokyo and am sad that it's over now. I'm so glad that I decided to do this program, because I had been very unsure about taking the initial leap and quitting my job to come here. I loved the intensive daily learning alongside my teachers and classmates, the interesting Thursday night events, the weekly Friday night class hangouts and karaoke sessions, the group chatting on Slack with the party parrots, and the immersive final weeks of coding with my team to create and polish our final product. It honestly all feels like a dream now and I'm reluctant to return to my old life and reality!</p>
+  rose-piilani:
+    first_name: Rose
+    last_name: Fernandez
+    city_slug: tokyo
+    batch_slug: 94
+    publication_date: 2018-01-03
+    job_before: Web Designer
+    project_slug: questboard
+    job_after:
+    new_company:
+    origin: Switchup
+    picture: tokyo_rose_fernandez.jpg
+    linkedin_url:
+    content_html: |
+        <p>Coming from a background in design and working mostly with HTML and CSS, I wanted to hone my back-end development skills more. As such, I began to look at various coding bootcamps and encountered Le Wagon after reading rave reviews and receiving a recommendation from a friend. After applying and going through the requisite steps, I soon I found myself on a plane to Tokyo for nine thrilling weeks. And I'm very satisfied with my decision to attend the bootcamp with Le Wagon Tokyo!</p>
+        <p>It resulted in rounding out my web development skill set and making connections with a delightful, supportive group of people who enjoyed their memes and emoji. Speaking of, the party parrot emoji best summarizes my experience at Le Wagon Tokyo. Take a look at nearly any message in our Batch #94 Slack channel and you'll see the party parrot reaction emoji bobbing away with enthusiasm.</p>
+        <p>The program made learning the full-stack of web development really fun and I felt very connected to my classmates, teachers, and staff. The material we learned from lectures, comprehensive resources, and coding exercises culminated as a group project where we really applied ourselves to build a Ruby on Rails prototype website from scratch. The Le Wagon community is truly what made the experience a memorable one--we were all in this together with the support from everyone!</p>
   twentyfivemtl:
     first_name: Thibault
     last_name: Derennes
