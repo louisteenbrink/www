@@ -149,3 +149,13 @@ mathieu:
   position: Driver
   company_website: lewagon.com/sao-paulo
   twitter: lewagonbrazil
+thibault:
+  fname: Thibault
+  lname: Genaitay
+  picture: thibault-genaitay.jpg
+  bio: "Thibault is a digital marketing practitioner and front-end developer passionate about Chinese innovation. From 2010 to 2016 he helped fabulous international brands to design their digital strategy for the Chinese market. He also developed a conviction: today, innovation is fed by a mix of business and tech talents."
+  company: Le Wagon Shanghai
+  position: Driver
+  company_website: lewagon.com/shanghai
+  twitter: tgenaitay
+  linkedin: thibaultgenaitay
