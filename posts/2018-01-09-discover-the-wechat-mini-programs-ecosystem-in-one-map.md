@@ -58,13 +58,13 @@ Essentially we have divided the ecosystem in 8:
 }
 </style>
 
-<a href="https://github.com/lewagon/www-images/raw/master/blog/posts/2018-01-09-Interactive-WeChat-MiniPrograms-Map.pdf" download="Interactive-WeChat-MiniPrograms-Map">
+<a href="https://pan.baidu.com/s/1kW7EvLP">
   <img src="https://raw.githubusercontent.com/lewagon/www-images/master/blog/posts/2018-01-09-WeChat-MiniPrograms-Map.png" alt="WeChat Mini Programs 2018 services for developers">
 </a>
 
 
 <p class="text-center">
-<a href="https://github.com/lewagon/www-images/raw/master/blog/posts/2018-01-09-Interactive-WeChat-MiniPrograms-Map.pdf" class="cta-map">Download our interactive PDF</a>
+<a href="https://pan.baidu.com/s/1kW7EvLP" class="cta-map">Download our interactive PDF</a>
 <br>
 <small>(with direct links to all services)</small>
 </p>
