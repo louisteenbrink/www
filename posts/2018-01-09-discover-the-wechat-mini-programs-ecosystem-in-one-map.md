@@ -92,7 +92,7 @@ Because we know you are busy, we’re happy to tell you right here our own favor
 <br>Hop on [xiaochengxuyingxiao.com](http://www.xiaochengxuyingxiao.com/). For example, they just released the [Top 100 mini programs](http://www.xiaochengxuyingxiao.com/?p=10068) in partnership with Minapp
 
 **No time to develop a custom back-end?**
-<br>Use [Leancloud.com](https://leancloud.cn/) for an MVP and check our [open-source wiki](https://github.com/apelegri/wechat-miniprogram-wiki#leancloud-db)
+<br>Use [Leancloud.cn](https://leancloud.cn/) for an MVP and check our [open-source wiki](https://github.com/apelegri/wechat-miniprogram-wiki#leancloud-db)
 
 **Fancy to read some tricks and source code?**
 <br>Browse [wxapp-union.com](http://www.wxapp-union.com/)
