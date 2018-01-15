@@ -1,3 +1,9 @@
+- name: "Les fondateurs de l'école Le Wagon roulent vers le succès"
+  url: "http://www.lefigaro.fr/decideurs/2018/01/14/33001-20180114ARTFIG00197-les-fondateurs-de-l-ecole-le-wagon-roulent-vers-le-succes.php?redirect_premium"
+  media: "Le Figaro"
+  logo: logo-lefigaro.jpg
+  date: 2018-01-14
+
 - name: "Développement informatique: Apprenez à «coder» avec Le Wagon”"
   url: "http://leconomiste.com/article/1022182-developpement-informatique-apprenez-coder-avec-le-wagon"
   media: "L'économiste"
