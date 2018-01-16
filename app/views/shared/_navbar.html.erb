@@ -51,6 +51,7 @@
         <hr class='hidden-xs'>
 
 
+      <% if I18n.locale == :fr %>
         <div class="navbar-wagon-item has-no-padding">
           <div class="dropdown">
             <%= link_to t(".menu.program"),"#", class: "hidden-xs  dropdown-toggle navbar-wagon-link ", id: "navbar-wagon-menu", data: { toggle: 'dropdown'} %>
@@ -63,6 +64,7 @@
                     <li>
                       <%= link_to t(".menu.fullstack_program"), send(:"program_#{locale.to_s.underscore}_path"), class: "cta-enterprise red", style: "min-width: 304px;"%>
                     </li>
+                    <!--
                     <% if I18n.locale == :fr %>
                       <li>
                         <%= link_to t(".menu.react_program"), react_path(locale: :fr), class: "cta-enterprise", style: "min-width: 304px;" %>
@@ -72,6 +74,7 @@
                         <%= link_to t(".menu.react_program"), react_path, class: "cta-enterprise", style: "min-width: 323px;" %>
                       </li>
                     <% end %>
+                    -->
                     <% unless I18n.locale == :fr %>
                       </ul>
                       <ul class="list-unstyled">
@@ -104,6 +107,9 @@
             </div>
           </div>
         </div>
+      <% else %>
+        <%= link_to t(".menu.program"), send(:"program_#{I18n.locale}_path"), class: "hidden-xs navbar-wagon-link " %>
+      <% end %>
         <hr class="hidden-xs">
         <%= link_to "FAQ", faq_path, class: 'navbar-wagon-link' %>
         <hr class="hidden-xs">
