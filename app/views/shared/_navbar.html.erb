@@ -108,7 +108,7 @@
           </div>
         </div>
       <% else %>
-        <%= link_to t(".menu.program"), send(:"program_#{I18n.locale}_path"), class: "hidden-xs navbar-wagon-link " %>
+        <%= link_to t(".menu.program"), send(:"program_#{I18n.locale.to_s.underscore}_path"), class: "hidden-xs navbar-wagon-link " %>
       <% end %>
         <hr class="hidden-xs">
         <%= link_to "FAQ", faq_path, class: 'navbar-wagon-link' %>
