@@ -29,6 +29,13 @@ class PushApplyToKittRunner
     }
 
     RestClient.post("#{ENV['KITT_BASE_URL']}/api/v1/applies", payload.to_json, { content_type: :json })
+  rescue RestClient::UnprocessableEntity => e
+    body = JSON.parse e.response.body
+    if body["www_apply_id"].first =~ /already been taken/
+      # Kitt already knows this candidate
+    else
+      raise e
+    end
   end
 
   private
