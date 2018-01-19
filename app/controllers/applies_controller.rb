@@ -147,7 +147,11 @@ class AppliesController < ApplicationController
     next_date = (city.apply_batches.select do |b|
       b.apply_status ==  "last_seats" || b.apply_status == "open_for_registration"
     end).map(&:starts_at).sort.first
-    next_date = Date.today + City::GAP_BETWEEN_BATCHES if next_date.nil?
+    if next_date.nil?
+      next_date = Date.today + City::GAP_BETWEEN_BATCHES if next_date.nil?
+    elsif next_date.is_a? String
+      next_date = Date.parse next_date
+    end
     return next_date
   end
 end
