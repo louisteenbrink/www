@@ -1,5 +1,11 @@
 routes:
   home:
+    - jaredg8
+    - claramorgen
+    - lexlps
+    - j31
+    - nhxng
+    - sey1000
     - taku-yeah
     - ShinnoT
     - debbiejong
@@ -45,6 +51,13 @@ routes:
     - fra0074
     - erincom
     - beehane
+  berlin:
+    - jaredg8
+    - claramorgen
+    - lexlps
+    - j31
+    - nhxng
+    - sey1000
   lisbon:
     - apires89
     - rodloboz
@@ -108,6 +121,116 @@ routes:
     - PerrineMet
     - florentdaubas
 testimonials:
+  jaredg8:
+    first_name: Jared
+    last_name: Guyer
+    city_slug: berlin
+    batch_slug: 111
+    publication_date: 2018-01-19
+    job_before:
+    project_slug: beacon
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: berlin_jared_guyer.jpg
+    linkedin_url: https://www.linkedin.com/in/jaredleeguyer/
+    content_html: |
+      <p>I am an American, and because of this many people have asked me why I chose Le Wagon. The answer for the choice is simple -- a friend with impeccable education credentials and an overall bad ass told me she felt "Le Wagon was the best education experience you might ever have". Here I am roughly one month after graduating the program and I concur with what my friend said. Overall the experience in Berlin was unforgettable and was really an on-ramp to a new way of life for me. After getting my MBA I worked at a renowned management consulting firm for 6+ years and worked heavily on systems and applications in the role of a product and project manager. I'd always felt vulnerability not being able to understand the back end or intelligently question my technical team members. I also had put a number of my entrepreneurial ideas on hold simply because I didn't know how to start. Le Wagon has changed both of these weaknesses for me and I feel newly empowered as a professional and a person.</p>
+      <p>The curriculum is fantastic. Le Wagon runs their education much like a software product. They design, build, test, and refine ensuring that their education is current and continually optimized for the students. The first half of the bootcamp is intense. If feels like your brain is being shredded, you feel vulnerable, and question whether you can actually get it. Because the program is so well designed there are points where all of the things you did in the previous days suddenly make sense and you are able to start building your ideas. It is a grand feeling, and by the end while you will not be a top notch developer, you are equipped with the tools to keep at it and keep improving so that you can be if you so choose to take that path.</p>
+      <p>Beyond the education Le Wagon creates an amazing community and you form a family with the people you attend with and learn from. I had so much fun over the course of the program and made friendships that I know will last a lifetime.</p>
+      <p>Finally, I like the honesty of Le Wagon, they say it is for helping creative people learn how to code. There are no false promises about what employment you will get, or what super power you will acquire. It is known that what you are acquiring is the skill and knowledge to put you on a new trajectory if you have what it takes. As far as job support, as of this review there was no formal program, but in lieu of that there is an extremely supportive network of +2,000 alumni and very involved teachers that will help you as much as they can.</p>
+      <p>I unhesitatingly recommend Le Wagon to anybody that wants to change their career path or improve their knowledge about technology. It is a great value for the money and an amazing experience that will empower you in the end. Thanks Le Wagon!</p>
+  claramorgen:
+    first_name: Clara
+    last_name: Morgeneyer
+    city_slug: berlin
+    batch_slug: 111
+    publication_date: 2018-01-16
+    job_before:
+    project_slug: apollo
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: berlin_clara_morgeneyer.jpg
+    linkedin_url: https://www.linkedin.com/in/clara-morgeneyer/
+    content_html: |
+      <p>Having a background in law I had no idea of programming (besides some rudimentary HTML knowledge from school) and got to Le Wagon through their evening workshops.</p>
+      <p>After my interest was sparked by these workshops I decided to go for the full-time bootcamp and I was not disappointed. The LeWagon Bootcamp is a thought through course from the didactical concept to the content of the lectures. Days start with a lecture in the morning followed by challenges which are solved by the students themselves. Thus, from day 1 you are challenged to solve problems and work practically. In the evening there is another live code session bringing together the whole group. The independent time is accompanied by teachers and teaching assistants who help with any upcoming question - a luxury you will not enjoy when learning on your own and which is extremely helpful as it speeds up your learning process.</p>
+      <p>The structure of the classes do not only include coding basics but you also get taught in practical approaches on how to build a website from scratch. It was this holistic approach which convinced me choosing Le Wagon. This pinnacled in the two last weeks where you are building a website based on your idea from scratch.</p>
+      <p>Additional to the curriculum we were provided with a lot of extra activities such as weekly talks with interesting persons from the scene, regular yoga classes and team building events. The people I have done the bootcamp with have become friends and besides the knowledge I gained it was also an incredibly fun time!</p>
+  lexlps:
+    first_name: Alexander
+    last_name: Pieczka
+    city_slug: berlin
+    batch_slug: 111
+    publication_date: 2018-01-17
+    job_before:
+    project_slug: jobdetective
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: berlin_alexander_pieczka.jpg
+    linkedin_url: https://www.linkedin.com/in/alexander-pieczka-990b09153/
+    content_html: |
+      <p>I never really had the courage to actually get behind a computer and start learning coding all by myself. I thought that would be super complicated and I wouldn't be able to comprehend anything.  I started to search for schools that teach me all of this in the best way possible.</p>
+      <p>The best approach for me to learn something is "learning by doing", so I searched for something doing just that. A bootcamp would've been ideal and so my journey started. I decided to take part in the 9-week coding Bootcamp of Le Wagon.</p>
+      <p>I must say, at this point, it was the best decision I could've made.</p>
+      <p>Just right from the first day everybody was very friendly. First thing in the morning was a lecture giving us students the knowledge we needed for the day. Most of the day we spent with coding together with another student (always someone else). During this time you had very friendly and capable teachers by your side and no matter the problem, they took their time to explain it, giving the optimal support to learn something completely new. In the evening all students came together again and started the live code. In it we all worked together on an exercise . This created a very nice and comfortable atmosphere.</p>
+      <p>During the last two weeks we worked on projects. The projects themselves are created from scratch and based on everything taught during the bootcamp. Le Wagon provided us with the skills and the mindset shaping us into real web developers and with this knowledge we created some really amazing things.</p>
+      <p>Le Wagon is undoubtedly an unforgettable experience and it also brings people from all over the world together.</p>
+  j31:
+    first_name: John
+    last_name: Fish
+    city_slug: berlin
+    batch_slug: 92
+    publication_date: 2017-01-11
+    job_before:
+    project_slug: dog-runners
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: berlin_john_fish.jpg
+    linkedin_url:
+    content_html: |
+      <p>I can recommend Le Wagon without hesitation. They will teach you to code, for sure, but more than that, after nine weeks you will exit the course with the energy, ideas, relationships and skills to take your ideas to the next level. I considered all the leading coding bootcamp programs in Europe and the USA, and I chose Le Wagon specifically for the entrepreneurial mindset and dynamic culture. I felt the course delivered on all of my expectations, and exceeded them in many ways.</p>
+      <p>Pros: fast-paced, high teacher quality, entrepreneurial mindset, robust online curriculum. Cons: honestly, I can't really isolate any.</p>
+      <p>My background was perhaps a little unusual for my batch. I was older than most (46) and was founder/ceo of a few technology companies. I was interested in returning to the code after many years, and to immerse myself in a new challenge. Still, I felt right at home and was able to learn a ton and contribute some as well.</p>
+      <p>If you are considering a software bootcamp, my recommendation is to go for it. You won't be disappointed, and it may very well be pivotal in your life. If you are willing to give it 100%, you are sure to succeed. Choosing which bootcamp is a personal decision. If you want to find a job as a developer, Le Wagon will prepare you as will many of the other quality camps. If you want to, immediately or eventually, develop a new product, build your own company, pursue an idea... then I think it's no contest -- Le Wagon is really the only bootcamp catering to this kind of creative+technical competence. Go for it, you will be in good company, and you will be very happy you did.</p>
+  nhxng:
+    first_name: Nhung
+    last_name: Nguyen
+    city_slug: berlin
+    batch_slug: 92
+    publication_date: 2017-01-12
+    job_before:
+    project_slug: fitflex
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: berlin_nhung_nguyen.jpg
+    linkedin_url:
+    content_html: |
+      <p>I joined Le Wagon Berlin in July 2017 after having finished my Master’s degree in Industrial Engineering with a specialization in mechanical engineering. Having worked as an intern in big industrial companies I realized I'd rather prefer working in a more entrepreneurial company or start-up. At the same time I recognized that pure mechanical engineers probably won’t be as much in demand as before due to growing digitalization. Being able to handle interfaces especially to IT is one of the important key capabilities for future engineers. I was evaluating two coding bootcamps in Berlin and decided for Le Wagon, because of three reasons:</p>
+      <p>1) They already taught over 90 batches, which means over the time and with all the experience they must have optimized their program and lessons to a high quality level.</p>
+      <p>2) Ruby is a stable programming language.</p>
+      <p>3) Really good price and time frame.</p>
+      <p>In the end my expectations were even exceeded. The teachers were amazingly motivating and competent, I met interesting people from different professional backgrounds, and the exercises enable a step-by-step learning process. All in all you really learn a lot of web developing capabilities within a short amount of time. I fell in love with Ruby because the programming language is really easy to learn for beginners, the logic behind it is easy to grasp and when you’re able to manage one programming language very well you can learn other languages very quickly. I will start a job as junior developer in a few weeks and during the interview I managed to solve a coding challenge which convinced my interviewer, who was even surprised that I implemented it that well, to hire me. He expected a more basic solution after only learning coding for 9 weeks, because I literally started with zero knowledge before Le Wagon. I guess that speaks for the teaching quality.</p>
+  sey1000:
+    first_name: Sey
+    last_name: Cheon
+    city_slug: berlin
+    batch_slug: 92
+    publication_date: 2017-01-10
+    job_before:
+    project_slug: fitflex
+    job_after:
+    new_company:
+    origin: Switch Up
+    picture: berlin_sey_cheon.jpg
+    linkedin_url:
+    content_html: |
+      <p>Pros: The concluding goal of the bootcamp is having 2 prototype rails project up and running on Heroku. It is very well structured to build the students' knowledge from Ruby, then object oriented programming, DB, ORM, ActiveRecord, frontend tools, and Rails. You learn from not only taking lectures, but mostly by working on exercises designed to hit each point of the day's lecture. Having 2 projects ready to showcase to future employers led me to many job interviews directly after the bootcamp. During the project weeks, you are encouraged to implement features you think suit the project. While doing so, we learned to look correct places to learn about the features and implementation. This I think is the greatest strength of the bootcamp for training the students to become curious developers and keep learning and improving on their own.</p>
+      <p>Cons: This bootcamp focuses on learning functional (backend) part of projects. They do teach and use frontend tools, but it is not aiming to train people to become web designers. (On the other hand, if you already have web designing skills, the bootcamp can be a great place to complete your Full Stack)</p>
   taku-yeah:
     first_name: Takuya
     last_name: Asako
