@@ -1,6 +1,4 @@
 class CitiesController < ApplicationController
-  include CitiesHelper
-
   def show
     city_slug = params[:city]
 
