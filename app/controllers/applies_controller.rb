@@ -21,6 +21,7 @@
 
 class AppliesController < ApplicationController
   include MoneyRails::ActionViewExtension
+  include CloudinaryHelper
 
   def new
     if session[:apply_id].present?
@@ -92,9 +93,6 @@ class AppliesController < ApplicationController
 
   private
 
-  include CloudinaryHelper
-  include CitiesHelper
-
   def prepare_apply_form
     @applicable_cities = Kitt::Client.query(City::ApplyQuery).data.cities.select{ |city| !city.apply_batches.empty? }
     # Sort by first available batch
@@ -143,5 +141,13 @@ class AppliesController < ApplicationController
     if batch.force_completed_codecademy_at_apply
       @application.validate_ruby_codecademy_completed = true
     end
+  end
+
+  def next_open_batch_date(city)
+    next_date = (city.apply_batches.select do |b|
+      b.apply_status ==  "last_seats" || b.apply_status == "open_for_registration"
+    end).map(&:starts_at).sort.first
+    next_date = Date.today + City::GAP_BETWEEN_BATCHES if next_date.nil?
+    return next_date
   end
 end
