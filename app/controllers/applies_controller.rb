@@ -91,6 +91,32 @@ class AppliesController < ApplicationController
     end
   end
 
+  def new_edhec
+    I18n.locale = :fr
+    @application = Apply.new
+    @hide_language_selector = true
+    @hide_banner_apply_button = true
+  end
+
+  def create_edhec
+    I18n.locale = :fr
+    @application = Apply.new(application_params)
+    @application.motivation = "EDHEC CANDIDATE\n\n#{@application.motivation}"
+    @application.batch_id = ?? # EDHEC - Lille Septembre 2018
+    @application.city_id = ??    # Lille
+    # @application.validate_ruby_codecademy_completed = true
+    @application.skip_source_validation = true # No referrer
+
+    if @application.save
+      session[:apply_id] = @application.id
+      redirect_to thanks_fr_path
+    else
+      @hide_language_selector = true
+      @hide_banner_apply_button = true
+      render :new_edhec
+    end
+  end
+
   private
 
   def prepare_apply_form

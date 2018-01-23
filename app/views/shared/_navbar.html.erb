@@ -123,15 +123,21 @@
       <%= link_to root_path, class: 'wagon-link hidden-xs' do %>
         <%= render "shared/logos/logo_red_square" %>
       <% end %>
-      <% if params[:action] =~ /hec/ %>
+      <% if params[:action] == 'new_hec' %>
         <div class="navbar-hec-logo">
           <%= render "shared/logos/hec" %>
         </div>
-      <% elsif @live %>
+      <% elsif params[:action] == 'new_edhec' %>
+        <div class="navbar-hec-logo">
+          <%= render "shared/logos/edhec" %>
+        </div>
+
+      <% else @live %>
         <%= link_to live_path, class: 'live-on' do %>
           <i class="dot fa fa-circle fa-pulse"></i> LIVE
         <% end %>
       <% end %>
+
       <div class="navbar-wagon-side text-right hidden-sm hidden-xs">
         <hr class='fake-hr hidden-xs'>
         <%= link_to "Demoday", demoday_index_path, class: "navbar-wagon-link" %>
