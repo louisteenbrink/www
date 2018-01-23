@@ -283,6 +283,12 @@ en:
       fourth_step: "Resume working on the CodeCademy Ruby track"
     press:
       title: They speak about Le Wagon
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: We know you have questions about our program. That's why we've answered a few of them straight away!
+      title: Here is a few answers to our most common questions
+      description_html: |
+        We know you have questions about our program. That's why we've answered a few of them straight away! If you'd like to discuss some of them in person, please join us to <a href="#" data-toggle="modal" data-target="#faq-meetups">one our of numerous free events</a> all around the globe or <a href="#" data-toggle="modal" data-target="#faq-contacts">send us a message</a>.
     employers:
       title: Le Wagon Hiring Network - hire alumni from Europe's best coding bootcamp
       description: Join us as hiring partner and get alerted about our new candidates and job events.

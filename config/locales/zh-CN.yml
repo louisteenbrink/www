@@ -276,6 +276,12 @@ zh-CN:
       fourth_step: "继续完成CodeCademy上的Ruby track"
     press:
       title: 他们是如何评价Le Wagon的
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: TBD
+      title: TBD
+      description_html: |
+        TBD
     employers:
       title: Le Wagon的招聘网络 - 雇佣欧洲最棒的编程训练营的校友
       description: 加入我们的招聘网络，接收关于最新人才以及招聘活动的通知。

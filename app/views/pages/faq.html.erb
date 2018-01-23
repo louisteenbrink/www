@@ -1,25 +1,54 @@
-<%= content_for(:title) { "Le Wagon - FAQ" } %>
+<%= content_for(:title) { t ".meta_title" } %>
+<%= content_for(:description) { t".meta_description" } %>
+<%= content_for(:image_url) { image_url 'social/home_facebook_card.png' } %>
 
 <div class="container">
-  <% Static::FAQS[locale].each do |question_item| %>
-  <% question_item = structure question_item %>
-  <div class="card-faqs">
-    <div class="card-faq-container">
-      <div class="card-faq">
-        <h3 class="card-faq-question">
-          <%= question_item.question %>
-        </h3>
-        <div class="card-faq-answer">
-          <% if question_item.answer.is_a? Array %>
-            <% question_item.answer.each do |paragraph| %>
-              <%= markdown paragraph %>
-            <% end %>
-          <% else %>
-            <%= markdown question_item.answer %>
-          <% end %>
+  <h1 class="title-faq"><%= t('.title') %></h1>
+  <p class="description-faq"><%= t('.description_html') %></p>
+
+  <% items = Static::FAQS[locale] %>
+  <% number_of_items = items.length %>
+
+  <!-- FAQ Summary - Setup counter and iterate on FAQ items -->
+  <% item_counter = 1 %>
+  <% while item_counter < number_of_items %>
+    <ul class="summary-faq">
+      <% items.each do |question_item| %>
+      <% question_item = structure question_item %>
+        <li><a href="#question-<%= item_counter %>"><%= question_item.question %></a></li>
+        <% item_counter += 1 %>
+      <% end %>
+    </ul>
+  <% end %>
+
+  <!-- FAQ Content - Reset counter and iterate on FAQ items -->
+  <% item_counter = 1 %>
+  <% while item_counter < number_of_items %>
+    <% items.each do |question_item| %>
+    <% question_item = structure question_item %>
+      <div id="question-<%= item_counter %>" class="card-faqs">
+        <div class="card-faq-container">
+          <div class="card-faq">
+            <h3 class="card-faq-question">
+              <%= question_item.question %>
+            </h3>
+            <div class="card-faq-answer">
+              <% if question_item.answer.is_a? Array %>
+                <% question_item.answer.each do |paragraph| %>
+                  <%= markdown paragraph %>
+                <% end %>
+              <% else %>
+                <%= markdown question_item.answer %>
+              <% end %>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <% item_counter += 1 %>
+    <% end %>
   <% end %>
 </div>
+
+<!-- MODALS CONTENT -->
+<%= render "shared/modals/faq_contacts" %>
+<%= render "shared/modals/faq_meetups" %>

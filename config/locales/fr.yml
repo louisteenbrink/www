@@ -286,6 +286,12 @@ fr:
       fourth_step: "Continuez la track Ruby sur CodeCademy"
     press:
       title: Ils parlent du Wagon
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: Comment pouvons-nous vous aider ?
+      title: Foire aux questions
+      description_html: |
+        Vous avez certainement de nombreuses questions en tête. C'est pourquoi nous avons pris la liberté de répondre à plusieurs d'entre elles ci-dessous. Si vous souhaitez en discuter en personne, n'hésitez pas à contacter directement l'un des membres de notre équipe à l'occasion <a href="#" data-toggle="modal" data-target="#faq-meetups">de nos nombreux événements gratuits</a> partout autour du monde ou à <a href="#" data-toggle="modal" data-target="#faq-contacts">nous envoyer un message</a>.
     employers:
       title: Le Wagon Hiring Network - recrutez les élèves de la meilleure école de code en Europe.
       description: Rejoignez notre réseau et soyez alertés des nouveaux candidats du Wagon et des prochains évènements de recrutement.

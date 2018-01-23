@@ -267,6 +267,12 @@ ja:
       fourth_step: "CodeCademyのRuby trackを再開する"
     press:
       title: Le Wagonが話題になっています
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: TBD
+      title: TBD
+      description_html: |
+        TBD
     employers:
       title: Le Wagonのネットワーク - ヨーロッパ最上級のコーディングブートキャンプの卒業生を雇おう
       description: 雇用パートナーとして私たちのコミュニティに参加し、新しい候補者や就職情報のお知らせを受け取ろう。
