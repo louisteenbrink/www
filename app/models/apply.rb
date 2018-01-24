@@ -157,5 +157,7 @@ class Apply < ActiveRecord::Base
       end
       errors.add(:email, message)
     end
+  rescue RestClient::InternalServerError
+    # If service is unavailable, treat email as valid (optimistic approach)
   end
 end
