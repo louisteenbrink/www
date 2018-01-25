@@ -96,8 +96,51 @@
 }
 
 .modal-faq {
+
+  h1 {
+    padding: 20px;
+    margin: 0 !important;
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 900;
+  }
+
+  p {
+    padding: 0 20px 20px;
+    margin: 0 !important;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.6em;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-padding-start: 0px;
+    width: 100%;
+    padding: 0 20px 30px;
+    list-style: none;
+  }
+
+  li {
+    width: 33.33333%;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.6em;
+
+    @media (max-width: 520px) {
+      width: 50%;
+    }
+  }
+
   td {
     font-size: 14px;
   }
-}
 
+  @media (max-width: 620px) {
+    th:nth-child(2), td:nth-child(2),
+    th:nth-child(3), td:nth-child(3) {
+      display: none;
+    }
+  }
+}
