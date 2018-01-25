@@ -1,0 +1,91 @@
+paris:
+  - github_nickname: monsieurpaillard
+    name: Romain Paillard
+    role: COO
+    avatar: paris_romain_paillard.jpg
+  - github_nickname: Papillard
+    name: Boris Paillard
+    role: CEO
+    avatar: paris_boris_paillard.jpg
+  - github_nickname: ssaunier
+    name: Sébastien Saunier
+    role: CTO
+    avatar: paris_sebastien_saunier.jpg
+  - github_nickname: Benb1982
+    name: Benjamin Bignon
+    role: Key Account Manager
+    avatar: paris_benjamin_bignon.jpg
+  - github_nickname: clairecou
+    name: Claire Counilh
+    role: Yoga Master
+    avatar: paris_claire_counilh.jpg
+  - github_nickname: edouardfoussier
+    name: Edouard Foussier
+    role: All Things Community
+    avatar: paris_edouard_foussier.jpg
+  - github_nickname: cedricmenteau
+    name: Cédric Menteau
+    role: All Things Marketing
+    avatar: paris_cedric_menteau.jpg
+  - github_nickname: windguimo
+    name: Guillaume Morin
+    role: CFO
+    avatar: paris_guillaume_morin.jpg
+  - github_nickname: Tatianaprl
+    name: Tatiana Perillo
+    role: Head of Talent
+    avatar: paris_tatiana_perillo.jpg
+milan:
+  - github_nickname: fra0074
+    name: Francesco Ecclesie
+    role: Driver && Teacher
+    avatar: milan_francesco_ecclesie.jpg
+  - github_nickname:
+    name: Eleonora Rocca
+    role: Community Partner
+    avatar: milan_eleonora_rocca.png
+bali:
+  - github_nickname: dirkschuler
+    name: Dirk Schuler
+    role: Founder Le Wagon Bali
+    avatar: bali_dirk_schuler.jpg
+tokyo:
+  - github_nickname: paulgaumer
+    name: Paul Gaumer
+    role: Co-founder
+    avatar: tokyo_paul_gaumer.jpg
+  - github_nickname: SylvainPierre
+    name: Sylvain Pierre
+    role: Co-founder
+    avatar: tokyo_sylvain_pierre.jpg
+budapest:
+  - github_nickname: angyalg
+    name: Gergo Angyal
+    role: Driver
+    avatar: budapest_gergo_angyal.jpg
+belo-horizonte:
+  - github_nickname: american0
+    name: Fernando Americano
+    role: Driver and Teacher
+    avatar: belo_horizonte_fernando_americano.jpg
+  - github_nickname: andrealmar
+    name: Andre Almar
+    role: Lead Teacher
+    avatar: belo_horizonte_andre_almar.jpg
+  - github_nickname: tulioti
+    name: Tulio Fernandes
+    role: Lead Teacher
+    avatar: belo_horizonte_tulio_fernandes.jpg
+  - github_nickname: yanmagale
+    name: Yan Magalhães
+    role: Lead Teacher
+    avatar: belo_horizonte_yan_magalhaes.jpg
+# bordeaux:
+#   - github_nickname: bertrandbussac
+#     name: Bertrand Bussac
+#     role: Driver
+#     avatar:
+#   - github_nickname: volpeo
+#     name: Sylvain Peigney
+#     role: Class Manager
+#     avatar:

@@ -2,7 +2,7 @@
   <div class="banner-container">
     <% if params[:already] %>
       <div class="thanks-already">
-        <%= t('.already_applied_html', city: @city['name']) %>
+        <%= t('.already_applied_html', city: @apply.city.name) %>
       </div>
     <% end %>
     <div class="container banner-city-container">
@@ -11,7 +11,7 @@
           <%= t(".thanks") %> <%= @apply.first_name %>
         </div>
         <div class="thanks-message-body">
-          <% if @batch.analytics_slug =~ /-hec$/ %>
+          <% if @apply.batch.analytics_slug =~ /-hec$/ %>
             <%= t(".we_will_contact_hec") %>
           <% else %>
             <%= t(".we_will_contact_html") %>
@@ -20,7 +20,7 @@
       </div>
       <div class='apply-form-body thanks-checklist'>
         <div class='banner-city-wrapper'>
-          <div class='banner-city is-active banner banner-top banner-gradient text-center' style="background-image: url('<%= cl_image_path @city['city_background_picture_path'] || "" %>');">
+          <div class='banner-city is-active banner banner-top banner-gradient text-center' style="background-image: url('<%= cl_image_path @apply.city.city_background_picture || "", height: 300, crop: :fill %>');">
             <div class="banner-gradient-shadow"></div>
             <div class="banner-content">
               <h1 class='glitch'>
@@ -32,7 +32,7 @@
         <div class='apply-form-rows-container'>
           <div class='check-list-item is-checked'>
             <div class='check-list-item-label'>
-              <%= t(".first_step", name: @city['name']) %>
+              <%= t(".first_step", name: @apply.city.name) %>
             </div>
             <div class="checklist-status-container hidden-xs hidden-sm">
               <span class='check-list-todo'>done</span>
@@ -44,13 +44,13 @@
           <%
             items = [
               {
-                label: t('.second_step', name: @city['name']),
-                href: @city['meetup_url'],
+                label: t('.second_step', name: @apply.city.name),
+                href: @meetup_url,
                 index: 2
               },
               {
                 label: t('.third_step'),
-                href: @city['twitter_url'],
+                href: @apply.city.twitter_url,
                 index: 3
 
               }
@@ -58,7 +58,7 @@
             unless @apply.codecademy_progress.to_i >= 100
               items << {
                 label: t('.fourth_step'),
-                href: 'https://www.codecademy.com/tracks/ruby?locale_code=en',
+                href: 'https://www.codecademy.com/en/learn/learn-ruby',
                 index: 4
               }
             end
@@ -72,7 +72,7 @@
   </div>
 </div>
 
-<% unless @city["apply_facebook_pixel"].blank? %>
+<% unless @apply.city.apply_facebook_pixel.blank? %>
   <%= content_for(:after_js) do %>
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -81,17 +81,17 @@
     t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
     document,'script','https://connect.facebook.net/en_US/fbevents.js');
 
-    fbq('init', '<%= @city["apply_facebook_pixel"] %>');
+    fbq('init', '<%= @city.apply_facebook_pixel %>');
     fbq('track', "Lead");
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=<%= @city["apply_facebook_pixel"] %>&ev=Lead&noscript=1"
+    src="https://www.facebook.com/tr?id=<%= @city.apply_facebook_pixel %>&ev=Lead&noscript=1"
     /></noscript>
   <% end %>
 <% end %>
 
 <%# Temporary code for Barcelona's Adword campaign %>
-<% if @city['slug'] == 'barcelona' %>
+<% if @apply.city.slug == 'barcelona' %>
   <!-- Google Code for Le Wagon Application Conversion Page -->
   <script type="text/javascript">
   /* <![CDATA[ */

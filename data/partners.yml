@@ -1,0 +1,119 @@
+- name: "aKagreen"
+  url: "https://www.akagreen.co/"
+  logo: logo-akagreen.png
+  description: "Bike-delivery of lovely and healthy plants for your home or business."
+  color: "#22E69A"
+  category: swag
+
+- name: "Algolia"
+  url: "https://www.algolia.com/"
+  logo: logo-algolia.svg
+  description: "Algolia is the most reliable platform for building lightning-fast, typo-tolerant search no matter where our users are."
+  color: "#3369E7"
+  category: advantage
+
+- name: "Aircall"
+  url: "https://aircall.io/"
+  logo: logo-aircall.png
+  description: "Aircall empowers Sales & Support teams to ace every call with a phone system specifically built for their favorite business tools."
+  color: "#2bb70e"
+  category: advantage
+
+- name: "Amazon Web Services"
+  url: "https://aws.amazon.com/"
+  logo: amazon-web-services.svg
+  description: 'Powering half of Silicon Valley websites, including the beloved PaaS Heroku, AWS brought to the world modern "Cloud Computing".'
+  color: "#FF9900"
+  category: advantage
+
+- name: "AppSignal"
+  url: "https://appsignal.com/"
+  logo: logo-appsignal.svg
+  description: "AppSignal helps teams getting insights into errors and performance issues, plus host monitoring and an easy to use custom metrics platform."
+  color: "#37474f"
+  category: advantage
+
+- name: "Callr"
+  url: "https://www.callr.com/"
+  logo: logo-callr.svg
+  description: "Create automated, personalized and contextual communication
+with our API covering 220+ countries."
+  color: "#659bd5"
+  category: advantage
+
+- name: "Clever Cloud"
+  url: "https://www.clever-cloud.com/"
+  logo: logo-clever-cloud.svg
+  description: "Clever Cloud helps developers deploy and run their apps with bulletproof infrastructure, automatic scaling and other cool features."
+  color: "#C7273A"
+  category: advantage
+
+- name: "Drivy"
+  url: "https://en.drivy.com/"
+  logo: logo-drivy.svg
+  description: "Rent the cars next door. Cheaper, closer and more convenient."
+  color: "#d8ff00"
+  category: event
+
+- name: "EDHEC Business School"
+  url: "https://www.edhec.edu/en"
+  logo: logo-edhec.png
+  description: "For business from birth and dedicated to business, EDHEC makes entrepreneurs for life, able to remodel or create successful businesses."
+  color: "#9d132b"
+  category: institutions
+
+- name: "HEC Paris"
+  url: "http://www.hec.edu/"
+  logo: logo-hec.png
+  description: "HEC Paris offers a complete and unique range of education programs for students and leaders in Europe and worldwide."
+  color: "#26314f"
+  category: institutions
+
+- name: "Lion"
+  url: "https://joinlion.co/"
+  logo: logo-lion.png
+  description: "Launched by The Family, Lion’s training lights the fire in Startup employees’ heart one Saturday at a time."
+  color: "#E21E90"
+  category: event
+
+- name: "Partech Shaker"
+  url: "https://www.partechshaker.com/"
+  logo: logo-partechshaker.png
+  description: "The 1st startup campus launched by a VC, where tech companies from all over the world can grow in the best possible conditions."
+  color: "#28529b"
+  category: event
+
+- name: "Recast.AI"
+  url: "https://recast.ai/"
+  logo: logo-recast.svg
+  description: "Launch great bots in minutes with the collaborative platform to build, train, deploy and monitor intelligent bots for developers."
+  color: "#ffb300"
+  category: event
+
+- name: "Sketch"
+  url: "https://www.sketchapp.com/"
+  logo: logo-sketch.svg
+  description: "Sketch gives you the power, flexibility and speed you always wanted in a lightweight and easy-to-use package. Finally you can focus on Design."
+  color: "#fd9800"
+  category: advantage
+
+- name: "Stripe"
+  url: "https://stripe.com/"
+  logo: logo-stripe.svg
+  description: "Stripe’s meticulously-designed APIs and unmatched functionality help you create the best subscription service or marketplace for your users."
+  color: "#6772e5"
+  category: advantage
+
+- name: "The Family"
+  url: "https://www.thefamily.co/"
+  logo: logo-thefamily.png
+  description: "Emancipation is the goal. Entrepreneurship is the way. Education is your tool. Welcome to The Family!"
+  color: "#f92ac2"
+  category: event
+
+- name: "wework"
+  url: "https://www.wework.com/"
+  logo: logo-wework.png
+  description: "Look forward to Mondays with workspace designed for fresh ideas, organic networking, and month-to-month flexibility."
+  color: "#252729"
+  category: event

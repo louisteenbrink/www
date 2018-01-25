@@ -86,7 +86,18 @@ class Blog
     end
 
     def author
-      Static::AUTHORS[metadata[:author].to_sym]
+      the_author = Static::AUTHORS[metadata[:author].to_sym]
+      if the_author.blank?
+        raise "Please specify a valid author. '#{metadata[:author]}' is not."
+      else
+        return the_author
+      end
+    end
+
+    def locale
+      locale = metadata[:locale].to_s.underscore.downcase
+      locale_icon = "icon_flag_#{locale}"
+      return locale_icon
     end
 
     def labels

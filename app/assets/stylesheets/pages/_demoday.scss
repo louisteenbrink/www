@@ -33,7 +33,7 @@
 
     @media (max-width: 420px) {
       padding: 0 20px;
-      margin-bottom: 60px;
+      margin: 10px auto 60px;
       text-align: center;
       font-size: 34px;
     }
@@ -135,7 +135,7 @@
   position: relative;
   margin: -33px auto 1em;
   max-width: 700px;
-  z-index: 10;
+  z-index: 2;
 
   @media (max-width: 620px) {
     flex-direction: column;
@@ -303,7 +303,7 @@
 .player-container {
   margin: 3em 40px 1em 40px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1 );
-  z-index: 1;
+  z-index: 0;
 
   @media (max-width: 1200px) {
     margin: 3em 0 1em 0;
@@ -547,7 +547,8 @@
       }
 
       @media (max-width: 620px){
-        min-height: auto;
+        //min-height: auto;
+        min-height: 192px;
       }
     }
 

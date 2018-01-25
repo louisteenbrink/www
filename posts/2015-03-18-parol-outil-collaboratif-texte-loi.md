@@ -2,10 +2,9 @@
 layout: post
 title: "Parol, le Github de l'Assemblée Nationale"
 author: cedric
-date: 18-03-2015
+locale: "fr"
 labels:
   - alumni
-pushed: true
 thumbnail: 2015-18-03-projet-parol.jpg
 description: "Parol est une plateforme de visualisation et de collaboration permettant de suivre et de participer à l’élaboration des lois en temps réel. Interview de son fondateur, Valentin Chaput, alumni de la 6e promotion."
 ---

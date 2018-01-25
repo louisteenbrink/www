@@ -7,7 +7,9 @@ class SubscribeToNewsletter
     @email = email
   end
 
-  def run(merge_fields = {})
+  def run(merge_fields = {
+      LOCALE: I18n.locale.to_s
+    })
     begin
       @gibbon.lists(@list_id).members.create(
         body: {

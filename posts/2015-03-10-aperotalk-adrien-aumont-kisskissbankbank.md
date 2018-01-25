@@ -2,8 +2,8 @@
 layout: video
 title: "AperoTalk avec Adrien Aumont, CEO de KissKissBankBank"
 author: cedric
-date: 10-03-2015
 youtube_slug: "CjEy_7IsApQ"
+locale: "fr"
 labels:
   - talk
 thumbnail: 2015-10-03-talk-adrien-aumont-kisskissbankbank.jpg

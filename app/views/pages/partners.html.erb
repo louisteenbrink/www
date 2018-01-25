@@ -1,0 +1,45 @@
+<%= content_for(:title) { "We love our partners".html_safe} %>
+<%= content_for(:description) { "We are building stellar partnerships for our alumni since 2014." } %>
+<%= content_for(:image_url) { image_url 'social/partners_card.png' } %>
+
+<h1>We love our partners ❤️️</h1>
+<div class="container-wrapper">
+  <div class="container">
+
+      <% categories = [
+          'advantage',
+          'event',
+          'institutions',
+          'swag'
+          ] %>
+
+      <% categories.each do |category| %>
+        <div class="container-partner">
+          <h2><%= category.capitalize %></h2>
+          <% Static::PARTNERS.each_with_index do |partner, index| %>
+          <% if partner[:category] == category %>
+            <div class="card-partner" style="border-color: <%= partner[:color] %>;">
+              <%= link_to "", partner[:url], target: :blank %>
+              <div class="card-partner-content">
+                <%= image_tag "partners/#{partner[:logo]}", alt: partner[:name] %>
+                <p><%= partner[:description] %></p>
+                <span>Learn more</span>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg width="2255px" height="100%" viewBox="0 0 2255 499" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                    <g id="Path" transform="translate(0.000000, -1.000000)" fill-rule="nonzero" fill=<%= partner[:color] %>>
+                      <g transform="translate(1127.705628, 250.000000) scale(-1, 1) translate(-1127.705628, -250.000000) " id="Shape">
+                          <path d="M1128.08399,332.234171 C728.914803,326.090764 528.709589,453.775775 294.617491,354.5556 C167.188064,300.544506 111.297123,182.851111 126.94467,1.47541261 L1.10761634,1.47541261 L1.10761634,499.986799 L2255.06037,499.986799 L2255.06037,1.47541261 L2126.11607,1.47541261 C2140.20294,192.087163 2068.63627,318.074998 1911.41606,379.43892 C1754.19584,440.802842 1527.25318,338.37758 1128.08399,332.234171 Z"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

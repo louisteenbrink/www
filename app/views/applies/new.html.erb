@@ -1,12 +1,24 @@
-<%= content_for(:title)       { t ".title", city: @city['name'] }       %>
+<%= content_for(:title)       { t ".title", city: @city.name }       %>
 <%= content_for(:description) { t ".description" } %>
+
+<%
+  react_apply_city_groups = @apply_city_groups.map do |group|
+    group[:cities].each do |city|
+      city["city_background_picture_url"] = cl_image_path city["city_background_picture"], crop: :fill, height: 70
+    end
+    group
+  end
+  @applicable_cities.each do |city|
+    city["city_background_picture_url"] = cl_image_path city["city_background_picture"], crop: :fill, height: 400
+  end
+%>
 
 <div class='apply-form-overlay'>
   <%= react_component 'ApplyForm', {
-    city_groups: @apply_city_groups,
+    city_groups: react_apply_city_groups,
     city_group: @city_group,
     cities: @applicable_cities,
-    city: @city,
+    city: @applicable_cities.find { |city| city["slug"] == @city.slug },
     token: form_authenticity_token,
     apply_path: send(:"apply_#{locale.to_s.underscore}_path", ':city'),
     locale: I18n.locale,
@@ -25,7 +37,7 @@
       post_price: post_price
     },
     selected_batch_id: @application.batch_id,
-    rows: apply_rows,
+    rows: apply_rows
   }, prerender: prerender? %>
 </div>
 

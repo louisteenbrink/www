@@ -1,3 +1,69 @@
+- name: "Les fondateurs de l'école Le Wagon roulent vers le succès"
+  url: "http://www.lefigaro.fr/decideurs/2018/01/14/33001-20180114ARTFIG00197-les-fondateurs-de-l-ecole-le-wagon-roulent-vers-le-succes.php?redirect_premium"
+  media: "Le Figaro"
+  logo: logo-lefigaro.jpg
+  date: 2018-01-14
+
+- name: "Développement informatique: Apprenez à «coder» avec Le Wagon”"
+  url: "http://leconomiste.com/article/1022182-developpement-informatique-apprenez-coder-avec-le-wagon"
+  media: "L'économiste"
+  logo: logo-leconomiste.jpg
+  date: 2018-01-02
+
+- name: "Boris, Romain et Sébastien, Le Wagon : “L’éducation a un wagon de retard sur l’innovation”"
+  url: "https://www.kissmyfrogs.com/boris-romain-et-sebastien-le-wagon-leducation-un-wagon-de-retard-sur-linnovation/"
+  media: Kiss My Frog
+  logo: logo-kissmyfrog.jpg
+  date: 2018-01-02
+
+- name: "BFM Tech & Co : Le Wagon, le premier bootcamp de code sur les plateformes de références mondiales"
+  url: "http://bfmbusiness.bfmtv.com/mediaplayer/video/start-up-co-le-wagon-le-premier-bootcamp-de-code-sur-les-plateformes-de-references-mondiales-2711-1007659.html"
+  media: BFM Business
+  logo: logo-bfm.jpg
+  date: 2017-11-27
+
+- name: "Trio traz escola francesa de programação para o Brasil"
+  url: "http://revistapegn.globo.com/Empreendedorismo/noticia/2017/09/trio-traz-escola-francesa-de-programacao-para-o-brasil.html"
+  media: Globo News
+  logo: logo-globonews.jpg
+  date: 2017-09-18
+
+- name: "Les 10 lieux phares du digital et de l’entrepreneuriat à Paris"
+  url: "https://www.welcometothejungle.co/articles/les-lieux-phares-du-digital-et-de-l-entrepreneuriat-a-paris"
+  media: "Welecome to the Jungle"
+  logo: logo-wttj.jpg
+  date: 2017-09-11
+
+- name: "Le Wagon, une initiative française sur les rails du codage au Québec"
+  url: "http://loutardeliberee.com/wagon-initiative-francaise-rails-codage-quebec/"
+  media: "L'Outarde libérée"
+  logo: logo-loutardeliberee.jpg
+  date: 2017-08-07
+
+- name: "Le Wagon é a principal escola de programação da Europa – conheça dois cases!"
+  url: "https://conteudo.startse.com.br/startups/lucas-bicudo/le-wagon-e-principal-escola-de-programacao-da-europa-conheca-dois-cases/"
+  media: "StartSe"
+  logo: logo-startse.jpg
+  date: 2017-07-26
+
+- name: "Les meilleurs meetups Parisiens pour entrepreneurs"
+  url: "https://99designs.fr/blog/business-fr/meilleurs-meet-ups-parisiens-pour-entrepreneurs/"
+  media: "99Designs"
+  logo: logo-99designs.jpg
+  date: 2017-07-19
+
+- name: "Apprendre à coder, le nouveau sésame"
+  url: "http://www.lecho.be/entreprises/management-entrepreneuriat/Apprendre-a-coder-le-nouveau-sesame/9912186?ckc=1&ts=1500370622"
+  media: "L'Echo"
+  logo: logo-lecho.jpg
+  date: 2017-07-07
+
+- name: "Demain, devrons-nous tous savoir coder ?"
+  url: " https://atelier.bnpparibas/life-work/article/demain-devrons-nous-savoir-coder"
+  media: "L'Atelier BNP Paribas"
+  logo: logo-latelierbnpparibas.jpg
+  date: 2017-07-04
+
 - name: "Savoir coder, c'est avoir son permis Internet"
   url: "http://www.magazine-decideurs.com/news/romain-paillard-le-wagon-savoir-coder-c-est-avoir-son-permis-internet"
   media: "Dédideurs Magazine"

@@ -3,7 +3,7 @@ layout: post
 title: "Fizzer : action d’envoyer une carte postale en 2014."
 thumbnail: 2014-11-06-fizzer.jpg
 author: cedric
-date: 06-11-2014
+locale: "fr"
 labels:
   - alumni
 description: Oubliez ces moments laborieux passés devant un tourniquet bancal. Envoyez désormais vos cartes postales personnalisées depuis votre smartphone avec Fizzer, l'application de deux alumni du Wagon qui se charge de les imprimer puis de les acheminer par la poste auprès de vos proches.

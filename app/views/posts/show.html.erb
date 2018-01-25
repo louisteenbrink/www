@@ -8,15 +8,15 @@
 
 <% content_for(:image_url) do %>
   <% if @post.layout.to_sym == :video %>
-    <%= video_image_tag(@post.thumbnail) if @post.thumbnail %>
+    https://img.youtube.com/vi/<%= @post.youtube_slug %>/maxresdefault.jpg
   <% else %>
-    <%= post_image_tag(@post.thumbnail) if @post.thumbnail %>
+    <%= post_image_url(@post.thumbnail) if @post.thumbnail %>
   <% end %>
 <% end %>
 
 
 <!-- FACEBOOK SDK ON SHOW VIEW -->
-<% if @post.layout.to_sym == :video || :post %>
+<% if @post.layout.to_sym == :video || @post.layout.to_sym == :post %>
   <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -58,69 +58,10 @@
         <!-- CONTENT - VIDEO CONTAINER -->
         <article class="blog-video col-md-8">
           <div class="video-main-wrapper">
-            <div id="main-container" class="video-main-container" style="background-image: url('<%= video_image_tag(@post.thumbnail)%>')">
-              <%= link_to "#", id: "play-button", class: "play-button" do %>
-                <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                      <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
-                  </g>
-                </svg>
-              <% end %>
-            </div>
-
             <!-- CONTENT - VIDEO WRAPPER -->
-            <div id="video-wrapper" class="video-wrapper hidden">
+            <div id="video-wrapper" class="video-wrapper">
               <div class="video-container">
-                <div id="close-button">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52 52" style="enable-background:new 0 0 52 52;" xml:space="preserve" width="512px" height="512px">
-                    <g>
-                      <path d="M35.707,16.293c-0.391-0.391-1.023-0.391-1.414,0L26,24.586l-8.293-8.293c-0.391-0.391-1.023-0.391-1.414,0   s-0.391,1.023,0,1.414L24.586,26l-8.293,8.293c-0.391,0.391-0.391,1.023,0,1.414C16.488,35.902,16.744,36,17,36   s0.512-0.098,0.707-0.293L26,27.414l8.293,8.293C34.488,35.902,34.744,36,35,36s0.512-0.098,0.707-0.293   c0.391-0.391,0.391-1.023,0-1.414L27.414,26l8.293-8.293C36.098,17.316,36.098,16.684,35.707,16.293z" fill="#FFFFFF"/>
-                    </g>
-                  </svg>
-                </div>
-
-                <!-- CONTENT - VIDEO PLAYER -->
-                <div id="ytplayer"></div>
-                <%= content_for(:after_js) do %>
-                  <script>
-                    // Load the IFrame Player API code asynchronously.
-                    var tag = document.createElement('script');
-                    tag.src = "https://www.youtube.com/player_api";
-                    var firstScriptTag = document.getElementsByTagName('script')[0];
-                    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                    // Replace the 'ytplayer' element with an <iframe> and
-                    // YouTube player after the API code downloads.
-                    var player;
-                    function onYouTubePlayerAPIReady() {
-                      player = new YT.Player('ytplayer', {
-                        height: '360',
-                        width: '640',
-                        playerVars: { 'autoplay': 0, 'controls': 1, 'showinfo': 0 },
-                        videoId: '<%= @post.youtube_slug %>'
-                      });
-
-                      var video = document.getElementById('video-wrapper');
-                      var playButton = document.getElementById('play-button');
-                      var closeButton = document.getElementById('close-button');
-                      var thumbnail = document.getElementById('main-container');
-
-                      playButton.addEventListener('click', function(e) {
-                        thumbnail.classList.add('hidden');
-                        video.classList.remove('hidden');
-                        player.playVideo();
-                        e.preventDefault();
-                      });
-
-                      closeButton.addEventListener('click', function(e) {
-                        thumbnail.classList.remove('hidden');
-                        video.classList.add('hidden');
-                        player.stopVideo();
-                        e.preventDefault();
-                      });
-                    }
-                  </script>
-                <% end %>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/<%= @post.youtube_slug %>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -128,14 +69,16 @@
           <!-- CONTENT - VIDEO DETAILS -->
           <div class="video-description">
             <div class="video-specs">
-              <h1><%= @post.title %></h1>
-              <span><%= @post.description %></span>
+              <div class="video-title">
+                <h1><%= @post.title %></h1>
+              </div>
+              <% if @post.content.blank? %>
+                <p><%= @post.description  %></p>
+              <% else %>
+                <%= raw @post.content  %>
+              <% end %>
               <span><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Posted on <%= @post.date.to_date.strftime("%d %b %Y") %> by <%= @post.author[:fname].capitalize %> <%= @post.author[:lname].capitalize %></span>
             </div>
-
-            <!-- CTA - LEARN TO CODE FOR FREE -->
-            <%= render 'posts/learn_cta' %>
-            <%= render "prospects/invitation" %>
           </div>
 
           <div class="more-videos">
@@ -144,20 +87,16 @@
               <% @videos.each do |video| %>
                 <div class="col-sm-6">
                   <%= link_to post_path video.slug do %>
-                    <div class="video-thumbnail" style="background-image: url('<%= video_image_tag(video.thumbnail) %>')">
-                      <?xml version="1.0" encoding="UTF-8"?>
-                      <svg width="33px" height="33px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="play" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <path d="M16.5,32 C25.0604136,32 32,25.0604136 32,16.5 C32,7.93958638 25.0604136,1 16.5,1 C7.93958638,1 1,7.93958638 1,16.5 C1,25.0604136 7.93958638,32 16.5,32 Z M22.7543284,16.4569667 L12,22.4003482 L12,11 L22.7543284,16.4569667 Z" id="Oval" stroke="#ffffff"></path>
-                        </g>
-                      </svg>
+                    <div class="video-thumbnail" style="background-image: url('https://img.youtube.com/vi/<%= video.youtube_slug %>/maxresdefault.jpg')">
                       <div class="video-details">
-                        <h4><%= video.title %></h4>
-                        <ul>
-                          <% video.labels.each do |tag| %>
-                            <li><%= tag %></li>
-                          <% end %>
-                        </ul>
+                        <div class="catergory-items">
+                          <%= render "shared/flags/icon_flag_#{video.locale}" %>
+                          <ul>
+                            <% video.labels.each do |tag| %>
+                              <li><%= tag %></li>
+                            <% end %>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   <% end %>
@@ -181,7 +120,8 @@
   </div>
   <div style="overflow: hidden;">
     <article class="blog-post">
-      <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= post_image_tag(@post.thumbnail) %>')">
+      <div class="post-header" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('<%= post_image_url(@post.thumbnail) %>')">
+
         <h1><%= @post.title.html_safe %></h1>
         <p class="written-by"><% if @post.author[:picture] %><%= author_image_tag(@post.author[:picture]) %><% end %>Published by <%= @post.author[:fname] %> <%= @post.author[:lname] %> on <%= @post.date.to_date.strftime("%d %b %Y") %></p>
       </div>
@@ -190,7 +130,7 @@
 
           <!-- AFFIX - SOCIAL SHARING OPTIONS -->
           <div class="col-md-2">
-            <div data-spy="affix" data-offset-top="620" data-offset-bottom="2100">
+            <div data-spy="affix" data-offset-top="620" data-offset-bottom="2300">
               <%= render 'posts/social_sharing' %>
             </div>
           </div>
@@ -198,10 +138,6 @@
           <!-- POST - CONTENT -->
           <div class="col-md-8 post-content">
             <%= raw @post.content %>
-
-            <!-- CTA - LEARN TO CODE FOR FREE -->
-            <%= render 'posts/learn_cta' %>
-            <%= render "prospects/invitation" %>
 
             <!-- POST - AUTHOR INFO -->
             <% if @post.author %>
@@ -254,7 +190,7 @@
               <a href="<%= post_path post.slug %>">
                 <article class="post-thumbnail">
                   <div class="card-author">
-                    <div class="background-author" style="background-image: url('<%= post_image_tag(post.thumbnail) %>')"></div>
+                    <div class="background-author" style="background-image: url('<%= post_image_url(post.thumbnail) %>')"></div>
                     <% if post.author %>
                       <div class="post-author">
                         <% if post.author[:picture] %>

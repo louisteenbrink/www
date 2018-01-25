@@ -2,7 +2,7 @@
 layout: post
 title:  "10 questions for modern CEOs"
 author: boris
-date: 30-05-2015
+locale: "fr"
 labels:
   - startup
 thumbnail: 2013-05-30-10-questions-for-modern-ceos.jpg

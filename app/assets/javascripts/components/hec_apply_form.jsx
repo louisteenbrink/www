@@ -47,7 +47,7 @@ class HecApplyForm extends React.Component {
                 })}
                 <div className='apply-form-row-submit'>
                   <div className='apply-form-price'>
-                    {this.props.i18n.price}: <strong>{this.props.price}</strong>
+                    {this.props.i18n.price}: <strong>{this.props.formatted_price}€</strong>
                   </div>
                   {submitButton}
                 </div>

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "1 million de matches pour Kudoz !"
-date: 01-11-2014
 author: cedric
+locale: "fr"
 labels:
   - alumni
 thumbnail: 2014-11-01-intro-kudoz-application-recherche-emploi.jpg

@@ -11,6 +11,9 @@
 #
 
 class Prospect < ApplicationRecord
+  mailkick_user
+  has_many :messages, class_name: "Ahoy::Message", as: :user
+
   validates :email, presence: true, uniqueness: true, format: { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i,
     message: "not an email" }
   after_create :notify_slack

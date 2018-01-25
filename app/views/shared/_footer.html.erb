@@ -4,13 +4,13 @@
     <%= react_component 'NewsletterForm', {
       i18n: {
         title: t(".title"),
-        subtitle: t(".subtitle_html") + (@city ? t(".subtitle_end", city: @city['name']) : nil),
+        subtitle: t(".subtitle_html") + (@city ? t(".subtitle_end", city: @city.name) : nil),
         retry: t(".retry"),
         error: t(".error"),
         subscribe: t(".subscribe"),
         subscribing: t(".subscribing")
       },
-      city_id: @city ? @city['id'] : nil,
+      city_slug: @city ? @city.slug : nil,
       token: form_authenticity_token
     }, prerender: false %>
 
@@ -27,7 +27,7 @@
 
         <div class='footer-section-links'>
           <div>
-            <a href="https://ondemand.lewagon.org/" target='_blank'>
+            <a href="https://ondemand.lewagon.com/" target='_blank'>
               Le Wagon On Demand 🇫🇷
             </a>
           </div>
@@ -46,7 +46,7 @@
             <a href="https://www.youtube.com/playlist?list=PLkbmdtbypn7QRxsCuR1tKhUD4g_JEh_4a" target="_blank">Wagon Talks</a>
           </div>
           <div>
-            <a href="https://ondemand.lewagon.org/tracks/bootcamp-prep/go" target="_blank">Bootcamp Prep</a>
+            <a href="https://ondemand.lewagon.com/tracks/bootcamp-prep/go" target="_blank">Bootcamp Prep</a>
           </div>
         </div>
       </div>
@@ -59,11 +59,11 @@
           <%= I18n.locale == :fr ? 'style="font-size: 14px"'.html_safe : nil %>>
           <% @cities.each do |city| %>
             <div>
-              <%= link_to city_path(city: city["slug"]) do %>
-                <% if @city && @city['slug'] == city['slug'] %>
-                  <% city_name = "<strong>#{city["name"]}</strong>".html_safe %>
+              <%= link_to city_path(city: city.slug) do %>
+                <% if @city && @city.slug == city.slug %>
+                  <% city_name = "<strong>#{city.name}</strong>".html_safe %>
                 <% else %>
-                  <% city_name = city["name"] %>
+                  <% city_name = city.name %>
                 <% end %>
 
                 <%= t ".bootcamp_in_city_html", city: city_name %>
@@ -85,6 +85,11 @@
           <div>
             <%= link_to 'Blog', blog_path %>
           </div>
+          <% if I18n.locale == :fr %>
+            <div>
+             <%= link_to 'Podcast', " https://itunes.apple.com/us/podcast/le-wagon/id1298074014?mt=2" %>
+            </div>
+          <% end %>
           <div>
             <%= link_to 'Stack', stack_path %>
           </div>
@@ -96,6 +101,9 @@
           </div>
           <div>
             <%= link_to t(".press"), send(:"press_#{locale.to_s.underscore}_path") %>
+          </div>
+           <div>
+            <%= link_to t(".partners"), partners_path %>
           </div>
           <div>
             <a href="//www.iubenda.com/privacy-policy/7967062" class="iubenda-nostyle no-brand iubenda-embed" title="Privacy Policy">Privacy Policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src = "//cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>

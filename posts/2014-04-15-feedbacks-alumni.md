@@ -2,7 +2,7 @@
 layout: post
 title:  "Les alumnis de la première saison reviennent sur leur expérience au Wagon"
 author: boris
-date: 15-04-2014
+locale: "fr"
 labels:
   - alumni
 thumbnail: 2014-04-15-lewagon-feedbacks-alumni-first-season.jpg

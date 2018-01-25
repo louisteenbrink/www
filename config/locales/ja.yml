@@ -31,6 +31,7 @@ ja:
       alumni_platform: "卒業生のコミュニティ"
       about: "Le Wagonとは?"
       bootcamp_in_city_html: "%{city} コーディングブートキャンプ"
+      partners: Partners
     navbar:
       menu:
         cities: 開催都市

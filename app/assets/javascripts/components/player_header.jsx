@@ -5,9 +5,9 @@ class PlayerHeader extends React.Component {
 
   render() {
     var productDetails = null;
-    if (this.props.batch.products.length > 0) {
+    if (this.props.products.length > 0) {
       productDetails = <span className="product-details">
-        {this.props.batch.products.length} <i>{this.props.i18n.product_label}</i>
+        {this.props.products.length} <i>{this.props.i18n.product_label}</i>
       </span>
     }
 

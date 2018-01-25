@@ -14,6 +14,9 @@ Rails.application.configure do
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
+  if ENV['CDN_ENABLED'] == 'true' && ENV['CDN_URL'].present?
+    config.action_controller.asset_host = ENV['CDN_URL']
+  end
 
   if ENV['DISABLE_CACHE'] == 'true'
     config.cache_store = :null_store
@@ -52,11 +55,6 @@ Rails.application.configure do
 
   config.react.variant = :production
 
-  config.public_file_server.headers = {
-    'Cache-Control' => 'public, max-age=31536000',
-    'Expires'       => 1.year.from_now.to_formatted_s(:rfc822)
-  }
-
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Specifies the header that your server uses for sending files.
@@ -65,7 +63,7 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  config.log_level = :debug
+  config.log_level = :warn
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -76,7 +74,7 @@ Rails.application.configure do
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
 
-  config.force_ssl = true
+  # config.force_ssl = true
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

@@ -2,7 +2,7 @@
 layout: post
 title: "Bouquet, la petite attention fleurie en plus pour Noël"
 author: cedric
-date: 11-12-2014
+locale: "fr"
 labels:
   - alumni
 thumbnail: 2014-12-11-bouquet.jpg

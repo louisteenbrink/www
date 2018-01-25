@@ -2,8 +2,8 @@
 layout: video
 title: "AperoTalk avec Marc Rougier, Fondateur et Président de Scoop.it"
 author: cedric
-date: 12-11-2O14
 youtube_slug: "V7Z1Q7hy1v0"
+locale: "fr"
 labels:
   - talk
 thumbnail: 2014-11-12-aperotalk-marc-rougier.jpg

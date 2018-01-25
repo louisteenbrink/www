@@ -14,7 +14,7 @@ class CheckListItems extends React.Component {
             'is-checked': this.state.isChecked
           })
           return(
-            <CheckListItem {... item} />
+            <CheckListItem {... item} key={item.index} />
           )
         })}
       </div>

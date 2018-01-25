@@ -10,12 +10,10 @@ class ApplyForm extends React.Component {
       submitting: false
     }
   }
-
   render() {
-
     var cities = this.state.activeCityGroup.cities;
     var otherCityGroups = this.props.city_groups.filter((cityGroup) => { return cityGroup.group !== this.state.activeCityGroup.group });
-    var batches = this.state.activeCity.batches;
+    var batches = this.state.activeCity.apply_batches;
     var componentClasses = classNames({ 'apply-form': true });
     var submitButton = null;
 
@@ -36,7 +34,7 @@ class ApplyForm extends React.Component {
             <div className='banner-city-nav'>
               <ReactBootstrap.Dropdown id='cityGroupSelector' ref="cityGroupSelector">
                 <ReactBootstrap.Dropdown.Toggle noCaret={false}>
-                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group + ' ' + this.state.activeCityGroup.icon}}></span>
+                  <span dangerouslySetInnerHTML={{__html: this.state.activeCityGroup.group + ' ' + this.state.activeCityGroup.flag_svg}}></span>
                 </ReactBootstrap.Dropdown.Toggle>
                 <ReactBootstrap.Dropdown.Menu>
                   {otherCityGroups.map((cityGroup, index) => {
@@ -59,6 +57,7 @@ class ApplyForm extends React.Component {
                     firstBatch={this.firstBatch(city)}
                     setActiveCity={(city) => this.setActiveCity(city)}
                     isActive={this.state.activeCity.slug == city.slug}
+                    locale={this.props.locale}
                   />
                 )
               })}
@@ -74,9 +73,9 @@ class ApplyForm extends React.Component {
 
                   var bannerCityStyle = {};
 
-                  if (city.pictures.cover) {
+                  if (city.city_background_picture_url) {
                     var bannerCityStyle = {
-                      backgroundImage: "url(" + city.pictures.cover  + ")"
+                      backgroundImage: "url(" + city.city_background_picture_url  + ")"
                     };
                   }
 
@@ -103,7 +102,7 @@ class ApplyForm extends React.Component {
                       <div className='post-submissions-select'>
                         <div className="dropdown btn-group">
                           <button id="batchSelector" ref="selectType" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" className="dropdown-toggle btn btn-default">
-                            <span>{this.state.activeBatch.starts_at + ' - ' + this.state.activeBatch.ends_at}</span>
+                            <span>{moment(this.state.activeBatch.starts_at).locale(this.props.locale).format('LL') + ' - ' + moment(this.state.activeBatch.ends_at).locale(this.props.locale).format('LL')}</span>
                             <span className="caret"></span>
                           </button>
                           <ul role="menu" className="dropdown-menu" aria-labelledby="batchSelector">
@@ -113,6 +112,7 @@ class ApplyForm extends React.Component {
                                   key={`batch_${batch.id}`}
                                   batch={batch}
                                   isActive={batch.id == this.state.activeBatch.id}
+                                  locale={this.props.locale}
                                 />
                               )
                             })}
@@ -131,12 +131,12 @@ class ApplyForm extends React.Component {
                     <div className='apply-form-price'>
                       <div>
                         <span>{this.props.i18n.pre_course_language}</span>
-                        <strong>{this.props.i18n.course_language[this.state.activeCity.slug] || this.props.i18n['language_' + this.state.activeCity.course_locale]}</strong>
+                        <strong>{this.props.i18n.course_language[this.state.activeCity.slug] || this.props.i18n['language_' + this.state.activeCity.locale]}</strong>
                       </div>
                       <div>
                         <span>{this.props.i18n.price + ": "}</span>
-                        <strong>{this.state.activeBatch.price}</strong>
-                        <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}}></span>
+                        <strong>{this.state.activeBatch.formatted_price}</strong>
+                        <span dangerouslySetInnerHTML={{__html: this.props.i18n.post_price[this.state.activeCity.slug]}} style={{'paddingLeft' : '4px'}}></span>
                       </div>
                     </div>
                     {submitButton}
@@ -213,7 +213,7 @@ class ApplyForm extends React.Component {
   }
 
   firstBatch(city) {
-    return _.filter(city.batches, (n) => { return !n.full && !n.waiting_list })[0] || city.batches[0]
+    return _.filter(city.apply_batches, (n) => { return n.apply_status != 'full' && n.apply_status != 'waiting_list' })[0] || city.apply_batches[0]
   }
 
   batch(id) {

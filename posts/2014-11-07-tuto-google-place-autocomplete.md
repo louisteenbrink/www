@@ -3,10 +3,9 @@ layout: post
 label: startup
 title: Google Place Autocomplete
 author: cedric
-date: 07-11-2014
+locale: "fr"
 labels:
   - tutorial
-pushed: true
 thumbnail: 2014-11-07-google-autocomplete.jpg
 description: Apprenez rapidement à installer Google Place Autocomplete dans vos formulaires comportant une adresse. Ces quelques lignes de code faciliteront grandement l'expérience de vos utilisateurs sur votre site. À vous de jouer !
 ---

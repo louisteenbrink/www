@@ -1,0 +1,179 @@
+<%= content_for(:title) { t('.main_title') }       %>
+<%= content_for(:description) { t('.catchline') } %>
+<%= content_for(:image_url) { image_url 'social/react.png' } %>
+
+<!-- SECTION 1: PAGE BANNER -->
+<div class="banner-react">
+  <h1><small><%= t('.catchline') %></small><%= t('.main_title') %></h1>
+  <!-- React Logo animation -->
+  <div class="circles">
+    <div></div>
+    <div></div>
+    <div></div>
+    <span></span>
+  </div>
+  <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/<%= @typeform_slug %>" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
+</div>
+
+<!-- SECTION 2: CONTENT -->
+<div class="react-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+
+        <div class="section-mobile">
+          <h2><%= t('.affix_title_date') %></h2>
+          <span><i class="fa fa-calendar" aria-hidden="true"></i><%= t('.affix_date') %></span>
+          <span><i class="fa fa-map-marker" aria-hidden="true"></i> <%= t('.affix_location') %></span>
+        </div>
+
+        <div class="section-intro">
+          <h2><%= t('.title_intro') %></h2>
+          <p><%= t('.content_intro_html') %></p>
+        </div>
+
+        <div class="section section-goals">
+          <h2><%= t('.title_goals') %> <%= image_tag 'technos/react.svg', class: "tech-icon" %> + <%= image_tag 'technos/redux.svg', class: "tech-icon" %> + <%= image_tag 'technos/rails.svg', class: "tech-icon" %></h2>
+          <%= t('.content_goals_html') %>
+        </div>
+
+        <div class="section section-requirement">
+          <h2><%= t('.title_requirements') %></h2>
+          <%= t('.content_requirements_html') %>
+        </div>
+
+        <div class="section section-teachers">
+          <h2><%= t('.title_teachers') %></h2>
+          <div class="teachers-wrapper">
+            <% if locale == :fr %>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/edward-schults-b81b2abb", target: :_blank do %>
+                  <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/edward-schults.jpg', width: 100, height: 100), class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Edward<small>Schults</small></span>
+                  <i>Lead Teacher</i>
+                </div>
+              </div>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
+                  <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Sébastien<small>Saunier</small></span>
+                  <i>CTO</i>
+                </div>
+              </div>
+            <% else %>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/sebastiensaunier", target: :_blank do %>
+                  <%= image_tag proxy_url_with_signature(url: 'https://raw.githubusercontent.com/lewagon/www-images/master/blog/authors/sebastien-saunier.jpg', width: 100, height: 100), class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Sébastien<small>Saunier</small></span>
+                  <i>CTO</i>
+                </div>
+              </div>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/abenoit/", target: :_blank do %>
+                  <%= image_tag 'https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1497894234/lxofq2nhoiuondhsrbhy.jpg', class: "teacher-pic" %>
+                  <% end %>
+                <div class="teacher-details">
+                  <span>Alex<small>Benoit</small></span>
+                  <i>Teacher</i>
+                </div>
+              </div>
+              <div class="teacher-card">
+                <%= link_to "https://www.linkedin.com/in/arthur-littmann/", target: :_blank do %>
+                  <%= image_tag 'https://res.cloudinary.com/wagon/image/upload/c_fill,h_100,w_100/v1498678909/meer67lxmporul6enslv.jpg', class: "teacher-pic" %>
+                <% end %>
+                <div class="teacher-details">
+                  <span>Arthur<small>Littmann</small></span>
+                  <i>Teacher</i>
+                </div>
+              </div>
+            <% end %>
+          </div>
+          <blockquote><%= t('.quote') %></blockquote>
+        </div>
+
+        <div class="section section-syllabus">
+          <h2><%= t('.title_syllabus') %></h2>
+          <div class="timeline">
+            <h3><%= t('.day_1') %></h3>
+            <%= t('.day_1_content_html') %>
+            <h3><%= t('.day_2') %></h3>
+            <%= t('.day_2_content_html') %>
+            <h3><%= t('.day_3') %></h3>
+            <%= t('.day_3_content_html') %>
+            <h3><%= t('.day_4') %></h3>
+            <%= t('.day_4_content_html') %>
+            <h3><%= t('.day_5') %></h3>
+            <%= t('.day_5_content_html') %>
+          </div>
+        </div>
+
+        <div class="section-mobile">
+          <h2><%= t('.affix_title_pricing') %></h2>
+          <i><%= t('.pricing_vat') %><small><%= t('.pricing_no_vat') %></small></i>
+          <h2><%= t('.special_offer') %></h2>
+          <%= t('.affix_title_offer') %> <i><%= t('.special_offer_vat') %><small><%= t('.special_offer_no_vat') %></small></i>
+        </div>
+
+        <div class="section section-faq">
+          <h2><%= t('.title_faq') %></h2>
+          <%= t('.content_faq_html') %>
+        </div>
+      </div>
+
+      <!-- SECTION 2 BIS: AFFIX -->
+      <div class="col-md-4 affix-gutter">
+        <div class="react-aside" data-spy="affix" data-offset-top="620" data-offset-bottom="1720">
+          <div class="aside-banner">
+            <div class="aside-picture" style="background-image: url(<%= image_path 'banners/blog-posts.jpg' %>)"></div>
+            <%= image_tag 'technos/react-white.svg', class: "tech-icon" %>
+          </div>
+          <div class="aside-item" style="padding-top: 20px;">
+            <span class="item-title"><%= t('.affix_title_date') %></span>
+            <i><i class="fa fa-calendar" aria-hidden="true"></i><%= t('.affix_date') %></i>
+            <i><i class="fa fa-map-marker" aria-hidden="true"></i> <%= t('.affix_location') %></i>
+          </div>
+          <div class="aside-item">
+            <span class="item-title"><%= t('.affix_title_participants') %></span>
+            <i>10</i>
+          </div>
+          <div class="aside-item">
+            <span class="item-title"><%= t('.affix_title_pricing') %>:</span>
+            <i><%= t('.pricing_vat') %><small><%= t('.pricing_no_vat') %></small></i>
+          </div>
+          <div class="aside-item" style="color: #bbb">
+            <span class="item-title"><%= t('.special_offer') %></span>
+            <%= t('.affix_title_offer') %> <i><%= t('.special_offer_vat') %><small><%= t('.special_offer_no_vat') %></small></i>
+          </div>
+          <a class="typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/<%= @typeform_slug %>" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 3: PICTURES GRID -->
+<div class="photo-grid-wrapper">
+  <div class="photo-grid container">
+    <div class="grid-column" style="background-image: url(<%= image_path 'banners/banner-home.jpg' %>)">
+    </div>
+    <div class="grid-column">
+      <div class="grid-item" style="background-image: url(<%= image_path 'officials/students-3.jpg' %>); background-position: center center;"></div>
+      <div class="grid-item" style="background-image: url(<%= image_path 'banners/blog-posts.jpg' %>); background-position: center right;"></div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 4: MOBILE CTA -->
+<a class="mobile-cta typeform-share button btn btn-danger" href="https://lewagon.typeform.com/to/<%= @typeform_slug %>" data-mode="popup" target="_blank" ><%= t('.react_cta') %></a>
+
+
+
+
+
+<script> (function() { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm_share", b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "share.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>

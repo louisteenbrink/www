@@ -1,19 +1,19 @@
 <% @stories.each_slice(2) do |stories| %>
   <div class="stories-bundle">
     <% stories.each do |story| %>
-      <div class="story-container" style="background-image: url('<%= story["picture"]%>')">
+      <div class="story-container" style="background-image: url('<%= story_image_url story.thumbnail, width: 600 %>')">
         <main>
           <div class="story-card-title">
-            <%= story["title"][locale.to_s] || story["title"]["en"]  %>
+            <%= story.title %>
           </div>
           <div class="story-card-summary">
-            <%= truncate(markdown(story['summary'][locale.to_s] || story['summary']['en']), length: 130, escape: false) %>
+            <%= story.description.truncate(160) %>
           </div>
           <div class='story-card-footer'>
             <%= render 'stories/user_infos', story: story %>
           </div>
         </main>
-        <%= link_to "", story_path(id: story["slug"]), class: "story-card-link" %>
+        <%= link_to "", story_path(id: story.slug), class: "story-card-link" %>
       </div>
     <% end %>
   </div>

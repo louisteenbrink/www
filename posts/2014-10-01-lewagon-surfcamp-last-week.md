@@ -2,7 +2,7 @@
 layout: post
 title: Le Wagon Surfcamp | Last week
 author: cedric
-date: 01-10-2014
+locale: "fr"
 labels:
   - lifestyle
 thumbnail: 2014-10-01-lewagon-surfcamp-second-week.jpg

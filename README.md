@@ -4,15 +4,18 @@
 
 ## Dependencies
 
-You need Postgresql and Redis running on your computer.
+You need Postgresql and Redis running on your computer. You also need [ImageMagick](http://brewformulas.org/Imagemagick)
 
-## Cache
+## Setup
 
-You can run this in development to bypass the API cache.
+After cloning the project, run:
 
+```bash
+bundle install
+bin/rails db:create db:schema:load
 ```
-$ DISABLE_CACHE=true rails s
-```
+
+Then ask for the ENV variables below before starting your `bin/rails s` server.
 
 ## Configuration
 
@@ -24,17 +27,32 @@ The bare minimum variables you need to start the website are:
 
 ```yml
 # config/application.yml
-ALUMNI_WWW_SHARED_SECRET: "ask_for_it"
-ALUMNI_WWW_ENCRYPTING_KEY: "ask_for_it"
+KITT_WWW_SHARED_SECRET: "ask_for_it"
 CLOUDINARY_URL: "ask_for_it"
+```
+
+## Create a new post
+
+To create a new blog post file, you run this command:
+
+```bash
+rails post:create
+```
+
+## Cache
+
+You can run this in development to bypass the API cache.
+
+```
+$ DISABLE_CACHE=true rails s
 ```
 
 ## API Development
 
-You can work with development API by launching a `rails s -p 5000` of [lewagon/alumni](https://github.com/lewagon/alumni) in another terminal tab, then launch the `www` rails app with:
+You can work with development API by launching a `rails s -p 5000` of [lewagon/kitt](https://github.com/lewagon/kitt) in another terminal tab, then launch the `www` rails app with:
 
 ```bash
-ALUMNI_BASE_URL=http://localhost:5000/api/v1 DISABLE_CACHE=true rails s
+KITT_BASE_URL=http://localhost:5000 DISABLE_CACHE=true rails s
 ```
 
 ### Linkedin Token

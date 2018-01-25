@@ -2,10 +2,9 @@
 layout: post
 title: "Loic Le Meur : Nous ne sommes pas encore au début"
 author: antonin
-date: 26-06-2017
+locale: "fr"
 labels:
   - podcast
-pushed: true
 thumbnail: 2017-05-26-nouvelle-ecole-e18.jpg
 description: Il était là au début et a vécu le démarrage de toutes les entreprises qui dominent le monde, participant même au succès de certaines. Pour le 18e épisode de Nouvelle École, Antonin nous emmène à la rencontre de Loic Le Meur.
 ---

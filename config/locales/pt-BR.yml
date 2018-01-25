@@ -7,8 +7,16 @@ pt-BR:
     month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
     abbr_month_names: [~, Jan, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Set, Out, Nov, Dez]
     order: [day, month, year]
-  top_bar_message: Want to know what our students are up to in 9 weeks
-  top_bar_cta: watch our demos
+  time:
+    formats:
+      event: "dia %e no %B"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "%l:%M"
+      newsletter_event_end_time: "%l:%M"
+    day_names: [Domingo, Segunda, Terça, Quarta, Quinta, Sexta, Sábado]
+    month_names: [~, Janeiro, Fevereiro, Março, Abril, Maio, Junho, Julho, Agosto, Setembro, Outubro, Novembro, Dezembro]
+  top_bar_message: Veja o que nossos alunos podem fazer em 9 semanas
+  top_bar_cta: assista ao demoday
   shared:
     positions:
       they_hired_our_students: Quem contrata nossos alunos
@@ -33,6 +41,7 @@ pt-BR:
       retry: "Tente de novo"
       error: "Parece que seu email não é valido..."
       press: "Imprensa"
+      partners: "Parceiros"
       alumni_platform: "Comunidade Alumni"
       about: "O que é Le Wagon?"
       bootcamp_in_city_html: "%{city} coding bootcamp"
@@ -72,8 +81,7 @@ pt-BR:
       web_development_details: |
         Aprenda tudo sobre Ruby, SQL e Rails
         Desenvolva suas habilidades em front-end usando técnicas avançadas de CSS (flexbox, grid, animações, etc..)
-        e mergulhe em Javascript aprendendo Jquery e React.js,
-        a biblioteca desenvolvida pelo Facebook.
+        e mergulhe em Javascript ES6.
       software_engineer_html: Pense como um desenvolvedor
       software_engineer_details: |
         Aprenda a pensar como um engenheiro de software.
@@ -89,7 +97,7 @@ pt-BR:
         Assim trabalham as startups de sucesso.
       startup_toolkit: Use as ferramentas do mundo startup
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         Nós vamos te ensinar como implementar todos esses serviços
         para ser mais eficiente ao lançar seu produto.
         Poupe tempo, use a ferramenta certa para necessidades específicias,
@@ -263,7 +271,7 @@ pt-BR:
         Please wait for the Driver to contact you to set up your interview.
         If you wish to change the city you applied to, you can discuss that with him / her!
       we_will_contact_html: |
-        Vamos te contatar em breve por email para agendar a entrevista. <br /><br />Enquanto isso, siga as intruções do nosso check-list e comece o <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby</a> no CodeCademy.
+        Vamos te contatar em breve por email para agendar a entrevista. <br /><br />Enquanto isso, siga as intruções do nosso check-list e comece o <a href="https://www.codecademy.com/en/learn/learn-ruby" target="_blank">track ruby</a> no CodeCademy.
       take_advance: Checklist
       first_step: "1. Candidate-se pro Le Wagon %{name}"
       second_step: "Junte-se ao %{name} grupo Meetup "
@@ -304,7 +312,10 @@ pt-BR:
       tagline_details_html: |
         Adquiras habilidades técnincas que irão mudar sua forma de<br>contribuir com sua organização.
         <strong>Acelere sua carreira, seja mais eficiente</strong>
-      apply: Saiba mais
+      apply_phone_html: |
+        Call Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contact Benjamin<br><small>benjamin@lewagon.org</small>
       skills_header: Novas habilidades para mudar sua forma de trabalhar.
       skills_text: Você precisa acompanhar as mudanças em seu ambiente de trabalho. Conheça as ferramentas e workflows que fazem a cabeça das startups.
       pm: Product Management
@@ -319,20 +330,34 @@ pt-BR:
       fullstack_details: Do banco de dados até o seu navegador, aprenda como aplicativos web são construídos.
       prototyping: Prototipagem Lean
       prototyping_details: APIs estão devorando o mundo. Descubra como startups prototipam produtos simplesmente conectando APIs.
-      best: Aprenda com o melhor
-      best_details_html: |
-        <p>
-         Nós treinamos mais de 1200 estudantes que vieram das melhores faculdades de admnistração, engenharia e design. Nós sabemos como <strong> conectar tecnologia e negócios</strong>. Nós ensinamos nossos estudantes a programar e a prototipar <strong>mais de 400 produtos digitais</strong>.
-        </p>
-        <p>
-         Depois de termos treinado tanta gente talentosa, sabemos <strong>que podemos levar as mesmas habilidades à sua organização</strong>.
-        </p>
-      hec_html: Le Wagon é o <strong>parceiro oficial da HEC</strong> (a melhor faculdade de admnistração da França) e <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">está ensinando os empreendedores da HEC a programarem seus próprios produtos digitais</a>.
-      google_quote: Le Wagon realmente sabe levar a cultura e as habilidades técnicas complementares para pessoas com um background em business. A visão de tecnologia deles é única.
-      eki_quote: Eles foram um parceiro chave para trazer uma cultura de produto e UX para a Ekimetrics. O impacto é imediato na maneira como trabalhamos, na nossa visão e no nosso mindset.
-      drivy_quote: O currículo deles é muito bem bolado, os professores apaixonados pelo que ensinam.
-      stripe_quote: Workshops sólidos ensinando habilidades técnicas essenciais e um forte mindset de produto.
-      algolia_quote: Se você tem um background de business, é espetacular como o Le Wagon pode desenvolver sua relação com tecnologia.
+      formats_title: Uma oficina certa para cada objetivo
+      format_1_title: Programando seu time para ser mais motivado
+      format_1_description_html: |
+          <i><strong>1</strong> dia de imersão em 2 workshops</i>
+      format_2_title: Facilitar a comunicação entre os times tech e marketing
+      format_2_description_html: |
+          <i><strong>7</strong> workshops de introdução a web</i>
+      format_3_title: Transformar o project manager em « Product Owner »
+      format_3_description_html: |
+          <i><strong>1</strong> ano de oficinas sobre 6 temas</i>
+      format_4_title: Facilitar o recrutamento de perfis tecnológicos
+      format_4_description_html: |
+          <i><strong>5</strong> workshops de iniciação ao webdevelopment</i>
+      format_5_title: Ferramentas para se tornar um intrapreneur
+      format_5_description_html: |
+          <i><strong>1</strong> série de oficinas de front e back end para conseguir lançar um MVP</i>
+      format_6_title: Adotar uma cultura startup para se adaptar rapidamente
+      format_6_description_html: |
+          <i><strong>3</strong> workshops de iniciação ao desenvolvimento web e ao workflow de uma startup</i>
+      cta-objectives: Qual é o seu projeto?
+      watch: Nossa última oficina corporate “One Day of Code”
+      with_us: Eles trabalham conosco.
+      testimonial_1: Um dia muito interessante e muito rico. Perfeito para descobrir o mundo da programação e da web.
+      testimonial_2: Uma pedagogia muito legal e um mindset sedutor, eu quase larguei tudo para virar desenvolvedora.
+      testimonial_3: Uma formação perfeitamente adaptada para dar seus primeiros passos dentro do universo do desenvolvimento web.
+      testimonial_4: 3 horas super densas mas muito interessantes para aprender a codar uma landing page. Saí de lá com vontade de me aprofundar no tema!
+      testimonial_5: Super onboarding no universo do código, em apenas um dia consegui me sentir mais aunonomo, dá vontade de continuar.
+      testimonial_cta: Junte-se ao Wagon
     live:
       page_title_with_current_event: "Retransmissão ao vivo - %{event_name}"
       page_title_no_live: "Retransmissão ao vivo - Em breve"
@@ -420,7 +445,7 @@ pt-BR:
       codecademy_modal_body_html: |
         <p>
           Como explicamos no <a href="%{faq_path}" target="_blank">FAQ</a>, um dos pré-requisitos do Le Wagon é fazer 100% do
-          <a href="https://www.codecademy.com/learn/ruby">curso de Ruby</a> no CodeCademy.
+          <a href="https://www.codecademy.com/en/learn/learn-ruby">curso de Ruby</a> no CodeCademy.
           Se você não tem uma conta no CodeCademy account, <a href="https://www.codecademy.com/register" target="_blank">crie uma agora</a>, é gratis!
         </p>
         <p>
@@ -511,3 +536,40 @@ pt-BR:
       learn_cta_html: |
         <strong>Peça seu convite</strong> para nosso <strong>curso gratuito online</strong> e aprenda HTML, CSS, Javascript, Github, APIs e muito mais
       learn_button: Quero meu convite!
+  prospect_mailer:
+    send_event:
+      from: "%{meetup_host} do Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
+      subject: "Venha a um de nossos workshops gratuitos para %{prospect_city} %{meetup_time}: %{meetup_name}!"
+      disclaimer: "Obrigado por fazer o Le Wagon Freetrack."
+      title: "Venha a um de nossos workshops gratuitos: %{meetup_name}"
+      schedule: "%{meetup_time}"
+      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon %{city} Vi que você se cadastrou para nosso curso gratuito, parabéns!"
+      main_copy_2: "Sempre organizamos oficinas e palestras gratuitas com conteúdos relevantes pra quem quer aprender a programar. O próximo acontece no %{meetup_time} : %{meetup_name}. Pensei que você pudesse achar interessante, será uma ótima oportunidade para aprender mais e conhecer outras pessoas! 🚀"
+      main_copy_3: ""
+      main_copy_link: "Cadastre-se abaixo se estiver interessado. 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} e o time Le Wagon %{city}"
+      no_location: "Localização visível para os membros"
+      cta: "Quero ir!"
+      host_title: "Pergunte-nos qualquer coisa!"
+      host_content: "Nossos workshops são sempre gratuitos e abertos a todos. Junte-se ao grupo no Meetup do Le Wagon %{city}, eu e todo o time do Le Wagon estamos aqui pra te receber!"
+      host_cta: "Saiba mais sobre nossos Meetups"
+    send_content:
+      from: "%{meetup_host} do Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
+      subject: "As últimas dicas e novidades em programação e empreendedorismo!"
+      disclaimer: "Obrigado por se cadastrar no Le Wagon Freetrack."
+      title: "Você está apenas no começo de sua jornada!"
+      main_copy_1: "Yo! Sou %{meetup_host} do Le Wagon %{city}! Vi que você se cadastrou para nosso curso gratuito, parabéns!"
+      main_copy_2: "Queria aprovitar pra compartilhar com você as últimas notícias, tutoriais e dicas sobre aprender a programar e empreendedorismo! 🚀"
+      main_copy_3: "Abaixo você vai encontrar uma tonelada de artigos e videos sobre estes assuntos. Explore! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} e o time do Le Wagon %{city}"
+      card_1_title: "Adquira novas habilidades, assista a nossos videos"
+      card_1_content: "Aprenda com os melhores desenvolvedores e empreendedores"
+      cta_1: "Watch"
+      card_2_title: "Artigos pensados para quem está começando a aprender a codar"
+      card_2_content: "Aprenda com quem já ensinou a mais de 2000 pessoas no mundo todo"
+      cta_2: "Apprends plus"
+      host_title: "Não perca nossos eventos para %{city}"
+      host_content: "Estamos sempre organizando eventos gratuitos para quem quer saber mais sobre programação e empreendedorismo, todo mundo é convidado! Te espero lá!"
+      host_cta: "Saiba mais sobre nossos meetups"

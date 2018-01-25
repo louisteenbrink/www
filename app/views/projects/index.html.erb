@@ -1,9 +1,9 @@
-<%= content_for(:title)       { (t ".meta_title_html", count: @client.projects("alumni_projects").length).html_safe }       %>
+<%= content_for(:title)       { (t ".meta_title_html", count: @projects.length).html_safe } %>
 <%= content_for(:description) { t ".meta_description" } %>
-<%= content_for(:image_url) { image_url 'social/projects_card.jpg' } %>
+<%= content_for(:image_url) { image_url "social/projects_card.jpg" } %>
 
 <h1>
-  <%= t(".projects_details_html", count: @client.projects("alumni_projects").length) %>
+  <%= t(".projects_details_html", count: @projects.length) %>
 </h1>
 
 <% if @projects %>

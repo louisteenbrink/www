@@ -2,11 +2,10 @@
 layout: post
 title: "From Student to Startup Success: Tips For The Bootcamp Entrepreneur"
 author: mary
-date: 16-05-2017
+locale: "en"
 labels:
   - entrepreneurship
   - guest
-pushed: true
 thumbnail: 2017-05-16-tips-for-the-bootcamp-entrepreneur.jpg
 description: While the goal of most prospective bootcamp students is to get hired, a growing number of students use the experience to launch their own ventures. Here are a few things to keep in mind before you get started!
 ---

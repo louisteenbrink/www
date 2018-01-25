@@ -10,10 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170605083431) do
+ActiveRecord::Schema.define(version: 20171209184315) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "ahoy_messages", force: :cascade do |t|
+    t.string "token"
+    t.text "to"
+    t.integer "user_id"
+    t.string "user_type"
+    t.string "mailer"
+    t.text "subject"
+    t.datetime "sent_at"
+    t.datetime "opened_at"
+    t.datetime "clicked_at"
+    t.index ["token"], name: "index_ahoy_messages_on_token"
+    t.index ["user_id", "user_type"], name: "index_ahoy_messages_on_user_id_and_user_type"
+  end
 
   create_table "applies", id: :serial, force: :cascade do |t|
     t.string "first_name"
@@ -47,6 +61,20 @@ ActiveRecord::Schema.define(version: 20170605083431) do
     t.index ["attachinariable_type", "attachinariable_id", "scope"], name: "by_scoped_parent"
   end
 
+  create_table "employer_prospects", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone_number"
+    t.string "company"
+    t.string "website"
+    t.string "targets", array: true
+    t.string "locations", array: true
+    t.string "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "lives", id: :serial, force: :cascade do |t|
     t.string "category"
     t.integer "user_id"
@@ -62,6 +90,19 @@ ActiveRecord::Schema.define(version: 20170605083431) do
     t.string "link"
     t.string "facebook_url"
     t.index ["user_id"], name: "index_lives_on_user_id"
+  end
+
+  create_table "mailkick_opt_outs", force: :cascade do |t|
+    t.string "email"
+    t.integer "user_id"
+    t.string "user_type"
+    t.boolean "active", default: true, null: false
+    t.string "reason"
+    t.string "list"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_mailkick_opt_outs_on_email"
+    t.index ["user_id", "user_type"], name: "index_mailkick_opt_outs_on_user_id_and_user_type"
   end
 
   create_table "prospects", id: :serial, force: :cascade do |t|

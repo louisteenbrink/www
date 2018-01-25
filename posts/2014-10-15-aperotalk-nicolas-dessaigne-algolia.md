@@ -2,8 +2,8 @@
 layout: video
 title: AperoTalk avec Nicolas Dessaigne, CEO Algolia
 author: cedric
-date: 15-10-2014
 youtube_slug: "5ZpwR3VuT50"
+locale: "fr"
 labels:
   - talk
 thumbnail: 2014-10-15-nicolas-dessaigne-algolia.jpg

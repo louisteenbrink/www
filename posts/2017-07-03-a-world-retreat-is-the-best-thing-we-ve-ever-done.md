@@ -2,10 +2,9 @@
 layout: post
 title: "A world retreat is the best thing we've ever done!"
 author: cedric
-date: 03-07-2017
+locale: "en"
 labels:
   - lifestyle
-pushed: true
 thumbnail: 2017-06-28-ericeira-cover.jpg
 description: What a hell of a week it has been! For the first time ever we gathered all Le Wagon 57 drivers and teachers from all around the world in the same spot, at the same time.
 ---
@@ -42,7 +41,13 @@ From there, it was pure bliss revolving around workshops, yoga, surfing, good fo
   <img class="mid" src="blog_image_path 2017-06-28-ericeira-21.jpg" alt="Do you mind if I get one more octopus?">
 </div>
 
-## There's even a video to prove it!
+## There's even two videos to prove it!
+
+<div class="video-container">
+  <div class="video-wrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VUwd0J86_14" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
 
 <div class="video-container">
   <div class="video-wrapper">

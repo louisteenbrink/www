@@ -27,7 +27,7 @@ class Apply < ActiveRecord::Base
   validates :phone, presence: true
   validates :age, presence: true, numericality: { only_integer: true }
   validates :email, presence: true, email: true
-  validate :email_is_valid_with_mailgun
+  validate :email_is_valid_with_mailgun, unless: ->() { email.blank? }
   validates :motivation, presence: true, length: { minimum: 140 }
 
   attr_accessor :skip_source_validation
@@ -44,14 +44,15 @@ class Apply < ActiveRecord::Base
   before_validation :fetch_linkedin_profile
   validate :linkedin_url_exists, unless: ->() { self.linkedin.blank? }
 
-  after_commit :push_to_trello, on: :create, if: :push_to_trello?
+  after_commit :push_to_services, on: :create, if: :push_to_services?
 
-  def push_to_trello
+  def push_to_services
     PushApplyJob.perform_later(id)
   end
 
-  def push_to_trello?
-    batch_id && Rails.env.production?
+  def push_to_services?
+    # TODO(alex): add back production condition
+    batch_id # && Rails.env.production?
   end
 
   def tracked?
@@ -59,11 +60,14 @@ class Apply < ActiveRecord::Base
   end
 
   def batch
-    @batch ||= AlumniClient.new.batch(batch_id)
+    @batch ||= Kitt::Client.query(Batch::Query, variables: { id: batch_id }).data.batch
+  end
+
+  def city
+    @city ||= Kitt::Client.query(City::Query, variables: { id: city_id }).data.city
   end
 
   def to_drift
-    city = AlumniClient.new.city(self.city_id)
     {
       email: email,
       first_name: first_name,
@@ -153,5 +157,7 @@ class Apply < ActiveRecord::Base
       end
       errors.add(:email, message)
     end
+  rescue RestClient::InternalServerError
+    # If service is unavailable, treat email as valid (optimistic approach)
   end
 end

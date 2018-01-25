@@ -13,13 +13,18 @@ class StudentsController < ApplicationController
     end
 
     if request.format.html? || params[:story_page]
-      @stories = @client.stories
-      @stories =  Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
+      @stories = Story.all
+      if locale == :fr
+        @stories = @stories.select { |m| m.locale == "fr" }
+        @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
+      else
+        @stories = @stories.select { |m| m.locale == "en" }
+        @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(6)
+      end
     end
 
     if request.format.html?
-      @projects = @client.projects("alumni_projects")
-      @statistics = @client.statistics
+      @statistics = Kitt::Client.query(Statistics::Query).data.statistics
       @reviews = ReviewsCounter.new.review_count
     end
   end

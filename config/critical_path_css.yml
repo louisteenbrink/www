@@ -1,0 +1,17 @@
+<% locales = %w(fr pt-BR es zh-CN) + [ nil ] %>
+<% city_slugs = Kitt::Client.query(City::GroupsQuery).data.cities.map(&:slug) %>
+
+defaults: &defaults
+  manifest_name: application
+  routes: <%= [ "/" ] + locales.map { |l| "/#{l}" } + city_slugs.map { |slug| locales.map { |l| "/" + [ l, "cities", slug ].compact.join("/") }}.flatten %>
+
+development: &development
+  <<: *defaults
+  base_url: http://localhost:3000
+
+staging:
+  <<: *development
+
+production:
+  <<: *defaults
+  base_url: https://www.lewagon.com

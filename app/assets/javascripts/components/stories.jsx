@@ -29,7 +29,7 @@ class Stories extends React.Component {
         {this.props.stories.map((story, index) => {
           var backgroundStyle = {
             backgroundSize: "cover !important",
-            backgroundImage: "url('" + story.picture + "')"
+            backgroundImage: "url('" + story.thumbnail + "')"
           }
 
           var detailClasses = classNames({

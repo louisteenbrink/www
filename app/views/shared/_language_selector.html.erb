@@ -1,5 +1,4 @@
-<span class='flag-container'>
-  <div>
+<span class='flag-container'> <div>
     <div class="dropdown">
       <div class="dropdown-toggle" type="button" id="languageMenuToggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
         <% if locale == :fr %>
@@ -10,6 +9,8 @@
           <%= render 'shared/chinese_flag' %>
         <% elsif locale == :es %>
           <%= render 'shared/spanish_flag' %>
+        <% elsif locale == :ja %>
+          <%= render 'shared/japanese_flag' %>
         <% else %>
           <%= render 'shared/english_flag' %>
         <% end %>
@@ -40,6 +41,11 @@
         <li>
           <%= link_to locale_current_url_for(:"zh-CN"), class: ("active" if locale == :"zh-CN") do %>
             <%= render 'shared/chinese_flag' %> <p>中文</p>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to locale_current_url_for(:ja), class: ("active" if locale == :ja) do %>
+            <%= render 'shared/japanese_flag' %> <p>日本語</p>
           <% end %>
         </li>
       </ul>

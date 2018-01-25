@@ -1,6 +1,7 @@
 # app/controllers/pages_controller.rb
 class PagesController < ApplicationController
   before_action :switch_to_french_if_needed, only: :home
+  before_action :set_top_bar, only: :home
   after_action :mark_as_tracked, only: :thanks
 
   def show
@@ -14,7 +15,7 @@ class PagesController < ApplicationController
           if @live.demoday?
             redirect_to demoday_path(@live.batch_slug)
           else
-            @city = @client.city(@live.city_slug)
+            @city = Kitt::Client.query(City::Query, variables: { slug: @live.city_slug }).data.city
           end
         end
       end
@@ -27,14 +28,20 @@ class PagesController < ApplicationController
       session[:city] = 'sao-paulo'
     end
 
-    @top_bar_message = I18n.t('.top_bar_message')
-    @top_bar_cta = I18n.t('.top_bar_cta')
-    @top_bar_url = demoday_index_path
     @reviews = ReviewsCounter.new.review_count
 
     if request.format.html? || params[:testimonial_page]
       @testimonials = Testimonial.where(route: Testimonial::DEFAULT_ROUTE)
       @testimonials = Kaminari.paginate_array(@testimonials).page(params[:testimonial_page]).per(6)
+    end
+
+    @stories = Story.all
+    if locale == :fr
+      @stories = @stories.select { |m| m.locale == "fr" }
+      @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(2)
+    else
+      @stories = @stories.select { |m| m.locale == "en" }
+      @stories = Kaminari.paginate_array(@stories).page(params[:story_page]).per(2)
     end
   end
 
@@ -43,15 +50,22 @@ class PagesController < ApplicationController
       redirect_to root_path
     else
       @apply = Apply.find(session[:apply_id])
-      @city = @cities.find { |city| city["id"] == @apply.city_id }
-      @batch = @client.batch(@apply.batch_id)
+      @city = @apply.city
+      @batch = @apply.batch
+      @meetup_url = MeetupApiClient.new(@apply.city.meetup_id).meetup['link']
     end
   end
 
   def employers
+    @positions = Position.all
+    @employer = EmployerProspect.new
   end
 
   def stack
+  end
+
+  def about
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
   end
 
   def robots
@@ -60,15 +74,20 @@ class PagesController < ApplicationController
   end
 
   def program
-    @statistics = @client.statistics
-
-    @top_bar_message = I18n.t('.top_bar_message')
-    @top_bar_cta = I18n.t('.top_bar_cta')
-    @top_bar_url = demoday_index_path
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
   end
+
 
   def linkedin
     render json: params.to_json
+  end
+
+  def react
+    if I18n.locale == :fr
+      @typeform_slug = "T0mrph"
+    else
+      @typeform_slug = "CJKtlE"
+    end
   end
 
   def vae
@@ -78,6 +97,14 @@ class PagesController < ApplicationController
   end
 
   private
+
+  def set_top_bar
+    # if I18n.locale == :fr
+    #   @top_bar_message = I18n.t('.top_bar_react_message')
+    #   @top_bar_cta = I18n.t('.top_bar_react_cta')
+    #   @top_bar_url = react_path
+    # end
+  end
 
   def mark_as_tracked
     @apply.update tracked: true if @apply

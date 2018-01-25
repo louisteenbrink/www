@@ -65,7 +65,7 @@ class NewsletterForm extends React.Component {
     e.preventDefault();
     this.setState({ submitting: true });
     var email = this.refs.email.value;
-    $.post(Routes.subscribes_path(), { email: email, city_id: this.props.city_id }, (data) => {
+    $.post(Routes.subscribes_path(), { email: email, city_slug: this.props.city_slug }, (data) => {
       if (data.ok) {
         this.setState({ valid: true, submitting: false });
         this.setState({ error: false, submitting: false });

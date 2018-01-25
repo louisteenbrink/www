@@ -2,8 +2,18 @@ fr:
   date:
     formats:
       apply: "%e %B %Y"
-  top_bar_message: Découvrez ce que nos étudiants codent en 9 semaines
+  time:
+    formats:
+      event: "le %e %B"
+      newsletter: "%A, %d %b %Y"
+      newsletter_event_start_time: "De %l:%M %p"
+      newsletter_event_end_time: "à %l:%M %p"
+  top_bar_react_message: Formez-vous à React + Redux
+  top_bar_react_cta: En savoir +
+  top_bar_message: Découvrez ce que nos étudiants peuvent coder en seulement 10 jours
   top_bar_cta: regardez les démos
+  top_bar_podcast_message: "Chaque semaine, un entrepreneur nous raconte l'histoire de sa startup"
+  top_bar_podcast_cta: "abonne-toi au Podcast du Wagon 🎙"
   shared:
     positions:
       they_hired_our_students: Ils recrutent nos élèves
@@ -28,6 +38,7 @@ fr:
       retry: "Ré-essayer"
       error: "Votre email n'a pas l'air bon :("
       press: "Presse"
+      partners: "Partenaires"
       alumni_platform: "Communauté Alumni"
       about: "Le Wagon, c'est quoi ?"
       bootcamp_in_city_html: "Formation Développeur Web à %{city}"
@@ -36,18 +47,19 @@ fr:
         cities: Villes
         program: Programme
         online: Debutez en ligne
-        ondemand: OnDemand
+        ondemand: En ligne (On Demand)
         on_site: En présentiel
         fullstack_program: FullStack (9 semaines intensives)
+        react_program: React (5 jours intensifs)
         free_track: Web-Development Basics (gratuit)
       apply: Postuler
-      employers: Business
+      employers: Entreprises
       work: Travaillez avec nos alumni
       train: Formez votre entreprise au code
       recruitment: Recrutement
       workshops: Ateliers Corporate
       mobile_employers: Recrutement
-      mobile_enterprise: Corporate
+      mobile_enterprise: Entreprises
     navbar_dropdown:
       menu:
         cities: Villes
@@ -80,9 +92,8 @@ fr:
       web_development: Devenez développeur web
       web_development_details: |
         Maîtrisez ruby, SQL, et le framework Rails pour construire des applications web.
-        Apprenez des techniques de design avancées en CSS.
-        Plongez dans Javascript et explorez jQuery ou encore React.js,
-        la dernière librairie Javascript développée par Facebook.
+        Apprenez des techniques de design avancées en CSS (flexbox, CSS grid).
+        Plongez dans Javascript et explorez ES6.
       software_engineer_html: Comprenez la technique
       software_engineer_details: |
         Apprenez à penser comme un "Software engineer".
@@ -98,7 +109,7 @@ fr:
         Apprenez à travailler avec la méthodologie des meilleures startups.
       startup_toolkit: Utilisez les outils des startups
       startup_toolkit_details: |
-        Heroku, Stripe, Mandrill, Amazon S3, Algolia...
+        Heroku, Stripe, MailChimp, Cloudinary, Algolia...
         Nous vous apprendrons à implémenter toutes ces solutions
         pour être plus efficace quand vous lancez un nouveau produit.
         Gagnez du temps, utilisez le bon outil pour la bonne raison.
@@ -171,7 +182,7 @@ fr:
       why_us_details_html: |
         Le Wagon est le meilleur coding bootcamp au monde selon <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href='https://www.coursereport.com/schools/le-wagon'>Coursereport</a> et <a style="color: #D23333; font-weight: 900; text-decoration: underline;" href="https://www.switchup.org/research/best-coding-bootcamps">Switchup</a>.
         Nous avons une expérience de %{batches} sessions depuis 2014 (ça représente plus de %{alumni} élèves !) et un programme qui a évolué à chaque session.
-        Selon nous, tout est affaire de précision et nous avons mis plus de trois ans à concevoir notre programme. <strong>Vous apprendrez en 2 mois ce qui ne s'apprend pas en 2 ans:</strong>
+        Selon nous, tout est affaire de précision et nous avons mis plus de trois ans à concevoir notre programme. <strong>Vous apprendrez en 2 mois ce que vous apprendriez autrement en 2 ans :</strong>
         <ul style="font-size:18px;">
           <li style="padding: 5px;">Le set-up parfait d'un développeur</li>
           <li style="padding: 5px;">Les techniques de modélisation d'une architecture logicielle & d'une base de donnée</li>
@@ -265,7 +276,7 @@ fr:
         Si vous souhaitez finalement candidater à une autre ville, vous pourrez en discuter à ce moment là avec lui / elle.
       thanks: Merci
       we_will_contact_html: |
-        Nous vous contacterons rapidement pour un entretien. <br /><br />D'ici là, <strong>suivez toutes les instructions de la check-list</strong> et commencez la <a href="https://www.codecademy.com/tracks/ruby?locale_code=en" target="_blank">track ruby en anglais</a> sur CodeCademy.
+        Nous vous contacterons rapidement pour un entretien. <br /><br />D'ici là, <strong>suivez toutes les instructions de la check-list</strong> et commencez la <a href="https://www.codecademy.com/en/learn/learn-ruby" target="_blank">track ruby en anglais</a> sur CodeCademy.
       we_will_contact_hec: |
         Nous vous contacterons rapidement pour un entretien.
       take_advance: Prenez de l'avance
@@ -314,46 +325,60 @@ fr:
       wanna_join: Vous voulez nous rejoindre ?
       signup: Contactez-nous pour faire partie de nos partenaire de recrutement.
     enterprise:
-      title: Ré-inventer le travail dans un monde numérique grâce au Wagon.
+      title: Réinventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
-      tagline_html: "<span style='font-size: 40px;'>Transformez votre organisation. <br>En vous formant au code et à la technologie.</span>"
+      tagline_html: "Nous accompagnons les entreprises <br>dans leur transition digitale."
       tagline_details_html: |
-        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler <br>dans votre organisation.
-        <strong>Travaillez mieux, de façon plus agile et plus efficace.</strong>
-      apply: Formez-vous avec Le Wagon
-      apply_to: Formation %{skill}
-      skills_header: Des ateliers & des sprints faits pour votre entreprise
-      skills_text_html: Grâce à des formations de 2 heures, des ateliers d'une journée ou des sprints d'une semaine, <strong>formez vos collaborateurs à l'UI/UX Design, au Product Management ou au développement web</strong>.
+        Apprenez les nouveaux savoir-faire numériques pour changer votre façon de travailler.
+        <strong>Un workshop à la fois.</strong>
+      apply: Contact
+      apply_phone_html: |
+        Appeler Benjamin<br><small>+33 7 83 59 97 95</small>
+      apply_mail_html: |
+        Contacter Benjamin<br><small>benjamin@lewagon.org</small>
+      skills_header: Des ateliers adaptés à votre entreprise
+      skills_text_html: Grâce à des formations aux formats multiples d’une demi-journée jusqu’au mini Bootcamp de 5 jours, formez vos collaborateurs à <strong>l'UI/UX Design, au Product Management, au développement web et aux méthodologies Agile et Lean</strong>.
       pm: Product Management
-      pm_details: Découpage du travail, nouvelles techniques agiles de collaboration. Apprenez à travailler en équipe sur un projet à la manière des startups technologiques.
-      ui: UI / UX
-      ui_details: Rendre les choses visibles facilite la communication dans vos équipes. Apprenez à faire rapidement des maquettes et des wireframes pour discuter vos idées de façon plus claire.
-      web_design: Web Design / frontend
-      web_design_details: Construisez vos icônes, retouchez tout seul votre site. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
+      pm_details: Apprenez les nouvelles techniques agiles de collaboration. Travailler en équipe sur un projet technique à la manière des startups, avec les mêmes méthodologies.
+      ui: Design et expérience utilisateur (UI / UX)
+      ui_details: Prototypez votre application et donnez vie à vos idées. Communiquez mieux avec vos équipes et vos prestataires techniques en adoptant l'approche d'un designer.
+      web_design: Web-design & Dévelopement frontend
+      web_design_details: Coder votre propre site avec HTML et CSS et designer vos icônes. Ne dépendez plus de sous-traitants, soyez autonomes et reprenez le contrôle de vos projets.
       data_science: Data Science & Visualisation
-      data_science_details: Collectez les données, analyser-les, faites-les parler. Les consultants doivent ré-inventer leur travail et leurs méthodologies.
+      data_science_details: Apprenez à collecter des données, à les analyser, à les faire parler. Les consultants doivent réinventer leur travail et leurs méthodologies grâce à la data-science.
       fullstack: FullStack Development
-      fullstack_details: Depuis la base de données jusqu'au navigateur, apprenez comment un produit web est construit et comment il fonctionne pour discuter plus efficacement avec vos équipes techniques.
-      prototyping: Lean Prototyping
+      fullstack_details: Depuis la base de données, jusqu'au navigateur, apprenez comment un produit web est construit et comment il fonctionne pour discuter plus efficacement avec vos équipes techniques.
+      prototyping: L'art du Prototyping
       prototyping_details: |
-        Les APIs transforment notre économie. Découvrez comment les startups prototypent très rapidement de nouveaux services en connectant simplement des APIs.
-      best: Apprenez des meilleurs
-      best_details_html: |
-        <p>
-          Nous avons formé plus de 1200 étudiants aux profils variés (école de commerce, ingénieurs, graphistes). Nous savons <strong>créer un lien entre la technologie et le business</strong>. Nous avons encadré <strong>plus de 400 produits</strong>, en aidant nos élèves à les concevoir et les prototyper.
-        </p>
-        <p>
-          Après avoir formé tant d'élèves talentueux, nous savons que nous pouvons aussi <strong>vous aider à transformer votre organisation</strong>.
-        </p>
-      hec_html: En 2017, Le Wagon est le <strong>partenaire officiel de HEC Paris</strong> et <a href="http://www.hec.fr/News-Room/Actualites/Les-HEC-Entrepreneurs-demain-tous-codeurs" target="_blank">apprend aux élèves de la filière entrepreneurs à coder leurs projets.</a>.
+        Prototyper rapidement de nouveaux services en connectant simplement des APIs à la manière des startups. Comprenez ce qu'est un MVP, et comment tester un produit en un temps record.
+      formats_title: À chaque objectif ses ateliers
+      format_1_title: Motiver ses collaborateurs par l’apprentissage du code
+      format_1_description_html: |
+          <i><strong>1</strong> journée immersion en 2 ateliers</i>
+      format_2_title: Faciliter les échanges entre les équipes tech et marketing
+      format_2_description_html: |
+          <i><strong>7</strong> ateliers d’acculturation aux métiers web</i>
+      format_3_title: Transformer ses chefs de projet en « Product Owners »
+      format_3_description_html: |
+          <i><strong>1</strong> an d’atelier sur 6 thématiques</i>
+      format_4_title: Faciliter le recrutement de profils techniques
+      format_4_description_html: |
+          <i><strong>5</strong> workshops d’initiation au métier de développeur web</i>
+      format_5_title: Encourager l’intrapreuneuriat grâce aux bonnes ressources
+      format_5_description_html: |
+          <i><strong>1</strong> série d’ateliers front-end et back-end pour savoir lancer son MVP</i>
+      format_6_title: Adopter une culture startup pour délivrer rapidement
+      format_6_description_html: |
+          <i><strong>3</strong> workshops d’initiation au développement web et au workflow d’une startup</i>
+      cta-objectives: Quel est votre projet ?
       watch: Notre dernier atelier "One Day of Code"
-      google_quote: Le Wagon sait transmettre des compétences techniques et une culture très complémentaires pour des profils business. Leur vision de la technologie est unique.
-      eki_quote: Ils ont été un partenaire clef apportant une forte culture Produit et UX chez Ekimetrics. Il y a un impact direct sur notre façon de travailler.
-      drivy_quote: Leur curriculum est extrêmement bien structuré et leur professeurs sont des professionels passionés.
-      stripe_quote: Des ateliers solides qui transmettent à la fois les compétences techniques essentielles mais aussi une forte culture du produit.
-      algolia_quote: Si vous avez un profil business ou chef de projet, c'est incroyable comme Le Wagon peut transformer votre rapport à la technologie.
-      uber_quote: Le Wagon permet aux équipes de comprendre les problématiques tech dans la roadmap produit d'Uber et d'expliquer simplement et clairement aux partenaires des concepts tels qu'une intégration API.
+      testimonial_1: Le code est un véritable langage et cette formation m'a permis d'en comprendre l'essentiel.
+      testimonial_2: Une pédagogie très léchée et un mindset séduisant, j’ai presque envie de devenir développeuse !
+      testimonial_3: Une formation parfaitement adaptée pour faire ses premiers pas dans l’univers du développement web.
+      testimonial_4: Une expérience client simple grâce à la pertinence des use case et sa traduction numérique c'est ce que cette belle formation nous rappelle.
+      testimonial_5: Super onboarding dans l’univers du code, ça donne envie de poursuivre !
       with_us: Ils nous font confiance.
+      testimonial_cta: Embarquez vos collaborateurs
     live:
       page_title_with_current_event: "Live - %{event_name}"
       page_title_no_live: "Live en préparation"
@@ -365,6 +390,113 @@ fr:
     shop:
       title: "La boutique du Wagon"
       description: "Le nouveau chic - Paris"
+    react:
+      catchline: "Découvrez une nouvelle façon d'aborder le développement front-end"
+      main_title: "Formation React + Redux à Paris"
+      special_offer: "Alumni programme Fullstack"
+      pricing_vat: "€2,500 TTC"
+      pricing_no_vat: "soit €2,083 HT"
+      special_offer_vat: "€1,500 TTC"
+      special_offer_no_vat: "soit €1,250 HT"
+      react_cta: "Je réserve ma place"
+      affix_title_date: "Prochaine session"
+      affix_date: "26 au 30 mars 2018"
+      affix_location: "16 villa Gaudelet, 75011 Paris"
+      affix_title_participants: "Participants"
+      affix_title_offer: "Offre spéciale"
+      affix_title_pricing: "Prix"
+      title_intro: "Présentation"
+      content_intro_html: |
+        Apprenez à développer des applications front-end complexes avec React et Redux.
+      title_goals: "Objectifs"
+      content_goals_html: |
+        <ul>
+          <li><i>1</i>Modéliser ses composants de vues avec React</li>
+          <li><i>2</i>Modéliser ses flux de données avec Redux</li>
+          <li><i>3</i>Construire une application web complexe avec React + Redux et une API REST fournie</li>
+          <li><i>4</i>Intégrer une application web React + Redux à une application Rails existante</li>
+        </ul>
+      title_requirements: "Pré-requis"
+      content_requirements_html: |
+        <ul>
+          <li>Bonnes connaissances en JavaScript</li>
+          <li>Quelques notions d'ES6</li>
+          <li>Savoir utiliser une API REST</li>
+          <li>Bonnes connaissances en Rails</li>
+        </ul>
+      title_teachers: "Formateurs"
+      quote: |
+        Du JS en spaghetti de jQuery, ce n'est pas une fatalité !
+      title_syllabus: "Ce que vous allez apprendre :"
+      day_1: "Jour 1 : Écosystème du JavaScript moderne"
+      day_1_content_html: |
+        <ul>
+          <li><strong>Babel</strong> pour compiler l'<strong>ES6</strong></li>
+          <li><strong>Webpack</strong> pour empaqueter des modules</li>
+          <li><strong>npm</strong> comme source de librairies</li>
+          <li><strong>yarn</strong> pour les intégrer</li>
+          <li>ES6 : nouvelles syntaxes</li>
+          <li>Prise en main de <strong>React</strong> - présentation de la classe Component</li>
+          <li>Notion de "props" et "state"</li>
+          <li><strong>JSX</strong> comme language de template</li>
+          <li>Gérer ses modules avec <code>import</code> / <code>export</code></li>
+        </ul>
+      day_2: "Jour 2 : React + Redux"
+      day_2_content_html: |
+        <ul>
+          <li>Combiner des composants React pour faire une application web complexe</li>
+          <li>Récupérer de la donnée en AJAX avec <code>fetch</code> pour alimenter nos composants</li>
+          <li>Utiliser <code>map</code> pour les patterns de listes</li>
+          <li>Prise en main de <strong>Redux</strong> - notion de state global au niveau de l'application</li>
+          <li>Modélisation et gestion du state de l'app</li>
+          <li>Promouvoir les Composants qui ont besoin de connaitre ce state en Containers</li>
+          <li>Définir les Reducers et Action Creators responsables de reverser les changements de state aux différents Containers</li>
+        </ul>
+      day_3: "Jour 3 : React + Redux (Suite)"
+      day_3_content_html: |
+        <ul>
+          <li><strong>Middleware</strong> pour le traitement des Promises</li>
+          <li>Connecter une app front-end à une API REST fournie</li>
+          <li>React <strong>Router</strong> pour simuler la navigation sur une SPA</li>
+          <li>Redux <strong>Form</strong> pour poster de la donnée sur l'API</li>
+          <li>Form Validation pour gérer la validité des données postées</li>
+        </ul>
+      day_4: "Jour 4 : Tests + Projet"
+      day_4_content_html: |
+        <ul>
+          <li>Renforcer son workflow avec des tests</li>
+          <li>Développer un MVP personnel</li>
+        </ul>
+      day_5: "Jour 5 : React + Rails"
+      day_5_content_html: |
+        <ul>
+          <li>Mettre en place React + Redux dans une app Rails fournie</li>
+          <li>Construire une App de chat en temps réel avec React et Redux dans Rails, avec ActionCable (web sockets)</li>
+        </ul>
+      title_faq: "F.A.Q"
+      content_faq_html: |
+        <h3>Qu'est-ce que React ?</h3>
+        <p>ReactJS est une librairie JavaScript qui a vocation à générer des bouts de HTML qui seront lus par un navigateur Web.</p>
+
+        <h3>Qu'est-ce que Redux ?</h3>
+        <p>Redux est une librairie JavaScript dédiée à la gestion du flux de données à reverser dans vos différents composants pour mettre à jour leur état.</p>
+
+        <h3>Faut-il utiliser React quel que soit le projet que vous codez ?</h3>
+        <p>Non. React est particulièrement utile et performant lorsque :</p>
+        <ul>
+          <li>Vous identifiez des composants dans vos vues (i.e. des sous-ensembles qui forment un "tout")</li>
+          <li>Et qu'ils ont un comportement dynamique (changement de couleur au clic sur un bouton, apparition d'un élément au survol d'une image, …)</li>
+        </ul>
+        <p>En effet, React vous permet de penser vos composants comme des objets, porteurs :</p>
+        <ul>
+          <li>de propriétés (ou <code>props</code>, données immuables, propres à l'objet)</li>
+          <li>d'états (ou <code>state</code>, susceptibles de changer au cours de la vie du composant)</li>
+          <li>de comportement</li>
+        </ul>
+        <p>Les deux librairies associées offrent un framework performant pour construire des applications front-end complexes dotées d'une interface dynamique et réactive.</p>
+
+        <h3>Je suis un développeur Ruby on Rails, vais-je pouvoir utiliser ce que j'apprends pendant cette formation dans mes applications Rails ?</h3>
+        <p>Oui, depuis la <a href="http://weblog.rubyonrails.org/2017/2/23/Rails-5-1-beta1/">version 5.1 de Rails</a> et l'intégration de la gem webpacker, il est très simple d'intégrer React et Redux dans une app Rails.</p>
   demoday:
     show:
       page_title: "Demoday Batch #%{batch_slug} - Le Wagon %{city_name}"
@@ -408,7 +540,7 @@ fr:
     show:
       title: "Formation Développeur Web à %{city} - Le Wagon"
       description: |
-        Le Wagon débarque à %{city}. Changez de vie, apprenez à coder avec Le Wagon, la meilleure formation développeur web en 9 semaines.
+        Formation développeur web à %{city} en 9 semaines. Changez de vie, apprenez à coder avec Le Wagon %{city}, la formation classée numéro une pour devenir développeur web.
       catchline_html: "<strong>Apprenez à coder</strong> avec <strong>Le Wagon</strong>"
       call: "Appeler %{name} :"
       email: 'Contacter %{name}'
@@ -444,7 +576,7 @@ fr:
         <p>
           Comme mentionné dans la <a href="%{faq_path}" target="_blank">FAQ</a>, un pré-requis pour
           intrégrer la formation Fullstack du Wagon est de terminer à 100% la
-          <a href="https://www.codecademy.com/learn/ruby">track Ruby</a> de CodeCademy, <strong>en anglais</strong>.
+          <a href="https://www.codecademy.com/en/learn/learn-ruby">track Ruby</a> de CodeCademy, <strong>en anglais</strong>.
           Si vous n'avez pas encore de compte CodeCademy <a href="https://www.codecademy.com/register" target="_blank">créez-en un maintenant</a>, c'est gratuit.
         </p>
         <p>
@@ -496,6 +628,8 @@ fr:
       header_latest: Latest video
       header_aside_1: Get inpired by our amazing community
       header_aside_2: Learn from the best developers & entrepreneurs
+      header_aside_3: Get your weekly dose of entrepreneurship
+      header_aside_3_content: Subscribe to our podcast on iTunes to get premium insights from influencial entrepreneurs!
       posts_small: Latest posts
       posts_title: Empower yourself reading our stories and resources
       show_more_posts: See more posts
@@ -536,3 +670,41 @@ fr:
       learn_cta_html: |
         <strong>Get your invitation</strong> for Le Wagon's <strong>free online course</strong> and learn HTML, CSS, Javascript, Github, APIs and much more
       learn_button: Get my invitation
+  prospect_mailer:
+    send_event:
+      from: "%{meetup_host} du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
+      subject: "Ne rate pas notre prochain événement gratuit à %{prospect_city} %{meetup_time}: %{meetup_name}!"
+      disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon!"
+      title: "Ne rate pas notre prochain événement: %{meetup_name}"
+      schedule: "%{meetup_time}"
+      main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
+      main_copy_2: "Ce message pour te dire que nous organisons un workshop %{meetup_time}: %{meetup_name}. J'ai pensé que tu pourrais nous rejoindre pour en apprendre plus et rencontrer toute l'équipe du Wagon! 🚀"
+      main_copy_3: "Merci de"
+      main_copy_link:
+        "t'inscrire via le lien ci-dessous si ça te dit. 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} et toute la team du Wagon %{city}"
+      no_location: "Lieu uniquement visible par les membres"
+      cta: "Je serai là"
+      host_title: "Pose-nous toutes tes questions !"
+      host_content: "Tu es le/la bienvenu(e) à tous nos événements gratuits à %{city}, toute l'équipe et moi-même seront heureux de t'accueillir !"
+      host_cta: "En savoir plus sur nos Meetups"
+    send_content:
+      from: "%{meetup_host} du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
+      subject: "Découvre les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat"
+      disclaimer: "Merci encore pour ton inscription à la Free Track du Wagon"
+      title: "Tu n'es encore qu'au début du voyage"
+      main_copy_1: "Hello! C'est %{meetup_host} du Wagon %{city}. J'ai vu que tu t'es inscrit à la Free Track en ligne, félicitations!"
+      main_copy_2: "Je voulais simplement te partager les dernières news et tutoriels de notre communauté sur le code et l'entrepreneuriat! 🚀"
+      main_copy_3: "Tu trouveras ci-dessous des tonnes d'articles et de vidéos sur ces sujets. À toi de tout explorer! 👇"
+      main_copy_4: "Cheers!"
+      main_copy_5: "%{meetup_host} et toute la team du Wagon %{city}"
+      card_1_title: "Regarde nos vidéos et monte en compétence"
+      card_1_content: "Apprends des meilleurs devs et entrepreneurs"
+      cta_1: "Regarde nos tutos"
+      card_2_title: "Va plus loin en explorant nos ressources et tutoriels"
+      card_2_content: "Inspire-toi de notre communauté"
+      cta_2: "Apprends plus"
+      host_title: "Ne rate pas nos événements tech à %{city}"
+      host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à %{city}. Tout le monde est le bienvenu!"
+      host_cta: "En savoir plus sur nos Meetups"
