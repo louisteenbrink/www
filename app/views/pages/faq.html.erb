@@ -7,11 +7,9 @@
   <p class="description-faq"><%= t('.description_html') %></p>
 
   <% items = Static::FAQS[locale] %>
-  <% number_of_items = items.length %>
-
   <!-- FAQ Summary - Setup counter and iterate on FAQ items -->
   <% item_counter = 1 %>
-  <% while item_counter < number_of_items %>
+  <% while item_counter < items.length %>
     <ul class="summary-faq">
       <% items.each do |question_item| %>
       <% question_item = structure question_item %>
@@ -23,7 +21,7 @@
 
   <!-- FAQ Content - Reset counter and iterate on FAQ items -->
   <% item_counter = 1 %>
-  <% while item_counter < number_of_items %>
+  <% while item_counter < items.length %>
     <% items.each do |question_item| %>
     <% question_item = structure question_item %>
       <div id="question-<%= item_counter %>" class="card-faqs">
