@@ -1,9 +1,9 @@
 amsterdam:
   city: "Amsterdam"
-  driver: "Feiko"
-  country: "France"
-  teaching_language: "French"
-  email: "marseille@lewagon.com"
+  driver: "Feiko 🙋‍♂️"
+  country: "Netherland 🇳🇱"
+  teaching_language: "English 🇬🇧"
+  email: "amsterdam@lewagon.com"
   marketing_automation:
     enabled: true
     locale: en
@@ -17,9 +17,9 @@ amsterdam:
 
 bali:
   city: "Bali"
-  driver: "Dirk"
-  country: "Indonesia"
-  teaching_language: "English"
+  driver: "Dirk 🙋‍♂️"
+  country: "Indonesia 🇮🇩"
+  teaching_language: "English 🇬🇧"
   email: "bali@lewagon.com"
   marketing_automation:
     enabled: true
@@ -34,9 +34,9 @@ bali:
 
 barcelona:
   city: "Barcelona"
-  driver: "Gustavo"
-  country: "Spain"
-  teaching_language: "English"
+  driver: "Gustavo 🙋‍♂️"
+  country: "Spain 🇪🇸"
+  teaching_language: "English 🇬🇧"
   email: "barcelona@lewagon.com"
   marketing_automation:
     enabled: true
@@ -51,9 +51,10 @@ barcelona:
 
 belo-horizonte:
   city: "Belo Horizonte"
-  driver: "Fernando"
-  country: "Brasil"
-  teaching_language: "Portuguese or English"
+  driver: "Fernando 🙋‍♂️"
+  country: "Brasil 🇧🇷"
+  teaching_language: "Portuguese 🇧🇷"
+  email: "belo-horizonte@lewagon.com"
   marketing_automation:
     enabled: true
     locale: "pt-BR"
@@ -67,9 +68,9 @@ belo-horizonte:
 
 berlin:
   city: "Berlin"
-  driver: "Philipp"
-  country: "Germany"
-  teaching_language: "English"
+  driver: "Philipp 🙋‍♂️"
+  country: "Germany 🇩🇪"
+  teaching_language: "English 🇬🇧"
   email: "berlin@lewagon.com"
   marketing_automation:
     enabled: true
@@ -83,11 +84,11 @@ berlin:
   instagram: "lewagonberlin"
 
 bordeaux:
-  city: ""
-  driver: ""
-  country: ""
-  teaching_language: ""
-  email: "@lewagon.com"
+  city: "Bordeaux"
+  driver: "Bertrand 🙋‍♂️"
+  country: "France 🇫🇷"
+  teaching_language: "French 🇫🇷"
+  email: "bordeaux@lewagon.com"
   marketing_automation:
     enabled: true
     locale: fr
@@ -100,11 +101,11 @@ bordeaux:
   instagram: "lewagonbordeaux"
 
 brussels:
-  city: ""
-  driver: ""
-  country: ""
-  teaching_language: ""
-  email: "@lewagon.com"
+  city: "Brussels"
+  driver: "Ana 🙋"
+  country: "Belgium 🇧🇪"
+  teaching_language: "English 🇬🇧"
+  email: "brussels@lewagon.com"
   marketing_automation:
     enabled: true
     locale: en
@@ -117,11 +118,11 @@ brussels:
   instagram: "lewagonbenelux"
 
 budapest:
-  city: ""
-  driver: ""
-  country: ""
-  teaching_language: ""
-  email: "@lewagon.com"
+  city: "Budapest"
+  driver: "Gergo 🙋‍♂️"
+  country: "Hungaria 🇭🇺"
+  teaching_language: "English 🇬🇧"
+  email: "budapest@lewagon.com"
   marketing_automation:
     enabled: true
     locale: en
@@ -135,9 +136,9 @@ budapest:
 
 buenos-aires:
   city: "Buenos Aires"
-  driver: "Sebastian"
-  country: "Argentina"
-  teaching_language: "English"
+  driver: "Sebastian 🙋‍♂️"
+  country: "Argentina 🇦🇷"
+  teaching_language: "English 🇬🇧"
   email: "buenos-aires@lewagon.com"
   marketing_automation:
     enabled: false
@@ -148,9 +149,9 @@ buenos-aires:
 
 casablanca:
   city: "Casablanca"
-  driver: "Hanae"
-  country: "Morocco"
-  teaching_language: "English"
+  driver: "Hanae 🙋‍"
+  country: "Morocco 🇲🇦"
+  teaching_language: "English 🇬🇧"
   email: "casablanca@lewagon.com"
   marketing_automation:
     enabled: false
@@ -161,8 +162,8 @@ casablanca:
 
 chengdu:
   city: "Chengdu"
-  driver: "Allen"
-  country: "China"
+  driver: "Allen 🙋‍♂️"
+  country: "China 🇨🇳"
   teaching_language: "Chinese"
   email: "chengdu@lewagon.com"
   marketing_automation:
@@ -178,9 +179,9 @@ chengdu:
 
 copenhagen:
   city: "Copenhagen"
-  driver: "Nicolas"
-  country: "Denmark"
-  teaching_language: "English"
+  driver: "Nicolas 🙋‍♂️"
+  country: "Denmark 🇩🇰"
+  teaching_language: "English 🇬🇧"
   email: "copenhagen@lewagon.com"
   marketing_automation:
     enabled: true
@@ -195,9 +196,9 @@ copenhagen:
 
 lille:
   city: "Lille"
-  driver: "François-Xavier"
-  country: "France"
-  teaching_language: "French"
+  driver: "François-Xavier 🙋‍♂️"
+  country: "France 🇫🇷"
+  teaching_language: "French 🇫🇷"
   email: "lille@lewagon.com"
   marketing_automation:
     enabled: true
@@ -212,9 +213,9 @@ lille:
 
 lisbon:
   city: "Lisbon"
-  driver: "Shannon"
-  country: "Portugal"
-  teaching_language: "English"
+  driver: "Shannon 🙋"
+  country: "Portugal 🇵🇹"
+  teaching_language: "English 🇬🇧"
   email: "lisbon@lewagon.com"
   marketing_automation:
     enabled: true
@@ -229,9 +230,9 @@ lisbon:
 
 london:
   city: "London"
-  driver: "Edward"
-  country: "England"
-  teaching_language: "English"
+  driver: "Edward 🙋‍♂️"
+  country: "England 🇬🇧"
+  teaching_language: "English 🇬🇧"
   email: "london@lewagon.com"
   marketing_automation:
     enabled: true
@@ -246,9 +247,9 @@ london:
 
 lyon:
   city: "Lyon"
-  driver: "Matthieu"
-  country: "France"
-  teaching_language: "French"
+  driver: "Matthieu 🙋‍♂️"
+  country: "France 🇫🇷"
+  teaching_language: "French 🇫🇷"
   email: "lyon@lewagon.com"
   marketing_automation:
     enabled: true
@@ -262,15 +263,10 @@ lyon:
   instagram: ""
 
 marseille:
-  city: "Aix-Marseille"
-  driver: "Mathieu"
-  country: "France"
-  teaching_language: "French"
-  email: "@lewagon.com"
-  city: "Aix-Marseille"
-  driver: "Mathieu"
-  country: "France"
-  teaching_language: "French"
+  city: "Marseille"
+  driver: "Mathieu 🙋‍♂️"
+  country: "France 🇫🇷"
+  teaching_language: "French 🇫🇷"
   email: "marseille@lewagon.com"
   marketing_automation:
     enabled: true
@@ -285,9 +281,9 @@ marseille:
 
 melbourne:
   city: "Melbourne"
-  driver: "Paal"
-  country: "Australia"
-  teaching_language: "English"
+  driver: "Paal 🙋‍♂️"
+  country: "Australia 🇦🇺"
+  teaching_language: "English 🇬🇧"
   email: "melbourne@lewagon.com"
   marketing_automation:
     enabled: true
@@ -302,9 +298,9 @@ melbourne:
 
 mexico:
   city: "Mexico City"
-  driver: "Clément"
-  country: "Mexico"
-  teaching_language: "English"
+  driver: "Clément 🙋‍♂️"
+  country: "Mexico 🇲🇽"
+  teaching_language: "English 🇬🇧"
   email: "mexico@lewagon.com"
   marketing_automation:
     enabled: false
@@ -315,9 +311,9 @@ mexico:
 
 milan:
   city: "Milan"
-  driver: "Francesco"
-  country: "Italia"
-  teaching_language: "English"
+  driver: "Francesco 🙋‍♂️"
+  country: "Italia 🇮🇹"
+  teaching_language: "English 🇬🇧"
   email: "milan@lewagon.com"
   marketing_automation:
     enabled: true
@@ -332,9 +328,9 @@ milan:
 
 montreal:
   city: "Montréal"
-  driver: "Marie-Gabrielle"
-  country: "Quebec"
-  teaching_language: "English"
+  driver: "Marie-Gabrielle 🙋"
+  country: "Québec 🇨🇦"
+  teaching_language: "English 🇬🇧"
   email: "montreal@lewagon.com"
   marketing_automation:
     enabled: true
@@ -349,9 +345,9 @@ montreal:
 
 nantes:
   city: "Nantes"
-  driver: "Pierre"
-  country: "France"
-  teaching_language: "French"
+  driver: "Pierre 🙋‍♂️"
+  country: "France 🇫🇷"
+  teaching_language: "French 🇫🇷"
   email: "nantes@lewagon.com"
   marketing_automation:
     enabled: true
@@ -366,9 +362,9 @@ nantes:
 
 paris:
   city: "Paris"
-  driver: "Tatiana"
-  country: "France"
-  teaching_language: "French"
+  driver: "Tatiana 🙋"
+  country: "France 🇫🇷"
+  teaching_language: "French 🇫🇷"
   email: "contact@lewagon.com"
   marketing_automation:
     enabled: true
@@ -383,9 +379,9 @@ paris:
 
 rio:
   city: "Rio de Janeiro"
-  driver: "Pedro"
-  country: "Brasil"
-  teaching_language: "English"
+  driver: "Pedro 🙋‍♂️"
+  country: "Brasil 🇧🇷"
+  teaching_language: "English 🇬🇧"
   email: "rio@lewagon.com"
   marketing_automation:
     enabled: true
@@ -400,9 +396,9 @@ rio:
 
 recife:
   city: "Recife"
-  driver: "Matt"
-  country: "Brasil"
-  teaching_language: "Portuguese"
+  driver: "Matt 🙋‍♂️"
+  country: "Brasil 🇧🇷"
+  teaching_language: "Portuguese 🇧🇷"
   email: "recife@lewagon.com"
   marketing_automation:
     enabled: true
@@ -417,9 +413,9 @@ recife:
 
 sao-paulo:
   city: "São Paulo"
-  driver: "Matt"
-  country: "Brasil"
-  teaching_language: "Portuguese"
+  driver: "Matt 🙋‍♂️"
+  country: "Brasil 🇧🇷"
+  teaching_language: "Portuguese 🇧🇷"
   email: "sao-paulo@lewagon.com"
   marketing_automation:
     enabled: true
@@ -434,9 +430,9 @@ sao-paulo:
 
 shanghai:
   city: "Shanghai"
-  driver: "Thibault"
-  country: "China"
-  teaching_language: "English"
+  driver: "Thibault 🙋‍♂️"
+  country: "China 🇨🇳"
+  teaching_language: "English 🇬🇧"
   email: "@lewagon.com"
   marketing_automation:
     enabled: true
@@ -451,9 +447,9 @@ shanghai:
 
 sydney:
   city: "Sydney"
-  driver: "Charly"
-  country: "Australia"
-  teaching_language: "English"
+  driver: "Charly 🙋‍♂️"
+  country: "Australia 🇦🇺"
+  teaching_language: "English 🇬🇧"
   email: "sydney@lewagon.com"
   marketing_automation:
     enabled: true
@@ -469,9 +465,9 @@ sydney:
 
 tokyo:
   city: "Tokyo"
-  driver: "Paul"
-  country: "Japan"
-  teaching_language: "Japanese or English"
+  driver: "Paul 🙋‍♂️"
+  country: "Japan 🇯🇵"
+  teaching_language: "English 🇬🇧"
   email: "tokyo@lewagon.com"
   marketing_automation:
     enabled: true
