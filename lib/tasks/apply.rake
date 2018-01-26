@@ -67,8 +67,8 @@ namespace :apply do
   end
 
   task seed_crm_cards_www_apply_id: :environment do
-    # applies = Apply.where('created_at > ?', Date.new(2016, 10, 1)).group(:email).count
-    applies = Apply.where(batch_id: 196).group(:email).count
+    applies = Apply.where('created_at > ?', Date.new(2016, 10, 1)).group(:email).count
+    # applies = Apply.where(batch_id: 196).group(:email).count
     multi_applies = []
     applies.each do |email, count|
       if count == 1
