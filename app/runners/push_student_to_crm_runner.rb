@@ -9,6 +9,7 @@ class PushStudentToCrmRunner
 
     payload = {
       card: {
+        www_apply_id: @apply.id,
         trello_board_id: @trello_card.board.id,
         trello_card_id: @trello_card.id,
         email: @apply.email,
