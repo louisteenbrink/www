@@ -328,6 +328,17 @@ en:
       - |
           - Language: check the language in which the bootcamp is actually done (in Brazil the lectures are actually in Portuguese, in France the bootcamp is in French, etc.)
   - question: |
+        Do you help international student to get a visa?
+    answer:
+        - |
+          Depending on your situation and where you would want to do the bootcamp, you could potentially attend Le Wagon on a simple tourist visa. However, you should always check if it's the case with your embassy.
+        - |
+          For mainland China, in some cases we can invite you on a Business Visa (M). Duration and number of entries vary according to your nationality! Please consult our team.
+  - question: |
+        Do you know when the next session will be?
+    answer: |
+        We usually open applications 4 to 5 months in advance. Feel free to reach out to the local city manager. She/He will gladly answer all of your questions and contact you as soon as we open the applications for the upcoming batch.
+  - question: |
         Is there a typical profile for a Le Wagon student?
     answer: |
         Absolutely not. Our alumni are between 18 and 55, they all share the same curiosity and enthusiasm for coding. They all come from various background: studying, marketing, engineering, sales, lawyers, journalists, architects, musicians... Spending 9 weeks at Le Wagon is not only an incredible human experience, it also helps you build an astonishing network for your after-bootcamp life!
@@ -358,7 +369,7 @@ en:
   - question: |
         What will I be able to build at the end of the 9 weeks?
     answer: |
-        You’ll have a Ruby on Rails junior developer level. This means you’ll be able to quickly prototype your ideas by creating a web application on your own. For instance, you will know how to include authentification to your site (simple signin/signup, or Facebook/Twitter connect), add an admin back-office, include payment features, automate emails sending, and much more. You’ll also know how to quickly deploy in production and you will have learnt the programming best practices used by top-level startups. You’ll then be facing a choice: continue your entrepreneurial journey or become a junior developer in a startup or a bigger tech company.
+        You’ll have a Ruby on Rails junior developer level. This means you’ll be able to quickly prototype your ideas by creating a web application on your own. For instance, you will know how to include authentification to your site (simple signin/signup, or Facebook/WeChat connect), add an admin back-office, include payment features, automate emails sending, and much more. You’ll also know how to quickly deploy in production and you will have learnt the programming best practices used by top-level startups. You’ll then be facing a choice: continue your entrepreneurial journey or become a junior developer in a startup or a bigger tech company.
   - question: |
         Only 9 weeks?
     answer:
@@ -373,7 +384,7 @@ en:
   - question: |
         Will I learn mobile app development?
     answer: |
-        Yes and no. Let’s be clear, you will not learn iOS, Android or Windows Phone development. We really think these skills cannot be taught (honestly) in 9 weeks. We prefer teaching you the basics of programming and web development for many reasons. First, these are the core skills of a software engineer, even if you want to dive into mobile development later on. Second, the web is THE open platform you need to understand. Thanks to Responsive Web Design (which is part of the program), you’ll be able to create apps that will display nicely on mobile devices. You’ll also learn to create APIs that will be used by your mobile apps. It will then be very easy for any mobile developer to code your iOS or Android interface starting from the API you’ve built.
+        Yes and no. Let’s be clear, you will not learn iOS, Android or Windows Phone development. We really think these skills cannot be taught (honestly) in 9 weeks. We prefer teaching you the basics of programming and web development for many reasons. First, these are the core skills of a software engineer, even if you want to dive into mobile development later on. Second, the web is THE open platform you need to understand. Thanks to Responsive Web Design (which is part of the program), and WeChat mini programs (in China), you’ll be able to create apps that will display nicely on mobile devices. You’ll also learn to create APIs that will be used by your mobile apps. It will then be very easy for any mobile developer to code your iOS or Android interface starting from the API you’ve built.
   - question: |
         Do you offer a part-time course or evening classes?
     answer: |
@@ -390,7 +401,7 @@ en:
       - |
           When choosing a coding bootcamp, you should focus more on the quality of the curriculum and teachers. You should ask yourself about the skills you will have at the end and the product you will be able to build. That’s what will really make you hireable. You can [have a look at our various demo days](https://wwww.lewagon.com/demoday) to get an idea about what students are able to build at the end of the 9 weeks.
       - |
-          However, Le Wagon has an excellent network within the tech industry and a very good reputation with recruiters. Our students massively benefit from this. Moreover, we now have more than 2,000 alumni. This internal network is your first support when looking for a job: our alumni work for the best tech companies out there and can recommend you for a position, and they'll also be available to support you during the search - by answering technical or non-technical questions.
+          However, Le Wagon has an excellent network within the tech industry and a very good reputation with recruiters. Our students massively benefit from this. Moreover, we now have more than 2,500 alumni. This internal network is your first support when looking for a job: our alumni work for the best tech companies out there and can recommend you for a position, and they'll also be available to support you during the search - by answering technical or non-technical questions.
   - question: |
         Is it possible to share our job offer(s) with your alumni?
     answer: |
