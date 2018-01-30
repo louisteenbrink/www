@@ -268,11 +268,11 @@ ja:
     press:
       title: Le Wagonが話題になっています
     faq:
-      meta_title: Le Wagon - FAQ
-      meta_description: TBD
-      title: TBD
+      meta_title: Le Wagon - よくある質問
+      meta_description: よくある質問とその回答です！
+      title: よくある質問とその回答です！
       description_html: |
-        TBD
+        私たちのプログラムについて疑問に思っていること、質問があると思います
     employers:
       title: Le Wagonのネットワーク - ヨーロッパ最上級のコーディングブートキャンプの卒業生を雇おう
       description: 雇用パートナーとして私たちのコミュニティに参加し、新しい候補者や就職情報のお知らせを受け取ろう。
