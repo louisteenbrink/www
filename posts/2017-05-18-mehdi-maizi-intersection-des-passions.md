@@ -2,7 +2,7 @@
 layout: post
 title: "Mehdi Maizi : L'intersection des passions, au calme"
 author: antonin
-locale: "en"
+locale: "fr"
 labels:
   - podcast
 thumbnail: 2017-05-18-nouvelle-ecole-e17.jpg
