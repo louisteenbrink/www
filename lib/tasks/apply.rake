@@ -67,21 +67,27 @@ namespace :apply do
   end
 
   task seed_crm_cards_www_apply_id: :environment do
-    applies = Apply.where('created_at > ?', Date.new(2016, 10, 1)).group(:email).count
-    # applies = Apply.where(batch_id: 196).group(:email).count
+    # applies = Apply.where('created_at > ?', Date.new(2016, 10, 1)).group(:email).count
+    applies = Apply.where(batch_id: 196).group(:email).count
     multi_applies = []
+    multi_cards = []
     applies.each do |email, count|
       if count == 1
         begin
           PushApplyIdToCrmRunner.new(email).run
           puts "Pushed #{email}"
         rescue Exception => e
+          multi_cards << email
           puts "⚠️  Error for #{email}: #{e.message} - #{e.response.body}"
         end
       else
         multi_applies << email
       end
     end
+    puts
+    puts "Multi trello cards"
+    puts multi_cards
+    puts
     puts "Multi applies:"
     puts multi_applies
   end
