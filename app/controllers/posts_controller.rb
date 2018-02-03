@@ -102,7 +102,7 @@ class PostsController < ApplicationController
     if I18n.locale == :fr
       @top_bar_message = I18n.t('.top_bar_podcast_message')
       @top_bar_cta = I18n.t('.top_bar_podcast_cta')
-      @top_bar_url = "https://itunes.apple.com/us/podcast/le-wagon/id1298074014?mt=2"
+      @top_bar_url = "https://shows.pippa.io/lewagon"
     end
   end
 
