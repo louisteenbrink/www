@@ -1,3 +1,9 @@
+- name: "Pas d’âge pour apprendre à coder"
+  url: "https://www.welcometothejungle.co/articles/apprendre-coder-programmer-senior"
+  media: "Welecome to the Jungle"
+  logo: logo-wttj.jpg
+  date: 2018-02-01
+
 - name: "Ex-HSBC Trader Scouts Financiers to Become Born-Again Coders"
   url: "https://www.bloomberg.com/news/articles/2018-02-01/ex-hsbc-trader-scouts-financiers-to-become-born-again-coders"
   media: "Bloomberg"
