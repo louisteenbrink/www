@@ -1,7 +1,7 @@
 - name: "Pas d’âge pour apprendre à coder"
   url: "https://www.welcometothejungle.co/articles/apprendre-coder-programmer-senior"
   media: "Welecome to the Jungle"
-  logo: logo-wttj.jpg
+  logo: logo-wttj.png
   date: 2018-02-01
 
 - name: "Ex-HSBC Trader Scouts Financiers to Become Born-Again Coders"
@@ -43,7 +43,7 @@
 - name: "Les 10 lieux phares du digital et de l’entrepreneuriat à Paris"
   url: "https://www.welcometothejungle.co/articles/les-lieux-phares-du-digital-et-de-l-entrepreneuriat-a-paris"
   media: "Welecome to the Jungle"
-  logo: logo-wttj.jpg
+  logo: logo-wttj.png
   date: 2017-09-11
 
 - name: "Le Wagon, une initiative française sur les rails du codage au Québec"
