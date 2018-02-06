@@ -1,53 +1,89 @@
-<div class="container-fluid">
-  <h2 class="text-center">Employer Prospects</h2>
-  <div class="table-responsive">
-    <table class="table table-hover table-condensed table-striped table-employer">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">id</th>
-          <th scope="col">First Name</th>
-          <th scope="col">Last Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Phone Number</th>
-          <th scope="col">Company</th>
-          <th scope="col">Website</th>
-          <th scope="col">Targets</th>
-          <th scope="col">Locations</th>
-          <th scope="col">Message</th>
-          <th scope="col">Created At</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% @employers.each do |employer| %>
+<div id="employer_prospects_index">
+  <div class="container">
+    <h2 class="text-center">Employer Prospects</h2>
+    <div class="row">
+      <% @employers.each do |employer| %>
+        <div class="col-xs-12">
+          <div class="employer-card">
+            <div class="employer-card-details">
+              <ul class="list-unstyled">
+                <li><strong>First Name:</strong> <span class="employer-data"><%= employer.first_name %></span> </li>
+                <li><strong>Last Name:</strong> <span class="employer-data"><%= employer.last_name %></span> </li>
+                <li><strong>Email:</strong> <span class="employer-data"><%= mail_to employer.email, employer.email, target: "_blank" %></span> </li>
+                <li><strong>Phone number:</strong> <span class="employer-data"><%= employer.phone_number %></span> </li>
+                <li><strong>Company:</strong> <span class="employer-data"><%= employer.company %></span> </li>
+                <li><strong>Website:</strong> <span class="employer-data"><%= link_to employer.website, employer.website, target: "_blank" %></span> </li>
+              </ul>
+            </div>
+            <div class="employer-card-targets">
+              <ul class="list-unstyled">
+                <li><strong>Targets:</strong> <span class="employer-data"><%= employer.targets.join(", ") %></span> </li>
+                <li><strong>Locations:</strong>
+                    <% employer.locations.each do |location| %>
+                      <span class="label label-primary"><%= location %></span>
+                    <% end %>
+                </li>
+              </ul>
+            </div>
+            <div class="employer-card-message">
+              <p>
+                <span><strong>Message:</strong></span>
+                <span class="employer-data"><%= employer.message %></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="table-responsive">
+      <table class="table table-hover table-condensed table-striped table-employer">
+        <thead class="thead-dark">
           <tr>
-            <th scope="row"><%= employer.id %></th>
-            <td><%= employer.first_name %></td>
-            <td><%= employer.last_name %></td>
-
-            <td class="employer-table-break"><%= mail_to employer.email, employer.email, target: "_blank" %></td>
-            <td><%= employer.phone_number %></td>
-            <td class="employer-table-break"><%= employer.company %></td>
-            <td class="employer-table-break"><%= link_to employer.website, employer.website, target: "_blank" %></td>
-            <td class="employer-table-list"><%# employer.targets.join(", ") %>
-              <ul class="list-unstyled">
-                <% employer.targets.each do |target| %>
-                  <li><%= target %></li>
-                <% end %>
-              </ul>
-            </td>
-            <td class="employer-table-list">
-              <ul class="list-unstyled">
-                <% employer.locations.each do |location| %>
-                  <li><%= location %></li>
-                <% end %>
-              </ul>
-            </td>
-            <td><%= employer.message %></td>
-            <td><%= employer.created_at.strftime("%Y-%m-%d %H:%M %Z") %></td>
+            <th scope="col">id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone Number</th>
+            <th scope="col">Company</th>
+            <th scope="col">Website</th>
+            <th scope="col">Targets</th>
+            <th scope="col">Locations</th>
+            <th scope="col">Message</th>
+            <th scope="col">Created At</th>
           </tr>
-        <% end %>
+        </thead>
+        <tbody>
+          <% @employers.each do |employer| %>
+            <tr>
+              <th scope="row"><%= employer.id %></th>
+              <td><%= employer.first_name %></td>
+              <td><%= employer.last_name %></td>
 
-      </tbody>
-    </table>
+              <td class="employer-table-break"><%= mail_to employer.email, employer.email, target: "_blank" %></td>
+              <td><%= employer.phone_number %></td>
+              <td class="employer-table-break"><%= employer.company %></td>
+              <td class="employer-table-break"><%= link_to employer.website, employer.website, target: "_blank" %></td>
+              <td class="employer-table-list"><%# employer.targets.join(", ") %>
+                <ul class="list-unstyled">
+                  <% employer.targets.each do |target| %>
+                    <li><%= target %></li>
+                  <% end %>
+                </ul>
+              </td>
+              <td class="employer-table-list">
+                <ul class="list-unstyled">
+                  <% employer.locations.each do |location| %>
+                    <li><%= location %></li>
+                  <% end %>
+                </ul>
+              </td>
+              <td><%= employer.message %></td>
+              <td><%= employer.created_at.strftime("%Y-%m-%d %H:%M %Z") %></td>
+            </tr>
+          <% end %>
+
+        </tbody>
+      </table>
+    </div>
   </div>
 </div>
