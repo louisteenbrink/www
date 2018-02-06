@@ -114,6 +114,17 @@ pt-BR:
         ou growth hacker. Discuta com algum de nossos estudantes para saber mais!
       checkout: Descubra você mesmo.
       see_all: Mais detalhes.
+    modals:
+      faq_contacts:
+        title: ""
+        city: ""
+        country: ""
+        lectures: ""
+        city_manager: ""
+        contact: ""
+      faq_meetups:
+        title: ""
+        description: ""
   newsletter:
     teaser: "<p>Fique sabendo dos nossos próximos <strong>eventos</strong>, veja nossos <strong>video-tutoriais</strong> & <strong>posts técnicos</strong> no seu inbox.</p>"
     city_teaser_html: 'Fique sabendo dos nossos próximos <strong>eventos</strong> em %{city}, veja nossos <strong>video-tutoriais</strong> & <strong>posts técnicos</strong> no seu inbox.'
@@ -279,6 +290,12 @@ pt-BR:
       fourth_step: "Comece sua track Ruby em Inglês"
     press:
       title: Eles falaram do Le Wagon
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: TBD
+      title: TBD
+      description_html: |
+        TBD
     employers:
       title: Rede de contratação Le Wagon - contrate alunos do melhor bootcamp de código da Europa e America Latina
       description: Junte-se a nós como parceiro e receba alertas sobre nossos novos candidatos e eventos.

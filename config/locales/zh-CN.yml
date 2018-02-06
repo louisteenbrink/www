@@ -104,6 +104,17 @@ zh-CN:
         还是增长黑客。我们的任何一个学员都可以告诉你更多细节。
       checkout: 自己了解更多。
       see_all: 更多细节。
+    modals:
+      faq_contacts:
+        title: "TBD"
+        city: "TBD"
+        country: "TBD"
+        lectures: "TBD"
+        city_manager: "TBD"
+        contact: "TBD"
+      faq_meetups:
+        title: "TBD"
+        description: "TBD"
   newsletter:
     teaser: "<p>邮件接受我们下一次的<strong>活动</strong>通知，<strong>教学视频</strong> & <strong>博客技术贴</strong>。</p>"
     city_teaser_html: '邮件接受我们下一次在%{city}<strong>活动</strong> 的通知，<strong>教学视频</strong> & <strong>博客技术贴</strong>。'
@@ -276,6 +287,12 @@ zh-CN:
       fourth_step: "继续完成CodeCademy上的Ruby track"
     press:
       title: 他们是如何评价Le Wagon的
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: TBD
+      title: TBD
+      description_html: |
+        TBD
     employers:
       title: Le Wagon的招聘网络 - 雇佣欧洲最棒的编程训练营的校友
       description: 加入我们的招聘网络，接收关于最新人才以及招聘活动的通知。

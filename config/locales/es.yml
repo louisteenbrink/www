@@ -1,4 +1,3 @@
-
 es:
   date:
     formats:
@@ -108,6 +107,17 @@ es:
         growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
       checkout: Compruébalo tu mismo.
       see_all: Más detalles
+    modals:
+      faq_contacts:
+        title: ""
+        city: ""
+        country: ""
+        lectures: ""
+        city_manager: ""
+        contact: ""
+      faq_meetups:
+        title: ""
+        description: ""
   newsletter:
     teaser: "<p>Mantente al día de nuestros <strong>eventos</strong>, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.</p>"
     city_teaser_html: 'Mantente al día de nuestros <strong>eventos</strong> en %{city}, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.'
@@ -272,6 +282,12 @@ es:
       fourth_step: "Finalizar el Ruby track en Codecademy"
     press:
       title: Están hablando de Le Wagon
+    faq:
+      meta_title: Le Wagon - FAQ
+      meta_description: TBD
+      title: TBD
+      description_html: |
+        TBD
     employers:
       title: Le Wagon Hiring Network | Encuentra talento en la red alumni del mejor coding bootcamp de Europa
       description: Integra nuestra red como hiring partner y accede a una comunidad de más de 1200 profesionales cualificados.

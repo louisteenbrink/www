@@ -105,6 +105,17 @@ ja:
         今までの卒業生と実際に話をして、詳細を聞いてみよう！
       checkout: チェックしてみる
       see_all: もっと見る
+    modals:
+      faq_contacts:
+        title: "TBD"
+        city: "TBD"
+        country: "TBD"
+        lectures: "TBD"
+        city_manager: "TBD"
+        contact: "TBD"
+      faq_meetups:
+        title: "TBD"
+        description: "TBD"
   newsletter:
     teaser: "<p>次回の <strong>イベント</strong>の最新情報や <strong>ビデオチュートリアル</strong> & <strong>テクノロジーに関するポスト</strong> を自分のインボックスにて受け取ろう</p>"
     city_teaser_html: '%{city},にて開催する次の <strong>イベント</strong> や <strong>ビデオチュートリアル</strong> & <strong>テクノロジに関する投稿</strong> の情報を受け取ろう'
@@ -270,6 +281,12 @@ ja:
       fourth_step: "CodeCademyのRuby trackを再開する"
     press:
       title: Le Wagonが話題になっています
+    faq:
+      meta_title: Le Wagon - よくある質問
+      meta_description: よくある質問とその回答です！
+      title: よくある質問とその回答です！
+      description_html: |
+        私たちのプログラムについて疑問に思っていること、質問があると思います
     employers:
       title: Le Wagonのネットワーク - ヨーロッパ最上級のコーディングブートキャンプの卒業生を雇おう
       description: 雇用パートナーとして私たちのコミュニティに参加し、新しい候補者や就職情報のお知らせを受け取ろう。
