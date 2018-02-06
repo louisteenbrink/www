@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     delete '/log_out', to: 'base#log_out'
   end
 
-  resources :employer_prospects, only: [:create]
+  resources :employer_prospects, only: [:create, :index]
 
   resources :prospects, only: :create
 

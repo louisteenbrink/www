@@ -1,5 +1,9 @@
 class EmployerProspectsController < ApplicationController
 
+  def index
+    @employers = EmployerProspect.all
+  end
+
   def create
     @employer = EmployerProspect.new(employer_prospect_params)
     respond_to do |format|
