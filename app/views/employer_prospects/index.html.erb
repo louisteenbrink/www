@@ -23,10 +23,11 @@
             <th scope="row"><%= employer.id %></th>
             <td><%= employer.first_name %></td>
             <td><%= employer.last_name %></td>
-            <td><%= employer.email %></td>
+
+            <td class="employer-table-break"><%= mail_to employer.email, employer.email, target: "_blank" %></td>
             <td><%= employer.phone_number %></td>
-            <td><%= employer.company %></td>
-            <td><%= employer.website %></td>
+            <td class="employer-table-break"><%= employer.company %></td>
+            <td class="employer-table-break"><%= link_to employer.website, employer.website, target: "_blank" %></td>
             <td class="employer-table-list"><%# employer.targets.join(", ") %>
               <ul class="list-unstyled">
                 <% employer.targets.each do |target| %>
