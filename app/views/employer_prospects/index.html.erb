@@ -1,6 +1,15 @@
 <div id="employer_prospects_index">
   <div class="container">
     <h2 class="text-center">Employer Prospects</h2>
+    <div class="employer-index-filter text-center">
+      <%= form_tag "/employer_prospects", method: "get", class: "form-inline" do %>
+        <div class="form-group">
+          <%= label_tag :city, "Filter by location:" %>
+          <%= select_tag :city, options_for_select(@cities.map {|city| [city.name, city.slug]}, params[:city]), class: "form-control" %>
+        </div>
+        <%= submit_tag "Search", class: "btn btn-default" %>
+      <% end %>
+    </div>
     <div class="row">
       <% @employers.each do |employer| %>
         <div class="col-xs-12">
