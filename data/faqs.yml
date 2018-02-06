@@ -132,8 +132,15 @@ fr:
         Nous ne proposons pas ce type de service. Le prix du programme Fullstack comprend uniquement les cours ainsi que l'accès à vie à notre plateforme pédagogique (avec en bonus une source infinie de thé et café). Nos city managers connaissent leurs villes sur le bout des doigts et, dans la mesure du possible vous aideront tout de même à trouver un logement si nécessaire !
   - question: |
         Proposez-vous un accompagnement pour trouver un emploi à la sortie ?
-    answer: |
-        TBD
+    answer:
+        - |
+          Nous pensons que la capacité de nos alumni à trouver un emploi à la sortie du bootcamp repose avant tous sur sa motivation et le travail fourni pendant la formation. Garantir à 100% un emploi à la fin du bootcamp nous semble malhonnête à cet égard.
+        - |
+          Dans un premier temps, lorsque vous choisissez un bootcamp, nous vous invitons surtout à vous informer sur la qualité du curriculum et de ses enseignants. Vous concentrer sur les compétences que vous souhaitez obtenir et le produit final que vous souhaitez construire nous semble être la clé à l'obtention d'un emploi par la suite. Pour vous faire une idée du niveau qu'il est possible d'atteindre après 9 semaines, nous vous invitons à jeter un oeil à nos <a href="https://www.lewagon.com/demoday" target="_blank">Démo Day</a>.
+        - |
+          Dans un second temps, nos 2500 alumni profitent quotidiennement de la très bonne réputation du Le Wagon auprès des startups Tech et des recruteurs. Cette communauté très active (dont vous bénéficiez d'un accès à vie), sera votre premier support dans votre recherche d'emplois. De nos nombreux alumni travaillent d'ores et déjà dans <a href="https://www.lewagon.com/alumni" target="_blank">les meilleures compagnies Tech du moment</a> et peuvent vous recommander / proposer des offres de job. De plus, ils peuvent également vous accompagner pendant vos recherches en répondant à vos questions pour mieux vous préparer.
+        - |
+          De notre côté, nos équipes sont également là pour vous aider dans vos recherches et vous présenter les meilleures opportunités qui nous sont proposées régulièrement par des recruteurs.
   - question: |
         Pouvez-nous partager une offre d'emploi à vos alumni ?
     answer: |
