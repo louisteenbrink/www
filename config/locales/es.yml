@@ -107,6 +107,17 @@ es:
         growth hacker, etc. Formarás parte de una calificada red internacional que crece a cada día!
       checkout: Compruébalo tu mismo.
       see_all: Más detalles
+    modals:
+      faq_contacts:
+        title: ""
+        city: ""
+        country: ""
+        lectures: ""
+        city_manager: ""
+        contact: ""
+      faq_meetups:
+        title: ""
+        description: ""
   newsletter:
     teaser: "<p>Mantente al día de nuestros <strong>eventos</strong>, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.</p>"
     city_teaser_html: 'Mantente al día de nuestros <strong>eventos</strong> en %{city}, consigue nuestros <strong>video tutoriales</strong> y <strong>artículos sobre desarrollo web</strong> en tu buzón.'

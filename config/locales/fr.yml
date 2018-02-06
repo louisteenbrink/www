@@ -125,6 +125,17 @@ fr:
         Nous vous aiderons à trouver le poste dont vous rêvez, où vous travaillerez avec des gens professionnels et passionnés. Discutez avec nos 350+ élèves pour en être convaincu.
       checkout: Allez voir par vous-même.
       see_all: Plus d'infos.
+    modals:
+      faq_contacts:
+        title: Contactez-nous
+        city: Ville
+        country: Pays
+        lectures: Cours en
+        city_manager: Responsable
+        contact: Contact
+      faq_meetups:
+        title: Rejoignez-nous sur Meetup
+        description: En supplément du programme Fullstack, nous organisons gratuitement des ateliers d’initiation au code les soirs et week-ends. Notre objectif, vous démystifier le code sans blabla, avec des live coding, du concret et de l'actionnable !
   newsletter:
     teaser: "<p>Soyez informé des prochaines <strong>masterclasses</strong>, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.</p>"
     city_teaser_html: 'Soyez informé de nos prochains <strong>événements</strong> à %{city}, recevez nos <strong>vidéos</strong> & <strong>blogposts</strong> techniques.'

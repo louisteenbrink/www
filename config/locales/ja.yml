@@ -103,6 +103,17 @@ ja:
         私たちの今までの卒業生と実際に話をして、詳細を聞いてみよう！
       checkout: チェックしてみる
       see_all: もっと見る
+    modals:
+      faq_contacts:
+        title: "TBD"
+        city: "TBD"
+        country: "TBD"
+        lectures: "TBD"
+        city_manager: "TBD"
+        contact: "TBD"
+      faq_meetups:
+        title: "TBD"
+        description: "TBD"
   newsletter:
     teaser: "<p>私たちの次の <strong>イベント</strong>の最新情報や <strong>ビデオチュートリアル</strong> & <strong>テクノロジーに関するポスト</strong> を自分のインボックスにて受け取ろう</p>"
     city_teaser_html: '%{city},にて開催する次の <strong>イベント</strong> や <strong>ビデオチュートリアル</strong> & <strong>テクノロジーの関するポスト</strong> を自分のインボックスにて受け取ろう'

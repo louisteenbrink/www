@@ -114,6 +114,17 @@ pt-BR:
         ou growth hacker. Discuta com algum de nossos estudantes para saber mais!
       checkout: Descubra você mesmo.
       see_all: Mais detalhes.
+    modals:
+      faq_contacts:
+        title: ""
+        city: ""
+        country: ""
+        lectures: ""
+        city_manager: ""
+        contact: ""
+      faq_meetups:
+        title: ""
+        description: ""
   newsletter:
     teaser: "<p>Fique sabendo dos nossos próximos <strong>eventos</strong>, veja nossos <strong>video-tutoriais</strong> & <strong>posts técnicos</strong> no seu inbox.</p>"
     city_teaser_html: 'Fique sabendo dos nossos próximos <strong>eventos</strong> em %{city}, veja nossos <strong>video-tutoriais</strong> & <strong>posts técnicos</strong> no seu inbox.'

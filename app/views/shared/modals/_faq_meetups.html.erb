@@ -1,15 +1,20 @@
 <div class="modal fade" id="faq-meetups" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog modal-testimonial" role="document">
     <div class="modal-content modal-faq">
-      <h1>Join us on Meetup</h1>
-      <p>In addition to our intensive program, we organise free evening workshops during the week, open to everyone. Come and learn HTML, CSS, JavaScript and much more with us!</p>
-      <ul>
-        <% Static::CITIES.each_value do |city| %>
-          <li>
-            <%=link_to city[:city], "https://www.meetup.com/#{city[:meetup_url]}", target: '_blank' %>
-          </li>
-        <% end %>
-      </ul>
+      <div class="modal-header" style="height: 60px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" style="padding-left: 20px;"><%= t('.title') %></h4>
+      </div>
+      <div class="modal-body">
+        <p><%= t('.description') %></p>
+        <ul>
+          <% Static::CITIES.each_value do |city| %>
+            <li>
+              <%=link_to city[:city], "https://www.meetup.com/#{city[:meetup_url]}", target: '_blank' %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

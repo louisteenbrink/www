@@ -112,6 +112,17 @@ en:
         or growth hacker. Discuss with any of our alumni to find out more!
       checkout: Check it out for yourself.
       see_all: More details.
+    modals:
+      faq_contacts:
+        title: Contact us
+        city: City
+        country: Country
+        lectures: Lectures
+        city_manager: City manager
+        contact: Contact
+      faq_meetups:
+        title: Join us on Meetup!
+        description: In addition to our intensive program, we organise free evening workshops during the week, open to everyone. Come and learn HTML, CSS, JavaScript and much more with us!
   newsletter:
     teaser: "<p>Stay informed about our next <strong>events</strong>, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.</p>"
     city_teaser_html: 'Stay informed about our next <strong>events</strong> in %{city}, get our <strong>video tutorials</strong> & <strong>technical blogposts</strong> in your inbox.'

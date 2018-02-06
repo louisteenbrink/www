@@ -3,46 +3,61 @@
 <%= content_for(:image_url) { image_url 'social/home_facebook_card.png' } %>
 
 <div class="container">
-  <h1 class="title-faq"><%= t('.title') %></h1>
-  <p class="description-faq"><%= t('.description_html') %></p>
 
-  <% items = Static::FAQS[locale] %>
-  <!-- FAQ Summary - Setup counter and iterate on FAQ items -->
-  <% item_counter = 1 %>
-  <% while item_counter < items.length %>
-    <ul class="summary-faq">
+  <% if locale == :"es" || locale == :"zh-CN" %>
+    <?xml version="1.0" encoding="UTF-8"?>
+      <svg width="46px" height="75px" style="position: relative; margin-top: 30px; left: 50%; transform: translateX(-50%);" viewBox="0 0 201 281" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+          <title>Shape</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path d="M160.850636,40.444273 C138.782347,40.444273 120.848454,58.3672577 120.848454,80.4464548 C120.848454,95.2059181 128.931796,107.96909 140.84409,114.90702 L140.84409,120.448637 C140.84409,120.448637 140.84409,160.450818 100.841909,160.450818 C84.2606935,160.450818 71.2684386,164.007053 60.839727,169.450491 L60.839727,74.9157468 C72.7629297,67.9778173 80.8353635,55.214645 80.8353635,40.4551817 C80.8353635,18.3759846 62.9123789,0.453 40.8331817,0.453 C18.7539846,0.453 0.831,18.3759846 0.831,40.4551817 C0.831,55.214645 8.90343373,67.9778173 20.8266365,74.9157468 L20.8266365,205.994617 C8.90343373,212.932546 0.831,225.68481 0.831,240.444273 C0.831,262.512561 18.7539846,280.446455 40.8331817,280.446455 C62.9123789,280.446455 80.8353635,262.512561 80.8353635,240.444273 C80.8353635,229.971927 76.7118771,220.524997 70.1339344,213.368894 C75.9591772,206.223699 85.4170151,200.442091 100.841909,200.442091 C180.213568,200.442091 180.835363,120.448637 180.835363,120.448637 L180.835363,114.90702 C192.747658,107.96909 200.831,95.2059181 200.831,80.4464548 C200.831,58.3672577 182.897107,40.444273 160.828818,40.444273 L160.850636,40.444273 Z M40.8549991,20.4486365 C51.9164151,20.4486365 60.8506356,29.3828571 60.8506356,40.444273 C60.8506356,51.505689 51.9164151,60.4399096 40.8549991,60.4399096 C29.7935832,60.4399096 20.8593626,51.505689 20.8593626,40.444273 C20.8593626,29.3828571 29.7935832,20.4486365 40.8549991,20.4486365 L40.8549991,20.4486365 Z M40.8549991,260.43991 C29.7935832,260.43991 20.8593626,251.49478 20.8593626,240.444273 C20.8593626,229.404674 29.7935832,220.448637 40.8549991,220.448637 C51.9164151,220.448637 60.8506356,229.415583 60.8506356,240.444273 C60.8506356,251.49478 51.9164151,260.43991 40.8549991,260.43991 L40.8549991,260.43991 Z M160.850636,100.442091 C149.800128,100.442091 140.854999,91.5078707 140.854999,80.4464548 C140.854999,69.3850388 149.800128,60.4508183 160.850636,60.4508183 C171.901143,60.4508183 180.846272,69.3850388 180.846272,80.4464548 C180.846272,91.5078707 171.901143,100.442091 160.850636,100.442091 L160.850636,100.442091 Z" id="Shape" fill="#444444"></path>
+          </g>
+      </svg>
+    <h2 style="text-align: center; padding: 0 0 46px 0;">Nothing yet, please read the <%= link_to "english version", '/faq', :style=>'font-weight: bold; text-decoration: underline;' %></h2>
+  <% else %>
+    <h1 class="title-faq"><%= t('.title') %></h1>
+    <p class="description-faq"><%= t('.description_html') %></p>
+
+    <% items = Static::FAQS[locale] %>
+    <!-- FAQ Summary - Setup counter and iterate on FAQ items -->
+    <% item_counter = 1 %>
+    <% while item_counter < items.length %>
+      <ul class="summary-faq">
+        <% items.each do |question_item| %>
+        <% question_item = structure question_item %>
+          <li><a href="#question-<%= item_counter %>"><%= question_item.question %></a></li>
+          <% item_counter += 1 %>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <!-- FAQ Content - Reset counter and iterate on FAQ items -->
+    <% item_counter = 1 %>
+    <% while item_counter < items.length %>
       <% items.each do |question_item| %>
       <% question_item = structure question_item %>
-        <li><a href="#question-<%= item_counter %>"><%= question_item.question %></a></li>
-        <% item_counter += 1 %>
-      <% end %>
-    </ul>
-  <% end %>
-
-  <!-- FAQ Content - Reset counter and iterate on FAQ items -->
-  <% item_counter = 1 %>
-  <% while item_counter < items.length %>
-    <% items.each do |question_item| %>
-    <% question_item = structure question_item %>
-      <div id="question-<%= item_counter %>" class="card-faqs">
-        <div class="card-faq-container">
-          <div class="card-faq">
-            <h3 class="card-faq-question">
-              <%= question_item.question %>
-            </h3>
-            <div class="card-faq-answer">
-              <% if question_item.answer.is_a? Array %>
-                <% question_item.answer.each do |paragraph| %>
-                  <%= markdown paragraph %>
+        <div id="question-<%= item_counter %>" class="card-faqs">
+          <div class="card-faq-container">
+            <div class="card-faq">
+              <h3 class="card-faq-question">
+                <%= question_item.question %>
+              </h3>
+              <div class="card-faq-answer">
+                <% if question_item.answer.is_a? Array %>
+                  <% question_item.answer.each do |paragraph| %>
+                    <%= markdown paragraph %>
+                  <% end %>
+                <% else %>
+                  <%= markdown question_item.answer %>
                 <% end %>
-              <% else %>
-                <%= markdown question_item.answer %>
-              <% end %>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <% item_counter += 1 %>
+        <% item_counter += 1 %>
+      <% end %>
     <% end %>
   <% end %>
 </div>

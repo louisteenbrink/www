@@ -1,28 +1,34 @@
 <div class="modal fade" id="faq-contacts" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
   <div class="modal-dialog modal-testimonial" role="document">
     <div class="modal-content modal-faq">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th scope="col">City</th>
-            <th scope="col">Country</th>
-            <th scope="col">Lectures</th>
-            <th scope="col">City manager</th>
-            <th scope="col">Contact</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% Static::CITIES.each_value do |city| %>
+      <div class="modal-header" style="height: 60px;">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><%= t('.title') %></h4>
+      </div>
+      <div class="modal-body">
+        <table class="table table-striped">
+          <thead>
             <tr>
-              <td><strong><%= city[:city] %></strong></td>
-              <td><%= city[:country] %></td>
-              <td><%= city[:teaching_language] %></td>
-              <td><%= city[:driver] %></td>
-              <td><%= mail_to city[:email], city[:email] %></td>
+              <th scope="col"><%= t('.city') %></th>
+              <th scope="col"><%= t('.country') %></th>
+              <th scope="col"><%= t('.lectures') %></th>
+              <th scope="col"><%= t('.city_manager') %></th>
+              <th scope="col"><%= t('.contact') %></th>
             </tr>
-          <% end %>
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <% Static::CITIES.each_value do |city| %>
+              <tr>
+                <td><strong><%= city[:city] %></strong></td>
+                <td><%= city[:country] %></td>
+                <td><%= city[:teaching_language] %></td>
+                <td><%= city[:driver] %></td>
+                <td><%= mail_to city[:email], city[:email] %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
