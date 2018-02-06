@@ -1,4 +1,5 @@
 class EmployerProspectsController < ApplicationController
+  http_basic_authenticate_with name: ENV['EMPLOYER_PROSPECTS_USERNAME'], password: ENV['EMPLOYER_PROSPECTS_SECRET'], only: :index
 
   def index
     @employers = EmployerProspect.all
