@@ -116,15 +116,15 @@ pt-BR:
       see_all: Mais detalhes.
     modals:
       faq_contacts:
-        title: ""
-        city: ""
-        country: ""
-        lectures: ""
-        city_manager: ""
-        contact: ""
+        title: Entre em contato
+        city: Cidade
+        country: Pais
+        lectures: Aulas
+        city_manager: City manager
+        contact: Contato
       faq_meetups:
-        title: ""
-        description: ""
+        title: Junte-se nosso grupo Meetup !
+        description: Além do nosso programa intensivo, organizamos a noite workshops gratuitos de iniciação, abertos a todos. Vem e aprenda HTML, CSS, JavaScript e muito mais com a gente!
   newsletter:
     teaser: "<p>Fique sabendo dos nossos próximos <strong>eventos</strong>, veja nossos <strong>video-tutoriais</strong> & <strong>posts técnicos</strong> no seu inbox.</p>"
     city_teaser_html: 'Fique sabendo dos nossos próximos <strong>eventos</strong> em %{city}, veja nossos <strong>video-tutoriais</strong> & <strong>posts técnicos</strong> no seu inbox.'
@@ -292,10 +292,10 @@ pt-BR:
       title: Eles falaram do Le Wagon
     faq:
       meta_title: Le Wagon - FAQ
-      meta_description: TBD
-      title: TBD
+      meta_description: Entendemos que você provavelmente tem perguntas sobre o bootcamp. Por isso já tentamos responder por aqui!
+      title: Veja as respostas das dúvidas mais frequentes sobre o bootcamp.
       description_html: |
-        TBD
+        Entendemos que você provavelmente tem perguntas sobre o bootcamp. Por isso já tentamos responder por aqui! Se você quiser nos encontrar na vida real e descobrir mais sobre o que fazemos, favor junte-se a <a href="#"" data-toggle="modal" data-target="#faq-meetups">um dos nossos eventos gratuitos</a> que organizamos no mundo todo ou <a href="#"" data-toggle="modal" data-target="#faq-contacts">nos mande uma mensagem</a>.
     employers:
       title: Rede de contratação Le Wagon - contrate alunos do melhor bootcamp de código da Europa e America Latina
       description: Junte-se a nós como parceiro e receba alertas sobre nossos novos candidatos e eventos.
