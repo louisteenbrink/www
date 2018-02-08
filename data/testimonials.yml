@@ -1,5 +1,9 @@
 routes:
   home:
+    - juliarix
+    - saramannseichner
+    - sev1409
+    - ssavoie4
     - jaredg8
     - claramorgen
     - lexlps
@@ -79,6 +83,10 @@ routes:
     - baptprn
     - knopfler81
   montreal:
+    - juliarix
+    - saramannseichner
+    - sev1409
+    - ssavoie4
     - twentyfivemtl
     - milanbarande
     - gabpoiss
@@ -120,7 +128,76 @@ routes:
     - drea23
     - PerrineMet
     - florentdaubas
+
 testimonials:
+  juliarix:
+    first_name: Julia
+    last_name: Rix
+    city_slug: montreal
+    batch_slug: 98
+    publication_date: 2018-02-01
+    job_before: Healing arts practitioner & teacher
+    project_slug: active-blueprint
+    job_after:
+    new_company:
+    origin: Course report
+    picture: montreal_julia_rix.jpg
+    linkedin_url:
+    content_html: |
+      <p> I recently completed Le Wagon's batch 98 in Montreal. This is the second bootcamp that I have attended. I attended my first bootcamp with a different company in 2015.  When I left the first bootcamp, I was told by the owners/instructors to "just learn Word Press, maybe focus on front end."  To them, my inability to grasp the material without assistance was proof that I wasn't capable of learning backend programming.</p>
+      <p> It took me two years to work up the courage and desire to try again afraid all bootcamps would be like the first.  Le Wagon was the complete opposite.  They cultivate an extremely supportive learning environment. The teachers and administration genuinely care about the happiness and success of their students.  The program is very logically organized and the online tools to support learning outcomes are terrific. Despite the many personal obstacles I faced during the program, I was able to learn the material and develop marked confidence in my skill level.</p>
+      <p> I can't say enough good things about the program. If you are considering Le Wagon, commit. You will not regret it.</p>
+  saramannseichner:
+    first_name: Sara
+    last_name: Mannseichner
+    city_slug: montreal
+    batch_slug: 98
+    publication_date: 2018-02-01
+    job_before: Geomatics Analyst
+    project_slug: sprout
+    job_after: Full-Stack developer
+    new_company:
+    origin: Switchup
+    picture: montreal_sara_mannseichner.jpg
+    linkedin_url: https://www.linkedin.com/in/saramannseichner/
+    content_html: |
+      <p>After working for the government for a few years, I realized it really wasn't what I wanted for a career. After plenty of thought I knew I wanted to join the tech world, more specifically I wanted to become a developer. After countless hours of research, the answer seemed obvious: a coding bootcamp. But which one? I read so many reviews, contacted the coordinators, wrote many pros and cons lists and the solution became quite clear: Le Wagon in Montreal. The second that I contacted MG (the co-founder of Le Wagon Montreal), I knew it was the right fit for me. Throughout the 9 intense weeks, we were continuously supported and encouraged by MG and the rest of the Le Wagon team (even people from far away!). </p>
+      <p>The bootcamp exceeded every expectation I had. The structure of the days was perfect, the pace of learning was great and the teachers/TAs were exceptional. My favorite part was definitely the final project- where we were encouraged to push ourselves to learn and grow both individually and as a team. And it didn't stop after the 9 weeks. I am now a part of a community the spreads worldwide. I have developed friendships and networks that will last a lifetime. </p>
+      <p>I highly recommend Le Wagon to anyone looking for a positive career change. It's definitely not easy, but if you are ready to put in some work I'm sure you will surprise yourself with how much you can learn in 9 weeks! </p>
+  sev1409:
+    first_name: Séverine
+    last_name: Clément
+    city_slug: montreal
+    batch_slug: 98
+    publication_date: 2018-02-01
+    job_before: Business Developer
+    project_slug: wekite
+    job_after:
+    new_company:
+    origin: Course Report
+    picture: montreal_severine_clement.jpg
+    linkedin_url: https://www.linkedin.com/in/severine-clement/
+    content_html: |
+      <p>Le Wagon was an amazing experience, first a human one but also because we left it with so many useful skills for our future. Montreal is a wonderful city where we have rapidly become familiar and comfortable in a very tech neighborhood filled with so many startups and entrepreneurs. It was easier to adapt ourselves to this new language because we were surrounded from day one with incredible teachers, patient and passionate about coding.</p>
+      <p>I recommend this bootcamp for anyone who would like to change their lives because it did change mine, and especially in Montreal. </p>
+  ssavoie4:
+    first_name: Stéphanie
+    last_name: Savoie
+    city_slug: montreal
+    batch_slug: 98
+    publication_date: 2018-02-01
+    job_before: Mechanical Engineer
+    project_slug: sprout
+    job_after: Full-Stack developer
+    new_company: Surmesur
+    origin: Switchup
+    picture: montreal_stephanie_savoie.jpg
+    linkedin_url: https://www.linkedin.com/in/stephsavoie/
+    content_html: |
+      <p>I graduated from Mechanical Engineering and over the last few years have worked for big corporations where things moved slow and innovation was hard to implement. I was sick of jobs I didn't like and working for companies I didn't believe in. Once that realization came about, I started to look at the young and vibrant tech industry as the next logical step. But how do you make that move? How about learning a new technical skill that would help kickstart my career in the tech startup world? That's when I decided to do Le Wagon. What a great decision. I joined batch #98 in Montreal. </p>
+      <p>Le Wagon's program offers you the resource, the structure, the support and the motivation to truly learn a new technical skill in 9 weeks. The last 10 days of the bootcamp is when the magic happens and you get to put it all together to build a prototype of a web-app in small groups. My group and I were proud of what we built and had a blast while building it. </p>
+      <p>But it's not just about the learning experience, you also get to meet amazing new people, from your classmates and teachers to the people you meet along the way at the different events recommended or organized by Le Wagon. This means that you leave the bootcamp with a highly in-demand skill, a great network to lean on and a web-app to showcase to the rest of the world as a proof of your awesome new skill. </p>
+      <p>Le Wagon allowed me to reorient my career in a little over two months, something I wouldn't have been able to do on my own or at least not in such a quick turnaround. If you are reading this review, you are already on the right path... All you have to do is apply and get ready for a 9-week roller coaster like no other. </p>
   jaredg8:
     first_name: Jared
     last_name: Guyer
