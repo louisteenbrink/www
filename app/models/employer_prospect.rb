@@ -22,8 +22,15 @@ class EmployerProspect < ApplicationRecord
   validates :email, format: /\A([\w+\-].?)+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
   validates :website, format: /\A(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?\z/
 
+  before_validation :sanitize_url
+
   def full_name
     "#{first_name.capitalize} #{last_name.capitalize}"
+  end
+
+  def sanitize_url
+    url.strip!
+    url = "http://" + url unless url.start_with?("http", "https")
   end
 
 end

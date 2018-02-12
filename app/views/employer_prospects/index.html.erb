@@ -1,0 +1,52 @@
+<div id="employer_prospects_index">
+  <div class="container">
+    <header class="employer-prospect-header">
+      <h2 class="text-center">Employer Prospects</h2>
+      <div class="employer-index-filter text-center">
+        <%= form_tag "/employer_prospects", method: "get", class: "form-inline" do %>
+          <div class="form-group">
+            <%= label_tag :city, "Filter by location:" %>
+            <%= select_tag :city, options_for_select(@cities.map {|city| [city.name, city.slug]}, params[:city]), prompt: "All cities", class: "form-control" %>
+          </div>
+          <%= submit_tag "Search", class: "btn btn-default" %>
+        <% end %>
+      </div>
+    </header>
+    <div class="row">
+      <% @employers.each do |employer| %>
+        <div class="col-xs-12">
+          <div class="panel panel-primary employer-card">
+            <div class="panel-heading"><%= employer.company %></div>
+            <div class="panel-body employer-card-body">
+              <div class="employer-card-details">
+                <ul class="list-unstyled">
+                  <li><strong>First Name:</strong> <span class="employer-data"><%= employer.first_name %></span> </li>
+                  <li><strong>Last Name:</strong> <span class="employer-data"><%= employer.last_name %></span> </li>
+                  <li><strong>Email:</strong> <span class="employer-data"><%= mail_to employer.email, employer.email, target: "_blank" %></span> </li>
+                  <li><strong>Phone number:</strong> <span class="employer-data"><%= employer.phone_number %></span> </li>
+                  <li><strong>Website:</strong> <span class="employer-data"><%= link_to employer.website, employer.website, target: "_blank" %></span> </li>
+                </ul>
+              </div>
+              <div class="employer-card-message">
+                <p>
+                  <span><strong>Message:</strong></span>
+                  <span class="employer-data"><%= employer.message %></span>
+                </p>
+              </div>
+            </div>
+            <div class="panel-footer">
+              <ul class="list-unstyled">
+                <li><strong>Targets:</strong> <span class="employer-data"><%= employer.targets.join(", ") %></span> </li>
+                <li><strong>Locations:</strong>
+                    <% employer.locations.each do |location| %>
+                      <span class="label label-primary"><%= location %></span>
+                    <% end %>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

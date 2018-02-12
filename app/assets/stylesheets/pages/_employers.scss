@@ -206,3 +206,41 @@ $scale: 1.07;
     }
   }
 }
+
+
+.employer-table-list {
+  li {
+    margin-bottom: 3px;
+  }
+}
+
+.table-employer {
+  font-size: 14px;
+}
+
+.employer-card-body {
+  display: flex;
+}
+
+.employer-card-details {
+  flex: 40%;
+}
+
+.employer-card-message {
+  flex: 60%;
+  overflow: auto;
+  height: 125px;
+}
+
+#employer_prospects_index {
+  min-height: 100vh;
+  background: #F4F4F4;
+}
+
+.employer-prospect-header {
+  h2 {
+    margin-bottom: 20px;
+  }
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

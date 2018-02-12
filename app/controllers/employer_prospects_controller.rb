@@ -1,4 +1,13 @@
 class EmployerProspectsController < ApplicationController
+  http_basic_authenticate_with name: ENV['EMPLOYER_PROSPECTS_USERNAME'], password: ENV['EMPLOYER_PROSPECTS_SECRET'], only: :index
+  layout 'back_office'
+  def index
+    if params[:city] && params[:city] != ''
+      @employers = EmployerProspect.where("? = ANY (locations)", params[:city])
+    else
+      @employers = EmployerProspect.all
+    end
+  end
 
   def create
     @employer = EmployerProspect.new(employer_prospect_params)
