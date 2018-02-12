@@ -29,8 +29,9 @@ class EmployerProspect < ApplicationRecord
   end
 
   def sanitize_url
-    url.strip!
-    url = "http://" + url unless url.start_with?("http", "https")
+    if website && !website.start_with?("http", "https")
+      self.website = "https://" + self.website
+    end
   end
 
 end

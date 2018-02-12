@@ -64,4 +64,12 @@ RSpec.describe EmployerProspect, type: :model do
       expect(employer.full_name).to eq("George Abitbol")
     end
   end
+
+  describe "#sanitize_url" do
+    it 'add http:// before the url if it is missing' do
+      employer.website = "lewagon.com"
+      employer.save
+      expect(employer.website).to eq("https://lewagon.com")
+    end
+  end
 end
