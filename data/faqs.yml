@@ -346,6 +346,10 @@ en:
     answer: |
         We usually open applications 4 to 5 months in advance. Feel free to reach out to the local city manager. She/He will gladly answer all of your questions and contact you as soon as we open the applications for the upcoming batch.
   - question: |
+        I don't have any technical background, is it the right program for me?
+    answer: |
+        Of course. We expect 3 things from our students: be motivated (very motivated), be curious, be social. That's it!
+  - question: |
         Is there a typical profile for a Le Wagon student?
     answer: |
         Absolutely not. Our alumni are between 18 and 55, they all share the same curiosity and enthusiasm for coding. They all come from various background: studying, marketing, engineering, sales, lawyers, journalists, architects, musicians... Spending 9 weeks at Le Wagon is not only an incredible human experience, it also helps you build an astonishing network for your after-bootcamp life!
