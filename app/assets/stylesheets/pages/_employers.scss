@@ -218,45 +218,28 @@ $scale: 1.07;
   font-size: 14px;
 }
 
-.employer-card {
-  background: white;
-  border-radius: 3px;
-  box-shadow: 1px 1px 3px #E7E5E5;
-  margin: 5px 0;
-  padding: 5px 10px;
+.employer-card-body {
   display: flex;
-  flex-wrap: wrap;
-  strong {
-    color: #A9A9A9
-  }
-  ul {
-    margin-bottom: 0;
-  }
-  .employer-card-details {
-    @media (min-width: 768px) {
-      flex: 30%;
-    }
-    display: flex;
-  }
-  .employer-card-targets {
-    @media (min-width: 768px) {
-      flex: 30%;
-    }
-    display: flex;
-  }
-  .employer-card-message {
-    height: 150px;
-    @media (min-width: 768px) {
-      flex: 40%;
-    }
-    overflow: auto;
-  }
+}
 
-  .employer-data {
-    color: #555555;
-  }
+.employer-card-details {
+  flex: 40%;
+}
+
+.employer-card-message {
+  flex: 60%;
+  overflow: auto;
+  height: 125px;
 }
 
 #employer_prospects_index {
   background: #F4F4F4;
+}
+
+.employer-prospect-header {
+  h2 {
+    margin-bottom: 20px;
+  }
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
