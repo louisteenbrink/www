@@ -3,9 +3,9 @@ class EmployerProspectsController < ApplicationController
   layout 'back_office'
   def index
     if params[:city] && params[:city] != ''
-      @employers = EmployerProspect.where("? = ANY (locations)", params[:city])
+      @employers = EmployerProspect.where("? = ANY (locations)", params[:city]).order(created_at: :desc)
     else
-      @employers = EmployerProspect.all
+      @employers = EmployerProspect.order(created_at: :desc)
     end
   end
 
