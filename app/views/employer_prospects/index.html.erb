@@ -16,7 +16,10 @@
       <% @employers.each do |employer| %>
         <div class="col-xs-12">
           <div class="panel panel-primary employer-card">
-            <div class="panel-heading"><%= employer.company %></div>
+            <div class="panel-heading employer-card-header">
+              <h3 class="panel-title"><%= employer.company %></h3>
+              <span><%= employer.created_at.strftime("%Y/%m/%d") %></span>
+              </div>
             <div class="panel-body employer-card-body">
               <div class="employer-card-details">
                 <ul class="list-unstyled">
