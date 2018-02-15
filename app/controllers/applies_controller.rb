@@ -77,7 +77,7 @@ class AppliesController < ApplicationController
     @application = Apply.new(application_params)
     @application.motivation = "HEC CANDIDATE\n\n#{@application.motivation}"
     @application.batch_id = 153 # HEC - Paris - Janvier 2018
-    @application.city_id = 1    # Paris
+    @application.city_id = 19   # Paris
     # @application.validate_ruby_codecademy_completed = true
     @application.skip_source_validation = true # No referrer
 
@@ -102,8 +102,8 @@ class AppliesController < ApplicationController
     I18n.locale = :fr
     @application = Apply.new(application_params)
     @application.motivation = "EDHEC CANDIDATE\n\n#{@application.motivation}"
-    @application.batch_id = ?? # EDHEC - Lille Septembre 2018
-    @application.city_id = ??    # Lille
+    @application.batch_id = 236 # EDHEC - Lille Septembre 2018
+    @application.city_id = 17   # Lille
     # @application.validate_ruby_codecademy_completed = true
     @application.skip_source_validation = true # No referrer
 
