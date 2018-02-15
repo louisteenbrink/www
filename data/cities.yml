@@ -445,23 +445,6 @@ sydney:
   twitter: "lewagonsyd"
   instagram: "lewagonsydney"
 
-tel-aviv:
-  city: "Tel Aviv"
-  driver: "Rabea 🙋‍♂️"
-  country: "Israel 🇮🇱"
-  teaching_language: "English 🇬🇧"
-  email: "tel-aviv@lewagon.com"
-  marketing_automation:
-    enabled: false
-    locale: en
-  meetup_host:
-    name: "Rabea"
-    picture: "https://avatars2.githubusercontent.com/u/4717260?v=4"
-  meetup_url: ""
-  facebook: ""
-  twitter: ""
-  instagram: ""
-
 tokyo:
   city: "Tokyo"
   driver: "Paul 🙋‍♂️"
