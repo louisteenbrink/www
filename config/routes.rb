@@ -81,6 +81,9 @@ Rails.application.routes.draw do
   get "hec", to: 'applies#new_hec', as: :new_hec_apply
   post "hec", to: 'applies#create_hec', as: :hec_apply, locale: :fr
 
+  get "edhec", to: 'applies#new_edhec', as: :new_edhec_apply
+  post "edhec", to: 'applies#create_edhec', as: :edhec_apply, locale: :fr
+
   scope "(:locale)", locale: /fr|pt-BR|zh-CN|es|ja/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq

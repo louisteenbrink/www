@@ -1,0 +1,62 @@
+<%= content_for(:title) { "Le Wagon EDHEC - Postuler"} %>
+<%= content_for(:headers) do %>
+  <meta name="robots" content="noindex">
+<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 hec">
+      <% if @application.errors.any? %>
+        <div class="errors">
+          Désolé, votre candidature n'a pu être prise en compte. Merci de jeter un oeil au formulaire ci-dessous.
+        </div>
+      <% else %>
+
+        <div class="intro">
+          <p>
+            <strong>EDHEC et Le Wagon Lille</strong> proposent en exclusivité aux étudiants du MSc in Data Analytics & Digital Business de participer au programme <i>Developpeur Fullstack</i>.
+            Ce bootcamp se déroulera dans les locaux du Wagon Lille, 2 avenue des Saules à Lille (juste en face d'Euratechnologies). La formation se déroulera du 10 Septembre au 09 Novembre 2018.
+          </p>
+
+          <p><strong>Processus de recrutement</strong>
+            <ul>
+              <li>Entretien de motivation</li>
+              <li>Test en ligne (cf le paragraphe ci-dessous)</li>
+            </ul>
+          </p>
+
+          <p>
+            Votre <em>username</em> <a href="https://www.codecademy.com/">CodeCademy</a> est demandé ci-dessous dans le formulaire, pour le récupérer,
+            <a href="https://www.codecademy.com/profiles/me" target="_blank">cliquez ici</a> et regardez l'URL vers laquelle vous êtes redirigé(e)s. Un pré-requis est de terminer 100% du tutoriel Ruby avant de démarrer la formation.
+          </p>
+        </div>
+
+        <!-- <div class="intro">
+          Les inscriptions à la track FullStack Le Wagon/HEC sont maintenant clôturées pour l'année 2017/2018.
+        </div> -->
+      <% end %>
+
+      <%= react_component 'EdhecApplyForm', {
+        token: form_authenticity_token,
+        apply_path: edhec_apply_path,
+        locale: I18n.locale,
+        banner: image_path("officials/pair-programming.jpg"),
+        price: "1500 € (le reste est pris en charge par Edhec)",
+        i18n: {
+          please_wait: t("applies.new.please_wait"),
+          price: t('applies.new.price')
+        },
+        rows: [
+          apply_row(:first_name, true, :text, t("applies.new.first_name"), "Alan", "account", 1),
+          apply_row(:last_name, true, :text, t("applies.new.last_name"), "Turing", "format-text", 2),
+          apply_row(:codecademy_username, false, :text, t("applies.new.codecademy_username"), "alan_turing", "format-text", 3),
+          apply_row(:age, true, :text, "Age", "42", "crown", 4),
+          apply_row(:email, true, :email, "Email", "alan@turing.com", "email-open", 5),
+          apply_row(:phone, true, :tel, t("applies.new.phone"), "+33612345678", "cellphone-iphone", 6),
+          apply_row(:motivation, true, :textarea, "Motivation", t("applies.new.motivation"), "content-paste", 7)
+        ]
+      }, prerender: prerender? %>
+    </div>
+  </div>
+</div>
+
