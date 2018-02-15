@@ -46,6 +46,13 @@
   <% else %>
     <%= stylesheet_link_tag("application") %>
   <% end %>
+
+  <% if I18n.locale.to_sym == :he %>
+    <style>
+      body { direction: rtl; }
+      .navbar-wagon { direction: ltr; }
+    </style>
+  <% end %>
 </head>
 <body class="<%= "#{params[:controller]}-#{params[:action]}" %>">
   <%# render "shared/ondemand" if I18n.locale == :fr %>

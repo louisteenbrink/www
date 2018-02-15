@@ -44,7 +44,7 @@ Rails.application.routes.draw do
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
 
-  react_exceptions = ["pt-BR", "zh-CN", "es", "ja"]
+  react_exceptions = ["pt-BR", "zh-CN", "es", "ja", "he"]
   react_exceptions.each do | exception |
     get "#{exception.to_s}/react", to: redirect("/react")
   end
@@ -72,6 +72,7 @@ Rails.application.routes.draw do
     get "postularse/(:city)" => "applies#new", locale: :es, as: :apply_es
     get "申请/(:city)" => "applies#new", locale: :"zh-CN", as: :apply_zh_cn
     get "アプライ/(:city)" => "applies#new", locale: :ja, as: :apply_ja
+    get "להגיש מועמדות/(:city)" => "applies#new", locale: :he, as: :apply_he
     post "apply/(:city)" => "applies#create", as: :apply
     post "apply/validate" => "applies#validate", as: :validate_apply
   end
@@ -84,7 +85,7 @@ Rails.application.routes.draw do
   get "edhec", to: 'applies#new_edhec', as: :new_edhec_apply
   post "edhec", to: 'applies#create_edhec', as: :edhec_apply, locale: :fr
 
-  scope "(:locale)", locale: /fr|pt-BR|zh-CN|es|ja/ do
+  scope "(:locale)", locale: /fr|pt-BR|zh-CN|es|ja|he/ do
     root to: "pages#home"
     get "faq", to: "pages#show", template: "faq", as: :faq
     get "jobs", to: "pages#show", template: "jobs", as: :jobs
