@@ -9,9 +9,11 @@
         <p><%= t('.description') %></p>
         <ul>
           <% Static::CITIES.each_value do |city| %>
-            <li>
-              <%=link_to city[:city], "https://www.meetup.com/#{city[:meetup_url]}", target: '_blank' %>
-            </li>
+            <% unless city[:meetup_url].blank? %>
+              <li>
+                <%=link_to city[:city], "https://www.meetup.com/#{city[:meetup_url]}", target: '_blank' %>
+              </li>
+            <% end %>
           <% end %>
         </ul>
       </div>
