@@ -132,7 +132,7 @@
           <%= render "shared/logos/edhec" %>
         </div>
 
-      <% else @live %>
+      <% elsif @live %>
         <%= link_to live_path, class: 'live-on' do %>
           <i class="dot fa fa-circle fa-pulse"></i> LIVE
         <% end %>
