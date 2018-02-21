@@ -83,11 +83,7 @@ class PagesController < ApplicationController
   end
 
   def react
-    if I18n.locale == :fr
-      @typeform_slug = "T0mrph"
-    else
-      @typeform_slug = "CJKtlE"
-    end
+    return render_404
   end
 
   def vae
