@@ -34,7 +34,7 @@
                 <% @city_groups.each do |city_group| %>
                   <ul class="list-unstyled">
                     <li class="title">
-                      <%= city_group[:group].upcase %>
+                      <%= city_group[:group].html_safe %>
                       <%= city_group[:flag_svg].html_safe %>
                     </li>
                     <% city_group[:cities].each do |city| %>

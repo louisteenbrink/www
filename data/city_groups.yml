@@ -1,4 +1,4 @@
-- group: France
+- group: FRANCE
   flag_svg: |
     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 56 40" enable-background="new 0 0 56 40" xml:space="preserve">
@@ -15,7 +15,7 @@
     - lyon
     - marseille
     - nantes
-- group: Europe & Africa
+- group: <span title="Europe Middle-East & Africa" data-toggle="tooltip">EMEA <i class="fa fa-info-circle"></i></span>
   flag_svg: ""
   city_slugs:
     - london
@@ -28,7 +28,8 @@
     - budapest
     - milan
     - casablanca
-- group: America
+    - tel-aviv
+- group: AMERICA
   flag_svg: ""
   city_slugs:
     - montreal
@@ -37,7 +38,7 @@
     - rio
     - belo-horizonte
     - buenos-aires
-- group: Asia Pacific
+- group: ASIA PACIFIC
   flag_svg: ""
   city_slugs:
     - shanghai

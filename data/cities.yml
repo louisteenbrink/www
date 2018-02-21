@@ -160,6 +160,19 @@ casablanca:
   twitter: ""
   instagram: ""
 
+tel-aviv:
+  city: "Tel-Aviv"
+  driver: "Rabea 🙋‍♂️"
+  country: "Israël 🇮🇱"
+  teaching_language: "English 🇬🇧"
+  email: "tel-aviv@lewagon.com"
+  marketing_automation:
+    enabled: false
+  meetup_url: ""
+  facebook: ""
+  twitter: ""
+  instagram: ""
+
 chengdu:
   city: "Chengdu"
   driver: "Allen 🙋‍♂️"
