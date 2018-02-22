@@ -117,23 +117,6 @@ brussels:
   twitter: "lewagonbrussels"
   instagram: "lewagonbenelux"
 
-budapest:
-  city: "Budapest"
-  driver: "Gergo 🙋‍♂️"
-  country: "Hungaria 🇭🇺"
-  teaching_language: "English 🇬🇧"
-  email: "budapest@lewagon.com"
-  marketing_automation:
-    enabled: true
-    locale: en
-  meetup_host:
-    name: "Zoltan"
-    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1484565424/is6lkmyihxbcol4o0uld.jpg"
-  meetup_url: "Le-Wagon-Budapest-Coding-School"
-  facebook: "lewagonbudapest"
-  twitter: "lewagonbudapest"
-  instagram: "lewagonbudapest"
-
 buenos-aires:
   city: "Buenos Aires"
   driver: "Sebastian 🙋‍♂️"
