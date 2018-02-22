@@ -20,11 +20,6 @@ belo-horizonte:
     name: Yan Magalhães
     role: Lead Teacher
     avatar: belo_horizonte_yan_magalhaes.jpg
-budapest:
-  - github_nickname: angyalg
-    name: Gergo Angyal
-    role: Driver
-    avatar: budapest_gergo_angyal.jpg
 milan:
   - github_nickname: fra0074
     name: Francesco Ecclesie
