@@ -80,6 +80,19 @@ paris:
     name: Tatiana Perillo
     role: Head of Talent
     avatar: paris_tatiana_perillo.jpg
+shanghai:
+  - name: Claire Chen
+    role: Community
+    avatar: shanghai_claire_chen.jpg
+  - name: Tim Wu
+    role: Content
+    avatar: shanghai_tim_wu.jpg
+  - name: Marc Bacani
+    role: Camp manager
+    avatar: shanghai_marc_bacani.jpg
+  - name: Nikki Wong
+    role: Yoga instructor
+    avatar: shanghai_nikki_wong.jpg
 tokyo:
   - github_nickname: paulgaumer
     name: Paul Gaumer
