@@ -106,15 +106,15 @@ zh-CN:
       see_all: 更多细节。
     modals:
       faq_contacts:
-        title: "TBD"
-        city: "TBD"
-        country: "TBD"
-        lectures: "TBD"
-        city_manager: "TBD"
-        contact: "TBD"
+        title: 联系我们
+        city: 城市
+        country: 国家
+        lectures: 讲座
+        city_manager: 城市负责人
+        contact: 联系信息
       faq_meetups:
-        title: "TBD"
-        description: "TBD"
+        title: 在Meetup上关注我们!
+        description: 除了编程训练营之外，我们每周都会在晚上组织免费的工作坊，面向所有人开放。欢迎来和我们一起学习HTML, CSS, JavaScript等更多技能!
   newsletter:
     teaser: "<p>邮件接受我们下一次的<strong>活动</strong>通知，<strong>教学视频</strong> & <strong>博客技术贴</strong>。</p>"
     city_teaser_html: '邮件接受我们下一次在%{city}<strong>活动</strong> 的通知，<strong>教学视频</strong> & <strong>博客技术贴</strong>。'
@@ -288,11 +288,11 @@ zh-CN:
     press:
       title: 他们是如何评价Le Wagon的
     faq:
-      meta_title: Le Wagon - FAQ
-      meta_description: TBD
-      title: TBD
+      meta_title: Le Wagon - 常见问题解答
+      meta_description: 我们知道你可能对我们的项目有想问的问题，所以我们已经为你准备了一些常见问题的解答！
+      title: 这里是一些常见问题的解答
       description_html: |
-        TBD
+        我们知道你可能对我们的项目有疑问，所以我们已经为你准备了一些常见问题的解答！如果你想当面了解我们所做的事，请参加我们在<a href="#" data-toggle="modal" data-target="#faq-meetups">全球各地举办的众多免费活动</a>或向我们<a href="#" data-toggle="modal" data-target="#faq-contacts">发送消息咨询</a>。
     employers:
       title: Le Wagon的招聘网络 - 雇佣欧洲最棒的编程训练营的校友
       description: 加入我们的招聘网络，接收关于最新人才以及招聘活动的通知。

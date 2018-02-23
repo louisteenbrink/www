@@ -117,23 +117,6 @@ brussels:
   twitter: "lewagonbrussels"
   instagram: "lewagonbenelux"
 
-budapest:
-  city: "Budapest"
-  driver: "Gergo 🙋‍♂️"
-  country: "Hungaria 🇭🇺"
-  teaching_language: "English 🇬🇧"
-  email: "budapest@lewagon.com"
-  marketing_automation:
-    enabled: true
-    locale: en
-  meetup_host:
-    name: "Zoltan"
-    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1484565424/is6lkmyihxbcol4o0uld.jpg"
-  meetup_url: "Le-Wagon-Budapest-Coding-School"
-  facebook: "lewagonbudapest"
-  twitter: "lewagonbudapest"
-  instagram: "lewagonbudapest"
-
 buenos-aires:
   city: "Buenos Aires"
   driver: "Sebastian 🙋‍♂️"
@@ -160,24 +143,11 @@ casablanca:
   twitter: ""
   instagram: ""
 
-tel-aviv:
-  city: "Tel-Aviv"
-  driver: "Rabea 🙋‍♂️"
-  country: "Israël 🇮🇱"
-  teaching_language: "English 🇬🇧"
-  email: "tel-aviv@lewagon.com"
-  marketing_automation:
-    enabled: false
-  meetup_url: ""
-  facebook: ""
-  twitter: ""
-  instagram: ""
-
 chengdu:
   city: "Chengdu"
   driver: "Allen 🙋‍♂️"
   country: "China 🇨🇳"
-  teaching_language: "Chinese"
+  teaching_language: "English 🇬🇧"
   email: "chengdu@lewagon.com"
   marketing_automation:
     enabled: true
@@ -429,7 +399,7 @@ shanghai:
   driver: "Thibault 🙋‍♂️"
   country: "China 🇨🇳"
   teaching_language: "English 🇬🇧"
-  email: "@lewagon.com"
+  email: "shanghai@lewagon.com"
   marketing_automation:
     enabled: true
     locale: en
@@ -457,6 +427,19 @@ sydney:
   facebook: "lewagonaustralia"
   twitter: "lewagonsyd"
   instagram: "lewagonsydney"
+
+tel-aviv:
+  city: "Tel-Aviv"
+  driver: "Rabea 🙋‍♂️"
+  country: "Israël 🇮🇱"
+  teaching_language: "English 🇬🇧"
+  email: "tel-aviv@lewagon.com"
+  marketing_automation:
+    enabled: false
+  meetup_url: ""
+  facebook: ""
+  twitter: ""
+  instagram: ""
 
 tokyo:
   city: "Tokyo"
