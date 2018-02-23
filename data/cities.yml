@@ -143,24 +143,11 @@ casablanca:
   twitter: ""
   instagram: ""
 
-tel-aviv:
-  city: "Tel-Aviv"
-  driver: "Rabea 🙋‍♂️"
-  country: "Israël 🇮🇱"
-  teaching_language: "English 🇬🇧"
-  email: "tel-aviv@lewagon.com"
-  marketing_automation:
-    enabled: false
-  meetup_url: ""
-  facebook: ""
-  twitter: ""
-  instagram: ""
-
 chengdu:
   city: "Chengdu"
   driver: "Allen 🙋‍♂️"
   country: "China 🇨🇳"
-  teaching_language: "Chinese"
+  teaching_language: "English 🇬🇧"
   email: "chengdu@lewagon.com"
   marketing_automation:
     enabled: true
@@ -412,7 +399,7 @@ shanghai:
   driver: "Thibault 🙋‍♂️"
   country: "China 🇨🇳"
   teaching_language: "English 🇬🇧"
-  email: "@lewagon.com"
+  email: "shanghai@lewagon.com"
   marketing_automation:
     enabled: true
     locale: en
@@ -440,6 +427,19 @@ sydney:
   facebook: "lewagonaustralia"
   twitter: "lewagonsyd"
   instagram: "lewagonsydney"
+
+tel-aviv:
+  city: "Tel-Aviv"
+  driver: "Rabea 🙋‍♂️"
+  country: "Israël 🇮🇱"
+  teaching_language: "English 🇬🇧"
+  email: "tel-aviv@lewagon.com"
+  marketing_automation:
+    enabled: false
+  meetup_url: ""
+  facebook: ""
+  twitter: ""
+  instagram: ""
 
 tokyo:
   city: "Tokyo"
