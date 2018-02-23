@@ -43,7 +43,9 @@ class PlayerProductDetails extends React.Component {
         <div className="product-details">
           <ul className="product-team">
             { makers.map(function(maker, index){
-              return <PlayerProductMaker key={index} maker={maker}/>
+              if (maker.hide_public_profile === false) {
+                return <PlayerProductMaker key={index} maker={maker}/>
+              }
             })
           }
           </ul>

@@ -29,6 +29,7 @@ module Product
           id
           name
           official_avatar_url
+          hide_public_profile
         }
       }
     }
