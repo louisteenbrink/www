@@ -25,7 +25,6 @@ class StudentsController < ApplicationController
 
     if request.format.html?
       @statistics = Kitt::Client.query(Statistics::Query).data.statistics
-      @reviews = ReviewsCounter.new.review_count
     end
   end
 end

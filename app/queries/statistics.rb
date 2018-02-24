@@ -4,6 +4,7 @@ module Statistics
       statistics {
         batch_count
         alumni_count
+        review_count
       }
     }
   GRAPHQL

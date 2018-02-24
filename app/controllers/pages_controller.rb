@@ -28,7 +28,7 @@ class PagesController < ApplicationController
       session[:city] = 'sao-paulo'
     end
 
-    @reviews = ReviewsCounter.new.review_count
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
 
     if request.format.html? || params[:testimonial_page]
       @testimonials = Testimonial.where(route: Testimonial::DEFAULT_ROUTE)
