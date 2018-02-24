@@ -42,24 +42,29 @@
             </div>
           </div>
           <%
-            items = [
-              {
+            i = 2
+            items = []
+            unless @meetup_url.blank?
+              items << {
                 label: t('.second_step', name: @apply.city.name),
                 href: @meetup_url,
-                index: 2
-              },
-              {
+                index: i
+              }
+              i += 1
+            end
+            unless @apply.city.twitter_url.blank?
+              items << {
                 label: t('.third_step'),
                 href: @apply.city.twitter_url,
-                index: 3
-
+                index: i
               }
-            ]
+              i += 1
+            end
             unless @apply.codecademy_progress.to_i >= 100
               items << {
                 label: t('.fourth_step'),
                 href: 'https://www.codecademy.com/en/learn/learn-ruby',
-                index: 4
+                index: i
               }
             end
           %>

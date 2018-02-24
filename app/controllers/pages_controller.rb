@@ -52,7 +52,8 @@ class PagesController < ApplicationController
       @apply = Apply.find(session[:apply_id])
       @city = @apply.city
       @batch = @apply.batch
-      @meetup_url = MeetupApiClient.new(@apply.city.meetup_id).meetup['link']
+      meetup = MeetupApiClient.new(@apply.city.meetup_id).meetup
+      @meetup_url = meetup['link'] if meetup
     end
   end
 
