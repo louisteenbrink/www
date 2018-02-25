@@ -17,7 +17,7 @@
 <div class="testimonials-services">
   <h2 class="section-title-home" style="font-size:30px;">
     <div class="section-title-home-content" style="background-color: white;">
-      <%= t(".love_messages_html", reviews: @reviews) %>
+      <%= t ".love_messages_html", reviews: @statistics ? (@statistics.review_count / 5 * 5) : 700 %>
     </div>
   </h2>
   <div class="services-logos">

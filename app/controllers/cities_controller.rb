@@ -22,7 +22,7 @@ class CitiesController < ApplicationController
       return
     end
 
-    @reviews = ReviewsCounter.new.review_count
+    @statistics = Kitt::Client.query(Statistics::Query).data.statistics
 
     if request.format.html? || params[:testimonial_page]
       @testimonials = Testimonial.where(route: city_slug)
