@@ -1,3 +1,27 @@
+- name: "Education is one Wagon behing innovation: Le Wagon's coding school now open to Aussies"
+  url: "http://www.dynamicbusiness.com.au/start-up-entrepreneur/education-is-one-wagon-behind-innovation-le-wagons-coding-school-now-open-to-aussies.html"
+  media: "Dynamic | Business"
+  logo: logo-dynamic.jpg
+  date: 2018-02-26
+
+- name: "Moroccan woman sets out to drive a digital revolution"
+  url: "https://thearabweekly.com/moroccan-woman-sets-out-drive-digital-revolution"
+  media: "The Arab Weekly"
+  logo: logo-thearabweekly.jpg
+  date: 2018-02-25
+
+- name: "Comment répondre aux besoins des formations au numérique en France ?"
+  url: "http://bfmbusiness.bfmtv.com/mediaplayer/video/comment-repondre-aux-besoins-des-formations-au-numerique-en-france-2402-1040001.html"
+  media: "BFM Business"
+  logo: logo-bfm.jpg
+  date: 2018-02-24
+
+- name: "Le Wagon circles down under"
+  url: "https://www.theaustralian.com.au/business/technology/le-wagon-circles-down-under/news-story/d4068b0a71b8ff1fb25e20e06a6a0b83"
+  media: "The Australian Business Review"
+  logo: logo-theaustralian.png
+  date: 2018-02-26
+
 - name: "Pas d’âge pour apprendre à coder"
   url: "https://www.welcometothejungle.co/articles/apprendre-coder-programmer-senior"
   media: "Welecome to the Jungle"

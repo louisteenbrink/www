@@ -1,11 +1,12 @@
 class Position
-  attr_reader :title, :github_nickname
+  attr_reader :title, :linkedin, :github_nickname
   delegate :name, :official_avatar_url, :camp, to: :user
   delegate :city, to: :camp
 
   def initialize(github_nickname, hash)
     @github_nickname = github_nickname
     @title = hash['title']
+    @linkedin = hash['linkedin']
     @company_slug = hash['company_slug']
   end
 
