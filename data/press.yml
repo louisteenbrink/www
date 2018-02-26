@@ -1,3 +1,15 @@
+- name: "Moroccan woman sets out to drive a digital revolution"
+  url: "https://thearabweekly.com/moroccan-woman-sets-out-drive-digital-revolution"
+  media: "The Arab Weekly"
+  logo: logo-thearabweekly.jpg
+  date: 2018-02-25
+
+- name: "Comment répondre aux besoins des formations au numérique en France ?"
+  url: "http://bfmbusiness.bfmtv.com/mediaplayer/video/comment-repondre-aux-besoins-des-formations-au-numerique-en-france-2402-1040001.html"
+  media: "BFM Business"
+  logo: logo-bfm.jpg
+  date: 2018-02-24
+
 - name: "Pas d’âge pour apprendre à coder"
   url: "https://www.welcometothejungle.co/articles/apprendre-coder-programmer-senior"
   media: "Welecome to the Jungle"
