@@ -1,4 +1,4 @@
-- group: FRANCE
+- group: France
   flag_svg: |
     <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
     viewBox="0 0 56 40" enable-background="new 0 0 56 40" xml:space="preserve">
@@ -30,7 +30,7 @@
     - copenhagen
     - lisbon
     - milan
-- group: ASIA PACIFIC
+- group: Asia Pacific
   flag_svg: ""
   city_slugs:
     - sydney
@@ -39,7 +39,7 @@
     - chengdu
     - shanghai
     - tokyo
-- group: AMERICA
+- group: Americas
   flag_svg: ""
   city_slugs:
     - montreal
