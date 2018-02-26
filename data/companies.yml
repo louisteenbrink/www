@@ -4,12 +4,99 @@
 lewagon:
   name: "Le Wagon"
   url: https://www.lewagon.com
+blablacar:
+  name: Blablacar
+  url: https://www.blablacar.fr/
+hostnfly:
+  name: HostnFly
+  url: https://www.hostnfly.com/
+dartagnans:
+  name: Dartagnans
+  url: https://dartagnans.fr/
+fidzup:
+  name: Fidzup
+  url: http://www.fidzup.com/
+monbanquet:
+  name: Monbanquet
+  url: https://www.monbanquet.fr/
+lydia:
+  name: Lydia
+  url: https://lydia-app.com/
+jobteaser:
+  name: Jobteaser
+  url: https://www.jobteaser.com/fr
+comet:
+  name: Comet
+  url: https://www.hellocomet.co/
+microsoft:
+  name: Microsoft
+  url: https://www.microsoft.com/
 stripe:
   name: Stripe
   url: https://stripe.com
 algolia:
   name: Algolia
   url: https://www.algolia.com
+papernest:
+  name: Papernest
+  url: https://www.papernest.com/
+tanker:
+  name: Tanker
+  url: https://tanker.io/
+adyen:
+  name: Adyen
+  url: https://www.adyen.com/fr_FR/
+lifen:
+  name: Lifen
+  url: https://www.lifen.fr/
+stootie:
+  name: Stootie
+  url: https://stootie.com/
+toucantoco:
+  name: Toucan Toco
+  url: https://toucantoco.com/fr/
+frichti:
+  name: Frichti
+  url: https://www.frichti.co/
+mangopay:
+  name: Mangopay
+  url: https://www.mangopay.com/
+lecollectionist:
+  name: Le Collectionist
+  url: https://www.lecollectionist.com/en
+amazonwebservices:
+  name: Amazon Web Services
+  url: https://aws.amazon.com/
+trainline:
+  name: Trainline
+  url: https://www.trainline.eu/
+opendatasoft:
+  name: OpenDataSoft
+  url: https://www.opendatasoft.com/
+envoituresimone:
+  name: En Voiture Simone
+  url: https://www.envoituresimone.com/
+adikteev:
+  name: Adikteev
+  url: https://www.adikteev.com/
+paypal:
+  name: Paypal
+  url: https://www.paypal.com/
+malt:
+  name: Malt
+  url: https://www.malt.fr/
+partoo:
+  name: Partoo
+  url: https://www.partoo.fr/
+cleany:
+  name: Cleany
+  url: https://www.cleany.fr/
+fiftyfive:
+  name: Fifty-five
+  url: http://www.fifty-five.com/
+bookingcom:
+  name: Booking.com
+  url: https://www.booking.com/
 compass:
   name: Compass
   url: https://www.compass.co
