@@ -1,6 +1,4 @@
 default:
-  - oliviergodement
-  - JeanEdern
   - valentinmenard
   - jaimethibault
   - Jo75020
@@ -34,10 +32,10 @@ default:
   - CharlesDLC
   - yharraj1
   - diogopers
-  - louispinot
   - NoryDev
   - camilledel
   - Michael3434
+  - tdeschamps
   - LinSN
   - zonblar
   - thomasjoet
@@ -52,16 +50,9 @@ default:
   - Emerichenon
   - Louisrbrt
   - hugovandernotte
+  - gregcha
 
 positions:
-  oliviergodement:
-    title: Country Operations
-    company_slug: stripe
-    linkedin: https://www.linkedin.com/in/oliviergodement/
-  JeanEdern:
-    title: Business Development
-    company_slug: algolia
-    linkedin: https://www.linkedin.com/in/jeanedernlorillon/
   valentinmenard:
     title: Product Manager
     company_slug: blablacar
@@ -69,7 +60,7 @@ positions:
   jaimethibault:
     title: Fullstack dev
     company_slug: hostnfly
-    linkedin: https://www.linkedin.com/search/results/index/?keywords=Thibault%20Jaime%20&origin=GLOBAL_SEARCH_HEADER&page=1
+    linkedin: https://www.linkedin.com/in/thibaultjaime/
   Jo75020:
     title: CTO
     company_slug: dartagnans
@@ -133,7 +124,6 @@ positions:
   florence-delannoy:
     title: Head of Demand
     company_slug: stootie
-    linkedin:
   MargotSylvain:
     title: Product Specialist & Client Success Manager
     company_slug: toucantoco
@@ -194,83 +184,79 @@ positions:
     title: UX Designer
     company_slug: bookingcom
     linkedin: https://www.linkedin.com/in/diogo-perin/
-  louispinot:
-    title: Web Developer
-    company_slug: compass
-    linkedin:
   NoryDev:
     title: Software Engineer
     company_slug: pisano
-    linkedin:
+    linkedin: https://www.linkedin.com/in/fabien-loup-b60431147/
   camilledel:
     title: Front-end Developer
     company_slug: kisskissbankbank
-    linkedin:
+    linkedin: https://www.linkedin.com/in/camille-delbove-12b87277/
   Michael3434:
     title: Back-end developer
     company_slug: event-corner
-    linkedin:
+    linkedin: https://www.linkedin.com/in/michael-monin-b00bb496/
   tdeschamps:
     title: Backend Developer
     company_slug: aircall
-    linkedin:
+    linkedin: https://www.linkedin.com/in/thomasdscmps/
   LinSN:
     title: Product Manager
     company_slug: heetch
-    linkedin:
+    linkedin: https://www.linkedin.com/in/nordineslimani/
   zonblar:
     title: Product Manager
     company_slug: artsper
-    linkedin:
+    linkedin: https://www.linkedin.com/in/mehdi-ayouche-32548444/
   thomasjoet:
     title: Product Manager
     company_slug: lucca
-    linkedin:
+    linkedin: https://www.linkedin.com/in/thomasjoet/
   OliveCas:
     title: Digital Marketing Manager
     company_slug: front
-    linkedin:
+    linkedin: https://www.linkedin.com/in/olivier-casassus-526aa541/
   Jeanquetil:
     title: Full Stack Developer
     company_slug: drivy
-    linkedin:
+    linkedin: https://www.linkedin.com/in/jean-anquetil-4996a590/
   manoufeb:
     title: Front-end Developer
     company_slug: aircall
-    linkedin:
+    linkedin: https://www.linkedin.com/in/manoufeb/
   alicegigi:
     title: Strategic Partnerships Manager
     company_slug: doctolib
-    linkedin:
+    linkedin: https://www.linkedin.com/in/alice-gillet-39358a16/
   miawarde:
     title: Customer Success Manager
     company_slug: kameleoon
-    linkedin:
+    linkedin: https://www.linkedin.com/in/miamariawarde/
   elacaille18:
     title: Software Engineer
     company_slug: talent-io
-    linkedin:
+    linkedin: https://www.linkedin.com/in/eric-lacaille-a7239891/
   syksteaz:
     title: Product Manager
     company_slug: foodcheri
-    linkedin:
+    linkedin: https://www.linkedin.com/in/edouardwinia/
   ArianeCln:
-    title: Fullstack Developer
+    title: Product Owner
     company_slug: skello
-    linkedin:
+    linkedin: https://www.linkedin.com/in/arianecoulon/
   Emerichenon:
-    title: Marketing Manager API
+    title: Growth
     company_slug: uber
-    linkedin:
+    linkedin: https://www.linkedin.com/in/emerichenon/
   Louisrbrt:
     title: Product Manager
     company_slug: psafe
-    linkedin:
+    linkedin: https://www.linkedin.com/in/louisrbrt/
   hugovandernotte:
     title: Data Scientist
     company_slug: happn
-    linkedin:
+    linkedin: https://www.linkedin.com/in/hugo-vandernotte/
   gregcha:
     title: Product Manager
     company_slug: talent-io
-    linkedin:
+    linkedin: https://www.linkedin.com/in/gregoirecharles/
