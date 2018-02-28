@@ -70,3 +70,7 @@ That's it! Ask someone on your team to send an email to <code>contact@yourdomain
 ![Testing redirection](blog_image_path 2018-02-28-09_testing_email_forwarder.png)
 
 You should receive it instantaneously 🍾.
+
+## What next?
+
+If you want your website to use a <code>https://</code> scheme, [read on](/blog/setting-up-a-free-ssl-certificate-on-heroku)!
