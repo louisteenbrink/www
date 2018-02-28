@@ -76,10 +76,12 @@ module MarkdownArticle
     )
   end
 
+  class UnknownAuthorError < Exception; end
+
   def author
     the_author = Static::AUTHORS[metadata[:author].to_sym]
     if the_author.blank?
-      raise "Please specify a valid author. '#{metadata[:author]}' is not."
+      fail UnknownAuthorError, "'#{metadata[:author]}' is not a valid author. You can use one of these: #{Static::AUTHORS.keys.sort.to_sentence}"
     else
       return the_author
     end
