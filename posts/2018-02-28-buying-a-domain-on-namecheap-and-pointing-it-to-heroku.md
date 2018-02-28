@@ -18,7 +18,7 @@ In this tutorial, we will walk through the necessary steps to buy a domain on **
 
 Sign up to [Namecheap](https://www.namecheap.com/myaccount/signup.aspx) with a username, email and password. Then [search](https://www.namecheap.com/domains/domain-name-search.aspx) for an available domain. A domain is a name + a [TLD](https://en.wikipedia.org/wiki/Top-level_domain), no need to type `www` (that would be a **sub**-domain).
 
-I am buying the domaine <code>awesome-domain.fun</code>. You can ignore all the upsell items under "Improve Your Site" and click on "Confirm Order":
+I am buying the domain <code>awesome-domain.fun</code>. You can ignore all the upsell items under "Improve Your Site" and click on "Confirm Order":
 
 ![Search for Namecheap domain](blog_image_path 2018-02-28-02_namecheap_confirm_order.png)
 
@@ -26,7 +26,7 @@ You will have a few screens where you need to specify your identity (and your co
 
 ![Namecheap Order recap](blog_image_path 2018-02-28-03_namecheap_order_recap.png)
 
-Yu can now click on "Manage" to go to the Domain List admin section.
+You can now click on "Manage" to go to the Domain List admin section.
 
 ## Pointing the domain to Heroku
 
