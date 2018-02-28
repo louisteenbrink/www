@@ -7,7 +7,7 @@ labels:
   - tutorial
 thumbnail: 2018-02-28-heroku-namecheap.jpg
 description: |
-  TODO
+  This tutorial shows how to buy a domain on Namecheap and point a subdomain to a Heroku application. Bonus: configure an email redirection.
 ---
 
 In this tutorial, we will walk through the necessary steps to buy a domain on **Namecheap** and configure the `www` subdomain to point to an _existing_ **Heroku** application.
