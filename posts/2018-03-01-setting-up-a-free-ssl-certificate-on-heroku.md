@@ -27,7 +27,7 @@ In Heroku, go back to the **Settings** tab of your application and scroll down t
 
 ![Configure SSL on Heroku](blog_image_path 2018-03-01-02_configure_ssl.png)
 
-You should then have instructions to set up your DNS. That something which we already did in the previous tutorial, so click on **I've done this** and **Continue**.
+You should then have instructions to set up your DNS. That is something which we already did in the previous tutorial, so click on **I've done this** and **Continue**.
 
 That's it! Open your favorite browser and navigate to <code>https://www.yourdomain.tld</code>, you should see a green URL bar with the **Secure** keyword 🍾
 
