@@ -30,6 +30,8 @@ You can now click on "Manage" to go to the Domain List admin section.
 
 ## Pointing the domain to Heroku
 
+💳 Before going further, you need a [**verified**](https://devcenter.heroku.com/articles/account-verification) Heroku account which involves adding your credit card to Heroku under the Account > Billing tab. Don't worry, you won't be charged anything for adding a custom domain.
+
 The goal is now to point the `www` subdomain to my previously created Heroku application. This is a 2-step process.
 
 First connect to the Heroku dashboard, select the heroku application and go to the "Settings" tab. Scroll down until you reach the **Domain and certificates** section. Click on the purple "Add domain" button and type the domain name **with its subdomain** you want to use. Here I am going to type <code>www.awesome-domain.fun</code>.
