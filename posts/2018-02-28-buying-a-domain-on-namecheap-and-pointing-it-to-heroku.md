@@ -52,7 +52,7 @@ Go back to Namecheap Domain List, click on your domain to manage it. Then go to 
 That should be it! To check if this change has propagated to your local DNS server, you can use the `dig` command with:
 
 <pre>
-dig CNAME yourdomain.tld
+dig CNAME www.yourdomain.tld
 </pre>
 
 ![dig CNAME www.awesome-domain.fun](blog_image_path 2018-02-28-07_dig.png)
