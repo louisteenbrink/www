@@ -286,7 +286,8 @@ mexico:
   teaching_language: "English 🇬🇧"
   email: "mexico@lewagon.com"
   marketing_automation:
-    enabled: false
+    enabled: true
+    locale: en
   meetup_url: "Le-Wagon-coding-bootcamp-Mexico"
   meetup_host:
     name: Clément
