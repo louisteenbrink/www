@@ -288,6 +288,9 @@ mexico:
   marketing_automation:
     enabled: false
   meetup_url: "Le-Wagon-coding-bootcamp-Mexico"
+  meetup_host:
+    name: Clément
+    picture: https://res.cloudinary.com/wagon/image/upload/c_fill,g_face,h_200,w_200/h4nbauzlfvrrcmis9col.jpg
   facebook: ""
   twitter: ""
   instagram: ""
@@ -355,7 +358,7 @@ paris:
   meetup_host:
     name: "Edouard"
     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1473855094/my487xpvdpefw0c2sbtn.jpg"
-  meetup_url: "Le-Wagon-Paris-Coding-Station"
+  meetup_url: "Le-Wagon-Paris-Coding-Bootcamp"
   facebook: "lewagonfrance"
   twitter: "lewagonparis"
   instagram: "lewagonparis"
