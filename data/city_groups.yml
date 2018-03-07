@@ -33,7 +33,7 @@
 - group: Asia Pacific
   flag_svg: ""
   city_slugs:
-    - sydney
+    # - sydney
     - melbourne
     - bali
     - chengdu

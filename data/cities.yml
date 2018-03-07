@@ -415,22 +415,22 @@ shanghai:
   twitter: ""
   instagram: ""
 
-sydney:
-  city: "Sydney"
-  driver: "Charly 🙋‍♂️"
-  country: "Australia 🇦🇺"
-  teaching_language: "English 🇬🇧"
-  email: "sydney@lewagon.com"
-  marketing_automation:
-    enabled: true
-    locale: en
-  meetup_host:
-    name: "Charly"
-    picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1473854932/zicccbbn3t6ubfdwxais.jpg"
-  meetup_url: "Le-Wagon-Sydney-Coding-Bootcamp"
-  facebook: "lewagonaustralia"
-  twitter: "lewagonsyd"
-  instagram: "lewagonsydney"
+# sydney:
+#   city: "Sydney"
+#   driver: "Charly 🙋‍♂️"
+#   country: "Australia 🇦🇺"
+#   teaching_language: "English 🇬🇧"
+#   email: "sydney@lewagon.com"
+#   marketing_automation:
+#     enabled: true
+#     locale: en
+#   meetup_host:
+#     name: "Charly"
+#     picture: "https://res.cloudinary.com/wagon/image/upload/c_fill,h_200,w_200/v1473854932/zicccbbn3t6ubfdwxais.jpg"
+#   meetup_url: "Le-Wagon-Sydney-Coding-Bootcamp"
+#   facebook: "lewagonaustralia"
+#   twitter: "lewagonsyd"
+#   instagram: "lewagonsydney"
 
 tel-aviv:
   city: "Tel-Aviv"
