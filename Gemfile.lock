@@ -252,11 +252,11 @@ GEM
     public_suffix (2.0.4)
     puma (3.9.1)
     pygmentize (0.0.3)
-    rack (2.0.3)
+    rack (2.0.4)
     rack-cors (0.4.0)
     rack-mini-profiler (0.10.1)
       rack (>= 1.2.0)
-    rack-protection (1.5.3)
+    rack-protection (2.0.1)
       rack
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
@@ -504,4 +504,4 @@ RUBY VERSION
    ruby 2.4.2p198
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
