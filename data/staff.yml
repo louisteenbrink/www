@@ -20,6 +20,27 @@ belo-horizonte:
     name: Yan Magalhães
     role: Lead Teacher
     avatar: belo_horizonte_yan_magalhaes.jpg
+marseille:
+  - github_nickname: lchavane
+    name: Louis Chavanne
+    role: CEO
+    avatar: marseille_louis_chavanne.jpg
+  - github_nickname: mathieub13
+    name: Mathieu Bonfils
+    role: Managing Director
+    avatar: marseille_mathieu_bonfils.jpg
+  - github_nickname: killianab
+    name: Killian Avocat
+    role: Tech Community Lead
+    avatar: marseille_killian_avocat.jpg
+  - github_nickname: pierrebedouelle
+    name: Pierre Bedouelle
+    role: Communication & Growth Lead
+    avatar: marseille_pierre_bedouelle.jpg
+  - github_nickname: MorganDiVia
+    name: Morgan Di Via
+    role: Admin & Finance Associate
+    avatar: marseille_morgan_di_via.jpg
 milan:
   - github_nickname: fra0074
     name: Francesco Ecclesie
