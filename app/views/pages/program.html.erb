@@ -15,6 +15,7 @@
       </div>
     </div>
     <div class='banner-cta'>
+      <%= link_to t(".download_syllabus", default: "Download Syllabus"), "#", class: "btn banner-cta-item" %>
       <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path"), class: "btn banner-cta-item btn-danger btn-lg", style: "margin-left: 0px;" %>
     </div>
   </div>
