@@ -1,7 +1,7 @@
 function syllabusSentConfirmation() {
   const modalContent = document.getElementById("modalSyllabusForm");
   <% if @prospect.errors.messages.any? %>
-    const form = '<%= j render "prospects/syllabus/form", prospect: @prospect %>';
+    const form = '<%= j render "prospects/syllabus/inner_modal", prospect: @prospect %>';
     modalContent.innerHTML = form;
   <% else %>
     const sent = "<%= j render 'prospects/syllabus/sent' %>";

@@ -1,6 +1,6 @@
 <%= simple_form_for prospect, url: prospects_syllabuses_path, remote: true, html: { id: "download-syllabus-form" } do |f| %>
-  <%= f.input :name, wrapper_html: { class: 'employer-form-row' }, placeholder: 'Alan Turing', label: label_with_icon("account", "Name") %>
-  <%= f.input :email, wrapper_html: { class: 'employer-form-row' }, placeholder: 'alan@turing.com', label: label_with_icon("email-open", "Email") %>
+  <%= f.input :name, wrapper_html: { class: 'modal-form-row' }, placeholder: 'Alan Turing', label: label_with_icon("account", "Name") %>
+  <%= f.input :email, wrapper_html: { class: 'modal-form-row' }, placeholder: 'alan@turing.com', label: label_with_icon("email-open", "Email") %>
   <%= f.input :city,
           collection: @cities.sort_by(&:name),
           label_method: :name,
@@ -8,10 +8,10 @@
           label: label_with_icon("map-marker", "City"),
           include_blank: false,
           selected: @cities.find { |c| c.slug == params[:city] } ? params[:city] : 'paris',
-          wrapper_html: { class: 'employer-form-row' }
+          wrapper_html: { class: 'modal-form-row' }
           %>
   <%= f.input :from_path, as: :hidden, input_html: { value: request.path } %>
-  <div class="employer-form-row-submit">
+  <div class="modal-form-row-submit">
     <%= f.submit "Receive our syllabus by email", class: "btn" %>
   </div>
 <% end %>
