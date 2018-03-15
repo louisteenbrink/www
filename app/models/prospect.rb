@@ -8,6 +8,7 @@
 #  updated_at :datetime         not null
 #  from_path  :string
 #  city       :string
+#  name       :string
 #
 
 class Prospect < ApplicationRecord

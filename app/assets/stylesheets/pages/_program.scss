@@ -6,3 +6,28 @@
     background-size: cover;
   }
 }
+
+#download-syllabus-form {
+  select#prospect_city {
+    position: relative;
+    flex: 1;
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    border: 0;
+    box-shadow: none;
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 30px;
+    //   right: 15px;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 5px solid transparent;
+    //   border-right: 5px solid transparent;
+    //   border-top: 5px solid #626262;
+    //   font-size: 0;
+    //   line-height: 0;
+    //   z-index: 1;
+    // }
+  }
+}

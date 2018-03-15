@@ -79,7 +79,6 @@ class PagesController < ApplicationController
     @prospect = Prospect.new
   end
 
-
   def linkedin
     render json: params.to_json
   end
