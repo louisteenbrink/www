@@ -11,6 +11,7 @@
           wrapper_html: { class: 'modal-form-row' }
           %>
   <%= f.input :from_path, as: :hidden, input_html: { value: request.path } %>
+  <%= f.input :origin, as: :hidden, input_html: { value: "syllabus" } %>
   <div class="modal-form-row-submit">
     <%= f.submit "Receive our syllabus by email", class: "btn" %>
   </div>

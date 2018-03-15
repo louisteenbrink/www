@@ -9,6 +9,7 @@
 #  from_path  :string
 #  city       :string
 #  name       :string
+#  origin     :string
 #
 
 class Prospect < ApplicationRecord
