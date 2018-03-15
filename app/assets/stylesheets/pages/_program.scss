@@ -31,3 +31,25 @@
     // }
   }
 }
+#modalSyllabusForm {
+  svg {
+    width: 150px;
+    height: 200px;
+    margin: 10px auto;
+    margin-top: 50px;
+  }
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #letter {
+    transform: translate(80px, 60px);
+    transition: 1s transform ease;
+  }
+  #letter.opened {
+    transform: translate(80px, -70px);
+  }
+
+}

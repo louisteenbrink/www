@@ -1,0 +1,17 @@
+function syllabusSentConfirmation() {
+  const modalContent = document.getElementById("modalSyllabusForm");
+  //<%# if @prospect.errors.details[:email].any? {|e| e[:error] == :invalid} %>
+  <% if @prospect.errors.messages.any? %>
+    const form = '<%= j render "prospects/syllabus/form", prospect: @prospect %>';
+    modalContent.innerHTML = form;
+  <% else %>
+    const sent = "<%= j render 'prospects/syllabus/sent' %>"
+    modalContent.innerHTML = sent;
+    window.setTimeout(function() {
+      const letter = document.getElementById("letter");
+      letter.classList.add("opened");
+    }, 500);
+  <% end %>
+}
+
+syllabusSentConfirmation();
