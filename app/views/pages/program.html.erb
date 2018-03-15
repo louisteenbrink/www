@@ -15,7 +15,7 @@
       </div>
     </div>
     <div class='banner-cta'>
-      <%= link_to t(".download_syllabus", default: "Download Syllabus"), "#", class: "btn banner-cta-item" %>
+      <%= link_to t(".download_syllabus", default: "Download Syllabus"), "", class: "btn banner-cta-item", "data-toggle" => "modal", "data-target" => "#download-syllabus-modal" %>
       <%= link_to t(".apply_for_nine_weeks_html"), send(:"apply_#{locale.to_s.underscore}_path"), class: "btn banner-cta-item btn-danger btn-lg", style: "margin-left: 0px;" %>
     </div>
   </div>
@@ -254,4 +254,13 @@
       }, prerender: prerender? %>
   </div>
   <% end %>
+</div>
+
+<!-- Download Syllabus Modal -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="download-syllabus-modal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content" id="modalSyllabusForm">
+      <%= render "download_syllabus_form", prospect: @prospect %>
+    </div>
+  </div>
 </div>

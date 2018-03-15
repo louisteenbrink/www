@@ -76,6 +76,7 @@ class PagesController < ApplicationController
 
   def program
     @statistics = Kitt::Client.query(Statistics::Query).data.statistics
+    @prospect = Prospect.new
   end
 
 

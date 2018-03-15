@@ -1,0 +1,25 @@
+<div class="employer-form-body">
+  <div class="banner-employer-wrapper">
+    <div class="banner-employer banner banner-top banner-gradient text-center is-active" style="background-image:url('/assets/banners/banner-employers.jpg');">
+      <div class="banner-gradient-shadow"></div>
+      <div class="banner-content">
+        <h1 class="glitch">
+          <span>Download our</span>
+          <span class="underlined">Syllabus</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="employer-form-rows-container">
+    <%= simple_form_for @prospect, remote: true do |f| %>
+      <%= f.input :email, wrapper_html: { class: 'employer-form-row' }, placeholder: 'alan@turing.com', label: label_with_icon("email-open", "Email") %>
+      <div class="employer-form-row-submit">
+        <%= f.submit "Receive the syllabus by email", class: "btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
+
+
