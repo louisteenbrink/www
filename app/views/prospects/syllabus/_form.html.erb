@@ -8,7 +8,7 @@
           label: label_with_icon("map-marker", "City"),
           include_blank: false,
           selected: @cities.find { |c| c.slug == params[:city] } ? params[:city] : 'paris',
-          wrapper_html: { class: 'modal-form-row' }
+          wrapper_html: { class: 'modal-form-row modal-form-custom-select' }
           %>
   <%= f.input :from_path, as: :hidden, input_html: { value: request.path } %>
   <%= f.input :origin, as: :hidden, input_html: { value: "syllabus" } %>
