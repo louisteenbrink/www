@@ -57,6 +57,8 @@ class AppliesController < ApplicationController
       prepare_apply_form
       render :new
     end
+  rescue ActionController::ParameterMissing
+    redirect_to send(:"apply_#{locale.to_s.underscore}_path", params[:city])
   end
 
   def validate
