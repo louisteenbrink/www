@@ -31,6 +31,8 @@ module City
         apply_batches: apply_camps {
           id
           starts_at
+          ends_at
+          apply_status
         }
         current_batch: current_camp {
           id

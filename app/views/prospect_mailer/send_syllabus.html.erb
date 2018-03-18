@@ -1,0 +1,15 @@
+<p>Hello <%= @prospect.name.blank? ? "there" : @prospect.name %>,</p>
+
+<p>Thank you for downloading our FullStack Program's syllabus!</p>
+
+<p>Applications for the <%= @city.name %> bootcamp going from <%= l(Date.parse(@next_batch.starts_at)) %> to <%= @next_batch.ends_at %> are now open: when you are ready to apply, please complete the quick form through the following link:</p>
+
+<%= link_to "www.lewagon.com/apply/#{@city.slug}", apply_en_url(@city.slug), target: "_blank" %>
+
+<p>Once we receive your application, we will set up a time for an interview, so that you can meet our team and we can see how the program fits your motivation.</p>
+
+<p>If you need more information, please don't hesitate to contact us.</p>
+
+<p>Best,</p>
+
+<p>Le Wagon team</p>

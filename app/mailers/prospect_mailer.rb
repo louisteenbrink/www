@@ -1,3 +1,5 @@
+require "open-uri"
+
 class ProspectMailer < ApplicationMailer
   after_action :prevent_emailing_opted_out_prospects, if: ->() { Rails.env.production? }
   after_action :prevent_double_deliveries, if: ->() { Rails.env.production? }
@@ -65,6 +67,25 @@ class ProspectMailer < ApplicationMailer
           to: @prospect.email,
           subject: I18n.t('prospect_mailer.send_content.subject')
       end
+    end
+  rescue Net::SMTPSyntaxError => e
+    puts "#{e.message} for #{@prospect.email}"
+  end
+
+  def send_syllabus(prospect_id)
+    @prospect = Prospect.find(prospect_id)
+    @city = Kitt::Client.query(City::Query, variables: { slug: @prospect.city }).data.city
+    @city_info = CITIES[@city.slug]
+    @next_batch = Kitt::Client.query(City::Query, variables: { slug: @city.slug }).data.city.apply_batches.find { |b| b.apply_status != "full" }
+    attachments['lewagon-fullstack-syllabus.pdf'] = File.read('app/assets/images/syllabus/lewagon-fullstack-syllabus.pdf')
+    I18n.with_locale(@user_locale) do
+      track user: @prospect
+      mail \
+        from: I18n.t('prospect_mailer.send_syllabus.from',
+                      prospect_city: @city.name,
+                      email_city: @city.slug),
+        to: @prospect.email,
+        subject: I18n.t('prospect_mailer.send_syllabus.subject')
     end
   rescue Net::SMTPSyntaxError => e
     puts "#{e.message} for #{@prospect.email}"
