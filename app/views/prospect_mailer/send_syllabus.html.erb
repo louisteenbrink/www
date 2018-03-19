@@ -1,15 +1,15 @@
-<p>Hello <%= @prospect.name.blank? ? "there" : @prospect.name %>,</p>
+<p><%= t('prospect_mailer.send_syllabus.hello', name: @prospect.name.blank? ? "there" : @prospect.name) %></p>
 
-<p>Thank you for downloading our FullStack Program's syllabus!</p>
+<p><%= t('prospect_mailer.send_syllabus.thank_you') %></p>
 
-<p>Applications for the <%= @city.name %> bootcamp going from <%= l(Date.parse(@next_batch.starts_at)) %> to <%= @next_batch.ends_at %> are now open: when you are ready to apply, please complete the quick form through the following link:</p>
+<p><%= t('prospect_mailer.send_syllabus.primary_content', city: @city.name, starts_at: l(Date.parse(@next_batch.starts_at)), ends_at: l(Date.parse(@next_batch.ends_at))) %></p>
 
-<%= link_to "www.lewagon.com/apply/#{@city.slug}", apply_en_url(@city.slug), target: "_blank" %>
+<%= link_to t('prospect_mailer.send_syllabus.cta', city: @city.slug), apply_en_url(@city.slug), target: "_blank" %>
 
-<p>Once we receive your application, we will set up a time for an interview, so that you can meet our team and we can see how the program fits your motivation.</p>
+<p><%= t('prospect_mailer.send_syllabus.secondary_content') %></p>
 
-<p>If you need more information, please don't hesitate to contact us.</p>
+<p><%= t('prospect_mailer.send_syllabus.help') %></p>
 
-<p>Best,</p>
+<p><%= t('prospect_mailer.send_syllabus.wishes') %></p>
 
-<p>Le Wagon team</p>
+<p><%= t('prospect_mailer.send_syllabus.signature') %></p>

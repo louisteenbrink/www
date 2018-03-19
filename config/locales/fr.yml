@@ -726,7 +726,7 @@ fr:
       host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à %{city}. Tout le monde est le bienvenu!"
       host_cta: "En savoir plus sur nos Meetups"
     send_syllabus:
-      from: "de la part du %{prospect_city} <%{email_city}@lewagon.org>"
+      from: "de la part du Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Merci d'avoir télécharger notre syllabus!"
       hello: "Bonjour %{name},"
       thank_you: "Merci d'avoir téléchargé le syllabus de notre programme FullStack !"

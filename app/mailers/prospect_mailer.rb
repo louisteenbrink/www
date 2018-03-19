@@ -76,6 +76,7 @@ class ProspectMailer < ApplicationMailer
     @prospect = Prospect.find(prospect_id)
     @city = Kitt::Client.query(City::Query, variables: { slug: @prospect.city }).data.city
     @city_info = CITIES[@city.slug]
+    @user_locale = @city_info["marketing_automation"]["locale"]
     @next_batch = Kitt::Client.query(City::Query, variables: { slug: @city.slug }).data.city.apply_batches.find { |b| b.apply_status != "full" }
     attachments['lewagon-fullstack-syllabus.pdf'] = File.read('app/assets/images/syllabus/lewagon-fullstack-syllabus.pdf')
     I18n.with_locale(@user_locale) do
