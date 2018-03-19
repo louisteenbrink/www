@@ -8,7 +8,6 @@ class Prospects::SyllabusController < ApplicationController
       city: params[:prospect][:city])
     if @prospect.valid?
       ProspectMailer.send_syllabus(@prospect.id).deliver_later
-      # SEND LINK TO SYLLABUS BY EMAIL (OR VIA CUSTOMER.IO)
     end
   end
 end

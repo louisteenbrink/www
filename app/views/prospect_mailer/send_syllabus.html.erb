@@ -2,7 +2,7 @@
 
 <p><%= t('prospect_mailer.send_syllabus.thank_you') %></p>
 
-<p><%= t('prospect_mailer.send_syllabus.primary_content', city: @city.name, starts_at: l(Date.parse(@next_batch.starts_at)), ends_at: l(Date.parse(@next_batch.ends_at))) %></p>
+<p><%= t('prospect_mailer.send_syllabus.primary_content', city: @city.name, starts_at: l(Date.parse(@next_batch.starts_at), format: :long), ends_at: l(Date.parse(@next_batch.ends_at), format: :long)) %></p>
 
 <%= link_to t('prospect_mailer.send_syllabus.cta', city: @city.slug), apply_en_url(@city.slug), target: "_blank" %>
 
