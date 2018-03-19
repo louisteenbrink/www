@@ -276,6 +276,8 @@ en:
       live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
+      download_syllabus: 'Download Syllabus'
+      # download_syllabus: 'Download Syllabus'
     stack:
       built_by: 'Website built by...'
       with_tools: 'With these awesome tools...'
@@ -340,6 +342,17 @@ en:
         developments.
       wanna_join: Want to join Le Wagon's network?
       signup: Contact us to become our hiring partner.
+      hiring_modal_title_part_1: Join our
+      hiring_modal_title_part_2: Hiring Network
+      hiring_modal_first_name: First Name
+      hiring_modal_last_name: Last Name
+      hiring_modal_email: Email
+      hiring_modal_phone_number: Phone Number
+      hiring_modal_company: Company
+      hiring_modal_website: Website
+      hiring_modal_targets: What are you looking for?
+      hiring_modal_locations: In which city(ies) would you like to meet our community ?
+      hiring_modal_message: Why do you want to recruit Le Wagon's alumni?
     enterprise:
       title: Re-invent work in a digital world with Le Wagon's immersive workshops.
       description: Le Wagon brings technical skills to your organisation through code and technology. Change the way you work through immersive workshops.

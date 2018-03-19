@@ -341,6 +341,17 @@ fr:
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
       signup: Contactez-nous pour faire partie de nos partenaire de recrutement.
+      hiring_modal_title_part_1: Rejoignez notre
+      hiring_modal_title_part_2: Réseau de recrutement
+      hiring_modal_first_name: First Name
+      hiring_modal_last_name: Last Name
+      hiring_modal_email: Email
+      hiring_modal_phone_number: Phone Number
+      hiring_modal_company: Company
+      hiring_modal_website: Website
+      hiring_modal_targets: What are you looking for?
+      hiring_modal_locations: In which city(ies) would you like to meet our community ?
+      hiring_modal_message: Why do you want to recruit Le Wagon's alumni?
     enterprise:
       title: Réinventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
