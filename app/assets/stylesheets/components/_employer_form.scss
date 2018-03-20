@@ -1,11 +1,11 @@
-.employer-form-body {
+.modal-form-body {
   flex: 1;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
   .form-group {
     margin-bottom: 0px;
   }
 }
-.employer-form-row {
+.modal-form-row {
   // HORIZONTAL LAYOUT
   display: flex;
   align-items: center;
@@ -159,9 +159,9 @@
   }
 }
 
-.employer-form-row-custom {
+.modal-form-row-custom {
   // VERTICAL LAYOUT
-  @extend .employer-form-row;
+  @extend .modal-form-row;
   flex-direction: column;
   justify-content: flex-start;
   // align-items: flex-start;
@@ -208,7 +208,7 @@
   }
 }
 
-.employer-form-rows-container {
+.modal-form-rows-container {
   background: white;
 }
 
@@ -221,7 +221,7 @@
   }
 }
 
-.banner-employer {
+.banner-modal {
   flex: 1;
   height: 200px;
   display: none;
@@ -247,7 +247,7 @@
   }
 }
 
-.employer-form-row-submit {
+.modal-form-row-submit {
   display: flex;
   padding: 20px;
 

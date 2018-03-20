@@ -25,6 +25,10 @@ Rails.application.routes.draw do
 
   resources :prospects, only: :create
 
+  namespace :prospects do
+    resources :syllabus, only: :create, as: 'syllabuses'
+  end
+
   # config/static_routes.yml
   STATIC_ROUTES.each do |template, locale_paths|
     locale_paths.each do |locale, page|

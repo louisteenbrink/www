@@ -277,6 +277,14 @@ fr:
       live_code: Live-code d'élèves devant la classe from scratch pour apprendre à expliquer son code.
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), ou workshops techniques (UX, design, code)
+      download_syllabus: Télécharger le Syllabus
+      syllabus_modal_title_part_1: Recevoir notre
+      syllabus_modal_title_part_2: Syllabus
+      syllabus_modal_name: Nom
+      syllabus_modal_email: Email
+      syllabus_modal_city: Ville
+      syllabus_modal_submit: Recevoir notre syllabus par e-mail
+      syllabus_modal_confirmation: Merci! Veuillez vérifier votre boîte de réception.
     stack:
       built_by: 'Site créé par'
       with_tools: 'Avec ces technos...'
@@ -341,6 +349,17 @@ fr:
         Dans les équipes Product ou Growth, ils savent relier des problématiques business à des développements techniques.
       wanna_join: Vous voulez nous rejoindre ?
       signup: Contactez-nous pour faire partie de nos partenaire de recrutement.
+      hiring_modal_title_part_1: Rejoignez notre
+      hiring_modal_title_part_2: Réseau de recrutement
+      hiring_modal_first_name: First Name
+      hiring_modal_last_name: Last Name
+      hiring_modal_email: Email
+      hiring_modal_phone_number: Phone Number
+      hiring_modal_company: Company
+      hiring_modal_website: Website
+      hiring_modal_targets: What are you looking for?
+      hiring_modal_locations: In which city(ies) would you like to meet our community ?
+      hiring_modal_message: Why do you want to recruit Le Wagon's alumni?
     enterprise:
       title: Réinventer le travail dans un monde numérique grâce au Wagon.
       description: Grâce à des formations intensives, Le Wagon change la façon de travailler dans votre organisation par le code et la technologie.
@@ -725,3 +744,15 @@ fr:
       host_title: "Ne rate pas nos événements tech à %{city}"
       host_content: "Nous organisons des workshops et talks gratuits avec de nombreuses personalités de la scène tech toutes les semaines à %{city}. Tout le monde est le bienvenu!"
       host_cta: "En savoir plus sur nos Meetups"
+    send_syllabus:
+      from: "Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
+      subject: "Le Wagon - Syllabus"
+      hello: "Bonjour %{name}"
+      no_name_placeholder: ""
+      thank_you: "Merci d'avoir téléchargé le syllabus de notre programme FullStack !"
+      primary_content: "Pour envoyer votre candidature à la prochaine session de %{city} qui aura lieu du %{starts_at} au  %{ends_at}, cliquez sur le lien suivant et remplissez le formulaire d'inscription (cela vous prendra quelques minutes) :"
+      cta: "lewagon.com/apply/%{city}"
+      secondary_content: "Une fois votre candidature reçue, nous organiserons un entretien individuel pour vous rencontrer, vous présenter le programme en détails et discuter de vos motivations."
+      help: "Si vous avez besoin de plus d'informations, n'hésitez pas à répondre à cet e-mail."
+      wishes: "A très bientôt,"
+      signature: "L'équipe du Wagon"

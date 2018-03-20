@@ -269,6 +269,14 @@ zh-CN:
       live_code: "代码实训环节: 让我们一起回顾当天经历的一些挑战，在大屏幕上从头进行梳理改正。"
       talk: |
         大师级的创业者（Sunrise的CEO Pierre Valade，Github的CIO Scott Chacon...），或者是技术性的工作坊（用户体验，设计，编程）
+      download_syllabus: 下载教学大纲
+      syllabus_modal_title_part_1: 获取
+      syllabus_modal_title_part_2: 教学大纲
+      syllabus_modal_name: 名称
+      syllabus_modal_email: 电子邮件
+      syllabus_modal_city: 市
+      syllabus_modal_submit: 通过电子邮件接收我们的教学大纲
+      syllabus_modal_confirmation: 都好！ 请检查您的收件箱。
     stack:
       built_by: '网站设计者'
       with_tools: '用到的绝佳工具'
