@@ -276,6 +276,7 @@ zh-CN:
       syllabus_modal_email: 电子邮件
       syllabus_modal_city: 市
       syllabus_modal_submit: 通过电子邮件接收我们的教学大纲
+      syllabus_modal_confirmation: 都好！ 请检查您的收件箱。
     stack:
       built_by: '网站设计者'
       with_tools: '用到的绝佳工具'

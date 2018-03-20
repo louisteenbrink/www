@@ -279,6 +279,7 @@ pt-BR:
       syllabus_modal_email: O email
       syllabus_modal_city: Cidade
       syllabus_modal_submit: Receba nosso programa por email
+      syllabus_modal_confirmation: Obrigado! Verifique sua caixa de entrada.
     stack:
       built_by: 'Website criado por...'
       with_tools: 'Com essas ferramentas incríveis...'

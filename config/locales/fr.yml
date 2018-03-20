@@ -284,6 +284,7 @@ fr:
       syllabus_modal_email: Email
       syllabus_modal_city: Ville
       syllabus_modal_submit: Recevoir notre syllabus par e-mail
+      syllabus_modal_confirmation: Merci! Veuillez vérifier votre boîte de réception.
     stack:
       built_by: 'Site créé par'
       with_tools: 'Avec ces technos...'

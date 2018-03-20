@@ -283,6 +283,7 @@ en:
       syllabus_modal_email: Email
       syllabus_modal_city: City
       syllabus_modal_submit: Receive our syllabus by email
+      syllabus_modal_confirmation: All good! Please check your inbox.
     stack:
       built_by: 'Website built by...'
       with_tools: 'With these awesome tools...'

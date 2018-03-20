@@ -270,6 +270,7 @@ ja:
       syllabus_modal_email: 電子メイル
       syllabus_modal_city: 都市
       syllabus_modal_submit: シラバスを電子メールで入手する
+      syllabus_modal_confirmation: すべていいよ！ あなたの受信箱をチェックしてください。
     stack:
       built_by: 'ウェブサイトを作った人'
       with_tools: 'この様なクールなツールを使いました'
