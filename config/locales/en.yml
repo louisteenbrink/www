@@ -276,8 +276,13 @@ en:
       live_code: "Live-code session: let's look at some challenges of the day and correct them from scratch altogether on the giant screen"
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), or technical workshops (UX, design, code)
-      download_syllabus: 'Download Syllabus'
-      # download_syllabus: 'Download Syllabus'
+      download_syllabus: Download Syllabus
+      syllabus_modal_title_part_1: Get our full
+      syllabus_modal_title_part_2: Syllabus
+      syllabus_modal_name: Name
+      syllabus_modal_email: Email
+      syllabus_modal_city: City
+      syllabus_modal_submit: Receive our syllabus by email
     stack:
       built_by: 'Website built by...'
       with_tools: 'With these awesome tools...'

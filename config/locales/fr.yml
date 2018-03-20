@@ -277,6 +277,13 @@ fr:
       live_code: Live-code d'élèves devant la classe from scratch pour apprendre à expliquer son code.
       talk: |
         Masterclasses entrepreneur (Pierre Valade CEO Sunrise, Scott Chacon CIO Github..), ou workshops techniques (UX, design, code)
+      download_syllabus: Télécharger le Syllabus
+      syllabus_modal_title_part_1: Recevoir notre
+      syllabus_modal_title_part_2: Syllabus
+      syllabus_modal_name: Nom
+      syllabus_modal_email: Email
+      syllabus_modal_city: Ville
+      syllabus_modal_submit: Recevoir notre syllabus par e-mail
     stack:
       built_by: 'Site créé par'
       with_tools: 'Avec ces technos...'
