@@ -1,15 +1,15 @@
-<p><%= t('prospect_mailer.send_syllabus.hello', name: @prospect.name.blank? ? "there" : @prospect.name) %></p>
+<p><%= t('prospect_mailer.send_syllabus.hello', name: @prospect.name.blank? ? t('prospect_mailer.send_syllabus.no_name_placeholder') : @prospect.name, default: "Hello #{@prospect.name.blank? ? "" : @prospect.name}") %></p>
 
-<p><%= t('prospect_mailer.send_syllabus.thank_you') %></p>
+<p><%= t('prospect_mailer.send_syllabus.thank_you', default: "Thank you for downloading our FullStack Program's syllabus!") %></p>
 
-<p><%= t('prospect_mailer.send_syllabus.primary_content', city: @city.name, starts_at: l(Date.parse(@next_batch.starts_at), format: :long), ends_at: l(Date.parse(@next_batch.ends_at), format: :long)) %></p>
+<p><%= t('prospect_mailer.send_syllabus.primary_content', city: @city.name, starts_at: l(Date.parse(@next_batch.starts_at), format: :long), ends_at: l(Date.parse(@next_batch.ends_at), format: :long), default: "Applications for the #{@city.name} bootcamp going from #{l(Date.parse(@next_batch.starts_at), format: :long)} to #{l(Date.parse(@next_batch.ends_at), format: :long)} are now open: when you are ready to apply, please complete the quick form through the following link (it only takes a few minutes):") %></p>
 
-<%= link_to t('prospect_mailer.send_syllabus.cta', city: @city.slug), apply_en_url(@city.slug), target: "_blank" %>
+<%= link_to t('prospect_mailer.send_syllabus.cta', city: @city.slug, default: "lewagon.com/apply/#{@city.slug}"), apply_en_url(@city.slug), target: "_blank" %>
 
-<p><%= t('prospect_mailer.send_syllabus.secondary_content') %></p>
+<p><%= t('prospect_mailer.send_syllabus.secondary_content', default: "Once we receive your application, we will set up a time for an interview, so that you can meet our team and we can see how the program fits your motivation.") %></p>
 
-<p><%= t('prospect_mailer.send_syllabus.help') %></p>
+<p><%= t('prospect_mailer.send_syllabus.help', default: "If you need more information, please don't hesitate to reply to this email.") %></p>
 
-<p><%= t('prospect_mailer.send_syllabus.wishes') %></p>
+<p><%= t('prospect_mailer.send_syllabus.wishes', default: "Best,") %></p>
 
-<p><%= t('prospect_mailer.send_syllabus.signature') %></p>
+<p><%= t('prospect_mailer.send_syllabus.signature', default: "Le Wagon team") %></p>

@@ -746,7 +746,8 @@ fr:
     send_syllabus:
       from: "Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Le Wagon - Syllabus"
-      hello: "Bonjour %{name},"
+      hello: "Bonjour %{name}"
+      no_name_placeholder: ""
       thank_you: "Merci d'avoir téléchargé le syllabus de notre programme FullStack !"
       primary_content: "Pour envoyer votre candidature à la prochaine session de %{city} qui aura lieu du %{starts_at} au  %{ends_at}, cliquez sur le lien suivant et remplissez le formulaire d'inscription (cela vous prendra quelques minutes) :"
       cta: "lewagon.com/apply/%{city}"

@@ -740,6 +740,7 @@ en:
       from: "Le Wagon %{prospect_city} <%{email_city}@lewagon.org>"
       subject: "Le Wagon - Syllabus"
       hello: "Hello %{name},"
+      no_name_placeholder: "there"
       thank_you: "Thank you for downloading our FullStack Program's syllabus!"
       primary_content: "Applications for the %{city} bootcamp going from %{starts_at} to %{ends_at} are now open: when you are ready to apply, please complete the quick form through the following link (it only takes a few minutes):"
       cta: "lewagon.com/apply/%{city}"
