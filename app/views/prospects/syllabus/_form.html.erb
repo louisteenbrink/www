@@ -7,7 +7,7 @@
           value_method: :slug,
           label: label_with_icon("map-marker", t("pages.program.syllabus_modal_city", default: "City")),
           include_blank: false,
-          selected: @cities.find { |c| c.slug == params[:city] } ? params[:city] : 'paris',
+          selected: @cities.find { |c| c.slug == session[:city] } ? session[:city] : 'paris',
           wrapper_html: { class: 'modal-form-row modal-form-custom-select' }
           %>
   <%= f.input :from_path, as: :hidden, input_html: { value: request.path } %>
