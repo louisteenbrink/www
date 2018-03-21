@@ -1,0 +1,16 @@
+function syllabusSentConfirmation() {
+  const modalContent = document.getElementById("modalSyllabusForm");
+  <% if @prospect.errors.messages.any? %>
+    const form = '<%= j render "prospects/syllabus/inner_modal", prospect: @prospect %>';
+    modalContent.innerHTML = form;
+  <% else %>
+    const sent = "<%= j render 'prospects/syllabus/sent' %>";
+    modalContent.innerHTML = sent;
+    window.setTimeout(function() {
+      const letter = document.getElementById("letter");
+      letter.classList.add("opened");
+    }, 500);
+  <% end %>
+}
+
+syllabusSentConfirmation();

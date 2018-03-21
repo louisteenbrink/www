@@ -1,0 +1,18 @@
+<%= simple_form_for prospect, url: prospects_syllabuses_path, remote: true, html: { id: "download-syllabus-form" } do |f| %>
+  <%= f.input :name, wrapper_html: { class: 'modal-form-row' }, placeholder: 'Alan Turing', label: label_with_icon("account", t("pages.program.syllabus_modal_name", default: "Name")) %>
+  <%= f.input :email, wrapper_html: { class: 'modal-form-row' }, placeholder: 'alan@turing.com', label: label_with_icon("email-open", t("pages.program.syllabus_modal_email", default: "Email")) %>
+  <%= f.input :city,
+          collection: @cities.sort_by(&:name),
+          label_method: :name,
+          value_method: :slug,
+          label: label_with_icon("map-marker", t("pages.program.syllabus_modal_city", default: "City")),
+          include_blank: false,
+          selected: @cities.find { |c| c.slug == session[:city] } ? session[:city] : 'paris',
+          wrapper_html: { class: 'modal-form-row modal-form-custom-select' }
+          %>
+  <%= f.input :from_path, as: :hidden, input_html: { value: request.path } %>
+  <%= f.input :origin, as: :hidden, input_html: { value: "syllabus" } %>
+  <div class="modal-form-row-submit">
+    <%= f.submit t("pages.program.syllabus_modal_submit", default: "Receive our syllabus by email"), class: "btn" %>
+  </div>
+<% end %>

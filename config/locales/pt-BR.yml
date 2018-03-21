@@ -272,6 +272,14 @@ pt-BR:
       live_code: "Sessão Live-code: vamos ver alguns dos desafios do dia e corrigi-los do zero em na tela gigante"
       talk: |
         Masterclass empreendedor (Fabien Mendez CEO Loggi, Riq Lima CEO Worldpackers...), ou workshops técnico (UX, design, code)
+      download_syllabus: Baixar do programa
+      syllabus_modal_title_part_1: Obtenha nosso
+      syllabus_modal_title_part_2: programa
+      syllabus_modal_name: Nome
+      syllabus_modal_email: O email
+      syllabus_modal_city: Cidade
+      syllabus_modal_submit: Receba nosso programa por email
+      syllabus_modal_confirmation: Obrigado! Verifique sua caixa de entrada.
     stack:
       built_by: 'Website criado por...'
       with_tools: 'Com essas ferramentas incríveis...'
