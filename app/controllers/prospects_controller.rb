@@ -3,7 +3,8 @@ class ProspectsController < ApplicationController
     @prospect = Prospect.find_or_create_by(
       email: params[:prospect][:email],
       from_path: params[:prospect][:from_path],
-      city: params[:prospect][:city])
+      city: params[:prospect][:city],
+      origin: "freetrack")
 
     if @prospect.valid?
       ProspectMailer.invite(@prospect.id).deliver_later
