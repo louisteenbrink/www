@@ -23,13 +23,23 @@ class Prospect < ApplicationRecord
   private
 
   def notify_slack
-    count_prospect_for_today = Prospect.where("created_at >= ?", Date.today).count
-    city_part = city.blank? ? nil : ", coming from *#{city.capitalize}*,"
     NotifySlack.perform_later({
       "channel": Rails.env.development? ? "test" : "incoming",
       "username": "www",
       "icon_url": "https://raw.githubusercontent.com/lewagon/mooc-images/master/slack_bot.png",
-      "text": "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect#{city_part} for the free Web Development Basics track on *#{from_path}*: #{email}"
+      "text": origin == "syllabus" ? download_syllabus_notification_text : free_track_notification_text
     })
+  end
+
+  def download_syllabus_notification_text
+    count_prospect_for_today = Prospect.where("created_at >= ?", Date.today).where(origin: "syllabus").count
+    city_part = city.blank? ? nil : ", coming from *#{city.capitalize}*,"
+    "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect#{city_part} who downloaded the *Syllabus* pdf: #{email}"
+  end
+
+  def free_track_notification_text
+    count_prospect_for_today = Prospect.where("created_at >= ?", Date.today).where(origin: "freetrack").count
+    city_part = city.blank? ? nil : ", coming from *#{city.capitalize}*,"
+    "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect#{city_part} for the free Web Development Basics track on *#{from_path}*: #{email}"
   end
 end
