@@ -34,7 +34,7 @@ class Prospect < ApplicationRecord
   def download_syllabus_notification_text
     count_prospect_for_today = Prospect.where("created_at >= ?", Date.today).where(origin: "syllabus").count
     city_part = city.blank? ? nil : ", coming from *#{city.capitalize}*,"
-    "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect#{city_part} who downloaded the *Syllabus* pdf: #{email}"
+    "Today's #{count_prospect_for_today}#{count_prospect_for_today.ordinal} prospect#{city_part} who requested the *Syllabus*: #{name} - #{email}"
   end
 
   def free_track_notification_text
