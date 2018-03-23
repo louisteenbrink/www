@@ -11,12 +11,15 @@ class PostsController < ApplicationController
 
       if I18n.locale == :fr
         @videos = @videos.select { |m| m.locale == "fr" }
+        @posts = @posts.select { |m| m.locale == "fr" }
         select_content("fr")
       elsif I18n.locale == :"pt-BR"
         @videos = @videos.select { |m| m.locale == "pt-BR" }
-        select_content("en")
+        @posts = @posts.select { |m| m.locale == "pt-BR" }
+        select_content("pt-BR")
       else
         @videos = @videos.select { |m| m.locale == "en" }
+        @posts = @posts.select { |m| m.locale == "en" }
         select_content("en")
       end
     end
@@ -42,7 +45,7 @@ class PostsController < ApplicationController
       @posts = @posts.select { |m| m.locale == "fr" }.sample(3)
     elsif I18n.locale == :"pt-BR"
       @videos = @videos.select { |m| m.locale == "pt-BR" }.sample(2)
-      @posts = @posts.select { |m| m.locale == "en" }.sample(3)
+      @posts = @posts.select { |m| m.locale == "pt-BR" }.sample(3)
     else
       @videos = @videos.select { |m| m.locale == "en" }.sample(2)
       @posts = @posts.select { |m| m.locale == "en" }.sample(3)
@@ -69,6 +72,8 @@ class PostsController < ApplicationController
 
     if I18n.locale == :fr
       select_post("fr")
+    elsif I18n.locale == :"pt-BR"
+      select_post("pt-BR")
     else
       select_post("en")
     end

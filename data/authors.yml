@@ -167,3 +167,11 @@ dounan:
   company: Le Wagon Shanghai
   position: Teacher
   company_website: lewagon.com/shanghai
+fernando:
+  fname: Fernando
+  lname: Jardim
+  picture: fernando-jardim.jpg
+  bio: ""
+  company: Le Wagon São Paulo
+  position: Contributor
+  company_website: lewagon.com/sao-paulo
