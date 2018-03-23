@@ -263,14 +263,14 @@ ja:
         "ライブコードセッション: 教室にある大きなスクリーンに映された、その日に課題をみんなで一から解消していこう"
       talk: |
         トップクラスの起業家(Stripeの日本支部取締役 Daniel Heffernan,Doorkeeperの創業者 Paul McMahonなど)のトークショー、またはテクノロジーに関するワークショップ(UX、デザイン、コード)に参加する
-      download_syllabus: シラバスをダウンロードする
-      syllabus_modal_title_part_1: シラバス
-      syllabus_modal_title_part_2: を入手する
-      syllabus_modal_name: 名
-      syllabus_modal_email: 電子メイル
-      syllabus_modal_city: 都市
-      syllabus_modal_submit: シラバスを電子メールで入手する
-      syllabus_modal_confirmation: すべていいよ！ あなたの受信箱をチェックしてください。
+      download_syllabus: 教案をダウンロード
+      syllabus_modal_title_part_1: ぜん教案を
+      syllabus_modal_title_part_2: 取得
+      syllabus_modal_name: 名前
+      syllabus_modal_email: Eメール
+      syllabus_modal_city: 町
+      syllabus_modal_submit: Eメールで教案を受け取る
+      syllabus_modal_confirmation: ありがとうございます！メールをご確認下さい
     stack:
       built_by: 'ウェブサイトを作った人'
       with_tools: 'この様なクールなツールを使いました'
