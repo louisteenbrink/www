@@ -125,6 +125,9 @@ buenos-aires:
   email: "buenos-aires@lewagon.com"
   marketing_automation:
     enabled: false
+  meetup_host:
+    name: "Sebastian"
+    picture: "https://avatars3.githubusercontent.com/u/18401014?v=4"
   meetup_url: "Le-Wagon-Argentina"
   facebook: ""
   twitter: ""
@@ -138,6 +141,9 @@ casablanca:
   email: "casablanca@lewagon.com"
   marketing_automation:
     enabled: false
+  meetup_host:
+    name: "Hanae"
+    picture: "https://avatars2.githubusercontent.com/u/22885189?v=4"
   meetup_url: "Le-Wagon-Casa-Coding-Bootcamp"
   facebook: ""
   twitter: ""
@@ -440,7 +446,10 @@ tel-aviv:
   email: "tel-aviv@lewagon.com"
   marketing_automation:
     enabled: false
-  meetup_url: ""
+  meetup_host:
+    name: "Rabea"
+    picture: "https://avatars2.githubusercontent.com/u/4717260?v=4"
+  meetup_url: "Le-Wagon-TLV-Coding-Bootcamp"
   facebook: ""
   twitter: ""
   instagram: ""
