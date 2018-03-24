@@ -86,7 +86,8 @@ class ProspectMailer < ApplicationMailer
                       prospect_city: @city.name,
                       email_city: @city.slug),
         to: @prospect.email,
-        subject: I18n.t('prospect_mailer.send_syllabus.subject')
+        subject: I18n.t('prospect_mailer.send_syllabus.subject'),
+        template_name: "send_syllabus#{@city.slug == 'paris' ? '.paris' : nil}"
     end
   rescue Net::SMTPSyntaxError => e
     puts "#{e.message} for #{@prospect.email}"
