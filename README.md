@@ -27,7 +27,7 @@ The bare minimum variables you need to start the website are:
 
 ```yml
 # config/application.yml
-KITT_WWW_SHARED_SECRET: "ask_for_it"
+KITT_BASE_URL: "ask_for_it"
 CLOUDINARY_URL: "ask_for_it"
 ```
 
