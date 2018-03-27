@@ -1,5 +1,6 @@
 class StoriesController < ApplicationController
   def show
+    @prospect = Prospect.new
     @story = Story.find(params[:id])
     return render_404 if @story.blank?
 

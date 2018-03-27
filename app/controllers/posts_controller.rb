@@ -35,6 +35,7 @@ class PostsController < ApplicationController
   end
 
   def show
+    @prospect = Prospect.new
     @post = Post.find(params[:slug])
     posts = Post.all
     @videos = (posts.select(&:video?) - [ @post ])
