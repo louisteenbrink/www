@@ -1,0 +1,25 @@
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0 40px;
+  margin: 30px 0;
+  text-align: center;
+  border-top: 1px solid #f4f4f4;
+  border-bottom: 1px solid #f4f4f4;
+
+  h3 {
+    margin-bottom: 26px;
+    font-size: 21px;
+  }
+
+  .banner-cta-item,
+  .banner-cta-item:hover {
+    max-width: 230px;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f1f1f1));
+    color: #333 !important;
+    text-decoration: none !important;
+  }
+}

@@ -641,6 +641,8 @@ en:
       read_more: Read more testimonials from our bootcamp's students
       title: "%{story}"
       description: "%{story}"
+      download_syllabus_title: Want to know more about Le Wagon's 9-week bootcamp?
+      download_syllabus: Download Syllabus
   projects:
     index:
       meta_title_html: |
@@ -693,6 +695,8 @@ en:
       read_more_catchline: There is always something new
       watch_more_title: You know what?
       watch_more_catchline: Binge watching is ok
+      download_syllabus_title: Want to know more about Le Wagon's 9-week bootcamp?
+      download_syllabus: Download Syllabus
     social_sharing:
       share: Share
     learn_cta:
