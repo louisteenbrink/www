@@ -9,7 +9,7 @@ gem 'pg', '~> 0.20'
 gem 'puma'
 gem 'rack-cors'
 gem 'rack-utf8_sanitizer'
-gem 'rails', '5.1.4'
+gem 'rails', '5.2.0.rc2'
 gem 'redis'
 gem 'redis-rails'
 
