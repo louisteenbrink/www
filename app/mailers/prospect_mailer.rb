@@ -78,7 +78,7 @@ class ProspectMailer < ApplicationMailer
     @city_info = CITIES[@city.slug]
     @user_locale = @city_info["marketing_automation"]["locale"]
     @next_batch = Kitt::Client.query(City::Query, variables: { slug: @city.slug }).data.city.apply_batches.find { |b| b.apply_status != "full" }
-    attachments['lewagon-fullstack-syllabus.pdf'] = File.read('app/assets/images/syllabus/lewagon-fullstack-syllabus.pdf')
+    attachments['lewagon-fullstack-syllabus.pdf'] = File.read(Rails.root.join('app/assets/images/syllabus/lewagon-fullstack-syllabus.pdf'))
     I18n.with_locale(@user_locale) do
       track user: @prospect
       mail \
