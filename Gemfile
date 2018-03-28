@@ -19,7 +19,8 @@ gem 'sidekiq-failures'
 gem 'sidekiq-cron'
 
 # Addons
-gem 'devise', '~> 4.3.0'
+gem 'devise'
+gem 'omniauth-oauth2'
 gem 'money-rails'
 gem 'nokogiri'
 gem 'rails-i18n'
@@ -53,7 +54,6 @@ gem 'appsignal'
 gem "graphql-client"
 gem 'linkedin-oauth2', '~> 1.0'
 gem 'meetup_client'
-gem 'omniauth-github'
 gem 'rest-client'
 gem 'ruby-trello'
 
@@ -86,7 +86,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'annotate'
   gem 'httplog'
   gem 'rack-mini-profiler'
   gem 'web-console'

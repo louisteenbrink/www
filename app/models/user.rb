@@ -1,33 +1,23 @@
-# == Schema Information
-#
-# Table name: users
-#
-#  id                 :integer          not null, primary key
-#  sign_in_count      :integer          default(0), not null
-#  current_sign_in_at :datetime
-#  last_sign_in_at    :datetime
-#  current_sign_in_ip :inet
-#  last_sign_in_ip    :inet
-#  uid                :string
-#  github_nickname    :string
-#  gravatar_url       :string
-#  created_at         :datetime         not null
-#  updated_at         :datetime         not null
-#
-
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :trackable
-  devise :omniauthable, omniauth_providers: [ :github ]
+  devise :timeoutable
+  devise :omniauthable, omniauth_providers: [ :kitt ]
 
-  def self.find_for_github_oauth(auth)
-    user = where(uid: auth[:uid]).first || where(github_nickname: auth.info.nickname).first
-    return nil if user.nil?
-    user.uid = auth.uid
-    user.github_nickname = auth.info.nickname
-    user.gravatar_url = auth.info.image
-    user.save
+  validates :kitt_id, presence: true, uniqueness: true
+
+  def self.find_for_kitt_oauth(auth)
+    return nil if !auth.info.admin && auth.info.cities.blank?
+
+    user = where(kitt_id: auth.uid).first
+    user = User.new(kitt_id: auth.uid) unless user
+    user.github_nickname = auth.info.github_nickname
+    user.email = auth.info.email
+    user.first_name = auth.info.first_name
+    user.last_name = auth.info.last_name
+    user.gravatar_url = auth.info.avatar_url
+    user.admin = auth.info.admin
+    user.cities = auth.info.cities
+    user.save!
     user
   end
 end
