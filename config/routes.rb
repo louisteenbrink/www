@@ -47,6 +47,7 @@ Rails.application.routes.draw do
   get 'stories', to: redirect('alumni')
   get 'fr/stories', to: redirect('fr/alumni')
   get 'en/*path', to: redirect { |path_params, req| path_params[:path] }
+  get '2015-11-27-alice-joins-save-as-backend-dev', to: redirect('2018-03-27-business-school-grad-full-stack-developer')
 
   react_exceptions = ["pt-BR", "zh-CN", "es", "ja"]
   react_exceptions.each do | exception |
