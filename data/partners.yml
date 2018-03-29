@@ -62,6 +62,13 @@ with our API covering 220+ countries."
   color: "#9d132b"
   category: institutions
 
+- name: "Forest Admin"
+  url: "https://www.forestadmin.com/"
+  logo: forest-admin.png
+  description: "Forest Admin is a universal admin interface that helps companies execute fast, with no time wasted on an admin developed in-house."
+  color: "#00BA73"
+  category: advantage
+
 - name: "HEC Paris"
   url: "http://www.hec.edu/"
   logo: logo-hec.png
